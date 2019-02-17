@@ -1,0 +1,41 @@
+commit e703483811808ab5533c32b2350b825307d1279e
+Author: aszlig <aszlig@nix.build>
+Date:   Fri Feb 15 20:47:43 2019 +0100
+
+    Find binary programs via a lookup table in config
+    
+    On Nix, we don't have any binaries in FHS directories, so we need to
+    provide an associative array that contains all the binaries that we want
+    to support.
+    
+    An alternative to this would be to simply search PATH, but I rather
+    prefer the explicit version, especially when it comes to sandboxing.
+    
+    Signed-off-by: aszlig <aszlig@nix.build>
+
+diff --git a/lib/private/legacy/helper.php b/lib/private/legacy/helper.php
+index d9aa22e293..a383d876ff 100644
+--- a/lib/private/legacy/helper.php
++++ b/lib/private/legacy/helper.php
+@@ -480,19 +480,8 @@ class OC_Helper {
+ 	 * @return null|string
+ 	 */
+ 	public static function findBinaryPath($program) {
+-		$memcache = \OC::$server->getMemCacheFactory()->createDistributed('findBinaryPath');
+-		if ($memcache->hasKey($program)) {
+-			return $memcache->get($program);
+-		}
+-		$result = null;
+-		if (self::is_function_enabled('exec')) {
+-			$exeSniffer = new ExecutableFinder();
+-			// Returns null if nothing is found
+-			$result = $exeSniffer->find($program, null, ['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/opt/bin']);
+-		}
+-		// store the value for 5 minutes
+-		$memcache->set($program, $result, 300);
+-		return $result;
++		$execmap = \OC::$server->getConfig()->getSystemValue('nix_executable_map', []);
++		return $execmap[$program] ?? null;
+ 	}
+ 
+ 	/**
