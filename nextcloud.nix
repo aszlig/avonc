@@ -9,7 +9,7 @@ let
   maybePort = let
     needsExplicit = !lib.elem cfg.port [ 80 443 ];
   in lib.optionalString needsExplicit ":${toString cfg.port}";
-  baseUrl = "${urlScheme}://${cfg.domain}${maybePort}/";
+  baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
   upstreamInfo = lib.importJSON ./deps/upstream.json;
 
@@ -399,6 +399,10 @@ in {
     services.nginx.virtualHosts.${cfg.domain} = {
       forceSSL = cfg.useSSL;
       enableACME = cfg.useACME;
+      extraConfig = ''
+        error_page 403 ${baseUrl}/;
+        error_page 404 ${baseUrl}/;
+      '';
       locations = {
         "/" = {
           priority = 500;
@@ -429,7 +433,10 @@ in {
         "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
           priority = 200;
           index = "index.php";
-          extraConfig = "uwsgi_pass unix:///run/nextcloud.socket;";
+          extraConfig = ''
+            uwsgi_intercept_errors on;
+            uwsgi_pass unix:///run/nextcloud.socket;
+          '';
         };
       };
     };
