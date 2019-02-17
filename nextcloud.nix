@@ -405,34 +405,32 @@ in {
       '';
       locations = {
         "/" = {
-          priority = 500;
           root = staticFiles;
           tryFiles = "$uri $uri$is_args$args /index.php$uri$is_args$args";
           extraConfig = "access_log off;";
         };
 
-        /*
+        "= /.well-known/host-meta" = {
+          extraConfig = "rewrite ^ /public.php?service=host-meta;";
+        };
+
+        "= /.well-known/host-meta.json" = {
+          extraConfig = "rewrite ^ /public.php?service=host-meta-json;";
+        };
+
+        "= /.well-known/webfinger" = {
+          extraConfig = "rewrite ^ /public.php?service=webfinger;";
+        };
+
         "= /.well-known/carddav" = {
-          priority = 210;
-          extraConfig = "return 301 $scheme://$host/remote.php/dav;";
+          extraConfig = "return 301 ${baseUrl}/remote.php/dav;";
         };
 
         "= /.well-known/caldav" = {
-          priority = 210;
-          extraConfig = "return 301 $scheme://$host/remote.php/dav;";
+          extraConfig = "return 301 ${baseUrl}/remote.php/dav;";
         };
-        */
-
-        /*
-        "/" = {
-          priority = 200;
-          extraConfig = "rewrite ^ /index.php$uri;";
-        };
-        */
 
         "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
-          priority = 200;
-          index = "index.php";
           extraConfig = ''
             uwsgi_intercept_errors on;
             uwsgi_pass unix:///run/nextcloud.socket;
