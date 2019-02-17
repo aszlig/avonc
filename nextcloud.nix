@@ -168,34 +168,15 @@ let
         ffmpeg = "${pkgs.ffmpeg.bin}/bin/ffmpeg";
       };
 
-      # TODO: Let the user choose!
-      enabledPreviewProviders = [
-        "OC\\Preview\\PNG"
-        "OC\\Preview\\JPEG"
-        "OC\\Preview\\GIF"
-        "OC\\Preview\\BMP"
-        "OC\\Preview\\HEIC"
-        "OC\\Preview\\XBitmap"
-        "OC\\Preview\\MarkDown"
-        "OC\\Preview\\MP3"
-        "OC\\Preview\\TXT"
-        "OC\\Preview\\Illustrator"
-        "OC\\Preview\\Movie"
-        "OC\\Preview\\MSOffice2003"
-        "OC\\Preview\\MSOffice2007"
-        "OC\\Preview\\MSOfficeDoc"
-        "OC\\Preview\\OpenDocument"
-        "OC\\Preview\\PDF"
-        "OC\\Preview\\Photoshop"
-        "OC\\Preview\\Postscript"
-        "OC\\Preview\\StarOffice"
-        "OC\\Preview\\SVG"
-        "OC\\Preview\\TIFF"
-        "OC\\Preview\\Font"
-      ];
-      # TODO: Check whether this works! And if not, you might want to change
-      # the enabledPreviewProviders option.
-      preview_libreoffice_path = "${pkgs.libreoffice}/bin/libreoffice";
+      enabledPreviewProviders =
+        map (ft: "OC\\Preview\\${ft}") cfg.previewFileTypes;
+
+      preview_libreoffice_path = let
+        isNeeded = !lib.mutuallyExclusive cfg.previewFileTypes [
+          "MSOffice2003" "MSOffice2007" "MSOfficeDoc" "OpenDocument"
+          "StarOffice"
+        ];
+      in lib.optionalString isNeeded "${pkgs.libreoffice}/bin/libreoffice";
 
       # openssl.config = "... ECDSA maybe?"; # XXX
 
@@ -270,9 +251,13 @@ let
     touch "$out"
   '';
 
-  phpPackages = pkgs.phpPackages.override {
+  phpPackages = let
+    needsGhostscript = lib.elem cfg.previewFileTypes [ "PDF" "Postscript" ];
+  in pkgs.phpPackages.override ({
     php = pkgs.php-embed;
-  };
+  } // lib.optionalAttrs needsGhostscript {
+    pkgs = pkgs // { imagemagick = pkgs.imagemagickBig; };
+  });
 
   uwsgiNextcloud = pkgs.runCommand "uwsgi-nextcloud" {
     uwsgi = pkgs.uwsgi.override {
@@ -378,6 +363,24 @@ in {
       defaultText = "if lib.isInt config.nix.maxJobs then"
                   + " config.nix.maxJobs * 2 else 1";
       description = "The amount of processes to spawn for uWSGI.";
+    };
+
+    previewFileTypes = mkOption {
+      type = types.listOf (types.enum [
+        "BMP" "Font" "GIF" "HEIC" "Illustrator" "JPEG" "MP3" "MSOffice2003"
+        "MSOffice2007" "MSOfficeDoc" "MarkDown" "Movie" "OpenDocument" "PDF"
+        "PNG" "Photoshop" "Postscript" "SVG" "StarOffice" "TIFF" "TXT"
+        "XBitmap"
+      ]);
+      default = [
+        "BMP" "GIF" "HEIC" "JPEG" "MP3" "MarkDown" "PNG" "TXT" "XBitmap"
+      ];
+      description = ''
+        File types for which to generate previews (eg. thumbnails).
+
+        The ones not enabled by default are disabled due to performance or
+        privacy concerns. For example some file types could cause segfaults.
+      '';
     };
 
     apps = lib.mapAttrs (appId: appinfo: {
