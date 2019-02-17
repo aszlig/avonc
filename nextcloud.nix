@@ -13,8 +13,7 @@ let
 
   upstreamInfo = lib.importJSON ./deps/upstream.json;
 
-  # XXX: Split off!
-  breezeDark = pkgs.fetchFromGitHub {
+  themeBreezeDark = pkgs.fetchFromGitHub {
     owner = "mwalbeck";
     repo = "nextcloud-breeze-dark";
     rev = "6a1c90ae97f6b60772ce7756e77d3d2b6b2b41df";
@@ -43,9 +42,8 @@ let
       cp -TR ${lib.escapeShellArg path} apps/${lib.escapeShellArg appid}
     '') appPaths);
 
-    # FIXME: Don't abuse buildPhase for themes!
-    buildPhase = ''
-      cp -TR ${lib.escapeShellArg breezeDark} themes/nextcloud-breeze-dark
+    buildPhase = lib.optionalString (cfg.theme == "breeze-dark") ''
+      cp -TR ${lib.escapeShellArg themeBreezeDark} themes/nextcloud-breeze-dark
     '';
 
     patches = [
@@ -121,7 +119,7 @@ let
   ];
 
   nextcloudConfigDir = let
-    nextcloudConfig = mkPhpConfig {
+    nextcloudConfig = mkPhpConfig ({
       instanceid = "autogenerate"; # XXX
       trusted_domains = [ "XXX" ]; # XXX
       datadirectory = "/var/lib/nextcloud/data";
@@ -193,9 +191,9 @@ let
       "upgrade.disable-web" = true;
       # data-fingerprint = ???; XXX: Figure out!
 
-      # XXX: These options are custom! Integrate into NixOS options...
-      theme = "nextcloud-breeze-dark";
-    };
+    } // lib.optionalAttrs (cfg.theme != "default") {
+      theme = "nextcloud-${cfg.theme}";
+    });
   in pkgs.writeTextFile {
     name = "nextcloud-config";
     text = nextcloudConfig;
@@ -380,6 +378,15 @@ in {
 
         The ones not enabled by default are disabled due to performance or
         privacy concerns. For example some file types could cause segfaults.
+      '';
+    };
+
+    theme = mkOption {
+      type = types.enum [ "default" "breeze-dark" ];
+      default = "default";
+      example = "breeze-dark";
+      description = ''
+        The UI theme to use for this Nextcloud instance.
       '';
     };
 
