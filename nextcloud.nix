@@ -20,6 +20,43 @@ let
     sha256 = "0sdzscz2pq7g674inkc6cryqsdnrpin2hsvvaqzngld6vp1z7h04";
   };
 
+  occUser = pkgs.writeScriptBin "nextcloud-occ" ''
+    #!${pkgs.stdenv.shell} -e
+    export NEXTCLOUD_CONFIG_DIR=${lib.escapeShellArg nextcloudConfigDir}
+    exec ${lib.escapeShellArg "${pkgs.utillinux}/bin/runuser"} \
+      -u nextcloud -g nextcloud -- ${phpCli} \
+      ${lib.escapeShellArg "${package}/occ"} \
+      "$@"
+  '';
+
+  commonPhpConfig = [
+    "expose_php=false"
+    "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
+    "extension=${phpPackages.imagick}/lib/php/extensions/imagick.so"
+    "opcache.enable=1"
+    "opcache.enable_cli=1"
+    "opcache.interned_strings_buffer=8"
+    "opcache.max_accelerated_files=10000"
+    "opcache.memory_consumption=128"
+    "opcache.revalidate_freq=1"
+    "opcache.save_comments=1"
+    "opcache.validate_timestamps=0"
+    "pgsql.allow_persistent=1"
+    "pgsql.auto_reset_persistent=0"
+    "pgsql.ignore_notice=0"
+    "pgsql.log_notice=0"
+    "pgsql.max_links=-1"
+    "pgsql.max_persistent=-1"
+    "post_max_size=1000M"
+    "upload_max_filesize=1000M"
+    "zend_extension=opcache.so"
+  ];
+
+  phpCli = let
+    mkArgs = lib.concatMapStringsSep " " (opt: "-d ${lib.escapeShellArg opt}");
+    escPhp = lib.escapeShellArg "${pkgs.php-embed}/bin/php";
+  in escPhp + " " + mkArgs (commonPhpConfig ++ [ "memory_limit=512M" ]);
+
   # NixOS options that are merged with the existing appids.
   extraAppOptions = {};
 
@@ -275,28 +312,7 @@ let
         php-index = "index.php";
         php-docroot = package;
         php-sapi-name = "apache";
-        php-set = [
-          "display_errors=stderr"
-          "expose_php=false"
-          "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
-          "extension=${phpPackages.imagick}/lib/php/extensions/imagick.so"
-          "opcache.enable=1"
-          "opcache.enable_cli=1"
-          "opcache.interned_strings_buffer=8"
-          "opcache.max_accelerated_files=10000"
-          "opcache.memory_consumption=128"
-          "opcache.revalidate_freq=1"
-          "opcache.save_comments=1"
-          "pgsql.allow_persistent=1"
-          "pgsql.auto_reset_persistent=0"
-          "pgsql.ignore_notice=0"
-          "pgsql.log_notice=0"
-          "pgsql.max_links=-1"
-          "pgsql.max_persistent=-1"
-          "post_max_size=1000M"
-          "upload_max_filesize=1000M"
-          "zend_extension=opcache.so"
-        ];
+        php-set = commonPhpConfig ++ [ "display_errors=stderr" ];
         plugins = [ "0:php" ];
         processes = cfg.processes;
         procname-prefix-spaced = "[nextcloud]";
@@ -556,5 +572,7 @@ in {
       serviceConfig.ExecStart = "${pkgs.php}/bin/php -f ${package}/cron.php";
       serviceConfig.PrivateTmp = true;
     };
+
+    environment.systemPackages = [ occUser ];
   };
 }
