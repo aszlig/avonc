@@ -296,7 +296,7 @@ let
     EOF
     export NEXTCLOUD_CONFIG_DIR="$PWD/tmpconfig"
 
-    php "$nextcloud/occ" maintenance:install \
+    ${phpCli} "$nextcloud/occ" maintenance:install \
       --database pgsql \
       --database-name nextcloud \
       --database-host $TMPDIR \
@@ -305,9 +305,9 @@ let
       --admin-pass "$adminPass" \
       --data-dir "$PWD/data"
 
-    php "$nextcloud/occ" app:enable encryption
-    php "$nextcloud/occ" background:cron
-    php "$nextcloud/occ" db:convert-filecache-bigint
+    ${phpCli} "$nextcloud/occ" app:enable encryption
+    ${phpCli} "$nextcloud/occ" background:cron
+    ${phpCli} "$nextcloud/occ" db:convert-filecache-bigint
 
     rm "$PWD/data/index.html" "$PWD/data/.htaccess"
     pg_dump -h "$TMPDIR" nextcloud > "$sql"
