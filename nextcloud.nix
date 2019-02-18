@@ -29,6 +29,31 @@ let
       "$@"
   '';
 
+  opcache = pkgs.runCommand "nextcloud-opcache-${package.version}" rec {
+    nativeBuildInputs = [ pkgs.php-embed ];
+    inherit package;
+    preloader = pkgs.writeScript "opcache-preloader.sh" ''
+      #!${pkgs.stdenv.shell}
+      ${lib.escapeShellArgs [
+        "${pkgs.php-embed}/bin/php"
+        "-d" "zend_extension=opcache.so"
+        "-d" "opcache.enable=1"
+        "-d" "opcache.enable_cli=1"
+        "-d" "opcache.max_accelerated_files=100000"
+        "-d" "opcache.file_cache_only=1"
+        "-d" "assert.exception=1"
+        "-d" "error_reporting=E_ALL"
+        "-d" "display_errors=stderr"
+      ]} -d "opcache.file_cache=$out" "$1" &> /dev/null || :
+    '';
+  } ''
+    mkdir "$out"
+    "$preloader" "$package/occ"
+    find "$package" -type f -name '*.php' -print0 \
+      | xargs -0 -P "$NIX_BUILD_CORES" -n1 "$preloader"
+    chmod -R go+rX "$out"
+  '';
+
   commonPhpConfig = [
     "expose_php=false"
     "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
@@ -50,6 +75,10 @@ let
     "post_max_size=1000M"
     "upload_max_filesize=1000M"
     "zend_extension=opcache.so"
+  ] ++ lib.optionals cfg.preloadOpcache [
+    "opcache.file_cache=${opcache}"
+    "opcache.file_cache_consistency_checks=0"
+    "opcache.validate_permission=0"
   ];
 
   phpCli = let
@@ -394,6 +423,18 @@ in {
 
         The ones not enabled by default are disabled due to performance or
         privacy concerns. For example some file types could cause segfaults.
+      '';
+    };
+
+    preloadOpcache = mkOption {
+      type = types.bool;
+      default = false;
+      description = ''
+        Whether to preload PHP's OPcache at build-time.
+
+        <warning><para>This is experimental and might result in errors, for
+        example if the shared memory based storage has no more space
+        available.</para></warning>
       '';
     };
 
