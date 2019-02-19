@@ -44,12 +44,12 @@ let
   '';
 
   opcache = pkgs.runCommand "nextcloud-opcache-${package.version}" rec {
-    nativeBuildInputs = [ pkgs.php-embed ];
+    nativeBuildInputs = [ php ];
     inherit package;
     preloader = pkgs.writeScript "opcache-preloader.sh" ''
       #!${pkgs.stdenv.shell}
       ${lib.escapeShellArgs [
-        "${pkgs.php-embed}/bin/php"
+        "${php}/bin/php"
         "-d" "zend_extension=opcache.so"
         "-d" "opcache.enable=1"
         "-d" "opcache.enable_cli=1"
@@ -97,7 +97,7 @@ let
 
   phpCli = let
     mkArgs = lib.concatMapStringsSep " " (opt: "-d ${lib.escapeShellArg opt}");
-    escPhp = lib.escapeShellArg "${pkgs.php-embed}/bin/php";
+    escPhp = lib.escapeShellArg "${php}/bin/php";
   in escPhp + " " + mkArgs (commonPhpConfig ++ [ "memory_limit=512M" ]);
 
   # NixOS options that are merged with the existing appids.
@@ -284,12 +284,12 @@ let
     name = "nextcloud-config";
     text = nextcloudConfig;
     destination = "/config.php";
-    checkPhase = "${pkgs.php}/bin/php -l \"$out/config.php\"";
+    checkPhase = "${php}/bin/php -l \"$out/config.php\"";
   };
 
   nextcloudInit = pkgs.runCommand "nextcloud-init" {
     nativeBuildInputs = [
-      postgresql pkgs.php pkgs.glibcLocales
+      postgresql php pkgs.glibcLocales
     ];
     outputs = [ "out" "sql" "data" ];
     nextcloud = package;
@@ -334,10 +334,12 @@ let
     touch "$out"
   '';
 
+  php = pkgs.php-embed;
+
   phpPackages = let
     needsGhostscript = lib.elem cfg.previewFileTypes [ "PDF" "Postscript" ];
   in pkgs.phpPackages.override ({
-    php = pkgs.php-embed;
+    inherit php;
   } // lib.optionalAttrs needsGhostscript {
     pkgs = pkgs // { imagemagick = pkgs.imagemagickBig; };
   });
@@ -668,7 +670,7 @@ in {
       serviceConfig.Type = "oneshot";
       serviceConfig.User = "nextcloud";
       serviceConfig.Group = "nextcloud";
-      serviceConfig.ExecStart = "${pkgs.php}/bin/php -f ${package}/cron.php";
+      serviceConfig.ExecStart = "${php}/bin/php -f ${package}/cron.php";
       serviceConfig.EnvironmentFile = "/var/lib/nextcloud/secrets.env";
       serviceConfig.PrivateTmp = true;
     };
