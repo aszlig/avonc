@@ -72,6 +72,7 @@ let
     "expose_php=false"
     "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
     "extension=${phpPackages.imagick}/lib/php/extensions/imagick.so"
+    "memory_limit=1000M"
     "opcache.enable=1"
     "opcache.enable_cli=1"
     "opcache.interned_strings_buffer=8"
@@ -88,6 +89,7 @@ let
     "pgsql.max_persistent=-1"
     "post_max_size=1000M"
     "upload_max_filesize=1000M"
+    "user_ini.filename="
     "zend_extension=opcache.so"
   ] ++ lib.optionals cfg.preloadOpcache [
     "opcache.file_cache=${opcache}"
@@ -121,7 +123,7 @@ let
   phpCli = let
     mkArgs = lib.concatMapStringsSep " " (opt: "-d ${lib.escapeShellArg opt}");
     escPhp = lib.escapeShellArg "${php}/bin/php";
-  in escPhp + " " + mkArgs (commonPhpConfig ++ [ "memory_limit=512M" ]);
+  in escPhp + " " + mkArgs commonPhpConfig;
 
   # NixOS options that are merged with the existing appids.
   extraAppOptions = {};
