@@ -23,6 +23,9 @@ let
   occUser = pkgs.writeScriptBin "nextcloud-occ" ''
     #!${pkgs.stdenv.shell} -e
     export NEXTCLOUD_CONFIG_DIR=${lib.escapeShellArg nextcloudConfigDir}
+    set -a
+    source /var/lib/nextcloud/secrets.env
+    set +a
     exec ${lib.escapeShellArg "${pkgs.utillinux}/bin/runuser"} \
       -u nextcloud -g nextcloud -- ${phpCli} \
       ${lib.escapeShellArg "${package}/occ"} \
@@ -150,6 +153,7 @@ let
     else if value == true then "true"
     else if value == false then "false"
     else if value == null then "null"
+    else if value ? __fromEnv then "$_ENV[${mkPhpString value.__fromEnv}]"
     else if lib.isAttrs value then mkPhpAssocArray value
     else if lib.isList value then mkPhpArray value
     else mkPhpString value;
@@ -186,8 +190,11 @@ let
 
   nextcloudConfigDir = let
     nextcloudConfig = mkPhpConfig ({
-      instanceid = "autogenerate"; # XXX
-      trusted_domains = [ "XXX" ]; # XXX
+      instanceid.__fromEnv = "__NEXTCLOUD_SECRETS_INSTANCEID";
+      passwordsalt.__fromEnv = "__NEXTCLOUD_SECRETS_PASSWORDSALT";
+      secret.__fromEnv = "__NEXTCLOUD_SECRETS_SECRET";
+
+      trusted_domains = [];
       datadirectory = "/var/lib/nextcloud/data";
       version = fullVersion; # FIXME: Should be set at runtime!
       dbtype = "pgsql";
@@ -250,9 +257,11 @@ let
       tempdirectory = "/tmp"; # TODO: NOT /tmp, because large files!
       hashingCost = 10; # FIXME: There are also other options we need to set
                         #        via php.ini
+
+      # By default this contains '.htaccess', but our web server doesn't parse
+      # these files, so we can safely allow them.
       blacklisted_files = [];
       cipher = "AES-256-CFB";
-      secret = "..."; # TODO: Generate!
 
       "upgrade.disable-web" = true;
       # data-fingerprint = ???; XXX: Figure out!
@@ -311,7 +320,7 @@ let
 
     rm "$PWD/data/index.html" "$PWD/data/.htaccess"
     pg_dump -h "$TMPDIR" nextcloud > "$sql"
-    tar cf "$data" data
+    tar cf "$data" -C data .
     touch "$out"
   '';
 
@@ -539,7 +548,7 @@ in {
       before = [ "nextcloud.service" ];
       after = [ "postgresql.service" ];
 
-      unitConfig.ConditionPathExists = "!/var/lib/nextcloud/data";
+      unitConfig.ConditionPathExists = "!/var/lib/nextcloud/.init-done";
       environment.PGHOST = "/run/postgresql";
 
       serviceConfig = {
@@ -557,6 +566,43 @@ in {
       };
     };
 
+    systemd.services.nextcloud-secrets-init = {
+      description = "Nextcloud Secret Values Initialisation";
+      requiredBy = [ "nextcloud-init.service" ];
+      before = [ "nextcloud-init.service" "nextcloud.service" ];
+
+      unitConfig.ConditionPathExists = "!/var/lib/nextcloud/secrets.env";
+
+      serviceConfig = {
+        Type = "oneshot";
+        RemainAfterExit = true;
+        UMask = "0077";
+        StateDirectory = "nextcloud";
+        StateDirectoryMode = "0710";
+        Group = "nextcloud";
+        ExecStart = pkgs.writeScript "nextcloud-secrets-init.py" ''
+          #!${pkgs.python3Packages.python.interpreter}
+          import secrets, string
+
+          LOWER_DIGITS = string.ascii_lowercase + string.digits
+
+          result = {
+            'INSTANCEID': "".join(secrets.choice(LOWER_DIGITS)
+                                  for i in range(10)),
+
+            # This is deprecated, but let's generate it anyway in case
+            # some app still uses this value.
+            'PASSWORDSALT': secrets.token_urlsafe(30),
+
+            'SECRET': secrets.token_urlsafe(48),
+          }
+          lines = ['__NEXTCLOUD_SECRETS_' + key + '="' + val + '"\n'
+                   for key, val in result.items()]
+          open('/var/lib/nextcloud/secrets.env', 'w').write("".join(lines))
+        '';
+      };
+    };
+
     systemd.services.nextcloud-init = {
       description = "Nextcloud Data Initialisation";
       requiredBy = [ "nextcloud.service" ];
@@ -564,7 +610,7 @@ in {
       after = [ "nextcloud-init-db.service" ];
       before = [ "nextcloud.service" ];
 
-      unitConfig.ConditionPathExists = "!/var/lib/nextcloud/data";
+      unitConfig.ConditionPathExists = "!/var/lib/nextcloud/.init-done";
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
 
       serviceConfig = {
@@ -572,15 +618,18 @@ in {
         User = "nextcloud";
         Group = "nextcloud";
         RemainAfterExit = true;
-        StateDirectory = "nextcloud";
+        PermissionsStartOnly = true;
+        StateDirectory = "nextcloud/data";
+        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         ExecStart = let
           tar = "${pkgs.gnutar}/bin/tar";
           occ = lib.escapeShellArg "${package}/occ";
         in [
-          "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud"
-          "${pkgs.php}/bin/php ${occ} encryption:enable"
-          #"${pkgs.php}/bin/php ${occ} encryption:encrypt-all"
+          "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data"
+          "${phpCli} ${occ} encryption:enable"
         ];
+        ExecStartPost =
+          "${pkgs.coreutils}/bin/touch /var/lib/nextcloud/.init-done";
       };
     };
 
@@ -593,7 +642,8 @@ in {
         Type = "notify";
         User = "nextcloud";
         Group = "nextcloud";
-        StateDirectory = "nextcloud";
+        StateDirectory = "nextcloud/data";
+        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         ExecStart = "@${uwsgiNextcloud} nextcloud";
         KillMode = "process";
         ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
@@ -611,6 +661,7 @@ in {
       serviceConfig.User = "nextcloud";
       serviceConfig.Group = "nextcloud";
       serviceConfig.ExecStart = "${pkgs.php}/bin/php -f ${package}/cron.php";
+      serviceConfig.EnvironmentFile = "/var/lib/nextcloud/secrets.env";
       serviceConfig.PrivateTmp = true;
     };
 
