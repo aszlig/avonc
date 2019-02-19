@@ -32,6 +32,17 @@ let
       "$@"
   '';
 
+  postgresql = config.services.postgresql.package;
+
+  dbShell = pkgs.writeScriptBin "nextcloud-dbshell" ''
+    export PGHOST=/run/postgresql
+    exec ${lib.escapeShellArg "${pkgs.utillinux}/bin/runuser"} \
+      -u nextcloud -g nextcloud -- \
+      ${lib.escapeShellArg "${postgresql}/bin/psql"} \
+      nextcloud \
+      "$@"
+  '';
+
   opcache = pkgs.runCommand "nextcloud-opcache-${package.version}" rec {
     nativeBuildInputs = [ pkgs.php-embed ];
     inherit package;
@@ -278,8 +289,7 @@ let
 
   nextcloudInit = pkgs.runCommand "nextcloud-init" {
     nativeBuildInputs = [
-      config.services.postgresql.package
-      pkgs.php pkgs.glibcLocales
+      postgresql pkgs.php pkgs.glibcLocales
     ];
     outputs = [ "out" "sql" "data" ];
     nextcloud = package;
@@ -556,9 +566,7 @@ in {
         User = "postgres";
         Group = "postgres";
         RemainAfterExit = true;
-        ExecStart = let
-          postgresql = config.services.postgresql.package;
-        in [
+        ExecStart = [
           "${postgresql}/bin/createuser nextcloud"
           "${postgresql}/bin/createdb -O nextcloud nextcloud"
           "${postgresql}/bin/psql -1 -f ${nextcloudInit.sql} nextcloud"
@@ -665,6 +673,6 @@ in {
       serviceConfig.PrivateTmp = true;
     };
 
-    environment.systemPackages = [ occUser ];
+    environment.systemPackages = [ occUser dbShell ];
   };
 }
