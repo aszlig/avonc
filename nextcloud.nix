@@ -95,6 +95,29 @@ let
     "opcache.validate_permission=0"
   ];
 
+  # Results in a systemd unit for nextcloud.service which only contains
+  # BindReadOnlyPaths options. The rest of the service is defined later in
+  # systemd.services.nextcloud and the contents here are merged accordingly.
+  nextcloudSandboxPaths = pkgs.runCommand "nextcloud-sandbox-paths" {
+    closureInfo = pkgs.closureInfo {
+      rootPaths = [ uwsgiNextcloud pkgs.glibcLocales php pkgs.dash ];
+    };
+  } ''
+    mkdir -p "$out/lib/systemd/system"
+
+    for service in nextcloud nextcloud-cron; do
+      serviceFile="$out/lib/systemd/system/$service.service"
+
+      echo '[Service]' > "$serviceFile"
+
+      while read storePath; do
+        if [ ! -L "$storePath" ]; then
+          echo "BindReadOnlyPaths=$storePath:$storePath:rbind"
+        fi
+      done < "$closureInfo/store-paths" >> "$serviceFile"
+    done
+  '';
+
   phpCli = let
     mkArgs = lib.concatMapStringsSep " " (opt: "-d ${lib.escapeShellArg opt}");
     escPhp = lib.escapeShellArg "${php}/bin/php";
@@ -258,7 +281,10 @@ let
           "MSOffice2003" "MSOffice2007" "MSOfficeDoc" "OpenDocument"
           "StarOffice"
         ];
-      in lib.optionalString isNeeded "${pkgs.libreoffice}/bin/libreoffice";
+        # TODO: Put into a separate sandbox.
+        libreoffice = "${pkgs.libreoffice-unwrapped}/lib/libreoffice/program/"
+                    + "soffice.bin";
+      in lib.optionalString isNeeded libreoffice;
 
       # openssl.config = "... ECDSA maybe?"; # XXX
 
@@ -643,6 +669,8 @@ in {
       };
     };
 
+    systemd.packages = [ nextcloudSandboxPaths ];
+
     systemd.services.nextcloud = {
       description = "Nextcloud Server";
       requires = [ "postgresql.service" ];
@@ -657,7 +685,23 @@ in {
         ExecStart = "@${uwsgiNextcloud} nextcloud";
         KillMode = "process";
         ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
+
+        BindReadOnlyPaths = [
+          "/run/postgresql" "/run/systemd/notify" "/etc/resolv.conf"
+          # Nextcloud uses shell_exec() for things like generating office
+          # document previews, so we need to have /bin/sh.
+          "${pkgs.dash}/bin/dash:/bin/sh"
+        ];
+        MountAPIVFS = true;
+        MountFlags = "private";
+        PrivateDevices = true;
         PrivateTmp = true;
+        PrivateUsers = true;
+        ProtectControlGroups = true;
+        ProtectKernelModules = true;
+        ProtectKernelTunables = true;
+        RootDirectory = nextcloudSandboxPaths;
+        TemporaryFileSystem = "/";
       };
     };
 
@@ -667,12 +711,32 @@ in {
       after = [ "nextcloud.service" ];
 
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
-      serviceConfig.Type = "oneshot";
-      serviceConfig.User = "nextcloud";
-      serviceConfig.Group = "nextcloud";
-      serviceConfig.ExecStart = "${php}/bin/php -f ${package}/cron.php";
-      serviceConfig.EnvironmentFile = "/var/lib/nextcloud/secrets.env";
-      serviceConfig.PrivateTmp = true;
+
+      serviceConfig = {
+        Type = "oneshot";
+        User = "nextcloud";
+        Group = "nextcloud";
+        StateDirectory = "nextcloud/data";
+        ExecStart = "${php}/bin/php -f ${package}/cron.php";
+        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+
+        BindReadOnlyPaths = [
+          "/run/postgresql" "/etc/resolv.conf"
+          # Nextcloud uses shell_exec() for things like generating office
+          # document previews, so we need to have /bin/sh.
+          "${pkgs.dash}/bin/dash:/bin/sh"
+        ];
+        MountAPIVFS = true;
+        MountFlags = "private";
+        PrivateDevices = true;
+        PrivateTmp = true;
+        PrivateUsers = true;
+        ProtectControlGroups = true;
+        ProtectKernelModules = true;
+        ProtectKernelTunables = true;
+        RootDirectory = nextcloudSandboxPaths;
+        TemporaryFileSystem = "/";
+      };
     };
 
     environment.systemPackages = [ occUser dbShell ];
