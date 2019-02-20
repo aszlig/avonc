@@ -267,6 +267,7 @@ def get_appmeta(appdata: NcApp) -> Dict[str, Any]:
     appmeta['licenses'] = appdata.licenses
     appmeta['summary'] = clean_meta(appdata.summary)
     appmeta['description'] = clean_meta(appdata.description)
+    appmeta['isShipped'] = False
     return appmeta
 
 
@@ -278,6 +279,34 @@ def update_appstate(state: Dict[str, Any], appid: str, appdata: NcApp) -> None:
     for unknown_key in cruft:
         del state[appid][unknown_key]
     state[appid]['meta'] = get_appmeta(appdata)
+
+
+def get_shipped_apps(ncpath: str):
+    specpath: str = os.path.join(ncpath, 'core/shipped.json')
+    spec: Dict[str, List[str]] = json.load(open(specpath, 'r'))
+
+    result: Dict[str, Any] = {}
+
+    for appid in spec['shippedApps']:
+        if appid in spec['alwaysEnabled']:
+            continue
+
+        app_path: str = os.path.join(ncpath, 'apps', appid)
+        info_path: str = os.path.join(app_path, 'appinfo/info.xml')
+        xml = ET.parse(info_path)
+
+        name: str = clean_meta(xml.find('name').text)
+        summary = xml.find('summary')
+
+        result[appid] = {'meta': {
+            'name': name,
+            'licenses': [xml.find('licence').text],
+            'summary': name if summary is None else clean_meta(summary.text),
+            'description': clean_meta(xml.find('description').text),
+            'defaultEnable': xml.find('default_enable') is not None,
+            'isShipped': True,
+        }}
+    return result
 
 
 def main(info_file: str) -> None:
@@ -332,7 +361,11 @@ def main(info_file: str) -> None:
         finally:
             update_appstate(current_state['applications'], appid, appdata)
 
-    obsolete = set(current_state['applications'].keys()) - set(apps.keys())
+    shipped = get_shipped_apps(ncpath)
+    current_state['applications'].update(shipped)
+    appids = set(apps.keys()) | set(shipped.keys())
+
+    obsolete = set(current_state['applications'].keys()) - appids
     for appid in obsolete:
         removed.add(appid)
         del current_state['applications'][appid]
@@ -346,7 +379,7 @@ def main(info_file: str) -> None:
         stats.append("Apps updated: " + ', '.join(updated))
 
     if removed:
-        stats.append("Apps removed: " + ', '.join(updated))
+        stats.append("Apps removed: " + ', '.join(removed))
 
     tqdm.write("\n".join(stats), file=sys.stderr)
 

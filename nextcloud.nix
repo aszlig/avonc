@@ -138,10 +138,12 @@ let
 
     configurePhase = let
       inherit (upstreamInfo) applications;
+      notShipped = lib.const (appdata: appdata.meta.isShipped);
+      extApps = lib.filterAttrs notShipped applications;
       isEnabled = name: cfg.apps.${name}.enable;
-      enabledApps = lib.filter isEnabled (lib.attrNames applications);
+      enabledApps = lib.filter isEnabled (lib.attrNames extApps);
       appPaths = lib.genAttrs enabledApps (name: pkgs.fetchzip {
-        inherit (applications.${name}) url sha256;
+        inherit (extApps.${name}) url sha256;
       });
     in lib.concatStrings (lib.mapAttrsToList (appid: path: ''
       cp -TR ${lib.escapeShellArg path} apps/${lib.escapeShellArg appid}
@@ -512,7 +514,7 @@ in {
     apps = lib.mapAttrs (appId: appinfo: {
       enable = mkOption {
         type = types.bool;
-        default = false;
+        default = appinfo.meta.defaultEnable or false;
         description = ''
           Whether to enable the ${appinfo.meta.name} (${appinfo.meta.summary})
           application.
