@@ -354,7 +354,6 @@ let
       --admin-pass "$adminPass" \
       --data-dir "$PWD/data"
 
-    ${phpCli} "$nextcloud/occ" app:enable encryption
     ${phpCli} "$nextcloud/occ" background:cron
     ${phpCli} "$nextcloud/occ" db:convert-filecache-bigint
 
@@ -678,10 +677,10 @@ in {
         ExecStart = let
           tar = "${pkgs.gnutar}/bin/tar";
           occ = lib.escapeShellArg "${package}/occ";
+          wantEncryption = cfg.apps.encryption.enable;
         in [
           "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data"
-          "${phpCli} ${occ} encryption:enable"
-        ];
+        ] ++ lib.optional wantEncryption "${phpCli} ${occ} encryption:enable";
         ExecStartPost =
           "${pkgs.coreutils}/bin/touch /var/lib/nextcloud/.init-done";
       };
