@@ -138,7 +138,7 @@ let
 
     configurePhase = let
       inherit (upstreamInfo) applications;
-      notShipped = lib.const (appdata: appdata.meta.isShipped);
+      notShipped = lib.const (appdata: !appdata.meta.isShipped);
       extApps = lib.filterAttrs notShipped applications;
       isEnabled = name: cfg.apps.${name}.enable;
       enabledApps = lib.filter isEnabled (lib.attrNames extApps);
@@ -317,6 +317,56 @@ let
     checkPhase = "${php}/bin/php -l \"$out/config.php\"";
   };
 
+  mkEnableDisableApps = occCmd: disableOnly: let
+    appPart = lib.partition (a: cfg.apps.${a}.enable) (lib.attrNames cfg.apps);
+
+    newState = pkgs.writeText "nextcloud-appstate.json" (builtins.toJSON ({
+      disable = appPart.wrong;
+    } // lib.optionalAttrs (!disableOnly) {
+      enable = lib.genAttrs appPart.right (app: cfg.apps.${app}.onlyGroups);
+    }));
+
+    enableDisableApps = pkgs.writeScript "nextcloud-enable-disable-apps.py" ''
+      #!${pkgs.python3Packages.python.interpreter}
+      import json
+      import subprocess
+      import sys
+
+      occ_cmd = sys.argv[2:]
+      cmd = occ_cmd + ['app:list', '--output=json']
+      applist = subprocess.check_output(cmd)
+      oldstate = json.loads(applist)
+      newstate = json.load(open(sys.argv[1], 'r'))
+
+      if 'enable' in newstate:
+        newenabled = set(newstate['enable'].keys()) \
+                   - set(oldstate['enabled'].keys())
+
+        group_deferred = {}
+
+        for appid in newenabled:
+          groups = newstate['enable'][appid]
+          if groups is not None:
+            group_deferred[appid] = groups
+            continue
+          subprocess.check_call(occ_cmd + ['app:enable', appid])
+
+        for appid, groups in group_deferred.items():
+          groupargs = [arg for group in groups for arg in ['-g', group]]
+          subprocess.check_call(occ_cmd + ['app:enable'] + groupargs + [appid])
+
+      newdisabled = set(newstate['disable']) \
+                  - set(oldstate['disabled'].keys())
+
+      for appid in newdisabled:
+        if appid not in oldstate['enabled'] and \
+           appid not in oldstate['disabled']:
+          continue
+        subprocess.check_call(occ_cmd + ['app:disable', appid])
+    '';
+
+  in "${lib.escapeShellArg enableDisableApps} ${newState} ${occCmd}";
+
   nextcloudInit = pkgs.runCommand "nextcloud-init" {
     nativeBuildInputs = [
       postgresql php pkgs.glibcLocales
@@ -356,6 +406,8 @@ let
 
     ${phpCli} "$nextcloud/occ" background:cron
     ${phpCli} "$nextcloud/occ" db:convert-filecache-bigint
+
+    ${mkEnableDisableApps "${phpCli} \"$nextcloud/occ\"" true}
 
     rm "$PWD/data/index.html" "$PWD/data/.htaccess"
     pg_dump -h "$TMPDIR" nextcloud > "$sql"
@@ -698,6 +750,48 @@ in {
     };
 
     systemd.packages = [ nextcloudSandboxPaths ];
+
+    systemd.services.nextcloud-upgrade = let
+      gcRoot = "/nix/var/nix/gcroots/nextcloud";
+      newPackage = lib.escapeShellArg package;
+      newConfig = nextcloudConfigDir;
+      occ = lib.escapeShellArg "${package}/occ";
+    in {
+      description = "Nextcloud Update Actions";
+      requiredBy = [ "nextcloud.service" ];
+      requires = [ "nextcloud-init-db.service" "nextcloud-init.service" ];
+      after = [ "nextcloud-init-db.service" "nextcloud-init.service" ];
+      before = [ "nextcloud.service" "nextcloud-cron.service" ];
+
+      environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
+
+      script = ''
+        if [ -e ${gcRoot} ]; then
+          ( export NEXTCLOUD_CONFIG_DIR=${gcRoot}/config
+            ${mkEnableDisableApps "${phpCli} ${gcRoot}/package/occ" false}
+            ${phpCli} ${occ} upgrade
+          )
+        else
+          ${mkEnableDisableApps "${phpCli} ${occ}" false}
+        fi
+      '';
+
+      postStart = ''
+        mkdir -p ${gcRoot}
+        ${pkgs.coreutils}/bin/ln -svfT ${newPackage} ${gcRoot}/package
+        ${pkgs.coreutils}/bin/ln -svfT ${newConfig} ${gcRoot}/config
+      '';
+
+      serviceConfig = {
+        Type = "oneshot";
+        User = "nextcloud";
+        Group = "nextcloud";
+        RemainAfterExit = true;
+        PermissionsStartOnly = true;
+        StateDirectory = "nextcloud/data";
+        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+      };
+    };
 
     systemd.services.nextcloud = {
       description = "Nextcloud Server";
