@@ -234,7 +234,7 @@ let
 
       trusted_domains = [];
       datadirectory = "/var/lib/nextcloud/data";
-      version = fullVersion; # FIXME: Should be set at runtime!
+      version = fullVersion;
       dbtype = "pgsql";
       dbhost = "/run/postgresql";
       dbname = "nextcloud";
@@ -249,18 +249,16 @@ let
       overwritehost = "${cfg.domain}${maybePort}";
       overwriteprotocol = urlScheme;
       overwritewebroot = "/";
-      "overwrite.cli.url" = "/"; # XXX: maybe? baseUrl;
+      "overwrite.cli.url" = "/";
       "htaccess.RewriteBase" = "/";
       "htaccess.IgnoreFrontController" = true;
 
       updatechecker = false;
-      connectivity_check_domains = [ "headcounter.org" "moonid.net" ];
       check_for_working_wellknown_setup = false;
       check_for_working_htaccess = false;
       config_is_read_only = true;
 
       log_type = "errorlog";
-      "auth.bruteforce.protection.enabled" = false; # XXX: Remove me!
       logdateformat = ""; # Already taken care by journald.
 
       appstoreenabled = false;
@@ -290,14 +288,10 @@ let
                     + "soffice.bin";
       in lib.optionalString isNeeded libreoffice;
 
-      # openssl.config = "... ECDSA maybe?"; # XXX
-
       "memcache.local" = "\\OC\\Memcache\\APCu";
 
       supportedDatabases = [ "pgsql" ];
       tempdirectory = "/tmp"; # TODO: NOT /tmp, because large files!
-      hashingCost = 10; # FIXME: There are also other options we need to set
-                        #        via php.ini
 
       # By default this contains '.htaccess', but our web server doesn't parse
       # these files, so we can safely allow them.
@@ -305,11 +299,9 @@ let
       cipher = "AES-256-CFB";
 
       "upgrade.disable-web" = true;
-      # data-fingerprint = ???; XXX: Figure out!
-
-    } // lib.optionalAttrs (cfg.theme != "default") {
+    } // (lib.optionalAttrs (cfg.theme != "default") {
       theme = "nextcloud-${cfg.theme}";
-    });
+    }) // cfg.extraConfig);
   in pkgs.writeTextFile {
     name = "nextcloud-config";
     text = nextcloudConfig;
@@ -586,6 +578,19 @@ in {
         '';
       };
     } // (extraAppOptions.${appId} or {})) upstreamInfo.applications;
+
+    extraConfig = lib.mkOption {
+      type = types.attrsOf types.unspecified;
+      default = {};
+      example = {
+        hashingCost = 50;
+        lost_password_link = "disabled";
+      };
+      description = ''
+        Extra options to add to the Nextcloud config file, which will be
+        serialised into a PHP array.
+      '';
+    };
   };
 
   config = {
