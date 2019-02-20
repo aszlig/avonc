@@ -522,6 +522,17 @@ in {
           xlink:href='${appinfo.meta.homepage}'/>.
         '';
       };
+
+      onlyGroups = mkOption {
+        type = types.nullOr (types.listOf types.str);
+        default = null;
+        example = [ "admin" "special" ];
+        description = ''
+          If the value is not <literal>null</literal>, enable the app only for
+          the groups specified as a list. The groups are created if they do not
+          exist.
+        '';
+      };
     } // (extraAppOptions.${appId} or {})) upstreamInfo.applications;
   };
 
