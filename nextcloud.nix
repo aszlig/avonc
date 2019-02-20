@@ -72,7 +72,7 @@ let
     "expose_php=false"
     "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
     "extension=${phpPackages.imagick}/lib/php/extensions/imagick.so"
-    "memory_limit=1000M"
+    "memory_limit=${toString cfg.maxUploadSize}M"
     "opcache.enable=1"
     "opcache.enable_cli=1"
     "opcache.interned_strings_buffer=8"
@@ -87,8 +87,8 @@ let
     "pgsql.log_notice=0"
     "pgsql.max_links=-1"
     "pgsql.max_persistent=-1"
-    "post_max_size=1000M"
-    "upload_max_filesize=1000M"
+    "post_max_size=${toString cfg.maxUploadSize}M"
+    "upload_max_filesize=${toString cfg.maxUploadSize}M"
     "user_ini.filename="
     "zend_extension=opcache.so"
   ] ++ lib.optionals cfg.preloadOpcache [
@@ -496,6 +496,19 @@ in {
       '';
     };
 
+    maxUploadSize = mkOption {
+      type = types.ints.unsigned;
+      default = 512;
+      example = 1024;
+      description = ''
+        The maximum file size allowed in uploads in megabytes.
+
+        <warning><para>Note that this setting also raises the maximum amount of
+        memory a single worker process might consume to the value specified
+        here.</para></warning>
+      '';
+    };
+
     apps = lib.mapAttrs (appId: appinfo: {
       enable = mkOption {
         type = types.bool;
@@ -548,6 +561,7 @@ in {
 
         "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
           extraConfig = ''
+            client_max_body_size ${toString cfg.maxUploadSize}M;
             uwsgi_intercept_errors on;
             uwsgi_pass unix:///run/nextcloud.socket;
           '';
