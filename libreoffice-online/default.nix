@@ -31,8 +31,42 @@ let
     net.listen = "systemd";
   };
 
+  richdocumentsPatch = pkgs.runCommand "richdocuments-substituted.patch" {
+    nativeBuildInputs = lib.singleton (pkgs.writeScriptBin "extract-disco" ''
+      #!${pkgs.python3Packages.python.interpreter}
+      import sys
+      from xml.etree import ElementTree as ET
+
+      xml = ET.parse(sys.argv[1]).getroot()
+      assert xml.tag == 'wopi-discovery'
+      mimetypes = set()
+      for app in xml.iterfind('./net-zone/app'):
+          mimetypes.add(app.get('name'))
+      array = ["'" + mt.replace('\\', '\\\\').replace("'", "\\'") + "'"
+               for mt in mimetypes]
+      sys.stdout.write('[' + ', '.join(array) + ']')
+    '');
+    discoveryXml = "${package}/share/libreoffice-online/discovery.xml";
+    loolLeafletUrl = "${config.nextcloud.baseUrl}/loleaflet/"
+                   + "${package.versionHash}/loleaflet.html?";
+    patch = ./richdocuments.patch;
+  } ''
+    loolMimeTypesArray="$(extract-disco "$discoveryXml")"
+    substitute "$patch" "$out" \
+      --subst-var-by LOOL_MIME_TYPES_ARRAY "$loolMimeTypesArray" \
+      --subst-var-by LOOL_LEAFLET_URL "$loolLeafletUrl"
+  '';
+
 in {
   config = lib.mkIf config.nextcloud.apps.richdocuments.enable {
+    nextcloud.extraPostPatch = ''
+      rm apps/richdocuments/lib/Backgroundjobs/ObtainCapabilities.php \
+         apps/richdocuments/lib/Service/CapabilitiesService.php \
+         apps/richdocuments/lib/WOPI/Parser.php \
+         apps/richdocuments/lib/WOPI/DiscoveryManager.php
+      patch -p1 -d apps/richdocuments < ${richdocumentsPatch}
+    '';
+
     users.users.libreoffice-online = {
       description = "LibreOffice Online User";
       group = "libreoffice-online";

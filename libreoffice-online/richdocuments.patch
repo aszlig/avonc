@@ -1,0 +1,218 @@
+diff --git a/appinfo/info.xml b/appinfo/info.xml
+index 1e0b42a6..f1042079 100644
+--- a/appinfo/info.xml
++++ b/appinfo/info.xml
+@@ -27,9 +27,6 @@
+ 	<dependencies>
+ 		<nextcloud min-version="13" max-version="16" />
+ 	</dependencies>
+-	<background-jobs>
+-		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
+-	</background-jobs>
+ 	<settings>
+ 		<admin>OCA\Richdocuments\Settings\Admin</admin>
+ 		<admin-section>OCA\Richdocuments\Settings\Section</admin-section>
+diff --git a/lib/Capabilities.php b/lib/Capabilities.php
+index 9efc7b69..481f2ce8 100644
+--- a/lib/Capabilities.php
++++ b/lib/Capabilities.php
+@@ -52,7 +52,6 @@ class Capabilities implements ICapability {
+ 	}
+ 
+ 	public function getCapabilities() {
+-		$collaboraCapabilities = $this->getCollaboraCapabilities();
+ 		return [
+ 			'richdocuments' => [
+ 				'mimetypes' => [
+@@ -63,29 +62,10 @@ class Capabilities implements ICapability {
+ 					'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+ 					'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+ 				],
+-				'collabora' => $collaboraCapabilities,
+-				'direct_editing' => isset($collaboraCapabilities['hasMobileSupport']) ? : false,
+-				'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) ? : false,
++				'collabora' => [],
++				'direct_editing' => false,
++				'templates' => false,
+ 			],
+ 		];
+ 	}
+-
+-	/**
+-	 * @return array
+-	 * @throws \OCP\Files\NotPermittedException
+-	 */
+-	private function getCollaboraCapabilities() {
+-		try {
+-			$file = $this->appData->getFile('capabilities.json');
+-			$decodedFile = \json_decode($file->getContent(), true);
+-		} catch (NotFoundException $e) {
+-			return [];
+-		}
+-
+-		if (!is_array($decodedFile)) {
+-			return [];
+-		}
+-
+-		return $decodedFile;
+-	}
+ }
+diff --git a/lib/Controller/DocumentController.php b/lib/Controller/DocumentController.php
+index b4c4d44c..d0a0af0d 100644
+--- a/lib/Controller/DocumentController.php
++++ b/lib/Controller/DocumentController.php
+@@ -12,7 +12,6 @@
+ namespace OCA\Richdocuments\Controller;
+ 
+ use OCA\Richdocuments\TokenManager;
+-use OCA\Richdocuments\WOPI\Parser;
+ use \OCP\AppFramework\Controller;
+ use OCP\AppFramework\Http;
+ use OCP\AppFramework\Http\JSONResponse;
+diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
+index 8c56f9d1..6373de38 100644
+--- a/lib/Controller/SettingsController.php
++++ b/lib/Controller/SettingsController.php
+@@ -11,8 +11,6 @@
+ 
+ namespace OCA\Richdocuments\Controller;
+ 
+-use OCA\Richdocuments\Service\CapabilitiesService;
+-use OCA\Richdocuments\WOPI\DiscoveryManager;
+ use \OCP\AppFramework\Controller;
+ use OCP\AppFramework\Http\JSONResponse;
+ use \OCP\IRequest;
+@@ -28,12 +26,8 @@ class SettingsController extends Controller{
+ 	private $appConfig;
+ 	/** @var IConfig */
+ 	private $config;
+-	/** @var DiscoveryManager  */
+-	private $discoveryManager;
+ 	/** @var string */
+ 	private $userId;
+-	/** @var CapabilitiesService */
+-	private $capabilitiesService;
+ 
+ 	/**
+ 	 * @param string $appName
+@@ -41,7 +35,6 @@ class SettingsController extends Controller{
+ 	 * @param IL10N $l10n
+ 	 * @param AppConfig $appConfig
+ 	 * @param IConfig $config
+-	 * @param DiscoveryManager $discoveryManager
+ 	 * @param string $userId
+ 	 */
+ 	public function __construct($appName,
+@@ -49,16 +42,12 @@ class SettingsController extends Controller{
+ 								IL10N $l10n,
+ 								AppConfig $appConfig,
+ 								IConfig $config,
+-								DiscoveryManager $discoveryManager,
+-								$userId,
+-								CapabilitiesService $capabilitiesService) {
++								$userId) {
+ 		parent::__construct($appName, $request);
+ 		$this->l10n = $l10n;
+ 		$this->appConfig = $appConfig;
+ 		$this->config = $config;
+-		$this->discoveryManager = $discoveryManager;
+ 		$this->userId = $userId;
+-		$this->capabilitiesService = $capabilitiesService;
+ 	}
+ 
+ 	/**
+@@ -121,9 +110,6 @@ class SettingsController extends Controller{
+ 			$this->appConfig->setAppValue('canonical_webroot', $canonical_webroot);
+ 		}
+ 
+-		$this->discoveryManager->refretch();
+-		$this->capabilitiesService->refretch();
+-
+ 		$response = [
+ 			'status' => 'success',
+ 			'data' => ['message' => $message]
+diff --git a/lib/TokenManager.php b/lib/TokenManager.php
+index 9918aa30..f1e3f416 100644
+--- a/lib/TokenManager.php
++++ b/lib/TokenManager.php
+@@ -25,7 +25,6 @@ use OC\Share\Constants;
+ use OCA\Richdocuments\Db\WopiMapper;
+ use OCA\Richdocuments\Helper;
+ use OCA\Richdocuments\Db\Wopi;
+-use OCA\Richdocuments\WOPI\Parser;
+ use OCP\Files\File;
+ use OCP\Files\IRootFolder;
+ use OCP\IURLGenerator;
+@@ -39,8 +38,6 @@ class TokenManager {
+ 	private $shareManager;
+ 	/** @var IURLGenerator */
+ 	private $urlGenerator;
+-	/** @var Parser */
+-	private $wopiParser;
+ 	/** @var AppConfig */
+ 	private $appConfig;
+ 	/** @var string */
+@@ -50,11 +47,12 @@ class TokenManager {
+ 	/** @var IL10N */
+ 	private $trans;
+ 
++	const LOOL_MIME_TYPES = @LOOL_MIME_TYPES_ARRAY@;
++
+ 	/**
+ 	 * @param IRootFolder $rootFolder
+ 	 * @param IManager $shareManager
+ 	 * @param IURLGenerator $urlGenerator
+-	 * @param Parser $wopiParser
+ 	 * @param AppConfig $appConfig
+ 	 * @param string $UserId
+ 	 * @param WopiMapper $wopiMapper
+@@ -63,7 +61,6 @@ class TokenManager {
+ 	public function __construct(IRootFolder $rootFolder,
+ 								IManager $shareManager,
+ 								IURLGenerator $urlGenerator,
+-								Parser $wopiParser,
+ 								AppConfig $appConfig,
+ 								$UserId,
+ 								WopiMapper $wopiMapper,
+@@ -71,7 +68,6 @@ class TokenManager {
+ 		$this->rootFolder = $rootFolder;
+ 		$this->shareManager = $shareManager;
+ 		$this->urlGenerator = $urlGenerator;
+-		$this->wopiParser = $wopiParser;
+ 		$this->appConfig = $appConfig;
+ 		$this->trans = $trans;
+ 		$this->userId = $UserId;
+@@ -149,15 +145,10 @@ class TokenManager {
+ 
+ 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name);
+ 
+-		try {
+-
+-			return [
+-				$this->wopiParser->getUrlSrc($file->getMimeType())['urlsrc'],
+-				$wopi->getToken(),
+-			];
+-		} catch (\Exception $e){
+-			throw $e;
+-		}
++		if (in_array($file->getMimeType(), self::LOOL_MIME_TYPES))
++			return ['@LOOL_LEAFLET_URL@', $wopi->getToken()];
++		else
++			throw new \Exception('Could not find urlsrc in WOPI');
+ 	}
+ 
+ 	public function getTokenForTemplate(File $file, $userId, $templateDestination) {
+@@ -185,9 +176,9 @@ class TokenManager {
+ 
+ 		$wopi = $this->wopiMapper->generateFileToken($file->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $templateDestination);
+ 
+-		return [
+-			$this->wopiParser->getUrlSrc($file->getMimeType())['urlsrc'],
+-			$wopi->getToken(),
+-		];
++		if (in_array($file->getMimeType(), self::LOOL_MIME_TYPES))
++			return ['@LOOL_LEAFLET_URL@', $wopi->getToken()];
++		else
++			throw new \Exception('Could not find urlsrc in WOPI');
+ 	}
+ }

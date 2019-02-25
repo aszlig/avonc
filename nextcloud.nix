@@ -9,7 +9,6 @@ let
   maybePort = let
     needsExplicit = !lib.elem cfg.port [ 80 443 ];
   in lib.optionalString needsExplicit ":${toString cfg.port}";
-  baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
   upstreamInfo = lib.importJSON ./deps/upstream.json;
 
@@ -136,7 +135,7 @@ let
       inherit (upstreamInfo.nextcloud) url sha256;
     };
 
-    configurePhase = let
+    prePatch = let
       inherit (upstreamInfo) applications;
       notShipped = lib.const (appdata: !appdata.meta.isShipped);
       extApps = lib.filterAttrs notShipped applications;
@@ -147,7 +146,8 @@ let
       });
     in lib.concatStrings (lib.mapAttrsToList (appid: path: ''
       cp -TR ${lib.escapeShellArg path} apps/${lib.escapeShellArg appid}
-    '') appPaths);
+      chmod -R +w apps/${lib.escapeShellArg appid}
+    '') appPaths); # FIXME: Avoid the chmod above!
 
     buildPhase = lib.optionalString (cfg.theme == "breeze-dark") ''
       cp -TR ${lib.escapeShellArg themeBreezeDark} themes/nextcloud-breeze-dark
@@ -166,7 +166,7 @@ let
       sed -i -e 's/${
         "\\($configUser *= *\\).*fileowner(.*config.php.*)"
       }/\1$user/g' cron.php console.php
-    '';
+    '' + cfg.extraPostPatch;
 
     installPhase = "mkdir -p \"\$out/\"\ncp -R . \"$out/\"";
 
@@ -492,6 +492,16 @@ in {
       '';
     };
 
+    baseUrl = mkOption {
+      type = types.str;
+      internal = true;
+      readOnly = true;
+      description = ''
+        This is a concatenation of the scheme, the host and an optional port
+        and it's used for internal references from other modules.
+      '';
+    };
+
     processes = mkOption {
       type = types.ints.unsigned;
       default = if lib.isInt config.nix.maxJobs
@@ -591,17 +601,32 @@ in {
         serialised into a PHP array.
       '';
     };
+
+    extraPostPatch = lib.mkOption {
+      type = types.lines;
+      default = "";
+      example = ''
+        rm -r apps/comments
+      '';
+      internal = true;
+      description = ''
+        Extra shell script lines to append to the <literal>postPatch</literal>
+        phase of the Nextcloud main derivation.
+      '';
+    };
   };
 
   imports = [ ./libreoffice-online ];
 
   config = {
+    nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
+
     services.nginx.virtualHosts.${cfg.domain} = {
       forceSSL = cfg.useSSL;
       enableACME = cfg.useACME;
       extraConfig = ''
-        error_page 403 ${baseUrl}/;
-        error_page 404 ${baseUrl}/;
+        error_page 403 ${cfg.baseUrl}/;
+        error_page 404 ${cfg.baseUrl}/;
       '';
       locations = {
         "/" = {
@@ -623,11 +648,11 @@ in {
         };
 
         "= /.well-known/carddav" = {
-          extraConfig = "return 301 ${baseUrl}/remote.php/dav;";
+          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav;";
         };
 
         "= /.well-known/caldav" = {
-          extraConfig = "return 301 ${baseUrl}/remote.php/dav;";
+          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav;";
         };
 
         "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {

@@ -29,6 +29,7 @@ let
 in pkgs.stdenv.mkDerivation rec {
   name = "libreoffice-online-${version}";
   version = "6.1.3.2";
+  versionHash = builtins.hashString "sha1" src.outputHash;
 
   src = pkgs.fetchgit {
     url = https://anongit.freedesktop.org/git/libreoffice/online.git;
@@ -46,7 +47,7 @@ in pkgs.stdenv.mkDerivation rec {
 
     # We don't care about whether this is the real Git hash as long as it
     # differs with different versions of the source and it's base 16 encoded.
-    echo -n ${builtins.hashString "sha1" src.outputHash} > dist_git_hash
+    echo -n "$versionHash" > dist_git_hash
   '';
 
   preBuild = lib.concatMapStrings (pkg: ''
