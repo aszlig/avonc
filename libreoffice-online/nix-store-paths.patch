@@ -1,0 +1,233 @@
+diff --git a/common/FileUtil.cpp b/common/FileUtil.cpp
+index 212cf7e82..a4b23d8c1 100644
+--- a/common/FileUtil.cpp
++++ b/common/FileUtil.cpp
+@@ -14,6 +14,7 @@
+ #include <ftw.h>
+ #include <sys/stat.h>
+ #include <sys/vfs.h>
++#include <sys/mount.h>
+ 
+ #include <chrono>
+ #include <cstdio>
+@@ -23,6 +24,7 @@
+ #include <mutex>
+ #include <string>
+ 
++#include <Poco/Util/Application.h>
+ #include <Poco/TemporaryFile.h>
+ 
+ #include "Log.hpp"
+@@ -154,6 +156,106 @@ namespace FileUtil
+         }
+     }
+ 
++    static bool bindMountPath(const Poco::Path &src,
++                              const Poco::Path &jailPath,
++                              bool unmount)
++    {
++        Poco::Path dest(jailPath);
++        dest.append(src);
++
++        std::string deststr = dest.toString();
++
++        if (unmount) {
++            LOG_TRC("Unmounting " << deststr << ".");
++            if (umount(deststr.c_str()) == -1)
++                LOG_SYS("Failed to unmount path " << deststr << ".");
++            return true;
++        }
++
++        int mflags = MS_BIND | MS_REC | MS_RDONLY;
++
++        if (Poco::File(src).isDirectory()) {
++            Poco::File(dest).createDirectories();
++        } else {
++            Poco::File(dest.parent()).createDirectories();
++            Poco::File(dest).createFile();
++        }
++
++        LOG_DBG("Bind-mount path " << src.toString() <<
++                " to " << deststr.c_str() << ".");
++        if (mount(src.toString().c_str(), deststr.c_str(), "",
++                  mflags, nullptr) == -1) {
++            LOG_SYS("Failed to bind-mount path " << src.toString() <<
++                    " to " << deststr << ".");
++            return false;
++        }
++
++        mflags |= MS_NOSUID | MS_NODEV | MS_REMOUNT;
++
++        LOG_TRC("Remount " << deststr << " with new flags " << mflags << ".");
++        if (mount("none", deststr.c_str(), "", mflags, nullptr) == -1) {
++            LOG_SYS("Failed to remount " << deststr << ".");
++            return false;
++        }
++
++        return true;
++    }
++
++    static bool bindMountStorePaths(const char *spFile,
++                                    const Poco::Path &jailPath,
++                                    bool unmount)
++    {
++        char *line = nullptr;
++        size_t len = 0, paths_mounted = 0;
++
++        LOG_DBG((unmount ? "Unmounting" : "Mounting") <<
++                " store paths from " << spFile << ".");
++
++        FILE *fp = fopen(spFile, "r");
++        if (fp == nullptr)
++            return false;
++
++        while (getline(&line, &len, fp) != -1) {
++            line[strcspn(line, "\r\n")] = '\0';
++            Poco::Path storePath(line);
++
++            if (!bindMountPath(storePath, jailPath, unmount)) {
++                fclose(fp);
++                return false;
++            }
++            paths_mounted++;
++        }
++
++        LOG_DBG("Done " << (unmount ? "unmounting" : "mounting") << " " <<
++                paths_mounted << " store paths.");
++
++        fclose(fp);
++        return paths_mounted > 0;
++    }
++
++    bool setupNixStorePaths(const Poco::Path &jailPath)
++    {
++        const char *spFile = std::getenv("LOOL_NIX_STORE_PATHS_FILE");
++        if (spFile == nullptr)
++            return false;
++
++        if (!bindMountStorePaths(spFile, jailPath, false)) {
++            LOG_SYS("Failed to bind-mount Nix store paths from "
++                    << spFile << ".");
++            std::_Exit(Poco::Util::Application::EXIT_SOFTWARE);
++        }
++
++        Poco::Path tmpDestPath(jailPath, "tmp");
++        Poco::File(tmpDestPath).createDirectories();
++        return true;
++    }
++
++    void removeNixStorePaths(const Poco::Path &jailPath)
++    {
++        const char *spFile = std::getenv("LOOL_NIX_STORE_PATHS_FILE");
++        if (spFile != nullptr)
++            bindMountStorePaths(spFile, jailPath, true);
++    }
+ 
+ } // namespace FileUtil
+ 
+diff --git a/common/FileUtil.hpp b/common/FileUtil.hpp
+index 0a172b98a..cbb28736a 100644
+--- a/common/FileUtil.hpp
++++ b/common/FileUtil.hpp
+@@ -79,6 +79,10 @@ namespace FileUtil
+     /// Make a temp copy of a file, and prepend it with a prefix.
+     std::string getTempFilePath(const std::string& srcDir, const std::string& srcFilename, const std::string& dstFilenamePrefix);
+ 
++    /// Mount or unmount Nix store paths.
++    bool setupNixStorePaths(const Poco::Path&);
++    void removeNixStorePaths(const Poco::Path&);
++
+ } // end namespace FileUtil
+ 
+ #endif
+diff --git a/kit/ForKit.cpp b/kit/ForKit.cpp
+index 89f49e53d..068a5b59f 100644
+--- a/kit/ForKit.cpp
++++ b/kit/ForKit.cpp
+@@ -232,6 +232,7 @@ static void cleanupChildren()
+     for (const auto& path : jails)
+     {
+         LOG_INF("Removing jail [" << path << "].");
++        FileUtil::removeNixStorePaths(Poco::Path(path));
+         FileUtil::removeFile(path, true);
+     }
+ }
+diff --git a/kit/Kit.cpp b/kit/Kit.cpp
+index 8ef9840bd..c6e823634 100644
+--- a/kit/Kit.cpp
++++ b/kit/Kit.cpp
+@@ -53,6 +53,7 @@
+ 
+ #include "ChildSession.hpp"
+ #include <Common.hpp>
++#include <common/FileUtil.hpp>
+ #include <IoUtil.hpp>
+ #include "KitHelper.hpp"
+ #include "Kit.hpp"
+@@ -2186,25 +2187,28 @@ void lokit_main(const std::string& childRoot,
+             jailLOInstallation.makeDirectory();
+             File(jailLOInstallation).createDirectory();
+ 
+-            // Copy (link) LO installation and other necessary files into it from the template.
+-            bool bLoopMounted = false;
+-            if (std::getenv("LOOL_BIND_MOUNT"))
++            if (!FileUtil::setupNixStorePaths(jailPath))
+             {
+-                Path usrSrcPath(sysTemplate, "usr");
+-                Path usrDestPath(jailPath, "usr");
+-                File(usrDestPath).createDirectory();
+-                std::string mountCommand =
+-                    std::string("loolmount ") +
+-                    usrSrcPath.toString() +
+-                    std::string(" ") +
+-                    usrDestPath.toString();
+-                LOG_DBG("Initializing jail bind mount.");
+-                bLoopMounted = !system(mountCommand.c_str());
+-                LOG_DBG("Initialized jail bind mount.");
++                // Copy (link) LO installation and other necessary files into it from the template.
++                bool bLoopMounted = false;
++                if (std::getenv("LOOL_BIND_MOUNT"))
++                {
++                    Path usrSrcPath(sysTemplate, "usr");
++                    Path usrDestPath(jailPath, "usr");
++                    File(usrDestPath).createDirectory();
++                    std::string mountCommand =
++                        std::string("loolmount ") +
++                        usrSrcPath.toString() +
++                        std::string(" ") +
++                        usrDestPath.toString();
++                    LOG_DBG("Initializing jail bind mount.");
++                    bLoopMounted = !system(mountCommand.c_str());
++                    LOG_DBG("Initialized jail bind mount.");
++                }
++                linkOrCopy(sysTemplate, jailPath,
++                           bLoopMounted ? LinkOrCopyType::NoUsr : LinkOrCopyType::All);
++                linkOrCopy(loTemplate, jailLOInstallation, LinkOrCopyType::LO);
+             }
+-            linkOrCopy(sysTemplate, jailPath,
+-                       bLoopMounted ? LinkOrCopyType::NoUsr : LinkOrCopyType::All);
+-            linkOrCopy(loTemplate, jailLOInstallation, LinkOrCopyType::LO);
+ 
+             // We need this because sometimes the hostname is not resolved
+             const std::initializer_list<const char*> networkFiles = {"/etc/host.conf", "/etc/hosts", "/etc/nsswitch.conf", "/etc/resolv.conf"};
+@@ -2258,6 +2262,7 @@ void lokit_main(const std::string& childRoot,
+             dropCapability(CAP_SYS_CHROOT);
+             dropCapability(CAP_MKNOD);
+             dropCapability(CAP_FOWNER);
++            dropCapability(CAP_SYS_ADMIN);
+ 
+             LOG_DBG("Initialized jail nodes, dropped caps.");
+         }
+diff --git a/wsd/LOOLWSD.cpp b/wsd/LOOLWSD.cpp
+index d93fe94f2..1733cb4d2 100644
+--- a/wsd/LOOLWSD.cpp
++++ b/wsd/LOOLWSD.cpp
+@@ -2918,6 +2918,8 @@ int LOOLWSD::innerMain()
+     {
+         const auto path = ChildRoot + jail;
+         LOG_INF("Removing jail [" << path << "].");
++
++        FileUtil::removeNixStorePaths(Poco::Path(path));
+         FileUtil::removeFile(path, true);
+     }
+     return Application::EXIT_OK;

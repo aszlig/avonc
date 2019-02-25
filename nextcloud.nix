@@ -593,6 +593,8 @@ in {
     };
   };
 
+  imports = [ ./libreoffice-online ];
+
   config = {
     services.nginx.virtualHosts.${cfg.domain} = {
       forceSSL = cfg.useSSL;

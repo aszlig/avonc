@@ -1,0 +1,321 @@
+diff --git a/common/Log.cpp b/common/Log.cpp
+index 4725b9024..2932953b3 100644
+--- a/common/Log.cpp
++++ b/common/Log.cpp
+@@ -112,13 +112,9 @@ namespace Log
+         }
+ 
+         Poco::DateTime time;
+-        snprintf(buffer, 1023, "%s-%.05lu %.4u-%.2u-%.2u %.2u:%.2u:%.2u.%.6u [ %s ] %s  ",
++        snprintf(buffer, 1023, "<%s>%s-%.05lu [%s] ", level,
+                     (Source.inited ? Source.id.c_str() : "<shutdown>"),
+-                    osTid,
+-                    time.year(), time.month(), time.day(),
+-                    time.hour(), time.minute(), time.second(),
+-                    time.millisecond() * 1000 + time.microsecond(),
+-                    threadName, level);
++                    osTid, threadName);
+         return buffer;
+     }
+ 
+diff --git a/common/Log.hpp b/common/Log.hpp
+index bb5a61554..d0e30b741 100644
+--- a/common/Log.hpp
++++ b/common/Log.hpp
+@@ -111,42 +111,42 @@ namespace Log
+     inline StreamLogger trace()
+     {
+         return traceEnabled()
+-             ? StreamLogger([](const std::string& msg) { logger().trace(msg); }, "TRC")
++             ? StreamLogger([](const std::string& msg) { logger().trace(msg); }, "7")
+              : StreamLogger();
+     }
+ 
+     inline StreamLogger debug()
+     {
+         return debugEnabled()
+-             ? StreamLogger([](const std::string& msg) { logger().debug(msg); }, "DBG")
++             ? StreamLogger([](const std::string& msg) { logger().debug(msg); }, "7")
+              : StreamLogger();
+     }
+ 
+     inline StreamLogger info()
+     {
+         return infoEnabled()
+-             ? StreamLogger([](const std::string& msg) { logger().information(msg); }, "INF")
++             ? StreamLogger([](const std::string& msg) { logger().information(msg); }, "6")
+              : StreamLogger();
+     }
+ 
+     inline StreamLogger warn()
+     {
+         return warnEnabled()
+-             ? StreamLogger([](const std::string& msg) { logger().warning(msg); }, "WRN")
++             ? StreamLogger([](const std::string& msg) { logger().warning(msg); }, "4")
+              : StreamLogger();
+     }
+ 
+     inline StreamLogger error()
+     {
+         return errorEnabled()
+-             ? StreamLogger([](const std::string& msg) { logger().error(msg); }, "ERR")
++             ? StreamLogger([](const std::string& msg) { logger().error(msg); }, "3")
+              : StreamLogger();
+     }
+ 
+     inline StreamLogger fatal()
+     {
+         return fatalEnabled()
+-             ? StreamLogger([](const std::string& msg) { logger().fatal(msg); }, "FTL")
++             ? StreamLogger([](const std::string& msg) { logger().fatal(msg); }, "2")
+              : StreamLogger();
+     }
+ 
+@@ -215,14 +215,14 @@ namespace Log
+ }
+ 
+ #define LOG_BODY_(PRIO, LVL, X) Poco::Message m_(l_.name(), "", Poco::Message::PRIO_##PRIO); char b_[1024]; std::ostringstream oss_(Log::prefix(b_, LVL, false), std::ostringstream::ate); oss_ << std::boolalpha << X << "| " << __FILE__ << ':' << __LINE__; m_.setText(oss_.str()); l_.log(m_);
+-#define LOG_TRC(X) do { auto& l_ = Log::logger(); if (l_.trace()) { LOG_BODY_(TRACE, "TRC", X); } } while (false)
+-#define LOG_DBG(X) do { auto& l_ = Log::logger(); if (l_.debug()) { LOG_BODY_(DEBUG, "DBG", X); } } while (false)
+-#define LOG_INF(X) do { auto& l_ = Log::logger(); if (l_.information()) { LOG_BODY_(INFORMATION, "INF", X); } } while (false)
+-#define LOG_WRN(X) do { auto& l_ = Log::logger(); if (l_.warning()) { LOG_BODY_(WARNING, "WRN", X); } } while (false)
+-#define LOG_ERR(X) do { auto& l_ = Log::logger(); if (l_.error()) { LOG_BODY_(ERROR, "ERR", X); } } while (false)
+-#define LOG_SYS(X) do { auto& l_ = Log::logger(); if (l_.error()) { LOG_BODY_(ERROR, "ERR", X << " (errno: " << std::strerror(errno) << ")"); } } while (false)
+-#define LOG_FTL(X) do { auto& l_ = Log::logger(); if (l_.fatal()) { LOG_BODY_(FATAL, "FTL", X); } } while (false)
+-#define LOG_SFL(X) do { auto& l_ = Log::logger(); if (l_.error()) { LOG_BODY_(FATAL, "FTL", X << " (errno: " << std::strerror(errno) << ")"); } } while (false)
++#define LOG_TRC(X) do { auto& l_ = Log::logger(); if (l_.trace()) { LOG_BODY_(TRACE, "7", X); } } while (false)
++#define LOG_DBG(X) do { auto& l_ = Log::logger(); if (l_.debug()) { LOG_BODY_(DEBUG, "7", X); } } while (false)
++#define LOG_INF(X) do { auto& l_ = Log::logger(); if (l_.information()) { LOG_BODY_(INFORMATION, "6", X); } } while (false)
++#define LOG_WRN(X) do { auto& l_ = Log::logger(); if (l_.warning()) { LOG_BODY_(WARNING, "4", X); } } while (false)
++#define LOG_ERR(X) do { auto& l_ = Log::logger(); if (l_.error()) { LOG_BODY_(ERROR, "3", X); } } while (false)
++#define LOG_SYS(X) do { auto& l_ = Log::logger(); if (l_.error()) { LOG_BODY_(ERROR, "3", X << " (errno: " << std::strerror(errno) << ")"); } } while (false)
++#define LOG_FTL(X) do { auto& l_ = Log::logger(); if (l_.fatal()) { LOG_BODY_(FATAL, "2", X); } } while (false)
++#define LOG_SFL(X) do { auto& l_ = Log::logger(); if (l_.error()) { LOG_BODY_(FATAL, "2", X << " (errno: " << std::strerror(errno) << ")"); } } while (false)
+ 
+ #define LOG_END(l) do { l << __FILE__ << ':' << __LINE__; l.flush(); } while (false)
+ 
+diff --git a/net/ServerSocket.hpp b/net/ServerSocket.hpp
+index afd4b97f4..b2c9eef9f 100644
+--- a/net/ServerSocket.hpp
++++ b/net/ServerSocket.hpp
+@@ -35,7 +35,7 @@ public:
+     {
+     }
+ 
+-    enum Type { Local, Public };
++    enum Type { Local, Public, Systemd };
+ 
+     /// Binds to a local address (Servers only).
+     /// Does not retry on error.
+@@ -61,8 +61,8 @@ public:
+     {
+         // Accept a connection (if any) and set it to non-blocking.
+         // There still need the client's address to filter request from POST(call from REST) here.
+-        struct sockaddr_in clientInfo;
+-        socklen_t addrlen = sizeof(struct sockaddr_in);
++        struct sockaddr_storage clientInfo;
++        socklen_t addrlen = sizeof(struct sockaddr_storage);
+         const int rc = ::accept4(getFD(), (struct sockaddr *)&clientInfo, &addrlen, SOCK_NONBLOCK);
+         LOG_DBG("Accepted socket #" << rc << ", creating socket object.");
+         try
+@@ -73,21 +73,34 @@ public:
+                 char addrstr[INET6_ADDRSTRLEN];
+ 
+                 const void *inAddr;
+-                if (clientInfo.sin_family == AF_INET)
++                if (clientInfo.ss_family == AF_INET)
+                 {
+-                    auto ipv4 = (struct sockaddr_in *)&clientInfo.sin_addr;
++                    auto ipv4 = (struct sockaddr_in *)&clientInfo;
+                     inAddr = &(ipv4->sin_addr);
+                 }
+-                else
++                else if (clientInfo.ss_family == AF_INET6)
+                 {
+-                    auto ipv6 = (struct sockaddr_in6 *)&clientInfo.sin_addr;
++                    auto ipv6 = (struct sockaddr_in6 *)&clientInfo;
+                     inAddr = &(ipv6->sin6_addr);
+                 }
++                else if (clientInfo.ss_family == AF_UNIX)
++                {
++                    std::shared_ptr<Socket> newSocket = _sockFactory->create(rc);
++                    // Forge 127.0.0.1, because Unix sockets are always local.
++                    newSocket->_clientAddress = "127.0.0.1";
++                    return newSocket;
++                }
++                else
++                {
++                    LOG_ERR("Unknown socket family " << clientInfo.ss_family <<
++                            " of socket #" << rc << ".");
++                    return nullptr;
++                }
+ 
+-                inet_ntop(clientInfo.sin_family, inAddr, addrstr, sizeof(addrstr));
++                inet_ntop(clientInfo.ss_family, inAddr, addrstr, sizeof(addrstr));
+                 std::shared_ptr<Socket> _socket = _sockFactory->create(rc);
+                 _socket->_clientAddress = addrstr;
+-                LOG_DBG("Accepted socket has family " << clientInfo.sin_family <<
++                LOG_DBG("Accepted socket has family " << clientInfo.ss_family <<
+                         " address " << _socket->_clientAddress);
+                 return _socket;
+             }
+diff --git a/net/Socket.hpp b/net/Socket.hpp
+index 965f08247..01f60c77d 100644
+--- a/net/Socket.hpp
++++ b/net/Socket.hpp
+@@ -105,7 +105,8 @@ public:
+     Socket(Type type) :
+         _fd(createSocket(type)),
+         _sendBufferSize(DefaultSendBufferSize),
+-        _owner(std::this_thread::get_id())
++        _owner(std::this_thread::get_id()),
++        _isSystemd(false)
+     {
+         init();
+     }
+@@ -132,6 +133,12 @@ public:
+         ::shutdown(_fd, SHUT_RDWR);
+     }
+ 
++    void set_systemd_fd(const int fd)
++    {
++        this->_fd = fd;
++        this->_isSystemd = true;
++    }
++
+     /// Prepare our poll record; adjust @timeoutMaxMs downwards
+     /// for timeouts, based on current time @now.
+     /// @returns POLLIN and POLLOUT if output is expected.
+@@ -301,11 +308,12 @@ protected:
+     }
+ 
+ private:
+-    const int _fd;
++    int _fd;
+     int _sendBufferSize;
+ 
+     /// We check the owner even in the release builds, needs to be always correct.
+     std::thread::id _owner;
++    bool _isSystemd;
+ };
+ 
+ class StreamSocket;
+diff --git a/wsd/LOOLWSD.cpp b/wsd/LOOLWSD.cpp
+index d93fe94f2..ee62cf5af 100644
+--- a/wsd/LOOLWSD.cpp
++++ b/wsd/LOOLWSD.cpp
+@@ -809,6 +809,8 @@ void LOOLWSD::initialize(Application& self)
+             ClientListenAddr = ServerSocket::Type::Public;
+         else if (!Poco::icompare(listen, "loopback"))
+             ClientListenAddr = ServerSocket::Type::Local;
++        else if (!Poco::icompare(listen, "systemd"))
++            ClientListenAddr = ServerSocket::Type::Systemd;
+         else
+             LOG_WRN("Invalid listen address: " << listen << ". Falling back to default: 'any'" );
+     }
+@@ -2044,21 +2046,6 @@ private:
+ 
+             std::string format = (form.has("format") ? form.get("format") : "");
+ 
+-            if (!allowPostFrom(socket->clientAddress()))
+-            {
+-                LOG_ERR("client address DENY: " << socket->clientAddress().c_str());
+-
+-                std::ostringstream oss;
+-                oss << "HTTP/1.1 403\r\n"
+-                    << "Date: " << Poco::DateTimeFormatter::format(Poco::Timestamp(), Poco::DateTimeFormat::HTTP_FORMAT) << "\r\n"
+-                    << "User-Agent: " << HTTP_AGENT_STRING << "\r\n"
+-                    << "Content-Length: 0\r\n"
+-                    << "\r\n";
+-                socket->send(oss.str());
+-                socket->shutdown();
+-                return;
+-            }
+-
+             // prefer what is in the URI
+             if (tokens.count() > 3)
+                 format = tokens[3];
+@@ -2603,6 +2590,11 @@ private:
+             type == ServerSocket::Type::Local ? Socket::Type::IPv4 : ClientPortProto,
+             clientSocket, factory);
+ 
++        if (type == ServerSocket::Type::Systemd) {
++            serverSocket->set_systemd_fd(3);
++            return serverSocket;
++        }
++
+         if (!serverSocket->bind(type, port))
+             return nullptr;
+ 
+diff --git a/wsd/Storage.cpp b/wsd/Storage.cpp
+index ca306a340..21ddfeb00 100644
+--- a/wsd/Storage.cpp
++++ b/wsd/Storage.cpp
+@@ -28,7 +28,6 @@
+ #include <Poco/Net/HTTPResponse.h>
+ #include <Poco/Net/HTTPSClientSession.h>
+ #include <Poco/Net/NameValueCollection.h>
+-#include <Poco/Net/NetworkInterface.h>
+ #include <Poco/Net/SSLManager.h>
+ #include <Poco/StreamCopier.h>
+ #include <Poco/Timestamp.h>
+@@ -127,44 +126,6 @@ void StorageBase::initialize()
+ #endif
+ }
+ 
+-bool isLocalhost(const std::string& targetHost)
+-{
+-    std::string targetAddress;
+-    try
+-    {
+-        targetAddress = Poco::Net::DNS::resolveOne(targetHost).toString();
+-    }
+-    catch (const Poco::Exception& exc)
+-    {
+-        LOG_WRN("Poco::Net::DNS::resolveOne(\"" << targetHost << "\") failed: " << exc.displayText());
+-        try
+-        {
+-            targetAddress = Poco::Net::IPAddress(targetHost).toString();
+-        }
+-        catch (const Poco::Exception& exc1)
+-        {
+-            LOG_WRN("Poco::Net::IPAddress(\"" << targetHost << "\") failed: " << exc1.displayText());
+-        }
+-    }
+-
+-    Poco::Net::NetworkInterface::NetworkInterfaceList list = Poco::Net::NetworkInterface::list(true,true);
+-    for (auto& netif : list)
+-    {
+-        std::string address = netif.address().toString();
+-        address = address.substr(0, address.find('%', 0));
+-        if (address == targetAddress)
+-        {
+-            LOG_INF("WOPI host is on the same host as the WOPI client: \"" <<
+-                    targetAddress << "\". Connection is allowed.");
+-            return true;
+-        }
+-    }
+-
+-    LOG_INF("WOPI host is not on the same host as the WOPI client: \"" <<
+-            targetAddress << "\". Connection is not allowed.");
+-    return false;
+-}
+-
+ std::unique_ptr<StorageBase> StorageBase::create(const Poco::URI& uri, const std::string& jailRoot, const std::string& jailPath)
+ {
+     // FIXME: By the time this gets called we have already sent to the client three
+@@ -218,13 +179,7 @@ std::unique_ptr<StorageBase> StorageBase::create(const Poco::URI& uri, const std
+     else if (WopiEnabled)
+     {
+         LOG_INF("Public URI [" << uri.toString() << "] considered WOPI.");
+-        const auto& targetHost = uri.getHost();
+-        if (WopiHosts.match(targetHost) || isLocalhost(targetHost))
+-        {
+-            return std::unique_ptr<StorageBase>(new WopiStorage(uri, jailRoot, jailPath));
+-        }
+-        LOG_ERR("No acceptable WOPI hosts found matching the target host [" << targetHost << "] in config.");
+-        throw UnauthorizedRequestException("No acceptable WOPI hosts found matching the target host [" + targetHost + "] in config.");
++        return std::unique_ptr<StorageBase>(new WopiStorage(uri, jailRoot, jailPath));
+     }
+ 
+     throw BadRequestException("No Storage configured or invalid URI.");

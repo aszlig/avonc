@@ -1,0 +1,13 @@
+diff --git a/common/security.h b/common/security.h
+index eb79f465c..3b3cb95f1 100644
+--- a/common/security.h
++++ b/common/security.h
+@@ -18,7 +18,7 @@
+ #include <string.h>
+ #include <stdio.h>
+ 
+-#define LOOL_USER_ID "lool"
++#define LOOL_USER_ID "libreoffice-online"
+ 
+ #ifndef KIT_IN_PROCESS
+ static int hasCorrectUID(const char *appName)
