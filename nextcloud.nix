@@ -800,12 +800,11 @@ in {
       script = ''
         if [ -e ${gcRoot} ]; then
           ( export NEXTCLOUD_CONFIG_DIR=${gcRoot}/config
-            ${mkEnableDisableApps "${phpCli} ${gcRoot}/package/occ" false}
+            ${mkEnableDisableApps "${phpCli} ${gcRoot}/package/occ" true}
             ${phpCli} ${occ} upgrade
           )
-        else
-          ${mkEnableDisableApps "${phpCli} ${occ}" false}
         fi
+        ${mkEnableDisableApps "${phpCli} ${occ}" false}
       '';
 
       postStart = ''
