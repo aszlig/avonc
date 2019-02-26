@@ -381,7 +381,7 @@ def main(info_file: str) -> None:
     if removed:
         stats.append("Apps removed: " + ', '.join(removed))
 
-    tqdm.write("\n".join(stats), file=sys.stderr)
+    tqdm.write("\n" + "\n".join(stats), file=sys.stderr)
 
     with open(info_file, 'w') as newstate:
         json.dump(current_state, newstate, indent=2, sort_keys=True)
