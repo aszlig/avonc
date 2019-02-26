@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
+  cfg = config.nextcloud.apps.richdocuments;
   package = import ./package.nix { inherit pkgs lib; };
 
   fontConfig = pkgs.makeFontsConf {
@@ -27,7 +28,7 @@ let
     transformArgs = lib.mapAttrsRecursiveCond (x: !isVal x) mkPair;
   in lib.escapeShellArgs (lib.collect isVal (transformArgs attrs));
 
-  optionFlags = genOptionFlags {
+  settings = {
     file_server_root_path = "${package}/share/libreoffice-online";
     tile_cache_path = "/var/cache/libreoffice-online/tiles";
     lo_template_path = "${package.sdk}/lib/libreoffice";
@@ -39,7 +40,7 @@ let
       in lib.optionalString needsExplicit ":${toString config.nextcloud.port}";
     in "${config.nextcloud.domain}${maybePort}";
     storage.wopi."host[0]" = "dnyarri";
-    logging.level = "trace";
+    logging.level = cfg.logLevel;
     net.listen = "systemd";
   };
 
@@ -93,7 +94,21 @@ let
   '';
 
 in {
-  config = lib.mkIf config.nextcloud.apps.richdocuments.enable {
+  options.nextcloud.apps.richdocuments = {
+    logLevel = lib.mkOption {
+      type = lib.types.enum [
+        "none" "fatal" "critical" "error" "warning" "notice" "information"
+        "debug" "trace"
+      ];
+      default = "warning";
+      example = "trace";
+      description = ''
+        The logging level for the LibreOffice Online instance.
+      '';
+    };
+  };
+
+  config = lib.mkIf cfg.enable {
     nextcloud.extraPostPatch = ''
       rm apps/richdocuments/lib/Backgroundjobs/ObtainCapabilities.php \
          apps/richdocuments/lib/Service/CapabilitiesService.php \
@@ -174,7 +189,7 @@ in {
           "${ip2unix}/bin/ip2unix"
           "-r out,port=9981,ignore"
           "-r out,path=/run/libreoffice-online-internal.socket"
-          "${package}/bin/loolwsd ${optionFlags}"
+          "${package}/bin/loolwsd ${genOptionFlags settings}"
         ];
         CacheDirectory = [
           "libreoffice-online/tiles"
