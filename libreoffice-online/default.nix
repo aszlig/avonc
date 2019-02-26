@@ -31,6 +31,29 @@ let
     net.listen = "systemd";
   };
 
+  # TODO: Remove this as soon as it is in the oldest nixpkgs version we
+  #       support.
+  ip2unix = pkgs.stdenv.mkDerivation rec {
+    name = "ip2unix-${version}";
+
+    version = "2.0.1";
+
+    src = pkgs.fetchFromGitHub {
+      owner = "nixcloud";
+      repo = "ip2unix";
+      rev = "v${version}";
+      sha256 = "1x2nfv15a1hg8vrw5vh8fqady12v9hfrb4p3cfg0ybx52y0xs48a";
+    };
+
+    nativeBuildInputs = [
+      pkgs.meson pkgs.ninja pkgs.pkgconfig pkgs.python3Packages.pytest
+      pkgs.python3Packages.pytest-timeout
+    ];
+    buildInputs = [ pkgs.libyamlcpp ];
+
+    doCheck = true;
+  };
+
   richdocumentsPatch = pkgs.runCommand "richdocuments-substituted.patch" {
     nativeBuildInputs = lib.singleton (pkgs.writeScriptBin "extract-disco" ''
       #!${pkgs.python3Packages.python.interpreter}
@@ -74,29 +97,36 @@ in {
 
     users.groups.libreoffice-online = {};
 
-    services.nginx.virtualHosts.${config.nextcloud.domain}.locations = let
-      commonConfig = {
-        priority = 200;
-        proxyPass = "http://unix:/run/libreoffice-online.socket:";
-        extraConfig = ''
-          proxy_http_version 1.1;
-          proxy_set_header Host $http_host;
-        '';
-      };
+    services.nginx.virtualHosts.${config.nextcloud.domain} = {
+      # This is needed for LibreOffice Online to connect back to the Nextcloud
+      # instance.
+      extraConfig = ''
+        listen unix:/run/libreoffice-online-internal.socket;
+      '';
+      locations = let
+        commonConfig = {
+          priority = 200;
+          proxyPass = "http://unix:/run/libreoffice-online.socket:";
+          extraConfig = ''
+            proxy_http_version 1.1;
+            proxy_set_header Host $http_host;
+          '';
+        };
 
-    in {
-      "^~ /loleaflet" = commonConfig;
-      "^~ /hosting/discovery" = commonConfig;
-      "^~ /hosting/capabilities" = commonConfig;
-      "~ ^/lool" = commonConfig;
+      in {
+        "^~ /loleaflet" = commonConfig;
+        "^~ /hosting/discovery" = commonConfig;
+        "^~ /hosting/capabilities" = commonConfig;
+        "~ ^/lool" = commonConfig;
 
-      "~ ^/lool/(?:.*)/ws$" = commonConfig // {
-        priority = 100;
-        extraConfig = commonConfig.extraConfig + ''
-          proxy_set_header Upgrade $http_upgrade;
-          proxy_set_header Connection "Upgrade";
+        "~ ^/lool/(?:.*)/ws$" = commonConfig // {
+          priority = 100;
+          extraConfig = commonConfig.extraConfig + ''
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "Upgrade";
 
-        '';
+          '';
+        };
       };
     };
 
@@ -112,58 +142,10 @@ in {
       };
     };
 
-    systemd.sockets.libreoffice-online-proxy = {
-      description = "LibreOffice Online Proxy Socket";
-      wantedBy = [ "sockets.target" ];
-
-      socketConfig = {
-        ListenStream = "/run/libreoffice-online-proxy.socket";
-        SocketUser = "root";
-        SocketGroup = "libreoffice-online";
-        SocketMode = "0660";
-      };
-    };
-
-    systemd.services.libreoffice-online-proxy = {
-      description = "LibreOffice Online Proxy To Nextcloud";
-      requiredBy = [ "libreoffice-online-proxy-internal.service" ];
-      after = [ "libreoffice-online-proxy-internal.service" ];
-
-      serviceConfig = {
-        User = "libreoffice-online";
-        Group = "libreoffice-online";
-        ExecStart = toString [
-          "${config.systemd.package}/lib/systemd/systemd-socket-proxyd"
-          "127.0.0.1:80"
-        ];
-        Restart = "on-failure";
-      };
-    };
-
-    systemd.services.libreoffice-online-proxy-internal = {
-      description = "LibreOffice Online Proxy To Root Namespace";
-      requiredBy = [ "libreoffice-online.service" ];
-      before = [ "libreoffice-online.service" ];
-
-      serviceConfig = {
-        User = "libreoffice-online";
-        Group = "libreoffice-online";
-        ExecStart = toString [
-          "${pkgs.socat}/bin/socat"
-          "TCP-LISTEN:8000,fork,reuseaddr"
-          "UNIX_CONNECT:/run/libreoffice-online-proxy.socket"
-        ];
-        Restart = "on-failure";
-
-        # Note that these namespaces apply to the main unit as well!
-        PrivateMounts = true;
-        PrivateNetwork = true;
-      };
-    };
-
     systemd.services.libreoffice-online = {
       description = "LibreOffice Online";
       wantedBy = [ "multi-user.target" ];
+      after = [ "nginx.service" ];
 
       environment.JAVA_HOME = package.sdk.jdk;
       environment.LOOL_NIX_STORE_PATHS_FILE = "${pkgs.closureInfo {
@@ -171,13 +153,16 @@ in {
           package.sdk chrootEtc pkgs.glibcLocales package.sdk.jdk
         ];
       }}/store-paths";
-      # XXX: URL SCHEME!
-      environment.http_proxy = "http://127.0.0.1:8000";
 
       serviceConfig = {
         User = "libreoffice-online";
         Group = "libreoffice-online";
-        ExecStart = "${package}/bin/loolwsd ${optionFlags}";
+        ExecStart = toString [
+          "${ip2unix}/bin/ip2unix"
+          "-r out,port=9981,ignore"
+          "-r out,path=/run/libreoffice-online-internal.socket"
+          "${package}/bin/loolwsd ${optionFlags}"
+        ];
         CacheDirectory = [
           "libreoffice-online/tiles"
           "libreoffice-online/sys"
@@ -190,7 +175,8 @@ in {
           "CAP_SYS_ADMIN"
         ];
         Restart = "on-failure";
-        JoinsNamespaceOf = "libreoffice-online-proxy-internal.service";
+        PrivateMounts = true;
+        PrivateNetwork = true;
       };
     };
   };
