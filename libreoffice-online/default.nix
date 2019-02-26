@@ -31,8 +31,6 @@ let
     file_server_root_path = "${package}/share/libreoffice-online";
     tile_cache_path = "/var/cache/libreoffice-online/tiles";
     lo_template_path = "${package.sdk}/lib/libreoffice";
-    # XXX: Should be empty or even better: Remove the code!
-    sys_template_path = pkgs.runCommand "empty" {} "mkdir $out";
     child_root_path = "/var/cache/libreoffice-online/roots";
     server_name = let
       # XXX: Make this DRY, it's from ../nextcloud.nix!

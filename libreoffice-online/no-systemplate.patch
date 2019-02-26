@@ -1,0 +1,238 @@
+diff --git a/kit/ForKit.cpp b/kit/ForKit.cpp
+index 068a5b59f..378c24336 100644
+--- a/kit/ForKit.cpp
++++ b/kit/ForKit.cpp
+@@ -238,7 +238,6 @@ static void cleanupChildren()
+ }
+ 
+ static int createLibreOfficeKit(const std::string& childRoot,
+-                                const std::string& sysTemplate,
+                                 const std::string& loTemplate,
+                                 const std::string& loSubPath,
+                                 bool queryVersion = false)
+@@ -273,9 +272,9 @@ static int createLibreOfficeKit(const std::string& childRoot,
+         }
+ 
+ #ifndef KIT_IN_PROCESS
+-        lokit_main(childRoot, jailId, sysTemplate, loTemplate, loSubPath, NoCapsForKit, NoSeccomp, queryVersion, DisplayVersion);
++        lokit_main(childRoot, jailId, loTemplate, loSubPath, NoCapsForKit, NoSeccomp, queryVersion, DisplayVersion);
+ #else
+-        lokit_main(childRoot, jailId, sysTemplate, loTemplate, loSubPath, true, true, queryVersion, DisplayVersion);
++        lokit_main(childRoot, jailId, loTemplate, loSubPath, true, true, queryVersion, DisplayVersion);
+ #endif
+     }
+     else
+@@ -300,7 +299,6 @@ static int createLibreOfficeKit(const std::string& childRoot,
+ }
+ 
+ void forkLibreOfficeKit(const std::string& childRoot,
+-                        const std::string& sysTemplate,
+                         const std::string& loTemplate,
+                         const std::string& loSubPath,
+                         int limit)
+@@ -323,7 +321,7 @@ void forkLibreOfficeKit(const std::string& childRoot,
+         const size_t retry = count * 2;
+         for (size_t i = 0; ForkCounter > 0 && i < retry; ++i)
+         {
+-            if (ForkCounter-- <= 0 || createLibreOfficeKit(childRoot, sysTemplate, loTemplate, loSubPath) < 0)
++            if (ForkCounter-- <= 0 || createLibreOfficeKit(childRoot, loTemplate, loSubPath) < 0)
+             {
+                 LOG_ERR("Failed to create a kit process.");
+                 ++ForkCounter;
+@@ -388,7 +386,6 @@ int main(int argc, char** argv)
+ 
+     std::string childRoot;
+     std::string loSubPath;
+-    std::string sysTemplate;
+     std::string loTemplate;
+ 
+ #if ENABLE_DEBUG
+@@ -409,11 +406,6 @@ int main(int argc, char** argv)
+             eq = std::strchr(cmd, '=');
+             loSubPath = std::string(eq+1);
+         }
+-        else if (std::strstr(cmd, "--systemplate=") == cmd)
+-        {
+-            eq = std::strchr(cmd, '=');
+-            sysTemplate = std::string(eq+1);
+-        }
+         else if (std::strstr(cmd, "--lotemplate=") == cmd)
+         {
+             eq = std::strchr(cmd, '=');
+@@ -479,8 +471,7 @@ int main(int argc, char** argv)
+         }
+     }
+ 
+-    if (loSubPath.empty() || sysTemplate.empty() ||
+-        loTemplate.empty() || childRoot.empty())
++    if (loSubPath.empty() || loTemplate.empty() || childRoot.empty())
+     {
+         printArgumentHelp();
+         return Application::EXIT_USAGE;
+@@ -536,7 +527,7 @@ int main(int argc, char** argv)
+     // We must have at least one child, more are created dynamically.
+     // Ask this first child to send version information to master process and trace startup.
+     ::setenv("LOOL_TRACE_STARTUP", "1", 1);
+-    Process::PID forKitPid = createLibreOfficeKit(childRoot, sysTemplate, loTemplate, loSubPath, true);
++    Process::PID forKitPid = createLibreOfficeKit(childRoot, loTemplate, loSubPath, true);
+     if (forKitPid < 0)
+     {
+         LOG_FTL("Failed to create a kit process.");
+@@ -564,7 +555,7 @@ int main(int argc, char** argv)
+             break;
+         }
+ 
+-        forkLibreOfficeKit(childRoot, sysTemplate, loTemplate, loSubPath);
++        forkLibreOfficeKit(childRoot, loTemplate, loSubPath);
+     }
+ 
+     int returnValue = Application::EXIT_OK;
+diff --git a/kit/Kit.cpp b/kit/Kit.cpp
+index c6e823634..220b335ba 100644
+--- a/kit/Kit.cpp
++++ b/kit/Kit.cpp
+@@ -2107,7 +2107,6 @@ void documentViewCallback(const int type, const char* payload, void* data)
+ #ifndef BUILDING_TESTS
+ void lokit_main(const std::string& childRoot,
+                 const std::string& jailId,
+-                const std::string& sysTemplate,
+                 const std::string& loTemplate,
+                 const std::string& loSubPath,
+                 bool noCapabilities,
+@@ -2144,7 +2143,6 @@ void lokit_main(const std::string& childRoot,
+     }
+ 
+     assert(!childRoot.empty());
+-    assert(!sysTemplate.empty());
+     assert(!loTemplate.empty());
+     assert(!loSubPath.empty());
+ 
+@@ -2189,25 +2187,8 @@ void lokit_main(const std::string& childRoot,
+ 
+             if (!FileUtil::setupNixStorePaths(jailPath))
+             {
+-                // Copy (link) LO installation and other necessary files into it from the template.
+-                bool bLoopMounted = false;
+-                if (std::getenv("LOOL_BIND_MOUNT"))
+-                {
+-                    Path usrSrcPath(sysTemplate, "usr");
+-                    Path usrDestPath(jailPath, "usr");
+-                    File(usrDestPath).createDirectory();
+-                    std::string mountCommand =
+-                        std::string("loolmount ") +
+-                        usrSrcPath.toString() +
+-                        std::string(" ") +
+-                        usrDestPath.toString();
+-                    LOG_DBG("Initializing jail bind mount.");
+-                    bLoopMounted = !system(mountCommand.c_str());
+-                    LOG_DBG("Initialized jail bind mount.");
+-                }
+-                linkOrCopy(sysTemplate, jailPath,
+-                           bLoopMounted ? LinkOrCopyType::NoUsr : LinkOrCopyType::All);
+-                linkOrCopy(loTemplate, jailLOInstallation, LinkOrCopyType::LO);
++                LOG_ERR("Failed to bind-mount Nix store paths.");
++                std::_Exit(Application::EXIT_SOFTWARE);
+             }
+ 
+             // We need this because sometimes the hostname is not resolved
+diff --git a/kit/Kit.hpp b/kit/Kit.hpp
+index ac80b4869..0961de4ab 100644
+--- a/kit/Kit.hpp
++++ b/kit/Kit.hpp
+@@ -16,7 +16,6 @@
+ 
+ void lokit_main(const std::string& childRoot,
+                 const std::string& jailId,
+-                const std::string& sysTemplate,
+                 const std::string& loTemplate,
+                 const std::string& loSubPath,
+                 bool noCapabilities,
+@@ -67,7 +66,6 @@ struct UserInfo
+ /// Check the ForkCounter, and if non-zero, fork more of them accordingly.
+ /// @param limit If non-zero, set the ForkCounter to this limit.
+ void forkLibreOfficeKit(const std::string& childRoot,
+-                        const std::string& sysTemplate,
+                         const std::string& loTemplate,
+                         const std::string& loSubPath,
+                         int limit = 0);
+diff --git a/loolwsd.xml.in b/loolwsd.xml.in
+index 8d35510fa..d2d5b0c60 100644
+--- a/loolwsd.xml.in
++++ b/loolwsd.xml.in
+@@ -6,7 +6,6 @@
+     <allowed_languages desc="List of supported languages on this instance." default="de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru">de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru</allowed_languages>
+ 
+     <tile_cache_path desc="Path to a directory where to keep the tile cache." type="path" relative="false" default="@LOOLWSD_CACHEDIR@"></tile_cache_path>
+-    <sys_template_path desc="Path to a template tree with shared libraries etc to be used as source for chroot jails for child processes." type="path" relative="true" default="systemplate"></sys_template_path>
+     <lo_template_path desc="Path to a LibreOffice installation tree to be copied (linked) into the jails for child processes. Should be on the same file system as systemplate." type="path" relative="false" default="@LO_PATH@"></lo_template_path>
+     <child_root_path desc="Path to the directory under which the chroot jails for the child processes will be created. Should be on the same file system as systemplate and lotemplate. Must be an empty directory." type="path" relative="true" default="jails"></child_root_path>
+ 
+diff --git a/wsd/LOOLWSD.cpp b/wsd/LOOLWSD.cpp
+index 0991d4fb7..ce038ec54 100644
+--- a/wsd/LOOLWSD.cpp
++++ b/wsd/LOOLWSD.cpp
+@@ -311,7 +311,7 @@ static int forkChildren(const int number)
+         }
+ 
+ #ifdef KIT_IN_PROCESS
+-        forkLibreOfficeKit(LOOLWSD::ChildRoot, LOOLWSD::SysTemplate, LOOLWSD::LoTemplate, LO_JAIL_SUBPATH, number);
++        forkLibreOfficeKit(LOOLWSD::ChildRoot, LOOLWSD::LoTemplate, LO_JAIL_SUBPATH, number);
+ #else
+         const std::string aMessage = "spawn " + std::to_string(number) + "\n";
+         LOG_DBG("MasterToForKit: " << aMessage.substr(0, aMessage.length() - 1));
+@@ -576,7 +576,6 @@ bool LOOLWSD::DummyLOK = false;
+ std::string LOOLWSD::FuzzFileName;
+ #endif
+ std::string LOOLWSD::Cache = LOOLWSD_CACHEDIR;
+-std::string LOOLWSD::SysTemplate;
+ std::string LOOLWSD::LoTemplate;
+ std::string LOOLWSD::ChildRoot;
+ std::string LOOLWSD::ServerName;
+@@ -657,7 +656,6 @@ void LOOLWSD::initialize(Application& self)
+         = { { "allowed_languages", "de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru" },
+             { "tile_cache_path", LOOLWSD_CACHEDIR },
+             { "tile_cache_persistent", "true" },
+-            { "sys_template_path", "systemplate" },
+             { "lo_template_path", LO_PATH },
+             { "child_root_path", "jails" },
+             { "lo_jail_subpath", "lo" },
+@@ -841,7 +839,6 @@ void LOOLWSD::initialize(Application& self)
+     setenv("LOK_WHITELIST_LANGUAGES", allowedLanguages.c_str(), 1);
+ 
+     Cache = getPathFromConfig("tile_cache_path");
+-    SysTemplate = getPathFromConfig("sys_template_path");
+     LoTemplate = getPathFromConfig("lo_template_path");
+     ChildRoot = getPathFromConfig("child_root_path");
+     ServerName = config().getString("server_name");
+@@ -1361,7 +1358,6 @@ bool LOOLWSD::createForKit()
+ 
+     std::vector<std::string> args;
+     args.push_back("--losubpath=" + std::string(LO_JAIL_SUBPATH));
+-    args.push_back("--systemplate=" + SysTemplate);
+     args.push_back("--lotemplate=" + LoTemplate);
+     args.push_back("--childroot=" + ChildRoot);
+     args.push_back("--clientport=" + std::to_string(ClientPortNumber));
+@@ -2726,11 +2722,6 @@ int LOOLWSD::innerMain()
+     // so must check options required in the parent (but not in the
+     // child) separately now. Also check for options that are
+     // meaningless for the parent.
+-    if (SysTemplate.empty())
+-    {
+-        LOG_FTL("Missing --systemplate option");
+-        throw MissingOptionException("systemplate");
+-    }
+     if (LoTemplate.empty())
+     {
+         LOG_FTL("Missing --lotemplate option");
+diff --git a/wsd/LOOLWSD.hpp b/wsd/LOOLWSD.hpp
+index 3ec79c867..1a1d169b8 100644
+--- a/wsd/LOOLWSD.hpp
++++ b/wsd/LOOLWSD.hpp
+@@ -52,7 +52,6 @@ public:
+     static std::string Cache;
+     static std::string ConfigFile;
+     static std::string ConfigDir;
+-    static std::string SysTemplate;
+     static std::string LoTemplate;
+     static std::string ChildRoot;
+     static std::string ServerName;
