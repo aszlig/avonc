@@ -1,0 +1,56 @@
+diff --git a/kit/ForKit.cpp b/kit/ForKit.cpp
+index 378c24336..e01e93c49 100644
+--- a/kit/ForKit.cpp
++++ b/kit/ForKit.cpp
+@@ -526,7 +526,8 @@ int main(int argc, char** argv)
+ 
+     // We must have at least one child, more are created dynamically.
+     // Ask this first child to send version information to master process and trace startup.
+-    ::setenv("LOOL_TRACE_STARTUP", "1", 1);
++    if (LogLevel == "trace")
++        ::setenv("LOOL_TRACE_STARTUP", "1", 1);
+     Process::PID forKitPid = createLibreOfficeKit(childRoot, loTemplate, loSubPath, true);
+     if (forKitPid < 0)
+     {
+@@ -534,8 +535,8 @@ int main(int argc, char** argv)
+         std::_Exit(Application::EXIT_SOFTWARE);
+     }
+ 
+-    // No need to trace subsequent children.
+-    ::unsetenv("LOOL_TRACE_STARTUP");
++    if (LogLevel == "trace")
++        ::unsetenv("LOOL_TRACE_STARTUP");
+     if (LogLevel != "trace")
+     {
+         LOG_INF("Setting log-level to [" << LogLevel << "].");
+diff --git a/net/Socket.hpp b/net/Socket.hpp
+index 01f60c77d..0fb29302d 100644
+--- a/net/Socket.hpp
++++ b/net/Socket.hpp
+@@ -554,7 +554,7 @@ public:
+     void wakeup()
+     {
+         if (!isAlive())
+-            LOG_WRN("Waking up dead poll thread [" << _name << "], started: " <<
++            LOG_INF("Waking up dead poll thread [" << _name << "], started: " <<
+                     _threadStarted << ", finished: " << _threadFinished);
+ 
+         wakeup(_wakeup[1]);
+diff --git a/wsd/LOOLWSD.cpp b/wsd/LOOLWSD.cpp
+index ce038ec54..a88ad91b7 100644
+--- a/wsd/LOOLWSD.cpp
++++ b/wsd/LOOLWSD.cpp
+@@ -783,12 +783,7 @@ void LOOLWSD::initialize(Application& self)
+         }
+     }
+ 
+-    // Log at trace level until we complete the initialization.
+-    Log::initialize("wsd", "trace", withColor, logToFile, logProperties);
+-    if (LogLevel != "trace")
+-    {
+-        LOG_INF("Setting log-level to [trace] and delaying setting to requested [" << LogLevel << "].");
+-    }
++    Log::initialize("wsd", LogLevel, withColor, logToFile, logProperties);
+ 
+     {
+         std::string proto = getConfigValue<std::string>(conf, "net.proto", "");
