@@ -3,9 +3,23 @@
 let
   package = import ./package.nix { inherit pkgs lib; };
 
-  chrootEtc = (import <nixpkgs/nixos> {
-    configuration = {};
-  }).config.system.build.etc;
+  fontConfig = pkgs.makeFontsConf {
+    fontDirectories = [
+      "${pkgs.ghostscript}/share/ghostscript/fonts"
+      pkgs.dejavu_fonts
+      pkgs.freefont_ttf
+      pkgs.gyre-fonts
+      pkgs.liberation_ttf
+      pkgs.noto-fonts
+      pkgs.noto-fonts-emoji
+      pkgs.unifont
+      pkgs.xorg.fontbh100dpi
+      pkgs.xorg.fontbhlucidatypewriter100dpi
+      pkgs.xorg.fontbhlucidatypewriter75dpi
+      pkgs.xorg.fontcursormisc
+      pkgs.xorg.fontmiscmisc
+    ];
+  };
 
   genOptionFlags = attrs: let
     mkPair = keys: val: "--o:${lib.concatStringsSep "." keys}=${val}";
@@ -18,7 +32,7 @@ let
     tile_cache_path = "/var/cache/libreoffice-online/tiles";
     lo_template_path = "${package.sdk}/lib/libreoffice";
     # XXX: Should be empty or even better: Remove the code!
-    sys_template_path = chrootEtc;
+    sys_template_path = pkgs.runCommand "empty" {} "mkdir $out";
     child_root_path = "/var/cache/libreoffice-online/roots";
     server_name = let
       # XXX: Make this DRY, it's from ../nextcloud.nix!
@@ -148,9 +162,10 @@ in {
       after = [ "nginx.service" ];
 
       environment.JAVA_HOME = package.sdk.jdk;
+      environment.FONTCONFIG_FILE = fontConfig;
       environment.LOOL_NIX_STORE_PATHS_FILE = "${pkgs.closureInfo {
         rootPaths = [
-          package.sdk chrootEtc pkgs.glibcLocales package.sdk.jdk
+          package.sdk fontConfig pkgs.glibcLocales package.sdk.jdk
         ];
       }}/store-paths";
 
