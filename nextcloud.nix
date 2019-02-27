@@ -429,7 +429,10 @@ let
         chdir = package;
         die-on-term = true;
         disable-logging = true;
-        env = "NEXTCLOUD_CONFIG_DIR=${nextcloudConfigDir}";
+        env = [
+          "NEXTCLOUD_CONFIG_DIR=${nextcloudConfigDir}"
+          "PWD=${package}"
+        ];
         master = true;
         php-allowed-script = map (name: "${package}/${name}.php") entryPoints;
         php-index = "index.php";
