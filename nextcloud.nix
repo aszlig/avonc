@@ -19,16 +19,17 @@ let
     sha256 = "0sdzscz2pq7g674inkc6cryqsdnrpin2hsvvaqzngld6vp1z7h04";
   };
 
+  occ = lib.escapeShellArg "${package}/occ";
+
   occUser = pkgs.writeScriptBin "nextcloud-occ" ''
     #!${pkgs.stdenv.shell} -e
     export NEXTCLOUD_CONFIG_DIR=${lib.escapeShellArg nextcloudConfigDir}
+    export __NEXTCLOUD_VERSION=${lib.escapeShellArg package.version}
     set -a
     source /var/lib/nextcloud/secrets.env
     set +a
     exec ${lib.escapeShellArg "${pkgs.utillinux}/bin/runuser"} \
-      -u nextcloud -g nextcloud -- ${phpCli} \
-      ${lib.escapeShellArg "${package}/occ"} \
-      "$@"
+      -u nextcloud -g nextcloud -- ${phpCli} ${occ} "$@"
   '';
 
   postgresql = config.services.postgresql.package;
@@ -156,6 +157,7 @@ let
     patches = [
       patches/no-config-uid-check.patch
       patches/executable-lookup.patch
+      patches/readonly-config-upgrade.patch
     ];
 
     # Nextcloud checks whether the user matches the webserver user by comparing
@@ -198,10 +200,6 @@ let
 
   mkPhpConfig = value: "<?php\n$CONFIG = ${mkPhp value};\n";
 
-  fullVersion = let
-    isShort = builtins.match "([0-9]+\\.){2}[0-9]+" package.version != null;
-  in if isShort then "${package.version}.0" else package.version;
-
   # All of the static files we can serve as-is without going through PHP.
   staticFiles = pkgs.runCommand "nextcloud-static" {
     nextcloud = package;
@@ -234,7 +232,7 @@ let
 
       trusted_domains = [];
       datadirectory = "/var/lib/nextcloud/data";
-      version = fullVersion;
+      version.__fromEnv = "__NEXTCLOUD_VERSION";
       dbtype = "pgsql";
       dbhost = "/run/postgresql";
       dbname = "nextcloud";
@@ -257,6 +255,12 @@ let
       check_for_working_wellknown_setup = false;
       check_for_working_htaccess = false;
       config_is_read_only = true;
+
+      # We do check integrity on our end via the updater and tampering on the
+      # server can be verified via the store paths checksum, eg. comparing it
+      # against one from a different host.
+      "integrity.check.disabled" = true;
+      lastupdateat = 0;
 
       log_type = "errorlog";
       logdateformat = ""; # Already taken care by journald.
@@ -774,7 +778,6 @@ in {
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         ExecStart = let
           tar = "${pkgs.gnutar}/bin/tar";
-          occ = lib.escapeShellArg "${package}/occ";
           wantEncryption = cfg.apps.encryption.enable;
         in [
           "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data"
@@ -786,12 +789,7 @@ in {
 
     systemd.packages = [ nextcloudSandboxPaths ];
 
-    systemd.services.nextcloud-upgrade = let
-      gcRoot = "/nix/var/nix/gcroots/nextcloud";
-      newPackage = lib.escapeShellArg package;
-      newConfig = nextcloudConfigDir;
-      occ = lib.escapeShellArg "${package}/occ";
-    in {
+    systemd.services.nextcloud-upgrade = {
       description = "Nextcloud Update Actions";
       requiredBy = [ "nextcloud.service" ];
       requires = [ "nextcloud-init-db.service" "nextcloud-init.service" ];
@@ -799,21 +797,19 @@ in {
       before = [ "nextcloud.service" "nextcloud-cron.service" ];
 
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
+      environment.__NEXTCLOUD_VERSION = package.version;
 
       script = ''
-        if [ -e ${gcRoot} ]; then
-          ( export NEXTCLOUD_CONFIG_DIR=${gcRoot}/config
-            ${mkEnableDisableApps "${phpCli} ${gcRoot}/package/occ" true}
+        if [ -e /var/lib/nextcloud/.version ]; then
+          __NEXTCLOUD_VERSION="$(< /var/lib/nextcloud/.version)" \
             ${phpCli} ${occ} upgrade
-          )
         fi
         ${mkEnableDisableApps "${phpCli} ${occ}" false}
       '';
 
       postStart = ''
-        mkdir -p ${gcRoot}
-        ${pkgs.coreutils}/bin/ln -svfT ${newPackage} ${gcRoot}/package
-        ${pkgs.coreutils}/bin/ln -svfT ${newConfig} ${gcRoot}/config
+        echo -n ${lib.escapeShellArg package.version} \
+          > /var/lib/nextcloud/.version
       '';
 
       serviceConfig = {
@@ -831,6 +827,8 @@ in {
       description = "Nextcloud Server";
       requires = [ "postgresql.service" ];
       after = [ "network.target" "sockets.target" "postgresql.service" ];
+
+      environment.__NEXTCLOUD_VERSION = package.version;
 
       serviceConfig = {
         Type = "notify";
@@ -867,6 +865,7 @@ in {
       after = [ "nextcloud.service" ];
 
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
+      environment.__NEXTCLOUD_VERSION = package.version;
 
       serviceConfig = {
         Type = "oneshot";

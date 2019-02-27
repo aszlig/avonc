@@ -1,0 +1,51 @@
+diff --git a/lib/base.php b/lib/base.php
+index 90fa549620..fb84f69c85 100644
+--- a/lib/base.php
++++ b/lib/base.php
+@@ -241,9 +241,7 @@ class OC {
+ 
+ 		// Check if config is writable
+ 		$configFileWritable = is_writable($configFilePath);
+-		if (!$configFileWritable && !OC_Helper::isReadOnlyConfigEnabled()
+-			|| !$configFileWritable && \OCP\Util::needUpgrade()) {
+-
++		if (!$configFileWritable && !OC_Helper::isReadOnlyConfigEnabled()) {
+ 			$urlGenerator = \OC::$server->getURLGenerator();
+ 
+ 			if (self::$CLI) {
+diff --git a/lib/private/Config.php b/lib/private/Config.php
+index c881e48500..bd5522e4a3 100644
+--- a/lib/private/Config.php
++++ b/lib/private/Config.php
+@@ -231,6 +231,13 @@ class Config {
+ 	 * @throws \Exception If no file lock can be acquired
+ 	 */
+ 	private function writeData() {
++		// We have removed the check whether the config file is writable for
++		// non-up-to-date versions in lib/base.php, but in order to update
++		// anyway, we need to make sure that we don't actually write the data
++		// if we have a config file that resides within a Nix store path.
++		if (!is_writable($this->configFilePath))
++			return;
++
+ 		// Create a php file ...
+ 		$content = "<?php\n";
+ 		$content .= '$CONFIG = ';
+diff --git a/lib/private/Updater.php b/lib/private/Updater.php
+index 4b4723be94..0044e34347 100644
+--- a/lib/private/Updater.php
++++ b/lib/private/Updater.php
+@@ -244,13 +244,6 @@ class Updater extends BasicEmitter {
+ 		$this->checkAppsRequirements();
+ 		$this->doAppUpgrade();
+ 
+-		// Update the appfetchers version so it downloads the correct list from the appstore
+-		\OC::$server->getAppFetcher()->setVersion($currentVersion);
+-
+-		// upgrade appstore apps
+-		$this->upgradeAppStoreApps(\OC::$server->getAppManager()->getInstalledApps());
+-		$this->upgradeAppStoreApps(\OC_App::$autoDisabledApps, true);
+-
+ 		// install new shipped apps on upgrade
+ 		OC_App::loadApps(['authentication']);
+ 		$errors = Installer::installShippedApps(true);
