@@ -80,7 +80,7 @@ let
                for mt in mimetypes]
       sys.stdout.write('[' + ', '.join(array) + ']')
     '');
-    discoveryXml = "${package}/share/libreoffice-online/discovery.xml";
+    discoveryXml = "${package.src}/discovery.xml";
     loolLeafletUrl = "${config.nextcloud.baseUrl}/loleaflet/"
                    + "${package.versionHash}/loleaflet.html?";
     patch = ./richdocuments.patch;
