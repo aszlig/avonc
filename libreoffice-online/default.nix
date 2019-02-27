@@ -115,6 +115,8 @@ in {
       patch -p1 -d apps/richdocuments < ${richdocumentsPatch}
     '';
 
+    nextcloud.apps.richdocuments.config.wopi_url = config.nextcloud.baseUrl;
+
     users.users.libreoffice-online = {
       description = "LibreOffice Online User";
       group = "libreoffice-online";
