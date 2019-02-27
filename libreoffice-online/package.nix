@@ -58,7 +58,6 @@ in pkgs.stdenv.mkDerivation rec {
   '') (lib.attrValues nodePackages);
 
   configureFlags = [
-    "--disable-ssl"
     "--disable-setcap"
     "--with-lokit-path=${libreofficeSDK}/include"
     "--with-lo-path=${libreofficeSDK}/lib"

@@ -23,8 +23,11 @@ let
   };
 
   genOptionFlags = attrs: let
-    mkPair = keys: val: "--o:${lib.concatStringsSep "." keys}=${val}";
-    isVal = x: lib.isDerivation x || lib.isString x;
+    mkVal = val: if val == true then "true"
+                 else if val == false then "false"
+                 else val;
+    mkPair = keys: val: "--o:${lib.concatStringsSep "." keys}=${mkVal val}";
+    isVal = x: lib.isDerivation x || lib.isString x || lib.isBool x;
     transformArgs = lib.mapAttrsRecursiveCond (x: !isVal x) mkPair;
   in lib.escapeShellArgs (lib.collect isVal (transformArgs attrs));
 
@@ -33,22 +36,17 @@ let
     tile_cache_path = "/var/cache/libreoffice-online/tiles";
     lo_template_path = "${package.sdk}/lib/libreoffice";
     child_root_path = "/var/cache/libreoffice-online/roots";
-    server_name = let
-      # XXX: Make this DRY, it's from ../nextcloud.nix!
-      maybePort = let
-        needsExplicit = !lib.elem config.nextcloud.port [ 80 443 ];
-      in lib.optionalString needsExplicit ":${toString config.nextcloud.port}";
-    in "${config.nextcloud.domain}${maybePort}";
-    storage.wopi."host[0]" = "dnyarri";
+    storage.wopi."host[0]" = config.nextcloud.domain;
     logging.level = cfg.logLevel;
     net.listen = "systemd";
+    ssl.enable = false;
+    ssl.termination = true;
   };
 
   # TODO: Remove this as soon as it is in the oldest nixpkgs version we
   #       support.
   ip2unix = pkgs.stdenv.mkDerivation rec {
     name = "ip2unix-${version}";
-
     version = "2.0.1";
 
     src = pkgs.fetchFromGitHub {
@@ -128,7 +126,9 @@ in {
       # This is needed for LibreOffice Online to connect back to the Nextcloud
       # instance.
       extraConfig = ''
-        listen unix:/run/libreoffice-online-internal.socket;
+        listen unix:/run/libreoffice-online-internal.socket${
+          lib.optionalString config.nextcloud.useSSL " ssl"
+        };
       '';
       locations = let
         commonConfig = {
@@ -151,7 +151,6 @@ in {
           extraConfig = commonConfig.extraConfig + ''
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "Upgrade";
-
           '';
         };
       };
