@@ -509,9 +509,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "1zznmwz3b0d2mih1lbwqdhpwlr4b771rni99l0zrrw9qsqfgf0cn",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.0.0/files_antivirus.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0gc3rzdk4d64k497gfqw1pf36v7qqjwv7dcy02x32zl50194pbff",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.0.1/files_antivirus.tar.gz",
+      "version": "2.0.1"
     },
     "files_automatedtagging": {
       "meta": {
@@ -712,9 +712,9 @@
         "name": "Retention",
         "summary": "This application allows for automatic deletion of files after a given time"
       },
-      "sha256": "1rh18i6p778s2m9i8i4gd5sjs960qfddhxjq8mbb9dkz5lyzfnhj",
-      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.4.0/files_retention-1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0nngcl0749iaqpm190qmskr9hrg9r1r4vca4b0bxzla8ixfqfjgl",
+      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.4.1/files_retention-1.4.1.tar.gz",
+      "version": "1.4.1"
     },
     "files_rightclick": {
       "meta": {
@@ -922,18 +922,18 @@
     },
     "gpxpod": {
       "meta": {
-        "description": "# GpxPod Nextcloud application\n\nApplication to display gpx, kml, igc, fit and tcx files collections,\nview elevation profiles and tracks stats, filter tracks,\n color tracks by speed, elevation or pace and compare divergent parts of similar tracks.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*   can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system.\n*  supports metric, english and nautical measure systems\n*   draws elevation, speed or pace interactive chart\n*   displays geotagged pictures found in selected directory\n*   generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*   allows you to move selected track files\n*   can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*   can make global comparison of multiple tracks\n*   can make visual pair comparison of divergent parts of similar tracks\n*   allows users to add personal map tile servers\n*   saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*   loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*   is compatible with SQLite, MySQL and PostgreSQL databases\n*   adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested on Nextcloud 14 with Firefox and Chromium.\n\nThis app is under development.\n\nLink to Nextcloud application website : https://apps.nextcloud.com/apps/gpxpod\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account).\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details (allow SRTM elevation correction, integration in \"Files\" app, tcx, igc, fit compatibility...)\n\n## Known issues\n\n* bad management of file names including simple or double quotes\n* _WARNING_, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.",
+        "description": "# GpxPod Nextcloud application\n\nDisplay, analyse, compare and share GPS track files.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*  can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system\n*  supports metric, english and nautical measure systems\n*  draws elevation, speed or pace interactive chart\n*  can color track lines by speed, elevation or pace\n*  show track statistics\n*  filter tracks by date, total distance...\n*  displays geotagged pictures found in selected directory\n*  generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*  allows you to move selected track files\n*  can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*  can make global comparison of multiple tracks\n*  can make visual pair comparison of divergent parts of similar tracks\n*  allows users to add personal map tile servers\n*  saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*  loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*  is compatible with SQLite, MySQL and PostgreSQL databases\n*  adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is under (slow) development.\n\nLink to Nextcloud application website : https://apps.nextcloud.com/apps/gpxpod\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details\n\n## Known issues\n\n* bad management of file names including simple or double quotes\n* *WARNING*, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/gpxpod-oc",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "GpxPod",
-        "summary": "Display, analyse, compare and share gpx tracks"
+        "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "04c465mp8518ns7rddbkc0cvi6ny53x3zkwa5lwypgmfvn328gpd",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/3f5fbc895de15f11f90582c4872839dc/gpxpod-3.0.1.tar.gz",
-      "version": "3.0.1"
+      "sha256": "1p9l2459vg82p4fn78b8a0p7q3ip4y5qk2ykz1mk1q4z3j61svp9",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/8ccc2c66de69c7123c6af0cd565f6fcc/gpxpod-3.0.2.tar.gz",
+      "version": "3.0.2"
     },
     "grauphel": {
       "meta": {
@@ -976,9 +976,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "1j8w8z537mlp3p24r6gscb1g5zhc2wjzix1apfil6xdcwr63j5zg",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v2.0.2/groupfolders-2.0.2.tar.gz",
-      "version": "2.0.2"
+      "sha256": "1ryv6kddcrqgqkcv70njlfc5h04rr7dz776mixbgzy5w1hyji5m6",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v2.0.3/groupfolders-2.0.3.tar.gz",
+      "version": "2.0.3"
     },
     "hsts": {
       "meta": {
@@ -1313,7 +1313,7 @@
     },
     "phonetrack": {
       "meta": {
-        "description": "# PhoneTrack Nextcloud application\n\n PhoneTrack is a Nextcloud application to track\nand store mobile devices locations.\n\n   It receives information from mobile phones logging apps\nand displays it dynamically on a map.\n\n Help us to translate this app on [PhoneTrack Crowdin project](https://crowdin.com/project/phonetrack).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CONTRIBUTING.md).\n\nHow to use PhoneTrack :\n\n* Create a tracking session.\n* Give the logging URL\\* to the mobile devices. Choose the [logging method](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#logging-methods) you prefer.\n* Watch the session's devices location in real time (or not) in PhoneTrack or share it with public pages.\n\n(\\*) Don't forget to set the device name in the URL (rather than in the logging app settings. Replace \"yourname\" with the desired device name.\nSetting the device name in logging app settings only works with Owntracks, Traccar and OpenGTS.\n\nOn PhoneTrack main page, while watching a session, you can :\n\n*  Display location history\n*   Filter points\n*   Manually edit/add/delete points\n*   Edit devices (rename, change color/shape, move to another session)\n*   Define geofencing zones for devices\n*   Define proximity alerts for device pairs\n*   Share a session to other Nextcloud users or with a public link (read-only)\n*  Generate public share links with optional restrictions (filters, device name, last positions only, geofencing simplification)\n*   Import/export a session in GPX format (one file with one track per device or one file per device).\n*   Display sessions statistics\n*  [Reserve a device name](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#device-name-reservation) to make sure only authorized user can log with this name\n*  Toggle session auto export and auto purge (daily/weekly/monthly)\n*   Choose what to do when point number quota is reached (block logging or delete oldest point)\n\nPublic page and public filtered page work like main page except there is only one session displayed, everything is read-only and there is no need to be logged in.\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is compatible with theming colors and accessibility themes !\n\nThis app is under development.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* PhoneTrack **now works** with Nextcloud group restriction activated. See [admindoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc#issue-with-phonetrack-restricted-to-some-groups-in-nextcloud).\n\nAny feedback will be appreciated.",
+        "description": "# PhoneTrack Nextcloud application\n\n PhoneTrack is a Nextcloud application to track and store mobile devices locations.\n\n It receives information from mobile phones logging apps and displays it dynamically on a map.\n\n Help us to translate this app on [PhoneTrack Crowdin project](https://crowdin.com/project/phonetrack).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CONTRIBUTING.md).\n\nHow to use PhoneTrack :\n\n* Create a tracking session.\n* Give the logging link\\* to the mobile devices. Choose the [logging method](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#logging-methods) you prefer.\n* Watch the session's devices location in real time (or not) in PhoneTrack or share it with public pages.\n\n(\\*) Don't forget to set the device name in the link (rather than in the logging app settings). Replace \"yourname\" with the desired device name. Setting the device name in logging app settings only works with Owntracks, Traccar and OpenGTS.\n\nOn PhoneTrack main page, while watching a session, you can :\n\n*  Display location history\n*  Filter points\n*  Manually edit/add/delete points\n*  Edit devices (rename, change color/shape, move to another session)\n*  Define geofencing zones for devices\n*  Define proximity alerts for device pairs\n*  Share a session to other Nextcloud users or with a public link (read-only)\n*  Generate public share links with optional restrictions (filters, device name, last positions only, geofencing simplification)\n*  Import/export a session in GPX format (one file with one track per device or one file per device)\n*  Display sessions statistics\n*  [Reserve a device name](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#device-name-reservation) to make sure only authorized user can log with this name\n*  Toggle session auto export and auto purge (daily/weekly/monthly)\n*  Choose what to do when point number quota is reached (block logging or delete oldest point)\n\nPublic page and public filtered page work like main page except there is only one session displayed, everything is read-only and there is no need to be logged in.\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is compatible with theming colors and accessibility themes !\n\nThis app is under development.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* PhoneTrack **now works** with Nextcloud group restriction activated. See [admindoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc#issue-with-phonetrack-restricted-to-some-groups-in-nextcloud).\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/phonetrack-oc",
         "isShipped": false,
         "licenses": [
@@ -1322,9 +1322,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phones positions in real time"
       },
-      "sha256": "0k270anp39h3ijx0d03rf3ja5spg7dckl8smppbsi0blyiys5ky7",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/1a92460aafca3ba253bc51cc7a52737e/phonetrack-0.4.3.tar.gz",
-      "version": "0.4.3"
+      "sha256": "0m93q0gr8s82yhdp0lf1wvzj6diq0jl9hf5vx1mxxgjp0jg6bnax",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/5489b625951b714ff763fc409d381bd7/phonetrack-0.4.4.tar.gz",
+      "version": "0.4.4"
     },
     "piwik": {
       "meta": {
@@ -1352,9 +1352,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1qz2nhdd6zxlbswd86cryilvjl3zh8l4w352kxlbhzww9a7zlky6",
-      "url": "https://github.com/nextcloud/polls/releases/download/0.9.5/polls.tar.gz",
-      "version": "0.9.5"
+      "sha256": "0mkicg71pqsjjslnyhbkssfvnb73fva8msnslmhnynvgxjb5ywvn",
+      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.0/polls.tar.gz",
+      "version": "0.10.0"
     },
     "preferred_providers": {
       "meta": {
@@ -1470,9 +1470,9 @@
         "name": "Ransomware recovery",
         "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
       },
-      "sha256": "0329sr8s0pi6gz3n5jaik4vbfgr7wca8yx01qly0cbsfw9j70ncn",
-      "url": "https://wusa.io/ransomware_detection-0.4.2.tar.gz",
-      "version": "0.4.2"
+      "sha256": "0i6742ndbgs19w56f3f1xskii0szzc812a436jksfk7ahg7cjsic",
+      "url": "https://wusa.io/ransomware_detection-0.4.3.tar.gz",
+      "version": "0.4.3"
     },
     "ransomware_protection": {
       "meta": {
@@ -1548,6 +1548,20 @@
       "sha256": "07979i5hfi3r3070kr9xqqrzzfjxbs33h4wb6xxvyxmd9nqqdsz5",
       "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.1/scanner.tar.gz",
       "version": "0.1.1"
+    },
+    "secsignid": {
+      "meta": {
+        "description": "This Plugin enables the use of the SecSign ID two-factor authentication, to provide\na safe and easy to use additional layer of security.\n    \nTo use the SecSign 2FA, simply create a SecSign ID and\nlink it to your NextCloud via the settings. To find out more, visit www.secsign.com.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SecSign ID",
+        "summary": "Plugin to enable use of SecSign 2FA"
+      },
+      "sha256": "0zznd4fsp81lmr1cka4hs57p9agjdal4zywxdxaq11l4y5jlfdgc",
+      "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/raw/master/build/artifacts/appstore/secsignid.tar.gz",
+      "version": "0.1.0"
     },
     "sensorlogger": {
       "meta": {
