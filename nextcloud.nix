@@ -320,6 +320,7 @@ let
       disable = appPart.wrong;
     } // lib.optionalAttrs (!disableOnly) {
       enable = lib.genAttrs appPart.right (app: cfg.apps.${app}.onlyGroups);
+      appconf = lib.genAttrs appPart.right (app: cfg.apps.${app}.config);
     }));
 
     enableDisableApps = pkgs.writeScript "nextcloud-enable-disable-apps.py" ''
@@ -350,6 +351,11 @@ let
         for appid, groups in group_deferred.items():
           groupargs = [arg for group in groups for arg in ['-g', group]]
           subprocess.check_call(occ_cmd + ['app:enable'] + groupargs + [appid])
+
+        for appid in newenabled:
+          for key, value in newstate.get('appconf', {}).get(appid, {}).items():
+            args = ['config:app:set', appid, key, '--value=' + value]
+            subprocess.check_call(occ_cmd + args)
 
       newdisabled = set(newstate['disable']) \
                   - set(oldstate['disabled'].keys())
@@ -592,6 +598,16 @@ in {
           If the value is not <literal>null</literal>, enable the app only for
           the groups specified as a list. The groups are created if they do not
           exist.
+        '';
+      };
+
+      config = mkOption {
+        type = types.attrsOf types.str;
+        default = {};
+        internal = true;
+        description = ''
+          A set of configuration options to set for this app after it has been
+          enabled.
         '';
       };
     } // (extraAppOptions.${appId} or {})) upstreamInfo.applications;
