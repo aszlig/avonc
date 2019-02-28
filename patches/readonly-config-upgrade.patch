@@ -1,3 +1,19 @@
+commit 7e372bd8052f98518bc46dae0cdcf159b13910b8
+Author: aszlig <aszlig@nix.build>
+Date:   Thu Feb 28 16:01:13 2019 +0100
+
+    Allow to upgrade if the config is read-only
+    
+    We don't need to put the instance into maintenance mode because the
+    updater runs during NixOS activation and the unit file ordering prevents
+    the cron and main Nextcloud services from being started during an
+    upgrade or after a failed upgrade.
+    
+    So if the config isn't writable, let's just pretend that we have written
+    to the config file.
+    
+    Signed-off-by: aszlig <aszlig@nix.build>
+
 diff --git a/lib/base.php b/lib/base.php
 index 90fa549620..fb84f69c85 100644
 --- a/lib/base.php
