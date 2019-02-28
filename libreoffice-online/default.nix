@@ -83,7 +83,7 @@ let
     discoveryXml = "${package.src}/discovery.xml";
     loolLeafletUrl = "${config.nextcloud.baseUrl}/loleaflet/"
                    + "${package.versionHash}/loleaflet.html?";
-    patch = ./richdocuments.patch;
+    patch = patches/richdocuments.patch;
   } ''
     loolMimeTypesArray="$(extract-disco "$discoveryXml")"
     substitute "$patch" "$out" \

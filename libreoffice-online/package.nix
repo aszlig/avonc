@@ -38,9 +38,13 @@ in pkgs.stdenv.mkDerivation rec {
   };
 
   patches = [
-    ./no-setcap.patch ./username.patch ./nix-store-paths.patch ./systemd.patch
-    ./no-systemplate.patch ./logging-fixes.patch
-    ./disable-nonworking-commands.patch
+    patches/no-setcap.patch
+    patches/username.patch
+    patches/nix-store-paths.patch
+    patches/systemd.patch
+    patches/no-systemplate.patch
+    patches/logging-fixes.patch
+    patches/disable-nonworking-commands.patch
   ];
 
   postPatch = ''
