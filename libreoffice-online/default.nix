@@ -143,11 +143,13 @@ in {
         };
 
       in {
-        "^~ /loleaflet" = commonConfig;
-        "^~ /hosting/discovery" = commonConfig;
-        "^~ /hosting/capabilities" = commonConfig;
-        "~ ^/lool" = commonConfig;
+        "= /loleaflet/${package.versionHash}/loleaflet.html" = commonConfig;
+        "^~ /loleaflet/${package.versionHash}" = {
+          priority = 200;
+          alias = "${package}/share/libreoffice-online/loleaflet/dist";
+        };
 
+        "~ ^/lool" = commonConfig;
         "~ ^/lool/(?:.*)/ws$" = commonConfig // {
           priority = 100;
           extraConfig = commonConfig.extraConfig + ''
