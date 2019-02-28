@@ -28,7 +28,6 @@ import unicodedata
 import warnings
 
 UPDATE_SERVER_URL = 'https://updates.nextcloud.com/updater_server/'
-DOWNLOAD_URL = 'https://download.nextcloud.com/server/releases/'
 PHP_VERSION = '7.2.0'
 
 INITIAL_UPSTREAM_STATE = {
@@ -123,9 +122,9 @@ def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
     return apps
 
 
-def get_latest_nextcloud_version(current_ver: str, php_ver: str) -> str:
-    nc_version: List[str] = current_ver.split('.') + [''] * 4
-    php_version = php_ver.split('.') + [''] * 3
+def get_latest_ncver(curver: str, phpver: str) -> Tuple[str, Optional[str]]:
+    nc_version: List[str] = curver.split('.') + [''] * 4
+    php_version = phpver.split('.') + [''] * 3
 
     fields: List[str] = [
         nc_version[0],   # major
@@ -148,9 +147,10 @@ def get_latest_nextcloud_version(current_ver: str, php_ver: str) -> str:
     response.raise_for_status()
     try:
         xml = ET.fromstring(response.text)
-        return xml.find('version').text
     except ET.ParseError:
-        return current_ver
+        return curver, None
+
+    return xml.find('version').text, xml.find('url').text
 
 
 def hash_zip_content(fname: str, data: bytes) -> str:
@@ -174,21 +174,16 @@ def hash_zip(url: str, sha256: str) -> str:
     return hash_zip_content(fname, data)
 
 
-def download_nextcloud(version: str) -> Tuple[str, str]:
-    nc_version: List[str] = version.split('.')
-    dl_version: str
-    if len(nc_version) == 4 and int(nc_version[3]) == 0:
-        dl_version = '.'.join(nc_version[:3])
-    else:
-        dl_version = '.'.join(nc_version[:4])
+def download_nextcloud(version: str, url: str) -> Tuple[str, str]:
+    if url.lower().endswith('.zip'):
+        url = url[:-4] + '.tar.bz2'
 
-    fname: str = 'nextcloud-' + dl_version + '.tar.bz2'
-    sha_response = download_pbar(DOWNLOAD_URL + fname + '.sha256',
-                                 desc='Fetching checksum for ' + fname)
+    sha_response = download_pbar(url + '.sha256',
+                                 desc='Fetching checksum for ' + url)
     sha256: str = sha_response.split(maxsplit=1)[0].decode()
 
-    ziphash: str = hash_zip(DOWNLOAD_URL + fname, sha256)
-    return (ziphash, DOWNLOAD_URL + fname)
+    ziphash: str = hash_zip(url, sha256)
+    return (ziphash, url)
 
 
 def is_newer_version(current, latest):
@@ -317,14 +312,14 @@ def main(info_file: str) -> None:
     except FileNotFoundError:
         current_state = INITIAL_UPSTREAM_STATE
 
-    current_version = current_state['nextcloud']['version']
-    latest_version = get_latest_nextcloud_version(current_version, PHP_VERSION)
+    current_ver = current_state['nextcloud']['version']
+    latest_ver, dl_url = get_latest_ncver(current_ver, PHP_VERSION)
 
-    if is_newer_version(current_version, latest_version):
-        msg = 'New version {!r} of Nextcloud found.'.format(latest_version)
+    if dl_url is not None and is_newer_version(current_ver, latest_ver):
+        msg = 'New version {!r} of Nextcloud found.'.format(latest_ver)
         tqdm.write(msg, file=sys.stderr)
-        ziphash, url = download_nextcloud(latest_version)
-        current_state['nextcloud']['version'] = latest_version
+        ziphash, url = download_nextcloud(latest_ver, dl_url)
+        current_state['nextcloud']['version'] = latest_ver
         current_state['nextcloud']['url'] = url
         current_state['nextcloud']['sha256'] = ziphash
 
