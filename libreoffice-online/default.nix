@@ -174,7 +174,6 @@ in {
 
     systemd.services.libreoffice-online = {
       description = "LibreOffice Online";
-      wantedBy = [ "multi-user.target" ];
       after = [ "nginx.service" ];
 
       environment.JAVA_HOME = package.sdk.jdk;
