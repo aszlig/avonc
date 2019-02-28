@@ -1,0 +1,16 @@
+diff --git a/kit/ChildSession.cpp b/kit/ChildSession.cpp
+index a09968a93..eb81842c1 100644
+--- a/kit/ChildSession.cpp
++++ b/kit/ChildSession.cpp
+@@ -932,6 +932,11 @@ bool ChildSession::unoCommand(const char* /*buffer*/, int /*length*/, const std:
+         return false;
+     }
+ 
++    if (tokens[1] == ".uno:InsertObjectChart")
++        return false;
++    else if (tokens[1] == ".uno:DataFilterSpecialFilter")
++        return false;
++
+     // we need to get LOK_CALLBACK_UNO_COMMAND_RESULT callback when saving
+     const bool bNotify = (tokens[1] == ".uno:Save" ||
+                           tokens[1] == ".uno:Undo" ||

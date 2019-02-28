@@ -40,6 +40,7 @@ in pkgs.stdenv.mkDerivation rec {
   patches = [
     ./no-setcap.patch ./username.patch ./nix-store-paths.patch ./systemd.patch
     ./no-systemplate.patch ./logging-fixes.patch
+    ./disable-nonworking-commands.patch
   ];
 
   postPatch = ''
