@@ -639,7 +639,7 @@ in {
     };
   };
 
-  imports = [ ./libreoffice-online ];
+  imports = [ ./libreoffice-online ./gpx ];
 
   config = {
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
