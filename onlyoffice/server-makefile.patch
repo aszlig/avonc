@@ -1,0 +1,101 @@
+diff --git a/Gruntfile.js b/Gruntfile.js
+index 27ea001..cfdd9c8 100644
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -106,6 +106,6 @@ module.exports = function (grunt) {
+   grunt.loadNpmTasks('grunt-banner');
+   grunt.loadNpmTasks('grunt-check-dependencies');
+   
+-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'comments', 'usebanner', 'checkDependencies']);
++  grunt.registerTask('default', ['mkdir', 'copy', 'comments', 'usebanner', 'checkDependencies']);
+ 
+-};
+\ No newline at end of file
++};
+diff --git a/Makefile b/Makefile
+index c973f16..f50c104 100644
+--- a/Makefile
++++ b/Makefile
+@@ -50,32 +50,20 @@ endif
+ TARGET := $(PLATFORM)_$(ARCHITECTURE)
+ 
+ FILE_CONVERTER = $(OUTPUT)/FileConverter/bin
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)DjVuFile$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)doctrenderer$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)graphics$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)HtmlFile$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)HtmlRenderer$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)kernel$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)PdfReader$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)PdfWriter$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)UnicodeConverter$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/build/lib/$(TARGET)/$(LIB_PREFIX)XpsFile$(SHARED_EXT)
+-
+-ifeq ($(PLATFORM),linux)
+-FILE_CONVERTER_FILES += ../core/Common/3dParty/icu/$(TARGET)/build/libicudata$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/Common/3dParty/icu/$(TARGET)/build/libicuuc$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/Common/3dParty/v8/v8/out.gn/$(TARGET)/icudtl.dat
+-endif
+-
+-ifeq ($(PLATFORM),win)
+-FILE_CONVERTER_FILES += ../core/Common/3dParty/icu/$(TARGET)/build/icudt*$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/Common/3dParty/icu/$(TARGET)/build/icuuc*$(SHARED_EXT)
+-FILE_CONVERTER_FILES += ../core/Common/3dParty/v8/v8/out.gn/$(TARGET)/release/icudtl.dat
+-endif
+-
+-FILE_CONVERTER_FILES += ../core/build/bin/$(TARGET)/x2t$(EXEC_EXT)
+-
+-DOC_BUILDER_FILES += ../core/build/bin/$(TARGET)/docbuilder$(EXEC_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)DjVuFile$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)doctrenderer$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)graphics$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)HtmlFile$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)HtmlRenderer$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)kernel$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)PdfReader$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)PdfWriter$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)UnicodeConverter$(SHARED_EXT)
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/lib/$(LIB_PREFIX)XpsFile$(SHARED_EXT)
++
++FILE_CONVERTER_FILES += $(CORE_PREFIX)/bin/x2t$(EXEC_EXT)
++
++DOC_BUILDER_FILES += $(CORE_PREFIX)/bin/docbuilder$(EXEC_EXT)
+ DOC_BUILDER_FILES += ../core/Common/empty
+ 
+ HTML_FILE_INTERNAL := $(FILE_CONVERTER)/HtmlFileInternal
+@@ -90,7 +78,7 @@ SCHEMA_FILES = $(SCHEMA_DIR)/**
+ SCHEMA = $(OUTPUT)/$(SCHEMA_DIR)/
+ 
+ TOOLS_DIR = tools
+-TOOLS_FILES = ../core/build/bin/AllFontsGen/$(TARGET)
++TOOLS_FILES = $(CORE_PREFIX)/bin/AllFontsGen
+ TOOLS = $(OUTPUT)/$(TOOLS_DIR)
+ 
+ LICENSE_FILES = LICENSE.txt 3rd-Party.txt license/
+@@ -144,8 +132,7 @@ $(SCHEMA):
+ 		
+ $(TOOLS):
+ 	mkdir -p $(TOOLS) && \
+-		cp -r -t $(TOOLS) $(TOOLS_FILES) && \
+-		mv $(TOOLS)/$(TARGET)$(EXEC_EXT) $(TOOLS)/AllFontsGen$(EXEC_EXT)
++		cp -r -t $(TOOLS) $(TOOLS_FILES)
+ 		
+ $(LICENSE):
+ 	mkdir -p $(OUTPUT) && \
+@@ -153,7 +140,6 @@ $(LICENSE):
+ 		
+ $(GRUNT_FILES):
+ 	cd $(@D) && \
+-		npm install && \
+ 		$(GRUNT_ENV) $(GRUNT) $(GRUNT_FLAGS)
+ 	echo "Done" > $@
+ 
+@@ -170,7 +156,7 @@ $(CORE_FONTS):
+ 		cp -r -t $(CORE_FONTS) $(CORE_FONTS_FILES)
+ 		
+ clean:
+-	rm -rf $(CORE_FONTS) $(OUTPUT) $(GRUNT_FILES) 
++	rm -rf $(CORE_FONTS) $(OUTPUT)
+ 
+ install:
+ 	mkdir -pv /var/www/onlyoffice
