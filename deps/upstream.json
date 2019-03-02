@@ -237,9 +237,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1xqdb9j7mbmfgfabfydzmvfginq3jrviw0b880bn023yrkwdk0md",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.0/circles-0.16.0.tar.gz",
-      "version": "0.16.0"
+      "sha256": "0bv099q5d5xhz2in4nnm6dy1dzjbkcazxwsyzy5jyiblx1sb9bs5",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.1/circles-0.16.1.tar.gz",
+      "version": "0.16.1"
     },
     "comments": {
       "meta": {
@@ -270,7 +270,7 @@
     },
     "cospend": {
       "meta": {
-        "description": "# Nextcloud Cospend\n\nNextcloud Cospend is a group/shared budget manager.\nIt was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go in vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills.\nThis way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan\ntelling you which payments to make to reset the projet balances.\n\nProject members are independent from Nextcloud users.\nOnce you've got access to a project (as a guest or as a Nextcloud user), there is no restriction on what you can add/edit/delete.\nProjects can be accessed and modified by\npeople without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is available (soon on F-Droid).\n\n## Features\n\n* create/edit/delete project, member, bill\n* check member balances\n* display project's statistics\n* display settlement plan\n* guest access for people outside Nextcloud\n* share a project with Nextcloud users\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\nLink to Nextcloud application website : https://apps.nextcloud.com/apps/cospend\n\n## Donation\n\nI develop this app during my free time.\n\n* [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* ...\n\nAny feedback will be appreciated.",
+        "description": "# Nextcloud Cospend\n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset the mermbers balances.\n\nProject members are independent from Nextcloud users. Once you've got access to a project (as a guest or as a Nextcloud user), there is no restriction on what you can add/edit/delete. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is available (soon on F-Droid).\n\n## Features\n\n* create/edit/delete project, member, bill\n* check member balances\n* display project's statistics\n* display settlement plan\n* automatically create reimbursement bills from settlement plan\n* create recurring bills (day/week/month/year)\n* optionally provide custom amount for each member in new bills\n* insert public link to a personal file in bill description (picture of physical bill for example)\n* guest access for people outside Nextcloud\n* share a project with Nextcloud users\n* import/export projects as csv (compatible with csv files from IHateMoney)\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\nLink to Nextcloud application website : https://apps.nextcloud.com/apps/cospend\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* ...\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/cospend-nc",
         "isShipped": false,
         "licenses": [
@@ -279,9 +279,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "02j8wsm1alws9phkips9n7wy8ai1h927s024lkg6dlj1rshi9fck",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/5898669ee52e00d8ae0a00208348541a/cospend-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1wv0csrii0ysraxh9yvp71zzp7y9ab8wmjn10fp5yc6wznakxddd",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/9e4c16f432b51bfc21f226661388d835/cospend-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "dashboard": {
       "meta": {
@@ -453,9 +453,9 @@
         "name": "Notifications for calendar event updates",
         "summary": "Receive a notification when an event in a shared calendar was added, modified or deleted."
       },
-      "sha256": "0pbfbcj2bj3gbrld7gkdqvbpxqh50hb37z1vri6qv5pim7w9rzp0",
-      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v0.3.2/event_update_notification-0.3.2.tar.gz",
-      "version": "0.3.2"
+      "sha256": "1k5ra1q8y1mmkjkz3zrfkxmdl7dg85p61hidgm5y31n2ymcldv6c",
+      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v0.3.3/event_update_notification-0.3.3.tar.gz",
+      "version": "0.3.3"
     },
     "external": {
       "meta": {
@@ -596,9 +596,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "0bm9rhy0b7yx0c3k4d6lk1csdvm7n8k2byb7651hg2vf6a52yw9j",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.2.5/files_fulltextsearch-1.2.5.tar.gz",
-      "version": "1.2.5"
+      "sha256": "0sq288j6p2xfd78fnf6vxsqrjw82l0slxdbd0mjdsyklir32756y",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.2.6/files_fulltextsearch-1.2.6.tar.gz",
+      "version": "1.2.6"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -844,9 +844,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "1fvfn287p389v7hch4sis45gxgkd9ix3yxzwkqvrb2aybh5npqbv",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.4/fulltextsearch-1.2.4.tar.gz",
-      "version": "1.2.4"
+      "sha256": "0lwanw68cd6m90dyp7f22bjjxpkff2z9sd106m0sz6ffc0z4fs2i",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.5/fulltextsearch-1.2.5.tar.gz",
+      "version": "1.2.5"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -859,9 +859,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0h63dblhqn6j94k28mjf0rrbrypajyl0dh80sppqam7hz94hma7z",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.2.3/fulltextsearch_elasticsearch-1.2.3.tar.gz",
-      "version": "1.2.3"
+      "sha256": "18hnj5y2ds35c8mmmn34rq6c0sl1rfgf9cbalrplykgnsp22xavi",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.2.4/fulltextsearch_elasticsearch-1.2.4.tar.gz",
+      "version": "1.2.4"
     },
     "gallery": {
       "meta": {
@@ -1530,9 +1530,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0jq0bvbm95n2a9f58l7x4989n35ll8q8dwhnh4vg422jpbhw0xw1",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.2.1/richdocuments.tar.gz",
-      "version": "3.2.1"
+      "sha256": "107zbjivx7vzdm4mhps8gs8h94f5kr79j7hm82nq0k34cqz1va07",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.2.2/richdocuments.tar.gz",
+      "version": "3.2.2"
     },
     "scanner": {
       "meta": {
@@ -1551,7 +1551,7 @@
     },
     "secsignid": {
       "meta": {
-        "description": "This Plugin enables the use of the SecSign ID two-factor authentication, to provide\na safe and easy to use additional layer of security.\n    \nTo use the SecSign 2FA, simply create a SecSign ID and\nlink it to your NextCloud via the settings. To find out more, visit www.secsign.com.",
+        "description": "This Plugin enables the use of the SecSign ID two-factor authentication to provide\na safe and easy to use additional layer of security.\n    \nTo use the SecSign 2FA, simply create a SecSign ID and\nlink it to your NextCloud via the settings. To find out more, visit [www.secsign.com](https://www.secsign.com/developers/nextcloud-two-factor-authentication/).",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1559,9 +1559,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "0zznd4fsp81lmr1cka4hs57p9agjdal4zywxdxaq11l4y5jlfdgc",
+      "sha256": "0pqvprdif1x3l5l07spid2mkrd7mqcrarhymaxz2kjh0x19cspq7",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/raw/master/build/artifacts/appstore/secsignid.tar.gz",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     "sensorlogger": {
       "meta": {
@@ -2087,9 +2087,9 @@
         "name": "External user support",
         "summary": "Use external user authentication methods like IMAP, SMB and FTP"
       },
-      "sha256": "1x96y6k6b90jgvjyvn99q4ddkdml4dpcb9jlmly4ngl5s5hxgnfb",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.5.0/user_external.tar.gz",
-      "version": "0.5.0"
+      "sha256": "0zj96ibaafv3zqzihpwmxs00pnfsbxp26if4hbglmvaas6d9zv8w",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.5.1/user_external-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "user_ispconfig": {
       "meta": {
@@ -2268,8 +2268,8 @@
     }
   },
   "nextcloud": {
-    "sha256": "1s65qwzyl4g8664f8z18d2kwa865amn7a3ykkw788zpvd6ar5ln7",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.4.tar.bz2",
-    "version": "15.0.4.0"
+    "sha256": "0h08wgaringpvxv25c1c7n2mjm0wcskpzizymccayvrfp9im6in9",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.5.tar.bz2",
+    "version": "15.0.5.3"
   }
 }

@@ -222,6 +222,7 @@ let
   # docroot and without extension.
   entryPoints = [
     "index" "remote" "public" "status" "ocs/v1" "ocs/v2" "ocs-provider/index"
+    "ocm-provider/index"
   ];
 
   nextcloudConfigDir = let
