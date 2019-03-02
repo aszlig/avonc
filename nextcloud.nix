@@ -68,7 +68,10 @@ let
     chmod -R go+rX "$out"
   '';
 
+  caCerts = config.environment.etc."ssl/certs/ca-certificates.crt".source;
+
   commonPhpConfig = [
+    "curl.cainfo=${caCerts}"
     "expose_php=false"
     "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
     "extension=${phpPackages.imagick}/lib/php/extensions/imagick.so"
