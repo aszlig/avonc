@@ -652,31 +652,29 @@ in {
         error_page 403 ${cfg.baseUrl}/;
         error_page 404 ${cfg.baseUrl}/;
       '';
-      locations = {
+      locations = let
+        mkRewritesRedirs = cmd: lib.mapAttrsToList (from: to: [
+          (lib.nameValuePair "= /${from}" { extraConfig = cmd + to + ";"; })
+          (lib.nameValuePair "= /${from}/" { extraConfig = cmd + to + ";"; })
+        ]);
+
+        rewrites = mkRewritesRedirs "rewrite ^ /" {
+          ".well-known/host-meta" = "public.php?service=host-meta";
+          ".well-known/host-meta.json" = "public.php?service=host-meta-json";
+          ".well-known/webfinger" = "public.php?service=webfinger";
+          "ocm-provider" = "ocm-provider/index.php";
+          "osm-provider" = "osm-provider/index.php";
+        };
+        redirects = mkRewritesRedirs "return 301 ${cfg.baseUrl}/" {
+          ".well-known/carddav" = "remote.php/dav";
+          ".well-known/caldav" = "remote.php/dav";
+        };
+
+      in lib.listToAttrs (lib.concatLists (rewrites ++ redirects)) // {
         "/" = {
           root = staticFiles;
           tryFiles = "$uri $uri$is_args$args /index.php$uri$is_args$args";
           extraConfig = "access_log off;";
-        };
-
-        "= /.well-known/host-meta" = {
-          extraConfig = "rewrite ^ /public.php?service=host-meta;";
-        };
-
-        "= /.well-known/host-meta.json" = {
-          extraConfig = "rewrite ^ /public.php?service=host-meta-json;";
-        };
-
-        "= /.well-known/webfinger" = {
-          extraConfig = "rewrite ^ /public.php?service=webfinger;";
-        };
-
-        "= /.well-known/carddav" = {
-          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav;";
-        };
-
-        "= /.well-known/caldav" = {
-          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav;";
         };
 
         "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
