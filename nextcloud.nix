@@ -646,6 +646,15 @@ in {
   imports = [ ./libreoffice-online ./gpx ./xmpp ];
 
   config = {
+    assertions = lib.singleton {
+      assertion = cfg.apps.bookmarks.enable
+               -> !cfg.apps.bookmarks_fulltextsearch.enable;
+      message = toString [
+        "The 'bookmarks' and 'bookmarks_fulltextsearch' apps are incompatible,"
+        "see https://github.com/nextcloud/bookmarks#install"
+      ];
+    };
+
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
     services.nginx.virtualHosts.${cfg.domain} = {
