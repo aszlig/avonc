@@ -1,0 +1,12 @@
+diff --git a/src/rlx_prv_assembler.erl b/src/rlx_prv_assembler.erl
+index 4f9a41e..0c6fc12 100644
+--- a/src/rlx_prv_assembler.erl
++++ b/src/rlx_prv_assembler.erl
+@@ -226,6 +226,7 @@ copy_app_(State, App, AppDir, TargetDir, IncludeSrc) ->
+             rewrite_app_file(State, App, AppDir);
+         false ->
+             copy_directory(State, App, AppDir, TargetDir, IncludeSrc),
++            os:cmd("chmod -R +w " ++ TargetDir),
+             rewrite_app_file(State, App, TargetDir)
+     end.
+ 

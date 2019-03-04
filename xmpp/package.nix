@@ -117,8 +117,22 @@ let
   isTopLevel = attrs: attrs.level or 1 == 0;
   topLevelDeps = lib.filterAttrs (lib.const isTopLevel) deps;
 
-in pkgs.beamPackages.buildRebar3 {
-  name = "mongooseim";
+  # Relx doesn't like it if the source directories are from store paths, where
+  # files have a mode of 0444. So we patch it here, so a chmod -R +w is made
+  # before attempting to modify some of these files.
+  patchedRebar3 = pkgs.rebar3.overrideDerivation (drv: {
+    postPatch = (drv.postPatch or "") + ''
+      if [ -e _build/default/lib ]; then
+        depdir=_build/default/lib
+      else
+        depdir=_checkouts
+      fi
+      patch -p1 -d "$depdir/relx" < ${patches/relx-copy.patch}
+    '';
+  });
+
+in pkgs.stdenv.mkDerivation {
+  name = "mongooseim-${upstreamInfo.mongooseim.version}";
   inherit (upstreamInfo.mongooseim) version;
 
   src = jailbreakSource {
@@ -131,32 +145,48 @@ in pkgs.beamPackages.buildRebar3 {
     };
   };
 
-  postConfigure = ''
+  setupHook = pkgs.writeText "setupHook.sh" ''
+    addToSearchPath ERL_LIBS "$1/lib/erlang/lib/"
+  '';
+
+  patches = [
+    patches/configure-paths.patch
+    patches/logging-stdio.patch
+    patches/set-config-at-runtime.patch
+  ];
+
+  configurePhase = ''
     patchShebangs tools
+    ${pkgs.erlang}/bin/escript ${pkgs.rebar3.bootstrapper}
     ${pkgs.erlang}/bin/escript ${tools/fix-registry.erl}
-    tools/configure system with-pgsql prefix="$out"
+    tools/configure system with-pgsql prefix="$out" user=mongooseim
   '';
 
   buildPhase = ''
     (source configure.out && HOME=. rebar3 as prod compile)
   '';
 
-  buildInputs = [ pkgs.zlib ];
+  nativeBuildInputs = [
+    patchedRebar3 pkgs.erlang pkgs.openssl pkgs.makeWrapper
+  ];
+  buildInputs = [ pkgs.zlib ] ++ lib.attrValues topLevelDeps;
+
   buildPlugins = [
     rebarPlugins.pc
     rebarPlugins.provider_asn1
     rebarPlugins.rebar3_elixir
     rebarPlugins.rebar3_hex
   ];
-  beamDeps = lib.attrValues topLevelDeps;
+
+  ctlBinPath = lib.makeSearchPath "bin" [
+    pkgs.gawk pkgs.coreutils pkgs.gnused pkgs.gnugrep
+  ];
 
   installPhase = ''
-    mkdir -p "$out/lib/erlang/lib/$name"
-
-    for reldir in src ebin priv include; do
-      fd="_build/prod/lib/mongooseim/$reldir"
-      [ -d "$fd" ] || continue
-      cp -Hrt "$out/lib/erlang/lib/$name" "$fd"
-    done
+    sed -i -e '/^export RUNNER_USER/d' configure.out
+    HOME=. make REBAR=rebar3 install
+    cp -t "$out/lib/mongooseim/priv" priv/pg.sql
+    sed -i -e '/logger/d' "$out/bin/mongooseimctl"
+    wrapProgram "$out/bin/mongooseimctl" --set PATH "$ctlBinPath"
   '';
 }

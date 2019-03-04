@@ -1,0 +1,80 @@
+diff --git a/rel/files/app.config b/rel/files/app.config
+index 7312016a1..7b5f8e0e7 100644
+--- a/rel/files/app.config
++++ b/rel/files/app.config
+@@ -7,24 +7,12 @@
+     {log_path, "{{nksip_cache_dir}}"}
+  ]},
+  {lager, [
+-    {colored, true},
+-    %% Limit the number of messages per second allowed from error_logger
+-    {error_logger_hwm, 100},
+-    %% Make logging more async
+-    %% If some very heavy loaded process want to log something, it's better to
+-    %% not block the process.
+-    {async_threshold, 2000},
+-    {async_threshold_window, 500},
+-    %% Kill sink if it has more than 10k messages
+-    {killer_hwm, 10000},
+-    {killer_reinstall_after, 5000},
+-    {log_root, "{{mongooseim_log_dir}}"},
+-    {crash_log, "crash.log"},
++    {crash_log, undefined},
++    {async_threshold, undefined},
++    {error_logger_hwm, undefined},
+     {handlers, [
+-        {lager_console_backend, [{level, info}]},
+-%% use below line to add syslog backend for Lager
+-%        {lager_syslog_backend, [ "mongooseim", local0, info]},
+-        {lager_file_backend, [{file, "ejabberd.log"}, {level, info}, {size, 2097152}, {date, "$D0"}, {count, 5}]}
++        {lager_console_backend, [{level, info},
++                                 {lager_default_formatter,[{eol, "\n"}]}]}
+     ]}
+   ]}
+ %{exometer_core, [
+diff --git a/rel/files/mongooseim b/rel/files/mongooseim
+index a4b8dbfb8..22906e888 100755
+--- a/rel/files/mongooseim
++++ b/rel/files/mongooseim
+@@ -24,9 +24,6 @@ fi
+ # Make sure CWD is set to runner base dir
+ cd "$RUNNER_BASE_DIR"
+ 
+-# Make sure log directory exists
+-mkdir -p "$RUNNER_LOG_DIR"
+-
+ # Extract the target node name from node.args
+ NAME_ARG=`egrep -e '^-s?name' "$RUNNER_ETC_DIR"/vm.args`
+ if [ -z "$NAME_ARG" ]; then
+@@ -160,9 +157,6 @@ case "$1" in
+         # Dump environment info for logging purposes
+         echo "Root: $ROOTDIR"
+ 
+-        # Log the startup
+-        logger -t "$SCRIPT[$$]" "Starting up"
+-
+         # Start the VM
+         exec_echo "$BINDIR/erlexec" $FOREGROUNDOPTIONS \
+             -boot "$RUNNER_BASE_DIR/releases/$APP_VSN/$BOOTFILE" \
+@@ -198,9 +192,6 @@ case "$1" in
+         BINDIR="$ROOTDIR/erts-$ERTS_VSN/bin"
+         PROGNAME=`echo $0 | sed 's/.*\\///'`
+ 
+-        # Log the startup
+-        logger -t "$SCRIPT[$$]" "Starting up"
+-
+         # Start the VM
+         exec_echo "$BINDIR/erl" "$NAME" "debug-$TTY-$NODE" $COOKIE_ARG -remsh "$NODE" -hidden -args_file "$RUNNER_ETC_DIR/vm.dist.args"
+         ;;
+diff --git a/src/mongooseim.app.src b/src/mongooseim.app.src
+index 22e44dca3..f42743720 100644
+--- a/src/mongooseim.app.src
++++ b/src/mongooseim.app.src
+@@ -29,7 +29,6 @@
+                   idna,
+                   kernel,
+                   lager,
+-                  lager_syslog,
+                   lasse,
+                   mnesia,
+                   observer_cli,

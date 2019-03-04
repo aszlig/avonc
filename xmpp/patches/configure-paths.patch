@@ -1,0 +1,42 @@
+diff --git a/tools/configure b/tools/configure
+index 2e6ba0120..fc69d2e39 100755
+--- a/tools/configure
++++ b/tools/configure
+@@ -94,16 +94,16 @@ process_args([], Opts) -> {ok, Opts}.
+ 
+ system_install(Opts) ->
+     Opts#opts{system            = "yes",
+-              script_dir        = "$PREFIX/usr/lib/mongooseim/bin",
+-              bin_dir           = "$PREFIX/usr/bin",
++              script_dir        = "$PREFIX/lib/mongooseim/bin",
++              bin_dir           = "$PREFIX/bin",
+               etc_dir           = "$PREFIX/etc/mongooseim",
+-              lib_dir           = "$PREFIX/usr/lib/mongooseim",
+-              log_dir           = "$PREFIX/var/log/mongooseim",
+-              mdb_dir           = "$PREFIX/var/lib/mongooseim",
++              lib_dir           = "$PREFIX/lib/mongooseim",
++              log_dir           = "/var/log/mongooseim",
++              mdb_dir           = "/var/lib/mongooseim",
+               mdb_dir_toggle    = "",
+-              lock_dir          = "$PREFIX/var/lock/mongooseim",
++              lock_dir          = "/var/lock/mongooseim",
+               nodetool_etc_dir  = "$PREFIX/etc/mongooseim",
+-              nksip_cache_dir   = "$PREFIX/var/lib/mongooseim/nksip"}.
++              nksip_cache_dir   = "/var/lib/mongooseim/nksip"}.
+ 
+ process_app("none", _Apps) -> [];
+ process_app("all", _Apps) -> all_apps();
+diff --git a/tools/install b/tools/install
+index 06a9b77b7..05cccd53d 100755
+--- a/tools/install
++++ b/tools/install
+@@ -48,9 +48,6 @@ chown -R ${RUNNER_USER}:${RUNNER_GROUP} ${LIB_DIR}
+     mv ${LIB_DIR}/etc/vm.args      ${LIB_DIR}/etc/vm.args.example
+     mv ${LIB_DIR}/etc/vm.dist.args ${LIB_DIR}/etc/vm.dist.args.example
+ }
+-[ x"$SYSTEM" == x"yes" ] && install $INSTALL_OPTS -d ${LOG_DIR}
+-[ x"$SYSTEM" == x"yes" ] && install $INSTALL_OPTS -d ${MDB_DIR}
+-[ x"$SYSTEM" == x"yes" ] && install $INSTALL_OPTS -d ${LOCK_DIR}
+ 
+ ## Do the bookkeeping.
+ ## TODO: How to automate this? If done manually, there's always space for a cock-up.
