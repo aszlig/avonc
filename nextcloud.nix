@@ -643,7 +643,7 @@ in {
     };
   };
 
-  imports = [ ./libreoffice-online ./gpx ];
+  imports = [ ./libreoffice-online ./gpx ./xmpp ];
 
   config = {
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
