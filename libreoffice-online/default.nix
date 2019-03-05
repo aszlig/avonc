@@ -165,6 +165,8 @@ in {
       requiredBy = [ "nginx.service" "libreoffice-online.service" ];
       before = [ "nginx.service" ];
 
+      unitConfig.ConditionPathExists = "!/run/libreoffice-online";
+
       serviceConfig.RuntimeDirectory = "libreoffice-online";
       serviceConfig.RuntimeDirectoryMode = "0710";
       serviceConfig.RuntimeDirectoryPreserve = true;

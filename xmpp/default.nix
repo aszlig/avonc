@@ -371,6 +371,8 @@ in lib.mkIf cfg.enable {
     requiredBy = [ "nginx.service" "mongooseim.service" ];
     before = [ "nginx.service" ];
 
+    unitConfig.ConditionPathExists = "!/run/mongooseim-internal";
+
     serviceConfig.RuntimeDirectory = "mongooseim-internal";
     serviceConfig.RuntimeDirectoryMode = "0710";
     serviceConfig.RuntimeDirectoryPreserve = true;
