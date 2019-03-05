@@ -345,6 +345,18 @@ in lib.mkIf cfg.enable {
   '';
 
   services.nginx.virtualHosts.${config.nextcloud.domain}.locations = {
-    "= /xmpp/http-bind".proxyPass = "http://unix:/run/mongooseim-bosh.socket:";
+    "= /xmpp/http-bind" = {
+      proxyPass = "http://unix:/run/mongooseim-bosh.socket:";
+      extraConfig = ''
+        client_body_buffer_size 128K;
+        client_max_body_size 4M;
+        keepalive_timeout 60;
+        proxy_buffering off;
+        proxy_connect_timeout 5;
+        proxy_read_timeout 60;
+        proxy_redirect off;
+        send_timeout 60;
+      '';
+    };
   };
 }
