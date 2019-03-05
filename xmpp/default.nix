@@ -173,7 +173,7 @@ let
           { atom = "global"; }
           { atom = "default"; }
           { workers = 10; }
-          { server = [
+          { server.tuple = [
               { atom = "pgsql"; }
               "127.0.0.100"
               5432
