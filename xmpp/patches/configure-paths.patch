@@ -19,7 +19,7 @@ index 2e6ba0120..fc69d2e39 100755
 +              mdb_dir           = "/var/lib/mongooseim",
                mdb_dir_toggle    = "",
 -              lock_dir          = "$PREFIX/var/lock/mongooseim",
-+              lock_dir          = "/var/lock/mongooseim",
++              lock_dir          = "/run/mongooseim",
                nodetool_etc_dir  = "$PREFIX/etc/mongooseim",
 -              nksip_cache_dir   = "$PREFIX/var/lib/mongooseim/nksip"}.
 +              nksip_cache_dir   = "/var/lib/mongooseim/nksip"}.

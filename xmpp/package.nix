@@ -184,7 +184,7 @@ in pkgs.stdenv.mkDerivation {
   ];
 
   ctlBinPath = lib.makeSearchPath "bin" [
-    pkgs.gawk pkgs.coreutils pkgs.gnused pkgs.gnugrep
+    pkgs.gawk pkgs.coreutils pkgs.gnused pkgs.gnugrep pkgs.procps
   ];
 
   installPhase = ''

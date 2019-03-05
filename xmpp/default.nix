@@ -29,6 +29,62 @@ let
     doCheck = true;
   };
 
+  # Basic rules to block epmd's TCP sockets and use Unix sockets instead.
+  baseRules = [
+    { direction = "incoming";
+      port = 4369;
+      reject = true;
+      rejectError = "EADDRINUSE";
+    }
+    { direction = "incoming";
+      port = 0;
+      socketPath = "/run/mongooseim-epmd/port-%p.socket";
+    }
+    { direction = "outgoing";
+      address = "127.0.0.100";
+      port = 5432;
+      socketPath = "/run/postgresql/.s.PGSQL.5432";
+    }
+    { direction = "outgoing";
+      port = 4369;
+      type = "tcp";
+      socketPath = "/run/mongooseim-epmd.socket";
+    }
+    { direction = "outgoing";
+      address = "127.0.0.1";
+      socketPath = "/run/mongooseim-epmd/port-%p.socket";
+    }
+  ];
+
+  # Additional rules just for running the server.
+  serverRules = [
+    { direction = "incoming";
+      port = 5280;
+      socketActivation = true;
+    }
+    { direction = "outgoing";
+      address = "127.0.0.200";
+      port = 7;
+      socketPath = "/run/mongooseim-internal/auth.socket";
+    }
+  ];
+
+  mkCtl = extraRules: switchUser: let
+    rules = builtins.toJSON (baseRules ++ extraRules);
+    maybeSwitchUser = lib.optionalString switchUser (" ${lib.escapeShellArgs [
+      "${pkgs.utillinux}/bin/runuser" "-u" "mongooseim" "-g" "mongooseim"
+    ]} --");
+  in pkgs.writeScriptBin "mongooseimctl" ''
+    #!${pkgs.stdenv.shell}
+    export ERL_EPMD_ADDRESS=127.0.0.150
+    ${lib.optionalString switchUser "cd /var/empty"}
+    exec${maybeSwitchUser} ${lib.escapeShellArgs [
+      "${ip2unix}/bin/ip2unix"
+      "-f" (pkgs.writeText "ip2unix.rules" rules)
+      "${package}/bin/mongooseimctl"
+    ]} "$@"
+  '';
+
   postgresql = config.services.postgresql.package;
   pgDbSchema = "${package}/lib/mongooseim/priv/pg.sql";
 
@@ -111,7 +167,7 @@ let
     sm_backend.tuple = [ { atom = "mnesia"; } {} ];
     auth_method.atom = "nextcloud";
     auth_opts = {
-      host = "http://127.0.0.1:7";
+      host = "http://127.0.0.200:7";
       connection_pool_size = 10;
     };
     shaper.multi = shapers;
@@ -190,7 +246,7 @@ let
           { atom = "global"; }
           { atom = "auth"; }
           {}
-          { server = "http://127.0.0.1:7";
+          { server = "http://127.0.0.200:7";
             path_prefix = "/index.php/";
           }
         ];
@@ -209,6 +265,8 @@ in lib.mkIf cfg.enable {
   };
 
   users.groups.mongooseim = {};
+
+  environment.systemPackages = lib.singleton (mkCtl [] true);
 
   systemd.services.mongooseim-create-db = {
     description = "MongooseIM Database Creation";
@@ -268,10 +326,10 @@ in lib.mkIf cfg.enable {
 
     serviceConfig.ExecStart = toString [
       "${ip2unix}/bin/ip2unix"
-      "-r in,port=4369,tcp,addr=127.0.0.1,systemd"
+      "-r in,port=4369,tcp,addr=127.0.0.150,systemd"
       "-r in,blackhole"
       "-r out,path=/run/mongooseim-epmd/port-%%p.socket"
-      "${pkgs.erlang}/bin/epmd -address 127.0.0.1"
+      "${pkgs.erlang}/bin/epmd -address 127.0.0.150"
     ];
     serviceConfig.RuntimeDirectory = "mongooseim-epmd";
     serviceConfig.RuntimeDirectoryMode = "0730";
@@ -297,19 +355,15 @@ in lib.mkIf cfg.enable {
 
     environment.EJABBERD_CONFIG_PATH = mainConfig;
 
-    serviceConfig.ExecStart = toString [
-      "${ip2unix}/bin/ip2unix"
-      "-r in,port=5280,systemd"
-      "-r in,port=4369,tcp,reject=EADDRINUSE"
-      "-r in,port=0,path=/run/mongooseim-epmd/port-%%p.socket"
-      "-r out,addr=127.0.0.100,port=5432,path=/run/postgresql/.s.PGSQL.5432"
-      "-r out,port=4369,tcp,path=/run/mongooseim-epmd.socket"
-      "-r out,addr=127.0.0.1,port=7,path=/run/mongooseim-internal/auth.socket"
-      "${package}/bin/mongooseimctl foreground"
-    ];
-    serviceConfig.User = "mongooseim";
-    serviceConfig.Group = "mongooseim";
-    serviceConfig.StateDirectory = "mongooseim";
+    serviceConfig = {
+      ExecStart = "${mkCtl serverRules false}/bin/mongooseimctl foreground";
+      ExecStop = "${mkCtl [] false}/bin/mongooseimctl stop";
+      ExecReload = "${mkCtl [] false}/bin/mongooseimctl reload_cluster";
+      User = "mongooseim";
+      Group = "mongooseim";
+      StateDirectory = "mongooseim";
+      RuntimeDirectory = "mongooseim";
+    };
   };
 
   systemd.services.mongooseim-internal-sockdir = {
