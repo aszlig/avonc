@@ -79,6 +79,7 @@ let
     { muc_admin.allow.atom = "admin"; }
     { muc_create.allow.atom = "local"; }
     { muc.allow.atom = "all"; }
+    { pubsub_createnode.allow.atom = "local"; }
   ] ++ lib.concatMap (mamAction: [
     { "mam_${mamAction}".default.atom = "all"; }
     { "mam_${mamAction}_shaper".mam_shaper.atom = "all"; }
@@ -119,6 +120,7 @@ let
     modules = {
       mod_adhoc = {};
       mod_disco.users_can_see_hidden_services = false;
+      mod_caps = {};
       mod_commands = {};
       mod_muc_commands = {};
       mod_muc_light_commands = {};
@@ -142,6 +144,18 @@ let
       mod_muc.host = "muc.@HOST@";
       mod_muc.access.atom = "muc";
       mod_muc.access_create.atom = "muc_create";
+
+      mod_pubsub.access_createnode.atom = "pubsub_createnode";
+      mod_pubsub.ignore_pep_from_offline = false;
+      mod_pubsub.backend.atom = "rdbms";
+      mod_pubsub.last_item_cache = true;
+      mod_pubsub.max_items_node = 1000;
+      mod_pubsub.plugins = [
+        { binary = "dag"; }
+        { binary = "flat"; }
+        { binary = "hometree"; }
+        { binary = "pep"; }
+      ];
     };
 
     rdbms_server_type.atom = "pgsql";
