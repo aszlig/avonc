@@ -89,7 +89,14 @@ let
     "purge_multiple_messages"
   ]);
 
-  mainConfig = pkgs.writeText "mongooseim.cfg" (erlexpr.erlTermList {
+  writeConfig = terms: pkgs.writeText "mongooseim.cfg" ''
+    override_global.
+    override_local.
+    override_acls.
+    ${erlexpr.erlTermList terms}
+  '';
+
+  mainConfig = writeConfig {
     loglevel = 3;
     hosts = [ config.nextcloud.domain ];
     listen = [
@@ -188,7 +195,7 @@ let
         ];
       }
     ];
-  });
+  };
 
 in lib.mkIf cfg.enable {
   nextcloud.extraPostPatch = ''
