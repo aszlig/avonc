@@ -151,6 +151,7 @@ let
       mod_muc.host = "muc.@HOST@";
       mod_muc.access.atom = "muc";
       mod_muc.access_create.atom = "muc_create";
+      mod_muc.access_persistent.atom = "muc_create";
 
       mod_pubsub.access_createnode.atom = "pubsub_createnode";
       mod_pubsub.ignore_pep_from_offline = false;
