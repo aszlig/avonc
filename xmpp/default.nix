@@ -210,11 +210,11 @@ in lib.mkIf cfg.enable {
 
   users.groups.mongooseim = {};
 
-  systemd.services.mongooseim-init-db = {
-    description = "MongooseIM Database Initialisation";
-    requiredBy = [ "mongooseim.service" ];
+  systemd.services.mongooseim-create-db = {
+    description = "MongooseIM Database Creation";
+    requiredBy = [ "mongooseim.service" "mongooseim-init-db.service" ];
     requires = [ "postgresql.service" ];
-    before = [ "mongooseim.service" ];
+    before = [ "mongooseim.service" "mongooseim-init-db.service" ];
     after = [ "postgresql.service" ];
 
     unitConfig.ConditionPathExists = "!/var/lib/mongooseim";
@@ -228,8 +228,26 @@ in lib.mkIf cfg.enable {
       ExecStart = [
         "${postgresql}/bin/createuser mongooseim"
         "${postgresql}/bin/createdb -O mongooseim mongooseim"
-        "${postgresql}/bin/psql -1 -f ${pgDbSchema} mongooseim"
       ];
+    };
+  };
+
+  systemd.services.mongooseim-init-db = {
+    description = "MongooseIM Database Initialisation";
+    requiredBy = [ "mongooseim.service" ];
+    requires = [ "postgresql.service" ];
+    before = [ "mongooseim.service" ];
+    after = [ "postgresql.service" ];
+
+    unitConfig.ConditionPathExists = "!/var/lib/mongooseim";
+    environment.PGHOST = "/run/postgresql";
+
+    serviceConfig = {
+      Type = "oneshot";
+      User = "mongooseim";
+      Group = "mongooseim";
+      RemainAfterExit = true;
+      ExecStart = "${postgresql}/bin/psql -1 -f ${pgDbSchema} mongooseim";
     };
   };
 
