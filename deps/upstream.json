@@ -411,9 +411,9 @@
         "name": "DropIt",
         "summary": "Quickly share text or files by dropping them to your Nextcloud!"
       },
-      "sha256": "1h0krhwjhkscicrg1l3v1bwmphhrnh411f709xajhgyc3kp4fpxm",
-      "url": "https://github.com/rullzer/dropit/releases/download/v0.1.3/dropit.tar.gz",
-      "version": "0.1.3"
+      "sha256": "11q9hf54pa9bvz35223xyfrlklzxlpn2qdylcli6w8qch191vnhc",
+      "url": "https://github.com/rullzer/dropit/releases/download/v0.2.0/dropit.tar.gz",
+      "version": "0.2.0"
     },
     "encryption": {
       "meta": {
@@ -1307,9 +1307,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "04zbkxxs7pni4bbaw0jijc05cag0gc8v06chnhpxnxssmyd934np",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7526/artifacts/raw/passwords.tar.gz",
-      "version": "2019.2.2"
+      "sha256": "0s8qrb5fwm2968ys617lf39b6hhgh1q741v6q11pdimcvcfg50w3",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7620/artifacts/raw/passwords.tar.gz",
+      "version": "2019.3.0"
     },
     "phonetrack": {
       "meta": {
@@ -1326,6 +1326,21 @@
       "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/5489b625951b714ff763fc409d381bd7/phonetrack-0.4.4.tar.gz",
       "version": "0.4.4"
     },
+    "photosphereviewer": {
+      "meta": {
+        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "homepage": "https://github.com/R0Wi/Nextcloud-PhotoSphereViewer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Photo Sphere Viewer",
+        "summary": "Enables viewing of google photosphere images"
+      },
+      "sha256": "0s1rl4f6kpg1gimigk0ir7s80y1mg3l0w7rgfrwdg3mcbv63ynkn",
+      "url": "https://github.com/R0Wi/Nextcloud-PhotoSphereViewer/releases/download/v0.0.2-beta/photosphereviewer.tar.gz",
+      "version": "0.0.2"
+    },
     "piwik": {
       "meta": {
         "description": "Track users with Piwik/Matomo",
@@ -1337,9 +1352,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "14nv39fjz575zhz5v6d009dfp50n9m3pgfj13vs77laqhw61v3bi",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.0/cloud_piwik-0.5.0.tar.gz",
-      "version": "0.5.0"
+      "sha256": "0jblirgz3h4pvphj37a4g0bgfh6q63lh4l4g6k0d7mxdxmjpfjph",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.1/cloud_piwik-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "polls": {
       "meta": {
@@ -1352,9 +1367,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0mkicg71pqsjjslnyhbkssfvnb73fva8msnslmhnynvgxjb5ywvn",
-      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.0/polls.tar.gz",
-      "version": "0.10.0"
+      "sha256": "1rymkj8rg2rhlr8mwq4yspjc8gfrljwsvjf3nal65d52yjdl7wna",
+      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.1/polls.tar.gz",
+      "version": "0.10.1"
     },
     "preferred_providers": {
       "meta": {
@@ -1372,7 +1387,7 @@
     },
     "previewgenerator": {
       "meta": {
-        "description": "The Preview Generator app allows admins to pre-generate previews. The app listens to edit events and stores this information. Once a cron job is triggered it will generate start preview generation. This means that you can better utilize your system by pre-generating previews when your system is normally idle and thus putting less load on your machine when the requests are actually served.\n\nThe app does not replace on demand preview generation so if a preview is requested before it is pre-generated it will still be shown.\n\n**Important**: To enable pre-generation of previews you must add **./occ preview:pre-generate** to a system cron job that runs at times of your choosing.",
+        "description": "The Preview Generator app allows admins to pre-generate previews. The app listens to edit events and stores this information. Once a cron job is triggered it will generate start preview generation. This means that you can better utilize your system by pre-generating previews when your system is normally idle and thus putting less load on your machine when the requests are actually served.\n\nThe app does not replace on demand preview generation so if a preview is requested before it is pre-generated it will still be shown.\nThe first time you install this app, before using a cron job, you properly want to generate all previews via: \n**./occ preview:generate-all -vvv**\n\n**Important**: To enable pre-generation of previews you must add **php /var/www/nextcloud/occ preview:pre-generate** to a system cron job that runs at times of your choosing.",
         "homepage": "https://github.com/rullzer/previewgenerator",
         "isShipped": false,
         "licenses": [
@@ -1381,9 +1396,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "1jyjflwrkdr7p5dgyzznkcfiks7r207rq7m7g15qm0ql3d7hd3ha",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.0.0/previewgenerator.tar.gz",
-      "version": "2.0.0"
+      "sha256": "1d2n288q9mi31ss58cy0w6bnc4allw41ngzlipfb0987zrswdvl5",
+      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.1.0/previewgenerator.tar.gz",
+      "version": "2.1.0"
     },
     "qownnotesapi": {
       "meta": {
@@ -1530,9 +1545,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "107zbjivx7vzdm4mhps8gs8h94f5kr79j7hm82nq0k34cqz1va07",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.2.2/richdocuments.tar.gz",
-      "version": "3.2.2"
+      "sha256": "0hl89h0g5xbiray3n3rq1nj7r7q07brx4amhgychq9hl30r6c1ks",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.2.3/richdocuments.tar.gz",
+      "version": "3.2.3"
     },
     "scanner": {
       "meta": {
