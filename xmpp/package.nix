@@ -153,6 +153,7 @@ in pkgs.stdenv.mkDerivation {
     patches/configure-paths.patch
     patches/logging-stdio.patch
     patches/set-config-at-runtime.patch
+    patches/nodetool-setcookie.patch
   ];
 
   postPatch = ''
