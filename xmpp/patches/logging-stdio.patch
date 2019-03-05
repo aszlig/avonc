@@ -1,8 +1,8 @@
 diff --git a/rel/files/app.config b/rel/files/app.config
-index 7312016a1..7b5f8e0e7 100644
+index 7312016a1..b016c31d8 100644
 --- a/rel/files/app.config
 +++ b/rel/files/app.config
-@@ -7,24 +7,12 @@
+@@ -7,24 +7,11 @@
      {log_path, "{{nksip_cache_dir}}"}
   ]},
   {lager, [
@@ -19,16 +19,15 @@ index 7312016a1..7b5f8e0e7 100644
 -    {killer_reinstall_after, 5000},
 -    {log_root, "{{mongooseim_log_dir}}"},
 -    {crash_log, "crash.log"},
-+    {crash_log, undefined},
-+    {async_threshold, undefined},
 +    {error_logger_hwm, undefined},
++    {async_threshold, undefined},
++    {crash_log, undefined},
      {handlers, [
 -        {lager_console_backend, [{level, info}]},
 -%% use below line to add syslog backend for Lager
 -%        {lager_syslog_backend, [ "mongooseim", local0, info]},
 -        {lager_file_backend, [{file, "ejabberd.log"}, {level, info}, {size, 2097152}, {date, "$D0"}, {count, 5}]}
-+        {lager_console_backend, [{level, info},
-+                                 {lager_default_formatter,[{eol, "\n"}]}]}
++        {lager_console_backend, [{level, info}]}
      ]}
    ]}
  %{exometer_core, [
