@@ -128,7 +128,7 @@ in {
       # This is needed for LibreOffice Online to connect back to the Nextcloud
       # instance.
       extraConfig = ''
-        listen unix:/run/libreoffice-online-internal.socket${
+        listen unix:/run/libreoffice-online/internal.socket${
           lib.optionalString config.nextcloud.useSSL " ssl"
         };
       '';
@@ -158,6 +158,20 @@ in {
           '';
         };
       };
+    };
+
+    systemd.services.libreoffice-online-internal-sockdir = {
+      description = "Prepare LibreOffice Online Internal Socket Directory";
+      requiredBy = [ "nginx.service" "libreoffice-online.service" ];
+      before = [ "nginx.service" ];
+
+      serviceConfig.RuntimeDirectory = "libreoffice-online";
+      serviceConfig.RuntimeDirectoryMode = "0710";
+      serviceConfig.RuntimeDirectoryPreserve = true;
+      serviceConfig.User = "nginx";
+      serviceConfig.Group = "libreoffice-online";
+      serviceConfig.ExecStart = "${pkgs.coreutils}/bin/true";
+      serviceConfig.Type = "oneshot";
     };
 
     systemd.sockets.libreoffice-online = {
@@ -190,7 +204,7 @@ in {
         ExecStart = toString [
           "${ip2unix}/bin/ip2unix"
           "-r out,port=9981,ignore"
-          "-r out,path=/run/libreoffice-online-internal.socket"
+          "-r out,path=/run/libreoffice-online/internal.socket"
           "${package}/bin/loolwsd ${genOptionFlags settings}"
         ];
         CacheDirectory = [
