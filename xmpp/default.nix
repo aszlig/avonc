@@ -79,7 +79,6 @@ let
     { muc_admin.allow.atom = "admin"; }
     { muc_create.allow.atom = "local"; }
     { muc.allow.atom = "all"; }
-    { register.deny.atom = "all"; }
   ] ++ lib.concatMap (mamAction: [
     { "mam_${mamAction}".default.atom = "all"; }
     { "mam_${mamAction}_shaper".mam_shaper.atom = "all"; }
@@ -102,7 +101,11 @@ let
     s2s_default_policy.atom = "deny";
     outgoing_s2s_port = 5269;
     sm_backend.tuple = [ { atom = "mnesia"; } {} ];
-    auth_method.atom = "internal";
+    auth_method.atom = "nextcloud";
+    auth_opts = {
+      host = "http://127.0.0.1:7";
+      connection_pool_size = 10;
+    };
     shaper.multi = shapers;
     max_fsm_queue = 1000;
     acl.extuple = [
@@ -125,7 +128,6 @@ let
       mod_privacy = {};
       mod_blocking = {};
       mod_private = {};
-      mod_register.access.atom = "register";
       mod_roster = {};
       mod_sic = {};
       mod_vcard.host = "vjud.@HOST@";
@@ -143,27 +145,42 @@ let
     };
 
     rdbms_server_type.atom = "pgsql";
-    outgoing_pools = lib.singleton {
-      tuple = [
-        { atom = "rdbms"; }
-        { atom = "global"; }
-        { atom = "default"; }
-        { workers = 10; }
-        { server = [
-            { atom = "pgsql"; }
-            "127.0.0.100"
-            5432
-            "mongooseim"
-            "mongooseim"
-            ""
-            { keepalive_interval = 10; }
-          ];
-        }
-      ];
-    };
+    outgoing_pools = [
+      { tuple = [
+          { atom = "rdbms"; }
+          { atom = "global"; }
+          { atom = "default"; }
+          { workers = 10; }
+          { server = [
+              { atom = "pgsql"; }
+              "127.0.0.100"
+              5432
+              "mongooseim"
+              "mongooseim"
+              ""
+              { keepalive_interval = 10; }
+            ];
+          }
+        ];
+      }
+      { tuple = [
+          { atom = "http"; }
+          { atom = "global"; }
+          { atom = "auth"; }
+          {}
+          { server = "http://127.0.0.1:7";
+            path_prefix = "/index.php/";
+          }
+        ];
+      }
+    ];
   });
 
 in lib.mkIf cfg.enable {
+  nextcloud.extraPostPatch = ''
+    patch -p1 -d apps/ojsxc < ${patches/ojsxc.patch}
+  '';
+
   users.users.mongooseim = {
     description = "MongooseIM User";
     group = "mongooseim";
@@ -247,12 +264,45 @@ in lib.mkIf cfg.enable {
       "-r in,port=0,path=/run/mongooseim-epmd/port-%%p.socket"
       "-r out,addr=127.0.0.100,port=5432,path=/run/postgresql/.s.PGSQL.5432"
       "-r out,port=4369,tcp,path=/run/mongooseim-epmd.socket"
+      "-r out,addr=127.0.0.1,port=7,path=/run/mongooseim-internal/auth.socket"
       "${package}/bin/mongooseimctl foreground"
     ];
     serviceConfig.User = "mongooseim";
     serviceConfig.Group = "mongooseim";
     serviceConfig.StateDirectory = "mongooseim";
   };
+
+  systemd.services.mongooseim-internal-sockdir = {
+    description = "Prepare MongooseIM Internal Socket Directory";
+    requiredBy = [ "nginx.service" "mongooseim.service" ];
+    before = [ "nginx.service" ];
+
+    serviceConfig.RuntimeDirectory = "mongooseim-internal";
+    serviceConfig.RuntimeDirectoryMode = "0710";
+    serviceConfig.RuntimeDirectoryPreserve = true;
+    serviceConfig.User = "nginx";
+    serviceConfig.Group = "mongooseim";
+    serviceConfig.ExecStart = "${pkgs.coreutils}/bin/true";
+    serviceConfig.Type = "oneshot";
+  };
+
+  # This is the only entry point for "externalApi.php", which is used to
+  # authenticate the XMPP user against Nextcloud. Obviously we want that URL to
+  # be inaccessible from the web and only provide access to that entry point
+  # via Unix socket.
+  services.nginx.appendHttpConfig = ''
+    server {
+      server_name xmpp-auth.local;
+      listen unix:/run/mongooseim-internal/auth.socket;
+
+      location = /index.php/apps/ojsxc/ajax/externalApi.php {
+        uwsgi_intercept_errors on;
+        include ${config.services.nginx.package}/conf/uwsgi_params;
+        uwsgi_param INTERNAL_XMPP_AUTH allowed;
+        uwsgi_pass unix:///run/nextcloud.socket;
+      }
+    }
+  '';
 
   services.nginx.virtualHosts.${config.nextcloud.domain}.locations = {
     "= /xmpp/http-bind".proxyPass = "http://unix:/run/mongooseim-bosh.socket:";

@@ -155,6 +155,10 @@ in pkgs.stdenv.mkDerivation {
     patches/set-config-at-runtime.patch
   ];
 
+  postPatch = ''
+    cat ${./ejabberd_auth_nextcloud.erl} > src/auth/ejabberd_auth_nextcloud.erl
+  '';
+
   configurePhase = ''
     patchShebangs tools
     ${pkgs.erlang}/bin/escript ${pkgs.rebar3.bootstrapper}

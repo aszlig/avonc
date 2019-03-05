@@ -1,0 +1,17 @@
+diff --git a/lib/Middleware/ExternalApiMiddleware.php b/lib/Middleware/ExternalApiMiddleware.php
+index 1306d63..4a34abd 100644
+--- a/lib/Middleware/ExternalApiMiddleware.php
++++ b/lib/Middleware/ExternalApiMiddleware.php
+@@ -33,6 +33,12 @@ class ExternalApiMiddleware extends Middleware
+ 			return;
+ 		}
+ 
++		if ($_SERVER['INTERNAL_XMPP_AUTH'] === 'allowed') {
++			return;
++		} else {
++			throw new SecurityException('No external requests allowed.');
++		}
++
+ 		$apiSecret = $this->config->getAppValue('ojsxc', 'apiSecret');
+ 		$jsxcSignatureHeader = $this->request->getHeader('X-JSXC-SIGNATURE');
+ 
