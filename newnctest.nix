@@ -42,7 +42,7 @@ let
     ]);
 
   in {
-    imports = [ zshModule ./nextcloud.nix ./postgresql.nix ];
+    imports = [ zshModule ./. ./postgresql.nix ];
 
     nextcloud.port = 8000;
     nextcloud.processes = 4;

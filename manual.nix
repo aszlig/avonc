@@ -2,7 +2,7 @@
 
 let
   modules = import "${pkgs.path}/nixos/lib/eval-config.nix" {
-    modules = [ ./nextcloud.nix ];
+    modules = [ ./. ];
     check = false;
   };
 
