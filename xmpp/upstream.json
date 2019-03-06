@@ -105,7 +105,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "cqerl.git",
+        "repo": "cqerl",
         "rev": "f2bb146a20eeed791b3cf2422adf3b8703cdf3ea"
       },
       "subdeps": [
@@ -124,7 +124,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "bszaf",
-        "repo": "csv.git",
+        "repo": "csv",
         "rev": "b0b854d8be2d69b0c6eb9bae5591008098973af9"
       },
       "subdeps": [],
@@ -146,7 +146,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "arcusfelis",
-        "repo": "eodbc.git",
+        "repo": "eodbc",
         "rev": "748d613846731c3d776c8f22600d8b6d89c26435"
       },
       "subdeps": [],
@@ -158,7 +158,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "basho",
-        "repo": "eper.git",
+        "repo": "eper",
         "rev": "fc165bf4072ecb9ce5648aab86db2baad12122f5"
       },
       "subdeps": [],
@@ -180,7 +180,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "igors",
-        "repo": "eredis.git",
+        "repo": "eredis",
         "rev": "e9688a1ec98e10acca310f19266bd95f976bc262"
       },
       "subdeps": [],
@@ -217,7 +217,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "exml.git",
+        "repo": "exml",
         "rev": "82e93c3eac5197a57b40b6b01c17b9a8729bc2ee"
       },
       "subdeps": [],
@@ -229,7 +229,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "exometer_core.git",
+        "repo": "exometer_core",
         "rev": "de97a458653b6d5fa424b843e76832f61ad46672"
       },
       "subdeps": [
@@ -245,7 +245,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "exometer_report_graphite.git",
+        "repo": "exometer_report_graphite",
         "rev": "264dd7bcbadbd7febcd43917302251286c88b681"
       },
       "subdeps": [
@@ -259,7 +259,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "exometer_report_statsd.git",
+        "repo": "exometer_report_statsd",
         "rev": "75f6f9ef2b3c0a677f9dba9a4b3d9d77c276a032"
       },
       "subdeps": [
@@ -297,7 +297,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "fusco.git",
+        "repo": "fusco",
         "rev": "de08adef32d12f0984d6d1c6fec28be207db2e7e"
       },
       "subdeps": [],
@@ -329,7 +329,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "ninenines",
-        "repo": "gun.git",
+        "repo": "gun",
         "rev": "427230d6f94f5b8a396fd504a73d73d1d65ab0a7"
       },
       "subdeps": [
@@ -436,7 +436,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "erlang-lager",
-        "repo": "lager_syslog.git",
+        "repo": "lager_syslog",
         "rev": "c59ccd421426a3d54b379e9b1f62f1f145dd5802"
       },
       "subdeps": [
@@ -473,7 +473,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "rvirding",
-        "repo": "luerl.git",
+        "repo": "luerl",
         "rev": "091fca3d03de5de19efebb2bd37523cdef4bbdb5"
       },
       "subdeps": [],
@@ -485,7 +485,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "szktty",
-        "repo": "erlang-lz4.git",
+        "repo": "erlang-lz4",
         "rev": "6bc5efe93bab327788bcde24374f16044b549dd8"
       },
       "subdeps": [],
@@ -527,7 +527,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "mysql-otp",
-        "repo": "mysql-otp.git",
+        "repo": "mysql-otp",
         "rev": "9724d67a262b26ed9f325f8e9e17a5d1fc42e63b"
       },
       "subdeps": [],
@@ -539,7 +539,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "michalwski",
-        "repo": "nklib.git",
+        "repo": "nklib",
         "rev": "006c1b7f6b848dfa8fc2efa41eeed4fd5f2b3b34"
       },
       "subdeps": [
@@ -557,7 +557,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "michalwski",
-        "repo": "nkpacket.git",
+        "repo": "nkpacket",
         "rev": "b6f8c735e3778ce3d351b6564d8cf21c14fbab5e"
       },
       "subdeps": [
@@ -590,7 +590,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "NetComposer",
-        "repo": "nksip.git",
+        "repo": "nksip",
         "rev": "1a29ef3e112ee0a8d8ac53bd6963ccc8f7879343"
       },
       "subdeps": [
@@ -626,7 +626,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "erszcz",
-        "repo": "pa.git",
+        "repo": "pa",
         "rev": "48762a4bdd958334324b48985b30d8bb82c1b5e2"
       },
       "subdeps": [
@@ -690,7 +690,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "tuncer",
-        "repo": "re2.git",
+        "repo": "re2",
         "rev": "2471e06ed7e548ca1af522e95b16867135afdfdc"
       },
       "subdeps": [],
@@ -746,7 +746,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "nebularis",
-        "repo": "semver.git",
+        "repo": "semver",
         "rev": "c7d509f38298ec6594be4efdcd8a8f2322760039"
       },
       "subdeps": [],
@@ -758,7 +758,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "fdmanana",
-        "repo": "snappy-erlang-nif.git",
+        "repo": "snappy-erlang-nif",
         "rev": "4e3b8611b6a1ff85a417b0f2fad8886c9485810e"
       },
       "subdeps": [],
@@ -829,7 +829,7 @@
       "src": {
         "fetchtype": "github",
         "owner": "esl",
-        "repo": "usec.git",
+        "repo": "usec",
         "rev": "f85ffd8350d7000c26392c18bdfcdbb30f3b5ee8"
       },
       "subdeps": [],

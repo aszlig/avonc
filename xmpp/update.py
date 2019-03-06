@@ -104,15 +104,17 @@ def fetch_deps(mim_path: str) -> Dict[str, Any]:
         if child.tag == "git":
             github = GITHUB_RE.match(child.attrib['url'])
             if github is not None:
-                repo_owner = github.group(1) + '/' + github.group(2)
-                if repo_owner.endswith('.git'):
-                    repo_owner = repo_owner[:-4]
-                sha, path = fetchgithub(repo_owner, child.attrib['revision'])
+                owner = github.group(1)
+                repo = github.group(2)
+                if repo.endswith('.git'):
+                    repo = repo[:-4]
+                sha, path = fetchgithub(owner + '/' + repo,
+                                        child.attrib['revision'])
                 subdeps = fetch_subdeps(path)
                 src = {
                     'fetchtype': 'github',
-                    'repo': github.group(2),
-                    'owner': github.group(1),
+                    'owner': owner,
+                    'repo': repo,
                     'rev': child.attrib['revision'],
                 }
                 version = fetch_dep_version(path)
