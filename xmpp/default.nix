@@ -355,6 +355,9 @@ in lib.mkIf cfg.enable {
 
     environment.EJABBERD_CONFIG_PATH = mainConfig;
 
+    chroot.enable = true;
+    chroot.packages = [ mainConfig ];
+
     serviceConfig = {
       ExecStart = "${mkCtl serverRules false}/bin/mongooseimctl foreground";
       ExecStop = "${mkCtl [] false}/bin/mongooseimctl stop";
@@ -363,6 +366,12 @@ in lib.mkIf cfg.enable {
       Group = "mongooseim";
       StateDirectory = "mongooseim";
       RuntimeDirectory = "mongooseim";
+
+      BindPaths = [ "/run/mongooseim-epmd" "/run/mongooseim-epmd.socket" ];
+      BindReadOnlyPaths = [
+        "/run/postgresql" "/run/mongooseim-internal"
+        "/etc/resolv.conf" "/etc/hosts"
+      ];
     };
   };
 
