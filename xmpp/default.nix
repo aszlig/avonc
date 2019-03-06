@@ -418,6 +418,7 @@ in lib.mkIf cfg.enable {
         uwsgi_intercept_errors on;
         include ${config.services.nginx.package}/conf/uwsgi_params;
         uwsgi_param INTERNAL_XMPP_AUTH allowed;
+        uwsgi_param REMOTE_ADDR 127.0.0.1;
         uwsgi_pass unix:///run/nextcloud.socket;
       }
     }
