@@ -367,6 +367,10 @@ in lib.mkIf cfg.enable {
       StateDirectory = "mongooseim";
       RuntimeDirectory = "mongooseim";
 
+      # XXX: Temporary until we have figured out a good way to share the S2S
+      #      certificate with nginx.
+      PrivateNetwork = true;
+
       BindPaths = [ "/run/mongooseim-epmd" "/run/mongooseim-epmd.socket" ];
       BindReadOnlyPaths = [
         "/run/postgresql" "/run/mongooseim-internal"
