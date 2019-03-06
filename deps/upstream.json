@@ -1671,9 +1671,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "1cxzjx1vyjybc7pbrf6f31pnzgjrfg15jv3ssczalfx55b8b1nf8",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/2.3.0/sharerenamer-2.3.0.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1df5x7skqxinvw1vbvsajsbha84fh4z8m1n8pyaq04c4c0zphzgl",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/2.4.0/sharerenamer-2.4.0.tar.gz",
+      "version": "2.4.0"
     },
     "smb_test": {
       "meta": {
