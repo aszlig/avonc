@@ -158,6 +158,8 @@ in pkgs.stdenv.mkDerivation {
 
   postPatch = ''
     cat ${./ejabberd_auth_nextcloud.erl} > src/auth/ejabberd_auth_nextcloud.erl
+    substituteInPlace rel/files/mongooseim --replace '`whoami`' mongooseim
+    substituteInPlace rel/files/mongooseimctl --replace '`whoami`' mongooseim
   '';
 
   configurePhase = ''
