@@ -2,39 +2,65 @@ import json
 import subprocess
 import sys
 
-occ_cmd = sys.argv[2:]
-cmd = occ_cmd + ['app:list', '--output=json']
-applist = subprocess.check_output(cmd)
-oldstate = json.loads(applist)
-newstate = json.load(open(sys.argv[1], 'r'))
+from typing import Dict, List, Any, Optional
 
-if 'enable' in newstate:
-    newenabled = set(newstate['enable'].keys()) \
+NEWSTATE: Dict[str, Dict[str, Any]] = json.load(open(sys.argv[1], 'r'))
+OCC_CMD: List[str] = sys.argv[2:]
+
+
+def get_appconfig() -> Dict[str, Any]:
+    cmd = OCC_CMD + ['config:list', '--private', '--output=json']
+    return json.loads(subprocess.check_output(cmd))['apps']
+
+
+def set_appconfig(appid: str, key: str, value: str) -> None:
+    args = ['config:app:set', appid, key, '--value=' + value]
+    subprocess.check_call(OCC_CMD + args)
+
+
+def get_applist() -> Dict[str, Any]:
+    cmd = OCC_CMD + ['app:list', '--output=json']
+    return json.loads(subprocess.check_output(cmd))
+
+
+def enable_app(appid: str, groups: Optional[List[str]] = None) -> None:
+    if groups is None:
+        groups = []
+    groupargs = [arg for group in groups for arg in ['-g', group]]
+    subprocess.check_call(OCC_CMD + ['app:enable'] + groupargs + [appid])
+
+
+def disable_app(appid: str) -> None:
+    subprocess.check_call(OCC_CMD + ['app:disable', appid])
+
+
+oldconfig = get_appconfig()
+oldstate = get_applist()
+
+if 'enable' in NEWSTATE:
+    newenabled = set(NEWSTATE['enable'].keys()) \
                - set(oldstate['enabled'].keys())
 
-    group_deferred = {}
-
     for appid in newenabled:
-        groups = newstate['enable'][appid]
+        groups = NEWSTATE['enable'][appid]
         if groups is not None:
-            group_deferred[appid] = groups
-            continue
-        subprocess.check_call(occ_cmd + ['app:enable', appid])
+            enable_app(appid, groups)
+        else:
+            enable_app(appid)
 
-    for appid, groups in group_deferred.items():
-        groupargs = [arg for group in groups for arg in ['-g', group]]
-        subprocess.check_call(occ_cmd + ['app:enable'] + groupargs + [appid])
+    for appid, cfg in NEWSTATE.get('appconf', {}).items():
+        oldcfg = oldconfig.get(appid, {})
+        for key, val in cfg.items():
+            oldval = oldcfg.get(key)
+            if oldval is not None and oldval == val:
+                continue
+            set_appconfig(appid, key, val)
 
-    for appid in newenabled:
-        for key, value in newstate.get('appconf', {}).get(appid, {}).items():
-            args = ['config:app:set', appid, key, '--value=' + value]
-            subprocess.check_call(occ_cmd + args)
-
-newdisabled = set(newstate['disable']) \
+newdisabled = set(NEWSTATE['disable']) \
             - set(oldstate['disabled'].keys())
 
 for appid in newdisabled:
     if appid not in oldstate['enabled'] and \
        appid not in oldstate['disabled']:
         continue
-    subprocess.check_call(occ_cmd + ['app:disable', appid])
+    disable_app(appid)
