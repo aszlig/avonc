@@ -100,29 +100,6 @@ let
     "opcache.validate_permission=0"
   ];
 
-  # Results in a systemd unit for nextcloud.service which only contains
-  # BindReadOnlyPaths options. The rest of the service is defined later in
-  # systemd.services.nextcloud and the contents here are merged accordingly.
-  nextcloudSandboxPaths = pkgs.runCommand "nextcloud-sandbox-paths" {
-    closureInfo = pkgs.closureInfo {
-      rootPaths = [ uwsgiNextcloud pkgs.glibcLocales php pkgs.dash ];
-    };
-  } ''
-    mkdir -p "$out/lib/systemd/system"
-
-    for service in nextcloud nextcloud-cron; do
-      serviceFile="$out/lib/systemd/system/$service.service"
-
-      echo '[Service]' > "$serviceFile"
-
-      while read storePath; do
-        if [ ! -L "$storePath" ]; then
-          echo "BindReadOnlyPaths=$storePath:$storePath:rbind"
-        fi
-      done < "$closureInfo/store-paths" >> "$serviceFile"
-    done
-  '';
-
   phpCli = let
     mkArgs = lib.concatMapStringsSep " " (opt: "-d ${lib.escapeShellArg opt}");
     escPhp = lib.escapeShellArg "${php}/bin/php";
@@ -643,7 +620,7 @@ in {
     };
   };
 
-  imports = [ ./libreoffice-online ./gpx ./xmpp ];
+  imports = [ ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ];
 
   config = {
     assertions = lib.singleton {
@@ -814,8 +791,6 @@ in {
       };
     };
 
-    systemd.packages = [ nextcloudSandboxPaths ];
-
     systemd.services.nextcloud-upgrade = {
       description = "Nextcloud Update Actions";
       requiredBy = [ "nextcloud.service" ];
@@ -857,6 +832,9 @@ in {
 
       environment.__NEXTCLOUD_VERSION = package.version;
 
+      chroot.enable = true;
+      chroot.packages = [ pkgs.glibcLocales php pkgs.dash ];
+
       serviceConfig = {
         Type = "notify";
         User = "nextcloud";
@@ -869,20 +847,7 @@ in {
 
         BindReadOnlyPaths = [
           "/run/postgresql" "/run/systemd/notify" "/etc/resolv.conf"
-          # Nextcloud uses shell_exec() for things like generating office
-          # document previews, so we need to have /bin/sh.
-          "${pkgs.dash}/bin/dash:/bin/sh"
         ];
-        MountAPIVFS = true;
-        MountFlags = "private";
-        PrivateDevices = true;
-        PrivateTmp = true;
-        PrivateUsers = true;
-        ProtectControlGroups = true;
-        ProtectKernelModules = true;
-        ProtectKernelTunables = true;
-        RootDirectory = nextcloudSandboxPaths;
-        TemporaryFileSystem = "/";
       };
     };
 
@@ -894,6 +859,9 @@ in {
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
       environment.__NEXTCLOUD_VERSION = package.version;
 
+      chroot.enable = true;
+      chroot.packages = [ pkgs.glibcLocales php pkgs.dash nextcloudConfigDir ];
+
       serviceConfig = {
         Type = "oneshot";
         User = "nextcloud";
@@ -902,22 +870,7 @@ in {
         ExecStart = "${php}/bin/php -f ${package}/cron.php";
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
 
-        BindReadOnlyPaths = [
-          "/run/postgresql" "/etc/resolv.conf"
-          # Nextcloud uses shell_exec() for things like generating office
-          # document previews, so we need to have /bin/sh.
-          "${pkgs.dash}/bin/dash:/bin/sh"
-        ];
-        MountAPIVFS = true;
-        MountFlags = "private";
-        PrivateDevices = true;
-        PrivateTmp = true;
-        PrivateUsers = true;
-        ProtectControlGroups = true;
-        ProtectKernelModules = true;
-        ProtectKernelTunables = true;
-        RootDirectory = nextcloudSandboxPaths;
-        TemporaryFileSystem = "/";
+        BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
       };
     };
 
