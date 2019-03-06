@@ -259,6 +259,16 @@ in lib.mkIf cfg.enable {
     patch -p1 -d apps/ojsxc < ${patches/ojsxc.patch}
   '';
 
+  nextcloud.apps.ojsxc.config = {
+    apiSecret = "not needed";
+    boshUrl = "${config.nextcloud.baseUrl}/xmpp/http-bind";
+    serverType = "external";
+    timeLimitedToken = "false";
+    xmppDomain = config.nextcloud.domain;
+    xmppPreferMail = "false";
+    xmppResource = "nextcloud";
+  };
+
   users.users.mongooseim = {
     description = "MongooseIM User";
     group = "mongooseim";
