@@ -317,8 +317,8 @@ let
     ];
     outputs = [ "out" "sql" "data" ];
     nextcloud = package;
-    adminUser = "admin"; # XXX
-    adminPass = "foobar"; # XXX
+    adminUser = cfg.initialAdminUser;
+    adminPass = cfg.initialAdminPass;
   } ''
     initdb -D "$TMPDIR/tempdb" -E UTF8 -N -U "$tempDbUser"
     pg_ctl start -w -D "$TMPDIR/tempdb" -o \
@@ -454,6 +454,26 @@ in {
       description = ''
         This is a concatenation of the scheme, the host and an optional port
         and it's used for internal references from other modules.
+      '';
+    };
+
+    initialAdminUser = mkOption {
+      type = types.str;
+      default = "admin";
+      example = "horst";
+      description = ''
+        The initial admin user, which is only relevant for initial deployment.
+      '';
+    };
+
+    initialAdminPass = mkOption {
+      type = types.str;
+      default = "admin";
+      example = "ohwowsosecure";
+      description = ''
+        The initial admin password. Make sure to change this as soon as
+        possible, because it will end up in the Nix store, which is readable by
+        all users on the system.
       '';
     };
 
