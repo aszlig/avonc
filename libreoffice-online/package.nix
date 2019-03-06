@@ -3,9 +3,18 @@
 let
   nodePackages = (import ./node-deps { inherit pkgs; });
 
-  libreofficeSDK = pkgs.libreoffice-fresh-unwrapped.overrideAttrs (drv: {
+  # XXX: This is a known working version (2019-01-31), so let's pin nixpkgs to
+  #      that until we have our own dedicated build.
+  pinnedPkgs = import (pkgs.fetchFromGitHub {
+    owner = "NixOS";
+    repo = "nixpkgs";
+    rev = "f7165b2ad610a3b19dee81ae8b431873ffd4d702";
+    sha256 = "1z8zq0m8c3v6yd0k3gsxng27vc7307ijswqjyq3lcqzg3lbzlqy6";
+  }) { config = {}; };
+
+  libreofficeSDK = pinnedPkgs.libreoffice-fresh-unwrapped.overrideAttrs (drv: {
     configureFlags = (drv.configureFlags or []) ++ [ "--enable-odk" ];
-    stripReportBuilder = pkgs.writeText "strip-reportbuilder.xslt" ''
+    stripReportBuilder = pinnedPkgs.writeText "strip-reportbuilder.xslt" ''
       <?xml version="1.0"?>
       <xsl:stylesheet version="1.0"
                       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
