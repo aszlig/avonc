@@ -92,6 +92,7 @@ let
     "pgsql.max_persistent=-1"
     "post_max_size=${toString cfg.maxUploadSize}M"
     "upload_max_filesize=${toString cfg.maxUploadSize}M"
+    "upload_tmp_dir=/var/cache/nextcloud"
     "user_ini.filename="
     "zend_extension=opcache.so"
   ] ++ lib.optionals cfg.preloadOpcache [
@@ -276,7 +277,7 @@ let
       "memcache.local" = "\\OC\\Memcache\\APCu";
 
       supportedDatabases = [ "pgsql" ];
-      tempdirectory = "/tmp"; # TODO: NOT /tmp, because large files!
+      tempdirectory = "/var/cache/nextcloud";
 
       # By default this contains '.htaccess', but our web server doesn't parse
       # these files, so we can safely allow them.
@@ -822,6 +823,7 @@ in {
         User = "nextcloud";
         Group = "nextcloud";
         StateDirectory = "nextcloud/data";
+        CacheDirectory = "nextcloud";
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         ExecStart = "@${uwsgiNextcloud} nextcloud";
         KillMode = "process";
@@ -849,6 +851,7 @@ in {
         User = "nextcloud";
         Group = "nextcloud";
         StateDirectory = "nextcloud/data";
+        CacheDirectory = "nextcloud";
         ExecStart = "${php}/bin/php -f ${package}/cron.php";
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
 
