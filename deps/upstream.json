@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "0rvfqp0i1ncxhi4xqc4zxq4zdp8dfv3lrfzmspccv2xl53aps999",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.12.2/carnet-nc-v0.12.2.tar.gz",
-      "version": "0.12.2"
+      "sha256": "1lqqhwcp0b3qdbqyjzja9qa8bj2ll8rhxrkmnqjjv4hmrs2rpy35",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.13.2/carnet-nc-v0.13.2.tar.gz",
+      "version": "0.13.2"
     },
     "checksum": {
       "meta": {
@@ -1998,12 +1998,12 @@
         "licenses": [
           "agpl"
         ],
-        "name": "Two Factor TOTP Provider",
+        "name": "Two-Factor TOTP Provider",
         "summary": "TOTP two-factor provider"
       },
-      "sha256": "1nfvxxyszgv880h8sma4cinl2n2hjp32szr5m00swkixg6vswdnj",
-      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v2.1.1/twofactor_totp.tar.gz",
-      "version": "2.1.1"
+      "sha256": "0bnky4k250v0zz12s0z6jv1h3cvkc481w0mwml01yzw82846v4n6",
+      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v2.1.2/twofactor_totp.tar.gz",
+      "version": "2.1.2"
     },
     "twofactor_u2f": {
       "meta": {
@@ -2013,12 +2013,12 @@
         "licenses": [
           "agpl"
         ],
-        "name": "Two Factor U2F",
+        "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "0kykclllp1fmqxdl0fzzql755j1vlfv9lbcj93fm1qcx68wjzahs",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v2.1.1/twofactor_u2f.tar.gz",
-      "version": "2.1.1"
+      "sha256": "00fn3lvsli6divjcaaxdyg6pvjm1pd62mx3nfpqidkq8c64pqjsn",
+      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v2.1.2/twofactor_u2f.tar.gz",
+      "version": "2.1.2"
     },
     "twofactor_yubikey": {
       "meta": {
@@ -2247,9 +2247,9 @@
         "name": "Workflow external scripts",
         "summary": "Rule based processing of files through specified external scripts"
       },
-      "sha256": "04h48a5w7xm5bj6rz1mympmf5q2sw1l534ac1496p5wk95s5y8nc",
-      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.0.0/workflow_script.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0nmkx92hhrmflsp5dc07lb9pkgqrd1ywx58rln9c1smq162g2fpg",
+      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.0.1/workflow_script.tar.gz",
+      "version": "1.0.1"
     },
     "xray": {
       "meta": {
