@@ -16,6 +16,7 @@ from tqdm import tqdm  # type: ignore
 from xml.sax import saxutils
 
 import base64
+import copy
 import hashlib
 import json
 import os
@@ -24,6 +25,7 @@ import requests
 import sys
 import subprocess
 import tempfile
+import textwrap
 import unicodedata
 import warnings
 
@@ -87,9 +89,28 @@ def get_latest_release_for(nc_version: Version,
     return latest
 
 
+def get_changelogs(releases: List[DataDict]) -> Dict[str, str]:
+    result: Dict[str, str] = {}
+    for release in releases:
+        trans = release.get('translations', {}).get('en', {})
+        result[str(release['version'])] = trans.get('changelog', '')
+    return result
+
+
+def filter_changelogs(changelogs: Dict[str, str],
+                      oldver: str, newver: str) -> Dict[str, str]:
+    result: Dict[str, str] = {}
+    old_semver = Version(oldver)
+    new_semver = Version(newver)
+    for version, changelog in changelogs.items():
+        if old_semver < Version(version) <= new_semver:
+            result[version] = changelog
+    return result
+
+
 NcApp = namedtuple('NcApp', ['name', 'version', 'summary', 'description',
                              'website', 'licenses', 'download', 'certificate',
-                             'signature'])
+                             'signature', 'changelogs'])
 
 
 def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
@@ -106,6 +127,7 @@ def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
         description: str = translations['description']
         apprel = get_latest_release_for(Version(nc_semver),
                                         appdata['releases'])
+        changelogs: Dict[str, str] = get_changelogs(appdata['releases'])
         if apprel is None:
             continue
         apps[appdata['id']] = NcApp(
@@ -118,6 +140,7 @@ def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
             apprel['download'],
             appdata['certificate'],
             apprel['signature'],
+            changelogs,
         )
     return apps
 
@@ -304,6 +327,14 @@ def get_shipped_apps(ncpath: str):
     return result
 
 
+def format_changelog(changelog: str, indent: str) -> str:
+    if changelog == '':
+        return indent + "No changelog provided.\n"
+    else:
+        wrapped = textwrap.indent(changelog.strip(), indent)
+        return wrapped + "\n"
+
+
 def main(info_file: str) -> None:
     current_state: DataDict
     try:
@@ -328,6 +359,8 @@ def main(info_file: str) -> None:
     updated: Set[str] = set()
     added: Set[str] = set()
     removed: Set[str] = set()
+
+    old_appstate: Dict[str, Any] = copy.deepcopy(current_state['applications'])
 
     apps = get_available_apps(current_state['nextcloud']['version'])
     for appid, appdata in tqdm(apps.items(), desc='Fetching applications',
@@ -368,13 +401,30 @@ def main(info_file: str) -> None:
     stats: List[str] = []
 
     if added:
-        stats.append("Apps added: " + ', '.join(added))
+        stats.append("Apps added:\n")
+        for appid in added:
+            stats.append(f"  {appid} ({apps[appid].version})")
+        stats.append("")
 
     if updated:
-        stats.append("Apps updated: " + ', '.join(updated))
+        stats.append("Apps updated:\n")
+        for appid in updated:
+            old_ver: str = old_appstate[appid]['version']
+            new_ver: str = str(apps[appid].version)
+            stats.append(f"  {appid} ({old_ver} -> {new_ver}):\n")
+            changelogs = filter_changelogs(apps[appid].changelogs,
+                                           old_ver, str(new_ver))
+            if len(changelogs) > 1:
+                for version in sorted(changelogs.keys(), reverse=True):
+                    changelog: str = changelogs[version]
+                    stats.append(f"    Changes for version {version}:\n")
+                    stats.append(format_changelog(changelog, '      '))
+            else:
+                stats.append(format_changelog(changelogs[new_ver], '    '))
 
     if removed:
-        stats.append("Apps removed: " + ', '.join(removed))
+        stats.append("Apps removed:\n")
+        stats.append("  " + "\n  ".join(removed) + "\n")
 
     if stats:
         tqdm.write("\n" + "\n".join(stats), file=sys.stderr)
