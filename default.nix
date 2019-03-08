@@ -792,6 +792,9 @@ in {
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
       environment.__NEXTCLOUD_VERSION = package.version;
 
+      chroot.enable = true;
+      chroot.packages = [ pkgs.glibcLocales php pkgs.dash nextcloudConfigDir ];
+
       script = ''
         if [ -e /var/lib/nextcloud/.version ]; then
           __NEXTCLOUD_VERSION="$(< /var/lib/nextcloud/.version)" \
@@ -814,6 +817,9 @@ in {
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+        BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
+        BindPaths = [ "/var/lib/nextcloud/.version" ];
+        PrivateNetwork = true;
       };
     };
 
