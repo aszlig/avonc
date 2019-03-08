@@ -436,5 +436,6 @@ def main(info_file: str) -> None:
 
 if __name__ == '__main__':
     basedir: str = os.path.dirname(os.path.realpath(__file__))
-    info_file: str = os.path.join(basedir, 'deps', 'upstream.json')
+    packagedir: str = os.path.join(basedir, 'package', 'current')
+    info_file: str = os.path.join(packagedir, 'upstream.json')
     main(info_file)

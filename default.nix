@@ -10,8 +10,6 @@ let
     needsExplicit = !lib.elem cfg.port [ 80 443 ];
   in lib.optionalString needsExplicit ":${toString cfg.port}";
 
-  upstreamInfo = lib.importJSON ./deps/upstream.json;
-
   occ = lib.escapeShellArg "${package}/occ";
 
   occUser = pkgs.writeScriptBin "nextcloud-occ" ''
@@ -110,7 +108,6 @@ let
   extraAppOptions = {};
 
   package = pkgs.callPackage package/current {
-    inherit upstreamInfo;
     inherit (cfg) apps theme extraPostPatch;
   };
 
@@ -136,7 +133,7 @@ let
   mkPhpConfig = value: "<?php\n$CONFIG = ${mkPhp value};\n";
 
   # All of the static files we can serve as-is without going through PHP.
-  staticFiles = pkgs.runCommand "nextcloud-static" {
+  staticFiles = pkgs.runCommand "nextcloud-static-${package.version}" {
     nextcloud = package;
   } ''
     cd "$nextcloud"
@@ -528,7 +525,7 @@ in {
           enabled.
         '';
       };
-    } // (extraAppOptions.${appId} or {})) upstreamInfo.applications;
+    } // (extraAppOptions.${appId} or {})) package.applications;
 
     extraConfig = lib.mkOption {
       type = types.attrsOf types.unspecified;

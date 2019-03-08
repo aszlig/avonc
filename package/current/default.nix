@@ -1,7 +1,7 @@
 { stdenv, lib, fetchzip, fetchFromGitHub
 
 # Args passed by /default.nix.
-, upstreamInfo, apps, theme, extraPostPatch
+, apps, theme, extraPostPatch
 }:
 
 let
@@ -11,6 +11,8 @@ let
     rev = "6a1c90ae97f6b60772ce7756e77d3d2b6b2b41df";
     sha256 = "0sdzscz2pq7g674inkc6cryqsdnrpin2hsvvaqzngld6vp1z7h04";
   };
+
+  upstreamInfo = lib.importJSON ./upstream.json;
 
 in stdenv.mkDerivation rec {
   name = "nextcloud-${version}";
@@ -61,4 +63,6 @@ in stdenv.mkDerivation rec {
     homepage = https://nextcloud.com;
     license = lib.licenses.agpl3Plus;
   };
+
+  passthru.applications = upstreamInfo.applications;
 }
