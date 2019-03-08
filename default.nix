@@ -12,13 +12,6 @@ let
 
   upstreamInfo = lib.importJSON ./deps/upstream.json;
 
-  themeBreezeDark = pkgs.fetchFromGitHub {
-    owner = "mwalbeck";
-    repo = "nextcloud-breeze-dark";
-    rev = "6a1c90ae97f6b60772ce7756e77d3d2b6b2b41df";
-    sha256 = "0sdzscz2pq7g674inkc6cryqsdnrpin2hsvvaqzngld6vp1z7h04";
-  };
-
   occ = lib.escapeShellArg "${package}/occ";
 
   occUser = pkgs.writeScriptBin "nextcloud-occ" ''
@@ -116,55 +109,9 @@ let
   # NixOS options that are merged with the existing appids.
   extraAppOptions = {};
 
-  package = pkgs.stdenv.mkDerivation rec {
-    name = "nextcloud-${version}";
-    inherit (upstreamInfo.nextcloud) version;
-
-    src = pkgs.fetchzip {
-      inherit (upstreamInfo.nextcloud) url sha256;
-    };
-
-    prePatch = let
-      inherit (upstreamInfo) applications;
-      notShipped = lib.const (appdata: !appdata.meta.isShipped);
-      extApps = lib.filterAttrs notShipped applications;
-      isEnabled = name: cfg.apps.${name}.enable;
-      enabledApps = lib.filter isEnabled (lib.attrNames extApps);
-      appPaths = lib.genAttrs enabledApps (name: pkgs.fetchzip {
-        inherit (extApps.${name}) url sha256;
-      });
-    in lib.concatStrings (lib.mapAttrsToList (appid: path: ''
-      cp -TR ${lib.escapeShellArg path} apps/${lib.escapeShellArg appid}
-      chmod -R +w apps/${lib.escapeShellArg appid}
-    '') appPaths); # FIXME: Avoid the chmod above!
-
-    buildPhase = lib.optionalString (cfg.theme == "breeze-dark") ''
-      cp -TR ${lib.escapeShellArg themeBreezeDark} themes/nextcloud-breeze-dark
-    '';
-
-    patches = [
-      patches/no-config-uid-check.patch
-      patches/executable-lookup.patch
-      patches/readonly-config-upgrade.patch
-    ];
-
-    # Nextcloud checks whether the user matches the webserver user by comparing
-    # the current userid with the owner of config.php. In our case however, the
-    # config.php is inside the Nix store so it most certainly isn't owned by
-    # the nextcloud user.
-    postPatch = ''
-      sed -i -e 's/${
-        "\\($configUser *= *\\).*fileowner(.*config.php.*)"
-      }/\1$user/g' cron.php console.php
-    '' + cfg.extraPostPatch;
-
-    installPhase = "mkdir -p \"\$out/\"\ncp -R . \"$out/\"";
-
-    meta = {
-      description = "Sharing solution for files, calendars, contacts and more";
-      homepage = https://nextcloud.com;
-      license = lib.licenses.agpl3Plus;
-    };
+  package = pkgs.callPackage package/current {
+    inherit upstreamInfo;
+    inherit (cfg) apps theme extraPostPatch;
   };
 
   mkPhpString = value: "'${lib.escape ["\\" "'"] value}'";
