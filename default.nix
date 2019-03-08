@@ -92,7 +92,6 @@ let
     "pgsql.max_persistent=-1"
     "post_max_size=${toString cfg.maxUploadSize}M"
     "upload_max_filesize=${toString cfg.maxUploadSize}M"
-    "upload_tmp_dir=/var/cache/nextcloud"
     "user_ini.filename="
     "zend_extension=opcache.so"
   ] ++ lib.optionals cfg.preloadOpcache [
@@ -101,10 +100,18 @@ let
     "opcache.validate_permission=0"
   ];
 
-  phpCli = let
+  runtimePhpConfig = [
+    "session.save_path=/var/cache/nextcloud/sessions"
+    "upload_tmp_dir=/var/cache/nextcloud/uploads"
+  ];
+
+  mkPhpCli = phpConfig: let
     mkArgs = lib.concatMapStringsSep " " (opt: "-d ${lib.escapeShellArg opt}");
     escPhp = lib.escapeShellArg "${php}/bin/php";
-  in escPhp + " " + mkArgs commonPhpConfig;
+  in escPhp + " " + mkArgs phpConfig;
+
+  phpCli = mkPhpCli (commonPhpConfig ++ runtimePhpConfig);
+  phpCliInit = mkPhpCli commonPhpConfig;
 
   # NixOS options that are merged with the existing appids.
   extraAppOptions = {};
@@ -277,7 +284,7 @@ let
       "memcache.local" = "\\OC\\Memcache\\APCu";
 
       supportedDatabases = [ "pgsql" ];
-      tempdirectory = "/var/cache/nextcloud";
+      tempdirectory = "/var/cache/nextcloud/uploads";
 
       # By default this contains '.htaccess', but our web server doesn't parse
       # these files, so we can safely allow them.
@@ -340,7 +347,7 @@ let
     EOF
     export NEXTCLOUD_CONFIG_DIR="$PWD/tmpconfig"
 
-    ${phpCli} "$nextcloud/occ" maintenance:install \
+    ${phpCliInit} "$nextcloud/occ" maintenance:install \
       --database pgsql \
       --database-name nextcloud \
       --database-host $TMPDIR \
@@ -349,10 +356,10 @@ let
       --admin-pass "$adminPass" \
       --data-dir "$PWD/data"
 
-    ${phpCli} "$nextcloud/occ" background:cron
-    ${phpCli} "$nextcloud/occ" db:convert-filecache-bigint
+    ${phpCliInit} "$nextcloud/occ" background:cron
+    ${phpCliInit} "$nextcloud/occ" db:convert-filecache-bigint
 
-    ${mkEnableDisableApps "${phpCli} \"$nextcloud/occ\"" true}
+    ${mkEnableDisableApps "${phpCliInit} \"$nextcloud/occ\"" true}
 
     rm "$PWD/data/index.html" "$PWD/data/.htaccess"
     pg_dump -h "$TMPDIR" nextcloud > "$sql"
@@ -391,7 +398,8 @@ let
         php-index = "index.php";
         php-docroot = package;
         php-sapi-name = "apache";
-        php-set = commonPhpConfig ++ [ "display_errors=stderr" ];
+        php-set = commonPhpConfig ++ runtimePhpConfig
+               ++ lib.singleton "display_errors=stderr";
         plugins = [ "0:php" ];
         processes = cfg.processes;
         procname-prefix-spaced = "[nextcloud]";
@@ -804,6 +812,7 @@ in {
         RemainAfterExit = true;
         PermissionsStartOnly = true;
         StateDirectory = "nextcloud/data";
+        CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
       };
     };
@@ -823,7 +832,7 @@ in {
         User = "nextcloud";
         Group = "nextcloud";
         StateDirectory = "nextcloud/data";
-        CacheDirectory = "nextcloud";
+        CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         ExecStart = "@${uwsgiNextcloud} nextcloud";
         KillMode = "process";
@@ -851,7 +860,7 @@ in {
         User = "nextcloud";
         Group = "nextcloud";
         StateDirectory = "nextcloud/data";
-        CacheDirectory = "nextcloud";
+        CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         ExecStart = "${php}/bin/php -f ${package}/cron.php";
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
 
