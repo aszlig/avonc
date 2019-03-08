@@ -19,7 +19,7 @@ in {
       };
 
       options.chroot.packages = lib.mkOption {
-        type = types.listOf (types.either types.package types.str);
+        type = types.listOf (types.either types.str types.package);
         default = [];
         description = let
           mkScOption = optName: "<option>serviceConfig.${optName}</option>";
