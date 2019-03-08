@@ -759,7 +759,7 @@ in {
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
-        BindPaths = [ "/var/lib/nextcloud/.version" ];
+        BindPaths = [ "/var/lib/nextcloud" ];
         PrivateNetwork = true;
       };
     };
