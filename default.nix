@@ -642,7 +642,7 @@ in {
           ".well-known/host-meta.json" = "public.php?service=host-meta-json";
           ".well-known/webfinger" = "public.php?service=webfinger";
           "ocm-provider" = "ocm-provider/index.php";
-          "osm-provider" = "osm-provider/index.php";
+          "ocs-provider" = "ocs-provider/index.php";
         };
         redirects = mkRewritesRedirs "return 301 ${cfg.baseUrl}/" {
           ".well-known/carddav" = "remote.php/dav";
