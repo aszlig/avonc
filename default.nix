@@ -734,7 +734,7 @@ in {
       environment.__NEXTCLOUD_VERSION = package.version;
 
       chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php pkgs.dash nextcloudConfigDir ];
+      chroot.packages = [ pkgs.glibcLocales php nextcloudConfigDir ];
 
       script = ''
         if [ -e /var/lib/nextcloud/.version ]; then
@@ -772,7 +772,7 @@ in {
       environment.__NEXTCLOUD_VERSION = package.version;
 
       chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php pkgs.dash ];
+      chroot.packages = [ pkgs.glibcLocales php ];
 
       serviceConfig = {
         Type = "notify";
@@ -800,7 +800,7 @@ in {
       environment.__NEXTCLOUD_VERSION = package.version;
 
       chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php pkgs.dash nextcloudConfigDir ];
+      chroot.packages = [ pkgs.glibcLocales php nextcloudConfigDir ];
 
       serviceConfig = {
         Type = "oneshot";
