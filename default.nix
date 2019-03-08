@@ -4,6 +4,7 @@ let
   inherit (lib) types mkOption;
 
   cfg = config.nextcloud;
+  inherit (cfg) package;
 
   urlScheme = if cfg.useSSL then "https" else "http";
   maybePort = let
@@ -106,10 +107,6 @@ let
 
   # NixOS options that are merged with the existing appids.
   extraAppOptions = {};
-
-  package = pkgs.callPackage package/current {
-    inherit (cfg) apps theme extraPostPatch;
-  };
 
   mkPhpString = value: "'${lib.escape ["\\" "'"] value}'";
 
@@ -550,6 +547,23 @@ in {
       description = ''
         Extra shell script lines to append to the <literal>postPatch</literal>
         phase of the Nextcloud main derivation.
+      '';
+    };
+
+    package = lib.mkOption {
+      type = types.package;
+      # XXX: Bah, this is so ugly!
+      default = pkgs.callPackage package/current {
+        inherit (cfg) apps theme extraPostPatch;
+      };
+      defaultText = "pkgs.callPackage package/current {"
+                  + " inherit (cfg) apps theme extraPostPatch;"
+                  + "}";
+      internal = true;
+      description = ''
+        The main Nextcloud package to use. Only needed for the upgrade test and
+        you shouldn't change this value at all if you don't know what you're
+        doing.
       '';
     };
   };
