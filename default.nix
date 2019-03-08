@@ -717,10 +717,7 @@ in {
         EnvironmentFile = "/var/lib/nextcloud/secrets.env";
         ExecStart = let
           tar = "${pkgs.gnutar}/bin/tar";
-          wantEncryption = cfg.apps.encryption.enable;
-        in [
-          "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data"
-        ] ++ lib.optional wantEncryption "${phpCli} ${occ} encryption:enable";
+        in "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data";
         ExecStartPost =
           "${pkgs.coreutils}/bin/touch /var/lib/nextcloud/.init-done";
       };
