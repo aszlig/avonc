@@ -352,9 +352,9 @@
         "name": "DICOM Viewer",
         "summary": "Digital Imaging for Medicine"
       },
-      "sha256": "1a1ixamsah7m88gi2s25cma3x9imcpqqyp997g8nfaw1ngwj7714",
-      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.1.0/dicomviewer.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1l8d24p1g3s7rpzw0a1sy0kxwiw1xgpbg992nqbwgalb52ydrklx",
+      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.0/dicomviewer.tar.gz",
+      "version": "1.2.0"
     },
     "discoursesso": {
       "meta": {
@@ -1114,7 +1114,7 @@
     },
     "news": {
       "meta": {
-        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.com/server/10/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
+        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
         "homepage": "https://github.com/nextcloud/news",
         "isShipped": false,
         "licenses": [
@@ -1123,9 +1123,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0r3nhs1np7b17bv8d6bjc5m3avg1ghamliw84ab0shmbq9grvkh4",
-      "url": "https://github.com/nextcloud/news/releases/download/13.0.3/news.tar.gz",
-      "version": "13.0.3"
+      "sha256": "0kphk8fs1v0r9wvnmk3j2hi4lzlm0r8gciv451i5hn2x0kwxbizh",
+      "url": "https://github.com/nextcloud/news/releases/download/13.1.0/news.tar.gz",
+      "version": "13.1.0"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1671,9 +1671,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "1df5x7skqxinvw1vbvsajsbha84fh4z8m1n8pyaq04c4c0zphzgl",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/2.4.0/sharerenamer-2.4.0.tar.gz",
-      "version": "2.4.0"
+      "sha256": "1sapwdnyn5wpsk8v6ppvsk44bpbl8m7qgf3k90xpamg4zc9vh9nk",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.5.0/sharerenamer-2.5.0.tar.gz",
+      "version": "2.5.0"
     },
     "smb_test": {
       "meta": {
