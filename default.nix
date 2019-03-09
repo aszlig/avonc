@@ -76,6 +76,7 @@ let
     "opcache.revalidate_freq=1"
     "opcache.save_comments=1"
     "opcache.validate_timestamps=0"
+    "openssl.cafile=${caCerts}"
     "pgsql.allow_persistent=1"
     "pgsql.auto_reset_persistent=0"
     "pgsql.ignore_notice=0"
@@ -333,6 +334,8 @@ let
         env = [
           "NEXTCLOUD_CONFIG_DIR=${nextcloudConfigDir}"
           "PWD=${package}"
+          "SSL_CERT_FILE=${caCerts}"
+          "NIX_SSL_CERT_FILE=${caCerts}"
         ];
         master = true;
         php-allowed-script = map (name: "${package}/${name}.php") entryPoints;
@@ -812,9 +815,11 @@ in {
 
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
       environment.__NEXTCLOUD_VERSION = package.version;
+      environment.SSL_CERT_FILE = caCerts;
+      environment.NIX_SSL_CERT_FILE = caCerts;
 
       chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php nextcloudConfigDir ];
+      chroot.packages = [ pkgs.glibcLocales php nextcloudConfigDir caCerts ];
 
       serviceConfig = {
         Type = "oneshot";
