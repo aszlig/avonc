@@ -178,7 +178,7 @@ let
       overwritehost = "${cfg.domain}${maybePort}";
       overwriteprotocol = urlScheme;
       overwritewebroot = "/";
-      "overwrite.cli.url" = "/";
+      "overwrite.cli.url" = cfg.baseUrl;
       "htaccess.RewriteBase" = "/";
       "htaccess.IgnoreFrontController" = true;
 
