@@ -264,9 +264,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "07hri3i792balq40l4f07bhi5sdy649r9dgp3xs3j5pxjka85b2a",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.0.4/contacts.tar.gz",
-      "version": "3.0.4"
+      "sha256": "1av6bib3icm555l0yg5qdrlshqgdma48rkqb5zikrwg4ba3yhhpm",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.0.5/contacts.tar.gz",
+      "version": "3.0.5"
     },
     "cospend": {
       "meta": {
@@ -1574,9 +1574,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "0pqvprdif1x3l5l07spid2mkrd7mqcrarhymaxz2kjh0x19cspq7",
+      "sha256": "1760pff79c9i8c2p07q31d5pap5zd7skg9v255iz5pv6aj25jrmh",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/raw/master/build/artifacts/appstore/secsignid.tar.gz",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     "sensorlogger": {
       "meta": {
