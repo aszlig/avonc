@@ -589,32 +589,19 @@ in {
       forceSSL = cfg.useSSL;
       enableACME = cfg.useACME;
       extraConfig = ''
-        error_page 403 ${cfg.baseUrl}/;
-        error_page 404 ${cfg.baseUrl}/;
+        rewrite ^/\.well-known/webfinger /public.php?service=webfinger last;
+        rewrite ^/(oc[ms]-provider) /$1/index.php last;
       '';
-      locations = let
-        mkRewritesRedirs = cmd: lib.mapAttrsToList (from: to: [
-          (lib.nameValuePair "= /${from}" { extraConfig = cmd + to + ";"; })
-          (lib.nameValuePair "= /${from}/" { extraConfig = cmd + to + ";"; })
-        ]);
-
-        rewrites = mkRewritesRedirs "rewrite ^ /" {
-          ".well-known/host-meta" = "public.php?service=host-meta";
-          ".well-known/host-meta.json" = "public.php?service=host-meta-json";
-          ".well-known/webfinger" = "public.php?service=webfinger";
-          "ocm-provider" = "ocm-provider/index.php";
-          "ocs-provider" = "ocs-provider/index.php";
-        };
-        redirects = mkRewritesRedirs "return 301 ${cfg.baseUrl}/" {
-          ".well-known/carddav" = "remote.php/dav";
-          ".well-known/caldav" = "remote.php/dav";
-        };
-
-      in lib.listToAttrs (lib.concatLists (rewrites ++ redirects)) // {
+      locations = {
         "/" = {
           root = staticFiles;
           tryFiles = "$uri $uri$is_args$args /index.php$uri$is_args$args";
           extraConfig = "access_log off;";
+        };
+
+        "~ ^/.well-known/(?:card|cal)dav(?:$|/)" = {
+          priority = 200;
+          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav/;";
         };
 
         "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
@@ -622,6 +609,8 @@ in {
             client_max_body_size ${toString cfg.maxUploadSize}M;
             uwsgi_intercept_errors on;
             uwsgi_request_buffering off;
+            include ${config.services.nginx.package}/conf/uwsgi_params;
+            uwsgi_param REQUEST_URI $uri$is_args$args;
             uwsgi_pass unix:///run/nextcloud.socket;
           '';
         };
