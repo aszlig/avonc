@@ -87,6 +87,8 @@ let
     "upload_max_filesize=${toString cfg.maxUploadSize}M"
     "user_ini.filename="
     "zend_extension=opcache.so"
+  ] ++ lib.optionals (config.time.timeZone != null) [
+    "date.timezone=${config.time.timeZone}"
   ] ++ lib.optionals cfg.preloadOpcache [
     "opcache.file_cache=${opcache}"
     "opcache.file_cache_consistency_checks=0"
