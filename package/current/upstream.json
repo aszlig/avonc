@@ -82,7 +82,7 @@
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, streams, ... with playlist support and SONOS integration.\n\n- Multiple views (albums with covers and more)\n- Library scan and reset with command-line and browser\n- Specifying media folder (with exclude functionality)\n- Smart &amp; Standard Playlists\n- Stream URLs\n- One Click Play in Files app\n- Favorites, Sidebar &amp; Search integration\n- Widget for Dashboard App (beta)\n- [SONOS player](https://github.com/rello/audioplayer/wiki/SONOS) integration\n- **NEW:** local playlists\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and limitations.",
+        "description": "A music player for FLAC, MP3, MP4, streams, ... with playlist support and SONOS integration.\n\n- Multiple views (albums with covers and more)\n- Library scan and reset with command-line and browser\n- Specifying media folder (with exclude functionality)\n- Smart &amp; Standard Playlists\n- Stream URLs\n- One Click Play in Files app\n- Favorites, Sidebar &amp; Search integration\n- Widget for Dashboard App (beta)\n- [SONOS player](https://github.com/rello/audioplayer/wiki/SONOS) integration\n- local playlists\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and limitations.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -91,9 +91,9 @@
         "name": "Audio Player",
         "summary": "Audio Player for Nextcloud and ownCloud"
       },
-      "sha256": "013zqlpzss8r9fd2dfcr8i493zrzl2cq0v1gw95rid7cprdbggy6",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.6.0/audioplayer-2.6.0.tar.gz",
-      "version": "2.6.0"
+      "sha256": "0ghq1z1yb0jrrv471g06kac7wv1j3d6mw75sqk2dhnqz2hrdcfzi",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.6.1/audioplayer-2.6.1.tar.gz",
+      "version": "2.6.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1lqqhwcp0b3qdbqyjzja9qa8bj2ll8rhxrkmnqjjv4hmrs2rpy35",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.13.2/carnet-nc-v0.13.2.tar.gz",
-      "version": "0.13.2"
+      "sha256": "181x6d0b1drfyg9rwibmhhglsrmmv0lb9vwriiq7cfsh3s4byflf",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.13.5/carnet-nc-v0.13.5.tar.gz",
+      "version": "0.13.5"
     },
     "checksum": {
       "meta": {
@@ -264,13 +264,13 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1ig8lpfb9ic483ym8vr6v166y3y4s5yija2yz3z7xsr2s572a8dv",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.0.3/contacts.tar.gz",
-      "version": "3.0.3"
+      "sha256": "07hri3i792balq40l4f07bhi5sdy649r9dgp3xs3j5pxjka85b2a",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.0.4/contacts.tar.gz",
+      "version": "3.0.4"
     },
     "cospend": {
       "meta": {
-        "description": "# Nextcloud Cospend\n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset the mermbers balances.\n\nProject members are independent from Nextcloud users. Once you've got access to a project (as a guest or as a Nextcloud user), there is no restriction on what you can add/edit/delete. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is available (soon on F-Droid).\n\n## Features\n\n* create/edit/delete project, member, bill\n* check member balances\n* display project's statistics\n* display settlement plan\n* automatically create reimbursement bills from settlement plan\n* create recurring bills (day/week/month/year)\n* optionally provide custom amount for each member in new bills\n* insert public link to a personal file in bill description (picture of physical bill for example)\n* guest access for people outside Nextcloud\n* share a project with Nextcloud users\n* import/export projects as csv (compatible with csv files from IHateMoney)\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\nLink to Nextcloud application website : https://apps.nextcloud.com/apps/cospend\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* ...\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Once you've got access to a project (as a guest or as a Nextcloud user), there is no restriction on what you can add/edit/delete. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/).\n\n## Features\n\n*  create/edit/delete projects, members, bills\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (day/week/month/year)\n*  optionally provide custom amount for each member in new bills\n*  insert public link to a personal file in bill description (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share a project with Nextcloud users\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  add external projects (hosted by another Nextcloud instance)\n*  generate link/QRCode to easily import projects in MoneyBuster\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/cospend-nc",
         "isShipped": false,
         "licenses": [
@@ -279,9 +279,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1wv0csrii0ysraxh9yvp71zzp7y9ab8wmjn10fp5yc6wznakxddd",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/9e4c16f432b51bfc21f226661388d835/cospend-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "12ay6kg9q316na55n5vqvxhcd1dni5na5akinp6zxawnq1s3d04i",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/e6d9c3f078ce2ef08cd433ab6ff9418e/cospend-0.0.6.tar.gz",
+      "version": "0.0.6"
     },
     "dashboard": {
       "meta": {
