@@ -32,6 +32,13 @@ import <nixpkgs/nixos/tests/make-test.nix> ({ pkgs, ... }: {
       ['links', 'subject']
     '';
 
+    tests.".well-known/host-meta" = ''
+      >>> requests.get(url + '/.well-known/host-meta')
+      <Response [404]>
+      >>> requests.get(url + '/.well-known/host-meta.json')
+      <Response [404]>
+    '';
+
     tests.".well-known/caldav" = ''
       >>> url += '/.well-known/caldav'
       >>> response = requests.get(url, allow_redirects=False)

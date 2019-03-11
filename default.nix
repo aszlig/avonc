@@ -590,6 +590,9 @@ in {
       enableACME = cfg.useACME;
       extraConfig = ''
         rewrite ^/\.well-known/webfinger /public.php?service=webfinger last;
+        rewrite ^/\.well-known/host-meta /public.php?service=host-meta last;
+        rewrite ^/\.well-known/host-meta.json
+          /public.php?service=host-meta-json last;
         rewrite ^/(oc[ms]-provider) /$1/index.php last;
       '';
       locations = {
