@@ -22,6 +22,7 @@ import json
 import os
 import re
 import requests
+import string
 import sys
 import subprocess
 import tempfile
@@ -261,7 +262,10 @@ def fetch_app(ncpath: str, appid: str, appdata: NcApp) -> Dict[str, str]:
                          desc='Downloading app {!r}'.format(appdata.name))
     sig = base64.b64decode(appdata.signature)
     crypto.verify(cert, sig, data, 'sha512')
-    ziphash: str = hash_zip_content(appdata.download.rsplit('/', 1)[-1], data)
+    fname_base = appdata.download.rsplit('/', 1)[-1].rsplit('?', 1)[0]
+    valid_chars = string.ascii_letters + string.digits + "._-"
+    safename: str = ''.join(c for c in fname_base if c in valid_chars)
+    ziphash: str = hash_zip_content(safename.lstrip('.'), data)
 
     return {
         'version': str(appdata.version),
