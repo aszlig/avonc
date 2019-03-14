@@ -193,9 +193,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1jc3p1qvivi6hv2yrb06wwman37r6svbrhak19g2zkzw37wr2yrr",
-      "url": "https://github.com/cowai/camerarawpreviews/releases/download/v0.6.3/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.6.3"
+      "sha256": "151l04qbvkynjrd673hg1baydnhnnqjyr6y9hf4ppx4nsjlwajp8",
+      "url": "https://github.com/cowai/camerarawpreviews/releases/download/v0.6.5/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.6.5"
     },
     "carnet": {
       "meta": {
@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "181x6d0b1drfyg9rwibmhhglsrmmv0lb9vwriiq7cfsh3s4byflf",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.13.5/carnet-nc-v0.13.5.tar.gz",
-      "version": "0.13.5"
+      "sha256": "0wdm7gpyqpar85x334sr8yf6k3djql9h81mql5g0ypn86z5js976",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.13.7/carnet-nc-v0.13.7.tar.gz",
+      "version": "0.13.7"
     },
     "checksum": {
       "meta": {
@@ -566,9 +566,9 @@
         "name": "External storage support for Google Drive",
         "summary": "External storage support for Google Drive"
       },
-      "sha256": "0gvlmb8jk6b93x1dj0yh95w02mih0aasazlvqff26hhcsj7vgiiy",
-      "url": "https://cloud.nastuzzi.fr/s/PsAXytaZzG5HE3E/download",
-      "version": "0.2.5"
+      "sha256": "0s16khm6y0xgx4qfrak7a49fx4yg0i71p3r2hbm8id6a25sg9r5m",
+      "url": "https://github.com/NastuzziSamy/files_external_gdrive/releases/download/v0.3.0/files_external_gdrive.tar.gz",
+      "version": "0.3.0"
     },
     "files_frommail": {
       "meta": {
@@ -727,9 +727,9 @@
         "name": "Files Right Click",
         "summary": "Add a rightclick menu generator for any Nextcloud apps"
       },
-      "sha256": "17sjcifrs00ysj86rwys0z7984m7q1ihnw3ky9ca2blp6zhzp7vw",
-      "url": "https://github.com/NastuzziSamy/files_rightclick/releases/download/v0.11.0/files_rightclick.tar.gz",
-      "version": "0.11.0"
+      "sha256": "0adv3a5c7sxl8h93mznmvvhj9nmn0qn3w1lkdjrnww9smliyna2x",
+      "url": "https://github.com/NastuzziSamy/files_rightclick/releases/download/v0.11.1/files_rightclick.tar.gz",
+      "version": "0.11.1"
     },
     "files_sharing": {
       "meta": {
@@ -976,9 +976,24 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "1ryv6kddcrqgqkcv70njlfc5h04rr7dz776mixbgzy5w1hyji5m6",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v2.0.3/groupfolders-2.0.3.tar.gz",
-      "version": "2.0.3"
+      "sha256": "1xfsz6iz92xxikqqh1pgvzn7bzvczl9h1q15lrczn8zlcyykmfqw",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v2.0.4/groupfolders-2.0.4.tar.gz",
+      "version": "2.0.4"
+    },
+    "groupquota": {
+      "meta": {
+        "description": "Allow setting a disk quota for an entire group.\n\nNote: configuring quota is only possible trough the API, no admin interface is currently available.",
+        "homepage": "https://github.com/nextcloud/groupquota",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Group quota",
+        "summary": "Give filesystem quotas to groups"
+      },
+      "sha256": "03afyka4v0d7hccm0lggcg8wa3mc6gm46361qga4kckk8wxmgfh5",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.0/groupquota-0.1.0.tar.gz",
+      "version": "0.1.0"
     },
     "hsts": {
       "meta": {
@@ -1123,9 +1138,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0kphk8fs1v0r9wvnmk3j2hi4lzlm0r8gciv451i5hn2x0kwxbizh",
-      "url": "https://github.com/nextcloud/news/releases/download/13.1.0/news.tar.gz",
-      "version": "13.1.0"
+      "sha256": "06lyh64ajrld62c6dmnq89gwyvwwrsd5ipbnpapfsj2dg5d3jb9s",
+      "url": "https://github.com/nextcloud/news/releases/download/13.1.1/news.tar.gz",
+      "version": "13.1.1"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1367,9 +1382,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1rymkj8rg2rhlr8mwq4yspjc8gfrljwsvjf3nal65d52yjdl7wna",
-      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.1/polls.tar.gz",
-      "version": "0.10.1"
+      "sha256": "1cywz4i09lj99jjmn144v1mwjjjj6lia94x8nk60jabkss4az3zq",
+      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.2/polls.tar.gz",
+      "version": "0.10.2"
     },
     "preferred_providers": {
       "meta": {
@@ -1794,6 +1809,21 @@
       "sha256": "0rphr3xvq2pl7kpy5d0n6z4il22dfznvhk2ivssyp0jjkn5rp9xg",
       "url": "https://github.com/nextcloud/socialsharing/releases/download/twitter-1.0.4/socialsharing_twitter.tar.gz",
       "version": "1.0.4"
+    },
+    "spgverein": {
+      "meta": {
+        "description": "Access data of SPG-Verein in your Nextcloud instance",
+        "homepage": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SPG Verein",
+        "summary": "Access data of SPG-Verein in your Nextcloud instance"
+      },
+      "sha256": "10c4kmxwqjdwmig63b0g8rhwjgnnb4pw7kq48x6h091svkrsz3v1",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/artifacts/master/raw/spgverein.tar.gz?job=package",
+      "version": "0.5.0"
     },
     "spreed": {
       "meta": {
