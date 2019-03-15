@@ -566,9 +566,9 @@
         "name": "External storage support for Google Drive",
         "summary": "External storage support for Google Drive"
       },
-      "sha256": "0s16khm6y0xgx4qfrak7a49fx4yg0i71p3r2hbm8id6a25sg9r5m",
-      "url": "https://github.com/NastuzziSamy/files_external_gdrive/releases/download/v0.3.0/files_external_gdrive.tar.gz",
-      "version": "0.3.0"
+      "sha256": "0z9x2y4waz00c743bphf8cn0ca6xh43c3k61fz3kcnpmbb10m139",
+      "url": "https://github.com/NastuzziSamy/files_external_gdrive/releases/download/v0.4.0/files_external_gdrive.tar.gz",
+      "version": "0.4.0"
     },
     "files_frommail": {
       "meta": {
@@ -1352,9 +1352,9 @@
         "name": "Photo Sphere Viewer",
         "summary": "Enables viewing of google photosphere images"
       },
-      "sha256": "0s1rl4f6kpg1gimigk0ir7s80y1mg3l0w7rgfrwdg3mcbv63ynkn",
-      "url": "https://github.com/R0Wi/Nextcloud-PhotoSphereViewer/releases/download/v0.0.2-beta/photosphereviewer.tar.gz",
-      "version": "0.0.2"
+      "sha256": "1pvx8a066rpfd78a651armx9mibp7qpmlg1ah76a5lysrawx0sw6",
+      "url": "https://github.com/R0Wi/Nextcloud-PhotoSphereViewer/releases/download/v0.0.3-beta/photosphereviewer.tar.gz",
+      "version": "0.0.3"
     },
     "piwik": {
       "meta": {
