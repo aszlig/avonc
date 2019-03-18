@@ -712,9 +712,9 @@
         "name": "Retention",
         "summary": "This application allows for automatic deletion of files after a given time"
       },
-      "sha256": "0nngcl0749iaqpm190qmskr9hrg9r1r4vca4b0bxzla8ixfqfjgl",
-      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.4.1/files_retention-1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "09kz85g5j89w08341b5asmcv8lf5fdynh0vmkr6bq4skz1y4ssa6",
+      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.4.2/files_retention-1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "files_rightclick": {
       "meta": {
@@ -1138,9 +1138,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "06lyh64ajrld62c6dmnq89gwyvwwrsd5ipbnpapfsj2dg5d3jb9s",
-      "url": "https://github.com/nextcloud/news/releases/download/13.1.1/news.tar.gz",
-      "version": "13.1.1"
+      "sha256": "0ql2kalghm5y9xdj61iqrcl5fla4pr6vws84xysnqcpisqj09n3s",
+      "url": "https://github.com/nextcloud/news/releases/download/13.1.2/news.tar.gz",
+      "version": "13.1.2"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -2132,9 +2132,9 @@
         "name": "External user support",
         "summary": "Use external user authentication methods like IMAP, SMB and FTP"
       },
-      "sha256": "0zj96ibaafv3zqzihpwmxs00pnfsbxp26if4hbglmvaas6d9zv8w",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.5.1/user_external-0.5.1.tar.gz",
-      "version": "0.5.1"
+      "sha256": "1zdd8lz270p85lv4jgxzv3hd4qizvlsmb64i7l2y9ynm6v735hp0",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.0/user_external-0.6.0.tar.gz",
+      "version": "0.6.0"
     },
     "user_ispconfig": {
       "meta": {
