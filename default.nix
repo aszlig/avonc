@@ -597,7 +597,16 @@ in {
           /public.php?service=host-meta-json last;
         rewrite ^/(oc[ms]-provider) /$1/index.php last;
       '';
-      locations = {
+      locations = let
+        backendConfig = ''
+          client_max_body_size ${toString cfg.maxUploadSize}M;
+          uwsgi_intercept_errors on;
+          uwsgi_request_buffering off;
+          include ${config.services.nginx.package}/conf/uwsgi_params;
+          uwsgi_param REQUEST_URI $uri$is_args$args;
+          uwsgi_pass unix:///run/nextcloud.socket;
+        '';
+      in {
         "/" = {
           root = staticFiles;
           tryFiles = "$uri $uri$is_args$args /index.php$uri$is_args$args";
@@ -609,15 +618,14 @@ in {
           extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav/;";
         };
 
-        "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
-          extraConfig = ''
-            client_max_body_size ${toString cfg.maxUploadSize}M;
-            uwsgi_intercept_errors on;
-            uwsgi_request_buffering off;
-            include ${config.services.nginx.package}/conf/uwsgi_params;
-            uwsgi_param REQUEST_URI $uri$is_args$args;
-            uwsgi_pass unix:///run/nextcloud.socket;
+        "= /ocs/v2.php/apps/end_to_end_encryption/api/v1/public-key" = {
+          extraConfig = backendConfig + ''
+            uwsgi_param CONTENT_TYPE application/x-www-form-urlencoded;
           '';
+        };
+
+        "~ ^/(?:${lib.concatStringsSep "|" entryPoints})\\.php(?:$|/)" = {
+          extraConfig = backendConfig;
         };
       };
     };
