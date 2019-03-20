@@ -1,5 +1,5 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 2c2e1d7a..e8604adc 100644
+index cde1ff4c..677d8941 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -27,9 +27,6 @@
@@ -70,7 +70,7 @@ index b4c4d44c..d0a0af0d 100644
  use OCP\AppFramework\Http;
  use OCP\AppFramework\Http\JSONResponse;
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
-index 432b0f12..3938982f 100644
+index fd1d53be..3938982f 100644
 --- a/lib/Controller/SettingsController.php
 +++ b/lib/Controller/SettingsController.php
 @@ -11,8 +11,6 @@
@@ -137,18 +137,20 @@ index 432b0f12..3938982f 100644
  		return new DataResponse();
  	}
  
-@@ -151,9 +131,6 @@ class SettingsController extends Controller{
+@@ -151,11 +131,6 @@ class SettingsController extends Controller{
  			$this->appConfig->setAppValue('canonical_webroot', $canonical_webroot);
  		}
  
 -		$this->discoveryManager->refretch();
+-
+-		$this->capabilitiesService->clear();
 -		$this->capabilitiesService->refretch();
 -
  		$response = [
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index 9918aa30..f1e3f416 100644
+index f9689f64..213c097d 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
 @@ -25,7 +25,6 @@ use OC\Share\Constants;
