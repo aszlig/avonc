@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1xb14zr1sqwvrvybzg1mmaa6jrh2k40cnan96nav30qyhnwivxk1",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v0.16.2/bookmarks-0.16.2.tar.gz",
-      "version": "0.16.2"
+      "sha256": "0a9m1vijq7bldai0lqx9awsrzk20lpripw2v4kbz2nv8p6ndlwm8",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v0.16.3/bookmarks-0.16.3.tar.gz",
+      "version": "0.16.3"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "0wdm7gpyqpar85x334sr8yf6k3djql9h81mql5g0ypn86z5js976",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.13.7/carnet-nc-v0.13.7.tar.gz",
-      "version": "0.13.7"
+      "sha256": "088rv2sv5b2m03nmx3ij9aaamaxxdgvkbm0q3r0fi4pm8grfmgjv",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.14.0/carnet-nc-v0.14.0.tar.gz",
+      "version": "0.14.0"
     },
     "checksum": {
       "meta": {
@@ -1152,9 +1152,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0z5vq65cbh0anp68c3lf0j16bycxd4c9pzchcsy3l7337iyj6ia9",
-      "url": "https://github.com/nextcloud/news/releases/download/13.1.3/news.tar.gz",
-      "version": "13.1.3"
+      "sha256": "09jdv8vgm760kjzby5bhxiqd8j12w8jkrla5f6kf487k4myc288j",
+      "url": "https://github.com/nextcloud/news/releases/download/13.1.4/news.tar.gz",
+      "version": "13.1.4"
     },
     "nextcloud_announcements": {
       "meta": {
