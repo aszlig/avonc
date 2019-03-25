@@ -237,9 +237,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0bv099q5d5xhz2in4nnm6dy1dzjbkcazxwsyzy5jyiblx1sb9bs5",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.1/circles-0.16.1.tar.gz",
-      "version": "0.16.1"
+      "sha256": "1ghr03sbqcykhlwxz321as5rc9y6ivlp10s84rjan14nbwnmafap",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.2/circles-0.16.2.tar.gz",
+      "version": "0.16.2"
     },
     "comments": {
       "meta": {
@@ -1691,7 +1691,7 @@
     },
     "sharerenamer": {
       "meta": {
-        "description": "This is an add-in to the Files app, which allows you to customize your share tokens, so your links can be https://mycloud.de/s/mysharedlink instead of https://mycloud.de/s/qPv1SwbU5M2YEoJZ. Just share a file or folder (or click an already shared one) and a new button for renaming the link will appear below the 'Copy URL' button in the menu of the share.\n\t\nYou can also rename links in the Gallery app.",
+        "description": "This is an add-in to the Files app, which allows you to customize your share tokens, so your links can be https://mycloud.de/s/mysharedlink instead of https://mycloud.de/s/qPv1SwbU5M2YEoJZ. Just share a file or folder (or click an already shared one) and a new button for renaming the link will appear below the 'Copy URL' button in the menu of the share.\n\t\nYou can also rename links in the Gallery app.\n\nPlease be aware that this is a potential security risk: links could be guessed! We discourage using this app on large instances that host sensitive data! We also encourage you to password protect such shared links.",
         "homepage": "https://github.com/DecaTec/sharerenamer",
         "isShipped": false,
         "licenses": [
@@ -1700,9 +1700,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "1sapwdnyn5wpsk8v6ppvsk44bpbl8m7qgf3k90xpamg4zc9vh9nk",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.5.0/sharerenamer-2.5.0.tar.gz",
-      "version": "2.5.0"
+      "sha256": "1spk1hid9g7zjnhfv8sxqng81xivj73lf48xh1i1sp0019lfxhi4",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.5.1/sharerenamer-2.5.1.tar.gz",
+      "version": "2.5.1"
     },
     "smb_test": {
       "meta": {
