@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0a9m1vijq7bldai0lqx9awsrzk20lpripw2v4kbz2nv8p6ndlwm8",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v0.16.3/bookmarks-0.16.3.tar.gz",
-      "version": "0.16.3"
+      "sha256": "05rqc1cydxgnn17a2cz7vylcs4sxfp4whh8axi8fa18pg0lfp9w8",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v0.16.4/bookmarks-0.16.4.tar.gz",
+      "version": "0.16.4"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -485,6 +485,21 @@
       "sha256": "00zgpmz3sh2p4x5xbh2libfzqsvnmsxxbfzyidrdlw4j4cy5n9k7",
       "url": "https://github.com/nextcloud/external/releases/download/v3.2.0/external-3.2.0.tar.gz",
       "version": "3.2.0"
+    },
+    "extract": {
+      "meta": {
+        "description": "This app allows you to right click on a zip file to extract it. \n\n        If you want to use it on external local storage please add the link starting from the root to your base local storage at the end of your config.php file like this (without any / at the end) \n        \n        \n        array (\n            0 =&gt; '/your/directory', \n            1 =&gt; '/another/directory',\n        ),\n        \n\n        Rar will be supported in the next version.",
+        "homepage": "https://github.com/PaulLereverend/NextcloudExtract/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Extract",
+        "summary": "Extract zip archive from the web interface"
+      },
+      "sha256": "1xl139m8r96hqnmia8jigl2bg9szp2vyb5d30069rk0cbijysmnv",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/0.0.4/extract.tar.gz",
+      "version": "0.0.4"
     },
     "federation": {
       "meta": {
@@ -1210,6 +1225,21 @@
       "url": "https://git.adphi.net/Adphi/OCCWeb/raw/master/build/artifacts/appstore/occweb.tar.gz",
       "version": "0.0.4"
     },
+    "ocdownloader": {
+      "meta": {
+        "description": "Easy to use download manager using Curl/Aria2 and youtube-dl to allow downloading HTTP(S), FTP(S), YouTube videos and BitTorrent files. For more information on how to install, please go to https://github.com/e-alfred/ocdownloader/blob/master/README.md",
+        "homepage": "https://github.com/e-alfred/ocdownloader",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "ocDownloader",
+        "summary": "Easy to use download manager for Nextcloud"
+      },
+      "sha256": "05dm27699sban7wk3qw4g7mfxcq0yikpifxapcfa86s5kzjmybgh",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.6.1/ocdownloader.tar.gz",
+      "version": "1.6.1"
+    },
     "ocsms": {
       "meta": {
         "description": "An app to sync SMS with your cloud",
@@ -1251,9 +1281,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "0mikfmbwkw2ydnp5hglqpmz3rfcmkn3j1lrk100744mmq3b8c3py",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.1.2/onlyoffice.tar.gz",
-      "version": "2.1.2"
+      "sha256": "0w1xl3dgdrswyvhk8jqnz2z3zw4vh5acd5l6hraskjg9bk0g70wh",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.1.6/onlyoffice.tar.gz",
+      "version": "2.1.6"
     },
     "orcid": {
       "meta": {
@@ -2137,18 +2167,18 @@
     },
     "user_external": {
       "meta": {
-        "description": "Use external user authentication methods like IMAP, SMB and FTP",
+        "description": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth and XMPP",
         "homepage": "https://github.com/nextcloud/user_external/",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "External user support",
-        "summary": "Use external user authentication methods like IMAP, SMB and FTP"
+        "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth and XMPP"
       },
-      "sha256": "1zdd8lz270p85lv4jgxzv3hd4qizvlsmb64i7l2y9ynm6v735hp0",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.0/user_external-0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "14x78b0m07lvpybx71nbfzpmgym4qh51i6ljki6g6cwkkmngw1jr",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.1/user_external-0.6.1.tar.gz",
+      "version": "0.6.1"
     },
     "user_ispconfig": {
       "meta": {
