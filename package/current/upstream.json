@@ -293,9 +293,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "12ay6kg9q316na55n5vqvxhcd1dni5na5akinp6zxawnq1s3d04i",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/e6d9c3f078ce2ef08cd433ab6ff9418e/cospend-0.0.6.tar.gz",
-      "version": "0.0.6"
+      "sha256": "0p1cg87lqvr1l65yycli0pw3yzl03cdlvnxqv3m46cv6bgwjhicn",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/c2ee5a358b878df5db5f6f604478d8dd/cospend-0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "dashboard": {
       "meta": {
@@ -1366,9 +1366,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0s8qrb5fwm2968ys617lf39b6hhgh1q741v6q11pdimcvcfg50w3",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7620/artifacts/raw/passwords.tar.gz",
-      "version": "2019.3.0"
+      "sha256": "0cwfcd6p0xqsvbvp2ypq4ncq8mg5q935fpjpgfw3168blslg2m89",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7708/artifacts/raw/passwords.tar.gz",
+      "version": "2019.4.0"
     },
     "phonetrack": {
       "meta": {
@@ -1381,9 +1381,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phones positions in real time"
       },
-      "sha256": "0m93q0gr8s82yhdp0lf1wvzj6diq0jl9hf5vx1mxxgjp0jg6bnax",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/5489b625951b714ff763fc409d381bd7/phonetrack-0.4.4.tar.gz",
-      "version": "0.4.4"
+      "sha256": "1bf6d528a5w8a3lgasjirf178fniyl4hj4k7395b7immrr14rajm",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/cd7107971aeae92c5ac3aaf0f9c04e94/phonetrack-0.5.0.tar.gz",
+      "version": "0.5.0"
     },
     "photosphereviewer": {
       "meta": {
