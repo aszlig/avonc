@@ -49,7 +49,8 @@ let
         "-d" "opcache.file_cache_only=1"
         "-d" "assert.exception=1"
         "-d" "error_reporting=E_ALL"
-        "-d" "display_errors=stderr"
+        "-d" "log_errors=1"
+        "-d" "display_errors=0"
       ]} -d "opcache.file_cache=$out" "$1" &> /dev/null || :
     '';
   } ''
@@ -347,7 +348,7 @@ let
         php-docroot = package;
         php-sapi-name = "apache";
         php-set = commonPhpConfig ++ runtimePhpConfig
-               ++ lib.singleton "display_errors=stderr";
+               ++ [ "log_errors=1" "display_errors=0" ];
         plugins = [ "0:php" ];
         processes = cfg.processes;
         procname-prefix-spaced = "[nextcloud]";
