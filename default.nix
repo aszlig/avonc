@@ -323,9 +323,7 @@ let
   });
 
   uwsgiNextcloud = pkgs.runCommand "uwsgi-nextcloud" {
-    uwsgi = (pkgs.uwsgi.overrideAttrs (drv: {
-      patches = (drv.patches or []) ++ [ patches/uwsgi-no-body-timeout.patch ];
-    })).override {
+    uwsgi = pkgs.uwsgi.override {
       plugins = [ "php" ];
       withPAM = false;
       withSystemd = true;
