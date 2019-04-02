@@ -293,9 +293,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0p1cg87lqvr1l65yycli0pw3yzl03cdlvnxqv3m46cv6bgwjhicn",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/c2ee5a358b878df5db5f6f604478d8dd/cospend-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "0n9g6y1gh8igzrb7any5r8jlrpw6dv6kf5hcq33nbc5zckcinsqd",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/ee766966b8741c722f07e419edb17c3e/cospend-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "dashboard": {
       "meta": {
@@ -425,9 +425,9 @@
         "name": "DropIt",
         "summary": "Quickly share text or files by dropping them to your Nextcloud!"
       },
-      "sha256": "11q9hf54pa9bvz35223xyfrlklzxlpn2qdylcli6w8qch191vnhc",
-      "url": "https://github.com/rullzer/dropit/releases/download/v0.2.0/dropit.tar.gz",
-      "version": "0.2.0"
+      "sha256": "00hc1l9hxpdiv0mqnb9yafs0ls85r6c7scac8z36drmlm34bilqm",
+      "url": "https://github.com/rullzer/dropit/releases/download/v0.2.1/dropit.tar.gz",
+      "version": "0.2.1"
     },
     "encryption": {
       "meta": {
@@ -544,7 +544,7 @@
     },
     "files_automatedtagging": {
       "meta": {
-        "description": "An app for Nextcloud that automatically assigns tags to newly uploaded files based on some conditions.\n\nThe tags can later be used to control retention, file access, automatic script execution and more.\n\n![screenshot](docs/screenshot.png)\n\n## How it works\nTo define tags, administrators can create and manage a set of rule groups. Each rule group consists of one or more rules combined through operators. Rules can include criteria like file type, size, time and more. A request matches a group if all rules evaluate to true. On uploading a file all defined groups are evaluated and when matching, the given tags are assigned to the file.",
+        "description": "An app for Nextcloud that automatically assigns tags to newly uploaded files based on some conditions.\n\nThe tags can later be used to control retention, file access, automatic script execution and more.\n\n## How it works\nTo define tags, administrators can create and manage a set of rule groups. Each rule group consists of one or more rules combined through operators. Rules can include criteria like file type, size, time and more. A request matches a group if all rules evaluate to true. On uploading a file all defined groups are evaluated and when matching, the given tags are assigned to the file.",
         "homepage": "https://github.com/nextcloud/files_automatedtagging",
         "isShipped": false,
         "licenses": [
@@ -685,9 +685,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "1xg4jclvlvrayrcan63mwsgxf333cl49ijkadxjm8b6pc53xxi91",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.0.5/files_markdown.tar.gz",
-      "version": "2.0.5"
+      "sha256": "10drri5xwkgb8xr87mass86h7lvfqd7hx53mlbym7zd2pyn9rn9n",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.0.6/files_markdown.tar.gz",
+      "version": "2.0.6"
     },
     "files_mindmap": {
       "meta": {
@@ -990,9 +990,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "0szn8z7ch7bwggaihvcbbh19jnr4bw5jja8ikl20vaabslgfyn9i",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.1/group_everyone-0.1.1.tar.gz",
-      "version": "0.1.1"
+      "sha256": "014smps8pdqz9i9466lyjpfydqwqrzbfim0qfl29fziybh96jick",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.2/group_everyone-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "groupfolders": {
       "meta": {
@@ -1459,6 +1459,20 @@
       "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.1.0/previewgenerator.tar.gz",
       "version": "2.1.0"
     },
+    "privatedata": {
+      "meta": {
+        "description": "This app implements the OCS Private Data API",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Private Data API",
+        "summary": "Private data OCS API"
+      },
+      "sha256": "0vdhwx905x5i86wqjpkri1ychrvqaasa4pkxf73475b79y21w786",
+      "url": "https://github.com/nextcloud/privatedata/releases/download/v1.0.2/privatedata.tar.gz",
+      "version": "1.0.1"
+    },
     "qownnotesapi": {
       "meta": {
         "description": "QOwnNotesAPI is the ownCloud/Nextcloud API for [QOwnNotes](http://www.qownnotes.org), the open source (GPL) notepad for Linux, Mac OS X and Windows, that works together with the notes application of ownCloud / Nextcloud.\n\nThe only purpose of this App is to provide API access to your ownCloud/Nextcloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
@@ -1730,9 +1744,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "1spk1hid9g7zjnhfv8sxqng81xivj73lf48xh1i1sp0019lfxhi4",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.5.1/sharerenamer-2.5.1.tar.gz",
-      "version": "2.5.1"
+      "sha256": "0ash1b6fb3v4jhrf9p73jiahi6qml9z0smg01gsk1nv87q9zsrwm",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.6.0/sharerenamer-2.6.0.tar.gz",
+      "version": "2.6.0"
     },
     "smb_test": {
       "meta": {
@@ -1766,7 +1780,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -1775,9 +1789,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0vg17hqf752yv7bdvrxm41djhhsw31zsryhidw6bpvwvpgpsza6g",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.13.0/release.tar.gz",
-      "version": "1.13.0"
+      "sha256": "05ffhhkswvkkas3cay37pb2ygp5b448b3a3rimidiykg59rb5zxs",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.0/release.tar.gz",
+      "version": "1.14.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2045,9 +2059,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "00hfjbxmvgllrq9ikkhbic620vgm1yr53l5sfws4isrg5jdh7h61",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v1.0.3/twofactor_nextcloud_notification.tar.gz",
-      "version": "1.0.3"
+      "sha256": "1r9yx4sivn7xj84js97v937jyf472fd7ndkmrp0366axajkg82a2",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v1.1.1/twofactor_nextcloud_notification.tar.gz",
+      "version": "1.1.1"
     },
     "twofactor_rcdevsopenotp": {
       "meta": {
@@ -2161,9 +2175,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "0vw9n32z37glcs5bv5aixsl6bz0b5dlm3cidwb16gp1hg8ckdqy1",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.6.1/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.6.1"
+      "sha256": "1qmn0yng4nf7msvqx3phb889n4hilg1nby2c9cah0wslvfc03ivs",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.6.2/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.6.2"
     },
     "user_external": {
       "meta": {
