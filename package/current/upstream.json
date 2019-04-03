@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "088rv2sv5b2m03nmx3ij9aaamaxxdgvkbm0q3r0fi4pm8grfmgjv",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.14.0/carnet-nc-v0.14.0.tar.gz",
-      "version": "0.14.0"
+      "sha256": "1aj4yy282j3nc6cqipxfyc2sc7y7m84jjbyn1g3ngxa18wykddzs",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.14.1/carnet-nc-v0.14.1.tar.gz",
+      "version": "0.14.1"
     },
     "checksum": {
       "meta": {
@@ -655,9 +655,9 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "1vwmsv9jmkcmannniwxqcl43wmngbhbzbrnpwq6jhl7x0cwsj678",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.3/files_inotify.tar.gz",
-      "version": "0.1.3"
+      "sha256": "16mzlb3ljbblm42flk06xnjnwnc43ivvakm49712f25hr5j0c1a4",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.4/files_inotify.tar.gz",
+      "version": "0.1.4"
     },
     "files_linkeditor": {
       "meta": {
@@ -1759,9 +1759,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "0dy8nk1g79j2vsyaxsmkprxmv2gq69by6vv6mrdygmyw3z9rrw4n",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.1/smb_test.tar.gz",
-      "version": "0.2.1"
+      "sha256": "1kdzv728mrjsixzilswvxw59p64n51khsiryih7d0clrs0xhr0db",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.2/smb_test.tar.gz",
+      "version": "0.2.2"
     },
     "social": {
       "meta": {
@@ -1789,9 +1789,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "05ffhhkswvkkas3cay37pb2ygp5b448b3a3rimidiykg59rb5zxs",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.0/release.tar.gz",
-      "version": "1.14.0"
+      "sha256": "02bhzf4359r9i2zdvllni8syfxa3ly0qfcfsrnyvyr445i1dc0sz",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.1/release.tar.gz",
+      "version": "1.14.1"
     },
     "socialsharing_diaspora": {
       "meta": {
