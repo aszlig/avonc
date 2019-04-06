@@ -1,4 +1,4 @@
-{ stdenv, lib, fetchzip, fetchFromGitHub
+{ stdenv, lib, fetchzip, fetchFromGitHub, fetchpatch
 
 # Args passed by /default.nix.
 , apps, theme, extraPostPatch
@@ -44,7 +44,16 @@ in stdenv.mkDerivation rec {
     patches/no-config-uid-check.patch
     patches/executable-lookup.patch
     patches/readonly-config-upgrade.patch
-  ];
+  ] ++ (lib.singleton (fetchpatch {
+    # In Nextcloud 15.0.6.1, there has been a regression[1] which has been
+    # caused by the following commit, which we subsequently revert for now.
+    #
+    # [1]: https://github.com/nextcloud/server/issues/14962
+    url = "https://github.com/nextcloud/server/commit/"
+        + "8ac03c67a783ca1c59ac0c8dc7eaf000a9919996.patch";
+    sha256 = "0z95ciggjfklmb414cqvbch368p2np3c9y70h37yp2v2fx2jngdi";
+    revert = true;
+  }));
 
   # Nextcloud checks whether the user matches the webserver user by comparing
   # the current userid with the owner of config.php. In our case however, the
