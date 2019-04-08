@@ -264,9 +264,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1av6bib3icm555l0yg5qdrlshqgdma48rkqb5zikrwg4ba3yhhpm",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.0.5/contacts.tar.gz",
-      "version": "3.0.5"
+      "sha256": "1y3zi4ng14bg9frs0qyi61lrk7ckbc4k0b4m13n20bvf11drh3l5",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.0/contacts.tar.gz",
+      "version": "3.1.0"
     },
     "cookbook": {
       "meta": {
@@ -293,9 +293,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "11974222y6nvafpgvmxsiv67x4k3cm8dk283mhhqw91niq00qmh2",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/f79beaa17a33e8f2db9bada23bccf87f/cospend-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "1yf33pzaxzfngp7sr6swlr18x6glgwwzj8abb895mdn01n1rz5pg",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/5c29b99b547655b91c7343f4bf1e270f/cospend-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "dashboard": {
       "meta": {
@@ -640,9 +640,9 @@
         "name": "Full text search - Files - Tesseract OCR",
         "summary": "OCR Some format"
       },
-      "sha256": "13s06b47ap69rgcvxn9wwfnrnkvbdxplphavvb63jfznwwxgq05b",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.2.0/files_fulltextsearch_tesseract-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "05fxkhc9zv0w930fl6jpw1n87zhlhcm6sfkc1b88x2k39y5ixzwv",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.2.2/files_fulltextsearch_tesseract-1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "files_inotify": {
       "meta": {
@@ -692,6 +692,7 @@
     "files_mindmap": {
       "meta": {
         "description": "This application enables Nextcloud users to open, save and edit mind map files in the web browser. If enabled, an entry in the New button at the top of the web browser the Mindmap file entry appears. When clicked, a new mindmap file opens in the browser and the file can be saved into the current Nextcloud directory.",
+        "homepage": "https://github.com/ACTom/files_mindmap",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -699,9 +700,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "01wcz7lhvxdr79h4wa32nlcbhrjwlzk9d6y6kv8w8ldagj14ikza",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.11/files_mindmap-0.0.11.tar.gz",
-      "version": "0.0.11"
+      "sha256": "1lg8mx2ibvzb5dsia9nwrhh83lz4x5acs4x2rb29sqdk85c9cfzx",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.12/files_mindmap-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "files_pdfviewer": {
       "meta": {
@@ -1251,9 +1252,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "05dm27699sban7wk3qw4g7mfxcq0yikpifxapcfa86s5kzjmybgh",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.6.1/ocdownloader.tar.gz",
-      "version": "1.6.1"
+      "sha256": "0pq5d4rk9fif89wirn3fr9knx9hfy7harzjq73ycqylh1qdf698k",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.6.3/ocdownloader.tar.gz",
+      "version": "1.6.3"
     },
     "ocsms": {
       "meta": {
@@ -1502,6 +1503,21 @@
       "sha256": "0pw6h0ji6mmpi7mms163flv0widv47037aybd9mqzvr61rsbqad8",
       "url": "https://github.com/pbek/qownnotesapi/releases/download/18.11.0/qownnotesapi-nc.tar.gz",
       "version": "18.11.0"
+    },
+    "quickaccesssorting": {
+      "meta": {
+        "description": "This app enables to sort the favorites by 'Alphabetically', 'Date Added', 'Last Date Modified' and 'Custom Order'!",
+        "homepage": "https://github.com/newhinton/quickaccess-sorting",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Favorites Quickaccess Sorting",
+        "summary": "Different Sorting for favorites-quickaccess!"
+      },
+      "sha256": "0xdd4jzn0lpk3fvqgjg5wdqhp8zagxzwripgq3gv1f6xv1vmhp7i",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.1/quickaccesssorting.tar.gz",
+      "version": "1.0.1"
     },
     "quicknotes": {
       "meta": {
