@@ -727,9 +727,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "1gb25pc6h7rmn8vpiy83fn05fg3bpysy53n7a755nllh58jmi3y6",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/c6d7ca216f0cfd14f79acdd931c2db4e/files_readmemd.tgz",
-      "version": "1.0.1"
+      "sha256": "136yz0y3sicw37k407yay5vh31n78h6cmrqx98h448vjc8cbjgjr",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/727823d01a822ceb2a4540b380be837c/files_readmemd.tar.gz",
+      "version": "1.0.2"
     },
     "files_retention": {
       "meta": {
@@ -946,13 +946,13 @@
         "name": "GpxEdit",
         "summary": "Simple GPX file editor"
       },
-      "sha256": "1k5d9wfh1nskqcgz4ir8ln8nfsylgq2ybl58wvpiz3hsakcg5z6k",
-      "url": "https://gitlab.com/eneiluj/gpxedit-oc/wikis/uploads/33d187268c5f6f6a55350d656305701c/gpxedit-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "0rgmm3hdp3hb9fpm653bfmfi74fd8066xlbbgwqdd63939rgm9ba",
+      "url": "https://gitlab.com/eneiluj/gpxedit-oc/wikis/uploads/18058077d0170256c3f4c9201443d09d/gpxedit-0.0.11.tar.gz",
+      "version": "0.0.11"
     },
     "gpxmotion": {
       "meta": {
-        "description": "# GpxMotion Nextcloud application\n\nGpxMotion is a Nextcloud application to create and display path animations on an interactive map.\n\nTo watch an animation, click the \"Load and view file\" button in GpxMotion main page.\nIf no animation information was set, a default one (one section of 10 seconds per tracks/routes) is shown.\nIf no time information is missing in an animation section and the \"use real time proportions\"\nis enabled (by default, it is), the animation duration will not change but the animation speed will be proportional to real speed.\n\nTo define an animation, go to GpxMotion main page and load a GPX file already containing ordered tracks/routes.\nThen define the animation steps. Then check you are satisfied with the animation preview. Then\nsave the result to a GPX file (the animation data is saved as JSON in the GPX description field).\n\nIf a file is\npublicly shared without password in \"Files\" app, you can produce a GpxMotion public link to\nits animation with the \"Share\" button in the \"view\" page.\n\nThis app is tested on Nextcloud 13 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\nGo to [GpxMotion Crowdin project](https://crowdin.com/project/gpxmotion) if you want to help to translate this app in your language.\n\n## Demo\n\n* [First demo (dummy bike trip)](https://nuage.pluton.cassio.pe/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=gpxmotion_demo1.gpx)\n* [Second demo (dummy world travel)](https://nuage.pluton.cassio.pe/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=gpxmotion_demo2.gpx)\n* [Third demo (simple real time speed)](https://nuage.pluton.cassio.pe/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=boulot2.gpx)\n* [Fourth demo (simple simultaneous drawing)](https://nuage.pluton.cassio.pe/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=test_b1_nosync.gpx)\n* [Fifth demo (dummy synchronized simultaneous drawing)](https://nuage.pluton.cassio.pe/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=test_b1s.gpx)\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account).\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxmotion-oc/wikis/admindoc) for installation details and integration in \"Files\" app.\n\n## Alternatives\n\nIf you look for alternatives, take a look at :\n- [gpxanim](https://github.com/rvl/gpxanim) creates a video file\n- [GPX Animator](http://zdila.github.io/gpx-animator/) creates a video file",
+        "description": "# GpxMotion Nextcloud application\n\nGpxMotion is a Nextcloud application to create and display path animations on an interactive map.\n\nTo watch an animation, click the \"Load and view file\" button in GpxMotion main page.\nIf no animation information was set, a default one (one section of 10 seconds per tracks/routes) is shown.\nIf no time information is missing in an animation section and the \"use real time proportions\"\nis enabled (by default, it is), the animation duration will not change but the animation speed will be proportional to real speed.\n\nTo define an animation, go to GpxMotion main page and load a GPX file already containing ordered tracks/routes.\nThen define the animation steps. Then check you are satisfied with the animation preview. Then\nsave the result to a GPX file (the animation data is saved as JSON in the GPX description field).\n\nIf a file is\npublicly shared without password in \"Files\" app, you can produce a GpxMotion public link to\nits animation with the \"Share\" button in the \"view\" page.\n\nThis app is tested on Nextcloud 16 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\nGo to [GpxMotion Crowdin project](https://crowdin.com/project/gpxmotion) if you want to help to translate this app in your language.\n\n## Demo\n\n* [First demo (dummy bike trip)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=gpxmotion_demo1.gpx)\n* [Second demo (dummy world travel)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=gpxmotion_demo2.gpx)\n* [Third demo (simple real time speed)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=boulot2.gpx)\n* [Fourth demo (simple simultaneous drawing)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=test_b1_nosync.gpx)\n* [Fifth demo (dummy synchronized simultaneous drawing)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=test_b1s.gpx)\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account).\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxmotion-oc/wikis/admindoc) for installation details and integration in \"Files\" app.\n\n## Alternatives\n\nIf you look for alternatives, take a look at :\n- [gpxanim](https://github.com/rvl/gpxanim) creates a video file\n- [GPX Animator](http://zdila.github.io/gpx-animator/) creates a video file",
         "homepage": "https://gitlab.com/eneiluj/gpxmotion-oc",
         "isShipped": false,
         "licenses": [
@@ -961,9 +961,9 @@
         "name": "GpxMotion",
         "summary": "GPX file animation on an interactive map"
       },
-      "sha256": "0b3z23c95296iypngmny1yahhmrgx5qsj28p84mh4dv9af6bsz85",
-      "url": "https://gitlab.com/eneiluj/gpxmotion-oc/wikis/uploads/c057b6042c3185a937fa1a91fa1d1c96/gpxmotion-0.0.8.tar.gz",
-      "version": "0.0.8"
+      "sha256": "0flfqq35z6nd9w817w366h4zm67pfbg630i8k4sq1cmq3ikjc2ms",
+      "url": "https://gitlab.com/eneiluj/gpxmotion-oc/wikis/uploads/1ce32d63c2d4b5396274e0fcf75cfccb/gpxmotion-0.0.9.tar.gz",
+      "version": "0.0.9"
     },
     "gpxpod": {
       "meta": {
@@ -976,9 +976,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "1p9l2459vg82p4fn78b8a0p7q3ip4y5qk2ykz1mk1q4z3j61svp9",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/8ccc2c66de69c7123c6af0cd565f6fcc/gpxpod-3.0.2.tar.gz",
-      "version": "3.0.2"
+      "sha256": "0hawgh1jxl5yibds2vi5alswld8kg7v4njm1kdmz8hrdgifb6q2k",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/34af9435d7a2cd8fa915b84f0dda0724/gpxpod-3.0.3.tar.gz",
+      "version": "3.0.3"
     },
     "grauphel": {
       "meta": {
@@ -1820,9 +1820,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "02bhzf4359r9i2zdvllni8syfxa3ly0qfcfsrnyvyr445i1dc0sz",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.1/release.tar.gz",
-      "version": "1.14.1"
+      "sha256": "0k0x6khsb88i4qm9lqgpy585cf8mw1km1hc7nf0qc506al0kfhx5",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.3/release.tar.gz",
+      "version": "1.14.3"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2031,9 +2031,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "1z2gl15n61kwadir4xrhfzr7vs4pz5vzjskzbhs5v6vzsdrkazkk",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.2.0/theming_customcss.tar.gz",
-      "version": "1.2.0"
+      "sha256": "0rgx1fa8y4q94f7il4f1ri5ghicms9bxz4crgnfa327xcjwx265r",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.3.0/theming_customcss.tar.gz",
+      "version": "1.3.0"
     },
     "twainwebscan": {
       "meta": {
