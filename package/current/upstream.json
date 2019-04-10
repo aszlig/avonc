@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "05rqc1cydxgnn17a2cz7vylcs4sxfp4whh8axi8fa18pg0lfp9w8",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v0.16.4/bookmarks-0.16.4.tar.gz",
-      "version": "0.16.4"
+      "sha256": "1frk630cc4bspphhilx1s12imb5nrc186jlhrx6x5x0skg23h2n8",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v0.17.0/bookmarks-0.17.0.tar.gz",
+      "version": "0.17.0"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -700,9 +700,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "1lg8mx2ibvzb5dsia9nwrhh83lz4x5acs4x2rb29sqdk85c9cfzx",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.12/files_mindmap-0.0.12.tar.gz",
-      "version": "0.0.12"
+      "sha256": "0kbxfv3mmbp1bi9ckcza80aj87mlg9j55a25xfds9b2man3h0gr5",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.13/files_mindmap-0.0.13.tar.gz",
+      "version": "0.0.13"
     },
     "files_pdfviewer": {
       "meta": {
@@ -1138,9 +1138,9 @@
         "name": "Mail",
         "summary": "IMAP web client"
       },
-      "sha256": "0nfglrrrakdnzba4pwrs10g7jpiipgfxll68dyi3719zk3ss27kj",
-      "url": "https://github.com/nextcloud/mail/releases/download/v0.11.0/mail.tar.gz",
-      "version": "0.11.0"
+      "sha256": "1ppxgp4p359q8z7qc92f8f6qk5q3ncjs9w11acyi103ryh4i71ig",
+      "url": "https://github.com/nextcloud/mail/releases/download/v0.11.1/mail.tar.gz",
+      "version": "0.11.1"
     },
     "metadata": {
       "meta": {
