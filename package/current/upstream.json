@@ -1183,9 +1183,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "12xxprmm5sc1w66ck8g890q3gds7h4nx0i6x2l7rhbl0y0agmv4v",
-      "url": "https://github.com/nextcloud/news/releases/download/13.1.5/news.tar.gz",
-      "version": "13.1.5"
+      "sha256": "0b2zzfcm3lqrpf2v38m70riyblndykh1qw875bq1a0jl4xlzj1pc",
+      "url": "https://github.com/nextcloud/news/releases/download/13.1.6/news.tar.gz",
+      "version": "13.1.6"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1925,9 +1925,9 @@
         "name": "Talk",
         "summary": "Video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0bzif73fzzsg9n4rnd034y465059pzb1wfj6ha8dkmhrd4hyp7cm",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v5.0.2/spreed-5.0.2.tar.gz",
-      "version": "5.0.2"
+      "sha256": "14486rvf6d4g0j6sr8aijj3yv3j86l9c33vbpa05vpm182kzglf3",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v5.0.3/spreed-5.0.3.tar.gz",
+      "version": "5.0.3"
     },
     "support": {
       "meta": {
