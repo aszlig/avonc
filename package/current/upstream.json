@@ -874,9 +874,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "117zk839ib17amxkpip8nx88nzz0hsva46lxwv9imx0v6yh2yi5r",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/0.0.9/flowupload.tar.gz",
-      "version": "0.0.9"
+      "sha256": "1s7rglzc0rzb2zrpridfxbly2idlf1m3ci3y0bw3x8xman2wnpls",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.0/flowupload.tar.gz",
+      "version": "0.1.0"
     },
     "fulltextsearch": {
       "meta": {
@@ -1069,6 +1069,20 @@
       "sha256": "1vh0skr4c33b9hm6027cirw9fv8c9irr43bxghbhx7chxywckim1",
       "url": "https://github.com/nextcloud/impersonate/releases/download/v1.2.0/impersonate-1.2.0.tar.gz",
       "version": "1.2.0"
+    },
+    "issuetemplate": {
+      "meta": {
+        "description": "Easily report Nextcloud bugs with a prefilled issue template for reporting on GitHub",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Issue Template",
+        "summary": "Easily report Nextcloud bugs with a prefilled issue template for reporting on GitHub"
+      },
+      "sha256": "1qkfvr1l1n1px85xmq36sj7nhax6lskmpsksynvghp06s5xamh19",
+      "url": "https://github.com/nextcloud/issuetemplate/releases/download/v0.5.0/issuetemplate.tar.gz",
+      "version": "0.5.0"
     },
     "jsloader": {
       "meta": {
