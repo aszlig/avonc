@@ -1396,9 +1396,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0cwfcd6p0xqsvbvp2ypq4ncq8mg5q935fpjpgfw3168blslg2m89",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7708/artifacts/raw/passwords.tar.gz",
-      "version": "2019.4.0"
+      "sha256": "122h11l56jvczlnynr7ivsl61gaxaj2vp50z7dy6sdl3nfh5wrli",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7742/artifacts/raw/passwords.tar.gz",
+      "version": "2019.4.1"
     },
     "phonetrack": {
       "meta": {
@@ -1648,9 +1648,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "0xy56dzjks2zm3r6nzl2q3xmbaamvqgg059y122g3wm95njp4n97",
-      "url": "https://github.com/pellaeon/registration/releases/download/v0.4.5/registration.tar.gz",
-      "version": "0.4.5"
+      "sha256": "10f7fv8ssz295nri7aqzk4raczc97gvda2dgyimay7my3li1d99h",
+      "url": "https://github.com/pellaeon/registration/releases/download/v0.4.6/registration.tar.gz",
+      "version": "0.4.6"
     },
     "richdocuments": {
       "meta": {
