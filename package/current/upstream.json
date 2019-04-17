@@ -237,9 +237,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1ghr03sbqcykhlwxz321as5rc9y6ivlp10s84rjan14nbwnmafap",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.2/circles-0.16.2.tar.gz",
-      "version": "0.16.2"
+      "sha256": "111hbdq0ycc5d1fx06y24cw5bcgxs1js5j2dc4r7pglr4qsvm25x",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.3/circles-0.16.3.tar.gz",
+      "version": "0.16.3"
     },
     "comments": {
       "meta": {
@@ -264,9 +264,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1y3zi4ng14bg9frs0qyi61lrk7ckbc4k0b4m13n20bvf11drh3l5",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.0/contacts.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0xjpw4yj91ffyg34b0rkjqvvnyjcp3jhyfr4zdjk4d5g58r5x392",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.1/contacts.tar.gz",
+      "version": "3.1.1"
     },
     "cookbook": {
       "meta": {
@@ -488,18 +488,18 @@
     },
     "extract": {
       "meta": {
-        "description": "This app allows you to right click on a zip file to extract it. \n\n        If you want to use it on external local storage please add the link starting from the root to your base local storage at the end of your config.php file like this (without any / at the end) \n        \n        \n        'external' =&gt; \n            array (\n                0 =&gt; '/home/localfoler',\n                1 =&gt; '/share/anotherfolder',\n            ),\n        \n\n        Rar will be supported in the next version.",
+        "description": "Extract zip and rar archive.\n\n*  **Features :** Zip and rar extraction.\n\n*  **Requirements :** \n    * o Rar PHP extension  (pecl -v install rar)\n    \n    * **OR** \n    * o unrar (sudo apt-get install unrar)\n\n*  **Note :** Tar.gz will be added in the next version",
         "homepage": "https://github.com/PaulLereverend/NextcloudExtract/",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Extract",
-        "summary": "Extract zip archive from the web interface"
+        "summary": "Extract archive from the web interface"
       },
-      "sha256": "0clss78mk70cmnbliq30hhxvdzvllizx2d7w6g6znviia44mx8gq",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.0.0/extract.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1d1ykvqix39ga2n1780v5z8052wmi07kv3ph93qim857aymv7230",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.1.1/extract.tar.gz",
+      "version": "1.1.1"
     },
     "federation": {
       "meta": {
@@ -1224,9 +1224,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1c0i71g77px6wwjalg7c5f4raqwsc3affrpgqjd19swda6qshm6r",
-      "url": "https://github.com/nextcloud/notes/releases/download/v2.5.1/notes.tar.gz",
-      "version": "2.5.1"
+      "sha256": "124qc62qkkwv86fkpndyxdihpidpxyr9kbzfm7a8yafrk15a1gyy",
+      "url": "https://github.com/nextcloud/notes/releases/download/v2.6.0/notes.tar.gz",
+      "version": "2.6.0"
     },
     "notifications": {
       "meta": {
@@ -2048,6 +2048,20 @@
       "sha256": "0rgx1fa8y4q94f7il4f1ri5ghicms9bxz4crgnfa327xcjwx265r",
       "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.3.0/theming_customcss.tar.gz",
       "version": "1.3.0"
+    },
+    "timetracker": {
+      "meta": {
+        "description": "Time Tracker App",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Time Tracker",
+        "summary": "Time Tracker App"
+      },
+      "sha256": "14mvn68gp411a5kcwsy7a9gbicidvccsbnpnmrgw3m8vbimhxp9l",
+      "url": "https://mail.nerd.hu/timetracker.tar.gz",
+      "version": "0.0.15"
     },
     "twainwebscan": {
       "meta": {
