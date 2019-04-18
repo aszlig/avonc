@@ -241,6 +241,21 @@
       "url": "https://github.com/nextcloud/circles/releases/download/v0.16.3/circles-0.16.3.tar.gz",
       "version": "0.16.3"
     },
+    "cms_pico": {
+      "meta": {
+        "description": "With **cms_pico** you can build your own website in Nextcloud!\n\n* start a blog\n* share your resume with the world\n* create a plan for world domination and only share with the right friends\n* built a knowledge sharing site and let the smart ones among your colleagues help out\n\nYou can make the pages viewable for everyone or only for users or groups on your Nextcloud . You can also share the files that the website consists of so you can collaborate with others maintaining the pages.\n\nThe app uses [Pico](https://picocms.org/) to allow your users to create and manage their own websites with address like: https://cloud.example.com/sites/my_site/. The source of the website will be stored in the users' files and the **Markdown** will be formatted by **Pico** to generate the pages.\n\nBecause Pico is using the **Markdown** format, you should consider enabling the [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) app.",
+        "homepage": "https://github.com/nextcloud/cms_pico",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Pico CMS",
+        "summary": "Integrate Pico and let your users manage their own websites"
+      },
+      "sha256": "0gwkazjsgkn258hvnmz53kmc0iil6s2pqg3gsbir06w6f3drfr4i",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v0.9.8/cms_pico-0.9.8.tar.gz",
+      "version": "0.9.8"
+    },
     "comments": {
       "meta": {
         "defaultEnable": true,
@@ -2427,6 +2442,21 @@
       "sha256": "1zx8dkl3jbq96ia65wpgipbqhchsm7z47xww4cavwv07n228lsif",
       "url": "https://github.com/nextcloud/zenodo/releases/download/v1.1.0/zenodo-1.1.0.tar.gz",
       "version": "1.1.0"
+    },
+    "zimbradrive": {
+      "meta": {
+        "description": "Add Nextcloud / ownCloud as Briefcase in Zimbra with the full features of both applications.",
+        "homepage": "https://github.com/ZeXtras/zimbra-drive.git",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Zimbra Drive",
+        "summary": "Integration with Zimbra"
+      },
+      "sha256": "02rxplwl0qg988s12jgblrjq5vxq3j6vcil6033kaj1l6jhdpxxz",
+      "url": "https://s3-eu-west-1.amazonaws.com/zextras-artifacts/zimbradrive/17_Apr_2019_MANUAL/nextcloud/zimbradrive.tar.gz",
+      "version": "0.8.23"
     }
   },
   "nextcloud": {
