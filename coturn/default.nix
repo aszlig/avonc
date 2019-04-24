@@ -28,6 +28,7 @@ let
   configFile = pkgs.writeText "nextcloud-coturn.conf" (''
     no-cli
     simple-log
+    log-file=stdout
 
     fingerprint
     stale-nonce
