@@ -5,8 +5,20 @@ let
   inherit (config.services) nginx;
   inherit (lib) optionalString;
 
-  coturn = pkgs.coturn.overrideAttrs (drv: {
+  coturn = pkgs.coturn.overrideAttrs (drv: let
+    isRecentEnough = lib.versionAtLeast drv.version "4.5.1.0";
+  in {
     patches = (drv.patches or []) ++ [ ./coturn-secret-from-env.patch ];
+  } // lib.optionalAttrs (!isRecentEnough) rec {
+    name = "coturn-${version}";
+    version = "4.5.1.1";
+
+    src = pkgs.fetchFromGitHub {
+      owner = "coturn";
+      repo = "coturn";
+      rev = "${version}";
+      sha256 = "12x604lgva1d3g4wvl3f66rdj6lkjk5cqr0l3xas33xgzgm13pwr";
+    };
   });
 
   notProto = proto: let
@@ -46,7 +58,7 @@ let
 in {
   options.nextcloud.apps.spreed = {
     port = lib.mkOption {
-      type = lib.types.port;
+      type = lib.types.ints.u16;
       default = if config.nextcloud.useSSL then 5349 else 3478;
       defaultText = "if config.nextcloud.useSSL then 5349 else 3478";
       example = 5000;
