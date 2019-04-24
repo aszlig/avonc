@@ -31,7 +31,6 @@ let
 
     fingerprint
     stale-nonce
-    no-loopback-peers
     no-multicast-peers
 
     use-auth-secret
