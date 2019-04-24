@@ -904,9 +904,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "0lwanw68cd6m90dyp7f22bjjxpkff2z9sd106m0sz6ffc0z4fs2i",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.5/fulltextsearch-1.2.5.tar.gz",
-      "version": "1.2.5"
+      "sha256": "0yc229wng9h9y3lbbaqr26m09w1mr82mhcfy5nz9sx3jkbpmg3d4",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.6/fulltextsearch-1.2.6.tar.gz",
+      "version": "1.2.6"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
