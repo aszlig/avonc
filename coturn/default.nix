@@ -96,9 +96,21 @@ in {
       after = [ "nginx.service" ];
       before = [ "nextcloud-upgrade.service" ];
 
-      environment = lib.optionalAttrs config.nextcloud.useSSL {
-        inherit (nginx.virtualHosts.${config.nextcloud.domain})
-          sslCertificate sslCertificateKey;
+      # XXX: The sslCertificate and sslCertificateKey are not re-defined within
+      # the nginx virtual host configuration, so we need to figure this out by
+      # ourselves.
+      environment = let
+        vhostConfig = nginx.virtualHosts.${config.nextcloud.domain};
+        serverName =
+          if vhostConfig.useACMEHost != null then vhostConfig.useACMEHost
+          else if vhostConfig.serverName != null then vhostConfig.serverName
+          else config.nextcloud.domain;
+        acmeDirectory = config.security.acme.directory;
+      in if vhostConfig.enableACME then {
+        sslCertificate = "${acmeDirectory}/${serverName}/fullchain.pem";
+        sslCertificateKey = "${acmeDirectory}/${serverName}/key.pem";
+      } else {
+        inherit (vhostConfig) sslCertificate sslCertificateKey;
       };
 
       unitConfig = lib.optionalAttrs (!config.nextcloud.useSSL) {
