@@ -574,7 +574,9 @@ in {
     };
   };
 
-  imports = [ ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ];
+  imports = [
+    ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ./coturn
+  ];
 
   config = {
     assertions = lib.singleton {
@@ -734,7 +736,7 @@ in {
         RemainAfterExit = true;
         PermissionsStartOnly = true;
         StateDirectory = "nextcloud/data";
-        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+        EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
         ExecStart = let
           tar = "${pkgs.gnutar}/bin/tar";
         in "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data";
@@ -777,7 +779,7 @@ in {
         PermissionsStartOnly = true;
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
-        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+        EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
         BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
         BindPaths = [ "/var/lib/nextcloud" ];
         PrivateNetwork = true;
@@ -800,7 +802,7 @@ in {
         Group = "nextcloud";
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
-        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+        EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
         ExecStart = "@${uwsgiNextcloud} nextcloud";
         KillMode = "process";
         ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
@@ -831,7 +833,7 @@ in {
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         ExecStart = "${php}/bin/php -f ${package}/cron.php";
-        EnvironmentFile = "/var/lib/nextcloud/secrets.env";
+        EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
 
         BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
       };
