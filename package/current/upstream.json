@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0xqdqa7aw3l7wlvdld86qp0lx0fn8pbhfm98wc9ph5i5lislzh1r",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.1/bookmarks-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0qfrja7w8fb1lgmrivwl834pgskbiybnw54gcjn7dwpf6qywap0c",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.2/bookmarks-1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "18l8x25y4xwk7w7kvmqz9vz8kfcmiwq0342a047rds0lvhfq5lqn",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.15.1/carnet-nc-v0.15.1.tar.gz",
-      "version": "0.15.1"
+      "sha256": "12m6mm0iga8p1iszdsyw2bxq27wxjycjkb8hm96hsbar147jaknx",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.15.2/carnet-nc-v0.15.2.tar.gz",
+      "version": "0.15.2"
     },
     "checksum": {
       "meta": {
@@ -352,9 +352,9 @@
         "name": "Deck",
         "summary": "A kanban style project and personal management tool for Nextcloud"
       },
-      "sha256": "1425m38d9lj2ifwwv70qlckqz30rc6hjilxc28ga7jd99ba19kp6",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.0/deck.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0z0gky2kvanh8l7jgficj74ih7p2jrc2w827i550kjlzpbh7valv",
+      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.1/deck.tar.gz",
+      "version": "0.6.1"
     },
     "defaultlinkopen": {
       "meta": {
@@ -742,9 +742,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "136yz0y3sicw37k407yay5vh31n78h6cmrqx98h448vjc8cbjgjr",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/727823d01a822ceb2a4540b380be837c/files_readmemd.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1c0scpnac8852x57mal66ysf5mms4hw688jmpfn40wqpkml3yy2r",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/e4bdb1591caa5b195d941c7d053c0f1a/files_readmemd.tar.gz",
+      "version": "1.0.3"
     },
     "files_retention": {
       "meta": {
@@ -1356,9 +1356,9 @@
         "name": "OwnBackup",
         "summary": "Simple database backup solutions for your ownCloud 8.1+ or Nextcloud installation."
       },
-      "sha256": "0701snmd94lb40bc4phs7frz095wb7viwn0x6i6hr92vz03b4jxv",
-      "url": "https://github.com/pbek/ownbackup/releases/download/18.11.0/ownbackup-nc.tar.gz",
-      "version": "18.11.0"
+      "sha256": "0z2kl87yn3rywa70hr1zfb5jmia39zc6njg2bvp69jjfvjphd934",
+      "url": "https://github.com/pbek/ownbackup/releases/download/19.4.0/ownbackup-nc.tar.gz",
+      "version": "19.4.0"
     },
     "ownpad": {
       "meta": {
@@ -1529,9 +1529,9 @@
         "name": "QOwnNotesAPI",
         "summary": "API for QOwnNotes, the open source (GPL) notepad for Linux, Mac OS X and Windows"
       },
-      "sha256": "0pw6h0ji6mmpi7mms163flv0widv47037aybd9mqzvr61rsbqad8",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/18.11.0/qownnotesapi-nc.tar.gz",
-      "version": "18.11.0"
+      "sha256": "18w1k991f541087hi0sy8fs3sskpbnx44x72s9prbzjrbrdydb77",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/19.4.0/qownnotesapi-nc.tar.gz",
+      "version": "19.4.0"
     },
     "quickaccesssorting": {
       "meta": {
@@ -2320,9 +2320,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1c0bgq42h5wcnlmvrv9ia4kjbj2yl7pn6ca83cwaqrrry1bzvv97",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v2.1.1/user_saml-2.1.1.tar.gz",
-      "version": "2.1.1"
+      "sha256": "1mg5nr3ixx3w41grfy2lqdbh60y0n9isbhkx68z1jnvjga7bjw5a",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v2.2.0/user_saml-2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "user_sql": {
       "meta": {
