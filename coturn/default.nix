@@ -106,12 +106,13 @@ in {
           else if vhostConfig.serverName != null then vhostConfig.serverName
           else config.nextcloud.domain;
         acmeDirectory = config.security.acme.directory;
-      in if vhostConfig.enableACME then {
-        sslCertificate = "${acmeDirectory}/${serverName}/fullchain.pem";
-        sslCertificateKey = "${acmeDirectory}/${serverName}/key.pem";
-      } else {
-        inherit (vhostConfig) sslCertificate sslCertificateKey;
-      };
+        certPaths = if vhostConfig.enableACME then {
+          sslCertificate = "${acmeDirectory}/${serverName}/fullchain.pem";
+          sslCertificateKey = "${acmeDirectory}/${serverName}/key.pem";
+        } else {
+          inherit (vhostConfig) sslCertificate sslCertificateKey;
+        };
+      in lib.optionalAttrs config.nextcloud.useSSL certPaths;
 
       unitConfig = lib.optionalAttrs (!config.nextcloud.useSSL) {
         ConditionPathExists = "!/var/lib/nextcloud-coturn/secrets.env";
