@@ -731,6 +731,20 @@
         "summary": "A pdf viewer for Nextcloud"
       }
     },
+    "files_photospheres": {
+      "meta": {
+        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Photo Sphere Viewer",
+        "summary": "Enables viewing of google photosphere images"
+      },
+      "sha256": "1zq2lcz3x7r44kz4y7h9ddk6g8ki628y6sqxrij1p8d1bx6qzxg6",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/v1.0.0/files_photospheres.tar.gz",
+      "version": "0.0.3"
+    },
     "files_readmemd": {
       "meta": {
         "description": "Show README.md &amp; HEADER.md gitlab style on your NextCloud !\nWith this app you can add a header and a footer to your nextcloud directories.\nThis can be use to explain the goal of a directory, describe the content of a folder ...\nIt show README.md in the way gitlab does.",
@@ -1197,9 +1211,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1mhyfcr4niwh0qi588zfhsp7n6x4zx4dcjzi8qmyk29ab60fyjpp",
-      "url": "https://github.com/paulijar/music/files/2980042/music_0.9.4_nc-signed.tar.gz",
-      "version": "0.9.4"
+      "sha256": "0p1imc147cms8163mhqaysbc4wyjx4s72sh5a81m5m0pl89s87mh",
+      "url": "https://github.com/paulijar/music/files/3124325/music_0.9.5_nc-signed.tar.gz",
+      "version": "0.9.5"
     },
     "news": {
       "meta": {
@@ -1693,9 +1707,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "07979i5hfi3r3070kr9xqqrzzfjxbs33h4wb6xxvyxmd9nqqdsz5",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.1/scanner.tar.gz",
-      "version": "0.1.1"
+      "sha256": "0dr91hcm5cmw9arywfn9bnmn0rzkbg32niv57jnkjjv94lqnf5lb",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/01.2/scanner.tar.gz",
+      "version": "0.1.2"
     },
     "secsignid": {
       "meta": {
