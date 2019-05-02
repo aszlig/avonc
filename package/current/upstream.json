@@ -503,7 +503,7 @@
     },
     "extract": {
       "meta": {
-        "description": "Extract zip and rar archive.\n\n*  **Features :** Zip and rar extraction.\n\n*  **Requirements :** \n    * o Rar PHP extension  (pecl -v install rar)\n    \n    * **OR** \n    * o unrar (sudo apt-get install unrar)\n\n*  **Note :** Tar.gz will be added in the next version",
+        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n    \n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
         "homepage": "https://github.com/PaulLereverend/NextcloudExtract/",
         "isShipped": false,
         "licenses": [
@@ -512,9 +512,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1d1ykvqix39ga2n1780v5z8052wmi07kv3ph93qim857aymv7230",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.1.1/extract.tar.gz",
-      "version": "1.1.1"
+      "sha256": "08dp7is6frvmalk64gx5xp9fkfcn9cdp05h92xgf1iz50nwh36jy",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.0/extract.tar.gz",
+      "version": "1.2.0"
     },
     "federation": {
       "meta": {
@@ -1295,9 +1295,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "0pq5d4rk9fif89wirn3fr9knx9hfy7harzjq73ycqylh1qdf698k",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.6.3/ocdownloader.tar.gz",
-      "version": "1.6.3"
+      "sha256": "0mqrklm0cjd5xz2b0jvzwv8g7kfcpy38p2n0m1rz7jl9sf9nhycf",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.0/ocdownloader.tar.gz",
+      "version": "1.7.0"
     },
     "ocsms": {
       "meta": {
@@ -1425,9 +1425,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "122h11l56jvczlnynr7ivsl61gaxaj2vp50z7dy6sdl3nfh5wrli",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7742/artifacts/raw/passwords.tar.gz",
-      "version": "2019.4.1"
+      "sha256": "1mjrsiy6azxf1q57vnglzmnv7byaql7n6rq8csr2vpqk9v7gf7nv",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7778/artifacts/raw/passwords.tar.gz",
+      "version": "2019.4.2"
     },
     "phonetrack": {
       "meta": {
@@ -2088,9 +2088,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "018fb784pknrbnw3afh7rx1l7s56kk0zvqk3fr6q0bgizydhrn2p",
+      "sha256": "1vgnzkr0jc2h1xyyhmjg9divc5rf0h7q8n72nmixfw83wr8d33wm",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.18"
+      "version": "0.0.19"
     },
     "twainwebscan": {
       "meta": {
@@ -2366,6 +2366,21 @@
       "sha256": "0af68ys165ra17nr0v73vn5kns6svaw9k9xz52c41nb4g45x1s4f",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.1.1/user_usage_report-1.1.1.tar.gz",
       "version": "1.1.1"
+    },
+    "video_converter": {
+      "meta": {
+        "description": "Convert videos within the web interface\n\n*  **Features :**  \n    * Video Conversion\n    * Override or not\n    * Preset option\n    * Support external local storage\n    * More incoming...\n\n*  **Requirements :** \n    * FFmpeg\n\n*  **Note :** \n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
+        "homepage": "https://github.com/PaulLereverend/NextcloudVideo_Converter",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Video converter",
+        "summary": "Convert videos within the web interface"
+      },
+      "sha256": "03rhiwq7m8qzhvmxk5nxfs837ymmyl1mj7bblvkwlfpv3hsd9fzj",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.0.2/video_converter.tar.gz",
+      "version": "0.0.2"
     },
     "w2g2": {
       "meta": {
