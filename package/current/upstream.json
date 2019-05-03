@@ -237,9 +237,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "111hbdq0ycc5d1fx06y24cw5bcgxs1js5j2dc4r7pglr4qsvm25x",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.3/circles-0.16.3.tar.gz",
-      "version": "0.16.3"
+      "sha256": "06l46rwdql841yqbpm5ki531f9vhx6h3y0rwzr1q09wqpp6a82r0",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.5/circles-0.16.5.tar.gz",
+      "version": "0.16.5"
     },
     "cms_pico": {
       "meta": {
@@ -756,9 +756,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "1c0scpnac8852x57mal66ysf5mms4hw688jmpfn40wqpkml3yy2r",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/e4bdb1591caa5b195d941c7d053c0f1a/files_readmemd.tar.gz",
-      "version": "1.0.3"
+      "sha256": "19kvr4vyhniszqgcp3hmdd9y7dzaf7qdzqf1vz8ajwn5jjiqz227",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/9036dcae59eb21ebe19b90b41d3c8b76/files_readmemd.tar.gz",
+      "version": "1.0.4"
     },
     "files_retention": {
       "meta": {
@@ -2088,9 +2088,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1vgnzkr0jc2h1xyyhmjg9divc5rf0h7q8n72nmixfw83wr8d33wm",
+      "sha256": "1qava0r3hgc3lq5p88j38d7l2byjjq6vyphd8m880bw7m7a5nrg1",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.19"
+      "version": "0.0.21"
     },
     "twainwebscan": {
       "meta": {
