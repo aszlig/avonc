@@ -308,9 +308,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1yf33pzaxzfngp7sr6swlr18x6glgwwzj8abb895mdn01n1rz5pg",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/5c29b99b547655b91c7343f4bf1e270f/cospend-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "1wgd0jx457k6p85h6r0024lwka4rmnysy7qg4gckp3rc2nbn8dyq",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/519625b0b690c6f45d96778347aafd0c/cospend-0.1.0.tar.gz",
+      "version": "0.1.0"
     },
     "dashboard": {
       "meta": {
@@ -1425,9 +1425,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1mjrsiy6azxf1q57vnglzmnv7byaql7n6rq8csr2vpqk9v7gf7nv",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7778/artifacts/raw/passwords.tar.gz",
-      "version": "2019.4.2"
+      "sha256": "0lx80h6l005n4q8xlcafwiqkx10w898fcvvp3i8f6jcnk0hgwy5z",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7960/artifacts/raw/passwords.tar.gz",
+      "version": "2019.5.0"
     },
     "phonetrack": {
       "meta": {
@@ -1440,9 +1440,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phones positions in real time"
       },
-      "sha256": "1bf6d528a5w8a3lgasjirf178fniyl4hj4k7395b7immrr14rajm",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/cd7107971aeae92c5ac3aaf0f9c04e94/phonetrack-0.5.0.tar.gz",
-      "version": "0.5.0"
+      "sha256": "0avd8ma8x5f6bpds9251wih5s468zzgcvr1g5cx21qi5qwx8x273",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/ded436e45e1eaf75b477baa890d61df5/phonetrack-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "photosphereviewer": {
       "meta": {
@@ -2263,9 +2263,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1qmn0yng4nf7msvqx3phb889n4hilg1nby2c9cah0wslvfc03ivs",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.6.2/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.6.2"
+      "sha256": "1if9zlnn1d4rip676857235wbhs65vgpzllxzygnaq6rnpif37ld",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.0/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.7.0"
     },
     "user_external": {
       "meta": {
