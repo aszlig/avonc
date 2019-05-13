@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0qfrja7w8fb1lgmrivwl834pgskbiybnw54gcjn7dwpf6qywap0c",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.2/bookmarks-1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0fw2h8vvhkqvv2lhwqafijbf537mx322ik7k7v33z3nx3b2xg4g6",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.3/bookmarks-1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -199,7 +199,7 @@
     },
     "carnet": {
       "meta": {
-        "description": "Carnet is a powerful note taking app which purpose is not only to write your shopping list but can also be used to write longer texts, stories, etc. Carnet is available on Android and Linux, on your web browser, Windows and\nMac, with sync capabilities\n- Complete editor : bold/italic/underline/color/highlight\n- Import from Google Keep (only on desktop, then sync on mobile)\n- Insert images / review\n- Open HTML format\n- Organize with folders and choose root storage folder depending on your needs\n- Keywords\n- Quickly see your recent notes\n- Search amount your notes\n- Protect the app with a pin code (no encryption) on android\n- Statistics : words/sentences/characters\n- Sync with NextCloud\n- Online editor as a NextCloud App",
+        "description": "Carnet is a powerful note taking app which purpose is not only to write your shopping list but can also be used to write longer texts, stories, etc. Carnet is available on Android and Linux, on your web browser, Windows and\nMac, with sync capabilities\n- Complete editor : bold/italic/underline/color/highlight\n- Import from Google Keep (only on desktop, then sync on mobile)\n- Insert images / review\n- Open HTML format\n- Organize with folders and choose root storage folder depending on your needs\n- Keywords\n- Quickly see your recent notes\n- Search amount your notes\n- Protect the app with a pin code (no encryption) on android\n- Statistics : words/sentences/characters\n- Sync with ownCloud/NextCloud\n- Online editor as a ownCloud/NextCloud App",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "12m6mm0iga8p1iszdsyw2bxq27wxjycjkb8hm96hsbar147jaknx",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.15.2/carnet-nc-v0.15.2.tar.gz",
-      "version": "0.15.2"
+      "sha256": "0jv6k0g58jq7rwz31xj6riazl38q9rplqxcngjvdsgrlb5x2asyg",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.15.6/carnet-nc-v0.15.6.tar.gz",
+      "version": "0.15.6"
     },
     "checksum": {
       "meta": {
@@ -553,9 +553,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "0gc3rzdk4d64k497gfqw1pf36v7qqjwv7dcy02x32zl50194pbff",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.0.1/files_antivirus.tar.gz",
-      "version": "2.0.1"
+      "sha256": "12j20dqsaj5kxczz6qlgjia6gij830a1ddyfi8xarnwsq646c1f5",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.1.0/files_antivirus.tar.gz",
+      "version": "2.1.0"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1050,9 +1050,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "1xfsz6iz92xxikqqh1pgvzn7bzvczl9h1q15lrczn8zlcyykmfqw",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v2.0.4/groupfolders-2.0.4.tar.gz",
-      "version": "2.0.4"
+      "sha256": "02c4z9s7z1nj6rbm8rwxkdwg08527hzvj568f1x9jxgf21az3zrr",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v3.0.2/groupfolders-3.0.2.tar.gz",
+      "version": "3.0.2"
     },
     "groupquota": {
       "meta": {
@@ -1325,9 +1325,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "0mln1vmp9bx1qlhrwll6shclsvi7nxbhb080ws23bviapmxbw4m3",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v3.4.3/ojsxc-3.4.3.tar.gz",
-      "version": "3.4.3"
+      "sha256": "14v7a8hizcr6bics0k8wvyjzhpx92ayjacrkr2j2cxxipcz5lgc5",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v3.4.4/ojsxc-3.4.4.tar.gz",
+      "version": "3.4.4"
     },
     "onlyoffice": {
       "meta": {
@@ -1399,9 +1399,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0437dh2n10dav6mzayqvq496c5fgpcn8scsn20c68y94q98ng3ng",
-      "url": "https://releases.passman.cc/passman_2.2.1.tar.gz",
-      "version": "2.2.1"
+      "sha256": "0dkbl16sjgrm15hwgfy8zfclvjn3jkrkz3x07ba1a7lqq8n8x7db",
+      "url": "https://releases.passman.cc/passman_2.3.0.tar.gz",
+      "version": "2.3.0"
     },
     "password_policy": {
       "meta": {
@@ -1470,9 +1470,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "0jblirgz3h4pvphj37a4g0bgfh6q63lh4l4g6k0d7mxdxmjpfjph",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.1/cloud_piwik-0.5.1.tar.gz",
-      "version": "0.5.1"
+      "sha256": "0b2xnaz80c7sl6dy37wm4qwv1i29wpkk528lvqahzciip979n5f2",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.2/cloud_piwik-0.5.2.tar.gz",
+      "version": "0.5.2"
     },
     "polls": {
       "meta": {
@@ -1603,9 +1603,9 @@
         "name": "Radio",
         "summary": "Listening to your favorite radio stations in Nextcloud"
       },
-      "sha256": "18x80h7kdv7h8pvvzrg5n31x26faik4z9ajww4cc5n6vrm8s05c5",
-      "url": "https://onny.project-insanity.org/files/nextcloud-app-radio-0.6.4.tar.gz",
-      "version": "0.6.4"
+      "sha256": "1ixfj311y7648qlnyx56610xmsyx9i9zqhn7wd0c9daq91xy9am6",
+      "url": "https://onny.project-insanity.org/files/nextcloud-app-radio-0.6.5.tar.gz",
+      "version": "0.6.5"
     },
     "rainloop": {
       "meta": {
@@ -1632,9 +1632,9 @@
         "name": "Ransomware recovery",
         "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
       },
-      "sha256": "0i6742ndbgs19w56f3f1xskii0szzc812a436jksfk7ahg7cjsic",
-      "url": "https://wusa.io/ransomware_detection-0.4.3.tar.gz",
-      "version": "0.4.3"
+      "sha256": "06xh73xqbhh8cgp4ygasp6g8wvyvfm59lqwh6k58f246lvc55qi2",
+      "url": "https://wusa.io/ransomware_detection-0.5.0.tar.gz",
+      "version": "0.5.0"
     },
     "ransomware_protection": {
       "meta": {
@@ -1692,9 +1692,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0qi08nyvhjyr99v0767kz6y29mixz99y3qah4gvjv5y7vli51vg7",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.2.4/richdocuments.tar.gz",
-      "version": "3.2.4"
+      "sha256": "1501sdnjqja6ydpnb2hkxa7s92jzqrrqc9834svcr5gih95h29gb",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.2/richdocuments.tar.gz",
+      "version": "3.3.2"
     },
     "scanner": {
       "meta": {
@@ -1736,9 +1736,9 @@
         "name": "Sensorlogger",
         "summary": "Log data from any type of sensor and visualize it"
       },
-      "sha256": "06qayr1qlq6k21hfj740df9l27xwa4iyj6w8h9jsqf8q7816g9i5",
-      "url": "https://www.html5live.at/wp-content/uploads/2019/02/sensorlogger-0.1.0nc.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0413xw734nhxkknkazq3ypdf1a5flar2zfi40l0pwmk53mcmfcr3",
+      "url": "https://www.html5live.at/wp-content/uploads/2019/05/sensorlogger-0.1.1nc.tar.gz",
+      "version": "0.1.1"
     },
     "sentry": {
       "meta": {
@@ -2019,9 +2019,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "06mzfbffgpx3rzfwy21mfkl48blhprizabrgwanss4j0qzgp4jml",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.9.8/tasks.tar.gz",
-      "version": "0.9.8"
+      "sha256": "1gfh6cv6zmhvi4v7hd8r61afzavfzygf7z3pdfmarfnni5vkdpgs",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.10.1/tasks.tar.gz",
+      "version": "0.10.1"
     },
     "telephoneprovider": {
       "meta": {
@@ -2088,9 +2088,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1qava0r3hgc3lq5p88j38d7l2byjjq6vyphd8m880bw7m7a5nrg1",
+      "sha256": "123wdpxpn97k0qxmniv9cms3hrsjhfpy0ahgic63kwbfi9pbsaza",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.21"
+      "version": "0.0.22"
     },
     "twainwebscan": {
       "meta": {
@@ -2378,9 +2378,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "03rhiwq7m8qzhvmxk5nxfs837ymmyl1mj7bblvkwlfpv3hsd9fzj",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.0.2/video_converter.tar.gz",
-      "version": "0.0.2"
+      "sha256": "166qn29jvz68n62mbm9gbz9i4x48npzgd68wjwba6gbn53fl0qvf",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.0/video_converter.tar.gz",
+      "version": "0.1.0"
     },
     "w2g2": {
       "meta": {

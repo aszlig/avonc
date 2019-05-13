@@ -1,10 +1,10 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index cde1ff4c..677d8941 100644
+index 930c861d..13f39083 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -27,9 +27,6 @@
  	<dependencies>
- 		<nextcloud min-version="13" max-version="16" />
+ 		<nextcloud min-version="15" max-version="16" />
  	</dependencies>
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
@@ -13,27 +13,26 @@ index cde1ff4c..677d8941 100644
  		<admin>OCA\Richdocuments\Settings\Admin</admin>
  		<admin-section>OCA\Richdocuments\Settings\Section</admin-section>
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
-index 9efc7b69..481f2ce8 100644
+index 445884f9..6ac198e2 100644
 --- a/lib/Capabilities.php
 +++ b/lib/Capabilities.php
-@@ -52,7 +52,6 @@ class Capabilities implements ICapability {
+@@ -98,35 +98,15 @@ class Capabilities implements ICapability {
  	}
  
  	public function getCapabilities() {
 -		$collaboraCapabilities = $this->getCollaboraCapabilities();
  		return [
  			'richdocuments' => [
- 				'mimetypes' => [
-@@ -63,29 +62,10 @@ class Capabilities implements ICapability {
- 					'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
- 					'application/vnd.openxmlformats-officedocument.presentationml.presentation',
- 				],
+ 				'mimetypes' => self::MIMETYPES,
+ 				'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
 -				'collabora' => $collaboraCapabilities,
 -				'direct_editing' => isset($collaboraCapabilities['hasMobileSupport']) ? : false,
 -				'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) ? : false,
+-				'productName' => isset($collaboraCapabilities['productName']) ? : $this->l10n->t('Collabora Online'),
 +				'collabora' => [],
 +				'direct_editing' => false,
 +				'templates' => false,
++				'productName' => 'LibreOffice Online',
  			],
  		];
  	}
@@ -58,7 +57,7 @@ index 9efc7b69..481f2ce8 100644
 -	}
  }
 diff --git a/lib/Controller/DocumentController.php b/lib/Controller/DocumentController.php
-index b4c4d44c..d0a0af0d 100644
+index 1ba3abbf..7ff9c64d 100644
 --- a/lib/Controller/DocumentController.php
 +++ b/lib/Controller/DocumentController.php
 @@ -12,7 +12,6 @@
@@ -70,7 +69,7 @@ index b4c4d44c..d0a0af0d 100644
  use OCP\AppFramework\Http;
  use OCP\AppFramework\Http\JSONResponse;
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
-index fd1d53be..3938982f 100644
+index 0ad2301f..3938982f 100644
 --- a/lib/Controller/SettingsController.php
 +++ b/lib/Controller/SettingsController.php
 @@ -11,8 +11,6 @@
@@ -131,7 +130,7 @@ index fd1d53be..3938982f 100644
 -			return new DataResponse([
 -				'status' => $e->getCode(),
 -				'message' => $e->getMessage()
--			], $e->getCode());
+-			], Http::STATUS_INTERNAL_SERVER_ERROR);
 -		}
 -
  		return new DataResponse();
@@ -150,7 +149,7 @@ index fd1d53be..3938982f 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index f9689f64..213c097d 100644
+index 03a9efed..ed64c05f 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
 @@ -25,7 +25,6 @@ use OC\Share\Constants;
@@ -200,9 +199,9 @@ index f9689f64..213c097d 100644
  		$this->appConfig = $appConfig;
  		$this->trans = $trans;
  		$this->userId = $UserId;
-@@ -149,15 +145,10 @@ class TokenManager {
+@@ -160,15 +156,10 @@ class TokenManager {
  
- 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name);
+ 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name, 0, $hideDownload);
  
 -		try {
 -
@@ -220,7 +219,7 @@ index f9689f64..213c097d 100644
  	}
  
  	public function getTokenForTemplate(File $file, $userId, $templateDestination) {
-@@ -185,9 +176,9 @@ class TokenManager {
+@@ -195,9 +186,9 @@ class TokenManager {
  
  		$wopi = $this->wopiMapper->generateFileToken($file->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $templateDestination);
  
