@@ -138,15 +138,15 @@ in {
           proxyPass = "http://unix:/run/libreoffice-online.socket:";
           extraConfig = ''
             proxy_http_version 1.1;
-            proxy_set_header Host $http_host;
+            proxy_set_header Host $host;
           '';
         };
 
       in {
         "= /loleaflet/${package.versionHash}/loleaflet.html" = commonConfig;
-        "^~ /loleaflet/${package.versionHash}" = {
+        "^~ /loleaflet/${package.versionHash}/" = {
           priority = 200;
-          alias = "${package}/share/libreoffice-online/loleaflet/dist";
+          alias = "${package}/share/libreoffice-online/loleaflet/dist/";
         };
 
         "~ ^/lool" = commonConfig;
