@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0fw2h8vvhkqvv2lhwqafijbf537mx322ik7k7v33z3nx3b2xg4g6",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.3/bookmarks-1.0.3.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0gxz7b4gc34vyxzx7nwnsyv4gg8x9m5c5s0zmmrfjzmqdz99bjii",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.5/bookmarks-1.0.5.tar.gz",
+      "version": "1.0.5"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -193,9 +193,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "151l04qbvkynjrd673hg1baydnhnnqjyr6y9hf4ppx4nsjlwajp8",
-      "url": "https://github.com/cowai/camerarawpreviews/releases/download/v0.6.5/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.6.5"
+      "sha256": "1vb6fyjzvqgd522fx93j6qzh1jla6np4yd8waz6axq42lip5nn2v",
+      "url": "https://github.com/cowai/camerarawpreviews/releases/download/v0.7/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.0"
     },
     "carnet": {
       "meta": {
@@ -352,9 +352,9 @@
         "name": "Deck",
         "summary": "A kanban style project and personal management tool for Nextcloud"
       },
-      "sha256": "0z0gky2kvanh8l7jgficj74ih7p2jrc2w827i550kjlzpbh7valv",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.1/deck.tar.gz",
-      "version": "0.6.1"
+      "sha256": "0yp5fx0jsirnv4qsmim4q8f92bmhpwvrcjc75xvr1z6kwnxm4agd",
+      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.2/deck.tar.gz",
+      "version": "0.6.2"
     },
     "defaultlinkopen": {
       "meta": {
@@ -1154,9 +1154,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "0pw5ni6291mbk468m3mdvcb55cvpqp8wg9h7ap2i6gygyvz5nwx7",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.5.0/keeweb-0.5.0.tar.gz",
-      "version": "0.5.0"
+      "sha256": "1987kvr7nx3wr70449ifxxkx193qd3qr0abl3cknnc8v54d54c2c",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.5.1/keeweb-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "logreader": {
       "meta": {
@@ -1692,9 +1692,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1501sdnjqja6ydpnb2hkxa7s92jzqrrqc9834svcr5gih95h29gb",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.2/richdocuments.tar.gz",
-      "version": "3.3.2"
+      "sha256": "1p5n18gcb5w7ysmldp7w586lxy9r0rbc217h3fl911calbm1kdz2",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.3/richdocuments.tar.gz",
+      "version": "3.3.3"
     },
     "scanner": {
       "meta": {
