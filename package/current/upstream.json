@@ -293,9 +293,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files files as recipes"
       },
-      "sha256": "12b202035314yxlpyjgm139dvzd6x6vs2anwn95b86s7f9qhy1bf",
-      "url": "https://cdn.jeppezapp.com/cookbook.tar.gz",
-      "version": "0.1.0"
+      "sha256": "1dl20mn6dsfd2cb5yia4480qkzgdyd5m3wpdszmm5yh2p0shghmd",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.1/cookbook.tar.gz",
+      "version": "0.1.1"
     },
     "cospend": {
       "meta": {
@@ -553,9 +553,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "12j20dqsaj5kxczz6qlgjia6gij830a1ddyfi8xarnwsq646c1f5",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.1.0/files_antivirus.tar.gz",
-      "version": "2.1.0"
+      "sha256": "0zdmni2x0jpp3jd8jhgh2gj81lgwj467sgpj4qxy7ghvg9nfhznd",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.1.1/files_antivirus.tar.gz",
+      "version": "2.1.1"
     },
     "files_automatedtagging": {
       "meta": {
@@ -655,9 +655,9 @@
         "name": "Full text search - Files - Tesseract OCR",
         "summary": "OCR Some format"
       },
-      "sha256": "05fxkhc9zv0w930fl6jpw1n87zhlhcm6sfkc1b88x2k39y5ixzwv",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.2.2/files_fulltextsearch_tesseract-1.2.2.tar.gz",
-      "version": "1.2.2"
+      "sha256": "1nzmdqbnrsbkajsgzlq2vkzmjgk9achzirbhq02ry7yr8ncr8j1v",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.2.4/files_fulltextsearch_tesseract-1.2.4.tar.gz",
+      "version": "1.2.4"
     },
     "files_inotify": {
       "meta": {
@@ -918,9 +918,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "0yc229wng9h9y3lbbaqr26m09w1mr82mhcfy5nz9sx3jkbpmg3d4",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.6/fulltextsearch-1.2.6.tar.gz",
-      "version": "1.2.6"
+      "sha256": "1f45aixn738jzrp3kwws4gq94010afbrf4dwkrmqdfkz6crs0xnc",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.7/fulltextsearch-1.2.7.tar.gz",
+      "version": "1.2.7"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1071,7 +1071,7 @@
     },
     "hsts": {
       "meta": {
-        "description": "Add HSTS header to HTTPS response, if modheaders is not available.",
+        "description": "Add HSTS (HTTP Strict Transport Security) header to HTTPS response, if modheaders is not available.",
         "homepage": "https://github.com/sualko/cloud_hsts/",
         "isShipped": false,
         "licenses": [
@@ -1080,9 +1080,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "1fpfwpcf341rg0qqk436j7q19f6llyrpfaj07dqzf4dwa3cavgld",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.1.0/hsts-0.1.0.tar.gz",
-      "version": "0.1.0"
+      "sha256": "1rvbicjgx1j7v10rhqkjn36jp0whfm91sbwi3wpjq4iw7njj1ms6",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.2.0/hsts-0.2.0.tar.gz",
+      "version": "0.2.0"
     },
     "impersonate": {
       "meta": {
@@ -1370,9 +1370,9 @@
         "name": "OwnBackup",
         "summary": "Simple database backup solutions for your ownCloud 8.1+ or Nextcloud installation."
       },
-      "sha256": "0z2kl87yn3rywa70hr1zfb5jmia39zc6njg2bvp69jjfvjphd934",
-      "url": "https://github.com/pbek/ownbackup/releases/download/19.4.0/ownbackup-nc.tar.gz",
-      "version": "19.4.0"
+      "sha256": "0qz7qr8xmkv2jll5z8vyv64whmlrgpc90ykhmhlqfl8nl34lfscz",
+      "url": "https://github.com/pbek/ownbackup/releases/download/19.5.0/ownbackup-nc.tar.gz",
+      "version": "19.5.0"
     },
     "ownpad": {
       "meta": {
@@ -1399,9 +1399,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0dkbl16sjgrm15hwgfy8zfclvjn3jkrkz3x07ba1a7lqq8n8x7db",
-      "url": "https://releases.passman.cc/passman_2.3.0.tar.gz",
-      "version": "2.3.0"
+      "sha256": "0vspg88s7wrli57065ci6gh3rpz0xnvg0sy48bxv9xbc6z0wf97z",
+      "url": "https://releases.passman.cc/passman_2.3.1.tar.gz",
+      "version": "2.3.1"
     },
     "password_policy": {
       "meta": {
@@ -1632,9 +1632,9 @@
         "name": "Ransomware recovery",
         "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
       },
-      "sha256": "06xh73xqbhh8cgp4ygasp6g8wvyvfm59lqwh6k58f246lvc55qi2",
-      "url": "https://wusa.io/ransomware_detection-0.5.0.tar.gz",
-      "version": "0.5.0"
+      "sha256": "1rcdz5g1b25lsc0wplhaibj566k2yl1i6ylvnwpj9phsfkayis28",
+      "url": "https://github.com/undo-ransomware/ransomware_detection/releases/download/v0.5.1/ransomware_detection-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "ransomware_protection": {
       "meta": {
@@ -1692,9 +1692,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1p5n18gcb5w7ysmldp7w586lxy9r0rbc217h3fl911calbm1kdz2",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.3/richdocuments.tar.gz",
-      "version": "3.3.3"
+      "sha256": "1xy389ql0x5c7hfips0vy267bvnaymsvj1bb2njx8j7hnj3cadsr",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.6/richdocuments.tar.gz",
+      "version": "3.3.6"
     },
     "scanner": {
       "meta": {
@@ -1713,7 +1713,7 @@
     },
     "secsignid": {
       "meta": {
-        "description": "This Plugin enables the use of the SecSign ID two-factor authentication to provide\na safe and easy to use additional layer of security.\n    \nTo use the SecSign 2FA, simply create a SecSign ID and\nlink it to your NextCloud via the settings. To find out more, visit [www.secsign.com](https://www.secsign.com/developers/nextcloud-two-factor-authentication/).",
+        "description": "This app makes it possible to use the SecSign two-factor authentication SecSign ID\nto authenticate users in Nextcloud.\n\nOnce installed, go to **Settings/Security** and add an existing SecSign ID to enable 2FA\nfor yourself. Make sure to also generate backup codes, so you always have a backup plan.\n\nAdmins can go to the SecSign ID tab and manage the SecSign IDs for every user and enable/disable\ntwo-factor authentication.\n\nWith the new User Onboarding feature, enabling SecSign 2FA for all users is a very easy process. Simply enable User Onboarding and then choose a suffix for your users SecSign IDs. Make sure to either enforce 2FA for the user groups which should use SecSign 2FA or enable it for single users. Only users with Two-Factor Authentication enabled in the NextCloud settings can use SecSign 2FA.\n\nIf you do not already have a SecSign ID, go to [secsign.com](https://www.secsign.com/try-secsign-id-now/) to learn\nhow to create and use one.\n\n[PHP QR Code library](http://phpqrcode.sourceforge.net/) was used for the creating QR codes. Many thanks to the developers.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1721,9 +1721,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "129x4hlyfv4jla2rlmi93972brc4lvmv2qxw8wppwfpqav67rc7l",
+      "sha256": "1v1a7wm5b63v6lsrrzxlgqwl8kz2rwbbwgl7lg76658ff5mk68fs",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/raw/master/build/artifacts/appstore/secsignid.tar.gz",
-      "version": "0.1.3"
+      "version": "0.2.2"
     },
     "sensorlogger": {
       "meta": {
@@ -2088,9 +2088,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "123wdpxpn97k0qxmniv9cms3hrsjhfpy0ahgic63kwbfi9pbsaza",
+      "sha256": "0v22lx7zibrk0qdh4yjkj71v2q2npvj4s64y9arzfpv5yd49k7qd",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.22"
+      "version": "0.0.24"
     },
     "twainwebscan": {
       "meta": {
@@ -2117,9 +2117,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "074gjygkjbv4xp7jcz8pzzdvnhqdwpkip0klkcpyhcl2npikbcyq",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v0.2.0/twofactor_admin.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0mpqqsjrq9v5chs1hbn8azcgvlgy8lxlgrf2h1s7q0m59ph7n365",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v0.2.1/twofactor_admin.tar.gz",
+      "version": "0.2.1"
     },
     "twofactor_gateway": {
       "meta": {
@@ -2293,9 +2293,9 @@
         "name": "User support for ISPConfig mail accounts",
         "summary": "Allow users logging in using their mailbox credentials as managed via ISPConfig"
       },
-      "sha256": "0m7kqhv6d7apcgfizlwp1j22hcank4qbycbfvyy7m5gmkj6b9g98",
-      "url": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig/uploads/74992627a85e99771e7765e1c31a0437/user-ispconfig-0.4.2.tar.gz",
-      "version": "0.4.2"
+      "sha256": "0mv2m5wc4p3hr57v1f75pnqfs2ihprba2gbmdy3gl4z9cb4fqj2f",
+      "url": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig/uploads/09884595b830413ceab605e67e50ff9d/user-ispconfig-0.4.3.tar.gz",
+      "version": "0.4.3"
     },
     "user_ldap": {
       "meta": {

@@ -1,5 +1,5 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 03f45f99..6093dc04 100644
+index 28221e18..ee508a75 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -27,9 +27,6 @@
@@ -9,9 +9,9 @@ index 03f45f99..6093dc04 100644
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
 -	</background-jobs>
- 	<settings>
- 		<admin>OCA\Richdocuments\Settings\Admin</admin>
- 		<admin-section>OCA\Richdocuments\Settings\Section</admin-section>
+ 	<repair-steps>
+ 		<post-migration>
+ 			<step>OCA\Richdocuments\Migration\UpdateEmptyTemplates</step>
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
 index 887da225..6ac198e2 100644
 --- a/lib/Capabilities.php
@@ -57,7 +57,7 @@ index 887da225..6ac198e2 100644
 -	}
  }
 diff --git a/lib/Controller/DocumentController.php b/lib/Controller/DocumentController.php
-index 1ba3abbf..7ff9c64d 100644
+index 734ad41d..0d161790 100644
 --- a/lib/Controller/DocumentController.php
 +++ b/lib/Controller/DocumentController.php
 @@ -12,7 +12,6 @@
@@ -149,7 +149,7 @@ index 0ad2301f..3938982f 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index 0d73e45f..e0e114ff 100644
+index 63787596..c9d69380 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
 @@ -25,7 +25,6 @@ use OC\Share\Constants;
