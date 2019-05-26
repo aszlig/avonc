@@ -1384,9 +1384,9 @@
         "name": "Ownpad",
         "summary": "Create and open Etherpad and Ethercalc documents."
       },
-      "sha256": "1vjqcbaxnbssf1d1xhcni4m2xfdqhmqx42h35xs8bhrgibzpx0zy",
-      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.12/ownpad.tar.gz",
-      "version": "0.6.12"
+      "sha256": "0grzp383nl2c22dr1rfri1gjd5ajv9assx4ksxr7jij0j98l0xrg",
+      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.13/ownpad.tar.gz",
+      "version": "0.6.13"
     },
     "passman": {
       "meta": {
