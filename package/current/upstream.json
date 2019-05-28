@@ -2048,9 +2048,9 @@
         "name": "Terms of service",
         "summary": "Requires users to accept the terms of service before accessing data."
       },
-      "sha256": "047qs7y7r8nai4kqwd2nqqxsqmacipirihncj74z5jmg34zf75vi",
-      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.1.1/terms_of_service-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1ds0qjvp8vwwpiwawam9ycry8gw6lac243jvnhksq65kyy6h00x2",
+      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.1.2/terms_of_service-stable15.tar.gz",
+      "version": "1.1.2"
     },
     "theming": {
       "meta": {
@@ -2088,9 +2088,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "0v22lx7zibrk0qdh4yjkj71v2q2npvj4s64y9arzfpv5yd49k7qd",
+      "sha256": "09xbsbhkdnsdhaf2x292xn5mzkda1kd17n077iqz9by6ajfclssj",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.24"
+      "version": "0.0.26"
     },
     "twainwebscan": {
       "meta": {
