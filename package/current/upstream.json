@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "0jv6k0g58jq7rwz31xj6riazl38q9rplqxcngjvdsgrlb5x2asyg",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.15.6/carnet-nc-v0.15.6.tar.gz",
-      "version": "0.15.6"
+      "sha256": "197jrmspwcdygc9gyh7ynh0dgnqha3d9i1v81yp67ba8rbknnyjq",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.16.1/carnet-nc-v0.16.1.tar.gz",
+      "version": "0.16.1"
     },
     "checksum": {
       "meta": {
@@ -293,9 +293,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files files as recipes"
       },
-      "sha256": "1dl20mn6dsfd2cb5yia4480qkzgdyd5m3wpdszmm5yh2p0shghmd",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.1/cookbook.tar.gz",
-      "version": "0.1.1"
+      "sha256": "1a1dvm2bm7sjnv0fsr55rwwy50nfx06i8xkv7pgiv66psabyzqzn",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.4/cookbook.tar.gz",
+      "version": "0.1.4"
     },
     "cospend": {
       "meta": {
@@ -640,9 +640,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "0sq288j6p2xfd78fnf6vxsqrjw82l0slxdbd0mjdsyklir32756y",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.2.6/files_fulltextsearch-1.2.6.tar.gz",
-      "version": "1.2.6"
+      "sha256": "0ra8v2x3lyalidhgwrgmf39nklfxgq1baf3xjdfiqc6h6wq0vdgc",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.2.8/files_fulltextsearch-1.2.8.tar.gz",
+      "version": "1.2.8"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -907,6 +907,21 @@
       "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.0/flowupload.tar.gz",
       "version": "0.1.0"
     },
+    "forms": {
+      "meta": {
+        "description": "A forms app, similar to Google Forms with the possibility to restrict access (members, certain groups/users, and public).",
+        "homepage": "https://github.com/affan98/forms",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Forms",
+        "summary": "A forms app, similar to Google Forms."
+      },
+      "sha256": "1sy4l5l2x4nciqq82a6wj5s3h8fn13pj4nz5i622py6j1faab5zh",
+      "url": "https://github.com/affan98/forms/releases/download/v.1.0.4/forms.tar.gz",
+      "version": "1.0.3"
+    },
     "fulltextsearch": {
       "meta": {
         "description": "Core App of the full-text search framework for your Nextcloud.",
@@ -918,9 +933,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "1f45aixn738jzrp3kwws4gq94010afbrf4dwkrmqdfkz6crs0xnc",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.7/fulltextsearch-1.2.7.tar.gz",
-      "version": "1.2.7"
+      "sha256": "0kxlxdsrskwp4ggglrai4pgfpqg0lc2a63n5ld8wzz9mp1l8fk0h",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.8/fulltextsearch-1.2.8.tar.gz",
+      "version": "1.2.8"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -933,9 +948,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "18hnj5y2ds35c8mmmn34rq6c0sl1rfgf9cbalrplykgnsp22xavi",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.2.4/fulltextsearch_elasticsearch-1.2.4.tar.gz",
-      "version": "1.2.4"
+      "sha256": "02rq2ji8if3kbq1ix7iyj5vgc1pxrfflmxbafngj37rbz9rzc5ms",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.2.5/fulltextsearch_elasticsearch-1.2.5.tar.gz",
+      "version": "1.2.5"
     },
     "gallery": {
       "meta": {
@@ -1692,9 +1707,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1xy389ql0x5c7hfips0vy267bvnaymsvj1bb2njx8j7hnj3cadsr",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.6/richdocuments.tar.gz",
-      "version": "3.3.6"
+      "sha256": "19zrnldr5x0aqdcglf4fnw86rmyzqrwv565aihpfjjrcizh657by",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.8/richdocuments.tar.gz",
+      "version": "3.3.8"
     },
     "scanner": {
       "meta": {
@@ -1848,9 +1863,9 @@
         "name": "Social",
         "summary": " Nextcloud becomes part of the federated social networks!"
       },
-      "sha256": "0wl56mhskam396vmd4wld6n34ak3ashwwk8338qfgimy12195wka",
-      "url": "https://github.com/nextcloud/social/releases/download/v0.1.4/social-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0jcm44ln71anl3b7rmxvj8q43a4jspb23jmf86mzqmzyfxawbzaq",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.2.1/social-0.2.1.tar.gz",
+      "version": "0.2.1"
     },
     "sociallogin": {
       "meta": {
@@ -1863,9 +1878,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0k0x6khsb88i4qm9lqgpy585cf8mw1km1hc7nf0qc506al0kfhx5",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.3/release.tar.gz",
-      "version": "1.14.3"
+      "sha256": "1pxk5w68l4y5hyn6nv4xian0r53qrfq4h8wf1vlvv0xkzlisvlhl",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.4/release.tar.gz",
+      "version": "1.14.4"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2240,7 +2255,7 @@
     },
     "user_backend_sql_raw": {
       "meta": {
-        "description": "This app allows you to do user management against a SQL database using arbitrary SQL queries, enabling you to use any SQL db schema.\n\nYou can authenticate, create, delete users, change their password or display name, basically do (almost) everything that Nextcloud can do with users.\n\nIn contrast to the app *SQL user backend*, you write the SQL queries yourself. You are not limited by assumptions that app authors made about how your db is structured.\n\nThe app uses prepared statements and is written to be secure by default to prevent SQL injections. It understands the most popular standards for password hash formats: MD5-CRYPT, SHA256-CRYPT, SHA512-CRYPT, BCrypt and the state-of-the-art Argon2i. Because the various formats are recognized on-the-fly your db can can have differing hash string formats at the same time, which eases migration to newer formats.\n\nThis app supports PostgreSQL and MariaDB/MySQL.",
+        "description": "This app allows you to do user management against a SQL database using arbitrary SQL queries, enabling you to use any SQL db schema.\n\nYou can authenticate, create, delete users, change their password or display name, basically do (almost) everything that Nextcloud can do with users.\n\nIn contrast to the app *SQL user backend*, you write the SQL queries yourself. You are not limited by assumptions that app authors made about how your db is structured.\n\nThe app uses prepared statements and is written to be secure by default to prevent SQL injections. It understands the most popular standards for password hash formats: MD5-CRYPT, SHA256-CRYPT, SHA512-CRYPT, BCrypt and the state-of-the-art Argon2i and Argon2id. Because the various formats are recognized on-the-fly your db can can have differing hash string formats at the same time, which eases migration to newer formats.\n\nThis app supports PostgreSQL and MariaDB/MySQL.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2248,9 +2263,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "1rybrcdyqjjddnypia7ac1blckwzffl78nrnd5v5pgxb79g820cv",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.6/user_backend_sql_raw.tar.gz",
-      "version": "1.0.6"
+      "sha256": "0ccw4fpmpq1rpr9i6ixmpbzg4l1glldsin3cn49ikwfprcmclvn6",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.8/user_backend_sql_raw.tar.gz",
+      "version": "1.0.8"
     },
     "user_cas": {
       "meta": {
@@ -2334,9 +2349,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1mg5nr3ixx3w41grfy2lqdbh60y0n9isbhkx68z1jnvjga7bjw5a",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v2.2.0/user_saml-2.2.0.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1zjgqzqxsif4026fl7ny75sbv6x797b1vin0jqp0wyfrha2cls2c",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v2.3.1/user_saml-2.3.1.tar.gz",
+      "version": "2.3.1"
     },
     "user_sql": {
       "meta": {
@@ -2393,9 +2408,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "0dvf2bg4xka2nvgqhfhhf4jynxrczsagspivipb0cqk1mny8zvd4",
-      "url": "https://github.com/newroco/W2G2/releases/download/2.2.4/w2g2.tar.gz",
-      "version": "2.2.4"
+      "sha256": "0dl4wc2iqcxfivdvs9nqf6bw232k9a1jmzb6fwpsvc83yafda79j",
+      "url": "https://github.com/newroco/W2G2/releases/download/2.2.8/w2g2.tar.gz",
+      "version": "2.2.8"
     },
     "weather": {
       "meta": {
