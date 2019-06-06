@@ -1440,9 +1440,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0lx80h6l005n4q8xlcafwiqkx10w898fcvvp3i8f6jcnk0hgwy5z",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/7960/artifacts/raw/passwords.tar.gz",
-      "version": "2019.5.0"
+      "sha256": "0pklabcvp468bf2yyngcmy42af058pcpm289mxg2jf91s4098z7z",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8098/artifacts/raw/passwords.tar.gz",
+      "version": "2019.6.0"
     },
     "phonetrack": {
       "meta": {
@@ -1863,9 +1863,9 @@
         "name": "Social",
         "summary": " Nextcloud becomes part of the federated social networks!"
       },
-      "sha256": "0jcm44ln71anl3b7rmxvj8q43a4jspb23jmf86mzqmzyfxawbzaq",
-      "url": "https://github.com/nextcloud/social/releases/download/v0.2.1/social-0.2.1.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0vq1z583ahd0vm59mxadj33bacrhz62fjiix7hdmbr5w8ks92ihb",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.2.2/social-0.2.2.tar.gz",
+      "version": "0.2.2"
     },
     "sociallogin": {
       "meta": {
@@ -1878,9 +1878,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1pxk5w68l4y5hyn6nv4xian0r53qrfq4h8wf1vlvv0xkzlisvlhl",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.4/release.tar.gz",
-      "version": "1.14.4"
+      "sha256": "0k641wvxhl0cnsxwl1nclz1943ngd4gvifl8a4x92wls8lyx60yi",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.5/release.tar.gz",
+      "version": "1.14.5"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2293,9 +2293,9 @@
         "name": "External user support",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth and XMPP"
       },
-      "sha256": "14x78b0m07lvpybx71nbfzpmgym4qh51i6ljki6g6cwkkmngw1jr",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.1/user_external-0.6.1.tar.gz",
-      "version": "0.6.1"
+      "sha256": "0v75rq93jagxk0s87v13hnmz42ga2wlkdjcjv3riwpjgh6arw0gr",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.3/user_external-0.6.3.tar.gz",
+      "version": "0.6.3"
     },
     "user_ispconfig": {
       "meta": {
