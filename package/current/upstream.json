@@ -222,9 +222,9 @@
         "name": "Checksum",
         "summary": "Creating a hash checksum of a file."
       },
-      "sha256": "0k8gwpp8r61vc4hvs77a5z92121x6vj11fkkj2cda32jiam437s5",
-      "url": "https://github.com/westberliner/owncloud-checksum/releases/download/v0.4.2/checksum.tar.gz",
-      "version": "0.4.2"
+      "sha256": "00mixpmhp9hcc5pypnrprcv2n55jzfk8651li7kbzqj2kpxjlhk9",
+      "url": "https://github.com/westberliner/owncloud-checksum/releases/download/v0.4.3/checksum.tar.gz",
+      "version": "0.4.3"
     },
     "circles": {
       "meta": {
@@ -933,9 +933,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "0kxlxdsrskwp4ggglrai4pgfpqg0lc2a63n5ld8wzz9mp1l8fk0h",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.8/fulltextsearch-1.2.8.tar.gz",
-      "version": "1.2.8"
+      "sha256": "12glxziq011w5hh2rjpgrp6hqqqqap6hhmygn71509i1n62nvbzg",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.9/fulltextsearch-1.2.9.tar.gz",
+      "version": "1.2.9"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1863,9 +1863,9 @@
         "name": "Social",
         "summary": " Nextcloud becomes part of the federated social networks!"
       },
-      "sha256": "0vq1z583ahd0vm59mxadj33bacrhz62fjiix7hdmbr5w8ks92ihb",
-      "url": "https://github.com/nextcloud/social/releases/download/v0.2.2/social-0.2.2.tar.gz",
-      "version": "0.2.2"
+      "sha256": "0xw36s7rnfwxci55nw3g89xkcccw6nf6bdjlcxzhfhi64hxzm87k",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.2.3/social-0.2.3.tar.gz",
+      "version": "0.2.3"
     },
     "sociallogin": {
       "meta": {
@@ -1983,9 +1983,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "14486rvf6d4g0j6sr8aijj3yv3j86l9c33vbpa05vpm182kzglf3",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v5.0.3/spreed-5.0.3.tar.gz",
-      "version": "5.0.3"
+      "sha256": "0865dwgzjmlqa6dkg3k846kn8xcmijbylv9nh0vfrrb4gfbjzxfi",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v5.0.4/spreed-5.0.4.tar.gz",
+      "version": "5.0.4"
     },
     "support": {
       "meta": {
