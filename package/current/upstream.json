@@ -120,9 +120,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0gxz7b4gc34vyxzx7nwnsyv4gg8x9m5c5s0zmmrfjzmqdz99bjii",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.5/bookmarks-1.0.5.tar.gz",
-      "version": "1.0.5"
+      "sha256": "07802pzzm0gv6bq3gd7vix9r330xfwm7pw8cpf2zqcaywgdqnbx2",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.6/bookmarks-1.0.6.tar.gz",
+      "version": "1.0.6"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -207,9 +207,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "197jrmspwcdygc9gyh7ynh0dgnqha3d9i1v81yp67ba8rbknnyjq",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.16.1/carnet-nc-v0.16.1.tar.gz",
-      "version": "0.16.1"
+      "sha256": "1z40mflj63a5n4xbr59vhlf52a3js8pax4p9cv4d5zmrkh8j6dad",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.16.2/carnet-nc-v0.16.2.tar.gz",
+      "version": "0.16.2"
     },
     "checksum": {
       "meta": {
@@ -279,9 +279,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "0xjpw4yj91ffyg34b0rkjqvvnyjcp3jhyfr4zdjk4d5g58r5x392",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.1/contacts.tar.gz",
-      "version": "3.1.1"
+      "sha256": "0awivcp23mpxj82366ad4lm50mrmb0lsimas9xh6w41p8d7hfnm0",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.3/contacts.tar.gz",
+      "version": "3.1.3"
     },
     "cookbook": {
       "meta": {
@@ -587,6 +587,20 @@
       "url": "https://github.com/nextcloud/files_downloadactivity/releases/download/v1.4.0/files_downloadactivity-1.4.0.tar.gz",
       "version": "1.4.0"
     },
+    "files_ebookreader": {
+      "meta": {
+        "description": "This application integrates the Epub.js library into Nextcloud. Using this\napplication users can view their ebook files online without the need to\ndownload the file.\n\nWhen this application is enabled publicly shared ebook documents will also\nget shown in the ebook reader instead of only showing a single static\nsnapshot of the document. The ebook reader requires a modern browser and\nwill not work with Microsoft Internet Explorer versions below 9.\n\nEpub.js is a JavaScript library developed by Futurepress, you can learn more\nabout the Epub.js project at [https://github.com/futurepress/epub.js/](https://github.com/futurepress/epub.js/)",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Ebook reader",
+        "summary": "An ebook reader for Nextcloud"
+      },
+      "sha256": "1b9z8gf2xcagjnz90yi93f8r2ksja3lxbn6r1q1h2iq81j2qv2sl",
+      "url": "https://onny.project-insanity.org/files/files_ebookreader-0.0.1.tar.gz",
+      "version": "0.0.1"
+    },
     "files_external": {
       "meta": {
         "defaultEnable": false,
@@ -741,9 +755,9 @@
         "name": "Photo Sphere Viewer",
         "summary": "Enables viewing of google photosphere images"
       },
-      "sha256": "1zq2lcz3x7r44kz4y7h9ddk6g8ki628y6sqxrij1p8d1bx6qzxg6",
-      "url": "https://github.com/nextcloud/files_photospheres/releases/download/v1.0.0/files_photospheres.tar.gz",
-      "version": "0.0.3"
+      "sha256": "0vqsxxs97pl3anl6ic7jjbjca8x3qx5xfqb8pv09z5dp3haaawmi",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.0.1/files_photospheres.tar.gz",
+      "version": "1.0.1"
     },
     "files_readmemd": {
       "meta": {
@@ -1268,9 +1282,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "124qc62qkkwv86fkpndyxdihpidpxyr9kbzfm7a8yafrk15a1gyy",
-      "url": "https://github.com/nextcloud/notes/releases/download/v2.6.0/notes.tar.gz",
-      "version": "2.6.0"
+      "sha256": "1mpk759rarplmcngnpxmh0ailjqdg06zydg3bfmn0c7fixjrqdc6",
+      "url": "https://github.com/nextcloud/notes/releases/download/v3.0.0/notes.tar.gz",
+      "version": "3.0.0"
     },
     "notifications": {
       "meta": {
@@ -1647,9 +1661,9 @@
         "name": "Ransomware recovery",
         "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
       },
-      "sha256": "1rcdz5g1b25lsc0wplhaibj566k2yl1i6ylvnwpj9phsfkayis28",
-      "url": "https://github.com/undo-ransomware/ransomware_detection/releases/download/v0.5.1/ransomware_detection-0.5.1.tar.gz",
-      "version": "0.5.1"
+      "sha256": "0i37dbvj0db2n7as5zwm2jkafjdblgwmff23apg3b675hz9mb4z8",
+      "url": "https://github.com/undo-ransomware/ransomware_detection/releases/download/v0.5.2/ransomware_detection-0.5.2.tar.gz",
+      "version": "0.5.2"
     },
     "ransomware_protection": {
       "meta": {
@@ -1736,9 +1750,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "1v1a7wm5b63v6lsrrzxlgqwl8kz2rwbbwgl7lg76658ff5mk68fs",
+      "sha256": "1ivivjvdxmgd847jr81kfj79zj5dpk2rlyzn6bhmc16zhxjakmff",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/raw/master/build/artifacts/appstore/secsignid.tar.gz",
-      "version": "0.2.2"
+      "version": "0.2.3"
     },
     "sensorlogger": {
       "meta": {
@@ -1869,7 +1883,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OIDC groups\n\nYou can use groups from your OpenID Connect provider. For that you should specify \"Groups claim\" in custom OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if no group mapping specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -1878,9 +1892,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0k641wvxhl0cnsxwl1nclz1943ngd4gvifl8a4x92wls8lyx60yi",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.14.5/release.tar.gz",
-      "version": "1.14.5"
+      "sha256": "1lpiihxzcybyi331gdzn68a4zmmv86nlbdg1pbp6qp6xrcz8rqsx",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.0/release.tar.gz",
+      "version": "1.16.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2278,9 +2292,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1if9zlnn1d4rip676857235wbhs65vgpzllxzygnaq6rnpif37ld",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.0/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.7.0"
+      "sha256": "0jkygd2vz187il59c89plcliv774vc0dn145mi8fv6id6fiiifhv",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.1/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.7.1"
     },
     "user_external": {
       "meta": {
