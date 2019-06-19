@@ -91,9 +91,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0mx88vc8jihl8z1ysxccm1p41fnkykjn9f4h49qvmyb2mals3avb",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.7.0/audioplayer-2.7.0.tar.gz",
-      "version": "2.7.0"
+      "sha256": "1r9rvw8k2kpx9h302kn0wa4ml8b49l91x7752fgi4p351bm9imb1",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.7.1/audioplayer-2.7.1.tar.gz",
+      "version": "2.7.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -1339,9 +1339,9 @@
         "name": "Phone Sync",
         "summary": "An app to sync SMS with your cloud"
       },
-      "sha256": "1186vwqb7pv3si0n7dfj746kn61cj6ry1hcizabmgv70x00plg84",
-      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.1/ocsms-2.1.1.tar.gz",
-      "version": "2.1.1"
+      "sha256": "1b38q238vhdwc7n7qlml11wyymg856fpqi25wc4cmnkqgjq4rxh0",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.3/ocsms-2.1.3.tar.gz",
+      "version": "2.1.3"
     },
     "ojsxc": {
       "meta": {
@@ -1883,7 +1883,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OIDC groups\n\nYou can use groups from your OpenID Connect provider. For that you should specify \"Groups claim\" in custom OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if no group mapping specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if no group mapping specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -1892,9 +1892,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1lpiihxzcybyi331gdzn68a4zmmv86nlbdg1pbp6qp6xrcz8rqsx",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.0/release.tar.gz",
-      "version": "1.16.0"
+      "sha256": "19f10ggrryq700abyrsd7lbsn5dakkl6fbw9ydpxnaxpbihjnmgf",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.1/release.tar.gz",
+      "version": "1.16.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2437,9 +2437,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "0bz27fmqv1amv90m4vmpfqhbqjz9nlrzrcy1jrgg5qr4y3b8l0wv",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.5.5/weather-1.5.5.tar.gz",
-      "version": "1.5.5"
+      "sha256": "0058bjqx9r4vg46id65nbpa3wmrsrgvqilh75m0b846v25szi6gj",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.6.1/weather-1.6.1.tar.gz",
+      "version": "1.6.1"
     },
     "workflow_pdf_converter": {
       "meta": {
