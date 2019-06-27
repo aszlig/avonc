@@ -91,9 +91,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "1r9rvw8k2kpx9h302kn0wa4ml8b49l91x7752fgi4p351bm9imb1",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.7.1/audioplayer-2.7.1.tar.gz",
-      "version": "2.7.1"
+      "sha256": "0017sqzhbfm2shsl4lz1kb7i487wlcc7jdqpgdvk0c8v2i48bqx1",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.7.2/audioplayer-2.7.2.tar.gz",
+      "version": "2.7.2"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -755,9 +755,9 @@
         "name": "Photo Sphere Viewer",
         "summary": "Enables viewing of google photosphere images"
       },
-      "sha256": "0vqsxxs97pl3anl6ic7jjbjca8x3qx5xfqb8pv09z5dp3haaawmi",
-      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.0.1/files_photospheres.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0y6pdbafsdj7sfy5bph1hxbav66098p95bambd2grh47q4ry7q06",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/v1.0.2/files_photospheres.tar.gz",
+      "version": "1.0.2"
     },
     "files_readmemd": {
       "meta": {
@@ -917,9 +917,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "1s7rglzc0rzb2zrpridfxbly2idlf1m3ci3y0bw3x8xman2wnpls",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.0/flowupload.tar.gz",
-      "version": "0.1.0"
+      "sha256": "01mqnw209gi1p4d5k601gckq0cn1bcnzci478nqckqm834brpfg2",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.2/flowupload-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "forms": {
       "meta": {
@@ -962,9 +962,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "02rq2ji8if3kbq1ix7iyj5vgc1pxrfflmxbafngj37rbz9rzc5ms",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.2.5/fulltextsearch_elasticsearch-1.2.5.tar.gz",
-      "version": "1.2.5"
+      "sha256": "1qaj5v63lbms9q4csnh22y755ywk4x4cln4j6nsfxf1zr4hhx1af",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.2.6/fulltextsearch_elasticsearch-1.2.6.tar.gz",
+      "version": "1.2.6"
     },
     "gallery": {
       "meta": {
@@ -1369,9 +1369,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "176a15jx3g0v6w3gm9p1cj8l82br66754dzwdpgim8l1mf1rdisk",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.1.10/onlyoffice.tar.gz",
-      "version": "2.1.10"
+      "sha256": "1ghnq57cdvdn7hzhpllhgzq19173mns9m7dqfh7i9a023yfi9ax3",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.3.0/onlyoffice.tar.gz",
+      "version": "2.3.0"
     },
     "orcid": {
       "meta": {
@@ -1472,21 +1472,6 @@
       "sha256": "0avd8ma8x5f6bpds9251wih5s468zzgcvr1g5cx21qi5qwx8x273",
       "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/ded436e45e1eaf75b477baa890d61df5/phonetrack-0.5.1.tar.gz",
       "version": "0.5.1"
-    },
-    "photosphereviewer": {
-      "meta": {
-        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
-        "homepage": "https://github.com/R0Wi/Nextcloud-PhotoSphereViewer",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Photo Sphere Viewer",
-        "summary": "Enables viewing of google photosphere images"
-      },
-      "sha256": "1pvx8a066rpfd78a651armx9mibp7qpmlg1ah76a5lysrawx0sw6",
-      "url": "https://github.com/R0Wi/Nextcloud-PhotoSphereViewer/releases/download/v0.0.3-beta/photosphereviewer.tar.gz",
-      "version": "0.0.3"
     },
     "piwik": {
       "meta": {
@@ -1721,9 +1706,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "19zrnldr5x0aqdcglf4fnw86rmyzqrwv565aihpfjjrcizh657by",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.8/richdocuments.tar.gz",
-      "version": "3.3.8"
+      "sha256": "1a1gaa6g4rqabp75yf998i7rg96wf43v1ghvvmnn193yxcq83j1a",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.10/richdocuments.tar.gz",
+      "version": "3.3.10"
     },
     "scanner": {
       "meta": {
@@ -1736,9 +1721,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "0dr91hcm5cmw9arywfn9bnmn0rzkbg32niv57jnkjjv94lqnf5lb",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/01.2/scanner.tar.gz",
-      "version": "0.1.2"
+      "sha256": "11dj4all1z5jsa18b5vpg849rl1280zh51mwsbli3y6y1m7im9cx",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.4/scanner-0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "secsignid": {
       "meta": {
@@ -1877,9 +1862,9 @@
         "name": "Social",
         "summary": " Nextcloud becomes part of the federated social networks!"
       },
-      "sha256": "0xw36s7rnfwxci55nw3g89xkcccw6nf6bdjlcxzhfhi64hxzm87k",
-      "url": "https://github.com/nextcloud/social/releases/download/v0.2.3/social-0.2.3.tar.gz",
-      "version": "0.2.3"
+      "sha256": "0hv9symwycqaxqjhrizzhvz9qc552qs35v4flsqb7nnr108sfii5",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.2.6/social-0.2.6.tar.gz",
+      "version": "0.2.6"
     },
     "sociallogin": {
       "meta": {
@@ -2048,9 +2033,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "1gfh6cv6zmhvi4v7hd8r61afzavfzygf7z3pdfmarfnni5vkdpgs",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.10.1/tasks.tar.gz",
-      "version": "0.10.1"
+      "sha256": "1k6d7792xz32p3gfh0wy02ih2fiyhif64hkadqq6vymimfy91gp4",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.11.0/tasks.tar.gz",
+      "version": "0.11.0"
     },
     "telephoneprovider": {
       "meta": {
