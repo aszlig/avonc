@@ -237,9 +237,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "06l46rwdql841yqbpm5ki531f9vhx6h3y0rwzr1q09wqpp6a82r0",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.5/circles-0.16.5.tar.gz",
-      "version": "0.16.5"
+      "sha256": "1bj0d56755bms242137q44iawd1mwd492wcm3bpd3kgfiwl7dxkq",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.6/circles-0.16.6.tar.gz",
+      "version": "0.16.6"
     },
     "cms_pico": {
       "meta": {
@@ -352,9 +352,9 @@
         "name": "Deck",
         "summary": "A kanban style project and personal management tool for Nextcloud"
       },
-      "sha256": "0yp5fx0jsirnv4qsmim4q8f92bmhpwvrcjc75xvr1z6kwnxm4agd",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.2/deck.tar.gz",
-      "version": "0.6.2"
+      "sha256": "0i4zmlwi6p8xpgy4jwd04gpqb3llcynskjlzq1zvgrp6w7bzqncb",
+      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.4/deck.tar.gz",
+      "version": "0.6.4"
     },
     "defaultlinkopen": {
       "meta": {
@@ -639,9 +639,9 @@
         "name": "Files From Mail",
         "summary": "Recover your email attachments from your cloud"
       },
-      "sha256": "1s8yhlv4cr6bb1cbx9j2fskk7fhj0rxr88qm74k8vyb79wx1syjy",
-      "url": "https://github.com/nextcloud/files_frommail/releases/download/v0.2.0/files_frommail-0.2.0.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0jl2hmf8f1p85pwg1apdphy9v6l0ycp1q03a2vx3cwja6920l1ji",
+      "url": "https://github.com/nextcloud/files_frommail/releases/download/v0.3.0/files_frommail-0.3.0.tar.gz",
+      "version": "0.3.0"
     },
     "files_fulltextsearch": {
       "meta": {
@@ -770,9 +770,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "19kvr4vyhniszqgcp3hmdd9y7dzaf7qdzqf1vz8ajwn5jjiqz227",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/9036dcae59eb21ebe19b90b41d3c8b76/files_readmemd.tar.gz",
-      "version": "1.0.4"
+      "sha256": "0qgkbpjwb8g2a4vn89x6nnwkvayivmf42fwmqkp9x1sg0pn9vxp2",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/d2f0276d5f31cb0a0fd79910e2e49358/files_readmemd.tar.gz",
+      "version": "1.1.0"
     },
     "files_retention": {
       "meta": {
@@ -1229,6 +1229,21 @@
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/download/v0.9.0/metadata.tar.gz",
       "version": "0.9.0"
     },
+    "mood": {
+      "meta": {
+        "description": "**mood** use the **Activity** and **Circles** apps to make the perfect social media tool for your Nextcloud.\n\n_Note: **mood** is deprecated and not maintained anymore. Please consider switching to the **Social** app._\n\n With **mood**, you can instantly share a short text with other users on your instance: it can be a status update, a link, an information or anything you want.\nYou don't have to share with everyone: thanks to the **Circles** app, you decide who can see your moods \n\nIf you want to connect with other instances, you can federate your Circles with them.\nLink your _circles_ with remote clouds and your messages will be broadcast all over the mesh!",
+        "homepage": "https://github.com/daita/mood",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "mood",
+        "summary": "Your mood over the clouds"
+      },
+      "sha256": "0097sn5cbc4zsf8xsk18dak9c1dw8hgw91iahblrzlml29ap0sm2",
+      "url": "https://github.com/daita/mood/releases/download/v0.4.2/mood-0.4.2.tar.gz",
+      "version": "0.4.2"
+    },
     "music": {
       "meta": {
         "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album or artist, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also an Ampache-compatible server.\n\nLimitations: The library view does not scale well to huge music collections. The practical maximum number of tracks the app can handle is ~50 000 on Firefox and lower on other browsers. The playback from Files works regardless of the collection size.",
@@ -1328,6 +1343,21 @@
       "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.0/ocdownloader.tar.gz",
       "version": "1.7.0"
     },
+    "ocr": {
+      "meta": {
+        "description": "# Description\n\nNextcloud OCR (optical character recognition) processing for images and PDF with tesseract-js brings OCR capability to your Nextcloud.\nThe app uses tesseract-js in the browser in order to process images (png, jpeg, tiff) and PDFs and saves the output file to the source folder in nextcloud. That for example enables you to search in it.\n\n## Prerequisites, Requirements and Dependencies\nThe OCR app has some prerequisites:\n\n - [Nextcloud 15 or 16](https://nextcloud.com/)\n\n - Only supported on latest modern web browsers (Chrome, Edge, Firefox, Opera, Safari*)\n\n\n_* On Safari there is currently a problem with the [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), that requires an Administrator to set the 'script-src' to 'unsafe-eval' such that the app works properly. Because this is quite insecure the app itself does not set it and recommends to decide that on your own risk (please make sure, that you know what CSP is and what e.g. unsafe-eval causes)._\n\n## Installation\nInstall the app from the [Nextcloud AppStore](http://apps.nextcloud.com) or download the release package from github (**NOT** the sources) and place the content in **nextcloud/apps/ocr/**.\n\n## Disclaimer\nThe software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied.\n\n## Consideration\nThe version 3 and earlier versions are not supported/maintained anymore by the author. So for asynchronous background processing please fork the repository and use the \"not-maintained\" branch to work on improvements. The author wasn't able to support it because of too much effort.",
+        "homepage": "https://github.com/janis91/ocr",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Optical character recognition",
+        "summary": "Text recognition for your images and pdf files"
+      },
+      "sha256": "0710jdzk696hmgcyjsm8q4zxk968154xy7pd7r4amii4zys2lksm",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.7/ocr.tar.gz",
+      "version": "4.2.7"
+    },
     "ocsms": {
       "meta": {
         "description": "An app to sync SMS with your cloud",
@@ -1369,9 +1399,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "1ghnq57cdvdn7hzhpllhgzq19173mns9m7dqfh7i9a023yfi9ax3",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.3.0/onlyoffice.tar.gz",
-      "version": "2.3.0"
+      "sha256": "061d43r3y3hqy3r0gxzibk1jjgjpsra87qgka0rw35bz6va4hjp7",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.4.0/onlyoffice.tar.gz",
+      "version": "2.4.0"
     },
     "orcid": {
       "meta": {
@@ -1446,7 +1476,7 @@
     },
     "passwords": {
       "meta": {
-        "description": "Passwords allows you to store your passwords safely with Nextcloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Server side encryption\n * Folders &amp;amp; Tags\n * Password sharing\n * Password API\n * Extensive Handbook\n * Import &amp;amp; Export\n * Browser Extensions\n * ... and many more to come",
+        "description": "Passwords allows you to store your passwords safely with Nextcloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions\n * ... and many more to come",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1454,9 +1484,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0pklabcvp468bf2yyngcmy42af058pcpm289mxg2jf91s4098z7z",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8098/artifacts/raw/passwords.tar.gz",
-      "version": "2019.6.0"
+      "sha256": "1rxmbmjj4z0rwy8av3l2yr0jscav2ygn82kkwha1vsw1irg6ypd7",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8374/artifacts/raw/passwords.tar.gz",
+      "version": "2019.7.1"
     },
     "phonetrack": {
       "meta": {
@@ -1469,9 +1499,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phones positions in real time"
       },
-      "sha256": "0avd8ma8x5f6bpds9251wih5s468zzgcvr1g5cx21qi5qwx8x273",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/ded436e45e1eaf75b477baa890d61df5/phonetrack-0.5.1.tar.gz",
-      "version": "0.5.1"
+      "sha256": "1jp0qi7fmpnknh6r4d53p4ccw1jcc8irzw7h54fkcldl4p2kn7nq",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/2237d9c60da431f11934ec38155f2c8d/phonetrack-0.5.2.tar.gz",
+      "version": "0.5.2"
     },
     "piwik": {
       "meta": {
@@ -1531,6 +1561,21 @@
       "sha256": "1d2n288q9mi31ss58cy0w6bnc4allw41ngzlipfb0987zrswdvl5",
       "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.1.0/previewgenerator.tar.gz",
       "version": "2.1.0"
+    },
+    "printer": {
+      "meta": {
+        "description": "Allows users to print files using the CUPS/LPR printing ecosystem.\n\n        Just open the details view of the file (Sidebar). There should be a new tab called \"Printer\".\n        Select the orientation of your printed file and it will be sent to your printer.\n        If you want to print it again, just click on the reload button.",
+        "homepage": "https://github.com/e.alfred/nextcloud-printer/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Printer",
+        "summary": "Allows to print files directly inside Nextcloud to a printer."
+      },
+      "sha256": "0v9v8i6vcymzgif9dxa00rird8qpy0c9f1ayif672zcl6hcyl0bw",
+      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.1/printer.tar.gz",
+      "version": "0.0.1"
     },
     "privatedata": {
       "meta": {
@@ -1706,9 +1751,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1a1gaa6g4rqabp75yf998i7rg96wf43v1ghvvmnn193yxcq83j1a",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.10/richdocuments.tar.gz",
-      "version": "3.3.10"
+      "sha256": "0l56k6f64kjjib5917kgy7fcagain8gabi7x9y2vbi6bvmpd6vdm",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.12/richdocuments.tar.gz",
+      "version": "3.3.12"
     },
     "scanner": {
       "meta": {
@@ -1877,9 +1922,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "19f10ggrryq700abyrsd7lbsn5dakkl6fbw9ydpxnaxpbihjnmgf",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.1/release.tar.gz",
-      "version": "1.16.1"
+      "sha256": "0jdc6jrgcz2vwhywm29359z3abmij14fr42fjjbbg4vawq7f76lk",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.2/release.tar.gz",
+      "version": "1.16.2"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2283,18 +2328,18 @@
     },
     "user_external": {
       "meta": {
-        "description": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth and XMPP",
+        "description": "Use external user authentication methods to give users acces to your Nextcloud instance:\n      - IMAP\n      - SMB\n      - FTP\n      - WebDAV\n      - HTTP BasicAuth\n      - SSH\n      - XMPP\n\n      Read the [documentation](https://github.com/nextcloud/user_external#readme) to learn how to configure it!",
         "homepage": "https://github.com/nextcloud/user_external/",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "External user support",
-        "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth and XMPP"
+        "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "0v75rq93jagxk0s87v13hnmz42ga2wlkdjcjv3riwpjgh6arw0gr",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.3/user_external-0.6.3.tar.gz",
-      "version": "0.6.3"
+      "sha256": "1cvvja90512d4kqjvjmxplswprki8pyn92a0chlqw713wfbl5cxr",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.4/user_external-0.6.4.tar.gz",
+      "version": "0.6.4"
     },
     "user_ispconfig": {
       "meta": {
@@ -2333,9 +2378,9 @@
         "name": "Unix user backend",
         "summary": "Authenticate Users by PAM"
       },
-      "sha256": "1af0y3ys84dzminz4bdsb20amqg9z3rz8r2x47jz80xrj3gyx8mj",
-      "url": "https://r.mateu.be/user_pwauth-2.5.7.tar.gz",
-      "version": "2.5.7"
+      "sha256": "0x3ha2cf9k40l56mm7wdwd52xg9d64jkygmqsrbaqmj8fwqlgilk",
+      "url": "https://r.mateu.be/user_pwauth-2.6.1.tar.gz",
+      "version": "2.6.1"
     },
     "user_saml": {
       "meta": {
@@ -2377,9 +2422,9 @@
         "name": "User usage report",
         "summary": "User usage report"
       },
-      "sha256": "0af68ys165ra17nr0v73vn5kns6svaw9k9xz52c41nb4g45x1s4f",
-      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.1.1/user_usage_report-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "0icxqwfdf41scq16xy4pm9r4dzva14yd1xpdc5hpzd5150nic1yr",
+      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.1.2/user_usage_report-1.1.2.tar.gz",
+      "version": "1.1.2"
     },
     "video_converter": {
       "meta": {
