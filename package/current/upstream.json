@@ -237,9 +237,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1bj0d56755bms242137q44iawd1mwd492wcm3bpd3kgfiwl7dxkq",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.6/circles-0.16.6.tar.gz",
-      "version": "0.16.6"
+      "sha256": "0ryf14fq5y9pllfai5j9izgcbv4l63i7n95wbsl40g8k5bd2vcq9",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.8/circles-0.16.8.tar.gz",
+      "version": "0.16.8"
     },
     "cms_pico": {
       "meta": {
@@ -1354,9 +1354,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0710jdzk696hmgcyjsm8q4zxk968154xy7pd7r4amii4zys2lksm",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.7/ocr.tar.gz",
-      "version": "4.2.7"
+      "sha256": "1mlshbbp37c7r1cdk3ribsfsmqkcnhs7mx0f1rigg0c2d73y0602",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.12/ocr.tar.gz",
+      "version": "4.2.12"
     },
     "ocsms": {
       "meta": {
@@ -1458,9 +1458,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0vspg88s7wrli57065ci6gh3rpz0xnvg0sy48bxv9xbc6z0wf97z",
-      "url": "https://releases.passman.cc/passman_2.3.1.tar.gz",
-      "version": "2.3.1"
+      "sha256": "063spknaga6fmzgqwggr68p5jl8xf3g54ikzi7c7rvmj34dink93",
+      "url": "https://releases.passman.cc/passman_2.3.2.tar.gz",
+      "version": "2.3.2"
     },
     "password_policy": {
       "meta": {
