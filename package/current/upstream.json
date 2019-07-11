@@ -293,9 +293,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files files as recipes"
       },
-      "sha256": "1a1dvm2bm7sjnv0fsr55rwwy50nfx06i8xkv7pgiv66psabyzqzn",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.4/cookbook.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0xx266lsd52pi64d0b5jxkn36kcjj2209x1zhmx8n65p2dl8506x",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.5/cookbook.tar.gz",
+      "version": "0.1.5"
     },
     "cospend": {
       "meta": {
@@ -1354,9 +1354,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "1mlshbbp37c7r1cdk3ribsfsmqkcnhs7mx0f1rigg0c2d73y0602",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.12/ocr.tar.gz",
-      "version": "4.2.12"
+      "sha256": "0rszbyj9bgybkpmbx1dlvraw72xbznyjbp3rvr0irzgr9ig3l1s7",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.14/ocr.tar.gz",
+      "version": "4.2.14"
     },
     "ocsms": {
       "meta": {
@@ -1751,9 +1751,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0l56k6f64kjjib5917kgy7fcagain8gabi7x9y2vbi6bvmpd6vdm",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.12/richdocuments.tar.gz",
-      "version": "3.3.12"
+      "sha256": "17ks3z1scbvbadxq8wr6l4fpgpmfi2dpm04r34il68g5f16c1xi1",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.13/richdocuments.tar.gz",
+      "version": "3.3.13"
     },
     "scanner": {
       "meta": {
@@ -2206,9 +2206,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "1r9yx4sivn7xj84js97v937jyf472fd7ndkmrp0366axajkg82a2",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v1.1.1/twofactor_nextcloud_notification.tar.gz",
-      "version": "1.1.1"
+      "sha256": "08dj0kiwgjbgws9giswmsrbkxzkgjnja6y2558ax4mzyvf28n9c3",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v1.1.2/twofactor_nextcloud_notification.tar.gz",
+      "version": "1.1.2"
     },
     "twofactor_rcdevsopenotp": {
       "meta": {
