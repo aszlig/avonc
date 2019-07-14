@@ -95,6 +95,36 @@
       "url": "https://github.com/Rello/audioplayer/releases/download/2.7.2/audioplayer-2.7.2.tar.gz",
       "version": "2.7.2"
     },
+    "audioplayer_editor": {
+      "meta": {
+        "description": "ID3 editor add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player &gt; v2.8 required\n\n- Editor integrated into sidebar\n- Updating the ID3 in the library\n- Updating the audio files (coming soon)\n- Picture support (coming soon)",
+        "homepage": "https://github.com/rello/audioplayer_editor",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Audio Player - ID3 Editor (add-on)",
+        "summary": "Change ID3 Metadata"
+      },
+      "sha256": "0ynck9a1pld3af3yxrj6h881dnaxqjcapywh6v788ch815mjmyzp",
+      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.0.1/audioplayer_editor-0.0.1.tar.gz",
+      "version": "0.0.1"
+    },
+    "audioplayer_sonos": {
+      "meta": {
+        "description": "SONOS Playback add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player &gt; v2.8 required\n\n- Play your local library on your SONOS speaker",
+        "homepage": "https://github.com/rello/audioplayer_sonos",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Audio Player - SONOS (add-on)",
+        "summary": "SONOS Playback"
+      },
+      "sha256": "0850y8pj4sqzfnnyag9fm15j9jdspm6lc9irvdfy2ss3xzh1iz55",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.0.0/audioplayer_sonos-1.0.0.tar.gz",
+      "version": "1.0.0"
+    },
     "auto_mail_accounts": {
       "meta": {
         "description": "The mail app has a built-in default configuration for mail accounts but it does not create actual mail accounts for each Nextcloud user, so they can not store alternative identities, a sender name, attachments or collect e-mail addresses. This app hooks into Nextcloud's user creation/deletion and display name/ password change and automatically creates/deletes/updates a mail account in the mail app. This creates mail accounts like if a user entered the settings manually allowing him to use all features of the mail app.\n\nNote that the password is stored with symmetric encryption and can be retrieved by the admin. This is the default behaviour of the mail app and unavoidable because it needs to login to the mail server.",
@@ -164,9 +194,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "1l5brl3l2dvmxh3nw1zxk6s22qmi48sc575v0kgijg0jfqc9lznj",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.3.0/bruteforcesettings-1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "13zwjj2941b3y6k9vp4v8cbrvmwxh9f9nfj7fz15rq5ccpljk0p2",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.4.0/bruteforcesettings.tar.gz",
+      "version": "1.4.0"
     },
     "calendar": {
       "meta": {
@@ -291,11 +321,11 @@
           "agpl"
         ],
         "name": "Cookbook",
-        "summary": "An integrated cookbook using schema.org JSON files files as recipes"
+        "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0xx266lsd52pi64d0b5jxkn36kcjj2209x1zhmx8n65p2dl8506x",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.5/cookbook.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0dbf9sprhnjryj9np9q61sblmr45iv13vfsw12hi7rj668vwsr5z",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.7/cookbook.tar.gz",
+      "version": "0.1.7"
     },
     "cospend": {
       "meta": {
@@ -1025,7 +1055,7 @@
     },
     "gpxpod": {
       "meta": {
-        "description": "# GpxPod Nextcloud application\n\nDisplay, analyse, compare and share GPS track files.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*  can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system\n*  supports metric, english and nautical measure systems\n*  draws elevation, speed or pace interactive chart\n*  can color track lines by speed, elevation or pace\n*  show track statistics\n*  filter tracks by date, total distance...\n*  displays geotagged pictures found in selected directory\n*  generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*  allows you to move selected track files\n*  can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*  can make global comparison of multiple tracks\n*  can make visual pair comparison of divergent parts of similar tracks\n*  allows users to add personal map tile servers\n*  saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*  loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*  is compatible with SQLite, MySQL and PostgreSQL databases\n*  adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is under (slow) development.\n\nLink to Nextcloud application website : https://apps.nextcloud.com/apps/gpxpod\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details\n\n## Known issues\n\n* bad management of file names including simple or double quotes\n* *WARNING*, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "description": "# GpxPod Nextcloud application\n\nDisplay, analyse, compare and share GPS track files.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*  can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system\n*  supports metric, english and nautical measure systems\n*  draws elevation, speed or pace interactive chart\n*  can color track lines by speed, elevation or pace\n*  show track statistics\n*  filter tracks by date, total distance...\n*  displays geotagged pictures found in selected directory\n*  generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*  allows you to move selected track files\n*  can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*  can make global comparison of multiple tracks\n*  can make visual pair comparison of divergent parts of similar tracks\n*  allows users to add personal map tile servers\n*  saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*  loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*  is compatible with SQLite, MySQL and PostgreSQL databases\n*  adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested under Nextcloud 16 with Firefox and Chromium.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details\n\n## Known issues\n\n* [FIXED] bad management of file names including simple or double quotes\n* *WARNING*, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/gpxpod-oc",
         "isShipped": false,
         "licenses": [
@@ -1034,9 +1064,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "0hawgh1jxl5yibds2vi5alswld8kg7v4njm1kdmz8hrdgifb6q2k",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/34af9435d7a2cd8fa915b84f0dda0724/gpxpod-3.0.3.tar.gz",
-      "version": "3.0.3"
+      "sha256": "0fpjy60x8yrc7p2rg7pzgyirzmx03mgbxr4da7g1frs7wbln98c2",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/381552aee3b7aa581e584fcf82e6329b/gpxpod-4.0.1.tar.gz",
+      "version": "4.0.1"
     },
     "grauphel": {
       "meta": {
@@ -1339,9 +1369,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "0mqrklm0cjd5xz2b0jvzwv8g7kfcpy38p2n0m1rz7jl9sf9nhycf",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.0/ocdownloader.tar.gz",
-      "version": "1.7.0"
+      "sha256": "16p8566k0gg2nanvknjag8gqdvcn3flh5968477yndd8azk20bxw",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.2/ocdownloader.tar.gz",
+      "version": "1.7.2"
     },
     "ocr": {
       "meta": {
@@ -1354,9 +1384,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0rszbyj9bgybkpmbx1dlvraw72xbznyjbp3rvr0irzgr9ig3l1s7",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.14/ocr.tar.gz",
-      "version": "4.2.14"
+      "sha256": "0r3yfjsn9gis1pi0pm0zcrawd6w50wm55d1x83wgilp0wzxv21a9",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.17/ocr.tar.gz",
+      "version": "4.2.17"
     },
     "ocsms": {
       "meta": {
@@ -1484,9 +1514,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1rxmbmjj4z0rwy8av3l2yr0jscav2ygn82kkwha1vsw1irg6ypd7",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8374/artifacts/raw/passwords.tar.gz",
-      "version": "2019.7.1"
+      "sha256": "0f6j4772l2wqrywddgv15i06wcs9mrx6n96dfzqqdkjcr7891ycj",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8434/artifacts/raw/passwords.tar.gz",
+      "version": "2019.7.2"
     },
     "phonetrack": {
       "meta": {
@@ -2147,9 +2177,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "09xbsbhkdnsdhaf2x292xn5mzkda1kd17n077iqz9by6ajfclssj",
+      "sha256": "12a6n3sgqm1kqb39wwlbw6r6w9579dvq4674442japxsh75rz40n",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.26"
+      "version": "0.0.29"
     },
     "twainwebscan": {
       "meta": {
