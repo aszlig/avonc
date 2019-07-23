@@ -150,9 +150,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "07802pzzm0gv6bq3gd7vix9r330xfwm7pw8cpf2zqcaywgdqnbx2",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.6/bookmarks-1.0.6.tar.gz",
-      "version": "1.0.6"
+      "sha256": "0gpz75khpavbnrcb3lw76i2b2ai7nzads6d8pi8syk6xk0i15vfs",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.8/bookmarks-1.0.8.tar.gz",
+      "version": "1.0.8"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -658,6 +658,21 @@
       "url": "https://github.com/NastuzziSamy/files_external_gdrive/releases/download/v0.4.0/files_external_gdrive.tar.gz",
       "version": "0.4.0"
     },
+    "files_external_onedrive": {
+      "meta": {
+        "description": "The OneDrive Backend allows administrators and users to add their own OneDrive as folders in Nextcloud. This offers an easy way for users to access OneDrive data in the same place where they find their other files.\nNextcloud accesses OneDrive through the Microsoft GRAPH API and uses Oauth2 authentication.",
+        "homepage": "https://github.com/hevelius/files_external_onedrive",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External Storage: OneDrive",
+        "summary": "Integrate OneDrive as an external storage"
+      },
+      "sha256": "10fbml8hxxrbv5i99zsywl8yb5a3a4247jw9b3axwcmwgz10givk",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.2/files_external_onedrive.tar.gz",
+      "version": "1.0.2"
+    },
     "files_frommail": {
       "meta": {
         "description": "Allows an admin to link a drop-mailbox to Nextcloud.\n\t\tThis way, you can set a mail address and every mails+attachments send to this mail address will be automatically be saved on the cloud.",
@@ -977,9 +992,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "12glxziq011w5hh2rjpgrp6hqqqqap6hhmygn71509i1n62nvbzg",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.9/fulltextsearch-1.2.9.tar.gz",
-      "version": "1.2.9"
+      "sha256": "0vz5xvc4fi0dgg9j78j5s5fqpxknaaspms5vz638n4zsm8xnpygl",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.2.10/fulltextsearch-1.2.10.tar.gz",
+      "version": "1.2.10"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1019,9 +1034,9 @@
         "name": "Global Site Selector",
         "summary": "Nextcloud Portal to redirect users to the right instance"
       },
-      "sha256": "1xrmwzgbxkjh6zj5ym21cji1wkm3q61pxmkidj9hj10035q75q54",
-      "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.1.0/globalsiteselector-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "17n110q0b0k1rxm61a6j91xfvbf364s17haigaarxja23qc53fp9",
+      "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.2.0/globalsiteselector-1.2.0.tar.gz",
+      "version": "1.2.0"
     },
     "gpxedit": {
       "meta": {
@@ -1064,9 +1079,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "0fpjy60x8yrc7p2rg7pzgyirzmx03mgbxr4da7g1frs7wbln98c2",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/381552aee3b7aa581e584fcf82e6329b/gpxpod-4.0.1.tar.gz",
-      "version": "4.0.1"
+      "sha256": "0ysciilhm4qmyl3w7fngp763f9bighy28hka56jam9bhvdrdnw5m",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/ca04be8f8fb4757ea0180de21a878e4d/gpxpod-4.0.2.tar.gz",
+      "version": "4.0.2"
     },
     "grauphel": {
       "meta": {
@@ -1285,9 +1300,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0p1imc147cms8163mhqaysbc4wyjx4s72sh5a81m5m0pl89s87mh",
-      "url": "https://github.com/paulijar/music/files/3124325/music_0.9.5_nc-signed.tar.gz",
-      "version": "0.9.5"
+      "sha256": "1kd4kyn1j49vymmgrjrfaykk7g3kws0gnig1fnmslr146wxv8cf3",
+      "url": "https://github.com/paulijar/music/files/3419204/music_0.10.0_nc-signed.tar.gz",
+      "version": "0.10.0"
     },
     "news": {
       "meta": {
@@ -1327,9 +1342,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1mpk759rarplmcngnpxmh0ailjqdg06zydg3bfmn0c7fixjrqdc6",
-      "url": "https://github.com/nextcloud/notes/releases/download/v3.0.0/notes.tar.gz",
-      "version": "3.0.0"
+      "sha256": "1p89y0dw2xkwnhcazj0gvrnwxhj6x4irhhhmdh5xlf8zrzwvh62k",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.0.1/notes.tar.gz",
+      "version": "3.0.1"
     },
     "notifications": {
       "meta": {
@@ -1384,9 +1399,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0r3yfjsn9gis1pi0pm0zcrawd6w50wm55d1x83wgilp0wzxv21a9",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.17/ocr.tar.gz",
-      "version": "4.2.17"
+      "sha256": "0klg7lnfv5znjp0d0y5p0acji43syaak6y98ywbajgg4l2xj8akn",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.26/ocr.tar.gz",
+      "version": "4.2.26"
     },
     "ocsms": {
       "meta": {
@@ -1698,7 +1713,7 @@
     },
     "rainloop": {
       "meta": {
-        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.12.1 (2018-07-31).",
+        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.13.0 (2019-07).",
         "homepage": "https://github.com/pierre-alain-b/rainloop-nextcloud",
         "isShipped": false,
         "licenses": [
@@ -1707,9 +1722,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "1i0m7jm6c13vgc272q7m268p54jv6h0138hhjpcjv3viijqn2x10",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.0.2/rainloop.tar.gz",
-      "version": "6.0.2"
+      "sha256": "14xawjgz14bfhxa2nk9996243d9gvx76a7rz6119g5cz4dqqac4f",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.0.3/rainloop.tar.gz",
+      "version": "6.0.3"
     },
     "ransomware_detection": {
       "meta": {
@@ -1781,9 +1796,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "17ks3z1scbvbadxq8wr6l4fpgpmfi2dpm04r34il68g5f16c1xi1",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.13/richdocuments.tar.gz",
-      "version": "3.3.13"
+      "sha256": "1icrrgx6kkvl5a7qr91ffnp4df3xg0w29njsz04sxjff2nrn5m80",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.14/richdocuments.tar.gz",
+      "version": "3.3.14"
     },
     "scanner": {
       "meta": {
@@ -1943,7 +1958,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if no group mapping specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -1952,9 +1967,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0jdc6jrgcz2vwhywm29359z3abmij14fr42fjjbbg4vawq7f76lk",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.2/release.tar.gz",
-      "version": "1.16.2"
+      "sha256": "1yni3pfhmb1xxzaa897gp6102grh4f7kqnqzbawkccxcgkmavify",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.3/release.tar.gz",
+      "version": "1.16.3"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2177,9 +2192,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "12a6n3sgqm1kqb39wwlbw6r6w9579dvq4674442japxsh75rz40n",
+      "sha256": "1avvpwy3aa0zwh5xzi0ijhpik5wp1268ixfs7r3dw4hyv2i2b0jq",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.29"
+      "version": "0.0.30"
     },
     "twainwebscan": {
       "meta": {
