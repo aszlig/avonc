@@ -150,9 +150,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0gpz75khpavbnrcb3lw76i2b2ai7nzads6d8pi8syk6xk0i15vfs",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.0.8/bookmarks-1.0.8.tar.gz",
-      "version": "1.0.8"
+      "sha256": "1lz4kss6x17c8dz2pj5amqxh38jmbmmdvg7rpmigq3rqkbs6y8ia",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.1.1/bookmarks-1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -237,9 +237,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1z40mflj63a5n4xbr59vhlf52a3js8pax4p9cv4d5zmrkh8j6dad",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.16.2/carnet-nc-v0.16.2.tar.gz",
-      "version": "0.16.2"
+      "sha256": "0kwq1ymqvndfysk5kb2r8qckxgrv6sff7mx326jdhlr2f69i4y45",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.17.0/carnet-nc-v0.17.0.tar.gz",
+      "version": "0.17.0"
     },
     "checksum": {
       "meta": {
@@ -382,9 +382,9 @@
         "name": "Deck",
         "summary": "A kanban style project and personal management tool for Nextcloud"
       },
-      "sha256": "0i4zmlwi6p8xpgy4jwd04gpqb3llcynskjlzq1zvgrp6w7bzqncb",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.4/deck.tar.gz",
-      "version": "0.6.4"
+      "sha256": "00z6wfs15i8dmcc7lsflrdp5wb5m6i6j9hzdzflsy7sw1bxv7gcp",
+      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.5/deck.tar.gz",
+      "version": "0.6.5"
     },
     "defaultlinkopen": {
       "meta": {
@@ -669,9 +669,9 @@
         "name": "External Storage: OneDrive",
         "summary": "Integrate OneDrive as an external storage"
       },
-      "sha256": "10fbml8hxxrbv5i99zsywl8yb5a3a4247jw9b3axwcmwgz10givk",
-      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.2/files_external_onedrive.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0n9mshw374wyr4pj4iyzk7r807z6kajjn9c64p3vk1g3r45ylabj",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.3/files_external_onedrive.tar.gz",
+      "version": "1.0.3"
     },
     "files_frommail": {
       "meta": {
@@ -815,9 +815,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "0qgkbpjwb8g2a4vn89x6nnwkvayivmf42fwmqkp9x1sg0pn9vxp2",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/d2f0276d5f31cb0a0fd79910e2e49358/files_readmemd.tar.gz",
-      "version": "1.1.0"
+      "sha256": "00q65jm7jnp928h65grdag5d6ag3rp70lv35d7wvg9svgfsmij4x",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/585717c94ed588e59b255324c7f79bd8/files_readmemd.tar.gz",
+      "version": "1.1.1"
     },
     "files_retention": {
       "meta": {
@@ -1070,7 +1070,7 @@
     },
     "gpxpod": {
       "meta": {
-        "description": "# GpxPod Nextcloud application\n\nDisplay, analyse, compare and share GPS track files.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*  can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system\n*  supports metric, english and nautical measure systems\n*  draws elevation, speed or pace interactive chart\n*  can color track lines by speed, elevation or pace\n*  show track statistics\n*  filter tracks by date, total distance...\n*  displays geotagged pictures found in selected directory\n*  generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*  allows you to move selected track files\n*  can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*  can make global comparison of multiple tracks\n*  can make visual pair comparison of divergent parts of similar tracks\n*  allows users to add personal map tile servers\n*  saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*  loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*  is compatible with SQLite, MySQL and PostgreSQL databases\n*  adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested under Nextcloud 16 with Firefox and Chromium.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details\n\n## Known issues\n\n* [FIXED] bad management of file names including simple or double quotes\n* *WARNING*, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "description": "# GpxPod Nextcloud application\n\nDisplay, analyse, compare and share GPS track files.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*  can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system\n*  supports metric, english and nautical measure systems\n*  draws elevation, speed or pace interactive chart\n*  can color track lines by speed, elevation or pace\n*  show track statistics\n*  filter tracks by date, total distance...\n*  displays geotagged pictures found in selected directory\n*  generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*  allows you to move selected track files\n*  can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*  can make global comparison of multiple tracks\n*  can make visual pair comparison of divergent parts of similar tracks\n*  allows users to add personal map tile servers\n*  saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*  loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*  is compatible with SQLite, MySQL and PostgreSQL databases\n*  adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested on Nextcloud 16 with Firefox and Chromium.\n\nThis app is under (slow) development.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details\n\n## Donation\n\nMore details in [project's wiki](https://gitlab.com/eneiluj/gpxpod-oc/wikis/home#donation).\n\n## Known issues\n\n* [FIXED] bad management of file names including simple or double quotes\n* *WARNING*, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/gpxpod-oc",
         "isShipped": false,
         "licenses": [
@@ -1079,9 +1079,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "0ysciilhm4qmyl3w7fngp763f9bighy28hka56jam9bhvdrdnw5m",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/ca04be8f8fb4757ea0180de21a878e4d/gpxpod-4.0.2.tar.gz",
-      "version": "4.0.2"
+      "sha256": "0kw0gd07pmn5ff6kx1r135x7b1bw5abs1k3sxzpq5cmxq7rf6s03",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/4e57b8eb06933414c4ff5d9d5318e7b2/gpxpod-4.0.5.tar.gz",
+      "version": "4.0.5"
     },
     "grauphel": {
       "meta": {
@@ -1109,9 +1109,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "014smps8pdqz9i9466lyjpfydqwqrzbfim0qfl29fziybh96jick",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.2/group_everyone-0.1.2.tar.gz",
-      "version": "0.1.2"
+      "sha256": "1pxcjl84hzch7ck0hch949nip48jizq6rxbs6pyzx4x1hvvi9mik",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.3/group_everyone-0.1.3.tar.gz",
+      "version": "0.1.3"
     },
     "groupfolders": {
       "meta": {
@@ -1399,9 +1399,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0klg7lnfv5znjp0d0y5p0acji43syaak6y98ywbajgg4l2xj8akn",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.26/ocr.tar.gz",
-      "version": "4.2.26"
+      "sha256": "07n185p72cyafal16akjmnrm457nigrkk3l7hs58297kdq1lrqi0",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.31/ocr.tar.gz",
+      "version": "4.2.31"
     },
     "ocsms": {
       "meta": {
@@ -1529,9 +1529,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0f6j4772l2wqrywddgv15i06wcs9mrx6n96dfzqqdkjcr7891ycj",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8434/artifacts/raw/passwords.tar.gz",
-      "version": "2019.7.2"
+      "sha256": "17x0glz6y3bijnb5c75wj1rzz4i5v2q8abfqivdz2rkil8876pjr",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8523/artifacts/raw/passwords.tar.gz",
+      "version": "2019.8.0"
     },
     "phonetrack": {
       "meta": {
@@ -1952,9 +1952,9 @@
         "name": "Social",
         "summary": " Nextcloud becomes part of the federated social networks!"
       },
-      "sha256": "0hv9symwycqaxqjhrizzhvz9qc552qs35v4flsqb7nnr108sfii5",
-      "url": "https://github.com/nextcloud/social/releases/download/v0.2.6/social-0.2.6.tar.gz",
-      "version": "0.2.6"
+      "sha256": "1q2jyihdy6xy5b4icarlnhn4yvn30yax0966pz6wy1qqif5w0grz",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.2.101/social-0.2.101.tar.gz",
+      "version": "0.2.101"
     },
     "sociallogin": {
       "meta": {
@@ -1967,9 +1967,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1yni3pfhmb1xxzaa897gp6102grh4f7kqnqzbawkccxcgkmavify",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.3/release.tar.gz",
-      "version": "1.16.3"
+      "sha256": "13hp4szmmax2c2cpxdyk3n0gdw4a1yism3kdgfggvcycynsyjacr",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.4/release.tar.gz",
+      "version": "1.16.4"
     },
     "socialsharing_diaspora": {
       "meta": {
