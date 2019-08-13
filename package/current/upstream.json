@@ -267,9 +267,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0ryf14fq5y9pllfai5j9izgcbv4l63i7n95wbsl40g8k5bd2vcq9",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.8/circles-0.16.8.tar.gz",
-      "version": "0.16.8"
+      "sha256": "1ikf1j13sracm448x7clqp011qdx1vkmjrahn17gc2zp1ri0mnkj",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.16.9/circles-0.16.9.tar.gz",
+      "version": "0.16.9"
     },
     "cms_pico": {
       "meta": {
@@ -323,9 +323,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0dbf9sprhnjryj9np9q61sblmr45iv13vfsw12hi7rj668vwsr5z",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.7/cookbook.tar.gz",
-      "version": "0.1.7"
+      "sha256": "0qp2119gkpiy80qb0yg6napkwxz69rfgsczx5q55d8zbzpb1i977",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.12/cookbook.tar.gz",
+      "version": "0.1.12"
     },
     "cospend": {
       "meta": {
@@ -382,9 +382,9 @@
         "name": "Deck",
         "summary": "A kanban style project and personal management tool for Nextcloud"
       },
-      "sha256": "00z6wfs15i8dmcc7lsflrdp5wb5m6i6j9hzdzflsy7sw1bxv7gcp",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.5/deck.tar.gz",
-      "version": "0.6.5"
+      "sha256": "1d1vhmzaxjlb45jj80jilij2l3pid5mvwnkqja5r2yv1gdi7n00p",
+      "url": "https://github.com/nextcloud/deck/releases/download/v0.6.6/deck.tar.gz",
+      "version": "0.6.6"
     },
     "defaultlinkopen": {
       "meta": {
@@ -669,9 +669,9 @@
         "name": "External Storage: OneDrive",
         "summary": "Integrate OneDrive as an external storage"
       },
-      "sha256": "0n9mshw374wyr4pj4iyzk7r807z6kajjn9c64p3vk1g3r45ylabj",
-      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.3/files_external_onedrive.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0zq1ba5ws4rhvbhrx9fl53mzivqcl27g1fr1z7b36xi08647hj2x",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.4/files_external_onedrive.tar.gz",
+      "version": "1.0.4"
     },
     "files_frommail": {
       "meta": {
@@ -1094,9 +1094,9 @@
         "name": "Grauphel: Tomboy note server",
         "summary": "Tomboy REST API server to sync notes between devices"
       },
-      "sha256": "1k6mjzpsmmwdq5c7hgqq69nqjp7r947wxnwv4srk0p3dbv7fwi80",
-      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.1.tar.gz",
-      "version": "0.7.1"
+      "sha256": "0svaq2295mwblc48n6722myllw9vwakrnzbpjm04r9gz0csvk7l7",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.2.tar.gz",
+      "version": "0.7.2"
     },
     "group_everyone": {
       "meta": {
@@ -1399,9 +1399,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "07n185p72cyafal16akjmnrm457nigrkk3l7hs58297kdq1lrqi0",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.31/ocr.tar.gz",
-      "version": "4.2.31"
+      "sha256": "03kp8xi5j7qwkdblmd84raplrf9vwf3qzhp52s2ykfax61k2fvyi",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.35/ocr.tar.gz",
+      "version": "4.2.35"
     },
     "ocsms": {
       "meta": {
@@ -1529,9 +1529,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "17x0glz6y3bijnb5c75wj1rzz4i5v2q8abfqivdz2rkil8876pjr",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8523/artifacts/raw/passwords.tar.gz",
-      "version": "2019.8.0"
+      "sha256": "1b2s256civzj1pdvz4qsmjlhxdinimbv43d8yd6lm3innv2lqp7c",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8555/artifacts/raw/passwords.tar.gz",
+      "version": "2019.8.1"
     },
     "phonetrack": {
       "meta": {
@@ -1781,9 +1781,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "10f7fv8ssz295nri7aqzk4raczc97gvda2dgyimay7my3li1d99h",
-      "url": "https://github.com/pellaeon/registration/releases/download/v0.4.6/registration.tar.gz",
-      "version": "0.4.6"
+      "sha256": "1iapxh3wahnvm3gqmgd6bn3lnm7dl3zkk4a1nmnndilwnj0bxldr",
+      "url": "https://github.com/pellaeon/registration/releases/download/v0.4.7/registration.tar.gz",
+      "version": "0.4.7"
     },
     "richdocuments": {
       "meta": {
@@ -1796,9 +1796,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1icrrgx6kkvl5a7qr91ffnp4df3xg0w29njsz04sxjff2nrn5m80",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.14/richdocuments.tar.gz",
-      "version": "3.3.14"
+      "sha256": "1fxs418hvcbf8jbnwpjvh7bf2kk5lx46l5xdblla0hsihad1w3y5",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.15/richdocuments.tar.gz",
+      "version": "3.3.15"
     },
     "scanner": {
       "meta": {
@@ -1922,9 +1922,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "0ash1b6fb3v4jhrf9p73jiahi6qml9z0smg01gsk1nv87q9zsrwm",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.6.0/sharerenamer-2.6.0.tar.gz",
-      "version": "2.6.0"
+      "sha256": "0d26nbr52fp3z6shwgm4aw6w2flnhq56iwrvv5kizq96vmbv8k5c",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.6.1/sharerenamer-2.6.1.tar.gz",
+      "version": "2.6.1"
     },
     "smb_test": {
       "meta": {
@@ -1967,9 +1967,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "13hp4szmmax2c2cpxdyk3n0gdw4a1yism3kdgfggvcycynsyjacr",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.4/release.tar.gz",
-      "version": "1.16.4"
+      "sha256": "0bjlpr742ls42xl5d0d0s2si0yij39x823njgjdi2jgv5hgzvh6k",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.5/release.tar.gz",
+      "version": "1.16.5"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2123,9 +2123,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "1k6d7792xz32p3gfh0wy02ih2fiyhif64hkadqq6vymimfy91gp4",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.11.0/tasks.tar.gz",
-      "version": "0.11.0"
+      "sha256": "00jnnx6f648jyz9vh3rnsv5m7vzbddbni3v3j98cd2fpy32pq1mi",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.11.1/tasks.tar.gz",
+      "version": "0.11.1"
     },
     "telephoneprovider": {
       "meta": {
@@ -2192,9 +2192,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1avvpwy3aa0zwh5xzi0ijhpik5wp1268ixfs7r3dw4hyv2i2b0jq",
+      "sha256": "1k70nxzrq4vbgvay1njxzb4zkag8gdn7z1c6bsc617zqj5ssk4cj",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.30"
+      "version": "0.0.31"
     },
     "twainwebscan": {
       "meta": {
