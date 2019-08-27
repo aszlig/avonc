@@ -2608,8 +2608,8 @@
     }
   },
   "nextcloud": {
-    "sha256": "0ja4pi7v66blgqsmsdcgnvvrxxiizpi0y7ga7hcw1l8v2va5lxw8",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.10.tar.bz2",
-    "version": "15.0.10.0"
+    "sha256": "1hvi1hfwsicicn5zl6zrj1ihfkc6m6635c7622jb1arybnfh73rf",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.11.tar.bz2",
+    "version": "15.0.11.1"
   }
 }
