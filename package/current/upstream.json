@@ -323,9 +323,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0qp2119gkpiy80qb0yg6napkwxz69rfgsczx5q55d8zbzpb1i977",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.1.12/cookbook.tar.gz",
-      "version": "0.1.12"
+      "sha256": "0anzy20g2xcsxwi5pvwppyazz2ld7bh6sz58w3glh9albjr4h1n9",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.2.0/cookbook.tar.gz",
+      "version": "0.2.0"
     },
     "cospend": {
       "meta": {
@@ -425,9 +425,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "1lxsipvbm1wyr0kihgyx5ckmw9q2r10ap13l141gagbm0pr0bb3x",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.15/discoursesso-0.9.15.tar.gz",
-      "version": "0.9.15"
+      "sha256": "08hmkw2calh3f1w9p01qnrlf9dcv5fpv84pfjk5zq3il5zbbidvm",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.16/discoursesso-0.9.16.tar.gz",
+      "version": "0.9.16"
     },
     "drawio": {
       "meta": {
@@ -774,9 +774,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "0kbxfv3mmbp1bi9ckcza80aj87mlg9j55a25xfds9b2man3h0gr5",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.13/files_mindmap-0.0.13.tar.gz",
-      "version": "0.0.13"
+      "sha256": "1ccw71m02lmw83x2fps3zcz4kxzm471rgqy7330hd066c4qzh05j",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.15/files_mindmap-0.0.15.tar.gz",
+      "version": "0.0.15"
     },
     "files_pdfviewer": {
       "meta": {
@@ -1154,9 +1154,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "1rvbicjgx1j7v10rhqkjn36jp0whfm91sbwi3wpjq4iw7njj1ms6",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.2.0/hsts-0.2.0.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0hkl6zgsmw9r885065yrjnd1fdx7vsppsg1jm2wha2f6vs99iyz4",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.3.0/hsts-0.3.0.tar.gz",
+      "version": "0.3.0"
     },
     "impersonate": {
       "meta": {
@@ -1399,9 +1399,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "03kp8xi5j7qwkdblmd84raplrf9vwf3qzhp52s2ykfax61k2fvyi",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.35/ocr.tar.gz",
-      "version": "4.2.35"
+      "sha256": "1632kp8m21idbsjxm6jkgnglxhrqvzvfj9q4li64rhpza4sz59d1",
+      "url": "https://github.com/janis91/ocr/releases/download/4.2.36/ocr.tar.gz",
+      "version": "4.2.36"
     },
     "ocsms": {
       "meta": {
@@ -1559,9 +1559,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "0b2xnaz80c7sl6dy37wm4qwv1i29wpkk528lvqahzciip979n5f2",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.2/cloud_piwik-0.5.2.tar.gz",
-      "version": "0.5.2"
+      "sha256": "1av10dqw0kn94r9dyifj49mgxccb88icyqyzg1799x6ig2wqrwk8",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.3/cloud_piwik-0.5.3.tar.gz",
+      "version": "0.5.3"
     },
     "polls": {
       "meta": {
@@ -1677,9 +1677,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "0kv3k093mjbbx4kza8695pcw3z05q35drnn6106rx39mmhq6prp2",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.1.6.1/quicknotes.tar.gz",
-      "version": "0.1.7"
+      "sha256": "1fdyb9bgvmwxy7c3cw1w82m3bv4yp3fn1g0xzr85pm071gcq9k0r",
+      "url": "https://services.delellis.com.ar/data/quicknotes/0.1.9/quicknotes.tar.gz",
+      "version": "0.1.9"
     },
     "quota_warning": {
       "meta": {
@@ -1922,9 +1922,24 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "0d26nbr52fp3z6shwgm4aw6w2flnhq56iwrvv5kizq96vmbv8k5c",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.6.1/sharerenamer-2.6.1.tar.gz",
-      "version": "2.6.1"
+      "sha256": "16w5cr31v1h8qnzrw513ci00s1bh002rw6rzys9csp6vack7pn04",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.0/sharerenamer-2.7.0.tar.gz",
+      "version": "2.7.0"
+    },
+    "sharingpath": {
+      "meta": {
+        "description": "Files sharing use file store path. Now you cau use nextcloud as your CDN origin.\n        What you need to do is just share your files, then click Open Sharing Path to access from files dropdown actions menu.",
+        "homepage": "https://github.com/rookie0/nextcloud-sharing-path",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sharing Path",
+        "summary": "Files sharing use files stored path."
+      },
+      "sha256": "1h328ncnx8xkknfig2z1a9hd8r630r5kr6nnh2fi4yj4flwb9zz3",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.0.1/sharingpath.tar.gz",
+      "version": "0.0.1"
     },
     "smb_test": {
       "meta": {
@@ -1958,7 +1973,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\nCustom providers is on your own. Officially not supported\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -1967,9 +1982,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0bjlpr742ls42xl5d0d0s2si0yij39x823njgjdi2jgv5hgzvh6k",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.5/release.tar.gz",
-      "version": "1.16.5"
+      "sha256": "0w7m305v95mz5zign7pyn87xs4hdjy049bpwkp4x0lsjvp92zq8c",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.7/release.tar.gz",
+      "version": "1.16.7"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2192,9 +2207,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1k70nxzrq4vbgvay1njxzb4zkag8gdn7z1c6bsc617zqj5ssk4cj",
+      "sha256": "0z8440gdslqmr44g15an2q4wv9jysr05kdfl6ixq1snw5lws4n0f",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.31"
+      "version": "0.0.32"
     },
     "twainwebscan": {
       "meta": {
