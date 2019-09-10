@@ -37,6 +37,11 @@ let
     lo_template_path = "${package.sdk}/lib/libreoffice";
     child_root_path = "/var/cache/libreoffice-online/roots";
     storage.wopi."host[0]" = config.nextcloud.domain;
+    server_name = let
+      maybePort = let
+        needsExplicit = !lib.elem config.nextcloud.port [ 80 443 ];
+      in lib.optionalString needsExplicit ":${toString config.nextcloud.port}";
+    in "${config.nextcloud.domain}${maybePort}";
     logging.level = cfg.logLevel;
     net.listen = "systemd";
     ssl.enable = false;
