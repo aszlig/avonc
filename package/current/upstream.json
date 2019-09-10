@@ -82,7 +82,7 @@
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, streams, ... with playlist support and SONOS integration.\n\n- Multiple views (albums with covers and more)\n- Library scan and reset with command-line and browser\n- Specifying media folder (with exclude functionality)\n- Smart &amp; Standard Playlists\n- Stream URLs\n- One Click Play in Files app\n- Favorites, Sidebar &amp; Search integration\n- Widget for Dashboard App (beta)\n- [SONOS player](https://github.com/rello/audioplayer/wiki/SONOS) integration\n- local playlists\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and limitations.",
+        "description": "A music player for FLAC, MP3, MP4, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Library scan and reset from command-line and browser\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n- Widget for Dashboard App via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -91,13 +91,13 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0017sqzhbfm2shsl4lz1kb7i487wlcc7jdqpgdvk0c8v2i48bqx1",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.7.2/audioplayer-2.7.2.tar.gz",
-      "version": "2.7.2"
+      "sha256": "01bp8l1795dznnmyqs62i8yi5b8v4hka4v8rswa4s38il2b7xgky",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.8.4/audioplayer-2.8.4.tar.gz",
+      "version": "2.8.4"
     },
     "audioplayer_editor": {
       "meta": {
-        "description": "ID3 editor add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player &gt; v2.8 required\n\n- Editor integrated into sidebar\n- Updating the ID3 in the library\n- Updating the audio files (coming soon)\n- Picture support (coming soon)",
+        "description": "ID3 editor add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Editor integrated into sidebar\n- Updating the ID3 in the library\n- Updating the audio files (coming soon)\n- Picture support (coming soon)",
         "homepage": "https://github.com/rello/audioplayer_editor",
         "isShipped": false,
         "licenses": [
@@ -106,13 +106,13 @@
         "name": "Audio Player - ID3 Editor (add-on)",
         "summary": "Change ID3 Metadata"
       },
-      "sha256": "0ynck9a1pld3af3yxrj6h881dnaxqjcapywh6v788ch815mjmyzp",
-      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.0.1/audioplayer_editor-0.0.1.tar.gz",
-      "version": "0.0.1"
+      "sha256": "0fvqa40ccgw86amjrrinra9rqag9f5dfmhw2qvg5lgymn7wzrapq",
+      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.1.0/audioplayer_editor-0.1.0.tar.gz",
+      "version": "0.1.0"
     },
     "audioplayer_sonos": {
       "meta": {
-        "description": "SONOS Playback add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player &gt; v2.8 required\n\n- Play your local library on your SONOS speaker",
+        "description": "SONOS Playback add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Play your local library on your SONOS speaker",
         "homepage": "https://github.com/rello/audioplayer_sonos",
         "isShipped": false,
         "licenses": [
@@ -121,9 +121,9 @@
         "name": "Audio Player - SONOS (add-on)",
         "summary": "SONOS Playback"
       },
-      "sha256": "0850y8pj4sqzfnnyag9fm15j9jdspm6lc9irvdfy2ss3xzh1iz55",
-      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.0.0/audioplayer_sonos-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1xq3rj7gigzq59npqrf0kkgbpf9v2yfwhx7xlf6z9rc5g1pi6ddf",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.0.1/audioplayer_sonos-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -141,7 +141,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "This app allows you to store and organize your favorite places on the web in one spot, while allowing you to sync them with your various devices and browsers.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients",
+        "description": "This app allows you to store and organize your favorite places on the web in one spot, while allowing you to sync them with your various devices and browsers.\n\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -150,9 +150,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1lz4kss6x17c8dz2pj5amqxh38jmbmmdvg7rpmigq3rqkbs6y8ia",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v1.1.1/bookmarks-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "0w89vn8l6kh5g5k42mlkmcssphy5dhziw8shrs8pfpz68va07gmn",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.0.3/bookmarks-2.0.3.tar.gz",
+      "version": "2.0.3"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -209,9 +209,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1b152p383y572mhp9lckfsxg55f3yw4xwlh895q0bh3p0m51vy5w",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v1.6.5/calendar.tar.gz",
-      "version": "1.6.5"
+      "sha256": "0z1jpic0bwdsgdrgxv3fcfycrg9h35xqz91632hpbcr69cg98bia",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v1.6.6/calendar.tar.gz",
+      "version": "1.6.6"
     },
     "camerarawpreviews": {
       "meta": {
@@ -323,9 +323,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0anzy20g2xcsxwi5pvwppyazz2ld7bh6sz58w3glh9albjr4h1n9",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.2.0/cookbook.tar.gz",
-      "version": "0.2.0"
+      "sha256": "17z7hkyhz62inx8xfrqk7xpqam4d5p4cm65pr99rfk9ihq5z37v7",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.3.3/cookbook.tar.gz",
+      "version": "0.3.3"
     },
     "cospend": {
       "meta": {
@@ -357,9 +357,23 @@
       "url": "https://github.com/nextcloud/dashboard/releases/download/v6.0.0/dashboard-6.0.0.tar.gz",
       "version": "6.0.0"
     },
+    "dashboardcharts": {
+      "meta": {
+        "description": "Flexible Dashboard Chart widgets for the Dashboard v6. Dashboard Highcharts.js Reports.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "DashboardCharts",
+        "summary": "Dashboard HighCharts Reports."
+      },
+      "sha256": "02qkj9q5zvfpa2sjirrd2fl5v93bhq68ya4svgbkrhklzj3sj7yn",
+      "url": "https://www.deskonline.cloud/dashboardcharts.0.0.1.tar.gz",
+      "version": "0.0.1"
+    },
     "data_request": {
       "meta": {
-        "description": "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request.",
+        "description": "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -373,7 +387,7 @@
     },
     "deck": {
       "meta": {
-        "description": "Deck is a kanban style organization tool aimed at personal planning and project organization for teams integrated with Nextcloud.\n\n\n-  Add your tasks to cards and put them in order\n-  Write down additional notes in markdown\n-  Assign labels for even better organization\n-  Share with your team, friends or family\n-  Attach files and embed them in your markdown description\n-  Discuss with your team using comments\n-  Keep track of changes in the activity stream\n-  Get your project organized",
+        "description": "Deck is a kanban style organization tool aimed at personal planning and project organization for teams integrated with Nextcloud.\r\n\r\n\r\n-  Add your tasks to cards and put them in order\r\n-  Write down additional notes in markdown\r\n-  Assign labels for even better organization\r\n-  Share with your team, friends or family\r\n-  Attach files and embed them in your markdown description\r\n-  Discuss with your team using comments\r\n-  Keep track of changes in the activity stream\r\n-  Get your project organized",
         "homepage": "https://github.com/nextcloud/deck",
         "isShipped": false,
         "licenses": [
@@ -872,9 +886,9 @@
         "name": "Snapshots",
         "summary": "Access filesystem snapshots trough Nextcloud"
       },
-      "sha256": "1gsybrk059694460169hszhxg1fqzzmj89xqpq3ww41yv2dgw75b",
-      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v0.2.0/files_snapshots.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0pn27l5hsis9akfn4fyvrcw99pzqwijkfcacnxbva64fwsfb215b",
+      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v0.3.0/files_snapshots.tar.gz",
+      "version": "0.3.0"
     },
     "files_texteditor": {
       "meta": {
@@ -1246,18 +1260,33 @@
     },
     "mail": {
       "meta": {
-        "description": "Easy to use email client which connects to your mail server via IMAP and SMTP.",
+        "description": "** A mail app for Nextcloud**\n\n- ** Integration with other Nextcloud apps!** Currently Contacts, Calendar &amp; Files  more to come.\n- ** Multiple mail accounts!** Personal and company account? No problem, and a nice unified inbox. Connect any IMAP account.\n- ** Send &amp; receive encrypted mails!** Using the great [Mailvelope](https://mailvelope.com) browser extension.\n- ** Were not reinventing the wheel!** Based on the great [Horde](http://horde.org) libraries.\n- ** Want to host your own mail server?** We dont have to reimplement this as you could set up [Mail-in-a-Box](https://mailinabox.email)!",
         "homepage": "https://github.com/nextcloud/mail#readme",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Mail",
-        "summary": "IMAP web client"
+        "summary": " A mail app for Nextcloud"
       },
       "sha256": "1ppxgp4p359q8z7qc92f8f6qk5q3ncjs9w11acyi103ryh4i71ig",
       "url": "https://github.com/nextcloud/mail/releases/download/v0.11.1/mail.tar.gz",
       "version": "0.11.1"
+    },
+    "maps": {
+      "meta": {
+        "description": "**The whole world fits inside your cloud!**\n\n- ** Beautiful map:** Using [OpenStreetMap](https://www.openstreetmap.org) and [Leaflet](https://leafletjs.com), you can choose between standard map, satellite, topographical, dark mode or even watercolor! \n- ** Favorites:** Save your favorite places, privately! Sync with [GNOME Maps](https://github.com/nextcloud/maps/issues/30) and mobile apps is planned.\n- ** Routing:** Possible using either [OSRM](http://project-osrm.org), [GraphHopper](https://www.graphhopper.com) or [Mapbox](https://www.mapbox.com).\n- ** Photos on the map:** No more boring slideshows, just show directly where you were!\n- ** Contacts on the map:** See where your friends live and plan your next visit.\n- ** Devices:** Lost your phone? Check the map!\n- ** Tracks:** Load GPS tracks or past trips. Recording with [PhoneTrack](https://f-droid.org/en/packages/net.eneiluj.nextcloud.phonetrack/) or [OwnTracks](https://owntracks.org) is planned.",
+        "homepage": "https://github.com/nextcloud/maps",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Maps",
+        "summary": " The whole world fits inside your cloud!"
+      },
+      "sha256": "11m9jf2491ry298v3dkvp2kwm237ix1plgpzas1yd2r0bpwlmynn",
+      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.2/maps-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "metadata": {
       "meta": {
@@ -1300,13 +1329,13 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1kd4kyn1j49vymmgrjrfaykk7g3kws0gnig1fnmslr146wxv8cf3",
-      "url": "https://github.com/paulijar/music/files/3419204/music_0.10.0_nc-signed.tar.gz",
-      "version": "0.10.0"
+      "sha256": "0rpcbj5hhilr1r16k5ng0yvcd5ld42hg706754qwa0n7s1m750mr",
+      "url": "https://github.com/paulijar/music/files/3587743/music_0.10.1_nc-signed.tar.gz",
+      "version": "0.10.1"
     },
     "news": {
       "meta": {
-        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
+        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\r\n\r\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\r\n\r\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
         "homepage": "https://github.com/nextcloud/news",
         "isShipped": false,
         "licenses": [
@@ -1342,9 +1371,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1p89y0dw2xkwnhcazj0gvrnwxhj6x4irhhhmdh5xlf8zrzwvh62k",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.0.1/notes.tar.gz",
-      "version": "3.0.1"
+      "sha256": "1066qv3jjaiqzn3x3gzbj3k33zqddc9gz4dkj5s00kfi58zlhyn4",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.0.2/notes.tar.gz",
+      "version": "3.0.2"
     },
     "notifications": {
       "meta": {
@@ -1390,7 +1419,7 @@
     },
     "ocr": {
       "meta": {
-        "description": "# Description\n\nNextcloud OCR (optical character recognition) processing for images and PDF with tesseract-js brings OCR capability to your Nextcloud.\nThe app uses tesseract-js in the browser in order to process images (png, jpeg, tiff) and PDFs and saves the output file to the source folder in nextcloud. That for example enables you to search in it.\n\n## Prerequisites, Requirements and Dependencies\nThe OCR app has some prerequisites:\n\n - [Nextcloud 15 or 16](https://nextcloud.com/)\n\n - Only supported on latest modern web browsers (Chrome, Edge, Firefox, Opera, Safari*)\n\n\n_* On Safari there is currently a problem with the [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), that requires an Administrator to set the 'script-src' to 'unsafe-eval' such that the app works properly. Because this is quite insecure the app itself does not set it and recommends to decide that on your own risk (please make sure, that you know what CSP is and what e.g. unsafe-eval causes)._\n\n## Installation\nInstall the app from the [Nextcloud AppStore](http://apps.nextcloud.com) or download the release package from github (**NOT** the sources) and place the content in **nextcloud/apps/ocr/**.\n\n## Disclaimer\nThe software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied.\n\n## Consideration\nThe version 3 and earlier versions are not supported/maintained anymore by the author. So for asynchronous background processing please fork the repository and use the \"not-maintained\" branch to work on improvements. The author wasn't able to support it because of too much effort.",
+        "description": "# Description\n\nNextcloud OCR (optical character recognition) processing for images and PDF with tesseract-js brings OCR capability to your Nextcloud.\nThe app uses tesseract-js in the browser in order to process images (png, jpeg, tiff) and PDFs and saves the output file to the source folder in nextcloud. That for example enables you to search in it.\n\n## Prerequisites, Requirements and Dependencies\nThe OCR app has some prerequisites:\n\n - [Nextcloud 15 and up](https://nextcloud.com/)\n\n - Only supported on latest modern web browsers (Chrome, Edge, Firefox, Opera, Safari*)\n\n\n_* On Safari there is currently a problem with the [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), that requires an Administrator to set the 'script-src' to 'unsafe-eval' such that the app works properly. Because this is quite insecure the app itself does not set it and recommends to decide that on your own risk (please make sure, that you know what CSP is and what e.g. unsafe-eval causes)._\n\n## Installation\nInstall the app from the [Nextcloud AppStore](http://apps.nextcloud.com) or download the release package from github (**NOT** the sources) and place the content in **nextcloud/apps/ocr/**.\n\n## Disclaimer\nThe software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR\nCONDITIONS OF ANY KIND, either express or implied.\n\n## Consideration\nThe version 3 and earlier versions are not supported/maintained anymore by the author. So for asynchronous background processing please fork the repository and use the \"not-maintained\" branch to work on improvements. The author wasn't able to support it because of too much effort.",
         "homepage": "https://github.com/janis91/ocr",
         "isShipped": false,
         "licenses": [
@@ -1399,9 +1428,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "1632kp8m21idbsjxm6jkgnglxhrqvzvfj9q4li64rhpza4sz59d1",
-      "url": "https://github.com/janis91/ocr/releases/download/4.2.36/ocr.tar.gz",
-      "version": "4.2.36"
+      "sha256": "1r243jpp536l623qp78rmcsx3p8xgzi12qwxawmf64c8krfb782b",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.1/ocr.tar.gz",
+      "version": "4.4.1"
     },
     "ocsms": {
       "meta": {
@@ -1529,9 +1558,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1b2s256civzj1pdvz4qsmjlhxdinimbv43d8yd6lm3innv2lqp7c",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8555/artifacts/raw/passwords.tar.gz",
-      "version": "2019.8.1"
+      "sha256": "10rahxafd0ik4c1l5v26m425cqvynmyaqsqdmang0175s1m1v1pi",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8725/artifacts/raw/passwords.tar.gz",
+      "version": "2019.9.0"
     },
     "phonetrack": {
       "meta": {
@@ -1796,9 +1825,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1fxs418hvcbf8jbnwpjvh7bf2kk5lx46l5xdblla0hsihad1w3y5",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.3.15/richdocuments.tar.gz",
-      "version": "3.3.15"
+      "sha256": "028zk6nbldnd391m1pa8svbjdz4cnm4h9nnh2p6vr08mgrm43s1k",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.1/richdocuments.tar.gz",
+      "version": "3.4.1"
     },
     "scanner": {
       "meta": {
@@ -1825,9 +1854,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "1ivivjvdxmgd847jr81kfj79zj5dpk2rlyzn6bhmc16zhxjakmff",
+      "sha256": "07s07qdk65x5mia0b4vlzh5g36nlswxwqxfsfs5gqk54r7jaz0pp",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/raw/master/build/artifacts/appstore/secsignid.tar.gz",
-      "version": "0.2.3"
+      "version": "0.2.4"
     },
     "sensorlogger": {
       "meta": {
@@ -1958,7 +1987,7 @@
     },
     "social": {
       "meta": {
-        "description": "** Disclaimer: this is an ALPHA version **\n\n** Nextcloud becomes part of the federated social networks!**\n\n** Find your friends:** No matter if they use Nextcloud,  Mastodon,  Friendica, and soon  Diaspora,  MediaGoblin and more  you can follow them!\n\n** Profile info:** No need to fill out more profiles  your info from Nextcloud will be used and extended.\n\n** Own your posts:** Everything you post stays on your Nextcloud!\n\n** Open standards:** We use the established ActivityPub standard!",
+        "description": "** Disclaimer: this is an ALPHA version **\r\n\r\n** Nextcloud becomes part of the federated social networks!**\r\n\r\n** Find your friends:** No matter if they use Nextcloud,  Mastodon,  Friendica, and soon  Diaspora,  MediaGoblin and more  you can follow them!\r\n\r\n** Profile info:** No need to fill out more profiles  your info from Nextcloud will be used and extended.\r\n\r\n** Own your posts:** Everything you post stays on your Nextcloud!\r\n\r\n** Open standards:** We use the established ActivityPub standard!",
         "homepage": "https://github.com/nextcloud/social",
         "isShipped": false,
         "licenses": [
@@ -2207,9 +2236,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "0z8440gdslqmr44g15an2q4wv9jysr05kdfl6ixq1snw5lws4n0f",
+      "sha256": "0183262iikvqml5xgmnpbaxa885amyi8y4sjhw9g2i7rxm88m502",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.32"
+      "version": "0.0.33"
     },
     "twainwebscan": {
       "meta": {
@@ -2373,7 +2402,7 @@
     },
     "user_cas": {
       "meta": {
-        "description": "This app provides in-depth features to authenticate and authorize users against a [jasig/apereo Central Authentication Server (CAS)](https://www.apereo.org/projects/cas). The app provides all necessary options needed to connect to your CAS instance and also advanced features to manage the groups accessible by your CAS infrastructure to implement an authorization feature. Additionally this version supports ECAS instances used by the European Commission. Commercial support for user_cas is available through ownCloud GmbH and myself personally.",
+        "description": "This app provides in-depth features to authenticate and authorize users against a [jasig/apereo Central Authentication Server (CAS)](https://www.apereo.org/projects/cas). The app provides all necessary options needed to connect to your CAS instance and also advanced features to manage the groups accessible by your CAS infrastructure to implement an authorization feature. This version supports ECAS instances used by the European Commission. Additionally this version supports ActiveDirectory (LDAP) import via commandline. Commercial support for user_cas is available through ownCloud GmbH and myself personally.",
         "homepage": "https://github.com/felixrupp/user_cas",
         "isShipped": false,
         "licenses": [
@@ -2382,24 +2411,24 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "0jkygd2vz187il59c89plcliv774vc0dn145mi8fv6id6fiiifhv",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.1/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.7.1"
+      "sha256": "04n2mp0w6axg6p1klqh4ifwizlyh5pgmpw9jmjfaikdhza8cfsx0",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.2/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.7.2"
     },
     "user_external": {
       "meta": {
-        "description": "Use external user authentication methods to give users acces to your Nextcloud instance:\n      - IMAP\n      - SMB\n      - FTP\n      - WebDAV\n      - HTTP BasicAuth\n      - SSH\n      - XMPP\n\n      Read the [documentation](https://github.com/nextcloud/user_external#readme) to learn how to configure it!",
+        "description": "Use external user authentication methods to give users acces to your Nextcloud instance:\n\n* IMAP\n* SMB\n* FTP\n* WebDAV\n* HTTP BasicAuth\n* SSH\n* XMPP\n\nRead the [documentation](https://github.com/nextcloud/user_external#readme) to learn how to configure it!",
         "homepage": "https://github.com/nextcloud/user_external/",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "External user support",
+        "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "1cvvja90512d4kqjvjmxplswprki8pyn92a0chlqw713wfbl5cxr",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.6.4/user_external-0.6.4.tar.gz",
-      "version": "0.6.4"
+      "sha256": "0f8kv04qwssf55f3i91yhiayiljl2apsl2mvlhvmanriknpg63m7",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.7.0/user_external-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "user_ispconfig": {
       "meta": {
@@ -2453,9 +2482,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1zjgqzqxsif4026fl7ny75sbv6x797b1vin0jqp0wyfrha2cls2c",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v2.3.1/user_saml-2.3.1.tar.gz",
-      "version": "2.3.1"
+      "sha256": "0kq69fxpac7948nvapyf5gpcd3wqilldbki3wanfp9y2liihj7v0",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v2.4.0/user_saml-2.4.0.tar.gz",
+      "version": "2.4.0"
     },
     "user_sql": {
       "meta": {
