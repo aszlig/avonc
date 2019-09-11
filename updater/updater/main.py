@@ -1,34 +1,22 @@
-#!/usr/bin/env nix-shell
-#!nix-shell -i python -p python3Packages.python --argstr # noqa
-#!nix-shell -p python3Packages.semantic-version --argstr # noqa
-#!nix-shell -p python3Packages.requests         --argstr # noqa
-#!nix-shell -p python3Packages.defusedxml       --argstr # noqa
-#!nix-shell -p python3Packages.pyopenssl        --argstr # noqa
-#!nix-shell -p python3Packages.tqdm             --argstr # noqa
-
-from collections import namedtuple
 from typing import Dict, List, Tuple, Set, Any, Optional
 from semantic_version import Spec, Version  # type: ignore
 from defusedxml import ElementTree as ET  # type: ignore
-from OpenSSL import crypto  # type: ignore
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from tqdm import tqdm  # type: ignore
 from xml.sax import saxutils
 
-import base64
 import copy
 import hashlib
 import json
 import os
-import re
 import requests
-import string
 import sys
 import subprocess
-import tempfile
 import textwrap
 import unicodedata
-import warnings
+
+from .progress import download_pbar
+from .app import NcApp, fetch_app
+from .nix import hash_zip_content
 
 UPDATE_SERVER_URL = 'https://updates.nextcloud.com/updater_server/'
 PHP_VERSION = '7.2.0'
@@ -39,35 +27,6 @@ INITIAL_UPSTREAM_STATE = {
 }
 
 DataDict = Dict[str, Any]
-
-
-def download_pbar(url, **kwargs) -> bytes:
-    verify = kwargs.pop('verify', True)
-
-    if verify:
-        response = requests.get(url, stream=True)
-    else:
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore", InsecureRequestWarning)
-            response = requests.get(url, stream=True, verify=False)
-
-    response.raise_for_status()
-
-    file_size = int(response.headers.get('content-length', 0))
-    kwargs['total'] = file_size
-    kwargs['unit'] = 'B'
-    kwargs['unit_scale'] = True
-    kwargs['ascii'] = True
-    buf: bytes = b''
-    pbar = tqdm(**kwargs)
-    chunksize: int = max(file_size // 100, 8192)
-    try:
-        for data in response.iter_content(chunk_size=chunksize):
-            buf += data
-            pbar.update(len(data))
-    finally:
-        pbar.close()
-    return buf
 
 
 def get_latest_release_for(nc_version: Version,
@@ -107,11 +66,6 @@ def filter_changelogs(changelogs: Dict[str, str],
         if old_semver < Version(version) <= new_semver:
             result[version] = changelog
     return result
-
-
-NcApp = namedtuple('NcApp', ['name', 'version', 'summary', 'description',
-                             'website', 'licenses', 'download', 'certificate',
-                             'signature', 'changelogs'])
 
 
 def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
@@ -177,17 +131,6 @@ def get_latest_ncver(curver: str, phpver: str) -> Tuple[str, Optional[str]]:
     return xml.find('version').text, xml.find('url').text
 
 
-def hash_zip_content(fname: str, data: bytes) -> str:
-    with tempfile.TemporaryDirectory() as tempdir:
-        destpath = os.path.join(tempdir, fname)
-        open(destpath, 'wb').write(data)
-        desturl = 'file://' + destpath
-        cmd = ['nix-prefetch-url', '--type', 'sha256', '--unpack', desturl]
-        result = subprocess.run(cmd, capture_output=True, check=True).stdout
-        ziphash = result.strip().decode()
-        return ziphash
-
-
 def hash_zip(url: str, sha256: str) -> str:
     fname: str = url.rsplit('/', 1)[-1]
     assert len(fname) > 0
@@ -227,51 +170,6 @@ def get_nextcloud_store_path(data: Dict[str, str]) -> str:
     cmd = ['nix-build', '-E', expr, '--argstr', 'attrs', json.dumps(data)]
     result = subprocess.run(cmd, capture_output=True, check=True).stdout
     return result.strip().decode()
-
-
-PEM_RE = re.compile('-----BEGIN .+?-----\r?\n.+?\r?\n-----END .+?-----\r?\n?',
-                    re.DOTALL)
-
-
-def verify_cert(ncpath: str, certdata: str) -> crypto.X509:
-    capath = os.path.join(ncpath, 'resources/codesigning/root.crt')
-    crlpath = os.path.join(ncpath, 'resources/codesigning/root.crl')
-
-    store = crypto.X509Store()
-    with open(capath, 'r') as cafile:
-        for match in PEM_RE.finditer(cafile.read()):
-            ca = crypto.load_certificate(crypto.FILETYPE_PEM, match.group(0))
-            store.add_cert(ca)
-
-    with open(crlpath, 'r') as crlfile:
-        crl = crypto.load_crl(crypto.FILETYPE_PEM, crlfile.read())
-    store.add_crl(crl)
-    store.set_flags(crypto.X509StoreFlags.CRL_CHECK)
-
-    cert = crypto.load_certificate(crypto.FILETYPE_PEM, certdata)
-    ctx = crypto.X509StoreContext(store, cert)
-    ctx.verify_certificate()
-    return cert
-
-
-def fetch_app(ncpath: str, appid: str, appdata: NcApp) -> Dict[str, str]:
-    cert = verify_cert(ncpath, appdata.certificate)
-    # Apps do have a signature, so even if the remote's cert check fails, we
-    # can still proceed.
-    data = download_pbar(appdata.download, verify=False,
-                         desc='Downloading app {!r}'.format(appdata.name))
-    sig = base64.b64decode(appdata.signature)
-    crypto.verify(cert, sig, data, 'sha512')
-    fname_base = appdata.download.rsplit('/', 1)[-1].rsplit('?', 1)[0]
-    valid_chars = string.ascii_letters + string.digits + "._-"
-    safename: str = ''.join(c for c in fname_base if c in valid_chars)
-    ziphash: str = hash_zip_content(safename.lstrip('.'), data)
-
-    return {
-        'version': str(appdata.version),
-        'url': appdata.download,
-        'sha256': ziphash
-    }
 
 
 def clean_meta(value: str) -> str:
@@ -339,7 +237,11 @@ def format_changelog(changelog: str, indent: str) -> str:
         return wrapped + "\n"
 
 
-def main(info_file: str) -> None:
+def main() -> None:
+    basedir: str = os.getcwd()
+    packagedir: str = os.path.join(basedir, 'package', 'current')
+    info_file: str = os.path.join(packagedir, 'upstream.json')
+
     current_state: DataDict
     try:
         with open(info_file, 'r') as current:
@@ -436,10 +338,3 @@ def main(info_file: str) -> None:
     with open(info_file, 'w') as newstate:
         json.dump(current_state, newstate, indent=2, sort_keys=True)
         newstate.write('\n')
-
-
-if __name__ == '__main__':
-    basedir: str = os.path.dirname(os.path.realpath(__file__))
-    packagedir: str = os.path.join(basedir, 'package', 'current')
-    info_file: str = os.path.join(packagedir, 'upstream.json')
-    main(info_file)
