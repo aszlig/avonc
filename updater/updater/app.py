@@ -4,19 +4,14 @@ import string
 import os
 
 from typing import Dict
-from collections import namedtuple
 from OpenSSL import crypto  # type: ignore
 
 from .progress import download_pbar
 from .nix import hash_zip_content
+from .types import App
 
 PEM_RE = re.compile('-----BEGIN .+?-----\r?\n.+?\r?\n-----END .+?-----\r?\n?',
                     re.DOTALL)
-
-
-NcApp = namedtuple('NcApp', ['name', 'version', 'summary', 'description',
-                             'website', 'licenses', 'download', 'certificate',
-                             'signature', 'changelogs'])
 
 
 def verify_cert(ncpath: str, certdata: str) -> crypto.X509:
@@ -40,21 +35,24 @@ def verify_cert(ncpath: str, certdata: str) -> crypto.X509:
     return cert
 
 
-def fetch_app(ncpath: str, appid: str, appdata: NcApp) -> Dict[str, str]:
+def fetch_app(ncpath: str, appid: str, appdata: App) -> Dict[str, str]:
+    if appdata.certificate is None or appdata.signature is None:
+        raise ValueError("Signature information missing for {repr(appdata)}")
+
     cert = verify_cert(ncpath, appdata.certificate)
     # Apps do have a signature, so even if the remote's cert check fails, we
     # can still proceed.
-    data = download_pbar(appdata.download, verify=False,
+    data = download_pbar(appdata.download_url, verify=False,
                          desc='Downloading app {!r}'.format(appdata.name))
     sig = base64.b64decode(appdata.signature)
     crypto.verify(cert, sig, data, 'sha512')
-    fname_base = appdata.download.rsplit('/', 1)[-1].rsplit('?', 1)[0]
+    fname_base = appdata.download_url.rsplit('/', 1)[-1].rsplit('?', 1)[0]
     valid_chars = string.ascii_letters + string.digits + "._-"
     safename: str = ''.join(c for c in fname_base if c in valid_chars)
     ziphash: str = hash_zip_content(safename.lstrip('.'), data)
 
     return {
         'version': str(appdata.version),
-        'url': appdata.download,
+        'url': appdata.download_url,
         'sha256': ziphash
     }

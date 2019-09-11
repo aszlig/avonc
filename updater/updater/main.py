@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple, Set, Any
+from typing import Dict, List, Set, Any
 from defusedxml import ElementTree as ET  # type: ignore
 from semantic_version import Version  # type: ignore
 from tqdm import tqdm  # type: ignore
@@ -14,9 +14,10 @@ import textwrap
 import unicodedata
 
 from .progress import download_pbar
-from .app import NcApp, fetch_app
+from .app import fetch_app
 from .nix import hash_zip_content
 from .api import get_latest_nextcloud_version, get_available_apps
+from .types import App
 
 PHP_VERSION = '7.2.0'
 
@@ -47,16 +48,12 @@ def hash_zip(url: str, sha256: str) -> str:
     return hash_zip_content(fname, data)
 
 
-def download_nextcloud(version: str, url: str) -> Tuple[str, str]:
-    if url.lower().endswith('.zip'):
-        url = url[:-4] + '.tar.bz2'
-
+def download_nextcloud(version: str, url: str) -> str:
     sha_response = download_pbar(url + '.sha256',
                                  desc='Fetching checksum for ' + url)
     sha256: str = sha_response.split(maxsplit=1)[0].decode()
 
-    ziphash: str = hash_zip(url, sha256)
-    return (ziphash, url)
+    return hash_zip(url, sha256)
 
 
 def is_newer_version(current, latest):
@@ -83,11 +80,11 @@ def clean_meta(value: str) -> str:
     return saxutils.escape(cleaned.decode())
 
 
-def get_appmeta(appdata: NcApp) -> Dict[str, Any]:
-    appmeta = {}
+def get_appmeta(appdata: App) -> Dict[str, Any]:
+    appmeta: Dict[str, Any] = {}
 
-    if len(appdata.website) > 0:
-        appmeta['homepage'] = appdata.website
+    if appdata.homepage is not None:
+        appmeta['homepage'] = appdata.homepage
 
     appmeta['name'] = clean_meta(appdata.name)
     appmeta['licenses'] = appdata.licenses
@@ -97,7 +94,7 @@ def get_appmeta(appdata: NcApp) -> Dict[str, Any]:
     return appmeta
 
 
-def update_appstate(state: Dict[str, Any], appid: str, appdata: NcApp) -> None:
+def update_appstate(state: Dict[str, Any], appid: str, appdata: App) -> None:
     if appid not in state:
         return
 
@@ -156,14 +153,15 @@ def main() -> None:
         current_state = INITIAL_UPSTREAM_STATE
 
     current_ver = current_state['nextcloud']['version']
-    latest_ver, dl_url = get_latest_nextcloud_version(current_ver, PHP_VERSION)
+    latest = get_latest_nextcloud_version(current_ver, PHP_VERSION)
 
-    if dl_url is not None and is_newer_version(current_ver, latest_ver):
-        msg = 'New version {!r} of Nextcloud found.'.format(latest_ver)
+    if latest is not None and latest.download_url is not None \
+       and is_newer_version(current_ver, latest.version):
+        msg = 'New version {!r} of Nextcloud found.'.format(latest.version)
         tqdm.write(msg, file=sys.stderr)
-        ziphash, url = download_nextcloud(latest_ver, dl_url)
-        current_state['nextcloud']['version'] = latest_ver
-        current_state['nextcloud']['url'] = url
+        ziphash = download_nextcloud(latest.version, latest.download_url)
+        current_state['nextcloud']['version'] = latest.version
+        current_state['nextcloud']['url'] = latest.download_url
         current_state['nextcloud']['sha256'] = ziphash
 
     ncpath: str = get_nextcloud_store_path(current_state['nextcloud'])

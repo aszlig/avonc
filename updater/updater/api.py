@@ -1,18 +1,18 @@
 import json
 import requests
 
-from typing import List, Dict, Tuple, Optional, Any
+from typing import List, Dict, Optional, Any
 from defusedxml import ElementTree as ET  # type: ignore
 from semantic_version import Spec, Version  # type: ignore
 
-from .app import NcApp
 from .progress import download_pbar
+from .types import Nextcloud, AppId, App
 
 UPDATE_SERVER_URL = 'https://updates.nextcloud.com/updater_server/'
 
 
 def get_latest_nextcloud_version(curver: str,
-                                 phpver: str) -> Tuple[str, Optional[str]]:
+                                 phpver: str) -> Optional[Nextcloud]:
     nc_version: List[str] = curver.split('.') + [''] * 4
     php_version = phpver.split('.') + [''] * 3
 
@@ -38,9 +38,13 @@ def get_latest_nextcloud_version(curver: str,
     try:
         xml = ET.fromstring(response.text)
     except ET.ParseError:
-        return curver, None
+        return None
 
-    return xml.find('version').text, xml.find('url').text
+    url = xml.find('url').text
+    if url.lower().endswith('.zip'):
+        url = url[:-4] + '.tar.bz2'
+
+    return Nextcloud(xml.find('version').text, url)
 
 
 def get_latest_release_for(
@@ -73,7 +77,7 @@ def get_changelogs(releases: List[Dict[str, Any]]) -> Dict[str, str]:
     return result
 
 
-def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
+def get_available_apps(nc_version: str) -> Dict[AppId, App]:
     nc_semver: str = '.'.join(nc_version.split('.')[:3])
     url = "https://apps.nextcloud.com/api/v1/platform/{}/apps.json"
     data = download_pbar(url.format(nc_semver),
@@ -85,17 +89,20 @@ def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
         name: str = translations['name']
         summary: str = translations['summary']
         description: str = translations['description']
+        homepage: Optional[str] = None
+        if len(appdata['website']) > 0:
+            homepage = appdata['website']
         apprel = get_latest_release_for(Version(nc_semver),
                                         appdata['releases'])
         changelogs: Dict[str, str] = get_changelogs(appdata['releases'])
         if apprel is None:
             continue
-        apps[appdata['id']] = NcApp(
+        apps[AppId(appdata['id'])] = App(
             name,
             apprel['version'],
             summary,
             description,
-            appdata['website'],
+            homepage,
             apprel['licenses'],
             apprel['download'],
             appdata['certificate'],
