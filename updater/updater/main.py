@@ -1,6 +1,6 @@
-from typing import Dict, List, Tuple, Set, Any, Optional
-from semantic_version import Spec, Version  # type: ignore
+from typing import Dict, List, Tuple, Set, Any
 from defusedxml import ElementTree as ET  # type: ignore
+from semantic_version import Version  # type: ignore
 from tqdm import tqdm  # type: ignore
 from xml.sax import saxutils
 
@@ -8,7 +8,6 @@ import copy
 import hashlib
 import json
 import os
-import requests
 import sys
 import subprocess
 import textwrap
@@ -17,44 +16,14 @@ import unicodedata
 from .progress import download_pbar
 from .app import NcApp, fetch_app
 from .nix import hash_zip_content
+from .api import get_latest_nextcloud_version, get_available_apps
 
-UPDATE_SERVER_URL = 'https://updates.nextcloud.com/updater_server/'
 PHP_VERSION = '7.2.0'
 
 INITIAL_UPSTREAM_STATE = {
     'nextcloud': {'version': '15'},
     'applications': {}
 }
-
-DataDict = Dict[str, Any]
-
-
-def get_latest_release_for(nc_version: Version,
-                           releases: List[DataDict]) -> Optional[DataDict]:
-    latest = None
-
-    for release in releases:
-        if '-' in release['version'] or release['isNightly']:
-            continue
-
-        spec = Spec(*release['rawPlatformVersionSpec'].split())
-        if not spec.match(nc_version):
-            continue
-
-        release['version'] = Version(release['version'])
-
-        if latest is None or latest['version'] < release['version']:
-            latest = release
-
-    return latest
-
-
-def get_changelogs(releases: List[DataDict]) -> Dict[str, str]:
-    result: Dict[str, str] = {}
-    for release in releases:
-        trans = release.get('translations', {}).get('en', {})
-        result[str(release['version'])] = trans.get('changelog', '')
-    return result
 
 
 def filter_changelogs(changelogs: Dict[str, str],
@@ -66,69 +35,6 @@ def filter_changelogs(changelogs: Dict[str, str],
         if old_semver < Version(version) <= new_semver:
             result[version] = changelog
     return result
-
-
-def get_available_apps(nc_version: str) -> Dict[str, NcApp]:
-    nc_semver: str = '.'.join(nc_version.split('.')[:3])
-    url = "https://apps.nextcloud.com/api/v1/platform/{}/apps.json"
-    data = download_pbar(url.format(nc_semver),
-                         desc='Downloading Nextcloud app index')
-
-    apps = {}
-    for appdata in json.loads(data):
-        translations = appdata['translations'].get('en', {})
-        name: str = translations['name']
-        summary: str = translations['summary']
-        description: str = translations['description']
-        apprel = get_latest_release_for(Version(nc_semver),
-                                        appdata['releases'])
-        changelogs: Dict[str, str] = get_changelogs(appdata['releases'])
-        if apprel is None:
-            continue
-        apps[appdata['id']] = NcApp(
-            name,
-            apprel['version'],
-            summary,
-            description,
-            appdata['website'],
-            apprel['licenses'],
-            apprel['download'],
-            appdata['certificate'],
-            apprel['signature'],
-            changelogs,
-        )
-    return apps
-
-
-def get_latest_ncver(curver: str, phpver: str) -> Tuple[str, Optional[str]]:
-    nc_version: List[str] = curver.split('.') + [''] * 4
-    php_version = phpver.split('.') + [''] * 3
-
-    fields: List[str] = [
-        nc_version[0],   # major
-        nc_version[1],   # minor
-        nc_version[2],   # maintenance
-        nc_version[3],   # revision
-        '',              # installation time
-        '',              # last check
-        'stable',        # channel
-        '',              # edition
-        '',              # build
-        php_version[0],  # PHP major
-        php_version[1],  # PHP minor
-        php_version[2],  # PHP release
-    ]
-
-    response = requests.get(UPDATE_SERVER_URL, params={
-        'version': 'x'.join(fields)
-    })
-    response.raise_for_status()
-    try:
-        xml = ET.fromstring(response.text)
-    except ET.ParseError:
-        return curver, None
-
-    return xml.find('version').text, xml.find('url').text
 
 
 def hash_zip(url: str, sha256: str) -> str:
@@ -242,7 +148,7 @@ def main() -> None:
     packagedir: str = os.path.join(basedir, 'package', 'current')
     info_file: str = os.path.join(packagedir, 'upstream.json')
 
-    current_state: DataDict
+    current_state: Dict[str, Any]
     try:
         with open(info_file, 'r') as current:
             current_state = json.load(current)
@@ -250,7 +156,7 @@ def main() -> None:
         current_state = INITIAL_UPSTREAM_STATE
 
     current_ver = current_state['nextcloud']['version']
-    latest_ver, dl_url = get_latest_ncver(current_ver, PHP_VERSION)
+    latest_ver, dl_url = get_latest_nextcloud_version(current_ver, PHP_VERSION)
 
     if dl_url is not None and is_newer_version(current_ver, latest_ver):
         msg = 'New version {!r} of Nextcloud found.'.format(latest_ver)
