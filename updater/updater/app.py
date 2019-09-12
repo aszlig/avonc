@@ -4,7 +4,7 @@ import string
 import os
 
 from typing import Dict
-from OpenSSL import crypto  # type: ignore
+from OpenSSL import crypto
 
 from .progress import download_pbar
 from .nix import hash_zip_content

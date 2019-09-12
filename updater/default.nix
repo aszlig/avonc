@@ -8,6 +8,7 @@ pkgs.python3Packages.buildPythonApplication {
       relPath = lib.removePrefix (toString ./. + "/") path;
       toplevelIncludes = [
         { type = "directory"; name = "updater"; }
+        { type = "directory"; name = "stubs"; }
         { type = "regular"; name = "setup.py"; }
         { type = "regular"; name = "setup.cfg"; }
       ];

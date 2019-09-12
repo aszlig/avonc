@@ -2,8 +2,8 @@ import json
 import requests
 
 from typing import List, Dict, Optional, Any
-from defusedxml import ElementTree as ET  # type: ignore
-from semantic_version import Spec, Version  # type: ignore
+from defusedxml import ElementTree as ET
+from semantic_version import Spec, Version
 
 from .progress import download_pbar
 from .types import Nextcloud, AppId, App
@@ -40,11 +40,18 @@ def get_latest_nextcloud_version(curver: str,
     except ET.ParseError:
         return None
 
-    url = xml.find('url').text
+    version = xml.findtext('version')
+    if version is None:
+        return None
+
+    url = xml.findtext('url')
+    if url is None:
+        return None
+
     if url.lower().endswith('.zip'):
         url = url[:-4] + '.tar.bz2'
 
-    return Nextcloud(xml.find('version').text, url)
+    return Nextcloud(version, url)
 
 
 def get_latest_release_for(

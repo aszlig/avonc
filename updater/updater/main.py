@@ -1,7 +1,7 @@
 from typing import Dict, List, Set, Any
-from defusedxml import ElementTree as ET  # type: ignore
-from semantic_version import Version  # type: ignore
-from tqdm import tqdm  # type: ignore
+from defusedxml import ElementTree as ET
+from semantic_version import Version
+from tqdm import tqdm
 from xml.sax import saxutils
 
 import copy
@@ -17,7 +17,7 @@ from .progress import download_pbar
 from .app import fetch_app
 from .nix import hash_zip_content
 from .api import get_latest_nextcloud_version, get_available_apps
-from .types import App
+from .types import AppId, App
 
 PHP_VERSION = '7.2.0'
 
@@ -118,14 +118,14 @@ def get_shipped_apps(ncpath: str):
         info_path: str = os.path.join(app_path, 'appinfo/info.xml')
         xml = ET.parse(info_path)
 
-        name: str = clean_meta(xml.find('name').text)
-        summary = xml.find('summary')
+        name: str = clean_meta(xml.findtext('name', appid))
+        summary = xml.findtext('summary', name)
 
         result[appid] = {'meta': {
             'name': name,
-            'licenses': [xml.find('licence').text],
-            'summary': name if summary is None else clean_meta(summary.text),
-            'description': clean_meta(xml.find('description').text),
+            'licenses': [xml.findtext('licence', 'unknown')],
+            'summary': clean_meta(summary),
+            'description': clean_meta(xml.findtext('description', '')),
             'defaultEnable': xml.find('default_enable') is not None,
             'isShipped': True,
         }}
@@ -166,9 +166,9 @@ def main() -> None:
 
     ncpath: str = get_nextcloud_store_path(current_state['nextcloud'])
 
-    updated: Set[str] = set()
-    added: Set[str] = set()
-    removed: Set[str] = set()
+    updated: Set[AppId] = set()
+    added: Set[AppId] = set()
+    removed: Set[AppId] = set()
 
     old_appstate: Dict[str, Any] = copy.deepcopy(current_state['applications'])
 
