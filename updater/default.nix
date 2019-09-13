@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {}, lib ? pkgs.lib }:
+{ pkgs ? import <nixpkgs> {}, lib ? pkgs.lib, php ? pkgs.php }:
 
 pkgs.python3Packages.buildPythonApplication {
   name = "avonc-updater";
@@ -24,6 +24,7 @@ pkgs.python3Packages.buildPythonApplication {
     pkgs.python3Packages.requests
     pkgs.python3Packages.semantic-version
     pkgs.python3Packages.tqdm
+    pkgs.php
   ];
 
   checkInputs = [

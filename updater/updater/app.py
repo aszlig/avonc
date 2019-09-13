@@ -3,12 +3,11 @@ import re
 import string
 import os
 
-from typing import Dict
 from OpenSSL import crypto
 
 from .progress import download_pbar
 from .nix import hash_zip_content
-from .types import App
+from .types import App, InternalApp, SignatureInfo, Sha256
 
 PEM_RE = re.compile('-----BEGIN .+?-----\r?\n.+?\r?\n-----END .+?-----\r?\n?',
                     re.DOTALL)
@@ -35,24 +34,20 @@ def verify_cert(ncpath: str, certdata: str) -> crypto.X509:
     return cert
 
 
-def fetch_app(ncpath: str, appid: str, appdata: App) -> Dict[str, str]:
-    if appdata.certificate is None or appdata.signature is None:
+def fetch_app_hash(ncpath: str, app: App) -> Sha256:
+    if isinstance(app, InternalApp):
+        raise ValueError("Can't download internal app {repr(app)}.")
+    if not isinstance(app.hash_or_sig, SignatureInfo):
         raise ValueError("Signature information missing for {repr(appdata)}")
 
-    cert = verify_cert(ncpath, appdata.certificate)
+    cert = verify_cert(ncpath, app.hash_or_sig.certificate)
     # Apps do have a signature, so even if the remote's cert check fails, we
     # can still proceed.
-    data = download_pbar(appdata.download_url, verify=False,
-                         desc='Downloading app {!r}'.format(appdata.name))
-    sig = base64.b64decode(appdata.signature)
+    data = download_pbar(app.download_url, verify=False,
+                         desc='Downloading app {!r}'.format(app.name))
+    sig = base64.b64decode(app.hash_or_sig.signature)
     crypto.verify(cert, sig, data, 'sha512')
-    fname_base = appdata.download_url.rsplit('/', 1)[-1].rsplit('?', 1)[0]
+    fname_base = app.download_url.rsplit('/', 1)[-1].rsplit('?', 1)[0]
     valid_chars = string.ascii_letters + string.digits + "._-"
     safename: str = ''.join(c for c in fname_base if c in valid_chars)
-    ziphash: str = hash_zip_content(safename.lstrip('.'), data)
-
-    return {
-        'version': str(appdata.version),
-        'url': appdata.download_url,
-        'sha256': ziphash
-    }
+    return Sha256(hash_zip_content(safename.lstrip('.'), data))

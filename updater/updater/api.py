@@ -1,3 +1,4 @@
+import hashlib
 import json
 import requests
 
@@ -6,29 +7,46 @@ from defusedxml import ElementTree as ET
 from semantic_version import Spec, Version
 
 from .progress import download_pbar
-from .types import Nextcloud, AppId, App
+from .types import Nextcloud, NextcloudVersion, AppId, App, ExternalApp, \
+                   ReleaseInfo, SignatureInfo
+from .misc import get_php_version
+from .nix import get_internal_apps, hash_zip_content
 
 UPDATE_SERVER_URL = 'https://updates.nextcloud.com/updater_server/'
 
+__all__ = ['upgrade']
 
-def get_latest_nextcloud_version(curver: str,
-                                 phpver: str) -> Optional[Nextcloud]:
-    nc_version: List[str] = curver.split('.') + [''] * 4
-    php_version = phpver.split('.') + [''] * 3
+
+def hash_zip(url: str, sha256: str) -> str:
+    fname: str = url.rsplit('/', 1)[-1]
+    assert len(fname) > 0
+
+    data = download_pbar(url, desc='Downloading ' + url)
+
+    assert hashlib.sha256(data).hexdigest() == sha256
+    return hash_zip_content(fname, data)
+
+
+def _get_latest_nextcloud(curver: NextcloudVersion) -> Optional[Nextcloud]:
+    php_version: Version = get_php_version()
 
     fields: List[str] = [
-        nc_version[0],   # major
-        nc_version[1],   # minor
-        nc_version[2],   # maintenance
-        nc_version[3],   # revision
-        '',              # installation time
-        '',              # last check
-        'stable',        # channel
-        '',              # edition
-        '',              # build
-        php_version[0],  # PHP major
-        php_version[1],  # PHP minor
-        php_version[2],  # PHP release
+        # str(curver.major),        # major
+        # XXX: Using hardcoded value here to make sure we stay at version 15
+        #      until we have fixed the update proceduce to stay within version
+        #      boundaries.
+        '14',
+        str(curver.minor),        # minor
+        str(curver.maintenance),  # maintenance
+        str(curver.revision),     # revision
+        '',                       # installation time
+        '',                       # last check
+        'stable',                 # channel
+        '',                       # edition
+        '',                       # build
+        str(php_version.major),   # PHP major
+        str(php_version.minor),   # PHP minor
+        str(php_version.patch),   # PHP release
     ]
 
     response = requests.get(UPDATE_SERVER_URL, params={
@@ -44,6 +62,10 @@ def get_latest_nextcloud_version(curver: str,
     if version is None:
         return None
 
+    newver = NextcloudVersion.parse(version)
+    if newver <= curver:
+        return None
+
     url = xml.findtext('url')
     if url is None:
         return None
@@ -51,14 +73,19 @@ def get_latest_nextcloud_version(curver: str,
     if url.lower().endswith('.zip'):
         url = url[:-4] + '.tar.bz2'
 
-    return Nextcloud(version, url)
+    sha_response = download_pbar(url + '.sha256',
+                                 desc='Fetching checksum for ' + url)
+    sha256: str = sha_response.split(maxsplit=1)[0].decode()
+    ziphash: str = hash_zip(url, sha256)
+
+    return Nextcloud(newver, url, ziphash)
 
 
-def get_latest_release_for(
+def _get_latest_release_for(
     nc_version: Version,
     releases: List[Dict[str, Any]]
 ) -> Optional[Dict[str, Any]]:
-    latest = None
+    latest: Optional[Dict[str, Any]] = None
 
     for release in releases:
         if '-' in release['version'] or release['isNightly']:
@@ -68,29 +95,27 @@ def get_latest_release_for(
         if not spec.match(nc_version):
             continue
 
-        release['version'] = Version(release['version'])
-
-        if latest is None or latest['version'] < release['version']:
+        if latest is None or \
+           Version(latest['version']) < Version(release['version']):
             latest = release
 
     return latest
 
 
-def get_changelogs(releases: List[Dict[str, Any]]) -> Dict[str, str]:
-    result: Dict[str, str] = {}
+def _get_changelogs(releases: List[Dict[str, Any]]) -> Dict[Version, str]:
+    result: Dict[Version, str] = {}
     for release in releases:
         trans = release.get('translations', {}).get('en', {})
-        result[str(release['version'])] = trans.get('changelog', '')
+        result[Version(str(release['version']))] = trans.get('changelog', '')
     return result
 
 
-def get_available_apps(nc_version: str) -> Dict[AppId, App]:
-    nc_semver: str = '.'.join(nc_version.split('.')[:3])
+def _get_external_apps(nextcloud: Nextcloud) -> Dict[AppId, App]:
     url = "https://apps.nextcloud.com/api/v1/platform/{}/apps.json"
-    data = download_pbar(url.format(nc_semver),
+    data = download_pbar(url.format(str(nextcloud.version.semver)),
                          desc='Downloading Nextcloud app index')
 
-    apps = {}
+    apps: Dict[AppId, App] = {}
     for appdata in json.loads(data):
         translations = appdata['translations'].get('en', {})
         name: str = translations['name']
@@ -99,21 +124,33 @@ def get_available_apps(nc_version: str) -> Dict[AppId, App]:
         homepage: Optional[str] = None
         if len(appdata['website']) > 0:
             homepage = appdata['website']
-        apprel = get_latest_release_for(Version(nc_semver),
-                                        appdata['releases'])
-        changelogs: Dict[str, str] = get_changelogs(appdata['releases'])
+        apprel = _get_latest_release_for(nextcloud.version.semver,
+                                         appdata['releases'])
+        changelogs: Dict[Version, str] = _get_changelogs(appdata['releases'])
         if apprel is None:
             continue
-        apps[AppId(appdata['id'])] = App(
+        apps[AppId(appdata['id'])] = ExternalApp(
             name,
-            apprel['version'],
+            Version(apprel['version']),
             summary,
             description,
             homepage,
             apprel['licenses'],
             apprel['download'],
-            appdata['certificate'],
-            apprel['signature'],
-            changelogs,
+            SignatureInfo(
+                appdata['certificate'],
+                apprel['signature'],
+            ),
+            changelogs
         )
     return apps
+
+
+def upgrade(spec: ReleaseInfo) -> ReleaseInfo:
+    old_nc_version = spec.nextcloud.version
+    nextcloud = _get_latest_nextcloud(old_nc_version)
+    if nextcloud is None:
+        nextcloud = spec.nextcloud
+    apps = _get_external_apps(nextcloud)
+    apps.update(get_internal_apps(nextcloud))
+    return ReleaseInfo(nextcloud, apps)

@@ -2,6 +2,14 @@ from typing import Optional
 
 
 class Version:
+    major: int
+    minor: int
+    patch: int
+    prerelease: int
+    build: int
+
+    partial: bool
+
     def __init__(self,
                  version_string: Optional[str] = ...,
                  major: Optional[int] = ...,
