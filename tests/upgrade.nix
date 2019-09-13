@@ -48,6 +48,11 @@ import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
           # Needs "user_backend_sql_raw" in config
           "user_backend_sql_raw"
 
+          # These apps have non-deterministic download URLs
+          "quicknotes"
+          "twainwebscan"
+          "twofactor_yubikey"
+
           # Will be enabled later
           "spread"
           "ojsxc"
