@@ -323,9 +323,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "17z7hkyhz62inx8xfrqk7xpqam4d5p4cm65pr99rfk9ihq5z37v7",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.3.3/cookbook.tar.gz",
-      "version": "0.3.3"
+      "sha256": "1cxfs8q319y4hwfy1hv8vxjf9lzn93zrirm0ink6prdy1drdkhc4",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.4.2/cookbook.tar.gz",
+      "version": "0.4.2"
     },
     "cospend": {
       "meta": {
@@ -683,9 +683,9 @@
         "name": "External Storage: OneDrive",
         "summary": "Integrate OneDrive as an external storage"
       },
-      "sha256": "0zq1ba5ws4rhvbhrx9fl53mzivqcl27g1fr1z7b36xi08647hj2x",
-      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.4/files_external_onedrive.tar.gz",
-      "version": "1.0.4"
+      "sha256": "1f7qpsvmmrj4skd8vdg17j84fy82v8js8rvsq2j9l01vix2prsdk",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.5/files_external_onedrive.tar.gz",
+      "version": "1.0.5"
     },
     "files_frommail": {
       "meta": {
@@ -1428,9 +1428,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "1r243jpp536l623qp78rmcsx3p8xgzi12qwxawmf64c8krfb782b",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.1/ocr.tar.gz",
-      "version": "4.4.1"
+      "sha256": "0ccr857fmjnn98g6x5azg046chizbb5apr63d9gcl9m1wfvnrm81",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.3/ocr.tar.gz",
+      "version": "4.4.3"
     },
     "ocsms": {
       "meta": {
@@ -1473,9 +1473,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "061d43r3y3hqy3r0gxzibk1jjgjpsra87qgka0rw35bz6va4hjp7",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v2.4.0/onlyoffice.tar.gz",
-      "version": "2.4.0"
+      "sha256": "0p14nmx1kncd2720mz3n5wn1j5x2ksdg4hkj42nhz9pabqsmi4c4",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v3.0.0/onlyoffice.tar.gz",
+      "version": "3.0.0"
     },
     "orcid": {
       "meta": {
@@ -2002,7 +2002,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can create app by followed urls. You can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://console.developers.google.com)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://developers.facebook.com/)\n* [Twitter](https://apps.twitter.com/)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -2011,9 +2011,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0w7m305v95mz5zign7pyn87xs4hdjy049bpwkp4x0lsjvp92zq8c",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v1.16.7/release.tar.gz",
-      "version": "1.16.7"
+      "sha256": "16331g05jsb0xy49k60jq26jaxqqcksd4hz2273rhps55m55m10f",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.0/release.tar.gz",
+      "version": "2.1.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2058,21 +2058,6 @@
       },
       "sha256": "18mx92d2np0mm059mfr7yf7yi0dbwaczgb25rmkdw04rb53hmwv8",
       "url": "https://github.com/nextcloud/socialsharing/releases/download/facebook-1.0.4/socialsharing_facebook.tar.gz",
-      "version": "1.0.4"
-    },
-    "socialsharing_googleplus": {
-      "meta": {
-        "description": "Enable direct sharing of files via Google+, using shared links.",
-        "homepage": "https://github.com/nextcloud/socialsharing",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Social sharing via Google+",
-        "summary": "Enable direct sharing of files via Google+, using shared links."
-      },
-      "sha256": "1kqwg6c3dpsxk772mnyvi6531i3w1mi9gfc3zzmqv2hajv8y56nl",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/googleplus-1.0.4/socialsharing_googleplus.tar.gz",
       "version": "1.0.4"
     },
     "socialsharing_twitter": {
@@ -2167,9 +2152,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "00jnnx6f648jyz9vh3rnsv5m7vzbddbni3v3j98cd2fpy32pq1mi",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.11.1/tasks.tar.gz",
-      "version": "0.11.1"
+      "sha256": "196yjlfkwcx8sx88w144ah7imrbxicpbd8jrsd7lmdfhhb9964yb",
+      "url": "https://github.com/nextcloud/tasks/releases/download/0.11.2/tasks.tar.gz",
+      "version": "0.11.2"
     },
     "telephoneprovider": {
       "meta": {
