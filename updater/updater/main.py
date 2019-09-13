@@ -111,6 +111,10 @@ def main() -> None:
     new = api.upgrade(old)
     diff = ReleaseDiff(old, new)
 
+    has_differences = diff.has_differences()
+    if not has_differences:
+        return
+
     ncpath: str = nix.get_nextcloud_store_path(new.nextcloud)
     joined = diff.join()
 
@@ -122,24 +126,24 @@ def main() -> None:
         if isinstance(app.hash_or_sig, SignatureInfo):
             to_download[appid] = app
 
-    has_differences = False
-    for appid, app in tqdm(to_download.items(),
-                           desc='Fetching updated and new applications',
-                           ascii=True):
-        has_differences = True
+    if to_download:
+        for appid, app in tqdm(to_download.items(),
+                               desc='Fetching updated and new applications',
+                               ascii=True):
 
-        try:
-            sha256: Sha256 = fetch_app_hash(ncpath, app)
-        except Exception as e:
-            msg = "Exception occured while fetching application: {}".format(e)
-            tqdm.write(msg, file=sys.stderr)
-            joined.apps[appid] = old.apps[appid]
-            continue
+            try:
+                sha256: Sha256 = fetch_app_hash(ncpath, app)
+            except Exception as e:
+                msg = f"Exception occured while fetching {repr(app)}: {e}"
+                tqdm.write(msg, file=sys.stderr)
+                joined.apps[appid] = old.apps[appid]
+                continue
 
-        joined.apps[appid] = app._replace(hash_or_sig=sha256)
+            joined.apps[appid] = app._replace(hash_or_sig=sha256)
 
-    if has_differences:
-        tqdm.write("\n" + diff.pretty_print(), file=sys.stderr)
+    pretty_printed: str = diff.pretty_print()
+    if pretty_printed:
+        tqdm.write("\n" + pretty_printed, file=sys.stderr)
 
     with open(info_file, 'w') as newstate:
         json.dump(export_data(joined), newstate, indent=2, sort_keys=True)

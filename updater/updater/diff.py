@@ -40,8 +40,10 @@ class ReleaseDiff:
         return self.removed_apps, self.added_apps, self.updated_apps
 
     def has_differences(self) -> bool:
-        return bool(self.removed_apps and self.added_apps and
-                    self.updated_apps)
+        if self.old.nextcloud.version != self.new.nextcloud.version:
+            return True
+
+        return bool(self.removed_apps or self.added_apps or self.updated_apps)
 
     def join(self) -> ReleaseInfo:
         updated_ids = self.updated_apps.keys()
