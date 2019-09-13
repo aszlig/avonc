@@ -1,5 +1,5 @@
 from typing import Dict, Any
-from semantic_version import Version
+from semantic_version import Version, Spec
 from tqdm import tqdm
 
 import json
@@ -48,7 +48,10 @@ def import_data(data: Dict[str, Any], major: int) -> ReleaseInfo:
                 attrs['url'],
                 Sha256(attrs['sha256'])
             )
-    return ReleaseInfo(nextcloud, apps)
+    constraints_data = data.get('constraints', {})
+    constraints = {AppId(appid): Spec(exprs)
+                   for appid, exprs in constraints_data.items()}
+    return ReleaseInfo(nextcloud, apps, constraints)
 
 
 def export_data(info: ReleaseInfo) -> Dict[str, Any]:
@@ -80,7 +83,7 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
 
     ncver = info.nextcloud.version
     ncverstr = f"{ncver.major}.{ncver.minor}.{ncver.patch}.{ncver.build[0]}"
-    return {
+    result = {
         'nextcloud': {
             'version': ncverstr,
             'sha256': info.nextcloud.sha256,
@@ -88,6 +91,10 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
         },
         'applications': apps,
     }
+    if info.constraints:
+        result['constraints'] = {appid: str(spec)
+                                 for appid, spec in info.constraints.items()}
+    return result
 
 
 def update_major(major: int, info_file: str) -> None:

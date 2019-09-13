@@ -55,7 +55,7 @@ class ReleaseDiff:
                 continue
             apps[appid] = self.old.apps[appid]
 
-        return ReleaseInfo(self.new.nextcloud, apps)
+        return ReleaseInfo(self.new.nextcloud, apps, self.old.constraints)
 
     def _format_changelog(self, changelog: str, indent: str) -> str:
         if changelog == '':

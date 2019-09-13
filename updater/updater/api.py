@@ -84,7 +84,8 @@ def _fetch_latest_nextcloud(curver: Version) -> Optional[Nextcloud]:
 
 def _get_latest_release_for_app(
     nc_version: Version,
-    releases: List[Dict[str, Any]]
+    releases: List[Dict[str, Any]],
+    constraint: Optional[Spec]
 ) -> Optional[Dict[str, Any]]:
     latest: Optional[Dict[str, Any]] = None
 
@@ -92,12 +93,16 @@ def _get_latest_release_for_app(
         if '-' in release['version'] or release['isNightly']:
             continue
 
+        version = Version(release['version'])
+
+        if constraint is not None and not constraint.match(version):
+            continue
+
         spec = Spec(*release['rawPlatformVersionSpec'].split())
         if not spec.match(nc_version):
             continue
 
-        if latest is None or \
-           Version(latest['version']) < Version(release['version']):
+        if latest is None or Version(latest['version']) < version:
             latest = release
 
     return latest
@@ -116,7 +121,10 @@ def clean_meta(value: str) -> str:
     return saxutils.escape(cleaned.decode())
 
 
-def _get_external_apps(nextcloud: Nextcloud) -> Dict[AppId, App]:
+def _get_external_apps(
+    nextcloud: Nextcloud,
+    constraints: Dict[AppId, Spec]
+) -> Dict[AppId, App]:
     url = "https://apps.nextcloud.com/api/v1/platform/{}/apps.json"
     data = download_pbar(url.format(str(_strip_build(nextcloud.version))),
                          desc='Downloading Nextcloud app index')
@@ -130,12 +138,14 @@ def _get_external_apps(nextcloud: Nextcloud) -> Dict[AppId, App]:
         homepage: Optional[str] = None
         if len(appdata['website']) > 0:
             homepage = appdata['website']
-        apprel = _get_latest_release_for_app(nextcloud.version,
-                                             appdata['releases'])
+        appid = AppId(appdata['id'])
+        apprel = _get_latest_release_for_app(
+            nextcloud.version, appdata['releases'], constraints.get(appid)
+        )
         changelogs: Dict[Version, str] = _get_changelogs(appdata['releases'])
         if apprel is None:
             continue
-        apps[AppId(appdata['id'])] = ExternalApp(
+        apps[appid] = ExternalApp(
             clean_meta(name),
             Version(apprel['version']),
             clean_meta(summary),
@@ -157,6 +167,6 @@ def upgrade(info: ReleaseInfo) -> ReleaseInfo:
     nextcloud = _fetch_latest_nextcloud(old_nc_version)
     if nextcloud is None:
         nextcloud = info.nextcloud
-    apps = _get_external_apps(nextcloud)
+    apps = _get_external_apps(nextcloud, info.constraints)
     apps.update(nix.get_internal_apps(nextcloud))
-    return ReleaseInfo(nextcloud, apps)
+    return ReleaseInfo(nextcloud, apps, info.constraints)

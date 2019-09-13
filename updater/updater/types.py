@@ -1,4 +1,4 @@
-from semantic_version import Version
+from semantic_version import Version, Spec
 from typing import NewType, NamedTuple, List, Dict, Optional, Union
 
 
@@ -42,4 +42,5 @@ class Nextcloud(NamedTuple):
 
 class ReleaseInfo(NamedTuple):
     nextcloud: Nextcloud
-    apps: AppCollection = {}
+    apps: AppCollection
+    constraints: Dict[AppId, Spec]
