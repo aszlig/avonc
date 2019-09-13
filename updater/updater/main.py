@@ -7,7 +7,7 @@ import os
 import sys
 
 from .types import AppId, App, InternalApp, ExternalApp, Nextcloud, \
-                   NextcloudVersion, ReleaseInfo, Sha256, SignatureInfo
+                   ReleaseInfo, Sha256, SignatureInfo
 from .app import fetch_app_hash
 from . import api, nix
 from .diff import ReleaseDiff
@@ -21,7 +21,7 @@ INITIAL_UPSTREAM_STATE = {
 def import_data(data: Dict[str, Any]) -> ReleaseInfo:
     nextcloud_data = data.get('nextcloud', {})
     nextcloud = Nextcloud(
-        NextcloudVersion.parse(nextcloud_data.get('version', '15.0.0.0')),
+        Version.coerce(nextcloud_data.get('version')),
         nextcloud_data.get('url'),
         nextcloud_data.get('sha256'),
     )
@@ -83,9 +83,11 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
                 'meta': meta,
             }
 
+    ncver = info.nextcloud.version
+    ncverstr = f"{ncver.major}.{ncver.minor}.{ncver.patch}.{ncver.build[0]}"
     return {
         'nextcloud': {
-            'version': str(info.nextcloud.version),
+            'version': ncverstr,
             'sha256': info.nextcloud.sha256,
             'url': info.nextcloud.download_url,
         },

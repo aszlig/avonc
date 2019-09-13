@@ -34,26 +34,8 @@ class ExternalApp(NamedTuple):
     changelogs: Dict[Version, str] = {}
 
 
-class NextcloudVersion(NamedTuple):
-    major: int
-    minor: int = 0
-    maintenance: int = 0
-    revision: int = 0
-
-    @classmethod
-    def parse(cls, value: str) -> 'NextcloudVersion':
-        return NextcloudVersion(*map(int, value.split('.', 3)))
-
-    @property
-    def semver(self) -> Version:
-        return Version(f'{self.major}.{self.minor}.{self.maintenance}')
-
-    def __str__(self):
-        return f'{self.major}.{self.minor}.{self.maintenance}.{self.revision}'
-
-
 class Nextcloud(NamedTuple):
-    version: NextcloudVersion
+    version: Version
     download_url: str
     sha256: str
 
