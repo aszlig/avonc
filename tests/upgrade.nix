@@ -21,7 +21,7 @@ import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
     generation1 = { lib, options, config, pkgs, ... }: {
       imports = [ common ];
 
-      nextcloud.package = pkgs.callPackage ../package/old {
+      nextcloud.package = pkgs.callPackage ../packages/old {
         inherit (config.nextcloud) apps theme extraPostPatch;
       };
 

@@ -97,7 +97,7 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
 
 def main() -> None:
     basedir: str = os.getcwd()
-    packagedir: str = os.path.join(basedir, 'package', 'current')
+    packagedir: str = os.path.join(basedir, 'packages', '15')
     info_file: str = os.path.join(packagedir, 'upstream.json')
 
     current_state: Dict[str, Any]

@@ -559,7 +559,7 @@ in {
     package = lib.mkOption {
       type = types.package;
       # XXX: Bah, this is so ugly!
-      default = pkgs.callPackage package/current {
+      default = pkgs.callPackage packages/15 {
         inherit (cfg) apps theme extraPostPatch;
       };
       defaultText = "pkgs.callPackage package/current {"
