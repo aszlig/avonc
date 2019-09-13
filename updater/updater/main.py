@@ -12,16 +12,11 @@ from .app import fetch_app_hash
 from . import api, nix
 from .diff import ReleaseDiff
 
-INITIAL_UPSTREAM_STATE = {
-    'nextcloud': {'version': '15'},
-    'applications': {}
-}
 
-
-def import_data(data: Dict[str, Any]) -> ReleaseInfo:
+def import_data(data: Dict[str, Any], major: int) -> ReleaseInfo:
     nextcloud_data = data.get('nextcloud', {})
     nextcloud = Nextcloud(
-        Version.coerce(nextcloud_data.get('version')),
+        Version.coerce(nextcloud_data.get('version', str(major))),
         nextcloud_data.get('url'),
         nextcloud_data.get('sha256'),
     )
@@ -95,19 +90,15 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
     }
 
 
-def main() -> None:
-    basedir: str = os.getcwd()
-    packagedir: str = os.path.join(basedir, 'packages', '15')
-    info_file: str = os.path.join(packagedir, 'upstream.json')
-
+def update_major(major: int, info_file: str) -> None:
     current_state: Dict[str, Any]
     try:
         with open(info_file, 'r') as current:
             current_state = json.load(current)
     except FileNotFoundError:
-        current_state = INITIAL_UPSTREAM_STATE
+        current_state = {}
 
-    old = import_data(current_state)
+    old = import_data(current_state, major)
     new = api.upgrade(old)
     diff = ReleaseDiff(old, new)
 
@@ -127,10 +118,9 @@ def main() -> None:
             to_download[appid] = app
 
     if to_download:
-        for appid, app in tqdm(to_download.items(),
-                               desc='Fetching updated and new applications',
-                               ascii=True):
-
+        desc = f'Fetching updated and new applications for' \
+               f' major version {major}'
+        for appid, app in tqdm(to_download.items(), desc=desc, ascii=True):
             try:
                 sha256: Sha256 = fetch_app_hash(ncpath, app)
             except Exception as e:
@@ -148,3 +138,18 @@ def main() -> None:
     with open(info_file, 'w') as newstate:
         json.dump(export_data(joined), newstate, indent=2, sort_keys=True)
         newstate.write('\n')
+
+
+def main() -> None:
+    basedir: str = os.path.join(os.getcwd(), 'packages')
+    for dirname in os.listdir(basedir):
+        if not dirname.isdigit():
+            continue
+
+        packagedir: str = os.path.join(basedir, dirname)
+
+        if not os.path.isdir(packagedir):
+            continue
+
+        info_file: str = os.path.join(packagedir, 'upstream.json')
+        update_major(int(dirname), info_file)

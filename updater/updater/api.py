@@ -2,17 +2,19 @@ import hashlib
 import json
 import requests
 import re
+import unicodedata
 import os
 
 from typing import List, Dict, Optional, Any
 from semantic_version import Spec, Version
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+from xml.sax import saxutils
 
 from .progress import download_pbar
 from .types import Nextcloud, AppId, App, ExternalApp, ReleaseInfo, \
                    SignatureInfo
-from .nix import get_internal_apps, hash_zip_content, get_nextcloud_store_path
+from . import nix
 
 RE_NEXTCLOUD_RELEASE = re.compile(r'^nextcloud-([0-9.]+)\.tar\.bz2$')
 RE_NEXTCLOUD_INTERNAL_VERSION_DIGIT = re.compile(
@@ -20,7 +22,7 @@ RE_NEXTCLOUD_INTERNAL_VERSION_DIGIT = re.compile(
     re.MULTILINE
 )
 
-__all__ = ['upgrade']
+__all__ = ['clean_meta', 'upgrade']
 
 
 def _hash_zip(url: str, sha256: str) -> str:
@@ -30,7 +32,7 @@ def _hash_zip(url: str, sha256: str) -> str:
     data = download_pbar(url, desc='Downloading ' + url)
 
     assert hashlib.sha256(data).hexdigest() == sha256
-    return hash_zip_content(fname, data)
+    return nix.hash_zip_content(fname, data)
 
 
 def _get_nextcloud_versions() -> Dict[Version, str]:
@@ -48,7 +50,7 @@ def _get_nextcloud_versions() -> Dict[Version, str]:
 
 
 def _update_with_real_version(nc: Nextcloud) -> Nextcloud:
-    storepath: str = get_nextcloud_store_path(nc)
+    storepath: str = nix.get_nextcloud_store_path(nc)
     verfile: str = os.path.join(storepath, 'version.php')
     with open(verfile, 'r') as fp:
         for match in RE_NEXTCLOUD_INTERNAL_VERSION_DIGIT.finditer(fp.read()):
@@ -80,7 +82,7 @@ def _fetch_latest_nextcloud(curver: Version) -> Optional[Nextcloud]:
     return _update_with_real_version(nc)
 
 
-def _get_latest_release_for(
+def _get_latest_release_for_app(
     nc_version: Version,
     releases: List[Dict[str, Any]]
 ) -> Optional[Dict[str, Any]]:
@@ -109,6 +111,11 @@ def _get_changelogs(releases: List[Dict[str, Any]]) -> Dict[Version, str]:
     return result
 
 
+def clean_meta(value: str) -> str:
+    cleaned = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
+    return saxutils.escape(cleaned.decode())
+
+
 def _get_external_apps(nextcloud: Nextcloud) -> Dict[AppId, App]:
     url = "https://apps.nextcloud.com/api/v1/platform/{}/apps.json"
     data = download_pbar(url.format(str(_strip_build(nextcloud.version))),
@@ -123,16 +130,16 @@ def _get_external_apps(nextcloud: Nextcloud) -> Dict[AppId, App]:
         homepage: Optional[str] = None
         if len(appdata['website']) > 0:
             homepage = appdata['website']
-        apprel = _get_latest_release_for(nextcloud.version,
-                                         appdata['releases'])
+        apprel = _get_latest_release_for_app(nextcloud.version,
+                                             appdata['releases'])
         changelogs: Dict[Version, str] = _get_changelogs(appdata['releases'])
         if apprel is None:
             continue
         apps[AppId(appdata['id'])] = ExternalApp(
-            name,
+            clean_meta(name),
             Version(apprel['version']),
-            summary,
-            description,
+            clean_meta(summary),
+            clean_meta(description),
             homepage,
             apprel['licenses'],
             apprel['download'],
@@ -145,11 +152,11 @@ def _get_external_apps(nextcloud: Nextcloud) -> Dict[AppId, App]:
     return apps
 
 
-def upgrade(spec: ReleaseInfo) -> ReleaseInfo:
-    old_nc_version = spec.nextcloud.version
+def upgrade(info: ReleaseInfo) -> ReleaseInfo:
+    old_nc_version = info.nextcloud.version
     nextcloud = _fetch_latest_nextcloud(old_nc_version)
     if nextcloud is None:
-        nextcloud = spec.nextcloud
+        nextcloud = info.nextcloud
     apps = _get_external_apps(nextcloud)
-    apps.update(get_internal_apps(nextcloud))
+    apps.update(nix.get_internal_apps(nextcloud))
     return ReleaseInfo(nextcloud, apps)

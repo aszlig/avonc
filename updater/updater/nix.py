@@ -2,13 +2,12 @@ import json
 import os
 import subprocess
 import tempfile
-import unicodedata
 
 from defusedxml import ElementTree as ET
 from typing import Dict, List
-from xml.sax import saxutils
 
 from .types import Nextcloud, AppId, InternalApp
+from .api import clean_meta
 
 
 def hash_zip_content(fname: str, data: bytes) -> str:
@@ -40,11 +39,6 @@ def get_nextcloud_store_path(nextcloud: Nextcloud) -> str:
     return result.strip().decode()
 
 
-def _clean_meta(value: str) -> str:
-    cleaned = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
-    return saxutils.escape(cleaned.decode())
-
-
 def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
     ncpath: str = get_nextcloud_store_path(nextcloud)
     specpath: str = os.path.join(ncpath, 'core/shipped.json')
@@ -60,14 +54,14 @@ def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
         info_path: str = os.path.join(app_path, 'appinfo/info.xml')
         xml = ET.parse(info_path)
 
-        name: str = _clean_meta(xml.findtext('name', appid))
+        name: str = clean_meta(xml.findtext('name', appid))
         summary: str = xml.findtext('summary', name)
 
         result[AppId(appid)] = InternalApp(
             name=name,
             licenses=[xml.findtext('licence', 'unknown')],
-            summary=_clean_meta(summary),
-            description=_clean_meta(xml.findtext('description', '')),
+            summary=clean_meta(summary),
+            description=clean_meta(xml.findtext('description', '')),
             enabled_by_default=xml.find('default_enable') is not None,
         )
     return result
