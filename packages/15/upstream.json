@@ -15,7 +15,7 @@
     "activity": {
       "meta": {
         "defaultEnable": true,
-        "description": "\n\t\tThis application enables users to view actions related to their files in Nextcloud.\n\t\tOnce enabled, users will see a new icon Activity in their apps menu.\n\t\tWhen clicked, a new page appears for users to track the activity related to files  from new files, to deleted files, move, rename, updates and shared activity.\n\t\tThe user can configure their individual activity settings in their personal menu.\n\t\tThis sets the type of activity to record, as well as whether to the user sees their own activities,\n\t\twhether these are only available online, and whether they get an email digest on a regular basis.\n\t\tMore information is available in the Activity documentation.\n\t",
+        "description": "This application enables users to view actions related to their files in Nextcloud.\n\t\tOnce enabled, users will see a new icon Activity in their apps menu.\n\t\tWhen clicked, a new page appears for users to track the activity related to files  from new files, to deleted files, move, rename, updates and shared activity.\n\t\tThe user can configure their individual activity settings in their personal menu.\n\t\tThis sets the type of activity to record, as well as whether to the user sees their own activities,\n\t\twhether these are only available online, and whether they get an email digest on a regular basis.\n\t\tMore information is available in the Activity documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -402,7 +402,7 @@
     },
     "defaultlinkopen": {
       "meta": {
-        "description": "Since Nextcloud 13, links written in comments are formatted and thus clickable. However, they will open in a new Tab/Window, instead of following browser default.\n\nThis app restores default behaviour, which the user has to assume either way  \\\\_()_/ ",
+        "description": "Since Nextcloud 13, links written in comments are formatted and thus clickable. However, they will open in a new Tab/Window, instead of following browser default.\n\nThis app restores default behaviour, which the user has to assume either way  \\\\_()_/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -491,7 +491,7 @@
     "encryption": {
       "meta": {
         "defaultEnable": false,
-        "description": "\n\t\tIn order to use this encryption module you need to enable server-side\n\t\tencryption in the admin settings. Once enabled this module will encrypt\n\t\tall your files transparently. The encryption is based on AES 256 keys.\n\t\tThe module won't touch existing files, only new files will be encrypted\n\t\tafter server-side encryption was enabled. It is also not possible to\n\t\tdisable the encryption again and switch back to a unencrypted system.\n\t\tPlease read the documentation to know all implications before you decide\n\t\tto enable server-side encryption.\n\t",
+        "description": "In order to use this encryption module you need to enable server-side\n\t\tencryption in the admin settings. Once enabled this module will encrypt\n\t\tall your files transparently. The encryption is based on AES 256 keys.\n\t\tThe module won't touch existing files, only new files will be encrypted\n\t\tafter server-side encryption was enabled. It is also not possible to\n\t\tdisable the encryption again and switch back to a unencrypted system.\n\t\tPlease read the documentation to know all implications before you decide\n\t\tto enable server-side encryption.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -648,7 +648,7 @@
     "files_external": {
       "meta": {
         "defaultEnable": false,
-        "description": "\nThis application enables administrators to configure connections to external storage providers, such as FTP servers, S3 or SWIFT object stores, other Nextcloud servers, WebDAV servers, and more. Administrators can choose which types of storage to enable and can mount these storage locations for a user, a group, or the entire system. Users will see a new folder appear in their root Nextcloud directory, which they can access and use like any other Nextcloud folder. External storage also allows users to share files stored in these external locations. In these cases, the credentials for the owner of the file are used when the recipient requests the file from external storage, thereby ensuring that the recipient can access the shared file.\n\nExternal storage can be configured using the GUI or at the command line. This second option provides the advanced user with more flexibility for configuring bulk external storage mounts and setting mount priorities. More information is available in the external storage GUI documentation and the external storage Configuration File documentation.\n\t",
+        "description": "This application enables administrators to configure connections to external storage providers, such as FTP servers, S3 or SWIFT object stores, other Nextcloud servers, WebDAV servers, and more. Administrators can choose which types of storage to enable and can mount these storage locations for a user, a group, or the entire system. Users will see a new folder appear in their root Nextcloud directory, which they can access and use like any other Nextcloud folder. External storage also allows users to share files stored in these external locations. In these cases, the credentials for the owner of the file are used when the recipient requests the file from external storage, thereby ensuring that the recipient can access the shared file.\n\nExternal storage can be configured using the GUI or at the command line. This second option provides the advanced user with more flexibility for configuring bulk external storage mounts and setting mount priorities. More information is available in the external storage GUI documentation and the external storage Configuration File documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -866,7 +866,7 @@
     "files_sharing": {
       "meta": {
         "defaultEnable": true,
-        "description": "\n\t\tThis application enables users to share files within Nextcloud. If enabled, the admin can choose which groups can share files. The applicable users can then share files and folders with other users and groups within Nextcloud. In addition, if the admin enables the share link feature, an external link can be used to share files with other users outside of Nextcloud. Admins can also enforce passwords, expirations dates, and enable server to server sharing via share links, as well as sharing from mobile devices.\nTurning the feature off removes shared files and folders on the server for all share recipients, and also on the sync clients and mobile apps. More information is available in the Nextcloud Documentation.\n\n\t",
+        "description": "This application enables users to share files within Nextcloud. If enabled, the admin can choose which groups can share files. The applicable users can then share files and folders with other users and groups within Nextcloud. In addition, if the admin enables the share link feature, an external link can be used to share files with other users outside of Nextcloud. Admins can also enforce passwords, expirations dates, and enable server to server sharing via share links, as well as sharing from mobile devices.\nTurning the feature off removes shared files and folders on the server for all share recipients, and also on the sync clients and mobile apps. More information is available in the Nextcloud Documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -893,7 +893,7 @@
     "files_texteditor": {
       "meta": {
         "defaultEnable": true,
-        "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.\n\t",
+        "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.",
         "isShipped": true,
         "licenses": [
           "AGPL"
@@ -920,7 +920,7 @@
     "files_trashbin": {
       "meta": {
         "defaultEnable": true,
-        "description": "\nThis application enables users to restore files that were deleted from the system. It displays a list of deleted files in the web interface, and has options to restore those deleted files back to the users file directories or remove them permanently from the system. Restoring a file also restores related file versions, if the versions application is enabled. When a file is deleted from a share, it can be restored in the same manner, though it is no longer shared. By default, these files remain in the trash bin for 30 days.\nTo prevent a user from running out of disk space, the Deleted files app will not utilize more than 50% of the currently available free quota for deleted files. If the deleted files exceed this limit, the app deletes the oldest files until it gets below this limit. More information is available in the Deleted Files documentation.\n\n\t",
+        "description": "This application enables users to restore files that were deleted from the system. It displays a list of deleted files in the web interface, and has options to restore those deleted files back to the users file directories or remove them permanently from the system. Restoring a file also restores related file versions, if the versions application is enabled. When a file is deleted from a share, it can be restored in the same manner, though it is no longer shared. By default, these files remain in the trash bin for 30 days.\nTo prevent a user from running out of disk space, the Deleted files app will not utilize more than 50% of the currently available free quota for deleted files. If the deleted files exceed this limit, the app deletes the oldest files until it gets below this limit. More information is available in the Deleted Files documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -932,7 +932,7 @@
     "files_versions": {
       "meta": {
         "defaultEnable": true,
-        "description": "\n\t\tThis application automatically maintains older versions of files that are changed. When enabled, a hidden versions folder is provisioned in every users directory and is used to store old file versions. A user can revert to an older version through the web interface at any time, with the replaced file becoming a version. The app automatically manages the versions folder to ensure the user doesnt run out of Quota because of versions.\n\t\tIn addition to the expiry of versions, the versions app makes certain never to use more than 50% of the users currently available free space. If stored versions exceed this limit, the app will delete the oldest versions first until it meets this limit. More information is available in the Versions documentation.\n\t",
+        "description": "This application automatically maintains older versions of files that are changed. When enabled, a hidden versions folder is provisioned in every users directory and is used to store old file versions. A user can revert to an older version through the web interface at any time, with the replaced file becoming a version. The app automatically manages the versions folder to ensure the user doesnt run out of Quota because of versions.\n\t\tIn addition to the expiry of versions, the versions app makes certain never to use more than 50% of the users currently available free space. If stored versions exceed this limit, the app will delete the oldest versions first until it meets this limit. More information is available in the Versions documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -944,7 +944,7 @@
     "files_videoplayer": {
       "meta": {
         "defaultEnable": true,
-        "description": "A responsive video player using a skinned version of Video.js\n\n\t\tBased on this app: https://apps.owncloud.com/content/show.php/Video+Js?content=159670\n\n\t\tVideo.js: http://videojs.com/\n\n\t\tSkin: https://github.com/cabin/videojs-sublime-skin\n\t",
+        "description": "A responsive video player using a skinned version of Video.js\n\n\t\tBased on this app: https://apps.owncloud.com/content/show.php/Video+Js?content=159670\n\n\t\tVideo.js: http://videojs.com/\n\n\t\tSkin: https://github.com/cabin/videojs-sublime-skin",
         "isShipped": true,
         "licenses": [
           "MIT"
@@ -956,7 +956,7 @@
     "firstrunwizard": {
       "meta": {
         "defaultEnable": true,
-        "description": "This application enables a pop-up window when a user first logs into Nextcloud. This window welcomes new users to Nextcloud, and contains links to the standard desktop client, Android app, and the iOS app. The window also shows a link for accessing Nextcloud via WebDAV. At any time, the first run wizard can be opened again via link \"About\" on settings menu.\nThe First run wizard can be customized to meet specific design goals, or to change links and messages. Create an appropriate theme following the Theming documentation, and changes to the look and feel of this Wizard are simple. More information is available in the first run wizard documentation, as well as the theming documentation.\n",
+        "description": "This application enables a pop-up window when a user first logs into Nextcloud. This window welcomes new users to Nextcloud, and contains links to the standard desktop client, Android app, and the iOS app. The window also shows a link for accessing Nextcloud via WebDAV. At any time, the first run wizard can be opened again via link \"About\" on settings menu.\nThe First run wizard can be customized to meet specific design goals, or to change links and messages. Create an appropriate theme following the Theming documentation, and changes to the look and feel of this Wizard are simple. More information is available in the first run wizard documentation, as well as the theming documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -1028,7 +1028,7 @@
     "gallery": {
       "meta": {
         "defaultEnable": true,
-        "description": "Media gallery for Nextcloud with the following features:\n\n\t\t- Support for large selection of media types (depending on server setup)\n\n\t\t- Upload and organise images and albums straight from the app\n\n\t\t- Large, zoomable previews which can be shown in fullscreen mode\n\n\t\t- Sort images by name or date\n\n\t\t- Per album design, description and copyright statement\n\n\t\t- A la carte features (external shares, browser svg rendering, etc.)\n\n\t\t- Image download straight from the slideshow or the gallery\n\n\t\t- Switch to Gallery from any folder in files and vice-versa\n\n\t\t- Ignore folders containing a \".nomedia\" file\n\n\t\t- Browser rendering of SVG images (disabled by default)\n\n\t\t- Native SVG support\n\n\t\t- Mobile support\n\n\t\tProvides a dedicated view of all images in a grid, adds image viewing capabilities to the\n\t\tfiles app and adds a gallery view to public links.\n\t\tCompatible with Firefox, Chrome and Internet Explorer 11\n\t",
+        "description": "Media gallery for Nextcloud with the following features:\n\n\t\t- Support for large selection of media types (depending on server setup)\n\n\t\t- Upload and organise images and albums straight from the app\n\n\t\t- Large, zoomable previews which can be shown in fullscreen mode\n\n\t\t- Sort images by name or date\n\n\t\t- Per album design, description and copyright statement\n\n\t\t- A la carte features (external shares, browser svg rendering, etc.)\n\n\t\t- Image download straight from the slideshow or the gallery\n\n\t\t- Switch to Gallery from any folder in files and vice-versa\n\n\t\t- Ignore folders containing a \".nomedia\" file\n\n\t\t- Browser rendering of SVG images (disabled by default)\n\n\t\t- Native SVG support\n\n\t\t- Mobile support\n\n\t\tProvides a dedicated view of all images in a grid, adds image viewing capabilities to the\n\t\tfiles app and adds a gallery view to public links.\n\t\tCompatible with Firefox, Chrome and Internet Explorer 11",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -1218,14 +1218,14 @@
     },
     "keeporsweep": {
       "meta": {
-        "description": "**Tech companies help you amass data  we help you clean it by having fun while getting things done! ** You will see one random element of your data at a time and you decide whether to keep or sweep it.\n\nCurrently this works for Files, and we have [plans to integrate many more sources](http://keeporsweep.net)  come join and contribute! ",
+        "description": "**Tech companies help you amass data  we help you clean it by having fun while getting things done! ** You will see one random element of your data at a time and you decide whether to keep or sweep it.\n\nCurrently this works for Files, and we have [plans to integrate many more sources](http://keeporsweep.net)  come join and contribute!",
         "homepage": "http://keeporsweep.net",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Keep or Sweep",
-        "summary": " Randomly clean your Nextcloud data"
+        "summary": "Randomly clean your Nextcloud data"
       },
       "sha256": "05bc1ddvkwqd6ylmkcpr42si2xwpxj2146am18c0i0g446z2lplk",
       "url": "https://github.com/keeporsweep/keeporsweep/releases/download/v0.2.1/keeporsweep-0.2.1.tar.gz",
@@ -1267,7 +1267,7 @@
           "agpl"
         ],
         "name": "Mail",
-        "summary": " A mail app for Nextcloud"
+        "summary": "A mail app for Nextcloud"
       },
       "sha256": "1ppxgp4p359q8z7qc92f8f6qk5q3ncjs9w11acyi103ryh4i71ig",
       "url": "https://github.com/nextcloud/mail/releases/download/v0.11.1/mail.tar.gz",
@@ -1282,7 +1282,7 @@
           "agpl"
         ],
         "name": "Maps",
-        "summary": " The whole world fits inside your cloud!"
+        "summary": "The whole world fits inside your cloud!"
       },
       "sha256": "11m9jf2491ry298v3dkvp2kwm237ix1plgpzas1yd2r0bpwlmynn",
       "url": "https://github.com/nextcloud/maps/releases/download/v0.1.2/maps-0.1.2.tar.gz",
@@ -1539,7 +1539,7 @@
     "password_policy": {
       "meta": {
         "defaultEnable": true,
-        "description": "\n\t\tAllow admin to define certain pre-conditions for password, e.g. enforce a minimum length\n\t",
+        "description": "Allow admin to define certain pre-conditions for password, e.g. enforce a minimum length",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -1994,7 +1994,7 @@
           "agpl"
         ],
         "name": "Social",
-        "summary": " Nextcloud becomes part of the federated social networks!"
+        "summary": "Nextcloud becomes part of the federated social networks!"
       },
       "sha256": "1q2jyihdy6xy5b4icarlnhn4yvn30yax0966pz6wy1qqif5w0grz",
       "url": "https://github.com/nextcloud/social/releases/download/v0.2.101/social-0.2.101.tar.gz",
@@ -2120,7 +2120,7 @@
     "survey_client": {
       "meta": {
         "defaultEnable": true,
-        "description": "\n        Sends anonymized data to Nextcloud to help us to improve Nextcloud. You\n        always have full control over the content sent to Nextcloud and can disable\n        it again at any time.\n    ",
+        "description": "Sends anonymized data to Nextcloud to help us to improve Nextcloud. You\n        always have full control over the content sent to Nextcloud and can disable\n        it again at any time.",
         "isShipped": true,
         "licenses": [
           "agpl"
@@ -2353,7 +2353,7 @@
           "agpl"
         ],
         "name": "Unsplash",
-        "summary": " Random background from Unsplash"
+        "summary": "Random background from Unsplash"
       },
       "sha256": "1gdpkihgr4xlic0sla9yll2pxlgzrwbf5shc1kj4i6jgd719r2zv",
       "url": "https://github.com/jancborchardt/unsplash/releases/download/v1.1.3/unsplash-1.1.3.tar.gz",
@@ -2433,7 +2433,7 @@
     "user_ldap": {
       "meta": {
         "defaultEnable": false,
-        "description": "This application enables administrators to connect Nextcloud to an LDAP-based user directory for authentication and provisioning users, groups and user attributes. Admins can configure this application to connect to one or more LDAP directories or Active Directories via an LDAP interface. Attributes such as user quota, email, avatar pictures, group memberships and more can be pulled into Nextcloud from a directory with the appropriate queries and filters.\n\nA user logs into Nextcloud with their LDAP or AD credentials, and is granted access based on an authentication request handled by the LDAP or AD server. Nextcloud does not store LDAP or AD passwords, rather these credentials are used to authenticate a user and then Nextcloud uses a session for the user ID. More information is available in the LDAP User and Group Backend documentation.\n\n\t",
+        "description": "This application enables administrators to connect Nextcloud to an LDAP-based user directory for authentication and provisioning users, groups and user attributes. Admins can configure this application to connect to one or more LDAP directories or Active Directories via an LDAP interface. Attributes such as user quota, email, avatar pictures, group memberships and more can be pulled into Nextcloud from a directory with the appropriate queries and filters.\n\nA user logs into Nextcloud with their LDAP or AD credentials, and is granted access based on an authentication request handled by the LDAP or AD server. Nextcloud does not store LDAP or AD passwords, rather these credentials are used to authenticate a user and then Nextcloud uses a session for the user ID. More information is available in the LDAP User and Group Backend documentation.",
         "isShipped": true,
         "licenses": [
           "agpl"

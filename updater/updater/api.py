@@ -118,7 +118,7 @@ def _get_changelogs(releases: List[Dict[str, Any]]) -> Dict[Version, str]:
 
 def clean_meta(value: str) -> str:
     cleaned = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
-    return saxutils.escape(cleaned.decode())
+    return saxutils.escape(cleaned.decode().strip())
 
 
 def _get_external_apps(
