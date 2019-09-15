@@ -8,8 +8,8 @@ let
   themeBreezeDark = fetchFromGitHub {
     owner = "mwalbeck";
     repo = "nextcloud-breeze-dark";
-    rev = "6a1c90ae97f6b60772ce7756e77d3d2b6b2b41df";
-    sha256 = "0sdzscz2pq7g674inkc6cryqsdnrpin2hsvvaqzngld6vp1z7h04";
+    rev = "e2b2c92df3544fcf16c1ad2d5e9598d54d906998";
+    sha256 = "1cyzphbbis5wxqmk3f242pacm8nvqq70dn53c4kzzrkdin069rqr";
   };
 
   upstreamInfo = lib.importJSON ./upstream.json;
