@@ -1,4 +1,4 @@
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from semantic_version import Version, Spec
 from tqdm import tqdm
 
@@ -97,7 +97,7 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
     return result
 
 
-def update_major(major: int, info_file: str) -> None:
+def update_major(major: int, info_file: str) -> Optional[str]:
     current_state: Dict[str, Any]
     try:
         with open(info_file, 'r') as current:
@@ -111,7 +111,7 @@ def update_major(major: int, info_file: str) -> None:
 
     has_differences = diff.has_differences()
     if not has_differences:
-        return
+        return None
 
     ncpath: str = nix.get_nextcloud_store_path(new.nextcloud)
     joined = diff.join()
@@ -142,13 +142,12 @@ def update_major(major: int, info_file: str) -> None:
     if pretty_printed:
         tqdm.write("\n" + pretty_printed, file=sys.stderr)
 
-    with open(info_file, 'w') as newstate:
-        json.dump(export_data(joined), newstate, indent=2, sort_keys=True)
-        newstate.write('\n')
+    return json.dumps(export_data(joined), indent=2, sort_keys=True) + "\n"
 
 
 def main() -> None:
     basedir: str = os.path.join(os.getcwd(), 'packages')
+    outfiles: Dict[str, str] = {}
     for dirname in os.listdir(basedir):
         if not dirname.isdigit():
             continue
@@ -159,4 +158,10 @@ def main() -> None:
             continue
 
         info_file: str = os.path.join(packagedir, 'upstream.json')
-        update_major(int(dirname), info_file)
+        data = update_major(int(dirname), info_file)
+        if data is not None:
+            outfiles[info_file] = data
+
+    for path, data in outfiles.items():
+        with open(path, 'w') as newstate:
+            newstate.write(data)

@@ -125,9 +125,10 @@ def _get_external_apps(
     nextcloud: Nextcloud,
     constraints: Dict[AppId, Spec]
 ) -> Dict[AppId, App]:
-    url = "https://apps.nextcloud.com/api/v1/platform/{}/apps.json"
-    data = download_pbar(url.format(str(_strip_build(nextcloud.version))),
-                         desc='Downloading Nextcloud app index')
+    ncver = str(_strip_build(nextcloud.version))
+    url = f'https://apps.nextcloud.com/api/v1/platform/{ncver}/apps.json'
+    desc = f'Downloading Nextcloud app index for version {ncver}'
+    data = download_pbar(url, desc=desc)
 
     apps: Dict[AppId, App] = {}
     for appdata in json.loads(data):

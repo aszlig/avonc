@@ -3,6 +3,7 @@ import re
 import string
 import os
 
+from functools import lru_cache
 from OpenSSL import crypto
 
 from .progress import download_pbar
@@ -34,6 +35,14 @@ def verify_cert(ncpath: str, certdata: str) -> crypto.X509:
     return cert
 
 
+@lru_cache(maxsize=None)
+def _cached_fetch(name: str, download_url: str) -> bytes:
+    # Apps do have a signature, so even if the remote's cert check fails, we
+    # can still proceed.
+    return download_pbar(download_url, verify=False,
+                         desc=f'Downloading app {name}')
+
+
 def fetch_app_hash(ncpath: str, app: App) -> Sha256:
     if isinstance(app, InternalApp):
         raise ValueError("Can't download internal app {repr(app)}.")
@@ -41,10 +50,7 @@ def fetch_app_hash(ncpath: str, app: App) -> Sha256:
         raise ValueError("Signature information missing for {repr(appdata)}")
 
     cert = verify_cert(ncpath, app.hash_or_sig.certificate)
-    # Apps do have a signature, so even if the remote's cert check fails, we
-    # can still proceed.
-    data = download_pbar(app.download_url, verify=False,
-                         desc='Downloading app {!r}'.format(app.name))
+    data = _cached_fetch(app.name, app.download_url)
     sig = base64.b64decode(app.hash_or_sig.signature)
     crypto.verify(cert, sig, data, 'sha512')
     fname_base = app.download_url.rsplit('/', 1)[-1].rsplit('?', 1)[0]
