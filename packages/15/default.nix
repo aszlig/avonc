@@ -5,14 +5,10 @@
 }:
 
 let
-  themeBreezeDark = fetchFromGitHub {
-    owner = "mwalbeck";
-    repo = "nextcloud-breeze-dark";
-    rev = "e2b2c92df3544fcf16c1ad2d5e9598d54d906998";
-    sha256 = "1cyzphbbis5wxqmk3f242pacm8nvqq70dn53c4kzzrkdin069rqr";
-  };
-
   upstreamInfo = lib.importJSON ./upstream.json;
+
+  fetchTheme = attrs: attrs // { result = fetchFromGitHub attrs.github; };
+  themes = lib.mapAttrs (lib.const fetchTheme) upstreamInfo.themes;
 
 in stdenv.mkDerivation rec {
   name = "nextcloud-${version}";
@@ -36,8 +32,10 @@ in stdenv.mkDerivation rec {
     chmod -R +w apps/${lib.escapeShellArg appid}
   '') appPaths); # FIXME: Avoid the chmod above!
 
-  buildPhase = lib.optionalString (theme == "breeze-dark") ''
-    cp -TR ${lib.escapeShellArg themeBreezeDark} themes/nextcloud-breeze-dark
+  buildPhase = let
+    inherit (themes.${theme}) result directory;
+  in lib.optionalString (themes ? ${theme}) ''
+    cp -TR ${lib.escapeShellArg result} themes/${lib.escapeShellArg directory}
   '';
 
   patches = [

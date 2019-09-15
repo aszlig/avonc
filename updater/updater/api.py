@@ -13,7 +13,7 @@ from xml.sax import saxutils
 
 from .progress import download_pbar
 from .types import Nextcloud, AppId, App, ExternalApp, ReleaseInfo, \
-                   SignatureInfo
+                   SignatureInfo, Sha256
 from . import nix
 
 RE_NEXTCLOUD_RELEASE = re.compile(r'^nextcloud-([0-9.]+)\.tar\.bz2$')
@@ -25,7 +25,7 @@ RE_NEXTCLOUD_INTERNAL_VERSION_DIGIT = re.compile(
 __all__ = ['clean_meta', 'upgrade']
 
 
-def _hash_zip(url: str, sha256: str) -> str:
+def _hash_zip(url: str, sha256: Sha256) -> Sha256:
     fname: str = url.rsplit('/', 1)[-1]
     assert len(fname) > 0
 
@@ -76,7 +76,7 @@ def _fetch_latest_nextcloud(curver: Version) -> Optional[Nextcloud]:
     sha_response = download_pbar(url + '.sha256',
                                  desc='Fetching checksum for ' + url)
     sha256: str = sha_response.split(maxsplit=1)[0].decode()
-    ziphash: str = _hash_zip(url, sha256)
+    ziphash: Sha256 = _hash_zip(url, Sha256(sha256))
 
     nc = Nextcloud(version, url, ziphash)
     return _update_with_real_version(nc)
@@ -170,4 +170,4 @@ def upgrade(info: ReleaseInfo) -> ReleaseInfo:
         nextcloud = info.nextcloud
     apps = _get_external_apps(nextcloud, info.constraints)
     apps.update(nix.get_internal_apps(nextcloud))
-    return ReleaseInfo(nextcloud, apps, info.constraints)
+    return ReleaseInfo(nextcloud, apps, info.themes, info.constraints)

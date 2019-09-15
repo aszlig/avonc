@@ -56,4 +56,4 @@ def fetch_app_hash(ncpath: str, app: App) -> Sha256:
     fname_base = app.download_url.rsplit('/', 1)[-1].rsplit('?', 1)[0]
     valid_chars = string.ascii_letters + string.digits + "._-"
     safename: str = ''.join(c for c in fname_base if c in valid_chars)
-    return Sha256(hash_zip_content(safename.lstrip('.'), data))
+    return hash_zip_content(safename.lstrip('.'), data)

@@ -2628,5 +2628,16 @@
     "sha256": "1hvi1hfwsicicn5zl6zrj1ihfkc6m6635c7622jb1arybnfh73rf",
     "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.11.tar.bz2",
     "version": "15.0.11.1"
+  },
+  "themes": {
+    "breeze-dark": {
+      "directory": "nextcloud-breeze-dark",
+      "github": {
+        "owner": "mwalbeck",
+        "repo": "nextcloud-breeze-dark",
+        "rev": "e2b2c92df3544fcf16c1ad2d5e9598d54d906998",
+        "sha256": "1cyzphbbis5wxqmk3f242pacm8nvqq70dn53c4kzzrkdin069rqr"
+      }
+    }
   }
 }

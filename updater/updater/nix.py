@@ -6,11 +6,11 @@ import tempfile
 from defusedxml import ElementTree as ET
 from typing import Dict, List
 
-from .types import Nextcloud, AppId, InternalApp
+from .types import Nextcloud, AppId, InternalApp, Sha256
 from .api import clean_meta
 
 
-def hash_zip_content(fname: str, data: bytes) -> str:
+def hash_zip_content(fname: str, data: bytes) -> Sha256:
     with tempfile.TemporaryDirectory() as tempdir:
         destpath = os.path.join(tempdir, fname)
         open(destpath, 'wb').write(data)
@@ -18,7 +18,7 @@ def hash_zip_content(fname: str, data: bytes) -> str:
         cmd = ['nix-prefetch-url', '--type', 'sha256', '--unpack', desturl]
         result = subprocess.run(cmd, capture_output=True, check=True).stdout
         ziphash = result.strip().decode()
-        return ziphash
+        return Sha256(ziphash)
 
 
 def get_nextcloud_store_path(nextcloud: Nextcloud) -> str:
@@ -65,3 +65,25 @@ def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
             enabled_by_default=xml.find('default_enable') is not None,
         )
     return result
+
+
+def fetch_from_github(owner: str, repo: str, rev: str) -> Sha256:
+    data: Dict[str, str] = {
+        'owner': owner,
+        'repo': repo,
+        'rev': rev,
+        'sha256': '0' * 52,
+    }
+    expr = b'''
+    { attrs }: {
+        src = (import <nixpkgs> {}).fetchFromGitHub (builtins.fromJSON attrs);
+    }
+    '''
+    with tempfile.NamedTemporaryFile() as exprfile:
+        exprfile.write(expr)
+        exprfile.flush()
+        cmd = ['nix-prefetch-url', exprfile.name,
+               '--argstr', 'attrs', json.dumps(data),
+               '-A', 'src']
+        result = subprocess.run(cmd, capture_output=True, check=True).stdout
+        return Sha256(result.strip().decode())

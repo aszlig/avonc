@@ -9,7 +9,7 @@ import sys
 from .types import AppId, App, InternalApp, ExternalApp, Nextcloud, \
                    ReleaseInfo, Sha256, SignatureInfo
 from .app import fetch_app_hash
-from . import api, nix
+from . import api, nix, themes
 from .diff import ReleaseDiff
 
 
@@ -48,10 +48,11 @@ def import_data(data: Dict[str, Any], major: int) -> ReleaseInfo:
                 attrs['url'],
                 Sha256(attrs['sha256'])
             )
+    themes_ = themes.import_data(data.get('themes', {}))
     constraints_data = data.get('constraints', {})
     constraints = {AppId(appid): Spec(exprs)
                    for appid, exprs in constraints_data.items()}
-    return ReleaseInfo(nextcloud, apps, constraints)
+    return ReleaseInfo(nextcloud, apps, themes_, constraints)
 
 
 def export_data(info: ReleaseInfo) -> Dict[str, Any]:
@@ -91,6 +92,8 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
         },
         'applications': apps,
     }
+    if info.themes:
+        result['themes'] = themes.export_data(info.themes)
     if info.constraints:
         result['constraints'] = {appid: str(spec)
                                  for appid, spec in info.constraints.items()}
@@ -106,7 +109,8 @@ def update_major(major: int, info_file: str) -> Optional[str]:
         current_state = {}
 
     old = import_data(current_state, major)
-    new = api.upgrade(old)
+    new_apps = api.upgrade(old)
+    new = new_apps._replace(themes=themes.upgrade(major, new_apps.themes))
     diff = ReleaseDiff(old, new)
 
     has_differences = diff.has_differences()
