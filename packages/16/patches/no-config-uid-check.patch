@@ -1,0 +1,64 @@
+commit 740f7573bfb8fef40f9edf3b362e9858b7c977f0
+Author: aszlig <aszlig@nix.build>
+Date:   Fri Feb 15 20:41:54 2019 +0100
+
+    Disable user id check for config.php
+    
+    Nextcloud checks whether the user matches the webserver user by
+    comparing the current userid with the owner of config.php. In our case
+    however, the config.php is inside the Nix store so it most certainly
+    isn't owned by the nextcloud user.
+    
+    Signed-off-by: aszlig <aszlig@nix.build>
+
+diff --git a/console.php b/console.php
+index 7cdc2f1fd0..29fe99721c 100644
+--- a/console.php
++++ b/console.php
+@@ -57,21 +57,6 @@ try {
+ 
+ 	set_exception_handler('exceptionHandler');
+ 
+-	if (!function_exists('posix_getuid')) {
+-		echo "The posix extensions are required - see http://php.net/manual/en/book.posix.php" . PHP_EOL;
+-		exit(1);
+-	}
+-	$user = posix_getpwuid(posix_getuid());
+-	$configUser = posix_getpwuid(fileowner(OC::$configDir . 'config.php'));
+-	if ($user['name'] !== $configUser['name']) {
+-		echo "Console has to be executed with the user that owns the file config/config.php" . PHP_EOL;
+-		echo "Current user: " . $user['name'] . PHP_EOL;
+-		echo "Owner of config.php: " . $configUser['name'] . PHP_EOL;
+-		echo "Try adding 'sudo -u " . $configUser['name'] . " ' to the beginning of the command (without the single quotes)" . PHP_EOL;
+-		echo "If running with 'docker exec' try adding the option '-u " . $configUser['name'] . "' to the docker command (without the single quotes)" . PHP_EOL;
+-		exit(1);
+-	}
+-
+ 	$oldWorkingDir = getcwd();
+ 	if ($oldWorkingDir === false) {
+ 		echo "This script can be run from the Nextcloud root directory only." . PHP_EOL;
+diff --git a/cron.php b/cron.php
+index cdfa0fb367..8885e6c65b 100644
+--- a/cron.php
++++ b/cron.php
+@@ -87,20 +87,6 @@ try {
+ 			@set_time_limit(0);
+ 		}
+ 
+-		// the cron job must be executed with the right user
+-		if (!function_exists('posix_getuid')) {
+-			echo "The posix extensions are required - see http://php.net/manual/en/book.posix.php" . PHP_EOL;
+-			exit(1);
+-		}
+-		$user = posix_getpwuid(posix_getuid());
+-		$configUser = posix_getpwuid(fileowner(OC::$configDir . 'config.php'));
+-		if ($user['name'] !== $configUser['name']) {
+-			echo "Console has to be executed with the same user as the web server is operated" . PHP_EOL;
+-			echo "Current user: " . $user['name'] . PHP_EOL;
+-			echo "Web server user: " . $configUser['name'] . PHP_EOL;
+-			exit(1);
+-		}
+-
+ 		// We call Nextcloud from the CLI (aka cron)
+ 		if ($appMode !== 'cron') {
+ 			$config->setAppValue('core', 'backgroundjobs_mode', 'cron');
