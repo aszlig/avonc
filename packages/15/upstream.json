@@ -150,9 +150,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0w89vn8l6kh5g5k42mlkmcssphy5dhziw8shrs8pfpz68va07gmn",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.0.3/bookmarks-2.0.3.tar.gz",
-      "version": "2.0.3"
+      "sha256": "0m08jy4c8qyvv87dvxk2j2bxzsyc146vn58vfqc8qs1yfrvvbz3v",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.1.1/bookmarks-2.1.1.tar.gz",
+      "version": "2.1.1"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -1428,9 +1428,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0ccr857fmjnn98g6x5azg046chizbb5apr63d9gcl9m1wfvnrm81",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.3/ocr.tar.gz",
-      "version": "4.4.3"
+      "sha256": "12zq4rhifi6d5i8ahyqkcr5fn0x4bvi2lpbxc3rsvaw73lyqwi7r",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.5/ocr.tar.gz",
+      "version": "4.4.5"
     },
     "ocsms": {
       "meta": {
@@ -1951,9 +1951,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "16w5cr31v1h8qnzrw513ci00s1bh002rw6rzys9csp6vack7pn04",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.0/sharerenamer-2.7.0.tar.gz",
-      "version": "2.7.0"
+      "sha256": "0hlfa52lmvbasrcc66ihiky2wv695608cmqvsd4ba28q7nh7dkk4",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.1/sharerenamer-2.7.1.tar.gz",
+      "version": "2.7.1"
     },
     "sharingpath": {
       "meta": {
