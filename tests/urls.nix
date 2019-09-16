@@ -1,7 +1,5 @@
-import <nixpkgs/nixos/tests/make-test.nix> ({ pkgs, ... }: {
+import ./make-test.nix ({ pkgs, ... }: {
   machine = { pkgs, ... }: {
-    imports = [ ../. ../postgresql.nix ];
-
     nextcloud.domain = "localhost";
     nextcloud.apps.end_to_end_encryption.enable = true;
     nextcloud.apps.end_to_end_encryption.forceEnable = true;

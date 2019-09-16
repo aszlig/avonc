@@ -1,10 +1,8 @@
-import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
+import ./make-test.nix (pkgs: {
   name = "nextcloud-upgrade";
 
   nodes = let
     common = { options, pkgs, ... }: {
-      imports = [ ../. ../postgresql.nix ];
-
       nextcloud.domain = "localhost";
 
       services.nginx.enable = true;
