@@ -715,9 +715,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "10drri5xwkgb8xr87mass86h7lvfqd7hx53mlbym7zd2pyn9rn9n",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.0.6/files_markdown.tar.gz",
-      "version": "2.0.6"
+      "sha256": "1yzfhg7pymkn7g514kbi07cagvdp6m4k1n43r0c4283skx7grrds",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.1.0/files_markdown.tar.gz",
+      "version": "2.1.0"
     },
     "files_mindmap": {
       "meta": {
@@ -1383,9 +1383,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "12zq4rhifi6d5i8ahyqkcr5fn0x4bvi2lpbxc3rsvaw73lyqwi7r",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.5/ocr.tar.gz",
-      "version": "4.4.5"
+      "sha256": "05bxmhzwacqs90gb3mdsrf20sq0ibl1l69m6q5zf5w2iv8j5kmxk",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.6/ocr.tar.gz",
+      "version": "4.4.6"
     },
     "ocsms": {
       "meta": {
@@ -1975,9 +1975,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "16331g05jsb0xy49k60jq26jaxqqcksd4hz2273rhps55m55m10f",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.0/release.tar.gz",
-      "version": "2.1.0"
+      "sha256": "075vnvd0ywvrgjzh9wiqqs8121rizkpj9an6af8azwsk4j0nghm9",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.1/release.tar.gz",
+      "version": "2.1.1"
     },
     "socialsharing_diaspora": {
       "meta": {
