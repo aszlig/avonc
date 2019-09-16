@@ -347,11 +347,11 @@ let
     touch "$out"
   '';
 
-  php = pkgs.php-embed;
+  php = pkgs.php73-embed;
 
   phpPackages = let
     needsGhostscript = lib.elem cfg.previewFileTypes [ "PDF" "Postscript" ];
-  in pkgs.phpPackages.override ({
+  in pkgs.php73Packages.override ({
     inherit php;
   } // lib.optionalAttrs needsGhostscript {
     pkgs = pkgs // { imagemagick = pkgs.imagemagickBig; };
@@ -360,6 +360,7 @@ let
   uwsgiNextcloud = pkgs.runCommand "uwsgi-nextcloud" {
     uwsgi = pkgs.uwsgi.override {
       plugins = [ "php" ];
+      php-embed = php;
       withPAM = false;
       withSystemd = true;
     };
