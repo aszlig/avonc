@@ -1,4 +1,6 @@
 import ./make-test.nix ({ pkgs, ... }: {
+  name = "nextcloud-urls";
+
   machine = { pkgs, ... }: {
     nextcloud.domain = "localhost";
     nextcloud.apps.end_to_end_encryption.enable = true;
