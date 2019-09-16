@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {}, lib ? pkgs.lib }:
 
 let
-  modules = import "${pkgs.path}/nixos/lib/eval-config.nix" {
+  modules = import "${toString pkgs.path}/nixos/lib/eval-config.nix" {
     modules = [ ./. ];
     check = false;
   };
@@ -11,7 +11,7 @@ let
   filtered = filterDoc (lib.optionAttrSetToDocList modules.options);
   optsXML = builtins.unsafeDiscardStringContext (builtins.toXML filtered);
   optsFile = builtins.toFile "options.xml" optsXML;
-  nixosVersion = builtins.readFile "${pkgs.path}/.version";
+  nixosVersion = builtins.readFile "${toString pkgs.path}/.version";
 
 in pkgs.stdenv.mkDerivation {
   name = "nextcloud-options-manual";
