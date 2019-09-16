@@ -21,11 +21,11 @@ import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
     generation1 = { lib, options, config, pkgs, ... }: {
       imports = [ common ];
 
-      nextcloud.package = pkgs.callPackage ../packages/old {
-        inherit (config.nextcloud) apps theme extraPostPatch;
-      };
+      nextcloud.majorVersion = 15;
 
       nextcloud.apps = let
+        nc15apps = (lib.importJSON ../packages/15/upstream.json).applications;
+
         excludedApps = [
           # Conflicts with "bookmarks"
           "bookmarks_fulltextsearch"
@@ -50,6 +50,7 @@ import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
 
           # These apps have non-deterministic download URLs
           "quicknotes"
+          "spgverein"
           "twainwebscan"
           "twofactor_yubikey"
 
@@ -63,7 +64,7 @@ import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
         in lib.const (lib.optionalAttrs (!isExcluded) {
           enable = true;
         });
-      in lib.mapAttrs enableApp options.nextcloud.apps;
+      in lib.mapAttrs enableApp nc15apps;
     };
 
     generation2 = { lib, nodes, ... }: {
@@ -72,12 +73,15 @@ import <nixpkgs/nixos/tests/make-test.nix> (pkgs: {
       systemd.services.libreoffice-online.enable = false;
       systemd.services.mongooseim.enable = false;
 
-      nextcloud.apps = lib.genAttrs [
+      nextcloud.apps = {
+        end_to_end_encryption.enable = true;
+        end_to_end_encryption.forceEnable = true;
+      } // lib.genAttrs [
         "apporder" "bookmarks" "calendar" "circles" "contacts" "deck" "dropit"
-        "end_to_end_encryption" "external" "files_accesscontrol"
-        "files_markdown" "files_readmemd" "files_rightclick" "gpxpod"
-        "groupfolders" "mail" "metadata" "news" "ojsxc" "passwords"
-        "phonetrack" "polls" "richdocuments" "social" "spreed" "tasks"
+        "external" "files_accesscontrol" "files_markdown" "files_readmemd"
+        "files_rightclick" "gpxpod" "groupfolders" "mail" "metadata" "news"
+        "ojsxc" "passwords" "phonetrack" "polls" "richdocuments" "social"
+        "spreed" "tasks"
       ] (app: { enable = true; });
     };
   };

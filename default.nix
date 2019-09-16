@@ -3,6 +3,37 @@
 let
   inherit (lib) types mkOption;
 
+  # Small helper printing a non-empty list of items whereas the leading
+  # items will be separated by commas and the last two items are separated by
+  # the specified separator.
+  describeList = sep: items: let
+    commaSep = lib.concatStringsSep ", " (lib.init items);
+    multi = "${commaSep} ${sep} ${lib.last items}";
+  in if lib.length items == 1 then lib.head items else multi;
+
+  # Attribute set from Nextcloud package versions to null, which is mainly
+  # there so we can do quick hashtable lookups.
+  hashedVersions = let
+    isAllDigits = val: builtins.match "[1-9][0-9]*" val != null;
+    isValidPackage = name: type: isAllDigits name && type == "directory";
+    filtered = lib.filterAttrs isValidPackage (builtins.readDir ./packages);
+  in lib.mapAttrs (name: lib.const null) filtered;
+
+  getPackagePath = majorVersion: hashedVersions.${toString majorVersion};
+  availableMajorVersions = map lib.toInt (lib.attrNames hashedVersions);
+
+  appVersionAssertions = lib.mapAttrsToList (appid: majorAppInfo: let
+    appcfg = cfg.apps.${appid};
+    isSupported = majorAppInfo ? ${toString cfg.majorVersion};
+  in {
+    assertion = appcfg.enable -> isSupported || (appcfg.forceEnable or false);
+    message = "You have enabled the app \"${appid}\", which is not supported"
+            + " by Nextcloud ${toString cfg.majorVersion}. Please either"
+            + " disable the app, use \"nextcloud.apps.${appid}.forceEnable\""
+            + " to enable the app anyway or set \"nextcloud.majorVersion\" to"
+            + " ${describeList "or" (lib.attrNames majorAppInfo)}.";
+  }) package.applications;
+
   cfg = config.nextcloud;
   inherit (cfg) package;
 
@@ -177,6 +208,10 @@ let
       skeletondirectory = "";
       lost_password_link = "disabled";
       mail_domain = cfg.domain;
+
+      app_install_overwrite = let
+        isForced = name: cfg.apps.${name}.forceEnable or false;
+      in lib.filter isForced (lib.attrNames package.applications);
 
       overwritehost = "${cfg.domain}${maybePort}";
       overwriteprotocol = urlScheme;
@@ -361,6 +396,16 @@ let
 
 in {
   options.nextcloud = {
+    majorVersion = mkOption {
+      type = types.enum availableMajorVersions;
+      default = lib.last availableMajorVersions;
+      example = 15;
+      description = ''
+        The Nextcloud major version to use. By default, the latest stable
+        release is used if all apps are compatible.
+      '';
+    };
+
     domain = mkOption {
       type = types.str;
       default = "localhost";
@@ -495,17 +540,53 @@ in {
       '';
     };
 
-    apps = lib.mapAttrs (appId: appinfo: {
+    apps = lib.mapAttrs (appId: majorAppinfo: let
+      majorStr = toString cfg.majorVersion;
+      latest = majorAppinfo.${lib.last (lib.attrNames majorAppinfo)};
+      appinfo = majorAppinfo.${majorStr} or latest;
+
+      versions = lib.attrNames majorAppinfo;
+      availForAll = lib.attrNames hashedVersions == versions;
+      notAvailFor = lib.subtractLists versions (lib.attrNames hashedVersions);
+      below16 = notAvailFor == [ "15" ]; # XXX: Drop this once NC 15 is EOL.
+
+      maybeForce = lib.optionalAttrs (!availForAll && !below16) {
+        forceEnable = lib.mkOption {
+          type = types.bool;
+          default = false;
+          description = ''
+            Enable the ${appinfo.meta.name} (${appinfo.meta.summary})
+            application for Nextcloud ${describeList "or" notAvailFor} even
+            though it is constrained to Nextcloud
+            ${describeList "and" versions}.
+          '';
+        };
+      };
+
+    in {
       enable = mkOption {
         type = types.bool;
-        default = appinfo.meta.defaultEnable or false;
-        description = ''
+        default = majorAppinfo.${majorStr}.meta.defaultEnable or false;
+        description = let
+          moreInfo = lib.optionalString (appinfo.meta ? homepage) ''
+            More information can be found at <link
+            xlink:href='${appinfo.meta.homepage}'/>.
+          '';
+
+          forceEnableHint = let
+            text = " Use <option>forceEnable</option> to enable it"
+                 + " for Nextcloud ${describeList "or" notAvailFor}.";
+          in lib.optionalString (!below16) text;
+
+          onlyAvailable = lib.optionalString (!availForAll) ''
+            <note><para>Only available for Nextcloud
+            ${describeList "and" versions}.${forceEnableHint}</para></note>
+          '';
+
+        in ''
           Whether to enable the ${appinfo.meta.name} (${appinfo.meta.summary})
           application.
-        '' + lib.optionalString (appinfo.meta ? homepage) ''
-          More information can be found at <link
-          xlink:href='${appinfo.meta.homepage}'/>.
-        '';
+        '' + moreInfo + onlyAvailable;
       };
 
       onlyGroups = mkOption {
@@ -528,7 +609,7 @@ in {
           enabled.
         '';
       };
-    } // (extraAppOptions.${appId} or {})) package.applications;
+    } // (extraAppOptions.${appId} or {}) // maybeForce) package.applications;
 
     extraConfig = lib.mkOption {
       type = types.attrsOf types.unspecified;
@@ -559,10 +640,10 @@ in {
     package = lib.mkOption {
       type = types.package;
       # XXX: Bah, this is so ugly!
-      default = pkgs.callPackage packages/15 {
-        inherit (cfg) apps theme extraPostPatch;
+      default = pkgs.callPackage ./packages {
+        inherit (cfg) majorVersion apps theme extraPostPatch;
       };
-      defaultText = "pkgs.callPackage package/current {"
+      defaultText = "pkgs.callPackage package/${toString cfg.majorVersion} {"
                   + " inherit (cfg) apps theme extraPostPatch;"
                   + "}";
       internal = true;
@@ -586,7 +667,7 @@ in {
         "The 'bookmarks' and 'bookmarks_fulltextsearch' apps are incompatible,"
         "see https://github.com/nextcloud/bookmarks#install"
       ];
-    };
+    } ++ appVersionAssertions;
 
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
