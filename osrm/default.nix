@@ -50,15 +50,6 @@ let
 
   '';
 
-  ip2unix = pkgs.ip2unix.overrideAttrs (drv: {
-    patches = pkgs.fetchpatch {
-      url = "https://github.com/nixcloud/ip2unix/commit/"
-          + "ab25ef54a112a6ab3622d73ab8b0376a1b084bfa.patch";
-      sha256 = "0g4vr7l5dq2cwriyngwrzliy928lllh1njbmwf0badmh07vz4dl4";
-      excludes = [ "CHANGELOG.md" ];
-    };
-  });
-
   availableProfiles = [ "foot" "bicycle" "car" ];
   mkUnitName = profile: "nextcloud-osrm-${profile}";
 
@@ -166,7 +157,7 @@ in {
         serviceConfig.Group = "nextcloud-osrm";
         serviceConfig.ExecStart = let
         in lib.escapeShellArgs [
-          "${ip2unix}/bin/ip2unix" "-r" "in,systemd" "-r" "reject"
+          "${pkgs.ip2unix}/bin/ip2unix" "-r" "in,systemd" "-r" "reject"
           "${osrm-backend}/bin/osrm-routed" "--algorithm" "MLD"
           "${profileData}/${profile}.osrm"
         ];
