@@ -657,7 +657,7 @@ in {
   };
 
   imports = [
-    ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ./coturn
+    ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ./coturn ./osrm
   ];
 
   config = {
