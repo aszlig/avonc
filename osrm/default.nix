@@ -149,6 +149,7 @@ in {
           map (profile: "/run/nextcloud-osrm-${profile}.sock") cfg.profiles;
       } // genProfileUnits (profile: {
         description = "OSRM Service for Profile ${profile}";
+        wantedBy = [ "multi-user.target" ];
 
         confinement.enable = true;
         confinement.binSh = null;
