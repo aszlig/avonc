@@ -1109,9 +1109,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "0l2n4j5i7gnb2bdkw0zpq5r3a2ml9vdkiwncmn722vawdinacfn9",
-      "url": "https://github.com/nextcloud/guests/releases/download/v.1.1.1/guests.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1fbwawm15hvrnf4n56xj86ar5mvlknpd7dk8298q49x3x5nxfxn8",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.2.1/guests.tar.gz",
+      "version": "1.2.1"
     },
     "hsts": {
       "meta": {
@@ -1341,9 +1341,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1066qv3jjaiqzn3x3gzbj3k33zqddc9gz4dkj5s00kfi58zlhyn4",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.0.2/notes.tar.gz",
-      "version": "3.0.2"
+      "sha256": "0zygmdgmwz7bis8v8ywx59lbnzasc32a2wnlk0ijvzb8cnkh11nk",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.0.3/notes.tar.gz",
+      "version": "3.0.3"
     },
     "notifications": {
       "meta": {
@@ -1383,9 +1383,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "05bxmhzwacqs90gb3mdsrf20sq0ibl1l69m6q5zf5w2iv8j5kmxk",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.6/ocr.tar.gz",
-      "version": "4.4.6"
+      "sha256": "0wqzvxiyyjg9fi2w5zg6n4yn3f9am4gk8d7n7pw2j52xlm3hqsi2",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.7/ocr.tar.gz",
+      "version": "4.4.7"
     },
     "ocsms": {
       "meta": {
@@ -1458,9 +1458,9 @@
         "name": "OwnBackup",
         "summary": "Simple database backup solutions for your ownCloud 8.1+ or Nextcloud installation."
       },
-      "sha256": "0qz7qr8xmkv2jll5z8vyv64whmlrgpc90ykhmhlqfl8nl34lfscz",
-      "url": "https://github.com/pbek/ownbackup/releases/download/19.5.0/ownbackup-nc.tar.gz",
-      "version": "19.5.0"
+      "sha256": "0pihnv07srgxqlywaap956jx97j86j75arcbsl1g7mq5zlznvcaz",
+      "url": "https://github.com/pbek/ownbackup/releases/download/19.9.0/ownbackup-nc.tar.gz",
+      "version": "19.9.0"
     },
     "ownpad": {
       "meta": {
@@ -1591,6 +1591,20 @@
       "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.1.0/previewgenerator.tar.gz",
       "version": "2.1.0"
     },
+    "pride": {
+      "meta": {
+        "description": "Diversity and inclusion are what makes the world worth living in! Let&amp;#39;s show some pride!",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Pride",
+        "summary": "Show your pride to the world"
+      },
+      "sha256": "1fsn68hagkadhr4fbsfw0nc56nwda63j4pwcpjkix88336vdgn62",
+      "url": "https://github.com/skjnldsv/pride/releases/download/0.0.3/pride.tar.gz",
+      "version": "0.0.3"
+    },
     "printer": {
       "meta": {
         "description": "Allows users to print files using the CUPS/LPR printing ecosystem.\n\n        Just open the details view of the file (Sidebar). There should be a new tab called \"Printer\".\n        Select the orientation of your printed file and it will be sent to your printer.\n        If you want to print it again, just click on the reload button.",
@@ -1643,9 +1657,9 @@
         "name": "QOwnNotesAPI",
         "summary": "API for QOwnNotes, the open source (GPL) notepad for Linux, Mac OS X and Windows"
       },
-      "sha256": "18w1k991f541087hi0sy8fs3sskpbnx44x72s9prbzjrbrdydb77",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/19.4.0/qownnotesapi-nc.tar.gz",
-      "version": "19.4.0"
+      "sha256": "037k6ab3q3gb6kqill9b6sw07pjnisbpp7rjh7aqwhgnx9sfqzzy",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/19.9.0/qownnotesapi-nc.tar.gz",
+      "version": "19.9.0"
     },
     "quickaccesssorting": {
       "meta": {
@@ -1789,9 +1803,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "028zk6nbldnd391m1pa8svbjdz4cnm4h9nnh2p6vr08mgrm43s1k",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.1/richdocuments.tar.gz",
-      "version": "3.4.1"
+      "sha256": "1bv7mwjfvrg3cx83lv2iy2haszlaargyxz2ydc8k0046ip5xw2ca",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.2/richdocuments.tar.gz",
+      "version": "3.4.2"
     },
     "scanner": {
       "meta": {
@@ -1975,9 +1989,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "075vnvd0ywvrgjzh9wiqqs8121rizkpj9an6af8azwsk4j0nghm9",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.1/release.tar.gz",
-      "version": "2.1.1"
+      "sha256": "1xjc9fcrn7nlf5fb74vsvrpkcgaf551f2aqykjkazwiiplfqcg39",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.2/release.tar.gz",
+      "version": "2.1.2"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2131,9 +2145,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "196yjlfkwcx8sx88w144ah7imrbxicpbd8jrsd7lmdfhhb9964yb",
-      "url": "https://github.com/nextcloud/tasks/releases/download/0.11.2/tasks.tar.gz",
-      "version": "0.11.2"
+      "sha256": "0j1j9bvmcqqid1w1ng5lf1c4hpkyznfcx8iaaqcxxkb1kr5m4q4j",
+      "url": "https://github.com/nextcloud/tasks/releases/download/0.11.3/tasks.tar.gz",
+      "version": "0.11.3"
     },
     "telephoneprovider": {
       "meta": {
@@ -2346,9 +2360,9 @@
         "name": "Upload Details",
         "summary": "Shows Upload Details (percent complete, current speed, ...) in Upload Progress Bar"
       },
-      "sha256": "13wf2bsjs0b896ljv4isz27dwwmsgvrjszfmlnkj8dx128i86hr4",
-      "url": "https://github.com/burgha/nextcloud_uploaddetails/releases/download/v0.1.1/uploaddetails.tar.gz",
-      "version": "0.1.1"
+      "sha256": "0ah028w8lc5fhamyly884fl7bjs5hizgi232w59q6rn7ajaaffyp",
+      "url": "https://github.com/burgha/nextcloud_uploaddetails/releases/download/v0.1.2/uploaddetails.tar.gz",
+      "version": "0.1.2"
     },
     "user_backend_sql_raw": {
       "meta": {
@@ -2375,9 +2389,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "04n2mp0w6axg6p1klqh4ifwizlyh5pgmpw9jmjfaikdhza8cfsx0",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.2/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.7.2"
+      "sha256": "098k8xj1633by6acb267ylgpyd14zbs7lg5m69845q5sj8spcx3y",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.3/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.7.3"
     },
     "user_external": {
       "meta": {
