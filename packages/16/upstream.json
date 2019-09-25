@@ -208,9 +208,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "0kwq1ymqvndfysk5kb2r8qckxgrv6sff7mx326jdhlr2f69i4y45",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.17.0/carnet-nc-v0.17.0.tar.gz",
-      "version": "0.17.0"
+      "sha256": "09a7n2aa4r7j6sl6lcbjih3564az3k3r8i0adjhq19wyrgwhlrzb",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.0/carnet-nc-v0.18.0.tar.gz",
+      "version": "0.18.0"
     },
     "checksum": {
       "meta": {
@@ -1305,7 +1305,7 @@
     },
     "news": {
       "meta": {
-        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\r\n\r\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\r\n\r\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
+        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
         "homepage": "https://github.com/nextcloud/news",
         "isShipped": false,
         "licenses": [
@@ -1314,9 +1314,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0b2zzfcm3lqrpf2v38m70riyblndykh1qw875bq1a0jl4xlzj1pc",
-      "url": "https://github.com/nextcloud/news/releases/download/13.1.6/news.tar.gz",
-      "version": "13.1.6"
+      "sha256": "092kyrnpap0sc8adp761j2nyqi0imcqsvvypvmmks7dqb42p7spz",
+      "url": "https://github.com/nextcloud/news/releases/download/14.0.0/news.tar.gz",
+      "version": "14.0.0"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1383,9 +1383,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0wqzvxiyyjg9fi2w5zg6n4yn3f9am4gk8d7n7pw2j52xlm3hqsi2",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.7/ocr.tar.gz",
-      "version": "4.4.7"
+      "sha256": "0wgnk2l4cn04sxm099xd3q3wbkf5v9gr9wyay7lnh11k4wsmrj8a",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.9/ocr.tar.gz",
+      "version": "4.4.9"
     },
     "ocsms": {
       "meta": {
@@ -1989,9 +1989,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1xjc9fcrn7nlf5fb74vsvrpkcgaf551f2aqykjkazwiiplfqcg39",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.2/release.tar.gz",
-      "version": "2.1.2"
+      "sha256": "10jmffy65x94sjibmmgjfbi01g5bwgxqv6c2mrvmc2r5qd576d5c",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.3/release.tar.gz",
+      "version": "2.1.3"
     },
     "socialsharing_diaspora": {
       "meta": {
