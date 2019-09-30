@@ -93,6 +93,7 @@ in {
       serviceConfig = {
         ExecStart = "${cfg.package}/bin/initdb";
         StateDirectory = "postgresql";
+        StateDirectoryMode = "0700";
         Type = "oneshot";
         User = "postgres";
         Group = "postgres";
@@ -111,6 +112,7 @@ in {
         ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
         RuntimeDirectory = "postgresql";
         StateDirectory = "postgresql";
+        StateDirectoryMode = "0700";
         Type = "notify";
         User = "postgres";
         Group = "postgres";
