@@ -2639,9 +2639,9 @@
     "files_rightclick": "!=0.15.1,!=0.15.0"
   },
   "nextcloud": {
-    "sha256": "1hvi1hfwsicicn5zl6zrj1ihfkc6m6635c7622jb1arybnfh73rf",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.11.tar.bz2",
-    "version": "15.0.11.1"
+    "sha256": "1bhnmmqc0rhxzqw13dpml91ciyxzyz7l3av5gzy8ib2gffmzmr7b",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-15.0.12.tar.bz2",
+    "version": "15.0.12.1"
   },
   "themes": {
     "breeze-dark": {
