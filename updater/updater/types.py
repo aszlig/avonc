@@ -50,7 +50,7 @@ class Theme(NamedTuple):
 
 
 class Nextcloud(NamedTuple):
-    version: Version
+    version: Optional[Version]
     download_url: str
     sha256: Sha256
 

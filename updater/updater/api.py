@@ -65,10 +65,16 @@ def _strip_build(version: Version) -> Version:
     return Version(f'{version.major}.{version.minor}.{version.patch}')
 
 
-def _fetch_latest_nextcloud(curver: Version) -> Optional[Nextcloud]:
+def _fetch_latest_nextcloud(
+    major: int,
+    curver: Optional[Version]
+) -> Optional[Nextcloud]:
     versions = _get_nextcloud_versions()
-    spec = Spec(f'<{curver.next_major()},>{_strip_build(curver)}')
-    version = spec.select(versions.keys())
+    if curver is None:
+        version = Spec(f'^{major}').select(versions.keys())
+    else:
+        spec = Spec(f'<{curver.next_major()},>{_strip_build(curver)}')
+        version = spec.select(versions.keys())
     if version is None:
         return None
     url = versions[version]
@@ -125,6 +131,7 @@ def _get_external_apps(
     nextcloud: Nextcloud,
     constraints: Dict[AppId, Spec]
 ) -> Dict[AppId, App]:
+    assert nextcloud.version is not None
     ncver = str(_strip_build(nextcloud.version))
     url = f'https://apps.nextcloud.com/api/v1/platform/{ncver}/apps.json'
     desc = f'Downloading Nextcloud app index for version {ncver}'
@@ -163,11 +170,12 @@ def _get_external_apps(
     return apps
 
 
-def upgrade(info: ReleaseInfo) -> ReleaseInfo:
+def upgrade(major: int, info: ReleaseInfo) -> ReleaseInfo:
     old_nc_version = info.nextcloud.version
-    nextcloud = _fetch_latest_nextcloud(old_nc_version)
+    nextcloud = _fetch_latest_nextcloud(major, old_nc_version)
     if nextcloud is None:
         nextcloud = info.nextcloud
-    apps = _get_external_apps(nextcloud, info.constraints)
-    apps.update(nix.get_internal_apps(nextcloud))
+    if nextcloud.version is not None:
+        apps = _get_external_apps(nextcloud, info.constraints)
+        apps.update(nix.get_internal_apps(nextcloud))
     return ReleaseInfo(nextcloud, apps, info.themes, info.constraints)

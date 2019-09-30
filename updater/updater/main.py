@@ -15,8 +15,10 @@ from .diff import ReleaseDiff
 
 def import_data(data: Dict[str, Any], major: int) -> ReleaseInfo:
     nextcloud_data = data.get('nextcloud', {})
+    version_str = nextcloud_data.get('version')
+    version = None if version_str is None else Version.coerce(version_str)
     nextcloud = Nextcloud(
-        Version.coerce(nextcloud_data.get('version', str(major))),
+        version,
         nextcloud_data.get('url'),
         nextcloud_data.get('sha256'),
     )
@@ -109,7 +111,7 @@ def update_major(major: int, info_file: str) -> Optional[str]:
         current_state = {}
 
     old = import_data(current_state, major)
-    new_apps = api.upgrade(old)
+    new_apps = api.upgrade(major, old)
     new = new_apps._replace(themes=themes.upgrade(major, new_apps.themes))
     diff = ReleaseDiff(old, new)
 
