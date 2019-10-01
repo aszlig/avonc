@@ -237,9 +237,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "09a7n2aa4r7j6sl6lcbjih3564az3k3r8i0adjhq19wyrgwhlrzb",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.0/carnet-nc-v0.18.0.tar.gz",
-      "version": "0.18.0"
+      "sha256": "17pdl6yvhi3nhyv1ind457k2pbi3rcqspmiwm21agw8p307fg75m",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.3/carnet-nc-v0.18.3.tar.gz",
+      "version": "0.18.3"
     },
     "checksum": {
       "meta": {
@@ -1473,9 +1473,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "0p14nmx1kncd2720mz3n5wn1j5x2ksdg4hkj42nhz9pabqsmi4c4",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v3.0.0/onlyoffice.tar.gz",
-      "version": "3.0.0"
+      "sha256": "004gqhsxpv8z2xgqkg3cxbsdhfmxm5zyx4sr07dmrc92xbxfi2z1",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v3.0.2/onlyoffice.tar.gz",
+      "version": "3.0.2"
     },
     "orcid": {
       "meta": {
@@ -2025,9 +2025,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1bbl04byhc47vxjd88sbxyawwwfn6lq98d3iqvc7vypy5qssahb0",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.1.5/release.tar.gz",
-      "version": "2.1.5"
+      "sha256": "0gs1j9yaqng9nn2qkn0xd7qi7221wfqn5ixb85chz2q5fzl7cr31",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.2.0/release.tar.gz",
+      "version": "2.2.0"
     },
     "socialsharing_diaspora": {
       "meta": {
