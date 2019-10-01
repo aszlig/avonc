@@ -72,14 +72,26 @@ import ./make-test.nix (pkgs: {
       systemd.services.mongooseim.enable = false;
 
       nextcloud.apps = {
+        # XXX: These apps are unsupported for Nextcloud 17.
+        apporder.enable = true;
+        apporder.forceEnable = true;
+        dropit.enable = true;
+        dropit.forceEnable = true;
         end_to_end_encryption.enable = true;
         end_to_end_encryption.forceEnable = true;
+        files_readmemd.enable = true;
+        files_readmemd.forceEnable = true;
+        metadata.enable = true;
+        metadata.forceEnable = true;
+        ojsxc.enable = true;
+        ojsxc.forceEnable = true;
+        polls.enable = true;
+        polls.forceEnable = true;
       } // lib.genAttrs [
-        "apporder" "bookmarks" "calendar" "circles" "contacts" "deck" "dropit"
-        "external" "files_accesscontrol" "files_markdown" "files_readmemd"
-        "files_rightclick" "gpxpod" "groupfolders" "mail" "metadata" "news"
-        "ojsxc" "passwords" "phonetrack" "polls" "richdocuments" "social"
-        "spreed" "tasks"
+        "bookmarks" "calendar" "circles" "contacts" "deck" "external"
+        "files_accesscontrol" "files_markdown" "files_rightclick" "gpxpod"
+        "groupfolders" "mail" "news" "passwords" "phonetrack" "richdocuments"
+        "social" "spreed" "tasks"
       ] (app: { enable = true; });
     };
   };
