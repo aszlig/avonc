@@ -19,10 +19,10 @@ import ./make-test.nix (pkgs: {
     generation1 = { lib, options, config, pkgs, ... }: {
       imports = [ common ];
 
-      nextcloud.majorVersion = 15;
+      nextcloud.majorVersion = 16;
 
       nextcloud.apps = let
-        nc15apps = (lib.importJSON ../packages/15/upstream.json).applications;
+        nc16apps = (lib.importJSON ../packages/16/upstream.json).applications;
 
         excludedApps = [
           # Conflicts with "bookmarks"
@@ -62,7 +62,7 @@ import ./make-test.nix (pkgs: {
         in lib.const (lib.optionalAttrs (!isExcluded) {
           enable = true;
         });
-      in lib.mapAttrs enableApp nc15apps;
+      in lib.mapAttrs enableApp nc16apps;
     };
 
     generation2 = { lib, nodes, ... }: {
@@ -138,7 +138,7 @@ import ./make-test.nix (pkgs: {
     $machine->waitForUnit('nextcloud.service');
 
     $machine->succeed(
-      'curl -L http://localhost/ | grep -o "Username or email"'
+      'curl -L http://localhost/ | grep -o initial-state-core-loginUsername'
     );
 
     my $applist = $machine->succeed('nextcloud-occ app:list --output=json'
