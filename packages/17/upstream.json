@@ -469,6 +469,21 @@
       "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.3.1/files_fulltextsearch_tesseract-1.3.1.tar.gz",
       "version": "1.3.1"
     },
+    "files_inotify": {
+      "meta": {
+        "description": "Adds support detecting changes in local external storages with\nocc files_external:notify.\n\nNote that there are scalability limitations to using `inotify` on large folder structures, see the [README](https://github.com/icewind1991/files_inotify/blob/master/README.md) for more information",
+        "homepage": "https://github.com/icewind1991/files_inotify",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "INotify file watcher",
+        "summary": "Adds support detecting changes in local external storages"
+      },
+      "sha256": "0d33xxqkkfvai1p641h3ah4xmb1mz70q38zs6rxrxnzn9gsbqnjp",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.5/files_inotify.tar.gz",
+      "version": "0.1.5"
+    },
     "files_markdown": {
       "meta": {
         "description": "Markdown Editor extends the Nextcloud text editor with a live preview for markdown files.\n\nA full list of features can be found [in the README](https://github.com/icewind1991/files_markdown)",
@@ -744,6 +759,21 @@
       "sha256": "1v7djcjkh90xf83p9c06drf5rld73a9b9j55bx75av92ai20c41k",
       "url": "https://github.com/nextcloud/groupfolders/releases/download/v5.0.3/groupfolders-5.0.3.tar.gz",
       "version": "5.0.3"
+    },
+    "groupquota": {
+      "meta": {
+        "description": "Allow setting a disk quota for an entire group.\n\nNote: configuring quota is only possible trough the API, no admin interface is currently available.",
+        "homepage": "https://github.com/nextcloud/groupquota",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Group quota",
+        "summary": "Give filesystem quotas to groups"
+      },
+      "sha256": "0fsz7nslmc5nh38kl8l55nsw4qhkcx6vxgdx2r6zinb3f828v1ip",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.1/groupquota-0.1.1.tar.gz",
+      "version": "0.1.1"
     },
     "guests": {
       "meta": {
@@ -1331,6 +1361,21 @@
       "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.2/sharerenamer-2.7.2.tar.gz",
       "version": "2.7.2"
     },
+    "smb_test": {
+      "meta": {
+        "description": "Nextcloud app to debug smb connections",
+        "homepage": "https://github.com/icewind1991/smb_test",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SMB connection test",
+        "summary": "SMB connection test app"
+      },
+      "sha256": "073yyjgxsvy9z1imd22m08wajrdkic2acammzzz2n7cv18lvspj7",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.3/smb_test.tar.gz",
+      "version": "0.2.3"
+    },
     "social": {
       "meta": {
         "description": "** Disclaimer: this is an ALPHA version **\r\n\r\n** Nextcloud becomes part of the federated social networks!**\r\n\r\n** Find your friends:** No matter if they use Nextcloud,  Mastodon,  Friendica, and soon  Diaspora,  MediaGoblin and more  you can follow them!\r\n\r\n** Profile info:** No need to fill out more profiles  your info from Nextcloud will be used and extended.\r\n\r\n** Own your posts:** Everything you post stays on your Nextcloud!\r\n\r\n** Open standards:** We use the established ActivityPub standard!",
@@ -1725,6 +1770,21 @@
       "sha256": "0k28l1nksrzn5ijs0dgsyhi7h9j57ja85dci9qdmkn4889rih4zk",
       "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.2.0/workflow_script.tar.gz",
       "version": "1.2.0"
+    },
+    "xray": {
+      "meta": {
+        "description": "Note: this app is **not** for production use and should not be enabled without good reason.\n\nXRay enables logging of resource usage of Nextcloud to help developers with performance optimization.\n\nWarning, sharing any information logged by this app can leak potentially private information such as user names, file structure, share metadata and more.",
+        "homepage": "https://github.com/icewind1991/xray",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "XRay",
+        "summary": "Resource usage monitoring for developers"
+      },
+      "sha256": "0l5svhq3ymwba8bb14whd9axl67a1b3cgx0skxzbbgzvk38wwfhl",
+      "url": "https://github.com/icewind1991/xray/releases/download/v0.2.2/xray.tar.gz",
+      "version": "0.2.2"
     }
   },
   "nextcloud": {

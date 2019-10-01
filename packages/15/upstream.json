@@ -743,9 +743,9 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "16mzlb3ljbblm42flk06xnjnwnc43ivvakm49712f25hr5j0c1a4",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.4/files_inotify.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0d33xxqkkfvai1p641h3ah4xmb1mz70q38zs6rxrxnzn9gsbqnjp",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.5/files_inotify.tar.gz",
+      "version": "0.1.5"
     },
     "files_linkeditor": {
       "meta": {
@@ -1153,9 +1153,9 @@
         "name": "Group quota",
         "summary": "Give filesystem quotas to groups"
       },
-      "sha256": "03afyka4v0d7hccm0lggcg8wa3mc6gm46361qga4kckk8wxmgfh5",
-      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.0/groupquota-0.1.0.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0fsz7nslmc5nh38kl8l55nsw4qhkcx6vxgdx2r6zinb3f828v1ip",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.1/groupquota-0.1.1.tar.gz",
+      "version": "0.1.1"
     },
     "hsts": {
       "meta": {
@@ -1995,9 +1995,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "1kdzv728mrjsixzilswvxw59p64n51khsiryih7d0clrs0xhr0db",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.2/smb_test.tar.gz",
-      "version": "0.2.2"
+      "sha256": "073yyjgxsvy9z1imd22m08wajrdkic2acammzzz2n7cv18lvspj7",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.3/smb_test.tar.gz",
+      "version": "0.2.3"
     },
     "social": {
       "meta": {
@@ -2600,9 +2600,9 @@
         "name": "XRay",
         "summary": "Resource usage monitoring for developers"
       },
-      "sha256": "0fs9z4az7m2q0ifp86907hibrw0x0lpa9rrh73n0y1fna5nsq91f",
-      "url": "https://github.com/icewind1991/xray/releases/download/v0.2.1/xray.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0l5svhq3ymwba8bb14whd9axl67a1b3cgx0skxzbbgzvk38wwfhl",
+      "url": "https://github.com/icewind1991/xray/releases/download/v0.2.2/xray.tar.gz",
+      "version": "0.2.2"
     },
     "zenodo": {
       "meta": {
