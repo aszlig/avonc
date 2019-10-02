@@ -151,9 +151,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "17pdl6yvhi3nhyv1ind457k2pbi3rcqspmiwm21agw8p307fg75m",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.3/carnet-nc-v0.18.3.tar.gz",
-      "version": "0.18.3"
+      "sha256": "1w9lqqkjjrklc8db3m0jiyz2dv9z6vwdv0kprl5w012hlwgyz4hg",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.4/carnet-nc-v0.18.4.tar.gz",
+      "version": "0.18.4"
     },
     "checksum": {
       "meta": {
@@ -1000,9 +1000,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0q2a9fdskyax81irzr94128ch7rqkjinv0wp70bp9xv6zldjlk83",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.12/ocr.tar.gz",
-      "version": "4.4.12"
+      "sha256": "07aiw7qczrarqqm6zfsahscw8hrz597zrwibb57h2h8gsr06q9lq",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.13/ocr.tar.gz",
+      "version": "4.4.13"
     },
     "ocsms": {
       "meta": {
@@ -1740,6 +1740,21 @@
         "name": "Viewer",
         "summary": "Simple file viewer with slideshow for media"
       }
+    },
+    "w2g2": {
+      "meta": {
+        "description": "Nextcloud plugin that allows the users to lock files and folders.\n\t\tIt works with files and folders owned by the user, shared by another user or inside a group folder.\n\n\t\tThis is a fork from the Working2gether app, with enhancements.",
+        "homepage": "https://github.com/newroco/W2G2",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "W2G2",
+        "summary": "Visual locking of files and folders to contribute to a better collaboration"
+      },
+      "sha256": "1iff1ml4n8ab7zk479y94708nhg7xxrqhffs52cipk4g4l9f7ws9",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.0/w2g2.tar.gz",
+      "version": "3.0.0"
     },
     "workflow_pdf_converter": {
       "meta": {
