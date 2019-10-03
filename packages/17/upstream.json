@@ -208,9 +208,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1cvhrngx58qw7xcd2i3gb1lpq3cq0whm205lir77z3ph4v073mfk",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.4/contacts.tar.gz",
-      "version": "3.1.4"
+      "sha256": "08apyw3s4xxrlf9cxn3chfnqa1f6jlnd7mqxqy0qz96l0mc5sfc8",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.6/contacts.tar.gz",
+      "version": "3.1.6"
     },
     "cookbook": {
       "meta": {
@@ -378,9 +378,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "0zdmni2x0jpp3jd8jhgh2gj81lgwj467sgpj4qxy7ghvg9nfhznd",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.1.1/files_antivirus.tar.gz",
-      "version": "2.1.1"
+      "sha256": "0rkbymc79sqsc6mb3ls7n065ixahqw7gy6bf9fdb2cn97x8layaf",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.2.0/files_antivirus.tar.gz",
+      "version": "2.2.0"
     },
     "files_automatedtagging": {
       "meta": {
