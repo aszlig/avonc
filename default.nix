@@ -376,6 +376,8 @@ let
           "SSL_CERT_FILE=${caCerts}"
           "NIX_SSL_CERT_FILE=${caCerts}"
         ];
+        ignore-sigpipe = true;
+        ignore-write-errors = true;
         master = true;
         php-allowed-script = map (name: "${package}/${name}.php") entryPoints;
         php-index = "index.php";
