@@ -47,9 +47,23 @@
         "name": "Announcement center",
         "summary": "This app allows admins to post announcements."
       },
-      "sha256": "04a1l5grx1b7wrihxa3zm1p7ha53mna9k9z4cc2s0639msc8l6dg",
-      "url": "https://github.com/nextcloud/announcementcenter/releases/download/v3.6.0/announcementcenter-3.6.0.tar.gz",
-      "version": "3.6.0"
+      "sha256": "1ps31vbqaac89j5a39jz09nfpph1mm2jpgvxyxb801a4vsdmam5l",
+      "url": "https://github.com/nextcloud/announcementcenter/releases/download/v3.6.1/announcementcenter-3.6.1.tar.gz",
+      "version": "3.6.1"
+    },
+    "apporder": {
+      "meta": {
+        "description": "Enable sorting the app icons from the personal settings. The order will be saved for each\nuser individually. Administrators can define a custom default order.\n\n## Set a default order for all new users\n\nGo to the Admin settings &gt; Additional settings and drag the icons under App order.\n\n## Use first app as default app\n\nYou can easily let Nextcloud redirect your user to the first app in their\npersonal order by changing the following parameter in your config/config.php:\n\n    'defaultapp' =&gt; 'apporder',\n\nUsers will now get redirected to the first app of the default order or to the\nfirst app of the user order.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "AppOrder",
+        "summary": "Sort apps in the menu with drag and drop"
+      },
+      "sha256": "1i52g7nkmazk9gj54cribzmpb7iridln0hsngcj8js7j89xhr4n5",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.8.0/apporder.tar.gz",
+      "version": "0.8.0"
     },
     "audioplayer": {
       "meta": {
@@ -1813,8 +1827,8 @@
       "github": {
         "owner": "mwalbeck",
         "repo": "nextcloud-breeze-dark",
-        "rev": "247a5abf21154d6dffc4a5cf228cf44450f3ef7d",
-        "sha256": "1zkx2bg3xd5knxji3833jg30il3ndwwf9azywdybbx10mskm41vh"
+        "rev": "0a9c3218201de3d2eb27fe43dd9eb4267e6248a8",
+        "sha256": "00cy54yi37mbijnhxdqr3gxxgl8cjgs4w34xdc2sy2bh4913a82h"
       }
     }
   }

@@ -76,9 +76,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "0mr1d614139ra8wlwkahz5pj4x6fv99a3z85p77hgfv3h1x0rjq1",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.7.1/apporder.tar.gz",
-      "version": "0.7.1"
+      "sha256": "1i52g7nkmazk9gj54cribzmpb7iridln0hsngcj8js7j89xhr4n5",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.8.0/apporder.tar.gz",
+      "version": "0.8.0"
     },
     "audioplayer": {
       "meta": {
