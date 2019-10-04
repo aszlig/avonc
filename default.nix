@@ -689,6 +689,7 @@ in {
           client_max_body_size ${toString cfg.maxUploadSize}M;
           uwsgi_intercept_errors on;
           uwsgi_request_buffering off;
+          uwsgi_read_timeout 600;
           include ${config.services.nginx.package}/conf/uwsgi_params;
           uwsgi_param REQUEST_URI $uri$is_args$args;
           uwsgi_pass unix:///run/nextcloud.socket;
