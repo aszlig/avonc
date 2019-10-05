@@ -419,7 +419,7 @@ in {
     useSSL = lib.mkOption {
       type = types.bool;
       default = builtins.match ".+\\..+" cfg.domain != null;
-      defaultText =
+      defaultText = lib.literalExample
         "builtins.match \".+\\\\..+\" config.nextcloud.domain != null";
       description = ''
         Whether to allow HTTPS connections only. If <option>domain</option>
@@ -540,8 +540,8 @@ in {
       default = if lib.isInt config.nix.maxJobs
                 then config.nix.maxJobs * 2
                 else 1;
-      defaultText = "if lib.isInt config.nix.maxJobs then"
-                  + " config.nix.maxJobs * 2 else 1";
+      defaultText = lib.literalExample
+        "if lib.isInt config.nix.maxJobs then config.nix.maxJobs * 2 else 1";
       description = "The amount of processes to spawn for uWSGI.";
     };
 
@@ -700,9 +700,11 @@ in {
       default = pkgs.callPackage ./packages {
         inherit (cfg) majorVersion apps theme extraPostPatch;
       };
-      defaultText = "pkgs.callPackage package/${toString cfg.majorVersion} {"
-                  + " inherit (cfg) apps theme extraPostPatch;"
-                  + "}";
+      defaultText = lib.literalExample
+        ( "pkgs.callPackage package/${toString cfg.majorVersion} {"
+        + " inherit (cfg) apps theme extraPostPatch;"
+        + "}"
+        );
       internal = true;
       description = ''
         The main Nextcloud package to use. Only needed for the upgrade test and

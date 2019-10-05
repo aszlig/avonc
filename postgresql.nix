@@ -37,7 +37,7 @@ in {
     package = mkOption {
       type = types.package;
       default = pkgs.postgresql_10 or pkgs.postgresql100;
-      defaultText = "pkgs.postgresql_10";
+      defaultText = lib.literalExample "pkgs.postgresql_10";
       description = "PostgreSQL package to use.";
 
       apply = pkg: pkg.overrideAttrs (drv: {

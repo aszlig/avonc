@@ -60,7 +60,8 @@ in {
     port = lib.mkOption {
       type = lib.types.ints.u16;
       default = if config.nextcloud.useSSL then 5349 else 3478;
-      defaultText = "if config.nextcloud.useSSL then 5349 else 3478";
+      defaultText = lib.literalExample
+        "if config.nextcloud.useSSL then 5349 else 3478";
       example = 5000;
       description = ''
         The port to use for the STUN/TURN server.
