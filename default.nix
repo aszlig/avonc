@@ -819,7 +819,8 @@ in {
       wantedBy = [ "timers.target" ];
 
       timerConfig.OnBootSec = "5m";
-      timerConfig.OnUnitActiveSec = "15m";
+      timerConfig.OnUnitActiveSec =
+        if cfg.majorVersion >= 17 then "5m" else "15m";
     };
 
     systemd.services.nextcloud-init-db = {
