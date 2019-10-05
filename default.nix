@@ -438,6 +438,60 @@ in {
       '';
     };
 
+    hsts = {
+      enable = lib.mkOption {
+        type = types.bool;
+        default = false;
+        description = ''
+          Whether to enable HTTP Strict Transport Security, which instructs
+          browsers to not allow unencrypted connections. It's recommended to
+          enable this.
+        '';
+      };
+
+      maxAge = lib.mkOption {
+        type = types.ints.unsigned;
+        default = 31536000;
+        defaultText = lib.literalExample "60 * 60 * 24 * 365";
+        example = 0;
+        description = ''
+          The time, in seconds, that the browser should remember that a site is
+          only to be accessed using HTTPS.
+
+          If the value is <literal>0</literal> the HSTS header field will
+          indicate that the browser must delete the entire HSTS policy.
+        '';
+      };
+
+      includeSubDomains = lib.mkOption {
+        type = types.bool;
+        default = true;
+        description = ''
+          Whether HTTP Strict Transport Security also applies to all
+          subdomains of <option>nextcloud.domain</option>.
+        '';
+      };
+
+      preload = lib.mkOption {
+        type = types.bool;
+        default = true;
+        description = ''
+          The domain will be added to a hardcoded list that is shipped with all
+          major browsers and enforce HTTPS upon the domain specified in
+          <option>nextcloud.domain</option>.
+
+          See the <link xlink:href="https://hstspreload.org/">HSTS preload
+          website</link> for more information. Due to the policy of this list
+          you need to add the domain for yourself once you are sure that this
+          is what you want.
+
+          <link xlink:href="https://hstspreload.org/#removal">Removing the
+          domain</link> from this list could take some months until it reaches
+          all installed browsers.
+        '';
+      };
+    };
+
     port = lib.mkOption {
       type = types.ints.u16;
       default = 443;
@@ -663,14 +717,25 @@ in {
   ];
 
   config = {
-    assertions = lib.singleton {
-      assertion = cfg.apps.bookmarks.enable
-               -> !cfg.apps.bookmarks_fulltextsearch.enable;
-      message = toString [
-        "The 'bookmarks' and 'bookmarks_fulltextsearch' apps are incompatible,"
-        "see https://github.com/nextcloud/bookmarks#install"
-      ];
-    } ++ appVersionAssertions;
+    assertions = [
+      { assertion = cfg.apps.bookmarks.enable
+                 -> !cfg.apps.bookmarks_fulltextsearch.enable;
+        message = toString [
+          "The 'bookmarks' and 'bookmarks_fulltextsearch' apps are"
+          " incompatible, see https://github.com/nextcloud/bookmarks#install"
+        ];
+      }
+      { assertion = cfg.hsts.enable -> cfg.useSSL;
+        message = "To enable HSTS, you also need to enable SSL by setting"
+                + " the option 'nextcloud.useSSL' to true.";
+      }
+      { assertion = cfg.hsts.enable && cfg.hsts.preload
+                 -> cfg.hsts.includeSubDomains;
+        message = "In order to enable HSTS preload, you also need to make sure"
+                + " that the 'nextcloud.hsts.includeSubDomains' option is"
+                + " enabled as well.";
+      }
+    ] ++ appVersionAssertions;
 
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
@@ -685,6 +750,15 @@ in {
         rewrite ^/(oc[ms]-provider) /$1/index.php last;
       '';
       locations = let
+        hstsConfig = let
+          flags = lib.singleton "max-age=${toString cfg.hsts.maxAge}"
+               ++ lib.optional cfg.hsts.preload "preload"
+               ++ lib.optional cfg.hsts.includeSubDomains "includeSubDomains";
+          hdrValue = lib.concatStringsSep "; " flags;
+        in lib.optionalString cfg.hsts.enable ''
+          add_header Strict-Transport-Security "${hdrValue}" always;
+        '';
+
         backendConfig = ''
           client_max_body_size ${toString cfg.maxUploadSize}M;
           uwsgi_intercept_errors on;
@@ -693,17 +767,19 @@ in {
           include ${config.services.nginx.package}/conf/uwsgi_params;
           uwsgi_param REQUEST_URI $uri$is_args$args;
           uwsgi_pass unix:///run/nextcloud.socket;
-        '';
+        '' + hstsConfig;
+
       in {
         "/" = {
           root = staticFiles;
           tryFiles = "$uri $uri$is_args$args /index.php$uri$is_args$args";
-          extraConfig = "access_log off;";
+          extraConfig = "access_log off;" + hstsConfig;
         };
 
         "~ ^/.well-known/(?:card|cal)dav(?:$|/)" = {
           priority = 200;
-          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav/;";
+          extraConfig = "return 301 ${cfg.baseUrl}/remote.php/dav/;"
+                      + hstsConfig;
         };
 
         "= /ocs/v2.php/apps/end_to_end_encryption/api/v1/public-key" = {
