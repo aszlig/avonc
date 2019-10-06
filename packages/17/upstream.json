@@ -112,7 +112,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "This app allows you to store and organize your favorite places on the web in one spot, while allowing you to sync them with your various devices and browsers.\n\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients",
+        "description": "This app provides you with a web interface for collecting and organizing bookmarks to the sites on the web that are precious to you. You can browse and filter your bookmarks via tags and folders and by using the built-in search feature. Furthermore, in order to access your bookmarks anywhere, it also allows you to synchronize third-party clients via a built-in REST API -- in your browsers and on your phone.\n\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -121,9 +121,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0m08jy4c8qyvv87dvxk2j2bxzsyc146vn58vfqc8qs1yfrvvbz3v",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.1.1/bookmarks-2.1.1.tar.gz",
-      "version": "2.1.1"
+      "sha256": "008mdssbj62m0b2xh9dkadb5pv135x8cmlsj9sj993bwcmnicfqd",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.2.0/bookmarks-2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "bruteforcesettings": {
       "meta": {
@@ -195,9 +195,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "113440ssm41yshwxbxbq3fgd1gd2cqv6pdv7zwrl7z62gsswflrw",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.7/circles-0.17.7.tar.gz",
-      "version": "0.17.7"
+      "sha256": "05j309bkn4j2jdyljf6db6lvhrafpjd7h4vprj04bv9yn2sinzj3",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.8/circles-0.17.8.tar.gz",
+      "version": "0.17.8"
     },
     "comments": {
       "meta": {
@@ -904,6 +904,21 @@
       "url": "https://github.com/nextcloud/maps/releases/download/v0.1.2/maps-0.1.2.tar.gz",
       "version": "0.1.2"
     },
+    "metadata": {
+      "meta": {
+        "description": "A plugin which displays file metadata in the file details sidebar.\n\nSee the [README](https://github.com/gino0631/nextcloud-metadata/blob/master/README.md) for the supported file types and limitations.",
+        "homepage": "https://github.com/gino0631/nextcloud-metadata",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Metadata",
+        "summary": "A plugin for displaying file metadata"
+      },
+      "sha256": "1nmwnz5f3pc8dirwb6s5lq6a37crfiddg4265iscfymng6mz4d38",
+      "url": "https://github.com/gino0631/nextcloud-metadata/releases/download/v0.10.0/metadata.tar.gz",
+      "version": "0.10.0"
+    },
     "mood": {
       "meta": {
         "description": "**mood** use the **Activity** and **Circles** apps to make the perfect social media tool for your Nextcloud.\n\n_Note: **mood** is deprecated and not maintained anymore. Please consider switching to the **Social** app._\n\n With **mood**, you can instantly share a short text with other users on your instance: it can be a status update, a link, an information or anything you want.\nYou don't have to share with everyone: thanks to the **Circles** app, you decide who can see your moods \n\nIf you want to connect with other instances, you can federate your Circles with them.\nLink your _circles_ with remote clouds and your messages will be broadcast all over the mesh!",
@@ -1100,9 +1115,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "180y27nglikinzwvxgb3z55bh529zppmympljp77fpj3r5dy3srf",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8788/artifacts/raw/passwords.tar.gz",
-      "version": "2019.9.1"
+      "sha256": "17balhjdqf1lhmkrd60jb1dig241q34dg7q86ic9z9avhrhx14sn",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8833/artifacts/raw/passwords.tar.gz",
+      "version": "2019.10.0"
     },
     "phonetrack": {
       "meta": {

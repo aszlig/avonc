@@ -79,8 +79,6 @@ import ./make-test.nix (pkgs: {
         end_to_end_encryption.forceEnable = true;
         files_readmemd.enable = true;
         files_readmemd.forceEnable = true;
-        metadata.enable = true;
-        metadata.forceEnable = true;
         ojsxc.enable = true;
         ojsxc.forceEnable = true;
         polls.enable = true;
@@ -88,8 +86,8 @@ import ./make-test.nix (pkgs: {
       } // lib.genAttrs [
         "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
         "external" "files_accesscontrol" "files_markdown" "files_rightclick"
-        "gpxpod" "groupfolders" "mail" "news" "passwords" "phonetrack"
-        "richdocuments" "social" "spreed" "tasks"
+        "gpxpod" "groupfolders" "mail" "metadata" "news" "passwords"
+        "phonetrack" "richdocuments" "social" "spreed" "tasks"
       ] (app: { enable = true; });
     };
   };
