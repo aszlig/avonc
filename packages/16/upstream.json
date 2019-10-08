@@ -294,9 +294,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1cxfs8q319y4hwfy1hv8vxjf9lzn93zrirm0ink6prdy1drdkhc4",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.4.2/cookbook.tar.gz",
-      "version": "0.4.2"
+      "sha256": "12wj4y6n9632ajcahks08dyzw8kqrzsc7949nf2mmjirx1l4ific",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.1/cookbook.tar.gz",
+      "version": "0.5.1"
     },
     "cospend": {
       "meta": {
@@ -1109,9 +1109,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "1fbwawm15hvrnf4n56xj86ar5mvlknpd7dk8298q49x3x5nxfxn8",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.2.1/guests.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1m38pxwc852vl4xrlnaqc5ljbmr7rnsb65fvhmbzgyia0akn6anb",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.2.2/guests.tar.gz",
+      "version": "1.2.2"
     },
     "hsts": {
       "meta": {
@@ -1383,9 +1383,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "07aiw7qczrarqqm6zfsahscw8hrz597zrwibb57h2h8gsr06q9lq",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.13/ocr.tar.gz",
-      "version": "4.4.13"
+      "sha256": "0fkpprwdyyd46b084l3zhsyrwqvb62wnxlpbixh6bd3f9mhkr0ni",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.14/ocr.tar.gz",
+      "version": "4.4.14"
     },
     "ocsms": {
       "meta": {
@@ -2004,9 +2004,9 @@
         "name": "Social sharing via Diaspora",
         "summary": "Enable direct sharing of files via Diaspora, using shared links."
       },
-      "sha256": "15rpzkdh9cay431rlmy7firanys7lvxpfjav8a5rxbw4gs9ipqgk",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/diaspora-1.0.4/socialsharing_diaspora.tar.gz",
-      "version": "1.0.4"
+      "sha256": "159h8f7w50k6m07pj26ngb68lavnxic1kcfww6if56g0sqrkvhhz",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/diaspora-1.0.5/socialsharing_diaspora.tar.gz",
+      "version": "1.0.5"
     },
     "socialsharing_email": {
       "meta": {
@@ -2019,9 +2019,9 @@
         "name": "Social sharing via email",
         "summary": "Enable direct sharing of files via email, using shared links."
       },
-      "sha256": "1fqdpn3sphflvcj0vn8i3dv7da92bjssw2lby4yp6a87wryb9idp",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/email-1.0.5/socialsharing_email.tar.gz",
-      "version": "1.0.5"
+      "sha256": "0x24221jwybw67g63mlfl6w3jcsjc7nfwxr9xdiiiyb0409qlhyc",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/email-1.0.6/socialsharing_email.tar.gz",
+      "version": "1.0.6"
     },
     "socialsharing_facebook": {
       "meta": {
@@ -2034,9 +2034,9 @@
         "name": "Social sharing via Facebook",
         "summary": "Enable direct sharing of files via Facebook, using shared links."
       },
-      "sha256": "18mx92d2np0mm059mfr7yf7yi0dbwaczgb25rmkdw04rb53hmwv8",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/facebook-1.0.4/socialsharing_facebook.tar.gz",
-      "version": "1.0.4"
+      "sha256": "1jx5zwzccnbvclbvkxrrpaiizh97wplwhhs7mgg6p71135fash60",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/facebook-1.0.5/socialsharing_facebook.tar.gz",
+      "version": "1.0.5"
     },
     "socialsharing_twitter": {
       "meta": {
@@ -2049,9 +2049,9 @@
         "name": "Social sharing via Twitter",
         "summary": "Enable direct sharing of files via Twitter, using shared links."
       },
-      "sha256": "0rphr3xvq2pl7kpy5d0n6z4il22dfznvhk2ivssyp0jjkn5rp9xg",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/twitter-1.0.4/socialsharing_twitter.tar.gz",
-      "version": "1.0.4"
+      "sha256": "07i83bl2g5ha7byj6mm5wsx1hs4681j7afa4rb87cj41b1rc5cmd",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/twitter-1.0.5/socialsharing_twitter.tar.gz",
+      "version": "1.0.5"
     },
     "spreed": {
       "meta": {
