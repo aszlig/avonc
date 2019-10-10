@@ -294,9 +294,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "12wj4y6n9632ajcahks08dyzw8kqrzsc7949nf2mmjirx1l4ific",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.1/cookbook.tar.gz",
-      "version": "0.5.1"
+      "sha256": "1qp6f1ljfbpg8ypk2i0ysl4h0ba5n34d0nfn6a80bkzn2bkk5bhx",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.2/cookbook.tar.gz",
+      "version": "0.5.2"
     },
     "cospend": {
       "meta": {
@@ -685,13 +685,13 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "0d33xxqkkfvai1p641h3ah4xmb1mz70q38zs6rxrxnzn9gsbqnjp",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.5/files_inotify.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0wak2gzwjymajc187czqy07hcj0v0ayrvvs2dhk43b7qxiap5bys",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.6/files_inotify.tar.gz",
+      "version": "0.1.6"
     },
     "files_linkeditor": {
       "meta": {
-        "description": "This application allows users to create and edit external links in their filelist (.URL and .webloc) and also to open the links when publicly shared.",
+        "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
         "homepage": "https://github.com/te-online/files_linkeditor",
         "isShipped": false,
         "licenses": [
@@ -700,9 +700,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "15773xmnyvd177md3g7g8a0p0cjwzafc3yx18n1jvkqhaj7cm22x",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.10/files_linkeditor.tar.gz",
-      "version": "1.0.10"
+      "sha256": "11qq94c6wzyxw81r0k9s56xrx3r8f1nf3pdrihnc5szrd84kal9a",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.11/files_linkeditor.tar.gz",
+      "version": "1.0.11"
     },
     "files_markdown": {
       "meta": {
@@ -1672,9 +1672,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "0xdd4jzn0lpk3fvqgjg5wdqhp8zagxzwripgq3gv1f6xv1vmhp7i",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.1/quickaccesssorting.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1hmzffs193kzm2gcincs71iyplvr02pnw5i28wfz3mwr5zfhmfxz",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.2/quickaccesssorting.tar.gz",
+      "version": "1.0.2"
     },
     "quicknotes": {
       "meta": {
@@ -2389,9 +2389,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "098k8xj1633by6acb267ylgpyd14zbs7lg5m69845q5sj8spcx3y",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.3/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.7.3"
+      "sha256": "019qxmpqfnvw4pnnp4h2a3ckzzrbda9sx9vyc7qdkhq1qps7l1kn",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.7.4/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.7.4"
     },
     "user_external": {
       "meta": {
@@ -2474,9 +2474,9 @@
         "name": "User and Group SQL Backends",
         "summary": "Control users and groups by SQL queries"
       },
-      "sha256": "08pkn4im164q8q3wc8llfach6ycn2kwj5vlh7k82nbqc10ipljqi",
-      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.3.0/user_sql-4.3.0.tar.gz",
-      "version": "4.3.0"
+      "sha256": "0qhpgn6wwrhnn5rs4w6l0vq4amf8khzygmapccjgci85qmnj3flf",
+      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.4.0/user_sql-4.4.0.tar.gz",
+      "version": "4.4.0"
     },
     "user_usage_report": {
       "meta": {

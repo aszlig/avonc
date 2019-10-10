@@ -236,9 +236,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "12wj4y6n9632ajcahks08dyzw8kqrzsc7949nf2mmjirx1l4ific",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.1/cookbook.tar.gz",
-      "version": "0.5.1"
+      "sha256": "1qp6f1ljfbpg8ypk2i0ysl4h0ba5n34d0nfn6a80bkzn2bkk5bhx",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.2/cookbook.tar.gz",
+      "version": "0.5.2"
     },
     "cospend": {
       "meta": {
@@ -494,9 +494,24 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "0d33xxqkkfvai1p641h3ah4xmb1mz70q38zs6rxrxnzn9gsbqnjp",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.5/files_inotify.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0wak2gzwjymajc187czqy07hcj0v0ayrvvs2dhk43b7qxiap5bys",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.6/files_inotify.tar.gz",
+      "version": "0.1.6"
+    },
+    "files_linkeditor": {
+      "meta": {
+        "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
+        "homepage": "https://github.com/te-online/files_linkeditor",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Link editor",
+        "summary": "An app to read and edit .URL and .webloc files."
+      },
+      "sha256": "11qq94c6wzyxw81r0k9s56xrx3r8f1nf3pdrihnc5szrd84kal9a",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.11/files_linkeditor.tar.gz",
+      "version": "1.0.11"
     },
     "files_markdown": {
       "meta": {
@@ -1220,6 +1235,21 @@
       "url": "https://github.com/pbek/qownnotesapi/releases/download/19.9.0/qownnotesapi-nc.tar.gz",
       "version": "19.9.0"
     },
+    "quickaccesssorting": {
+      "meta": {
+        "description": "This app enables to sort the favorites by 'Alphabetically', 'Date Added', 'Last Date Modified' and 'Custom Order'!",
+        "homepage": "https://github.com/newhinton/quickaccess-sorting",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Favorites Quickaccess Sorting",
+        "summary": "Different Sorting for favorites-quickaccess!"
+      },
+      "sha256": "1hmzffs193kzm2gcincs71iyplvr02pnw5i28wfz3mwr5zfhmfxz",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.2/quickaccesssorting.tar.gz",
+      "version": "1.0.2"
+    },
     "quicknotes": {
       "meta": {
         "description": "Quick notes with a basic rich text",
@@ -1802,6 +1832,20 @@
       "sha256": "0kq69fxpac7948nvapyf5gpcd3wqilldbki3wanfp9y2liihj7v0",
       "url": "https://github.com/nextcloud/user_saml/releases/download/v2.4.0/user_saml-2.4.0.tar.gz",
       "version": "2.4.0"
+    },
+    "user_sql": {
+      "meta": {
+        "description": "Use external database as a source for Nextcloud users and groups.\n        Retrieve the users and groups info. Allow the users to change their passwords.\n        Sync the users' email addresses with the addresses stored by Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User and Group SQL Backends",
+        "summary": "Control users and groups by SQL queries"
+      },
+      "sha256": "0qhpgn6wwrhnn5rs4w6l0vq4amf8khzygmapccjgci85qmnj3flf",
+      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.4.0/user_sql-4.4.0.tar.gz",
+      "version": "4.4.0"
     },
     "user_usage_report": {
       "meta": {
