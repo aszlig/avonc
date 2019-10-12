@@ -976,9 +976,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "01mqnw209gi1p4d5k601gckq0cn1bcnzci478nqckqm834brpfg2",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.2/flowupload-0.1.2.tar.gz",
-      "version": "0.1.2"
+      "sha256": "04l4rlnyl2m55ny9nnsp712059xk3ja8jcmslpw588046bhv2nfr",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.3/flowupload-0.1.3.tar.gz",
+      "version": "0.1.3"
     },
     "forms": {
       "meta": {
@@ -1413,9 +1413,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "16p8566k0gg2nanvknjag8gqdvcn3flh5968477yndd8azk20bxw",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.2/ocdownloader.tar.gz",
-      "version": "1.7.2"
+      "sha256": "1qv6zy1x4rf9xhyzz0aawkfflsx4mq0nhd4hhybgk99c3cn9y4vx",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.3/ocdownloader_1.7.3.tar.gz",
+      "version": "1.7.3"
     },
     "ocr": {
       "meta": {
@@ -1854,9 +1854,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "11dj4all1z5jsa18b5vpg849rl1280zh51mwsbli3y6y1m7im9cx",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.4/scanner-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0bxnnirwp1770zw4wmg5k8w4hlgpfcnmbmgjjqdzv1fk2wcqwi68",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.5/scanner-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "secsignid": {
       "meta": {
@@ -2366,12 +2366,12 @@
         "licenses": [
           "agpl"
         ],
-        "name": "Unsplash",
+        "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "1gdpkihgr4xlic0sla9yll2pxlgzrwbf5shc1kj4i6jgd719r2zv",
-      "url": "https://github.com/jancborchardt/unsplash/releases/download/v1.1.3/unsplash-1.1.3.tar.gz",
-      "version": "1.1.3"
+      "sha256": "00qiklf9mwsc3z2d1ds2x6icr8bkb9vzp2480r9bpdyg333ixgzp",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.1.4/unsplash-1.1.4.tar.gz",
+      "version": "1.1.4"
     },
     "updatenotification": {
       "meta": {

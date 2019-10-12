@@ -687,6 +687,21 @@
         "summary": "A welcome and introduction wizard for Nextcloud"
       }
     },
+    "flowupload": {
+      "meta": {
+        "description": "Provides functions to upload large files with your HTML5-Browser.",
+        "homepage": "https://github.com/e-alfred/flowupload",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Flow Upload",
+        "summary": "Provides functions to upload large files with your HTML5-Browser."
+      },
+      "sha256": "04l4rlnyl2m55ny9nnsp712059xk3ja8jcmslpw588046bhv2nfr",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.3/flowupload-0.1.3.tar.gz",
+      "version": "0.1.3"
+    },
     "fulltextsearch": {
       "meta": {
         "description": "Core App of the full-text search framework for your Nextcloud.",
@@ -1029,9 +1044,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "16p8566k0gg2nanvknjag8gqdvcn3flh5968477yndd8azk20bxw",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.2/ocdownloader.tar.gz",
-      "version": "1.7.2"
+      "sha256": "1qv6zy1x4rf9xhyzz0aawkfflsx4mq0nhd4hhybgk99c3cn9y4vx",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.3/ocdownloader_1.7.3.tar.gz",
+      "version": "1.7.3"
     },
     "ocr": {
       "meta": {
@@ -1351,6 +1366,21 @@
       "sha256": "1bv7mwjfvrg3cx83lv2iy2haszlaargyxz2ydc8k0046ip5xw2ca",
       "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.2/richdocuments.tar.gz",
       "version": "3.4.2"
+    },
+    "scanner": {
+      "meta": {
+        "description": "Adds the ability to acquire images from a network-enabled or local scanner. You need a working SANE configuration and a supported scanner. Please see the readme on how to set up this app on your system.",
+        "homepage": "https://github.com/e-alfred/nextcloud-scanner",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Scanner",
+        "summary": "Scanner app for Nextcloud using the SANE framework"
+      },
+      "sha256": "0bxnnirwp1770zw4wmg5k8w4hlgpfcnmbmgjjqdzv1fk2wcqwi68",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.5/scanner-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "sentry": {
       "meta": {
@@ -1748,6 +1778,21 @@
       "sha256": "1vpwhv77qghfs9h3q7ykcx147vr1nf7zjlycpg67yrzcsnv0pp39",
       "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v4.0.0/twofactor_u2f.tar.gz",
       "version": "4.0.0"
+    },
+    "unsplash": {
+      "meta": {
+        "description": "Show a new random featured nature photo from Unsplash on the log in screen and (optionally) in the header.",
+        "homepage": "https://github.com/jancborchardt/unsplash/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Splash",
+        "summary": "Random background from Unsplash"
+      },
+      "sha256": "00qiklf9mwsc3z2d1ds2x6icr8bkb9vzp2480r9bpdyg333ixgzp",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.1.4/unsplash-1.1.4.tar.gz",
+      "version": "1.1.4"
     },
     "updatenotification": {
       "meta": {
