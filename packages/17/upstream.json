@@ -155,6 +155,20 @@
       "url": "https://github.com/nextcloud/calendar/releases/download/v1.7.1/calendar.tar.gz",
       "version": "1.7.1"
     },
+    "camerarawpreviews": {
+      "meta": {
+        "description": "This app will make previews of &amp;quot;RAW&amp;quot; files from cameras in Nextcloud/ownCloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Camera RAW Previews",
+        "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
+      },
+      "sha256": "0jkzpgjw5cd52xvfpil1yhlcfcw9f5c3fh3p09fl9g2qcgw56058",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.2/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.2"
+    },
     "carnet": {
       "meta": {
         "description": "Carnet is a powerful note taking app which purpose is not only to write your shopping list but can also be used to write longer texts, stories, etc. Carnet is available on Android and Linux, on your web browser, Windows and\nMac, with sync capabilities\n- Complete editor : bold/italic/underline/color/highlight\n- Import from Google Keep (only on desktop, then sync on mobile)\n- Insert images / review\n- Open HTML format\n- Organize with folders and choose root storage folder depending on your needs\n- Keywords\n- Quickly see your recent notes\n- Search amount your notes\n- Protect the app with a pin code (no encryption) on android\n- Statistics : words/sentences/characters\n- Sync with ownCloud/NextCloud\n- Online editor as a ownCloud/NextCloud App",
@@ -236,9 +250,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1qp6f1ljfbpg8ypk2i0ysl4h0ba5n34d0nfn6a80bkzn2bkk5bhx",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.2/cookbook.tar.gz",
-      "version": "0.5.2"
+      "sha256": "1hhkx97aqvi6134lss1962jhvgyylb2s5h9y4llqa6nj3n6alx2r",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.3/cookbook.tar.gz",
+      "version": "0.5.3"
     },
     "cospend": {
       "meta": {
@@ -251,9 +265,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1810rcy6pg1p1zrcynzm8d6wvykd3ahqxp09wm5i604z23dx1win",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/67bec2eeab858632613fe738e9f6f7c8/cospend-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0m9znqzs8jx4zggckq09xvi98scychg2f519924a1iz7knk06qng",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/a5c48e8ecce42ab40babd5668a0f37f0/cospend-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "dashboardcharts": {
       "meta": {
@@ -351,9 +365,9 @@
         "name": "External sites",
         "summary": "Add external sites to your Nextcloud navigation"
       },
-      "sha256": "17hdhpdx0rw99jnhwxb73mcd628k0rizrj0aad6wkvbkm4bh951a",
-      "url": "https://github.com/nextcloud/external/releases/download/v3.4.0/external-3.4.0.tar.gz",
-      "version": "3.4.0"
+      "sha256": "1fh43sdjp4xg2ngk5n7z3x2ab2rg1168znhhxw6gh10k6k3jdd08",
+      "url": "https://github.com/nextcloud/external/releases/download/v3.4.1/external-3.4.1.tar.gz",
+      "version": "3.4.1"
     },
     "federation": {
       "meta": {
@@ -759,6 +773,36 @@
       "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.2.0/globalsiteselector-1.2.0.tar.gz",
       "version": "1.2.0"
     },
+    "gpxedit": {
+      "meta": {
+        "description": "# GpxEdit Nextcloud application\n\nSimple Nextcloud app to load, edit and save GPX files on an interactive map.\nYou can load/save files from your Nextcloud file storage.\nGPX, KML, CSV (unicsv format) and geotagged JPG are supported for loading. JPG files are loaded as waypoints.\nFiles can be loaded in GpxEdit interface or in Files app.\n\nGo to [GpxEdit Crowdin project](https://crowdin.com/project/gpxedit) if you want to help to translate this app in your language.\n\nThis is not a perfect GPX editor.\n\nWhat's saved :\n- metadata\n    - name\n    - link url\n    - link text\n- tracks\n    - name\n    - comment\n    - description\n    - points\n        - coordinates\n        - elevation (just preserves loaded values)\n        - time (just preserves loaded values)\n- waypoint\n    - coordinates\n    - name\n    - comment\n    - description\n    - symbol\n    - elevation (just preserves loaded value)\n    - time (just preserves loaded values)\n\nGpxEdit does load/save time data.\nElevation data is loaded and saved but every new waypoint/track/trackpoint added by user actions in GpxEdit will have neither elevation nor time data.\nThere is an \"approximate\" option to set elevation to new points if surrounding points have elevation data.\n\nTracks are saved with one segment (trkseg tag).\n\nGpxEdit :\n- allows you to add extra symbols in admin settings (section : additional)\n- works with server-side encryption.\n- works with shared files.\n- loads GPX, KML, unicsv CSV, geotagged JPG files (no more Gpsbabel dependency)\n- loads tracks, routes and waypoints\n- saves tracks, routes and waypoints\n- supports waypoint symbols\n- uses [Leaflet.Draw](https://github.com/Leaflet/Leaflet.draw) and [Leaflet.draw.plus](https://github.com/Dominique92/Leaflet.draw.plus) amazing plugins\n- uses many other Leaflet plugins like Minimap, Sidebar2, MeasureControl, MousePositionControl\n- adds possibility to edit .gpx files directly from the \"Files\" app\n- is able to cut lines in two\n\nThis app is tested on Nextcloud 14 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account).\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxedit-oc/wikis/admindoc) for installation details, integration in \"Files\" app and GpxEdit admin settings.\n\n## Alternatives\n\nIf you look for more powerfull GPX editors, take a look at :\n- [Viking](https://sourceforge.net/projects/viking/) which is the best IMHO\n- [QLandKarteGT](https://bitbucket.org/kiozen/qlandkarte-gt)\n- [QMapShack](https://bitbucket.org/maproom/qmapshack/wiki/Home)\n- [JOSM](https://josm.openstreetmap.de/)",
+        "homepage": "https://gitlab.com/eneiluj/gpxedit-oc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GpxEdit",
+        "summary": "Simple GPX file editor"
+      },
+      "sha256": "1790jd8h9innvb4dkjvc4i9zv867s895wy0rz7aw4dp2bnb8m01g",
+      "url": "https://gitlab.com/eneiluj/gpxedit-oc/wikis/uploads/c9d3dbbae95acdc25a168f0e4575431f/gpxedit-0.0.12.tar.gz",
+      "version": "0.0.12"
+    },
+    "gpxmotion": {
+      "meta": {
+        "description": "# GpxMotion Nextcloud application\n\nGpxMotion is a Nextcloud application to create and display path animations on an interactive map.\n\nTo watch an animation, click the \"Load and view file\" button in GpxMotion main page.\nIf no animation information was set, a default one (one section of 10 seconds per tracks/routes) is shown.\nIf no time information is missing in an animation section and the \"use real time proportions\"\nis enabled (by default, it is), the animation duration will not change but the animation speed will be proportional to real speed.\n\nTo define an animation, go to GpxMotion main page and load a GPX file already containing ordered tracks/routes.\nThen define the animation steps. Then check you are satisfied with the animation preview. Then\nsave the result to a GPX file (the animation data is saved as JSON in the GPX description field).\n\nIf a file is\npublicly shared without password in \"Files\" app, you can produce a GpxMotion public link to\nits animation with the \"Share\" button in the \"view\" page.\n\nThis app is tested on Nextcloud 16 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\nGo to [GpxMotion Crowdin project](https://crowdin.com/project/gpxmotion) if you want to help to translate this app in your language.\n\n## Demo\n\n* [First demo (dummy bike trip)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=gpxmotion_demo1.gpx)\n* [Second demo (dummy world travel)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=gpxmotion_demo2.gpx)\n* [Third demo (simple real time speed)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=boulot2.gpx)\n* [Fourth demo (simple simultaneous drawing)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=test_b1_nosync.gpx)\n* [Fifth demo (dummy synchronized simultaneous drawing)](https://nuage.pluton.cassio.pe/index.php/apps/gpxmotion/publicview?token=wgkbE57xMvVQpne&amp;layer=OpenStreetMap&amp;autoplay=1&amp;autozoom=1&amp;loop=0&amp;path=%2F&amp;filename=test_b1s.gpx)\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account).\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxmotion-oc/wikis/admindoc) for installation details and integration in \"Files\" app.\n\n## Alternatives\n\nIf you look for alternatives, take a look at :\n- [gpxanim](https://github.com/rvl/gpxanim) creates a video file\n- [GPX Animator](http://zdila.github.io/gpx-animator/) creates a video file",
+        "homepage": "https://gitlab.com/eneiluj/gpxmotion-oc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GpxMotion",
+        "summary": "GPX file animation on an interactive map"
+      },
+      "sha256": "1rx06l38zdqcrfqi27ssrs63w92q8gbsvimvxd3b97b2m6yhxlhg",
+      "url": "https://gitlab.com/eneiluj/gpxmotion-oc/wikis/uploads/3612c4a7511951b168840baf38866a56/gpxmotion-0.0.10.tar.gz",
+      "version": "0.0.10"
+    },
     "gpxpod": {
       "meta": {
         "description": "# GpxPod Nextcloud application\n\nDisplay, analyse, compare and share GPS track files.\n\n Help us to translate this app on [GpxPod Crowdin project](https://crowdin.com/project/gpxpod).\n\nGpxPod :\n\n*  can display gpx/kml/tcx/igc/fit files anywhere in your files, files shared with you, files in folders shared with you. fit files will be converted and displayed only if **GpsBabel** is found on the server system\n*  supports metric, english and nautical measure systems\n*  draws elevation, speed or pace interactive chart\n*  can color track lines by speed, elevation or pace\n*  show track statistics\n*  filter tracks by date, total distance...\n*  displays geotagged pictures found in selected directory\n*  generates public links pointing to a track/folder. This link can be used if the file/folder is shared by public link\n*  allows you to move selected track files\n*  can correct tracks elevations if SRTM.py (gpxelevations) is found on the server's system\n*  can make global comparison of multiple tracks\n*  can make visual pair comparison of divergent parts of similar tracks\n*  allows users to add personal map tile servers\n*  saves/restores user options values\n*  allows user to manually set track line colors\n*  detects browser timezone\n*  loads extra marker symbols from GpxEdit if installed\n*  works with encrypted data folder (server side encryption)\n*  proudly uses Leaflet with lots of plugins to display the map\n*  is compatible with SQLite, MySQL and PostgreSQL databases\n*  adds possibility to view .gpx files directly from the \"Files\" app\n\nThis app is tested on Nextcloud 16 with Firefox and Chromium.\n\nThis app is under (slow) development.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/gpxpod-oc/wikis/admindoc) for installation details\n\n## Donation\n\nMore details in [project's wiki](https://gitlab.com/eneiluj/gpxpod-oc/wikis/home#donation).\n\n## Known issues\n\n* [FIXED] bad management of file names including simple or double quotes\n* *WARNING*, kml conversion will NOT work with recent kml files using the proprietary \"gx:track\" extension tag.\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
@@ -966,7 +1010,7 @@
     },
     "music": {
       "meta": {
-        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album or artist, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also an Ampache-compatible server.\n\nLimitations: The library view does not scale well to huge music collections. The practical maximum number of tracks the app can handle is ~50 000 on Firefox and lower on other browsers. The playback from Files works regardless of the collection size.",
+        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album or artist, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nLimitations: The library view does not scale well to huge music collections. The practical maximum number of tracks the app can handle is ~50 000 on Firefox and lower on other browsers. The playback from Files works regardless of the collection size.",
         "homepage": "https://github.com/owncloud/music",
         "isShipped": false,
         "licenses": [
@@ -975,9 +1019,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0rpcbj5hhilr1r16k5ng0yvcd5ld42hg706754qwa0n7s1m750mr",
-      "url": "https://github.com/paulijar/music/files/3587743/music_0.10.1_nc-signed.tar.gz",
-      "version": "0.10.1"
+      "sha256": "0dpzplwsss1jxis0ps505nrjk9bhk49rainw5725pycrr3dxgg2m",
+      "url": "https://github.com/paulijar/music/files/3721233/music_0.11.0_nc-signed.tar.gz",
+      "version": "0.11.0"
     },
     "news": {
       "meta": {
@@ -1059,9 +1103,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0fkpprwdyyd46b084l3zhsyrwqvb62wnxlpbixh6bd3f9mhkr0ni",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.14/ocr.tar.gz",
-      "version": "4.4.14"
+      "sha256": "1z95nz94yjhyxf7gw07dwmrndrll642h854f6i631i3rb260j8lm",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.15/ocr.tar.gz",
+      "version": "4.4.15"
     },
     "ocsms": {
       "meta": {
@@ -1310,6 +1354,20 @@
       "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.0.4/rainloop.tar.gz",
       "version": "6.0.4"
     },
+    "ransomware_detection": {
+      "meta": {
+        "description": "This app monitors file operations during the synchronization to detect ransomware attacks and also offers a post infection file storage scanner, which works even if it happend that you didn't have this app installed during an attack. This is done by using generic indicators for a guided user-controlled one-step recovery utilizing the integrated file versioning methods.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Ransomware recovery",
+        "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
+      },
+      "sha256": "1snpcm2dci36k7q37rj389wc84qkf80xpz73r3vrhr4lgz8fw3ic",
+      "url": "https://wusa.io/ransomware_detection-0.6.0.tar.gz",
+      "version": "0.6.0"
+    },
     "ransomware_protection": {
       "meta": {
         "description": "This app prevents uploading files with known ransomware file endings.\n\n Neither the developer nor Nextcloud GmbH give any guarantee that your files can not be affected by another way.",
@@ -1491,9 +1549,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0gs1j9yaqng9nn2qkn0xd7qi7221wfqn5ixb85chz2q5fzl7cr31",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.2.0/release.tar.gz",
-      "version": "2.2.0"
+      "sha256": "01nrns7wz62r1jb9jw8h94slh9a65zwf4fwhqppb0q0icg8xwp5g",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.2.1/release.tar.gz",
+      "version": "2.2.1"
     },
     "socialsharing_diaspora": {
       "meta": {
