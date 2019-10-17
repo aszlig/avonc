@@ -1624,9 +1624,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1457vlgh1ipgvr6z6ciidhjfr4ihs5jjbj10di1xq3w2z2x10y9x",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v7.0.0/spreed-7.0.0.tar.gz",
-      "version": "7.0.0"
+      "sha256": "1l7mgpvz4m8g9brv2j4sj70iw7ip02ifcfmci1n864bd348pi25c",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v7.0.1/spreed-7.0.1.tar.gz",
+      "version": "7.0.1"
     },
     "support": {
       "meta": {
