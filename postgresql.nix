@@ -1,11 +1,14 @@
-# This module exists because the implementation of the PostgreSQL service
-# module in NixOS is really crappy. It contains a lot of backwards-compatible
-# options and it's designed to run with IP sockets. Furthermore Unix domains
-# are pointed to /tmp, which is really a bad idea if you want to use PrivateTmp
-# on other services accessing PostgreSQL.
+# This is a very limited drop-in replacement for the NixOS "postgresql" module
+# and intentionally doesn't support all of its functionality.
 #
-# Here on the other hand, we try to aim for maximum privilege separation and
-# better integration into systemd.
+# The main reason this module exist is to get rid of all the backwards-
+# compatible stuff in the upstream module and also focus more on privilege
+# separation and integration into systemd.
+#
+# Originally, the reason this module was *necessary* was because PostgreSQL in
+# NixOS used /tmp as its socket path, but starting with NixOS 19.09 this is no
+# longer the case, so this very module might go away someday once the upstream
+# module is "good enough".
 { config, pkgs, lib, ... }:
 
 let
@@ -69,9 +72,35 @@ in {
         Defines the mapping from system users to database users.
       '';
     };
+
+    ensureUsers = mkOption {
+      type = types.listOf types.unspecified;
+      default = [];
+      description = ''
+        This is a dummy option and it's there to avoid evaluation errors.
+      '';
+    };
+    ensureDatabases = mkOption {
+      type = types.listOf types.unspecified;
+      default = [];
+      description = ''
+        This is a dummy option and it's there to avoid evaluation errors.
+      '';
+    };
   };
 
   config = lib.mkIf cfg.enable {
+    assertions = [
+      { assertion = cfg.ensureUsers == [];
+        message = "The option 'services.postgresql.ensureUsers' is not"
+                + " supported, please make sure to avoid services using it.";
+      }
+      { assertion = cfg.ensureDatabases == [];
+        message = "The option 'services.postgresql.ensureUsers' is not"
+                + " supported, please make sure to avoid services using it.";
+      }
+    ];
+
     services.postgresql.authentication = lib.mkAfter ''
       local all all peer
     '';
