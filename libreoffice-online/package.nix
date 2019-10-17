@@ -35,7 +35,8 @@ let
     '';
   });
 
-in pkgs.stdenv.mkDerivation rec {
+  # FIXME: Patch or upgrade to compile with GCC 8.
+in pkgs.gcc7Stdenv.mkDerivation rec {
   name = "libreoffice-online-${version}";
   version = "6.1.3.2";
   versionHash = builtins.hashString "sha1" src.outputHash;
