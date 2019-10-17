@@ -11,7 +11,11 @@ let
   filtered = filterDoc (lib.optionAttrSetToDocList modules.options);
   optsXML = builtins.unsafeDiscardStringContext (builtins.toXML filtered);
   optsFile = builtins.toFile "options.xml" optsXML;
-  nixosVersion = builtins.readFile "${toString pkgs.path}/.version";
+
+  # XXX: Backwards-compatibility for NixOS 19.03.
+  xsltPath = if pkgs ? nixosOptionsDoc
+    then "${pkgs.path}/nixos/lib/make-options-doc"
+    else "${pkgs.path}/nixos/doc/manual";
 
 in pkgs.stdenv.mkDerivation {
   name = "nextcloud-options-manual";
@@ -35,19 +39,12 @@ in pkgs.stdenv.mkDerivation {
     </book>
     XML
 
-    # XXX: NixOS 18.03 compatibility
-    ${if lib.versionOlder nixosVersion "18.09" then ''
-      xsltproc -o options-db.xml \
-        "${pkgs.path}/nixos/doc/manual/options-to-docbook.xsl" \
-        ${lib.escapeShellArg optsFile}
-    '' else ''
-      xsltproc -o intermediate.xml \
-        "${pkgs.path}/nixos/doc/manual/options-to-docbook.xsl" \
-        ${lib.escapeShellArg optsFile}
-      xsltproc -o options-db.xml \
-        "${pkgs.path}/nixos/doc/manual/postprocess-option-descriptions.xsl" \
-        intermediate.xml
-    ''}
+    xsltproc -o intermediate.xml \
+      ${lib.escapeShellArg "${xsltPath}/options-to-docbook.xsl"} \
+      ${lib.escapeShellArg optsFile}
+    xsltproc -o options-db.xml \
+      ${lib.escapeShellArg "${xsltPath}/postprocess-option-descriptions.xsl"} \
+      intermediate.xml
 
     xsltproc -o "$dest/index.html" -nonet -xinclude \
       --param section.autolabel 1 \
