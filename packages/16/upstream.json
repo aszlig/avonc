@@ -599,6 +599,21 @@
         "summary": "Adds basic external storage support"
       }
     },
+    "files_external_dropbox": {
+      "meta": {
+        "description": "This application enables integrating Dropbox external storages via the\n\t\tDropbox API v2.\n\t\tOnce a Dropbox account is integrated by an administrator or the user in\n\t\tself-service, users see a folder structure that mirrors their Dropbox\n\t\thierarchy.\n\t\tUsers can then selectively sync files to their desktop or access them on\n\t\tmobile devices like any other file in Nextcloud. The files will remain\n\t\tin the Dropbox storage but are now accessible in a secure and fully\n\t\tlogged and traceable way through Nextcloud.\n\n\t\tAdministrators and users (when enabled) can find external storage\n\t\tconfiguration options in the 'Storage' section of admin and user\n\t\tsettings, respectively.",
+        "homepage": "https://github.com/DJaeger/files_external_dropbox/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External Storage backend for Dropbox",
+        "summary": "Integrate Dropbox as an external storage"
+      },
+      "sha256": "1d52askaypr67539v7pwyyfmv29g58932h831dzzaxfk1bgkpdbk",
+      "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.2.0/files_external_dropbox.tar.gz",
+      "version": "1.2.0"
+    },
     "files_external_gdrive": {
       "meta": {
         "description": "External storage support for Google Drive",
@@ -771,9 +786,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "00q65jm7jnp928h65grdag5d6ag3rp70lv35d7wvg9svgfsmij4x",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/585717c94ed588e59b255324c7f79bd8/files_readmemd.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1nnxamxr70xjx39hiyw9gl94fmi9pzz95qy0zpnbirqfq4ng0mw6",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/3c17fcee5fe4a7a7d77ac59de6feca96/files_readmemd.tar.gz",
+      "version": "1.1.2"
     },
     "files_retention": {
       "meta": {

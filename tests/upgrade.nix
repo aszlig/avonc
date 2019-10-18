@@ -77,17 +77,15 @@ import ./make-test.nix (pkgs: {
         dropit.forceEnable = true;
         end_to_end_encryption.enable = true;
         end_to_end_encryption.forceEnable = true;
-        files_readmemd.enable = true;
-        files_readmemd.forceEnable = true;
         ojsxc.enable = true;
         ojsxc.forceEnable = true;
         polls.enable = true;
         polls.forceEnable = true;
       } // lib.genAttrs [
         "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
-        "external" "files_accesscontrol" "files_markdown" "files_rightclick"
-        "gpxpod" "groupfolders" "mail" "metadata" "news" "passwords"
-        "phonetrack" "richdocuments" "social" "spreed" "tasks"
+        "external" "files_accesscontrol" "files_markdown" "files_readmemd"
+        "files_rightclick" "gpxpod" "groupfolders" "mail" "metadata" "news"
+        "passwords" "phonetrack" "richdocuments" "social" "spreed" "tasks"
       ] (app: { enable = true; });
     };
   };

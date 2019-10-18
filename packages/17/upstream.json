@@ -569,6 +569,21 @@
         "summary": "A pdf viewer for Nextcloud"
       }
     },
+    "files_readmemd": {
+      "meta": {
+        "description": "Show README.md &amp; HEADER.md gitlab style on your NextCloud !\nWith this app you can add a header and a footer to your nextcloud directories.\nThis can be use to explain the goal of a directory, describe the content of a folder ...\nIt show README.md in the way gitlab does.",
+        "homepage": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "README.md",
+        "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
+      },
+      "sha256": "1nnxamxr70xjx39hiyw9gl94fmi9pzz95qy0zpnbirqfq4ng0mw6",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/3c17fcee5fe4a7a7d77ac59de6feca96/files_readmemd.tar.gz",
+      "version": "1.1.2"
+    },
     "files_retention": {
       "meta": {
         "description": "This application allows for automatic deletion of files after a given time",
