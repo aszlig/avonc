@@ -179,9 +179,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1w9lqqkjjrklc8db3m0jiyz2dv9z6vwdv0kprl5w012hlwgyz4hg",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.4/carnet-nc-v0.18.4.tar.gz",
-      "version": "0.18.4"
+      "sha256": "0xprv7zixycmqk38np99dimlsyab9qxh8h779sz7nq2l22rbklcn",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.5/carnet-nc-v0.18.5.tar.gz",
+      "version": "0.18.5"
     },
     "checksum": {
       "meta": {
@@ -1049,9 +1049,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "092kyrnpap0sc8adp761j2nyqi0imcqsvvypvmmks7dqb42p7spz",
-      "url": "https://github.com/nextcloud/news/releases/download/14.0.0/news.tar.gz",
-      "version": "14.0.0"
+      "sha256": "1by18131ijmfxclcx508w6qv7sr08i0nff1wsyb315lkxbx7rpmg",
+      "url": "https://github.com/nextcloud/news/releases/download/14.0.1/news.tar.gz",
+      "version": "14.0.1"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1178,9 +1178,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "063spknaga6fmzgqwggr68p5jl8xf3g54ikzi7c7rvmj34dink93",
-      "url": "https://releases.passman.cc/passman_2.3.2.tar.gz",
-      "version": "2.3.2"
+      "sha256": "1sdd4zhwj9fh4fyiw0c7hcaqwifbs4nxawy0iis1vx58kkh0831l",
+      "url": "https://releases.passman.cc/passman_2.3.3.tar.gz",
+      "version": "2.3.3"
     },
     "password_policy": {
       "meta": {
