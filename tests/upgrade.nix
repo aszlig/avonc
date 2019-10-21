@@ -31,6 +31,8 @@ import ./make-test.nix (pkgs: {
           "auto_mail_accounts"
           # Needs /usr/bin/clamscan
           "files_antivirus"
+          # Broken upgrade routine across major versions
+          "files_external_dropbox"
           # Upstream URL very unstable
           "files_external_gdrive"
           # Needs PHP's inotify extension
