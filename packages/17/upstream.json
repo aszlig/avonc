@@ -121,9 +121,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "008mdssbj62m0b2xh9dkadb5pv135x8cmlsj9sj993bwcmnicfqd",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.2.0/bookmarks-2.2.0.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1k6vkjd58vcyzxvx2m4jpq7h8l25ilim63bh3dmq7q9sl4myds97",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.1/bookmarks-2.3.1.tar.gz",
+      "version": "2.3.1"
     },
     "bruteforcesettings": {
       "meta": {
@@ -859,9 +859,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "1v7djcjkh90xf83p9c06drf5rld73a9b9j55bx75av92ai20c41k",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v5.0.3/groupfolders-5.0.3.tar.gz",
-      "version": "5.0.3"
+      "sha256": "11shcbvrrjij75wh97vqq662sml2v7h23yacvs6r7pswhqd4c62v",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v5.0.4/groupfolders-5.0.4.tar.gz",
+      "version": "5.0.4"
     },
     "groupquota": {
       "meta": {
@@ -1762,6 +1762,20 @@
         "name": "Theming",
         "summary": "Adjust the Nextcloud theme"
       }
+    },
+    "timetracker": {
+      "meta": {
+        "description": "Time Tracker App",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Time Tracker",
+        "summary": "Time Tracker App"
+      },
+      "sha256": "1ny6xzgy719cllh6bmjcg780gg3rcywp815p9shc2dzdfcbiyclb",
+      "url": "https://mail.nerd.hu/timetracker.tar.gz",
+      "version": "0.0.34"
     },
     "twofactor_admin": {
       "meta": {

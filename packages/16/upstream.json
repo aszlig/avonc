@@ -136,9 +136,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "008mdssbj62m0b2xh9dkadb5pv135x8cmlsj9sj993bwcmnicfqd",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.2.0/bookmarks-2.2.0.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1k6vkjd58vcyzxvx2m4jpq7h8l25ilim63bh3dmq7q9sl4myds97",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.1/bookmarks-2.3.1.tar.gz",
+      "version": "2.3.1"
     },
     "browser_warning": {
       "meta": {
@@ -1095,9 +1095,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "1qalnadhjbypas1kyjx9xf8b6bkq020zrd8nsk3mc0j8hb225nc7",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v4.1.3/groupfolders-4.1.3.tar.gz",
-      "version": "4.1.3"
+      "sha256": "081ly49jd2mnn06cvsc66s1dxw1dpnf6qqhfx10f5fly17135xar",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v4.1.4/groupfolders-4.1.4.tar.gz",
+      "version": "4.1.4"
     },
     "groupquota": {
       "meta": {
@@ -1502,9 +1502,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "1sdd4zhwj9fh4fyiw0c7hcaqwifbs4nxawy0iis1vx58kkh0831l",
-      "url": "https://releases.passman.cc/passman_2.3.3.tar.gz",
-      "version": "2.3.3"
+      "sha256": "11q73n48prjlp4psm4s7l0z17a9y85bsssasjb753q5fkr8ca07g",
+      "url": "https://releases.passman.cc/passman_2.3.4.tar.gz",
+      "version": "2.3.4"
     },
     "password_policy": {
       "meta": {
@@ -2244,9 +2244,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "0183262iikvqml5xgmnpbaxa885amyi8y4sjhw9g2i7rxm88m502",
+      "sha256": "1ny6xzgy719cllh6bmjcg780gg3rcywp815p9shc2dzdfcbiyclb",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.33"
+      "version": "0.0.34"
     },
     "twofactor_admin": {
       "meta": {
