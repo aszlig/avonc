@@ -898,14 +898,13 @@ in {
         User = "nextcloud";
         Group = "nextcloud";
         RemainAfterExit = true;
-        PermissionsStartOnly = true;
         StateDirectory = "nextcloud/data";
         EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
         ExecStart = let
           tar = "${pkgs.gnutar}/bin/tar";
         in "${tar} xf ${nextcloudInit.data} -C /var/lib/nextcloud/data";
         ExecStartPost =
-          "${pkgs.coreutils}/bin/touch /var/lib/nextcloud/.init-done";
+          "!${pkgs.coreutils}/bin/touch /var/lib/nextcloud/.init-done";
       };
     };
 
@@ -930,17 +929,16 @@ in {
         ${mkEnableDisableApps "${phpCli} ${occ}" false}
       '';
 
-      postStart = ''
-        echo -n ${lib.escapeShellArg package.version} \
-          > /var/lib/nextcloud/.version
-      '';
-
       serviceConfig = {
         Type = "oneshot";
         User = "nextcloud";
         Group = "nextcloud";
         RemainAfterExit = true;
-        PermissionsStartOnly = true;
+        ExecStartPost = "!${pkgs.writeScript "increase-nextcloud-version" ''
+          #!${pkgs.stdenv.shell} -e
+          echo -n ${lib.escapeShellArg package.version} \
+            > /var/lib/nextcloud/.version
+        ''}";
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
