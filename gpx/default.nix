@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 let
+  cfg = config.nextcloud.apps.gpxpod;
+
   gpxpy = pkgs.python3Packages.buildPythonPackage {
     pname = "gpxpy";
     version = "1.3.4";
@@ -29,7 +31,7 @@ let
   };
 
 in {
-  config = lib.mkIf config.nextcloud.apps.gpxpod.enable {
+  config = lib.mkIf (config.nextcloud.enable && cfg.enable) {
     nextcloud.extraPostPatch = ''
       sed -i \
         -e 's!\<bash\>!${pkgs.stdenv.shell}!' \

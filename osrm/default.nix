@@ -63,7 +63,7 @@ in {
     };
   };
 
-  config = lib.mkIf cfg.enable (lib.mkMerge [
+  config = lib.mkIf (config.nextcloud.enable && cfg.enable) (lib.mkMerge [
     { nextcloud.extraPostPatch = ''
         patch -p1 -d apps/maps < ${./proxy-routing.patch}
       '';

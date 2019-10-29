@@ -21,12 +21,12 @@ let
     inherit (testAttrs) machine;
   } else {});
 
-  baseConfig = {
-  };
-
 in makeTest (removeAttrs testAttrs [ "machine" ] // {
   nodes = lib.mapAttrs (name: nodeCfg: {
     imports = [ nodeCfg ../. ../postgresql.nix ];
     networking.firewall.enable = false;
+    nextcloud.enable = let
+      hasOnlyOneNode = lib.length (lib.attrNames nodesOrig) == 1;
+    in lib.mkDefault hasOnlyOneNode;
   }) nodesOrig;
 })

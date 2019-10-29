@@ -111,7 +111,7 @@ in {
     };
   };
 
-  config = lib.mkIf cfg.enable {
+  config = lib.mkIf (config.nextcloud.enable && cfg.enable) {
     nextcloud.extraPostPatch = ''
       rm apps/richdocuments/lib/Backgroundjobs/ObtainCapabilities.php \
          apps/richdocuments/lib/Service/CapabilitiesService.php \

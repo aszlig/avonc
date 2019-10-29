@@ -69,7 +69,7 @@ in {
     };
   };
 
-  config = lib.mkIf cfg.enable {
+  config = lib.mkIf (config.nextcloud.enable && cfg.enable) {
     users.users.nextcloud-coturn = {
       description = "Nextcloud STUN/TURN User";
       group = "nextcloud-coturn";

@@ -254,7 +254,7 @@ let
     ];
   };
 
-in lib.mkIf cfg.enable {
+in lib.mkIf (config.nextcloud.enable && cfg.enable) {
   nextcloud.extraPostPatch = ''
     patch -p1 -d apps/ojsxc < ${patches/ojsxc.patch}
   '';

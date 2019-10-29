@@ -399,6 +399,21 @@ let
 
 in {
   options.nextcloud = {
+    enable = mkOption {
+      type = types.bool;
+      default = true;
+      description = ''
+        Whether to enable the Nextcloud service.
+
+        This is <literal>true</literal> by default, because adding the module
+        to your <literal>imports</literal> list already states the intend to
+        enable this service.
+
+        The reason why this option exists is mainly for the test infrastructure
+        or to temporarily disable the service.
+      '';
+    };
+
     majorVersion = mkOption {
       type = types.enum availableMajorVersions;
       default = lib.last availableMajorVersions;
@@ -718,7 +733,7 @@ in {
     ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ./coturn ./osrm
   ];
 
-  config = {
+  config = lib.mkIf cfg.enable {
     assertions = [
       { assertion = cfg.apps.bookmarks.enable
                  -> !cfg.apps.bookmarks_fulltextsearch.enable;

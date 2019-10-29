@@ -3,6 +3,7 @@ import ./make-test.nix (pkgs: {
 
   nodes = let
     common = { options, pkgs, ... }: {
+      nextcloud.enable = true;
       nextcloud.domain = "localhost";
 
       services.nginx.enable = true;
