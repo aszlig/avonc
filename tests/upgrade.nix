@@ -75,19 +75,16 @@ import ./make-test.nix (pkgs: {
 
       nextcloud.apps = {
         # XXX: These apps are unsupported for Nextcloud 17.
-        dropit.enable = true;
-        dropit.forceEnable = true;
         end_to_end_encryption.enable = true;
         end_to_end_encryption.forceEnable = true;
         ojsxc.enable = true;
         ojsxc.forceEnable = true;
-        polls.enable = true;
-        polls.forceEnable = true;
       } // lib.genAttrs [
-        "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
+        "apporder" "bookmarks" "calendar" "circles" "contacts" "deck" "dropit"
         "external" "files_accesscontrol" "files_markdown" "files_readmemd"
         "files_rightclick" "gpxpod" "groupfolders" "mail" "metadata" "news"
-        "passwords" "phonetrack" "richdocuments" "social" "spreed" "tasks"
+        "passwords" "phonetrack" "polls" "richdocuments" "social" "spreed"
+        "tasks"
       ] (app: { enable = true; });
     };
   };

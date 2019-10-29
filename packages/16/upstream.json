@@ -294,9 +294,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1hhkx97aqvi6134lss1962jhvgyylb2s5h9y4llqa6nj3n6alx2r",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.3/cookbook.tar.gz",
-      "version": "0.5.3"
+      "sha256": "0cd56g259vm4ziwyw5880lnwhs89qlp3xz999wpdpgd1hb24f0kw",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.4/cookbook.tar.gz",
+      "version": "0.5.4"
     },
     "cospend": {
       "meta": {
@@ -441,9 +441,9 @@
         "name": "DropIt",
         "summary": "Quickly share text or files by dropping them to your Nextcloud!"
       },
-      "sha256": "00hc1l9hxpdiv0mqnb9yafs0ls85r6c7scac8z36drmlm34bilqm",
-      "url": "https://github.com/rullzer/dropit/releases/download/v0.2.1/dropit.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0gzkwwd3i4ysirs56jdrmwv4i00w8a3j82wddgqfcvc30i5wp94d",
+      "url": "https://github.com/rullzer/dropit/releases/download/v0.3.0/dropit.tar.gz",
+      "version": "0.3.0"
     },
     "encryption": {
       "meta": {
@@ -640,9 +640,9 @@
         "name": "External Storage: OneDrive",
         "summary": "Integrate OneDrive as an external storage"
       },
-      "sha256": "0j1car39b6w5hscnm0w8sm3q4kq8l0mxjizy71s81gzizwfrb6f7",
-      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.6/files_external_onedrive.tar.gz",
-      "version": "1.0.6"
+      "sha256": "1q24z2jk65nr4rkm7hviv5hcvv19bz2kzvii87imrlnm7iwfsbfa",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.7/files_external_onedrive.tar.gz",
+      "version": "1.0.7"
     },
     "files_frommail": {
       "meta": {
@@ -933,9 +933,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "04l4rlnyl2m55ny9nnsp712059xk3ja8jcmslpw588046bhv2nfr",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.3/flowupload-0.1.3.tar.gz",
-      "version": "0.1.3"
+      "sha256": "1j7ig4dyfrzq3h03z2irsk3d00xjnsjsdazqcyp1d5blc2iag097",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.4/flowupload-0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "forms": {
       "meta": {
@@ -1417,6 +1417,21 @@
       "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.3/ocsms-2.1.3.tar.gz",
       "version": "2.1.3"
     },
+    "oidc_login": {
+      "meta": {
+        "description": "# NextCloud Single OpenID Connect\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n    'oidc_login_auto_redirect' =&gt; false,\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n    'oidc_login_default_quota' =&gt; '1000000',\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'uid' =&gt; 'sub',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n    'oidc_login_proxy_ldap' =&gt; false,\n    'oidc_login_disable_registration' =&gt; true,\n);\n```",
+        "homepage": "https://github.com/pulsejet/nextcloud-single-openid-connect",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OpenID Connect Login",
+        "summary": "Login with single OpenID Connect provider"
+      },
+      "sha256": "0gnnrc67vgrx895nrkp4m3f6kvsvpz394yllykbc0axzibvk8lw2",
+      "url": "https://github.com/pulsejet/nextcloud-single-openid-connect/releases/download/1.0.0/oidc_login.tar.gz",
+      "version": "1.0.0"
+    },
     "ojsxc": {
       "meta": {
         "description": "Facebook-like chat with end-to-end encrypted conversation, video calls, multi-user rooms, XMPP and internal server backend.",
@@ -1573,9 +1588,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1cywz4i09lj99jjmn144v1mwjjjj6lia94x8nk60jabkss4az3zq",
-      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.2/polls.tar.gz",
-      "version": "0.10.2"
+      "sha256": "1wyij52ddbz1i31n32zldx8mi56wa847h9gyhv362zqgc8b10hbz",
+      "url": "https://github.com/nextcloud/polls/releases/download/v0.10.4/polls.tar.gz",
+      "version": "0.10.4"
     },
     "preferred_providers": {
       "meta": {
@@ -1959,9 +1974,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use files stored path."
       },
-      "sha256": "1h328ncnx8xkknfig2z1a9hd8r630r5kr6nnh2fi4yj4flwb9zz3",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.0.1/sharingpath.tar.gz",
-      "version": "0.0.1"
+      "sha256": "1vx5319f2gama47ybw3dbnnyrzwmh1vihcgk12p6m95fn508nnfh",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.0.2/sharingpath.tar.gz",
+      "version": "0.0.2"
     },
     "smb_test": {
       "meta": {
@@ -2230,9 +2245,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "0rgx1fa8y4q94f7il4f1ri5ghicms9bxz4crgnfa327xcjwx265r",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.3.0/theming_customcss.tar.gz",
-      "version": "1.3.0"
+      "sha256": "16v96z6vyzfx8hh6vaiw399qnkp405rw664q08ncrbldkz29hlma",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.4.0/theming_customcss.tar.gz",
+      "version": "1.4.0"
     },
     "timetracker": {
       "meta": {
