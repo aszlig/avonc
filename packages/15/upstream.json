@@ -237,9 +237,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "0xprv7zixycmqk38np99dimlsyab9qxh8h779sz7nq2l22rbklcn",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.5/carnet-nc-v0.18.5.tar.gz",
-      "version": "0.18.5"
+      "sha256": "1a8l506m54hys9bw374068z1qra39hbxyf18mkdbpaxrdc246c13",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.7/carnet-nc-v0.18.7.tar.gz",
+      "version": "0.18.7"
     },
     "checksum": {
       "meta": {
@@ -1443,9 +1443,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "1z95nz94yjhyxf7gw07dwmrndrll642h854f6i631i3rb260j8lm",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.15/ocr.tar.gz",
-      "version": "4.4.15"
+      "sha256": "0v534qgan09c8fqj9mdsys4xdzx62jyjjm02j54sg259zcdxi63p",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.16/ocr.tar.gz",
+      "version": "4.4.16"
     },
     "ocsms": {
       "meta": {
