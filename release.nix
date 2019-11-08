@@ -11,6 +11,7 @@
       inherit system pkgs lib;
     } // args);
   in {
+    talk = callTest tests/talk {};
     urls = callTest tests/urls.nix {};
     upgrade = callTest tests/upgrade.nix {};
   };
