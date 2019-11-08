@@ -48,6 +48,8 @@ import ./make-test.nix (pkgs: {
           "twofactor_admin"
           # Needs "user_backend_sql_raw" in config
           "user_backend_sql_raw"
+          # Broken update routine
+          "sociallogin"
 
           # These apps have non-deterministic download URLs
           "quicknotes"
