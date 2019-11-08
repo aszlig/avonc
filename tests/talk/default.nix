@@ -95,8 +95,18 @@ import ../make-test.nix {
           LD_LIBRARY_PATH = lib.makeLibraryPath [ pkgs.libpulseaudio ];
         };
 
-        path = [
-          pkgs.geckodriver pkgs.firefox-unwrapped
+        path = let
+          # Always use known good Firefox and GeckoDriver from nixpkgs master
+          # to make sure we get a consistent result accross (older) nixpkgs
+          # versions we run this test against.
+          pinnedPkgs = import (pkgs.fetchFromGitHub {
+            owner = "NixOS";
+            repo = "nixpkgs";
+            rev = "d8cf78466e56b798cdecd2dbbacdfe00bd7e4ef8";
+            sha256 = "0aas57cl5m5g5f7bibsy0rwzcn2mgbyiaacbb4k4zmy6z1abrx6r";
+          }) { inherit (config.nixpkgs) config; };
+        in [
+          pinnedPkgs.geckodriver pinnedPkgs.firefox-unwrapped
           config.hardware.pulseaudio.package
         ];
 
