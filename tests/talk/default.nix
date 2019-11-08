@@ -46,7 +46,8 @@ import ../make-test.nix {
 
         serviceConfig.Type = "notify";
         serviceConfig.ExecStartPre = lib.escapeShellArgs [
-          "${pkgs.v4l-utils}/bin/v4l2-ctl"
+          # XXX: Fallback for NixOS 19.03
+          "${pkgs.v4l-utils or pkgs.v4l_utils}/bin/v4l2-ctl"
           "-c" "keep_format=1,sustain_framerate=1"
           "-d" "/dev/video0"
         ];
