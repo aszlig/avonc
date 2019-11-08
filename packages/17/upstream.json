@@ -271,17 +271,18 @@
     },
     "dashboardcharts": {
       "meta": {
-        "description": "Flexible Dashboard Chart widgets for the Dashboard v6. Dashboard Highcharts.js Reports.",
+        "description": "Flexible Dashboard Chart widgets for the Dashboard v6.",
+        "homepage": "https://github.com/markpartlett/dashboardcharts",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "DashboardCharts",
-        "summary": "Dashboard HighCharts Reports."
+        "summary": "Flexible Dashboard Charts"
       },
-      "sha256": "02qkj9q5zvfpa2sjirrd2fl5v93bhq68ya4svgbkrhklzj3sj7yn",
-      "url": "https://www.deskonline.cloud/dashboardcharts.0.0.1.tar.gz",
-      "version": "0.0.1"
+      "sha256": "1hjlz9g0lmmpbpgfr7x96g99085pn84kmv8d3kkzv80q1cpjhajj",
+      "url": "https://www.deskonline.cloud/dashboardcharts.0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "data_request": {
       "meta": {
@@ -383,6 +384,21 @@
       "sha256": "1fh43sdjp4xg2ngk5n7z3x2ab2rg1168znhhxw6gh10k6k3jdd08",
       "url": "https://github.com/nextcloud/external/releases/download/v3.4.1/external-3.4.1.tar.gz",
       "version": "3.4.1"
+    },
+    "extract": {
+      "meta": {
+        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n    \n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
+        "homepage": "https://github.com/PaulLereverend/NextcloudExtract",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Extract",
+        "summary": "Extract archive from the web interface"
+      },
+      "sha256": "1wqayka08gx4xd5425d4k3mv368x6sqb7i0sl9nidz7q86ik2pzg",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.2/extract.tar.gz",
+      "version": "1.2.2"
     },
     "federation": {
       "meta": {
@@ -844,9 +860,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "0kw0gd07pmn5ff6kx1r135x7b1bw5abs1k3sxzpq5cmxq7rf6s03",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/4e57b8eb06933414c4ff5d9d5318e7b2/gpxpod-4.0.5.tar.gz",
-      "version": "4.0.5"
+      "sha256": "1gnc9njq8ih9vpc80fj6kqd6jaj9zvz0hjmg25vps8xg472z8zw7",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/80fa1816954164b8507e2c452395ce34/gpxpod-4.1.0.tar.gz",
+      "version": "4.1.0"
     },
     "group_everyone": {
       "meta": {
@@ -989,9 +1005,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "04phq0cfgy1dd8krmijmhv1zh9nnysxwnidadarfsz70far1bcih",
-      "url": "https://github.com/nextcloud/mail/releases/download/v0.18.0/mail.tar.gz",
-      "version": "0.18.0"
+      "sha256": "03r9gz16hykaxajvzri0557pnqqrrg0nbhzx5ih0w38vpk1xysij",
+      "url": "https://github.com/nextcloud/mail/releases/download/v0.18.1/mail.tar.gz",
+      "version": "0.18.1"
     },
     "maps": {
       "meta": {
@@ -1234,9 +1250,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "17balhjdqf1lhmkrd60jb1dig241q34dg7q86ic9z9avhrhx14sn",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8833/artifacts/raw/passwords.tar.gz",
-      "version": "2019.10.0"
+      "sha256": "0jnmb8xksg9mxblr5n68f4agvqsmcvaw9wpz11kj8in3299b27s8",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8902/artifacts/raw/passwords.tar.gz",
+      "version": "2019.11.0"
     },
     "phonetrack": {
       "meta": {
@@ -1249,9 +1265,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phones positions in real time"
       },
-      "sha256": "028xbn0s09xg7knpvh07hwwvlld98fdcnflknz55a9bzkw1abbdh",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/91111eb4eb493bdc591334b190a4f935/phonetrack-0.5.4.tar.gz",
-      "version": "0.5.4"
+      "sha256": "1arh6zaip8ki1pm44n4n5sxrkzfkwsq1mzjmrkdjp1b05ajasa7g",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/9306248f92bd66c1c44570ebc4eec1c3/phonetrack-0.5.10.tar.gz",
+      "version": "0.5.10"
     },
     "piwik": {
       "meta": {
@@ -1380,9 +1396,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "1fdyb9bgvmwxy7c3cw1w82m3bv4yp3fn1g0xzr85pm071gcq9k0r",
-      "url": "https://services.delellis.com.ar/data/quicknotes/0.1.9/quicknotes.tar.gz",
-      "version": "0.1.9"
+      "sha256": "0zyxvyhajv6z65m0r1c808kz61vb10im38s4nyjipdnkxxk49qyj",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.1.10/quicknotes.tar.gz",
+      "version": "0.1.10"
     },
     "quota_warning": {
       "meta": {
@@ -1472,7 +1488,7 @@
     },
     "richdocuments": {
       "meta": {
-        "description": "This application can connect to a Collabora Online server (WOPI Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.",
+        "description": "This application can connect to a Collabora Online (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.",
         "homepage": "https://collaboraoffice.com/",
         "isShipped": false,
         "licenses": [
@@ -1481,9 +1497,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1bv7mwjfvrg3cx83lv2iy2haszlaargyxz2ydc8k0046ip5xw2ca",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.2/richdocuments.tar.gz",
-      "version": "3.4.2"
+      "sha256": "0f22ba5gnkqjzwkipkr8qnb4l96c83p6gqjmnlppb42wychgzwyj",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.4/richdocuments.tar.gz",
+      "version": "3.4.4"
     },
     "scanner": {
       "meta": {
@@ -1499,6 +1515,21 @@
       "sha256": "0bxnnirwp1770zw4wmg5k8w4hlgpfcnmbmgjjqdzv1fk2wcqwi68",
       "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.5/scanner-0.1.5.tar.gz",
       "version": "0.1.5"
+    },
+    "sensorlogger": {
+      "meta": {
+        "description": "SensorLogger for ownCloud enables users to log data provided by sensor devices",
+        "homepage": "https://www.html5live.at/sensorlogger/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sensorlogger",
+        "summary": "Log data from any type of sensor and visualize it"
+      },
+      "sha256": "143fa9yk1z1dh72q1p8h3d2jwi4kxdsgafnfd0lv6gx4y1p5vnwg",
+      "url": "https://www.html5live.at/wp-content/uploads/2019/11/sensorlogger-0.1.2nc.tar.gz",
+      "version": "0.1.2"
     },
     "sentry": {
       "meta": {
@@ -2068,6 +2099,21 @@
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.1.2/user_usage_report-1.1.2.tar.gz",
       "version": "1.1.2"
     },
+    "video_converter": {
+      "meta": {
+        "description": "Convert videos within the web interface\n\n*  **Features :**  \n    * Video Conversion\n    * Override or not\n    * Preset option\n    * Support external local storage\n    * More incoming...\n\n*  **Requirements :** \n    * FFmpeg\n\n*  **Note :** \n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
+        "homepage": "https://github.com/PaulLereverend/NextcloudVideo_Converter",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Video converter",
+        "summary": "Convert videos within the web interface"
+      },
+      "sha256": "08q86rmvxcxk00iibr334fskxazqps12gyll1mzmdwz99by6s82g",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.2/video_converter.tar.gz",
+      "version": "0.1.2"
+    },
     "viewer": {
       "meta": {
         "defaultEnable": true,
@@ -2094,6 +2140,21 @@
       "sha256": "1iff1ml4n8ab7zk479y94708nhg7xxrqhffs52cipk4g4l9f7ws9",
       "url": "https://github.com/newroco/W2G2/releases/download/3.0.0/w2g2.tar.gz",
       "version": "3.0.0"
+    },
+    "weather": {
+      "meta": {
+        "description": "Watch the weather directly on your Nextcloud.",
+        "homepage": "https://github.com/nextcloud/weather",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Weather",
+        "summary": "Watch the weather directly on your Nextcloud."
+      },
+      "sha256": "1zi0gl3qy6sx8ags88vbmdbfbm18x5xg9hyb75gm824pg86in8iw",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.6.2/weather-1.6.2.tar.gz",
+      "version": "1.6.2"
     },
     "workflow_pdf_converter": {
       "meta": {
