@@ -1164,13 +1164,13 @@
         "name": "Phone Sync",
         "summary": "An app to sync SMS with your cloud"
       },
-      "sha256": "0ypbrlsdbczm7pq6yp3g7jcizlr4r77ahvylr473fzcxbdq8nkc3",
-      "url": "https://ftp.unix-experience.fr/owncloud-sms/v1.10.1.tar.gz",
-      "version": "1.10.1"
+      "sha256": "0k0xlrldadlbc5l0l5lh5k49d4vzxn0r0z3cnla8a37qy7ry6018",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.6/ocsms-2.1.6.tar.gz",
+      "version": "2.1.6"
     },
     "oidc_login": {
       "meta": {
-        "description": "# NextCloud Single OpenID Connect\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n    'oidc_login_auto_redirect' =&gt; false,\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n    'oidc_login_default_quota' =&gt; '1000000',\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'uid' =&gt; 'sub',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n    'oidc_login_proxy_ldap' =&gt; false,\n    'oidc_login_disable_registration' =&gt; true,\n);\n```",
+        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n    'oidc_login_auto_redirect' =&gt; false,\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n    'oidc_login_default_quota' =&gt; '1000000',\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'uid' =&gt; 'sub',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n    'oidc_login_proxy_ldap' =&gt; false,\n    'oidc_login_disable_registration' =&gt; true,\n);\n```",
         "homepage": "https://github.com/pulsejet/nextcloud-single-openid-connect",
         "isShipped": false,
         "licenses": [
@@ -1179,9 +1179,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0gnnrc67vgrx895nrkp4m3f6kvsvpz394yllykbc0axzibvk8lw2",
-      "url": "https://github.com/pulsejet/nextcloud-single-openid-connect/releases/download/1.0.0/oidc_login.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1lg2z01y28bnmzx104vm7chv855chmj4zd5pgwkr6fbvcm63jwpg",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.0.1/oidc_login.tar.gz",
+      "version": "1.0.1"
     },
     "onlyoffice": {
       "meta": {
@@ -1250,9 +1250,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0jnmb8xksg9mxblr5n68f4agvqsmcvaw9wpz11kj8in3299b27s8",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8902/artifacts/raw/passwords.tar.gz",
-      "version": "2019.11.0"
+      "sha256": "0yq77599s0qln9rwc5b2fy45gdgmzrxb97wwdkqkgig90l4dlw6c",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8932/artifacts/raw/passwords.tar.gz",
+      "version": "2019.11.1"
     },
     "phonetrack": {
       "meta": {
