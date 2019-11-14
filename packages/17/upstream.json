@@ -1396,9 +1396,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "0zyxvyhajv6z65m0r1c808kz61vb10im38s4nyjipdnkxxk49qyj",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.1.10/quicknotes.tar.gz",
-      "version": "0.1.10"
+      "sha256": "135q2zgcvrmxgm0jci6lzj95b5qmi9bhi0npi1nc72jjg27cvmqg",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.2.0/quicknotes.tar.gz",
+      "version": "0.2.0"
     },
     "quota_warning": {
       "meta": {
