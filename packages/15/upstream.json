@@ -150,9 +150,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "19w2mai5yhspzamhl7lqq4rv8zjdc8hqy3q0my1y61ymxax6v5h1",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.3/bookmarks-2.3.3.tar.gz",
-      "version": "2.3.3"
+      "sha256": "0xd5zkh8qqg29kfjlq3ax3gp3i811jaj28fsp7ky1fk1j7iq99jl",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.4/bookmarks-2.3.4.tar.gz",
+      "version": "2.3.4"
     },
     "bookmarks_fulltextsearch": {
       "meta": {
@@ -488,6 +488,20 @@
       "sha256": "0gzkwwd3i4ysirs56jdrmwv4i00w8a3j82wddgqfcvc30i5wp94d",
       "url": "https://github.com/rullzer/dropit/releases/download/v0.3.0/dropit.tar.gz",
       "version": "0.3.0"
+    },
+    "emlviewer": {
+      "meta": {
+        "description": "Generate a preview for eml files",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Eml Viewer",
+        "summary": "Preview eml files"
+      },
+      "sha256": "0xgp2bsrsi76jc9nzma4c1qr9xm8im3hfi9wyqv9sxw2390c3ikl",
+      "url": "https://files.newro.co/index.php/s/bS4WrpgywRMwXtt/download",
+      "version": "0.0.3"
     },
     "encryption": {
       "meta": {

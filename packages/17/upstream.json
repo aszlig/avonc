@@ -136,9 +136,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "19w2mai5yhspzamhl7lqq4rv8zjdc8hqy3q0my1y61ymxax6v5h1",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.3/bookmarks-2.3.3.tar.gz",
-      "version": "2.3.3"
+      "sha256": "0xd5zkh8qqg29kfjlq3ax3gp3i811jaj28fsp7ky1fk1j7iq99jl",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.4/bookmarks-2.3.4.tar.gz",
+      "version": "2.3.4"
     },
     "bruteforcesettings": {
       "meta": {
@@ -401,6 +401,20 @@
       "sha256": "0gzkwwd3i4ysirs56jdrmwv4i00w8a3j82wddgqfcvc30i5wp94d",
       "url": "https://github.com/rullzer/dropit/releases/download/v0.3.0/dropit.tar.gz",
       "version": "0.3.0"
+    },
+    "emlviewer": {
+      "meta": {
+        "description": "Generate a preview for eml files",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Eml Viewer",
+        "summary": "Preview eml files"
+      },
+      "sha256": "0xgp2bsrsi76jc9nzma4c1qr9xm8im3hfi9wyqv9sxw2390c3ikl",
+      "url": "https://files.newro.co/index.php/s/bS4WrpgywRMwXtt/download",
+      "version": "0.0.3"
     },
     "encryption": {
       "meta": {
@@ -1629,9 +1643,9 @@
         "name": "Sentry",
         "summary": "Sentry client"
       },
-      "sha256": "1wrvghjipajjps2hdq6hm0i2ybwcj93bx8xibxxjv00p4k7yyqsj",
-      "url": "https://github.com/ChristophWurst/nextcloud_sentry/releases/download/v6.0.1/sentry.tar.gz",
-      "version": "6.0.1"
+      "sha256": "0hy6834hcm39hbq0jn1r5fyjz3qyfr62sg9myfad2kddgkgq40n6",
+      "url": "https://github.com/ChristophWurst/nextcloud_sentry/releases/download/v6.0.2/sentry.tar.gz",
+      "version": "6.0.2"
     },
     "serverinfo": {
       "meta": {
@@ -1856,9 +1870,9 @@
         "name": "Suspicious Login",
         "summary": "Detect and warn about suspicious IPs logging into Nextcloud"
       },
-      "sha256": "0rm8k8gj271ji2q9x8kvy93ss15dyj6l8x3b3zvji2ffm3g7qq4f",
-      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v3.0.0/suspicious_login.tar.gz",
-      "version": "3.0.0"
+      "sha256": "0m0n0xf4fvs14xw67324a7vav28h2r4r64dq5nm60c4ysgl0jgya",
+      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v3.0.1/suspicious_login.tar.gz",
+      "version": "3.0.1"
     },
     "systemtags": {
       "meta": {
@@ -2039,9 +2053,9 @@
         "name": "Two-Factor TOTP Provider",
         "summary": "TOTP two-factor provider"
       },
-      "sha256": "1mh7ydzchwahbwp4gxcwqlxrfswxdyz0p17yp174d6cbiqzvwndz",
-      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.1.0/twofactor_totp.tar.gz",
-      "version": "4.1.0"
+      "sha256": "1v6fcg0avps95slwa4khfki5mmgsj7a5smc553h6nln5g9l2g4q9",
+      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.1.1/twofactor_totp.tar.gz",
+      "version": "4.1.1"
     },
     "twofactor_u2f": {
       "meta": {
@@ -2054,9 +2068,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "07z5p64kj8mimz9kvmq2vs6a4l40r981sjpq7gfg4p3hi13rzb06",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.0.0/twofactor_u2f.tar.gz",
-      "version": "5.0.0"
+      "sha256": "1jdllkn7avlpsy6yvp8sdlynj3dhw526d822vda8ngz2j25i46cd",
+      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.0.1/twofactor_u2f.tar.gz",
+      "version": "5.0.1"
     },
     "unsplash": {
       "meta": {
