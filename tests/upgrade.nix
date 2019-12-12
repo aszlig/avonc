@@ -50,6 +50,8 @@ import ./make-test.nix (pkgs: {
           "user_backend_sql_raw"
           # Needs write access to to "apps/cms_pico/appdata_public/".
           "cms_pico"
+          # XXX: Currently (2019-12-12) results in HTTP 404
+          "emlviewer"
 
           # These apps have non-deterministic download URLs
           "quicknotes"
