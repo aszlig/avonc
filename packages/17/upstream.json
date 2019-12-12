@@ -36,6 +36,21 @@
         "summary": "Provides logging abilities for Nextcloud such as logging file accesses or otherwise sensitive actions."
       }
     },
+    "analytics": {
+      "meta": {
+        "description": "From data to report. Data Analytics provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote files, API, imports, manual entry\n- 3rd party*: GitHub Statistics\n- Storage: stream or database\n- Visualization: charts, tables\n- Integration: Files app, NC Activity, NC Notifications* (thresholds), NC workflows*\n- Sharing: user*, protected, public\n\n(*work in progress)",
+        "homepage": "https://github.com/rello/analytics",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Data Analytics",
+        "summary": "extract / store / visualize"
+      },
+      "sha256": "10vxl3dpgnqv7k6flspz7nbin663ysi67sssrpgy78p739zmy5qi",
+      "url": "https://github.com/Rello/analytics/releases/download/1.1.0/analytics-1.1.0.tar.gz",
+      "version": "1.1.0"
+    },
     "announcementcenter": {
       "meta": {
         "description": "This app allows admins to post announcements. Also supports the following features:\n\n Activities (Requires the activity app to be enabled)\n\n Comments\n\n Group permissions\n\n Notifications (Requires the notifications app to be enabled)",
@@ -121,9 +136,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1k6vkjd58vcyzxvx2m4jpq7h8l25ilim63bh3dmq7q9sl4myds97",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.1/bookmarks-2.3.1.tar.gz",
-      "version": "2.3.1"
+      "sha256": "19w2mai5yhspzamhl7lqq4rv8zjdc8hqy3q0my1y61ymxax6v5h1",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.3/bookmarks-2.3.3.tar.gz",
+      "version": "2.3.3"
     },
     "bruteforcesettings": {
       "meta": {
@@ -179,9 +194,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1a8l506m54hys9bw374068z1qra39hbxyf18mkdbpaxrdc246c13",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.7/carnet-nc-v0.18.7.tar.gz",
-      "version": "0.18.7"
+      "sha256": "1rb3zalqcfrm486nssr9w739hs13l05kvbg5m2sa8m7rmimil166",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.12/carnet-nc-v0.18.12.tar.gz",
+      "version": "0.18.12"
     },
     "checksum": {
       "meta": {
@@ -209,9 +224,24 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0i1hblcj527hf9hhnbymffysirgzn3baawlq6idr70lyj0chmawz",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.9/circles-0.17.9.tar.gz",
-      "version": "0.17.9"
+      "sha256": "0cj87q0kwps862v7g4h9zi7dsgag6y6d6sjyi43a01hhbn7h4yqj",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.10/circles-0.17.10.tar.gz",
+      "version": "0.17.10"
+    },
+    "cms_pico": {
+      "meta": {
+        "description": "[Pico CMS for Nextcloud](https://github.com/nextcloud/cms_pico) combines the power of [**Pico**](http://picocms.org/) and [**Nextcloud**](https://nextcloud.com/) to create simple, secure, shareable and amazingly powerful websites with just a few clicks. Pico is a stupidly simple, blazing fast, flat file CMS - making the web easy.\n\n* Start a blog\n* Share your resume with the world\n* Create a plan for world domination and only share with the right friends\n* Build a knowledge base and let the smart ones among your colleagues help out\n\nInstalling Pico CMS for Nextcloud allows your users to create and manage their own websites. Creating a new page with Pico is no more than creating a simple text file in a users' Nextcloud files. No config is required, no utterly complex management interfaces - just files. It's the perfect match with Nextcloud. Secure Sharing, Collaboration, Access Control - not just for your files, but also your websites, all made possible by Pico CMS for Nextcloud! Breaking the boundaries between your Mobile &amp; Desktop devices and your Server.\n\nWebsites will be accessible through URLs like `https://cloud.example.com/sites/my_site/` and consist of just a bunch of `.md` text files in a user's Nextcloud files. `.md` stands for [**Markdown**](https://www.markdownguide.org/) - a super simple and intuitive markup to create headings, paragraphs, text formatting, lists, images and links. But don't despair - you don't have to learn yet another language if you don't want to. Consider enabling Nextcloud's [Text](https://apps.nextcloud.com/apps/text) or [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) apps to make easy things stupidly simple. But what about meta data like a page's title or release date? Guess right, it's all in one place. At the top of your Markdown files you can place a block with such meta data - called the [**YAML**](https://en.wikipedia.org/wiki/YAML) Front Matter. Creating websites can't be easier...\n\nBut that wasn't everything... Pico CMS for Nextcloud is highly customizable. You can change Picos appearance by using custom themes and add new functionality by using custom plugins. For security reasons users can neither add custom themes nor plugins on their own - but as an admin you can. Plugins and themes arent just new \"skins\" or \"widgets\", the underlying technologies are powerful frameworks you can leverage to make your users' websites truly unique. However, with great power comes great responsibility. Pico CMS for Nextcloud does its best to prevent users from including scripts into websites, since this might bear security risks (so called \"Cross Scripting\"). Since this risk doesn't apply to Pico itself, 3rd-party developers of plugins and themes might not be aware of this issue - so be careful when installing custom plugins and themes.\n\nYou want to learn more about Pico CMS for Nextcloud? Easy! Just download and enable the app from [Nextcloud's App Store](https://apps.nextcloud.com/apps/cms_pico) and create your first personal website using the \"sample_pico\" template. Pico's sample contents will explain all you need to know...",
+        "homepage": "https://github.com/nextcloud/cms_pico",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Pico CMS",
+        "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
+      },
+      "sha256": "0gpb1rd2aifmbr3al4f2ifbmk05yx9m87b0lc107ypyc2azdkdcj",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.2/cms_pico-v1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "comments": {
       "meta": {
@@ -250,9 +280,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0cd56g259vm4ziwyw5880lnwhs89qlp3xz999wpdpgd1hb24f0kw",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.4/cookbook.tar.gz",
-      "version": "0.5.4"
+      "sha256": "0621dmk7n2sr8ibvs24260lwsjkpj92fp4znr4iw7ysy2xkw1cr9",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.5/cookbook.tar.gz",
+      "version": "0.5.5"
     },
     "cospend": {
       "meta": {
@@ -312,6 +342,35 @@
       "sha256": "0fxxgxkp4nx14x8pjxsj38rklwq7rfmmhigjjkxrahr7119y7z0r",
       "url": "https://github.com/nextcloud/deck/releases/download/v0.7.0/deck.tar.gz",
       "version": "0.7.0"
+    },
+    "dicomviewer": {
+      "meta": {
+        "description": "DICOM Viewer allows to display and manipulate DICOM images with a streamlined sidebar and viewer.\n\nSee [README](https://github.com/ayselafsar/dicomviewer) for a list of full features and future roadmap.",
+        "homepage": "https://github.com/ayselafsar/dicomviewer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "DICOM Viewer",
+        "summary": "Digital Imaging for Medicine"
+      },
+      "sha256": "0q25cm493cafkjsp8zlc54lv2hfawdlqxpb00x2n7zqvxfzajvf4",
+      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.1/dicomviewer.tar.gz",
+      "version": "1.2.1"
+    },
+    "discoursesso": {
+      "meta": {
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Discourse SSO",
+        "summary": "Enable Discourse to authenticate via Nextcloud"
+      },
+      "sha256": "1dmk2if6xa5pvz9g3yn0drdckrxp8wigqh5pkr7bf662rwh65iqw",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.17/discoursesso-0.9.17.tar.gz",
+      "version": "0.9.17"
     },
     "drawio": {
       "meta": {
@@ -437,9 +496,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "0rkbymc79sqsc6mb3ls7n065ixahqw7gy6bf9fdb2cn97x8layaf",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.2.0/files_antivirus.tar.gz",
-      "version": "2.2.0"
+      "sha256": "0p7zcsv6yxbzwm8rabkhp9i3rv6bckj66qv1qm7nqs4bcj8qixzp",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.2.1/files_antivirus.tar.gz",
+      "version": "2.2.1"
     },
     "files_automatedtagging": {
       "meta": {
@@ -600,6 +659,20 @@
         "summary": "A pdf viewer for Nextcloud"
       }
     },
+    "files_photospheres": {
+      "meta": {
+        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Photo Sphere Viewer",
+        "summary": "Enables viewing of google photosphere images"
+      },
+      "sha256": "1lk8mmcxl3bkv5aaw0flpvqgqxs1n55gaid9ida0drjs4q45xa4m",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.0.6/files_photospheres.tar.gz",
+      "version": "1.0.6"
+    },
     "files_readmemd": {
       "meta": {
         "description": "Show README.md &amp; HEADER.md gitlab style on your NextCloud !\nWith this app you can add a header and a footer to your nextcloud directories.\nThis can be use to explain the goal of a directory, describe the content of a folder ...\nIt show README.md in the way gitlab does.",
@@ -611,9 +684,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "1nnxamxr70xjx39hiyw9gl94fmi9pzz95qy0zpnbirqfq4ng0mw6",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/3c17fcee5fe4a7a7d77ac59de6feca96/files_readmemd.tar.gz",
-      "version": "1.1.2"
+      "sha256": "1i3qkch2vavglg1hgpk8nrnz0q06nvnjh151zhf5805xi8n2sb36",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/a6ed5ada9417c6aba8c62bce0db02461/files_readmemd.tar.gz",
+      "version": "1.1.3"
     },
     "files_retention": {
       "meta": {
@@ -758,9 +831,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "1zmd0psf88rjaz3vsp9s3aj5fxhbzb6qzskg38h9dzhc9axvmml6",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.5/flowupload-0.1.5.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1m3kjaz4iciis1sf8bxam0022ynnnyhbj1gyki0bdyydgy8yavap",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.7/flowupload-0.1.7.tar.gz",
+      "version": "0.1.7"
     },
     "fulltextsearch": {
       "meta": {
@@ -1005,9 +1078,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "03r9gz16hykaxajvzri0557pnqqrrg0nbhzx5ih0w38vpk1xysij",
-      "url": "https://github.com/nextcloud/mail/releases/download/v0.18.1/mail.tar.gz",
-      "version": "0.18.1"
+      "sha256": "0hka20j9l9kag5z8yzs50sqg9xryys970g9zf6sycy88mydml3dd",
+      "url": "https://github.com/nextcloud/mail/releases/download/v0.20.1/mail.tar.gz",
+      "version": "0.20.1"
     },
     "maps": {
       "meta": {
@@ -1065,9 +1138,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0dpzplwsss1jxis0ps505nrjk9bhk49rainw5725pycrr3dxgg2m",
-      "url": "https://github.com/paulijar/music/files/3721233/music_0.11.0_nc-signed.tar.gz",
-      "version": "0.11.0"
+      "sha256": "1y705pwc9dxzy4xa4rrz5a2vialgqf4j4svi225k6kb083ax1din",
+      "url": "https://github.com/paulijar/music/files/3876662/music_0.11.1_nc-signed.tar.gz",
+      "version": "0.11.1"
     },
     "news": {
       "meta": {
@@ -1080,9 +1153,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1by18131ijmfxclcx508w6qv7sr08i0nff1wsyb315lkxbx7rpmg",
-      "url": "https://github.com/nextcloud/news/releases/download/14.0.1/news.tar.gz",
-      "version": "14.0.1"
+      "sha256": "0c3fyl3j9ihfgpg3jdwdqx9zcrz0gm01622w9yq8v20m8rm257za",
+      "url": "https://github.com/nextcloud/news/releases/download/14.0.2/news.tar.gz",
+      "version": "14.0.2"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1149,9 +1222,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "0v534qgan09c8fqj9mdsys4xdzx62jyjjm02j54sg259zcdxi63p",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.16/ocr.tar.gz",
-      "version": "4.4.16"
+      "sha256": "1xng20bl7v2cpbgp24q3gyrzw4n5vc113hrpf3qrzvbsvcgnijjc",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.25/ocr.tar.gz",
+      "version": "4.4.25"
     },
     "ocsms": {
       "meta": {
@@ -1170,7 +1243,7 @@
     },
     "oidc_login": {
       "meta": {
-        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n);\n```",
+        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n\n    // Fallback to direct login if login from OIDC fails\n    // Note that no error message will be displayed if enabled\n    'oidc_login_redir_fallback' =&gt; false,\n);\n```",
         "homepage": "https://github.com/pulsejet/nextcloud-single-openid-connect",
         "isShipped": false,
         "licenses": [
@@ -1179,9 +1252,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "14xcn3rc3q836sfv9b13yv09w9gyd0z1bf6lmpqp32k0xa553478",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.0.3/oidc_login.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0nsn3lg777v2frpaybzjjqdkl80an511jw3l2bfag4k0z10wm3r5",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.1.0/oidc_login.tar.gz",
+      "version": "1.1.0"
     },
     "onlyoffice": {
       "meta": {
@@ -1224,9 +1297,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "1sdd4zhwj9fh4fyiw0c7hcaqwifbs4nxawy0iis1vx58kkh0831l",
-      "url": "https://releases.passman.cc/passman_2.3.3.tar.gz",
-      "version": "2.3.3"
+      "sha256": "0q8p6a6d3xszr1bg7zwps6mgqmw3v6akzvq57zmgbqx73yrmzcgi",
+      "url": "https://releases.passman.cc/passman_2.3.5.tar.gz",
+      "version": "2.3.5"
     },
     "password_policy": {
       "meta": {
@@ -1250,13 +1323,13 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0yq77599s0qln9rwc5b2fy45gdgmzrxb97wwdkqkgig90l4dlw6c",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/8932/artifacts/raw/passwords.tar.gz",
-      "version": "2019.11.1"
+      "sha256": "1ld8xgqa7xnja18cpa9fdj1j1rlzjc98ajw6mg9s9pjhm2apr1za",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/9004/artifacts/raw/passwords.tar.gz",
+      "version": "2019.12.0"
     },
     "phonetrack": {
       "meta": {
-        "description": "# PhoneTrack Nextcloud application\n\n PhoneTrack is a Nextcloud application to track and store mobile devices locations.\n\n It receives information from mobile phones logging apps and displays it dynamically on a map.\n\n Help us to translate this app on [PhoneTrack Crowdin project](https://crowdin.com/project/phonetrack).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CONTRIBUTING.md).\n\nHow to use PhoneTrack :\n\n* Create a tracking session.\n* Give the logging link\\* to the mobile devices. Choose the [logging method](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#logging-methods) you prefer.\n* Watch the session's devices location in real time (or not) in PhoneTrack or share it with public pages.\n\n(\\*) Don't forget to set the device name in the link (rather than in the logging app settings). Replace \"yourname\" with the desired device name. Setting the device name in logging app settings only works with Owntracks, Traccar and OpenGTS.\n\nOn PhoneTrack main page, while watching a session, you can :\n\n*  Display location history\n*  Filter points\n*  Manually edit/add/delete points\n*  Edit devices (rename, change color/shape, move to another session)\n*  Define geofencing zones for devices\n*  Define proximity alerts for device pairs\n*  Share a session to other Nextcloud users or with a public link (read-only)\n*  Generate public share links with optional restrictions (filters, device name, last positions only, geofencing simplification)\n*  Import/export a session in GPX format (one file with one track per device or one file per device)\n*  Display sessions statistics\n*  [Reserve a device name](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#device-name-reservation) to make sure only authorized user can log with this name\n*  Toggle session auto export and auto purge (daily/weekly/monthly)\n*  Choose what to do when point number quota is reached (block logging or delete oldest point)\n\nPublic page and public filtered page work like main page except there is only one session displayed, everything is read-only and there is no need to be logged in.\n\nThis app is tested on Nextcloud 15 with Firefox 57+ and Chromium.\n\nThis app is compatible with theming colors and accessibility themes !\n\nThis app is under development.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* PhoneTrack **now works** with Nextcloud group restriction activated. See [admindoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc#issue-with-phonetrack-restricted-to-some-groups-in-nextcloud).\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "description": "# PhoneTrack Nextcloud application\n\n PhoneTrack is a Nextcloud application to track and store mobile devices locations.\n\n It receives information from mobile phones logging apps and displays it dynamically on a map.\n\n Help us to translate this app on [PhoneTrack Crowdin project](https://crowdin.com/project/phonetrack).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CONTRIBUTING.md).\n\nHow to use PhoneTrack :\n\n* Create a tracking session.\n* Give the logging link\\* to the mobile devices. Choose the [logging method](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#logging-methods) you prefer.\n* Watch the session's devices location in real time (or not) in PhoneTrack or share it with public pages.\n\n(\\*) Don't forget to set the device name in the link (rather than in the logging app settings). Replace \"yourname\" with the desired device name. Setting the device name in logging app settings only works with Owntracks, Traccar and OpenGTS.\n\nOn PhoneTrack main page, while watching a session, you can :\n\n*  Display location history\n*  Filter points\n*  Manually edit/add/delete points\n*  Edit devices (rename, change color/shape, move to another session)\n*  Define geofencing zones for devices\n*  Define proximity alerts for device pairs\n*  Share a session to other Nextcloud users or with a public link (read-only)\n*  Generate public share links with optional restrictions (filters, device name, last positions only, geofencing simplification)\n*  Import/export a session in GPX format (one file with one track per device or one file per device)\n*  Display sessions statistics\n*  [Reserve a device name](https://gitlab.com/eneiluj/phonetrack-oc/wikis/userdoc#device-name-reservation) to make sure only authorized user can log with this name\n*  Toggle session auto export and auto purge (daily/weekly/monthly)\n*  Choose what to do when point number quota is reached (block logging or delete oldest point)\n\nPublic page and public filtered page work like main page except there is only one session displayed, everything is read-only and there is no need to be logged in.\n\nThis app is tested on Nextcloud 17 with Firefox 57+ and Chromium.\n\nThis app is compatible with theming colors and accessibility themes !\n\nThis app is under development.\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/phonetrack-oc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* PhoneTrack **now works** with Nextcloud group restriction activated. See [admindoc](https://gitlab.com/eneiluj/phonetrack-oc/wikis/admindoc#issue-with-phonetrack-restricted-to-some-groups-in-nextcloud).\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://gitlab.com/eneiluj/phonetrack-oc",
         "isShipped": false,
         "licenses": [
@@ -1265,9 +1338,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phones positions in real time"
       },
-      "sha256": "1arh6zaip8ki1pm44n4n5sxrkzfkwsq1mzjmrkdjp1b05ajasa7g",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/9306248f92bd66c1c44570ebc4eec1c3/phonetrack-0.5.10.tar.gz",
-      "version": "0.5.10"
+      "sha256": "0f0zif6r89dnjk54x01q22fdy32aigqrsdrp1b8iryhpgn96z7c0",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/wikis/uploads/a1517d4a406a2fd609f869f54cc88f85/phonetrack-0.5.11.tar.gz",
+      "version": "0.5.11"
     },
     "piwik": {
       "meta": {
@@ -1310,9 +1383,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "1d2n288q9mi31ss58cy0w6bnc4allw41ngzlipfb0987zrswdvl5",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.1.0/previewgenerator.tar.gz",
-      "version": "2.1.0"
+      "sha256": "07yp802cfl9s2azkr1frjnfl7rxd52mp7vdsmpdkgl8vggczc424",
+      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.2.0/previewgenerator.tar.gz",
+      "version": "2.2.0"
     },
     "pride": {
       "meta": {
@@ -1497,9 +1570,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0f22ba5gnkqjzwkipkr8qnb4l96c83p6gqjmnlppb42wychgzwyj",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.4/richdocuments.tar.gz",
-      "version": "3.4.4"
+      "sha256": "0b259h4bk471b5jwdq31jai1xa9akx5a886w8n0q33ij35gqzqpc",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.6/richdocuments.tar.gz",
+      "version": "3.4.6"
     },
     "scanner": {
       "meta": {
@@ -1556,9 +1629,9 @@
         "name": "Sentry",
         "summary": "Sentry client"
       },
-      "sha256": "0nsypnr1fzak88nxqsdx2bymsdgx6190rcdq3rpc87m4gxqq0prh",
-      "url": "https://github.com/ChristophWurst/nextcloud_sentry/releases/download/v5.1.0/sentry.tar.gz",
-      "version": "5.1.0"
+      "sha256": "1wrvghjipajjps2hdq6hm0i2ybwcj93bx8xibxxjv00p4k7yyqsj",
+      "url": "https://github.com/ChristophWurst/nextcloud_sentry/releases/download/v6.0.1/sentry.tar.gz",
+      "version": "6.0.1"
     },
     "serverinfo": {
       "meta": {
@@ -1624,9 +1697,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use files stored path."
       },
-      "sha256": "0msadkbci79fv8nk319vqg9yq57ghxch52qj8ksqdrs0ay16iwwa",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.0.3/sharingpath.tar.gz",
-      "version": "0.0.3"
+      "sha256": "07109c1crpq7rzf6gx88bjwhvyzxnr5wzzg9ya7cfpcfxc6cwy4w",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.1.0/sharingpath.tar.gz",
+      "version": "0.1.0"
     },
     "smb_test": {
       "meta": {
@@ -1783,9 +1856,9 @@
         "name": "Suspicious Login",
         "summary": "Detect and warn about suspicious IPs logging into Nextcloud"
       },
-      "sha256": "00a91brvzql5mvpqcjv1xky9gqrsn2974c1siy40i5kldjy23aqv",
-      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v2.4.1/suspicious_login.tar.gz",
-      "version": "2.4.1"
+      "sha256": "0rm8k8gj271ji2q9x8kvy93ss15dyj6l8x3b3zvji2ffm3g7qq4f",
+      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v3.0.0/suspicious_login.tar.gz",
+      "version": "3.0.0"
     },
     "systemtags": {
       "meta": {
@@ -1840,9 +1913,9 @@
         "name": "Terms of service",
         "summary": "Requires users to accept the terms of service before accessing data."
       },
-      "sha256": "0wn703gyfdifpqvx3xy63bb70icimjz59k9s2gz8vphvyz8j43ik",
-      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.3.0/terms_of_service-1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "0pahycnxgdanbjcia90m3sg0mb4k7fwpny3w65c67mkklqbyihk6",
+      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.3.1/terms_of_service-1.3.1.tar.gz",
+      "version": "1.3.1"
     },
     "text": {
       "meta": {
@@ -1892,9 +1965,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1ny6xzgy719cllh6bmjcg780gg3rcywp815p9shc2dzdfcbiyclb",
+      "sha256": "0ikff4zzadp60xcsg46xpkpsn3i9wbf3313r33s5gkgz7pygk85i",
       "url": "https://mail.nerd.hu/timetracker.tar.gz",
-      "version": "0.0.34"
+      "version": "0.0.39"
     },
     "twofactor_admin": {
       "meta": {
@@ -1936,9 +2009,9 @@
         "name": "Two-Factor Gateway",
         "summary": "Two-factor gateway providers (SMS, Telegram, Signal)"
       },
-      "sha256": "1d0cqizxllf7c9fxv5zkd4dsxj0bndn22mw8mh8814r3pqxr2z68",
-      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.14.1/twofactor_gateway.tar.gz",
-      "version": "0.14.1"
+      "sha256": "1sgs5m72n20ziycbpk6jf504cprpqcdi7w6qq4p43zyycv81722z",
+      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.15.0/twofactor_gateway.tar.gz",
+      "version": "0.15.0"
     },
     "twofactor_nextcloud_notification": {
       "meta": {
@@ -1951,9 +2024,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "1llh26rr6cp8ccfz43gfsgfqnlirc1gvb59vkgz13f1nqwma0sqz",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v2.1.1/twofactor_nextcloud_notification.tar.gz",
-      "version": "2.1.1"
+      "sha256": "18zsgz0nn8ydr71sccxgvh0z7h7i0clf0h9q4317af3dzm5xiz0x",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v2.2.0/twofactor_nextcloud_notification.tar.gz",
+      "version": "2.2.0"
     },
     "twofactor_totp": {
       "meta": {
@@ -1966,9 +2039,9 @@
         "name": "Two-Factor TOTP Provider",
         "summary": "TOTP two-factor provider"
       },
-      "sha256": "1963l6r68hdhh2jchffqg2pfkg28jjfd6hjk9dc2m07r5yhirb04",
-      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.0.0/twofactor_totp.tar.gz",
-      "version": "4.0.0"
+      "sha256": "1mh7ydzchwahbwp4gxcwqlxrfswxdyz0p17yp174d6cbiqzvwndz",
+      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.1.0/twofactor_totp.tar.gz",
+      "version": "4.1.0"
     },
     "twofactor_u2f": {
       "meta": {
@@ -1981,9 +2054,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "1vpwhv77qghfs9h3q7ykcx147vr1nf7zjlycpg67yrzcsnv0pp39",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v4.0.0/twofactor_u2f.tar.gz",
-      "version": "4.0.0"
+      "sha256": "07z5p64kj8mimz9kvmq2vs6a4l40r981sjpq7gfg4p3hi13rzb06",
+      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.0.0/twofactor_u2f.tar.gz",
+      "version": "5.0.0"
     },
     "unsplash": {
       "meta": {
@@ -2026,6 +2099,21 @@
       "sha256": "0ah028w8lc5fhamyly884fl7bjs5hizgi232w59q6rn7ajaaffyp",
       "url": "https://github.com/burgha/nextcloud_uploaddetails/releases/download/v0.1.2/uploaddetails.tar.gz",
       "version": "0.1.2"
+    },
+    "user_cas": {
+      "meta": {
+        "description": "This app provides in-depth features to authenticate and authorize users against a [jasig/apereo Central Authentication Server (CAS)](https://www.apereo.org/projects/cas). The app provides all necessary options needed to connect to your CAS instance and also advanced features to manage the groups accessible by your CAS infrastructure to implement an authorization feature. This version supports ECAS instances used by the European Commission. Additionally this version supports ActiveDirectory (LDAP) import via commandline. Commercial support for user_cas is available through ownCloud GmbH and myself personally.",
+        "homepage": "https://github.com/felixrupp/user_cas",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "CAS user and group backend",
+        "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
+      },
+      "sha256": "1hz3k2pgm12yh18pafki8v8dwl25ryfx50dnys8c7i8azk9yngr4",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.0/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.0"
     },
     "user_external": {
       "meta": {
@@ -2214,6 +2302,21 @@
       "sha256": "0l5svhq3ymwba8bb14whd9axl67a1b3cgx0skxzbbgzvk38wwfhl",
       "url": "https://github.com/icewind1991/xray/releases/download/v0.2.2/xray.tar.gz",
       "version": "0.2.2"
+    },
+    "zimbradrive": {
+      "meta": {
+        "description": "Add Nextcloud / ownCloud as Briefcase in Zimbra with the full features of both applications.",
+        "homepage": "https://github.com/ZeXtras/zimbra-drive.git",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Zimbra Drive",
+        "summary": "Integration with Zimbra"
+      },
+      "sha256": "0cr2mmnkrcb1x56cyiai3brg4pl7db2qjhpzv62jg36b37j0zkhp",
+      "url": "https://zextras-artifacts.s3-eu-west-1.amazonaws.com/zimbradrive/28_Nov_2019_23_MANUAL/zimbradrive.tar.gz",
+      "version": "0.8.24"
     }
   },
   "nextcloud": {
@@ -2227,8 +2330,8 @@
       "github": {
         "owner": "mwalbeck",
         "repo": "nextcloud-breeze-dark",
-        "rev": "0a9c3218201de3d2eb27fe43dd9eb4267e6248a8",
-        "sha256": "00cy54yi37mbijnhxdqr3gxxgl8cjgs4w34xdc2sy2bh4913a82h"
+        "rev": "db718ca9ff38e5342ea5b6c0599283941b919298",
+        "sha256": "0g5b3hfvim4jminq7zcxr5v038ifyl7fdwfqv9d9kpa3frymbpcl"
       }
     }
   }
