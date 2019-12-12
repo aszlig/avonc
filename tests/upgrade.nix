@@ -48,6 +48,8 @@ import ./make-test.nix (pkgs: {
           "twofactor_admin"
           # Needs "user_backend_sql_raw" in config
           "user_backend_sql_raw"
+          # Needs write access to to "apps/cms_pico/appdata_public/".
+          "cms_pico"
 
           # These apps have non-deterministic download URLs
           "quicknotes"
