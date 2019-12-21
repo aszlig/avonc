@@ -2334,9 +2334,9 @@
     }
   },
   "nextcloud": {
-    "sha256": "1lixncsm032nnfild0gykhf4x42p8026cvikxwm5mjpisg7f171s",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-17.0.1.tar.bz2",
-    "version": "17.0.1.1"
+    "sha256": "0agj44l9bkp6cb9fxqy7j3qwsyh06gss25qq2p7y1wljwrksz9ff",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-17.0.2.tar.bz2",
+    "version": "17.0.2.1"
   },
   "themes": {
     "breeze-dark": {
