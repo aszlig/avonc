@@ -38,7 +38,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "From data to report. Data Analytics provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote files, API, imports, manual entry\n- 3rd party*: GitHub Statistics\n- Storage: stream or database\n- Visualization: charts, tables\n- Integration: Files app, NC Activity, NC Notifications* (thresholds), NC workflows*\n- Sharing: user*, protected, public\n\n(*work in progress)",
+        "description": "From data to report. Data Analytics provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote files, API, imports, manual entry\n- 3rd party*: GitHub Statistics\n- Storage: stream or database\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, NC Activity, NC Notifications, NC workflows*\n- Sharing: user*, protected, public\n\n(*work in progress)",
         "homepage": "https://github.com/rello/analytics",
         "isShipped": false,
         "licenses": [
@@ -47,9 +47,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "10vxl3dpgnqv7k6flspz7nbin663ysi67sssrpgy78p739zmy5qi",
-      "url": "https://github.com/Rello/analytics/releases/download/1.1.0/analytics-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "001birkf1mmjchfw55yvl3528d7jbacrpdrsxql209r9kn3pyxa8",
+      "url": "https://github.com/Rello/analytics/releases/download/1.2.2/analytics-1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "announcementcenter": {
       "meta": {
@@ -194,9 +194,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1rb3zalqcfrm486nssr9w739hs13l05kvbg5m2sa8m7rmimil166",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.12/carnet-nc-v0.18.12.tar.gz",
-      "version": "0.18.12"
+      "sha256": "00lkj4hqhgsa91ds3khhxpc9lfrl0qrwbsvc5z8qa6sgjx7h6w2p",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.19.0/carnet-nc-v0.19.0.tar.gz",
+      "version": "0.19.0"
     },
     "checksum": {
       "meta": {
@@ -239,9 +239,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "0gpb1rd2aifmbr3al4f2ifbmk05yx9m87b0lc107ypyc2azdkdcj",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.2/cms_pico-v1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1mz3xlzmbnmkihadpmmwfh1iq24hpy8xrqcha9y2g34yy253vm57",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.3/cms_pico-v1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "comments": {
       "meta": {
@@ -280,9 +280,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0621dmk7n2sr8ibvs24260lwsjkpj92fp4znr4iw7ysy2xkw1cr9",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.5/cookbook.tar.gz",
-      "version": "0.5.5"
+      "sha256": "10xjsl33dz1fnr8irk7cx6v894a54v4vvpzhxm763fzgj2rjvi7g",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.6/cookbook.tar.gz",
+      "version": "0.5.6"
     },
     "cospend": {
       "meta": {
@@ -295,9 +295,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0m9znqzs8jx4zggckq09xvi98scychg2f519924a1iz7knk06qng",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/a5c48e8ecce42ab40babd5668a0f37f0/cospend-0.1.5.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1v8kz8km9vyymhgc6iwdff41jcfps74nlqyvxw84zcm0mq2sfmjk",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/653e373a7a9475c81be4ea66a0722d19/cospend-0.2.0.tar.gz",
+      "version": "0.2.0"
     },
     "dashboardcharts": {
       "meta": {
@@ -404,7 +404,7 @@
     },
     "emlviewer": {
       "meta": {
-        "description": "Generate a preview for eml files",
+        "description": "Provides an email preview functionality. It creates preview for the .eml files and displays it as a modal.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -412,9 +412,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0xgp2bsrsi76jc9nzma4c1qr9xm8im3hfi9wyqv9sxw2390c3ikl",
-      "url": "https://files.newro.co/index.php/s/bS4WrpgywRMwXtt/download",
-      "version": "0.0.3"
+      "sha256": "02sw4qmqnh8pcpmpgcg9cxix6wh54a74br2kl30byclkqncg73a2",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.4/emlviewer.tar.gz",
+      "version": "0.0.4"
     },
     "encryption": {
       "meta": {
@@ -951,6 +951,21 @@
       "url": "https://gitlab.com/eneiluj/gpxpod-oc/wikis/uploads/80fa1816954164b8507e2c452395ce34/gpxpod-4.1.0.tar.gz",
       "version": "4.1.0"
     },
+    "grauphel": {
+      "meta": {
+        "description": "Tomboy REST API server to sync notes between devices.\n\n  Tomboy, Conboy and Tomdroid clients are supported.",
+        "homepage": "https://cweiske.de/grauphel.htm",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Grauphel: Tomboy note server",
+        "summary": "Tomboy REST API server to sync notes between devices"
+      },
+      "sha256": "1da5hlp8dmkr4qv6ff41pmbi2hdfzfjkm3wgnp86ypxl0aw3gkmj",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.3.tar.gz",
+      "version": "0.7.3"
+    },
     "group_everyone": {
       "meta": {
         "description": "Adds a virtual \"Everyone\" group.",
@@ -1040,6 +1055,20 @@
       "url": "https://github.com/nextcloud/impersonate/releases/download/v1.4.0/impersonate.tar.gz",
       "version": "1.4.0"
     },
+    "joplin": {
+      "meta": {
+        "description": "Joplin Web API for Nextcloud",
+        "isShipped": false,
+        "licenses": [
+          "apache"
+        ],
+        "name": "Joplin Web API",
+        "summary": "Joplin Web API for Nextcloud"
+      },
+      "sha256": "0fqi856qifcb7hgnm4bf13ia7ia5vmmsd22nnvnsmcvhfb42vqng",
+      "url": "https://github.com/laurent22/joplin-nextcloud/releases/download/v0.0.25/joplin-0.0.25.tar.gz",
+      "version": "0.0.25"
+    },
     "keeporsweep": {
       "meta": {
         "description": "**Tech companies help you amass data  we help you clean it by having fun while getting things done! ** You will see one random element of your data at a time and you decide whether to keep or sweep it.\n\nCurrently this works for Files, and we have [plans to integrate many more sources](http://keeporsweep.net)  come join and contribute!",
@@ -1069,6 +1098,21 @@
       "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.0.2/ldap_write_support.tar.gz",
       "version": "1.0.2"
     },
+    "ldapcontacts": {
+      "meta": {
+        "description": "# LdapContacts\nView other LDAP users as contacts in Nextcloud and see the personal data they shared.\n\n### Features\n  * view all LDAP users as contacts\n  * search these users\n  * restrict your search to certain LDAP groups\n  * hide certain users and groups from the contacts app\n  * define which LDAP attributes are available for your contacts\n\n### Requirements\n  * active LDAP authentification (check [Nextcloud admin manual](https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/user_auth_ldap.html) for details)\n  * php 7.0",
+        "homepage": "https://github.com/KircheNeuenburg/ldapcontacts",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "LDAP Contacts",
+        "summary": "Display your LDAP contacts"
+      },
+      "sha256": "1kmz6fh69zv7ip4nh9kj07mxg0pnfi0xy6ypvhzkyqnia9x1k1z0",
+      "url": "https://h-software.de/nextcloud_apps/ldapcontacts/ldapcontacts-2.0.1.tar.gz",
+      "version": "2.0.1"
+    },
     "logreader": {
       "meta": {
         "defaultEnable": true,
@@ -1092,9 +1136,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0hka20j9l9kag5z8yzs50sqg9xryys970g9zf6sycy88mydml3dd",
-      "url": "https://github.com/nextcloud/mail/releases/download/v0.20.1/mail.tar.gz",
-      "version": "0.20.1"
+      "sha256": "0w7knmb9lxijf33b3pdpv3y6lj5z4g3l4v7p2nllz00gf6xzhal4",
+      "url": "https://github.com/nextcloud/mail/releases/download/v0.21.0/mail.tar.gz",
+      "version": "0.21.0"
     },
     "maps": {
       "meta": {
@@ -1170,6 +1214,21 @@
       "sha256": "0c3fyl3j9ihfgpg3jdwdqx9zcrz0gm01622w9yq8v20m8rm257za",
       "url": "https://github.com/nextcloud/news/releases/download/14.0.2/news.tar.gz",
       "version": "14.0.2"
+    },
+    "nextbackup": {
+      "meta": {
+        "description": "NextBackup (formerly OwnBackup) is the simple database backup solution for your ownCloud 8.1+ or Nextcloud installation.\n\nIts main purpose is to provide an easy solution to restore the tables of an app in case you accidentally corrupted the data or did anything you regret later.\n\n- Use this app at your own risk! Data loss may occur!\n- This app is no replacement for a more professional backup solution!",
+        "homepage": "https://github.com/pbek/nextbackup",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "NextBackup",
+        "summary": "Simple database backup solutions for your ownCloud 8.1+ or Nextcloud installation."
+      },
+      "sha256": "001vhbivp688jdbqnaj4wy9g29snhp3y9xvprzpgw4q67n4q1rdr",
+      "url": "https://github.com/pbek/nextbackup/releases/download/19.12.1/nextbackup-nc.tar.gz",
+      "version": "19.12.1"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1281,9 +1340,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "004gqhsxpv8z2xgqkg3cxbsdhfmxm5zyx4sr07dmrc92xbxfi2z1",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v3.0.2/onlyoffice.tar.gz",
-      "version": "3.0.2"
+      "sha256": "1mwsj11dqa5gr1x5crpcpqidj2pv6li4j8advm8qpwpapx0ypjmr",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.0.0/onlyoffice.tar.gz",
+      "version": "4.0.0"
     },
     "ownbackup": {
       "meta": {
@@ -1584,9 +1643,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0b259h4bk471b5jwdq31jai1xa9akx5a886w8n0q33ij35gqzqpc",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.6/richdocuments.tar.gz",
-      "version": "3.4.6"
+      "sha256": "0al7lm0gfr2i9ahwvisdmdh5cpx61p706xyb78r1x0wnv2i5svlc",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.0/richdocuments.tar.gz",
+      "version": "3.5.0"
     },
     "scanner": {
       "meta": {
@@ -1696,9 +1755,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "1n1vxshiibdk9a7qnbzhhv2h68q109h2h2wdz2a8pxzn25vyjvfp",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.2/sharerenamer-2.7.2.tar.gz",
-      "version": "2.7.2"
+      "sha256": "05vyh57ikpz30al30p0jqik1xldimnha0rqk1skrwzhjwgnhkq4h",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.3/sharerenamer-2.7.3.tar.gz",
+      "version": "2.7.3"
     },
     "sharingpath": {
       "meta": {
@@ -1993,9 +2052,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "0yr9l9d5xpwd4q2vpqsjzfqzclw7whl6p9j5msw8zcx6fizcmali",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v1.0.0/twofactor_admin.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1q1mc04kz4zmhbzrp8i570kk2f99fr6x4a5iahc080dxs0hp72j7",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v2.0.0/twofactor_admin.tar.gz",
+      "version": "2.0.0"
     },
     "twofactor_email": {
       "meta": {
@@ -2114,6 +2173,20 @@
       "url": "https://github.com/burgha/nextcloud_uploaddetails/releases/download/v0.1.2/uploaddetails.tar.gz",
       "version": "0.1.2"
     },
+    "user_backend_sql_raw": {
+      "meta": {
+        "description": "This app allows you to do user management against a SQL database using arbitrary SQL queries, enabling you to use any SQL db schema.\n\nYou can authenticate, create, delete users, change their password or display name, basically do (almost) everything that Nextcloud can do with users.\n\nIn contrast to the app *SQL user backend*, you write the SQL queries yourself. You are not limited by assumptions that app authors made about how your db is structured.\n\nThe app uses prepared statements and is written to be secure by default to prevent SQL injections. It understands the most popular standards for password hash formats: MD5-CRYPT, SHA256-CRYPT, SHA512-CRYPT, BCrypt and the state-of-the-art Argon2i and Argon2id. Because the various formats are recognized on-the-fly your db can can have differing hash string formats at the same time, which eases migration to newer formats.\n\nThis app supports PostgreSQL and MariaDB/MySQL.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User Backend Using Raw SQL",
+        "summary": "User management and authentication through arbitrary SQL queries"
+      },
+      "sha256": "06xdiwgfapcg0yj374wakn5hhrz7fql6bz3lf5y11gfkczk95bmw",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.9/user_backend_sql_raw.tar.gz",
+      "version": "1.0.9"
+    },
     "user_cas": {
       "meta": {
         "description": "This app provides in-depth features to authenticate and authorize users against a [jasig/apereo Central Authentication Server (CAS)](https://www.apereo.org/projects/cas). The app provides all necessary options needed to connect to your CAS instance and also advanced features to manage the groups accessible by your CAS infrastructure to implement an authorization feature. This version supports ECAS instances used by the European Commission. Additionally this version supports ActiveDirectory (LDAP) import via commandline. Commercial support for user_cas is available through ownCloud GmbH and myself personally.",
@@ -2143,6 +2216,21 @@
       "sha256": "0f8kv04qwssf55f3i91yhiayiljl2apsl2mvlhvmanriknpg63m7",
       "url": "https://github.com/nextcloud/user_external/releases/download/v0.7.0/user_external-0.7.0.tar.gz",
       "version": "0.7.0"
+    },
+    "user_ispconfig": {
+      "meta": {
+        "description": "Using this authentication provider you allow your users to use login credentials from their mailboxes as managed by ISPConfig 3 hosting controlpanel.\n\nTo do so, you have to configure the URL of your panel server for API requests along with user credentials for a ISPConfig remote api user.\nSee Readme in admin documentation for details.\n\nFurthermore, you can set default quota and group memberships for all newly created users.\n\nFor users from specific domains you can add individual quota and group settings and also allow them to use simplified usernames, e.g. instead of john@doe.com just john or john.doe. For more information on this, take a look at prefix, suffix and bare-name configuration contained in the Readme file.\n\nRequires SOAP PHP Extension to be installed and enabled and an ISPConfig remote user with permissions for Customer Functions, Server Functions, E-Mail User Functions.",
+        "homepage": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User support for ISPConfig mail accounts",
+        "summary": "Allow users logging in using their mailbox credentials as managed via ISPConfig"
+      },
+      "sha256": "104nyipx4nzzw052vy47ly39jf38jzdlm3cdssah9xp4apv8qw4z",
+      "url": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig/uploads/9d19ddf6e8c7bd11d2de782c472b007f/user-ispconfig-0.4.4.tar.gz",
+      "version": "0.4.4"
     },
     "user_ldap": {
       "meta": {
@@ -2271,6 +2359,20 @@
       "sha256": "0k1a20ljmricyimqxnw6gqci5m7hrkpacdscnphcf5dqvx6cndb2",
       "url": "https://github.com/nextcloud/weather/releases/download/1.6.4/weather-1.6.4.tar.gz",
       "version": "1.6.4"
+    },
+    "wopi": {
+      "meta": {
+        "description": "This is an application that allows you to edit office documents in Microsoft office online server. Application settings are in the additional section. Office server url - root url of office online server.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Wopi",
+        "summary": "Microsoft office online integration"
+      },
+      "sha256": "0lvf4syzvfp81c6cfz8bkljv2qic7dcmmzyii24yjqwqnzjga9b9",
+      "url": "https://github.com/roscomputing/nextcloudwopi/releases/download/v0.1.4/wopi.tar.gz",
+      "version": "0.1.4"
     },
     "workflow_pdf_converter": {
       "meta": {

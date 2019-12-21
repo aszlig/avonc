@@ -1,22 +1,22 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 0ec73f27..33602364 100644
+index d86e73b2..8a6380e0 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -27,9 +27,6 @@
  	<dependencies>
- 		<nextcloud min-version="15" max-version="17" />
+ 		<nextcloud min-version="15" max-version="18" />
  	</dependencies>
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
 -	</background-jobs>
- 	<repair-steps>
- 		<post-migration>
- 			<step>OCA\Richdocuments\Migration\UpdateEmptyTemplates</step>
+ 	<commands>
+ 		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
+ 	</commands>
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
-index 887da225..6ac198e2 100644
+index 43eb427b..021dff3f 100644
 --- a/lib/Capabilities.php
 +++ b/lib/Capabilities.php
-@@ -98,35 +98,15 @@ class Capabilities implements ICapability {
+@@ -98,36 +98,15 @@ class Capabilities implements ICapability {
  	}
  
  	public function getCapabilities() {
@@ -27,7 +27,7 @@ index 887da225..6ac198e2 100644
  				'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
 -				'collabora' => $collaboraCapabilities,
 -				'direct_editing' => isset($collaboraCapabilities['hasMobileSupport']) ? : false,
--				'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) ? : false,
+-				'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) || isset($collaboraCapabilities['hasTemplateSource']) ? : false,
 -				'productName' => isset($collaboraCapabilities['productName']) ? $collaboraCapabilities['productName'] : $this->l10n->t('Collabora Online'),
 +				'collabora' => [],
 +				'direct_editing' => false,
@@ -38,6 +38,7 @@ index 887da225..6ac198e2 100644
  	}
 -
 -	/**
+-	 * TODO: use CapabilitiesService
 -	 * @return array
 -	 * @throws \OCP\Files\NotPermittedException
 -	 */
@@ -57,7 +58,7 @@ index 887da225..6ac198e2 100644
 -	}
  }
 diff --git a/lib/Controller/DocumentController.php b/lib/Controller/DocumentController.php
-index 7d56c64c..bd9fe502 100644
+index ca6eb0fd..533a8ba6 100644
 --- a/lib/Controller/DocumentController.php
 +++ b/lib/Controller/DocumentController.php
 @@ -14,7 +14,6 @@ namespace OCA\Richdocuments\Controller;
@@ -171,18 +172,19 @@ index 2aeab1b4..9f72bc0c 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index 8eba0b0f..dda9e9fc 100644
+index bb0b4f6a..b018127a 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
-@@ -25,7 +25,6 @@ use OC\Share\Constants;
+@@ -25,8 +25,6 @@ use OC\Share\Constants;
  use OCA\Richdocuments\Db\WopiMapper;
  use OCA\Richdocuments\Helper;
  use OCA\Richdocuments\Db\Wopi;
+-use OCA\Richdocuments\Service\CapabilitiesService;
 -use OCA\Richdocuments\WOPI\Parser;
  use OCP\Files\File;
  use OCP\Files\IRootFolder;
  use OCP\Files\Node;
-@@ -44,8 +43,6 @@ class TokenManager {
+@@ -45,8 +43,6 @@ class TokenManager {
  	private $shareManager;
  	/** @var IURLGenerator */
  	private $urlGenerator;
@@ -191,12 +193,15 @@ index 8eba0b0f..dda9e9fc 100644
  	/** @var AppConfig */
  	private $appConfig;
  	/** @var string */
-@@ -59,11 +56,12 @@ class TokenManager {
+@@ -59,14 +55,13 @@ class TokenManager {
+ 	private $userManager;
  	/** @var IGroupManager */
  	private $groupManager;
- 
-+	const LOOL_MIME_TYPES = @LOOL_MIME_TYPES_ARRAY@;
+-	/** @var CapabilitiesService */
+-	private $capabilitiesService;
 +
++	const LOOL_MIME_TYPES = @LOOL_MIME_TYPES_ARRAY@;
+ 
  	/**
  	 * @param IRootFolder $rootFolder
  	 * @param IManager $shareManager
@@ -205,34 +210,36 @@ index 8eba0b0f..dda9e9fc 100644
  	 * @param AppConfig $appConfig
  	 * @param string $UserId
  	 * @param WopiMapper $wopiMapper
-@@ -72,7 +70,6 @@ class TokenManager {
+@@ -75,8 +70,6 @@ class TokenManager {
  	public function __construct(IRootFolder $rootFolder,
  								IManager $shareManager,
  								IURLGenerator $urlGenerator,
 -								Parser $wopiParser,
+-								CapabilitiesService $capabilitiesService,
  								AppConfig $appConfig,
  								$UserId,
  								WopiMapper $wopiMapper,
-@@ -82,7 +79,6 @@ class TokenManager {
+@@ -86,8 +79,6 @@ class TokenManager {
  		$this->rootFolder = $rootFolder;
  		$this->shareManager = $shareManager;
  		$this->urlGenerator = $urlGenerator;
 -		$this->wopiParser = $wopiParser;
+-		$this->capabilitiesService = $capabilitiesService;
  		$this->appConfig = $appConfig;
  		$this->trans = $trans;
  		$this->userId = $UserId;
-@@ -177,16 +173,10 @@ class TokenManager {
+@@ -190,16 +181,10 @@ class TokenManager {
  
  		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name, 0, $hideDownload, $direct, $isRemoteToken);
  
 -		try {
 -
 -			return [
--				$this->wopiParser->getUrlSrc($file->getMimeType())['urlsrc'],
+-				$this->wopiParser->getUrlSrc($file->getMimeType())['urlsrc'], // url src might not be found ehre
 -				$wopi->getToken(),
 -				$wopi
 -			];
--		} catch (\Exception $e){
+-		} catch (\Exception $e) {
 -			throw $e;
 -		}
 +		if (in_array($file->getMimeType(), self::LOOL_MIME_TYPES))
@@ -242,16 +249,25 @@ index 8eba0b0f..dda9e9fc 100644
  	}
  
  	public function updateToRemoteToken(Wopi $wopi, $shareToken, $remoteServer, $remoteServerToken, $remoteWopi) {
-@@ -225,10 +215,10 @@ class TokenManager {
+@@ -244,17 +229,13 @@ class TokenManager {
  
- 		$wopi = $this->wopiMapper->generateFileToken($file->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $templateDestination, $direct);
+ 		$serverHost = $this->urlGenerator->getAbsoluteURL('/');
+ 
+-		if ($this->capabilitiesService->hasTemplateSource()) {
+-			$wopi = $this->wopiMapper->generateFileToken($targetFile->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, 0, false, false, false, $templateFile->getId());
+-		} else {
+-			// Legacy way of creating new documents from a template
+-			$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $targetFile->getId(), $direct);
+-		}
++		// Legacy way of creating new documents from a template
++		$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $targetFile->getId(), $direct);
  
 -		return [
--			$this->wopiParser->getUrlSrc($file->getMimeType())['urlsrc'],
--			$wopi->getToken(),
+-			$this->wopiParser->getUrlSrc($templateFile->getMimeType())['urlsrc'],
+-			$wopi
 -		];
 +		if (in_array($file->getMimeType(), self::LOOL_MIME_TYPES))
-+			return ['@LOOL_LEAFLET_URL@', $wopi->getToken()];
++			return ['@LOOL_LEAFLET_URL@', $wopi];
 +		else
 +			throw new \Exception('Could not find urlsrc in WOPI');
  	}

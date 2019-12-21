@@ -237,9 +237,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1rb3zalqcfrm486nssr9w739hs13l05kvbg5m2sa8m7rmimil166",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.18.12/carnet-nc-v0.18.12.tar.gz",
-      "version": "0.18.12"
+      "sha256": "00lkj4hqhgsa91ds3khhxpc9lfrl0qrwbsvc5z8qa6sgjx7h6w2p",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.19.0/carnet-nc-v0.19.0.tar.gz",
+      "version": "0.19.0"
     },
     "checksum": {
       "meta": {
@@ -282,9 +282,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "0gpb1rd2aifmbr3al4f2ifbmk05yx9m87b0lc107ypyc2azdkdcj",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.2/cms_pico-v1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1mz3xlzmbnmkihadpmmwfh1iq24hpy8xrqcha9y2g34yy253vm57",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.3/cms_pico-v1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "comments": {
       "meta": {
@@ -323,9 +323,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0621dmk7n2sr8ibvs24260lwsjkpj92fp4znr4iw7ysy2xkw1cr9",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.5/cookbook.tar.gz",
-      "version": "0.5.5"
+      "sha256": "10xjsl33dz1fnr8irk7cx6v894a54v4vvpzhxm763fzgj2rjvi7g",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.6/cookbook.tar.gz",
+      "version": "0.5.6"
     },
     "cospend": {
       "meta": {
@@ -491,7 +491,7 @@
     },
     "emlviewer": {
       "meta": {
-        "description": "Generate a preview for eml files",
+        "description": "Provides an email preview functionality. It creates preview for the .eml files and displays it as a modal.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -499,9 +499,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0xgp2bsrsi76jc9nzma4c1qr9xm8im3hfi9wyqv9sxw2390c3ikl",
-      "url": "https://files.newro.co/index.php/s/bS4WrpgywRMwXtt/download",
-      "version": "0.0.3"
+      "sha256": "02sw4qmqnh8pcpmpgcg9cxix6wh54a74br2kl30byclkqncg73a2",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.4/emlviewer.tar.gz",
+      "version": "0.0.4"
     },
     "encryption": {
       "meta": {
@@ -1138,9 +1138,9 @@
         "name": "Grauphel: Tomboy note server",
         "summary": "Tomboy REST API server to sync notes between devices"
       },
-      "sha256": "0svaq2295mwblc48n6722myllw9vwakrnzbpjm04r9gz0csvk7l7",
-      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.2.tar.gz",
-      "version": "0.7.2"
+      "sha256": "1da5hlp8dmkr4qv6ff41pmbi2hdfzfjkm3wgnp86ypxl0aw3gkmj",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.3.tar.gz",
+      "version": "0.7.3"
     },
     "group_everyone": {
       "meta": {
@@ -1230,6 +1230,20 @@
       "sha256": "1qkfvr1l1n1px85xmq36sj7nhax6lskmpsksynvghp06s5xamh19",
       "url": "https://github.com/nextcloud/issuetemplate/releases/download/v0.5.0/issuetemplate.tar.gz",
       "version": "0.5.0"
+    },
+    "joplin": {
+      "meta": {
+        "description": "Joplin Web API for Nextcloud",
+        "isShipped": false,
+        "licenses": [
+          "apache"
+        ],
+        "name": "Joplin Web API",
+        "summary": "Joplin Web API for Nextcloud"
+      },
+      "sha256": "0fqi856qifcb7hgnm4bf13ia7ia5vmmsd22nnvnsmcvhfb42vqng",
+      "url": "https://github.com/laurent22/joplin-nextcloud/releases/download/v0.0.25/joplin-0.0.25.tar.gz",
+      "version": "0.0.25"
     },
     "jsloader": {
       "meta": {
@@ -1378,6 +1392,21 @@
       "url": "https://github.com/nextcloud/news/releases/download/13.1.6/news.tar.gz",
       "version": "13.1.6"
     },
+    "nextbackup": {
+      "meta": {
+        "description": "NextBackup (formerly OwnBackup) is the simple database backup solution for your ownCloud 8.1+ or Nextcloud installation.\n\nIts main purpose is to provide an easy solution to restore the tables of an app in case you accidentally corrupted the data or did anything you regret later.\n\n- Use this app at your own risk! Data loss may occur!\n- This app is no replacement for a more professional backup solution!",
+        "homepage": "https://github.com/pbek/nextbackup",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "NextBackup",
+        "summary": "Simple database backup solutions for your ownCloud 8.1+ or Nextcloud installation."
+      },
+      "sha256": "001vhbivp688jdbqnaj4wy9g29snhp3y9xvprzpgw4q67n4q1rdr",
+      "url": "https://github.com/pbek/nextbackup/releases/download/19.12.1/nextbackup-nc.tar.gz",
+      "version": "19.12.1"
+    },
     "nextcloud_announcements": {
       "meta": {
         "defaultEnable": true,
@@ -1518,9 +1547,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "004gqhsxpv8z2xgqkg3cxbsdhfmxm5zyx4sr07dmrc92xbxfi2z1",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v3.0.2/onlyoffice.tar.gz",
-      "version": "3.0.2"
+      "sha256": "1mwsj11dqa5gr1x5crpcpqidj2pv6li4j8advm8qpwpapx0ypjmr",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.0.0/onlyoffice.tar.gz",
+      "version": "4.0.0"
     },
     "orcid": {
       "meta": {
@@ -1884,9 +1913,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0b259h4bk471b5jwdq31jai1xa9akx5a886w8n0q33ij35gqzqpc",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.4.6/richdocuments.tar.gz",
-      "version": "3.4.6"
+      "sha256": "0al7lm0gfr2i9ahwvisdmdh5cpx61p706xyb78r1x0wnv2i5svlc",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.0/richdocuments.tar.gz",
+      "version": "3.5.0"
     },
     "scanner": {
       "meta": {
@@ -2010,9 +2039,9 @@
         "name": "ShareRenamer",
         "summary": "A simple share link renamer add-in for the Files app"
       },
-      "sha256": "1n1vxshiibdk9a7qnbzhhv2h68q109h2h2wdz2a8pxzn25vyjvfp",
-      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.2/sharerenamer-2.7.2.tar.gz",
-      "version": "2.7.2"
+      "sha256": "05vyh57ikpz30al30p0jqik1xldimnha0rqk1skrwzhjwgnhkq4h",
+      "url": "https://github.com/DecaTec/sharerenamer/releases/download/v2.7.3/sharerenamer-2.7.3.tar.gz",
+      "version": "2.7.3"
     },
     "sharingpath": {
       "meta": {
@@ -2440,9 +2469,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "0ccw4fpmpq1rpr9i6ixmpbzg4l1glldsin3cn49ikwfprcmclvn6",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.8/user_backend_sql_raw.tar.gz",
-      "version": "1.0.8"
+      "sha256": "06xdiwgfapcg0yj374wakn5hhrz7fql6bz3lf5y11gfkczk95bmw",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.9/user_backend_sql_raw.tar.gz",
+      "version": "1.0.9"
     },
     "user_cas": {
       "meta": {
