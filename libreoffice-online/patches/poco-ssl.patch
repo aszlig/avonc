@@ -1,0 +1,20 @@
+diff --git a/NetSSL_OpenSSL/src/Context.cpp b/NetSSL_OpenSSL/src/Context.cpp
+index 7f40cd076..44a4c9436 100644
+--- a/NetSSL_OpenSSL/src/Context.cpp
++++ b/NetSSL_OpenSSL/src/Context.cpp
+@@ -569,6 +582,7 @@ void Context::initDH(const std::string& dhParamsFile)
+ 	
+ void Context::initECDH(const std::string& curve)
+ {
++#if OPENSSL_VERSION_NUMBER < 0x10101000L
+ #if OPENSSL_VERSION_NUMBER >= 0x0090800fL
+ #ifndef OPENSSL_NO_ECDH
+ 	int nid = 0;
+@@ -595,6 +609,7 @@ void Context::initECDH(const std::string& curve)
+ 	EC_KEY_free(ecdh);
+ #endif
+ #endif
++#endif
+ }
+ 
+ 

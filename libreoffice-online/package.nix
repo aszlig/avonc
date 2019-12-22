@@ -79,8 +79,11 @@ in pkgs.gcc7Stdenv.mkDerivation rec {
   ];
 
   buildInputs = [
-    libreofficeSDK pkgs.libpng pkgs.libcap pkgs.poco pkgs.pam pkgs.pcre
-    pkgs.openssl
+    libreofficeSDK pkgs.libpng pkgs.libcap pkgs.pam pkgs.pcre pkgs.openssl
+
+    (pkgs.poco.overrideAttrs (drv: {
+      patches = (drv.patches or []) ++ lib.singleton patches/poco-ssl.patch;
+    }))
   ];
 
   nativeBuildInputs = [
