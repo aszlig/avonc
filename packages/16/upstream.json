@@ -47,9 +47,9 @@
         "name": "AfterLogic",
         "summary": "Integration with AfterLogic WebMail client"
       },
-      "sha256": "11mawpp3q7w7fjl7q2ajg9zhr60yb71nn5r0ngvfzq207q7rb8jq",
-      "url": "https://afterlogic.com/download/nextcloud/afterlogic.tgz",
-      "version": "1.2.2"
+      "sha256": "1qsa6ch5fd2ah5jx8ihrx2y34rg50dibxf55a8z0c0qh5dkw000k",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud.tgz",
+      "version": "1.2.3"
     },
     "analytics": {
       "meta": {
@@ -91,9 +91,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "1i52g7nkmazk9gj54cribzmpb7iridln0hsngcj8js7j89xhr4n5",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.8.0/apporder.tar.gz",
-      "version": "0.8.0"
+      "sha256": "1plnalcpjmgrapmlrvyhsa939s3wxr8h0ns9k6r89n40c5lyj017",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.9.0/apporder.tar.gz",
+      "version": "0.9.0"
     },
     "audioplayer": {
       "meta": {
@@ -195,9 +195,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "0ln3yzkba7payn88z527639v5ynwxw5dpzxk9ssgzppl594gd14q",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v1.7.1/calendar.tar.gz",
-      "version": "1.7.1"
+      "sha256": "04gjbz1jhlw4jhbbqdaspnk79a68nl15r08cifah0bmi88a38aql",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v1.7.2/calendar.tar.gz",
+      "version": "1.7.2"
     },
     "camerarawpreviews": {
       "meta": {
@@ -209,9 +209,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "0jkzpgjw5cd52xvfpil1yhlcfcw9f5c3fh3p09fl9g2qcgw56058",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.2/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.2"
+      "sha256": "177d6gkc4k3byk1rnq3gr9ynfy996q4pnxls8mwi7azliwl3iylb",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.3/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.3"
     },
     "carnet": {
       "meta": {
@@ -259,7 +259,7 @@
     },
     "cms_pico": {
       "meta": {
-        "description": "[Pico CMS for Nextcloud](https://github.com/nextcloud/cms_pico) combines the power of [**Pico**](http://picocms.org/) and [**Nextcloud**](https://nextcloud.com/) to create simple, secure, shareable and amazingly powerful websites with just a few clicks. Pico is a stupidly simple, blazing fast, flat file CMS - making the web easy.\n\n* Start a blog\n* Share your resume with the world\n* Create a plan for world domination and only share with the right friends\n* Build a knowledge base and let the smart ones among your colleagues help out\n\nInstalling Pico CMS for Nextcloud allows your users to create and manage their own websites. Creating a new page with Pico is no more than creating a simple text file in a users' Nextcloud files. No config is required, no utterly complex management interfaces - just files. It's the perfect match with Nextcloud. Secure Sharing, Collaboration, Access Control - not just for your files, but also your websites, all made possible by Pico CMS for Nextcloud! Breaking the boundaries between your Mobile &amp; Desktop devices and your Server.\n\nWebsites will be accessible through URLs like `https://cloud.example.com/sites/my_site/` and consist of just a bunch of `.md` text files in a user's Nextcloud files. `.md` stands for [**Markdown**](https://www.markdownguide.org/) - a super simple and intuitive markup to create headings, paragraphs, text formatting, lists, images and links. But don't despair - you don't have to learn yet another language if you don't want to. Consider enabling Nextcloud's [Text](https://apps.nextcloud.com/apps/text) or [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) apps to make easy things stupidly simple. But what about meta data like a page's title or release date? Guess right, it's all in one place. At the top of your Markdown files you can place a block with such meta data - called the [**YAML**](https://en.wikipedia.org/wiki/YAML) Front Matter. Creating websites can't be easier...\n\nBut that wasn't everything... Pico CMS for Nextcloud is highly customizable. You can change Picos appearance by using custom themes and add new functionality by using custom plugins. For security reasons users can neither add custom themes nor plugins on their own - but as an admin you can. Plugins and themes arent just new \"skins\" or \"widgets\", the underlying technologies are powerful frameworks you can leverage to make your users' websites truly unique. However, with great power comes great responsibility. Pico CMS for Nextcloud does its best to prevent users from including scripts into websites, since this might bear security risks (so called \"Cross Scripting\"). Since this risk doesn't apply to Pico itself, 3rd-party developers of plugins and themes might not be aware of this issue - so be careful when installing custom plugins and themes.\n\nYou want to learn more about Pico CMS for Nextcloud? Easy! Just download and enable the app from [Nextcloud's App Store](https://apps.nextcloud.com/apps/cms_pico) and create your first personal website using the \"sample_pico\" template. Pico's sample contents will explain all you need to know...",
+        "description": "[Pico CMS for Nextcloud](https://github.com/nextcloud/cms_pico) combines the power of [**Pico**](http://picocms.org/) and [**Nextcloud**](https://nextcloud.com/) to create simple, secure, shareable and amazingly powerful websites with just a few clicks. Pico is a stupidly simple, blazing fast, flat file CMS - making the web easy.\n\n* Start a blog\n* Share your resume with the world\n* Create a plan for world domination and only share with the right friends\n* Build a knowledge base and let the smart ones among your colleagues help out\n\nInstalling Pico CMS for Nextcloud allows your users to create and manage their own websites. Creating a new page with Pico is no more than creating a simple text file in a users' Nextcloud files. No config is required, no utterly complex management interfaces - just files. It's the perfect match with Nextcloud. Secure Sharing, Collaboration, Access Control - not just for your files, but also your websites, all made possible by Pico CMS for Nextcloud! Breaking the boundaries between your Mobile &amp; Desktop devices and your Server.\n\nWebsites will be accessible through URLs like `https://cloud.example.com/sites/my_site/` and consist of just a bunch of `.md` text files in a user's Nextcloud files. `.md` stands for [**Markdown**](https://www.markdownguide.org/) - a super simple and intuitive markup to create headings, paragraphs, text formatting, lists, images and links. But don't despair - you don't have to learn yet another language if you don't want to. Consider enabling Nextcloud's [Text](https://apps.nextcloud.com/apps/text) or [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) apps to make easy things stupidly simple. But what about meta data like a page's title or release date? Guess right, it's all in one place. At the top of your Markdown files you can place a block with such meta data - called the [**YAML**](https://en.wikipedia.org/wiki/YAML) Front Matter. Creating websites can't be easier...\n\nBut that wasn't everything... Pico CMS for Nextcloud is highly customizable. You can change Picos appearance by using custom themes and add new functionality by using custom plugins. For security reasons users can neither add custom themes nor plugins on their own - but as an admin you can. Plugins and themes arent just new \"skins\" or \"widgets\", the underlying technologies are powerful frameworks you can leverage to make your users' websites truly unique. However, with great power comes great responsibility. Pico CMS for Nextcloud does its best to prevent users from including scripts into websites, since this might bear security risks (so called \"Cross Scripting\"). Since this risk doesn't apply to Pico itself, 3rd-party developers of plugins and themes might not be aware of this issue - so be careful when installing custom plugins and themes.\n\nYou want to learn more about Pico CMS for Nextcloud? Easy! Just download and enable the app from [Nextcloud's App Store](https://apps.nextcloud.com/apps/cms_pico) and navigate to Nextcloud's settings page. As an admin you'll find two \"Pico CMS\" sections in your Nextcloud settings - one below \"Personal\", another below \"Administration\". The latter allows you to add custom themes, plugins and templates to Pico, as well as tweaking some advanced settings. The \"Pico CMS\" section below \"Personal\" exists for all Nextcloud users and allows one to create personal websites. Simply create your first personal website and choose \"sample_pico\" as website template. Pico's sample contents will explain all you need to know...",
         "homepage": "https://github.com/nextcloud/cms_pico",
         "isShipped": false,
         "licenses": [
@@ -268,9 +268,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1mz3xlzmbnmkihadpmmwfh1iq24hpy8xrqcha9y2g34yy253vm57",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.3/cms_pico-v1.0.3.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0hk5i33w5zl5yjyxl9ymzl0wvbar8jflyyspn685i4xgs480n0x8",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.4/cms_pico-v1.0.4.tar.gz",
+      "version": "1.0.4"
     },
     "comments": {
       "meta": {
@@ -309,9 +309,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "10xjsl33dz1fnr8irk7cx6v894a54v4vvpzhxm763fzgj2rjvi7g",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.6/cookbook.tar.gz",
-      "version": "0.5.6"
+      "sha256": "0hx3v0c4v3fardlg5v408vmkaqv6mjhkfrbln1w2mw0364icdj8p",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.5.7/cookbook.tar.gz",
+      "version": "0.5.7"
     },
     "cospend": {
       "meta": {
@@ -412,9 +412,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "1dmk2if6xa5pvz9g3yn0drdckrxp8wigqh5pkr7bf662rwh65iqw",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.17/discoursesso-0.9.17.tar.gz",
-      "version": "0.9.17"
+      "sha256": "1iw1bxqlifvrn56fcb0gnmavmn97kdn7pg4j9m03wa18js4dknh8",
+      "url": "https://github.com/soudis/discoursesso/releases/download/0.9.20/discoursesso-0.9.20.tar.gz",
+      "version": "0.9.20"
     },
     "drawio": {
       "meta": {
@@ -715,9 +715,9 @@
         "name": "Full text search - Files - Tesseract OCR",
         "summary": "OCR Some format"
       },
-      "sha256": "1piq2jd3bp4mb253qld09wgzdbkb8cdjgy4g0yrc2gcp2f4kwkbd",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.3.1/files_fulltextsearch_tesseract-1.3.1.tar.gz",
-      "version": "1.3.1"
+      "sha256": "0kfgys9j5910www4skzlf8g7ardnvzcd33mrj9jn6n55jp0bcbp3",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.3.2/files_fulltextsearch_tesseract-1.3.2.tar.gz",
+      "version": "1.3.2"
     },
     "files_inotify": {
       "meta": {
@@ -760,9 +760,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "1yzfhg7pymkn7g514kbi07cagvdp6m4k1n43r0c4283skx7grrds",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.1.0/files_markdown.tar.gz",
-      "version": "2.1.0"
+      "sha256": "1s9w4b7lm7v90xvlh5v5cpy39pwjvx9f52wjv5l97vaj15addc8w",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.2.0/files_markdown.tar.gz",
+      "version": "2.2.0"
     },
     "files_mindmap": {
       "meta": {
@@ -1125,9 +1125,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "081ly49jd2mnn06cvsc66s1dxw1dpnf6qqhfx10f5fly17135xar",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v4.1.4/groupfolders-4.1.4.tar.gz",
-      "version": "4.1.4"
+      "sha256": "1wzyqx9migifjqbh5hjbxwr446mgjf70bk4qn5c0831knh908c90",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v4.1.5/groupfolders.tar.gz",
+      "version": "4.1.5"
     },
     "groupquota": {
       "meta": {
@@ -1140,9 +1140,9 @@
         "name": "Group quota",
         "summary": "Give filesystem quotas to groups"
       },
-      "sha256": "0fsz7nslmc5nh38kl8l55nsw4qhkcx6vxgdx2r6zinb3f828v1ip",
-      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.1/groupquota-0.1.1.tar.gz",
-      "version": "0.1.1"
+      "sha256": "0qjkn82rrqixbccawrbw3gq7dxfhnw866j5s9nk8lrpcqdl3pakn",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.2/groupquota-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "guests": {
       "meta": {
@@ -1198,9 +1198,9 @@
         "name": "Issue Template",
         "summary": "Easily report Nextcloud bugs with a prefilled issue template for reporting on GitHub"
       },
-      "sha256": "1qkfvr1l1n1px85xmq36sj7nhax6lskmpsksynvghp06s5xamh19",
-      "url": "https://github.com/nextcloud/issuetemplate/releases/download/v0.5.0/issuetemplate.tar.gz",
-      "version": "0.5.0"
+      "sha256": "0m9a750kdjnbr62yg9dfvf8snb7qhji3y2apglsjmrp5kfnc7724",
+      "url": "https://github.com/nextcloud/issuetemplate/releases/download/v0.6.0/issuetemplate.tar.gz",
+      "version": "0.6.0"
     },
     "joplin": {
       "meta": {
@@ -1349,7 +1349,7 @@
     },
     "music": {
       "meta": {
-        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album or artist, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nLimitations: The library view does not scale well to huge music collections. The practical maximum number of tracks the app can handle is ~50 000 on Firefox and lower on other browsers. The playback from Files works regardless of the collection size.",
+        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album or artist, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is not optimized for such collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
         "homepage": "https://github.com/owncloud/music",
         "isShipped": false,
         "licenses": [
@@ -1358,9 +1358,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1y705pwc9dxzy4xa4rrz5a2vialgqf4j4svi225k6kb083ax1din",
-      "url": "https://github.com/paulijar/music/files/3876662/music_0.11.1_nc-signed.tar.gz",
-      "version": "0.11.1"
+      "sha256": "0fwmcxpclbha6x3awbsf9xg31vidsv8ld8ncm43qi0pqd0szpwx6",
+      "url": "https://github.com/paulijar/music/files/4011259/music_0.12.1_nc-signed.tar.gz",
+      "version": "0.12.1"
     },
     "news": {
       "meta": {
@@ -1373,9 +1373,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0c3fyl3j9ihfgpg3jdwdqx9zcrz0gm01622w9yq8v20m8rm257za",
-      "url": "https://github.com/nextcloud/news/releases/download/14.0.2/news.tar.gz",
-      "version": "14.0.2"
+      "sha256": "0j6sbq7q96p95wj546ckgjcf1hxyk3mm129bxjj7z9i0ni9wgwq6",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.2/news.tar.gz",
+      "version": "14.1.2"
     },
     "nextbackup": {
       "meta": {
@@ -1415,9 +1415,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0zygmdgmwz7bis8v8ywx59lbnzasc32a2wnlk0ijvzb8cnkh11nk",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.0.3/notes.tar.gz",
-      "version": "3.0.3"
+      "sha256": "1x301ahzpqasv94jrlm1qs0s9rhkygnyll33jp5a7mpd3rxr0j09",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.1.1/notes.tar.gz",
+      "version": "3.1.1"
     },
     "notifications": {
       "meta": {
@@ -1457,9 +1457,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "1xng20bl7v2cpbgp24q3gyrzw4n5vc113hrpf3qrzvbsvcgnijjc",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.25/ocr.tar.gz",
-      "version": "4.4.25"
+      "sha256": "093y1b2dgz7xilirrrg8mgg3ajfc962fq4n141f46b645yphy14b",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.31/ocr.tar.gz",
+      "version": "4.4.31"
     },
     "ocsms": {
       "meta": {
@@ -1478,7 +1478,7 @@
     },
     "oidc_login": {
       "meta": {
-        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n\n    // Fallback to direct login if login from OIDC fails\n    // Note that no error message will be displayed if enabled\n    'oidc_login_redir_fallback' =&gt; false,\n);\n```",
+        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n\n    // Fallback to direct login if login from OIDC fails\n    // Note that no error message will be displayed if enabled\n    'oidc_login_redir_fallback' =&gt; false,\n\n    // Use an alternative login page\n    // This page will be php-included instead of an redirect if specified\n    // In the example below, the PHP file `login.php` in `assets`\n    // in nextcloud base directory will be included\n    // Note that the PHP variable $OIDC_LOGIN_URL is available for redirect URI\n    'oidc_login_alt_login_page' =&gt; 'assets/login.php',\n);\n```",
         "homepage": "https://github.com/pulsejet/nextcloud-single-openid-connect",
         "isShipped": false,
         "licenses": [
@@ -1487,9 +1487,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0nsn3lg777v2frpaybzjjqdkl80an511jw3l2bfag4k0z10wm3r5",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.1.0/oidc_login.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0k2a42axp4x9ysgbj7s79sx033hplvz5zgifp2ngnzvcyps7rrka",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.2.3/oidc_login.tar.gz",
+      "version": "1.2.3"
     },
     "ojsxc": {
       "meta": {
@@ -1520,6 +1520,20 @@
       "sha256": "1mwsj11dqa5gr1x5crpcpqidj2pv6li4j8advm8qpwpapx0ypjmr",
       "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.0.0/onlyoffice.tar.gz",
       "version": "4.0.0"
+    },
+    "openhab": {
+      "meta": {
+        "description": "This app renders the available sitemaps of an Openhab server instance. This allows you to display values from your smart home in Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Openhab Viewer",
+        "summary": "Renders sitemaps of an Openhab instance."
+      },
+      "sha256": "0j6ml7xh5096448hwwzxbfgb0iyh3gzh6a8fw66zphhgsgkxp1mx",
+      "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.3/openhab.tar.gz",
+      "version": "0.9.3"
     },
     "orcid": {
       "meta": {
@@ -1602,9 +1616,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1ld8xgqa7xnja18cpa9fdj1j1rlzjc98ajw6mg9s9pjhm2apr1za",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/9004/artifacts/raw/passwords.tar.gz",
-      "version": "2019.12.0"
+      "sha256": "1llj4djl7mfr2xk17b2krh0450a585vz2310i3j2fkjimx1ifmyg",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/9150/artifacts/raw/passwords.tar.gz",
+      "version": "2019.12.1"
     },
     "phonetrack": {
       "meta": {
@@ -1776,9 +1790,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "01j2m6h11s976lag9fmiwmzlfpp48l8pbzvjcp5p2j12dbk3ji5n",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.2.1/quicknotes.tar.gz",
-      "version": "0.2.1"
+      "sha256": "1jvwzjykzyrmgrp81bnsma8w9xl88hn30906hpsy3bic48r2aq7v",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.2.2/quicknotes.tar.gz",
+      "version": "0.2.2"
     },
     "quota_warning": {
       "meta": {
@@ -1892,9 +1906,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0al7lm0gfr2i9ahwvisdmdh5cpx61p706xyb78r1x0wnv2i5svlc",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.0/richdocuments.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1b7nqzkn27r9j2j53b947db1z3vrn2yhhhkbqkzi7axicaqpraga",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.1/richdocuments.tar.gz",
+      "version": "3.5.1"
     },
     "scanner": {
       "meta": {
@@ -2078,9 +2092,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "19ys1xabcidhbhgc82gzqwyvzacvhhjvw226nw6095d2b0fy0kd7",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.3.0/release.tar.gz",
-      "version": "2.3.0"
+      "sha256": "09gnl87cly0d5qajc9c9b27fqwjg6h2si68jj38aigkmprr7y7lq",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.0/release.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2304,9 +2318,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "16v96z6vyzfx8hh6vaiw399qnkp405rw664q08ncrbldkz29hlma",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.4.0/theming_customcss.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0sa2szy8wmshp7shvnxsdd7nbs1lim6p8fkb2dsfkf12ji4azzmq",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.5.0/theming_customcss.tar.gz",
+      "version": "1.5.0"
     },
     "timetracker": {
       "meta": {
@@ -2362,9 +2376,9 @@
         "name": "Two-Factor Gateway",
         "summary": "Two-factor gateway providers (SMS, Telegram, Signal)"
       },
-      "sha256": "1sgs5m72n20ziycbpk6jf504cprpqcdi7w6qq4p43zyycv81722z",
-      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.15.0/twofactor_gateway.tar.gz",
-      "version": "0.15.0"
+      "sha256": "1nygs83qw0y16npzqwd7zr1p6sw4da7qb8g0s1zvzbal83yh9a9y",
+      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.15.1/twofactor_gateway.tar.gz",
+      "version": "0.15.1"
     },
     "twofactor_nextcloud_notification": {
       "meta": {
@@ -2493,9 +2507,9 @@
         "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "0f8kv04qwssf55f3i91yhiayiljl2apsl2mvlhvmanriknpg63m7",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.7.0/user_external-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "1ps2ql1hbcjrypyzvn5mn7kcbjw3gnpv5sbdcwrfyfm9c3f411y2",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.8.0/user_external-0.8.0.tar.gz",
+      "version": "0.8.0"
     },
     "user_ispconfig": {
       "meta": {
@@ -2641,17 +2655,18 @@
     },
     "wopi": {
       "meta": {
-        "description": "This is an application that allows you to edit office documents in Microsoft office online server. Application settings are in the additional section. Office server url - root url of office online server.",
+        "description": "This application can connect to a Microsoft Office Online Server (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.",
+        "homepage": "https://roscomputing.com/",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Wopi",
-        "summary": "Microsoft office online integration"
+        "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0lvf4syzvfp81c6cfz8bkljv2qic7dcmmzyii24yjqwqnzjga9b9",
-      "url": "https://github.com/roscomputing/nextcloudwopi/releases/download/v0.1.4/wopi.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0bk0ymzmi81f5ga2n4ai4y7n2rgrsdwglsbc26jpf406xklkwgmk",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.4.9/wopi.tar.gz",
+      "version": "3.4.9"
     },
     "workflow_pdf_converter": {
       "meta": {
