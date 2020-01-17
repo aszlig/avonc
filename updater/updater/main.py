@@ -93,9 +93,8 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
             'url': info.nextcloud.download_url,
         },
         'applications': apps,
+        'themes': themes.export_data(info.themes),
     }
-    if info.themes:
-        result['themes'] = themes.export_data(info.themes)
     if info.constraints:
         result['constraints'] = {appid: str(spec)
                                  for appid, spec in info.constraints.items()}

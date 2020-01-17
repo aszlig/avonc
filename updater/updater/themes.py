@@ -52,7 +52,12 @@ def _update_theme(branch: str, old_theme: Theme) -> Theme:
 def upgrade(nc_major: int, old: ThemeCollection) -> ThemeCollection:
     old_themes: ThemeCollection = old.copy()
     for themeid, attrs in THEME_INFO_MAP.items():
+        if themeid not in old_themes:
+            continue
         old_themes[themeid] = Theme(attrs.upstream, attrs.directory)
+
+    if len(old_themes) == 0:
+        return old_themes
 
     themes: ThemeCollection = {}
     desc = f'Updating themes for Nextcloud {nc_major}'
