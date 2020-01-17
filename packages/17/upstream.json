@@ -53,7 +53,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "From data to report. Data Analytics provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote files, API, imports, manual entry\n- 3rd party*: GitHub Statistics\n- Storage: stream or database\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, NC Activity, NC Notifications, NC workflows*\n- Sharing: user*, protected, public\n\n(*work in progress)",
+        "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
         "homepage": "https://github.com/rello/analytics",
         "isShipped": false,
         "licenses": [
@@ -62,9 +62,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "001birkf1mmjchfw55yvl3528d7jbacrpdrsxql209r9kn3pyxa8",
-      "url": "https://github.com/Rello/analytics/releases/download/1.2.2/analytics-1.2.2.tar.gz",
-      "version": "1.2.2"
+      "sha256": "042vm3six6m14jq5cl7zjwwp475h3cxwxs24r0wa9gna7c2l0vmw",
+      "url": "https://github.com/Rello/analytics/releases/download/2.0.0/analytics-2.0.0.tar.gz",
+      "version": "2.0.0"
     },
     "announcementcenter": {
       "meta": {
@@ -106,9 +106,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "01bp8l1795dznnmyqs62i8yi5b8v4hka4v8rswa4s38il2b7xgky",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.8.4/audioplayer-2.8.4.tar.gz",
-      "version": "2.8.4"
+      "sha256": "1pca0fkynbafgrx96aiffa5dkgk1wjl485aq6xgv133v4983n8pj",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.9.0/audioplayer-2.9.0.tar.gz",
+      "version": "2.9.0"
     },
     "audioplayer_editor": {
       "meta": {
@@ -121,9 +121,9 @@
         "name": "Audio Player - ID3 Editor (add-on)",
         "summary": "Change ID3 Metadata"
       },
-      "sha256": "0fvqa40ccgw86amjrrinra9rqag9f5dfmhw2qvg5lgymn7wzrapq",
-      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.1.0/audioplayer_editor-0.1.0.tar.gz",
-      "version": "0.1.0"
+      "sha256": "16wi72pf6mj1n4h902zh9k7bh3v131k7igicv6cnl5j10jnwbgq4",
+      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.2.0/audioplayer_editor-0.2.0.tar.gz",
+      "version": "0.2.0"
     },
     "audioplayer_sonos": {
       "meta": {
@@ -136,9 +136,9 @@
         "name": "Audio Player - SONOS (add-on)",
         "summary": "SONOS Playback"
       },
-      "sha256": "1xq3rj7gigzq59npqrf0kkgbpf9v2yfwhx7xlf6z9rc5g1pi6ddf",
-      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.0.1/audioplayer_sonos-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "04c0y7mmbglih6zxcxhl99dh6vfv9ppf2fw04bj2whv7if6yp7jm",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.1.0/audioplayer_sonos-1.1.0.tar.gz",
+      "version": "1.1.0"
     },
     "bookmarks": {
       "meta": {
@@ -186,7 +186,7 @@
     },
     "calendar": {
       "meta": {
-        "description": "The Calendar app is a user interface for Nextcloud's CalDAV server. Easily sync events from various devices with your Nextcloud and edit them online.\n\n*  **Integration with other Nextcloud apps!** Currently Contacts - more to come.\n*  **WebCal Support!** Want to see your favorite teams matchdays in your calendar? No problem!\n*  **Attendees!** Invite people to your events.\n*  **Were not reinventing the wheel!** Based on the great [davclient.js](https://github.com/evert/davclient.js), [ical.js](https://github.com/mozilla-comm/ical.js) and [fullcalendar](https://github.com/fullcalendar/fullcalendar) libraries.",
+        "description": "The Calendar app is a user interface for Nextcloud's CalDAV server. Easily sync events from various devices with your Nextcloud and edit them online.\n\n*  **Integration with other Nextcloud apps!** Currently Contacts - more to come.\n*  **WebCal Support!** Want to see your favorite teams matchdays in your calendar? No problem!\n*  **Attendees!** Invite people to your events\n*  **Free/Busy:** See when your attendees are available to meet\n*  **Reminders!** Get alarms for events inside your browser and via email.\n*  **Were not reinventing the wheel!** Based on the great [c-dav library](https://github.com/nextcloud/cdav-library), [ical.js](https://github.com/mozilla-comm/ical.js) and [fullcalendar](https://github.com/fullcalendar/fullcalendar) libraries.",
         "homepage": "https://github.com/nextcloud/calendar/",
         "isShipped": false,
         "licenses": [
@@ -195,9 +195,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "04gjbz1jhlw4jhbbqdaspnk79a68nl15r08cifah0bmi88a38aql",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v1.7.2/calendar.tar.gz",
-      "version": "1.7.2"
+      "sha256": "0ym2d4ijyqfgxdsagvj6b0sp7d64jais4n692wxkh0xwzvjs0bxb",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.0/calendar.tar.gz",
+      "version": "2.0.0"
     },
     "camerarawpreviews": {
       "meta": {
@@ -223,9 +223,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1904c0nisqnqpwydpaad9cx2b2xz709fjz3g2dzmffzjidbycvnh",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.19.1/carnet-nc-v0.19.1.tar.gz",
-      "version": "0.19.1"
+      "sha256": "1zqvswc636id8agzdi5p6s49d8yz587a4a6kpbd4p0b6c8hwsl85",
+      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.19.2/carnet-nc-v0.19.2.tar.gz",
+      "version": "0.19.2"
     },
     "checksum": {
       "meta": {
@@ -468,9 +468,9 @@
         "name": "Notifications for calendar event updates",
         "summary": "Receive a notification when an event in a shared calendar was added, modified or deleted."
       },
-      "sha256": "1mp1sdsqr5m1v2j93fq4dl63qaypcr155qn0vr33vngnw99hy20z",
-      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.0.0/event_update_notification-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0a2gb8swi6pxllmd8h0307pr1rm63w8112wsd3k2a1pzwvayj9cj",
+      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.0.1/event_update_notification-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "external": {
       "meta": {
@@ -641,9 +641,9 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "0wak2gzwjymajc187czqy07hcj0v0ayrvvs2dhk43b7qxiap5bys",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.6/files_inotify.tar.gz",
-      "version": "0.1.6"
+      "sha256": "15wnihs82wzr9sd8k4a2qxxk4sc4bm4id1cw8x99nr5ash2ygh3n",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.7/files_inotify.tar.gz",
+      "version": "0.1.7"
     },
     "files_linkeditor": {
       "meta": {
@@ -835,9 +835,9 @@
         "name": "S3 Versioning",
         "summary": "Use S3 object versioning for file versioning"
       },
-      "sha256": "1mx4gl0ssaskxpk027vmd0czm50w2cls7rrkilsc6rxhm7y1a6bm",
-      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.0/files_versions_s3-0.1.0.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0ici6npnknwq2nvhq90aj00fc164k6jsvg8qzg2fljpn5gxwmpba",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.1/files_versions_s3-0.1.1.tar.gz",
+      "version": "0.1.1"
     },
     "files_videoplayer": {
       "meta": {
@@ -877,6 +877,21 @@
       "sha256": "1m3kjaz4iciis1sf8bxam0022ynnnyhbj1gyki0bdyydgy8yavap",
       "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.7/flowupload-0.1.7.tar.gz",
       "version": "0.1.7"
+    },
+    "forms": {
+      "meta": {
+        "description": "A forms app, similar to Google Forms with the possibility to restrict access (members, certain groups/users, and public).",
+        "homepage": "https://github.com/affan98/forms",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Forms",
+        "summary": "A forms app, similar to Google Forms."
+      },
+      "sha256": "1waplhdknhb3kqxksmv75bdd0v90wdjgc00hgicb8nld97iz70p0",
+      "url": "https://github.com/nextcloud/forms/releases/download/v1.1.0/forms.tar.gz",
+      "version": "1.1.0"
     },
     "fulltextsearch": {
       "meta": {
@@ -1006,9 +1021,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "1pxcjl84hzch7ck0hch949nip48jizq6rxbs6pyzx4x1hvvi9mik",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.3/group_everyone-0.1.3.tar.gz",
-      "version": "0.1.3"
+      "sha256": "17zymb8kznkxqgvs574mh6hkmarf819vibdk83xipgsxac583lnm",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.4/group_everyone-0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "groupfolders": {
       "meta": {
@@ -1179,9 +1194,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1pn779pss4a6wcjq97bsj78cazn3cg17prm7l1vdyq8dd2y4harf",
-      "url": "https://github.com/nextcloud/mail/releases/download/v0.21.1/mail.tar.gz",
-      "version": "0.21.1"
+      "sha256": "1abhhnj3p8ns4hqshf7pi9a3c3nzwhz1x2b12xb80gfjf0ab3i7k",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.0.0/mail.tar.gz",
+      "version": "1.0.0"
     },
     "maps": {
       "meta": {
@@ -1338,9 +1353,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images and pdf files"
       },
-      "sha256": "093y1b2dgz7xilirrrg8mgg3ajfc962fq4n141f46b645yphy14b",
-      "url": "https://github.com/janis91/ocr/releases/download/4.4.31/ocr.tar.gz",
-      "version": "4.4.31"
+      "sha256": "1008c6c4ylf047kgjvapva2j1y9p3anqv8gcnid969idwn5hsnyq",
+      "url": "https://github.com/janis91/ocr/releases/download/4.4.32/ocr.tar.gz",
+      "version": "4.4.32"
     },
     "ocsms": {
       "meta": {
@@ -1359,7 +1374,7 @@
     },
     "oidc_login": {
       "meta": {
-        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n\n    // Fallback to direct login if login from OIDC fails\n    // Note that no error message will be displayed if enabled\n    'oidc_login_redir_fallback' =&gt; false,\n\n    // Use an alternative login page\n    // This page will be php-included instead of an redirect if specified\n    // In the example below, the PHP file `login.php` in `assets`\n    // in nextcloud base directory will be included\n    // Note that the PHP variable $OIDC_LOGIN_URL is available for redirect URI\n    'oidc_login_alt_login_page' =&gt; 'assets/login.php',\n);\n```",
+        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Set OpenID Connect scope\n    'oidc_login_scope' =&gt; 'openid profile',\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n\n    // Fallback to direct login if login from OIDC fails\n    // Note that no error message will be displayed if enabled\n    'oidc_login_redir_fallback' =&gt; false,\n\n    // Use an alternative login page\n    // This page will be php-included instead of an redirect if specified\n    // In the example below, the PHP file `login.php` in `assets`\n    // in nextcloud base directory will be included\n    // Note that the PHP variable $OIDC_LOGIN_URL is available for redirect URI\n    'oidc_login_alt_login_page' =&gt; 'assets/login.php',\n);\n```",
         "homepage": "https://github.com/pulsejet/nextcloud-single-openid-connect",
         "isShipped": false,
         "licenses": [
@@ -1368,9 +1383,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0k2a42axp4x9ysgbj7s79sx033hplvz5zgifp2ngnzvcyps7rrka",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.2.3/oidc_login.tar.gz",
-      "version": "1.2.3"
+      "sha256": "1fz4wjhajz814ym7d8b0x84y8llzdny5l2a6dp805n1ja0xyslwd",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.2.4/oidc_login.tar.gz",
+      "version": "1.2.4"
     },
     "onlyoffice": {
       "meta": {
@@ -1383,9 +1398,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "1mwsj11dqa5gr1x5crpcpqidj2pv6li4j8advm8qpwpapx0ypjmr",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.0.0/onlyoffice.tar.gz",
-      "version": "4.0.0"
+      "sha256": "15rpfnws399n3573q67g4gbk4hbrv1w15agmywaa9wsqvr3lhzmy",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.1.1/onlyoffice.tar.gz",
+      "version": "4.1.1"
     },
     "openhab": {
       "meta": {
@@ -1569,9 +1584,9 @@
         "name": "QOwnNotesAPI",
         "summary": "API for QOwnNotes, the open source (GPL) notepad for Linux, Mac OS X and Windows"
       },
-      "sha256": "037k6ab3q3gb6kqill9b6sw07pjnisbpp7rjh7aqwhgnx9sfqzzy",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/19.9.0/qownnotesapi-nc.tar.gz",
-      "version": "19.9.0"
+      "sha256": "0n1gxzaw7rnmpz8kx4sz2lcwd6asr7yzn3ch3af8s67mry24yiak",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/20.1.0/qownnotesapi-nc.tar.gz",
+      "version": "20.1.0"
     },
     "quickaccesssorting": {
       "meta": {
@@ -1842,9 +1857,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "073yyjgxsvy9z1imd22m08wajrdkic2acammzzz2n7cv18lvspj7",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.3/smb_test.tar.gz",
-      "version": "0.2.3"
+      "sha256": "1qyvdc17yv0z9naf6rny7qldj7hd7s367s8hqlkl72m4rvfpvagj",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.4/smb_test.tar.gz",
+      "version": "0.2.4"
     },
     "social": {
       "meta": {
@@ -1872,9 +1887,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "09gnl87cly0d5qajc9c9b27fqwjg6h2si68jj38aigkmprr7y7lq",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.0/release.tar.gz",
-      "version": "2.4.0"
+      "sha256": "1d32d87nn1ax1cp9czsand6ampmbza706y7j3h2q4y6dnsprk83y",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.1/release.tar.gz",
+      "version": "2.4.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2031,6 +2046,20 @@
       "sha256": "0j1j9bvmcqqid1w1ng5lf1c4hpkyznfcx8iaaqcxxkb1kr5m4q4j",
       "url": "https://github.com/nextcloud/tasks/releases/download/0.11.3/tasks.tar.gz",
       "version": "0.11.3"
+    },
+    "telephoneprovider": {
+      "meta": {
+        "description": "This app checks your contacts for telephone numbers and provides tel: links in the new Nextcloud 12 ContactsMenu.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Telephone Provider for ContactsMenu",
+        "summary": "Provides tel: links in the ContactsMenu"
+      },
+      "sha256": "0lvz7dpf3dckzrpyz02i27i6da3qdbga5msjs8kh3l61lcjlxwrs",
+      "url": "https://github.com/georgehrke/telephoneprovider/releases/download/v1.0.3/telephoneprovider.tar.gz",
+      "version": "1.0.3"
     },
     "terms_of_service": {
       "meta": {
@@ -2240,9 +2269,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "06xdiwgfapcg0yj374wakn5hhrz7fql6bz3lf5y11gfkczk95bmw",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.9/user_backend_sql_raw.tar.gz",
-      "version": "1.0.9"
+      "sha256": "0nzjy5xn5ryxkprylfwnp476f2zlhsbaajhyjqivxpfn2gy1xral",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.10/user_backend_sql_raw.tar.gz",
+      "version": "1.0.10"
     },
     "user_cas": {
       "meta": {
@@ -2473,9 +2502,9 @@
         "name": "XRay",
         "summary": "Resource usage monitoring for developers"
       },
-      "sha256": "0l5svhq3ymwba8bb14whd9axl67a1b3cgx0skxzbbgzvk38wwfhl",
-      "url": "https://github.com/icewind1991/xray/releases/download/v0.2.2/xray.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1fwl8l4ifxwg0w7vfwdcny5p0cr2ajijyhads33m0k36l1zrz50p",
+      "url": "https://github.com/icewind1991/xray/releases/download/v0.2.3/xray.tar.gz",
+      "version": "0.2.3"
     },
     "zimbradrive": {
       "meta": {
