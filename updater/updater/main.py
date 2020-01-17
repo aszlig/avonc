@@ -110,9 +110,11 @@ def update_major(major: int, info_file: str) -> Optional[str]:
     except FileNotFoundError:
         current_state = {}
 
-    old = import_data(current_state, major)
-    new_apps = api.upgrade(major, old)
-    new = new_apps._replace(themes=themes.upgrade(major, new_apps.themes))
+    old: ReleaseInfo = import_data(current_state, major)
+    new_apps: ReleaseInfo = api.upgrade(major, old)
+    new: ReleaseInfo = new_apps._replace(
+        themes=themes.upgrade(major, new_apps.themes)
+    )
     diff = ReleaseDiff(old, new)
 
     has_differences = diff.has_differences()
@@ -120,7 +122,7 @@ def update_major(major: int, info_file: str) -> Optional[str]:
         return None
 
     ncpath: str = nix.get_nextcloud_store_path(new.nextcloud)
-    joined = diff.join()
+    joined: ReleaseInfo = diff.join()
 
     to_download: Dict[AppId, ExternalApp] = {}
     for appid, app in joined.apps.items():
@@ -139,7 +141,10 @@ def update_major(major: int, info_file: str) -> Optional[str]:
             except Exception as e:
                 msg = f"Exception occured while fetching {repr(app)}: {e}"
                 tqdm.write(msg, file=sys.stderr)
-                joined.apps[appid] = old.apps[appid]
+                if appid in old.apps:
+                    joined.apps[appid] = old.apps[appid]
+                else:
+                    del joined.apps[appid]
                 continue
 
             joined.apps[appid] = app._replace(hash_or_sig=sha256)
