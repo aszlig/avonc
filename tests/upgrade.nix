@@ -20,10 +20,10 @@ import ./make-test.nix (pkgs: {
     generation1 = { lib, options, config, pkgs, ... }: {
       imports = [ common ];
 
-      nextcloud.majorVersion = 16;
+      nextcloud.majorVersion = 17;
 
       nextcloud.apps = let
-        nc16apps = (lib.importJSON ../packages/16/upstream.json).applications;
+        nc17apps = (lib.importJSON ../packages/17/upstream.json).applications;
 
         excludedApps = [
           # Conflicts with "bookmarks"
@@ -70,7 +70,7 @@ import ./make-test.nix (pkgs: {
         in lib.const (lib.optionalAttrs (!isExcluded) {
           enable = true;
         });
-      in lib.mapAttrs enableApp nc16apps;
+      in lib.mapAttrs enableApp nc17apps;
     };
 
     generation2 = { lib, nodes, ... }: {
@@ -79,13 +79,21 @@ import ./make-test.nix (pkgs: {
       systemd.services.libreoffice-online.enable = false;
       systemd.services.mongooseim.enable = false;
 
-      nextcloud.apps = lib.genAttrs [
-        "apporder" "bookmarks" "calendar" "circles" "contacts" "deck" "dropit"
-        "end_to_end_encryption" "external" "files_accesscontrol"
-        "files_markdown" "files_readmemd" "files_rightclick" "gpxpod"
-        "groupfolders" "mail" "metadata" "news" "passwords" "phonetrack"
-        "polls" "richdocuments" "social" "spreed" "tasks"
-      ] (app: { enable = true; });
+      nextcloud.apps = let
+        # XXX: These apps are unsupported in Nextcloud 18.
+        forceEnabled = lib.genAttrs [
+          "dropit" "social"
+        ] (lib.const { forceEnable = true; enable = true; });
+
+        enabled = lib.genAttrs [
+          "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
+          "external" "end_to_end_encryption" "files_accesscontrol"
+          "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
+          "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
+          "spreed" "tasks"
+        ] (lib.const { enable = true; });
+
+      in forceEnabled // enabled;
     };
   };
 
@@ -106,8 +114,8 @@ import ./make-test.nix (pkgs: {
       inherit (nodes.generation2.config.nextcloud) apps;
       alwaysEnabled = [
         "cloud_federation_api" "dav" "federatedfilesharing" "files"
-        "lookup_server_connector" "oauth2" "provisioning_api"
-        "twofactor_backupcodes" "workflowengine"
+        "lookup_server_connector" "oauth2" "provisioning_api" "settings"
+        "twofactor_backupcodes" "viewer" "workflowengine"
       ];
       enabled = attrNames (filterAttrs (const (x: x.enable)) apps);
       allEnabled = enabled ++ alwaysEnabled;
@@ -123,7 +131,7 @@ import ./make-test.nix (pkgs: {
     $machine->waitForUnit('nextcloud.service');
 
     $machine->succeed(
-      'curl -L http://localhost/ | grep -o "Username or email"'
+      'curl -L http://localhost/ | grep -o "a safe home for all your data"'
     );
 
     ${switchToGeneration 2}
