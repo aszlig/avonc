@@ -52,6 +52,8 @@ import ./make-test.nix (pkgs: {
           "cms_pico"
           # XXX: Currently (2019-12-12) results in HTTP 404
           "emlviewer"
+          # XXX: Conflicts with the "news" app - investigate this someday.
+          "files_mindmap"
 
           # These apps have non-deterministic download URLs
           "quicknotes"
