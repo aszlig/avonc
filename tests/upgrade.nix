@@ -60,8 +60,7 @@ import ./make-test.nix (pkgs: {
           "twofactor_yubikey"
 
           # Will be enabled later
-          "spread"
-          "ojsxc"
+          "spreed"
           "richdocuments"
         ];
         enableApp = name: let
@@ -82,8 +81,6 @@ import ./make-test.nix (pkgs: {
         # XXX: These apps are unsupported for Nextcloud 17.
         end_to_end_encryption.enable = true;
         end_to_end_encryption.forceEnable = true;
-        ojsxc.enable = true;
-        ojsxc.forceEnable = true;
       } // lib.genAttrs [
         "apporder" "bookmarks" "calendar" "circles" "contacts" "deck" "dropit"
         "external" "files_accesscontrol" "files_markdown" "files_readmemd"

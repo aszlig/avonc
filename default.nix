@@ -730,7 +730,7 @@ in {
   };
 
   imports = [
-    ./systemd-chroot.nix ./libreoffice-online ./gpx ./xmpp ./coturn ./osrm
+    ./systemd-chroot.nix ./libreoffice-online ./gpx ./coturn ./osrm
   ];
 
   config = lib.mkIf cfg.enable {
