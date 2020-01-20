@@ -325,7 +325,7 @@
         "summary": "Shared budget manager"
       },
       "sha256": "10c6mf4i5bz8ja408j8ya31ysnydk5ylx6w053fgzb7r3l6bhv2h",
-      "url": "https://ripley.minifox.fr/app-releases/cospend-0.3.0.php",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/32630a9d860bf0c4017739109656590e/cospend-0.3.0.tar.gz",
       "version": "0.3.0"
     },
     "dashboardcharts": {
