@@ -39,6 +39,7 @@ def import_data(data: Dict[str, Any], major: int) -> ReleaseInfo:
                 meta.get('description', ''),
                 meta.get('licenses', []),
                 meta.get('defaultEnable', False),
+                meta.get('alwaysEnable', False),
             )
         else:
             apps[AppId(appid)] = ExternalApp(
@@ -72,6 +73,7 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
 
         if isinstance(app, InternalApp):
             meta['defaultEnable'] = app.enabled_by_default
+            meta['alwaysEnable'] = app.always_enabled
             apps[appid] = {'meta': meta}
         elif isinstance(app.hash_or_sig, SignatureInfo):
             raise ValueError(f"Can't serialise {app} without a hash.")

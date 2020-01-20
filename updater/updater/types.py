@@ -20,6 +20,7 @@ class InternalApp(NamedTuple):
     description: str
     licenses: List[str]
     enabled_by_default: bool
+    always_enabled: bool
 
 
 class SignatureInfo(NamedTuple):

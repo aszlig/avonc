@@ -2,6 +2,7 @@
   "applications": {
     "accessibility": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Provides multiple accessibilities options to ease your use of nextcloud",
         "isShipped": true,
@@ -14,6 +15,7 @@
     },
     "activity": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application enables users to view actions related to their files in Nextcloud.\n\t\tOnce enabled, users will see a new icon Activity in their apps menu.\n\t\tWhen clicked, a new page appears for users to track the activity related to files  from new files, to deleted files, move, rename, updates and shared activity.\n\t\tThe user can configure their individual activity settings in their personal menu.\n\t\tThis sets the type of activity to record, as well as whether to the user sees their own activities,\n\t\twhether these are only available online, and whether they get an email digest on a regular basis.\n\t\tMore information is available in the Activity documentation.",
         "isShipped": true,
@@ -26,6 +28,7 @@
     },
     "admin_audit": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": false,
         "description": "Provides logging abilities for Nextcloud such as logging file accesses or otherwise sensitive actions.",
         "isShipped": true,
@@ -271,6 +274,19 @@
       "url": "https://github.com/nextcloud/circles/releases/download/v0.16.13/circles-0.16.13.tar.gz",
       "version": "0.16.13"
     },
+    "cloud_federation_api": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "The Cloud Federation API enables various Nextcloud instances to communicate with each other and to exchange data.",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Cloud Federation API",
+        "summary": "Enable clouds to communicate with each other and exchange data"
+      }
+    },
     "cms_pico": {
       "meta": {
         "description": "[Pico CMS for Nextcloud](https://github.com/nextcloud/cms_pico) combines the power of [**Pico**](http://picocms.org/) and [**Nextcloud**](https://nextcloud.com/) to create simple, secure, shareable and amazingly powerful websites with just a few clicks. Pico is a stupidly simple, blazing fast, flat file CMS - making the web easy.\n\n* Start a blog\n* Share your resume with the world\n* Create a plan for world domination and only share with the right friends\n* Build a knowledge base and let the smart ones among your colleagues help out\n\nInstalling Pico CMS for Nextcloud allows your users to create and manage their own websites. Creating a new page with Pico is no more than creating a simple text file in a users' Nextcloud files. No config is required, no utterly complex management interfaces - just files. It's the perfect match with Nextcloud. Secure Sharing, Collaboration, Access Control - not just for your files, but also your websites, all made possible by Pico CMS for Nextcloud! Breaking the boundaries between your Mobile &amp; Desktop devices and your Server.\n\nWebsites will be accessible through URLs like `https://cloud.example.com/sites/my_site/` and consist of just a bunch of `.md` text files in a user's Nextcloud files. `.md` stands for [**Markdown**](https://www.markdownguide.org/) - a super simple and intuitive markup to create headings, paragraphs, text formatting, lists, images and links. But don't despair - you don't have to learn yet another language if you don't want to. Consider enabling Nextcloud's [Text](https://apps.nextcloud.com/apps/text) or [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) apps to make easy things stupidly simple. But what about meta data like a page's title or release date? Guess right, it's all in one place. At the top of your Markdown files you can place a block with such meta data - called the [**YAML**](https://en.wikipedia.org/wiki/YAML) Front Matter. Creating websites can't be easier...\n\nBut that wasn't everything... Pico CMS for Nextcloud is highly customizable. You can change Picos appearance by using custom themes and add new functionality by using custom plugins. For security reasons users can neither add custom themes nor plugins on their own - but as an admin you can. Plugins and themes arent just new \"skins\" or \"widgets\", the underlying technologies are powerful frameworks you can leverage to make your users' websites truly unique. However, with great power comes great responsibility. Pico CMS for Nextcloud does its best to prevent users from including scripts into websites, since this might bear security risks (so called \"Cross Scripting\"). Since this risk doesn't apply to Pico itself, 3rd-party developers of plugins and themes might not be aware of this issue - so be careful when installing custom plugins and themes.\n\nYou want to learn more about Pico CMS for Nextcloud? Easy! Just download and enable the app from [Nextcloud's App Store](https://apps.nextcloud.com/apps/cms_pico) and navigate to Nextcloud's settings page. As an admin you'll find two \"Pico CMS\" sections in your Nextcloud settings - one below \"Personal\", another below \"Administration\". The latter allows you to add custom themes, plugins and templates to Pico, as well as tweaking some advanced settings. The \"Pico CMS\" section below \"Personal\" exists for all Nextcloud users and allows one to create personal websites. Simply create your first personal website and choose \"sample_pico\" as website template. Pico's sample contents will explain all you need to know...",
@@ -288,6 +304,7 @@
     },
     "comments": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Files app plugin to add comments to files",
         "isShipped": true,
@@ -385,6 +402,19 @@
       "sha256": "0aq8m4iarh9qvrdm4pa5bnkj6qnhiy9smdbh3h82p9c55d6ghizs",
       "url": "https://github.com/nextcloud/data_request/releases/download/v1.2.0/data_request.tar.gz",
       "version": "1.2.0"
+    },
+    "dav": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "WebDAV endpoint",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WebDAV",
+        "summary": "WebDAV endpoint"
+      }
     },
     "deck": {
       "meta": {
@@ -505,6 +535,7 @@
     },
     "encryption": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": false,
         "description": "In order to use this encryption module you need to enable server-side\n\t\tencryption in the admin settings. Once enabled this module will encrypt\n\t\tall your files transparently. The encryption is based on AES 256 keys.\n\t\tThe module won't touch existing files, only new files will be encrypted\n\t\tafter server-side encryption was enabled. It is also not possible to\n\t\tdisable the encryption again and switch back to a unencrypted system.\n\t\tPlease read the documentation to know all implications before you decide\n\t\tto enable server-side encryption.",
         "isShipped": true,
@@ -575,8 +606,22 @@
       "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.3/extract.tar.gz",
       "version": "1.2.3"
     },
+    "federatedfilesharing": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "Provide federated file sharing across servers",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Federated file sharing",
+        "summary": "Provide federated file sharing across servers"
+      }
+    },
     "federation": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Federation allows you to connect with other trusted servers to exchange the user directory. For example this will be used to auto-complete external users for federated sharing.",
         "isShipped": true,
@@ -585,6 +630,19 @@
         ],
         "name": "Federation",
         "summary": "Federation allows you to connect with other trusted servers to exchange the user directory."
+      }
+    },
+    "files": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "File Management",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Files",
+        "summary": "File Management"
       }
     },
     "files_accesscontrol": {
@@ -662,6 +720,7 @@
     },
     "files_external": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": false,
         "description": "This application enables administrators to configure connections to external storage providers, such as FTP servers, S3 or SWIFT object stores, other Nextcloud servers, WebDAV servers, and more. Administrators can choose which types of storage to enable and can mount these storage locations for a user, a group, or the entire system. Users will see a new folder appear in their root Nextcloud directory, which they can access and use like any other Nextcloud folder. External storage also allows users to share files stored in these external locations. In these cases, the credentials for the owner of the file are used when the recipient requests the file from external storage, thereby ensuring that the recipient can access the shared file.\n\nExternal storage can be configured using the GUI or at the command line. This second option provides the advanced user with more flexibility for configuring bulk external storage mounts and setting mount priorities. More information is available in the external storage GUI documentation and the external storage Configuration File documentation.",
         "isShipped": true,
@@ -824,6 +883,7 @@
     },
     "files_pdfviewer": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application integrates the PDF.js library into Nextcloud. Using this\napplication users can view their PDF files online without the need to\ndownload the file.\n\nWhen this application is enabled publicly shared PDF documents will also\nget shown in the PDF viewer instead of only showing a single static\nsnapshot of the document. The PDF viewer requires a modern browser and\nwill not work with Microsoft Internet Explorer versions below 9.\n\nPDF.js is a JavaScript library developed by Mozilla, you can learn more\nabout the PDF.js project at [https://mozilla.github.io/pdf.js/](https://mozilla.github.io/pdf.js/)",
         "isShipped": true,
@@ -895,6 +955,7 @@
     },
     "files_sharing": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application enables users to share files within Nextcloud. If enabled, the admin can choose which groups can share files. The applicable users can then share files and folders with other users and groups within Nextcloud. In addition, if the admin enables the share link feature, an external link can be used to share files with other users outside of Nextcloud. Admins can also enforce passwords, expirations dates, and enable server to server sharing via share links, as well as sharing from mobile devices.\nTurning the feature off removes shared files and folders on the server for all share recipients, and also on the sync clients and mobile apps. More information is available in the Nextcloud Documentation.",
         "isShipped": true,
@@ -922,6 +983,7 @@
     },
     "files_texteditor": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.",
         "isShipped": true,
@@ -949,6 +1011,7 @@
     },
     "files_trashbin": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application enables users to restore files that were deleted from the system. It displays a list of deleted files in the web interface, and has options to restore those deleted files back to the users file directories or remove them permanently from the system. Restoring a file also restores related file versions, if the versions application is enabled. When a file is deleted from a share, it can be restored in the same manner, though it is no longer shared. By default, these files remain in the trash bin for 30 days.\nTo prevent a user from running out of disk space, the Deleted files app will not utilize more than 50% of the currently available free quota for deleted files. If the deleted files exceed this limit, the app deletes the oldest files until it gets below this limit. More information is available in the Deleted Files documentation.",
         "isShipped": true,
@@ -961,6 +1024,7 @@
     },
     "files_versions": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application automatically maintains older versions of files that are changed. When enabled, a hidden versions folder is provisioned in every users directory and is used to store old file versions. A user can revert to an older version through the web interface at any time, with the replaced file becoming a version. The app automatically manages the versions folder to ensure the user doesnt run out of Quota because of versions.\n\t\tIn addition to the expiry of versions, the versions app makes certain never to use more than 50% of the users currently available free space. If stored versions exceed this limit, the app will delete the oldest versions first until it meets this limit. More information is available in the Versions documentation.",
         "isShipped": true,
@@ -973,6 +1037,7 @@
     },
     "files_videoplayer": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "A responsive video player using a skinned version of Video.js\n\n\t\tBased on this app: https://apps.owncloud.com/content/show.php/Video+Js?content=159670\n\n\t\tVideo.js: http://videojs.com/\n\n\t\tSkin: https://github.com/cabin/videojs-sublime-skin",
         "isShipped": true,
@@ -985,6 +1050,7 @@
     },
     "firstrunwizard": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This application enables a pop-up window when a user first logs into Nextcloud. This window welcomes new users to Nextcloud, and contains links to the standard desktop client, Android app, and the iOS app. The window also shows a link for accessing Nextcloud via WebDAV. At any time, the first run wizard can be opened again via link \"About\" on settings menu.\nThe First run wizard can be customized to meet specific design goals, or to change links and messages. Create an appropriate theme following the Theming documentation, and changes to the look and feel of this Wizard are simple. More information is available in the first run wizard documentation, as well as the theming documentation.",
         "isShipped": true,
@@ -1057,6 +1123,7 @@
     },
     "gallery": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Media gallery for Nextcloud with the following features:\n\n\t\t- Support for large selection of media types (depending on server setup)\n\n\t\t- Upload and organise images and albums straight from the app\n\n\t\t- Large, zoomable previews which can be shown in fullscreen mode\n\n\t\t- Sort images by name or date\n\n\t\t- Per album design, description and copyright statement\n\n\t\t- A la carte features (external shares, browser svg rendering, etc.)\n\n\t\t- Image download straight from the slideshow or the gallery\n\n\t\t- Switch to Gallery from any folder in files and vice-versa\n\n\t\t- Ignore folders containing a \".nomedia\" file\n\n\t\t- Browser rendering of SVG images (disabled by default)\n\n\t\t- Native SVG support\n\n\t\t- Mobile support\n\n\t\tProvides a dedicated view of all images in a grid, adds image viewing capabilities to the\n\t\tfiles app and adds a gallery view to public links.\n\t\tCompatible with Firefox, Chrome and Internet Explorer 11",
         "isShipped": true,
@@ -1292,6 +1359,7 @@
     },
     "logreader": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Log reader for Nextcloud",
         "isShipped": true,
@@ -1300,6 +1368,19 @@
         ],
         "name": "Log Reader",
         "summary": "A log reader for Nextcloud"
+      }
+    },
+    "lookup_server_connector": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "Sync public user information with the lookup server",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Lookup Server Connector",
+        "summary": "Sync public user information with the lookup server"
       }
     },
     "mail": {
@@ -1409,6 +1490,7 @@
     },
     "nextcloud_announcements": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Nextcloud announcements brings the latest news of Nextcloud into your notifications",
         "isShipped": true,
@@ -1436,6 +1518,7 @@
     },
     "notifications": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "This app provides a backend and frontend for the notification API available in Nextcloud.\n\t\tThe API is used by other apps to notify users in the web UI and sync clients about various things. Some examples are:\n\n Federated file sharing: You received a new remote share\n\n Comments: Another user mentioned you in a comment on a file\n\n Update notification: Available update for an app or nextcloud itself\n\n Announcement center: An announcement was posted by an admin",
         "isShipped": true,
@@ -1444,6 +1527,19 @@
         ],
         "name": "Notifications",
         "summary": "This app provides a backend and frontend for the notification API available in Nextcloud."
+      }
+    },
+    "oauth2": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "The OAuth2 app allows administrators to configure the built-in authentication workflow to also allow OAuth2 compatible authentication from other web applications.",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OAuth 2.0",
+        "summary": "Allows OAuth2 compatible authentication from other web applications."
       }
     },
     "occweb": {
@@ -1626,6 +1722,7 @@
     },
     "password_policy": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Allow admin to define certain pre-conditions for password, e.g. enforce a minimum length",
         "isShipped": true,
@@ -1766,6 +1863,19 @@
       "sha256": "0vdhwx905x5i86wqjpkri1ychrvqaasa4pkxf73475b79y21w786",
       "url": "https://github.com/nextcloud/privatedata/releases/download/v1.0.2/privatedata.tar.gz",
       "version": "1.0.1"
+    },
+    "provisioning_api": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "This application enables a set of APIs that external systems can use to create, edit, delete and query user\n\t\tattributes, query, set and remove groups, set quota and query total storage used in Nextcloud. Group admin users\n\t\tcan also query Nextcloud and perform the same functions as an admin for groups they manage. The API also enables\n\t\tan admin to query for active Nextcloud applications, application info, and to enable or disable an app remotely.\n\t\tOnce the app is enabled, http requests can be used via a Basic Auth header to perform any of the functions\n\t\tlisted above. More information is available in the Provisioning API documentation, including example calls\n\t\tand server responses.",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Provisioning API",
+        "summary": "This application enables a set of APIs that external systems can use to manage users, groups and apps."
+      }
     },
     "qownnotesapi": {
       "meta": {
@@ -1992,6 +2102,7 @@
     },
     "serverinfo": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Provides useful server information, such as CPU load, RAM usage, disk usage, number of users, etc.",
         "isShipped": true,
@@ -2004,6 +2115,7 @@
     },
     "sharebymail": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Share provider which allows you to share files by mail",
         "isShipped": true,
@@ -2209,6 +2321,7 @@
     },
     "support": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "The support app covers you with direct access to help and consulting resources, dedicated contact options to your account manager and an overview of your enterprise subscription.",
         "isShipped": true,
@@ -2221,6 +2334,7 @@
     },
     "survey_client": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Sends anonymized data to Nextcloud to help us to improve Nextcloud. You\n        always have full control over the content sent to Nextcloud and can disable\n        it again at any time.",
         "isShipped": true,
@@ -2233,6 +2347,7 @@
     },
     "systemtags": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Collaborative tagging functionality which shares tags among users. Great for teams.\n\t(If you are a provider with a multi-tenancy installation, it is advised to deactivate this app as tags are shared.)",
         "isShipped": true,
@@ -2289,6 +2404,7 @@
     },
     "theming": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Adjust the Nextcloud theme",
         "isShipped": true,
@@ -2355,6 +2471,19 @@
       "sha256": "0mpqqsjrq9v5chs1hbn8azcgvlgy8lxlgrf2h1s7q0m59ph7n365",
       "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v0.2.1/twofactor_admin.tar.gz",
       "version": "0.2.1"
+    },
+    "twofactor_backupcodes": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "A two-factor auth backup codes provider",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Two factor backup codes",
+        "summary": "A two-factor auth backup codes provider"
+      }
     },
     "twofactor_gateway": {
       "meta": {
@@ -2463,6 +2592,7 @@
     },
     "updatenotification": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": true,
         "description": "Displays update notifications for Nextcloud and provides the SSO for the updater.",
         "isShipped": true,
@@ -2534,6 +2664,7 @@
     },
     "user_ldap": {
       "meta": {
+        "alwaysEnable": false,
         "defaultEnable": false,
         "description": "This application enables administrators to connect Nextcloud to an LDAP-based user directory for authentication and provisioning users, groups and user attributes. Admins can configure this application to connect to one or more LDAP directories or Active Directories via an LDAP interface. Attributes such as user quota, email, avatar pictures, group memberships and more can be pulled into Nextcloud from a directory with the appropriate queries and filters.\n\nA user logs into Nextcloud with their LDAP or AD credentials, and is granted access based on an authentication request handled by the LDAP or AD server. Nextcloud does not store LDAP or AD passwords, rather these credentials are used to authenticate a user and then Nextcloud uses a session for the user ID. More information is available in the LDAP User and Group Backend documentation.",
         "isShipped": true,
@@ -2691,6 +2822,19 @@
       "sha256": "0nmkx92hhrmflsp5dc07lb9pkgqrd1ywx58rln9c1smq162g2fpg",
       "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.0.1/workflow_script.tar.gz",
       "version": "1.0.1"
+    },
+    "workflowengine": {
+      "meta": {
+        "alwaysEnable": true,
+        "defaultEnable": true,
+        "description": "Files workflow engine",
+        "isShipped": true,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Files workflow engine",
+        "summary": "Files workflow engine"
+      }
     },
     "xray": {
       "meta": {

@@ -47,9 +47,6 @@ def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
     result: Dict[AppId, InternalApp] = {}
 
     for appid in spec['shippedApps']:
-        if appid in spec['alwaysEnabled']:
-            continue
-
         app_path: str = os.path.join(ncpath, 'apps', appid)
         info_path: str = os.path.join(app_path, 'appinfo/info.xml')
         xml = ET.parse(info_path)
@@ -57,12 +54,16 @@ def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
         name: str = clean_meta(xml.findtext('name', appid))
         summary: str = xml.findtext('summary', name)
 
+        default_enable = xml.find('default_enable') is not None
+        always_enable = appid in spec['alwaysEnabled']
+
         result[AppId(appid)] = InternalApp(
             name=name,
             licenses=[xml.findtext('licence', 'unknown')],
             summary=clean_meta(summary),
             description=clean_meta(xml.findtext('description', '')),
-            enabled_by_default=xml.find('default_enable') is not None,
+            enabled_by_default=always_enable or default_enable,
+            always_enabled=always_enable,
         )
     return result
 

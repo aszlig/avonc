@@ -34,6 +34,16 @@ let
             + " ${describeList "or" (lib.attrNames majorAppInfo)}.";
   }) package.applications;
 
+  appAlwaysEnableAssertions = lib.mapAttrsToList (appid: majorAppInfo: let
+    appcfg = cfg.apps.${appid};
+    majorVersionStr = toString cfg.majorVersion;
+    alwaysEnable = majorAppInfo.${majorVersionStr}.meta.alwaysEnable or false;
+  in {
+    assertion = alwaysEnable -> appcfg.enable;
+    message = "The app \"${appid}\" is required to be enabled, since"
+            + " it's a mandatory internal Nextcloud app.";
+  }) package.applications;
+
   cfg = config.nextcloud;
   inherit (cfg) package;
 
@@ -758,7 +768,7 @@ in {
                 + " that the 'nextcloud.hsts.includeSubDomains' option is"
                 + " enabled as well.";
       }
-    ] ++ appVersionAssertions;
+    ] ++ appVersionAssertions ++ appAlwaysEnableAssertions;
 
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
