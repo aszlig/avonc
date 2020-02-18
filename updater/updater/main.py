@@ -1,4 +1,4 @@
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Tuple
 from semantic_version import Version, Spec
 from tqdm import tqdm
 
@@ -7,10 +7,11 @@ import os
 import sys
 
 from .types import AppId, App, InternalApp, ExternalApp, Nextcloud, \
-                   ReleaseInfo, Sha256, SignatureInfo
+                   ReleaseInfo, Sha256, SignatureInfo, AppChanges
 from .app import fetch_app_hash
 from . import api, nix, themes
 from .diff import ReleaseDiff
+from .changelogs import pretty_print_changes
 
 
 def import_data(data: Dict[str, Any], major: int) -> ReleaseInfo:
@@ -102,7 +103,9 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
     return result
 
 
-def update_major(major: int, info_file: str) -> Optional[str]:
+def update_major(major: int, info_file: str) -> Optional[
+    Tuple[str, AppChanges]
+]:
     current_state: Dict[str, Any]
     try:
         with open(info_file, 'r') as current:
@@ -149,16 +152,14 @@ def update_major(major: int, info_file: str) -> Optional[str]:
 
             joined.apps[appid] = app._replace(hash_or_sig=sha256)
 
-    pretty_printed: str = diff.pretty_print()
-    if pretty_printed:
-        tqdm.write("\n" + pretty_printed, file=sys.stderr)
-
-    return json.dumps(export_data(joined), indent=2, sort_keys=True) + "\n"
+    result = json.dumps(export_data(joined), indent=2, sort_keys=True) + "\n"
+    return result, diff.get_changes()
 
 
 def main() -> None:
     basedir: str = os.path.join(os.getcwd(), 'packages')
     outfiles: Dict[str, str] = {}
+    changeset: Dict[int, AppChanges] = {}
     for dirname in os.listdir(basedir):
         if not dirname.isdigit():
             continue
@@ -169,10 +170,16 @@ def main() -> None:
             continue
 
         info_file: str = os.path.join(packagedir, 'upstream.json')
-        data = update_major(int(dirname), info_file)
-        if data is not None:
-            outfiles[info_file] = data
+        info = update_major(int(dirname), info_file)
+        if info is not None:
+            outfiles[info_file] = info[0]
+            changeset[int(dirname)] = info[1]
 
     for path, data in outfiles.items():
         with open(path, 'w') as newstate:
             newstate.write(data)
+
+    for major, changes in changeset.items():
+        pretty_printed: str = pretty_print_changes(major, changes)
+        if pretty_printed:
+            tqdm.write("\n" + pretty_printed, file=sys.stderr)

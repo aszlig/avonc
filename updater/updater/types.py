@@ -1,5 +1,5 @@
 from semantic_version import Version, Spec
-from typing import NewType, NamedTuple, List, Dict, Optional, Union
+from typing import NewType, NamedTuple, List, Dict, Optional, Union, Set
 
 
 AppId = NewType('AppId', str)
@@ -10,6 +10,8 @@ App = Union['InternalApp', 'ExternalApp']
 AppCollection = Dict[AppId, App]
 ThemeCollection = Dict[ThemeId, 'Theme']
 FetchMethod = Union['FetchFromGitHub']
+Changelogs = Dict[Version, str]
+InternalOrVersion = Optional[Version]
 
 
 class InternalApp(NamedTuple):
@@ -34,7 +36,7 @@ class ExternalApp(NamedTuple):
     licenses: List[str]
     download_url: str
     hash_or_sig: Union[Sha256, SignatureInfo]
-    changelogs: Dict[Version, str] = {}
+    changelogs: Changelogs = {}
 
 
 class FetchFromGitHub(NamedTuple):
@@ -60,3 +62,15 @@ class ReleaseInfo(NamedTuple):
     apps: AppCollection
     themes: ThemeCollection
     constraints: Dict[AppId, Spec]
+
+
+class VersionChanges(NamedTuple):
+    old_version: InternalOrVersion
+    new_version: InternalOrVersion
+    changelogs: Changelogs
+
+
+class AppChanges(NamedTuple):
+    added: Dict[AppId, InternalOrVersion]
+    removed: Set[AppId]
+    updated: Dict[AppId, VersionChanges]

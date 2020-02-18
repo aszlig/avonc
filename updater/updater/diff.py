@@ -1,8 +1,7 @@
-import textwrap
+from typing import Dict
 
-from semantic_version import Version
-from typing import Tuple, Dict, List
-from .types import ReleaseInfo, AppCollection, AppId, App, ExternalApp
+from .types import ReleaseInfo, AppChanges, AppCollection, AppId, App, \
+                   ExternalApp, Changelogs, VersionChanges, InternalOrVersion
 
 
 class ReleaseDiff:
@@ -35,9 +34,45 @@ class ReleaseDiff:
                 result[appid] = new
         return result
 
-    def get_changes(self) -> Tuple[AppCollection, AppCollection,
-                                   Dict[AppId, ExternalApp]]:
-        return self.removed_apps, self.added_apps, self.updated_apps
+    def _filter_changelogs(self, changelogs: Changelogs,
+                           oldver: InternalOrVersion,
+                           newver: InternalOrVersion) -> Changelogs:
+        result: Changelogs = {}
+        for version, changelog in changelogs.items():
+            if newver is not None and version > newver:
+                continue
+            if oldver is not None and version <= oldver:
+                continue
+            result[version] = changelog
+        return result
+
+    def get_changes(self) -> AppChanges:
+        updated: Dict[AppId, VersionChanges] = {}
+        for appid, app in self.updated_apps.items():
+            old_app: App = self.old.apps[appid]
+
+            oldver: InternalOrVersion = None
+            if isinstance(old_app, ExternalApp):
+                oldver = old_app.version
+
+            newver: InternalOrVersion = None
+            if isinstance(app, ExternalApp):
+                newver = app.version
+
+            updated[appid] = VersionChanges(
+                old_version=oldver,
+                new_version=newver,
+                changelogs=self._filter_changelogs(
+                    app.changelogs, oldver, newver
+                )
+            )
+
+        return AppChanges(
+            added={appid: app.version if isinstance(app, ExternalApp) else None
+                   for appid, app in self.added_apps.items()},
+            removed=set(self.removed_apps.keys()),
+            updated=updated,
+        )
 
     def has_differences(self) -> bool:
         if self.old.nextcloud.version != self.new.nextcloud.version:
@@ -59,62 +94,3 @@ class ReleaseDiff:
 
         return ReleaseInfo(self.new.nextcloud, apps, self.new.themes,
                            self.old.constraints)
-
-    def _format_changelog(self, changelog: str, indent: str) -> str:
-        if changelog == '':
-            return indent + "No changelog provided.\n"
-        else:
-            return textwrap.indent(changelog.strip(), indent) + "\n"
-
-    def _filter_changelogs(self, changelogs: Dict[Version, str],
-                           oldver: Version,
-                           newver: Version) -> Dict[Version, str]:
-        result: Dict[Version, str] = {}
-        for version, changelog in changelogs.items():
-            if oldver < version <= newver:
-                result[version] = changelog
-        return result
-
-    def pretty_print(self) -> str:
-        removed, added, updated = self.get_changes()
-        out: List[str] = []
-
-        if added:
-            out.append("Apps added:\n")
-            for appid, app in sorted(added.items()):
-                if isinstance(app, ExternalApp):
-                    out.append(f"  {appid} ({app.version})")
-                else:
-                    out.append(f"  {appid}")
-            out.append("")
-
-        if updated:
-            out.append("Apps updated:\n")
-            for appid, app in sorted(updated.items()):
-                old_app: App = self.old.apps[appid]
-                if isinstance(old_app, ExternalApp):
-                    old_ver: Version = old_app.version
-                    new_ver: Version = app.version
-                    out.append(f"  {appid} ({old_ver} -> {new_ver}):\n")
-                    changelogs = self._filter_changelogs(app.changelogs,
-                                                         old_ver, new_ver)
-                    if len(changelogs) > 1:
-                        for version in sorted(changelogs.keys(), reverse=True):
-                            changelog: str = changelogs[version]
-                            out.append(f"    Changes for version {version}:\n")
-                            out.append(self._format_changelog(changelog,
-                                                              '      '))
-                    else:
-                        out.append(self._format_changelog(changelogs[new_ver],
-                                                          '    '))
-                else:
-                    out.append(f'  {appid} (internal -> {app.version})\n')
-                    changelog = 'The app has been moved out of Nextcloud' \
-                                ' server and is now an external app.'
-                    out.append(self._format_changelog(changelog, '    '))
-
-        if removed:
-            out.append("Apps removed:\n")
-            out.append("  " + "\n  ".join(sorted(removed.keys())) + "\n")
-
-        return "\n".join(out)
