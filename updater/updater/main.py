@@ -85,6 +85,7 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
             }
 
     ncver = info.nextcloud.version
+    assert ncver is not None, "Can't export non-existing Nextcloud version"
     ncverstr = f"{ncver.major}.{ncver.minor}.{ncver.patch}.{ncver.build[0]}"
     result = {
         'nextcloud': {
