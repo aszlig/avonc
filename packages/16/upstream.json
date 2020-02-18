@@ -2748,9 +2748,9 @@
     "mindmap_app": ">0.0.1"
   },
   "nextcloud": {
-    "sha256": "001wdjkigpxxgl7jxd3qkbzqp9pw0037mb677phjfzf4pvnzx3pd",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-16.0.7.tar.bz2",
-    "version": "16.0.7.1"
+    "sha256": "0i1i5w1vv7018g9w4578sb0gsy44xpx51pklcp0wnljwpajhczl4",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-16.0.8.tar.bz2",
+    "version": "16.0.8.1"
   },
   "themes": {
     "breeze-dark": {
