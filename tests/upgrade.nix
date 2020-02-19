@@ -79,16 +79,12 @@ import ./make-test.nix (pkgs: {
       systemd.services.libreoffice-online.enable = false;
       systemd.services.mongooseim.enable = false;
 
-      nextcloud.apps = {
-        # XXX: These apps are unsupported for Nextcloud 17.
-        end_to_end_encryption.enable = true;
-        end_to_end_encryption.forceEnable = true;
-      } // lib.genAttrs [
+      nextcloud.apps = lib.genAttrs [
         "apporder" "bookmarks" "calendar" "circles" "contacts" "deck" "dropit"
-        "external" "files_accesscontrol" "files_markdown" "files_readmemd"
-        "files_rightclick" "gpxpod" "groupfolders" "mail" "metadata" "news"
-        "passwords" "phonetrack" "polls" "richdocuments" "social" "spreed"
-        "tasks"
+        "end_to_end_encryption" "external" "files_accesscontrol"
+        "files_markdown" "files_readmemd" "files_rightclick" "gpxpod"
+        "groupfolders" "mail" "metadata" "news" "passwords" "phonetrack"
+        "polls" "richdocuments" "social" "spreed" "tasks"
       ] (app: { enable = true; });
     };
   };
