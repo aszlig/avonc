@@ -1,8 +1,21 @@
 import textwrap
 
-from typing import List, Optional
+from collections import defaultdict
+from typing import List, Optional, Dict, Tuple, FrozenSet, TypeVar, \
+                   Hashable, Callable, DefaultDict, NamedTuple, overload
 
-from .types import AppChanges
+from .types import AppChanges, AppId, InternalOrVersion, VersionChanges
+
+T = TypeVar('T')
+TH = TypeVar('TH', bound=Hashable)
+
+RegroupOut = Dict[Optional[FrozenSet[int]], List[TH]]
+
+
+class AppChangeCollection(NamedTuple):
+    added: RegroupOut[Tuple[AppId, InternalOrVersion]]
+    removed: RegroupOut[AppId]
+    updated: RegroupOut[Tuple[AppId, VersionChanges]]
 
 
 def _format_changelog(changelog: str, indent: str) -> str:
@@ -12,27 +25,118 @@ def _format_changelog(changelog: str, indent: str) -> str:
         return textwrap.indent(changelog.strip(), indent) + "\n"
 
 
-def pretty_print_changes(major: Optional[int], changes: AppChanges) -> str:
+@overload
+def _regroup(items: Dict[int, List[TH]]) -> RegroupOut[TH]:
+    ...
+
+
+@overload
+def _regroup(items: Dict[int, List[T]],
+             key: Callable[[T], TH]) -> RegroupOut[T]:
+    ...
+
+
+def _regroup(items, key=None):
+    """
+    >>> values = {
+    ...     12: ["app1", "app2", "app4"],
+    ...     13: ["app2", "api4"],
+    ...     14: ["app1", "app3", "app4"],
+    ... }
+    >>> result = _regroup(values)
+    >>> len(result)
+    4
+    >>> result[frozenset({12, 14})]
+    ['app1', 'app4']
+    >>> result[frozenset({12, 13})]
+    ['app2']
+    >>> result[frozenset({13})]
+    ['api4']
+    >>> result[frozenset({14})]
+    ['app3']
+    >>> result = _regroup(values, key=lambda x: x[3])
+    >>> len(result)
+    4
+    >>> result[frozenset({12, 14})]
+    ['app1']
+    >>> result[frozenset({12, 13})]
+    ['app2']
+    >>> result[frozenset({14})]
+    ['app3']
+    >>> result[None]
+    ['app4']
+    """
+    all_majors = frozenset(items.keys())
+    result: DefaultDict[Optional[FrozenSet[int]], List[T]] = defaultdict(list)
+
+    realvals: Dict[TH, T] = {}
+    for values in items.values():
+        for value in values:
+            if key is None:
+                realvals[value] = value
+            else:
+                realvals[key(value)] = value
+
+    for value in frozenset(realvals.keys()):
+        majors = frozenset([
+            major for major, vals in items.items()
+            if value in (vals if key is None else map(key, vals))
+        ])
+        if majors == all_majors:
+            result[None].append(realvals[value])
+        else:
+            result[majors].append(realvals[value])
+
+    return dict(result)
+
+
+def _narrow_changes(changeset: Dict[int, AppChanges]) -> AppChangeCollection:
+    return AppChangeCollection(
+        added=_regroup(
+            {major: list(changes.added.items())
+             for major, changes in changeset.items()}
+        ),
+        removed=_regroup(
+            {major: list(changes.removed)
+             for major, changes in changeset.items()}
+        ),
+        updated=_regroup(
+            {major: list(changes.updated.items())
+             for major, changes in changeset.items()},
+            key=lambda x: (x[0], x[1].old_version, x[1].new_version)
+        ),
+    )
+
+
+def _format_description(action: str, majors: Optional[FrozenSet[int]]) -> str:
+    if majors is None:
+        return f"Apps {action} for all major versions:\n"
+
+    if len(majors) == 1:
+        mstr = str(next(iter(majors)))
+    else:
+        majors_str = [str(m) for m in majors]
+        mstr = ', '.join(majors_str[:-1]) + ' and ' + majors_str[-1]
+
+    return f"Apps {action} for major version {mstr}:\n"
+
+
+def pretty_print_changes(changeset: Dict[int, AppChanges]) -> str:
+    changes: AppChangeCollection = _narrow_changes(changeset)
     out: List[str] = []
 
-    if changes.added:
-        if major is None:
-            out.append("Apps added for all major versions:\n")
-        else:
-            out.append(f"Apps added for major version {major}:\n")
-        for appid, version in sorted(changes.added.items()):
+    for majors, added in changes.added.items():
+        out.append(_format_description("added", majors))
+        for appid, version in sorted(added):
             if version is not None:
                 out.append(f"  {appid} ({version})")
             else:
                 out.append(f"  {appid}")
         out.append("")
 
-    if changes.updated:
-        if major is None:
-            out.append("Apps updated for all major versions:\n")
-        else:
-            out.append(f"Apps updated for major version {major}:\n")
-        for appid, vinfo in sorted(changes.updated.items()):
+    for majors, updated in changes.updated.items():
+        out.append(_format_description("updated", majors))
+        for appid, vinfo in sorted(updated):
             changelog: str
             if vinfo.old_version is None:
                 out.append(f'  {appid} (internal -> {vinfo.new_version})\n')
@@ -56,11 +160,8 @@ def pretty_print_changes(major: Optional[int], changes: AppChanges) -> str:
                     clentry = vinfo.changelogs[vinfo.new_version]
                     out.append(_format_changelog(clentry, '    '))
 
-    if changes.removed:
-        if major is None:
-            out.append("Apps removed for all major versions:\n")
-        else:
-            out.append(f"Apps removed for major version {major}:\n")
-        out.append("  " + "\n  ".join(sorted(changes.removed)) + "\n")
+    for majors, removed in changes.removed.items():
+        out.append(_format_description("removed", majors))
+        out.append("  " + "\n  ".join(sorted(removed)) + "\n")
 
     return "\n".join(out)

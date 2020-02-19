@@ -175,11 +175,11 @@ def main() -> None:
             outfiles[info_file] = info[0]
             changeset[int(dirname)] = info[1]
 
+    pretty_printed: str = pretty_print_changes(changeset)
+
     for path, data in outfiles.items():
         with open(path, 'w') as newstate:
             newstate.write(data)
 
-    for major, changes in changeset.items():
-        pretty_printed: str = pretty_print_changes(major, changes)
-        if pretty_printed:
-            tqdm.write("\n" + pretty_printed, file=sys.stderr)
+    if pretty_printed:
+        tqdm.write("\n" + pretty_printed, file=sys.stderr)

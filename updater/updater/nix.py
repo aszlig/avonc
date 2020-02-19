@@ -7,7 +7,6 @@ from defusedxml import ElementTree as ET
 from typing import Dict, List
 
 from .types import Nextcloud, AppId, InternalApp, Sha256
-from .api import clean_meta
 
 
 def hash_zip_content(fname: str, data: bytes) -> Sha256:
@@ -40,6 +39,7 @@ def get_nextcloud_store_path(nextcloud: Nextcloud) -> str:
 
 
 def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
+    from .api import clean_meta
     ncpath: str = get_nextcloud_store_path(nextcloud)
     specpath: str = os.path.join(ncpath, 'core/shipped.json')
     spec: Dict[str, List[str]] = json.load(open(specpath, 'r'))
