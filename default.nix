@@ -97,7 +97,7 @@ let
   commonPhpConfig = [
     "curl.cainfo=${caCerts}"
     "expose_php=false"
-    "extension=${phpPackages.apcu}/lib/php/extensions/apcu.so"
+    "extension=${phpPackages.redis}/lib/php/extensions/redis.so"
     "extension=${phpPackages.imagick}/lib/php/extensions/imagick.so"
     "memory_limit=${toString cfg.maxUploadSize}M"
     "opcache.enable=1"
@@ -261,7 +261,9 @@ let
                     + "soffice.bin";
       in lib.optionalString isNeeded libreoffice;
 
-      "memcache.local" = "\\OC\\Memcache\\APCu";
+      "memcache.local" = "\\OC\\Memcache\\Redis";
+      "memcache.locking" = "\\OC\\Memcache\\Redis";
+      redis.host = "/run/nextcloud-redis.socket";
 
       supportedDatabases = [ "pgsql" ];
       tempdirectory = "/var/cache/nextcloud/uploads";
@@ -731,6 +733,7 @@ in {
 
   imports = [
     ./systemd-chroot.nix ./libreoffice-online ./gpx ./coturn ./osrm
+    modules/redis.nix
   ];
 
   config = lib.mkIf cfg.enable {
@@ -957,7 +960,9 @@ in {
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
         EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
-        BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
+        BindReadOnlyPaths = [
+          "/run/nextcloud-redis.socket" "/run/postgresql" "/etc/resolv.conf"
+        ];
         BindPaths = [ "/var/lib/nextcloud" ];
         PrivateNetwork = true;
       };
@@ -985,6 +990,7 @@ in {
         ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
 
         BindReadOnlyPaths = [
+          "/run/nextcloud-redis.socket"
           "/run/postgresql" "/run/systemd/notify" "/etc/resolv.conf"
         ];
       };
@@ -1012,7 +1018,9 @@ in {
         ExecStart = "${php}/bin/php -f ${package}/cron.php";
         EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
 
-        BindReadOnlyPaths = [ "/run/postgresql" "/etc/resolv.conf" ];
+        BindReadOnlyPaths = [
+          "/run/nextcloud-redis.socket" "/run/postgresql" "/etc/resolv.conf"
+        ];
       };
     };
 
