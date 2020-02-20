@@ -2643,9 +2643,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "0k1a20ljmricyimqxnw6gqci5m7hrkpacdscnphcf5dqvx6cndb2",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.6.4/weather-1.6.4.tar.gz",
-      "version": "1.6.4"
+      "sha256": "1b87zr9vf6zjyyrxc0w5f5q2dw62vksp0957zgzh9b0r36ga0w18",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.1/weather-1.7.1.tar.gz",
+      "version": "1.7.1"
     },
     "wopi": {
       "meta": {

@@ -1411,11 +1411,11 @@
           "agpl"
         ],
         "name": "Optical character recognition",
-        "summary": "Text recognition for your images and pdf files"
+        "summary": "Text recognition for your images"
       },
-      "sha256": "1i9bdlgjwh2k233849lc504pm8mqc80frncrj5f3xgkb3cjwc23g",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.14/ocr.tar.gz",
-      "version": "6.0.14"
+      "sha256": "1s13cp7alzpiayg50japyvhn98fsl2lnmxjq87n8jbxrl22qapqw",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.16/ocr.tar.gz",
+      "version": "6.0.16"
     },
     "ocsms": {
       "meta": {
@@ -1428,9 +1428,9 @@
         "name": "Phone Sync",
         "summary": "An app to sync SMS with your cloud"
       },
-      "sha256": "0k0xlrldadlbc5l0l5lh5k49d4vzxn0r0z3cnla8a37qy7ry6018",
-      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.6/ocsms-2.1.6.tar.gz",
-      "version": "2.1.6"
+      "sha256": "0qhdlbl5agf6njfl2ipwk2776gfg65dlp5avh6zfc1qdaaz15hjj",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.7/ocsms-2.1.7.tar.gz",
+      "version": "2.1.7"
     },
     "oidc_login": {
       "meta": {
@@ -2559,9 +2559,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "0k1a20ljmricyimqxnw6gqci5m7hrkpacdscnphcf5dqvx6cndb2",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.6.4/weather-1.6.4.tar.gz",
-      "version": "1.6.4"
+      "sha256": "1b87zr9vf6zjyyrxc0w5f5q2dw62vksp0957zgzh9b0r36ga0w18",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.1/weather-1.7.1.tar.gz",
+      "version": "1.7.1"
     },
     "wopi": {
       "meta": {
