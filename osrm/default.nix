@@ -64,8 +64,10 @@ in {
   };
 
   config = lib.mkIf (config.nextcloud.enable && cfg.enable) (lib.mkMerge [
+    # XXX: Drop once https://github.com/nextcloud/maps/pull/167 is merged.
     { nextcloud.extraPostPatch = ''
         patch -p1 -d apps/maps < ${./proxy-routing.patch}
+        patch -p1 -d apps/maps < ${./proxy-routing.dist.patch}
       '';
     }
     (lib.mkIf (cfg.osmDataset != null && cfg.profiles != []) {

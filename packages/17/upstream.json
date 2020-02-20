@@ -1269,9 +1269,9 @@
         "name": "Maps",
         "summary": "The whole world fits inside your cloud!"
       },
-      "sha256": "11m9jf2491ry298v3dkvp2kwm237ix1plgpzas1yd2r0bpwlmynn",
-      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.2/maps-0.1.2.tar.gz",
-      "version": "0.1.2"
+      "sha256": "0ab7q47bi01kdhirz2hkq2whla4d8adj9cqinjjqph520385fbnd",
+      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.5/maps-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "metadata": {
       "meta": {
