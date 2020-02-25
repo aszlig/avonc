@@ -327,9 +327,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1a8sr34kbl96abjplp295s50rcplh3ipif63rn2sq3bfs4x3w4xy",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/e2552ec54e8bc31db3811f80573dc0d0/cospend-0.3.2.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0ak4qjps6hlasl7y6bsb5ji8lq09bmgdgnf697rpkrnic7hzzz7j",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/1e2f5bc71183d340879205812b504832/cospend-0.3.3.tar.gz",
+      "version": "0.3.3"
     },
     "dashboardcharts": {
       "meta": {
@@ -402,6 +402,21 @@
       "sha256": "0m03cnr4ww8gif18cf0hzqw9l3wa2l4ksnglgmpsvix3cc8hv8wh",
       "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.5/documentserver_community.tar.gz",
       "version": "0.1.5"
+    },
+    "drawio": {
+      "meta": {
+        "description": "Integrates Draw.io with Nextcloud",
+        "homepage": "https://github.com/pawelrojek/nextcloud-drawio/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Draw.io",
+        "summary": "Draw.io integration app"
+      },
+      "sha256": "1h7k7vrb0g01dcg1zgj769pjrj70kg8xk1ghhhkha5wbppz3x0h6",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
+      "version": "0.9.5"
     },
     "emlviewer": {
       "meta": {
@@ -1303,9 +1318,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1s13cp7alzpiayg50japyvhn98fsl2lnmxjq87n8jbxrl22qapqw",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.16/ocr.tar.gz",
-      "version": "6.0.16"
+      "sha256": "0smy4yzkdp0gqmckxvd35yk2a8dahnx8ja7l7nrzmbp7bifbdlzz",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.18/ocr.tar.gz",
+      "version": "6.0.18"
     },
     "ocsms": {
       "meta": {
@@ -1533,21 +1548,6 @@
         "name": "Provisioning API",
         "summary": "This application enables a set of APIs that external systems can use to manage users, groups and apps."
       }
-    },
-    "push": {
-      "meta": {
-        "description": "",
-        "homepage": "https://github.com/nextcloud/push",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Nextcloud Push",
-        "summary": "Nextcloud Push"
-      },
-      "sha256": "0nrc20p9cafamdc63n3x4sfkx9kdpwskckh6vcy6zjn4cgxv70h7",
-      "url": "https://github.com/nextcloud/push/releases/download/v0.6.0/push-0.6.0.tar.gz",
-      "version": "0.6.0"
     },
     "qownnotesapi": {
       "meta": {
@@ -2154,6 +2154,21 @@
       "sha256": "18r1j50sn1g8h17mj2hf3gw1mnjv1mvg9icm6dpxlxwiydylkfyy",
       "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.0.2/twofactor_u2f.tar.gz",
       "version": "5.0.2"
+    },
+    "twofactor_webauthn": {
+      "meta": {
+        "description": "A two-factor provider for webauthn devices",
+        "homepage": "https://github.com/michib/nextcloud_twofactor_webauthn/#readme",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Two-Factor Webauthn",
+        "summary": "Webauthn two-factor provider"
+      },
+      "sha256": "09n22hawclzyz10jn1s9z5mm2y5xiikn2ss22p3fdk7lfydzcybq",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.1.2/twofactor_webauthn-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "unsplash": {
       "meta": {

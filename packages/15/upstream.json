@@ -485,9 +485,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "1j0q062cizr3hdcpd54qapfn56lld8pvja1g1sw3x01fm4dylpq3",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v0.9.4/drawio-v0.9.4.tar.gz",
-      "version": "0.9.4"
+      "sha256": "1h7k7vrb0g01dcg1zgj769pjrj70kg8xk1ghhhkha5wbppz3x0h6",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
+      "version": "0.9.5"
     },
     "drop_account": {
       "meta": {

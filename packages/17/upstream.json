@@ -169,9 +169,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0r92gafh45fi9b31alzs1l01v98rn6d1jah5g3vr42ln67vrbx0b",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v17.0.9-app/breezedark.tar.gz",
-      "version": "17.0.9"
+      "sha256": "1kd4xlyqapjpx6amyhz1nfk395cmb7n5ld2sg0zm2dfqafjcfx7a",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v17.0.10-app/breezedark.tar.gz",
+      "version": "17.0.10"
     },
     "bruteforcesettings": {
       "meta": {
@@ -342,9 +342,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1a8sr34kbl96abjplp295s50rcplh3ipif63rn2sq3bfs4x3w4xy",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/e2552ec54e8bc31db3811f80573dc0d0/cospend-0.3.2.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0ak4qjps6hlasl7y6bsb5ji8lq09bmgdgnf697rpkrnic7hzzz7j",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/1e2f5bc71183d340879205812b504832/cospend-0.3.3.tar.gz",
+      "version": "0.3.3"
     },
     "dashboardcharts": {
       "meta": {
@@ -443,9 +443,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "1j0q062cizr3hdcpd54qapfn56lld8pvja1g1sw3x01fm4dylpq3",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v0.9.4/drawio-v0.9.4.tar.gz",
-      "version": "0.9.4"
+      "sha256": "1h7k7vrb0g01dcg1zgj769pjrj70kg8xk1ghhhkha5wbppz3x0h6",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
+      "version": "0.9.5"
     },
     "dropit": {
       "meta": {
@@ -1509,9 +1509,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1s13cp7alzpiayg50japyvhn98fsl2lnmxjq87n8jbxrl22qapqw",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.16/ocr.tar.gz",
-      "version": "6.0.16"
+      "sha256": "0smy4yzkdp0gqmckxvd35yk2a8dahnx8ja7l7nrzmbp7bifbdlzz",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.18/ocr.tar.gz",
+      "version": "6.0.18"
     },
     "ocsms": {
       "meta": {
@@ -2451,6 +2451,21 @@
       "sha256": "18r1j50sn1g8h17mj2hf3gw1mnjv1mvg9icm6dpxlxwiydylkfyy",
       "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.0.2/twofactor_u2f.tar.gz",
       "version": "5.0.2"
+    },
+    "twofactor_webauthn": {
+      "meta": {
+        "description": "A two-factor provider for webauthn devices",
+        "homepage": "https://github.com/michib/nextcloud_twofactor_webauthn/#readme",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Two-Factor Webauthn",
+        "summary": "Webauthn two-factor provider"
+      },
+      "sha256": "09n22hawclzyz10jn1s9z5mm2y5xiikn2ss22p3fdk7lfydzcybq",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.1.2/twofactor_webauthn-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "unsplash": {
       "meta": {

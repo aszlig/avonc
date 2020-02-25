@@ -457,9 +457,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "1j0q062cizr3hdcpd54qapfn56lld8pvja1g1sw3x01fm4dylpq3",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v0.9.4/drawio-v0.9.4.tar.gz",
-      "version": "0.9.4"
+      "sha256": "1h7k7vrb0g01dcg1zgj769pjrj70kg8xk1ghhhkha5wbppz3x0h6",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
+      "version": "0.9.5"
     },
     "drop_account": {
       "meta": {
@@ -1583,9 +1583,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1s13cp7alzpiayg50japyvhn98fsl2lnmxjq87n8jbxrl22qapqw",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.16/ocr.tar.gz",
-      "version": "6.0.16"
+      "sha256": "0smy4yzkdp0gqmckxvd35yk2a8dahnx8ja7l7nrzmbp7bifbdlzz",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.18/ocr.tar.gz",
+      "version": "6.0.18"
     },
     "ocsms": {
       "meta": {
@@ -2585,6 +2585,21 @@
       "sha256": "0c210wsvbqz6jb27wjcr2prvpqkhy3szah3lhr67v8s5khjimi1h",
       "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v3.0.1/twofactor_u2f.tar.gz",
       "version": "3.0.1"
+    },
+    "twofactor_webauthn": {
+      "meta": {
+        "description": "A two-factor provider for webauthn devices",
+        "homepage": "https://github.com/michib/nextcloud_twofactor_webauthn/#readme",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Two-Factor Webauthn",
+        "summary": "Webauthn two-factor provider"
+      },
+      "sha256": "09n22hawclzyz10jn1s9z5mm2y5xiikn2ss22p3fdk7lfydzcybq",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.1.2/twofactor_webauthn-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "unsplash": {
       "meta": {
