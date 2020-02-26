@@ -69,6 +69,20 @@
       "url": "https://github.com/nextcloud/announcementcenter/releases/download/v3.7.0/announcementcenter-3.7.0.tar.gz",
       "version": "3.7.0"
     },
+    "appointments": {
+      "meta": {
+        "description": "Book appointments into you calendar via secure online form. Attendees can confirm or cancel their appointments via an email link.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Appointments",
+        "summary": "Book appointments into you calendar via secure online form."
+      },
+      "sha256": "001yppmsv3mgc72ckvij87mxq8m61h3fhscyny44lgq0mnjxq7mc",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/81aa446bc8336d56ee1becab657f42c245c47dc7/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.0.6"
+    },
     "apporder": {
       "meta": {
         "description": "Enable sorting the app icons from the personal settings. The order will be saved for each\nuser individually. Administrators can define a custom default order.\n\n## Set a default order for all new users\n\nGo to the Admin settings &gt; Additional settings and drag the icons under App order.\n\n## Use first app as default app\n\nYou can easily let Nextcloud redirect your user to the first app in their\npersonal order by changing the following parameter in your config/config.php:\n\n    'defaultapp' =&gt; 'apporder',\n\nUsers will now get redirected to the first app of the default order or to the\nfirst app of the user order.",
@@ -154,9 +168,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0isaf49v2h8v1di01iw7vj4xr1r8z10dv0gm8d2m6s3k47m8sjxz",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.6/breezedark.tar.gz",
-      "version": "18.0.6"
+      "sha256": "1y18i2qdl79bg1gx21ksvqqan6fpqp7nbkchjdi7fbwfdkv8skq2",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.7/breezedark.tar.gz",
+      "version": "18.0.7"
     },
     "bruteforcesettings": {
       "meta": {
@@ -387,6 +401,20 @@
       "sha256": "07r3az4fbpbqvv86n8k2gnx27854029gsyfvyphjiza9qk78nhc4",
       "url": "https://github.com/nextcloud/deck/releases/download/v0.8.0/deck.tar.gz",
       "version": "0.8.0"
+    },
+    "discoursesso": {
+      "meta": {
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Discourse SSO",
+        "summary": "Enable Discourse to authenticate via Nextcloud"
+      },
+      "sha256": "1zxpr3ngxgr1gdzmvb89p581kw8qczsh6zwbkzhgkhdn0zsrbwfl",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.21/discoursesso-0.9.21.tar.gz",
+      "version": "0.9.21"
     },
     "documentserver_community": {
       "meta": {
@@ -1292,6 +1320,21 @@
         "summary": "Allows OAuth2 compatible authentication from other web applications."
       }
     },
+    "occweb": {
+      "meta": {
+        "description": "Run OCC Commands in a web terminal",
+        "homepage": "https://git.adphi.net/adphi/occweb",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OCC Web",
+        "summary": "OCC Commands in a web terminal"
+      },
+      "sha256": "1zywqjsxn69l4f4v0jwy743kgrrrnirixa793dqwkr1gy16v5qj8",
+      "url": "https://git.adphi.net/attachments/85ad9b45-2227-475c-86a4-96c8ab60a3e0",
+      "version": "0.0.7"
+    },
     "ocdownloader": {
       "meta": {
         "description": "Easy to use download manager using Curl/Aria2 and youtube-dl to allow downloading HTTP(S), FTP(S), YouTube videos and BitTorrent files. For more information on how to install, please go to https://github.com/e-alfred/ocdownloader/blob/master/README.md",
@@ -1318,9 +1361,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0smy4yzkdp0gqmckxvd35yk2a8dahnx8ja7l7nrzmbp7bifbdlzz",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.18/ocr.tar.gz",
-      "version": "6.0.18"
+      "sha256": "0rfjzdwm210dgwmjzkfgnj2322zxzhn03i5zq67anrj1w575q571",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.19/ocr.tar.gz",
+      "version": "6.0.19"
     },
     "ocsms": {
       "meta": {
