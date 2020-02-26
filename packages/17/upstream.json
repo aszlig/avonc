@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "001yppmsv3mgc72ckvij87mxq8m61h3fhscyny44lgq0mnjxq7mc",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/81aa446bc8336d56ee1becab657f42c245c47dc7/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.0.6"
+      "sha256": "0nqm48wi2mqsy8xz10a5lqa9wd2r0wr9b3gwqr8bdjx5bj429wyw",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/6189d7e5ed8b14ed901da736294996ff2601fb22/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.0.8"
     },
     "apporder": {
       "meta": {
@@ -327,9 +327,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1zzdmdg8wk5q4g1l6gmb63cppxncfdr34sj420a2r5qkb3mjs3wh",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.8/contacts.tar.gz",
-      "version": "3.1.8"
+      "sha256": "0d7j1s6m95ddnd6fp97vyv1q0sny7vz0g11iaf0m81nf96rvg92n",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.9/contacts.tar.gz",
+      "version": "3.1.9"
     },
     "cookbook": {
       "meta": {
