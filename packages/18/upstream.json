@@ -79,9 +79,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "0nqm48wi2mqsy8xz10a5lqa9wd2r0wr9b3gwqr8bdjx5bj429wyw",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/6189d7e5ed8b14ed901da736294996ff2601fb22/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.0.8"
+      "sha256": "10a2d2ykj82mg933cbar48xvskxbw2sd916zjf8s91hg9c4n52a8",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/abccfee19b180833cd080e082c5d7459a85a3093/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.0.9"
     },
     "apporder": {
       "meta": {
@@ -2092,9 +2092,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1j64dpj5b0f8gccam68madmx1qbdsm9xkadvj05ffs4zxymff4rd",
-      "url": "https://mtier.org/timetracker/timetracker.tar.gz",
-      "version": "0.0.41"
+      "sha256": "04hh1gk6kyp8r65i7prgz879553p9shsgs3pmpdr78gyqr10fgvy",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.42.tar.gz",
+      "version": "0.0.42"
     },
     "twofactor_admin": {
       "meta": {
