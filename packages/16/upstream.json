@@ -182,9 +182,9 @@
         "name": "Browser warning",
         "summary": "Display a specific warning on log-in page"
       },
-      "sha256": "0vdb5brs6pk6s0ccdg3ks906izd6ifkqr3amaskm4k05m2ddr3fk",
-      "url": "https://github.com/nextcloud/browser_warning/releases/download/v0.1.0/browser_warning.tar.gz",
-      "version": "0.1.0"
+      "sha256": "1mw8sp0scjk5xqk9h5sz3df2lnwzmvq5w8yxrcdqys6ippdvqw6w",
+      "url": "https://github.com/nextcloud/browser_warning/releases/download/v0.2.0/browser_warning.tar.gz",
+      "version": "0.2.0"
     },
     "bruteforcesettings": {
       "meta": {
@@ -326,9 +326,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "0d7j1s6m95ddnd6fp97vyv1q0sny7vz0g11iaf0m81nf96rvg92n",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.1.9/contacts.tar.gz",
-      "version": "3.1.9"
+      "sha256": "147fc9jigqzzsj4lq3xiqsf9ka8vw9p2naz3vl0wgas1984932wg",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.2.0/contacts.tar.gz",
+      "version": "3.2.0"
     },
     "cookbook": {
       "meta": {
@@ -1265,9 +1265,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "0hkl6zgsmw9r885065yrjnd1fdx7vsppsg1jm2wha2f6vs99iyz4",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.3.0/hsts-0.3.0.tar.gz",
-      "version": "0.3.0"
+      "sha256": "1f9fn4lwx9jjwd01vjpc2ibshc0x0lnblg2z122whzv5aqvjgq2c",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.4.0/hsts-0.4.0.tar.gz",
+      "version": "0.4.0"
     },
     "impersonate": {
       "meta": {
@@ -1612,9 +1612,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0rfjzdwm210dgwmjzkfgnj2322zxzhn03i5zq67anrj1w575q571",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.19/ocr.tar.gz",
-      "version": "6.0.19"
+      "sha256": "193saja643y4zfbghjik9p2s84s10w2cs6a4iaj33xwnzgi07zcs",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.23/ocr.tar.gz",
+      "version": "6.0.23"
     },
     "ocsms": {
       "meta": {
@@ -1802,9 +1802,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "1av10dqw0kn94r9dyifj49mgxccb88icyqyzg1799x6ig2wqrwk8",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.3/cloud_piwik-0.5.3.tar.gz",
-      "version": "0.5.3"
+      "sha256": "0rwaw36r1xrwbzylp04v6ayczn786pi74prhrmsicl1k9j853s1n",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.5.4/cloud_piwik-0.5.4.tar.gz",
+      "version": "0.5.4"
     },
     "polls": {
       "meta": {
