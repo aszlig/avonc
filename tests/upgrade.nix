@@ -56,6 +56,7 @@ import ./make-test.nix (pkgs: {
           "files_mindmap"
 
           # These apps have non-deterministic download URLs
+          "occweb"
           "quicknotes"
           "spgverein"
           "twainwebscan"
