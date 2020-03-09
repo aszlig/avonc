@@ -79,9 +79,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "10a2d2ykj82mg933cbar48xvskxbw2sd916zjf8s91hg9c4n52a8",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/abccfee19b180833cd080e082c5d7459a85a3093/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.0.9"
+      "sha256": "1pg0ddcmqk8592bbmqgrwq11s62kqjalg0zcf2bgsmy7vg2ys0hn",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/7904b71ee8f2957b13854199efb0f0fb94127704/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.1.3"
     },
     "apporder": {
       "meta": {
@@ -168,9 +168,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1y18i2qdl79bg1gx21ksvqqan6fpqp7nbkchjdi7fbwfdkv8skq2",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.7/breezedark.tar.gz",
-      "version": "18.0.7"
+      "sha256": "1b0nv74hhskrh6y56xxv0frx8swl5rn8b49ia6r9f81sdyn0r0rb",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.8/breezedark.tar.gz",
+      "version": "18.0.8"
     },
     "browser_warning": {
       "meta": {
@@ -714,9 +714,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "18zb0vahdh47by69wmn6782n07xkxfzhk900c54prqsby0v2fzjn",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.12/files_linkeditor.tar.gz",
-      "version": "1.0.11"
+      "sha256": "1cxc5630qr3g28v72jjcadr3js4g4iywhimlvwr78pc0cc0f7bgq",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.13/files_linkeditor.tar.gz",
+      "version": "1.0.13"
     },
     "files_lock": {
       "meta": {
@@ -939,9 +939,9 @@
         "name": "Forms",
         "summary": "A forms app, similar to Google Forms."
       },
-      "sha256": "1waplhdknhb3kqxksmv75bdd0v90wdjgc00hgicb8nld97iz70p0",
-      "url": "https://github.com/nextcloud/forms/releases/download/v1.1.0/forms.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0ai488qkv606x3kb4w51ryw4mcmby7zmg1xn3hkqlz3mz611rscn",
+      "url": "https://github.com/nextcloud/forms/releases/download/v1.1.1/forms.tar.gz",
+      "version": "1.1.1"
     },
     "fulltextsearch": {
       "meta": {
@@ -1232,9 +1232,9 @@
         "name": "Maps",
         "summary": "The whole world fits inside your cloud!"
       },
-      "sha256": "0ab7q47bi01kdhirz2hkq2whla4d8adj9cqinjjqph520385fbnd",
-      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.5/maps-0.1.5.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0ic039dj042fm2h2dz1k7qs8j2ziqfhf1x3izqkiwsws8kkphwdb",
+      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.6/maps-0.1.6.tar.gz",
+      "version": "0.1.6"
     },
     "metadata": {
       "meta": {
@@ -1391,9 +1391,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "193saja643y4zfbghjik9p2s84s10w2cs6a4iaj33xwnzgi07zcs",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.23/ocr.tar.gz",
-      "version": "6.0.23"
+      "sha256": "0ygikphkiww077wgy6dwcjz5n5h5fh080j9ggisay02yc3i00lg9",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.24/ocr.tar.gz",
+      "version": "6.0.24"
     },
     "ocsms": {
       "meta": {
@@ -2059,7 +2059,7 @@
     },
     "tasks": {
       "meta": {
-        "description": "Once enabled, a new Tasks menu will appear in your Nextcloud apps menu. From there you can add and delete tasks, edit their title, description, start and due dates, reminder times, mark them as important, and add comments on them. Tasks can be shared between users. Tasks can be synchronized using CalDav (each task list is linked to an Nextcloud calendar, to sync it to your local client - Thunderbird, Evolution, KDE Kontact, iCal... - just add the calendar as a remote calendar in you client). You can download your tasks as ICS files using the download button for each calendar.",
+        "description": "Once enabled, a new Tasks menu will appear in your Nextcloud apps menu. From there you can add and delete tasks, edit their title, description, start and due dates and mark them as important. Tasks can be shared between users. Tasks can be synchronized using CalDav (each task list is linked to an Nextcloud calendar, to sync it to your local client - Thunderbird, Evolution, KDE Kontact, iCal, ... - just add the calendar as a remote calendar in your client). You can download your tasks as ICS files using the download button for each calendar.",
         "homepage": "https://github.com/nextcloud/tasks/",
         "isShipped": false,
         "licenses": [
@@ -2068,9 +2068,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0j1j9bvmcqqid1w1ng5lf1c4hpkyznfcx8iaaqcxxkb1kr5m4q4j",
-      "url": "https://github.com/nextcloud/tasks/releases/download/0.11.3/tasks.tar.gz",
-      "version": "0.11.3"
+      "sha256": "0wnjwv2cdk395awp2szxq2bsdsmgf8mlcxc41v25f4zyixbp3vbj",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.1/tasks.tar.gz",
+      "version": "0.12.1"
     },
     "telephoneprovider": {
       "meta": {
@@ -2371,6 +2371,20 @@
         "name": "LDAP user and group backend",
         "summary": "This application enables administrators to connect Nextcloud to an LDAP-based user directory."
       }
+    },
+    "user_pwauth": {
+      "meta": {
+        "description": "Allows you to authenticate with the local users from the hosting machine onto your hosted NextCloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Unix user backend",
+        "summary": "Authenticate Users by PAM"
+      },
+      "sha256": "1xsjljcfdbi9bpp3f9jlbp1b2mbgsvnh40a57g8ljnkprp27nlms",
+      "url": "https://r.mateu.be/user_pwauth-2.6.4.tar.gz",
+      "version": "2.6.4"
     },
     "user_retention": {
       "meta": {
