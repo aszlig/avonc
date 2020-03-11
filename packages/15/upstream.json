@@ -79,9 +79,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "1pg0ddcmqk8592bbmqgrwq11s62kqjalg0zcf2bgsmy7vg2ys0hn",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/7904b71ee8f2957b13854199efb0f0fb94127704/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.1.3"
+      "sha256": "1l90dwl8g4biyvj8l0khs43w7nq8p8nvis8dwfz135ahvd1f3bb1",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/dadc9cc0d1a6fc4447e99a2ab568558dc78b49f1/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.1.4"
     },
     "apporder": {
       "meta": {
@@ -152,9 +152,9 @@
         "name": "Auto Mail Accounts",
         "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
       },
-      "sha256": "10kz4qmjzf2fnqyv4i5lmh1gmhh3xh5wi6qhgfir8mb7cc317m97",
-      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.3/auto_mail_accounts.tar.gz",
-      "version": "0.1.3"
+      "sha256": "13kddvd5fdk5nnpdvj2knjnizlv90xzqrlnwzrxsix2hmxs5ny6x",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.4/auto_mail_accounts.tar.gz",
+      "version": "0.1.4"
     },
     "bookmarks": {
       "meta": {
@@ -891,9 +891,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "049wnjncp26c0jc95a4kjgyd9v51skzrz0d4b6axdigq84zjsq18",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.17/files_mindmap-0.0.17.tar.gz",
-      "version": "0.0.17"
+      "sha256": "162l35miwgqzn8qli93460bai099m3v0hybpvn1s0vlajn743l6p",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.18/files_mindmap-0.0.18.tar.gz",
+      "version": "0.0.18"
     },
     "files_pdfviewer": {
       "meta": {
@@ -2803,9 +2803,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "07i50mp1xq8pfq7jk8nl2r79viqgm26v2dwafdfnjcxpyr927gh4",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/3.4.10/wopi.tar.gz",
-      "version": "3.4.10"
+      "sha256": "072p1vnwgb7v218fap0qm096yxf086z1zjzydddny7d83llwcg4s",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.2/wopi.tar.gz",
+      "version": "3.5.2"
     },
     "workflow_pdf_converter": {
       "meta": {
