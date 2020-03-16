@@ -41,7 +41,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
+        "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber, JSON\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
         "homepage": "https://github.com/rello/analytics",
         "isShipped": false,
         "licenses": [
@@ -50,9 +50,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "042vm3six6m14jq5cl7zjwwp475h3cxwxs24r0wa9gna7c2l0vmw",
-      "url": "https://github.com/Rello/analytics/releases/download/2.0.0/analytics-2.0.0.tar.gz",
-      "version": "2.0.0"
+      "sha256": "1rpvdjpsvri96wif5rkkqr7rq4z7jpnnqjbbm5i8n5zapivism6i",
+      "url": "https://github.com/Rello/analytics/releases/download/2.1.1/analytics-2.1.1.tar.gz",
+      "version": "2.1.1"
     },
     "announcementcenter": {
       "meta": {
@@ -79,9 +79,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "1l90dwl8g4biyvj8l0khs43w7nq8p8nvis8dwfz135ahvd1f3bb1",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/dadc9cc0d1a6fc4447e99a2ab568558dc78b49f1/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.1.4"
+      "sha256": "1z93rqamjvqwg7hxa6nbkq7jd5wyx3k32z6s1i1apifdr1ywfbcl",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/67ad563961d1f375320f077f929deee8b583b506/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.1.5"
     },
     "apporder": {
       "meta": {
@@ -182,9 +182,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1b0nv74hhskrh6y56xxv0frx8swl5rn8b49ia6r9f81sdyn0r0rb",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.8/breezedark.tar.gz",
-      "version": "18.0.8"
+      "sha256": "1j98x4xcn3w0nj7jv08qb18wr1p6lfdi6ihk8sgg8ib6bvsc290d",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.9/breezedark.tar.gz",
+      "version": "18.0.9"
     },
     "browser_warning": {
       "meta": {
@@ -474,6 +474,21 @@
       "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
       "version": "0.9.5"
     },
+    "dropit": {
+      "meta": {
+        "description": "Just drop text and data quickly to your Nextcloud. For those times you just want to share a file but don't care about where to store it.",
+        "homepage": "https://github.com/rullzer/dropit",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "DropIt",
+        "summary": "Quickly share text or files by dropping them to your Nextcloud!"
+      },
+      "sha256": "1v5n3fhclfbx5waz1vwbpdwnfvc2kbj4ijkdlq9xr5ppz3zawhrh",
+      "url": "https://github.com/rullzer/dropit/releases/download/v0.4.0/dropit.tar.gz",
+      "version": "0.4.0"
+    },
     "emlviewer": {
       "meta": {
         "description": "Provides an email preview functionality. It creates preview for the .eml files and displays it as a modal.",
@@ -640,9 +655,9 @@
         "name": "Files automated tagging",
         "summary": "Automatically assign collaborative tags to files based on conditions"
       },
-      "sha256": "136v81myp6aiym3m311mc5fn0qnm3rx6ci7carq10dmcbz84y91g",
-      "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.8.1/files_automatedtagging-1.8.1.tar.gz",
-      "version": "1.8.0"
+      "sha256": "0b7g8x6gzzan1xn7672cmzl7ly8jy23cn4f6fg92sp2qcm1bpqb9",
+      "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.8.2/files_automatedtagging-1.8.2.tar.gz",
+      "version": "1.8.2"
     },
     "files_downloadactivity": {
       "meta": {
@@ -672,6 +687,21 @@
         "summary": "Adds basic external storage support"
       }
     },
+    "files_frommail": {
+      "meta": {
+        "description": "Allows an admin to link a drop-mailbox to Nextcloud.\n\t\tThis way, you can set a mail address and every mails+attachments send to this mail address will be automatically be saved on the cloud.",
+        "homepage": "https://github.com/nextcloud/files_frommail",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Files From Mail",
+        "summary": "Recover your email attachments from your cloud"
+      },
+      "sha256": "1z7z962pc3zm6rn9hpmssvvwd3wsgfshppijsfzx2x2fywxbfn2x",
+      "url": "https://github.com/nextcloud/files_frommail/releases/download/v0.4.0/files_frommail-0.4.0.tar.gz",
+      "version": "0.4.0"
+    },
     "files_fulltextsearch": {
       "meta": {
         "description": "Extension to the _Full text search_ app to index your users' files.",
@@ -698,9 +728,9 @@
         "name": "Full text search - Files - Tesseract OCR",
         "summary": "OCR Some format"
       },
-      "sha256": "15m0h2zhx8wc26n677rkwmx4bd4mva8y95619bh1bcci4n9skvwv",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.4.0/files_fulltextsearch_tesseract-1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0fc9h9ppgbl91n9lxxa2k1w5mm1cdkiza99q13r5g5bvhzaqrcjg",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.4.1/files_fulltextsearch_tesseract-1.4.1.tar.gz",
+      "version": "1.4.1"
     },
     "files_inotify": {
       "meta": {
@@ -773,9 +803,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "162l35miwgqzn8qli93460bai099m3v0hybpvn1s0vlajn743l6p",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.18/files_mindmap-0.0.18.tar.gz",
-      "version": "0.0.18"
+      "sha256": "1xxpqvk9anavrkd9k487pqcizc5rx6wp2lqjv5gggmnwxdwzchpy",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.20/files_mindmap-0.0.20.tar.gz",
+      "version": "0.0.20"
     },
     "files_pdfviewer": {
       "meta": {
@@ -1073,9 +1103,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "0cf1y671k1qf0k0cv50yfqdyxg2rm6px9bi6addswzhn07rp452y",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.1/groupfolders-6.0.1.tar.gz",
-      "version": "6.0.1"
+      "sha256": "0cfpvxr8qpls3ll5cbsz6krdsyq5p5cb8b34fvlzzl5hxqmngmhb",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.2/groupfolders.tar.gz",
+      "version": "6.0.2"
     },
     "groupquota": {
       "meta": {
@@ -1334,9 +1364,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "18mn7f1c23dpwhf3mbj2ipwfwsbp66b7mk14mxh2ihw7x04fzdgk",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.1.5/notes.tar.gz",
-      "version": "3.1.5"
+      "sha256": "1rnwsbh9nffxqbim8j3wyqnxrzfcp97gbdpwj317sxbq6ik9s3bm",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.2.0/notes.tar.gz",
+      "version": "3.2.0"
     },
     "notifications": {
       "meta": {
@@ -1405,9 +1435,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0ygikphkiww077wgy6dwcjz5n5h5fh080j9ggisay02yc3i00lg9",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.24/ocr.tar.gz",
-      "version": "6.0.24"
+      "sha256": "1yy4aayrknlvxvs05da90s9gkvhizvy8v0gcbk0k0fpiq9xk0z3m",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.25/ocr.tar.gz",
+      "version": "6.0.25"
     },
     "ocsms": {
       "meta": {
@@ -2411,9 +2441,9 @@
         "name": "User retention",
         "summary": "Deletes users that did not log in in the last days."
       },
-      "sha256": "14fz890f8f31r38xg8sk28yhxgnfydmapfzjrcjmjs4srfapxjdg",
-      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.1.0/user_retention-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1xp0n45bjjydzwfpw6l5jlbx31bfvafndh7i1b2fxjqra2k5rk8g",
+      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.1.1/user_retention-1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "user_saml": {
       "meta": {
@@ -2528,9 +2558,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "072p1vnwgb7v218fap0qm096yxf086z1zjzydddny7d83llwcg4s",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.2/wopi.tar.gz",
-      "version": "3.5.2"
+      "sha256": "0lwkyl32gq4arwgs4p7pzzj17g7vavyhy50v99ixlwlm2p4y97q3",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.4/wopi.tar.gz",
+      "version": "3.5.4"
     },
     "workflow_pdf_converter": {
       "meta": {
