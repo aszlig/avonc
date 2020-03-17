@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "1z93rqamjvqwg7hxa6nbkq7jd5wyx3k32z6s1i1apifdr1ywfbcl",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/67ad563961d1f375320f077f929deee8b583b506/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.1.5"
+      "sha256": "04mmd71prm14axk7zilyna9db8zrhzrjzhqy1xx011sxw5n9bmkd",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/0b7e9af3516429d5fe58d3162ba7b38a29ac8059/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.1.6"
     },
     "apporder": {
       "meta": {
