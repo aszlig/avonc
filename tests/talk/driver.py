@@ -3,7 +3,6 @@ from xmlrpc.server import SimpleXMLRPCServer
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -42,7 +41,7 @@ class Driver:
         self.driver.get('https://nextcloud/')
         self.driver.find_element_by_id('user').send_keys(name)
         self.driver.find_element_by_id('password').send_keys(passwd)
-        self.driver.find_element_by_id('submit').click()
+        self.driver.find_element_by_id('submit-form').click()
 
         self.wait.until(EC.visibility_of_element_located(
             (By.CSS_SELECTOR, '#app-navigation .nav-files')
@@ -53,35 +52,40 @@ class Driver:
             (By.CSS_SELECTOR, '#appmenu *[data-id=spreed] a')
         )).click()
 
-        searchbox = self.wait.until(EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, '#oca-spreedme-add-room a')
-        ))
-
-        action = ActionChains(self.driver)
-        action.move_to_element(searchbox).click().send_keys(name).perform()
-
         self.wait.until(EC.element_to_be_clickable(
-            (By.CLASS_NAME, 'icon-public')
+            (By.CSS_SELECTOR, 'button.action-item.icon-add')
         )).click()
 
         self.wait.until(EC.visibility_of_element_located(
-            (By.CSS_SELECTOR, '.detailCallInfoContainer h2')
-        ))
+            (By.CSS_SELECTOR, 'input.conversation-name')
+        )).send_keys(name)
 
-        self._wait_for_page_load()
+        xpath = '//label[normalize-space()="Allow guests to join via link"]'
+        self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
+
+        xpath = '//button[normalize-space()="Add participants"]'
+        self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
+
+        xpath = '//button[normalize-space()="Create conversation"]'
+        self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
+
+        xpath = '//div[@class="navigation"]/button[normalize-space()="Close"]'
+        self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath))).click()
 
         return self.driver.current_url
 
     def join_conversation(self, url):
         self.driver.get(url)
         self.wait.until(EC.visibility_of_element_located(
-            (By.CSS_SELECTOR, '.detailCallInfoContainer h2')
+            (By.CLASS_NAME, 'new-message-form')
         ))
 
         self._wait_for_page_load()
 
     def start_call(self):
-        self.driver.find_element_by_class_name('join-call').click()
+        selector = 'button .icon-start-call, button .icon-incoming-call'
+        locator = (By.CSS_SELECTOR, selector)
+        self.wait.until(EC.element_to_be_clickable(locator)).click()
 
         for button in ['mute', 'hideVideo']:
             self.wait.until(EC.element_to_be_clickable(
