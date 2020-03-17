@@ -748,13 +748,6 @@ in {
 
   config = lib.mkIf cfg.enable {
     assertions = [
-      { assertion = cfg.apps.bookmarks.enable
-                 -> !cfg.apps.bookmarks_fulltextsearch.enable;
-        message = toString [
-          "The 'bookmarks' and 'bookmarks_fulltextsearch' apps are"
-          " incompatible, see https://github.com/nextcloud/bookmarks#install"
-        ];
-      }
       { assertion = cfg.hsts.enable -> cfg.useSSL;
         message = "To enable HSTS, you also need to enable SSL by setting"
                 + " the option 'nextcloud.useSSL' to true.";

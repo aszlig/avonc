@@ -26,8 +26,6 @@ import ./make-test.nix (pkgs: {
         nc17apps = (lib.importJSON ../packages/17/upstream.json).applications;
 
         excludedApps = [
-          # Conflicts with "bookmarks"
-          "bookmarks_fulltextsearch"
           # We'll need dpendency ordering for this app
           "auto_mail_accounts"
           # Needs /usr/bin/clamscan
