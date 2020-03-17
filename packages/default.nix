@@ -26,11 +26,11 @@ let
   # The structure looks like this:
   #
   #  {
-  #    app1 = { "15" = { ... app attrs ... };
-  #             "16" = { ... app attrs ... };
+  #    app1 = { "17" = { ... app attrs ... };
+  #             "18" = { ... app attrs ... };
   #           };
-  #    app2 = { "15" = { ... app attrs ... }; };
-  #    app3 = { "16" = { ... app attrs ... }; };
+  #    app2 = { "17" = { ... app attrs ... }; };
+  #    app3 = { "18" = { ... app attrs ... }; };
   #  }
   #
   applications = let

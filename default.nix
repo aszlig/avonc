@@ -432,7 +432,7 @@ in {
     majorVersion = mkOption {
       type = types.enum availableMajorVersions;
       default = lib.last availableMajorVersions;
-      example = 15;
+      example = 17;
       description = ''
         The Nextcloud major version to use. By default, the latest stable
         release is used if all apps are compatible.
@@ -635,9 +635,8 @@ in {
       versions = lib.attrNames majorAppinfo;
       availForAll = lib.attrNames hashedVersions == versions;
       notAvailFor = lib.subtractLists versions (lib.attrNames hashedVersions);
-      below16 = notAvailFor == [ "15" ]; # XXX: Drop this once NC 15 is EOL.
 
-      maybeForce = lib.optionalAttrs (!availForAll && !below16) {
+      maybeForce = lib.optionalAttrs (!availForAll) {
         forceEnable = lib.mkOption {
           type = types.bool;
           default = false;
@@ -660,10 +659,8 @@ in {
             xlink:href='${appinfo.meta.homepage}'/>.
           '';
 
-          forceEnableHint = let
-            text = " Use <option>forceEnable</option> to enable it"
-                 + " for Nextcloud ${describeList "or" notAvailFor}.";
-          in lib.optionalString (!below16) text;
+          forceEnableHint = " Use <option>forceEnable</option> to enable it"
+                          + " for Nextcloud ${describeList "or" notAvailFor}.";
 
           onlyAvailable = lib.optionalString (!availForAll) ''
             <note><para>Only available for Nextcloud
