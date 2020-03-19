@@ -39,6 +39,21 @@
         "summary": "Provides logging abilities for Nextcloud such as logging file accesses or otherwise sensitive actions."
       }
     },
+    "afterlogic": {
+      "meta": {
+        "description": "AfterLogic WebMail",
+        "homepage": "https://afterlogic.org/webmail-lite",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "AfterLogic",
+        "summary": "Integration with AfterLogic WebMail client"
+      },
+      "sha256": "062hql5pmih792xfgiggjy3bvgpczavk3qxp25nbhfb0gpi5cz0q",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-x18.tgz",
+      "version": "1.2.18"
+    },
     "analytics": {
       "meta": {
         "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber, JSON\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
@@ -79,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into you calendar via secure online form."
       },
-      "sha256": "04mmd71prm14axk7zilyna9db8zrhzrjzhqy1xx011sxw5n9bmkd",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/0b7e9af3516429d5fe58d3162ba7b38a29ac8059/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.1.6"
+      "sha256": "012s5pvbi02miqh4av7mhd36mdc1f4zb35psyk4j96dx4cmms6gz",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/3fc76be4fa4221c7216af83b10003c7c70f8d27a/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.1.9"
     },
     "apporder": {
       "meta": {
@@ -1103,9 +1118,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "0cfpvxr8qpls3ll5cbsz6krdsyq5p5cb8b34fvlzzl5hxqmngmhb",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.2/groupfolders.tar.gz",
-      "version": "6.0.2"
+      "sha256": "16vp8j2p4qqsnqf4nsfx0n79sxym4ryv6mkbjyvg3qam6fw98y96",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.3/groupfolders.tar.gz",
+      "version": "6.0.3"
     },
     "groupquota": {
       "meta": {
@@ -1914,7 +1929,7 @@
     },
     "sharingpath": {
       "meta": {
-        "description": "Files sharing use file store path. Now you cau use nextcloud as your CDN origin.\n        What you need to do is just share your files, then click Open Sharing Path to access from files dropdown actions menu.",
+        "description": "Files sharing use file stored path. Now you cau use nextcloud as your CDN origin.\n        What you need to do is just share your files, then click Open Sharing Path to access from files dropdown actions menu.",
         "homepage": "https://github.com/rookie0/nextcloud-sharing-path",
         "isShipped": false,
         "licenses": [
@@ -1923,9 +1938,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use files stored path."
       },
-      "sha256": "02rfyl1g59714fvcxs4062zrawbmj51mh1gglksdw0nqcrk5q6lm",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.1.1/sharingpath.tar.gz",
-      "version": "0.1.1"
+      "sha256": "1qzv8vc3q7n9zlxp7a9djqbwy3jxjlnbxb168mz34agbl5l9b3ky",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.1.2/sharingpath.tar.gz",
+      "version": "0.1.2"
     },
     "smb_test": {
       "meta": {
@@ -2282,9 +2297,9 @@
         "name": "Two-Factor TOTP Provider",
         "summary": "TOTP two-factor provider"
       },
-      "sha256": "0gqmn6nc7fbfx5qcgnwplbhwm3s4r40yb9wskiwi7w05lv2brgcf",
-      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.1.2/twofactor_totp.tar.gz",
-      "version": "4.1.2"
+      "sha256": "1ljxq4wvqmz0nh26hgrx6m1n1qgjrljd34swv0cl5qj33nrldwsi",
+      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.1.3/twofactor_totp.tar.gz",
+      "version": "4.1.3"
     },
     "twofactor_u2f": {
       "meta": {
@@ -2297,9 +2312,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "18r1j50sn1g8h17mj2hf3gw1mnjv1mvg9icm6dpxlxwiydylkfyy",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.0.2/twofactor_u2f.tar.gz",
-      "version": "5.0.2"
+      "sha256": "0i9ib8scgjj03s1kw00hx26kw2mn16d9r6an9593vfr8jygqnri7",
+      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.1.0/twofactor_u2f.tar.gz",
+      "version": "5.1.0"
     },
     "twofactor_webauthn": {
       "meta": {
@@ -2312,9 +2327,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "09n22hawclzyz10jn1s9z5mm2y5xiikn2ss22p3fdk7lfydzcybq",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.1.2/twofactor_webauthn-0.1.2.tar.gz",
-      "version": "0.1.2"
+      "sha256": "08sslp4fq0dqywb09wm0kn79lr3lg75g3hk4vrrcbrqy9jr7kkp8",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.1/twofactor_webauthn-0.2.1.tar.gz",
+      "version": "0.2.1"
     },
     "unsplash": {
       "meta": {
