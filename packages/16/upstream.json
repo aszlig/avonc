@@ -2640,9 +2640,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "1banjdz1i9j8gzbrf63wrp17nia7f13hv9nw4j9d0frnkwpa7b93",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.2/twofactor_webauthn-0.2.2.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1n0g98rwqqhk6xbisg7c12664rgfps5sxmk4k58fj5bj9x89bfz9",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.3/twofactor_webauthn-0.2.3.tar.gz",
+      "version": "0.2.3"
     },
     "unsplash": {
       "meta": {
