@@ -354,9 +354,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0q53gzzfn1776h4b8zqcnyq32pqqyn6hh68dmpxqcjq2jcyx1wzk",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.0/cookbook.tar.gz",
-      "version": "0.6.0"
+      "sha256": "1z2lqrnjam0cm9ms8z3kbji14mb16qw8qlznpgsa9mwy64i9i03n",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.1/cookbook.tar.gz",
+      "version": "0.6.1"
     },
     "cospend": {
       "meta": {
@@ -2048,9 +2048,9 @@
         "name": "Ransomware protection",
         "summary": "This app prevents uploading files with known ransomware file endings"
       },
-      "sha256": "0xgh9n6va850laqmwzhsxi0fa9hrf00c58d2vqi3950cy0dqv5bf",
-      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.4.1/ransomware_protection-1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "1hv56c60i8hqarf9932s8y6nw8q6piqs8gsh7hkfxmp7b6kl8w73",
+      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.4.2/ransomware_protection-1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "recommendations": {
       "meta": {
@@ -2232,11 +2232,11 @@
           "agpl"
         ],
         "name": "Sharing Path",
-        "summary": "Files sharing use files stored path."
+        "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "1qzv8vc3q7n9zlxp7a9djqbwy3jxjlnbxb168mz34agbl5l9b3ky",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.1.2/sharingpath.tar.gz",
-      "version": "0.1.2"
+      "sha256": "0p2gfq653w0waglff0gqif580awamfx62p5wh8372sn65pkpkcss",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.0/sharingpath.tar.gz",
+      "version": "0.2.0"
     },
     "smb_test": {
       "meta": {
@@ -2640,9 +2640,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "1n0g98rwqqhk6xbisg7c12664rgfps5sxmk4k58fj5bj9x89bfz9",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.3/twofactor_webauthn-0.2.3.tar.gz",
-      "version": "0.2.3"
+      "sha256": "0qi31l5fydppar6ani027iadzqs6s591ib7yvd68yb981sdamac9",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.4/twofactor_webauthn-0.2.4.tar.gz",
+      "version": "0.2.4"
     },
     "unsplash": {
       "meta": {
