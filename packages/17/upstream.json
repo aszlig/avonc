@@ -299,9 +299,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0cj87q0kwps862v7g4h9zi7dsgag6y6d6sjyi43a01hhbn7h4yqj",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.10/circles-0.17.10.tar.gz",
-      "version": "0.17.10"
+      "sha256": "1hgz5qamhw8wbiqkkvz39hc610c19vwxqlccfdify8by3nqckja4",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.11/circles-0.17.11.tar.gz",
+      "version": "0.17.11"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1131,9 +1131,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "1icdasrfl9s5700f04pdn01b4zw6c62n72596fs4j9vp3m0lyn7l",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/1a6668283eacd543f1a42683e8b44a1e/gpxpod-4.1.1.tar.gz",
-      "version": "4.1.1"
+      "sha256": "1kadzhcqpb363gp43y5v9rabas7zrmkf51s6w3msqmsfgxmdbzxz",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/0361f9dc50633f0f39d929442935435c/gpxpod-4.2.1.tar.gz",
+      "version": "4.2.1"
     },
     "grauphel": {
       "meta": {
@@ -1438,9 +1438,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "017dlvh2zxavk1h896yha3qvfrfplcvsyb1qk9qq1v7ajh4q1a9v",
-      "url": "https://github.com/paulijar/music/files/4365611/music_0.13.1_nc-signed.tar.gz",
-      "version": "0.13.1"
+      "sha256": "0w0n6ll62r84ff0dsi8clwf8d3mrqnrvp433qnwcy0k68ba6r1a0",
+      "url": "https://github.com/paulijar/music/files/4383660/music_0.13.2_nc-signed.tar.gz",
+      "version": "0.13.2"
     },
     "news": {
       "meta": {

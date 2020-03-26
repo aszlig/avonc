@@ -299,9 +299,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0k039cd4g18bm1mdkj3l3baxgblm072akan1mi99j2xz457133s9",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.3/circles-0.18.3.tar.gz",
-      "version": "0.18.3"
+      "sha256": "1984yr2vm8ph13n665rghqdgn0rqhq1m6xz3rsfy012bz4a6772v",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.4/circles-0.18.4.tar.gz",
+      "version": "0.18.4"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1088,9 +1088,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "1icdasrfl9s5700f04pdn01b4zw6c62n72596fs4j9vp3m0lyn7l",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/1a6668283eacd543f1a42683e8b44a1e/gpxpod-4.1.1.tar.gz",
-      "version": "4.1.1"
+      "sha256": "1kadzhcqpb363gp43y5v9rabas7zrmkf51s6w3msqmsfgxmdbzxz",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/0361f9dc50633f0f39d929442935435c/gpxpod-4.2.1.tar.gz",
+      "version": "4.2.1"
     },
     "group_everyone": {
       "meta": {
@@ -1321,9 +1321,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "017dlvh2zxavk1h896yha3qvfrfplcvsyb1qk9qq1v7ajh4q1a9v",
-      "url": "https://github.com/paulijar/music/files/4365611/music_0.13.1_nc-signed.tar.gz",
-      "version": "0.13.1"
+      "sha256": "0w0n6ll62r84ff0dsi8clwf8d3mrqnrvp433qnwcy0k68ba6r1a0",
+      "url": "https://github.com/paulijar/music/files/4383660/music_0.13.2_nc-signed.tar.gz",
+      "version": "0.13.2"
     },
     "news": {
       "meta": {
@@ -2414,9 +2414,9 @@
         "name": "User support for ISPConfig mail accounts",
         "summary": "Allow users logging in using their mailbox credentials as managed via ISPConfig"
       },
-      "sha256": "03gy74sgmpfgwmkpzglkkw77r83palxxfq9psc6clbghj22pn23z",
-      "url": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig/uploads/31c8136b23726eb0d7e405e51ad7b3fc/user-ispconfig-0.4.5.tar.gz",
-      "version": "0.4.5"
+      "sha256": "0dx8x3swlqlbrj86ima1ifmdg0flhzjkh48lqiq5m1rr2qbq7q2i",
+      "url": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig/uploads/07d0f179929af82bda04991c729bbdcf/user-ispconfig-0.4.6.tar.gz",
+      "version": "0.4.6"
     },
     "user_ldap": {
       "meta": {
