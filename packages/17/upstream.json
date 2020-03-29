@@ -369,9 +369,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1z2lqrnjam0cm9ms8z3kbji14mb16qw8qlznpgsa9mwy64i9i03n",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.1/cookbook.tar.gz",
-      "version": "0.6.1"
+      "sha256": "1jml0z78wl0nzyv0z9lgx5q7rfdwr81kxvi03jz32rbh4pmcddfm",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.3/cookbook.tar.gz",
+      "version": "0.6.3"
     },
     "cospend": {
       "meta": {
@@ -728,9 +728,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "0scz20sbdzms0r7835n47i2gjd16d663aw12dv3dj6avgyl1xfra",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.3.6/files_fulltextsearch-1.3.6.tar.gz",
-      "version": "1.3.6"
+      "sha256": "1zkyr5qgyswfp8gji2klrjzxkq5snvi7dnp9jdbqc7g7hii7fzgb",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.3.7/files_fulltextsearch-1.3.7.tar.gz",
+      "version": "1.3.7"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1043,9 +1043,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0rx70xpg8fgm0f7scmm0g3w227vjnqfm99viiq9rvsmb81s1h3rw",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.4.1/fulltextsearch_elasticsearch-1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "1q596l1ssm15f441hw5n8vznrfvgq2qwqjz31zvnrqp1zw4211zr",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.4.2/fulltextsearch_elasticsearch-1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "gallery": {
       "meta": {
@@ -1567,9 +1567,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1yy4aayrknlvxvs05da90s9gkvhizvy8v0gcbk0k0fpiq9xk0z3m",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.25/ocr.tar.gz",
-      "version": "6.0.25"
+      "sha256": "1bcyh7i1pgfj5wnpl7fzajjc3y3wwbm4pc6j87w47805ypq7nbpv",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.27/ocr.tar.gz",
+      "version": "6.0.27"
     },
     "ocsms": {
       "meta": {
@@ -2665,9 +2665,9 @@
         "name": "User retention",
         "summary": "Deletes users that did not log in in the last days."
       },
-      "sha256": "0r72w9vgm4jc1jg5n1zv0ggsndiidcnmpxinikrg295qk6pydhll",
-      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.0.1/user_retention-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0n1d4v7kzgwlff6r026gc6l81ga2cf2a5yym7qm6ynjk32nrnd69",
+      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.0.2/user_retention-1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "user_saml": {
       "meta": {

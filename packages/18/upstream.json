@@ -369,9 +369,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1z2lqrnjam0cm9ms8z3kbji14mb16qw8qlznpgsa9mwy64i9i03n",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.1/cookbook.tar.gz",
-      "version": "0.6.1"
+      "sha256": "1jml0z78wl0nzyv0z9lgx5q7rfdwr81kxvi03jz32rbh4pmcddfm",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.3/cookbook.tar.gz",
+      "version": "0.6.3"
     },
     "cospend": {
       "meta": {
@@ -728,9 +728,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "0za7igmcsxrr9qirpam7hqqqnxpj66q54bs9bz7nkngf2wlpzg25",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.1/files_fulltextsearch-1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "0mq21qnj70n7i1qk8b060lcwx0a42x8604cykn6x7k1ma64aling",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.2/files_fulltextsearch-1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1028,9 +1028,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "1r26p56ja59lx2wdkaipkg33f8m1pbfa83d33cmivp6qk2nqzr32",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.0/fulltextsearch_elasticsearch-1.5.0.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1qbg30npgzg1vijgpp14n1kj7xksh2l31z95rr40csgzy6lza7gq",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.1/fulltextsearch_elasticsearch-1.5.1.tar.gz",
+      "version": "1.5.1"
     },
     "geoblocker": {
       "meta": {
@@ -1450,9 +1450,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1yy4aayrknlvxvs05da90s9gkvhizvy8v0gcbk0k0fpiq9xk0z3m",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.25/ocr.tar.gz",
-      "version": "6.0.25"
+      "sha256": "1bcyh7i1pgfj5wnpl7fzajjc3y3wwbm4pc6j87w47805ypq7nbpv",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.27/ocr.tar.gz",
+      "version": "6.0.27"
     },
     "ocsms": {
       "meta": {
@@ -1770,6 +1770,20 @@
       "sha256": "0936f2ppb4s6blsp080cp1limh45xp0l4xn32whldhvgh73cmc8c",
       "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.0/rainloop.tar.gz",
       "version": "6.1.0"
+    },
+    "ransomware_detection": {
+      "meta": {
+        "description": "This app monitors file operations during the synchronization to detect ransomware attacks and also offers a post infection file storage scanner, which works even if it happend that you didn't have this app installed during an attack. This is done by using generic indicators for a guided user-controlled one-step recovery utilizing the integrated file versioning methods. Sponsored by the German Federal Ministry of Education and Research, and Prototype Fund.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Ransomware recovery",
+        "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
+      },
+      "sha256": "0qlizc335kbz4j7wj3nrznisp0j3n8rh83x17zp11gshh2iv6krc",
+      "url": "https://wusa.io/ransomware_detection-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "ransomware_protection": {
       "meta": {
@@ -2456,9 +2470,9 @@
         "name": "User retention",
         "summary": "Deletes users that did not log in in the last days."
       },
-      "sha256": "1xp0n45bjjydzwfpw6l5jlbx31bfvafndh7i1b2fxjqra2k5rk8g",
-      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.1.1/user_retention-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1fq29hxzqbrln8nmqp4h7rkg067r0g7s0a90zkjl9a4ywpp24cyw",
+      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.1.2/user_retention-1.1.2.tar.gz",
+      "version": "1.1.2"
     },
     "user_saml": {
       "meta": {
