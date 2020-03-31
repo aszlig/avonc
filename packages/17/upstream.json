@@ -1988,9 +1988,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0ziq3frz5q1bw3hhq57cv70bl1h721xzx4ibhgpr12ngamjf0z2y",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.2/richdocuments.tar.gz",
-      "version": "3.5.2"
+      "sha256": "03i4jxh819gp4b1pvizsab9m1w5d32xmq557jyblwy0js118iagm",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.3/richdocuments.tar.gz",
+      "version": "3.5.3"
     },
     "scanner": {
       "meta": {
@@ -2017,9 +2017,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "0la0f6659i8x5rlg5g405nhgs8wi484w898m70x541401946ji27",
-      "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/7fb16522dbc7fe4b7d68dd4ec735a9674619f656/build/artifacts/appstore/secsignid.tar.gz?raw=true",
-      "version": "0.3.0"
+      "sha256": "0fp4s09pnvj91p759cdjady0dhy87q6mj6g21a523gwislp0d609",
+      "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/3e18012ee707a747091cce50bab3b097474bbab3/build/artifacts/appstore/secsignid.tar.gz?raw=true",
+      "version": "0.3.1"
     },
     "sensorlogger": {
       "meta": {
@@ -2593,9 +2593,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1xh0pdc76miv6ivv24k4c3bigzl4qfvzcvrcrfw73grbc6z4majx",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.1/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.1"
+      "sha256": "02cr15jfcvplhqw2aaww9v8vvvai3bsmfv4s8ljbx1mfjm3l69ch",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.3/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.3"
     },
     "user_external": {
       "meta": {

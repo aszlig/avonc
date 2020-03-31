@@ -1147,9 +1147,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "1763qn5inhaib1ds92cq86ka3wkyqhgi2v41gx1yvb051jv2jyx9",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.4.2/guests.tar.gz",
-      "version": "1.4.2"
+      "sha256": "1kbqzb8qbh711rlzh2h9cr7y3nidbksmni2ybxzxycx3kah31n7a",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.4.3/guests.tar.gz",
+      "version": "1.4.3"
     },
     "hsts": {
       "meta": {
@@ -1839,9 +1839,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0ziq3frz5q1bw3hhq57cv70bl1h721xzx4ibhgpr12ngamjf0z2y",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.2/richdocuments.tar.gz",
-      "version": "3.5.2"
+      "sha256": "03i4jxh819gp4b1pvizsab9m1w5d32xmq557jyblwy0js118iagm",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.3/richdocuments.tar.gz",
+      "version": "3.5.3"
     },
     "scanner": {
       "meta": {
@@ -1857,6 +1857,20 @@
       "sha256": "1zs4h7y4f271w60g23xynvmb06p0nmzyn5rdz0bqh4y4hvj2ga8h",
       "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.8/scanner-0.1.8.tar.gz",
       "version": "0.1.8"
+    },
+    "secsignid": {
+      "meta": {
+        "description": "This app makes it possible to use the SecSign two-factor authentication SecSign ID\nto authenticate users in Nextcloud.\n\nOnce installed, go to **Settings/Security** and add an existing SecSign ID to enable 2FA\nfor yourself. Make sure to also generate backup codes, so you always have a backup plan.\n\nAdmins can go to the SecSign ID tab and manage the SecSign IDs for every user and enable/disable\ntwo-factor authentication.\n\nWith the new User Onboarding feature, enabling SecSign 2FA for all users is a very easy process. Simply enable User Onboarding and then choose a suffix for your users SecSign IDs. Make sure to either enforce 2FA for the user groups which should use SecSign 2FA or enable it for single users. Only users with Two-Factor Authentication enabled in the NextCloud settings can use SecSign 2FA.\n\nIf you do not already have a SecSign ID, go to [secsign.com](https://www.secsign.com/try-secsign-id-now/) to learn\nhow to create and use one.\n\n[PHP QR Code library](http://phpqrcode.sourceforge.net/) was used for the creating QR codes. Many thanks to the developers.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SecSign ID",
+        "summary": "Plugin to enable use of SecSign 2FA"
+      },
+      "sha256": "0fp4s09pnvj91p759cdjady0dhy87q6mj6g21a523gwislp0d609",
+      "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/3e18012ee707a747091cce50bab3b097474bbab3/build/artifacts/appstore/secsignid.tar.gz?raw=true",
+      "version": "0.3.1"
     },
     "sensorlogger": {
       "meta": {
@@ -2398,9 +2412,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1xh0pdc76miv6ivv24k4c3bigzl4qfvzcvrcrfw73grbc6z4majx",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.1/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.1"
+      "sha256": "02cr15jfcvplhqw2aaww9v8vvvai3bsmfv4s8ljbx1mfjm3l69ch",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.3/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.3"
     },
     "user_external": {
       "meta": {
