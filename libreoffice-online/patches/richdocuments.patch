@@ -1,10 +1,10 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index d86e73b2..8a6380e0 100644
+index f8670d54..dd8c3cdc 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -27,9 +27,6 @@
  	<dependencies>
- 		<nextcloud min-version="15" max-version="18" />
+ 		<nextcloud min-version="15" max-version="19" />
  	</dependencies>
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
@@ -57,18 +57,6 @@ index 43eb427b..021dff3f 100644
 -		return $decodedFile;
 -	}
  }
-diff --git a/lib/Controller/DocumentController.php b/lib/Controller/DocumentController.php
-index ca6eb0fd..533a8ba6 100644
---- a/lib/Controller/DocumentController.php
-+++ b/lib/Controller/DocumentController.php
-@@ -14,7 +14,6 @@ namespace OCA\Richdocuments\Controller;
- use OCA\Richdocuments\Db\WopiMapper;
- use OCA\Richdocuments\Service\FederationService;
- use OCA\Richdocuments\TokenManager;
--use OCA\Richdocuments\WOPI\Parser;
- use \OCP\AppFramework\Controller;
- use OCP\AppFramework\Http;
- use OCP\AppFramework\Http\JSONResponse;
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
 index 2aeab1b4..9f72bc0c 100644
 --- a/lib/Controller/SettingsController.php
@@ -172,19 +160,19 @@ index 2aeab1b4..9f72bc0c 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index bb0b4f6a..b018127a 100644
+index 5cf085d9..f37da9c6 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
-@@ -25,8 +25,6 @@ use OC\Share\Constants;
+@@ -23,8 +23,6 @@ namespace OCA\Richdocuments;
+ 
  use OCA\Richdocuments\Db\WopiMapper;
- use OCA\Richdocuments\Helper;
  use OCA\Richdocuments\Db\Wopi;
 -use OCA\Richdocuments\Service\CapabilitiesService;
 -use OCA\Richdocuments\WOPI\Parser;
  use OCP\Files\File;
  use OCP\Files\IRootFolder;
  use OCP\Files\Node;
-@@ -45,8 +43,6 @@ class TokenManager {
+@@ -42,8 +40,6 @@ class TokenManager {
  	private $shareManager;
  	/** @var IURLGenerator */
  	private $urlGenerator;
@@ -193,15 +181,17 @@ index bb0b4f6a..b018127a 100644
  	/** @var AppConfig */
  	private $appConfig;
  	/** @var string */
-@@ -59,14 +55,13 @@ class TokenManager {
+@@ -56,16 +52,15 @@ class TokenManager {
  	private $userManager;
  	/** @var IGroupManager */
  	private $groupManager;
 -	/** @var CapabilitiesService */
 -	private $capabilitiesService;
-+
-+	const LOOL_MIME_TYPES = @LOOL_MIME_TYPES_ARRAY@;
+ 	/** @var Helper */
+ 	private $helper;
  
++	const LOOL_MIME_TYPES = @LOOL_MIME_TYPES_ARRAY@;
++
  	/**
  	 * @param IRootFolder $rootFolder
  	 * @param IManager $shareManager
@@ -211,15 +201,15 @@ index bb0b4f6a..b018127a 100644
  	 * @param string $UserId
  	 * @param WopiMapper $wopiMapper
 @@ -75,8 +70,6 @@ class TokenManager {
- 	public function __construct(IRootFolder $rootFolder,
- 								IManager $shareManager,
- 								IURLGenerator $urlGenerator,
--								Parser $wopiParser,
--								CapabilitiesService $capabilitiesService,
- 								AppConfig $appConfig,
- 								$UserId,
- 								WopiMapper $wopiMapper,
-@@ -86,8 +79,6 @@ class TokenManager {
+ 		IRootFolder $rootFolder,
+ 		IManager $shareManager,
+ 		IURLGenerator $urlGenerator,
+-		Parser $wopiParser,
+-		CapabilitiesService $capabilitiesService,
+ 		AppConfig $appConfig,
+ 		$UserId,
+ 		WopiMapper $wopiMapper,
+@@ -88,8 +81,6 @@ class TokenManager {
  		$this->rootFolder = $rootFolder;
  		$this->shareManager = $shareManager;
  		$this->urlGenerator = $urlGenerator;
@@ -228,9 +218,9 @@ index bb0b4f6a..b018127a 100644
  		$this->appConfig = $appConfig;
  		$this->trans = $trans;
  		$this->userId = $UserId;
-@@ -190,16 +181,10 @@ class TokenManager {
+@@ -204,16 +195,10 @@ class TokenManager {
  
- 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name, 0, $hideDownload, $direct, $isRemoteToken);
+ 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name, 0, $hideDownload, $direct, $isRemoteToken, 0, $shareToken);
  
 -		try {
 -
@@ -249,7 +239,7 @@ index bb0b4f6a..b018127a 100644
  	}
  
  	public function updateToRemoteToken(Wopi $wopi, $shareToken, $remoteServer, $remoteServerToken, $remoteWopi) {
-@@ -244,17 +229,13 @@ class TokenManager {
+@@ -258,17 +243,13 @@ class TokenManager {
  
  		$serverHost = $this->urlGenerator->getAbsoluteURL('/');
  
