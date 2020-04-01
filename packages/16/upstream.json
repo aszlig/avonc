@@ -284,9 +284,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1hgz5qamhw8wbiqkkvz39hc610c19vwxqlccfdify8by3nqckja4",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.11/circles-0.17.11.tar.gz",
-      "version": "0.17.11"
+      "sha256": "0r5rw4k3gzsr8bklldcn138ji3cc13dls99h28mjf1aazfl8c136",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.12/circles-0.17.12.tar.gz",
+      "version": "0.17.12"
     },
     "cloud_federation_api": {
       "meta": {
@@ -2712,9 +2712,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "02cr15jfcvplhqw2aaww9v8vvvai3bsmfv4s8ljbx1mfjm3l69ch",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.3/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.3"
+      "sha256": "169fbp5f0xwv7v9ymrbi73xn53nwhdnj6j1zwhvabrrj0gjb46a3",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.4/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.4"
     },
     "user_external": {
       "meta": {

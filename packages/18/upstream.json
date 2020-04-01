@@ -384,9 +384,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1v5vxh9z8sjbl4ix587143pwam96bg1hiwrsp6w1c0xspxlgy4d8",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/61440d466f6cd7d51b19beac7a6cacfa/cospend-0.4.2.tar.gz",
-      "version": "0.4.2"
+      "sha256": "02swvcyhfrlkllags69c0lfn46pxxyqgvsczk1akmjprmf0lvwiy",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/7021b42cf80ff72e1becf559d17b65d9/cospend-0.4.4.tar.gz",
+      "version": "0.4.4"
     },
     "dashboardcharts": {
       "meta": {
@@ -2071,9 +2071,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1xfsvmbjm3vklic15ahqbh1gh9x4f1gd9r6ibfd47mpqjxggmqi1",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.5/spreed-8.0.5.tar.gz",
-      "version": "8.0.5"
+      "sha256": "0fgv95b5i4x4rg6bc61vlkc3877k6nxmh56w6wgqrlgjgc1xmnw4",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.6/spreed-8.0.6.tar.gz",
+      "version": "8.0.6"
     },
     "support": {
       "meta": {
@@ -2412,9 +2412,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "02cr15jfcvplhqw2aaww9v8vvvai3bsmfv4s8ljbx1mfjm3l69ch",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.3/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.3"
+      "sha256": "169fbp5f0xwv7v9ymrbi73xn53nwhdnj6j1zwhvabrrj0gjb46a3",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.4/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.4"
     },
     "user_external": {
       "meta": {
