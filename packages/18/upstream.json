@@ -226,9 +226,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "1rszkrpggahv1csz71prarlmf334xli9ldxb8jp93ac3rsrk474j",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.5.0/bruteforcesettings.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1as64ly0av2sdx2rdlj2sg1mcniqnayfagy09jfbp8kbk56a7fi1",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.6.0/bruteforcesettings.tar.gz",
+      "version": "1.6.0"
     },
     "calendar": {
       "meta": {
@@ -655,9 +655,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "0p7zcsv6yxbzwm8rabkhp9i3rv6bckj66qv1qm7nqs4bcj8qixzp",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.2.1/files_antivirus.tar.gz",
-      "version": "2.2.1"
+      "sha256": "0583kfqjiswxjdg7aj2f57wx5zy899z5vhlbr490big33ddlbkrf",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.3.0/files_antivirus.tar.gz",
+      "version": "2.3.0"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1092,6 +1092,21 @@
       "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/0361f9dc50633f0f39d929442935435c/gpxpod-4.2.1.tar.gz",
       "version": "4.2.1"
     },
+    "grauphel": {
+      "meta": {
+        "description": "Tomboy REST API server to sync notes between devices.\n\n  Tomboy, Conboy and Tomdroid clients are supported.",
+        "homepage": "https://cweiske.de/grauphel.htm",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Grauphel: Tomboy note server",
+        "summary": "Tomboy REST API server to sync notes between devices"
+      },
+      "sha256": "1ma5s8nywxwibrcp1l3i0wjp95zka5ydz26klpi7i1mqpsiqqx40",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.4.tar.gz",
+      "version": "0.7.4"
+    },
     "group_everyone": {
       "meta": {
         "description": "Adds a virtual \"Everyone\" group.",
@@ -1450,9 +1465,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1bcyh7i1pgfj5wnpl7fzajjc3y3wwbm4pc6j87w47805ypq7nbpv",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.27/ocr.tar.gz",
-      "version": "6.0.27"
+      "sha256": "1385rik328852c1ymz9rmw184fr2kh1v9hkyac3n3n1zqrx7kawm",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.28/ocr.tar.gz",
+      "version": "6.0.28"
     },
     "ocsms": {
       "meta": {
@@ -1652,9 +1667,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "07yp802cfl9s2azkr1frjnfl7rxd52mp7vdsmpdkgl8vggczc424",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.2.0/previewgenerator.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1p1ff0kh06xvjg9yd8ifs9a42sp37agdhhcp2xnlv10g430ri1v7",
+      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.3.0/previewgenerator.tar.gz",
+      "version": "2.3.0"
     },
     "pride": {
       "meta": {
@@ -2071,9 +2086,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0fgv95b5i4x4rg6bc61vlkc3877k6nxmh56w6wgqrlgjgc1xmnw4",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.6/spreed-8.0.6.tar.gz",
-      "version": "8.0.6"
+      "sha256": "0s9amppcsg2jp0wjffxw18vpflwb8h8w8npvaa4b7kvbmmp8rp0r",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.7/spreed-8.0.7.tar.gz",
+      "version": "8.0.7"
     },
     "support": {
       "meta": {
@@ -2252,9 +2267,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "1q1mc04kz4zmhbzrp8i570kk2f99fr6x4a5iahc080dxs0hp72j7",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v2.0.0/twofactor_admin.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0gg5i0sj1k84lm09fhq737pwwa19j5lrpi5zjhvrgaczpc9wjf73",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v2.1.0/twofactor_admin.tar.gz",
+      "version": "2.1.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -2310,9 +2325,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "18zsgz0nn8ydr71sccxgvh0z7h7i0clf0h9q4317af3dzm5xiz0x",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v2.2.0/twofactor_nextcloud_notification.tar.gz",
-      "version": "2.2.0"
+      "sha256": "18l27hgb7w2nmd2ch2prhcyq32mc0qh9yq4gn2ksxjyp8bkryrbm",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v2.3.0/twofactor_nextcloud_notification.tar.gz",
+      "version": "2.3.0"
     },
     "twofactor_totp": {
       "meta": {
@@ -2427,9 +2442,9 @@
         "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "1z3pv6ljy26lm7shxk1nwg5cibzavyav3z20z465882nzk2dq23g",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.8.0/user_external-0.8.0.tar.gz",
-      "version": "0.8.0"
+      "sha256": "03dm0xffcwvs1bxqlarq2fc41f96j77wks4nr95h0gxag7xfxqi0",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.9.0/user_external-0.9.0.tar.gz",
+      "version": "0.9.0"
     },
     "user_ispconfig": {
       "meta": {
@@ -2484,9 +2499,9 @@
         "name": "User retention",
         "summary": "Deletes users that did not log in in the last days."
       },
-      "sha256": "1fq29hxzqbrln8nmqp4h7rkg067r0g7s0a90zkjl9a4ywpp24cyw",
-      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.1.2/user_retention-1.1.2.tar.gz",
-      "version": "1.1.2"
+      "sha256": "14rapmcpfwmvfcczibdg8r1ywqz25iisy4i6bm2d7ksfrs3snjam",
+      "url": "https://github.com/nextcloud/user_retention/releases/download/v1.1.3/user_retention-1.1.3.tar.gz",
+      "version": "1.1.3"
     },
     "user_saml": {
       "meta": {
@@ -2662,6 +2677,21 @@
       "sha256": "1fwl8l4ifxwg0w7vfwdcny5p0cr2ajijyhads33m0k36l1zrz50p",
       "url": "https://github.com/icewind1991/xray/releases/download/v0.2.3/xray.tar.gz",
       "version": "0.2.3"
+    },
+    "zimbradrive": {
+      "meta": {
+        "description": "Add Nextcloud / ownCloud as Briefcase in Zimbra with the full features of both applications.",
+        "homepage": "https://github.com/ZeXtras/zimbra-drive.git",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Zimbra Drive",
+        "summary": "Integration with Zimbra"
+      },
+      "sha256": "1i0dvg6mwrd6skfbh3wpkzqy66mqqhawjrh2rvbl0wzfp2l9vhnr",
+      "url": "https://zextras-artifacts.s3-eu-west-1.amazonaws.com/zimbra_drive/nextcloud/zimbradrive.tar.gz",
+      "version": "0.8.25"
     }
   },
   "nextcloud": {

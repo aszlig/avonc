@@ -211,9 +211,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "1rszkrpggahv1csz71prarlmf334xli9ldxb8jp93ac3rsrk474j",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.5.0/bruteforcesettings.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1as64ly0av2sdx2rdlj2sg1mcniqnayfagy09jfbp8kbk56a7fi1",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.6.0/bruteforcesettings.tar.gz",
+      "version": "1.6.0"
     },
     "calendar": {
       "meta": {
@@ -670,9 +670,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "0p7zcsv6yxbzwm8rabkhp9i3rv6bckj66qv1qm7nqs4bcj8qixzp",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.2.1/files_antivirus.tar.gz",
-      "version": "2.2.1"
+      "sha256": "0583kfqjiswxjdg7aj2f57wx5zy899z5vhlbr490big33ddlbkrf",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.3.0/files_antivirus.tar.gz",
+      "version": "2.3.0"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1205,9 +1205,9 @@
         "name": "Grauphel: Tomboy note server",
         "summary": "Tomboy REST API server to sync notes between devices"
       },
-      "sha256": "1da5hlp8dmkr4qv6ff41pmbi2hdfzfjkm3wgnp86ypxl0aw3gkmj",
-      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.3.tar.gz",
-      "version": "0.7.3"
+      "sha256": "1ma5s8nywxwibrcp1l3i0wjp95zka5ydz26klpi7i1mqpsiqqx40",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.4.tar.gz",
+      "version": "0.7.4"
     },
     "group_everyone": {
       "meta": {
@@ -1626,9 +1626,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1bcyh7i1pgfj5wnpl7fzajjc3y3wwbm4pc6j87w47805ypq7nbpv",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.27/ocr.tar.gz",
-      "version": "6.0.27"
+      "sha256": "1385rik328852c1ymz9rmw184fr2kh1v9hkyac3n3n1zqrx7kawm",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.28/ocr.tar.gz",
+      "version": "6.0.28"
     },
     "ocsms": {
       "meta": {
@@ -1860,9 +1860,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "07yp802cfl9s2azkr1frjnfl7rxd52mp7vdsmpdkgl8vggczc424",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.2.0/previewgenerator.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1p1ff0kh06xvjg9yd8ifs9a42sp37agdhhcp2xnlv10g430ri1v7",
+      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.3.0/previewgenerator.tar.gz",
+      "version": "2.3.0"
     },
     "pride": {
       "meta": {
@@ -2727,9 +2727,9 @@
         "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "1ps2ql1hbcjrypyzvn5mn7kcbjw3gnpv5sbdcwrfyfm9c3f411y2",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.8.0/user_external-0.8.0.tar.gz",
-      "version": "0.8.0"
+      "sha256": "03dm0xffcwvs1bxqlarq2fc41f96j77wks4nr95h0gxag7xfxqi0",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.9.0/user_external-0.9.0.tar.gz",
+      "version": "0.9.0"
     },
     "user_ispconfig": {
       "meta": {
@@ -2974,9 +2974,9 @@
         "name": "Zimbra Drive",
         "summary": "Integration with Zimbra"
       },
-      "sha256": "0cr2mmnkrcb1x56cyiai3brg4pl7db2qjhpzv62jg36b37j0zkhp",
-      "url": "https://zextras-artifacts.s3-eu-west-1.amazonaws.com/zimbradrive/28_Nov_2019_23_MANUAL/zimbradrive.tar.gz",
-      "version": "0.8.24"
+      "sha256": "1i0dvg6mwrd6skfbh3wpkzqy66mqqhawjrh2rvbl0wzfp2l9vhnr",
+      "url": "https://zextras-artifacts.s3-eu-west-1.amazonaws.com/zimbra_drive/nextcloud/zimbradrive.tar.gz",
+      "version": "0.8.25"
     }
   },
   "constraints": {
