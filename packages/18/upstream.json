@@ -1572,7 +1572,7 @@
     },
     "passwords": {
       "meta": {
-        "description": "Passwords is the most advanced password manager for Nextcloud and allows you to manage and store your passwords safely in your own cloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n** Features **\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions\n * ... and many more to come\n\n** Support **\n* [Official Chat](https://t.me/nc_passwords)\n* [Official Forum](https://help.nextcloud.com/c/apps/passwords)\n* [User Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Users/Index)\n* [Administrator Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Administrators/Index)\n\n** Apps &amp; Extensions **\n* [Firefox Extension](https://addons.mozilla.org/de/firefox/addon/nextcloud-passwords/)\n* [Chrome Extension](https://chrome.google.com/webstore/detail/nextcloud-passwords/mhajlicjhgoofheldnmollgbgjheenbi)\n* [Android App](https://play.google.com/store/apps/details?id=com.nextcloudpasswords) by [daper](https://github.com/daper/nextcloud-passwords-app)",
+        "description": "Passwords is the most advanced password manager for Nextcloud and allows you to manage and store your passwords safely in your own cloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions\n * ... and many more to come\n\n**Support**\n * [Official Chat](https://t.me/nc_passwords)\n * [Official Forum](https://help.nextcloud.com/c/apps/passwords)\n * [User Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Users/Index)\n * [Administrator Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Administrators/Index)\n\n**Apps &amp; Extensions**\n * [Firefox Extension](https://addons.mozilla.org/de/firefox/addon/nextcloud-passwords/)\n * [Chrome Extension](https://chrome.google.com/webstore/detail/nextcloud-passwords/mhajlicjhgoofheldnmollgbgjheenbi)\n * [Android App](https://play.google.com/store/apps/details?id=com.nextcloudpasswords) by [daper](https://github.com/daper/nextcloud-passwords-app)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1580,9 +1580,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "00xm597qjxhiirphm4p3hiy03d0q0fv3p2bx1mr67r1xgxw49g42",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/9907/artifacts/raw/passwords.tar.gz",
-      "version": "2020.3.1"
+      "sha256": "0b2369rgpdlk2gdaf868hx10sy863jkcq671k056npl62qwwpqv2",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/9969/artifacts/raw/passwords.tar.gz",
+      "version": "2020.4.0"
     },
     "phonetrack": {
       "meta": {
