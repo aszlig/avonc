@@ -65,9 +65,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "1rpvdjpsvri96wif5rkkqr7rq4z7jpnnqjbbm5i8n5zapivism6i",
-      "url": "https://github.com/Rello/analytics/releases/download/2.1.1/analytics-2.1.1.tar.gz",
-      "version": "2.1.1"
+      "sha256": "0rxf0pnir7y36xv9w89bs4f9s85si647mf4k8msbi9sh5rr88cx7",
+      "url": "https://github.com/Rello/analytics/releases/download/2.2.0/analytics-2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "announcementcenter": {
       "meta": {
@@ -1176,9 +1176,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "0pfvm3ds3kcq773sdm3p1m7dsb52avyk0zqvjpc5bjnx22jpsdfy",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v5.0.5/groupfolders.tar.gz",
-      "version": "5.0.5"
+      "sha256": "10i0pp05vspci07sfbrhmfzzzjl1g9sxi5hl9hc3622hpw56a0s0",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v5.0.7/groupfolders.tar.gz",
+      "version": "5.0.7"
     },
     "groupquota": {
       "meta": {
@@ -1567,9 +1567,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1385rik328852c1ymz9rmw184fr2kh1v9hkyac3n3n1zqrx7kawm",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.28/ocr.tar.gz",
-      "version": "6.0.28"
+      "sha256": "1shqbhzns5nx26r1mckbryypn0jyvd130d4rlx005f24zh0kq8p3",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.29/ocr.tar.gz",
+      "version": "6.0.29"
     },
     "ocsms": {
       "meta": {

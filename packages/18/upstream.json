@@ -65,9 +65,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "1rpvdjpsvri96wif5rkkqr7rq4z7jpnnqjbbm5i8n5zapivism6i",
-      "url": "https://github.com/Rello/analytics/releases/download/2.1.1/analytics-2.1.1.tar.gz",
-      "version": "2.1.1"
+      "sha256": "0rxf0pnir7y36xv9w89bs4f9s85si647mf4k8msbi9sh5rr88cx7",
+      "url": "https://github.com/Rello/analytics/releases/download/2.2.0/analytics-2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "announcementcenter": {
       "meta": {
@@ -1133,9 +1133,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "16vp8j2p4qqsnqf4nsfx0n79sxym4ryv6mkbjyvg3qam6fw98y96",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.3/groupfolders.tar.gz",
-      "version": "6.0.3"
+      "sha256": "165rnypcpfrciypjjiq4znrkb6cnz6jrb9f77vszgr72k60dsdv5",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.4/groupfolders.tar.gz",
+      "version": "6.0.4"
     },
     "groupquota": {
       "meta": {
@@ -1465,9 +1465,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1385rik328852c1ymz9rmw184fr2kh1v9hkyac3n3n1zqrx7kawm",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.28/ocr.tar.gz",
-      "version": "6.0.28"
+      "sha256": "1shqbhzns5nx26r1mckbryypn0jyvd130d4rlx005f24zh0kq8p3",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.29/ocr.tar.gz",
+      "version": "6.0.29"
     },
     "ocsms": {
       "meta": {
@@ -1796,9 +1796,9 @@
         "name": "Ransomware recovery",
         "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
       },
-      "sha256": "0qlizc335kbz4j7wj3nrznisp0j3n8rh83x17zp11gshh2iv6krc",
-      "url": "https://wusa.io/ransomware_detection-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "0wpx4h9ky7lhwrpmrfa0zg9b6rh97p3q8azszpy9ikd2qqxxm5mq",
+      "url": "https://wusa.io/ransomware_detection-0.7.1.tar.gz",
+      "version": "0.7.1"
     },
     "ransomware_protection": {
       "meta": {
