@@ -384,9 +384,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "02swvcyhfrlkllags69c0lfn46pxxyqgvsczk1akmjprmf0lvwiy",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/7021b42cf80ff72e1becf559d17b65d9/cospend-0.4.4.tar.gz",
-      "version": "0.4.4"
+      "sha256": "1r420s6rkgqlriwkjab6mhzh3f4bkl906r1dxzf949xfkcb8y609",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/ba7545aee9f64197ba1a4d316233e634/cospend-0.4.5.tar.gz",
+      "version": "0.4.5"
     },
     "dashboardcharts": {
       "meta": {
@@ -1984,6 +1984,21 @@
       "sha256": "0p2gfq653w0waglff0gqif580awamfx62p5wh8372sn65pkpkcss",
       "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.0/sharingpath.tar.gz",
       "version": "0.2.0"
+    },
+    "side_menu": {
+      "meta": {
+        "description": "Move the top menu to the left side.",
+        "homepage": "https://gitnet.fr/deblan/side_menu",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Side menu",
+        "summary": "Move the top menu to the left side."
+      },
+      "sha256": "1d870cjnw9pslkk63q6n46ya0gyf9ja8bydvjj1616yz2q8w6k4q",
+      "url": "https://gitnet.fr/attachments/f2684aa7-2718-49de-8db5-4d6ae931d1f1",
+      "version": "1.1.2"
     },
     "smb_test": {
       "meta": {

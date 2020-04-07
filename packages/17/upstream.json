@@ -384,9 +384,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "02swvcyhfrlkllags69c0lfn46pxxyqgvsczk1akmjprmf0lvwiy",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/7021b42cf80ff72e1becf559d17b65d9/cospend-0.4.4.tar.gz",
-      "version": "0.4.4"
+      "sha256": "1r420s6rkgqlriwkjab6mhzh3f4bkl906r1dxzf949xfkcb8y609",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/ba7545aee9f64197ba1a4d316233e634/cospend-0.4.5.tar.gz",
+      "version": "0.4.5"
     },
     "dashboardcharts": {
       "meta": {
