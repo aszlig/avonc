@@ -441,9 +441,9 @@
         "name": "Deck",
         "summary": "A kanban style project and personal management tool for Nextcloud"
       },
-      "sha256": "07r3az4fbpbqvv86n8k2gnx27854029gsyfvyphjiza9qk78nhc4",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.8.0/deck.tar.gz",
-      "version": "0.8.0"
+      "sha256": "0bzghpvmmbg0szyf5735afrl204k5gknmvry295146pkxkcmy0rl",
+      "url": "https://github.com/nextcloud/deck/releases/download/v0.8.2/deck.tar.gz",
+      "version": "0.8.2"
     },
     "dicomviewer": {
       "meta": {
@@ -503,6 +503,21 @@
       "sha256": "1h7k7vrb0g01dcg1zgj769pjrj70kg8xk1ghhhkha5wbppz3x0h6",
       "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
       "version": "0.9.5"
+    },
+    "drop_account": {
+      "meta": {
+        "description": "# Description\n\nThis app allows users to delete their accounts by removing all their data.\n\nIt can also send activities to the admins about deleted accounts.",
+        "homepage": "https://framagit.org/tcit/drop_user",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User account deletion",
+        "summary": "An app to allow users to delete their accounts."
+      },
+      "sha256": "1i20fw0lzl5wjkkdgwg5a7gvzrbwklmsrwq1q9930g09gw4q61xa",
+      "url": "https://framagit.org/tcit/drop_user/uploads/0010bcfcdae16a20c9ffd0af8dfcfc33/drop_account.tar.gz",
+      "version": "0.2.1"
     },
     "dropit": {
       "meta": {
@@ -1148,9 +1163,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "165rnypcpfrciypjjiq4znrkb6cnz6jrb9f77vszgr72k60dsdv5",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.4/groupfolders.tar.gz",
-      "version": "6.0.4"
+      "sha256": "1vd3612d1ql1nb9drdl5l8znrvshwq9jdkk73lj1xwz1g8hpzfhq",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.5/groupfolders.tar.gz",
+      "version": "6.0.5"
     },
     "groupquota": {
       "meta": {

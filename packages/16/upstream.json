@@ -500,9 +500,9 @@
         "name": "User account deletion",
         "summary": "An app to allow users to delete their accounts."
       },
-      "sha256": "19pdsm2d3qnqbs1f6fl54qaw8q3z7n7dsi7z5vamsxqn3kkw9whm",
-      "url": "https://framagit.org/tcit/drop_user/uploads/889d959be561d1a6dcb87271523b00b3/drop_account.tar.gz",
-      "version": "0.1.0"
+      "sha256": "1i20fw0lzl5wjkkdgwg5a7gvzrbwklmsrwq1q9930g09gw4q61xa",
+      "url": "https://framagit.org/tcit/drop_user/uploads/0010bcfcdae16a20c9ffd0af8dfcfc33/drop_account.tar.gz",
+      "version": "0.2.1"
     },
     "dropit": {
       "meta": {
