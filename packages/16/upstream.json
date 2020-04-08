@@ -456,9 +456,9 @@
         "name": "DICOM Viewer",
         "summary": "Digital Imaging for Medicine"
       },
-      "sha256": "0q25cm493cafkjsp8zlc54lv2hfawdlqxpb00x2n7zqvxfzajvf4",
-      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.1/dicomviewer.tar.gz",
-      "version": "1.2.1"
+      "sha256": "0zwp73153y2659nphjmgs05ypdrdb9fa4vhdqzdn79vwfh386m2h",
+      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.2/dicomviewer.tar.gz",
+      "version": "1.2.2"
     },
     "discoursesso": {
       "meta": {

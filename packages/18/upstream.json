@@ -445,6 +445,21 @@
       "url": "https://github.com/nextcloud/deck/releases/download/v0.8.0/deck.tar.gz",
       "version": "0.8.0"
     },
+    "dicomviewer": {
+      "meta": {
+        "description": "DICOM Viewer allows to display and manipulate DICOM images with a streamlined sidebar and viewer.\n\nSee [README](https://github.com/ayselafsar/dicomviewer) for a list of full features and future roadmap.",
+        "homepage": "https://github.com/ayselafsar/dicomviewer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "DICOM Viewer",
+        "summary": "Digital Imaging for Medicine"
+      },
+      "sha256": "0zwp73153y2659nphjmgs05ypdrdb9fa4vhdqzdn79vwfh386m2h",
+      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.2/dicomviewer.tar.gz",
+      "version": "1.2.2"
+    },
     "discoursesso": {
       "meta": {
         "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
