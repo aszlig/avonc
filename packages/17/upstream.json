@@ -65,9 +65,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0rxf0pnir7y36xv9w89bs4f9s85si647mf4k8msbi9sh5rr88cx7",
-      "url": "https://github.com/Rello/analytics/releases/download/2.2.0/analytics-2.2.0.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1vmpnckdahf7wifj0l05qgq75a9schfrp9plrbd7wk4m3vz2wd3i",
+      "url": "https://github.com/Rello/analytics/releases/download/2.2.1/analytics-2.2.1.tar.gz",
+      "version": "2.2.1"
     },
     "announcementcenter": {
       "meta": {
@@ -123,9 +123,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "1pca0fkynbafgrx96aiffa5dkgk1wjl485aq6xgv133v4983n8pj",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.9.0/audioplayer-2.9.0.tar.gz",
-      "version": "2.9.0"
+      "sha256": "1bkha3ga8kcmbjxqnia3i7k956z5a23l6alw6g263l1ncnzp1zs0",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.10.0/audioplayer-2.10.0.tar.gz",
+      "version": "2.10.0"
     },
     "audioplayer_editor": {
       "meta": {
@@ -138,9 +138,9 @@
         "name": "Audio Player - ID3 Editor (add-on)",
         "summary": "Change ID3 Metadata"
       },
-      "sha256": "16wi72pf6mj1n4h902zh9k7bh3v131k7igicv6cnl5j10jnwbgq4",
-      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.2.0/audioplayer_editor-0.2.0.tar.gz",
-      "version": "0.2.0"
+      "sha256": "06msd11lqbvm96rp9bwh0mi06q2ysf7b7100hzsxdaxb8n5fsch6",
+      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.2.2/audioplayer_editor-0.2.2.tar.gz",
+      "version": "0.2.2"
     },
     "audioplayer_sonos": {
       "meta": {
@@ -153,9 +153,9 @@
         "name": "Audio Player - SONOS (add-on)",
         "summary": "SONOS Playback"
       },
-      "sha256": "04c0y7mmbglih6zxcxhl99dh6vfv9ppf2fw04bj2whv7if6yp7jm",
-      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.1.0/audioplayer_sonos-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0s8mrssdjq1wwcvqqvckcl8rgvqbdkhbixh901ff8c67kbnnrnn2",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.1.1/audioplayer_sonos-1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -241,9 +241,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "0dz71cqpc6v8rrdnd9h2174ny41wbrk2g5kzhyazjv5awbr4y17y",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.2/calendar.tar.gz",
-      "version": "2.0.2"
+      "sha256": "18hrbbcv9xa1h0z1z4xgi9hzjkdwihga9a7skxhfry2hw63iqipa",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.3/calendar.tar.gz",
+      "version": "2.0.3"
     },
     "camerarawpreviews": {
       "meta": {
@@ -299,9 +299,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0r5rw4k3gzsr8bklldcn138ji3cc13dls99h28mjf1aazfl8c136",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.12/circles-0.17.12.tar.gz",
-      "version": "0.17.12"
+      "sha256": "1qaxmh8apycll6pf4fmdgcpbdq0sx3vykqgni5pb6iy60z8bradj",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.17.13/circles-0.17.13.tar.gz",
+      "version": "0.17.13"
     },
     "cloud_federation_api": {
       "meta": {
@@ -470,9 +470,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "1zxpr3ngxgr1gdzmvb89p581kw8qczsh6zwbkzhgkhdn0zsrbwfl",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.21/discoursesso-0.9.21.tar.gz",
-      "version": "0.9.21"
+      "sha256": "0wmicxxhqc9iig63rd6ysh0vdf57ps48a878689ldj36cz4d7r65",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.22/discoursesso-0.9.22.tar.gz",
+      "version": "0.9.22"
     },
     "drawio": {
       "meta": {
@@ -717,6 +717,21 @@
         "summary": "Adds basic external storage support"
       }
     },
+    "files_external_dropbox": {
+      "meta": {
+        "description": "This application enables integrating Dropbox external storages via the Dropbox API v2.\nOnce a Dropbox account is integrated by an administrator or the user in self-service, users see a folder structure that mirrors their Dropbox hierarchy.\nUsers can then selectively sync files to their desktop or access them on mobile devices like any other file in Nextcloud.\nThe files will remain in the Dropbox storage but are now accessible in a secure and fully logged and traceable way through Nextcloud.\n\nAdministrators and users (when enabled) can find external storage configuration options in the 'Storage' section of admin and user settings, respectively.\n\n**Important**:\nConnecting Dropbox with OAuth2 is a little more work because you have to create a Dropbox app.\n- Log into the [Dropbox Developers](http://www.dropbox.com/developers) page and click Create Your App\n- Then choose which folders to share, or to share everything in your Dropbox.\n- Name Your App and then click Create App\n- Under the section **OAuth2** Redirect URIs add a new URL\n  For adding global storages:\n  ```https://mynextcloud.example.com/settings/admin/externalstorages```\n  and for user storages:\n  ```https://mynextcloud.example.com/settings/admin/externalstorages```\n   _(Replace `https://mynextcloud.example.com/ with your valid Nextcloud installation path)_\n- Then go to nextcloud ```settings/admin/externalstorages``` and add a new storage **Dropbox V2**\n- Fill the details Client Id, Client Secrets from your Dropbox App page (search for \"App key\" and \"App secret\")\n- Click Grant Access and then you will be redirected to the OAuth login\n- After completing the OAuth you will be redirect back to Storage Section and you should see **green** mark along your storage configuration\n- That's it",
+        "homepage": "https://github.com/DJaeger/files_external_dropbox/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External Storage backend for Dropbox",
+        "summary": "Integrate Dropbox as an external storage"
+      },
+      "sha256": "0gi611h5qligd766l5ffiz9xyspz6nskpg0mn5zhs4555nqm0n3m",
+      "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.3.0/files_external_dropbox.tar.gz",
+      "version": "1.3.0"
+    },
     "files_frommail": {
       "meta": {
         "description": "Allows an admin to link a drop-mailbox to Nextcloud.\n\t\tThis way, you can set a mail address and every mails+attachments send to this mail address will be automatically be saved on the cloud.",
@@ -818,9 +833,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "1xxpqvk9anavrkd9k487pqcizc5rx6wp2lqjv5gggmnwxdwzchpy",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.20/files_mindmap-0.0.20.tar.gz",
-      "version": "0.0.20"
+      "sha256": "1lz56jm9p9kpz2iszh3yhccns3jd5j9nzf0sfmziffv2p5dxnfks",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.21/files_mindmap-0.0.21.tar.gz",
+      "version": "0.0.21"
     },
     "files_pdfviewer": {
       "meta": {
@@ -860,9 +875,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "1i3qkch2vavglg1hgpk8nrnz0q06nvnjh151zhf5805xi8n2sb36",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/wikis/uploads/a6ed5ada9417c6aba8c62bce0db02461/files_readmemd.tar.gz",
-      "version": "1.1.3"
+      "sha256": "00w7xy1jrkx8yh35gk7hg4n5l4kywqkk8wql34sqp3638rk0iiw2",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/e1d280e855f37e5f0a421c757868113c/files_readmemd.tar.gz",
+      "version": "1.1.4"
     },
     "files_retention": {
       "meta": {
@@ -1239,6 +1254,20 @@
       "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.4.0/hsts-0.4.0.tar.gz",
       "version": "0.4.0"
     },
+    "imageconverter": {
+      "meta": {
+        "description": "Very simple app to convert your HEIC/ HEIF files to JPEG using ImagickMagick and the PHP Imagick extension. \n        Needs imagemagick with HEIC support installed and the PHP bindings (Imagick extension) enabled.\n        Check Github for more details.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "HEIC/HEIF Image Converter",
+        "summary": "Converts your HEIC/ HEIF images to JPEG"
+      },
+      "sha256": "00nr6vzwgrjma50674351mww8d6isrl0dh71xqlj82qgrkykk175",
+      "url": "https://github.com/major-mayer/imageConverter/releases/download/v1.2/imageconverter.tar.gz",
+      "version": "1.2.0"
+    },
     "impersonate": {
       "meta": {
         "description": "By installing the impersonate app of your Nextcloud you enable administrators to impersonate other users on the Nextcloud server. This is especially useful for debugging issues reported by users.\n\nTo impersonate a user an administrator has to simply follow the following four steps:\n\n1. Login as administrator to Nextcloud\n2. Open the user administration interface\n3. Select the impersonate button on the affected user\n4. Confirm the impersonation\n\nThe administrator is then logged-in as the user, to switch back to the regular user account they simply have to press the logout button.\n\n**Note:**\n\n- This app is not compatible with instances that have encryption enabled.\n- While impersonate actions are logged note that actions performed impersonated will be logged as the impersonated user.\n- Impersonating an user is only possible after their first login.",
@@ -1356,6 +1385,21 @@
       "url": "https://github.com/nextcloud/limit_login_to_ip/releases/download/v3.0.0/limit_login_to_ip-3.0.0.tar.gz",
       "version": "3.0.0"
     },
+    "login_notes": {
+      "meta": {
+        "description": "This app will show admin defined notes the log-in page",
+        "homepage": "https://framagit.org/framasoft/nextcloud/login-notes",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Login notes",
+        "summary": "Display notes on log-in page"
+      },
+      "sha256": "1356jj7kcckrxc1rr4l6v0dhb9hvh27zb7rx906v798kinb6af9q",
+      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/14ad24280535e322fbdc387b2ad38b3d/login_notes.tar.gz",
+      "version": "0.1.0"
+    },
     "logreader": {
       "meta": {
         "alwaysEnable": false,
@@ -1393,9 +1437,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1ph1717rv370rlhjx1d58bwivy6d6mn71q94wsg22jdfggnn8rg4",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.1.4/mail.tar.gz",
-      "version": "1.1.4"
+      "sha256": "0gsvl3g5p5n18b9v2b38183ks23kdh40jy4zamsyzbflzfrd8d8j",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.0/mail.tar.gz",
+      "version": "1.3.0"
     },
     "maps": {
       "meta": {
@@ -1582,9 +1626,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1shqbhzns5nx26r1mckbryypn0jyvd130d4rlx005f24zh0kq8p3",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.29/ocr.tar.gz",
-      "version": "6.0.29"
+      "sha256": "1qwh8dqafj97x06yvvwry3h3349mrm2r3a1prg128lq4xyj4pvh3",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.30/ocr.tar.gz",
+      "version": "6.0.30"
     },
     "ocsms": {
       "meta": {
@@ -1615,6 +1659,21 @@
       "sha256": "1dqrlv9358fpjd9ri0h5wv2djf9x77rxq2v3cgd7gcqj845n8zkq",
       "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.2.6/oidc_login.tar.gz",
       "version": "1.2.6"
+    },
+    "ojsxc": {
+      "meta": {
+        "description": "Facebook-like chat with end-to-end encrypted conversation, video calls, multi-user rooms, XMPP and internal server backend.",
+        "homepage": "https://www.jsxc.org",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "JavaScript XMPP Chat",
+        "summary": "Facebook-like chat"
+      },
+      "sha256": "09w7grkamcn3gnpp9ca3yc192k2nylxddxs2jinklw5456hkbhh5",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.0.0/ojsxc-4.0.0.tar.gz",
+      "version": "4.0.0"
     },
     "onlyoffice": {
       "meta": {
@@ -2608,9 +2667,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "169fbp5f0xwv7v9ymrbi73xn53nwhdnj6j1zwhvabrrj0gjb46a3",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.4/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.4"
+      "sha256": "1havm11sr6imnmz0ppf0msl8kp2h32nba0pvqilad0vb1ppsn1b7",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.5/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.5"
     },
     "user_external": {
       "meta": {
@@ -2623,9 +2682,9 @@
         "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "03dm0xffcwvs1bxqlarq2fc41f96j77wks4nr95h0gxag7xfxqi0",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.9.0/user_external-0.9.0.tar.gz",
-      "version": "0.9.0"
+      "sha256": "1vqah3vbdd46k6v8bqk5v6v3ln09kzi0l72z6dl4lq33z8vb9v1y",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.9.1/user_external-0.9.1.tar.gz",
+      "version": "0.9.1"
     },
     "user_ispconfig": {
       "meta": {
@@ -2709,9 +2768,9 @@
         "name": "User and Group SQL Backends",
         "summary": "Control users and groups by SQL queries"
       },
-      "sha256": "0x58s94x0lq1g6psl0rh2zf1yyv2kb8yjgjgy73gmpwsm7xqgja3",
-      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.4.1/user_sql-4.4.1.tar.gz",
-      "version": "4.4.1"
+      "sha256": "1yln0gwfqkd9pbn8hbxpn9h8v2z2977fblz60dg157avqhxv9vmr",
+      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.5.0/user_sql-4.5.0.tar.gz",
+      "version": "4.5.0"
     },
     "user_usage_report": {
       "meta": {
