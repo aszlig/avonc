@@ -355,9 +355,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "147fc9jigqzzsj4lq3xiqsf9ka8vw9p2naz3vl0wgas1984932wg",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.2.0/contacts.tar.gz",
-      "version": "3.2.0"
+      "sha256": "0nmh34yw63w4nni0xqjrab7gsnnknv48gzb477ix5d4cgqscy05a",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.3.0/contacts.tar.gz",
+      "version": "3.3.0"
     },
     "cookbook": {
       "meta": {
@@ -384,9 +384,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1r420s6rkgqlriwkjab6mhzh3f4bkl906r1dxzf949xfkcb8y609",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/ba7545aee9f64197ba1a4d316233e634/cospend-0.4.5.tar.gz",
-      "version": "0.4.5"
+      "sha256": "1ykfv901g887jpjvnjipliv76mc879fxbbsr24cghphlg1dpfmic",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/a36699f6b70c2b5b94a471be0b52a75f/cospend-0.4.6.tar.gz",
+      "version": "0.4.6"
     },
     "dashboardcharts": {
       "meta": {
@@ -1437,9 +1437,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0gsvl3g5p5n18b9v2b38183ks23kdh40jy4zamsyzbflzfrd8d8j",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.0/mail.tar.gz",
-      "version": "1.3.0"
+      "sha256": "0avkzz86ynxl3gnh69cq7qb28ss5zqm46nvxscj9dwg4cj30y2ip",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.2/mail.tar.gz",
+      "version": "1.3.2"
     },
     "maps": {
       "meta": {
