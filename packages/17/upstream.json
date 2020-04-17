@@ -2535,9 +2535,9 @@
         "name": "Two-Factor Gateway",
         "summary": "Two-factor gateway providers (SMS, Telegram, Signal)"
       },
-      "sha256": "1nygs83qw0y16npzqwd7zr1p6sw4da7qb8g0s1zvzbal83yh9a9y",
-      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.15.1/twofactor_gateway.tar.gz",
-      "version": "0.15.1"
+      "sha256": "1zbhn07p755mjbi16xgi53bap1x8s95ykwcasrz95x7nanxkwhg8",
+      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.16.0/twofactor_gateway.tar.gz",
+      "version": "0.16.0"
     },
     "twofactor_nextcloud_notification": {
       "meta": {
