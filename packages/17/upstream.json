@@ -1116,9 +1116,9 @@
         "name": "Global Site Selector",
         "summary": "Nextcloud Portal to redirect users to the right instance"
       },
-      "sha256": "17n110q0b0k1rxm61a6j91xfvbf364s17haigaarxja23qc53fp9",
-      "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.2.0/globalsiteselector-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1xn4n69z62bqj73qz37fk9akga22xsiwy59kpwfklxxn2n1pkww2",
+      "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.3.0/globalsiteselector-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "gpxedit": {
       "meta": {

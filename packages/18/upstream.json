@@ -1092,6 +1092,21 @@
       "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.2.0/geoblocker.tar.gz",
       "version": "0.2.0"
     },
+    "globalsiteselector": {
+      "meta": {
+        "description": "The Global Site Selector allows you to run multiple small Nextcloud instances and redirect users to the right server",
+        "homepage": "https://nextcloud.com/globalscale/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Global Site Selector",
+        "summary": "Nextcloud Portal to redirect users to the right instance"
+      },
+      "sha256": "1xn4n69z62bqj73qz37fk9akga22xsiwy59kpwfklxxn2n1pkww2",
+      "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.3.0/globalsiteselector-1.3.0.tar.gz",
+      "version": "1.3.0"
+    },
     "gpxedit": {
       "meta": {
         "description": "# GpxEdit Nextcloud application\n\nSimple Nextcloud app to load, edit and save GPX files on an interactive map. You can load/save files from your Nextcloud file storage. GPX, KML, CSV (unicsv format) and geotagged JPG are supported for loading. JPG files are loaded as waypoints. Files can be loaded in GpxEdit interface or in Files app.\n\nGo to [GpxEdit Crowdin project](https://crowdin.com/project/gpxedit) if you want to help to translate this app in your language.\n\nThis is not a perfect GPX editor.\n\nWhat's saved :\n- metadata\n    - name\n    - link url\n    - link text\n- tracks\n    - name\n    - comment\n    - description\n    - points\n        - coordinates\n        - elevation (just preserves loaded values)\n        - time (just preserves loaded values)\n- waypoint\n    - coordinates\n    - name\n    - comment\n    - description\n    - symbol\n    - elevation (just preserves loaded value)\n    - time (just preserves loaded values)\n\nGpxEdit does load/save time data. Elevation data is loaded and saved but every new waypoint/track/trackpoint added by user actions in GpxEdit will have neither elevation nor time data. There is an \"approximate\" option to set elevation to new points if surrounding points have elevation data.\n\nTracks are saved with one segment (trkseg tag).\n\nGpxEdit :\n- allows you to add extra symbols in admin settings (section : additional)\n- works with server-side encryption.\n- works with shared files.\n- loads GPX, KML, unicsv CSV, geotagged JPG files (no more Gpsbabel dependency)\n- loads tracks, routes and waypoints\n- saves tracks, routes and waypoints\n- supports waypoint symbols\n- uses [Leaflet.Draw](https://github.com/Leaflet/Leaflet.draw) and [Leaflet.draw.plus](https://github.com/Dominique92/Leaflet.draw.plus) amazing plugins\n- uses many other Leaflet plugins like Minimap, Sidebar2, MeasureControl, MousePositionControl\n- adds possibility to edit .gpx files directly from the \"Files\" app\n- is able to cut lines in two\n\nThis app is tested on Nextcloud 14 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxedit-oc/wikis/admindoc) for installation details, integration in \"Files\" app and GpxEdit admin settings.\n\n## Alternatives\n\nIf you look for more powerfull GPX editors, take a look at :\n- [Viking](https://sourceforge.net/projects/viking/) which is the best IMHO\n- [QLandKarteGT](https://bitbucket.org/kiozen/qlandkarte-gt)\n- [QMapShack](https://bitbucket.org/maproom/qmapshack/wiki/Home)\n- [JOSM](https://josm.openstreetmap.de/)\n\n\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
@@ -2085,9 +2100,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "1b6bcbg1qdz9a1pcj6pzkhdfb5c5k8zilpycy73pyf9fnh9va5ay",
-      "url": "https://gitnet.fr/attachments/eff436e4-4a51-423c-b172-ae6e1a1a926a",
-      "version": "1.2.4"
+      "sha256": "1bbj1v6h05cdpzqsrbvwkwxsk7d3576waj3k58hiplwc1ccwiipv",
+      "url": "https://gitnet.fr/attachments/8c50a021-4023-43dc-9c5c-91326721f34d",
+      "version": "1.3.0"
     },
     "smb_test": {
       "meta": {
