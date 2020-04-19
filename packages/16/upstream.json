@@ -602,9 +602,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1y34vpwipkmi7aj3n98gvrrxgxs6dxnxn3nwqfbndbx2liqj417w",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.3/extract.tar.gz",
-      "version": "1.2.3"
+      "sha256": "1y4h67jx1i22lmflq2w5sf3ri71yp5al0b0y1gggaaakvpfmza52",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.4/extract.tar.gz",
+      "version": "1.2.4"
     },
     "federatedfilesharing": {
       "meta": {
@@ -1425,9 +1425,9 @@
         "name": "Login notes",
         "summary": "Display notes on log-in page"
       },
-      "sha256": "1356jj7kcckrxc1rr4l6v0dhb9hvh27zb7rx906v798kinb6af9q",
-      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/14ad24280535e322fbdc387b2ad38b3d/login_notes.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0mngn819g779hag8mnbzrqgrbqsf0wzi35zvng1davazzdw7s4s5",
+      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/48edc2cab4ac2c03fdd1a0d04a95e7da/login_notes.tar.gz",
+      "version": "0.2.1"
     },
     "logreader": {
       "meta": {
@@ -2857,9 +2857,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "1hpki0hy6iyni6l3gsi4gmrkgzq6yrmjy38ldwp5q95r19y65dmb",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.3/video_converter.tar.gz",
-      "version": "0.1.3"
+      "sha256": "05zxxcsw4h7xn3qwx453jfj95jxgia6f0vzihdc6ln9l48wl5cvv",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.4/video_converter.tar.gz",
+      "version": "0.1.4"
     },
     "viewer": {
       "meta": {
