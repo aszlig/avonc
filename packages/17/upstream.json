@@ -1626,9 +1626,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1qwh8dqafj97x06yvvwry3h3349mrm2r3a1prg128lq4xyj4pvh3",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.30/ocr.tar.gz",
-      "version": "6.0.30"
+      "sha256": "0ggzkmpr48hbwbwqjicwr16hmrrkspcjxa7l4mkajczly05kv30f",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.31/ocr.tar.gz",
+      "version": "6.0.31"
     },
     "ocsms": {
       "meta": {
@@ -2191,9 +2191,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "0p2gfq653w0waglff0gqif580awamfx62p5wh8372sn65pkpkcss",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.0/sharingpath.tar.gz",
-      "version": "0.2.0"
+      "sha256": "1gwrxhlwikp4cn71vyz6f50vkvcnk897pwz07qjdh2c1f5mk8z4f",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.1/sharingpath.tar.gz",
+      "version": "0.2.1"
     },
     "smb_test": {
       "meta": {
