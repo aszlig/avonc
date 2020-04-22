@@ -86,17 +86,17 @@
     },
     "appointments": {
       "meta": {
-        "description": "Book appointments into you calendar via secure online form. Attendees can confirm or cancel their appointments via an email link.",
+        "description": "Book appointments into your calendar via secure online form. Attendees can confirm or cancel their appointments via an email link.",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Appointments",
-        "summary": "Book appointments into you calendar via secure online form."
+        "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0rs711d49s7zc83bakvpd4cdyl50qhk04nkyapv50jlxhjr6xi62",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/dafc5c9d1db80848b1c8d96f4da0a003eaaeb3b7/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.1.10"
+      "sha256": "1v2wczqi5ynvlay3pijm177y8gc1r2rjp8cjqscx43jav4awb2rm",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/4be5cb2f577d9d2a896d8d74a60af4937b905133/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.1"
     },
     "apporder": {
       "meta": {
@@ -576,6 +576,21 @@
       "url": "https://github.com/nextcloud/end_to_end_encryption/releases/download/v1.4.0/end_to_end_encryption-1.4.0.tar.gz",
       "version": "1.4.0"
     },
+    "epubreader": {
+      "meta": {
+        "description": "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+        "homepage": "https://github.com/e-alfred/epubreader",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Reader (ebook reader)",
+        "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
+      },
+      "sha256": "0xzg3bdlc3z6wqlb67a9rqf233v892g2h6prbq2zdrlv9qnb5nsq",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.2/epubreader-1.4.2.tar.gz",
+      "version": "1.4.2"
+    },
     "event_update_notification": {
       "meta": {
         "description": "Receive a notification when an event in a shared calendar was added, modified or deleted.",
@@ -731,6 +746,21 @@
         "name": "External storage support",
         "summary": "Adds basic external storage support"
       }
+    },
+    "files_external_dropbox": {
+      "meta": {
+        "description": "This application enables integrating Dropbox external storages via the Dropbox API v2.\nOnce a Dropbox account is integrated by an administrator or the user in self-service, users see a folder structure that mirrors their Dropbox hierarchy.\nUsers can then selectively sync files to their desktop or access them on mobile devices like any other file in Nextcloud.\nThe files will remain in the Dropbox storage but are now accessible in a secure and fully logged and traceable way through Nextcloud.\n\nAdministrators and users (when enabled) can find external storage configuration options in the 'Storage' section of admin and user settings, respectively.\n\n**Important**:\nConnecting Dropbox with OAuth2 is a little more work because you have to create a Dropbox app.\n- Log into the [Dropbox Developers](http://www.dropbox.com/developers) page and click Create Your App\n- Then choose which folders to share, or to share everything in your Dropbox.\n- Name Your App and then click Create App\n- Under the section **OAuth2** Redirect URIs add a new URL\n  For adding global storages:\n  ```https://mynextcloud.example.com/settings/admin/externalstorages```\n  and for user storages:\n  ```https://mynextcloud.example.com/settings/admin/externalstorages```\n   _(Replace `https://mynextcloud.example.com/ with your valid Nextcloud installation path)_\n- Then go to nextcloud ```settings/admin/externalstorages``` and add a new storage **Dropbox V2**\n- Fill the details Client Id, Client Secrets from your Dropbox App page (search for \"App key\" and \"App secret\")\n- Click Grant Access and then you will be redirected to the OAuth login\n- After completing the OAuth you will be redirect back to Storage Section and you should see **green** mark along your storage configuration\n- That's it",
+        "homepage": "https://github.com/DJaeger/files_external_dropbox/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External Storage backend for Dropbox",
+        "summary": "Integrate Dropbox as an external storage"
+      },
+      "sha256": "02hykmc8ks93pb3jpxr6nmpvpmgzf9942vpy3d5ilhi89ckjkx1f",
+      "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.4.0/files_external_dropbox.tar.gz",
+      "version": "1.4.0"
     },
     "files_frommail": {
       "meta": {
@@ -1380,9 +1410,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0avkzz86ynxl3gnh69cq7qb28ss5zqm46nvxscj9dwg4cj30y2ip",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.2/mail.tar.gz",
-      "version": "1.3.2"
+      "sha256": "1d9h706jbm06bg2gb4p0gpald7hh3wislq0cchwdg9v8lf45jk57",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.3/mail.tar.gz",
+      "version": "1.3.3"
     },
     "maps": {
       "meta": {
@@ -1416,7 +1446,7 @@
     },
     "music": {
       "meta": {
-        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album or artist, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is not optimized for such collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
+        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nThe Music app also integrates with the mediaSession API (available at least on recent versions of Chrome). When the API is supported by the browser, this allows controlling the Music app via the media playback keys on keyboard even when the browser is not focused, and shows the playback controls also on the lock scren of the OS (at least on Windows 10 and Android).\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is not optimized for such collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
         "homepage": "https://github.com/owncloud/music",
         "isShipped": false,
         "licenses": [
@@ -1425,9 +1455,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0w0n6ll62r84ff0dsi8clwf8d3mrqnrvp433qnwcy0k68ba6r1a0",
-      "url": "https://github.com/paulijar/music/files/4383660/music_0.13.2_nc-signed.tar.gz",
-      "version": "0.13.2"
+      "sha256": "1f2vzaz5na9kajhdcyb4ms023ds86q5si79bbdakc3770ziyqvzk",
+      "url": "https://github.com/paulijar/music/files/4512262/music_0.14.0_nc-signed.tar.gz",
+      "version": "0.14.0"
     },
     "news": {
       "meta": {
@@ -1539,9 +1569,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "1k8jhna0n0gwrbld2jw4pp7w0wq3791z114wf9zlvwf217amsl90",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.6/ocdownloader_1.7.6.tar.gz",
-      "version": "1.7.6"
+      "sha256": "08vpxc3p6s08dzdiydllph7ggikzycw8kz0mvj7ji29wbcwm4c90",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.7/ocdownloader_1.7.7.tar.gz",
+      "version": "1.7.7"
     },
     "ocr": {
       "meta": {
@@ -1554,9 +1584,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0ggzkmpr48hbwbwqjicwr16hmrrkspcjxa7l4mkajczly05kv30f",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.31/ocr.tar.gz",
-      "version": "6.0.31"
+      "sha256": "1wz4nxqa1pjgq8ciljbzavmmdl8028hdbgjja67dyqnyqq1br17y",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.33/ocr.tar.gz",
+      "version": "6.0.33"
     },
     "ocsms": {
       "meta": {
@@ -1788,6 +1818,21 @@
       "sha256": "1fsn68hagkadhr4fbsfw0nc56nwda63j4pwcpjkix88336vdgn62",
       "url": "https://github.com/skjnldsv/pride/releases/download/0.0.3/pride.tar.gz",
       "version": "0.0.3"
+    },
+    "printer": {
+      "meta": {
+        "description": "Please check the Readme on Github on how to set up this app!\n       Allows users to print files using the CUPS/LPR printing ecosystem.\n\n       Just open the details view of the file (Sidebar). There should be a new tab called \"Printer\".\n       Select the orientation of your printed file and it will be sent to your printer.\n       If you want to print it again, just click on the reload button.",
+        "homepage": "https://github.com/e-alfred/nextcloud-printer/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Printer",
+        "summary": "Allows to print files directly inside Nextcloud to a printer."
+      },
+      "sha256": "0h477m91mh9sqqs0bznh6afcmrv2aan6f1z3ij363y182rpd4bfj",
+      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.2/nextcloud-print_0.0.2.tar.gz",
+      "version": "0.0.2"
     },
     "privacy": {
       "meta": {
@@ -2100,9 +2145,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "1bbj1v6h05cdpzqsrbvwkwxsk7d3576waj3k58hiplwc1ccwiipv",
-      "url": "https://gitnet.fr/attachments/8c50a021-4023-43dc-9c5c-91326721f34d",
-      "version": "1.3.0"
+      "sha256": "0n95jwpk9pj977941v7s40m99hsnx1c0kicvvgpmns633gcbf2p3",
+      "url": "https://gitnet.fr/attachments/7c163b52-79dc-4161-a27a-5f5d361b7e13",
+      "version": "1.3.2"
     },
     "smb_test": {
       "meta": {
@@ -2205,9 +2250,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0s9amppcsg2jp0wjffxw18vpflwb8h8w8npvaa4b7kvbmmp8rp0r",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.7/spreed-8.0.7.tar.gz",
-      "version": "8.0.7"
+      "sha256": "0c4vsc91ysxhkvy3cij5dhkp1dxqq9fghajfwnph2w4g9rnci5bi",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.8/spreed-8.0.8.tar.gz",
+      "version": "8.0.8"
     },
     "support": {
       "meta": {
@@ -2274,9 +2319,9 @@
         "name": "Simple poll for Nextcloud Talk",
         "summary": "A simple chat based poll for Nextcloud Talk"
       },
-      "sha256": "0jacxh8fxlzfiylcmyczxh4fi7hrsn9qm8az1wcs5nvdxn0kc2rn",
-      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.1.0/talk_simple_poll-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1jl9a3vlj7wp7h8fyh1q7qxgb37zv74radyxvv7hc5qzy2423cpv",
+      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.1.1/talk_simple_poll-1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "tasks": {
       "meta": {
