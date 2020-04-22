@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1v2wczqi5ynvlay3pijm177y8gc1r2rjp8cjqscx43jav4awb2rm",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/4be5cb2f577d9d2a896d8d74a60af4937b905133/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.1"
+      "sha256": "0hrijam4h79cy75l22cdp5nqlqnq43d1cq0nzw0dzc39nizpd902",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/98bd4e392905e8208b5410af8415d9bb23949cc3/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.2"
     },
     "apporder": {
       "meta": {
@@ -949,6 +949,20 @@
       "sha256": "0pn27l5hsis9akfn4fyvrcw99pzqwijkfcacnxbva64fwsfb215b",
       "url": "https://github.com/icewind1991/files_snapshots/releases/download/v0.3.0/files_snapshots.tar.gz",
       "version": "0.3.0"
+    },
+    "files_texteditor": {
+      "meta": {
+        "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Plain text editor",
+        "summary": "Open, save and edit text files"
+      },
+      "sha256": "1408ml3ag9pchpj321j1advavl49qw3rad4960xai8lw2nagrccz",
+      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.11.0/files_texteditor.tar.gz",
+      "version": "2.11.0"
     },
     "files_trackdownloads": {
       "meta": {
