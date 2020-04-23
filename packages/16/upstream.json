@@ -1556,9 +1556,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1iqzf8i1zjz9x4fnbnr1m9880b4sadd78q02v0n6nxc5lvg27dp6",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.3/news.tar.gz",
-      "version": "14.1.3"
+      "sha256": "12rxyaadvk4qxm02dy8vh87kcrfwl609fvcyc9dhgn8wl8h93rrd",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.4/news.tar.gz",
+      "version": "14.1.4"
     },
     "nextbackup": {
       "meta": {
@@ -2323,9 +2323,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "10f2k5cr030h8xrxhq6irhaqq71wk9llggrry0z08dnm92qhq6gr",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.5/release.tar.gz",
-      "version": "2.4.5"
+      "sha256": "1qzw97nbn373df6cf4xkaalgyll0n2an4bawqs7i05fvhq3gp110",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.6/release.tar.gz",
+      "version": "2.4.6"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2915,9 +2915,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "1b87zr9vf6zjyyrxc0w5f5q2dw62vksp0957zgzh9b0r36ga0w18",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.1/weather-1.7.1.tar.gz",
-      "version": "1.7.1"
+      "sha256": "1q3v3b4yg1zq1dciqd3xhllaqpbnfg6n46b3qw7yxyvpbwklilbl",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.2/weather-1.7.2.tar.gz",
+      "version": "1.7.2"
     },
     "wopi": {
       "meta": {

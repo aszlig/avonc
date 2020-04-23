@@ -157,6 +157,21 @@
       "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.1.1/audioplayer_sonos-1.1.1.tar.gz",
       "version": "1.1.1"
     },
+    "auto_groups": {
+      "meta": {
+        "description": "Automatically add users to the specified Auto Groups, except those users belonging to one of the specified Override Groups. \nOptionally, the group assignment can be triggered on every successful login, which is useful for external user backends.\n\n## Configuration\n\n- Go to \"Admin Settings &gt; Additional Settings\"\n- Configure the Auto Groups\n- If required, configure the Override Groups (e.g., for Service Accounts)\n- Optionally, enable the Login Hook, which will enforce correct group membership on every successful login\n\n## Comparison to similar Apps\n\n* [Everyone Group](https://apps.nextcloud.com/apps/group_everyone): The \"Everyone Group\" app adds a virtual Group Backend, always returning all users. This approach, however, has some drawbacks, e.g., that [newly added users can't see files shared with the Everyone group before the user was created](https://github.com/icewind1991/group_everyone/issues/16). In contrast to \"Everyone Group\", the \"Auto Groups\" app operates on real groups in your normal Group Backend. Additionally, it is possible to specify Override Groups which will prevent users from being added to the Auto Group(s).\n* [Default Group](https://apps.nextcloud.com/apps/defaultgroup): The \"Default Group\" app has actually been the base for \"Auto Groups\". However, there are a few distinctions, most notably that \"Auto Groups\" removes users from the Auto Groups in case they are added to one of the Override Groups later on. Futhermore, \"Default Groups\" has not been updated for some time and is officially not supporting NC13 and above. In contrast, \"Auto Groups\" features community-powered translations, automated tests and is not using the deprecated Hook mechanism anymore.",
+        "homepage": "https://github.com/stjosh/auto_groups",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Auto Groups",
+        "summary": "Automatically adds all users to one or multiple specified groups."
+      },
+      "sha256": "0yypxh58vqj50s9a1zwsh82r409s09i20k8r32qjdw11knxv8r2z",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.0.2/auto_groups_v1.0.2.tar.gz",
+      "version": "1.0.2"
+    },
     "auto_mail_accounts": {
       "meta": {
         "description": "The mail app has a built-in default configuration for mail accounts but it does not create actual mail accounts for each Nextcloud user, so they can not store alternative identities, a sender name, attachments or collect e-mail addresses. This app hooks into Nextcloud's user creation/deletion and display name/ password change and automatically creates/deletes/updates a mail account in the mail app. This creates mail accounts like if a user entered the settings manually allowing him to use all features of the mail app.\n\nNote that the password is stored with symmetric encryption and can be retrieved by the admin. This is the default behaviour of the mail app and unavoidable because it needs to login to the mail server.",
@@ -1484,9 +1499,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1iqzf8i1zjz9x4fnbnr1m9880b4sadd78q02v0n6nxc5lvg27dp6",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.3/news.tar.gz",
-      "version": "14.1.3"
+      "sha256": "12rxyaadvk4qxm02dy8vh87kcrfwl609fvcyc9dhgn8wl8h93rrd",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.4/news.tar.gz",
+      "version": "14.1.4"
     },
     "nextbackup": {
       "meta": {
@@ -2189,9 +2204,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "10f2k5cr030h8xrxhq6irhaqq71wk9llggrry0z08dnm92qhq6gr",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.5/release.tar.gz",
-      "version": "2.4.5"
+      "sha256": "1qzw97nbn373df6cf4xkaalgyll0n2an4bawqs7i05fvhq3gp110",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.6/release.tar.gz",
+      "version": "2.4.6"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2779,9 +2794,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "1b87zr9vf6zjyyrxc0w5f5q2dw62vksp0957zgzh9b0r36ga0w18",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.1/weather-1.7.1.tar.gz",
-      "version": "1.7.1"
+      "sha256": "1q3v3b4yg1zq1dciqd3xhllaqpbnfg6n46b3qw7yxyvpbwklilbl",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.2/weather-1.7.2.tar.gz",
+      "version": "1.7.2"
     },
     "wopi": {
       "meta": {
