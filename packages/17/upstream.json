@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0hrijam4h79cy75l22cdp5nqlqnq43d1cq0nzw0dzc39nizpd902",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/98bd4e392905e8208b5410af8415d9bb23949cc3/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.2"
+      "sha256": "0i7szn7l5md4iijr6xkbbwpa5iw08lrsxahkbmi5ycwhz3wkxy26",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/a21acbade8c991586d5640b84a51e67498ed4b1e/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.6"
     },
     "apporder": {
       "meta": {
@@ -1220,9 +1220,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "17zymb8kznkxqgvs574mh6hkmarf819vibdk83xipgsxac583lnm",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.4/group_everyone-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0h8z25ak9q485i9qggzqg5xx7xc1zvsb791gi6144mf4pmgy8y7f",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.5/group_everyone.tar.gz",
+      "version": "0.1.5"
     },
     "groupfolders": {
       "meta": {
@@ -1547,18 +1547,18 @@
     },
     "nextbackup": {
       "meta": {
-        "description": "NextBackup (formerly OwnBackup) is the simple database backup solution for your ownCloud 8.1+ or Nextcloud installation.\n\nIts main purpose is to provide an easy solution to restore the tables of an app in case you accidentally corrupted the data or did anything you regret later.\n\n- Use this app at your own risk! Data loss may occur!\n- This app is no replacement for a more professional backup solution!",
+        "description": "NextBackup (formerly OwnBackup) is the simple database backup solution for your Nextcloud or ownCloud installation.\n\nIts main purpose is to provide an easy solution to restore the tables of an app in case you accidentally corrupted the data or did anything you regret later.\n\n- Use this app at your own risk! Data loss may occur!\n- This app is no replacement for a more professional backup solution!",
         "homepage": "https://github.com/pbek/nextbackup",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "NextBackup",
-        "summary": "Simple database backup solutions for your ownCloud 8.1+ or Nextcloud installation."
+        "summary": "Simple database backup solutions for your Nextcloud or ownCloud installation."
       },
-      "sha256": "001vhbivp688jdbqnaj4wy9g29snhp3y9xvprzpgw4q67n4q1rdr",
-      "url": "https://github.com/pbek/nextbackup/releases/download/19.12.1/nextbackup-nc.tar.gz",
-      "version": "19.12.1"
+      "sha256": "0i66radasgd4q6qpldzc7xlkdhj2y8fcaiw78vaws7nh1cwx50n3",
+      "url": "https://github.com/pbek/nextbackup/releases/download/20.4.0/nextbackup-nc.tar.gz",
+      "version": "20.4.0"
     },
     "nextcloud_announcements": {
       "meta": {
