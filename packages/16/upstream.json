@@ -2278,9 +2278,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "1gwrxhlwikp4cn71vyz6f50vkvcnk897pwz07qjdh2c1f5mk8z4f",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.1/sharingpath.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0cq4rz2w9svbb78f2n1k1sf4238l75var6grvbd3r7b47cv2g4yb",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.2/sharingpath.tar.gz",
+      "version": "0.2.2"
     },
     "smb_test": {
       "meta": {

@@ -186,6 +186,21 @@
       "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.4/auto_mail_accounts.tar.gz",
       "version": "0.1.4"
     },
+    "bbb": {
+      "meta": {
+        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Custom presentation** Start a room with a selected presentation from your file browser\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
+        "homepage": "https://github.com/sualko/cloud_bbb/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "BigBlueButton Integration",
+        "summary": "BigBlueButton integration for Nextcloud"
+      },
+      "sha256": "11mcxypi8d867m0k21nsqlghmzb5jr7wvk3zhg2nxa9kzyf3f54i",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.1.0/bbb-v0.1.0.tar.gz",
+      "version": "0.1.0"
+    },
     "bookmarks": {
       "meta": {
         "description": "This app provides you with a web interface for collecting and organizing bookmarks to the sites on the web that are precious to you. You can browse and filter your bookmarks via tags and folders and by using the built-in search feature. Furthermore, in order to access your bookmarks anywhere, it also allows you to synchronize third-party clients via a built-in REST API -- in your browsers and on your phone.\n\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients",
@@ -212,9 +227,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1rvwh8r8x9fp428w30689f72vyiflk8wc6y3bz8n6d8lgyi2021v",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.12/breezedark.tar.gz",
-      "version": "18.0.12"
+      "sha256": "0cvrv8kn2w54jah3jxwjp23k250yx7n0blccxpfdqzibbb18xsk3",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.13/breezedark.tar.gz",
+      "version": "18.0.13"
     },
     "browser_warning": {
       "meta": {
@@ -1439,9 +1454,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1d9h706jbm06bg2gb4p0gpald7hh3wislq0cchwdg9v8lf45jk57",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.3/mail.tar.gz",
-      "version": "1.3.3"
+      "sha256": "034piq57ynsswvash650xi1756p0h0s9gcjvv63sn1lv7wrq2wqk",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.4/mail.tar.gz",
+      "version": "1.3.4"
     },
     "maps": {
       "meta": {
@@ -2159,9 +2174,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "1gwrxhlwikp4cn71vyz6f50vkvcnk897pwz07qjdh2c1f5mk8z4f",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.1/sharingpath.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0cq4rz2w9svbb78f2n1k1sf4238l75var6grvbd3r7b47cv2g4yb",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.2/sharingpath.tar.gz",
+      "version": "0.2.2"
     },
     "side_menu": {
       "meta": {
@@ -2174,9 +2189,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "0h1wfndx4qc91y08mscdcjxm7drigilg58g0bmxjrs8g929vr9hv",
-      "url": "https://gitnet.fr/attachments/724a3a86-bc15-49f6-9635-98c239238103",
-      "version": "1.3.3"
+      "sha256": "17irk02gcsidlj7i77m2kwkyimx06qqyigyhgla0dj3g6h7qa4gj",
+      "url": "https://gitnet.fr/attachments/c38448e1-8297-4e8a-968e-52812cca2393",
+      "version": "1.3.4"
     },
     "smb_test": {
       "meta": {
