@@ -54,21 +54,6 @@
       "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-x18.tgz",
       "version": "1.2.18"
     },
-    "analytics": {
-      "meta": {
-        "description": "From data to report. Data Analytics provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote files, API, imports, manual entry\n- 3rd party*: GitHub Statistics\n- Storage: stream or database\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, NC Activity, NC Notifications, NC workflows*\n- Sharing: user*, protected, public\n\n(*work in progress)",
-        "homepage": "https://github.com/rello/analytics",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Data Analytics",
-        "summary": "extract / store / visualize"
-      },
-      "sha256": "001birkf1mmjchfw55yvl3528d7jbacrpdrsxql209r9kn3pyxa8",
-      "url": "https://github.com/Rello/analytics/releases/download/1.2.2/analytics-1.2.2.tar.gz",
-      "version": "1.2.2"
-    },
     "announcementcenter": {
       "meta": {
         "description": "This app allows admins to post announcements. Also supports the following features:\n\n Activities (Requires the activity app to be enabled)\n\n Comments\n\n Group permissions\n\n Notifications (Requires the notifications app to be enabled)",
@@ -2482,9 +2467,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0wnjwv2cdk395awp2szxq2bsdsmgf8mlcxc41v25f4zyixbp3vbj",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.1/tasks.tar.gz",
-      "version": "0.12.1"
+      "sha256": "0zrrqfi1b6xhv0hffcjczxa72gd6wjnghf9njdvhyb1hdajzvgpi",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.2/tasks.tar.gz",
+      "version": "0.12.2"
     },
     "telephoneprovider": {
       "meta": {

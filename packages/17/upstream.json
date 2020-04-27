@@ -65,9 +65,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "1vmpnckdahf7wifj0l05qgq75a9schfrp9plrbd7wk4m3vz2wd3i",
-      "url": "https://github.com/Rello/analytics/releases/download/2.2.1/analytics-2.2.1.tar.gz",
-      "version": "2.2.1"
+      "sha256": "00306q4rh8fbl18ymd9f5im36jm2p4vvv97lfhis9qnqb801fsy0",
+      "url": "https://github.com/Rello/analytics/releases/download/2.2.3/analytics-2.2.3.tar.gz",
+      "version": "2.2.3"
     },
     "announcementcenter": {
       "meta": {
@@ -2424,9 +2424,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0wnjwv2cdk395awp2szxq2bsdsmgf8mlcxc41v25f4zyixbp3vbj",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.1/tasks.tar.gz",
-      "version": "0.12.1"
+      "sha256": "0zrrqfi1b6xhv0hffcjczxa72gd6wjnghf9njdvhyb1hdajzvgpi",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.2/tasks.tar.gz",
+      "version": "0.12.2"
     },
     "telephoneprovider": {
       "meta": {

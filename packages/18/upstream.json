@@ -65,9 +65,9 @@
         "name": "Data Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "1vmpnckdahf7wifj0l05qgq75a9schfrp9plrbd7wk4m3vz2wd3i",
-      "url": "https://github.com/Rello/analytics/releases/download/2.2.1/analytics-2.2.1.tar.gz",
-      "version": "2.2.1"
+      "sha256": "00306q4rh8fbl18ymd9f5im36jm2p4vvv97lfhis9qnqb801fsy0",
+      "url": "https://github.com/Rello/analytics/releases/download/2.2.3/analytics-2.2.3.tar.gz",
+      "version": "2.2.3"
     },
     "announcementcenter": {
       "meta": {
@@ -197,9 +197,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "11mcxypi8d867m0k21nsqlghmzb5jr7wvk3zhg2nxa9kzyf3f54i",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.1.0/bbb-v0.1.0.tar.gz",
-      "version": "0.1.0"
+      "sha256": "1crz538xr8kxfgk65k0w89sq9kkb23bb0xczzmckgqc69lsc67an",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.1.1/bbb-v0.1.1.tar.gz",
+      "version": "0.1.1"
     },
     "bookmarks": {
       "meta": {
@@ -2378,9 +2378,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0wnjwv2cdk395awp2szxq2bsdsmgf8mlcxc41v25f4zyixbp3vbj",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.1/tasks.tar.gz",
-      "version": "0.12.1"
+      "sha256": "0zrrqfi1b6xhv0hffcjczxa72gd6wjnghf9njdvhyb1hdajzvgpi",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.2/tasks.tar.gz",
+      "version": "0.12.2"
     },
     "telephoneprovider": {
       "meta": {
