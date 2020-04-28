@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0i7szn7l5md4iijr6xkbbwpa5iw08lrsxahkbmi5ycwhz3wkxy26",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/a21acbade8c991586d5640b84a51e67498ed4b1e/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.6"
+      "sha256": "1f39i8642f7kd4pbl4pl7ha1r4dzzcprxlrha9vkvh7xlqyisgwr",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/513feb2ee8db3c16cfc07cf2f22e6781adfd85d0/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.8"
     },
     "apporder": {
       "meta": {
@@ -369,9 +369,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1jml0z78wl0nzyv0z9lgx5q7rfdwr81kxvi03jz32rbh4pmcddfm",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.3/cookbook.tar.gz",
-      "version": "0.6.3"
+      "sha256": "1jg68l5swskfcnlwd2ci3ad06hp6gvzwjlwdksb8bw40mwiv8y27",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.4/cookbook.tar.gz",
+      "version": "0.6.4"
     },
     "cospend": {
       "meta": {
@@ -1016,9 +1016,9 @@
         "name": "S3 Versioning",
         "summary": "Use S3 object versioning for file versioning"
       },
-      "sha256": "02a5hmpd08f7j7r1qnzrzslcw21slbgp9krw32kcc047jiazpn93",
-      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.2/files_versions_s3.tar.gz",
-      "version": "0.1.2"
+      "sha256": "136fvmr5bg0bzjpx0pgxx4ywyw4n97msm862kjix3lnaxyh0mc8c",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.3/files_versions_s3.tar.gz",
+      "version": "0.1.3"
     },
     "files_videoplayer": {
       "meta": {
@@ -1541,9 +1541,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "12rxyaadvk4qxm02dy8vh87kcrfwl609fvcyc9dhgn8wl8h93rrd",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.4/news.tar.gz",
-      "version": "14.1.4"
+      "sha256": "0x5fwr1c19lfqq9p6sj1bxg5cic0hibpq9p3n42xy2nqqyw3jypm",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.5/news.tar.gz",
+      "version": "14.1.5"
     },
     "nextbackup": {
       "meta": {
@@ -2328,6 +2328,21 @@
       "sha256": "07i83bl2g5ha7byj6mm5wsx1hs4681j7afa4rb87cj41b1rc5cmd",
       "url": "https://github.com/nextcloud/socialsharing/releases/download/twitter-1.0.5/socialsharing_twitter.tar.gz",
       "version": "1.0.5"
+    },
+    "spgverein": {
+      "meta": {
+        "description": "Access data of SPG-Verein in your Nextcloud instance",
+        "homepage": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SPG Verein",
+        "summary": "Access data of SPG-Verein in your Nextcloud instance"
+      },
+      "sha256": "04nlrndv7xksq5is0m03a631i1fxs7xbdmp07jh7z9q0g438xqcb",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/artifacts/master/raw/spgverein.tar.gz?job=package",
+      "version": "0.5.1"
     },
     "spreed": {
       "meta": {
