@@ -1919,6 +1919,21 @@
       "url": "https://github.com/pbek/qownnotesapi/releases/download/20.1.0/qownnotesapi-nc.tar.gz",
       "version": "20.1.0"
     },
+    "quickaccesssorting": {
+      "meta": {
+        "description": "This app enables to sort the favorites by 'Alphabetically', 'Date Added', 'Last Date Modified' and 'Custom Order'!",
+        "homepage": "https://github.com/newhinton/quickaccess-sorting",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Favorites Quickaccess Sorting",
+        "summary": "Different Sorting for favorites-quickaccess!"
+      },
+      "sha256": "0h7chdfr2wxp0v3qmiihpvs5i9zzy2hag3jdfvlfaiccl9mkkn9a",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.3/quickaccesssorting.tar.gz",
+      "version": "1.0.3"
+    },
     "quicknotes": {
       "meta": {
         "description": "Quick notes with a basic rich text",
@@ -2180,7 +2195,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface.\nThis application is rather suitable for instances that activate a lot of applications.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue",
+        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface.\nThis application is rather suitable for instances that activate a lot of applications.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2189,9 +2204,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "17irk02gcsidlj7i77m2kwkyimx06qqyigyhgla0dj3g6h7qa4gj",
-      "url": "https://gitnet.fr/attachments/c38448e1-8297-4e8a-968e-52812cca2393",
-      "version": "1.3.4"
+      "sha256": "0hgbjp7yyvfkx6vx0yg3hyhjikv9y96g6b0p4b5sgnmdrl5j5jcq",
+      "url": "https://gitnet.fr/attachments/70690286-e6b3-4992-b260-297f2ce0031d",
+      "version": "1.4.0"
     },
     "smb_test": {
       "meta": {

@@ -1959,9 +1959,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "1hmzffs193kzm2gcincs71iyplvr02pnw5i28wfz3mwr5zfhmfxz",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.2/quickaccesssorting.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0h7chdfr2wxp0v3qmiihpvs5i9zzy2hag3jdfvlfaiccl9mkkn9a",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.3/quickaccesssorting.tar.gz",
+      "version": "1.0.3"
     },
     "quicknotes": {
       "meta": {
