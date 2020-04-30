@@ -173,7 +173,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "This app provides you with a web interface for collecting and organizing bookmarks to the sites on the web that are precious to you. You can browse and filter your bookmarks via tags and folders and by using the built-in search feature. Furthermore, in order to access your bookmarks anywhere, it also allows you to synchronize third-party clients via a built-in REST API -- in your browsers and on your phone.\n\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients",
+        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.2+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v17+",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0xd5zkh8qqg29kfjlq3ax3gp3i811jaj28fsp7ky1fk1j7iq99jl",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v2.3.4/bookmarks-2.3.4.tar.gz",
-      "version": "2.3.4"
+      "sha256": "0k36jqjyziqypxdn2nyk16vyih2jzrsh6lz17lq4nmq1ksiifab4",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.3/bookmarks-3.0.3.tar.gz",
+      "version": "3.0.3"
     },
     "breezedark": {
       "meta": {
@@ -1655,9 +1655,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1wz4nxqa1pjgq8ciljbzavmmdl8028hdbgjja67dyqnyqq1br17y",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.33/ocr.tar.gz",
-      "version": "6.0.33"
+      "sha256": "0g3ryrhvxky8mqbl93qiaqcmqb493v0qypvvw620sf7l88cvrxjf",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.34/ocr.tar.gz",
+      "version": "6.0.34"
     },
     "ocsms": {
       "meta": {
@@ -2094,6 +2094,21 @@
       "sha256": "03i4jxh819gp4b1pvizsab9m1w5d32xmq557jyblwy0js118iagm",
       "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.3/richdocuments.tar.gz",
       "version": "3.5.3"
+    },
+    "riotchat": {
+      "meta": {
+        "description": "Riot Chat for Nextcloud allows you to install Riot easily through Nextcloud and join the Matrix decentralized communication network.\n\nThis app does not include a Matrix server, only the client. You will have to either set up your own Matrix homeserver, rent one, or use a public one.\n\nThis project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Riot.im, or any of its subsidiaries or its affiliates.\n\nThe name Riot.im as well as related names, marks, emblems and images are registered trademarks of their respective owners.\n\nThe upstream project can be found at [https://github.com/vector-im/riot-web](https://github.com/vector-im/riot-web).",
+        "homepage": "https://github.com/gary-kim/riotchat",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Riot Chat",
+        "summary": "Riot IM Chat integrated into Nextcloud"
+      },
+      "sha256": "02pp28p6myncgwa0i580iahrh0gprmb36yn3dycn09xbxp72jznz",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.0.1/riotchat.tar.gz",
+      "version": "0.0.1"
     },
     "scanner": {
       "meta": {

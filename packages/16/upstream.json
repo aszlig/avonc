@@ -1655,9 +1655,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1wz4nxqa1pjgq8ciljbzavmmdl8028hdbgjja67dyqnyqq1br17y",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.33/ocr.tar.gz",
-      "version": "6.0.33"
+      "sha256": "0g3ryrhvxky8mqbl93qiaqcmqb493v0qypvvw620sf7l88cvrxjf",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.34/ocr.tar.gz",
+      "version": "6.0.34"
     },
     "ocsms": {
       "meta": {
