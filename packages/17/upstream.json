@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0l2g4qmsixfr0bx0npr3jm6r9xcaapyq2f7iqgl33k1jb3sc97fm",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/fd837f676e83ab326b82f6458b33d8fbe22a7dd1/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.9"
+      "sha256": "05cwmfpiis4ijnz1i9qqyswr2v5cij927666as0kqrp3shmw40p0",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/f47d18b72eea2a97034c8360db296c5d21eaa7f5/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.10"
     },
     "apporder": {
       "meta": {
@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0k36jqjyziqypxdn2nyk16vyih2jzrsh6lz17lq4nmq1ksiifab4",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.3/bookmarks-3.0.3.tar.gz",
-      "version": "3.0.3"
+      "sha256": "09nr1sv51s8w1f776rnf7r0z3g0r2ssiffir9rilbjcxlp1j261i",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.4/bookmarks-3.0.4.tar.gz",
+      "version": "3.0.4"
     },
     "breezedark": {
       "meta": {
@@ -1655,9 +1655,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0g3ryrhvxky8mqbl93qiaqcmqb493v0qypvvw620sf7l88cvrxjf",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.34/ocr.tar.gz",
-      "version": "6.0.34"
+      "sha256": "1vcvds2r0i25rx8am562pbzknj9wq2g459c733g0192xr835sdgi",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.35/ocr.tar.gz",
+      "version": "6.0.35"
     },
     "ocsms": {
       "meta": {
@@ -1920,6 +1920,20 @@
         "summary": "-"
       }
     },
+    "privatedata": {
+      "meta": {
+        "description": "This app implements the OCS Private Data API",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Private Data API",
+        "summary": "Private data OCS API"
+      },
+      "sha256": "1ndyl8bf68czgfki1bh09v3varnnwch7m4mjs9vj0qh3gbmj0q6d",
+      "url": "https://github.com/nextcloud/privatedata/releases/download/v1.1.0/privatedata.tar.gz",
+      "version": "1.1.0"
+    },
     "provisioning_api": {
       "meta": {
         "alwaysEnable": true,
@@ -2106,9 +2120,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "02pp28p6myncgwa0i580iahrh0gprmb36yn3dycn09xbxp72jznz",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.0.1/riotchat.tar.gz",
-      "version": "0.0.1"
+      "sha256": "1l3kq29six9a51390kxm97i95dra6pxzn08fp7vgf3b7qi8b1wz0",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.1.3/riotchat.tar.gz",
+      "version": "0.1.3"
     },
     "scanner": {
       "meta": {
