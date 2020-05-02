@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "09nr1sv51s8w1f776rnf7r0z3g0r2ssiffir9rilbjcxlp1j261i",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.4/bookmarks-3.0.4.tar.gz",
-      "version": "3.0.4"
+      "sha256": "12bdcpky8nyh15p3hlvxxq5wv6dyrig06i0xl8kfzxbq0lazwcc5",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.5/bookmarks-3.0.5.tar.gz",
+      "version": "3.0.5"
     },
     "breezedark": {
       "meta": {
@@ -459,6 +459,20 @@
       "sha256": "0zwp73153y2659nphjmgs05ypdrdb9fa4vhdqzdn79vwfh386m2h",
       "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.2/dicomviewer.tar.gz",
       "version": "1.2.2"
+    },
+    "diffuse": {
+      "meta": {
+        "description": "A music player that connects to your cloud/distributed storage",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Diffuse",
+        "summary": "A music player that connects to your cloud/distributed storage"
+      },
+      "sha256": "0z93xvx1ngrf5gv1pdy807mj301zzqakkdak4ly46icw48vlc69p",
+      "url": "https://icidasset-public.s3.amazonaws.com/diffuse.tar.gz",
+      "version": "2.5.0"
     },
     "discoursesso": {
       "meta": {
@@ -2120,9 +2134,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "1l3kq29six9a51390kxm97i95dra6pxzn08fp7vgf3b7qi8b1wz0",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.1.3/riotchat.tar.gz",
-      "version": "0.1.3"
+      "sha256": "0psbza1j2kyyyzpc1zsw39c5wysmbjwsml37izw4i2qwh87a5dy5",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.1.4/riotchat.tar.gz",
+      "version": "0.1.4"
     },
     "scanner": {
       "meta": {
