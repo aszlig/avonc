@@ -197,9 +197,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1kd4xlyqapjpx6amyhz1nfk395cmb7n5ld2sg0zm2dfqafjcfx7a",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v17.0.10-app/breezedark.tar.gz",
-      "version": "17.0.10"
+      "sha256": "1x0kgb2wmyhbzppm1fpxyyqzs6wznp6b6l4ica9jgc70pfazbva9",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v17.0.11-app/breezedark.tar.gz",
+      "version": "17.0.11"
     },
     "browser_warning": {
       "meta": {
@@ -384,9 +384,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1ykfv901g887jpjvnjipliv76mc879fxbbsr24cghphlg1dpfmic",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/a36699f6b70c2b5b94a471be0b52a75f/cospend-0.4.6.tar.gz",
-      "version": "0.4.6"
+      "sha256": "0ymlhd5lzk749865wi25ql1x7prc6bp7rdh61cij9hrra85wxaq1",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/5fc50cf2aae0018108360a3173563f06/cospend-0.4.9.tar.gz",
+      "version": "0.4.9"
     },
     "dashboardcharts": {
       "meta": {
@@ -1814,9 +1814,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1sig169r4ywcsafcr50gy10vfvq8q0p4rz6fpvgn2l5sbimx7rpx",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10047/artifacts/raw/passwords.tar.gz",
-      "version": "2020.4.1"
+      "sha256": "15fyyzdnf88kisz212532lqc8qr950i6ri5dm2xsnh0l3kx14rxj",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10153/artifacts/raw/passwords.tar.gz",
+      "version": "2020.5.0"
     },
     "phonetrack": {
       "meta": {
