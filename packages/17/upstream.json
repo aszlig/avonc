@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "05cwmfpiis4ijnz1i9qqyswr2v5cij927666as0kqrp3shmw40p0",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/f47d18b72eea2a97034c8360db296c5d21eaa7f5/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.10"
+      "sha256": "1ixb5qvz1djys8xlaybcjpdwwv632nr37vqlximy1pi87ykk97rn",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/fbb631532ee1da69fffe318797497480c5c13e48/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.11"
     },
     "apporder": {
       "meta": {
@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1g5wk91zwm2q6jxnnsp4wsrrv67d15kqfa2dffkjv4br75yq82hn",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.7/bookmarks-3.0.7.tar.gz",
-      "version": "3.0.7"
+      "sha256": "04bd9rywpmvj7j8gq1hj9bb91b0q6w8aghv8prnx4ippj1mk9d6f",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.9/bookmarks-3.0.9.tar.gz",
+      "version": "3.0.9"
     },
     "breezedark": {
       "meta": {
@@ -362,6 +362,7 @@
     "cookbook": {
       "meta": {
         "description": "A library for all your recipes. It uses JSON files following the schema.org recipe format. To add a recipe to the collection, you can paste in the URL of the recipe, and the provided web page will be parsed and downloaded to whichever folder you specify in the app settings.",
+        "homepage": "https://github.com/mrzapp/nextcloud-cookbook/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -369,9 +370,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1jg68l5swskfcnlwd2ci3ad06hp6gvzwjlwdksb8bw40mwiv8y27",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.4/cookbook.tar.gz",
-      "version": "0.6.4"
+      "sha256": "1n560mlgri908qcn2xlkpidnv97py2q28lg7897w5sa4rpwv40as",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.5/cookbook.tar.gz",
+      "version": "0.6.5"
     },
     "cospend": {
       "meta": {
@@ -635,6 +636,21 @@
       "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.4/extract.tar.gz",
       "version": "1.2.4"
     },
+    "facerecognition": {
+      "meta": {
+        "description": "**Detect and group faces of your loved one in your cloud**\n\n This application requires minimum of 2GB of RAM memory to work! See [Requirements](https://github.com/matiasdelellis/facerecognition/wiki/Requirements-and-Limitations) for details.\n\n Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [Installation](https://github.com/matiasdelellis/facerecognition/wiki/Installation) for details.\n\n- ** Detect faces from images:** Use FaceRecognition app to detect _any_ face in _any_ of your images!\n- ** Group faces to persons:** Detected faces are grouped together based on similarity and then FaceRecognition app can recognize persons!\n- ** Built-in privacy:** No data is leaving your cloud. Defaults are always off and each user controls enabling/disabling face detection. Images from every directory can be excluded from face detection, if needed.\n- ** Power of AI:** FaceRecognition app leverages power of AI and already built neural network models through extensive usage of [DLib](http://dlib.net/) library.\n- ** Build your own thing:** FaceRecognition app is just a basic building block. Through FaceRecognition API, you can build your advanced scenarios - automatically add tags to images, connect contacts and persons, share images from specific person... We want to hear your ideas!",
+        "homepage": "https://github.com/matiasdelellis/facerecognition",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Face Recognition",
+        "summary": "A face recognition app"
+      },
+      "sha256": "1kys91g4r3hhdj48kb47r3mfjcxb5k9z9kx5wrqlp9xfwyk92sm8",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.5.15/facerecognition_v0.5.15.tar.gz",
+      "version": "0.5.15"
+    },
     "federatedfilesharing": {
       "meta": {
         "alwaysEnable": true,
@@ -760,6 +776,21 @@
       "sha256": "02hykmc8ks93pb3jpxr6nmpvpmgzf9942vpy3d5ilhi89ckjkx1f",
       "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.4.0/files_external_dropbox.tar.gz",
       "version": "1.4.0"
+    },
+    "files_external_ipfs": {
+      "meta": {
+        "description": "IPFS Backend for file storage\n\njs-ipfs &lt;= v0.40 and go-ipfs will not have write support",
+        "homepage": "https://github.com/justicenode/files_external_ipfs",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "IPFS for Nextcloud",
+        "summary": "IPFS Backend for file storage"
+      },
+      "sha256": "0sla29nkgpk5g0ysi7d6xyplkpq2sa1928g904x8lxipmnwhwgff",
+      "url": "https://github.com/justicenode/files_external_ipfs/releases/download/V0.2/files_external_ipfs.tar.gz",
+      "version": "0.2.0"
     },
     "files_frommail": {
       "meta": {
@@ -1669,9 +1700,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1vcvds2r0i25rx8am562pbzknj9wq2g459c733g0192xr835sdgi",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.35/ocr.tar.gz",
-      "version": "6.0.35"
+      "sha256": "0s4kmrg0qdzvbmzf0q2f4lnijwixn52z2wdkkwqlc98qw1pi3sip",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.36/ocr.tar.gz",
+      "version": "6.0.36"
     },
     "ocsms": {
       "meta": {
@@ -2134,9 +2165,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "0psbza1j2kyyyzpc1zsw39c5wysmbjwsml37izw4i2qwh87a5dy5",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.1.4/riotchat.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0m1y8fgnbsggg918fa571z3nhv1rs456vx4ai15kfx1glfda08r7",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.1.6/riotchat.tar.gz",
+      "version": "0.1.6"
     },
     "scanner": {
       "meta": {
