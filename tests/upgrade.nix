@@ -53,6 +53,10 @@ import ./make-test.nix (pkgs: {
           # XXX: Conflicts with the "news" app - investigate this someday.
           "files_mindmap"
 
+          # XXX: Requires pdlib and thus module system integration for PHP
+          #      extensions.
+          "facerecognition"
+
           # These apps have non-deterministic download URLs
           "occweb"
           "quicknotes"
