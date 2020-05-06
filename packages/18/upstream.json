@@ -56,18 +56,18 @@
     },
     "analytics": {
       "meta": {
-        "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber, JSON\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: charts, tables\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
+        "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber, JSON\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
         "homepage": "https://github.com/rello/analytics",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Data Analytics",
+        "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "00306q4rh8fbl18ymd9f5im36jm2p4vvv97lfhis9qnqb801fsy0",
-      "url": "https://github.com/Rello/analytics/releases/download/2.2.3/analytics-2.2.3.tar.gz",
-      "version": "2.2.3"
+      "sha256": "0q1fv8zp785d7jznvgqk3x8gnw1lp7cak250avm4ypczl0h78jdn",
+      "url": "https://github.com/Rello/analytics/releases/download/2.3.0/analytics-2.3.0.tar.gz",
+      "version": "2.3.0"
     },
     "announcementcenter": {
       "meta": {
@@ -2136,9 +2136,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "0m1y8fgnbsggg918fa571z3nhv1rs456vx4ai15kfx1glfda08r7",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.1.6/riotchat.tar.gz",
-      "version": "0.1.6"
+      "sha256": "1pk93ng910w6mchs50iv3qbx59pcbr5amapnfx3p0qn56f8ppfbs",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.2.0/riotchat.tar.gz",
+      "version": "0.2.0"
     },
     "scanner": {
       "meta": {
