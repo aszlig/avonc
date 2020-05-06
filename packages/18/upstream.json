@@ -212,9 +212,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "04bd9rywpmvj7j8gq1hj9bb91b0q6w8aghv8prnx4ippj1mk9d6f",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.9/bookmarks-3.0.9.tar.gz",
-      "version": "3.0.9"
+      "sha256": "09kxpkki5hxq0rvsmqim5n87pz9i4bnyxsch5j0ggf8psjvj4may",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.10/bookmarks-3.0.10.tar.gz",
+      "version": "3.0.10"
     },
     "breezedark": {
       "meta": {
@@ -1593,7 +1593,7 @@
     },
     "notes": {
       "meta": {
-        "description": "The Notes app is a distraction free notes taking app. It provides categories for better organization and supports formatting using [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. Notes are saved as files in your Nextcloud, so you can view and edit them with every Nextcloud client. Furthermore, a separate [RESTful API](https://github.com/nextcloud/notes/wiki/API-0.2) allows for an easy integration into third-party apps (currently, there are notes apps for [Android](https://github.com/stefan-niedermann/nextcloud-notes) and [iOS](https://github.com/owncloud/notes-iOS-App) which allow convenient access to your Nextcloud notes). Further features include marking notes as favorites.",
+        "description": "The Notes app is a distraction free notes taking app for [Nextcloud](https://www.nextcloud.com/). It provides categories for better organization and supports formatting using [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. Notes are saved as files in your Nextcloud, so you can view and edit them with every Nextcloud client. Furthermore, a separate [REST API](docs/api/README.md) allows for an easy integration into third-party apps (currently, there are notes apps for [Android](https://github.com/stefan-niedermann/nextcloud-notes), [iOS](https://github.com/owncloud/notes-iOS-App) and the [console](https://git.danielmoch.com/nncli/about) which allow convenient access to your Nextcloud notes). Further features include marking notes as favorites.",
         "homepage": "https://github.com/nextcloud/notes",
         "isShipped": false,
         "licenses": [
@@ -1602,9 +1602,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1rnwsbh9nffxqbim8j3wyqnxrzfcp97gbdpwj317sxbq6ik9s3bm",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.2.0/notes.tar.gz",
-      "version": "3.2.0"
+      "sha256": "18mrlljmvlzr8v3qr2cb12k6mq2mgqnyrnj65vnf0q0f9x5qcbrv",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.3.0/notes.tar.gz",
+      "version": "3.3.0"
     },
     "notifications": {
       "meta": {
