@@ -470,11 +470,11 @@
           "agpl"
         ],
         "name": "Deck",
-        "summary": "A kanban style project and personal management tool for Nextcloud"
+        "summary": "Personal planning and team project organization"
       },
-      "sha256": "0bzghpvmmbg0szyf5735afrl204k5gknmvry295146pkxkcmy0rl",
-      "url": "https://github.com/nextcloud/deck/releases/download/v0.8.2/deck.tar.gz",
-      "version": "0.8.2"
+      "sha256": "0n95dkb9l6zmqg0f9f1648zpmyqs6j394rh7xina54gjvc07ilsf",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.0/deck.tar.gz",
+      "version": "1.0.0"
     },
     "dicomviewer": {
       "meta": {
@@ -1673,9 +1673,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0s4kmrg0qdzvbmzf0q2f4lnijwixn52z2wdkkwqlc98qw1pi3sip",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.36/ocr.tar.gz",
-      "version": "6.0.36"
+      "sha256": "04m7xnc2blkxic9ih66zjrbj89ny1s5155mjdg7d4n06519m041h",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.37/ocr.tar.gz",
+      "version": "6.0.37"
     },
     "ocsms": {
       "meta": {
