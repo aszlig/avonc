@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1ha0cagw285w02x82qj4lyphy5a8h1v6xb1ya7fc85af7ncrjsw3",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/79b40c544fb0c80c6cd504b6960c9a8f221f5a63/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.12"
+      "sha256": "0z7fqdxnmj6y3wxgpl86if88mvxms6f137svlv4wniw8b08l7l4v",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/517cbefbaf9dbf1e078d649dadc965656a548451/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.14"
     },
     "apporder": {
       "meta": {
@@ -299,9 +299,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "0wmqm0pm5nwzc2xkj75r85jlpqcsr5jlhd0hzkjhjqhi51nfb5wh",
-      "url": "https://github.com/PhieF/CarnetNextcloud/releases/download/v0.20.0/carnet-nc-v0.20.0.tar.gz",
-      "version": "0.20.0"
+      "sha256": "00i1x2jsdj0lz2ii2pdf9v41iwr7y5gysdbhvls8yzh9yp5h8pm1",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.21.1/carnet-nc-v0.21.1.tar.gz",
+      "version": "0.21.1"
     },
     "checksum": {
       "meta": {
@@ -415,9 +415,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0ymlhd5lzk749865wi25ql1x7prc6bp7rdh61cij9hrra85wxaq1",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/5fc50cf2aae0018108360a3173563f06/cospend-0.4.9.tar.gz",
-      "version": "0.4.9"
+      "sha256": "0m24klh1cazb2zrym42mbbvpzc4ij619iwhj7fr8xhw90g0dq0k0",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/876299f93dcd27336c75826c45134772/cospend-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "dashboardcharts": {
       "meta": {
