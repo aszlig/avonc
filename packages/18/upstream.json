@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1ixb5qvz1djys8xlaybcjpdwwv632nr37vqlximy1pi87ykk97rn",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/fbb631532ee1da69fffe318797497480c5c13e48/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.11"
+      "sha256": "1ha0cagw285w02x82qj4lyphy5a8h1v6xb1ya7fc85af7ncrjsw3",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/79b40c544fb0c80c6cd504b6960c9a8f221f5a63/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.12"
     },
     "apporder": {
       "meta": {
@@ -1559,9 +1559,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1jv7siaki9n4h3qcqx4ih2rzqcj8ms4b29srz45zy3mjl39higir",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.6/news.tar.gz",
-      "version": "14.1.6"
+      "sha256": "06arj282gm2yq66lwza3vmbbvrw1zgjw0yx0yxhcpwskbfk7wlhs",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.7/news.tar.gz",
+      "version": "14.1.7"
     },
     "nextbackup": {
       "meta": {
