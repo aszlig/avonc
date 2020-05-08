@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0q1fv8zp785d7jznvgqk3x8gnw1lp7cak250avm4ypczl0h78jdn",
-      "url": "https://github.com/Rello/analytics/releases/download/2.3.0/analytics-2.3.0.tar.gz",
-      "version": "2.3.0"
+      "sha256": "0rwsray57is1g3gbv0fz3rndifkbg0pwzpcmkb3wvx6f93syqvxf",
+      "url": "https://github.com/Rello/analytics/releases/download/2.3.1/analytics-2.3.1.tar.gz",
+      "version": "2.3.1"
     },
     "announcementcenter": {
       "meta": {
@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0k8cg66ial0kksv5642sf582xb7gms54kq8ds4wy6vj3bzbnxk7q",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.11/bookmarks-3.0.11.tar.gz",
-      "version": "3.0.11"
+      "sha256": "0pbkda864rh22zwm127jilqhp94fw367kjz5mkj8yalsvi2a0h3l",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.12/bookmarks-3.0.12.tar.gz",
+      "version": "3.0.12"
     },
     "breezedark": {
       "meta": {
@@ -2165,9 +2165,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "1pk93ng910w6mchs50iv3qbx59pcbr5amapnfx3p0qn56f8ppfbs",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.2.0/riotchat.tar.gz",
-      "version": "0.2.0"
+      "sha256": "1vn9zwjqj8i4qys3wds5rfyjgz7lv44pb6qdn0s1qb0mrrayfwjq",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.3.1/riotchat.tar.gz",
+      "version": "0.3.1"
     },
     "scanner": {
       "meta": {

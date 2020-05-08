@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0q1fv8zp785d7jznvgqk3x8gnw1lp7cak250avm4ypczl0h78jdn",
-      "url": "https://github.com/Rello/analytics/releases/download/2.3.0/analytics-2.3.0.tar.gz",
-      "version": "2.3.0"
+      "sha256": "0rwsray57is1g3gbv0fz3rndifkbg0pwzpcmkb3wvx6f93syqvxf",
+      "url": "https://github.com/Rello/analytics/releases/download/2.3.1/analytics-2.3.1.tar.gz",
+      "version": "2.3.1"
     },
     "announcementcenter": {
       "meta": {
@@ -159,7 +159,7 @@
     },
     "auto_groups": {
       "meta": {
-        "description": "Automatically add users to the specified Auto Groups, except those users belonging to one of the specified Override Groups. \nOptionally, the group assignment can be triggered on every successful login, which is useful for external user backends.\n\n## Configuration\n\n- Go to \"Admin Settings &gt; Additional Settings\"\n- Configure the Auto Groups\n- If required, configure the Override Groups (e.g., for Service Accounts)\n- Optionally, enable the Login Hook, which will enforce correct group membership on every successful login\n\n## Comparison to similar Apps\n\n* [Everyone Group](https://apps.nextcloud.com/apps/group_everyone): The \"Everyone Group\" app adds a virtual Group Backend, always returning all users. This approach, however, has some drawbacks, e.g., that [newly added users can't see files shared with the Everyone group before the user was created](https://github.com/icewind1991/group_everyone/issues/16). In contrast to \"Everyone Group\", the \"Auto Groups\" app operates on real groups in your normal Group Backend. Additionally, it is possible to specify Override Groups which will prevent users from being added to the Auto Group(s).\n* [Default Group](https://apps.nextcloud.com/apps/defaultgroup): The \"Default Group\" app has actually been the base for \"Auto Groups\". However, there are a few distinctions, most notably that \"Auto Groups\" removes users from the Auto Groups in case they are added to one of the Override Groups later on. Futhermore, \"Default Groups\" has not been updated for some time and is officially not supporting NC13 and above. In contrast, \"Auto Groups\" features community-powered translations, automated tests and is not using the deprecated Hook mechanism anymore.",
+        "description": "Automatically add users to the specified Auto Groups, except those users belonging to one of the specified Override Groups. \nOptionally, the group assignment can be triggered on every successful login, which is useful for external user backends.\n\n## Configuration\n\n- Go to \"Admin Settings &gt; Additional Settings\"\n- Configure the Auto Groups\n- If required, configure the Override Groups (e.g., for Service Accounts)\n- Optionally, enable the Login Hook, which will enforce correct group membership on every successful login\n\nNote that this app prevents group deletions for groups referenced as Auto Groups or Override Groups.\n\n## Comparison to similar Apps\n\n* [Everyone Group](https://apps.nextcloud.com/apps/group_everyone): The \"Everyone Group\" app adds a virtual Group Backend, always returning all users. In contrast, \"Auto Groups\" operates on \"real\" groups in your normal Group Backend. Additionally, it is possible to specify Override Groups which will prevent users from being added to the Auto Group(s).\n* [Default Group](https://apps.nextcloud.com/apps/defaultgroup): \"Auto Groups\" is actually a modernized and maintaned fork of \"Default Group\", which seems to be abandoned since NC12 or so. In terms of functionality, they are almost identical.\n\nIn addition, I plan to add some more features over time, e.g., \"Union Groups\" - see the [Milestone Plans](https://github.com/stjosh/auto_groups/milestones) for more details.",
         "homepage": "https://github.com/stjosh/auto_groups",
         "isShipped": false,
         "licenses": [
@@ -168,9 +168,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "0yypxh58vqj50s9a1zwsh82r409s09i20k8r32qjdw11knxv8r2z",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.0.2/auto_groups_v1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "037ch97k3dl38wbla1aqsdf7qcci0fi0v18kih3kf246jwj77ncf",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.1.0/auto_groups-v1.1.0.tar.gz",
+      "version": "1.1.0"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -212,9 +212,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0k8cg66ial0kksv5642sf582xb7gms54kq8ds4wy6vj3bzbnxk7q",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.11/bookmarks-3.0.11.tar.gz",
-      "version": "3.0.11"
+      "sha256": "0pbkda864rh22zwm127jilqhp94fw367kjz5mkj8yalsvi2a0h3l",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.12/bookmarks-3.0.12.tar.gz",
+      "version": "3.0.12"
     },
     "breezedark": {
       "meta": {
@@ -2136,9 +2136,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "1pk93ng910w6mchs50iv3qbx59pcbr5amapnfx3p0qn56f8ppfbs",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.2.0/riotchat.tar.gz",
-      "version": "0.2.0"
+      "sha256": "1vn9zwjqj8i4qys3wds5rfyjgz7lv44pb6qdn0s1qb0mrrayfwjq",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.3.1/riotchat.tar.gz",
+      "version": "0.3.1"
     },
     "scanner": {
       "meta": {
