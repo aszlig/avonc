@@ -456,9 +456,9 @@
         "name": "Diffuse",
         "summary": "A music player that connects to your cloud/distributed storage"
       },
-      "sha256": "0z93xvx1ngrf5gv1pdy807mj301zzqakkdak4ly46icw48vlc69p",
-      "url": "https://icidasset-public.s3.amazonaws.com/diffuse.tar.gz",
-      "version": "2.5.0"
+      "sha256": "0ynp7vsmlvl93vzxcsdw1aq6mp38c0i5d5wwz3nyscs2lzin81kh",
+      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.1/diffuse-web.tar.gz",
+      "version": "2.5.1"
     },
     "discoursesso": {
       "meta": {
@@ -1721,7 +1721,7 @@
     },
     "oidc_login": {
       "meta": {
-        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.\n\n## Config\n\n```php\n$CONFIG = array (\n    // Some NextCloud options that might make sense here\n    'allow_user_to_change_display_name' =&gt; false,\n    'lost_password_link' =&gt; 'disabled',\n\n    // URL of provider. All other URLs are auto-discovered from .well-known\n    'oidc_login_provider_url' =&gt; 'https://openid.example.com',\n\n    // Client ID and secret registered with the providr\n    'oidc_login_client_id' =&gt; 'application',\n    'oidc_login_client_secret' =&gt; 'secret',\n\n    // Automatically redirect the login page to the provider\n    'oidc_login_auto_redirect' =&gt; false,\n\n    // Redirect to this page after logging out the user\n    'oidc_login_logout_url' =&gt; 'https://openid.example.com/thankyou',\n\n    // Quota to assign if no quota is specified in the OIDC response\n    'oidc_login_default_quota' =&gt; '1000000',\n\n    // Login button text\n    'oidc_login_button_text' =&gt; 'Log in with OpenID',\n\n    // Attribute map for OIDC response. Available keys are:\n    //   i)   id:       Unique identifier for username\n    //   ii)  name:     Full name\n    //   iii) mail:     Email address\n    //   iv)  quota:    NextCloud storage quota\n    //   v)   home:     Home directory location. A symlink to this location is used\n    //   vi)  ldap_uid: LDAP uid to search for when running in proxy mode\n    'oidc_login_attributes' =&gt; array (\n        'id' =&gt; 'sub',\n        'name' =&gt; 'name',\n        'mail' =&gt; 'mail',\n        'quota' =&gt; 'ownCloudQuota',\n        'home' =&gt; 'homeDirectory',\n    ),\n\n    // Set OpenID Connect scope\n    'oidc_login_scope' =&gt; 'openid profile',\n\n    // Run in LDAP proxy mode\n    // In this mode, instead of creating users of its own, OIDC login\n    // will get the existing user from an LDAP database and only\n    // perform authentication with OIDC. All user data will be derived\n    // from the LDAP database instead of the OIDC user response\n    'oidc_login_proxy_ldap' =&gt; false,\n\n    // Disable creation of new users from OIDC login\n    'oidc_login_disable_registration' =&gt; true,\n\n    // Fallback to direct login if login from OIDC fails\n    // Note that no error message will be displayed if enabled\n    'oidc_login_redir_fallback' =&gt; false,\n\n    // Use an alternative login page\n    // This page will be php-included instead of an redirect if specified\n    // In the example below, the PHP file `login.php` in `assets`\n    // in nextcloud base directory will be included\n    // Note that the PHP variable $OIDC_LOGIN_URL is available for redirect URI\n    'oidc_login_alt_login_page' =&gt; 'assets/login.php',\n\n    // For development, you may disable TLS verification. Default value is `true`\n    // which should be kept in production\n    'oidc_login_tls_verify' =&gt; true,\n);\n```",
+        "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.",
         "homepage": "https://github.com/pulsejet/nextcloud-single-openid-connect",
         "isShipped": false,
         "licenses": [
@@ -1730,9 +1730,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1dqrlv9358fpjd9ri0h5wv2djf9x77rxq2v3cgd7gcqj845n8zkq",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.2.6/oidc_login.tar.gz",
-      "version": "1.2.6"
+      "sha256": "1xmr582ylvy2ahrqsh88d0xjg06c74plk960yi6s0njz4076h5g6",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.3.1/oidc_login.tar.gz",
+      "version": "1.3.1"
     },
     "ojsxc": {
       "meta": {
@@ -2048,9 +2048,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "1kw1mh9gfw3hvfq62licpbsfwv2vg0lim3kkdmiz5z81ylhmdl1r",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.2.3/quicknotes.tar.gz",
-      "version": "0.2.3"
+      "sha256": "03v2vxm0xax6pyhb80rcs8l6j3mzf5l8a3ahiip4aiyb554dqjln",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.2.4/quicknotes.tar.gz",
+      "version": "0.2.4"
     },
     "quota_warning": {
       "meta": {
