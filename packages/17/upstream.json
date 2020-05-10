@@ -385,9 +385,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0m24klh1cazb2zrym42mbbvpzc4ij619iwhj7fr8xhw90g0dq0k0",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/876299f93dcd27336c75826c45134772/cospend-0.5.1.tar.gz",
-      "version": "0.5.1"
+      "sha256": "08mqx4071azx83xql1gn8jqvs4b67yarahqn9cx57y1jiaa1h005",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/95fa14515751cbc3b872f5b9f96c66fb/cospend-0.5.2.tar.gz",
+      "version": "0.5.2"
     },
     "dashboardcharts": {
       "meta": {
@@ -471,9 +471,9 @@
         "name": "Diffuse",
         "summary": "A music player that connects to your cloud/distributed storage"
       },
-      "sha256": "0ynp7vsmlvl93vzxcsdw1aq6mp38c0i5d5wwz3nyscs2lzin81kh",
-      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.1/diffuse-web.tar.gz",
-      "version": "2.5.1"
+      "sha256": "0sy73bhjis2xi54ddczl1qqwzbbxdk7brlw7jp4jal6wmz606lpg",
+      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.2/diffuse-web.tar.gz",
+      "version": "2.5.2"
     },
     "discoursesso": {
       "meta": {

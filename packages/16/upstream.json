@@ -456,9 +456,9 @@
         "name": "Diffuse",
         "summary": "A music player that connects to your cloud/distributed storage"
       },
-      "sha256": "0ynp7vsmlvl93vzxcsdw1aq6mp38c0i5d5wwz3nyscs2lzin81kh",
-      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.1/diffuse-web.tar.gz",
-      "version": "2.5.1"
+      "sha256": "0sy73bhjis2xi54ddczl1qqwzbbxdk7brlw7jp4jal6wmz606lpg",
+      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.2/diffuse-web.tar.gz",
+      "version": "2.5.2"
     },
     "discoursesso": {
       "meta": {
