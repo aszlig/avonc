@@ -212,13 +212,13 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0pbkda864rh22zwm127jilqhp94fw367kjz5mkj8yalsvi2a0h3l",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.12/bookmarks-3.0.12.tar.gz",
-      "version": "3.0.12"
+      "sha256": "1apq1ars6kpw731h8a3vhwhrwhr40lgf2xg4dx0ls68ky6c8w0h6",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.13/bookmarks-3.0.13.tar.gz",
+      "version": "3.0.13"
     },
     "breezedark": {
       "meta": {
-        "description": "This is a breeze dark theme for Nextcloud, based on the theme by the KDE project.",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\nThe global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. You can find there global option here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\n#### Personal\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -227,9 +227,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1l6mc9hw9v93315bssdxwhjv0xxqyp4qhdar0d279ql4r02ivbd6",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.14/breezedark.tar.gz",
-      "version": "18.0.14"
+      "sha256": "1zj1yjrzbgdbl2wm8fkckrvhw4kzxf7bcnhyj4lw524lpx6svkk4",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.15/breezedark.tar.gz",
+      "version": "18.0.15"
     },
     "browser_warning": {
       "meta": {
@@ -1673,9 +1673,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "04m7xnc2blkxic9ih66zjrbj89ny1s5155mjdg7d4n06519m041h",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.37/ocr.tar.gz",
-      "version": "6.0.37"
+      "sha256": "02hb0b1iwm3p44m6zm2f0s5c1jpqqgk517blbp9vdgcxmczfd23c",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.39/ocr.tar.gz",
+      "version": "6.0.39"
     },
     "ocsms": {
       "meta": {
@@ -2112,7 +2112,7 @@
     },
     "richdocuments": {
       "meta": {
-        "description": "This application can connect to a Collabora Online (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.",
+        "description": "This application can connect to a Collabora Online (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.\n\nYou can also edit your documents off-line with the Collabora Office app from the **[Android](https://play.google.com/store/apps/details?id=com.collabora.libreoffice)** and **[iOS](https://apps.apple.com/us/app/collabora-office/id1440482071)** store.",
         "homepage": "https://collaboraoffice.com/",
         "isShipped": false,
         "licenses": [
@@ -2121,9 +2121,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "03i4jxh819gp4b1pvizsab9m1w5d32xmq557jyblwy0js118iagm",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.3/richdocuments.tar.gz",
-      "version": "3.5.3"
+      "sha256": "0l17my7pl4cs1n330ncn8ai9qk41gbgwl7mbs6l61k9f6cavzl8z",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.6.0/richdocuments.tar.gz",
+      "version": "3.6.0"
     },
     "riotchat": {
       "meta": {
@@ -2136,9 +2136,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "1vn9zwjqj8i4qys3wds5rfyjgz7lv44pb6qdn0s1qb0mrrayfwjq",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.3.1/riotchat.tar.gz",
-      "version": "0.3.1"
+      "sha256": "0x2x230gyn88mbaq15427lcmm08bk93c4lxf5npx7azsv8r306m5",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.3.3/riotchat.tar.gz",
+      "version": "0.3.3"
     },
     "scanner": {
       "meta": {
@@ -2278,9 +2278,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "062zhma2dqzg7l635r8b9mw51zcrg48lb378lgfr37n7kh64jjzi",
-      "url": "https://gitnet.fr/attachments/8479f599-56bd-44ec-8b0f-20d2d11985f2",
-      "version": "1.5.0"
+      "sha256": "16q8wxs06r2w4qvk95qqanh4jipsbw60s88sncx6myxcbzxjlsp5",
+      "url": "https://gitnet.fr/attachments/317d20a0-73ef-4227-bd66-c0bd6168e0ef",
+      "version": "1.6.1"
     },
     "smb_test": {
       "meta": {
@@ -2482,9 +2482,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0zrrqfi1b6xhv0hffcjczxa72gd6wjnghf9njdvhyb1hdajzvgpi",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.2/tasks.tar.gz",
-      "version": "0.12.2"
+      "sha256": "0y8915rk17809mxxdn611d5dv49kr6cg3vhl587b6arpj64rpqhm",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.0/tasks.tar.gz",
+      "version": "0.13.0"
     },
     "telephoneprovider": {
       "meta": {

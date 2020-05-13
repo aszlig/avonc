@@ -1700,9 +1700,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "04m7xnc2blkxic9ih66zjrbj89ny1s5155mjdg7d4n06519m041h",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.37/ocr.tar.gz",
-      "version": "6.0.37"
+      "sha256": "02hb0b1iwm3p44m6zm2f0s5c1jpqqgk517blbp9vdgcxmczfd23c",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.39/ocr.tar.gz",
+      "version": "6.0.39"
     },
     "ocsms": {
       "meta": {
@@ -2156,7 +2156,7 @@
     },
     "richdocuments": {
       "meta": {
-        "description": "This application can connect to a Collabora Online (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.",
+        "description": "This application can connect to a Collabora Online (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.\n\nYou can also edit your documents off-line with the Collabora Office app from the **[Android](https://play.google.com/store/apps/details?id=com.collabora.libreoffice)** and **[iOS](https://apps.apple.com/us/app/collabora-office/id1440482071)** store.",
         "homepage": "https://collaboraoffice.com/",
         "isShipped": false,
         "licenses": [
@@ -2165,9 +2165,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "03i4jxh819gp4b1pvizsab9m1w5d32xmq557jyblwy0js118iagm",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.5.3/richdocuments.tar.gz",
-      "version": "3.5.3"
+      "sha256": "0l17my7pl4cs1n330ncn8ai9qk41gbgwl7mbs6l61k9f6cavzl8z",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.6.0/richdocuments.tar.gz",
+      "version": "3.6.0"
     },
     "scanner": {
       "meta": {
@@ -2527,9 +2527,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0zrrqfi1b6xhv0hffcjczxa72gd6wjnghf9njdvhyb1hdajzvgpi",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.12.2/tasks.tar.gz",
-      "version": "0.12.2"
+      "sha256": "0y8915rk17809mxxdn611d5dv49kr6cg3vhl587b6arpj64rpqhm",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.0/tasks.tar.gz",
+      "version": "0.13.0"
     },
     "telephoneprovider": {
       "meta": {
