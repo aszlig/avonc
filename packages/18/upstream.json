@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0z7fqdxnmj6y3wxgpl86if88mvxms6f137svlv4wniw8b08l7l4v",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/517cbefbaf9dbf1e078d649dadc965656a548451/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.14"
+      "sha256": "143s6m2645yrhjpmwnwjfma9h79m918dw49y1vj7b28drsr7m7zs",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.4.15/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.15"
     },
     "apporder": {
       "meta": {
@@ -2398,9 +2398,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0c4vsc91ysxhkvy3cij5dhkp1dxqq9fghajfwnph2w4g9rnci5bi",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.8/spreed-8.0.8.tar.gz",
-      "version": "8.0.8"
+      "sha256": "1dp7kk1mqmi51z37jmn27jp5yk70yr6z8w3iw8hqc2pnd101am3f",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.9/spreed-8.0.9.tar.gz",
+      "version": "8.0.9"
     },
     "support": {
       "meta": {
