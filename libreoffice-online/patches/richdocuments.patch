@@ -1,10 +1,10 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index f8670d54..dd8c3cdc 100644
+index 78333af7..36eeed58 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
-@@ -27,9 +27,6 @@
+@@ -29,9 +29,6 @@ You can also edit your documents off-line with the Collabora Office app from the
  	<dependencies>
- 		<nextcloud min-version="15" max-version="19" />
+ 		<nextcloud min-version="15" max-version="20" />
  	</dependencies>
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
@@ -58,20 +58,21 @@ index 43eb427b..021dff3f 100644
 -	}
  }
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
-index 2aeab1b4..9f72bc0c 100644
+index 22ff4bba..8c5ba46c 100644
 --- a/lib/Controller/SettingsController.php
 +++ b/lib/Controller/SettingsController.php
-@@ -11,9 +11,6 @@
+@@ -11,10 +11,7 @@
  
  namespace OCA\Richdocuments\Controller;
  
 -use OCA\Richdocuments\Service\CapabilitiesService;
+ use OCA\Richdocuments\Service\DemoService;
 -use OCA\Richdocuments\WOPI\DiscoveryManager;
 -use OCA\Richdocuments\WOPI\Parser;
  use \OCP\AppFramework\Controller;
  use OCP\AppFramework\Http;
  use OCP\AppFramework\Http\DataResponse;
-@@ -31,14 +28,8 @@ class SettingsController extends Controller{
+@@ -35,14 +32,8 @@ class SettingsController extends Controller{
  	private $appConfig;
  	/** @var IConfig */
  	private $config;
@@ -83,10 +84,10 @@ index 2aeab1b4..9f72bc0c 100644
  	private $userId;
 -	/** @var CapabilitiesService */
 -	private $capabilitiesService;
+ 	/** @var DemoService */
+ 	private $demoService;
  
- 	/**
- 	 * @param string $appName
-@@ -46,28 +37,19 @@ class SettingsController extends Controller{
+@@ -52,30 +43,21 @@ class SettingsController extends Controller{
  	 * @param IL10N $l10n
  	 * @param AppConfig $appConfig
  	 * @param IConfig $config
@@ -96,15 +97,16 @@ index 2aeab1b4..9f72bc0c 100644
 -	 * @param CapabilitiesService $capabilitiesService
  	 */
  	public function __construct($appName,
- 								IRequest $request,
- 								IL10N $l10n,
- 								AppConfig $appConfig,
- 								IConfig $config,
--								DiscoveryManager $discoveryManager,
--								Parser $wopiParser,
--								$userId,
--								CapabilitiesService $capabilitiesService) {
-+								$userId) {
+ 		IRequest $request,
+ 		IL10N $l10n,
+ 		AppConfig $appConfig,
+ 		IConfig $config,
+-		DiscoveryManager $discoveryManager,
+-		Parser $wopiParser,
+ 		$userId,
+-		CapabilitiesService $capabilitiesService,
+ 		DemoService $demoService
+ 	) {
  		parent::__construct($appName, $request);
  		$this->l10n = $l10n;
  		$this->appConfig = $appConfig;
@@ -113,10 +115,10 @@ index 2aeab1b4..9f72bc0c 100644
 -		$this->wopiParser = $wopiParser;
  		$this->userId = $userId;
 -		$this->capabilitiesService = $capabilitiesService;
+ 		$this->demoService = $demoService;
  	}
  
- 	/**
-@@ -76,15 +58,6 @@ class SettingsController extends Controller{
+@@ -85,15 +67,6 @@ class SettingsController extends Controller{
  	 * @throws \Exception
  	 */
  	public function checkSettings() {
@@ -132,11 +134,12 @@ index 2aeab1b4..9f72bc0c 100644
  		return new DataResponse();
  	}
  
-@@ -154,26 +127,6 @@ class SettingsController extends Controller{
+@@ -171,32 +144,6 @@ class SettingsController extends Controller{
  			$this->appConfig->setAppValue('canonical_webroot', $canonical_webroot);
  		}
  
 -		$this->discoveryManager->refretch();
+-		$this->capabilitiesService->clear();
 -		try {
 -			$capaUrlSrc = $this->wopiParser->getUrlSrc('Capabilities');
 -			if (is_array($capaUrlSrc) && $capaUrlSrc['action'] === 'getinfo') {
@@ -150,7 +153,12 @@ index 2aeab1b4..9f72bc0c 100644
 -				}
 -			}
 -		} catch (\Exception $e){
--			// Ignore
+-			if ($wopi_url !== null) {
+-				return new JSONResponse([
+-					'status' => 'error',
+-					'data' => ['message' => 'Failed to connect to the remote server']
+-				], 500);
+-			}
 -		}
 -
 -		$this->capabilitiesService->clear();
