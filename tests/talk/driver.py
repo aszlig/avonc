@@ -87,10 +87,16 @@ class Driver:
         locator = (By.CSS_SELECTOR, selector)
         self.wait.until(EC.element_to_be_clickable(locator)).click()
 
-        for button in ['mute', 'hideVideo']:
-            self.wait.until(EC.element_to_be_clickable(
+        for button, disabled_cls in [('mute', 'audio-disabled'),
+                                     ('hideVideo', 'video-disabled')]:
+            elem = self.wait.until(EC.element_to_be_clickable(
                 (By.ID, button)
-            )).click()
+            ))
+            if disabled_cls in elem.get_attribute('class').split():
+                elem.click()
+                elem = self.wait.until(EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, f'#{button}:not(.{disabled_cls})')
+                ))
 
     def _wait_for_page_load(self):
         def _check_page_load(driver):
