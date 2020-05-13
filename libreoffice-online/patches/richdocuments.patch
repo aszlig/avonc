@@ -13,7 +13,7 @@ index 78333af7..36eeed58 100644
  		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
  	</commands>
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
-index 43eb427b..021dff3f 100644
+index 43eb427b..b5bed010 100644
 --- a/lib/Capabilities.php
 +++ b/lib/Capabilities.php
 @@ -98,36 +98,15 @@ class Capabilities implements ICapability {
@@ -29,7 +29,7 @@ index 43eb427b..021dff3f 100644
 -				'direct_editing' => isset($collaboraCapabilities['hasMobileSupport']) ? : false,
 -				'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) || isset($collaboraCapabilities['hasTemplateSource']) ? : false,
 -				'productName' => isset($collaboraCapabilities['productName']) ? $collaboraCapabilities['productName'] : $this->l10n->t('Collabora Online'),
-+				'collabora' => [],
++				'collabora' => ['productName' => 'LibreOffice Online'],
 +				'direct_editing' => false,
 +				'templates' => false,
 +				'productName' => 'LibreOffice Online',
