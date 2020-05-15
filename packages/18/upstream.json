@@ -357,9 +357,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "02caz5bp1l2ciy2qfzyz91ah332qij1wv4c2l4nsn0zpj17yjkj9",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.5/cms_pico-v1.0.5.tar.gz",
-      "version": "1.0.5"
+      "sha256": "1dwjbw9x8rw01apwcfax8hhjp7i38bd9rmv36jxg0ihnk492gcsc",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.6/cms_pico-v1.0.6.tar.gz",
+      "version": "1.0.6"
     },
     "comments": {
       "meta": {
@@ -1673,9 +1673,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "02hb0b1iwm3p44m6zm2f0s5c1jpqqgk517blbp9vdgcxmczfd23c",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.39/ocr.tar.gz",
-      "version": "6.0.39"
+      "sha256": "0j0g16x6lcnwl8zax1nwzj5cwai6a81ka0vklyh21wvnxrh93wqq",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.40/ocr.tar.gz",
+      "version": "6.0.40"
     },
     "ocsms": {
       "meta": {
@@ -2040,7 +2040,7 @@
     },
     "rainloop": {
       "meta": {
-        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.13.0 (2019-07).",
+        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01).",
         "homepage": "https://github.com/pierre-alain-b/rainloop-nextcloud",
         "isShipped": false,
         "licenses": [
@@ -2049,9 +2049,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "0936f2ppb4s6blsp080cp1limh45xp0l4xn32whldhvgh73cmc8c",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.0/rainloop.tar.gz",
-      "version": "6.1.0"
+      "sha256": "1ddpgj3phyb12bd32nqj64d85d70whnbx8f32smqazqawfz0d7a3",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.2/rainloop.tar.gz",
+      "version": "6.1.2"
     },
     "ransomware_detection": {
       "meta": {
@@ -2252,6 +2252,20 @@
       "url": "https://github.com/rullzer/sharelisting/releases/download/v0.3.0/sharelisting.tar.gz",
       "version": "0.3.0"
     },
+    "sharepoint": {
+      "meta": {
+        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nRequires Nextcloud 10 or newer. Supports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SharePoint Backend",
+        "summary": "SharePoint Backend for External storages"
+      },
+      "sha256": "0akb0lsl72a10lv8d1zwffvw91pr6b02k815inxn3zc9rzsdvpay",
+      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.6.0/sharepoint.tar.gz",
+      "version": "1.6.0"
+    },
     "sharingpath": {
       "meta": {
         "description": "Files sharing use file stored path. Now you cau use nextcloud as your CDN origin.\n        What you need to do is just share your files, then click Open Sharing Path to access from files dropdown actions menu.",
@@ -2269,7 +2283,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface.\nThis application is rather suitable for instances that activate a lot of applications.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.",
+        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface.\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2278,9 +2292,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "16q8wxs06r2w4qvk95qqanh4jipsbw60s88sncx6myxcbzxjlsp5",
-      "url": "https://gitnet.fr/attachments/317d20a0-73ef-4227-bd66-c0bd6168e0ef",
-      "version": "1.6.1"
+      "sha256": "0q134rg2xakdvdabdwijppyzbldwsydn7pngrfyk4m3ry7rx7y29",
+      "url": "https://gitnet.fr/attachments/b7dc1b65-cbef-4fa6-a879-da82b5e07001",
+      "version": "1.6.3"
     },
     "smb_test": {
       "meta": {

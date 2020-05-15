@@ -297,9 +297,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "02caz5bp1l2ciy2qfzyz91ah332qij1wv4c2l4nsn0zpj17yjkj9",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.5/cms_pico-v1.0.5.tar.gz",
-      "version": "1.0.5"
+      "sha256": "1dwjbw9x8rw01apwcfax8hhjp7i38bd9rmv36jxg0ihnk492gcsc",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.6/cms_pico-v1.0.6.tar.gz",
+      "version": "1.0.6"
     },
     "comments": {
       "meta": {
@@ -1700,9 +1700,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "02hb0b1iwm3p44m6zm2f0s5c1jpqqgk517blbp9vdgcxmczfd23c",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.39/ocr.tar.gz",
-      "version": "6.0.39"
+      "sha256": "0j0g16x6lcnwl8zax1nwzj5cwai6a81ka0vklyh21wvnxrh93wqq",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.40/ocr.tar.gz",
+      "version": "6.0.40"
     },
     "ocsms": {
       "meta": {
@@ -2084,7 +2084,7 @@
     },
     "rainloop": {
       "meta": {
-        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.13.0 (2019-07).",
+        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01).",
         "homepage": "https://github.com/pierre-alain-b/rainloop-nextcloud",
         "isShipped": false,
         "licenses": [
@@ -2093,9 +2093,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "0936f2ppb4s6blsp080cp1limh45xp0l4xn32whldhvgh73cmc8c",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.0/rainloop.tar.gz",
-      "version": "6.1.0"
+      "sha256": "1ddpgj3phyb12bd32nqj64d85d70whnbx8f32smqazqawfz0d7a3",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.2/rainloop.tar.gz",
+      "version": "6.1.2"
     },
     "ransomware_detection": {
       "meta": {
@@ -2278,9 +2278,9 @@
         "name": "SharePoint Backend",
         "summary": "SharePoint Backend for External storages"
       },
-      "sha256": "10s9p54al6wd3b57kipf7h5j0khj285a7xsdw9prhiv5i2rrw7f4",
-      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.4.0/sharepoint-1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "03zl6s1631m98vfgr4wkb3kd8nqiq9f8ykxdavzxly2l72aqksqm",
+      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.4.1/sharepoint.tar.gz",
+      "version": "1.4.1"
     },
     "sharerenamer": {
       "meta": {
