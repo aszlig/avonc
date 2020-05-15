@@ -1736,7 +1736,7 @@
     },
     "ojsxc": {
       "meta": {
-        "description": "Facebook-like chat with end-to-end encrypted conversation, video calls, multi-user rooms, XMPP and internal server backend.",
+        "description": "** Facebook-like chat for Nextcloud**\n\n* ** XMPP based** federated chat protocol\n* ** Groups** multi-user conversation\n* ** File transfer** send and receive files\n* ** Video calls** without plugins\n* ** Notifications** don't miss a single message\n* ** End-to-End encryption** protect your messages\n\n*This app works best with a external XMPP server.*",
         "homepage": "https://www.jsxc.org",
         "isShipped": false,
         "licenses": [
@@ -1745,9 +1745,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "09w7grkamcn3gnpp9ca3yc192k2nylxddxs2jinklw5456hkbhh5",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.0.0/ojsxc-4.0.0.tar.gz",
-      "version": "4.0.0"
+      "sha256": "1pgixidqz3s3in4hzah3q9rjaxgy7ry65qz45m6v9k1wj4rzrbz6",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.0/ojsxc-4.1.0.tar.gz",
+      "version": "4.1.0"
     },
     "onlyoffice": {
       "meta": {

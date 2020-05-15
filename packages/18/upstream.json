@@ -168,9 +168,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "037ch97k3dl38wbla1aqsdf7qcci0fi0v18kih3kf246jwj77ncf",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.1.0/auto_groups-v1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "128mnzvy9mz0ca64icdy6ad5yh2qvn5i8icmgnhzzf4rys6ck8pa",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.1.1/auto_groups-v1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -1709,7 +1709,7 @@
     },
     "ojsxc": {
       "meta": {
-        "description": "Facebook-like chat with end-to-end encrypted conversation, video calls, multi-user rooms, XMPP and internal server backend.",
+        "description": "** Facebook-like chat for Nextcloud**\n\n* ** XMPP based** federated chat protocol\n* ** Groups** multi-user conversation\n* ** File transfer** send and receive files\n* ** Video calls** without plugins\n* ** Notifications** don't miss a single message\n* ** End-to-End encryption** protect your messages\n\n*This app works best with a external XMPP server.*",
         "homepage": "https://www.jsxc.org",
         "isShipped": false,
         "licenses": [
@@ -1718,9 +1718,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "09w7grkamcn3gnpp9ca3yc192k2nylxddxs2jinklw5456hkbhh5",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.0.0/ojsxc-4.0.0.tar.gz",
-      "version": "4.0.0"
+      "sha256": "1pgixidqz3s3in4hzah3q9rjaxgy7ry65qz45m6v9k1wj4rzrbz6",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.0/ojsxc-4.1.0.tar.gz",
+      "version": "4.1.0"
     },
     "onlyoffice": {
       "meta": {
