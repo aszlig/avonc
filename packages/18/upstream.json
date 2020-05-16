@@ -472,9 +472,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0n95dkb9l6zmqg0f9f1648zpmyqs6j394rh7xina54gjvc07ilsf",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.0/deck.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0bw5wlsr91cc5bcfk68ax7rfwcjg1inj0nx5iwsj850v4bii7994",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.1/deck.tar.gz",
+      "version": "1.0.1"
     },
     "dicomviewer": {
       "meta": {
@@ -2496,9 +2496,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0y8915rk17809mxxdn611d5dv49kr6cg3vhl587b6arpj64rpqhm",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.0/tasks.tar.gz",
-      "version": "0.13.0"
+      "sha256": "0yz7y0rakvqxzafr9a7z3hrdyr6z2kjkdmdzgz1faxnlmw0l3sl3",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.1/tasks.tar.gz",
+      "version": "0.13.1"
     },
     "telephoneprovider": {
       "meta": {

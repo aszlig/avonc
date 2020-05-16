@@ -2513,9 +2513,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0y8915rk17809mxxdn611d5dv49kr6cg3vhl587b6arpj64rpqhm",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.0/tasks.tar.gz",
-      "version": "0.13.0"
+      "sha256": "0yz7y0rakvqxzafr9a7z3hrdyr6z2kjkdmdzgz1faxnlmw0l3sl3",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.1/tasks.tar.gz",
+      "version": "0.13.1"
     },
     "telephoneprovider": {
       "meta": {
