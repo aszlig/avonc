@@ -449,6 +449,7 @@
     "diffuse": {
       "meta": {
         "description": "A music player that connects to your cloud/distributed storage",
+        "homepage": "https://diffuse.sh",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -456,9 +457,9 @@
         "name": "Diffuse",
         "summary": "A music player that connects to your cloud/distributed storage"
       },
-      "sha256": "0sy73bhjis2xi54ddczl1qqwzbbxdk7brlw7jp4jal6wmz606lpg",
-      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.2/diffuse-web.tar.gz",
-      "version": "2.5.2"
+      "sha256": "02kpxprp7jhklgdqkx22r6y7j3vynw2i9794mf40yyfy0j2kd05c",
+      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.3/diffuse-web.tar.gz",
+      "version": "2.5.3"
     },
     "discoursesso": {
       "meta": {
@@ -522,6 +523,7 @@
     "emlviewer": {
       "meta": {
         "description": "Provides an email preview functionality. It creates preview for the .eml files and displays it as a modal.",
+        "homepage": "https://github.com/newroco/emlviewer",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -529,9 +531,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "060vx6fx90ndaw0nnjy5nma7r408saphnx2jiscan2qk523b3ds9",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.5/emlviewer.tar.gz",
-      "version": "0.0.5"
+      "sha256": "0p3xb8lx7aprkqxqw7kkwbd7nv4v684kkiqmc36s631my01yrhhi",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.12/emlviewer-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "encryption": {
       "meta": {
@@ -1562,7 +1564,7 @@
     },
     "music": {
       "meta": {
-        "description": "Plays audio files directly in the Files view or in a separate library view. Depending on the browser, supports playing filetypes mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nThe Music app also integrates with the mediaSession API (available at least on recent versions of Chrome). When the API is supported by the browser, this allows controlling the Music app via the media playback keys on keyboard even when the browser is not focused, and shows the playback controls also on the lock scren of the OS (at least on Windows 10 and Android).\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is not optimized for such collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
+        "description": "Plays audio files directly in the Files view or in a stand-alone library view. Depending on the browser, supports playing file types mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, search tracks by keywords, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nThe Music app also integrates with the mediaSession API (available at least on recent versions of Chrome) both when playing music within Files and in the stand-alone view. When the API is supported by the browser, this allows controlling the playback with the media keys (play/pause/stop/next/prev) on the keyboard even when the browser is not focused, and shows the playback controls also on the lock screen of the OS (at least on Windows 10 and Android).\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is optimized for somewhat smaller collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
         "homepage": "https://github.com/owncloud/music",
         "isShipped": false,
         "licenses": [
@@ -1571,9 +1573,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1f2vzaz5na9kajhdcyb4ms023ds86q5si79bbdakc3770ziyqvzk",
-      "url": "https://github.com/paulijar/music/files/4512262/music_0.14.0_nc-signed.tar.gz",
-      "version": "0.14.0"
+      "sha256": "05c8sllibn9jmn2x5xmaxs6dhlqcf1f01nhf296qvz1f2ma0zcdd",
+      "url": "https://github.com/paulijar/music/files/4640625/music_0.14.1_nc-signed.tar.gz",
+      "version": "0.14.1"
     },
     "news": {
       "meta": {
@@ -1629,9 +1631,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "18mrlljmvlzr8v3qr2cb12k6mq2mgqnyrnj65vnf0q0f9x5qcbrv",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.3.0/notes.tar.gz",
-      "version": "3.3.0"
+      "sha256": "0k0676di879lr4xzjwwr881vvwih39glpmaz3c4hbyy1nbwmh5j1",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.3.1/notes.tar.gz",
+      "version": "3.3.1"
     },
     "notifications": {
       "meta": {
@@ -1700,9 +1702,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0j0g16x6lcnwl8zax1nwzj5cwai6a81ka0vklyh21wvnxrh93wqq",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.40/ocr.tar.gz",
-      "version": "6.0.40"
+      "sha256": "08g35kvn84z6hpys9yzlkc4l8m9a781bkabi7dkbqn5d4s034nv6",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.41/ocr.tar.gz",
+      "version": "6.0.41"
     },
     "ocsms": {
       "meta": {
@@ -2093,9 +2095,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "1ddpgj3phyb12bd32nqj64d85d70whnbx8f32smqazqawfz0d7a3",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.2/rainloop.tar.gz",
-      "version": "6.1.2"
+      "sha256": "1azrvk0cfpbpfg2liasmz3sk63z6yq1l0qygyjall0aw3w6hnsf4",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/6.1.4/rainloop.tar.gz",
+      "version": "6.1.4"
     },
     "ransomware_detection": {
       "meta": {
