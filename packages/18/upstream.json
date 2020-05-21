@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "143s6m2645yrhjpmwnwjfma9h79m918dw49y1vj7b28drsr7m7zs",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.4.15/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.4.15"
+      "sha256": "0l8sxxg055vzznafwxkhhzb3k6fpsd47xh42wwyvihs6s1cp14n0",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/d68920846ed83cc312e80e83eb7da9c5f55e20e4/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.4.16"
     },
     "apporder": {
       "meta": {
@@ -299,9 +299,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "00i1x2jsdj0lz2ii2pdf9v41iwr7y5gysdbhvls8yzh9yp5h8pm1",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.21.1/carnet-nc-v0.21.1.tar.gz",
-      "version": "0.21.1"
+      "sha256": "1zzqa2vz0fva2pblzxghvh1avj913937645ka2gymiwzm3ll1c49",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.0/carnet-nc-v0.22.0.tar.gz",
+      "version": "0.22.0"
     },
     "checksum": {
       "meta": {
@@ -910,9 +910,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "1cxc5630qr3g28v72jjcadr3js4g4iywhimlvwr78pc0cc0f7bgq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.13/files_linkeditor.tar.gz",
-      "version": "1.0.13"
+      "sha256": "0rwwsqssbprs5v119qw79f7f6dsjaj3032bb1rk6y5zdfm4ysfam",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.14/files_linkeditor.tar.gz",
+      "version": "1.0.14"
     },
     "files_lock": {
       "meta": {
@@ -2138,9 +2138,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "1ny9c5i2d0bfhxqr8xznxs1pahs71s62izwjbfpbmw8j1wrj57xl",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.0/riotchat.tar.gz",
-      "version": "0.4.0"
+      "sha256": "1fz0qvcbgg2y5kmfr8fcmsam6nx45ln2sjij5m7dd9fhbpscrhbd",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.1/riotchat.tar.gz",
+      "version": "0.4.1"
     },
     "scanner": {
       "meta": {
@@ -2770,9 +2770,9 @@
         "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "1vqah3vbdd46k6v8bqk5v6v3ln09kzi0l72z6dl4lq33z8vb9v1y",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.9.1/user_external-0.9.1.tar.gz",
-      "version": "0.9.1"
+      "sha256": "1p8cpzkgs3b1swchm4xscknd76i24gnphfhzpbsqj1dv3cxy39z8",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v0.10.0/user_external-0.10.0.tar.gz",
+      "version": "0.10.0"
     },
     "user_ispconfig": {
       "meta": {
