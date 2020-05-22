@@ -108,9 +108,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "1plnalcpjmgrapmlrvyhsa939s3wxr8h0ns9k6r89n40c5lyj017",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.9.0/apporder.tar.gz",
-      "version": "0.9.0"
+      "sha256": "0c7ms6907n87142v3dfhhc2xcdnn1k7fs7wqiadmgmqw15fjssc2",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.10.0/apporder.tar.gz",
+      "version": "0.10.0"
     },
     "audioplayer": {
       "meta": {
@@ -1387,9 +1387,9 @@
         "name": "Impersonate",
         "summary": "Impersonate other users"
       },
-      "sha256": "04sd6rxm3vbkn93b7qapdprx63v55a94zds8sbvh1jq54pmqg4i0",
-      "url": "https://github.com/nextcloud/impersonate/releases/download/v1.5.0/impersonate.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1b9rfsld5kwnpqj000ir22anlnmlas2bl73n2m30pp05hdk19vpj",
+      "url": "https://github.com/nextcloud/impersonate/releases/download/v1.5.1/impersonate.tar.gz",
+      "version": "1.5.1"
     },
     "issuetemplate": {
       "meta": {
@@ -1433,6 +1433,21 @@
       "sha256": "0n9cnbdrz6v18dq45pjdyfaz89i0jfv70ygxk3r0kfjfk5p8az48",
       "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.1.0/ldap_write_support.tar.gz",
       "version": "1.1.0"
+    },
+    "ldapcontacts": {
+      "meta": {
+        "description": "# LdapContacts\nView other LDAP users as contacts in Nextcloud and see the personal data they shared.\n\n### Features\n  * view all LDAP users as contacts\n  * search these users\n  * restrict your search to certain LDAP groups\n  * hide certain users and groups from the contacts app\n  * define which LDAP attributes are available for your contacts\n\n### Requirements\n  * active LDAP authentification (check [Nextcloud admin manual](https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/user_auth_ldap.html) for details)\n  * php 7.0",
+        "homepage": "https://github.com/KircheNeuenburg/ldapcontacts",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "LDAP Contacts",
+        "summary": "Display your LDAP contacts"
+      },
+      "sha256": "1n6pp3qqnsz3b58v237wzg1f292axjpl4xmilivs8kkypk2ip4ld",
+      "url": "https://h-software.de/nextcloud_apps/ldapcontacts/ldapcontacts-2.0.2.tar.gz",
+      "version": "2.0.2"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -1561,9 +1576,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "06arj282gm2yq66lwza3vmbbvrw1zgjw0yx0yxhcpwskbfk7wlhs",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.7/news.tar.gz",
-      "version": "14.1.7"
+      "sha256": "0pwyfgqn1dc1bqjmnpl4w5mjkz3xc29py2j3s5aab14732s7g431",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.8/news.tar.gz",
+      "version": "14.1.8"
     },
     "nextbackup": {
       "meta": {
@@ -1675,9 +1690,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "08g35kvn84z6hpys9yzlkc4l8m9a781bkabi7dkbqn5d4s034nv6",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.41/ocr.tar.gz",
-      "version": "6.0.41"
+      "sha256": "0hlp104k79df6i49fj544q8isr1yrc9fvfpzl2xxzljz7njk2y0x",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.42/ocr.tar.gz",
+      "version": "6.0.42"
     },
     "ocsms": {
       "meta": {
@@ -1705,9 +1720,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1xmr582ylvy2ahrqsh88d0xjg06c74plk960yi6s0njz4076h5g6",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.3.1/oidc_login.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1ddqhvx31d8ajpn5xnp964yayzm0l83lb967i6pz8ynhmm3gyqz7",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.4.0/oidc_login.tar.gz",
+      "version": "1.4.0"
     },
     "ojsxc": {
       "meta": {
@@ -2138,9 +2153,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "1fz0qvcbgg2y5kmfr8fcmsam6nx45ln2sjij5m7dd9fhbpscrhbd",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.1/riotchat.tar.gz",
-      "version": "0.4.1"
+      "sha256": "0z19sjalcfgjak3gpcgxp10dmgxd64mimlak0bj55xvizgp0lprk",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.2/riotchat.tar.gz",
+      "version": "0.4.2"
     },
     "scanner": {
       "meta": {
@@ -2324,9 +2339,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1qzw97nbn373df6cf4xkaalgyll0n2an4bawqs7i05fvhq3gp110",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.6/release.tar.gz",
-      "version": "2.4.6"
+      "sha256": "0cm2wdgjh0yvv1rr99w6ic09zph61kyyfvsj8j27b9g5qv1pj81m",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.7/release.tar.gz",
+      "version": "2.4.7"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2567,9 +2582,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "0sa2szy8wmshp7shvnxsdd7nbs1lim6p8fkb2dsfkf12ji4azzmq",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.5.0/theming_customcss.tar.gz",
-      "version": "1.5.0"
+      "sha256": "00m95jlnzsi1w8jvdi20ghkyzpnsi6r0l1jncdn4bdk50g40qf9f",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.6.0/theming_customcss.tar.gz",
+      "version": "1.6.0"
     },
     "timetracker": {
       "meta": {
