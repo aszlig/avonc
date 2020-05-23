@@ -301,7 +301,6 @@ import ../make-test.nix {
     foreach my $i (1..$clients) {
       $vms{"client$i"}->seleniumScreenshot('client'.$i.'_call_started');
       $vms{"client$i"}->saveDriverLog('client'.$i.'_driver');
-      $vms{"client$i"}->saveBrowserLog('client'.$i.'_browser');
       $vms{"client$i"}->saveHtml('client'.$i.'_call_started');
     }
   '';
