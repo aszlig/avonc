@@ -1588,9 +1588,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0pwyfgqn1dc1bqjmnpl4w5mjkz3xc29py2j3s5aab14732s7g431",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.8/news.tar.gz",
-      "version": "14.1.8"
+      "sha256": "1vfkzhs02a5i658flblg2jpmw1af5yas07lqclfch16p5p69xgs5",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.9/news.tar.gz",
+      "version": "14.1.9"
     },
     "nextbackup": {
       "meta": {

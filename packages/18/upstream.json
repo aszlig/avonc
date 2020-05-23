@@ -197,9 +197,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0f1vks767xr14mxg2mjg1j6mmkn0s0w9q63g4mg0kk8wa4464w7s",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.2.0/bbb-v0.2.0.tar.gz",
-      "version": "0.2.0"
+      "sha256": "14gbs0m8sgmdiw2zprzmrl98sgw5f06vk8r6ckah6bzghw9qb78l",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.3.1/bbb-v0.3.1.tar.gz",
+      "version": "0.3.1"
     },
     "bookmarks": {
       "meta": {
@@ -415,9 +415,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0y82d4ld1spcn60vk2594n3qdjpv36scbdn0nbsiq2carp4k6376",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/589e6ecaacf0b69d1b55f9fd81503fa8/cospend-0.5.3.tar.gz",
-      "version": "0.5.3"
+      "sha256": "1yiq4cm6xsx44cdldd38rcgd6hm3hzf5fa32060jspd5vxac1s03",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/401bab96c777039b3423663653be3033/cospend-0.5.4.tar.gz",
+      "version": "0.5.4"
     },
     "dashboardcharts": {
       "meta": {
@@ -1576,9 +1576,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0pwyfgqn1dc1bqjmnpl4w5mjkz3xc29py2j3s5aab14732s7g431",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.8/news.tar.gz",
-      "version": "14.1.8"
+      "sha256": "1vfkzhs02a5i658flblg2jpmw1af5yas07lqclfch16p5p69xgs5",
+      "url": "https://github.com/nextcloud/news/releases/download/14.1.9/news.tar.gz",
+      "version": "14.1.9"
     },
     "nextbackup": {
       "meta": {
