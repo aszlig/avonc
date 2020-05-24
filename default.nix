@@ -741,10 +741,7 @@ in {
     };
   };
 
-  imports = [
-    ./systemd-chroot.nix ./libreoffice-online ./gpx ./talk ./osrm
-    modules/redis.nix
-  ];
+  imports = [ ./libreoffice-online ./gpx ./talk ./osrm modules/redis.nix ];
 
   config = lib.mkIf cfg.enable {
     assertions = [
@@ -939,8 +936,8 @@ in {
       environment.NEXTCLOUD_CONFIG_DIR = nextcloudConfigDir;
       environment.__NEXTCLOUD_VERSION = package.version;
 
-      chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php nextcloudConfigDir ];
+      confinement.enable = true;
+      confinement.packages = [ pkgs.glibcLocales php nextcloudConfigDir ];
 
       script = ''
         if [ -e /var/lib/nextcloud/.version ]; then
@@ -978,8 +975,8 @@ in {
 
       environment.__NEXTCLOUD_VERSION = package.version;
 
-      chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php ];
+      confinement.enable = true;
+      confinement.packages = [ pkgs.glibcLocales php ];
 
       serviceConfig = {
         Type = "notify";
@@ -1009,8 +1006,10 @@ in {
       environment.SSL_CERT_FILE = caCerts;
       environment.NIX_SSL_CERT_FILE = caCerts;
 
-      chroot.enable = true;
-      chroot.packages = [ pkgs.glibcLocales php nextcloudConfigDir caCerts ];
+      confinement.enable = true;
+      confinement.packages = [
+        pkgs.glibcLocales php nextcloudConfigDir caCerts
+      ];
 
       serviceConfig = {
         Type = "oneshot";

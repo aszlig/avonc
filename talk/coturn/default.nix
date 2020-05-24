@@ -104,8 +104,8 @@ in {
       requires = [ "nextcloud-coturn-secrets.service" ];
       after = [ "network.target" "nextcloud-coturn-secrets.service" ];
 
-      chroot.enable = true;
-      chroot.confinement = "chroot-only";
+      confinement.enable = true;
+      confinement.mode = "chroot-only";
 
       serviceConfig = {
         ExecStart = "${coturn}/bin/turnserver -c ${configFile}";

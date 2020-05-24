@@ -249,8 +249,8 @@ in {
       description = "Nextcloud Talk Signaling Server";
       wantedBy = [ "nextcloud.service" ];
 
-      chroot.enable = true;
-      chroot.confinement = "chroot-only";
+      confinement.enable = true;
+      confinement.mode = "chroot-only";
 
       serviceConfig = {
         ExecStart = "@${signalingServer}/bin/server nextcloud-signaling"
