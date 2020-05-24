@@ -742,7 +742,7 @@ in {
   };
 
   imports = [
-    ./systemd-chroot.nix ./libreoffice-online ./gpx ./coturn ./osrm
+    ./systemd-chroot.nix ./libreoffice-online ./gpx ./talk ./osrm
     modules/redis.nix
   ];
 

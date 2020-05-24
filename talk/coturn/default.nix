@@ -40,8 +40,6 @@ let
   '';
 
 in {
-  imports = [ ./external-signaling.nix ];
-
   options.nextcloud.apps.spreed = {
     port = lib.mkOption {
       type = lib.types.ints.u16;
