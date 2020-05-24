@@ -1,0 +1,502 @@
+diff --git a/src/server/main.go b/src/server/main.go
+index 48b1b44..500cde5 100644
+--- a/src/server/main.go
++++ b/src/server/main.go
+@@ -33,7 +33,6 @@ import (
+ 	"os/signal"
+ 	"runtime"
+ 	runtimepprof "runtime/pprof"
+-	"strings"
+ 	"time"
+ 
+ 	"github.com/dlintw/goconf"
+@@ -42,6 +41,8 @@ import (
+ 	"github.com/nats-io/go-nats"
+ 
+ 	"signaling"
++
++	"github.com/coreos/go-systemd/activation"
+ )
+ 
+ var (
+@@ -146,8 +147,10 @@ func main() {
+ 		log.Fatal("Could not create NATS client: ", err)
+ 	}
+ 
+-	r := mux.NewRouter()
+-	hub, err := signaling.NewHub(config, nats, r, version)
++	externalRouter := mux.NewRouter()
++	internalRouter := mux.NewRouter()
++
++	hub, err := signaling.NewHub(config, nats, externalRouter, version)
+ 	if err != nil {
+ 		log.Fatal("Could not create hub: ", err)
+ 	}
+@@ -205,87 +208,60 @@ func main() {
+ 	if err != nil {
+ 		log.Fatal("Could not create backend server: ", err)
+ 	}
+-	if err := server.Start(r); err != nil {
++	if err := server.Start(internalRouter); err != nil {
+ 		log.Fatal("Could not start backend server: ", err)
+ 	}
+ 
+ 	if debug, _ := config.GetBool("app", "debug"); debug {
+ 		log.Println("Installing debug handlers in \"/debug/pprof\"")
+-		r.Handle("/debug/pprof/", http.HandlerFunc(pprof.Index))
+-		r.Handle("/debug/pprof/cmdline", http.HandlerFunc(pprof.Cmdline))
+-		r.Handle("/debug/pprof/profile", http.HandlerFunc(pprof.Profile))
+-		r.Handle("/debug/pprof/symbol", http.HandlerFunc(pprof.Symbol))
+-		r.Handle("/debug/pprof/trace", http.HandlerFunc(pprof.Trace))
++		internalRouter.Handle("/debug/pprof/", http.HandlerFunc(pprof.Index))
++		internalRouter.Handle("/debug/pprof/cmdline", http.HandlerFunc(pprof.Cmdline))
++		internalRouter.Handle("/debug/pprof/profile", http.HandlerFunc(pprof.Profile))
++		internalRouter.Handle("/debug/pprof/symbol", http.HandlerFunc(pprof.Symbol))
++		internalRouter.Handle("/debug/pprof/trace", http.HandlerFunc(pprof.Trace))
+ 		for _, profile := range runtimepprof.Profiles() {
+ 			name := profile.Name()
+-			r.Handle("/debug/pprof/"+name, pprof.Handler(name))
++			internalRouter.Handle("/debug/pprof/"+name, pprof.Handler(name))
+ 		}
+ 	}
+ 
+-	if saddr, _ := config.GetString("https", "listen"); saddr != "" {
+-		cert, _ := config.GetString("https", "certificate")
+-		key, _ := config.GetString("https", "key")
+-		if cert == "" || key == "" {
+-			log.Fatal("Need a certificate and key for the HTTPS listener")
+-		}
+-
+-		readTimeout, _ := config.GetInt("https", "readtimeout")
+-		if readTimeout <= 0 {
+-			readTimeout = defaultReadTimeout
+-		}
+-		writeTimeout, _ := config.GetInt("https", "writetimeout")
+-		if writeTimeout <= 0 {
+-			writeTimeout = defaultWriteTimeout
+-		}
+-		for _, address := range strings.Split(saddr, " ") {
+-			go func(address string) {
+-				log.Println("Listening on", address)
+-				listener, err := createTLSListener(address, cert, key)
+-				if err != nil {
+-					log.Fatal("Could not start listening: ", err)
+-				}
+-				srv := &http.Server{
+-					Handler: r,
++	listeners, err := activation.ListenersWithNames()
++	if err != nil {
++		log.Fatal("Unable do determine systemd sockets: ", err)
++	}
+ 
+-					ReadTimeout:  time.Duration(readTimeout) * time.Second,
+-					WriteTimeout: time.Duration(writeTimeout) * time.Second,
+-				}
+-				if err := srv.Serve(listener); err != nil {
+-					log.Fatal("Could not start server: ", err)
+-				}
+-			}(address)
+-		}
++	readTimeout, _ := config.GetInt("http", "readtimeout")
++	if readTimeout <= 0 {
++		readTimeout = defaultReadTimeout
++	}
++	writeTimeout, _ := config.GetInt("http", "writetimeout")
++	if writeTimeout <= 0 {
++		writeTimeout = defaultWriteTimeout
+ 	}
+ 
+-	if addr, _ := config.GetString("http", "listen"); addr != "" {
+-		readTimeout, _ := config.GetInt("http", "readtimeout")
+-		if readTimeout <= 0 {
+-			readTimeout = defaultReadTimeout
+-		}
+-		writeTimeout, _ := config.GetInt("http", "writetimeout")
+-		if writeTimeout <= 0 {
+-			writeTimeout = defaultWriteTimeout
+-		}
++	for _, intListener := range listeners["internal"] {
++		go func() {
++			srv := &http.Server {
++				Handler: internalRouter,
++			}
++			if err := srv.Serve(intListener); err != nil {
++				log.Fatal("Could not start internal server: ", err)
++			}
++		}()
++	}
+ 
+-		for _, address := range strings.Split(addr, " ") {
+-			go func(address string) {
+-				log.Println("Listening on", address)
+-				listener, err := createListener(address)
+-				if err != nil {
+-					log.Fatal("Could not start listening: ", err)
+-				}
+-				srv := &http.Server{
+-					Handler: r,
+-					Addr:    addr,
++	for _, extListener := range listeners["external"] {
++		go func() {
++			srv := &http.Server {
++				Handler: externalRouter,
+ 
+-					ReadTimeout:  time.Duration(readTimeout) * time.Second,
+-					WriteTimeout: time.Duration(writeTimeout) * time.Second,
+-				}
+-				if err := srv.Serve(listener); err != nil {
+-					log.Fatal("Could not start server: ", err)
+-				}
+-			}(address)
+-		}
++				ReadTimeout:  time.Duration(readTimeout) * time.Second,
++				WriteTimeout: time.Duration(writeTimeout) * time.Second,
++			}
++			if err := srv.Serve(extListener); err != nil {
++				log.Fatal("Could not start external server: ", err)
++			}
++		}()
+ 	}
+ 
+ 	select {
+diff --git a/src/signaling/backend_client.go b/src/signaling/backend_client.go
+index ba08c9c..c236fe0 100644
+--- a/src/signaling/backend_client.go
++++ b/src/signaling/backend_client.go
+@@ -24,11 +24,13 @@ package signaling
+ import (
+ 	"bytes"
+ 	"crypto/tls"
++	stdctx "context"
+ 	"encoding/json"
+ 	"fmt"
+ 	"io"
+ 	"io/ioutil"
+ 	"log"
++	"net"
+ 	"net/http"
+ 	"net/url"
+ 	"strings"
+@@ -45,9 +47,6 @@ var (
+ 
+ type BackendClient struct {
+ 	transport    *http.Transport
+-	whitelist    map[string]bool
+-	whitelistAll bool
+-	secret       []byte
+ 	version      string
+ 
+ 	mu sync.Mutex
+@@ -57,53 +56,24 @@ type BackendClient struct {
+ }
+ 
+ func NewBackendClient(config *goconf.ConfigFile, maxConcurrentRequestsPerHost int, version string) (*BackendClient, error) {
+-	whitelist := make(map[string]bool)
+-	whitelistAll, _ := config.GetBool("backend", "allowall")
+-	if whitelistAll {
+-		log.Println("WARNING: All backend hostnames are allowed, only use for development!")
+-	} else {
+-		urls, _ := config.GetString("backend", "allowed")
+-		for _, u := range strings.Split(urls, ",") {
+-			u = strings.TrimSpace(u)
+-			if idx := strings.IndexByte(u, '/'); idx != -1 {
+-				log.Printf("WARNING: Removing path from allowed hostname \"%s\", check your configuration!", u)
+-				u = u[:idx]
+-			}
+-			if u != "" {
+-				whitelist[strings.ToLower(u)] = true
+-			}
+-		}
+-		if len(whitelist) == 0 {
+-			log.Println("WARNING: No backend hostnames are allowed, check your configuration!")
+-		} else {
+-			hosts := make([]string, 0, len(whitelist))
+-			for u := range whitelist {
+-				hosts = append(hosts, u)
+-			}
+-			log.Printf("Allowed backend hostnames: %s\n", hosts)
+-		}
+-	}
+-
+ 	skipverify, _ := config.GetBool("backend", "skipverify")
+ 	if skipverify {
+ 		log.Println("WARNING: Backend verification is disabled!")
+ 	}
+ 
+-	secret, _ := config.GetString("backend", "secret")
+-
+ 	tlsconfig := &tls.Config{
+ 		InsecureSkipVerify: skipverify,
+ 	}
+ 	transport := &http.Transport{
+ 		MaxIdleConnsPerHost: maxConcurrentRequestsPerHost,
+ 		TLSClientConfig:     tlsconfig,
++		DialContext: func(_ stdctx.Context, _, _ string) (net.Conn, error) {
++			return net.Dial("unix", "/run/nextcloud-signaling/nextcloud.sock")
++		},
+ 	}
+ 
+ 	return &BackendClient{
+ 		transport:    transport,
+-		whitelist:    whitelist,
+-		whitelistAll: whitelistAll,
+-		secret:       []byte(secret),
+ 		version:      version,
+ 
+ 		maxConcurrentRequestsPerHost: maxConcurrentRequestsPerHost,
+@@ -135,15 +105,6 @@ func (b *BackendClient) getPool(url *url.URL) (*HttpClientPool, error) {
+ 	return pool, nil
+ }
+ 
+-func (b *BackendClient) IsUrlAllowed(u *url.URL) bool {
+-	if u == nil {
+-		// Reject all invalid URLs.
+-		return false
+-	}
+-
+-	return b.whitelistAll || b.whitelist[u.Host]
+-}
+-
+ func isOcsRequest(u *url.URL) bool {
+ 	return strings.Contains(u.Path, "/ocs/v2.php") || strings.Contains(u.Path, "/ocs/v1.php")
+ }
+@@ -299,12 +260,16 @@ func performRequestWithRedirects(ctx context.Context, client *http.Client, req *
+ 
+ // PerformJSONRequest sends a JSON POST request to the given url and decodes
+ // the result into "response".
+-func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, request interface{}, response interface{}) error {
+-	if u == nil {
++func (b *BackendClient) PerformJSONRequest(ctx context.Context, maybeUrl *url.URL, request interface{}, response interface{}) error {
++	if maybeUrl == nil {
+ 		return fmt.Errorf("No url passed to perform JSON request %+v", request)
+ 	}
+ 
+-	pool, err := b.getPool(u)
++	u := *maybeUrl
++	u.Scheme = "http"
++	u.Host = "localhost"
++
++	pool, err := b.getPool(&u)
+ 	if err != nil {
+ 		log.Printf("Could not get client pool for host %s: %s\n", u.Host, err)
+ 		return err
+@@ -325,7 +290,7 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
+ 
+ 	req := &http.Request{
+ 		Method:     "POST",
+-		URL:        u,
++		URL:        &u,
+ 		Proto:      "HTTP/1.1",
+ 		ProtoMajor: 1,
+ 		ProtoMinor: 1,
+@@ -337,9 +302,6 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
+ 	req.Header.Set("OCS-APIRequest", "true")
+ 	req.Header.Set("User-Agent", "nextcloud-spreed-signaling/"+b.version)
+ 
+-	// Add checksum so the backend can validate the request.
+-	AddBackendChecksum(req, data, b.secret)
+-
+ 	resp, err := performRequestWithRedirects(ctx, c, req, data)
+ 	if err != nil {
+ 		log.Printf("Could not send request %s to %s: %s\n", string(data), u.String(), err)
+@@ -359,7 +321,7 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
+ 		return err
+ 	}
+ 
+-	if isOcsRequest(u) {
++	if isOcsRequest(&u) {
+ 		// OCS response are wrapped in an OCS container that needs to be parsed
+ 		// to get the actual contents:
+ 		// {
+diff --git a/src/signaling/backend_server.go b/src/signaling/backend_server.go
+index 3ad2d36..9c2e8ba 100644
+--- a/src/signaling/backend_server.go
++++ b/src/signaling/backend_server.go
+@@ -55,8 +55,6 @@ type BackendServer struct {
+ 	version        string
+ 	welcomeMessage string
+ 
+-	secret []byte
+-
+ 	turnapikey  string
+ 	turnsecret  []byte
+ 	turnvalid   time.Duration
+@@ -64,8 +62,6 @@ type BackendServer struct {
+ }
+ 
+ func NewBackendServer(config *goconf.ConfigFile, hub *Hub, version string) (*BackendServer, error) {
+-	secret, _ := config.GetString("backend", "secret")
+-
+ 	turnapikey, _ := config.GetString("turn", "apikey")
+ 	turnsecret, _ := config.GetString("turn", "secret")
+ 	turnservers, _ := config.GetString("turn", "servers")
+@@ -100,8 +96,6 @@ func NewBackendServer(config *goconf.ConfigFile, hub *Hub, version string) (*Bac
+ 		roomSessions: hub.roomSessions,
+ 		version:      version,
+ 
+-		secret: []byte(secret),
+-
+ 		turnapikey: turnapikey,
+ 
+ 		turnsecret:  []byte(turnsecret),
+@@ -227,22 +221,12 @@ func (b *BackendServer) validateBackendRequest(f func(http.ResponseWriter, *http
+ 			return
+ 		}
+ 
+-		if r.Header.Get(HeaderBackendSignalingRandom) == "" ||
+-			r.Header.Get(HeaderBackendSignalingChecksum) == "" {
+-			http.Error(w, "Authentication check failed", http.StatusForbidden)
+-			return
+-		}
+-
+ 		body, err := ioutil.ReadAll(r.Body)
+ 		if err != nil {
+ 			log.Println("Error reading body: ", err)
+ 			http.Error(w, "Could not read body", http.StatusBadRequest)
+ 			return
+ 		}
+-		if !ValidateBackendChecksum(r, body, b.secret) {
+-			http.Error(w, "Authentication check failed", http.StatusForbidden)
+-			return
+-		}
+ 
+ 		f(w, r, body)
+ 	}
+diff --git a/src/signaling/hub.go b/src/signaling/hub.go
+index 04ade13..1b25c44 100644
+--- a/src/signaling/hub.go
++++ b/src/signaling/hub.go
+@@ -22,12 +22,8 @@
+ package signaling
+ 
+ import (
+-	"crypto/hmac"
+-	"crypto/sha256"
+ 	"encoding/base64"
+-	"encoding/hex"
+ 	"encoding/json"
+-	"fmt"
+ 	"hash/fnv"
+ 	"log"
+ 	"net/http"
+@@ -35,6 +31,7 @@ import (
+ 	"sync"
+ 	"sync/atomic"
+ 	"time"
++	"os"
+ 
+ 	"github.com/dlintw/goconf"
+ 	"github.com/gorilla/mux"
+@@ -124,7 +121,6 @@ type Hub struct {
+ 
+ 	mcu                   Mcu
+ 	mcuTimeout            time.Duration
+-	internalClientsSecret []byte
+ 
+ 	expiredSessions    map[Session]bool
+ 	expectHelloClients map[*Client]time.Time
+@@ -138,29 +134,15 @@ type Hub struct {
+ }
+ 
+ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version string) (*Hub, error) {
+-	hashKey, _ := config.GetString("sessions", "hashkey")
+-	switch len(hashKey) {
+-	case 32:
+-	case 64:
+-	default:
+-		log.Printf("WARNING: The sessions hash key should be 32 or 64 bytes but is %d bytes", len(hashKey))
+-	}
+-
+-	blockKey, _ := config.GetString("sessions", "blockkey")
+-	blockBytes := []byte(blockKey)
+-	switch len(blockKey) {
+-	case 0:
+-		blockBytes = nil
+-	case 16:
+-	case 24:
+-	case 32:
+-	default:
+-		return nil, fmt.Errorf("The sessions block key must be 16, 24 or 32 bytes but is %d bytes", len(blockKey))
++	decoder := base64.URLEncoding.WithPadding(base64.NoPadding)
++	hashKey, err := decoder.DecodeString(os.Getenv("NEXTCLOUD_SIGNALING_HASHKEY"))
++	if err != nil {
++		return nil, err
+ 	}
+ 
+-	internalClientsSecret, _ := config.GetString("clients", "internalsecret")
+-	if internalClientsSecret == "" {
+-		log.Println("WARNING: No shared secret has been set for internal clients.")
++	blockKey, err := decoder.DecodeString(os.Getenv("NEXTCLOUD_SIGNALING_BLOCKKEY"))
++	if err != nil {
++		return nil, err
+ 	}
+ 
+ 	maxConcurrentRequestsPerHost, _ := config.GetInt("backend", "connectionsperhost")
+@@ -224,7 +206,7 @@ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version s
+ 			ReadBufferSize:  websocketReadBufferSize,
+ 			WriteBufferSize: websocketWriteBufferSize,
+ 		},
+-		cookie: securecookie.New([]byte(hashKey), blockBytes).MaxAge(0),
++		cookie: securecookie.New(hashKey, blockKey).MaxAge(0),
+ 		info: &HelloServerMessageServer{
+ 			Version: version,
+ 		},
+@@ -245,7 +227,6 @@ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version s
+ 		decodeCaches: decodeCaches,
+ 
+ 		mcuTimeout:            mcuTimeout,
+-		internalClientsSecret: []byte(internalClientsSecret),
+ 
+ 		expiredSessions:    make(map[Session]bool),
+ 		anonymousClients:   make(map[*Client]time.Time),
+@@ -741,8 +722,6 @@ func (h *Hub) processHello(client *Client, message *ClientMessage) {
+ 	switch message.Hello.Auth.Type {
+ 	case HelloClientTypeClient:
+ 		h.processHelloClient(client, message)
+-	case HelloClientTypeInternal:
+-		h.processHelloInternal(client, message)
+ 	default:
+ 		h.startExpectHello(client)
+ 		client.SendMessage(message.NewErrorServerMessage(InvalidClientType))
+@@ -754,10 +733,6 @@ func (h *Hub) processHelloClient(client *Client, message *ClientMessage) {
+ 	defer h.startExpectHello(client)
+ 
+ 	url := message.Hello.Auth.parsedUrl
+-	if !h.backend.IsUrlAllowed(url) {
+-		client.SendMessage(message.NewErrorServerMessage(InvalidBackendUrl))
+-		return
+-	}
+ 
+ 	// Run in timeout context to prevent blocking too long.
+ 	ctx, cancel := context.WithTimeout(context.Background(), h.backendTimeout)
+@@ -775,30 +750,6 @@ func (h *Hub) processHelloClient(client *Client, message *ClientMessage) {
+ 	h.processRegister(client, message, &auth)
+ }
+ 
+-func (h *Hub) processHelloInternal(client *Client, message *ClientMessage) {
+-	defer h.startExpectHello(client)
+-	if len(h.internalClientsSecret) == 0 {
+-		client.SendMessage(message.NewErrorServerMessage(InvalidClientType))
+-		return
+-	}
+-
+-	// Validate internal connection.
+-	rnd := message.Hello.Auth.internalParams.Random
+-	mac := hmac.New(sha256.New, h.internalClientsSecret)
+-	mac.Write([]byte(rnd))
+-	check := hex.EncodeToString(mac.Sum(nil))
+-	if len(rnd) < minTokenRandomLength || check != message.Hello.Auth.internalParams.Token {
+-		client.SendMessage(message.NewErrorServerMessage(InvalidToken))
+-		return
+-	}
+-
+-	auth := &BackendClientResponse{
+-		Type: "auth",
+-		Auth: &BackendClientAuthResponse{},
+-	}
+-	h.processRegister(client, message, auth)
+-}
+-
+ func (h *Hub) disconnectByRoomSessionId(roomSessionId string) {
+ 	sessionId, err := h.roomSessions.GetSessionId(roomSessionId)
+ 	if err == ErrNoSuchRoomSession {
