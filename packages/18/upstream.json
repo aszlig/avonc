@@ -227,9 +227,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0ajnfihk61i8fg21fyvgkk983fvhljlhwwgp65zfv1ndjbq5x8c0",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.16/breezedark.tar.gz",
-      "version": "18.0.16"
+      "sha256": "0has8n3vwn1rma4325rgz0rfi6x97s0lr420b16cfrdl8fnzxr0b",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.17/breezedark.tar.gz",
+      "version": "18.0.17"
     },
     "browser_warning": {
       "meta": {
@@ -955,9 +955,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "1lz56jm9p9kpz2iszh3yhccns3jd5j9nzf0sfmziffv2p5dxnfks",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.21/files_mindmap-0.0.21.tar.gz",
-      "version": "0.0.21"
+      "sha256": "0fymy7z0adfrzskpdsz16gznvss7qgqcql99qwplyyy214df4f9x",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.22/files_mindmap-0.0.22.tar.gz",
+      "version": "0.0.22"
     },
     "files_pdfviewer": {
       "meta": {
@@ -1619,9 +1619,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0k0676di879lr4xzjwwr881vvwih39glpmaz3c4hbyy1nbwmh5j1",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.3.1/notes.tar.gz",
-      "version": "3.3.1"
+      "sha256": "0465sf0x84xzv2xs1zlg9qprav591568s3macf8m4fl5h8li7lzl",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.4.0/notes.tar.gz",
+      "version": "3.4.0"
     },
     "notifications": {
       "meta": {

@@ -1631,9 +1631,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0k0676di879lr4xzjwwr881vvwih39glpmaz3c4hbyy1nbwmh5j1",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.3.1/notes.tar.gz",
-      "version": "3.3.1"
+      "sha256": "0465sf0x84xzv2xs1zlg9qprav591568s3macf8m4fl5h8li7lzl",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.4.0/notes.tar.gz",
+      "version": "3.4.0"
     },
     "notifications": {
       "meta": {
