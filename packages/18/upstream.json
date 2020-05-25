@@ -1149,9 +1149,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "0zkblhvdz5zh1p5nkf3x5f9y0xv9zrak4vhi59jv6c0ny2c4wh4w",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/0.1.8/flowupload-0.1.8.tar.gz",
-      "version": "0.1.8"
+      "sha256": "0dy3iw3ld73m1gb2zrq7a2jr346nvb584i6k4k4aqlrzwldbblhl",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/1.0.0/flowupload-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "forms": {
       "meta": {
@@ -2816,6 +2816,21 @@
         "name": "LDAP user and group backend",
         "summary": "This application enables administrators to connect Nextcloud to an LDAP-based user directory."
       }
+    },
+    "user_oidc": {
+      "meta": {
+        "description": "Allow configuring an OIDC server as Nextcloud user backend.",
+        "homepage": "https://github.com/nextcloud/user_oidc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OpenID Connect user backend",
+        "summary": "Use an openID connect backed to login to your Nextcloud"
+      },
+      "sha256": "0wvgzjbg46i9s397q0q4zfpbqkhc8vdzdlwc5d7y6q08kz32r6ik",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.1.2/user_oidc.tar.gz",
+      "version": "0.1.2"
     },
     "user_pwauth": {
       "meta": {
