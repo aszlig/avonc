@@ -500,3 +500,35 @@ index 04ade13..1b25c44 100644
  func (h *Hub) disconnectByRoomSessionId(roomSessionId string) {
  	sessionId, err := h.roomSessions.GetSessionId(roomSessionId)
  	if err == ErrNoSuchRoomSession {
+diff --git a/src/signaling/janus_client.go b/src/signaling/janus_client.go
+index f10e6b6..a39f9e3 100644
+--- a/src/signaling/janus_client.go
++++ b/src/signaling/janus_client.go
+@@ -33,11 +33,13 @@ import (
+ 	"encoding/json"
+ 	"fmt"
+ 	"log"
++	"net"
+ 	"net/http"
+ 	"strconv"
+ 	"sync"
+ 	"sync/atomic"
+ 	"time"
++	stdctx "context"
+ 
+ 	"github.com/gorilla/websocket"
+ 	"github.com/notedit/janus-go"
+@@ -120,8 +122,11 @@ const (
+ 
+ var (
+ 	janusDialer = websocket.Dialer{
+-		Subprotocols: []string{"janus-protocol"},
+-		Proxy:        http.ProxyFromEnvironment,
++		Subprotocols:   []string{"janus-protocol"},
++		Proxy:          http.ProxyFromEnvironment,
++		NetDialContext: func(_ stdctx.Context, _, _ string) (net.Conn, error) {
++			return net.Dial("unix", "/run/nextcloud-signaling-sfu.sock")
++		},
+ 	}
+ )
+ 

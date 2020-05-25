@@ -48,7 +48,7 @@ index 2b5373ea..689356de 100644
  				'type' => 'error',
  				'error' => [
 diff --git a/lib/Signaling/BackendNotifier.php b/lib/Signaling/BackendNotifier.php
-index e28ee51f..d1fecf5e 100644
+index e28ee51f..30216048 100644
 --- a/lib/Signaling/BackendNotifier.php
 +++ b/lib/Signaling/BackendNotifier.php
 @@ -90,31 +90,17 @@ class BackendNotifier {
@@ -77,7 +77,7 @@ index e28ee51f..d1fecf5e 100644
  		$params = [
  			'headers' => $headers,
  			'body' => $body,
-+			'curl' => [CURLOPT_UNIX_SOCKET_PATH => '/run/nextcloud-signaling/internal.sock'],
++			'curl' => [CURLOPT_UNIX_SOCKET_PATH => '/run/nextcloud-signaling-internal.sock'],
  		];
 -		if (empty($signaling['verify'])) {
 -			$params['verify'] = false;

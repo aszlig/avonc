@@ -3,6 +3,136 @@
 let
   cfg = config.nextcloud.apps.spreed;
 
+  signalingConfig = pkgs.writeText "signaling.conf" (lib.generators.toINI {} {
+    backend.timeout = 10;
+    backend.connectionsperhost = 8;
+
+    nats.url = ":loopback:";
+
+    mcu.type = "janus";
+    mcu.url = "ws://127.0.0.1:8188";
+  });
+
+  janusConfig = {
+    transport.websockets = {
+      general = {
+        json = "indented";
+        ws = true;
+        ws_port = 8188;
+        wss = false;
+      };
+    };
+    plugin.videoroom.general = {};
+  };
+
+  sfuConfig = pkgs.writeText "janus.cfg" (lib.generators.toINI {} {
+    nat.full_trickle = true;
+  });
+
+  janusConfigDir = let
+    writeConfig = cat: item: attrs: let
+      data = lib.escapeShellArg (lib.generators.toINI {} attrs);
+      filename = lib.escapeShellArg "janus.${cat}.${item}.cfg";
+    in "echo -n ${data} > \"$out/\"${filename}";
+
+    mkConfig = lib.mapAttrsToList (cat: lib.mapAttrsToList (writeConfig cat));
+    cmds = lib.concatStringsSep "\n" (lib.concatLists (mkConfig janusConfig));
+  in pkgs.runCommand "janus-configs" {} "mkdir \"$out\"\n${cmds}\n";
+
+  usrsctp = pkgs.stdenv.mkDerivation {
+    pname = "usrsctp";
+    version = "2020-05-20";
+
+    src = pkgs.fetchFromGitHub {
+      owner = "sctplab";
+      repo = "usrsctp";
+      rev = "79ce3f1e13cd1cb283871ec5a9f90cf4062d91d4";
+      sha256 = "058zgpp4h9vkq5p2f9lhhgp0p8cbz552rxiiwbdfdg6fw1na21kf";
+    };
+
+    nativeBuildInputs = [ pkgs.meson pkgs.ninja ];
+  };
+
+  # XXX: Backwards-compatibility for NixOS 19.09
+  meson52 = let
+    isTooOld = lib.versionOlder pkgs.meson.version "0.52";
+
+    newerNixpkgs = pkgs.fetchFromGitHub {
+      owner = "NixOS";
+      repo = "nixpkgs";
+      rev = "81b7dad9c5f742886a4ac9cbc64a3800177866cf";
+      sha256 = "0hqck4n4dxfsyd101yzx5ff2ccngil6dbd0fvsgw47fph3c381bn";
+    };
+    mesonPath = "${newerNixpkgs}/pkgs/development/tools/build-managers/meson";
+
+    newerMeson = pkgs.meson.overrideAttrs (drv: rec {
+      version = "0.52.1";
+      src = pkgs.python3Packages.fetchPypi {
+        inherit (drv) pname;
+        inherit version;
+        sha256 = "02fnrk1fjf3yiix0ak0m9vgbpl4h97fafii5pmw7phmvnlv9fyan";
+      };
+      patches = [
+        "${mesonPath}/allow-dirs-outside-of-prefix.patch"
+        "${mesonPath}/gir-fallback-path.patch"
+        (pkgs.runCommand "fix-rpath.patch" {
+          src = "${mesonPath}/fix-rpath.patch";
+          inherit (builtins) storeDir;
+        } "substituteAll \"$src\" \"$out\"")
+        (pkgs.fetchpatch {
+          url = "https://github.com/mesonbuild/meson/commit/"
+              + "972ede1d14fdf17fe5bb8fb99be220f9395c2392.patch";
+          sha256 = "19bfsylhpy0b2xv3ks8ac9x3q6vvvyj1wjcy971v9d5f1455xhbb";
+        })
+      ];
+    });
+  in if isTooOld then newerMeson else pkgs.meson;
+
+  libnice = pkgs.stdenv.mkDerivation rec {
+    pname = "libnice";
+    version = "0.1.17";
+
+    src = pkgs.fetchurl {
+      url = "https://nice.freedesktop.org/releases/${pname}-${version}.tar.gz";
+      sha256 = "09lm0rxwvbr53svi3inaharlq96iwbs3s6957z69qp4bqpga0lhr";
+    };
+
+    nativeBuildInputs = [ meson52 pkgs.ninja pkgs.pkgconfig ];
+    propagatedBuildInputs = [ pkgs.glib ];
+    buildInputs = [
+      pkgs.gnutls pkgs.gst_all_1.gstreamer pkgs.gst_all_1.gst-plugins-base
+      pkgs.gupnp-igd
+    ];
+
+    mesonFlags = [ "-Dexamples=disabled" "-Dintrospection=disabled" ];
+  };
+
+  janus = pkgs.stdenv.mkDerivation rec {
+    pname = "janus-gateway";
+    version = "0.9.5";
+
+    src = pkgs.fetchFromGitHub {
+      owner = "meetecho";
+      repo = pname;
+      rev = "v${version}";
+      sha256 = "1025c21mqndwvwsk04cz5bgyh6a7gj0wy3zq4q39nlha4zggc8v6";
+    };
+
+    nativeBuildInputs = [ pkgs.autoreconfHook pkgs.pkgconfig pkgs.gengetopt ];
+
+    buildInputs = [
+      pkgs.jansson pkgs.libconfig libnice pkgs.boringssl pkgs.srtp
+      pkgs.libwebsockets pkgs.libuv usrsctp
+    ];
+
+    configureFlags = [
+      "--enable-plugin-videoroom" "--enable-websockets"
+      "--enable-data-channels"
+      "--enable-boringssl=${lib.getDev pkgs.boringssl}"
+      "--enable-dtls-settimeout"
+    ];
+  };
+
   signalingServer = pkgs.buildGoPackage rec {
     pname = "nextcloud-spreed-signaling";
     version = "2020-05-20";
@@ -81,8 +211,8 @@ let
         sha256 = "16bqimpxs9vj5n59vm04y04v665l7jh0sddxn787pfafyxcmh410";
       }
       { goPackagePath = "github.com/gorilla/websocket";
-        rev = "ea4d1f681babbce9545c9c5f3d5194a789c89f5b";
-        sha256 = "1bhgs2542qs49p1dafybqxfs2qc072xv41w5nswyrknwyjxxs2a1";
+        rev = "v1.4.2";
+        sha256 = "0mkm9w6kjkrlzab5wh8p4qxkc0icqawjbvr01d2nk6ykylrln40s";
       }
       { goPackagePath = "github.com/mailru/easyjson";
         rev = "2f5df55504ebc322e4d52d34df6a1f5b503bf26d";
@@ -121,16 +251,6 @@ let
     ];
   };
 
-  configFile = pkgs.writeText "signaling.conf" (lib.generators.toINI {} {
-    backend.timeout = 10;
-    backend.connectionsperhost = 8;
-
-    nats.url = ":loopback:";
-
-    mcu.type = "janus";
-    mcu.url = "";
-  });
-
 in {
   config = lib.mkIf (config.nextcloud.enable && cfg.enable) {
     users.users.nextcloud-signaling = {
@@ -138,6 +258,12 @@ in {
       group = "nextcloud-signaling";
     };
     users.groups.nextcloud-signaling = {};
+
+    users.users.nextcloud-sfu = {
+      description = "Nextcloud Talk SFU User";
+      group = "nextcloud-sfu";
+    };
+    users.groups.nextcloud-sfu = {};
 
     nextcloud.extraPostPatch = ''
       patch -p1 -d apps/spreed < ${./spreed-use-unix-sockets.patch}
@@ -165,7 +291,7 @@ in {
       locations = {
         "/signaling/spreed" = {
           proxyWebsockets = true;
-          proxyPass = "http://unix:/run/nextcloud-signaling/external.sock:"
+          proxyPass = "http://unix:/run/nextcloud-signaling-external.sock:"
                     + "/spreed";
         };
       };
@@ -178,7 +304,7 @@ in {
 
       socketConfig = {
         Service = "nextcloud-signaling.service";
-        ListenStream = "/run/nextcloud-signaling/external.sock";
+        ListenStream = "/run/nextcloud-signaling-external.sock";
         FileDescriptorName = "external";
         SocketUser = "root";
         SocketGroup = "nginx";
@@ -193,7 +319,7 @@ in {
 
       socketConfig = {
         Service = "nextcloud-signaling.service";
-        ListenStream = "/run/nextcloud-signaling/internal.sock";
+        ListenStream = "/run/nextcloud-signaling-internal.sock";
         FileDescriptorName = "internal";
         SocketUser = "root";
         SocketGroup = "nextcloud";
@@ -203,11 +329,13 @@ in {
 
     systemd.services.nextcloud-signaling-internal-sockdir = {
       description = "Prepare Nextcloud Talk Signal Internal Socket Directory";
+
       requiredBy = [
-        "nginx.service" "nextcloud-signaling.service"
-        "nextcloud-signaling-internal.socket"
+        "nginx.service" "nextcloud.service" "nextcloud-signaling.service"
       ];
-      before = [ "nginx.service" "nextcloud-signaling-internal.socket" ];
+      before = [
+        "nginx.service" "nextcloud.service" "nextcloud-signaling.service"
+      ];
 
       unitConfig.ConditionPathExists = "!/run/nextcloud-signaling";
 
@@ -254,16 +382,49 @@ in {
 
       serviceConfig = {
         ExecStart = "@${signalingServer}/bin/server nextcloud-signaling"
-                  + " -config ${configFile}";
+                  + " -config ${signalingConfig}";
         User = "nextcloud-signaling";
         Group = "nextcloud-signaling";
-        BindReadOnlyPaths = [ "/run/nextcloud-signaling" ];
+        BindReadOnlyPaths = [
+          "/run/nextcloud-signaling"
+          "/run/nextcloud-signaling-sfu.sock"
+        ];
         EnvironmentFile = [ "/var/lib/nextcloud-signaling/secrets.env" ];
+        PrivateNetwork = true;
+      };
+    };
+
+    systemd.sockets.nextcloud-signaling-sfu = {
+      description = "Nextcloud Talk SFU Socket";
+      requiredBy = [ "nextcloud-signaling-sfu.service" ];
+      wantedBy = [ "sockets.target" ];
+
+      socketConfig = {
+        ListenStream = "/run/nextcloud-signaling-sfu.sock";
+        SocketUser = "root";
+        SocketGroup = "nextcloud-signaling";
+        SocketMode = "0660";
+      };
+    };
+
+    systemd.services.nextcloud-signaling-sfu = {
+      description = "Nextcloud Talk SFU";
+
+      confinement.enable = true;
+      confinement.binSh = null;
+
+      serviceConfig = {
+        ExecStart = lib.escapeShellArgs [
+          "${pkgs.ip2unix}/bin/ip2unix" "-r" "in,port=8188,systemd"
+          "${janus}/bin/janus" "-C" sfuConfig "-F" janusConfigDir
+        ];
+        User = "nextcloud-sfu";
+        Group = "nextcloud-sfu";
       };
     };
 
     systemd.services.nextcloud.serviceConfig.BindReadOnlyPaths = [
-      "/run/nextcloud-signaling"
+      "/run/nextcloud-signaling" "/run/nextcloud-signaling-internal.sock"
     ];
   };
 }
