@@ -197,9 +197,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "14gbs0m8sgmdiw2zprzmrl98sgw5f06vk8r6ckah6bzghw9qb78l",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.3.1/bbb-v0.3.1.tar.gz",
-      "version": "0.3.1"
+      "sha256": "0vyghrvnsc02mwi3gpfcbjqps42cwrbs6bfm2cib1r1rdma8gvxr",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.3.2/bbb-v0.3.2.tar.gz",
+      "version": "0.3.2"
     },
     "bookmarks": {
       "meta": {

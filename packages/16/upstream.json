@@ -924,9 +924,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "1lz56jm9p9kpz2iszh3yhccns3jd5j9nzf0sfmziffv2p5dxnfks",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.21/files_mindmap-0.0.21.tar.gz",
-      "version": "0.0.21"
+      "sha256": "0fymy7z0adfrzskpdsz16gznvss7qgqcql99qwplyyy214df4f9x",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.22/files_mindmap-0.0.22.tar.gz",
+      "version": "0.0.22"
     },
     "files_pdfviewer": {
       "meta": {

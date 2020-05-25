@@ -414,9 +414,9 @@
         "name": "Data Request",
         "summary": "Request your data from the admins"
       },
-      "sha256": "0wdz1gr4gqal70fjffwsdca13bla1qrgjbhm03gzsxi2xiaky664",
-      "url": "https://github.com/nextcloud/data_request/releases/download/v1.4.0/data_request.tar.gz",
-      "version": "1.4.0"
+      "sha256": "15a04hffjmawysqc7v6par03y8pfmxr3nyci21vlrqlvmxpccvqa",
+      "url": "https://github.com/nextcloud/data_request/releases/download/v1.4.1/data_request.tar.gz",
+      "version": "1.4.1"
     },
     "dav": {
       "meta": {
