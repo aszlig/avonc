@@ -66,7 +66,7 @@ index 7a69155..bccac25 100644
 +            array_key_exists($profile, self::UNIX_SOCKET_MAP)
 +        ) {
 +            return $this->proxyResponse(
-+                'http://localhost/route/v1/'.$profile,
++                'http://dummy.invalid/route/v1/'.$profile,
 +                $path,
 +                [],
 +                self::UNIX_SOCKET_MAP[$profile]

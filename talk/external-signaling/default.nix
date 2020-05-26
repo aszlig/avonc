@@ -265,9 +265,11 @@ in {
     };
     users.groups.nextcloud-sfu = {};
 
-    nextcloud.extraPostPatch = ''
-      patch -p1 -d apps/spreed < ${./spreed-use-unix-sockets.patch}
-    '';
+    nextcloud.extraPostPatch = let
+      inherit (config.nextcloud) majorVersion;
+      patchFile = if majorVersion >= 19 then ./spreed-use-unix-sockets-v9.patch
+                  else ./spreed-use-unix-sockets.patch;
+    in "patch -p1 -d apps/spreed < ${patchFile}\n";
 
     nextcloud.apps.spreed.config = {
       signaling_servers = builtins.toJSON {

@@ -20,10 +20,10 @@ import ./make-test.nix (pkgs: {
     generation1 = { lib, options, config, pkgs, ... }: {
       imports = [ common ];
 
-      nextcloud.majorVersion = 17;
+      nextcloud.majorVersion = 18;
 
       nextcloud.apps = let
-        nc17apps = (lib.importJSON ../packages/17/upstream.json).applications;
+        nc18apps = (lib.importJSON ../packages/18/upstream.json).applications;
 
         excludedApps = [
           # We'll need dpendency ordering for this app
@@ -73,7 +73,7 @@ import ./make-test.nix (pkgs: {
         in lib.const (lib.optionalAttrs (!isExcluded) {
           enable = true;
         });
-      in lib.mapAttrs enableApp nc17apps;
+      in lib.mapAttrs enableApp nc18apps;
     };
 
     generation2 = { lib, nodes, ... }: {
@@ -83,9 +83,9 @@ import ./make-test.nix (pkgs: {
       systemd.services.mongooseim.enable = false;
 
       nextcloud.apps = let
-        # XXX: These apps are unsupported in Nextcloud 18.
+        # XXX: These apps are unsupported in Nextcloud 19.
         forceEnabled = lib.genAttrs [
-          "social"
+          "social" "circles"
         ] (lib.const { forceEnable = true; enable = true; });
 
         enabled = lib.genAttrs [
@@ -93,10 +93,10 @@ import ./make-test.nix (pkgs: {
           "external" "end_to_end_encryption" "files_accesscontrol"
           "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
           "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
-          "spreed" "tasks"
+          "social" "spreed" "tasks"
         ] (lib.const { enable = true; });
 
-      in forceEnabled // enabled;
+      in enabled // forceEnabled;
     };
   };
 

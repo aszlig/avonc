@@ -1,0 +1,90 @@
+diff --git a/lib/Controller/SignalingController.php b/lib/Controller/SignalingController.php
+index 4070f729..cc6eb500 100644
+--- a/lib/Controller/SignalingController.php
++++ b/lib/Controller/SignalingController.php
+@@ -352,35 +352,6 @@ class SignalingController extends OCSController {
+ 		return $usersInRoom;
+ 	}
+ 
+-	/**
+-	 * Check if the current request is coming from an allowed backend.
+-	 *
+-	 * The backends are sending the custom header "Talk-Signaling-Random"
+-	 * containing at least 32 bytes random data, and the header
+-	 * "Talk-Signaling-Checksum", which is the SHA256-HMAC of the random data
+-	 * and the body of the request, calculated with the shared secret from the
+-	 * configuration.
+-	 *
+-	 * @param string $data
+-	 * @return bool
+-	 */
+-	private function validateBackendRequest(string $data): bool {
+-		if (!isset($_SERVER['HTTP_SPREED_SIGNALING_RANDOM'],
+-			  $_SERVER['HTTP_SPREED_SIGNALING_CHECKSUM'])) {
+-			return false;
+-		}
+-		$random = $_SERVER['HTTP_SPREED_SIGNALING_RANDOM'];
+-		if (empty($random) || strlen($random) < 32) {
+-			return false;
+-		}
+-		$checksum = $_SERVER['HTTP_SPREED_SIGNALING_CHECKSUM'];
+-		if (empty($checksum)) {
+-			return false;
+-		}
+-		$hash = hash_hmac('sha256', $random . $data, $this->talkConfig->getSignalingSecret());
+-		return hash_equals($hash, strtolower($checksum));
+-	}
+-
+ 	/**
+ 	 * Return the body of the backend request. This can be overridden in
+ 	 * tests.
+@@ -404,7 +375,7 @@ class SignalingController extends OCSController {
+ 	 */
+ 	public function backend(): DataResponse {
+ 		$json = $this->getInputStream();
+-		if (!$this->validateBackendRequest($json)) {
++		if ($_SERVER['REMOTE_ADDR'] !== 'unix:' || $_SERVER['HTTP_HOST'] !== 'localhost') {
+ 			return new DataResponse([
+ 				'type' => 'error',
+ 				'error' => [
+diff --git a/lib/Signaling/BackendNotifier.php b/lib/Signaling/BackendNotifier.php
+index 71852182..dc203935 100644
+--- a/lib/Signaling/BackendNotifier.php
++++ b/lib/Signaling/BackendNotifier.php
+@@ -93,34 +93,17 @@ class BackendNotifier {
+ 			return;
+ 		}
+ 
+-		// FIXME some need to go to all HPBs, but that doesn't scale, so bad luck for now :(
+-		$signaling = $this->signalingManager->getSignalingServerForConversation($room);
+-		$signaling['server'] = rtrim($signaling['server'], '/');
+-
+-		$url = '/api/v1/room/' . $room->getToken();
+-		$url = $signaling['server'] . $url;
+-		if (strpos($url, 'wss://') === 0) {
+-			$url = 'https://' . substr($url, 6);
+-		} elseif (strpos($url, 'ws://') === 0) {
+-			$url = 'http://' . substr($url, 5);
+-		}
++		$url = 'http://dummy.invalid/api/v1/room/' . $room->getToken();
+ 		$body = json_encode($data);
+ 		$headers = [
+ 			'Content-Type' => 'application/json',
+ 		];
+ 
+-		$random = $this->secureRandom->generate(64);
+-		$hash = hash_hmac('sha256', $random . $body, $this->config->getSignalingSecret());
+-		$headers['Spreed-Signaling-Random'] = $random;
+-		$headers['Spreed-Signaling-Checksum'] = $hash;
+-
+ 		$params = [
+ 			'headers' => $headers,
+ 			'body' => $body,
++			'curl' => [CURLOPT_UNIX_SOCKET_PATH => '/run/nextcloud-signaling-internal.sock'],
+ 		];
+-		if (empty($signaling['verify'])) {
+-			$params['verify'] = false;
+-		}
+ 		$this->doRequest($url, $params);
+ 	}
+ 

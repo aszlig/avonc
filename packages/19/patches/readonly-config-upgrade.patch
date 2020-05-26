@@ -1,0 +1,67 @@
+commit 2194d8ddb87b8ee521ac70068915fd55d8012774
+Author: aszlig <aszlig@nix.build>
+Date:   Thu Feb 28 16:01:13 2019 +0100
+
+    Allow to upgrade if the config is read-only
+    
+    We don't need to put the instance into maintenance mode because the
+    updater runs during NixOS activation and the unit file ordering prevents
+    the cron and main Nextcloud services from being started during an
+    upgrade or after a failed upgrade.
+    
+    So if the config isn't writable, let's just pretend that we have written
+    to the config file.
+    
+    Signed-off-by: aszlig <aszlig@nix.build>
+
+diff --git a/lib/base.php b/lib/base.php
+index b1f9569926..51ed076565 100644
+--- a/lib/base.php
++++ b/lib/base.php
+@@ -248,8 +248,7 @@ class OC {
+ 
+ 		// Check if config is writable
+ 		$configFileWritable = is_writable($configFilePath);
+-		if (!$configFileWritable && !OC_Helper::isReadOnlyConfigEnabled()
+-			|| !$configFileWritable && \OCP\Util::needUpgrade()) {
++		if (!$configFileWritable && !OC_Helper::isReadOnlyConfigEnabled()) {
+ 			$urlGenerator = \OC::$server->getURLGenerator();
+ 
+ 			if (self::$CLI) {
+diff --git a/lib/private/Config.php b/lib/private/Config.php
+index cbdbc5b2e6..e57fe4b1d8 100644
+--- a/lib/private/Config.php
++++ b/lib/private/Config.php
+@@ -233,6 +233,13 @@ class Config {
+ 	 * @throws \Exception If no file lock can be acquired
+ 	 */
+ 	private function writeData() {
++		// We have removed the check whether the config file is writable for
++		// non-up-to-date versions in lib/base.php, but in order to update
++		// anyway, we need to make sure that we don't actually write the data
++		// if we have a config file that resides within a Nix store path.
++		if (!is_writable($this->configFilePath))
++			return;
++
+ 		// Create a php file ...
+ 		$content = "<?php\n";
+ 		$content .= '$CONFIG = ';
+diff --git a/lib/private/Updater.php b/lib/private/Updater.php
+index 4b5d02aeb6..ca53ebd446 100644
+--- a/lib/private/Updater.php
++++ b/lib/private/Updater.php
+@@ -253,14 +253,6 @@ class Updater extends BasicEmitter {
+ 		$this->checkAppsRequirements();
+ 		$this->doAppUpgrade();
+ 
+-		// Update the appfetchers version so it downloads the correct list from the appstore
+-		\OC::$server->getAppFetcher()->setVersion($currentVersion);
+-
+-		// upgrade appstore apps
+-		$this->upgradeAppStoreApps(\OC::$server->getAppManager()->getInstalledApps());
+-		$autoDisabledApps = \OC::$server->getAppManager()->getAutoDisabledApps();
+-		$this->upgradeAppStoreApps($autoDisabledApps, true);
+-
+ 		// install new shipped apps on upgrade
+ 		OC_App::loadApps(['authentication']);
+ 		$errors = Installer::installShippedApps(true);
