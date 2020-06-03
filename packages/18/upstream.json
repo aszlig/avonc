@@ -415,9 +415,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1yiq4cm6xsx44cdldd38rcgd6hm3hzf5fa32060jspd5vxac1s03",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/401bab96c777039b3423663653be3033/cospend-0.5.4.tar.gz",
-      "version": "0.5.4"
+      "sha256": "0gcr166l4abpbr9i6wpqk3hj6xpbl4ji58s8b51irds3gi6ann2v",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/200dd004e832d90445ee18d4960a0a65/cospend-0.5.5.tar.gz",
+      "version": "0.5.5"
     },
     "customproperties": {
       "meta": {
@@ -2226,9 +2226,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "142nyrc5lsigyj4mllxnn7vc9s5bzzp0l8y6isxx9mxhxp6mcmlr",
-      "url": "https://download.sendent.nl/serverapp/1.0.0/sendent.tar.gz",
-      "version": "1.0.0"
+      "sha256": "061vaj47x0lp0v3n0g9jacw8x28z36fnfhg8847yw65ys80mhpd8",
+      "url": "https://download.sendent.nl/serverapp/1.0.1/sendent.tar.gz",
+      "version": "1.0.1"
     },
     "sensorlogger": {
       "meta": {
