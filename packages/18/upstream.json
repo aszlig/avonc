@@ -227,9 +227,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0has8n3vwn1rma4325rgz0rfi6x97s0lr420b16cfrdl8fnzxr0b",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.17/breezedark.tar.gz",
-      "version": "18.0.17"
+      "sha256": "0vslq6rv5filwjgbxa6yg4inpb2k4v6r8403d2aya3gjrsna1ff7",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.18/breezedark.tar.gz",
+      "version": "18.0.18"
     },
     "browser_warning": {
       "meta": {
@@ -418,6 +418,20 @@
       "sha256": "1yiq4cm6xsx44cdldd38rcgd6hm3hzf5fa32060jspd5vxac1s03",
       "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/401bab96c777039b3423663653be3033/cospend-0.5.4.tar.gz",
       "version": "0.5.4"
+    },
+    "customproperties": {
+      "meta": {
+        "description": "Files app plugin to add custom properties to files and folders",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Custom Properties",
+        "summary": "Files app plugin to add custom properties to files and folders"
+      },
+      "sha256": "0cq6qhbnlyfgg6mv652ya79rg8g35pn6qz5wg8c56hyv9yzlq1iw",
+      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v1.0.1/customproperties.tar.gz",
+      "version": "1.0.1"
     },
     "dashboardcharts": {
       "meta": {
@@ -982,9 +996,9 @@
         "name": "Photo Sphere Viewer",
         "summary": "Enables viewing of google photosphere images"
       },
-      "sha256": "049h584yriymzjhbwjk26dz69fvj7ih7xsl5vyxn3hp4axhb8xby",
-      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.0.8/files_photospheres.tar.gz",
-      "version": "1.0.8"
+      "sha256": "0v3al2jpqffghwscl5y3i0g410gi553nwbvgj080xq3ndylhg9f4",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.0.9/files_photospheres.tar.gz",
+      "version": "1.0.9"
     },
     "files_readmemd": {
       "meta": {
@@ -1346,6 +1360,21 @@
       "sha256": "0jsaa0m93w1yshxvqjyz1knxvlrvn3rr769j15d9whm09mpcvdwb",
       "url": "https://github.com/nextcloud/guests/releases/download/v1.4.6/guests.tar.gz",
       "version": "1.4.6"
+    },
+    "hidesidebars": {
+      "meta": {
+        "description": "# Hide sidebars\n\nHide left sidebar and top header bar for use in iframe for example or some other scenarios.\n\n## Usage\nAdd `hide-sidebars` after `?` as query parameter to nextcloud url or with `dir` parameter after `&amp;`.\n\nExamples:\n```\nhttp://nextcloud.example.com/index.php/apps/files/?hide-sidebars\nhttp://nextcloud.example.com/index.php/apps/files/?dir=/New%20folder&amp;hide-sidebars\n```",
+        "homepage": "https://github.com/pointcz/hidesidebars",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Hide sidebars",
+        "summary": "Hide left sidebar and top header bar for use in iframe or some other scenarios."
+      },
+      "sha256": "0z7w771xgznd8z5imbi7sg4ldhzdp2xih59fpzsvi355lfdfadvq",
+      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.6/hidesidebars.tar.gz",
+      "version": "1.0.6"
     },
     "hsts": {
       "meta": {
@@ -2138,9 +2167,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0l17my7pl4cs1n330ncn8ai9qk41gbgwl7mbs6l61k9f6cavzl8z",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.6.0/richdocuments.tar.gz",
-      "version": "3.6.0"
+      "sha256": "05dmjgw14dgsh5pkv2x57bpskxf49m9aakbh4v19mhag1wcj9rx9",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.0/richdocuments.tar.gz",
+      "version": "3.7.0"
     },
     "riotchat": {
       "meta": {
@@ -2185,6 +2214,21 @@
       "sha256": "0fp4s09pnvj91p759cdjady0dhy87q6mj6g21a523gwislp0d609",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/3e18012ee707a747091cce50bab3b097474bbab3/build/artifacts/appstore/secsignid.tar.gz?raw=true",
       "version": "0.3.1"
+    },
+    "sendent": {
+      "meta": {
+        "description": "Sendent allows you to securely exchange files and emails. Sendent is linked to Microsoft Outlook, so you can continue to work from your trusted email program while you mail more easily and securely. Very useful, for example, to share privacy-sensitive documents or content or to send attachments that are normally too large to email. All files are uploaded to your personal Nextcloud environment from which you determine who has access to them.",
+        "homepage": "https://www.sendent.nl",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sendent",
+        "summary": "Sendent allows you to securely exchange files and emails"
+      },
+      "sha256": "142nyrc5lsigyj4mllxnn7vc9s5bzzp0l8y6isxx9mxhxp6mcmlr",
+      "url": "https://download.sendent.nl/serverapp/1.0.0/sendent.tar.gz",
+      "version": "1.0.0"
     },
     "sensorlogger": {
       "meta": {
@@ -2414,9 +2458,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "04nlrndv7xksq5is0m03a631i1fxs7xbdmp07jh7z9q0g438xqcb",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/artifacts/master/raw/spgverein.tar.gz?job=package",
-      "version": "0.5.1"
+      "sha256": "12m29bw75lk47vg9wc9mj39mlwjlqagkmaikizya97n0bfh4k1ys",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/572130220/artifacts/raw/spgverein.tar.gz",
+      "version": "0.6.0"
     },
     "spreed": {
       "meta": {
@@ -2963,6 +3007,21 @@
       "url": "https://github.com/nextcloud/weather/releases/download/1.7.2/weather-1.7.2.tar.gz",
       "version": "1.7.2"
     },
+    "whiteboard": {
+      "meta": {
+        "description": "A collaborative white board",
+        "homepage": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Whiteboard",
+        "summary": "A collaborative white board"
+      },
+      "sha256": "13g2l4ivwkmx3vryr5ca8hh3rc181122kzvajkp8bnia3vjb9s37",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/-/wikis/uploads/fe4a2c6060cf8a569241a2b560c16504/whiteboard.tgz",
+      "version": "0.0.2"
+    },
     "wopi": {
       "meta": {
         "description": "This application can connect to a Microsoft Office Online Server (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Application settings are in the Office Online section.",
@@ -2989,9 +3048,9 @@
         "name": "Automated PDF conversion",
         "summary": "Rule based conversion of Documents into the PDF format"
       },
-      "sha256": "1q8xjp29lx7w1vpynwsmwsk1259xbvp59mw5v2b85k3filpya44j",
-      "url": "https://github.com/nextcloud/workflow_pdf_converter/releases/download/v1.3.1/workflow_pdf_converter.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1sc5d4b3ap3k3vacr84k797d9535i5x3qq2a9cxbww17smdgp0wj",
+      "url": "https://github.com/nextcloud/workflow_pdf_converter/releases/download/v1.3.2/workflow_pdf_converter.tar.gz",
+      "version": "1.3.2"
     },
     "workflow_script": {
       "meta": {
@@ -3004,9 +3063,9 @@
         "name": "Workflow external scripts",
         "summary": "Rule based processing of files through specified external scripts"
       },
-      "sha256": "0lyvbjn1cyc0vw5lp3ns5cwb5bd5bcwn0avwwzz6mz55d7hfjhvx",
-      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.3.1/workflow_script.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1y8f473lxiry4g11fjmrsdi6yfhywsndd6jbx0rlfnnc5p24pzc8",
+      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.3.2/workflow_script.tar.gz",
+      "version": "1.3.2"
     },
     "workflowengine": {
       "meta": {

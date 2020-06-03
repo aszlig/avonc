@@ -359,6 +359,20 @@
       "url": "https://gitlab.com/eneiluj/cospend-nc/wikis/uploads/519625b0b690c6f45d96778347aafd0c/cospend-0.1.0.tar.gz",
       "version": "0.1.0"
     },
+    "customproperties": {
+      "meta": {
+        "description": "Files app plugin to add custom properties to files and folders",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Custom Properties",
+        "summary": "Files app plugin to add custom properties to files and folders"
+      },
+      "sha256": "0cq6qhbnlyfgg6mv652ya79rg8g35pn6qz5wg8c56hyv9yzlq1iw",
+      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v1.0.1/customproperties.tar.gz",
+      "version": "1.0.1"
+    },
     "dashboard": {
       "meta": {
         "description": "The Dashboard app allows users to monitor their data through sub-elements called Widgets.\n\t\tWidgets are imported from other apps and can be added, removed, moved and resized",
@@ -1315,6 +1329,21 @@
       "url": "https://github.com/nextcloud/guests/releases/download/v1.2.2/guests.tar.gz",
       "version": "1.2.2"
     },
+    "hidesidebars": {
+      "meta": {
+        "description": "# Hide sidebars\n\nHide left sidebar and top header bar for use in iframe for example or some other scenarios.\n\n## Usage\nAdd `hide-sidebars` after `?` as query parameter to nextcloud url or with `dir` parameter after `&amp;`.\n\nExamples:\n```\nhttp://nextcloud.example.com/index.php/apps/files/?hide-sidebars\nhttp://nextcloud.example.com/index.php/apps/files/?dir=/New%20folder&amp;hide-sidebars\n```",
+        "homepage": "https://github.com/pointcz/hidesidebars",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Hide sidebars",
+        "summary": "Hide left sidebar and top header bar for use in iframe or some other scenarios."
+      },
+      "sha256": "0z7w771xgznd8z5imbi7sg4ldhzdp2xih59fpzsvi355lfdfadvq",
+      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.6/hidesidebars.tar.gz",
+      "version": "1.0.6"
+    },
     "hsts": {
       "meta": {
         "description": "Add HSTS (HTTP Strict Transport Security) header to HTTPS response, if modheaders is not available.",
@@ -2167,9 +2196,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0l17my7pl4cs1n330ncn8ai9qk41gbgwl7mbs6l61k9f6cavzl8z",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.6.0/richdocuments.tar.gz",
-      "version": "3.6.0"
+      "sha256": "05dmjgw14dgsh5pkv2x57bpskxf49m9aakbh4v19mhag1wcj9rx9",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.0/richdocuments.tar.gz",
+      "version": "3.7.0"
     },
     "scanner": {
       "meta": {
@@ -2199,6 +2228,21 @@
       "sha256": "09zn17yngcx0sh836arin8bmcfva0dhkydypshpf60m9lnkzl8b7",
       "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/f89c5f34dc96d1c86b8e53ddf38a73a92623a019/build/artifacts/appstore/secsignid.tar.gz?raw=true",
       "version": "0.2.6"
+    },
+    "sendent": {
+      "meta": {
+        "description": "Sendent allows you to securely exchange files and emails. Sendent is linked to Microsoft Outlook, so you can continue to work from your trusted email program while you mail more easily and securely. Very useful, for example, to share privacy-sensitive documents or content or to send attachments that are normally too large to email. All files are uploaded to your personal Nextcloud environment from which you determine who has access to them.",
+        "homepage": "https://www.sendent.nl",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sendent",
+        "summary": "Sendent allows you to securely exchange files and emails"
+      },
+      "sha256": "142nyrc5lsigyj4mllxnn7vc9s5bzzp0l8y6isxx9mxhxp6mcmlr",
+      "url": "https://download.sendent.nl/serverapp/1.0.0/sendent.tar.gz",
+      "version": "1.0.0"
     },
     "sensorlogger": {
       "meta": {
@@ -2430,9 +2474,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "04nlrndv7xksq5is0m03a631i1fxs7xbdmp07jh7z9q0g438xqcb",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/artifacts/master/raw/spgverein.tar.gz?job=package",
-      "version": "0.5.1"
+      "sha256": "12m29bw75lk47vg9wc9mj39mlwjlqagkmaikizya97n0bfh4k1ys",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/572130220/artifacts/raw/spgverein.tar.gz",
+      "version": "0.6.0"
     },
     "spreed": {
       "meta": {
