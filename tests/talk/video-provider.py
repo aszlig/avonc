@@ -6,7 +6,7 @@ import numpy
 import imageio
 import fontconfig
 
-from pystemd.daemon import notify
+from systemd.daemon import notify
 from PIL import Image, ImageDraw, ImageFont
 
 PREBUFFER = 10
@@ -65,7 +65,7 @@ try:
         if PREBUFFER is not None:
             PREBUFFER -= 1
             if PREBUFFER == 0:
-                notify(1, ready=1)
+                notify('READY=1', True)
                 PREBUFFER = None
 finally:
     camvid.close()

@@ -54,7 +54,7 @@ import ../make-test.nix {
         serviceConfig.ExecStart = lib.escapeShellArgs [
           (pkgs.python3.withPackages (p: [
             p.imageio p.imageio-ffmpeg p.numpy p.pillow p.python-fontconfig
-            p.setuptools p.pystemd
+            p.setuptools p.systemd
           ])).interpreter
           "${./video-provider.py}"
           "User${toString num}"
