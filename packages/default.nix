@@ -66,7 +66,9 @@ in stdenv.mkDerivation rec {
       isAvailable = extApps.${name} ? ${major};
       latest = lib.last (lib.attrValues extApps.${name});
       appAttrs = extApps.${name}.${major} or latest;
-      fetched = fetchzip { inherit (appAttrs) url sha256; };
+      fetched = let
+        overrides = lib.const { unpackCmd = "tar xf \"$curSrc\""; };
+      in (fetchzip { inherit (appAttrs) url sha256; }).overrideAttrs overrides;
       err = throw "App package ${name} for Nextcloud ${major} not available.";
     in if isAvailable || forceEnabled then fetched else err;
 
