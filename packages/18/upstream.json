@@ -212,9 +212,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1apq1ars6kpw731h8a3vhwhrwhr40lgf2xg4dx0ls68ky6c8w0h6",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.0.13/bookmarks-3.0.13.tar.gz",
-      "version": "3.0.13"
+      "sha256": "1bigqfj8bzh8mfjbya21f3lqabi9wm3lcy9g34w93b7kvlm6g39q",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.1.1/bookmarks-3.1.1.tar.gz",
+      "version": "3.1.0"
     },
     "breezedark": {
       "meta": {
@@ -486,9 +486,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0bw5wlsr91cc5bcfk68ax7rfwcjg1inj0nx5iwsj850v4bii7994",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.1/deck.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0zzwwai48xa6pkp3194jdr4klgdi43kimpgk4hcbzngicqf1rczg",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.2/deck.tar.gz",
+      "version": "1.0.2"
     },
     "dicomviewer": {
       "meta": {
@@ -663,9 +663,9 @@
         "name": "Notifications for calendar event updates",
         "summary": "Receive a notification when an event in a shared calendar was added, modified or deleted."
       },
-      "sha256": "0a2gb8swi6pxllmd8h0307pr1rm63w8112wsd3k2a1pzwvayj9cj",
-      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.0.1/event_update_notification-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1nd7ximf89vnzx899qyppm2qgzn905rhkc2ydxzraby9dn2qaylf",
+      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.0.2/event_update_notification-1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "external": {
       "meta": {
