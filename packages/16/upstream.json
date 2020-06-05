@@ -1251,9 +1251,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "1kadzhcqpb363gp43y5v9rabas7zrmkf51s6w3msqmsfgxmdbzxz",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/0361f9dc50633f0f39d929442935435c/gpxpod-4.2.1.tar.gz",
-      "version": "4.2.1"
+      "sha256": "1vpvcfzkylnfcgzimiwwi52fihg8s7qyb842748xm0al7m99mcyw",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/2b929123c8dbcd01a561598397c7a67f/gpxpod-4.2.2.tar.gz",
+      "version": "4.2.2"
     },
     "grauphel": {
       "meta": {
@@ -1791,9 +1791,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "1l32ivqynsnj9ym7xx058y7bfnd6n4hf8mpk9nc8dqgc7bc253m8",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.1.4/onlyoffice.tar.gz",
-      "version": "4.1.4"
+      "sha256": "1pzmvzbp68bkwfrmsbaj815mapxk6jd3w5l2lnii2j5nqwwfxw9n",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.2.0/onlyoffice.tar.gz",
+      "version": "4.2.0"
     },
     "openhab": {
       "meta": {
@@ -2790,9 +2790,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "1hs0g7xjnr1lqlfpsaydjrv5qvyw4jrmc6qdqd6ssxrpbdjj8ng6",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.1.5/unsplash.tar.gz",
-      "version": "1.1.5"
+      "sha256": "138i328gvw855nvswaw3w2jn0mpm1n043hvqcwg8a1wnl0hld7g2",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.1.6/unsplash.tar.gz",
+      "version": "1.1.6"
     },
     "updatenotification": {
       "meta": {
@@ -3006,9 +3006,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "1q3v3b4yg1zq1dciqd3xhllaqpbnfg6n46b3qw7yxyvpbwklilbl",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.2/weather-1.7.2.tar.gz",
-      "version": "1.7.2"
+      "sha256": "1mrjpifibxy5375z3m446bvd8fhi8ik8s7knfkifr7qlxjg3x5v9",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.3/weather-1.7.3.tar.gz",
+      "version": "1.7.3"
     },
     "wopi": {
       "meta": {
