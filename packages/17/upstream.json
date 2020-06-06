@@ -1660,9 +1660,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0465sf0x84xzv2xs1zlg9qprav591568s3macf8m4fl5h8li7lzl",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.4.0/notes.tar.gz",
-      "version": "3.4.0"
+      "sha256": "0bpnm8720rn1cdmkhv7dnsvhhn8gab1990g304yc9vs41pvp0nlw",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.5.0/notes.tar.gz",
+      "version": "3.5.0"
     },
     "notifications": {
       "meta": {
@@ -1876,9 +1876,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "15fyyzdnf88kisz212532lqc8qr950i6ri5dm2xsnh0l3kx14rxj",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10153/artifacts/raw/passwords.tar.gz",
-      "version": "2020.5.0"
+      "sha256": "1bxs2lb4xp0n63g1sp3p9wracp7y6vmmdcq34d1ha8kc7w2w436b",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10216/artifacts/raw/passwords.tar.gz",
+      "version": "2020.6.0"
     },
     "phonetrack": {
       "meta": {
@@ -1970,7 +1970,7 @@
     },
     "printer": {
       "meta": {
-        "description": "Please check the Readme on Github on how to set up this app!\n       Allows users to print files using the CUPS/LPR printing ecosystem.\n\n       Just open the details view of the file (Sidebar). There should be a new tab called \"Printer\".\n       Select the orientation of your printed file and it will be sent to your printer.\n       If you want to print it again, just click on the reload button.",
+        "description": "Please check the Readme on Github on how to set up this app!\n\n       Allows users to print files using the CUPS/LPR printing ecosystem.\n       Just open the details view of the file (Sidebar). There should be a new tab called \"Printer\".\n       Select the orientation of your printed file and it will be sent to your printer.\n       If you want to print it again, just click on the reload button.",
         "homepage": "https://github.com/e-alfred/nextcloud-printer/",
         "isShipped": false,
         "licenses": [
@@ -1979,9 +1979,9 @@
         "name": "Printer",
         "summary": "Allows to print files directly inside Nextcloud to a printer."
       },
-      "sha256": "0h477m91mh9sqqs0bznh6afcmrv2aan6f1z3ij363y182rpd4bfj",
-      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.2/nextcloud-print_0.0.2.tar.gz",
-      "version": "0.0.2"
+      "sha256": "1l5lnn8265mf8hri78ig80qbpbnww2yfvplbnxi78d71v4pih6f5",
+      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.3/nextcloud-print_0.0.3.tar.gz",
+      "version": "0.0.3"
     },
     "privacy": {
       "meta": {
@@ -2196,9 +2196,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "0z19sjalcfgjak3gpcgxp10dmgxd64mimlak0bj55xvizgp0lprk",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.2/riotchat.tar.gz",
-      "version": "0.4.2"
+      "sha256": "03k5993x208h9waig0gs9qdzbpbhcg8kcxk8r41vi0i7nyljzfsj",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.3/riotchat.tar.gz",
+      "version": "0.4.3"
     },
     "scanner": {
       "meta": {
@@ -2211,9 +2211,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "1zs4h7y4f271w60g23xynvmb06p0nmzyn5rdz0bqh4y4hvj2ga8h",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.8/scanner-0.1.8.tar.gz",
-      "version": "0.1.8"
+      "sha256": "1m7q2rwjr1h6xydk2glk4hkb5vmq4f4cpc8llsyk0byxr399lnkm",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.9/scanner-0.1.9.tar.gz",
+      "version": "0.1.9"
     },
     "secsignid": {
       "meta": {
