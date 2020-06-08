@@ -172,7 +172,7 @@ index 108dbfe1..855d2d0a 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index 5cf085d9..f37da9c6 100644
+index 5cf085d9..93529fe8 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
 @@ -23,8 +23,6 @@ namespace OCA\Richdocuments;
@@ -268,7 +268,7 @@ index 5cf085d9..f37da9c6 100644
 -			$this->wopiParser->getUrlSrc($templateFile->getMimeType())['urlsrc'],
 -			$wopi
 -		];
-+		if (in_array($file->getMimeType(), self::LOOL_MIME_TYPES))
++		if (in_array($templateFile->getMimeType(), self::LOOL_MIME_TYPES))
 +			return ['@LOOL_LEAFLET_URL@', $wopi];
 +		else
 +			throw new \Exception('Could not find urlsrc in WOPI');
