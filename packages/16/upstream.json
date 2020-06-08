@@ -340,9 +340,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1n560mlgri908qcn2xlkpidnv97py2q28lg7897w5sa4rpwv40as",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.5/cookbook.tar.gz",
-      "version": "0.6.5"
+      "sha256": "0xsq0jz6i3vbsmv6fy1fkvgci5dy0vrrjk5wwvik0j7ig54py9yl",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.2/cookbook.tar.gz",
+      "version": "0.7.2"
     },
     "cospend": {
       "meta": {
@@ -788,9 +788,9 @@
         "name": "External Storage backend for Dropbox",
         "summary": "Integrate Dropbox as an external storage"
       },
-      "sha256": "02hykmc8ks93pb3jpxr6nmpvpmgzf9942vpy3d5ilhi89ckjkx1f",
-      "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.4.0/files_external_dropbox.tar.gz",
-      "version": "1.4.0"
+      "sha256": "12jn4xnmm10zvz7kdl38r5rahdda4brqjmfx7mn864s626g8l07k",
+      "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.4.2/files_external_dropbox.tar.gz",
+      "version": "1.4.2"
     },
     "files_external_gdrive": {
       "meta": {
@@ -908,9 +908,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0rwwsqssbprs5v119qw79f7f6dsjaj3032bb1rk6y5zdfm4ysfam",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.14/files_linkeditor.tar.gz",
-      "version": "1.0.14"
+      "sha256": "02p5zjb2zl5c6a3fbwk46x732pw7qhixx3f9xykxz660xd90i8p2",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.0/files_linkeditor.tar.gz",
+      "version": "1.1.0"
     },
     "files_markdown": {
       "meta": {
@@ -1761,9 +1761,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1ddqhvx31d8ajpn5xnp964yayzm0l83lb967i6pz8ynhmm3gyqz7",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.4.0/oidc_login.tar.gz",
-      "version": "1.4.0"
+      "sha256": "00f6ic1dcnxcm4pm9ary48r92ylw2i4w5dz6qbgbad1hp6hla0cl",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/1.5.0/oidc_login.tar.gz",
+      "version": "1.5.0"
     },
     "ojsxc": {
       "meta": {

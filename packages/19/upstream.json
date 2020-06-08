@@ -198,9 +198,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "12qlrgpk15qllwrrg0ahfhmb773vsczfkv021jba9pr1j8si3aiq",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.0/breezedark.tar.gz",
-      "version": "19.0.0"
+      "sha256": "06957yb2ijnp8n4j0g2vsm74ayqjdxidrdsdmlslf8zy4jsbg957",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.1/breezedark.tar.gz",
+      "version": "19.0.1"
     },
     "bruteforcesettings": {
       "meta": {
@@ -326,9 +326,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1n560mlgri908qcn2xlkpidnv97py2q28lg7897w5sa4rpwv40as",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.6.5/cookbook.tar.gz",
-      "version": "0.6.5"
+      "sha256": "0xsq0jz6i3vbsmv6fy1fkvgci5dy0vrrjk5wwvik0j7ig54py9yl",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.2/cookbook.tar.gz",
+      "version": "0.7.2"
     },
     "cospend": {
       "meta": {
@@ -671,9 +671,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0rwwsqssbprs5v119qw79f7f6dsjaj3032bb1rk6y5zdfm4ysfam",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.0.14/files_linkeditor.tar.gz",
-      "version": "1.0.14"
+      "sha256": "02p5zjb2zl5c6a3fbwk46x732pw7qhixx3f9xykxz660xd90i8p2",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.0/files_linkeditor.tar.gz",
+      "version": "1.1.0"
     },
     "files_markdown": {
       "meta": {
@@ -718,6 +718,20 @@
         "summary": "A pdf viewer for Nextcloud"
       }
     },
+    "files_photospheres": {
+      "meta": {
+        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Photo Sphere Viewer",
+        "summary": "Enables viewing of google photosphere images"
+      },
+      "sha256": "1b9z69rdwqvkvjdkblh477w356kc5g2mp2yj8ly3klz0vs0c66pi",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.19.0/files_photospheres.tar.gz",
+      "version": "1.19.0"
+    },
     "files_rightclick": {
       "meta": {
         "alwaysEnable": false,
@@ -757,6 +771,21 @@
       "sha256": "1408ml3ag9pchpj321j1advavl49qw3rad4960xai8lw2nagrccz",
       "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.11.0/files_texteditor.tar.gz",
       "version": "2.11.0"
+    },
+    "files_trackdownloads": {
+      "meta": {
+        "description": "Creates activities (visible to any administrator) for downloads of files that were shared with other users or a group.",
+        "homepage": "https://github.com/timokunze/files_trackdownloads",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Activities for shared file downloads, visible to all admins",
+        "summary": "Creates activities (visible to any administrator) for downloads of files that were shared with other users or a group."
+      },
+      "sha256": "1p269w6n42znmygbaml2995547v9aand7v99im5p1vwf7rzabaz5",
+      "url": "https://github.com/TimoKunze/files_trackdownloads/releases/download/v1.8.0/files_trackdownloads-1.8.0.tar.gz",
+      "version": "1.8.0"
     },
     "files_trashbin": {
       "meta": {
@@ -1272,9 +1301,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1ddqhvx31d8ajpn5xnp964yayzm0l83lb967i6pz8ynhmm3gyqz7",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.4.0/oidc_login.tar.gz",
-      "version": "1.4.0"
+      "sha256": "00f6ic1dcnxcm4pm9ary48r92ylw2i4w5dz6qbgbad1hp6hla0cl",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/1.5.0/oidc_login.tar.gz",
+      "version": "1.5.0"
     },
     "ojsxc": {
       "meta": {
@@ -1487,9 +1516,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "03v2vxm0xax6pyhb80rcs8l6j3mzf5l8a3ahiip4aiyb554dqjln",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.2.4/quicknotes.tar.gz",
-      "version": "0.2.4"
+      "sha256": "0a2glwa36f1kgn9sqsn0f6rr0l5j2g2brvkfig6488iqcirak7jg",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.3.0/quicknotes.tar.gz",
+      "version": "0.3.0"
     },
     "quota_warning": {
       "meta": {
@@ -1517,9 +1546,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "043f4pj2hpxc85khzdkvv9y4z3ilhfl1vy7g0si0d75fk8386w61",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.0/rainloop.tar.gz",
-      "version": "7.0.0"
+      "sha256": "09d8frggnq7nvkgwkgz9jrvsbr8vj3csyc6c75fwc40p9zxkjv1r",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.1/rainloop.tar.gz",
+      "version": "7.0.1"
     },
     "ransomware_protection": {
       "meta": {
