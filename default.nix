@@ -275,9 +275,6 @@ let
       "memcache.locking" = "\\OC\\Memcache\\Redis";
       redis.host = "/run/nextcloud-redis.socket";
 
-      # XXX: Backwards-compatibility with Nextcloud 16 and below.
-      redis.port = 0;
-
       supportedDatabases = [ "pgsql" ];
       tempdirectory = "/var/cache/nextcloud/uploads";
 
