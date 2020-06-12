@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1yyv0jlkw94jg0za0rzfjl0ail3r2bcajd3gk09az0g3flz7jf03",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/68f839e2a85eb4e456c4d7128942343f711012ed/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.5.0"
+      "sha256": "10gxakqwdw0ky4gdddx4sy7dq1ar5w0h9xnr5cchs7xb1h1093ak",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/c055295e349b7d95197d2f8756b4b0a755366c60/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.5.1"
     },
     "apporder": {
       "meta": {
@@ -197,9 +197,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0vyghrvnsc02mwi3gpfcbjqps42cwrbs6bfm2cib1r1rdma8gvxr",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.3.2/bbb-v0.3.2.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0v3pchd5klx66r3d31v505vaghk6wwf6rr9ikzjirdkadrwfnjdk",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.4.0/bbb-v0.4.0.tar.gz",
+      "version": "0.4.0"
     },
     "bookmarks": {
       "meta": {
@@ -329,9 +329,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "028lfdks1rnd328dwi1z8vyad144hhfcprjr5ip2hxwn87vfqns0",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.5/circles-0.18.5.tar.gz",
-      "version": "0.18.5"
+      "sha256": "04r7w1jlzlmip4m98a4d025x5dqs1slm61ffp7rjikxrx051fl9r",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.8/circles-0.18.8.tar.gz",
+      "version": "0.18.8"
     },
     "cloud_federation_api": {
       "meta": {
@@ -357,9 +357,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1dwjbw9x8rw01apwcfax8hhjp7i38bd9rmv36jxg0ihnk492gcsc",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.6/cms_pico-v1.0.6.tar.gz",
-      "version": "1.0.6"
+      "sha256": "1as19yfja3fay7kd3m5rnrqxmblbxzy8myjxlga14ffsdggww7ip",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.7/cms_pico-v1.0.7.tar.gz",
+      "version": "1.0.7"
     },
     "comments": {
       "meta": {
@@ -545,9 +545,9 @@
         "name": "Community Document Server",
         "summary": "Document server for OnlyOffice, community edition"
       },
-      "sha256": "0m03cnr4ww8gif18cf0hzqw9l3wa2l4ksnglgmpsvix3cc8hv8wh",
-      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.5/documentserver_community.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0hlpg51ychnshdz1y62b3gzy87xx6b6wacpbr4g7xp5gv132q1aw",
+      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.6/documentserver_community.tar.gz",
+      "version": "0.1.6"
     },
     "drawio": {
       "meta": {
@@ -1026,9 +1026,9 @@
         "name": "Retention",
         "summary": "This application allows for automatic deletion of files after a given time"
       },
-      "sha256": "1kp703l1k5xl6y7cynipga3bhs0z8rm9h8biwxgjma04ywb0g944",
-      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.7.0/files_retention-1.7.0.tar.gz",
-      "version": "1.7.0"
+      "sha256": "1d6pwfkac81zvd06nscmr2m034g3k7lld5i77z0g3lw099y5b9j1",
+      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.7.1/files_retention-1.7.1.tar.gz",
+      "version": "1.7.1"
     },
     "files_rightclick": {
       "meta": {
@@ -1401,9 +1401,9 @@
         "name": "HEIC/HEIF Image Converter",
         "summary": "Converts your HEIC/ HEIF images to JPEG"
       },
-      "sha256": "00nr6vzwgrjma50674351mww8d6isrl0dh71xqlj82qgrkykk175",
-      "url": "https://github.com/major-mayer/imageConverter/releases/download/v1.2/imageconverter.tar.gz",
-      "version": "1.2.0"
+      "sha256": "0xcf1m8g3klw0yl9gj2f62v2fr976bms0bh46w5rwkyq8s9y39wi",
+      "url": "https://github.com/major-mayer/imageConverter/releases/download/v1.2.1/imageconverter.tar.gz",
+      "version": "1.2.1"
     },
     "impersonate": {
       "meta": {
@@ -1648,9 +1648,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0bpnm8720rn1cdmkhv7dnsvhhn8gab1990g304yc9vs41pvp0nlw",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.5.0/notes.tar.gz",
-      "version": "3.5.0"
+      "sha256": "0gi9wdkahbwxx90iviy4b6mkcl946w8pg8k89nkaiisfhz9sqyhl",
+      "url": "https://github.com/nextcloud/notes/releases/download/3.5.1/notes.tar.gz",
+      "version": "3.5.1"
     },
     "notifications": {
       "meta": {
@@ -2338,9 +2338,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "0cq4rz2w9svbb78f2n1k1sf4238l75var6grvbd3r7b47cv2g4yb",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.2/sharingpath.tar.gz",
-      "version": "0.2.2"
+      "sha256": "0ndr0fw2jf8fl0hjcxii0nad0ixqp6pmbcz1qbm5h75k5cbyqp2i",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.3/sharingpath.tar.gz",
+      "version": "0.2.3"
     },
     "side_menu": {
       "meta": {
