@@ -341,9 +341,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0xsq0jz6i3vbsmv6fy1fkvgci5dy0vrrjk5wwvik0j7ig54py9yl",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.2/cookbook.tar.gz",
-      "version": "0.7.2"
+      "sha256": "0d5rj4pzglvmbl87bpybzsi8i4rdddwzrvbi04mk5nzi3zmzja2w",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.3/cookbook.tar.gz",
+      "version": "0.7.3"
     },
     "cospend": {
       "meta": {
@@ -1806,9 +1806,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "0ndr0fw2jf8fl0hjcxii0nad0ixqp6pmbcz1qbm5h75k5cbyqp2i",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.3/sharingpath.tar.gz",
-      "version": "0.2.3"
+      "sha256": "1y555jyrrj3sv7jvx9lgyzzckhd3dbzhm6aqgjfzb9r4wjvblkzv",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.4/sharingpath.tar.gz",
+      "version": "0.2.4"
     },
     "side_menu": {
       "meta": {
