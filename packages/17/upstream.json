@@ -94,9 +94,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "10gxakqwdw0ky4gdddx4sy7dq1ar5w0h9xnr5cchs7xb1h1093ak",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/c055295e349b7d95197d2f8756b4b0a755366c60/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.5.1"
+      "sha256": "0nn40kgcnq2wi5laz9b1v632a9g8q46yp1d2igkrkv7kshdvx8mq",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/d97a6ccda4e5d899549a23cfd52f4dc7b7fdcc29/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.5.2"
     },
     "apporder": {
       "meta": {
@@ -123,9 +123,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "1bkha3ga8kcmbjxqnia3i7k956z5a23l6alw6g263l1ncnzp1zs0",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.10.0/audioplayer-2.10.0.tar.gz",
-      "version": "2.10.0"
+      "sha256": "1z4kwbcvky9gwla2vdi511z8i6kmr7jm0inq2rw3lyqidi71ml9h",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.10.1/audioplayer-2.10.1.tar.gz",
+      "version": "2.10.1"
     },
     "audioplayer_editor": {
       "meta": {
@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1rww5ysj5krjrymmh3f6zp2k6sx2rxp8fzrn1fyfycrrfgpfjs6a",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.1.1/bookmarks-3.1.1.tar.gz",
-      "version": "3.1.1"
+      "sha256": "15pc3p6hixxpxrckzv0wmkals6jbsllfc30dzyilag989zzjxrzq",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.1/bookmarks-3.2.1.tar.gz",
+      "version": "3.2.1"
     },
     "breezedark": {
       "meta": {
@@ -255,9 +255,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "177d6gkc4k3byk1rnq3gr9ynfy996q4pnxls8mwi7azliwl3iylb",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.3/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.3"
+      "sha256": "1bvcaw6q68z27rnd9ndfrp9aygxb957zzq6mpcs228l68yvlwhfx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.4/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.4"
     },
     "carnet": {
       "meta": {
@@ -370,9 +370,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0d5rj4pzglvmbl87bpybzsi8i4rdddwzrvbi04mk5nzi3zmzja2w",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.3/cookbook.tar.gz",
-      "version": "0.7.3"
+      "sha256": "0g069kvch46yw6kcjdpky537z1q4jkskwab3761nx3blbh2v2mh5",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.4/cookbook.tar.gz",
+      "version": "0.7.4"
     },
     "cospend": {
       "meta": {
@@ -879,9 +879,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "02p5zjb2zl5c6a3fbwk46x732pw7qhixx3f9xykxz660xd90i8p2",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.0/files_linkeditor.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0by6wx7n0sg4akl2n7frngcxjcgrwyk4snj203w3x8agcwafl21f",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.1/files_linkeditor.tar.gz",
+      "version": "1.1.1"
     },
     "files_markdown": {
       "meta": {
@@ -1182,7 +1182,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (currently only logging!) of login attempts from specified countries. (Early Version)",
+        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\t\n\tCountries can be specified using whitelisting or blacklisting.\n\t\n\tCurrently available localization services are:\n\t- Geoiplookup (local programm on the host)\n\t- MaxMind GeoLite2 (local database accessed via PHP API)\n\t- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\t\n\tFor help how to set the services up please have a look at the Github repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1191,9 +1191,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "1bppv3aqbc4vzbkwdzy9d01qgpbmpsym5b47rapsw2ryzam6z53g",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.2.0/geoblocker.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0rsrvy4zqkyg9ia282qdr4isrcsybvl5pgi6r0wj7dhyppdm4gx8",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.0/geoblocker.tar.gz",
+      "version": "0.3.0"
     },
     "globalsiteselector": {
       "meta": {
@@ -2385,9 +2385,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0cm2wdgjh0yvv1rr99w6ic09zph61kyyfvsj8j27b9g5qv1pj81m",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.7/release.tar.gz",
-      "version": "2.4.7"
+      "sha256": "02wsbgdmvdjj8fc5mfnp52197qmv6bynzvv3w452x5s0mz5sb9r8",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.8/release.tar.gz",
+      "version": "2.4.8"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3020,9 +3020,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0lwkyl32gq4arwgs4p7pzzj17g7vavyhy50v99ixlwlm2p4y97q3",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.4/wopi.tar.gz",
-      "version": "3.5.4"
+      "sha256": "0j9amcwdv8l093fjar0676wj3hj1l3aazbg6p7x7zfbsf5d48wfc",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.5/wopi.tar.gz",
+      "version": "3.5.5"
     },
     "workflow_pdf_converter": {
       "meta": {
