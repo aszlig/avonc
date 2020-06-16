@@ -1935,9 +1935,9 @@
         "name": "Preferred Providers",
         "summary": "Allow nextcloud to request user accounts"
       },
-      "sha256": "0iyyvv7k5ng7p6gri06978dgzqzgqx8cn8smrpb9rjv31jldwcnb",
-      "url": "https://github.com/nextcloud/preferred_providers/releases/download/1.6.0/preferred_providers.tar.gz",
-      "version": "1.6.0"
+      "sha256": "1gpsj8v0ckxnbsgdk742pv5aq8l0rxk1hmbn6p0vgrzc8xr15wxi",
+      "url": "https://github.com/nextcloud/preferred_providers/releases/download/1.7.0/preferred_providers.tar.gz",
+      "version": "1.7.0"
     },
     "previewgenerator": {
       "meta": {

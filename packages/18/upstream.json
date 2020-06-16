@@ -545,9 +545,9 @@
         "name": "Community Document Server",
         "summary": "Document server for OnlyOffice, community edition"
       },
-      "sha256": "0hlpg51ychnshdz1y62b3gzy87xx6b6wacpbr4g7xp5gv132q1aw",
-      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.6/documentserver_community.tar.gz",
-      "version": "0.1.6"
+      "sha256": "0f379l8v73q44x1k1s8pgby5pir75kr3v31ff8cji3m2hkjfs447",
+      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.7/documentserver_community.tar.gz",
+      "version": "0.1.7"
     },
     "drawio": {
       "meta": {
@@ -1545,9 +1545,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1h1rbjln7zy43n2w4xpi3a1ald3m247hxgqscv0hk90zr9bcd8hd",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.3.5/mail.tar.gz",
-      "version": "1.3.5"
+      "sha256": "00nf7k89s0h0bv68vkd7mfz6y7ywahpsp44ram2c5hw08jh2y6ab",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.0/mail.tar.gz",
+      "version": "1.4.0"
     },
     "maps": {
       "meta": {
@@ -1921,9 +1921,9 @@
         "name": "Preferred Providers",
         "summary": "Allow nextcloud to request user accounts"
       },
-      "sha256": "0iyyvv7k5ng7p6gri06978dgzqzgqx8cn8smrpb9rjv31jldwcnb",
-      "url": "https://github.com/nextcloud/preferred_providers/releases/download/1.6.0/preferred_providers.tar.gz",
-      "version": "1.6.0"
+      "sha256": "1gpsj8v0ckxnbsgdk742pv5aq8l0rxk1hmbn6p0vgrzc8xr15wxi",
+      "url": "https://github.com/nextcloud/preferred_providers/releases/download/1.7.0/preferred_providers.tar.gz",
+      "version": "1.7.0"
     },
     "previewgenerator": {
       "meta": {
