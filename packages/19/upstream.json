@@ -168,9 +168,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0v3pchd5klx66r3d31v505vaghk6wwf6rr9ikzjirdkadrwfnjdk",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.4.0/bbb-v0.4.0.tar.gz",
-      "version": "0.4.0"
+      "sha256": "0i8q6dc15bf8y7hkbhpb0jnvxx105ywmh3w8d8q0vazdm2n83xgs",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.5.1/bbb-v0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "bookmarks": {
       "meta": {
@@ -198,9 +198,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "06957yb2ijnp8n4j0g2vsm74ayqjdxidrdsdmlslf8zy4jsbg957",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.1/breezedark.tar.gz",
-      "version": "19.0.1"
+      "sha256": "0lsjm7r3dl371wdb6qd8kq7mn30scp52z5zhf155wg0yabbsfarl",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.2/breezedark.tar.gz",
+      "version": "19.0.2"
     },
     "bruteforcesettings": {
       "meta": {
@@ -256,9 +256,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1zzqa2vz0fva2pblzxghvh1avj913937645ka2gymiwzm3ll1c49",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.0/carnet-nc-v0.22.0.tar.gz",
-      "version": "0.22.0"
+      "sha256": "1hrg7mha1mgygqcjfpyzas75vgs1x2h42jp8svfz01inn6jz1vaz",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.1/carnet-nc-v0.22.1.tar.gz",
+      "version": "0.22.1"
     },
     "circles": {
       "meta": {
@@ -355,9 +355,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0g069kvch46yw6kcjdpky537z1q4jkskwab3761nx3blbh2v2mh5",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.4/cookbook.tar.gz",
-      "version": "0.7.4"
+      "sha256": "11n671d5vjh99m7r5wjy6fx0srijq7fh5mgwcbrj50zksc67yxay",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.5/cookbook.tar.gz",
+      "version": "0.7.5"
     },
     "cospend": {
       "meta": {
@@ -426,9 +426,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0zzwwai48xa6pkp3194jdr4klgdi43kimpgk4hcbzngicqf1rczg",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.2/deck.tar.gz",
-      "version": "1.0.2"
+      "sha256": "17kfkf5hnxxjvj932qml8qnxq6g53gl95j2pkqq6yc092i64zb47",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.3/deck.tar.gz",
+      "version": "1.0.3"
     },
     "diffuse": {
       "meta": {
@@ -460,6 +460,21 @@
       "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.7/documentserver_community.tar.gz",
       "version": "0.1.7"
     },
+    "drawio": {
+      "meta": {
+        "description": "Integrates Draw.io with Nextcloud",
+        "homepage": "https://github.com/pawelrojek/nextcloud-drawio/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Draw.io",
+        "summary": "Draw.io integration app"
+      },
+      "sha256": "0k435mdyapjk8qyx2zlxsi1k8r50qi1l26kyyqaazz88cdf6ya7h",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.6/drawio-v0.9.6.tar.gz",
+      "version": "0.9.6"
+    },
     "drop_account": {
       "meta": {
         "description": "# Description\n\nThis app allows users to delete their accounts by removing all their data.\n\nIt can also send activities to the admins about deleted accounts.",
@@ -486,9 +501,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0p3xb8lx7aprkqxqw7kkwbd7nv4v684kkiqmc36s631my01yrhhi",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.12/emlviewer-0.0.12.tar.gz",
-      "version": "0.0.12"
+      "sha256": "1vgv8di0yw09vx7qj8kkdv24qdlzzfp4dln303qkprrj61js8299",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.13/emlviewer-0.0.13.tar.gz",
+      "version": "0.0.13"
     },
     "encryption": {
       "meta": {
@@ -704,6 +719,21 @@
         "summary": "Adds basic external storage support"
       }
     },
+    "files_inotify": {
+      "meta": {
+        "description": "Adds support detecting changes in local external storages with\nocc files_external:notify.\n\nNote that there are scalability limitations to using `inotify` on large folder structures, see the [README](https://github.com/icewind1991/files_inotify/blob/master/README.md) for more information",
+        "homepage": "https://github.com/icewind1991/files_inotify",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "INotify file watcher",
+        "summary": "Adds support detecting changes in local external storages"
+      },
+      "sha256": "0nfsxcj93jcrlvb6y3zm40bj8wvpwgk6wpnffkr81n9gbkgf0vcy",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.8/files_inotify.tar.gz",
+      "version": "0.1.8"
+    },
     "files_linkeditor": {
       "meta": {
         "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
@@ -718,6 +748,21 @@
       "sha256": "0by6wx7n0sg4akl2n7frngcxjcgrwyk4snj203w3x8agcwafl21f",
       "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.1/files_linkeditor.tar.gz",
       "version": "1.1.1"
+    },
+    "files_lock": {
+      "meta": {
+        "description": "Allow your users to temporary lock their files to avoid conflicts while working on shared files.",
+        "homepage": "https://github.com/nextcloud/files_lock",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Temporary files lock",
+        "summary": "Temporary lock your files"
+      },
+      "sha256": "0vc949h6v5mjjqczawv5svi9l91g2lvbm0zsjaqakrc9yp7d84ka",
+      "url": "https://github.com/nextcloud/files_lock/releases/download/v0.8.2/files_lock-0.8.2.tar.gz",
+      "version": "0.8.2"
     },
     "files_markdown": {
       "meta": {
@@ -945,7 +990,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\t\n\tCountries can be specified using whitelisting or blacklisting.\n\t\n\tCurrently available localization services are:\n\t- Geoiplookup (local programm on the host)\n\t- MaxMind GeoLite2 (local database accessed via PHP API)\n\t- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\t\n\tFor help how to set the services up please have a look at the Github repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\nCountries can be specified using whitelisting or blacklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set the services up please have a look at the Github repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -954,9 +999,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0rsrvy4zqkyg9ia282qdr4isrcsybvl5pgi6r0wj7dhyppdm4gx8",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.0/geoblocker.tar.gz",
-      "version": "0.3.0"
+      "sha256": "0kkivmd0k14gcl64h133z2hciyg0kq7y1mdr000yckr7nx0z6yw7",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.1/geoblocker.tar.gz",
+      "version": "0.3.1"
     },
     "globalsiteselector": {
       "meta": {
@@ -1062,6 +1107,21 @@
       "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.6/groupfolders.tar.gz",
       "version": "6.0.6"
     },
+    "groupquota": {
+      "meta": {
+        "description": "Allow setting a disk quota for an entire group.\n\nNote: configuring quota is only possible trough the API, no admin interface is currently available.",
+        "homepage": "https://github.com/nextcloud/groupquota",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Group quota",
+        "summary": "Give filesystem quotas to groups"
+      },
+      "sha256": "1r5jmk024ymmsldqrg5gvpfh8i8bmaqbjfj429qagns256d73pwg",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.3/groupquota.tar.gz",
+      "version": "0.1.2"
+    },
     "guests": {
       "meta": {
         "description": "Allows for better collaboration with external users by allowing users to create guests account.\n\nGuests accounts can be created from the share menu by entering either the recipients email or name and choosing \"create guest account\", once the share is created the guest user will receive an email notification about the mail with a link to set their password.\n\nGuests users can only access files shared to them and can't create any files outside of shares, additionally, the apps accessible to guest accounts are whitelisted.",
@@ -1091,6 +1151,21 @@
       "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.6/hidesidebars.tar.gz",
       "version": "1.0.6"
     },
+    "hsts": {
+      "meta": {
+        "description": "Add HSTS (HTTP Strict Transport Security) header to HTTPS response, if modheaders is not available.",
+        "homepage": "https://github.com/sualko/cloud_hsts/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "HSTS Header",
+        "summary": "Add HSTS header to HTTPS response"
+      },
+      "sha256": "1i9847bxfcax4izfax0r0wkbr9rsg25gcschkrvwgbf3by3dx999",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.5.0/hsts-v0.5.0.tar.gz",
+      "version": "0.5.0"
+    },
     "imageconverter": {
       "meta": {
         "description": "Very simple app to convert your HEIC/ HEIF files to JPEG using ImagickMagick and the PHP Imagick extension. \n        Needs imagemagick with HEIC support installed and the PHP bindings (Imagick extension) enabled.\n        Check Github for more details.",
@@ -1116,9 +1191,9 @@
         "name": "Impersonate",
         "summary": "Impersonate other users"
       },
-      "sha256": "0mba2bpxw49x855xqrn4bihy6kbzg3chryspjzp1fq8a91a2w7r4",
-      "url": "https://github.com/nextcloud/impersonate/releases/download/v1.6.0/impersonate.tar.gz",
-      "version": "1.6.0"
+      "sha256": "141rwl4cb35rbhv6w70zhas53y50pckwnvn5hgqj4sj7kllca4pn",
+      "url": "https://github.com/nextcloud/impersonate/releases/download/v1.6.1/impersonate.tar.gz",
+      "version": "1.6.1"
     },
     "ldap_write_support": {
       "meta": {
@@ -1364,6 +1439,21 @@
       "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.8/ocdownloader-1.7.8.tar.gz",
       "version": "1.7.8"
     },
+    "ocsms": {
+      "meta": {
+        "description": "An app to sync SMS with your cloud",
+        "homepage": "https://github.com/nextcloud/ocsms",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Phone Sync",
+        "summary": "An app to sync SMS with your cloud"
+      },
+      "sha256": "1l47f6j6g5s8drzf7gj9ycnvp6ypls2g3qjalb83l2346snmkffw",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.8/ocsms-2.1.8.tar.gz",
+      "version": "2.1.8"
+    },
     "oidc_login": {
       "meta": {
         "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.",
@@ -1375,9 +1465,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "00f6ic1dcnxcm4pm9ary48r92ylw2i4w5dz6qbgbad1hp6hla0cl",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/1.5.0/oidc_login.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1iwsyv21lgp0sbpgddwrly76rpnz9r2k10g603gqvpbmkr410hdd",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.5.1/oidc_login.tar.gz",
+      "version": "1.5.1"
     },
     "ojsxc": {
       "meta": {
@@ -1390,9 +1480,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "1pgixidqz3s3in4hzah3q9rjaxgy7ry65qz45m6v9k1wj4rzrbz6",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.0/ojsxc-4.1.0.tar.gz",
-      "version": "4.1.0"
+      "sha256": "0hsmyxcbrc9wlnnlai3i6yjh8brqr923cfvy8vcprn2gpzx4qdfi",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.1/ojsxc-4.1.1.tar.gz",
+      "version": "4.1.1"
     },
     "onlyoffice": {
       "meta": {
@@ -1604,9 +1694,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "1r4m4q8d7hvpbyx2p33g9rlnp5blg69fqnqgc2hfq053wrzizw14",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.4.0/quicknotes.tar.gz",
-      "version": "0.4.0"
+      "sha256": "18p1fj26v5azfrwhms4h9zmk9a0za6rhq0n1cb8my5q5pmg5nqqa",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.0/quicknotes.tar.gz",
+      "version": "0.6.0"
     },
     "quota_warning": {
       "meta": {
@@ -1677,9 +1767,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "05dmjgw14dgsh5pkv2x57bpskxf49m9aakbh4v19mhag1wcj9rx9",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.0/richdocuments.tar.gz",
-      "version": "3.7.0"
+      "sha256": "0di6ip5ngigk1fvv78fycyzkixdagp8mp6m3sgjick26adk1982b",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.2/richdocuments.tar.gz",
+      "version": "3.7.2"
     },
     "richdocumentscode": {
       "meta": {
@@ -1692,9 +1782,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1512z2p5c21gibmnl9ww7qwn62v9c5nf8pdxs50jdifvbi2r6ryv",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.404/richdocumentscode.tar.gz",
-      "version": "4.2.404"
+      "sha256": "1w2z9slazafl9ds3db2bl3gb5p099mhcza71q4ryq08qyvqfasiv",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.407/richdocumentscode.tar.gz",
+      "version": "4.2.407"
     },
     "riotchat": {
       "meta": {
@@ -2052,6 +2142,21 @@
       "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.6.0/theming_customcss.tar.gz",
       "version": "1.6.0"
     },
+    "timemanager": {
+      "meta": {
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics**.",
+        "homepage": "https://github.com/te-online/timemanager",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "TimeManager",
+        "summary": "An app to track how you spend your time."
+      },
+      "sha256": "1j4cwm9saxbxxrj5424w4hf323rwdhb29yh5y2zpjhkpgaqkg8zg",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.2/timemanager.tar.gz",
+      "version": "0.1.2"
+    },
     "twofactor_admin": {
       "meta": {
         "description": "This two-factor auth (2FA) provider for Nextcloud allows admins to generate a one-time\n\t\tcode for users to log into a 2FA protected account. This is helpful in situations where\n\t\tusers have lost access to their other 2FA methods or mandatory 2FA without any previously\n\t\tenabled 2FA provider.",
@@ -2384,10 +2489,21 @@
         "name": "Nextcloud workflow engine",
         "summary": "Nextcloud workflow engine"
       }
+    },
+    "wrikesync": {
+      "meta": {
+        "description": "Wrike Projectmanagement Space Sync",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WrikeSync",
+        "summary": "Wrike Projectmanagement Folder Sync"
+      },
+      "sha256": "0r466pyjh6zcwh1m5vrklqaiydv4bpzf6vdkii0nabva9f2gmxdm",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.0.0/wrikesync.tar.gz",
+      "version": "1.0.0"
     }
-  },
-  "constraints": {
-    "ocsms": ">2.1.7"
   },
   "nextcloud": {
     "sha256": "1bcgy4zqjbpab4r43g3gfy3da370g2aa26svci36vkg1nvl8g45p",

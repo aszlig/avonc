@@ -269,9 +269,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1zzqa2vz0fva2pblzxghvh1avj913937645ka2gymiwzm3ll1c49",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.0/carnet-nc-v0.22.0.tar.gz",
-      "version": "0.22.0"
+      "sha256": "1hrg7mha1mgygqcjfpyzas75vgs1x2h42jp8svfz01inn6jz1vaz",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.1/carnet-nc-v0.22.1.tar.gz",
+      "version": "0.22.1"
     },
     "checksum": {
       "meta": {
@@ -370,9 +370,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0g069kvch46yw6kcjdpky537z1q4jkskwab3761nx3blbh2v2mh5",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.4/cookbook.tar.gz",
-      "version": "0.7.4"
+      "sha256": "11n671d5vjh99m7r5wjy6fx0srijq7fh5mgwcbrj50zksc67yxay",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.5/cookbook.tar.gz",
+      "version": "0.7.5"
     },
     "cospend": {
       "meta": {
@@ -515,9 +515,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "1h7k7vrb0g01dcg1zgj769pjrj70kg8xk1ghhhkha5wbppz3x0h6",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.5/drawio-v0.9.5.tar.gz",
-      "version": "0.9.5"
+      "sha256": "0k435mdyapjk8qyx2zlxsi1k8r50qi1l26kyyqaazz88cdf6ya7h",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.6/drawio-v0.9.6.tar.gz",
+      "version": "0.9.6"
     },
     "drop_account": {
       "meta": {
@@ -560,9 +560,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0p3xb8lx7aprkqxqw7kkwbd7nv4v684kkiqmc36s631my01yrhhi",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.12/emlviewer-0.0.12.tar.gz",
-      "version": "0.0.12"
+      "sha256": "1vgv8di0yw09vx7qj8kkdv24qdlzzfp4dln303qkprrj61js8299",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.13/emlviewer-0.0.13.tar.gz",
+      "version": "0.0.13"
     },
     "encryption": {
       "meta": {
@@ -864,9 +864,9 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "15wnihs82wzr9sd8k4a2qxxk4sc4bm4id1cw8x99nr5ash2ygh3n",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.7/files_inotify.tar.gz",
-      "version": "0.1.7"
+      "sha256": "0nfsxcj93jcrlvb6y3zm40bj8wvpwgk6wpnffkr81n9gbkgf0vcy",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.8/files_inotify.tar.gz",
+      "version": "0.1.8"
     },
     "files_linkeditor": {
       "meta": {
@@ -1182,7 +1182,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\t\n\tCountries can be specified using whitelisting or blacklisting.\n\t\n\tCurrently available localization services are:\n\t- Geoiplookup (local programm on the host)\n\t- MaxMind GeoLite2 (local database accessed via PHP API)\n\t- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\t\n\tFor help how to set the services up please have a look at the Github repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\nCountries can be specified using whitelisting or blacklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set the services up please have a look at the Github repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1191,9 +1191,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0rsrvy4zqkyg9ia282qdr4isrcsybvl5pgi6r0wj7dhyppdm4gx8",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.0/geoblocker.tar.gz",
-      "version": "0.3.0"
+      "sha256": "0kkivmd0k14gcl64h133z2hciyg0kq7y1mdr000yckr7nx0z6yw7",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.1/geoblocker.tar.gz",
+      "version": "0.3.1"
     },
     "globalsiteselector": {
       "meta": {
@@ -1355,9 +1355,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "1f9fn4lwx9jjwd01vjpc2ibshc0x0lnblg2z122whzv5aqvjgq2c",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.4.0/hsts-0.4.0.tar.gz",
-      "version": "0.4.0"
+      "sha256": "1i9847bxfcax4izfax0r0wkbr9rsg25gcschkrvwgbf3by3dx999",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.5.0/hsts-v0.5.0.tar.gz",
+      "version": "0.5.0"
     },
     "imageconverter": {
       "meta": {
@@ -1384,9 +1384,9 @@
         "name": "Impersonate",
         "summary": "Impersonate other users"
       },
-      "sha256": "1wcimiasw8389576p3nqyziza2bwszzg9kbki2sa6cxg7bjxzazd",
-      "url": "https://github.com/nextcloud/impersonate/releases/download/v1.4.1/impersonate.tar.gz",
-      "version": "1.4.1"
+      "sha256": "00qag3v2c8q6318i1yyjy3cjdl2casvz7pz4px544p7zgff53nkz",
+      "url": "https://github.com/nextcloud/impersonate/releases/download/v1.4.2/impersonate.tar.gz",
+      "version": "1.4.2"
     },
     "issuetemplate": {
       "meta": {
@@ -1731,9 +1731,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0hlp104k79df6i49fj544q8isr1yrc9fvfpzl2xxzljz7njk2y0x",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.42/ocr.tar.gz",
-      "version": "6.0.42"
+      "sha256": "1n4ndlfx740gcyafriklxw0bv5wih52lbah4mp7ggxj0y36sgnww",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.43/ocr.tar.gz",
+      "version": "6.0.43"
     },
     "ocsms": {
       "meta": {
@@ -1746,9 +1746,9 @@
         "name": "Phone Sync",
         "summary": "An app to sync SMS with your cloud"
       },
-      "sha256": "0qhdlbl5agf6njfl2ipwk2776gfg65dlp5avh6zfc1qdaaz15hjj",
-      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.7/ocsms-2.1.7.tar.gz",
-      "version": "2.1.7"
+      "sha256": "1l47f6j6g5s8drzf7gj9ycnvp6ypls2g3qjalb83l2346snmkffw",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.8/ocsms-2.1.8.tar.gz",
+      "version": "2.1.8"
     },
     "oidc_login": {
       "meta": {
@@ -1761,9 +1761,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "00f6ic1dcnxcm4pm9ary48r92ylw2i4w5dz6qbgbad1hp6hla0cl",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/1.5.0/oidc_login.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1iwsyv21lgp0sbpgddwrly76rpnz9r2k10g603gqvpbmkr410hdd",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.5.1/oidc_login.tar.gz",
+      "version": "1.5.1"
     },
     "ojsxc": {
       "meta": {
@@ -1776,9 +1776,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "1pgixidqz3s3in4hzah3q9rjaxgy7ry65qz45m6v9k1wj4rzrbz6",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.0/ojsxc-4.1.0.tar.gz",
-      "version": "4.1.0"
+      "sha256": "0hsmyxcbrc9wlnnlai3i6yjh8brqr923cfvy8vcprn2gpzx4qdfi",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.1/ojsxc-4.1.1.tar.gz",
+      "version": "4.1.1"
     },
     "onlyoffice": {
       "meta": {
@@ -2038,6 +2038,20 @@
       "url": "https://github.com/pbek/qownnotesapi/releases/download/20.1.0/qownnotesapi-nc.tar.gz",
       "version": "20.1.0"
     },
+    "quest": {
+      "meta": {
+        "description": "Quest is a meta-search client that can connect to various applications and sources. It will submit a search query to all the configured services and aggregate the results. This application allows you to search by including your files in Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Quest",
+        "summary": "Connector to the Quest's tool"
+      },
+      "sha256": "0fnlcxwy4jkw9khiwjx9hd1gklprbv5cfv7rxjq3hb2f5nxck19c",
+      "url": "https://github.com/antitoine/Quest-nextcloud/releases/download/v0.0.1/nextcloud_quest_v0.0.1.tar.gz",
+      "version": "0.0.1"
+    },
     "quickaccesssorting": {
       "meta": {
         "description": "This app enables to sort the favorites by 'Alphabetically', 'Date Added', 'Last Date Modified' and 'Custom Order'!",
@@ -2181,9 +2195,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "05dmjgw14dgsh5pkv2x57bpskxf49m9aakbh4v19mhag1wcj9rx9",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.0/richdocuments.tar.gz",
-      "version": "3.7.0"
+      "sha256": "0di6ip5ngigk1fvv78fycyzkixdagp8mp6m3sgjick26adk1982b",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.2/richdocuments.tar.gz",
+      "version": "3.7.2"
     },
     "riotchat": {
       "meta": {
@@ -2632,6 +2646,21 @@
       "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.6.0/theming_customcss.tar.gz",
       "version": "1.6.0"
     },
+    "timemanager": {
+      "meta": {
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics**.",
+        "homepage": "https://github.com/te-online/timemanager",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "TimeManager",
+        "summary": "An app to track how you spend your time."
+      },
+      "sha256": "1j4cwm9saxbxxrj5424w4hf323rwdhb29yh5y2zpjhkpgaqkg8zg",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.2/timemanager.tar.gz",
+      "version": "0.1.2"
+    },
     "timetracker": {
       "meta": {
         "description": "Time Tracker App",
@@ -3066,6 +3095,20 @@
         "name": "Files workflow engine",
         "summary": "Files workflow engine"
       }
+    },
+    "wrikesync": {
+      "meta": {
+        "description": "Wrike Projectmanagement Space Sync",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WrikeSync",
+        "summary": "Wrike Projectmanagement Folder Sync"
+      },
+      "sha256": "0r466pyjh6zcwh1m5vrklqaiydv4bpzf6vdkii0nabva9f2gmxdm",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.0.0/wrikesync.tar.gz",
+      "version": "1.0.0"
     },
     "xray": {
       "meta": {
