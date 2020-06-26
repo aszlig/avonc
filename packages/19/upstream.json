@@ -355,9 +355,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "11n671d5vjh99m7r5wjy6fx0srijq7fh5mgwcbrj50zksc67yxay",
-      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.5/cookbook.tar.gz",
-      "version": "0.7.5"
+      "sha256": "0m8hb4wj3si6hk17275nnqdv7zcwyymmzbygp1sdpinj90yc110c",
+      "url": "https://github.com/mrzapp/nextcloud-cookbook/releases/download/v0.7.6/cookbook.tar.gz",
+      "version": "0.7.6"
     },
     "cospend": {
       "meta": {
@@ -426,9 +426,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "17kfkf5hnxxjvj932qml8qnxq6g53gl95j2pkqq6yc092i64zb47",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.3/deck.tar.gz",
-      "version": "1.0.3"
+      "sha256": "128ycn0rdj7ydxpbf2s3i7xa6p1abpgsjkjpvyqmgapsdy8hv79s",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.4/deck.tar.gz",
+      "version": "1.0.4"
     },
     "diffuse": {
       "meta": {
@@ -501,9 +501,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1vgv8di0yw09vx7qj8kkdv24qdlzzfp4dln303qkprrj61js8299",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.13/emlviewer-0.0.13.tar.gz",
-      "version": "0.0.13"
+      "sha256": "1lvgmmbdhpqcf9qdr2nj5j3d6xamz4kbg9xg7q2macr3rbs0djfy",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.15/emlviewer-0.0.15.tar.gz",
+      "version": "0.0.15"
     },
     "encryption": {
       "meta": {
@@ -1495,9 +1495,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "1pzmvzbp68bkwfrmsbaj815mapxk6jd3w5l2lnii2j5nqwwfxw9n",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.2.0/onlyoffice.tar.gz",
-      "version": "4.2.0"
+      "sha256": "00825kjczybxad4vdnmjap452bbzvq7lhjklp0lmniksdqvrch1s",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.3.0/onlyoffice.tar.gz",
+      "version": "4.3.0"
     },
     "password_policy": {
       "meta": {
@@ -1767,9 +1767,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0di6ip5ngigk1fvv78fycyzkixdagp8mp6m3sgjick26adk1982b",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.2/richdocuments.tar.gz",
-      "version": "3.7.2"
+      "sha256": "0hka42m658jxsxky3fcyqcw0qc2y6b6nb3ymzaf9wjnssb2c3nr6",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.3/richdocuments.tar.gz",
+      "version": "3.7.3"
     },
     "richdocumentscode": {
       "meta": {
@@ -1797,9 +1797,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "03k5993x208h9waig0gs9qdzbpbhcg8kcxk8r41vi0i7nyljzfsj",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.4.3/riotchat.tar.gz",
-      "version": "0.4.3"
+      "sha256": "0bbx2jqmnckh8rzj78pdb3xz9rl1zya8nvilyi327z6nlwk18fi5",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.5.1/riotchat.tar.gz",
+      "version": "0.5.1"
     },
     "scanner": {
       "meta": {
@@ -1957,6 +1957,36 @@
       "sha256": "0vws2hb7bds61lfb4yda372skcjd8zrsryghn1zph7pfz5rn48am",
       "url": "https://gitnet.fr/attachments/d4af8b68-bec9-4b1b-ae89-7c36bd50d098",
       "version": "1.7.0"
+    },
+    "smb_test": {
+      "meta": {
+        "description": "Nextcloud app to debug smb connections",
+        "homepage": "https://github.com/icewind1991/smb_test",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SMB connection test",
+        "summary": "SMB connection test app"
+      },
+      "sha256": "1nhnqrid1dvpkdlrblqczwskxm8vg2xizyf320z2v9i5rfmxw0pf",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.5/smb_test.tar.gz",
+      "version": "0.2.5"
+    },
+    "social": {
+      "meta": {
+        "description": "** Disclaimer: this is an ALPHA version **\n\n** Nextcloud becomes part of the federated social networks!**\n\n** Find your friends:** No matter if they use Nextcloud,  Mastodon,  Friendica, and soon  Diaspora,  MediaGoblin and more  you can follow them!\n\n** Profile info:** No need to fill out more profiles  your info from Nextcloud will be used and extended.\n\n** Own your posts:** Everything you post stays on your Nextcloud!\n\n** Open standards:** We use the established ActivityPub standard!",
+        "homepage": "https://github.com/nextcloud/social",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Social",
+        "summary": "Nextcloud becomes part of the federated social networks!"
+      },
+      "sha256": "015067d21lz18pr2cw5l34rkqb0aqj6v25ffv4hk12ls7nysbs42",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.3.1/social-0.3.1.tar.gz",
+      "version": "0.3.1"
     },
     "sociallogin": {
       "meta": {
