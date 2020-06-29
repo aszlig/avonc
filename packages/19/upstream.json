@@ -183,9 +183,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "15pc3p6hixxpxrckzv0wmkals6jbsllfc30dzyilag989zzjxrzq",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.1/bookmarks-3.2.1.tar.gz",
-      "version": "3.2.1"
+      "sha256": "11g16fssgq97xz0lxqlr3hiz1642hb6z21r4334sslxaqprl71b7",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.2/bookmarks-3.2.2.tar.gz",
+      "version": "3.2.2"
     },
     "breezedark": {
       "meta": {
@@ -604,9 +604,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "1w3dna9z34hi2kgal7w03bpaypwmlgmlck7kgpzg9xwnka48c8zx",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.0/facerecognition_v0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0sdsh3ij1aplg38z7iz9avdnk2blgm9v872pa3g5c889hcjfw1y2",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.1/facerecognition.tar.gz",
+      "version": "0.6.1"
     },
     "federatedfilesharing": {
       "meta": {
@@ -1394,9 +1394,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0gi9wdkahbwxx90iviy4b6mkcl946w8pg8k89nkaiisfhz9sqyhl",
-      "url": "https://github.com/nextcloud/notes/releases/download/3.5.1/notes.tar.gz",
-      "version": "3.5.1"
+      "sha256": "0sjgxla06f1nmxwjz2wc1x1gbm4qj1vpqgkykazf2czgsby38jwy",
+      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.0/notes.tar.gz",
+      "version": "3.6.0"
     },
     "notifications": {
       "meta": {
