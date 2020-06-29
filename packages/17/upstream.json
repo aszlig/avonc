@@ -182,9 +182,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "11g16fssgq97xz0lxqlr3hiz1642hb6z21r4334sslxaqprl71b7",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.2/bookmarks-3.2.2.tar.gz",
-      "version": "3.2.2"
+      "sha256": "17pas24vpj1nv5wn2s504c2rsfr8szbsibl4vfqxqq8gkj70dr1n",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.4/bookmarks-3.2.4.tar.gz",
+      "version": "3.2.4"
     },
     "breezedark": {
       "meta": {
@@ -1182,7 +1182,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\nCountries can be specified using whitelisting or blacklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set the services up please have a look at the Github repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\nCountries can be specified using whitelisting or blacklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the Github repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1191,9 +1191,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0kkivmd0k14gcl64h133z2hciyg0kq7y1mdr000yckr7nx0z6yw7",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.1/geoblocker.tar.gz",
-      "version": "0.3.1"
+      "sha256": "1i0lf57y33g0bcn6j2m51lc3s07kqp5r3r176y28mn9krmdhcd29",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.2/geoblocker.tar.gz",
+      "version": "0.3.2"
     },
     "globalsiteselector": {
       "meta": {
@@ -2976,9 +2976,9 @@
         "name": "User usage report",
         "summary": "User usage report"
       },
-      "sha256": "0icxqwfdf41scq16xy4pm9r4dzva14yd1xpdc5hpzd5150nic1yr",
-      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.1.2/user_usage_report-1.1.2.tar.gz",
-      "version": "1.1.2"
+      "sha256": "0smddzrgnm3ak9irbl9jw8hf18xlqd1bf3yns6is8zyscdw13g06",
+      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.1.3/user_usage_report-1.1.3.tar.gz",
+      "version": "1.1.3"
     },
     "video_converter": {
       "meta": {
@@ -3106,9 +3106,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "0r466pyjh6zcwh1m5vrklqaiydv4bpzf6vdkii0nabva9f2gmxdm",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.0.0/wrikesync.tar.gz",
-      "version": "1.0.0"
+      "sha256": "16ac6wga4px85pp6q1m1jcysh7fs8a1dc52ji1d3j35gsnq1mwi3",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.0.1/wrikesync.tar.gz",
+      "version": "1.0.1"
     },
     "xray": {
       "meta": {
