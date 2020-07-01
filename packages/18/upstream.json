@@ -415,9 +415,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0gcr166l4abpbr9i6wpqk3hj6xpbl4ji58s8b51irds3gi6ann2v",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/200dd004e832d90445ee18d4960a0a65/cospend-0.5.5.tar.gz",
-      "version": "0.5.5"
+      "sha256": "18d136k2r3r1kjy554s6j9rhphfvs8d5smxcrdbs9nmkg30vh8dl",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/997c78c8343542849690f499c3baf990/cospend-1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "customproperties": {
       "meta": {
@@ -2670,9 +2670,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "1j4cwm9saxbxxrj5424w4hf323rwdhb29yh5y2zpjhkpgaqkg8zg",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.2/timemanager.tar.gz",
-      "version": "0.1.2"
+      "sha256": "09lyaxldy5nlaq5r9i1kmsqsm5bfp7niiphhdhdn5di4davigwih",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.3/timemanager.tar.gz",
+      "version": "0.1.3"
     },
     "timetracker": {
       "meta": {
@@ -2989,9 +2989,9 @@
         "name": "User usage report",
         "summary": "User usage report"
       },
-      "sha256": "0cyi2v3bs7b1wsj87b0cdyr39nsj8090l66lpl8qd5yfbzz486ql",
-      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.2.1/user_usage_report-1.2.1.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1h3w0walxxfbxl2w20nqaazh5f92a27cskq0nh02s695dbcf2dmd",
+      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.2.2/user_usage_report-1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "video_converter": {
       "meta": {
