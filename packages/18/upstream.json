@@ -87,6 +87,7 @@
     "appointments": {
       "meta": {
         "description": "Book appointments into your calendar via secure online form. Attendees can confirm or cancel their appointments via an email link.",
+        "homepage": "https://www.srgdev.com/lab/nextcloud-appointments/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -94,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0nn40kgcnq2wi5laz9b1v632a9g8q46yp1d2igkrkv7kshdvx8mq",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/d97a6ccda4e5d899549a23cfd52f4dc7b7fdcc29/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.5.2"
+      "sha256": "1b7acmyv6fczl3shi5a8nkcg3x5zrzz1vfs7gf9h5jg1vcbninwj",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/16dd7f81138c1382f12726d7d7f2b7a4a645606d/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.6.1"
     },
     "apporder": {
       "meta": {
@@ -419,6 +420,20 @@
       "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/997c78c8343542849690f499c3baf990/cospend-1.0.2.tar.gz",
       "version": "1.0.2"
     },
+    "cpanelmailsync": {
+      "meta": {
+        "description": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates, using the CPanel UAPI.",
+        "isShipped": false,
+        "licenses": [
+          "mpl"
+        ],
+        "name": "CPanel Mail Sync",
+        "summary": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates."
+      },
+      "sha256": "11whf6civbw7a3g669gpp32jafw9pg6psdag0ps64qxl0d38xd7m",
+      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/uploads/f6684c63ac5df7a84b536ac98e668fbc/cpanelmailsync.tar.gz",
+      "version": "0.0.7"
+    },
     "customproperties": {
       "meta": {
         "description": "Files app plugin to add custom properties to files and folders",
@@ -593,6 +608,20 @@
       "sha256": "1v5n3fhclfbx5waz1vwbpdwnfvc2kbj4ijkdlq9xr5ppz3zawhrh",
       "url": "https://github.com/rullzer/dropit/releases/download/v0.4.0/dropit.tar.gz",
       "version": "0.4.0"
+    },
+    "duplicatefinder": {
+      "meta": {
+        "description": "Click on the icon and find if you have duplicate files.\n    \nYou can either use the command or the gui. \n\n## Command usage\n\n  ```duplicates:find-all [options]```\n\n### Options\n- `-u --user` scan files of the specified user (-u admin)\n- `-p --path` limit scan to this path (--path=\"/alice/files/Photos\")",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Duplicate Finder",
+        "summary": "Save some space by finding your duplicate files"
+      },
+      "sha256": "1vq5x9q5mqdk6npkwdd2w5a9glwmbsfr3mdwic9pijybri4iq3rh",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.2/duplicatefinder.tar.gz",
+      "version": "0.0.2"
     },
     "emlviewer": {
       "meta": {
@@ -1026,9 +1055,9 @@
         "name": "Retention",
         "summary": "This application allows for automatic deletion of files after a given time"
       },
-      "sha256": "1d6pwfkac81zvd06nscmr2m034g3k7lld5i77z0g3lw099y5b9j1",
-      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.7.1/files_retention-1.7.1.tar.gz",
-      "version": "1.7.1"
+      "sha256": "1xbw88fvkm91dwasm24jy39skcfzsp1289x3kcinqdhyk79kprmm",
+      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.7.2/files_retention-1.7.2.tar.gz",
+      "version": "1.7.2"
     },
     "files_rightclick": {
       "meta": {
@@ -1545,9 +1574,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "00nf7k89s0h0bv68vkd7mfz6y7ywahpsp44ram2c5hw08jh2y6ab",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.0/mail.tar.gz",
-      "version": "1.4.0"
+      "sha256": "05mrd1bb0233c3mvy62sqvpy3ryp1gppn6nx7n8n8jwq295ix1nh",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.1/mail.tar.gz",
+      "version": "1.4.1"
     },
     "maps": {
       "meta": {
@@ -1575,9 +1604,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "18b01ch726kfix3yv7g7xrs5gha05wjzvkwchi6z6jpsk92kfj7n",
-      "url": "https://github.com/gino0631/nextcloud-metadata/releases/download/v0.11.1/metadata.tar.gz",
-      "version": "0.11.1"
+      "sha256": "0wqr7q4dshj9sdf50zr155hqs8annwaa1h06b7k8w2m84mgz6dks",
+      "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
+      "version": "0.12.0"
     },
     "music": {
       "meta": {
@@ -1719,9 +1748,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1n4ndlfx740gcyafriklxw0bv5wih52lbah4mp7ggxj0y36sgnww",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.43/ocr.tar.gz",
-      "version": "6.0.43"
+      "sha256": "0kbcvinrcqkjzk5qsbcnfvm1p6i6vfmy99pgmnrgbjjng4lmln61",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.45/ocr.tar.gz",
+      "version": "6.0.45"
     },
     "ocsms": {
       "meta": {
@@ -1849,9 +1878,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1bxs2lb4xp0n63g1sp3p9wracp7y6vmmdcq34d1ha8kc7w2w436b",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10216/artifacts/raw/passwords.tar.gz",
-      "version": "2020.6.0"
+      "sha256": "00qa0qlm1c0wmpxmd2n4m5pwagc80pxbwv0f9makk5pi3zs8awlx",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10243/artifacts/raw/passwords.tar.gz",
+      "version": "2020.7.0"
     },
     "phonetrack": {
       "meta": {
@@ -1864,9 +1893,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phone's positions in real time"
       },
-      "sha256": "0bmnrkw26x7ql53gzpf164dks5klffnkqkla1hidwrrx7a1vpyw2",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/74843022bbb388273538c1e69b726765/phonetrack-0.6.3.tar.gz",
-      "version": "0.6.3"
+      "sha256": "0x60j9q1cpif7v43krvjd2l1mi8zwcvq8k41rj07f1mdcjz1bfsb",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/de293ffddde495a4ff82ef756dd8bac2/phonetrack-0.6.4.tar.gz",
+      "version": "0.6.4"
     },
     "photos": {
       "meta": {
@@ -2240,9 +2269,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "061vaj47x0lp0v3n0g9jacw8x28z36fnfhg8847yw65ys80mhpd8",
-      "url": "https://download.sendent.nl/serverapp/1.0.1/sendent.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1vzrsm9affcv4szdhlazif3f0w63bs9c2gdp3snn9g2b21k42pz4",
+      "url": "https://download.sendent.nl/serverapp/1.0.4/sendent.tar.gz",
+      "version": "1.0.4"
     },
     "sensorlogger": {
       "meta": {
@@ -2403,7 +2432,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Telegram\n\nAdd [BotFather](https://telegram.me/BotFather)\n```\n/newbot\nnameof_bot\n```\n\n&gt;Save the API key somewhere you will need to put it in nextcloud along with your bot username in the social login section.\n\n[Go here](https://core.telegram.org/widgets/login)\n\nAdd your bot username and change the authoriazation type to \"Redirect to URL\"\nEnter your nextcloud domain followed by:\n\n`/apps/sociallogin/oauth/telegram`\n\n```\nhttps://cloud.nextcloud.com/apps/sociallogin/oauth/telegram\n```\nLogin with Telegram\n\nGo back to BotFather\n\n```\n/mybots\n```\nSelect your bot\n```\n/setdomain\ncloud.nextcloud.com\n```\nGo to your nextcloud settings social login admin page.\nEnter your Telegram bot name\n```\nnameof_bot\n```\nand your API key that you copied when you created your bot\n\nAnd thats it\n\nFor using telegram login you need create bot and connect it to domain as described here https://core.telegram.org/widgets/login\n\nThen specify bot login and token in \"Social login\" section of admin settings page\n\n**Telegram auth will not work everywhere another than browser.***\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url!\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -2412,9 +2441,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "02wsbgdmvdjj8fc5mfnp52197qmv6bynzvv3w452x5s0mz5sb9r8",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v2.4.8/release.tar.gz",
-      "version": "2.4.8"
+      "sha256": "0frgkm8269m0wpvj6rjyj2waxp84fav5m33l1lc4m6dcf13ci8n9",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.4/release.tar.gz",
+      "version": "3.2.4"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2687,6 +2716,20 @@
       "sha256": "04hh1gk6kyp8r65i7prgz879553p9shsgs3pmpdr78gyqr10fgvy",
       "url": "https://mtier.org/timetracker/timetracker-0.0.42.tar.gz",
       "version": "0.0.42"
+    },
+    "transmission": {
+      "meta": {
+        "description": "Check the status of the torrents of a Transmission server directly through this Nextcloud app.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Transmission",
+        "summary": "Integrate the torrent manager Transmission within Nextcloud"
+      },
+      "sha256": "10bd291ck51n058zzi89w5gz2s093393hslvc59ihqmvxs9sk7dk",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.4/transmission-0.4.tar.gz",
+      "version": "0.0.1"
     },
     "twofactor_admin": {
       "meta": {
@@ -2989,9 +3032,9 @@
         "name": "User usage report",
         "summary": "User usage report"
       },
-      "sha256": "1h3w0walxxfbxl2w20nqaazh5f92a27cskq0nh02s695dbcf2dmd",
-      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.2.2/user_usage_report-1.2.2.tar.gz",
-      "version": "1.2.2"
+      "sha256": "0a4cx4rh6l7jj3y8wc0mz5i74j0q7v7ag3nmq5xfx8snwds09p2s",
+      "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.2.3/user_usage_report-1.2.3.tar.gz",
+      "version": "1.2.3"
     },
     "video_converter": {
       "meta": {
@@ -3126,7 +3169,7 @@
     },
     "wrikesync": {
       "meta": {
-        "description": "Wrike Projectmanagement Space Sync",
+        "description": "Syncronization between the folder structure of Wrike Projectmanagement software and the Nextcloud filesystem structure.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3134,9 +3177,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "16ac6wga4px85pp6q1m1jcysh7fs8a1dc52ji1d3j35gsnq1mwi3",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.0.1/wrikesync.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1s40jm7ycl3784ahz754rgiym8jvmys48j2xvbbfnrzpwij5yj5f",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.1.2/wrikesync.tar.gz",
+      "version": "1.1.2"
     },
     "xray": {
       "meta": {
