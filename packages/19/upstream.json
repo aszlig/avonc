@@ -1841,9 +1841,9 @@
         "name": "Riot Chat",
         "summary": "Riot IM Chat integrated into Nextcloud"
       },
-      "sha256": "0bbx2jqmnckh8rzj78pdb3xz9rl1zya8nvilyi327z6nlwk18fi5",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.5.1/riotchat.tar.gz",
-      "version": "0.5.1"
+      "sha256": "16lji7yzmy7s4a3jc5ymvmxvkwysiyrx4dxs2927jxra039mwba1",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.5.2/riotchat.tar.gz",
+      "version": "0.5.2"
     },
     "scanner": {
       "meta": {
@@ -2043,9 +2043,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0frgkm8269m0wpvj6rjyj2waxp84fav5m33l1lc4m6dcf13ci8n9",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.4/release.tar.gz",
-      "version": "3.2.4"
+      "sha256": "0j14f7205z1dnyncx7by9sb720m4663swaf7lcqgxyzs3vb4x6dc",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.5/release.tar.gz",
+      "version": "3.2.5"
     },
     "spgverein": {
       "meta": {
@@ -2241,9 +2241,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "10bd291ck51n058zzi89w5gz2s093393hslvc59ihqmvxs9sk7dk",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.4/transmission-0.4.tar.gz",
-      "version": "0.0.1"
+      "sha256": "1jn0j5zvj54ygsshgs8lkjr0c0b2qr6xbyi6kyydwsrq6iwjnc12",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6/transmission-0.6.0.tar.gz",
+      "version": "0.6.0"
     },
     "twofactor_admin": {
       "meta": {
