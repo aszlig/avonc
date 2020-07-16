@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1b7acmyv6fczl3shi5a8nkcg3x5zrzz1vfs7gf9h5jg1vcbninwj",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/16dd7f81138c1382f12726d7d7f2b7a4a645606d/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.6.1"
+      "sha256": "0s112680nrvy8cn6831pxbqlbz4p4vkl6a595aik7fyccdrm4c8w",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/11e1efbcfe55dee89638e696ed5cf244ae4e98df/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.6.3"
     },
     "apporder": {
       "meta": {
@@ -330,9 +330,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "04r7w1jlzlmip4m98a4d025x5dqs1slm61ffp7rjikxrx051fl9r",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.8/circles-0.18.8.tar.gz",
-      "version": "0.18.8"
+      "sha256": "11z2yy3r2imyjp92swqpm5aj81vpg36h2bndphfs89l35fc9idz5",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.9/circles-0.18.9.tar.gz",
+      "version": "0.18.9"
     },
     "cloud_federation_api": {
       "meta": {
@@ -501,9 +501,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "128ycn0rdj7ydxpbf2s3i7xa6p1abpgsjkjpvyqmgapsdy8hv79s",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.4/deck.tar.gz",
-      "version": "1.0.4"
+      "sha256": "0kb5aqnmy9h006cr54h3j5vf2bfkvm7vvixa7b6hr6nmqmbvki9h",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.5/deck.tar.gz",
+      "version": "1.0.5"
     },
     "dicomviewer": {
       "meta": {
@@ -1619,9 +1619,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0p61hwiifd7a95i3zfqjy3fiis5nw4429jndpjg3f20cm5sxwy2b",
-      "url": "https://github.com/paulijar/music/files/4899881/music_0.15.0_nc-signed.tar.gz",
-      "version": "0.15.0"
+      "sha256": "0hg43dib23y0v3125xnv3cvml19v3a1yj0cncz08idjhsw4ys0dv",
+      "url": "https://github.com/paulijar/music/files/4909192/music_0.15.1_nc-signed.tar.gz",
+      "version": "0.15.1"
     },
     "news": {
       "meta": {
@@ -2269,9 +2269,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0pc16xg9gnxn962ifvijyy7d9k6dj6p7vki714yf179yjprhwwyq",
-      "url": "https://download.sendent.nl/serverapp/1.0.5.1/sendent.tar.gz",
-      "version": "1.0.5"
+      "sha256": "1ciqp7bp5kxcq2sqw50pblnz29sywhjv50fpmm76vs1bkk6djgkn",
+      "url": "https://download.sendent.nl/serverapp/1.0.7/sendent.tar.gz",
+      "version": "1.0.7"
     },
     "sensorlogger": {
       "meta": {
@@ -2615,9 +2615,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0yz7y0rakvqxzafr9a7z3hrdyr6z2kjkdmdzgz1faxnlmw0l3sl3",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.1/tasks.tar.gz",
-      "version": "0.13.1"
+      "sha256": "1vf8mwjdc3gzq78rkvjp0vy790riaf151m2pwa69qjrkvpb8lx8x",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.2/tasks.tar.gz",
+      "version": "0.13.2"
     },
     "telephoneprovider": {
       "meta": {
