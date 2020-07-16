@@ -48,6 +48,8 @@ import ./make-test.nix (pkgs: {
           "user_backend_sql_raw"
           # Needs write access to to "apps/cms_pico/appdata_public/".
           "cms_pico"
+          # No OCC support, since it requires $_SERVER['REQUEST_URI']
+          "sendent"
           # XXX: Currently (2019-12-12) results in HTTP 404
           "emlviewer"
           # XXX: Conflicts with the "news" app - investigate this someday.
