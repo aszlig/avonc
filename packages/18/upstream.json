@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0s112680nrvy8cn6831pxbqlbz4p4vkl6a595aik7fyccdrm4c8w",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/11e1efbcfe55dee89638e696ed5cf244ae4e98df/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.6.3"
+      "sha256": "0fkjx60l8f8qb102qqh30n52ldy9cmf9cz1xql3fampvf3s9yax1",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/81f9ce4f74778e502895e8e48eab11be11754938/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.6.5"
     },
     "apporder": {
       "meta": {
@@ -115,7 +115,7 @@
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Library scan and reset from command-line and browser\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n- Widget for Dashboard App via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
+        "description": "A music player for FLAC, MP3, MP4, AIF, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "1z4kwbcvky9gwla2vdi511z8i6kmr7jm0inq2rw3lyqidi71ml9h",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.10.1/audioplayer-2.10.1.tar.gz",
-      "version": "2.10.1"
+      "sha256": "0w1bpycjaskw9shsyidfj1ibaf8f37qslsfcml21c07w4k99vlq9",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.11.0/audioplayer-2.11.0.tar.gz",
+      "version": "2.11.0"
     },
     "audioplayer_editor": {
       "meta": {
@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "17pas24vpj1nv5wn2s504c2rsfr8szbsibl4vfqxqq8gkj70dr1n",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.4/bookmarks-3.2.4.tar.gz",
-      "version": "3.2.4"
+      "sha256": "0g6x8hih369a7i2hszwsd0qr5vzqkwmlanj4vlkcb5qbdxi9d6nc",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.5/bookmarks-3.2.5.tar.gz",
+      "version": "3.2.5"
     },
     "breezedark": {
       "meta": {
@@ -293,6 +293,7 @@
     "carnet": {
       "meta": {
         "description": "Carnet is a powerful note taking app which purpose is not only to write your shopping list but can also be used to write longer texts, stories, etc. Carnet is available on Android and Linux, on your web browser, Windows and\nMac, with sync capabilities\n- Complete editor : bold/italic/underline/color/highlight\n- Import from Google Keep (only on desktop, then sync on mobile)\n- Insert images / review\n- Open HTML format\n- Organize with folders and choose root storage folder depending on your needs\n- Keywords\n- Quickly see your recent notes\n- Search amount your notes\n- Protect the app with a pin code (no encryption) on android\n- Statistics : words/sentences/characters\n- Sync with ownCloud/NextCloud\n- Online editor as a ownCloud/NextCloud App",
+        "homepage": "https://github.com/CarnetApp/CarnetNextcloud",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -300,9 +301,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1hrg7mha1mgygqcjfpyzas75vgs1x2h42jp8svfz01inn6jz1vaz",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.1/carnet-nc-v0.22.1.tar.gz",
-      "version": "0.22.1"
+      "sha256": "1k5krr0pmx781c4b45kgzicarqsk809hc7647294d0b5cb1mnb3y",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.2/carnet-nc-v0.22.2.tar.gz",
+      "version": "0.22.2"
     },
     "checksum": {
       "meta": {
@@ -968,9 +969,9 @@
         "name": "Temporary files lock",
         "summary": "Temporary lock your files"
       },
-      "sha256": "0vc949h6v5mjjqczawv5svi9l91g2lvbm0zsjaqakrc9yp7d84ka",
-      "url": "https://github.com/nextcloud/files_lock/releases/download/v0.8.2/files_lock-0.8.2.tar.gz",
-      "version": "0.8.2"
+      "sha256": "1cm6rd34mylxi4g1vzpqp1h720pg2frcwg24iix438qpbfnb7pni",
+      "url": "https://github.com/nextcloud/files_lock/releases/download/v0.8.3/files_lock-0.8.3.tar.gz",
+      "version": "0.8.3"
     },
     "files_markdown": {
       "meta": {
@@ -1748,9 +1749,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "0kbcvinrcqkjzk5qsbcnfvm1p6i6vfmy99pgmnrgbjjng4lmln61",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.45/ocr.tar.gz",
-      "version": "6.0.45"
+      "sha256": "05mrxnhqrh559gsy67jh550kz103mdcd9ms3hfwzn9r4brlgb5cb",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.47/ocr.tar.gz",
+      "version": "6.0.47"
     },
     "ocsms": {
       "meta": {
@@ -2381,9 +2382,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "1y555jyrrj3sv7jvx9lgyzzckhd3dbzhm6aqgjfzb9r4wjvblkzv",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.4/sharingpath.tar.gz",
-      "version": "0.2.4"
+      "sha256": "0nf8all2n1g9jxbvbh1lbjar0kjbyf3gf62bf8bi9lr0i0j6hkkh",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.5/sharingpath.tar.gz",
+      "version": "0.2.5"
     },
     "side_menu": {
       "meta": {
@@ -2531,9 +2532,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1llvhbgffdqmcx5n90l490i7j3njvr444d9lqf0gm7ymvxbf26bf",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.9/spreed-8.0.9.tar.gz",
-      "version": "8.0.9"
+      "sha256": "0vj46flcd3s750vwp15zpmk4nr26fbn5930851mjpvi23d1ii8bm",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.10/spreed-8.0.10.tar.gz",
+      "version": "8.0.10"
     },
     "support": {
       "meta": {
