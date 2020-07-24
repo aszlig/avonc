@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0g6x8hih369a7i2hszwsd0qr5vzqkwmlanj4vlkcb5qbdxi9d6nc",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.5/bookmarks-3.2.5.tar.gz",
-      "version": "3.2.5"
+      "sha256": "1rb3zq271q6mcjkjpfxwx62gcgja26mgilm9djl3rlsr7acb28jm",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.1/bookmarks-3.3.1.tar.gz",
+      "version": "3.3.1"
     },
     "breezedark": {
       "meta": {
@@ -286,9 +286,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1bvcaw6q68z27rnd9ndfrp9aygxb957zzq6mpcs228l68yvlwhfx",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.4/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.4"
+      "sha256": "1xd4h1k2ys9hz3s3yiglw30j77m7p4lk8f79ckb6595d3s67xqny",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.5/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.5"
     },
     "carnet": {
       "meta": {
@@ -316,9 +316,9 @@
         "name": "Checksum",
         "summary": "Creating a hash checksum of a file."
       },
-      "sha256": "1rscn9vi1rpp4c8h9cl7659w7b1pq0rz05kpg5v15ay6ni7556xr",
-      "url": "https://github.com/westberliner/owncloud-checksum/releases/download/v0.4.4/checksum.tar.gz",
-      "version": "0.4.4"
+      "sha256": "1p41msk4mr73q6f85d4h43vbjbnl93a7kywn4xlln8kkpg20bph7",
+      "url": "https://github.com/westberliner/checksum/releases/download/0.4.5/checksum.tar.gz",
+      "version": "0.4.5"
     },
     "circles": {
       "meta": {
@@ -359,9 +359,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1as19yfja3fay7kd3m5rnrqxmblbxzy8myjxlga14ffsdggww7ip",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.7/cms_pico-v1.0.7.tar.gz",
-      "version": "1.0.7"
+      "sha256": "0q17rhj3skjanrfy8qpq18ljmrksaqz62pqby30i8g5nc2v2nr4m",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.8/cms_pico-v1.0.8.tar.gz",
+      "version": "1.0.8"
     },
     "comments": {
       "meta": {
@@ -417,9 +417,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "18d136k2r3r1kjy554s6j9rhphfvs8d5smxcrdbs9nmkg30vh8dl",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/997c78c8343542849690f499c3baf990/cospend-1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1micpnfpqhw7vbprrrpii268ifkpk8vnqh29wn5r0f9jlf9hfs3h",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/2e5c0a48203bd9d3dc0e6e0498be5e14/cospend-1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "cpanelmailsync": {
       "meta": {
@@ -909,9 +909,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "0mq21qnj70n7i1qk8b060lcwx0a42x8604cykn6x7k1ma64aling",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.2/files_fulltextsearch-1.4.2.tar.gz",
-      "version": "1.4.2"
+      "sha256": "1alr1mghbiav49dzncs96lfaarpy61jrdps8ga8q33gr43qdm6q1",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.3/files_fulltextsearch-1.4.3.tar.gz",
+      "version": "1.4.3"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1223,9 +1223,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "14r9si2hd0k1h31jkq4b6vjkscjncv7rnablsnl0nxqcjxh6w5sh",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.4.1/fulltextsearch-1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "0i96djb9s027scb6znk5g0jjlq3biy5j08ic4a9b369x8wi6fj80",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.4.2/fulltextsearch-1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1238,9 +1238,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "1qbg30npgzg1vijgpp14n1kj7xksh2l31z95rr40csgzy6lza7gq",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.1/fulltextsearch_elasticsearch-1.5.1.tar.gz",
-      "version": "1.5.1"
+      "sha256": "0gsr18abvb5q9irplslgci7yal4611ip25ixg5a9wg3y52j0liz9",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.2/fulltextsearch_elasticsearch-1.5.2.tar.gz",
+      "version": "1.5.2"
     },
     "geoblocker": {
       "meta": {
@@ -2457,9 +2457,9 @@
         "name": "Social sharing via Diaspora",
         "summary": "Enable direct sharing of files via Diaspora, using shared links."
       },
-      "sha256": "17nn5yp1vz222vai7wkay8gr2zr91xdxi9gwlva72i8l33qg9r64",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.0.0/socialsharing_diaspora.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0ccggls8dj6azm9hz5zmnyllpp5lg4jvxqb0s8w35bh4l4ncg8fs",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_diaspora.tar.gz",
+      "version": "2.1.0"
     },
     "socialsharing_email": {
       "meta": {
@@ -2472,9 +2472,9 @@
         "name": "Social sharing via email",
         "summary": "Enable direct sharing of files via email, using shared links."
       },
-      "sha256": "1q0kghymsd4dwi8zl93530j2sk0nm097vj3pd0cliig2n5zl23nx",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.0.0/socialsharing_email.tar.gz",
-      "version": "2.0.0"
+      "sha256": "00mrglkk29scv10l1jdxl53ldarqkzrfdzijk91k2r4w3aca1ck5",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_email.tar.gz",
+      "version": "2.1.0"
     },
     "socialsharing_facebook": {
       "meta": {
@@ -2487,9 +2487,9 @@
         "name": "Social sharing via Facebook",
         "summary": "Enable direct sharing of files via Facebook, using shared links."
       },
-      "sha256": "0kxpbzlavvw1nb136lpnq31y89hzgsknnn14f8hn2ly3nqgsmfyw",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.0.0/socialsharing_facebook.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0jr2f315lrprswkkq7hb9savi4a8kpj0rv5m7md028sqqkwwn8pg",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_facebook.tar.gz",
+      "version": "2.1.0"
     },
     "socialsharing_twitter": {
       "meta": {
@@ -2502,9 +2502,9 @@
         "name": "Social sharing via Twitter",
         "summary": "Enable direct sharing of files via Twitter, using shared links."
       },
-      "sha256": "1w6fb8q7ki1qzl1r8qd0lvvhargs8i122rqi1p0aqaj94s2791rp",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.0.0/socialsharing_twitter.tar.gz",
-      "version": "2.0.0"
+      "sha256": "1xjlskgq820p0cdnlmwmlmywj6557s9y7s7393cwq91vxzj37465",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
+      "version": "2.1.0"
     },
     "spgverein": {
       "meta": {
@@ -2960,9 +2960,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "0wvgzjbg46i9s397q0q4zfpbqkhc8vdzdlwc5d7y6q08kz32r6ik",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.1.2/user_oidc.tar.gz",
-      "version": "0.1.2"
+      "sha256": "1dgdbjzrmvl71wnijqh7qimnz22jsr1xg91lrgx4ql8wxd7iz5wy",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.0/user_oidc.tar.gz",
+      "version": "0.2.0"
     },
     "user_pwauth": {
       "meta": {
@@ -3178,9 +3178,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "1s40jm7ycl3784ahz754rgiym8jvmys48j2xvbbfnrzpwij5yj5f",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.1.2/wrikesync.tar.gz",
-      "version": "1.1.2"
+      "sha256": "10mzhv9ac5qwfmnrwc2mkfhpn8spzyfcrgzks1khyzlq3nw7xmg6",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.0/wrikesync.tar.gz",
+      "version": "1.2.0"
     },
     "xray": {
       "meta": {

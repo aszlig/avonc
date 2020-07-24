@@ -184,9 +184,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0g6x8hih369a7i2hszwsd0qr5vzqkwmlanj4vlkcb5qbdxi9d6nc",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.2.5/bookmarks-3.2.5.tar.gz",
-      "version": "3.2.5"
+      "sha256": "1rb3zq271q6mcjkjpfxwx62gcgja26mgilm9djl3rlsr7acb28jm",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.1/bookmarks-3.3.1.tar.gz",
+      "version": "3.3.1"
     },
     "breezedark": {
       "meta": {
@@ -243,9 +243,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1bvcaw6q68z27rnd9ndfrp9aygxb957zzq6mpcs228l68yvlwhfx",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.4/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.4"
+      "sha256": "1xd4h1k2ys9hz3s3yiglw30j77m7p4lk8f79ckb6595d3s67xqny",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.5/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.5"
     },
     "carnet": {
       "meta": {
@@ -261,6 +261,21 @@
       "sha256": "1k5krr0pmx781c4b45kgzicarqsk809hc7647294d0b5cb1mnb3y",
       "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.2/carnet-nc-v0.22.2.tar.gz",
       "version": "0.22.2"
+    },
+    "checksum": {
+      "meta": {
+        "description": "Allows users to create a hash checksum of a file.\n        Possible algorithms are md5, sha1, sha256, sha384, sha512 and crc32.\n\n        Just open the details view of the file (Sidebar). There should be a new tab called \"Checksum\".\n        Select a algorithm and it will try to generate a hash.\n        If you want an other algorithm, just click on the reload button.",
+        "homepage": "https://github.com/westberliner/owncloud-checksum/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Checksum",
+        "summary": "Creating a hash checksum of a file."
+      },
+      "sha256": "1p41msk4mr73q6f85d4h43vbjbnl93a7kywn4xlln8kkpg20bph7",
+      "url": "https://github.com/westberliner/checksum/releases/download/0.4.5/checksum.tar.gz",
+      "version": "0.4.5"
     },
     "circles": {
       "meta": {
@@ -301,9 +316,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1as19yfja3fay7kd3m5rnrqxmblbxzy8myjxlga14ffsdggww7ip",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.7/cms_pico-v1.0.7.tar.gz",
-      "version": "1.0.7"
+      "sha256": "0q17rhj3skjanrfy8qpq18ljmrksaqz62pqby30i8g5nc2v2nr4m",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.8/cms_pico-v1.0.8.tar.gz",
+      "version": "1.0.8"
     },
     "comments": {
       "meta": {
@@ -372,9 +387,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "18d136k2r3r1kjy554s6j9rhphfvs8d5smxcrdbs9nmkg30vh8dl",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/997c78c8343542849690f499c3baf990/cospend-1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1micpnfpqhw7vbprrrpii268ifkpk8vnqh29wn5r0f9jlf9hfs3h",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/2e5c0a48203bd9d3dc0e6e0498be5e14/cospend-1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "cpanelmailsync": {
       "meta": {
@@ -764,6 +779,21 @@
         "summary": "Adds basic external storage support"
       }
     },
+    "files_fulltextsearch": {
+      "meta": {
+        "description": "Extension to the _Full text search_ app to index your users' files.",
+        "homepage": "https://github.com/nextcloud/files_fulltextsearch",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Files",
+        "summary": "Index the content of your files"
+      },
+      "sha256": "1alr1mghbiav49dzncs96lfaarpy61jrdps8ga8q33gr43qdm6q1",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.3/files_fulltextsearch-1.4.3.tar.gz",
+      "version": "1.4.3"
+    },
     "files_inotify": {
       "meta": {
         "description": "Adds support detecting changes in local external storages with\nocc files_external:notify.\n\nNote that there are scalability limitations to using `inotify` on large folder structures, see the [README](https://github.com/icewind1991/files_inotify/blob/master/README.md) for more information",
@@ -1032,6 +1062,36 @@
       "sha256": "0ai488qkv606x3kb4w51ryw4mcmby7zmg1xn3hkqlz3mz611rscn",
       "url": "https://github.com/nextcloud/forms/releases/download/v1.1.1/forms.tar.gz",
       "version": "1.1.1"
+    },
+    "fulltextsearch": {
+      "meta": {
+        "description": "Core App of the full-text search framework for your Nextcloud.",
+        "homepage": "https://github.com/nextcloud/fulltextsearch",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search",
+        "summary": "Core of the full-text search framework for Nextcloud"
+      },
+      "sha256": "0i96djb9s027scb6znk5g0jjlq3biy5j08ic4a9b369x8wi6fj80",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.4.2/fulltextsearch-1.4.2.tar.gz",
+      "version": "1.4.2"
+    },
+    "fulltextsearch_elasticsearch": {
+      "meta": {
+        "description": "Extension to the _Full text search_ app to communicate with ElasticSearch.",
+        "homepage": "https://github.com/nextcloud/fulltextsearch_elasticsearch",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Elasticsearch Platform",
+        "summary": "Index using ElasticSearch"
+      },
+      "sha256": "0gsr18abvb5q9irplslgci7yal4611ip25ixg5a9wg3y52j0liz9",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.2/fulltextsearch_elasticsearch-1.5.2.tar.gz",
+      "version": "1.5.2"
     },
     "geoblocker": {
       "meta": {
@@ -2048,6 +2108,66 @@
       "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.5/release.tar.gz",
       "version": "3.2.5"
     },
+    "socialsharing_diaspora": {
+      "meta": {
+        "description": "Enable direct sharing of files via Diaspora, using shared links.",
+        "homepage": "https://github.com/nextcloud/socialsharing",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Social sharing via Diaspora",
+        "summary": "Enable direct sharing of files via Diaspora, using shared links."
+      },
+      "sha256": "0ccggls8dj6azm9hz5zmnyllpp5lg4jvxqb0s8w35bh4l4ncg8fs",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_diaspora.tar.gz",
+      "version": "2.1.0"
+    },
+    "socialsharing_email": {
+      "meta": {
+        "description": "Enable direct sharing of files via email, using shared links.",
+        "homepage": "https://github.com/nextcloud/socialsharing",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Social sharing via email",
+        "summary": "Enable direct sharing of files via email, using shared links."
+      },
+      "sha256": "00mrglkk29scv10l1jdxl53ldarqkzrfdzijk91k2r4w3aca1ck5",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_email.tar.gz",
+      "version": "2.1.0"
+    },
+    "socialsharing_facebook": {
+      "meta": {
+        "description": "Enable direct sharing of files via Facebook, using shared links.",
+        "homepage": "https://github.com/nextcloud/socialsharing",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Social sharing via Facebook",
+        "summary": "Enable direct sharing of files via Facebook, using shared links."
+      },
+      "sha256": "0jr2f315lrprswkkq7hb9savi4a8kpj0rv5m7md028sqqkwwn8pg",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_facebook.tar.gz",
+      "version": "2.1.0"
+    },
+    "socialsharing_twitter": {
+      "meta": {
+        "description": "Enable direct sharing of files via Twitter, using shared links.",
+        "homepage": "https://github.com/nextcloud/socialsharing",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Social sharing via Twitter",
+        "summary": "Enable direct sharing of files via Twitter, using shared links."
+      },
+      "sha256": "1xjlskgq820p0cdnlmwmlmywj6557s9y7s7393cwq91vxzj37465",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
+      "version": "2.1.0"
+    },
     "spgverein": {
       "meta": {
         "description": "Access data of SPG-Verein in your Nextcloud instance",
@@ -2415,9 +2535,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "0wvgzjbg46i9s397q0q4zfpbqkhc8vdzdlwc5d7y6q08kz32r6ik",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.1.2/user_oidc.tar.gz",
-      "version": "0.1.2"
+      "sha256": "1dgdbjzrmvl71wnijqh7qimnz22jsr1xg91lrgx4ql8wxd7iz5wy",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.0/user_oidc.tar.gz",
+      "version": "0.2.0"
     },
     "user_retention": {
       "meta": {
@@ -2589,9 +2709,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "1s40jm7ycl3784ahz754rgiym8jvmys48j2xvbbfnrzpwij5yj5f",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.1.2/wrikesync.tar.gz",
-      "version": "1.1.2"
+      "sha256": "10mzhv9ac5qwfmnrwc2mkfhpn8spzyfcrgzks1khyzlq3nw7xmg6",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.0/wrikesync.tar.gz",
+      "version": "1.2.0"
     }
   },
   "nextcloud": {
