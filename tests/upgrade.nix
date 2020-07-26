@@ -28,6 +28,8 @@ import ./make-test.nix (pkgs: {
         excludedApps = [
           # We'll need dpendency ordering for this app
           "auto_mail_accounts"
+          # Needs Perl
+          "camerarawpreviews"
           # Needs /usr/bin/clamscan
           "files_antivirus"
           # Broken upgrade routine across major versions
