@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0fkjx60l8f8qb102qqh30n52ldy9cmf9cz1xql3fampvf3s9yax1",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/81f9ce4f74778e502895e8e48eab11be11754938/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.6.5"
+      "sha256": "1w7pnc54rj9yj15qy1rn69ch1gawzjpmrd8llsggaa4vcchjqw1n",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/54ecd01bbcf1340275dc2cbc34d2100bce3f3faf/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.6.6"
     },
     "apporder": {
       "meta": {
@@ -202,6 +202,20 @@
       "sha256": "121q0mqmvqzq9rgavcba5r9vhmzwzy9vzh1iiavmhj5i05xivny5",
       "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.3/breezedark.tar.gz",
       "version": "19.0.3"
+    },
+    "browser_warning": {
+      "meta": {
+        "description": "This app will show a warning on specific browser conditions on the log-in page",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Browser warning",
+        "summary": "Display a specific warning on log-in page"
+      },
+      "sha256": "0nrxdjkfybbg4f31y18nr0kj8xscg348h2ycm9h76s5gy5rc3pn6",
+      "url": "https://github.com/nextcloud/browser_warning/releases/download/v1.0.0/browser_warning.tar.gz",
+      "version": "1.0.0"
     },
     "bruteforcesettings": {
       "meta": {
@@ -1499,9 +1513,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0sjgxla06f1nmxwjz2wc1x1gbm4qj1vpqgkykazf2czgsby38jwy",
-      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.0/notes.tar.gz",
-      "version": "3.6.0"
+      "sha256": "049pjzkx9yy08kzjlngzsx2gap45azglxkkifclwac21fhyl347i",
+      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.1/notes.tar.gz",
+      "version": "3.6.1"
     },
     "notifications": {
       "meta": {
@@ -1893,18 +1907,18 @@
     },
     "riotchat": {
       "meta": {
-        "description": "Riot Chat for Nextcloud allows you to install Riot easily through Nextcloud and join the Matrix decentralized communication network.\n\nThis app does not include a Matrix server, only the client. You will have to either set up your own Matrix homeserver, rent one, or use a public one.\n\nThis project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with New Vector or the Riot.im project, or any of its subsidiaries or its affiliates.\n\nThe name Riot.im as well as related names, marks, emblems and images are registered trademarks of their respective owners.\n\nThe upstream project can be found at [https://github.com/vector-im/riot-web](https://github.com/vector-im/riot-web).",
+        "description": "Element for Nextcloud allows you to install Element Web easily through Nextcloud and join the Matrix decentralized communication network.\n\nThis app does not include a Matrix server, only the client. You will have to either set up your own Matrix homeserver, rent one, or use a public one.\n\nThis project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Element or the Element project, or any of its subsidiaries or its affiliates.\n\nThe name Element as well as related names, marks, emblems and images are registered trademarks of their respective owners.\n\nThe upstream project can be found at [https://github.com/vector-im/riot-web](https://github.com/vector-im/riot-web).",
         "homepage": "https://github.com/gary-kim/riotchat",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Riot Chat",
-        "summary": "Riot IM Chat integrated into Nextcloud"
+        "name": "Element for Nextcloud",
+        "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "16lji7yzmy7s4a3jc5ymvmxvkwysiyrx4dxs2927jxra039mwba1",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.5.2/riotchat.tar.gz",
-      "version": "0.5.2"
+      "sha256": "0h43xkz0iq6hzp69sajak6gl77p5aadf3430ad0piw14fpn5mgw4",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.1/riotchat.tar.gz",
+      "version": "0.6.1"
     },
     "scanner": {
       "meta": {
