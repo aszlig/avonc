@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1rb3zq271q6mcjkjpfxwx62gcgja26mgilm9djl3rlsr7acb28jm",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.1/bookmarks-3.3.1.tar.gz",
-      "version": "3.3.1"
+      "sha256": "0rxsh0kspmq2zs1fpj8294jxjry64ixh9asdxmhc17v1klzm1gkd",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.2/bookmarks-3.3.2.tar.gz",
+      "version": "3.3.2"
     },
     "breezedark": {
       "meta": {
@@ -1199,18 +1199,18 @@
     },
     "forms": {
       "meta": {
-        "description": "A forms app, similar to Google Forms with the possibility to restrict access (members, certain groups/users, and public).",
-        "homepage": "https://github.com/affan98/forms",
+        "description": "**Simple surveys and questionnaires, self-hosted!**\r\n\r\n- ** Simple design:** No mass of options, only the essentials. Works well on mobile of course.\r\n- ** View &amp; export results:** Results are visualized and can also be exported as CSV in the same format used by Google Forms.\r\n- ** Data under your control!** Unlike in Google Forms, Typeform, Doodle and others, the survey info and responses are kept private on your instance.\r\n- ** Get involved!** We have lots of stuff planned like more question types, collaboration on forms, [and much more](https://github.com/nextcloud/forms/milestones)!",
+        "homepage": "https://github.com/nextcloud/forms",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Forms",
-        "summary": "A forms app, similar to Google Forms."
+        "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "0ai488qkv606x3kb4w51ryw4mcmby7zmg1xn3hkqlz3mz611rscn",
-      "url": "https://github.com/nextcloud/forms/releases/download/v1.1.1/forms.tar.gz",
-      "version": "1.1.1"
+      "sha256": "0a4avdd6by8m14m56kl9rwh4k9s4hv8d08c8jqlaqhr40n3wp4y1",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.0/forms.tar.gz",
+      "version": "2.0.0"
     },
     "fulltextsearch": {
       "meta": {
@@ -2270,9 +2270,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1ciqp7bp5kxcq2sqw50pblnz29sywhjv50fpmm76vs1bkk6djgkn",
-      "url": "https://download.sendent.nl/serverapp/1.0.7/sendent.tar.gz",
-      "version": "1.0.7"
+      "sha256": "0iaq0d5gi975h8vkg52pfvr0jmjbzld5ih0y0yl4c3850sjgzg28",
+      "url": "https://download.sendent.nl/serverapp/1.0.8.1/sendent.tar.gz",
+      "version": "1.0.8"
     },
     "sensorlogger": {
       "meta": {
