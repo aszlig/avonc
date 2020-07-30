@@ -2726,10 +2726,21 @@
         "name": "Nextcloud workflow engine",
         "summary": "Nextcloud workflow engine"
       }
+    },
+    "wrikesync": {
+      "meta": {
+        "description": "Syncronization between the folder structure of Wrike Projectmanagement software and the Nextcloud filesystem structure.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WrikeSync",
+        "summary": "Wrike Projectmanagement Folder Sync"
+      },
+      "sha256": "0fz56f2csziqlizafwh5lfp7y5klzxd65i7rnw096vlvvlzrfasn",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.3/wrikesync.tar.gz",
+      "version": "1.2.3"
     }
-  },
-  "constraints": {
-    "wrikesync": "=0"
   },
   "nextcloud": {
     "sha256": "0f7j2wp39acq6x26p3krqi0dwfriv10g126qcm2cghq0h7b2dlgc",

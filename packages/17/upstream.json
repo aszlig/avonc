@@ -3126,6 +3126,20 @@
         "summary": "Files workflow engine"
       }
     },
+    "wrikesync": {
+      "meta": {
+        "description": "Syncronization between the folder structure of Wrike Projectmanagement software and the Nextcloud filesystem structure.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WrikeSync",
+        "summary": "Wrike Projectmanagement Folder Sync"
+      },
+      "sha256": "0fz56f2csziqlizafwh5lfp7y5klzxd65i7rnw096vlvvlzrfasn",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.3/wrikesync.tar.gz",
+      "version": "1.2.3"
+    },
     "xray": {
       "meta": {
         "description": "Note: this app is **not** for production use and should not be enabled without good reason.\n\nXRay enables logging of resource usage of Nextcloud to help developers with performance optimization.\n\nWarning, sharing any information logged by this app can leak potentially private information such as user names, file structure, share metadata and more.",
@@ -3156,9 +3170,6 @@
       "url": "https://zextras-artifacts.s3-eu-west-1.amazonaws.com/zimbra_drive/nextcloud/zimbradrive.tar.gz",
       "version": "0.8.25"
     }
-  },
-  "constraints": {
-    "wrikesync": "=0"
   },
   "nextcloud": {
     "sha256": "1v36gp070ih42361qzr4n5fsmki8khn47xg1g3hzhxkplpja643a",
