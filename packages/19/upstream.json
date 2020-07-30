@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1w7pnc54rj9yj15qy1rn69ch1gawzjpmrd8llsggaa4vcchjqw1n",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/54ecd01bbcf1340275dc2cbc34d2100bce3f3faf/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.6.6"
+      "sha256": "1396i6yh6sl2zhrqbcgwmg8hdj43d202w624m446gvs8dks6md6c",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/9f19237a6c3fb0f4afd9d465af40575b9ff136d7/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.6.7"
     },
     "apporder": {
       "meta": {
@@ -109,9 +109,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0w1bpycjaskw9shsyidfj1ibaf8f37qslsfcml21c07w4k99vlq9",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.11.0/audioplayer-2.11.0.tar.gz",
-      "version": "2.11.0"
+      "sha256": "170rp4whaaxcafl6ls3j2nhny4sl7v6wf3m319ygijbn77vhrxvn",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.11.2/audioplayer-2.11.2.tar.gz",
+      "version": "2.11.2"
     },
     "audioplayer_editor": {
       "meta": {
@@ -184,9 +184,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0rxsh0kspmq2zs1fpj8294jxjry64ixh9asdxmhc17v1klzm1gkd",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.2/bookmarks-3.3.2.tar.gz",
-      "version": "3.3.2"
+      "sha256": "00pm3zch9pqyyif3ap80laijags196z0r8y0137s5msmrckn1jpj",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.3/bookmarks-3.3.3.tar.gz",
+      "version": "3.3.3"
     },
     "breezedark": {
       "meta": {
@@ -1064,7 +1064,7 @@
     },
     "forms": {
       "meta": {
-        "description": "**Simple surveys and questionnaires, self-hosted!**\r\n\r\n- ** Simple design:** No mass of options, only the essentials. Works well on mobile of course.\r\n- ** View &amp; export results:** Results are visualized and can also be exported as CSV in the same format used by Google Forms.\r\n- ** Data under your control!** Unlike in Google Forms, Typeform, Doodle and others, the survey info and responses are kept private on your instance.\r\n- ** Get involved!** We have lots of stuff planned like more question types, collaboration on forms, [and much more](https://github.com/nextcloud/forms/milestones)!",
+        "description": "**Simple surveys and questionnaires, self-hosted!**\n\n- ** Simple design:** No mass of options, only the essentials. Works well on mobile of course.\n- ** View &amp; export results:** Results are visualized and can also be exported as CSV in the same format used by Google Forms.\n- ** Data under your control!** Unlike in Google Forms, Typeform, Doodle and others, the survey info and responses are kept private on your instance.\n- ** Get involved!** We have lots of stuff planned like more question types, collaboration on forms, [and much more](https://github.com/nextcloud/forms/milestones)!",
         "homepage": "https://github.com/nextcloud/forms",
         "isShipped": false,
         "licenses": [
@@ -1073,9 +1073,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "0a4avdd6by8m14m56kl9rwh4k9s4hv8d08c8jqlaqhr40n3wp4y1",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.0/forms.tar.gz",
-      "version": "2.0.0"
+      "sha256": "12fy8fpxci83vhmhj99gpcz5g9l3p2cywfhzslf8n4npwgirzd8g",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.1/forms.tar.gz",
+      "version": "2.0.1"
     },
     "fulltextsearch": {
       "meta": {
@@ -1916,9 +1916,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0h43xkz0iq6hzp69sajak6gl77p5aadf3430ad0piw14fpn5mgw4",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.1/riotchat.tar.gz",
-      "version": "0.6.1"
+      "sha256": "095319s0f96xl7axd1h30303jk5v1rcyjsqrlzvgzs2ykmhj7g9y",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.2/riotchat.tar.gz",
+      "version": "0.6.2"
     },
     "scanner": {
       "meta": {
@@ -1946,9 +1946,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0iaq0d5gi975h8vkg52pfvr0jmjbzld5ih0y0yl4c3850sjgzg28",
-      "url": "https://download.sendent.nl/serverapp/1.0.8.1/sendent.tar.gz",
-      "version": "1.0.8"
+      "sha256": "0vslaykawda6ig4sga6xx4h9h0gy27yndjibin30kp2k0isk0i7h",
+      "url": "https://download.sendent.nl/serverapp/1.0.9.1/sendent.tar.gz",
+      "version": "1.0.9"
     },
     "sensorlogger": {
       "meta": {
@@ -2292,9 +2292,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "1vf8mwjdc3gzq78rkvjp0vy790riaf151m2pwa69qjrkvpb8lx8x",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.2/tasks.tar.gz",
-      "version": "0.13.2"
+      "sha256": "12innzr970h168pifz7mwca9gd6vqm059v0zr7pjc00731lcbl4x",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.3/tasks.tar.gz",
+      "version": "0.13.3"
     },
     "terms_of_service": {
       "meta": {
@@ -2655,6 +2655,20 @@
       "url": "https://github.com/nextcloud/weather/releases/download/1.7.3/weather-1.7.3.tar.gz",
       "version": "1.7.3"
     },
+    "webapppassword": {
+      "meta": {
+        "description": "Temporary app password generator and WebDAV CORS header injection",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Web App Password",
+        "summary": "Temporary app password generator"
+      },
+      "sha256": "1l4whi4lxd13rsgabm88ymgqlm21fwyw9lcipcqn2qm9k08pgrxi",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/d65aad3168982c127e134e7bac43fc25/webapppassword.tar.gz",
+      "version": "20.7.0"
+    },
     "wopi": {
       "meta": {
         "description": "This application can connect to a Microsoft Office Online Server (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Application settings are in the Office Online section.",
@@ -2712,21 +2726,10 @@
         "name": "Nextcloud workflow engine",
         "summary": "Nextcloud workflow engine"
       }
-    },
-    "wrikesync": {
-      "meta": {
-        "description": "Syncronization between the folder structure of Wrike Projectmanagement software and the Nextcloud filesystem structure.",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "WrikeSync",
-        "summary": "Wrike Projectmanagement Folder Sync"
-      },
-      "sha256": "10mzhv9ac5qwfmnrwc2mkfhpn8spzyfcrgzks1khyzlq3nw7xmg6",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.0/wrikesync.tar.gz",
-      "version": "1.2.0"
     }
+  },
+  "constraints": {
+    "wrikesync": "=0"
   },
   "nextcloud": {
     "sha256": "0f7j2wp39acq6x26p3krqi0dwfriv10g126qcm2cghq0h7b2dlgc",
