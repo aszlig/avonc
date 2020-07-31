@@ -717,9 +717,9 @@
         "name": "Files 3d",
         "summary": "3D viewer for nextcloud"
       },
-      "sha256": "0nqqhmdfypmrjmcdmiw6h0y5j56n7yxkn67fhlrqsx2fw5klfdvq",
-      "url": "https://github.com/v1r0x/files_3d/releases/download/v0.3.0-beta/files_3d.tar.gz",
-      "version": "0.3.0"
+      "sha256": "0mkp64cilfncd2i4ji8lbbbc47n3ysrrq3mchj4wgnqwj7i464jf",
+      "url": "https://github.com/v1r0x/files_3d/releases/download/v0.3.1-beta/files_3d.tar.gz",
+      "version": "0.3.1"
     },
     "files_accesscontrol": {
       "meta": {
@@ -1946,9 +1946,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0vslaykawda6ig4sga6xx4h9h0gy27yndjibin30kp2k0isk0i7h",
-      "url": "https://download.sendent.nl/serverapp/1.0.9.1/sendent.tar.gz",
-      "version": "1.0.9"
+      "sha256": "0j097nfrakf7asy9wy1ab32lhlq2fs8kqx8bpdwl773mi8v9shjw",
+      "url": "https://download.sendent.nl/serverapp/1.0.11/sendent.tar.gz",
+      "version": "1.0.11"
     },
     "sensorlogger": {
       "meta": {
@@ -2307,9 +2307,9 @@
         "name": "Terms of service",
         "summary": "Requires users to accept the terms of service before accessing data."
       },
-      "sha256": "130pgi6x4i0zscjpiqinfkc9mh7g7pg7cc1v0b9y7wj5yp0ir2cg",
-      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.5.0/terms_of_service-1.5.0.tar.gz",
-      "version": "1.5.0"
+      "sha256": "143x39ybwlq2dyigw1gz5bhaigy0276qbyav4c7w4gdb4qs4bih3",
+      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.5.1/terms_of_service-1.5.1.tar.gz",
+      "version": "1.5.1"
     },
     "text": {
       "meta": {
