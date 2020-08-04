@@ -41,18 +41,18 @@
     },
     "afterlogic": {
       "meta": {
-        "description": "AfterLogic WebMail",
+        "description": "Afterlogic WebMail",
         "homepage": "https://afterlogic.org/webmail-lite",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "AfterLogic",
-        "summary": "Integration with AfterLogic WebMail client"
+        "name": "Afterlogic",
+        "summary": "Integration with Afterlogic WebMail client"
       },
-      "sha256": "062hql5pmih792xfgiggjy3bvgpczavk3qxp25nbhfb0gpi5cz0q",
-      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-x18.tgz",
-      "version": "1.2.18"
+      "sha256": "0py4gnnwmdlpg6s60xjmimihkk2m1c03q4fr4sd1b7ff7yz2l2lk",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-19.tar.gz",
+      "version": "1.2.19"
     },
     "analytics": {
       "meta": {
@@ -256,9 +256,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1xd4h1k2ys9hz3s3yiglw30j77m7p4lk8f79ckb6595d3s67xqny",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.5/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.5"
+      "sha256": "1z51w7f6543s85fcxcghy5imkv57vvjxmwbv3fws1zbvi5fkxhf7",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.7/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.7"
     },
     "carnet": {
       "meta": {
@@ -387,9 +387,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1micpnfpqhw7vbprrrpii268ifkpk8vnqh29wn5r0f9jlf9hfs3h",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/2e5c0a48203bd9d3dc0e6e0498be5e14/cospend-1.0.3.tar.gz",
-      "version": "1.0.3"
+      "sha256": "1yr2dxg1qcdbj5cqxyw5rzb56s2f1ydzw8yfgna8b8bxni9jwrk8",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/03e53c2457446855a0d54e5118a88ae2/cospend-1.0.5.tar.gz",
+      "version": "1.0.5"
     },
     "customproperties": {
       "meta": {
@@ -1149,9 +1149,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "12fy8fpxci83vhmhj99gpcz5g9l3p2cywfhzslf8n4npwgirzd8g",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.1/forms.tar.gz",
-      "version": "2.0.1"
+      "sha256": "06kc2zzds7n53igwv8imkqnrb51dq1dqrzfgwdr7gy6r3pkq7nbg",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.2/forms.tar.gz",
+      "version": "2.0.2"
     },
     "fulltextsearch": {
       "meta": {
@@ -1609,7 +1609,7 @@
     },
     "music": {
       "meta": {
-        "description": "Plays audio files directly in the Files view or in a stand-alone library view. Depending on the browser, supports playing file types mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, search tracks by keywords, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to next files of the folder until stopped. The app includes also a server compatible with Ampache and Subsonic clients.\n\nThe Music app also integrates with the mediaSession API (available at least on recent versions of Chrome and Edge) both when playing music within Files and in the stand-alone view. When the API is supported by the browser, this allows controlling the playback with the media keys (play/pause/stop/next/prev) on the keyboard even when the browser is not focused, and shows the playback controls also on the lock screen of the OS (tested on Windows 10 and Android).\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is optimized for somewhat smaller collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
+        "description": "Plays audio files directly in the Files view or in a stand-alone library view. Depending on the browser, supports playing file types mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3. Also playlist formats m3u, m3u8, and pls are supported.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, search tracks by keywords, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to the next files of the folder or playlist until stopped. The app includes also a server compatible with Ampache and Subsonic clients, allowing playback and browsing of the library on various external applications e.g. on Android or iPhone.\n\nWhen browser and OS support available, the Music app can be controlled with the media keys (play/pause/stop/next/prev) on the keyboard or the OS notification center even when the browser is not focused. This is supported at least on Chrome and Edge (tested on Windows 10 and Android).\n\nThe admin may set up connection to the Last.fm service, allowing the Music app to show biography and background information of the artists, albums, and tracks.\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is optimized for somewhat smaller collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
         "homepage": "https://github.com/owncloud/music",
         "isShipped": false,
         "licenses": [
@@ -1618,9 +1618,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0hg43dib23y0v3125xnv3cvml19v3a1yj0cncz08idjhsw4ys0dv",
-      "url": "https://github.com/paulijar/music/files/4909192/music_0.15.1_nc-signed.tar.gz",
-      "version": "0.15.1"
+      "sha256": "1kbw6z0aialv9y909msyjhxxccr8lkmi6ggbgdxmdb6r4n8sp71q",
+      "url": "https://github.com/paulijar/music/files/5012823/music_0.16.0_nc-signed.tar.gz",
+      "version": "0.16.0"
     },
     "news": {
       "meta": {
@@ -1892,9 +1892,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "00qa0qlm1c0wmpxmd2n4m5pwagc80pxbwv0f9makk5pi3zs8awlx",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10243/artifacts/raw/passwords.tar.gz",
-      "version": "2020.7.0"
+      "sha256": "0vkpvzd94qa12n7vpilrkg58rj7zvka40pjkbrrmlzb3k15n4wrr",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10300/artifacts/raw/passwords.tar.gz",
+      "version": "2020.8.0"
     },
     "phonetrack": {
       "meta": {
@@ -1951,9 +1951,9 @@
         "name": "Preferred Providers",
         "summary": "Allow nextcloud to request user accounts"
       },
-      "sha256": "1gpsj8v0ckxnbsgdk742pv5aq8l0rxk1hmbn6p0vgrzc8xr15wxi",
-      "url": "https://github.com/nextcloud/preferred_providers/releases/download/1.7.0/preferred_providers.tar.gz",
-      "version": "1.7.0"
+      "sha256": "0d6sg2424rxfp38gf61qv80wiiad2agg729p8l55cfmdcqx65sjr",
+      "url": "https://github.com/nextcloud/preferred_providers/releases/download/v1.8.0/preferred_providers.tar.gz",
+      "version": "1.8.0"
     },
     "previewgenerator": {
       "meta": {
@@ -2270,9 +2270,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0j097nfrakf7asy9wy1ab32lhlq2fs8kqx8bpdwl773mi8v9shjw",
-      "url": "https://download.sendent.nl/serverapp/1.0.11/sendent.tar.gz",
-      "version": "1.0.11"
+      "sha256": "11yjzgkclnp6yridap8bn4mbdnwp9bsg1j52zqh4z400b2i36f79",
+      "url": "https://download.sendent.nl/serverapp/1.0.12/sendent.tar.gz",
+      "version": "1.0.12"
     },
     "sensorlogger": {
       "meta": {
