@@ -1,8 +1,8 @@
 diff --git a/lib/Controller/SignalingController.php b/lib/Controller/SignalingController.php
-index 4070f729..cc6eb500 100644
+index fe91da0a2..bf2bed3d3 100644
 --- a/lib/Controller/SignalingController.php
 +++ b/lib/Controller/SignalingController.php
-@@ -352,35 +352,6 @@ class SignalingController extends OCSController {
+@@ -373,35 +373,6 @@ class SignalingController extends OCSController {
  		return $usersInRoom;
  	}
  
@@ -38,7 +38,7 @@ index 4070f729..cc6eb500 100644
  	/**
  	 * Return the body of the backend request. This can be overridden in
  	 * tests.
-@@ -404,7 +375,7 @@ class SignalingController extends OCSController {
+@@ -425,7 +396,7 @@ class SignalingController extends OCSController {
  	 */
  	public function backend(): DataResponse {
  		$json = $this->getInputStream();
@@ -48,10 +48,10 @@ index 4070f729..cc6eb500 100644
  				'type' => 'error',
  				'error' => [
 diff --git a/lib/Signaling/BackendNotifier.php b/lib/Signaling/BackendNotifier.php
-index 71852182..dc203935 100644
+index 3633086cd..cb007fcec 100644
 --- a/lib/Signaling/BackendNotifier.php
 +++ b/lib/Signaling/BackendNotifier.php
-@@ -93,34 +93,17 @@ class BackendNotifier {
+@@ -98,38 +98,20 @@ class BackendNotifier {
  			return;
  		}
  
@@ -76,10 +76,14 @@ index 71852182..dc203935 100644
 -		$hash = hash_hmac('sha256', $random . $body, $this->config->getSignalingSecret());
 -		$headers['Spreed-Signaling-Random'] = $random;
 -		$headers['Spreed-Signaling-Checksum'] = $hash;
+-		$headers['Spreed-Signaling-Backend'] = $this->urlGenerator->getBaseUrl();
 -
  		$params = [
  			'headers' => $headers,
  			'body' => $body,
+ 			'nextcloud' => [
+ 				'allow_local_address' => true,
+ 			],
 +			'curl' => [CURLOPT_UNIX_SOCKET_PATH => '/run/nextcloud-signaling-internal.sock'],
  		];
 -		if (empty($signaling['verify'])) {
