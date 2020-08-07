@@ -924,9 +924,9 @@
         "name": "Full text search - Files - Tesseract OCR",
         "summary": "OCR Some format"
       },
-      "sha256": "0fc9h9ppgbl91n9lxxa2k1w5mm1cdkiza99q13r5g5bvhzaqrcjg",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.4.1/files_fulltextsearch_tesseract-1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "01g12g6hqnv8wm3ppkpj1cs32pc72jc7m4cls03a8s5d50mq0rpg",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.4.2/files_fulltextsearch_tesseract-1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "files_inotify": {
       "meta": {
@@ -3097,17 +3097,18 @@
     },
     "webapppassword": {
       "meta": {
-        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the Nextcloud WebDAV service from inside web applications.",
+        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the\nNextcloud WebDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
+        "homepage": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "WebAppPassword",
-        "summary": "Temporary app password generator"
+        "summary": "Temporary app password generator and WebDAV CORS header injection"
       },
-      "sha256": "09a5564ii8w4wkfpi2z45n08fjvkr8ylzw09r14c87354s7vqz73",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/a51629cacef56ecb3fdfd80360ae9863/webapppassword.tar.gz",
-      "version": "20.8.1"
+      "sha256": "1c00pgk023n2gbpzjjpbyqsc254z0wmiy2zi8shl0pnvv75k9xaj",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/c0db70b9a73432f3d2751125966430e9/webapppassword.tar.gz",
+      "version": "20.8.4"
     },
     "whiteboard": {
       "meta": {

@@ -823,6 +823,21 @@
       "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.3/files_fulltextsearch-1.4.3.tar.gz",
       "version": "1.4.3"
     },
+    "files_fulltextsearch_tesseract": {
+      "meta": {
+        "description": "Extension to the _Full text search - Files_ app to OCR your documents before index.\n\nThis is a simple app that use [Tesseract OCR for PHP](https://github.com/thiagoalessio/tesseract-ocr-for-php),\nwhich is a wrapper for the command line program [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)\n\nTesseract must be installed locally, and configured.",
+        "homepage": "https://github.com/daita/files_fulltextsearch_tesseract",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Files - Tesseract OCR",
+        "summary": "OCR Some format"
+      },
+      "sha256": "01g12g6hqnv8wm3ppkpj1cs32pc72jc7m4cls03a8s5d50mq0rpg",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v1.4.2/files_fulltextsearch_tesseract-1.4.2.tar.gz",
+      "version": "1.4.2"
+    },
     "files_inotify": {
       "meta": {
         "description": "Adds support detecting changes in local external storages with\nocc files_external:notify.\n\nNote that there are scalability limitations to using `inotify` on large folder structures, see the [README](https://github.com/icewind1991/files_inotify/blob/master/README.md) for more information",
@@ -1916,9 +1931,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0049sa0fp7a7jp4zi63j0c0qbfq4a0ga1ji97j1rjj53w1ldlvvj",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.503/richdocumentscode.tar.gz",
-      "version": "4.2.503"
+      "sha256": "1l9r2kgbxnn3x6l96ifz5z8biqnkbhf2s8081wkz74y0gf032j6k",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.602/richdocumentscode.tar.gz",
+      "version": "4.2.602"
     },
     "riotchat": {
       "meta": {
@@ -2672,17 +2687,18 @@
     },
     "webapppassword": {
       "meta": {
-        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the Nextcloud WebDAV service from inside web applications.",
+        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the\nNextcloud WebDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
+        "homepage": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "WebAppPassword",
-        "summary": "Temporary app password generator"
+        "summary": "Temporary app password generator and WebDAV CORS header injection"
       },
-      "sha256": "09a5564ii8w4wkfpi2z45n08fjvkr8ylzw09r14c87354s7vqz73",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/a51629cacef56ecb3fdfd80360ae9863/webapppassword.tar.gz",
-      "version": "20.8.1"
+      "sha256": "1c00pgk023n2gbpzjjpbyqsc254z0wmiy2zi8shl0pnvv75k9xaj",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/c0db70b9a73432f3d2751125966430e9/webapppassword.tar.gz",
+      "version": "20.8.4"
     },
     "wopi": {
       "meta": {
