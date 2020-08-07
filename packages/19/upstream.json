@@ -317,9 +317,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "18s8wg1qfbv0xx8kpfzjbq0pqk3rqas7qdzn00k8yqicv98m4w8n",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.3/circles-0.19.3.tar.gz",
-      "version": "0.19.3"
+      "sha256": "1773ija0h72ngm2p6pams6c9xxnrjh3dmy3jv4i7arfnnhg7zsrz",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.4/circles-0.19.4.tar.gz",
+      "version": "0.19.4"
     },
     "cloud_federation_api": {
       "meta": {
