@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1396i6yh6sl2zhrqbcgwmg8hdj43d202w624m446gvs8dks6md6c",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/9f19237a6c3fb0f4afd9d465af40575b9ff136d7/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.6.7"
+      "sha256": "1fr8c488b2zbc0v1c0sg4lhixidqbcdgk5jvhp927k8qv8l66sfr",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/e3794f5a3c2390fe8d03f61a1db488ebeee4ce8f/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.6.8"
     },
     "apporder": {
       "meta": {
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0yd4mg02dgsfy8ji2vshp6jrycagq3difnnphm2hndxjasprm58q",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.21/breezedark.tar.gz",
-      "version": "18.0.21"
+      "sha256": "0436851wbw1342zds0pkgpig6inz7qjbxrg601v6f2xl3w1pbf5b",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v18.0.22/breezedark.tar.gz",
+      "version": "18.0.22"
     },
     "browser_warning": {
       "meta": {
@@ -286,9 +286,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1z51w7f6543s85fcxcghy5imkv57vvjxmwbv3fws1zbvi5fkxhf7",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.7/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.7"
+      "sha256": "11l4f7jja9dg9gcl40m1ywgk1prvxf6s0zl2n7qh2qvi6jhn9gvg",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.8/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.8"
     },
     "carnet": {
       "meta": {
@@ -2270,9 +2270,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "11yjzgkclnp6yridap8bn4mbdnwp9bsg1j52zqh4z400b2i36f79",
-      "url": "https://download.sendent.nl/serverapp/1.0.12/sendent.tar.gz",
-      "version": "1.0.12"
+      "sha256": "1ki6k26a04pfcyn5d0zvy4chw476456h5fpvi7k0q6alfrkbbfrb",
+      "url": "https://download.sendent.nl/serverapp/1.0.13/sendent.tar.gz",
+      "version": "1.0.13"
     },
     "sensorlogger": {
       "meta": {
@@ -2442,9 +2442,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0j14f7205z1dnyncx7by9sb720m4663swaf7lcqgxyzs3vb4x6dc",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.5/release.tar.gz",
-      "version": "3.2.5"
+      "sha256": "1ddd038lrm6fn9arlhvb7l1nk7mam8i2cbfmir7ym6nf3qk2n8lm",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.7/release.tar.gz",
+      "version": "3.2.7"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3106,9 +3106,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV CORS header injection"
       },
-      "sha256": "1c00pgk023n2gbpzjjpbyqsc254z0wmiy2zi8shl0pnvv75k9xaj",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/c0db70b9a73432f3d2751125966430e9/webapppassword.tar.gz",
-      "version": "20.8.4"
+      "sha256": "01xx327lfg7pg1wya63gh4jhbfk8dwrr8rsfrcx9fywk9kllv6w9",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/1d935d977e6083c784a9b689e32f5921/webapppassword.tar.gz",
+      "version": "20.8.5"
     },
     "whiteboard": {
       "meta": {
@@ -3193,9 +3193,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "0fz56f2csziqlizafwh5lfp7y5klzxd65i7rnw096vlvvlzrfasn",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.3/wrikesync.tar.gz",
-      "version": "1.2.3"
+      "sha256": "0580zi0j612pqn7xjnnnzxz88s8z72l40sbprhd45jypwjy1hc8g",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.4/wrikesync.tar.gz",
+      "version": "1.2.4"
     },
     "xray": {
       "meta": {
