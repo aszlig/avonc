@@ -1252,9 +1252,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "0m7lx8qxc8nwbdcbr2rsr5iqypwddzdnp2sr12ralzd2yly4ddh5",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.6/groupfolders.tar.gz",
-      "version": "6.0.6"
+      "sha256": "0g79wqr4d55dvqcbbz8cb1d0nbf083rb2japz9p2nf1qhyx849q5",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.0.0/groupfolders.tar.gz",
+      "version": "7.0.0"
     },
     "groupquota": {
       "meta": {
@@ -1343,6 +1343,20 @@
       "sha256": "141rwl4cb35rbhv6w70zhas53y50pckwnvn5hgqj4sj7kllca4pn",
       "url": "https://github.com/nextcloud/impersonate/releases/download/v1.6.1/impersonate.tar.gz",
       "version": "1.6.1"
+    },
+    "ldap_contacts_backend": {
+      "meta": {
+        "description": "Adds a virtual address book and lets import contacts to user&amp;#39;s individual one.\n\n![Copy found LDAP contact to address book](https://raw.githubusercontent.com/nextcloud/ldap_contacts_backend/master/screenshots/contactsmenu-with-action.png)\n\nIn order to configure an LDAP backend, run\n\n``php\nphp occ ldap_contacts:add --interactive $ADDRESSBOOKNAME\n``\n\nWhere $ADDRESSBOOKNAME is a name you like to identify the virtual addressbook with. The interactive mode leads you through the configuration, but you can also use the `--help` flag to see all the options.\n\nGiven that the configuration is correct, you and your users will be able to search through the LDAP contacts via the global contacts menu. An import action allows to copy the contact over to the best fitting existing addressbook. A redirect takes you the contacts app with the newly created card open.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "LDAP Contacts Backend",
+        "summary": "LDAP backend for Nextcloud Contacts"
+      },
+      "sha256": "11hig24l677k59l0daa6z2nkgy9szk32h4ydq6m6ak1wj5fxy9m0",
+      "url": "https://github.com/nextcloud/ldap_contacts_backend/releases/download/v1.0.0/ldap_contacts_backend.tar.gz",
+      "version": "1.0.0"
     },
     "ldap_write_support": {
       "meta": {
@@ -1873,9 +1887,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "09d8frggnq7nvkgwkgz9jrvsbr8vj3csyc6c75fwc40p9zxkjv1r",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.1/rainloop.tar.gz",
-      "version": "7.0.1"
+      "sha256": "0aiq7ks1zimid3h4xkn01mafl9q1m7jy7204dqkmf3m2r75pq0gb",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.2/rainloop.tar.gz",
+      "version": "7.0.2"
     },
     "ransomware_protection": {
       "meta": {
@@ -1946,9 +1960,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "095319s0f96xl7axd1h30303jk5v1rcyjsqrlzvgzs2ykmhj7g9y",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.2/riotchat.tar.gz",
-      "version": "0.6.2"
+      "sha256": "1imscmgpa0qlyiwvncvv3k316m9wkfslxrr8hc0k4nz2f52c58pc",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.3/riotchat.tar.gz",
+      "version": "0.6.3"
     },
     "scanner": {
       "meta": {
@@ -2223,9 +2237,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "12m29bw75lk47vg9wc9mj39mlwjlqagkmaikizya97n0bfh4k1ys",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/572130220/artifacts/raw/spgverein.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0lp481m1zjj0m3zbk4m427gd3n9iqrmjx010n8j6n4znd23ckjs9",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/679371907/artifacts/raw/spgverein.tar.gz",
+      "version": "0.7.0"
     },
     "spreed": {
       "meta": {

@@ -1358,9 +1358,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared by everyone in a group"
       },
-      "sha256": "0m7lx8qxc8nwbdcbr2rsr5iqypwddzdnp2sr12ralzd2yly4ddh5",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.6/groupfolders.tar.gz",
-      "version": "6.0.6"
+      "sha256": "0f4r9bbv2lc5vwsl2ccbka0rc7hs4f8cab4w4c4ff2h2hrw5hvwf",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.7/groupfolders.tar.gz",
+      "version": "6.0.7"
     },
     "groupquota": {
       "meta": {
@@ -2226,9 +2226,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "095319s0f96xl7axd1h30303jk5v1rcyjsqrlzvgzs2ykmhj7g9y",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.2/riotchat.tar.gz",
-      "version": "0.6.2"
+      "sha256": "1imscmgpa0qlyiwvncvv3k316m9wkfslxrr8hc0k4nz2f52c58pc",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.3/riotchat.tar.gz",
+      "version": "0.6.3"
     },
     "scanner": {
       "meta": {
@@ -2517,9 +2517,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "12m29bw75lk47vg9wc9mj39mlwjlqagkmaikizya97n0bfh4k1ys",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/572130220/artifacts/raw/spgverein.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0lp481m1zjj0m3zbk4m427gd3n9iqrmjx010n8j6n4znd23ckjs9",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/679371907/artifacts/raw/spgverein.tar.gz",
+      "version": "0.7.0"
     },
     "spreed": {
       "meta": {
