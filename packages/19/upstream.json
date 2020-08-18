@@ -199,9 +199,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "00pm3zch9pqyyif3ap80laijags196z0r8y0137s5msmrckn1jpj",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.3/bookmarks-3.3.3.tar.gz",
-      "version": "3.3.3"
+      "sha256": "0imv67k5a2xb8izlfz0jjdkj7z44prhdll69nmafpzr7izc0qic9",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.4/bookmarks-3.3.4.tar.gz",
+      "version": "3.3.4"
     },
     "breezedark": {
       "meta": {
@@ -317,9 +317,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1773ija0h72ngm2p6pams6c9xxnrjh3dmy3jv4i7arfnnhg7zsrz",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.4/circles-0.19.4.tar.gz",
-      "version": "0.19.4"
+      "sha256": "11jc5bg6yz9mx8b4pciqazh0cwpzljzdcpvqma4gqkr7ycbxs8fk",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.5/circles-0.19.5.tar.gz",
+      "version": "0.19.5"
     },
     "cloud_federation_api": {
       "meta": {
@@ -678,9 +678,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "0sdsh3ij1aplg38z7iz9avdnk2blgm9v872pa3g5c889hcjfw1y2",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.1/facerecognition.tar.gz",
-      "version": "0.6.1"
+      "sha256": "1rjyac7dfbi66ylsdw7q8j810817fr1nawdwzbp2fi290z8va5c7",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.2/facerecognition.tar.gz",
+      "version": "0.6.2"
     },
     "federatedfilesharing": {
       "meta": {
@@ -1717,6 +1717,21 @@
         "summary": "Your memories under your control"
       }
     },
+    "piwik": {
+      "meta": {
+        "description": "Track users with Piwik/Matomo",
+        "homepage": "http://sualko.github.io/cloud_piwik/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Piwik/Matomo Tracking",
+        "summary": "Track users with Piwik/Matomo"
+      },
+      "sha256": "0lw3jr5mhd5cx2d91db2hchb9r7hmqmm1krnjbbsq2lvym1j88f9",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.6.0/cloud_piwik-0.6.0.tar.gz",
+      "version": "0.6.0"
+    },
     "polls": {
       "meta": {
         "description": "A polls app, similar to doodle/dudle with the possibility to restrict access (members, certain groups/users, hidden and public).",
@@ -2108,7 +2123,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface.\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.",
+        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2117,9 +2132,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "0vws2hb7bds61lfb4yda372skcjd8zrsryghn1zph7pfz5rn48am",
-      "url": "https://gitnet.fr/attachments/d4af8b68-bec9-4b1b-ae89-7c36bd50d098",
-      "version": "1.7.0"
+      "sha256": "0m82nd52qwfpyssr43czrbg3ikmshd60bia5a1rr9prnplj00nav",
+      "url": "https://gitnet.fr/attachments/46b81cb1-f828-42d7-99e0-95e0fe643295",
+      "version": "1.8.1"
     },
     "smb_test": {
       "meta": {
@@ -2538,6 +2553,21 @@
         "name": "Update notification",
         "summary": "Displays update notifications for Nextcloud and provides the SSO for the updater."
       }
+    },
+    "user_cas": {
+      "meta": {
+        "description": "This app provides in-depth features to authenticate and authorize users against a [jasig/apereo Central Authentication Server (CAS)](https://www.apereo.org/projects/cas). The app provides all necessary options needed to connect to your CAS instance and also advanced features to manage the groups accessible by your CAS infrastructure to implement an authorization feature. This version supports ECAS instances used by the European Commission. Additionally this version supports ActiveDirectory (LDAP) import via commandline. Commercial support for user_cas is available through ownCloud GmbH and myself personally.",
+        "homepage": "https://github.com/felixrupp/user_cas",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "CAS user and group backend",
+        "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
+      },
+      "sha256": "0v86ig7w3xkbbsshm7xspqk0w3mrj4ny60ks4i0alw8lf7zdnjf6",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.6/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.6"
     },
     "user_external": {
       "meta": {
