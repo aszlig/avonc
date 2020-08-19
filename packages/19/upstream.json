@@ -575,9 +575,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1lvgmmbdhpqcf9qdr2nj5j3d6xamz4kbg9xg7q2macr3rbs0djfy",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.15/emlviewer-0.0.15.tar.gz",
-      "version": "0.0.15"
+      "sha256": "0gvdf2ksn4xhsd6w9b0caalal2qnil66m5nwsl7ij67g9zsjbg1h",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.16/emlviewer-0.0.16.tar.gz",
+      "version": "0.0.16"
     },
     "encryption": {
       "meta": {
@@ -594,7 +594,7 @@
     },
     "end_to_end_encryption": {
       "meta": {
-        "description": "Provides the necessary endpoint to enable end-to-end encryption. End-to-end encryption is still in alpha state, don't use this in production and only with test data!",
+        "description": "Provides the necessary endpoint to enable end-to-end encryption. End-to-end encryption is still in alpha state. Use only with test data, never in production!",
         "homepage": "https://github.com/nextcloud/end_to_end_encryption",
         "isShipped": false,
         "licenses": [
@@ -603,9 +603,9 @@
         "name": "End-to-End Encryption",
         "summary": "End-to-end encryption endpoint"
       },
-      "sha256": "1g9lwcsh0fgqxhq5yfwx1fvm73wy0ka04n4i7j9cgcbhgm4c1bi2",
-      "url": "https://github.com/nextcloud/end_to_end_encryption/releases/download/v1.5.0/end_to_end_encryption-1.5.0.tar.gz",
-      "version": "1.5.1"
+      "sha256": "1hd7klz9vcskxpxky7r0vnid61hy9439rd31fgaapgkqjy25xfi8",
+      "url": "https://github.com/nextcloud/end_to_end_encryption/releases/download/v1.5.2/end_to_end_encryption.tar.gz",
+      "version": "1.5.2"
     },
     "epubreader": {
       "meta": {
@@ -2132,9 +2132,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "0m82nd52qwfpyssr43czrbg3ikmshd60bia5a1rr9prnplj00nav",
-      "url": "https://gitnet.fr/attachments/46b81cb1-f828-42d7-99e0-95e0fe643295",
-      "version": "1.8.1"
+      "sha256": "0a6y4gvxbssv278v1b2j7yqy96nsdd65qk6s570arph2v1fymn18",
+      "url": "https://gitnet.fr/attachments/787281dc-a4bc-4a32-aba5-5328d0e774e3",
+      "version": "1.8.2"
     },
     "smb_test": {
       "meta": {
@@ -2177,9 +2177,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1ddd038lrm6fn9arlhvb7l1nk7mam8i2cbfmir7ym6nf3qk2n8lm",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.7/release.tar.gz",
-      "version": "3.2.7"
+      "sha256": "0b6g9sf744cmyvkws9cd17hpqvqlk0jm59hj1mhdcfjxanqjp5r5",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.8/release.tar.gz",
+      "version": "3.2.8"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2815,6 +2815,21 @@
       "sha256": "0580zi0j612pqn7xjnnnzxz88s8z72l40sbprhd45jypwjy1hc8g",
       "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.4/wrikesync.tar.gz",
       "version": "1.2.4"
+    },
+    "zenodo": {
+      "meta": {
+        "description": "based on files_zenodo written by Lars Nsbye Christensen, DeIC",
+        "homepage": "https://github.com/nextcloud/zenodo",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Zenodo",
+        "summary": "Publish your work to Zenodo.org"
+      },
+      "sha256": "13b47w3pg8dnkivhv8pmk9dyjmjmpmhg0d2nmacdg6wyw7jj6mvm",
+      "url": "https://github.com/nextcloud/zenodo/releases/download/v1.1.1/zenodo-1.1.1.tar.gz",
+      "version": "1.1.0"
     }
   },
   "nextcloud": {

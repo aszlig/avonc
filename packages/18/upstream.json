@@ -635,9 +635,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1lvgmmbdhpqcf9qdr2nj5j3d6xamz4kbg9xg7q2macr3rbs0djfy",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.15/emlviewer-0.0.15.tar.gz",
-      "version": "0.0.15"
+      "sha256": "0gvdf2ksn4xhsd6w9b0caalal2qnil66m5nwsl7ij67g9zsjbg1h",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.16/emlviewer-0.0.16.tar.gz",
+      "version": "0.0.16"
     },
     "encryption": {
       "meta": {
@@ -1749,9 +1749,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "18q32sir6pvlgipd3x95lqii95yalmff672yh482w7spcknshln7",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.50/ocr.tar.gz",
-      "version": "6.0.50"
+      "sha256": "041985sa9a7dz5qf499hvp7qzzcz8aixhy2mvzvr8p6lin4aj842",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.51/ocr.tar.gz",
+      "version": "6.0.51"
     },
     "ocsms": {
       "meta": {
@@ -2397,9 +2397,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "0m82nd52qwfpyssr43czrbg3ikmshd60bia5a1rr9prnplj00nav",
-      "url": "https://gitnet.fr/attachments/46b81cb1-f828-42d7-99e0-95e0fe643295",
-      "version": "1.8.1"
+      "sha256": "0a6y4gvxbssv278v1b2j7yqy96nsdd65qk6s570arph2v1fymn18",
+      "url": "https://gitnet.fr/attachments/787281dc-a4bc-4a32-aba5-5328d0e774e3",
+      "version": "1.8.2"
     },
     "smb_test": {
       "meta": {
@@ -2442,9 +2442,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1ddd038lrm6fn9arlhvb7l1nk7mam8i2cbfmir7ym6nf3qk2n8lm",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.7/release.tar.gz",
-      "version": "3.2.7"
+      "sha256": "0b6g9sf744cmyvkws9cd17hpqvqlk0jm59hj1mhdcfjxanqjp5r5",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.8/release.tar.gz",
+      "version": "3.2.8"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3211,6 +3211,21 @@
       "sha256": "1fwl8l4ifxwg0w7vfwdcny5p0cr2ajijyhads33m0k36l1zrz50p",
       "url": "https://github.com/icewind1991/xray/releases/download/v0.2.3/xray.tar.gz",
       "version": "0.2.3"
+    },
+    "zenodo": {
+      "meta": {
+        "description": "based on files_zenodo written by Lars Nsbye Christensen, DeIC",
+        "homepage": "https://github.com/nextcloud/zenodo",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Zenodo",
+        "summary": "Publish your work to Zenodo.org"
+      },
+      "sha256": "13b47w3pg8dnkivhv8pmk9dyjmjmpmhg0d2nmacdg6wyw7jj6mvm",
+      "url": "https://github.com/nextcloud/zenodo/releases/download/v1.1.1/zenodo-1.1.1.tar.gz",
+      "version": "1.1.0"
     },
     "zimbradrive": {
       "meta": {
