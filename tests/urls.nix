@@ -64,8 +64,10 @@ import ./make-test.nix ({ pkgs, ... }: {
     tests."ocs/v2.php" = ''
       >>> from requests.auth import HTTPBasicAuth
       >>> url += '/ocs/v2.php/apps/end_to_end_encryption/api/v1/server-key'
+      >>> headers = {'OCS-APIREQUEST': 'true',
+      ...            'User-Agent': 'Mozilla/5.0 (Linux) mirall/3.1.0'}
       >>> response = requests.get(url + '?format=json', auth=admin_auth,
-      ...                         headers={'OCS-APIREQUEST': 'true'})
+      ...                         headers=headers)
       >>> response.raise_for_status()
       >>> data = response.json()
       >>> data['ocs']['meta']['status']
