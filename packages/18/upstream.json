@@ -635,9 +635,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0gvdf2ksn4xhsd6w9b0caalal2qnil66m5nwsl7ij67g9zsjbg1h",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.16/emlviewer-0.0.16.tar.gz",
-      "version": "0.0.16"
+      "sha256": "1wvgwsvncqh1kqvq8gs3gsn8cb3j2yrwis8z6ywv0nwlg4ly37sx",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.17/emlviewer-0.0.17.tar.gz",
+      "version": "0.0.17"
     },
     "encryption": {
       "meta": {
@@ -1208,9 +1208,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "06kc2zzds7n53igwv8imkqnrb51dq1dqrzfgwdr7gy6r3pkq7nbg",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.2/forms.tar.gz",
-      "version": "2.0.2"
+      "sha256": "1ckxb3544pjb7iy96zwpa24dipjlqy4z6l9cqdwh5acrlwf4fr3j",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.3/forms.tar.gz",
+      "version": "2.0.3"
     },
     "fulltextsearch": {
       "meta": {
@@ -1827,6 +1827,21 @@
       "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.3/openhab.tar.gz",
       "version": "0.9.3"
     },
+    "orcid": {
+      "meta": {
+        "description": "based on user_orcid written by Lars Nsbye Christensen, DeIC",
+        "homepage": "https://github.com/nextcloud/orcid",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "ORCID",
+        "summary": "Authenticate with ORCID"
+      },
+      "sha256": "1k2s7jjgqhm6flqwh36vqhavyahi6dz30riig5w4prj0jfjm4k1b",
+      "url": "https://github.com/nextcloud/orcid/releases/download/v1.1.1/orcid-1.1.1.tar.gz",
+      "version": "1.1.1"
+    },
     "ownpad": {
       "meta": {
         "description": "Ownpad is a Nextcloud application that allows to create and open\n    Etherpad and Ethercalc documents.\n\n    This application requires to have access to an instance of\n    Etherpad and/or Ethercalc to work properly.",
@@ -2397,9 +2412,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "0a6y4gvxbssv278v1b2j7yqy96nsdd65qk6s570arph2v1fymn18",
-      "url": "https://gitnet.fr/attachments/787281dc-a4bc-4a32-aba5-5328d0e774e3",
-      "version": "1.8.2"
+      "sha256": "1z6374n2372drcmy778jaaxz52q9nv0i5zqciw3sglvsz5jdfcfm",
+      "url": "https://gitnet.fr/attachments/906e1f57-be58-4795-a99b-6e0bc0e0e0ce",
+      "version": "1.8.3"
     },
     "smb_test": {
       "meta": {

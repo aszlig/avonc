@@ -576,9 +576,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0gvdf2ksn4xhsd6w9b0caalal2qnil66m5nwsl7ij67g9zsjbg1h",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.16/emlviewer-0.0.16.tar.gz",
-      "version": "0.0.16"
+      "sha256": "1wvgwsvncqh1kqvq8gs3gsn8cb3j2yrwis8z6ywv0nwlg4ly37sx",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.17/emlviewer-0.0.17.tar.gz",
+      "version": "0.0.17"
     },
     "encryption": {
       "meta": {
@@ -1149,9 +1149,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "06kc2zzds7n53igwv8imkqnrb51dq1dqrzfgwdr7gy6r3pkq7nbg",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.2/forms.tar.gz",
-      "version": "2.0.2"
+      "sha256": "1ckxb3544pjb7iy96zwpa24dipjlqy4z6l9cqdwh5acrlwf4fr3j",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.3/forms.tar.gz",
+      "version": "2.0.3"
     },
     "fulltextsearch": {
       "meta": {
@@ -1824,6 +1824,21 @@
       "sha256": "0j6ml7xh5096448hwwzxbfgb0iyh3gzh6a8fw66zphhgsgkxp1mx",
       "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.3/openhab.tar.gz",
       "version": "0.9.3"
+    },
+    "orcid": {
+      "meta": {
+        "description": "based on user_orcid written by Lars Nsbye Christensen, DeIC",
+        "homepage": "https://github.com/nextcloud/orcid",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "ORCID",
+        "summary": "Authenticate with ORCID"
+      },
+      "sha256": "1k2s7jjgqhm6flqwh36vqhavyahi6dz30riig5w4prj0jfjm4k1b",
+      "url": "https://github.com/nextcloud/orcid/releases/download/v1.1.1/orcid-1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "ownbackup": {
       "meta": {
