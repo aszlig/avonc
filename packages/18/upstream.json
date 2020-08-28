@@ -257,9 +257,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "1as64ly0av2sdx2rdlj2sg1mcniqnayfagy09jfbp8kbk56a7fi1",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v1.6.0/bruteforcesettings.tar.gz",
-      "version": "1.6.0"
+      "sha256": "09ilb3a53p27zz33law47sb11g0mcdbvpfjwriz9xvg46yj1h81d",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.0.0/bruteforcesettings.tar.gz",
+      "version": "2.0.0"
     },
     "calendar": {
       "meta": {
@@ -272,9 +272,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "18hrbbcv9xa1h0z1z4xgi9hzjkdwihga9a7skxhfry2hw63iqipa",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.3/calendar.tar.gz",
-      "version": "2.0.3"
+      "sha256": "1pcj3ga1iqrlnz1q4nz0v8a3f8ffirvk3yy0k847xnfzk7k6aisq",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.4/calendar.tar.gz",
+      "version": "2.0.4"
     },
     "camerarawpreviews": {
       "meta": {
@@ -729,7 +729,7 @@
     },
     "facerecognition": {
       "meta": {
-        "description": "**Detect and group faces of your loved one in your cloud**\n\n This application requires minimum of 2GB of RAM memory to work! See [Requirements](https://github.com/matiasdelellis/facerecognition/wiki/Requirements-and-Limitations) for details.\n\n Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [Installation](https://github.com/matiasdelellis/facerecognition/wiki/Installation) for details.\n\n- ** Detect faces from images:** Use FaceRecognition app to detect _any_ face in _any_ of your images!\n- ** Group faces to persons:** Detected faces are grouped together based on similarity and then FaceRecognition app can recognize persons!\n- ** Built-in privacy:** No data is leaving your cloud. Defaults are always off and each user controls enabling/disabling face detection. Images from every directory can be excluded from face detection, if needed.\n- ** Power of AI:** FaceRecognition app leverages power of AI and already built neural network models through extensive usage of [DLib](http://dlib.net/) library.\n- ** Build your own thing:** FaceRecognition app is just a basic building block. Through FaceRecognition API, you can build your advanced scenarios - automatically add tags to images, connect contacts and persons, share images from specific person... We want to hear your ideas!",
+        "description": "**Detect and group faces of your loved one in your cloud**\n\n This application requires minimum of 1GB of RAM memory to work! See [Requirements](https://github.com/matiasdelellis/facerecognition/wiki/Requirements-and-Limitations) for details.\n\n Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [Installation](https://github.com/matiasdelellis/facerecognition/wiki/Installation) for details.\n\n- ** Detect faces from images:** Use FaceRecognition app to detect _any_ face in _any_ of your images!\n- ** Group faces to persons:** Detected faces are grouped together based on similarity and then FaceRecognition app can recognize persons!\n- ** Built-in privacy:** No data is leaving your cloud. Defaults are always off and each user controls enabling/disabling face detection. Images from every directory can be excluded from face detection, if needed.\n- ** Power of AI:** FaceRecognition app leverages power of AI and already built neural network models through extensive usage of [DLib](http://dlib.net/) library.\n- ** Build your own thing:** FaceRecognition app is just a basic building block. Through FaceRecognition API, you can build your advanced scenarios - automatically add tags to images, connect contacts and persons, share images from specific person... We want to hear your ideas!",
         "homepage": "https://github.com/matiasdelellis/facerecognition",
         "isShipped": false,
         "licenses": [
@@ -738,9 +738,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "1rjyac7dfbi66ylsdw7q8j810817fr1nawdwzbp2fi290z8va5c7",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.2/facerecognition.tar.gz",
-      "version": "0.6.2"
+      "sha256": "1zpadwmma1lgy1cncwvfky1svbq1cfav9pdzs1r83nz2kgbfhkpx",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.3/facerecognition.tar.gz",
+      "version": "0.6.3"
     },
     "federatedfilesharing": {
       "meta": {
@@ -954,9 +954,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0by6wx7n0sg4akl2n7frngcxjcgrwyk4snj203w3x8agcwafl21f",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.1/files_linkeditor.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1j1xi2zr75b12r511rffvqbg5q9ybqz05ypzj35nk1ah4pr7qa7a",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.2/files_linkeditor.tar.gz",
+      "version": "1.1.2"
     },
     "files_lock": {
       "meta": {
@@ -1523,6 +1523,20 @@
       "url": "https://github.com/nextcloud/limit_login_to_ip/releases/download/v3.0.0/limit_login_to_ip-3.0.0.tar.gz",
       "version": "3.0.0"
     },
+    "loganalyzer": {
+      "meta": {
+        "description": "Aplikacja generuje raport aktywnosci uzytkownikow w formie wydruku.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Log Analyzer",
+        "summary": "Aplikacja analuzujaca table z aktywnosciami uzytkownikow"
+      },
+      "sha256": "0kws7a21616xnmjd2xvpka37vpvc10qjzi2np2qgvlrpqi8hxzq5",
+      "url": "https://github.com/lukaszhandy/loganalyzerApp/raw/master/loganalyzer.tar.gz",
+      "version": "0.0.4"
+    },
     "login_notes": {
       "meta": {
         "description": "This app will show admin defined notes the log-in page",
@@ -1534,9 +1548,9 @@
         "name": "Login notes",
         "summary": "Display notes on log-in page"
       },
-      "sha256": "0mngn819g779hag8mnbzrqgrbqsf0wzi35zvng1davazzdw7s4s5",
-      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/48edc2cab4ac2c03fdd1a0d04a95e7da/login_notes.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0362a91z6g03i4pylqr7sbp8xkq1lc7gyd6ycwc41vvzvvdnr2gj",
+      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/4374f386ab3a3354d17298f81d858089/login_notes.tar.gz",
+      "version": "0.3.0"
     },
     "logreader": {
       "meta": {
@@ -1669,7 +1683,7 @@
     },
     "notes": {
       "meta": {
-        "description": "The Notes app is a distraction free notes taking app for [Nextcloud](https://www.nextcloud.com/). It provides categories for better organization and supports formatting using [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. Notes are saved as files in your Nextcloud, so you can view and edit them with every Nextcloud client. Furthermore, a separate [REST API](docs/api/README.md) allows for an easy integration into third-party apps (currently, there are notes apps for [Android](https://github.com/stefan-niedermann/nextcloud-notes), [iOS](https://github.com/owncloud/notes-iOS-App) and the [console](https://git.danielmoch.com/nncli/about) which allow convenient access to your Nextcloud notes). Further features include marking notes as favorites.",
+        "description": "The Notes app is a distraction free notes taking app for [Nextcloud](https://www.nextcloud.com/). It provides categories for better organization and supports formatting using [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. Notes are saved as files in your Nextcloud, so you can view and edit them with every Nextcloud client. Furthermore, a separate [REST API](https://github.com/nextcloud/notes/blob/master/docs/api/README.md) allows for an easy integration into third-party apps (currently, there are notes apps for [Android](https://github.com/stefan-niedermann/nextcloud-notes), [iOS](https://github.com/owncloud/notes-iOS-App) and the [console](https://git.danielmoch.com/nncli/about) which allow convenient access to your Nextcloud notes). Further features include marking notes as favorites.",
         "homepage": "https://github.com/nextcloud/notes",
         "isShipped": false,
         "licenses": [
@@ -1678,9 +1692,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "049pjzkx9yy08kzjlngzsx2gap45azglxkkifclwac21fhyl347i",
-      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.1/notes.tar.gz",
-      "version": "3.6.1"
+      "sha256": "1y63lrmcgavr9wx46hszgbmbd477p1hj01hspazil9c38g0rg1ix",
+      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.4/notes.tar.gz",
+      "version": "3.6.4"
     },
     "notifications": {
       "meta": {
@@ -1749,9 +1763,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "041985sa9a7dz5qf499hvp7qzzcz8aixhy2mvzvr8p6lin4aj842",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.51/ocr.tar.gz",
-      "version": "6.0.51"
+      "sha256": "1iccj2xm555w3w7axblf1wci0ngbcyfmcg3ayaldb6rdpxc3bpzw",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.55/ocr.tar.gz",
+      "version": "6.0.55"
     },
     "ocsms": {
       "meta": {
@@ -2202,7 +2216,7 @@
     },
     "registration": {
       "meta": {
-        "description": "User registration\n\nThis app allows users to register a new account.\n\n# Flow\n\n1. User enters his/her email\n2. Verification link is sent to the email address\n3. User clicks on the verification link\n4. User is lead to a form where one can choose username and password\n5. New account is created and is logged in automatically\n\n# Features\n\n- Admin can specify which group the newly created users belong\n- Admin can limit the email domains allowed to register\n- Admin will be notified by email for new user creation\n\n# Donate\n\nSend Ethereum to `0x941613eBB948C2C547cb957B55fEB2609fa6Fe66`\nSend BTC to `33pStaSaf4sDUA8XBAHTq7ZDQpCVFQArxQ`",
+        "description": "User registration\r\n\r\nThis app allows users to register a new account.\r\n\r\n# Flow\r\n\r\n1. User enters his/her email\r\n2. Verification link is sent to the email address\r\n3. User clicks on the verification link\r\n4. User is lead to a form where one can choose username and password\r\n5. New account is created and is logged in automatically\r\n\r\n# Features\r\n\r\n- Admin can specify which group the newly created users belong\r\n- Admin can limit the email domains allowed to register\r\n- Admin will be notified by email for new user creation\r\n\r\n# Donate\r\n\r\nSend Ethereum to `0x941613eBB948C2C547cb957B55fEB2609fa6Fe66`\r\nSend BTC to `33pStaSaf4sDUA8XBAHTq7ZDQpCVFQArxQ`",
         "homepage": "https://github.com/pellaeon/registration",
         "isShipped": false,
         "licenses": [
@@ -2211,9 +2225,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "1iapxh3wahnvm3gqmgd6bn3lnm7dl3zkk4a1nmnndilwnj0bxldr",
-      "url": "https://github.com/pellaeon/registration/releases/download/v0.4.7/registration.tar.gz",
-      "version": "0.4.7"
+      "sha256": "12dfj5kcvn137jwyc92n5lxn7wakr0g25brc6hx899idzmxnvvzr",
+      "url": "https://github.com/nextcloud/registration/releases/download/v0.5.0/registration-0.5.0.tar.gz",
+      "version": "0.5.0"
     },
     "richdocuments": {
       "meta": {
@@ -2241,9 +2255,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1imscmgpa0qlyiwvncvv3k316m9wkfslxrr8hc0k4nz2f52c58pc",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.3/riotchat.tar.gz",
-      "version": "0.6.3"
+      "sha256": "1ay3jgjbzs48qipazi63cgj5791nlbmwxiz9jpwyigwqk4k5g5f4",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.4/riotchat.tar.gz",
+      "version": "0.6.4"
     },
     "scanner": {
       "meta": {
@@ -2315,9 +2329,9 @@
         "name": "Sentry",
         "summary": "Sentry client"
       },
-      "sha256": "12z2b6hjmf6wm0ibr893bq3ip4015i5qdxjk5j4d6yfkw6x8qiaq",
-      "url": "https://github.com/ChristophWurst/nextcloud_sentry/releases/download/v6.2.1/sentry.tar.gz",
-      "version": "6.2.1"
+      "sha256": "18ysgh7lbbz27k0x0mpixh6k294hkvxkk4rjrzk938xlnilj8l7d",
+      "url": "https://github.com/ChristophWurst/nextcloud_sentry/releases/download/v7.0.0/sentry.tar.gz",
+      "version": "7.0.0"
     },
     "serverinfo": {
       "meta": {
@@ -2412,9 +2426,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "1z6374n2372drcmy778jaaxz52q9nv0i5zqciw3sglvsz5jdfcfm",
-      "url": "https://gitnet.fr/attachments/906e1f57-be58-4795-a99b-6e0bc0e0e0ce",
-      "version": "1.8.3"
+      "sha256": "0lj7lphckf34d8m52arlzba3k0ghg999dznhi84wg9qg4n81zvz5",
+      "url": "https://gitnet.fr/attachments/50bc7134-2333-4f80-8f52-4fdb9fc8ddef",
+      "version": "1.8.5"
     },
     "smb_test": {
       "meta": {
@@ -2757,9 +2771,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "0gg5i0sj1k84lm09fhq737pwwa19j5lrpi5zjhvrgaczpc9wjf73",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v2.1.0/twofactor_admin.tar.gz",
-      "version": "2.1.0"
+      "sha256": "10mxb2v7m0lcpx0lx13bahhzbm6dn8hk0xw6nfkzpcqpsz78520p",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.0.0/twofactor_admin.tar.gz",
+      "version": "3.0.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -2800,9 +2814,9 @@
         "name": "Two-Factor Gateway",
         "summary": "Two-factor gateway providers (SMS, Telegram, Signal)"
       },
-      "sha256": "1zbhn07p755mjbi16xgi53bap1x8s95ykwcasrz95x7nanxkwhg8",
-      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.16.0/twofactor_gateway.tar.gz",
-      "version": "0.16.0"
+      "sha256": "1s0yym17pl4ysnh87s9j8wbrd6v95pxjpjwmd99s5yb3l91iw50g",
+      "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.17.0/twofactor_gateway.tar.gz",
+      "version": "0.17.0"
     },
     "twofactor_nextcloud_notification": {
       "meta": {
@@ -2830,9 +2844,9 @@
         "name": "Two-Factor TOTP Provider",
         "summary": "TOTP two-factor provider"
       },
-      "sha256": "1ljxq4wvqmz0nh26hgrx6m1n1qgjrljd34swv0cl5qj33nrldwsi",
-      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v4.1.3/twofactor_totp.tar.gz",
-      "version": "4.1.3"
+      "sha256": "01mah5axxjszf37jnhqlpr442f27xlxgbjls32lpg21vxg63zr7f",
+      "url": "https://github.com/nextcloud/twofactor_totp/releases/download/v5.0.0/twofactor_totp.tar.gz",
+      "version": "5.0.0"
     },
     "twofactor_u2f": {
       "meta": {
@@ -2845,9 +2859,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "0i9ib8scgjj03s1kw00hx26kw2mn16d9r6an9593vfr8jygqnri7",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v5.1.0/twofactor_u2f.tar.gz",
-      "version": "5.1.0"
+      "sha256": "1pgjj5z6q9kpwjx4w54sqyd79j16jwf7kp20qy9grs1i6xfk04ii",
+      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v6.0.0/twofactor_u2f.tar.gz",
+      "version": "6.0.0"
     },
     "twofactor_webauthn": {
       "meta": {
@@ -3091,9 +3105,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "10q9zrwrp863x1dd22rkzjvyvrxad461xb24bs5izk3fxrw6ri48",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.0.1/w2g2.tar.gz",
-      "version": "3.0.1"
+      "sha256": "1nm1dyqwg6rvwrrcdxdkb9i4hmssxdhis89rvi8dmaghh7wwdj7z",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.2/w2g2.tar.gz",
+      "version": "3.0.2"
     },
     "weather": {
       "meta": {
@@ -3121,9 +3135,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV CORS header injection"
       },
-      "sha256": "01xx327lfg7pg1wya63gh4jhbfk8dwrr8rsfrcx9fywk9kllv6w9",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/1d935d977e6083c784a9b689e32f5921/webapppassword.tar.gz",
-      "version": "20.8.5"
+      "sha256": "1wglwz5ai67qqcgl6iv6r5v16agaz3jvlnlir6ci0s4jjqsw70j1",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/78c8f25ac738343275b0e7ed063320be/webapppassword.tar.gz",
+      "version": "20.8.6"
     },
     "whiteboard": {
       "meta": {

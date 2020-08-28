@@ -242,9 +242,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "18hrbbcv9xa1h0z1z4xgi9hzjkdwihga9a7skxhfry2hw63iqipa",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.3/calendar.tar.gz",
-      "version": "2.0.3"
+      "sha256": "1pcj3ga1iqrlnz1q4nz0v8a3f8ffirvk3yy0k847xnfzk7k6aisq",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.4/calendar.tar.gz",
+      "version": "2.0.4"
     },
     "camerarawpreviews": {
       "meta": {
@@ -895,9 +895,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0by6wx7n0sg4akl2n7frngcxjcgrwyk4snj203w3x8agcwafl21f",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.1/files_linkeditor.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1j1xi2zr75b12r511rffvqbg5q9ybqz05ypzj35nk1ah4pr7qa7a",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.2/files_linkeditor.tar.gz",
+      "version": "1.1.2"
     },
     "files_markdown": {
       "meta": {
@@ -1506,6 +1506,20 @@
       "url": "https://github.com/nextcloud/limit_login_to_ip/releases/download/v3.0.0/limit_login_to_ip-3.0.0.tar.gz",
       "version": "3.0.0"
     },
+    "loganalyzer": {
+      "meta": {
+        "description": "Aplikacja generuje raport aktywnosci uzytkownikow w formie wydruku.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Log Analyzer",
+        "summary": "Aplikacja analuzujaca table z aktywnosciami uzytkownikow"
+      },
+      "sha256": "0kws7a21616xnmjd2xvpka37vpvc10qjzi2np2qgvlrpqi8hxzq5",
+      "url": "https://github.com/lukaszhandy/loganalyzerApp/raw/master/loganalyzer.tar.gz",
+      "version": "0.0.4"
+    },
     "login_notes": {
       "meta": {
         "description": "This app will show admin defined notes the log-in page",
@@ -1517,9 +1531,9 @@
         "name": "Login notes",
         "summary": "Display notes on log-in page"
       },
-      "sha256": "0mngn819g779hag8mnbzrqgrbqsf0wzi35zvng1davazzdw7s4s5",
-      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/48edc2cab4ac2c03fdd1a0d04a95e7da/login_notes.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0362a91z6g03i4pylqr7sbp8xkq1lc7gyd6ycwc41vvzvvdnr2gj",
+      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/4374f386ab3a3354d17298f81d858089/login_notes.tar.gz",
+      "version": "0.3.0"
     },
     "logreader": {
       "meta": {
@@ -1667,7 +1681,7 @@
     },
     "notes": {
       "meta": {
-        "description": "The Notes app is a distraction free notes taking app for [Nextcloud](https://www.nextcloud.com/). It provides categories for better organization and supports formatting using [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. Notes are saved as files in your Nextcloud, so you can view and edit them with every Nextcloud client. Furthermore, a separate [REST API](docs/api/README.md) allows for an easy integration into third-party apps (currently, there are notes apps for [Android](https://github.com/stefan-niedermann/nextcloud-notes), [iOS](https://github.com/owncloud/notes-iOS-App) and the [console](https://git.danielmoch.com/nncli/about) which allow convenient access to your Nextcloud notes). Further features include marking notes as favorites.",
+        "description": "The Notes app is a distraction free notes taking app for [Nextcloud](https://www.nextcloud.com/). It provides categories for better organization and supports formatting using [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax. Notes are saved as files in your Nextcloud, so you can view and edit them with every Nextcloud client. Furthermore, a separate [REST API](https://github.com/nextcloud/notes/blob/master/docs/api/README.md) allows for an easy integration into third-party apps (currently, there are notes apps for [Android](https://github.com/stefan-niedermann/nextcloud-notes), [iOS](https://github.com/owncloud/notes-iOS-App) and the [console](https://git.danielmoch.com/nncli/about) which allow convenient access to your Nextcloud notes). Further features include marking notes as favorites.",
         "homepage": "https://github.com/nextcloud/notes",
         "isShipped": false,
         "licenses": [
@@ -1676,9 +1690,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "049pjzkx9yy08kzjlngzsx2gap45azglxkkifclwac21fhyl347i",
-      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.1/notes.tar.gz",
-      "version": "3.6.1"
+      "sha256": "1y63lrmcgavr9wx46hszgbmbd477p1hj01hspazil9c38g0rg1ix",
+      "url": "https://github.com/nextcloud/notes/releases/download/v3.6.4/notes.tar.gz",
+      "version": "3.6.4"
     },
     "notifications": {
       "meta": {
@@ -1747,9 +1761,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "041985sa9a7dz5qf499hvp7qzzcz8aixhy2mvzvr8p6lin4aj842",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.51/ocr.tar.gz",
-      "version": "6.0.51"
+      "sha256": "1iccj2xm555w3w7axblf1wci0ngbcyfmcg3ayaldb6rdpxc3bpzw",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.55/ocr.tar.gz",
+      "version": "6.0.55"
     },
     "ocsms": {
       "meta": {
@@ -2202,7 +2216,7 @@
     },
     "registration": {
       "meta": {
-        "description": "User registration\n\nThis app allows users to register a new account.\n\n# Flow\n\n1. User enters his/her email\n2. Verification link is sent to the email address\n3. User clicks on the verification link\n4. User is lead to a form where one can choose username and password\n5. New account is created and is logged in automatically\n\n# Features\n\n- Admin can specify which group the newly created users belong\n- Admin can limit the email domains allowed to register\n- Admin will be notified by email for new user creation\n\n# Donate\n\nSend Ethereum to `0x941613eBB948C2C547cb957B55fEB2609fa6Fe66`\nSend BTC to `33pStaSaf4sDUA8XBAHTq7ZDQpCVFQArxQ`",
+        "description": "User registration\r\n\r\nThis app allows users to register a new account.\r\n\r\n# Flow\r\n\r\n1. User enters his/her email\r\n2. Verification link is sent to the email address\r\n3. User clicks on the verification link\r\n4. User is lead to a form where one can choose username and password\r\n5. New account is created and is logged in automatically\r\n\r\n# Features\r\n\r\n- Admin can specify which group the newly created users belong\r\n- Admin can limit the email domains allowed to register\r\n- Admin will be notified by email for new user creation\r\n\r\n# Donate\r\n\r\nSend Ethereum to `0x941613eBB948C2C547cb957B55fEB2609fa6Fe66`\r\nSend BTC to `33pStaSaf4sDUA8XBAHTq7ZDQpCVFQArxQ`",
         "homepage": "https://github.com/pellaeon/registration",
         "isShipped": false,
         "licenses": [
@@ -2211,9 +2225,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "1iapxh3wahnvm3gqmgd6bn3lnm7dl3zkk4a1nmnndilwnj0bxldr",
-      "url": "https://github.com/pellaeon/registration/releases/download/v0.4.7/registration.tar.gz",
-      "version": "0.4.7"
+      "sha256": "12dfj5kcvn137jwyc92n5lxn7wakr0g25brc6hx899idzmxnvvzr",
+      "url": "https://github.com/nextcloud/registration/releases/download/v0.5.0/registration-0.5.0.tar.gz",
+      "version": "0.5.0"
     },
     "richdocuments": {
       "meta": {
@@ -2241,9 +2255,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1imscmgpa0qlyiwvncvv3k316m9wkfslxrr8hc0k4nz2f52c58pc",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.3/riotchat.tar.gz",
-      "version": "0.6.3"
+      "sha256": "1ay3jgjbzs48qipazi63cgj5791nlbmwxiz9jpwyigwqk4k5g5f4",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.4/riotchat.tar.gz",
+      "version": "0.6.4"
     },
     "scanner": {
       "meta": {
@@ -2730,9 +2744,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "0gg5i0sj1k84lm09fhq737pwwa19j5lrpi5zjhvrgaczpc9wjf73",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v2.1.0/twofactor_admin.tar.gz",
-      "version": "2.1.0"
+      "sha256": "10mxb2v7m0lcpx0lx13bahhzbm6dn8hk0xw6nfkzpcqpsz78520p",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.0.0/twofactor_admin.tar.gz",
+      "version": "3.0.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -3064,9 +3078,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "10q9zrwrp863x1dd22rkzjvyvrxad461xb24bs5izk3fxrw6ri48",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.0.1/w2g2.tar.gz",
-      "version": "3.0.1"
+      "sha256": "1nm1dyqwg6rvwrrcdxdkb9i4hmssxdhis89rvi8dmaghh7wwdj7z",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.2/w2g2.tar.gz",
+      "version": "3.0.2"
     },
     "weather": {
       "meta": {
