@@ -257,9 +257,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "09ilb3a53p27zz33law47sb11g0mcdbvpfjwriz9xvg46yj1h81d",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.0.0/bruteforcesettings.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0awpn49kr6p3w3kln0akn83ansbpdw3wj24lp2rywh2g1016s7i1",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.0.1/bruteforcesettings.tar.gz",
+      "version": "2.0.1"
     },
     "calendar": {
       "meta": {
@@ -359,9 +359,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "0q17rhj3skjanrfy8qpq18ljmrksaqz62pqby30i8g5nc2v2nr4m",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.8/cms_pico-v1.0.8.tar.gz",
-      "version": "1.0.8"
+      "sha256": "1c0w0qb802i51drxyq1l4h7vgjq32b271l0lv6s8dw57dq3s3l7p",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.9/cms_pico-v1.0.9.tar.gz",
+      "version": "1.0.9"
     },
     "comments": {
       "meta": {
@@ -1649,9 +1649,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1hbk27yn7hw9s0aygd5jaxqndzv6mmrfj5pyqa6gf53g52rpb84d",
-      "url": "https://github.com/nextcloud/news/releases/download/14.1.11/news.tar.gz",
-      "version": "14.1.11"
+      "sha256": "0lr9cfd2q3iwxw1qdy01j8sydc0giv1a0137n80a4bd8sc9vm9v7",
+      "url": "https://github.com/nextcloud/news/releases/download/14.2.0/news.tar.gz",
+      "version": "14.2.0"
     },
     "nextbackup": {
       "meta": {
@@ -2093,9 +2093,9 @@
         "name": "Quest",
         "summary": "Connector to the Quest's tool"
       },
-      "sha256": "0fnlcxwy4jkw9khiwjx9hd1gklprbv5cfv7rxjq3hb2f5nxck19c",
-      "url": "https://github.com/antitoine/Quest-nextcloud/releases/download/v0.0.1/nextcloud_quest_v0.0.1.tar.gz",
-      "version": "0.0.1"
+      "sha256": "19ridm03nzy9gn3j36jlknswh5d0z51wf7s9kj5d30hlgi2p59mn",
+      "url": "https://github.com/antitoine/Quest-nextcloud/releases/download/v0.0.2/nextcloud_quest_v0.0.2.tar.gz",
+      "version": "0.0.2"
     },
     "quickaccesssorting": {
       "meta": {
@@ -2426,9 +2426,9 @@
         "name": "Side menu",
         "summary": "Move the top menu to the left side."
       },
-      "sha256": "0lj7lphckf34d8m52arlzba3k0ghg999dznhi84wg9qg4n81zvz5",
-      "url": "https://gitnet.fr/attachments/50bc7134-2333-4f80-8f52-4fdb9fc8ddef",
-      "version": "1.8.5"
+      "sha256": "1dwa3ilp3m7hjk7j9yskn9lxhj4pdvcx12dvnnxh29j3va56fy38",
+      "url": "https://gitnet.fr/attachments/63157008-d9f5-4198-bfee-ab47cc3292f8",
+      "version": "1.8.6"
     },
     "smb_test": {
       "meta": {
