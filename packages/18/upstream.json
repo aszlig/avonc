@@ -189,7 +189,7 @@
     },
     "bbb": {
       "meta": {
-        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
+        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
         "homepage": "https://github.com/sualko/cloud_bbb/",
         "isShipped": false,
         "licenses": [
@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0i8q6dc15bf8y7hkbhpb0jnvxx105ywmh3w8d8q0vazdm2n83xgs",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v0.5.1/bbb-v0.5.1.tar.gz",
-      "version": "0.5.1"
+      "sha256": "1wddvnch9fi8w9zkyr2h8nf0qqcy1br0z0anl36asz7ly8akznfx",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.0.1/bbb-v1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "bookmarks": {
       "meta": {
@@ -806,9 +806,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud based on ClamAV"
       },
-      "sha256": "0p0wd7pgyc6dlyf5qpvaxnps60njzgxzk5cxv5bxgk8s5kw7dhpc",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v2.4.1/files_antivirus.tar.gz",
-      "version": "2.4.1"
+      "sha256": "1wmi3v0a3kqjdbcg6ghfhnlqhwr444r1nxks1wibpyvijxvgqdhv",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.0.0/files_antivirus.tar.gz",
+      "version": "3.0.0"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1208,9 +1208,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "1ckxb3544pjb7iy96zwpa24dipjlqy4z6l9cqdwh5acrlwf4fr3j",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.3/forms.tar.gz",
-      "version": "2.0.3"
+      "sha256": "011wdzpbkq5ncvbbap46452d7036qw92jyiip0043ib53zwcjbbh",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.4/forms.tar.gz",
+      "version": "2.0.4"
     },
     "fulltextsearch": {
       "meta": {
@@ -1387,9 +1387,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "0jsaa0m93w1yshxvqjyz1knxvlrvn3rr769j15d9whm09mpcvdwb",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.4.6/guests.tar.gz",
-      "version": "1.4.6"
+      "sha256": "1jx8a01cmg7z8zgkdmjm1zl1lxkhk7a57iiraqbg992xlamfrvfh",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.5.0/guests.tar.gz",
+      "version": "1.5.0"
     },
     "hidesidebars": {
       "meta": {
@@ -1649,9 +1649,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0lr9cfd2q3iwxw1qdy01j8sydc0giv1a0137n80a4bd8sc9vm9v7",
-      "url": "https://github.com/nextcloud/news/releases/download/14.2.0/news.tar.gz",
-      "version": "14.2.0"
+      "sha256": "19anqfw4dkaag330vrvl1qkshx097kqhyd91hvcmca30bz48smkz",
+      "url": "https://github.com/nextcloud/news/releases/download/14.2.2/news.tar.gz",
+      "version": "14.2.2"
     },
     "nextbackup": {
       "meta": {
@@ -2546,9 +2546,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "0lp481m1zjj0m3zbk4m427gd3n9iqrmjx010n8j6n4znd23ckjs9",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/679371907/artifacts/raw/spgverein.tar.gz",
-      "version": "0.7.0"
+      "sha256": "0lz0ac4lvllm4dbr4a4cwg4np1a7rhgz2d1yvh5nn0ygqifjvqwl",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/713378762/artifacts/raw/spgverein.tar.gz",
+      "version": "0.7.1"
     },
     "spreed": {
       "meta": {
@@ -2602,9 +2602,9 @@
         "name": "Suspicious Login",
         "summary": "Detect and warn about suspicious IPs logging into Nextcloud"
       },
-      "sha256": "09dc3km8sxbmg0vzi6zi6h5jys0l1fzw48xdlqnvsakzmp60jxlk",
-      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v3.1.0/suspicious_login.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0r7ns554mmvnb6lgsysbv9hj8625hz5sy16h85wv0js0225fvbz9",
+      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v3.2.1/suspicious_login.tar.gz",
+      "version": "3.2.1"
     },
     "systemtags": {
       "meta": {
@@ -2729,9 +2729,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "09lyaxldy5nlaq5r9i1kmsqsm5bfp7niiphhdhdn5di4davigwih",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.3/timemanager.tar.gz",
-      "version": "0.1.3"
+      "sha256": "0b5xls62mag2c6kfibiflwkzb0d2nhsvznwfhlp6c9dhvdl4zpsv",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.4/timemanager.tar.gz",
+      "version": "0.1.4"
     },
     "timetracker": {
       "meta": {
@@ -2874,9 +2874,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "0qi31l5fydppar6ani027iadzqs6s591ib7yvd68yb981sdamac9",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.4/twofactor_webauthn-0.2.4.tar.gz",
-      "version": "0.2.4"
+      "sha256": "1xi5wsl540sj6hg7rr5nfh970fvs1k6ndjbmnymx27ad0dqpp6sh",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.5/twofactor_webauthn-0.2.5.tar.gz",
+      "version": "0.2.5"
     },
     "unsplash": {
       "meta": {
