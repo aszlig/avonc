@@ -109,9 +109,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "0c7ms6907n87142v3dfhhc2xcdnn1k7fs7wqiadmgmqw15fjssc2",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.10.0/apporder.tar.gz",
-      "version": "0.10.0"
+      "sha256": "0nb4mlhjzk9n4njczk93hqmrvl84jj0brkyf5k56rs021rfs4vvj",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.11.0/apporder.tar.gz",
+      "version": "0.11.0"
     },
     "audioplayer": {
       "meta": {
@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "1wddvnch9fi8w9zkyr2h8nf0qqcy1br0z0anl36asz7ly8akznfx",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.0.1/bbb-v1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "10v4ayfs8hbn19b054702ny0d42rx51sf00wrxmi9vhs3di1q6a5",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.0.2/bbb-v1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "bookmarks": {
       "meta": {
@@ -792,9 +792,9 @@
         "name": "File access control",
         "summary": "Control access to files based on conditions"
       },
-      "sha256": "1d2blq4fk1amkvx11h7d612zp3njirnxdwn79b7zph51l6962m5n",
-      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.8.1/files_accesscontrol-1.8.1.tar.gz",
-      "version": "1.8.1"
+      "sha256": "0n0alkgph6wxcvp613yv2bmsp695acbiw4n5ks7rai1rdffq6m6h",
+      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.8.2/files_accesscontrol-1.8.2.tar.gz",
+      "version": "1.8.2"
     },
     "files_antivirus": {
       "meta": {
@@ -1460,9 +1460,9 @@
         "name": "Issue Template",
         "summary": "Easily report Nextcloud bugs with a prefilled issue template for reporting on GitHub"
       },
-      "sha256": "0m9a750kdjnbr62yg9dfvf8snb7qhji3y2apglsjmrp5kfnc7724",
-      "url": "https://github.com/nextcloud/issuetemplate/releases/download/v0.6.0/issuetemplate.tar.gz",
-      "version": "0.6.0"
+      "sha256": "1brs3f98nq3wbybzrh43lgvsmj5si5k7zazsdxpbvx8kfy56x39b",
+      "url": "https://github.com/juliushaertl/issuetemplate/releases/download/v0.7.0/issuetemplate.tar.gz",
+      "version": "0.7.0"
     },
     "keeweb": {
       "meta": {
@@ -1818,14 +1818,14 @@
         "homepage": "https://www.onlyoffice.com",
         "isShipped": false,
         "licenses": [
-          "agpl"
+          "apache"
         ],
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "00825kjczybxad4vdnmjap452bbzvq7lhjklp0lmniksdqvrch1s",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v4.3.0/onlyoffice.tar.gz",
-      "version": "4.3.0"
+      "sha256": "1dyzma5hazc0jpjb0wspfjhksp35aa3apwpxsbrdxsz3sz6bqg99",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v5.0.0/onlyoffice.tar.gz",
+      "version": "5.0.0"
     },
     "openhab": {
       "meta": {
@@ -1866,9 +1866,9 @@
         "name": "Ownpad",
         "summary": "Create and open Etherpad and Ethercalc documents."
       },
-      "sha256": "0lj0pm5xfwbw7lc7cahqix0ac7yyx7mp6x50gjp1qmnwch7p5pia",
-      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.14/ownpad.tar.gz",
-      "version": "0.6.14"
+      "sha256": "033g54k4yssrs3cddqwb52xzka3hcc0lrrb5xvraq8a3kwh0xb1c",
+      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.15/ownpad.tar.gz",
+      "version": "0.6.15"
     },
     "passman": {
       "meta": {
@@ -2240,9 +2240,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0hka42m658jxsxky3fcyqcw0qc2y6b6nb3ymzaf9wjnssb2c3nr6",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.3/richdocuments.tar.gz",
-      "version": "3.7.3"
+      "sha256": "0px34n959z5zia1kjz4d0gnagfjahn6grvn37vqc37a7kzb8v2nr",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.4/richdocuments.tar.gz",
+      "version": "3.7.4"
     },
     "riotchat": {
       "meta": {
@@ -2255,9 +2255,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1ay3jgjbzs48qipazi63cgj5791nlbmwxiz9jpwyigwqk4k5g5f4",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.4/riotchat.tar.gz",
-      "version": "0.6.4"
+      "sha256": "0qi5vmfsjwj1rb2x8cydmy22jc45lrabqx7mzi5ww20d7qdcwgv4",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.6/riotchat.tar.gz",
+      "version": "0.6.6"
     },
     "scanner": {
       "meta": {
@@ -2424,11 +2424,11 @@
           "agpl"
         ],
         "name": "Side menu",
-        "summary": "Move the top menu to the left side."
+        "summary": "Modify the display of the menu."
       },
-      "sha256": "1dwa3ilp3m7hjk7j9yskn9lxhj4pdvcx12dvnnxh29j3va56fy38",
-      "url": "https://gitnet.fr/attachments/63157008-d9f5-4198-bfee-ab47cc3292f8",
-      "version": "1.8.6"
+      "sha256": "01w80s60iy2g5bqf7hqci80ghy509q268ck39jv4ycwpj9bzwryx",
+      "url": "https://gitnet.fr/attachments/9c903264-bda0-435f-84d5-53344e0b032d",
+      "version": "1.10.0"
     },
     "smb_test": {
       "meta": {
