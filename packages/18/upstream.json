@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1fr8c488b2zbc0v1c0sg4lhixidqbcdgk5jvhp927k8qv8l66sfr",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/e3794f5a3c2390fe8d03f61a1db488ebeee4ce8f/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.6.8"
+      "sha256": "0d1kycz6kpxgw8za803brl59bvskr9v1a1c7wkv27l256isszl3m",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/eea9f6a60da04e589641a07148e67edc0b851183/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.2"
     },
     "apporder": {
       "meta": {
@@ -1908,9 +1908,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0vkpvzd94qa12n7vpilrkg58rj7zvka40pjkbrrmlzb3k15n4wrr",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10300/artifacts/raw/passwords.tar.gz",
-      "version": "2020.8.0"
+      "sha256": "0ibfknnbkr1lzcqb0354a6c1kqs272yfsbx128j8vdmqd0wvhhp3",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10381/artifacts/raw/passwords.tar.gz",
+      "version": "2020.9.0"
     },
     "phonetrack": {
       "meta": {
@@ -2537,7 +2537,7 @@
     },
     "spgverein": {
       "meta": {
-        "description": "Access data of SPG-Verein in your Nextcloud instance",
+        "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.",
         "homepage": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app",
         "isShipped": false,
         "licenses": [
@@ -2546,9 +2546,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "0lz0ac4lvllm4dbr4a4cwg4np1a7rhgz2d1yvh5nn0ygqifjvqwl",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/713378762/artifacts/raw/spgverein.tar.gz",
-      "version": "0.7.1"
+      "sha256": "0426ks96csvbqjh7as3lxhndwyg2xzccabmibkanii5k5mgksidk",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/721890000/artifacts/raw/spgverein.tar.gz",
+      "version": "0.7.2"
     },
     "spreed": {
       "meta": {
