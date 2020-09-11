@@ -2061,9 +2061,24 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1l9r2kgbxnn3x6l96ifz5z8biqnkbhf2s8081wkz74y0gf032j6k",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.602/richdocumentscode.tar.gz",
-      "version": "4.2.602"
+      "sha256": "0rqzibn0mjrnh1dhkm22z7ry7kvq8mh7vgbskqhsi8zdm6g7hjwg",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.800/richdocumentscode.tar.gz",
+      "version": "4.2.800"
+    },
+    "richdocumentscode_arm64": {
+      "meta": {
+        "description": "This app has to be installed and used together with the **[Collabora Online](https://apps.nextcloud.com/apps/richdocuments)** app.\n\nCollabora Online is a powerful LibreOffice-based online office suite with collaborative editing, which supports all major documents, spreadsheet and presentation file formats and works together with all modern browsers.\n\nThis app provides a built-in server with all of the document editing features of Collabora Online. Easy to install, for personal use or for small teams. A bit slower than a standalone server and without the advanced scalability features.",
+        "homepage": "https://collaboraoffice.com/",
+        "isShipped": false,
+        "licenses": [
+          "apache"
+        ],
+        "name": "Collabora Online - Built-in CODE Server (ARM64)",
+        "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
+      },
+      "sha256": "1xd6di3dnhb5igi8ilrbzq9lghp2gy5lbnqczyr7vp01yrhh9sp6",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.800/richdocumentscode_arm64.tar.gz",
+      "version": "4.2.800"
     },
     "riotchat": {
       "meta": {
@@ -2753,9 +2768,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "1dgdbjzrmvl71wnijqh7qimnz22jsr1xg91lrgx4ql8wxd7iz5wy",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.0/user_oidc.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0l9pjai69w5fjigcy2h7d2hqwsgwmz2h5mpjzw607ffaf8rb1vq1",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.1/user_oidc.tar.gz",
+      "version": "0.2.1"
     },
     "user_retention": {
       "meta": {
@@ -2783,9 +2798,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1y41nbnr4q46nlmw0xh7yj10v8qv4w14qgla72lgkg7rfhfbfx2h",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.1.2/user_saml-3.1.2.tar.gz",
-      "version": "3.1.2"
+      "sha256": "1l5fxa0y4phwvy69jsamdr881iijyph1vhrw414vca9pl9s9kzmw",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.0/user_saml-3.2.0.tar.gz",
+      "version": "3.2.0"
     },
     "user_sql": {
       "meta": {

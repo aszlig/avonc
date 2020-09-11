@@ -2989,9 +2989,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "1dgdbjzrmvl71wnijqh7qimnz22jsr1xg91lrgx4ql8wxd7iz5wy",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.0/user_oidc.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0l9pjai69w5fjigcy2h7d2hqwsgwmz2h5mpjzw607ffaf8rb1vq1",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.1/user_oidc.tar.gz",
+      "version": "0.2.1"
     },
     "user_pwauth": {
       "meta": {
@@ -3033,9 +3033,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1y41nbnr4q46nlmw0xh7yj10v8qv4w14qgla72lgkg7rfhfbfx2h",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.1.2/user_saml-3.1.2.tar.gz",
-      "version": "3.1.2"
+      "sha256": "1gwi35lf0ak3m8vm4c07qrvb2iwq59gpxlajz4kg1zh78jp2w90m",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.1.3/user_saml-3.1.3.tar.gz",
+      "version": "3.1.3"
     },
     "user_sql": {
       "meta": {
