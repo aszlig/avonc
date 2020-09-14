@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0d1kycz6kpxgw8za803brl59bvskr9v1a1c7wkv27l256isszl3m",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/eea9f6a60da04e589641a07148e67edc0b851183/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.2"
+      "sha256": "1i82nm547rzy7gzkikvakp5608zfwk2fk02szryacr2np225jh63",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/0483b85c494b940a2ef583666fa00e082f53aa97/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.3"
     },
     "apporder": {
       "meta": {
@@ -329,9 +329,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1c0w0qb802i51drxyq1l4h7vgjq32b271l0lv6s8dw57dq3s3l7p",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.9/cms_pico-v1.0.9.tar.gz",
-      "version": "1.0.9"
+      "sha256": "0xbr6cjmiyv9jyxizl9189cjbqmnfc939pnvr8v1hv0v8rdq048x",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.10/cms_pico-v1.0.10.tar.gz",
+      "version": "1.0.10"
     },
     "comments": {
       "meta": {
@@ -1835,9 +1835,9 @@
         "name": "Openhab Viewer",
         "summary": "Renders sitemaps of an Openhab instance."
       },
-      "sha256": "0j6ml7xh5096448hwwzxbfgb0iyh3gzh6a8fw66zphhgsgkxp1mx",
-      "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.3/openhab.tar.gz",
-      "version": "0.9.3"
+      "sha256": "0fa620apb2z34f5x1dqyk9ycx8sq5ykqi5bmllh627af1ar6zvc5",
+      "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.4/openhab.tar.gz",
+      "version": "0.9.4"
     },
     "orcid": {
       "meta": {
@@ -2255,9 +2255,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0qi5vmfsjwj1rb2x8cydmy22jc45lrabqx7mzi5ww20d7qdcwgv4",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.6/riotchat.tar.gz",
-      "version": "0.6.6"
+      "sha256": "17kvxzwbqfvk01k0y6qayb9bvhpdy2rxmpblzx78a7lpyjc476x8",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.10/riotchat.tar.gz",
+      "version": "0.6.10"
     },
     "scanner": {
       "meta": {

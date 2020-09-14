@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0d1kycz6kpxgw8za803brl59bvskr9v1a1c7wkv27l256isszl3m",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/eea9f6a60da04e589641a07148e67edc0b851183/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.2"
+      "sha256": "1i82nm547rzy7gzkikvakp5608zfwk2fk02szryacr2np225jh63",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/0483b85c494b940a2ef583666fa00e082f53aa97/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.3"
     },
     "apporder": {
       "meta": {
@@ -345,9 +345,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1c0w0qb802i51drxyq1l4h7vgjq32b271l0lv6s8dw57dq3s3l7p",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.9/cms_pico-v1.0.9.tar.gz",
-      "version": "1.0.9"
+      "sha256": "0xbr6cjmiyv9jyxizl9189cjbqmnfc939pnvr8v1hv0v8rdq048x",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.10/cms_pico-v1.0.10.tar.gz",
+      "version": "1.0.10"
     },
     "comments": {
       "meta": {
@@ -1690,6 +1690,20 @@
       "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v5.0.0/onlyoffice.tar.gz",
       "version": "5.0.0"
     },
+    "openhab": {
+      "meta": {
+        "description": "This app renders the available sitemaps of an Openhab server instance. This allows you to display values from your smart home in Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Openhab Viewer",
+        "summary": "Renders sitemaps of an Openhab instance."
+      },
+      "sha256": "0fa620apb2z34f5x1dqyk9ycx8sq5ykqi5bmllh627af1ar6zvc5",
+      "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.4/openhab.tar.gz",
+      "version": "0.9.4"
+    },
     "orcid": {
       "meta": {
         "description": "based on user_orcid written by Lars Nsbye Christensen, DeIC",
@@ -1973,9 +1987,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "0aiq7ks1zimid3h4xkn01mafl9q1m7jy7204dqkmf3m2r75pq0gb",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.2/rainloop.tar.gz",
-      "version": "7.0.2"
+      "sha256": "1185nncmscay4q5dnwsr5lz1pimd5r23yqabz7rrv8z4an7dx0aw",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.3/rainloop.tar.gz",
+      "version": "7.0.3"
     },
     "ransomware_detection": {
       "meta": {
@@ -2091,9 +2105,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0qi5vmfsjwj1rb2x8cydmy22jc45lrabqx7mzi5ww20d7qdcwgv4",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.6/riotchat.tar.gz",
-      "version": "0.6.6"
+      "sha256": "17kvxzwbqfvk01k0y6qayb9bvhpdy2rxmpblzx78a7lpyjc476x8",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.10/riotchat.tar.gz",
+      "version": "0.6.10"
     },
     "scanner": {
       "meta": {
@@ -2248,9 +2262,9 @@
         "name": "Side menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "01w80s60iy2g5bqf7hqci80ghy509q268ck39jv4ycwpj9bzwryx",
-      "url": "https://gitnet.fr/attachments/9c903264-bda0-435f-84d5-53344e0b032d",
-      "version": "1.10.0"
+      "sha256": "0i212k5mxc7banwyjxzmq74ahn90wbjg07jkjwkwyybgqgvi62lg",
+      "url": "https://gitnet.fr/attachments/aa2c4422-e8dc-468b-9e41-94e515dadb43",
+      "version": "1.12.2"
     },
     "smb_test": {
       "meta": {
@@ -2918,6 +2932,21 @@
       "sha256": "0j9amcwdv8l093fjar0676wj3hj1l3aazbg6p7x7zfbsf5d48wfc",
       "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.5/wopi.tar.gz",
       "version": "3.5.5"
+    },
+    "workflow_ocr": {
+      "meta": {
+        "description": "This app makes it possible to process various files via OCR algorithms. \n\tThe processing is done via workflow-engine and can therefore easily be customized.",
+        "homepage": "https://github.com/R0Wi/workflow_ocr",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Workflow OCR",
+        "summary": "OCR processing via workflow"
+      },
+      "sha256": "0hmh218h2i0lh6hm5d0i6jdx5zwfwmlxnxg04g8zwb2wifk9di5z",
+      "url": "https://github.com/R0Wi/workflow_ocr/releases/download/v1.19.0/workflow_ocr.tar.gz",
+      "version": "1.19.0"
     },
     "workflow_pdf_converter": {
       "meta": {
