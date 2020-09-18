@@ -173,6 +173,20 @@
       "url": "https://github.com/stjosh/auto_groups/releases/download/v1.2.0/auto_groups-v1.2.0.tar.gz",
       "version": "1.2.0"
     },
+    "auto_mail_accounts": {
+      "meta": {
+        "description": "The mail app has a built-in default configuration for mail accounts but it does not create actual mail accounts for each Nextcloud user, so they can not store alternative identities, a sender name, attachments or collect e-mail addresses. This app hooks into Nextcloud's user creation/deletion and display name/ password change and automatically creates/deletes/updates a mail account in the mail app. This creates mail accounts like if a user entered the settings manually allowing him to use all features of the mail app.\n\nNote that the password is stored with symmetric encryption and can be retrieved by the admin. This is the default behaviour of the mail app and unavoidable because it needs to login to the mail server.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Auto Mail Accounts",
+        "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
+      },
+      "sha256": "0j7fzqyiqmnv551ym4irax9x9xjjibkx0ghnyravm5d03vym85vb",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v1.0.5/auto_mail_accounts.tar.gz",
+      "version": "0.1.5"
+    },
     "bbb": {
       "meta": {
         "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
@@ -807,6 +821,21 @@
         "name": "External storage support",
         "summary": "Adds basic external storage support"
       }
+    },
+    "files_external_dropbox": {
+      "meta": {
+        "description": "This application enables integrating Dropbox external storages via the Dropbox API v2.\nOnce a Dropbox account is integrated by an administrator or the user in self-service, users see a folder structure that mirrors their Dropbox hierarchy.\nUsers can then selectively sync files to their desktop or access them on mobile devices like any other file in Nextcloud.\nThe files will remain in the Dropbox storage but are now accessible in a secure and fully logged and traceable way through Nextcloud.\n\nAdministrators and users (when enabled) can find external storage configuration options in the 'Storage' section of admin and user settings, respectively.\n\n**Important**:\nConnecting Dropbox with OAuth2 is a little more work because you have to create a Dropbox app.\n- Log into the [Dropbox Developers](http://www.dropbox.com/developers) page and click Create Your App\n- Then choose which folders to share, or to share everything in your Dropbox.\n- Name Your App and then click Create App\n- Under the section **OAuth2** Redirect URIs add a new URL\n  For adding global storages:\n  ```https://mynextcloud.example.com/settings/admin/externalstorages```\n  and for user storages:\n  ```https://mynextcloud.example.com/settings/admin/externalstorages```\n   _(Replace `https://mynextcloud.example.com/ with your valid Nextcloud installation path)_\n- Then go to nextcloud ```settings/admin/externalstorages``` and add a new storage **Dropbox V2**\n- Fill the details Client Id, Client Secrets from your Dropbox App page (search for \"App key\" and \"App secret\")\n- Click Grant Access and then you will be redirected to the OAuth login\n- After completing the OAuth you will be redirect back to Storage Section and you should see **green** mark along your storage configuration\n- That's it",
+        "homepage": "https://github.com/DJaeger/files_external_dropbox/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External Storage backend for Dropbox",
+        "summary": "Integrate Dropbox as an external storage"
+      },
+      "sha256": "09d498c5nxybk0jmp8zyf7ddqd20q8s3s339hcyq2w5bhqzifs9k",
+      "url": "https://github.com/DJaeger/files_external_dropbox/releases/download/v1.4.3/files_external_dropbox.tar.gz",
+      "version": "1.4.3"
     },
     "files_fulltextsearch": {
       "meta": {
@@ -1557,9 +1586,9 @@
         "name": "NextBackup",
         "summary": "Simple database backup solutions for your Nextcloud or ownCloud installation."
       },
-      "sha256": "0i66radasgd4q6qpldzc7xlkdhj2y8fcaiw78vaws7nh1cwx50n3",
-      "url": "https://github.com/pbek/nextbackup/releases/download/20.4.0/nextbackup-nc.tar.gz",
-      "version": "20.4.0"
+      "sha256": "0nhij4isia352fiqyghxhkvs72ji8jbnffsm76adsc3izqa50q2p",
+      "url": "https://github.com/pbek/nextbackup/releases/download/20.9.0/nextbackup-nc.tar.gz",
+      "version": "20.9.0"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1645,6 +1674,20 @@
       "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.8/ocsms-2.1.8.tar.gz",
       "version": "2.1.8"
     },
+    "officeonline": {
+      "meta": {
+        "description": "This application can connect to an Office Online server with Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Office Online integration",
+        "summary": "Edit office documents directly in your browser."
+      },
+      "sha256": "06nv8pn1mn8smmhkchscml5kxjlni7850fx89bkalql66jgi7i90",
+      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.0/officeonline.tar.gz",
+      "version": "1.0.0"
+    },
     "oidc_login": {
       "meta": {
         "description": "# OpenID Connect Login\n\nMake possible create users and login via one single OpenID Connect provider. Even though a fork of [nextcloud-social-login](https://github.com/zorn-v/nextcloud-social-login), it fundamentally differs in two ways - aims for simplistic, single provider login (and hence is very minimalastic), and it supports having LDAP as the primary user backend. This way, you can use OpenID Connect to login to Nextcloud while maintaining an LDAP backend with attributes with the LDAP plugin. Supports automatic discovery of endpoints through the OpenID Connect spec, with a single provider configuration attribute.",
@@ -1686,9 +1729,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "1dyzma5hazc0jpjb0wspfjhksp35aa3apwpxsbrdxsz3sz6bqg99",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v5.0.0/onlyoffice.tar.gz",
-      "version": "5.0.0"
+      "sha256": "0d7wnjg8k2xpv7jd73s7z6vh964lklnq201bick6yysy48ggw3fk",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.0.0/onlyoffice.tar.gz",
+      "version": "6.0.0"
     },
     "openhab": {
       "meta": {
@@ -2124,6 +2167,20 @@
       "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.9/scanner-0.1.9.tar.gz",
       "version": "0.1.9"
     },
+    "secsignid": {
+      "meta": {
+        "description": "This app makes it possible to use the SecSign two-factor authentication SecSign ID\nto authenticate users in Nextcloud.\n\nOnce installed, go to **Settings/Security** and add an existing SecSign ID to enable 2FA\nfor yourself. Make sure to also generate backup codes, so you always have a backup plan.\n\nAdmins can go to the SecSign ID tab and manage the SecSign IDs for every user and enable/disable\ntwo-factor authentication.\n\nWith the new User Onboarding feature, enabling SecSign 2FA for all users is a very easy process. Simply enable User Onboarding and then choose a suffix for your users SecSign IDs. Make sure to either enforce 2FA for the user groups which should use SecSign 2FA or enable it for single users. Only users with Two-Factor Authentication enabled in the NextCloud settings can use SecSign 2FA.\n\nIf you do not already have a SecSign ID, go to [secsign.com](https://www.secsign.com/try-secsign-id-now/) to learn\nhow to create and use one.\n\n[PHP QR Code library](http://phpqrcode.sourceforge.net/) was used for the creating QR codes. Many thanks to the developers.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SecSign ID",
+        "summary": "Plugin to enable use of SecSign 2FA"
+      },
+      "sha256": "1a64ifmi082hqlpml9gmybdnl9zryy2nwkwbcqmbm0g8b50hd2al",
+      "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/master/build/artifacts/appstore/secsignid.tar.gz?raw=true",
+      "version": "0.3.2"
+    },
     "sendent": {
       "meta": {
         "description": "Sendent allows you to securely exchange files and emails. Sendent is linked to Microsoft Outlook, so you can continue to work from your trusted email program while you mail more easily and securely. Very useful, for example, to share privacy-sensitive documents or content or to send attachments that are normally too large to email. All files are uploaded to your personal Nextcloud environment from which you determine who has access to them.",
@@ -2253,7 +2310,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.",
+        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nIf you like this app, leave a review on https://apps.nextcloud.com/apps/side_menu\n\nYou like this app and you want to support me?\n\n*  [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n*  [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2262,9 +2319,9 @@
         "name": "Side menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0i212k5mxc7banwyjxzmq74ahn90wbjg07jkjwkwyybgqgvi62lg",
-      "url": "https://gitnet.fr/attachments/aa2c4422-e8dc-468b-9e41-94e515dadb43",
-      "version": "1.12.2"
+      "sha256": "1cfrxm38m784kcrw31345bkiqkyqvfbnfg3a83rfm3jmcf7l8jly",
+      "url": "https://gitnet.fr/attachments/bce7ae4b-2778-421f-b856-d502a9757928",
+      "version": "1.13.0"
     },
     "smb_test": {
       "meta": {
@@ -2307,9 +2364,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0b6g9sf744cmyvkws9cd17hpqvqlk0jm59hj1mhdcfjxanqjp5r5",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.2.8/release.tar.gz",
-      "version": "3.2.8"
+      "sha256": "089n8q6jgzj7gxrlcxdhqli07phczdl0my0v590fa14ql7dkyjyj",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.3.0/release.tar.gz",
+      "version": "3.3.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2397,9 +2454,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0mg6dnrmijdjs9b1j0pny09pda5088fr96vbfv42xp8rf7qjsqbx",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.3/spreed-9.0.3.tar.gz",
-      "version": "9.0.3"
+      "sha256": "0s8wsrimd70k4ln7pf72qqkmxf6wh67wf7x9vwg3bdncm7h2xbsh",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.4/spreed-9.0.4.tar.gz",
+      "version": "9.0.4"
     },
     "support": {
       "meta": {
@@ -2712,6 +2769,20 @@
         "name": "Update notification",
         "summary": "Displays update notifications for Nextcloud and provides the SSO for the updater."
       }
+    },
+    "user_backend_sql_raw": {
+      "meta": {
+        "description": "This app allows you to do user management against a SQL database using arbitrary SQL queries, enabling you to use any SQL db schema.\n\nYou can authenticate, create, delete users, change their password or display name, basically do (almost) everything that Nextcloud can do with users.\n\nIn contrast to the app *SQL user backend*, you write the SQL queries yourself. You are not limited by assumptions that app authors made about how your db is structured.\n\nThe app uses prepared statements and is written to be secure by default to prevent SQL injections. It understands the most popular standards for password hash formats: MD5-CRYPT, SHA256-CRYPT, SHA512-CRYPT, BCrypt and the state-of-the-art Argon2i and Argon2id. Because the various formats are recognized on-the-fly your db can can have differing hash string formats at the same time, which eases migration to newer formats.\n\nThis app supports PostgreSQL and MariaDB/MySQL.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User Backend Using Raw SQL",
+        "summary": "User management and authentication through arbitrary SQL queries"
+      },
+      "sha256": "104rr45cdaz8xdnwyl0kblcdy5y69d6697iw0gksbhrdvwsayjzv",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.11/user_backend_sql_raw.tar.gz",
+      "version": "1.0.11"
     },
     "user_cas": {
       "meta": {
