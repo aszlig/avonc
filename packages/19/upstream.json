@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1i82nm547rzy7gzkikvakp5608zfwk2fk02szryacr2np225jh63",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/0483b85c494b940a2ef583666fa00e082f53aa97/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.3"
+      "sha256": "072n0ml259a3gc4i3gcq7gjam51bwi165wns5cic1a2mz8k73sx0",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/dc6eb20d66f2bb885ce8e3fb3dd5a09d4b23780f/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.4"
     },
     "apporder": {
       "meta": {
@@ -1776,6 +1776,21 @@
       "url": "https://github.com/otetard/ownpad/releases/download/v0.6.15/ownpad.tar.gz",
       "version": "0.6.15"
     },
+    "passman": {
+      "meta": {
+        "description": "Passman is a full featured password manager.\nFeatures:\n- Vaults\n- Vault key is never sent to the server\n- Browser extension for easy access to passwords\n- Android app for on the road access\n- Credentials are client side encrypted with 256bit AES\n- Credentials are server side encrypted with 256bit AES\n- Ability to add custom fields to credentials\n- Built-in OTP (One Time Password) generator\n- Password analyzer\n- Share passwords internally and via link in a secure manner.\n- Import from various password managers (KeePass, LastPass, DashLane, ZOHO, Clipperz.is )\nFor an demo of this app visit [https://demo.passman.cc](https://demo.passman.cc)",
+        "homepage": "https://demo.passman.cc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Passman",
+        "summary": "Passman is a full featured password manager."
+      },
+      "sha256": "04rpcra9h4lqhv1pakgjxr8y70pmqyvjcnppih5n5r1xkqlpsfbk",
+      "url": "https://releases.passman.cc/passman_2.3.6.tar.gz",
+      "version": "2.3.6"
+    },
     "password_policy": {
       "meta": {
         "alwaysEnable": false,
@@ -1947,7 +1962,7 @@
     },
     "qownnotesapi": {
       "meta": {
-        "description": "QOwnNotesAPI is the ownCloud/Nextcloud API for [QOwnNotes](http://www.qownnotes.org), the open source (GPL) notepad for Linux, Mac OS X and Windows, that works together with the notes application of ownCloud / Nextcloud.\n\nThe only purpose of this App is to provide API access to your ownCloud/Nextcloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
+        "description": "QOwnNotesAPI is the Nextcloud/ownCloud API for [QOwnNotes](http://www.qownnotes.org), the open source (GPL) notepad for Linux, Mac OS X and Windows, that works together with the notes application of Nextcloud/ownCloud.\n\nThe only purpose of this App is to provide API access to your Nextcloud/ownCloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
         "homepage": "https://github.com/pbek/qownnotesapi",
         "isShipped": false,
         "licenses": [
@@ -1956,9 +1971,9 @@
         "name": "QOwnNotesAPI",
         "summary": "API for QOwnNotes, the open source (GPL) notepad for Linux, Mac OS X and Windows"
       },
-      "sha256": "0n1gxzaw7rnmpz8kx4sz2lcwd6asr7yzn3ch3af8s67mry24yiak",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/20.1.0/qownnotesapi-nc.tar.gz",
-      "version": "20.1.0"
+      "sha256": "19bc45mb9aq0izbljljl0x4pkizxz019wjkw0s8j2f6jwlqz404b",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/20.9.0/qownnotesapi-nc.tar.gz",
+      "version": "20.9.0"
     },
     "quest": {
       "meta": {
