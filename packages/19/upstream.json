@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "072n0ml259a3gc4i3gcq7gjam51bwi165wns5cic1a2mz8k73sx0",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/dc6eb20d66f2bb885ce8e3fb3dd5a09d4b23780f/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.4"
+      "sha256": "1q9scscwwsv6dq7ydldpx96hk5fbzmkbmk1kkr1d4wxh5lj6m5la",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/eb2cbbd299bcfb2540e89f500db628ebabc688e8/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.6"
     },
     "apporder": {
       "meta": {
@@ -589,9 +589,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1wvgwsvncqh1kqvq8gs3gsn8cb3j2yrwis8z6ywv0nwlg4ly37sx",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.17/emlviewer-0.0.17.tar.gz",
-      "version": "0.0.17"
+      "sha256": "1r5i69d4sw7mswsks7xbsrs9ma7zi95cxkb17skgcndmgmxnf69v",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.18/emlviewer-0.0.18.tar.gz",
+      "version": "0.0.18"
     },
     "encryption": {
       "meta": {
@@ -923,9 +923,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "1b7kd6sh71jdvwvln94j8pc6gryvzz09b2g9aj17f6yhq6mhz0pw",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.0/files_markdown.tar.gz",
-      "version": "2.3.0"
+      "sha256": "0didrpznycfkgapnn2hhxfdy22nj0waw371s5dyymjphqy9vzdji",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.1/files_markdown.tar.gz",
+      "version": "2.3.1"
     },
     "files_mindmap": {
       "meta": {
@@ -1266,9 +1266,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "0h8z25ak9q485i9qggzqg5xx7xc1zvsb791gi6144mf4pmgy8y7f",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.5/group_everyone.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1yjjsgyp1q1jjb3sxjwicrp8gkv19abhm4fg4v18ka1rn1x8b0bx",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.6/group_everyone.tar.gz",
+      "version": "0.1.6"
     },
     "groupfolders": {
       "meta": {
@@ -1296,9 +1296,9 @@
         "name": "Group quota",
         "summary": "Give filesystem quotas to groups"
       },
-      "sha256": "1r5jmk024ymmsldqrg5gvpfh8i8bmaqbjfj429qagns256d73pwg",
-      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.3/groupquota.tar.gz",
-      "version": "0.1.2"
+      "sha256": "1v2gv7fs9a77fh48pmdwp4gsjbv3h2y01f90qjsl3mdbwwv62s2f",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.4/groupquota.tar.gz",
+      "version": "0.1.4"
     },
     "guests": {
       "meta": {
@@ -2325,18 +2325,18 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Side menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nIf you like this app, leave a review on https://apps.nextcloud.com/apps/side_menu\n\nYou like this app and you want to support me?\n\n*  [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n*  [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
+        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nIf you like this application and want to support the development:\n\n*  [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n*  [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Side menu",
+        "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1cfrxm38m784kcrw31345bkiqkyqvfbnfg3a83rfm3jmcf7l8jly",
-      "url": "https://gitnet.fr/attachments/bce7ae4b-2778-421f-b856-d502a9757928",
-      "version": "1.13.0"
+      "sha256": "1bg7ibkw1hq473j2kpgf4b236279dqli15iy3jr8cy34ja6g17hb",
+      "url": "https://gitnet.fr/attachments/08da6143-3585-496e-a28b-5a36f0ac4fd3",
+      "version": "1.16.0"
     },
     "smb_test": {
       "meta": {
@@ -2349,9 +2349,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "1nhnqrid1dvpkdlrblqczwskxm8vg2xizyf320z2v9i5rfmxw0pf",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.2.5/smb_test.tar.gz",
-      "version": "0.2.5"
+      "sha256": "0jczf6wvw7dq86mp23fswc7y8z8f7xd36s47iv275ym2v1pjxj8r",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/0.2.6/smb_test.tar.gz",
+      "version": "0.2.6"
     },
     "social": {
       "meta": {

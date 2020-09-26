@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "072n0ml259a3gc4i3gcq7gjam51bwi165wns5cic1a2mz8k73sx0",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/dc6eb20d66f2bb885ce8e3fb3dd5a09d4b23780f/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.4"
+      "sha256": "1q9scscwwsv6dq7ydldpx96hk5fbzmkbmk1kkr1d4wxh5lj6m5la",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/eb2cbbd299bcfb2540e89f500db628ebabc688e8/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.6"
     },
     "apporder": {
       "meta": {
@@ -576,9 +576,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1wvgwsvncqh1kqvq8gs3gsn8cb3j2yrwis8z6ywv0nwlg4ly37sx",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.17/emlviewer-0.0.17.tar.gz",
-      "version": "0.0.17"
+      "sha256": "1r5i69d4sw7mswsks7xbsrs9ma7zi95cxkb17skgcndmgmxnf69v",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.18/emlviewer-0.0.18.tar.gz",
+      "version": "0.0.18"
     },
     "encryption": {
       "meta": {
