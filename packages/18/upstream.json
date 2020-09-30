@@ -189,7 +189,7 @@
     },
     "bbb": {
       "meta": {
-        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
+        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n* **Activities** Get an overview of your room activities\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
         "homepage": "https://github.com/sualko/cloud_bbb/",
         "isShipped": false,
         "licenses": [
@@ -198,13 +198,13 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "10v4ayfs8hbn19b054702ny0d42rx51sf00wrxmi9vhs3di1q6a5",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.0.2/bbb-v1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0bqgbq3y58aa4hqg2nilazqyazvgkyqxln4b999agmglhp0fxszc",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.0/bbb-v1.1.0.tar.gz",
+      "version": "1.1.0"
     },
     "bookmarks": {
       "meta": {
-        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.2+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v17+",
+        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.2+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v18+",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0imv67k5a2xb8izlfz0jjdkj7z44prhdll69nmafpzr7izc0qic9",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.3.4/bookmarks-3.3.4.tar.gz",
-      "version": "3.3.4"
+      "sha256": "1j0y2gd97q9lyka17hams748sp8m9g68mzxqmcl0mx29qz6d9mpf",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.0/bookmarks-3.4.0.tar.gz",
+      "version": "3.4.0"
     },
     "breezedark": {
       "meta": {
@@ -1475,9 +1475,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "0v01hyv5cjd3g3l07vais42lkh7ikg0mgmhly3b9jn6pi1aq6qgm",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.2/keeweb-0.6.2.tar.gz",
-      "version": "0.6.2"
+      "sha256": "1ph89m2mxpgsq2mj7i06m9xf4wdw35icqnjffdkfsiv21qnzg9nf",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.3/keeweb-0.6.3.tar.gz",
+      "version": "0.6.3"
     },
     "ldap_write_support": {
       "meta": {
@@ -1763,9 +1763,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1iccj2xm555w3w7axblf1wci0ngbcyfmcg3ayaldb6rdpxc3bpzw",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.55/ocr.tar.gz",
-      "version": "6.0.55"
+      "sha256": "0z7hd7rd9pkn1ghak1jvgx39i9ivnwrkc4sbrrp8wfx6gcwa73bv",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.56/ocr.tar.gz",
+      "version": "6.0.56"
     },
     "ocsms": {
       "meta": {
@@ -2269,9 +2269,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "17kvxzwbqfvk01k0y6qayb9bvhpdy2rxmpblzx78a7lpyjc476x8",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.10/riotchat.tar.gz",
-      "version": "0.6.10"
+      "sha256": "1kfp8bk1i53ljm1pm76gn44wf8fyznxf5xxqa6jzcddy9ay42hj1",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.11/riotchat.tar.gz",
+      "version": "0.6.11"
     },
     "scanner": {
       "meta": {
@@ -2313,9 +2313,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1ki6k26a04pfcyn5d0zvy4chw476456h5fpvi7k0q6alfrkbbfrb",
-      "url": "https://download.sendent.nl/serverapp/1.0.13/sendent.tar.gz",
-      "version": "1.0.13"
+      "sha256": "1926s79v3x7r8gmkcnw293r3djjclxndp3r33d4df3xmz0klma7q",
+      "url": "https://download.sendent.nl/serverapp/1.0.15/sendent.tar.gz",
+      "version": "1.0.15"
     },
     "sensorlogger": {
       "meta": {

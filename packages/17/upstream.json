@@ -1458,9 +1458,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "0v01hyv5cjd3g3l07vais42lkh7ikg0mgmhly3b9jn6pi1aq6qgm",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.2/keeweb-0.6.2.tar.gz",
-      "version": "0.6.2"
+      "sha256": "1ph89m2mxpgsq2mj7i06m9xf4wdw35icqnjffdkfsiv21qnzg9nf",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.3/keeweb-0.6.3.tar.gz",
+      "version": "0.6.3"
     },
     "ldap_write_support": {
       "meta": {
@@ -1761,9 +1761,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1iccj2xm555w3w7axblf1wci0ngbcyfmcg3ayaldb6rdpxc3bpzw",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.55/ocr.tar.gz",
-      "version": "6.0.55"
+      "sha256": "0z7hd7rd9pkn1ghak1jvgx39i9ivnwrkc4sbrrp8wfx6gcwa73bv",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.56/ocr.tar.gz",
+      "version": "6.0.56"
     },
     "ocsms": {
       "meta": {
@@ -2255,9 +2255,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "17kvxzwbqfvk01k0y6qayb9bvhpdy2rxmpblzx78a7lpyjc476x8",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.10/riotchat.tar.gz",
-      "version": "0.6.10"
+      "sha256": "1kfp8bk1i53ljm1pm76gn44wf8fyznxf5xxqa6jzcddy9ay42hj1",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.11/riotchat.tar.gz",
+      "version": "0.6.11"
     },
     "scanner": {
       "meta": {
@@ -2299,9 +2299,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1ki6k26a04pfcyn5d0zvy4chw476456h5fpvi7k0q6alfrkbbfrb",
-      "url": "https://download.sendent.nl/serverapp/1.0.13/sendent.tar.gz",
-      "version": "1.0.13"
+      "sha256": "1926s79v3x7r8gmkcnw293r3djjclxndp3r33d4df3xmz0klma7q",
+      "url": "https://download.sendent.nl/serverapp/1.0.15/sendent.tar.gz",
+      "version": "1.0.15"
     },
     "sensorlogger": {
       "meta": {
