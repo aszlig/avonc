@@ -56,8 +56,8 @@
     },
     "analytics": {
       "meta": {
-        "description": "From data to report. This on premise data warehouse solution provides modular datasources, a realtime or storage backend and flexibile visualization.\n\n## Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party*: GitHub Statistics, website grabber, JSON\n- Storage: stream or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files app, Activity, Notifications, Flow\n- Sharing: user*, protected, public\n\n(*work in progress)",
-        "homepage": "https://github.com/rello/analytics",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
+        "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0764ydvn3na30n6kcprs0pzh8b22kz8cck72fh6kcii7gjzpc0pg",
-      "url": "https://github.com/Rello/analytics/releases/download/2.4.1/analytics-2.4.1.tar.gz",
-      "version": "2.4.1"
+      "sha256": "06habskr3znyhxwnn22hhi98zz793kcx9hy1597gyklbzcwv8q12",
+      "url": "https://github.com/Rello/analytics/releases/download/2.5.0/analytics-2.5.0.tar.gz",
+      "version": "2.5.0"
     },
     "announcementcenter": {
       "meta": {
@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1j0y2gd97q9lyka17hams748sp8m9g68mzxqmcl0mx29qz6d9mpf",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.0/bookmarks-3.4.0.tar.gz",
-      "version": "3.4.0"
+      "sha256": "0hzjj28d1jhzhz25fndqi2dgmb9ywnisrh2n9y1id85i0ldc35qj",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.1/bookmarks-3.4.1.tar.gz",
+      "version": "3.4.1"
     },
     "breezedark": {
       "meta": {
@@ -387,9 +387,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "0nmh34yw63w4nni0xqjrab7gsnnknv48gzb477ix5d4cgqscy05a",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.3.0/contacts.tar.gz",
-      "version": "3.3.0"
+      "sha256": "1z9hg0wf16cr7f55cga27k8lb09g9cbmnaa436flzh6z6svi64fa",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.0/contacts.tar.gz",
+      "version": "3.4.0"
     },
     "contactsinteraction": {
       "meta": {
@@ -2553,9 +2553,9 @@
         "name": "Simple poll for Nextcloud Talk",
         "summary": "A simple chat based poll for Nextcloud Talk"
       },
-      "sha256": "1jl9a3vlj7wp7h8fyh1q7qxgb37zv74radyxvv7hc5qzy2423cpv",
-      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.1.1/talk_simple_poll-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1v700dqlhcr9ad1f22xc197icpnsr2j9xfyd8i47m84zbdxxgrfr",
+      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.2.0/talk_simple_poll-1.2.0.tar.gz",
+      "version": "1.2.0"
     },
     "tasks": {
       "meta": {
