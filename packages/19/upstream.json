@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1q9scscwwsv6dq7ydldpx96hk5fbzmkbmk1kkr1d4wxh5lj6m5la",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/eb2cbbd299bcfb2540e89f500db628ebabc688e8/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.6"
+      "sha256": "1zq1rza6jzlgjm5kbjxkf1lsnmnw5r9byv86sma19yawa3h2v847",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/103abed6ef3c082376bd3455b9082e4c86b99ac1/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.7"
     },
     "apporder": {
       "meta": {
@@ -500,9 +500,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0kb5aqnmy9h006cr54h3j5vf2bfkvm7vvixa7b6hr6nmqmbvki9h",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.0.5/deck.tar.gz",
-      "version": "1.0.5"
+      "sha256": "19dwkg94lhbl7xnc8viwkk7pw8fjlldp4273ywryx91h2d1hazh9",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.0/deck.tar.gz",
+      "version": "1.1.0"
     },
     "diffuse": {
       "meta": {
@@ -1714,9 +1714,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1iwsyv21lgp0sbpgddwrly76rpnz9r2k10g603gqvpbmkr410hdd",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.5.1/oidc_login.tar.gz",
-      "version": "1.5.1"
+      "sha256": "16v53zmzvblg12y24lm6yyfq83494bwxvqgkjzivxrg75hwzpmc4",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.6.0/oidc_login.tar.gz",
+      "version": "1.6.0"
     },
     "ojsxc": {
       "meta": {
@@ -1744,9 +1744,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "0d7wnjg8k2xpv7jd73s7z6vh964lklnq201bick6yysy48ggw3fk",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.0.0/onlyoffice.tar.gz",
-      "version": "6.0.0"
+      "sha256": "09ssq27p583l60zimv8g98s9cgzbp7f01cqv8v6j7zcfnzsgkz3l",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.0.2/onlyoffice.tar.gz",
+      "version": "6.0.2"
     },
     "openhab": {
       "meta": {
@@ -1821,7 +1821,7 @@
     },
     "passwords": {
       "meta": {
-        "description": "Passwords is the most advanced password manager for Nextcloud and allows you to manage and store your passwords safely in your own cloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions\n * ... and many more to come\n\n**Support**\n * [Official Chat](https://t.me/nc_passwords)\n * [Official Forum](https://help.nextcloud.com/c/apps/passwords)\n * [User Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Users/Index)\n * [Administrator Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Administrators/Index)\n\n**Apps &amp; Extensions**\n * [Firefox Extension](https://addons.mozilla.org/de/firefox/addon/nextcloud-passwords?src=external-ncapps)\n * [Chrome Extension](https://chrome.google.com/webstore/detail/nextcloud-passwords/mhajlicjhgoofheldnmollgbgjheenbi)\n * [Android App](https://play.google.com/store/apps/details?id=com.nextcloudpasswords) by [daper](https://github.com/daper/nextcloud-passwords-app)",
+        "description": "Passwords is the most advanced password manager for Nextcloud and allows you to manage and store your passwords safely in your own cloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions\n * ... and many more to come\n\n**Support**\n * [Official Chat](https://t.me/nc_passwords)\n * [Official Forum](https://help.nextcloud.com/c/apps/passwords)\n * [User Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Users/Index)\n * [Administrator Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Administrators/Index)\n\n**Apps &amp; Extensions**\n * [Firefox Extension](https://addons.mozilla.org/de/firefox/addon/nextcloud-passwords?src=external-ncapps)\n * [Chrome Extension](https://chrome.google.com/webstore/detail/nextcloud-passwords/mhajlicjhgoofheldnmollgbgjheenbi)\n * [Android App](https://play.google.com/store/apps/details?id=com.nextcloudpasswords) by [daper](https://github.com/daper/nextcloud-passwords-app)\n * [Android App](https://play.google.com/store/apps/details?id=de.jbservices.nc_passwords_app) by [joleaf](https://gitlab.com/joleaf/nc-passwords-app)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1829,9 +1829,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0ibfknnbkr1lzcqb0354a6c1kqs272yfsbx128j8vdmqd0wvhhp3",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10381/artifacts/raw/passwords.tar.gz",
-      "version": "2020.9.0"
+      "sha256": "130558gg48r1s4iykwd8gbcrdcxmyybm8c840znia42jkq7jgllm",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10449/artifacts/raw/passwords.tar.gz",
+      "version": "2020.10.0"
     },
     "phonetrack": {
       "meta": {
@@ -1919,6 +1919,20 @@
       "sha256": "1p1ff0kh06xvjg9yd8ifs9a42sp37agdhhcp2xnlv10g430ri1v7",
       "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.3.0/previewgenerator.tar.gz",
       "version": "2.3.0"
+    },
+    "pride": {
+      "meta": {
+        "description": "Diversity and inclusion are what makes the world worth living in! Let&amp;#39;s show some pride!",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Pride",
+        "summary": "Show your pride to the world"
+      },
+      "sha256": "0gxrxkmgcb0kwnqj1j1rqh59ls39kjbijm4rr9bz8hhjifgyl567",
+      "url": "https://github.com/skjnldsv/pride/releases/download/0.0.4/pride.tar.gz",
+      "version": "0.0.4"
     },
     "printer": {
       "meta": {
