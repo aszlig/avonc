@@ -33,11 +33,16 @@ let
 in {
   config = lib.mkIf (config.nextcloud.enable && cfg.enable) {
     nextcloud.extraPostPatch = ''
+      pageControllerFile=apps/gpxpod/controller/pagecontroller.php
+      if [ ! -e "$pageControllerFile" ]; then
+        pageControllerFile=apps/gpxpod/lib/Controller/PageController.php
+      fi
+
       sed -i \
         -e 's!\<bash\>!${pkgs.stdenv.shell}!' \
         -e 's!getProgramPath('\'''gpxelevations'\''')!${
           "'\\''${srtm}/bin/gpxelevations'\\''"
-        }!' apps/gpxpod/controller/pagecontroller.php
+        }!' "$pageControllerFile"
     '';
   };
 }

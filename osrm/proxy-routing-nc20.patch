@@ -1,0 +1,480 @@
+diff --git a/appinfo/application.php b/appinfo/application.php
+index bd51f73..9ac3ce8 100644
+--- a/appinfo/application.php
++++ b/appinfo/application.php
+@@ -15,6 +15,7 @@ namespace OCA\Maps\AppInfo;
+ use OCA\Maps\DB\FavoriteShareMapper;
+ use \OCP\AppFramework\App;
+ use \OCP\IServerContainer;
++use OCA\Maps\Controller\RoutingProxyController;
+ use OCA\Maps\Hooks\FileHooks;
+ use OCA\Maps\Service\PhotofilesService;
+ use OCA\Maps\Service\TracksService;
+@@ -40,6 +41,18 @@ class Application extends App {
+ 
+         $this->getContainer()->query('FileHooks')->register();
+ 
++        $container->registerService(
++            'RoutingProxyController', function ($c) {
++                return new RoutingProxyController(
++                    $c->query('AppName'),
++                    $c->query('Request'),
++                    $c->query('ServerContainer')->getLogger(),
++                    $c->query('ServerContainer')->getConfig(),
++                    $c->getServer()->getHTTPClientService()
++                );
++            }
++        );
++
+         $this->registerFeaturePolicy();
+     }
+ 
+diff --git a/appinfo/routes.php b/appinfo/routes.php
+index 8249eef..d73f439 100644
+--- a/appinfo/routes.php
++++ b/appinfo/routes.php
+@@ -33,6 +33,11 @@ return [
+         ['name' => 'contacts#deleteContactAddress', 'url' => '/contacts/{bookid}/{uri}', 'verb' => 'DELETE'],
+         ['name' => 'contacts#getContactLetterAvatar', 'url' => '/contacts-avatar', 'verb' => 'GET'],
+ 
++        // routing API proxies
++        ['name' => 'routing_proxy#requestOsrmRoute', 'url' => '/api/requestRoute/osrm/{profile}/{path<.*>}', 'verb' => 'GET'],
++        ['name' => 'routing_proxy#requestGraphHopperRoute', 'url' => '/api/requestRoute/graphhopper/{path<.*>}', 'verb' => 'GET'],
++        ['name' => 'routing_proxy#requestMapboxRoute', 'url' => '/api/requestRoute/mapbox/{path<.*>}', 'verb' => 'GET'],
++
+         // routing
+         ['name' => 'routing#exportRoute', 'url' => '/exportRoute', 'verb' => 'POST'],
+ 
+diff --git a/lib/Controller/PageController.php b/lib/Controller/PageController.php
+index 74aa5fd..6e11d45 100644
+--- a/lib/Controller/PageController.php
++++ b/lib/Controller/PageController.php
+@@ -106,33 +106,6 @@ class PageController extends Controller {
+             $csp->addAllowedImageDomain('https://*.ssl.fastly.net');
+             $csp->addAllowedImageDomain('https://*.openstreetmap.se');
+ 
+-            // default routing engine
+-            $csp->addAllowedConnectDomain('https://*.project-osrm.org');
+-            $csp->addAllowedConnectDomain('https://api.mapbox.com');
+-            $csp->addAllowedConnectDomain('https://events.mapbox.com');
+-            $csp->addAllowedConnectDomain('https://graphhopper.com');
+-
+-            $csp->addAllowedChildSrcDomain("blob:");
+-            // allow connections to custom routing engines
+-            $urlKeys = [
+-                'osrmBikeURL',
+-                'osrmCarURL',
+-                'osrmFootURL',
+-                'graphhopperURL'
+-            ];
+-            foreach ($urlKeys as $key) {
+-                $url = $this->config->getAppValue('maps', $key);
+-                if ($url !== '') {
+-                    $scheme = parse_url($url, PHP_URL_SCHEME);
+-                    $host = parse_url($url, PHP_URL_HOST);
+-                    $port = parse_url($url, PHP_URL_PORT);
+-                    $cleanUrl = $scheme . '://' . $host;
+-                    if ($port && $port !== '') {
+-                        $cleanUrl .= ':' . $port;
+-                    }
+-                    $csp->addAllowedConnectDomain($cleanUrl);
+-                }
+-            }
+             //$csp->addAllowedConnectDomain('http://192.168.0.66:5000');
+ 
+             // poi images
+diff --git a/lib/Controller/RoutingProxyController.php b/lib/Controller/RoutingProxyController.php
+new file mode 100644
+index 0000000..7a69155
+--- /dev/null
++++ b/lib/Controller/RoutingProxyController.php
+@@ -0,0 +1,157 @@
++<?php declare(strict_types=1);
++/**
++ * Nextcloud - Maps
++ *
++ * This file is licensed under the Affero General Public License version 3 or
++ * later. See the COPYING file.
++ *
++ * @author aszlig <aszlig@nix.build>
++ * @copyright aszlig 2019
++ */
++
++namespace OCA\Maps\Controller;
++
++use OCP\IConfig;
++use OCP\ILogger;
++use OCP\IRequest;
++use OCP\AppFramework\Controller;
++use OCP\AppFramework\Http;
++use OCP\AppFramework\Http\JSONResponse;
++use OCP\AppFramework\Http\Response;
++use OCP\Http\Client\IClientService;
++
++class RoutingProxyController extends Controller {
++    const USER_AGENT = 'Nextcloud Maps (https://github.com/nextcloud/maps)';
++
++    private $logger;
++    private $config;
++    private $client;
++
++    public function __construct(string $appname, IRequest $request,
++                                ILogger $logger, IConfig $config,
++                                IClientService $client) {
++        parent::__construct($appname, $request);
++        $this->logger = $logger;
++        $this->config = $config;
++        $this->client = $client;
++    }
++
++    /**
++     * Build a query string from the current request combined with $extraQuery
++     * and return it in a way that can be directly appended to an URL (eg. with
++     * a leading '?').
++     */
++    private function buildQueryStringArg(array $extraQuery = []): string {
++        // Unfortunately, we can't use $this->request->getParams() here,
++        // because some services like GraphHopper use the same query string
++        // arguments twice, like eg.: point=12.34,56.78&point=43.21,87.65
++        $queryComponents = explode('&', $_SERVER['QUERY_STRING'] ?? '');
++
++        if (count($queryComponents) == 0) {
++            return '';
++        }
++
++        $query = [];
++        foreach ($queryComponents as $comp) {
++            $keyval = explode('=', $comp, 2);
++            $key = rawurldecode($keyval[0]);
++            $val = rawurldecode($keyval[1] ?? '');
++            $query[$key][] = $val;
++        }
++
++        // XXX: PHP's array() "function" is *not* a ZEND_FUNCTION, so we can't
++        //      simply do array_map('array', ...).
++        $toSingleton = function ($a) { return [$a]; };
++
++        $query = array_merge($query, array_map($toSingleton, $extraQuery));
++
++        $result = [];
++        foreach ($query as $key => $values) {
++            foreach ($values as $value) {
++                $keyEnc = rawurlencode($key);
++                if ($value === null) {
++                    $result[] = $keyEnc;
++                } else {
++                    $result[] = $keyEnc . '=' . rawurlencode($value);
++                }
++            }
++        }
++        return '?' . implode('&', $result);
++    }
++
++    /**
++     * Send a request to the service at $baseUrl with path $path and the
++     * current request query string params and return the response from the
++     * remote server.
++     */
++    private function proxyResponse(string $baseUrl, string $path,
++                                   array $extraQuery = []): Response {
++        if ($baseUrl === '') {
++            $response = new Response();
++            $response->setStatus(Http::STATUS_NOT_ACCEPTABLE);
++            return $response;
++        }
++        $url = $baseUrl . '/' . ltrim($path, '/');
++        $url .= $this->buildQueryStringArg($extraQuery);
++        $client = $this->client->newClient();
++        $response = $client->get($url, [
++            'http_errors' => false,
++            'headers' => ['User-Agent' => self::USER_AGENT]
++        ]);
++        return new JSONResponse(json_decode($response->getBody(), true),
++                                $response->getStatusCode());
++    }
++
++    /**
++     * Proxy routing request to either a configured OSRM instance or the demo
++     * instance.
++     *
++     * @NoAdminRequired
++     * @NoCSRFRequired
++     */
++    public function requestOsrmRoute(string $profile, string $path): Response {
++        if ($profile === 'demo') {
++            $url = 'https://router.project-osrm.org/route/v1';
++        } elseif ($profile === 'car') {
++            $url = $this->config->getAppValue('maps', 'osrmCarURL');
++        } elseif ($profile === 'bicycle') {
++            $url = $this->config->getAppValue('maps', 'osrmBikeURL');
++        } elseif ($profile === 'foot') {
++            $url = $this->config->getAppValue('maps', 'osrmFootURL');
++        } else {
++            $this->logger->error(
++                'Unknown profile '.$profile.' selected for OSRM.'
++            );
++            $response = new Response();
++            $response->setStatus(Http::STATUS_BAD_REQUEST);
++            return $response;
++        }
++        return $this->proxyResponse($url, $path);
++    }
++
++    /**
++     * Proxy routing request to GraphHopper, injecting the API key.
++     *
++     * @NoAdminRequired
++     * @NoCSRFRequired
++     */
++    public function requestGraphHopperRoute(string $path): Response {
++        $url = $this->config->getAppValue(
++            'maps', 'graphhopperURL', 'https://graphhopper.com/api/1/route'
++        );
++        $apiKey = $this->config->getAppValue('maps', 'graphhopperAPIKEY');
++        return $this->proxyResponse($url, $path, ['key' => $apiKey]);
++    }
++
++    /**
++     * Proxy routing request to Mapbox, injecting the API key.
++     *
++     * @NoAdminRequired
++     * @NoCSRFRequired
++     */
++    public function requestMapboxRoute(string $path): Response {
++        $url = 'https://api.mapbox.com/directions/v5';
++        $apiKey = $this->config->getAppValue('maps', 'mapboxAPIKEY');
++        return $this->proxyResponse($url, $path, ['access_token' => $apiKey]);
++    }
++}
+diff --git a/lib/Controller/UtilsController.php b/lib/Controller/UtilsController.php
+index 2471f6b..a654abe 100644
+--- a/lib/Controller/UtilsController.php
++++ b/lib/Controller/UtilsController.php
+@@ -80,21 +80,33 @@ class UtilsController extends Controller {
+             $ov[$key] = $value;
+         }
+ 
+-        // get routing-specific admin settings values
+-        $settingsKeys = [
+-            'osrmCarURL',
+-            'osrmBikeURL',
+-            'osrmFootURL',
+-            'osrmDEMO',
+-            'graphhopperAPIKEY',
+-            'mapboxAPIKEY',
+-            'graphhopperURL'
++        // The values here are the list of settings that need to be defined.
++        // "OR" logic applies here, so if one of the settings is defined, it's
++        // considered a match.
++        $routingProviderChecks = [
++            'osrmCar' => ['osrmCarURL'],
++            'osrmBike' => ['osrmBikeURL'],
++            'osrmFoot' => ['osrmFootURL'],
++            'osrmDEMO' => ['osrmDEMO'],
++            'graphhopper' => ['graphhopperURL', 'graphhopperAPIKEY'],
++            'mapbox' => ['mapboxAPIKEY'],
+         ];
+-        foreach ($settingsKeys as $k) {
+-            $v = $this->config->getAppValue('maps', $k);
+-            $ov[$k] = $v;
++
++        $routingProviders = [];
++        foreach ($routingProviderChecks as $provider => $checks) {
++            foreach ($checks as $option) {
++                if ($this->config->getAppValue('maps', $option) === '') {
++                    continue;
++                }
++                $routingProviders[$provider] = true;
++                break;
++            }
+         }
+-        return new DataResponse(['values'=>$ov]);
++
++        return new DataResponse([
++            'values' => $ov,
++            'routingProviders' => $routingProviders
++        ]);
+     }
+ 
+     /**
+diff --git a/src/script.js b/src/script.js
+index 48dc9c9..6bb80aa 100644
+--- a/src/script.js
++++ b/src/script.js
+@@ -121,6 +121,7 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+             var url = generateUrl('/apps/maps/getOptionsValues');
+             var req = {};
+             var optionsValues = {};
++            var availableRoutingProviders = {};
+             $.ajax({
+                 type: 'POST',
+                 url: url,
+@@ -128,6 +129,7 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+                 async: true
+             }).done(function (response) {
+                 optionsValues = response.values;
++                availableRoutingProviders = response.routingProviders;
+ 
+                 // check if install scan was done
+                 if (optionsValues.hasOwnProperty('installScanDone') && optionsValues.installScanDone === 'no') {
+@@ -331,20 +333,19 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+ 
+                 // routing
+                 that.nbRouters = 0;
+-                if (optionsValues.hasOwnProperty('osrmCarURL') && optionsValues.osrmCarURL !== '') {
++                if (availableRoutingProviders.hasOwnProperty('osrmCar') && availableRoutingProviders.osrmCar) {
+                     that.nbRouters++;
+                 }
+-                if (optionsValues.hasOwnProperty('osrmBikeURL') && optionsValues.osrmBikeURL !== '') {
++                if (availableRoutingProviders.hasOwnProperty('osrmBike') && availableRoutingProviders.osrmBike) {
+                     that.nbRouters++;
+                 }
+-                if (optionsValues.hasOwnProperty('osrmFootURL') && optionsValues.osrmFootURL !== '') {
++                if (availableRoutingProviders.hasOwnProperty('osrmFoot') && availableRoutingProviders.osrmFoot) {
+                     that.nbRouters++;
+                 }
+-                if (optionsValues.hasOwnProperty('mapboxAPIKEY') && optionsValues.mapboxAPIKEY !== '') {
++                if (availableRoutingProviders.hasOwnProperty('mapbox') && availableRoutingProviders.mapbox) {
+                     that.nbRouters++;
+                 }
+-                if ((optionsValues.hasOwnProperty('graphhopperURL') && optionsValues.graphhopperURL !== '') ||
+-                    (optionsValues.hasOwnProperty('graphhopperAPIKEY') && optionsValues.graphhopperAPIKEY !== '') ){
++                if (availableRoutingProviders.hasOwnProperty('graphhopper') && availableRoutingProviders.graphhopper) {
+                     that.nbRouters++;
+                 }
+                 if (that.nbRouters === 0 && !OC.isUserAdmin()) {
+@@ -360,7 +361,7 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+                     // and we don't init routingController
+                 }
+                 else {
+-                    routingController.initRoutingControl(mapController.map, optionsValues);
++                    routingController.initRoutingControl(mapController.map, optionsValues, availableRoutingProviders);
+                 }
+ 
+                 //if (optionsValues.hasOwnProperty('routingEnabled') && optionsValues.routingEnabled === 'true') {
+@@ -716,7 +717,7 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+         enabled: false,
+         routers: {},
+         selectedRouter: 'osrmDEMO',
+-        initRoutingControl: function(map, optionsValues) {
++        initRoutingControl: function(map, optionsValues, availableRoutingProviders) {
+             this.map = map;
+             var that = this;
+ 
+@@ -802,7 +803,7 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+             this.routers.osrmDEMO = {
+                 name: '🚗 ' + t('maps', 'By car (OSRM demo)'),
+                 router: L.Routing.osrmv1({
+-                    serviceUrl: 'https://router.project-osrm.org/route/v1',
++                    serviceUrl: OC.generateUrl('/apps/maps/api/requestRoute/osrm/demo'),
+                     //profile: 'driving', // works with demo server
+                     profile: 'car', // works with demo server
+                     //profile: 'bicycle', // does not work with demo server...
+@@ -857,38 +858,33 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+ 
+             // add routers from options values
+             var nbRoutersAdded = 0;
+-            if (optionsValues.hasOwnProperty('osrmCarURL') && optionsValues.osrmCarURL !== '') {
+-                this.addRouter('osrmCar', '🚗 ' + t('maps', 'By car (OSRM)'), optionsValues.osrmCarURL, null);
++            if (availableRoutingProviders.hasOwnProperty('osrmCar') && availableRoutingProviders.osrmCar) {
++                this.addRouter('osrmCar', '🚗 ' + t('maps', 'By car (OSRM)'));
+                 nbRoutersAdded++;
+             }
+-            if (optionsValues.hasOwnProperty('osrmBikeURL') && optionsValues.osrmBikeURL !== '') {
+-                this.addRouter('osrmBike', '🚲 ' + t('maps', 'By bike (OSRM)'), optionsValues.osrmBikeURL, null);
++            if (availableRoutingProviders.hasOwnProperty('osrmBike') && availableRoutingProviders.osrmBike) {
++                this.addRouter('osrmBike', '🚲 ' + t('maps', 'By bike (OSRM)'));
+                 nbRoutersAdded++;
+             }
+-            if (optionsValues.hasOwnProperty('osrmFootURL') && optionsValues.osrmFootURL !== '') {
+-                this.addRouter('osrmFoot', '🚶 ' + t('maps', 'By foot (OSRM)'), optionsValues.osrmFootURL, null);
++            if (availableRoutingProviders.hasOwnProperty('osrmFoot') && availableRoutingProviders.osrmFoot) {
++                this.addRouter('osrmFoot', '🚶 ' + t('maps', 'By foot (OSRM)'));
+                 nbRoutersAdded++;
+             }
+-            if (optionsValues.hasOwnProperty('mapboxAPIKEY') && optionsValues.mapboxAPIKEY !== '') {
+-                this.addRouter('mapbox/cycling', '🚲 ' + t('maps', 'By bike (Mapbox)'), null, optionsValues.mapboxAPIKEY);
+-                this.addRouter('mapbox/walking', '🚶 ' + t('maps', 'By foot (Mapbox)'), null, optionsValues.mapboxAPIKEY);
+-                this.addRouter('mapbox/driving-traffic', '🚗 ' + t('maps', 'By car with traffic (Mapbox)'), null, optionsValues.mapboxAPIKEY);
+-                this.addRouter('mapbox/driving', '🚗 ' + t('maps', 'By car without traffic (Mapbox)'), null, optionsValues.mapboxAPIKEY);
++            if (availableRoutingProviders.hasOwnProperty('mapbox') && availableRoutingProviders.mapbox) {
++                this.addRouter('mapbox/cycling', '🚲 ' + t('maps', 'By bike (Mapbox)'));
++                this.addRouter('mapbox/walking', '🚶 ' + t('maps', 'By foot (Mapbox)'));
++                this.addRouter('mapbox/driving-traffic', '🚗 ' + t('maps', 'By car with traffic (Mapbox)'));
++                this.addRouter('mapbox/driving', '🚗 ' + t('maps', 'By car without traffic (Mapbox)'));
+                 nbRoutersAdded++;
+             }
+-            if ((optionsValues.hasOwnProperty('graphhopperURL') && optionsValues.graphhopperURL !== '') ||
+-                (optionsValues.hasOwnProperty('graphhopperAPIKEY') && optionsValues.graphhopperAPIKEY !== '') ){
+-                var apikey = undefined;
+-                if (optionsValues.hasOwnProperty('graphhopperAPIKEY') && optionsValues.graphhopperAPIKEY !== '') {
+-                    apikey = optionsValues.graphhopperAPIKEY;
+-                }
+-                this.addRouter('graphhopperCar', '🚗 ' + t('maps', 'By car (GraphHopper)'), optionsValues.graphhopperURL, apikey);
+-                this.addRouter('graphhopperBike', '🚲 ' + t('maps', 'By bike (GraphHopper)'), optionsValues.graphhopperURL, apikey);
+-                this.addRouter('graphhopperFoot', '🚶 ' + t('maps', 'By Foot (GraphHopper)'), optionsValues.graphhopperURL, apikey);
++            if (availableRoutingProviders.hasOwnProperty('graphhopper') && availableRoutingProviders.graphhopper) {
++                this.addRouter('graphhopperCar', '🚗 ' + t('maps', 'By car (GraphHopper)'));
++                this.addRouter('graphhopperBike', '🚲 ' + t('maps', 'By bike (GraphHopper)'));
++                this.addRouter('graphhopperFoot', '🚶 ' + t('maps', 'By Foot (GraphHopper)'));
+                 nbRoutersAdded++;
+             }
+-            if (nbRoutersAdded === 0 && optionsValues.hasOwnProperty('osrmDEMO') && optionsValues.osrmDEMO === '1') {
+-                this.addRouter('osrmDEMO', '🚗 ' + 'By car (OSRM demo)', null, null);
++            if (nbRoutersAdded === 0 && availableRoutingProviders.hasOwnProperty('osrmDEMO') && availableRoutingProviders.osrmDEMO) {
++                this.addRouter('osrmDEMO', '🚗 ' + 'By car (OSRM demo)');
+             }
+             else {
+                 delete this.routers.osrmDEMO;
+@@ -975,9 +971,10 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+         },
+ 
+         // create router and make it accessible in the interface
+-        addRouter: function(type, name, url, apikey) {
++        addRouter: function(type, name) {
++            var options;
+             if (type === 'graphhopperBike' || type === 'graphhopperCar' || type === 'graphhopperFoot') {
+-                var options = {};
++                options = {};
+                 if (type === 'graphhopperCar') {
+                     options.urlParameters = {
+                         vehicle: 'car' // available ones : car, foot, bike, bike2, mtb, racingbike, motorcycle
+@@ -993,17 +990,15 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+                         vehicle: 'foot'
+                     };
+                 }
+-                if (url) {
+-                    options.serviceUrl = url;
+-                }
++                options.serviceUrl = OC.generateUrl('/apps/maps/api/requestRoute/graphhopper');
+                 this.routers[type] = {
+                     name: name,
+-                    router: L.Routing.graphHopper(apikey, options)
++                    router: L.Routing.graphHopper(null, options)
+                 };
+             }
+             else if (type === 'osrmBike' || type === 'osrmCar' || type === 'osrmFoot') {
+-                var options = {
+-                    serviceUrl: url,
++                options = {
++                    serviceUrl: OC.generateUrl('/apps/maps/api/requestRoute/osrm'),
+                     suppressDemoServerWarning: true,
+                     // this makes OSRM use our local translations
+                     // otherwise it uses osrm-text-instructions which requires to import another lib
+@@ -1025,12 +1020,14 @@ import { brify, getUrlParameter, formatAddress } from './utils';
+                 };
+             }
+             else if (type === 'mapbox/cycling' || type === 'mapbox/driving-traffic' || type === 'mapbox/driving' || type === 'mapbox/walking') {
+-                var options = {
++                options = {
++                    serviceUrl: OC.generateUrl('/apps/maps/api/requestRoute/mapbox'),
+                     profile: type
+                 };
+                 this.routers[type] = {
+                     name: name,
+-                    router: L.Routing.mapbox(apikey, options)
++                    // We pass null as the API key to reinject via backend.
++                    router: L.Routing.mapbox(null, options)
+                 };
+             }
+             else if (type === 'osrmDEMO') {

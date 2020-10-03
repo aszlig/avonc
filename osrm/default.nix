@@ -65,7 +65,10 @@ in {
 
   config = lib.mkIf (config.nextcloud.enable && cfg.enable) (lib.mkMerge [
     # XXX: Drop once https://github.com/nextcloud/maps/pull/167 is merged.
-    { nextcloud.extraPostPatch = ''
+    { nextcloud.extraPostPatch = if config.nextcloud.majorVersion > 19 then ''
+        patch -p1 -d apps/maps < ${./proxy-routing-nc20.patch}
+        patch -p1 -d apps/maps < ${./proxy-routing.dist-nc20.patch}
+      '' else ''
         patch -p1 -d apps/maps < ${./proxy-routing.patch}
         patch -p1 -d apps/maps < ${./proxy-routing.dist.patch}
       '';

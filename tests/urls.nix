@@ -5,6 +5,7 @@ import ./make-test.nix ({ pkgs, ... }: {
     nextcloud.domain = "localhost";
     nextcloud.apps.end_to_end_encryption.enable = true;
     nextcloud.apps.social.enable = true;
+    nextcloud.apps.social.forceEnable = true;
 
     services.nginx.enable = true;
     services.postgresql.enable = true;

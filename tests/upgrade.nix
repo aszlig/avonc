@@ -20,10 +20,10 @@ import ./make-test.nix (pkgs: {
     generation1 = { lib, options, config, pkgs, ... }: {
       imports = [ common ];
 
-      nextcloud.majorVersion = 18;
+      nextcloud.majorVersion = 19;
 
       nextcloud.apps = let
-        nc18apps = (lib.importJSON ../packages/18/upstream.json).applications;
+        nc19apps = (lib.importJSON ../packages/19/upstream.json).applications;
 
         excludedApps = [
           # We'll need dpendency ordering for this app
@@ -56,13 +56,23 @@ import ./make-test.nix (pkgs: {
           "emlviewer"
           # XXX: Conflicts with the "news" app - investigate this someday.
           "files_mindmap"
+          # XXX: Hash mismatch in upstream URL
+          "tencentcloudcosconfig"
 
           # XXX: Requires pdlib and thus module system integration for PHP
           #      extensions.
           "facerecognition"
 
+          # XXX: Requires GnuPG
+          "gpgmailer"
+
+          # We already have a LibreOffice Online build from source, so no need
+          # to test the binary releases:
+          "richdocumentscode"
+          "richdocumentscode_arm64"
+
           # https://github.com/nextcloud/officeonline/pull/6
-          (assert nc18apps.officeonline.version == "1.0.0"; "officeonline")
+          (assert nc19apps.officeonline.version == "1.0.0"; "officeonline")
 
           # These apps have non-deterministic download URLs
           "occweb"
@@ -80,7 +90,7 @@ import ./make-test.nix (pkgs: {
         in lib.const (lib.optionalAttrs (!isExcluded) {
           enable = true;
         });
-      in lib.mapAttrs enableApp nc18apps;
+      in lib.mapAttrs enableApp nc19apps;
     };
 
     generation2 = { lib, nodes, ... }: {
@@ -89,13 +99,20 @@ import ./make-test.nix (pkgs: {
       systemd.services.libreoffice-online.enable = false;
       systemd.services.mongooseim.enable = false;
 
-      nextcloud.apps = lib.genAttrs [
-        "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
-        "external" "end_to_end_encryption" "files_accesscontrol"
-        "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
-        "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
-        "social" "spreed" "tasks"
-      ] (lib.const { enable = true; });
+      nextcloud.apps = let
+        # XXX: These apps are unsupported in Nextcloud 20.
+        forceEnabled = lib.genAttrs [
+          "circles" "polls" "social"
+        ] (lib.const { forceEnable = true; enable = true; });
+
+        enabled =  lib.genAttrs [
+          "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
+          "external" "end_to_end_encryption" "files_accesscontrol"
+          "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
+          "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
+          "social" "spreed" "tasks"
+        ] (lib.const { enable = true; });
+      in enabled // forceEnabled;
     };
   };
 

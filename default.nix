@@ -344,6 +344,7 @@ let
       --database-name nextcloud \
       --database-host $TMPDIR \
       --database-user nextcloud \
+      --database-pass "" \
       --admin-user "$adminUser" \
       --admin-pass "$adminPass" \
       --data-dir "$PWD/data"

@@ -44,7 +44,7 @@ class Driver:
         self.driver.find_element_by_id('submit-form').click()
 
         self.wait.until(EC.visibility_of_element_located(
-            (By.CSS_SELECTOR, '#app-navigation .nav-files')
+            (By.ID, 'app-dashboard')
         ))
 
     def create_conversation(self, name):
@@ -53,7 +53,7 @@ class Driver:
         )).click()
 
         self.wait.until(EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, 'button.action-item.icon-add')
+            (By.CSS_SELECTOR, '.new-conversation button')
         )).click()
 
         self.wait.until(EC.visibility_of_element_located(
