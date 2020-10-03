@@ -61,6 +61,9 @@ import ./make-test.nix (pkgs: {
           #      extensions.
           "facerecognition"
 
+          # https://github.com/nextcloud/officeonline/pull/6
+          (assert nc18apps.officeonline.version == "1.0.0"; "officeonline")
+
           # These apps have non-deterministic download URLs
           "occweb"
           "quicknotes"
