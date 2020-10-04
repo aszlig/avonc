@@ -85,10 +85,10 @@ index 74aa5fd..6e11d45 100644
              // poi images
 diff --git a/lib/Controller/RoutingProxyController.php b/lib/Controller/RoutingProxyController.php
 new file mode 100644
-index 0000000..7a69155
+index 0000000..bfbb3ca
 --- /dev/null
 +++ b/lib/Controller/RoutingProxyController.php
-@@ -0,0 +1,157 @@
+@@ -0,0 +1,159 @@
 +<?php declare(strict_types=1);
 +/**
 + * Nextcloud - Maps
@@ -225,6 +225,7 @@ index 0000000..7a69155
 +     *
 +     * @NoAdminRequired
 +     * @NoCSRFRequired
++     * @UserRateThrottle(limit=20, period=60)
 +     */
 +    public function requestGraphHopperRoute(string $path): Response {
 +        $url = $this->config->getAppValue(
@@ -239,6 +240,7 @@ index 0000000..7a69155
 +     *
 +     * @NoAdminRequired
 +     * @NoCSRFRequired
++     * @UserRateThrottle(limit=20, period=60)
 +     */
 +    public function requestMapboxRoute(string $path): Response {
 +        $url = 'https://api.mapbox.com/directions/v5';
