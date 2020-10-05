@@ -98,6 +98,51 @@
       "url": "https://github.com/juliushaertl/apporder/releases/download/v0.11.0/apporder.tar.gz",
       "version": "0.11.0"
     },
+    "audioplayer": {
+      "meta": {
+        "description": "A music player for FLAC, MP3, MP4, AIF, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
+        "homepage": "https://rello.github.io/audioplayer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Audio Player",
+        "summary": "play / stream / organize"
+      },
+      "sha256": "0y2s8blif30s7701b2nifwaqrp11pnm3ck6cl1z76y3gi4bimr14",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.12.0/audioplayer-2.12.0.tar.gz",
+      "version": "2.12.0"
+    },
+    "audioplayer_editor": {
+      "meta": {
+        "description": "ID3 editor add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Editor integrated into sidebar\n- Updating the ID3 in the library\n- Updating the audio files (coming soon)\n- Picture support (coming soon)",
+        "homepage": "https://github.com/rello/audioplayer_editor",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Audio Player - ID3 Editor (add-on)",
+        "summary": "Change ID3 Metadata"
+      },
+      "sha256": "1yfg6crb35pgiybkbvxs70sisw8bwl2fa2jjz1a1ffyqk9caccmg",
+      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.3.0/audioplayer_editor-0.3.0.tar.gz",
+      "version": "0.3.0"
+    },
+    "audioplayer_sonos": {
+      "meta": {
+        "description": "SONOS Playback add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Play your local library on your SONOS speaker",
+        "homepage": "https://github.com/rello/audioplayer_sonos",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Audio Player - SONOS (add-on)",
+        "summary": "SONOS Playback"
+      },
+      "sha256": "05fx8p2w2nf6km8nw73bmvqv5rfackin09r38m4a2yhxxmambamc",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.2.0/audioplayer_sonos-1.2.0.tar.gz",
+      "version": "1.2.0"
+    },
     "auto_groups": {
       "meta": {
         "description": "Automatically add users to the specified Auto Groups, except those users belonging to one of the specified Override Groups. \nOptionally, the group assignment can be triggered on every successful login, which is useful for external user backends.\n\n## Configuration\n\n- Go to \"Admin Settings &gt; Additional Settings\"\n- Configure the Auto Groups\n- If required, configure the Override Groups (e.g., for Service Accounts)\n- Optionally, enable the Login Hook, which will enforce correct group membership on every successful login\n\nNote that this app prevents group deletions for groups referenced as Auto Groups or Override Groups.\n\n## Comparison to similar Apps\n\n* [Everyone Group](https://apps.nextcloud.com/apps/group_everyone): The \"Everyone Group\" app adds a virtual Group Backend, always returning all users. In contrast, \"Auto Groups\" operates on \"real\" groups in your normal Group Backend. Additionally, it is possible to specify Override Groups which will prevent users from being added to the Auto Group(s).\n* [Default Group](https://apps.nextcloud.com/apps/defaultgroup): \"Auto Groups\" is actually a modernized and maintaned fork of \"Default Group\", which seems to be abandoned since NC12 or so. In terms of functionality, they are almost identical.\n\nIn addition, I plan to add some more features over time, e.g., \"Union Groups\" - see the [Milestone Plans](https://github.com/stjosh/auto_groups/milestones) for more details.",
@@ -172,6 +217,21 @@
       "sha256": "10iq0zghc9nkvpl8mv9jy39h7pmii4hib5q938411fvvqd9gc97m",
       "url": "https://github.com/nextcloud/calendar/releases/download/v2.1.2/calendar.tar.gz",
       "version": "2.1.2"
+    },
+    "circles": {
+      "meta": {
+        "description": "Circles allows your users to create their own groups of users/colleagues/friends.\nThose groups of users (or 'circles') can then be used by any other app for sharing purpose (files, social feed, status update, messaging, ...).\n\nDifferent type of circles can be created:\n\n- A personal circle is a list of users known only to the owner.\nThis is the right option if you want to do recurrent sharing with the same group of people.\n\n- A public circle is an open group visible to anyone willing to join.\nYour circle will be visible to everyone and everyone will be able to join the circle.\n\n- A closed circle requires invitation or confirmation by an admin.\nThis is the right circle if you are looking for privacy when sharing your files or ideas.\n\n- An Secret circle is an open group that can be protected by a password.\nUsers won't be able to find this Circle using Nextcloud search engine.",
+        "homepage": "https://github.com/nextcloud/circles",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Circles",
+        "summary": "Bring cloud-users closer together."
+      },
+      "sha256": "13jmnzrrlnxrs147l1mmbsc0wfcvm3j0fkqjsgzn427ac5hkfinr",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.0/circles-0.20.0.tar.gz",
+      "version": "0.20.0"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1111,9 +1171,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "115y8nfa43kiygc1z2n0nsd9lz0isn4b2528q2yqkpvbgxycq6as",
-      "url": "https://github.com/nextcloud/news/releases/download/15.0.1/news.tar.gz",
-      "version": "15.0.1"
+      "sha256": "1x8pjh6rrx2216a71xx5pmskws779ny3m5rh7pl0194fmpmyk2q3",
+      "url": "https://github.com/nextcloud/news/releases/download/15.0.2/news.tar.gz",
+      "version": "15.0.2"
     },
     "nextbackup": {
       "meta": {
@@ -1312,6 +1372,21 @@
         "summary": "Your memories under your control"
       }
     },
+    "piwik": {
+      "meta": {
+        "description": "Track users with Piwik/Matomo",
+        "homepage": "http://sualko.github.io/cloud_piwik/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Piwik/Matomo Tracking",
+        "summary": "Track users with Piwik/Matomo"
+      },
+      "sha256": "0622i3bmz2rbrqrvmivrq72ld711ix4yk0r0aqf8mi0hspxmky88",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.7.0/cloud_piwik-0.7.0.tar.gz",
+      "version": "0.7.0"
+    },
     "preferred_providers": {
       "meta": {
         "description": "Allow nextcloud to request user accounts",
@@ -1453,6 +1528,21 @@
         "name": "Recommendations",
         "summary": "Shows recommended files"
       }
+    },
+    "registration": {
+      "meta": {
+        "description": "User registration\n\nThis app allows users to register a new account.\n\n# Features\n\n- Add users to a given group\n- Allow-list with email domains (including wildcard) to register with\n- Admins will be notified via email for new user creation or require approval\n- Supports Nextcloud's Client Login Flow v1 and v2 - allowing registration in the mobile Apps and Desktop clients\n\n# Web form registration flow\n\n1. User enters their email address\n2. Verification link is sent to the email address\n3. User clicks on the verification link\n4. User is lead to a form where they can choose their username and password\n5. New account is created and is logged in automatically",
+        "homepage": "https://github.com/nextcloud/registration",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Registration",
+        "summary": "This app allows users to self-register a new account using their e-mail address."
+      },
+      "sha256": "1sw3375zgxmvynwqi4a3sghjl02xlvrl1nzir1q6wpj9if7198z1",
+      "url": "https://github.com/nextcloud/registration/releases/download/v0.5.1/registration-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "richdocuments": {
       "meta": {

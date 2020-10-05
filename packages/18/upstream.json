@@ -1417,9 +1417,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "1i9847bxfcax4izfax0r0wkbr9rsg25gcschkrvwgbf3by3dx999",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.5.0/hsts-v0.5.0.tar.gz",
-      "version": "0.5.0"
+      "sha256": "1fpgvvsg6asynka4bfx6s37icz9vsjizgnxf53j96izb5cd7bgbs",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.6.0/hsts-v0.6.0.tar.gz",
+      "version": "0.6.0"
     },
     "imageconverter": {
       "meta": {
@@ -1965,9 +1965,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "0lw3jr5mhd5cx2d91db2hchb9r7hmqmm1krnjbbsq2lvym1j88f9",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.6.0/cloud_piwik-0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0622i3bmz2rbrqrvmivrq72ld711ix4yk0r0aqf8mi0hspxmky88",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.7.0/cloud_piwik-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "polls": {
       "meta": {
@@ -2137,9 +2137,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "18p1fj26v5azfrwhms4h9zmk9a0za6rhq0n1cb8my5q5pmg5nqqa",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.0/quicknotes.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0jlkr1lw1yxnxpq9kv9xvl2b9dgp7sz8bj05zpxsci2gfc1vcx26",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.1/quicknotes.tar.gz",
+      "version": "0.6.1"
     },
     "quota_warning": {
       "meta": {
@@ -2757,9 +2757,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "04hh1gk6kyp8r65i7prgz879553p9shsgs3pmpdr78gyqr10fgvy",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.42.tar.gz",
-      "version": "0.0.42"
+      "sha256": "1x0rsl03hnjxcknmyi01lrpfrr3qbq7vxkrgzhhgl0m1vh83kfph",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.43.tar.gz",
+      "version": "0.0.43"
     },
     "transmission": {
       "meta": {

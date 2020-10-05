@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "170rp4whaaxcafl6ls3j2nhny4sl7v6wf3m319ygijbn77vhrxvn",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.11.2/audioplayer-2.11.2.tar.gz",
-      "version": "2.11.2"
+      "sha256": "0y2s8blif30s7701b2nifwaqrp11pnm3ck6cl1z76y3gi4bimr14",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.12.0/audioplayer-2.12.0.tar.gz",
+      "version": "2.12.0"
     },
     "audioplayer_editor": {
       "meta": {
@@ -139,9 +139,9 @@
         "name": "Audio Player - ID3 Editor (add-on)",
         "summary": "Change ID3 Metadata"
       },
-      "sha256": "06msd11lqbvm96rp9bwh0mi06q2ysf7b7100hzsxdaxb8n5fsch6",
-      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.2.2/audioplayer_editor-0.2.2.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1yfg6crb35pgiybkbvxs70sisw8bwl2fa2jjz1a1ffyqk9caccmg",
+      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.3.0/audioplayer_editor-0.3.0.tar.gz",
+      "version": "0.3.0"
     },
     "audioplayer_sonos": {
       "meta": {
@@ -154,9 +154,9 @@
         "name": "Audio Player - SONOS (add-on)",
         "summary": "SONOS Playback"
       },
-      "sha256": "0s8mrssdjq1wwcvqqvckcl8rgvqbdkhbixh901ff8c67kbnnrnn2",
-      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.1.1/audioplayer_sonos-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "05fx8p2w2nf6km8nw73bmvqv5rfackin09r38m4a2yhxxmambamc",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.2.0/audioplayer_sonos-1.2.0.tar.gz",
+      "version": "1.2.0"
     },
     "auto_groups": {
       "meta": {
@@ -331,9 +331,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "11jc5bg6yz9mx8b4pciqazh0cwpzljzdcpvqma4gqkr7ycbxs8fk",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.5/circles-0.19.5.tar.gz",
-      "version": "0.19.5"
+      "sha256": "024g5zdf51s1x9fkl2wd2cajxg4zz4wwd9nhl0bhfqd3qkgxxi4f",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.6/circles-0.19.6.tar.gz",
+      "version": "0.19.6"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1340,9 +1340,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "1i9847bxfcax4izfax0r0wkbr9rsg25gcschkrvwgbf3by3dx999",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.5.0/hsts-v0.5.0.tar.gz",
-      "version": "0.5.0"
+      "sha256": "1fpgvvsg6asynka4bfx6s37icz9vsjizgnxf53j96izb5cd7bgbs",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.6.0/hsts-v0.6.0.tar.gz",
+      "version": "0.6.0"
     },
     "imageconverter": {
       "meta": {
@@ -1872,9 +1872,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "0lw3jr5mhd5cx2d91db2hchb9r7hmqmm1krnjbbsq2lvym1j88f9",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.6.0/cloud_piwik-0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0622i3bmz2rbrqrvmivrq72ld711ix4yk0r0aqf8mi0hspxmky88",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.7.0/cloud_piwik-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "polls": {
       "meta": {
@@ -2044,9 +2044,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "18p1fj26v5azfrwhms4h9zmk9a0za6rhq0n1cb8my5q5pmg5nqqa",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.0/quicknotes.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0jlkr1lw1yxnxpq9kv9xvl2b9dgp7sz8bj05zpxsci2gfc1vcx26",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.1/quicknotes.tar.gz",
+      "version": "0.6.1"
     },
     "quota_warning": {
       "meta": {
@@ -2669,6 +2669,20 @@
       "sha256": "0b5xls62mag2c6kfibiflwkzb0d2nhsvznwfhlp6c9dhvdl4zpsv",
       "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.4/timemanager.tar.gz",
       "version": "0.1.4"
+    },
+    "timetracker": {
+      "meta": {
+        "description": "Time Tracker App",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Time Tracker",
+        "summary": "Time Tracker App"
+      },
+      "sha256": "1x0rsl03hnjxcknmyi01lrpfrr3qbq7vxkrgzhhgl0m1vh83kfph",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.43.tar.gz",
+      "version": "0.0.43"
     },
     "transmission": {
       "meta": {
