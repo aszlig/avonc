@@ -102,7 +102,7 @@ import ./make-test.nix (pkgs: {
       nextcloud.apps = let
         # XXX: These apps are unsupported in Nextcloud 20.
         forceEnabled = lib.genAttrs [
-          "circles" "polls" "social"
+          "polls" "social"
         ] (lib.const { forceEnable = true; enable = true; });
 
         enabled =  lib.genAttrs [
