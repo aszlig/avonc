@@ -1,6 +1,11 @@
 { system ? builtins.currentSystem
-, pkgs ? import <nixpkgs> { inherit system; config = {}; }
+, nixpkgs ? <nixpkgs>
+, mainModule ? ../../modules/nextcloud.nix
+, pkgs ? import nixpkgs { inherit system; config = {}; }
 , lib ? pkgs.lib
+
+, geckodriver ? null
+, firefox-unwrapped ? null
 
 , clients ? 4
 } @ args:
@@ -106,7 +111,9 @@ import ../make-test.nix {
             sha256 = "0aas57cl5m5g5f7bibsy0rwzcn2mgbyiaacbb4k4zmy6z1abrx6r";
           }) { inherit (config.nixpkgs) config; };
         in [
-          pinnedPkgs.geckodriver pinnedPkgs.firefox-unwrapped
+          (if geckodriver == null then pinnedPkgs.geckodriver else geckodriver)
+          (if firefox-unwrapped == null then pinnedPkgs.firefox-unwrapped
+           else firefox-unwrapped)
           config.hardware.pulseaudio.package
         ];
 

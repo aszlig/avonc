@@ -1,21 +1,9 @@
-{ pkgs ? import <nixpkgs> {}, lib ? pkgs.lib }:
+{ nixpkgs ? <nixpkgs>, pkgs ? import nixpkgs {}, lib ? pkgs.lib, options }:
 
 let
-  modules = import "${toString pkgs.path}/nixos/lib/eval-config.nix" {
-    modules = [ ./. ];
-    check = false;
+  optionsDb = pkgs.nixosOptionsDoc {
+    options = options.nextcloud;
   };
-
-  isHOpt = opt: lib.head (lib.splitString "." opt.name) == "nextcloud";
-  filterDoc = lib.filter (opt: isHOpt opt && opt.visible && !opt.internal);
-  filtered = filterDoc (lib.optionAttrSetToDocList modules.options);
-  optsXML = builtins.unsafeDiscardStringContext (builtins.toXML filtered);
-  optsFile = builtins.toFile "options.xml" optsXML;
-
-  # XXX: Backwards-compatibility for NixOS 19.03.
-  xsltPath = if pkgs ? nixosOptionsDoc
-    then "${pkgs.path}/nixos/lib/make-options-doc"
-    else "${pkgs.path}/nixos/doc/manual";
 
 in pkgs.stdenv.mkDerivation {
   name = "nextcloud-options-manual";
@@ -35,16 +23,9 @@ in pkgs.stdenv.mkDerivation {
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:xi="http://www.w3.org/2001/XInclude">
       <title>NixOS options for Nextcloud</title>
-      <xi:include href="options-db.xml" />
+      <xi:include href="${optionsDb.optionsDocBook}" />
     </book>
     XML
-
-    xsltproc -o intermediate.xml \
-      ${lib.escapeShellArg "${xsltPath}/options-to-docbook.xsl"} \
-      ${lib.escapeShellArg optsFile}
-    xsltproc -o options-db.xml \
-      ${lib.escapeShellArg "${xsltPath}/postprocess-option-descriptions.xsl"} \
-      intermediate.xml
 
     xsltproc -o "$dest/index.html" -nonet -xinclude \
       --param section.autolabel 1 \
@@ -58,8 +39,8 @@ in pkgs.stdenv.mkDerivation {
       ${pkgs.docbook5_xsl}/xml/xsl/docbook/xhtml/docbook.xsl \
       manual.xml
 
-    cp "${pkgs.path}/doc/style.css" "$dest/style.css"
-    cp "${pkgs.path}/doc/overrides.css" "$dest/overrides.css"
+    cp "${nixpkgs}/doc/style.css" "$dest/style.css"
+    cp "${nixpkgs}/doc/overrides.css" "$dest/overrides.css"
     cp -r ${pkgs.documentation-highlighter} "$dest/highlightjs"
 
     mkdir -p "$out/nix-support"

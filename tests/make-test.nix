@@ -1,14 +1,16 @@
 testFun:
 
 { system ? builtins.currentSystem
-, pkgs ? import <nixpkgs> { inherit system; config = {}; }
+, nixpkgs ? <nixpkgs>
+, mainModule ? ../modules/nextcloud.nix
+, pkgs ? import nixpkgs { inherit system; config = {}; }
 , lib ? pkgs.lib
 , coverage ? false
 , ...
 } @ args:
 
 let
-  inherit (import "${toString pkgs.path}/nixos/lib/testing.nix" {
+  inherit (import "${nixpkgs}/nixos/lib/testing.nix" {
     inherit system pkgs;
   }) makeTest;
 
@@ -23,7 +25,7 @@ let
 
 in makeTest (removeAttrs testAttrs [ "machine" ] // {
   nodes = lib.mapAttrs (name: nodeCfg: {
-    imports = [ nodeCfg ../. ../postgresql.nix ];
+    imports = [ nodeCfg mainModule ../postgresql.nix ];
     networking.firewall.enable = false;
     nextcloud.enable = let
       hasOnlyOneNode = lib.length (lib.attrNames nodesOrig) == 1;

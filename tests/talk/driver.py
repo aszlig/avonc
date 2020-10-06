@@ -14,7 +14,6 @@ class Driver:
         options.add_argument('--headless')
         options.add_argument('--width=1920')
         options.add_argument('--height=1080')
-        options.set_preference('browser.tabs.remote.autostart', False)
         options.set_preference('media.navigator.permission.disabled', False)
 
         # Note that this isn't a boolean: 1 -> SitePermissions.ALLOW

@@ -16,7 +16,7 @@ let
   hashedVersions = let
     isAllDigits = val: builtins.match "[1-9][0-9]*" val != null;
     isValidPackage = name: type: isAllDigits name && type == "directory";
-    filtered = lib.filterAttrs isValidPackage (builtins.readDir ./packages);
+    filtered = lib.filterAttrs isValidPackage (builtins.readDir ../packages);
   in lib.mapAttrs (name: lib.const null) filtered;
 
   getPackagePath = majorVersion: hashedVersions.${toString majorVersion};
@@ -306,7 +306,7 @@ let
 
     enableDisableApps = lib.escapeShellArgs [
       pkgs.python3Packages.python.interpreter
-      "${tools/enable-disable-apps.py}"
+      "${../tools/enable-disable-apps.py}"
     ];
 
   in "${enableDisableApps} ${lib.escapeShellArg newState} ${occCmd}";
@@ -722,7 +722,7 @@ in {
     package = lib.mkOption {
       type = types.package;
       # XXX: Bah, this is so ugly!
-      default = pkgs.callPackage ./packages {
+      default = pkgs.callPackage ../packages {
         inherit (cfg) majorVersion apps theme extraPostPatch;
       };
       defaultText = lib.literalExample
@@ -738,8 +738,6 @@ in {
       '';
     };
   };
-
-  imports = [ ./libreoffice-online ./gpx ./talk ./osrm modules/redis.nix ];
 
   config = lib.mkIf cfg.enable {
     assertions = [

@@ -2,7 +2,7 @@
 
 let
   cfg = config.nextcloud.apps.richdocuments;
-  package = import ./package.nix { inherit pkgs lib; };
+  inherit (cfg) package;
 
   fontConfig = pkgs.makeFontsConf {
     fontDirectories = [
@@ -98,6 +98,14 @@ let
 
 in {
   options.nextcloud.apps.richdocuments = {
+    package = lib.mkOption {
+      type = lib.types.package;
+      default = pkgs.libreoffice-online;
+      defaultText = "pkgs.libreoffice-online";
+      internal = true;
+      description = "The LibreOffice Online package to use.";
+    };
+
     logLevel = lib.mkOption {
       type = lib.types.enum [
         "none" "fatal" "critical" "error" "warning" "notice" "information"
