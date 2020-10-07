@@ -48,28 +48,6 @@ let
     ssl.termination = true;
   };
 
-  # TODO: Remove this as soon as it is in the oldest nixpkgs version we
-  #       support.
-  ip2unix = pkgs.stdenv.mkDerivation rec {
-    name = "ip2unix-${version}";
-    version = "2.0.1";
-
-    src = pkgs.fetchFromGitHub {
-      owner = "nixcloud";
-      repo = "ip2unix";
-      rev = "v${version}";
-      sha256 = "1x2nfv15a1hg8vrw5vh8fqady12v9hfrb4p3cfg0ybx52y0xs48a";
-    };
-
-    nativeBuildInputs = [
-      pkgs.meson pkgs.ninja pkgs.pkgconfig pkgs.python3Packages.pytest
-      pkgs.python3Packages.pytest-timeout
-    ];
-    buildInputs = [ pkgs.libyamlcpp ];
-
-    doCheck = true;
-  };
-
   richdocumentsPatch = pkgs.runCommand "richdocuments-substituted.patch" {
     nativeBuildInputs = lib.singleton (pkgs.writeScriptBin "extract-disco" ''
       #!${pkgs.python3Packages.python.interpreter}
@@ -217,7 +195,7 @@ in {
         User = "libreoffice-online";
         Group = "libreoffice-online";
         ExecStart = toString [
-          "${ip2unix}/bin/ip2unix"
+          "${pkgs.ip2unix}/bin/ip2unix"
           "-r out,port=9981,ignore"
           "-r out,path=/run/libreoffice-online/internal.socket"
           "${package}/bin/loolwsd ${genOptionFlags settings}"

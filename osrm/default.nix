@@ -4,15 +4,10 @@ let
   inherit (lib) mkOption types;
   cfg = config.nextcloud.apps.maps;
 
-  osrm-backend = pkgs.osrm-backend.overrideAttrs (drv: {
-    # XXX: Currently a limitation of ip2unix.
-    NIX_CFLAGS_COMPILE = "-DBOOST_ASIO_DISABLE_EPOLL";
-  });
-
   profileData = pkgs.runCommand "osrm-profiles" {
     inherit (cfg) osmDataset;
-    profilesDir = "${osrm-backend}/share/osrm/profiles";
-    nativeBuildInputs = [ osrm-backend ];
+    profilesDir = "${pkgs.osrm-backend}/share/osrm/profiles";
+    nativeBuildInputs = [ pkgs.osrm-backend ];
   } ''
     ${lib.concatMapStrings (profile: ''
       profile=${lib.escapeShellArg profile}
@@ -141,7 +136,7 @@ in {
         serviceConfig.ExecStart = let
         in lib.escapeShellArgs [
           "${pkgs.ip2unix}/bin/ip2unix" "-r" "in,systemd" "-r" "reject"
-          "${osrm-backend}/bin/osrm-routed" "--algorithm" "MLD"
+          "${pkgs.osrm-backend}/bin/osrm-routed" "--algorithm" "MLD"
           "${profileData}/${profile}.osrm"
         ];
       });
