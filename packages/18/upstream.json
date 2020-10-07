@@ -183,9 +183,9 @@
         "name": "Auto Mail Accounts",
         "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
       },
-      "sha256": "0j7fzqyiqmnv551ym4irax9x9xjjibkx0ghnyravm5d03vym85vb",
-      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v1.0.5/auto_mail_accounts.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1kfwyfwr15yk78ysnnig77r12bp6z90774iqygy155j7dbdp86fg",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.6/auto_mail_accounts.tar.gz",
+      "version": "0.1.6"
     },
     "bbb": {
       "meta": {
@@ -1349,18 +1349,18 @@
     },
     "groupfolders": {
       "meta": {
-        "description": "Admin configured folders shared by everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: encrypting the contents of group folders is currently not supported.",
+        "description": "Admin configured folders shared with everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: encrypting the contents of group folders is currently not supported.",
         "homepage": "https://github.com/nextcloud/groupfolders",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Group folders",
-        "summary": "Admin configured folders shared by everyone in a group"
+        "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "0f4r9bbv2lc5vwsl2ccbka0rc7hs4f8cab4w4c4ff2h2hrw5hvwf",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.7/groupfolders.tar.gz",
-      "version": "6.0.7"
+      "sha256": "0p6mkprfdkd6nicr4aq91x7qc899hjkw139mzldqq915ryg4ncir",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v6.0.8/groupfolders-6.0.8.tar.gz",
+      "version": "6.0.8"
     },
     "groupquota": {
       "meta": {
@@ -2485,9 +2485,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0dnk8p25f8kzn316y6wzf4dm4la0wjkcq63wj2fc3c4yk26ngncv",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.0/release.tar.gz",
-      "version": "3.4.0"
+      "sha256": "1z5z5pq4fz213c61qdifnmrkm6dapa3v32vgkghqajvjr18r4vng",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.1/release.tar.gz",
+      "version": "3.4.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2930,9 +2930,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "104rr45cdaz8xdnwyl0kblcdy5y69d6697iw0gksbhrdvwsayjzv",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.11/user_backend_sql_raw.tar.gz",
-      "version": "1.0.11"
+      "sha256": "0j3yig719c6vnfqqkfiwcp5j8r5bvhw1s66j0vqxp26mhparg9mw",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.12/user_backend_sql_raw.tar.gz",
+      "version": "1.0.12"
     },
     "user_cas": {
       "meta": {

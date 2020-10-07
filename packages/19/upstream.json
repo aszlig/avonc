@@ -183,9 +183,9 @@
         "name": "Auto Mail Accounts",
         "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
       },
-      "sha256": "0j7fzqyiqmnv551ym4irax9x9xjjibkx0ghnyravm5d03vym85vb",
-      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v1.0.5/auto_mail_accounts.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1kfwyfwr15yk78ysnnig77r12bp6z90774iqygy155j7dbdp86fg",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.6/auto_mail_accounts.tar.gz",
+      "version": "0.1.6"
     },
     "bbb": {
       "meta": {
@@ -1272,18 +1272,18 @@
     },
     "groupfolders": {
       "meta": {
-        "description": "Admin configured folders shared by everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: encrypting the contents of group folders is currently not supported.",
+        "description": "Admin configured folders shared with everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: encrypting the contents of group folders is currently not supported.",
         "homepage": "https://github.com/nextcloud/groupfolders",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Group folders",
-        "summary": "Admin configured folders shared by everyone in a group"
+        "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "0g79wqr4d55dvqcbbz8cb1d0nbf083rb2japz9p2nf1qhyx849q5",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.0.0/groupfolders.tar.gz",
-      "version": "7.0.0"
+      "sha256": "156ipx2wfhba2g01r3p0yvifwyjaxpw90fk8fsbck2paz0dqivyi",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.1.0/groupfolders-7.1.0.tar.gz",
+      "version": "7.1.0"
     },
     "groupquota": {
       "meta": {
@@ -1310,9 +1310,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "1jx8a01cmg7z8zgkdmjm1zl1lxkhk7a57iiraqbg992xlamfrvfh",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.5.0/guests.tar.gz",
-      "version": "1.5.0"
+      "sha256": "0lkivai1y4d6xdxgsr9k00g54nimvlvxvxlw7cb90qryzvacmayw",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.0/guests.tar.gz",
+      "version": "1.6.0"
     },
     "hidesidebars": {
       "meta": {
@@ -2408,9 +2408,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0dnk8p25f8kzn316y6wzf4dm4la0wjkcq63wj2fc3c4yk26ngncv",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.0/release.tar.gz",
-      "version": "3.4.0"
+      "sha256": "1z5z5pq4fz213c61qdifnmrkm6dapa3v32vgkghqajvjr18r4vng",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.1/release.tar.gz",
+      "version": "3.4.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2838,9 +2838,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "104rr45cdaz8xdnwyl0kblcdy5y69d6697iw0gksbhrdvwsayjzv",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.11/user_backend_sql_raw.tar.gz",
-      "version": "1.0.11"
+      "sha256": "0j3yig719c6vnfqqkfiwcp5j8r5bvhw1s66j0vqxp26mhparg9mw",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.12/user_backend_sql_raw.tar.gz",
+      "version": "1.0.12"
     },
     "user_cas": {
       "meta": {
@@ -2941,9 +2941,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1l5fxa0y4phwvy69jsamdr881iijyph1vhrw414vca9pl9s9kzmw",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.0/user_saml-3.2.0.tar.gz",
-      "version": "3.2.0"
+      "sha256": "0l1a87v4iigcs4whhik2jqx53j8xjkfckvn6r5fzih2dyqrr0hqz",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.1/user_saml-3.2.1.tar.gz",
+      "version": "3.2.1"
     },
     "user_sql": {
       "meta": {

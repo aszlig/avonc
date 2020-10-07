@@ -168,9 +168,9 @@
         "name": "Auto Mail Accounts",
         "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
       },
-      "sha256": "0j7fzqyiqmnv551ym4irax9x9xjjibkx0ghnyravm5d03vym85vb",
-      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v1.0.5/auto_mail_accounts.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1kfwyfwr15yk78ysnnig77r12bp6z90774iqygy155j7dbdp86fg",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.6/auto_mail_accounts.tar.gz",
+      "version": "0.1.6"
     },
     "bookmarks": {
       "meta": {
@@ -2444,9 +2444,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0dnk8p25f8kzn316y6wzf4dm4la0wjkcq63wj2fc3c4yk26ngncv",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.0/release.tar.gz",
-      "version": "3.4.0"
+      "sha256": "1z5z5pq4fz213c61qdifnmrkm6dapa3v32vgkghqajvjr18r4vng",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.1/release.tar.gz",
+      "version": "3.4.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2904,9 +2904,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "104rr45cdaz8xdnwyl0kblcdy5y69d6697iw0gksbhrdvwsayjzv",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.11/user_backend_sql_raw.tar.gz",
-      "version": "1.0.11"
+      "sha256": "0j3yig719c6vnfqqkfiwcp5j8r5bvhw1s66j0vqxp26mhparg9mw",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.12/user_backend_sql_raw.tar.gz",
+      "version": "1.0.12"
     },
     "user_cas": {
       "meta": {

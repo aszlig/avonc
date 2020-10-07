@@ -158,6 +158,20 @@
       "url": "https://github.com/stjosh/auto_groups/releases/download/v1.2.0/auto_groups-v1.2.0.tar.gz",
       "version": "1.2.0"
     },
+    "auto_mail_accounts": {
+      "meta": {
+        "description": "The mail app has a built-in default configuration for mail accounts but it does not create actual mail accounts for each Nextcloud user, so they can not store alternative identities, a sender name, attachments or collect e-mail addresses. This app hooks into Nextcloud's user creation/deletion and display name/ password change and automatically creates/deletes/updates a mail account in the mail app. This creates mail accounts like if a user entered the settings manually allowing him to use all features of the mail app.\n\nNote that the password is stored with symmetric encryption and can be retrieved by the admin. This is the default behaviour of the mail app and unavoidable because it needs to login to the mail server.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Auto Mail Accounts",
+        "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
+      },
+      "sha256": "1kfwyfwr15yk78ysnnig77r12bp6z90774iqygy155j7dbdp86fg",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.6/auto_mail_accounts.tar.gz",
+      "version": "0.1.6"
+    },
     "bbb": {
       "meta": {
         "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n* **Activities** Get an overview of your room activities\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
@@ -513,9 +527,9 @@
         "name": "External sites",
         "summary": "Add external sites to your Nextcloud navigation"
       },
-      "sha256": "1qxca36yhg9s80p8r7vgz97g6mccl0x7s2s9k25yqhgmmb4x96yb",
-      "url": "https://github.com/nextcloud/external/releases/download/v3.7.0/external-3.7.0.tar.gz",
-      "version": "3.7.0"
+      "sha256": "1i8ig78d3vpy4yvhwzzccn1dyqhbpl2s0b395v9qj029isirb4zc",
+      "url": "https://github.com/nextcloud/external/releases/download/v3.7.1/external-3.7.1.tar.gz",
+      "version": "3.7.1"
     },
     "federatedfilesharing": {
       "meta": {
@@ -849,9 +863,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "0cy8lkbfshk0caf0m9c40dhzr582fgw29w2i6hglh47zzk8awmfj",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.0.0/groupfolders-8.0.0.tar.gz",
-      "version": "8.0.0"
+      "sha256": "09ya2vpcng29hq3qpmhxgq0a0khdknl1rxlf54lvyd1n9qvdb4m5",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.1.0/groupfolders-8.1.0.tar.gz",
+      "version": "8.1.0"
     },
     "groupquota": {
       "meta": {
@@ -867,6 +881,20 @@
       "sha256": "1v2gv7fs9a77fh48pmdwp4gsjbv3h2y01f90qjsl3mdbwwv62s2f",
       "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.4/groupquota.tar.gz",
       "version": "0.1.4"
+    },
+    "guests": {
+      "meta": {
+        "description": "Allows for better collaboration with external users by allowing users to create guests account.\n\nGuests accounts can be created from the share menu by entering either the recipients email or name and choosing \"create guest account\", once the share is created the guest user will receive an email notification about the mail with a link to set their password.\n\nGuests users can only access files shared to them and can't create any files outside of shares, additionally, the apps accessible to guest accounts are whitelisted.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Guests",
+        "summary": "Create guest accounts for easier collaboration"
+      },
+      "sha256": "0lkivai1y4d6xdxgsr9k00g54nimvlvxvxlw7cb90qryzvacmayw",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.0/guests.tar.gz",
+      "version": "1.6.0"
     },
     "imageconverter": {
       "meta": {
@@ -1728,9 +1756,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0dnk8p25f8kzn316y6wzf4dm4la0wjkcq63wj2fc3c4yk26ngncv",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.0/release.tar.gz",
-      "version": "3.4.0"
+      "sha256": "1z5z5pq4fz213c61qdifnmrkm6dapa3v32vgkghqajvjr18r4vng",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.1/release.tar.gz",
+      "version": "3.4.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2076,6 +2104,20 @@
         "summary": "Displays update notifications for Nextcloud and provides the SSO for the updater."
       }
     },
+    "user_backend_sql_raw": {
+      "meta": {
+        "description": "This app allows you to do user management against a SQL database using arbitrary SQL queries, enabling you to use any SQL db schema.\n\nYou can authenticate, create, delete users, change their password or display name, basically do (almost) everything that Nextcloud can do with users.\n\nIn contrast to the app *SQL user backend*, you write the SQL queries yourself. You are not limited by assumptions that app authors made about how your db is structured.\n\nThe app uses prepared statements and is written to be secure by default to prevent SQL injections. It understands the most popular standards for password hash formats: MD5-CRYPT, SHA256-CRYPT, SHA512-CRYPT, BCrypt and the state-of-the-art Argon2i and Argon2id. Because the various formats are recognized on-the-fly your db can can have differing hash string formats at the same time, which eases migration to newer formats.\n\nThis app supports PostgreSQL and MariaDB/MySQL.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User Backend Using Raw SQL",
+        "summary": "User management and authentication through arbitrary SQL queries"
+      },
+      "sha256": "0j3yig719c6vnfqqkfiwcp5j8r5bvhw1s66j0vqxp26mhparg9mw",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.12/user_backend_sql_raw.tar.gz",
+      "version": "1.0.12"
+    },
     "user_ldap": {
       "meta": {
         "alwaysEnable": false,
@@ -2130,9 +2172,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "13m26745dhqis1mgln7i29g42ippd06nkgnkia5ymvdf7w3d96h6",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.0/user_saml-3.3.0.tar.gz",
-      "version": "3.3.0"
+      "sha256": "1fgjcpznqfa620fjmz4zva1jvm4yw8z1sl5zkx2vaxc52ilzmkkp",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.1/user_saml-3.3.1.tar.gz",
+      "version": "3.3.1"
     },
     "user_status": {
       "meta": {
