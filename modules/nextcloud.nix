@@ -320,7 +320,7 @@ let
     adminUser = cfg.initialAdminUser;
     adminPass = cfg.initialAdminPass;
   } ''
-    initdb -D "$TMPDIR/tempdb" -E UTF8 -N -U "$tempDbUser"
+    initdb -D "$TMPDIR/tempdb" -E UTF8 -N
     pg_ctl start -w -D "$TMPDIR/tempdb" -o \
       "-F --listen_addresses= --unix_socket_directories=$TMPDIR"
     createuser -h "$TMPDIR" nextcloud
