@@ -53,10 +53,7 @@
     checks = lib.genAttrs systems (system: let
       callTest = fn: args: import fn ({
         inherit system nixpkgs lib;
-        extraModules = [
-          self.nixosModules.nextcloud
-          self.nixosModules.postgresql
-        ];
+        extraModules = [ self.nixosModules.nextcloud ];
       } // args);
     in {
       talk = callTest tests/talk {
