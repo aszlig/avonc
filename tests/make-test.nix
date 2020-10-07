@@ -2,7 +2,7 @@ testFun:
 
 { system ? builtins.currentSystem
 , nixpkgs ? <nixpkgs>
-, mainModule ? ../modules/nextcloud.nix
+, extraModules ? []
 , pkgs ? import nixpkgs { inherit system; config = {}; }
 , lib ? pkgs.lib
 , coverage ? false
@@ -25,7 +25,7 @@ let
 
 in makeTest (removeAttrs testAttrs [ "machine" ] // {
   nodes = lib.mapAttrs (name: nodeCfg: {
-    imports = [ nodeCfg mainModule ../postgresql.nix ];
+    imports = lib.singleton nodeCfg ++ extraModules;
     networking.firewall.enable = false;
     nextcloud.enable = let
       hasOnlyOneNode = lib.length (lib.attrNames nodesOrig) == 1;

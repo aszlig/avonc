@@ -1,6 +1,6 @@
 { system ? builtins.currentSystem
 , nixpkgs ? <nixpkgs>
-, mainModule ? ../../modules/nextcloud.nix
+, extraModules ? []
 , pkgs ? import nixpkgs { inherit system; config = {}; }
 , lib ? pkgs.lib
 

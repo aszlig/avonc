@@ -32,6 +32,10 @@
       };
     });
 
+    nixosModules.postgresql = {
+      imports = [ modules/postgresql.nix ];
+    };
+
     nixosModules.nextcloud = {
       imports = [
         modules/nextcloud.nix
@@ -49,7 +53,10 @@
     checks = lib.genAttrs systems (system: let
       callTest = fn: args: import fn ({
         inherit system nixpkgs lib;
-        mainModule = self.nixosModules.nextcloud;
+        extraModules = [
+          self.nixosModules.nextcloud
+          self.nixosModules.postgresql
+        ];
       } // args);
     in {
       talk = callTest tests/talk {
