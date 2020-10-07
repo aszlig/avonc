@@ -403,6 +403,9 @@ let
         procname-prefix-spaced = "[nextcloud]";
         single-interpreter = true;
         socket = config.systemd.sockets.nextcloud.socketConfig.ListenStream;
+        # XXX: This is to avoid errors in file uploads, but ideally we'd be
+        #      more specific about what *type* of timeout we want.
+        socket-timeout = 100000;
         strict = true;
       };
     });
