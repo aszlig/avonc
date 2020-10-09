@@ -3288,9 +3288,9 @@
     }
   },
   "nextcloud": {
-    "sha256": "17j9837g8xqhi4rrrdbhw8lqvd3wjyhhy9v4w5x5q0jyqw9361gj",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-18.0.9.tar.bz2",
-    "version": "18.0.9.1"
+    "sha256": "0bkg8ih7d3dd54k167xsbna26y19n4yip727ki3z3rk6yag5igzz",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-18.0.10.tar.bz2",
+    "version": "18.0.10.2"
   },
   "themes": {}
 }
