@@ -126,13 +126,11 @@ import ./make-test.nix (pkgs: {
       inherit (nodes.${node}.config.system.build) toplevel;
       switchCmd = "${toplevel}/bin/switch-to-configuration test";
     in ''
-      $machine->nest('switch to generation ${toString gen}', sub {
-        $machine->succeed('${switchCmd} >&2');
-        $main::machine = ''$${node};
-      });
+      with machine.nested('switch to generation ${toString gen}'):
+        machine.succeed('${switchCmd} >&2')
     '';
 
-    expectedAppsPerlHash = let
+    expectedApps = let
       inherit (pkgs.lib) attrNames filterAttrs const escape;
       inherit (nodes.generation2.config.nextcloud) apps;
       alwaysEnabled = [
@@ -141,36 +139,34 @@ import ./make-test.nix (pkgs: {
         "twofactor_backupcodes" "viewer" "workflowengine"
       ];
       enabled = attrNames (filterAttrs (const (x: x.enable)) apps);
-      allEnabled = enabled ++ alwaysEnabled;
-      mkHash = val: "'${escape ["\\" "'"] val}' => 1";
-    in "(${pkgs.lib.concatMapStringsSep ", " mkHash allEnabled})";
+    in builtins.toJSON (enabled ++ alwaysEnabled);
 
   in ''
-    my $machine = $generation1;
+    # fmt: off
+    import json
+    machine = generation1
 
-    $machine->waitForUnit('multi-user.target');
+    machine.wait_for_unit('multi-user.target')
 
-    $machine->startJob('nextcloud.service');
-    $machine->waitForUnit('nextcloud.service');
+    machine.start_job('nextcloud.service')
+    machine.wait_for_unit('nextcloud.service')
 
-    $machine->succeed(
+    machine.succeed(
       'curl -L http://localhost/ | grep -o "a safe home for all your data"'
-    );
+    )
 
     ${switchToGeneration 2}
-    $machine->startJob('nextcloud.service');
-    $machine->waitForUnit('nextcloud.service');
+    machine.start_job('nextcloud.service')
+    machine.wait_for_unit('nextcloud.service')
 
-    $machine->succeed(
+    machine.succeed(
       'curl -L http://localhost/ | grep -o initial-state-core-loginUsername'
-    );
+    )
 
-    my $applist = $machine->succeed('nextcloud-occ app:list --output=json'
-                                   .' | jq -r ".enabled | keys[] | @text"');
+    applist = machine.succeed('nextcloud-occ app:list --output=json')
+    enabled = json.loads(applist)['enabled'].keys()
 
-    my %expected = ${expectedAppsPerlHash};
-    my %actual = map { $_ => 1 } split "\n", $applist;
-    use Test::More tests => 1;
-    is_deeply(\%actual, \%expected, 'enabled apps should match with config');
+    expected = set(json.loads(r'${pkgs.lib.escape ["'" "\\"] expectedApps}'))
+    assert expected == enabled, f'{expected} != {enabled}'
   '';
 })

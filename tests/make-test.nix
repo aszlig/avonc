@@ -10,7 +10,7 @@ testFun:
 } @ args:
 
 let
-  inherit (import "${nixpkgs}/nixos/lib/testing.nix" {
+  inherit (import "${nixpkgs}/nixos/lib/testing-python.nix" {
     inherit system pkgs;
   }) makeTest;
 

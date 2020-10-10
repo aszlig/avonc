@@ -105,9 +105,10 @@ import ./make-test.nix ({ pkgs, ... }: {
     '';
 
   in ''
-    $machine->waitForUnit('multi-user.target');
-    $machine->startJob('nextcloud.service');
-    $machine->waitForUnit('nextcloud.service');
+    # fmt: off
+    machine.wait_for_unit('multi-user.target')
+    machine.start_job('nextcloud.service')
+    machine.wait_for_unit('nextcloud.service')
   '' + lib.concatStrings (lib.mapAttrsToList (name: test: let
     testFile = pkgs.writeText "doctest.txt" ''
       >>> import requests
@@ -118,8 +119,7 @@ import ./make-test.nix ({ pkgs, ... }: {
     '';
     desc = "check whether ${name} works correctly";
   in ''
-    subtest '${lib.escape ["\\" "'"] desc}', sub {
-      $machine->succeed('python3 -m doctest ${testFile}');
-    };
+    with subtest('${lib.escape ["\\" "'"] desc}'):
+      machine.succeed('python3 -m doctest ${testFile}')
   '') tests);
 })

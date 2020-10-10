@@ -208,67 +208,62 @@ import ../make-test.nix {
   }) clients);
 
   testScript = ''
-    use File::Copy;
-    startAll;
-    my $clients = ${toString clients};
+    # fmt: off
+    import os
+    from pathlib import Path
+    from shutil import copyfile
 
-    sub saveItem {
-      my ($self, $what, $fromFile, $filename, $cmd) = @_;
-      my $path = $ENV{'out'}.'/'.$filename;
-      $self->nest("saving $what to '$path'", sub {
-        $self->succeed(($cmd // 'true').' && sync /tmp/xchg/'.$fromFile);
-        copy('vm-state-'.$self->name.'/xchg/'.$fromFile, $path);
-      }, {image => $filename});
-    }
+    start_all()
+    clients = ${toString clients}
 
-    sub Machine::seleniumScreenshot {
-      my ($self, $name) = @_;
-      saveItem($self, 'browser screenshot', 'screenshot.png', $name.'.png',
-               'test-client screenshot');
-    }
+    class ExtendedMachine:
+      def save_item(self, what, from_file, filename, cmd='true'):
+        path = Path(os.environ['out']) / filename
+        with self.nested(f'saving {what} to {path!r}', {'image': filename}):
+          self.succeed(f'{cmd} && sync /tmp/xchg/{from_file}')
+          copyfile(f'vm-state-{self.name}/xchg/{from_file}', path)
 
-    sub Machine::saveDriverLog {
-      my ($self, $name) = @_;
-      saveItem($self, 'driver log', 'driver.log', $name.'.log');
-    }
+      def selenium_screenshot(self, name):
+        self.save_item('browser screenshot', 'screenshot.png',
+                       f'{name}.png', 'test-client screenshot')
 
-    sub Machine::saveBrowserLog {
-      my ($self, $name) = @_;
-      saveItem($self, 'browser log', 'browser.log', $name.'.log');
-    }
+      def save_driver_log(self, name):
+        self.save_item('driver log', 'driver.log', f'{name}.log')
 
-    sub Machine::saveHtml {
-      my ($self, $name) = @_;
-      saveItem($self, 'HTML of current page', 'page.html', $name.'.html',
-               'test-client save_html');
-    }
+      def save_browser_log(self, name):
+        self.save_item('browser log', 'browser.log', f'{name}.log')
 
-    sub Machine::webrtcInfo {
-      my ($self, $name) = @_;
-      saveItem($self, 'WebRTC info', 'webrtc.html', $name.'.html',
-               'test-client webrtc_info');
-    }
+      def save_html(self, name):
+        self.save_item('HTML of current page', 'page.html', f'{name}.html',
+                       'test-client save_html')
 
-    $server->waitForUnit('multi-user.target');
-    $server->startJob('nextcloud.service');
-    $server->waitForUnit('nextcloud.service');
+      def webrtc_info(self, name):
+        self.save_item('WebRTC info', 'webrtc.html', f'{name}.html',
+                       'test-client webrtc_info')
 
-    $server->succeed(
+    # Monkey-add all the methods of ExtendedMachine to all Machine instances
+    for attr in dir(ExtendedMachine):
+      if attr.startswith('_'): continue
+      setattr(Machine, attr, getattr(ExtendedMachine, attr))
+
+    server.wait_for_unit('multi-user.target')
+    server.start_job('nextcloud.service')
+    server.wait_for_unit('nextcloud.service')
+
+    server.succeed(
       'OC_PASS=VogibOc9 nextcloud-occ user:add --password-from-env someuser'
-    );
+    )
 
-    $server->nest('check connectivity between nodes', sub {
-      foreach my $i (1..$clients) {
-        $server->succeed('ping -c1 beef::'.$i.' >&2');
-        $vms{"client$i"}->succeed(
+    with server.nested('check connectivity between nodes'):
+      for i in map(lambda x: x + 1, range(clients)):
+        server.succeed(f'ping -c1 beef::{i} >&2')
+        globals()[f'client{i}'].succeed(
           'ping -c1 nextcloud >&2',
           'nc -z nextcloud 3478',
-        );
-      }
-    });
+        )
 
-    $client2->nest('disallow direct connectivity', sub {
-      $client2->succeed(
+    with client2.nested('disallow direct connectivity'):
+      client2.succeed(
         'iptables -I INPUT -s 80.81.82.${toString (clients + 1)} -j ACCEPT',
         'iptables -I INPUT -i lo -j ACCEPT',
         'iptables -P INPUT DROP',
@@ -277,38 +272,33 @@ import ../make-test.nix {
         'ip6tables -P INPUT DROP',
         'ping -c1 nextcloud >&2',
         'nc -z nextcloud 3478',
-      );
-      foreach my $i (1, 3..$clients) {
-        $vms{"client$i"}->fail('ping -c1 80.81.82.2');
-        $vms{"client$i"}->fail('ping -c1 beef::2');
-      }
-    });
+      )
+      for i in [1] + [num + 1 for num in range(2, clients)]:
+        globals()[f'client{i}'].fail('ping -c1 80.81.82.2')
+        globals()[f'client{i}'].fail('ping -c1 beef::2')
 
-    $client1->succeed('test-client login someuser VogibOc9');
-    $client1->seleniumScreenshot('logged_in');
+    client1.succeed('test-client login someuser VogibOc9')
+    client1.selenium_screenshot('logged_in')
 
-    my $url = $client1->succeed('test-client create_conversation foobar');
-    $client1->seleniumScreenshot('conversation_created');
+    url = client1.succeed('test-client create_conversation foobar')
+    client1.selenium_screenshot('conversation_created')
 
-    foreach my $i (2..$clients) {
-      $vms{"client$i"}->succeed('test-client join_conversation '.$url);
-      $vms{"client$i"}->seleniumScreenshot('client'.$i.'_joined');
-    }
+    for i in map(lambda x: x + 1, range(1, 4)):
+      globals()[f'client{i}'].succeed(f'test-client join_conversation {url}')
+      globals()[f'client{i}'].selenium_screenshot(f'client{i}_joined')
 
-    $client1->startJob('video-provider.service');
-    $client1->succeed('test-client start_call');
+    client1.start_job('video-provider.service')
+    client1.succeed('test-client start_call')
 
-    foreach my $i (2..$clients) {
-      $vms{"client$i"}->startJob('video-provider.service');
-      $vms{"client$i"}->succeed('test-client start_call');
-    }
+    for i in map(lambda x: x + 1, range(1, 4)):
+      globals()[f'client{i}'].start_job('video-provider.service')
+      globals()[f'client{i}'].succeed('test-client start_call')
 
-    $client1->succeed('test-client wait_for_others');
+    client1.succeed('test-client wait_for_others')
 
-    foreach my $i (1..$clients) {
-      $vms{"client$i"}->seleniumScreenshot('client'.$i.'_call_started');
-      $vms{"client$i"}->saveDriverLog('client'.$i.'_driver');
-      $vms{"client$i"}->saveHtml('client'.$i.'_call_started');
-    }
+    for i in map(lambda x: x + 1, range(clients)):
+      globals()[f'client{i}'].selenium_screenshot(f'client{i}_call_started')
+      globals()[f'client{i}'].save_driver_log(f'client{i}_driver')
+      globals()[f'client{i}'].save_html(f'client{i}_call_started')
   '';
 } args
