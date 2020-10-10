@@ -74,6 +74,9 @@ import ./make-test.nix (pkgs: {
           # https://github.com/nextcloud/officeonline/pull/6
           (assert nc19apps.officeonline.version == "1.0.0"; "officeonline")
 
+          # https://github.com/nextcloud/user_oidc/issues/90
+          (assert nc19apps.user_oidc.version == "0.2.1"; "user_oidc")
+
           # These apps have non-deterministic download URLs
           "occweb"
           "quicknotes"
