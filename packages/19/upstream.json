@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0hzjj28d1jhzhz25fndqi2dgmb9ywnisrh2n9y1id85i0ldc35qj",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.1/bookmarks-3.4.1.tar.gz",
-      "version": "3.4.1"
+      "sha256": "0w7ljmi5926j60is8f03v7hwjgrjlsyw8n5dx33hfj9vcj4ybc8q",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.3/bookmarks-3.4.3.tar.gz",
+      "version": "3.4.3"
     },
     "breezedark": {
       "meta": {
@@ -301,9 +301,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1k5krr0pmx781c4b45kgzicarqsk809hc7647294d0b5cb1mnb3y",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.2/carnet-nc-v0.22.2.tar.gz",
-      "version": "0.22.2"
+      "sha256": "19j0xl0xj9zg2prk2h8vlndnb5rf3k7rzm7c12wjacphbnn2ihmz",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.3/carnet-nc-v0.22.3.tar.gz",
+      "version": "0.22.3"
     },
     "checksum": {
       "meta": {
@@ -518,6 +518,20 @@
       "sha256": "02kpxprp7jhklgdqkx22r6y7j3vynw2i9794mf40yyfy0j2kd05c",
       "url": "https://github.com/icidasset/diffuse/releases/download/2.5.3/diffuse-web.tar.gz",
       "version": "2.5.3"
+    },
+    "discoursesso": {
+      "meta": {
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Discourse SSO",
+        "summary": "Enable Discourse to authenticate via Nextcloud"
+      },
+      "sha256": "1aiajjpaf13yh7fhj33fn2m0fy92rwng17wa1dw315j26mhhsrcb",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.23/discoursesso-0.9.23.tar.gz",
+      "version": "0.9.23"
     },
     "documentserver_community": {
       "meta": {
@@ -1013,6 +1027,7 @@
     "files_texteditor": {
       "meta": {
         "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.",
+        "homepage": "https://github.com/nextcloud/files_texteditor",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1020,9 +1035,9 @@
         "name": "Plain text editor",
         "summary": "Open, save and edit text files"
       },
-      "sha256": "1408ml3ag9pchpj321j1advavl49qw3rad4960xai8lw2nagrccz",
-      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.11.0/files_texteditor.tar.gz",
-      "version": "2.11.0"
+      "sha256": "100s20myxidjnamid0ywdpkmc77sl0hz5w47m553rslwvg3v6b27",
+      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.13.0/files_texteditor.tar.gz",
+      "version": "2.14.0"
     },
     "files_trackdownloads": {
       "meta": {
@@ -1887,9 +1902,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0r0yl10zr7wz4jg24f06d372y996pnlkxkp0l0jlgq9qpmh74899",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.4.3/polls.tar.gz",
-      "version": "1.4.3"
+      "sha256": "0b4jbbgqw45fjzf4k6wc5az3qz23fwn6h5c28rxnj508r0wh4wll",
+      "url": "https://github.com/nextcloud/polls/releases/download/1.5.4/polls.tar.gz",
+      "version": "1.5.4"
     },
     "preferred_providers": {
       "meta": {
@@ -3043,9 +3058,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV CORS header injection"
       },
-      "sha256": "1wglwz5ai67qqcgl6iv6r5v16agaz3jvlnlir6ci0s4jjqsw70j1",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/78c8f25ac738343275b0e7ed063320be/webapppassword.tar.gz",
-      "version": "20.8.6"
+      "sha256": "0dvdnwnjixl6vca1xv1ik4m2s89q0jiwr5caf1ky0zr4fgvpwqwc",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/557a11c16e8e2be632f0f02bce51f8a4/webapppassword.tar.gz",
+      "version": "20.10.0"
     },
     "wopi": {
       "meta": {

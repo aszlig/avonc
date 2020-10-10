@@ -271,9 +271,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1k5krr0pmx781c4b45kgzicarqsk809hc7647294d0b5cb1mnb3y",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.2/carnet-nc-v0.22.2.tar.gz",
-      "version": "0.22.2"
+      "sha256": "19j0xl0xj9zg2prk2h8vlndnb5rf3k7rzm7c12wjacphbnn2ihmz",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.3/carnet-nc-v0.22.3.tar.gz",
+      "version": "0.22.3"
     },
     "checksum": {
       "meta": {
@@ -502,9 +502,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0wmicxxhqc9iig63rd6ysh0vdf57ps48a878689ldj36cz4d7r65",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.22/discoursesso-0.9.22.tar.gz",
-      "version": "0.9.22"
+      "sha256": "1aiajjpaf13yh7fhj33fn2m0fy92rwng17wa1dw315j26mhhsrcb",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.23/discoursesso-0.9.23.tar.gz",
+      "version": "0.9.23"
     },
     "drawio": {
       "meta": {
@@ -1026,20 +1026,6 @@
       "sha256": "0pn27l5hsis9akfn4fyvrcw99pzqwijkfcacnxbva64fwsfb215b",
       "url": "https://github.com/icewind1991/files_snapshots/releases/download/v0.3.0/files_snapshots.tar.gz",
       "version": "0.3.0"
-    },
-    "files_texteditor": {
-      "meta": {
-        "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Plain text editor",
-        "summary": "Open, save and edit text files"
-      },
-      "sha256": "1408ml3ag9pchpj321j1advavl49qw3rad4960xai8lw2nagrccz",
-      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.11.0/files_texteditor.tar.gz",
-      "version": "2.11.0"
     },
     "files_trackdownloads": {
       "meta": {
@@ -1966,9 +1952,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0r0yl10zr7wz4jg24f06d372y996pnlkxkp0l0jlgq9qpmh74899",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.4.3/polls.tar.gz",
-      "version": "1.4.3"
+      "sha256": "0b4jbbgqw45fjzf4k6wc5az3qz23fwn6h5c28rxnj508r0wh4wll",
+      "url": "https://github.com/nextcloud/polls/releases/download/1.5.4/polls.tar.gz",
+      "version": "1.5.4"
     },
     "preferred_providers": {
       "meta": {

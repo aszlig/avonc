@@ -198,9 +198,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0hzjj28d1jhzhz25fndqi2dgmb9ywnisrh2n9y1id85i0ldc35qj",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.1/bookmarks-3.4.1.tar.gz",
-      "version": "3.4.1"
+      "sha256": "0w7ljmi5926j60is8f03v7hwjgrjlsyw8n5dx33hfj9vcj4ybc8q",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.3/bookmarks-3.4.3.tar.gz",
+      "version": "3.4.3"
     },
     "bruteforcesettings": {
       "meta": {
@@ -231,6 +231,21 @@
       "sha256": "10iq0zghc9nkvpl8mv9jy39h7pmii4hib5q938411fvvqd9gc97m",
       "url": "https://github.com/nextcloud/calendar/releases/download/v2.1.2/calendar.tar.gz",
       "version": "2.1.2"
+    },
+    "carnet": {
+      "meta": {
+        "description": "Carnet is a powerful note taking app which purpose is not only to write your shopping list but can also be used to write longer texts, stories, etc. Carnet is available on Android and Linux, on your web browser, Windows and\nMac, with sync capabilities\n- Complete editor : bold/italic/underline/color/highlight\n- Import from Google Keep (only on desktop, then sync on mobile)\n- Insert images / review\n- Open HTML format\n- Organize with folders and choose root storage folder depending on your needs\n- Keywords\n- Quickly see your recent notes\n- Search amount your notes\n- Protect the app with a pin code (no encryption) on android\n- Statistics : words/sentences/characters\n- Sync with ownCloud/NextCloud\n- Online editor as a ownCloud/NextCloud App",
+        "homepage": "https://github.com/CarnetApp/CarnetNextcloud",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Carnet",
+        "summary": "Powerful note taking app available on android"
+      },
+      "sha256": "19j0xl0xj9zg2prk2h8vlndnb5rf3k7rzm7c12wjacphbnn2ihmz",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.3/carnet-nc-v0.22.3.tar.gz",
+      "version": "0.22.3"
     },
     "circles": {
       "meta": {
@@ -710,6 +725,21 @@
         "name": "File sharing",
         "summary": "File sharing"
       }
+    },
+    "files_texteditor": {
+      "meta": {
+        "description": "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation.",
+        "homepage": "https://github.com/nextcloud/files_texteditor",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Plain text editor",
+        "summary": "Open, save and edit text files"
+      },
+      "sha256": "100s20myxidjnamid0ywdpkmc77sl0hz5w47m553rslwvg3v6b27",
+      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.13.0/files_texteditor.tar.gz",
+      "version": "2.14.0"
     },
     "files_trashbin": {
       "meta": {
@@ -1214,9 +1244,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1x8pjh6rrx2216a71xx5pmskws779ny3m5rh7pl0194fmpmyk2q3",
-      "url": "https://github.com/nextcloud/news/releases/download/15.0.2/news.tar.gz",
-      "version": "15.0.2"
+      "sha256": "16ninwj1bd7mjfgdkd26a9fcy8q5sh0jdlq7g4fa43gb4lrxrx6x",
+      "url": "https://github.com/nextcloud/news/releases/download/15.0.3/news.tar.gz",
+      "version": "15.0.3"
     },
     "nextbackup": {
       "meta": {
@@ -1429,6 +1459,21 @@
       "sha256": "0622i3bmz2rbrqrvmivrq72ld711ix4yk0r0aqf8mi0hspxmky88",
       "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.7.0/cloud_piwik-0.7.0.tar.gz",
       "version": "0.7.0"
+    },
+    "polls": {
+      "meta": {
+        "description": "A polls app, similar to doodle/dudle with the possibility to restrict access (members, certain groups/users, hidden and public).",
+        "homepage": "https://github.com/nextcloud/polls",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Polls",
+        "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
+      },
+      "sha256": "0b4jbbgqw45fjzf4k6wc5az3qz23fwn6h5c28rxnj508r0wh4wll",
+      "url": "https://github.com/nextcloud/polls/releases/download/1.5.4/polls.tar.gz",
+      "version": "1.5.4"
     },
     "preferred_providers": {
       "meta": {
@@ -2229,6 +2274,21 @@
         "name": "Weather status",
         "summary": "Weather status in your dashboard"
       }
+    },
+    "webapppassword": {
+      "meta": {
+        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the\nNextcloud WebDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
+        "homepage": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WebAppPassword",
+        "summary": "Temporary app password generator and WebDAV CORS header injection"
+      },
+      "sha256": "0dvdnwnjixl6vca1xv1ik4m2s89q0jiwr5caf1ky0zr4fgvpwqwc",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/557a11c16e8e2be632f0f02bce51f8a4/webapppassword.tar.gz",
+      "version": "20.10.0"
     },
     "wopi": {
       "meta": {
