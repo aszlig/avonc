@@ -66,6 +66,11 @@ in {
       '' else ''
         patch -p1 -d apps/maps < ${./proxy-routing.patch}
         patch -p1 -d apps/maps < ${./proxy-routing.dist.patch}
+        patch -p1 -d apps/maps < ${pkgs.fetchpatch {
+          url = "https://github.com/nextcloud/maps/commit/"
+              + "e130afbd65a875eeb620d49d7806f8d15765f9d1.patch";
+          sha256 = "105wx00cl6v1h77iv49m45jsw91q0w551xvhlbfarvcmh6zl4i08";
+        }}
       '';
     }
     (lib.mkIf (cfg.osmDataset != null && cfg.profiles != []) {
