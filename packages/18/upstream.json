@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1lqsxw9b803m8k96gsy2paybcaamppzqgkq27xaslsrfygjgxn4s",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/8b6686f44b5200aa936433a974c5b62c360c3f92/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.8"
+      "sha256": "1jsvndbv1jbjhmfpm9p6mzxqjvav38yywypf3hp6ighf06kvv9d8",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/79eec8abf6e1bce46fbaa58b46d41def0fd2f571/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.9"
     },
     "apporder": {
       "meta": {
@@ -999,9 +999,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "0fymy7z0adfrzskpdsz16gznvss7qgqcql99qwplyyy214df4f9x",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.22/files_mindmap-0.0.22.tar.gz",
-      "version": "0.0.22"
+      "sha256": "1q846w90x4rwc7xp7l9awk9f8xh8nm7vfrfvnsbjb6a6vhjk7ylb",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.23/files_mindmap-0.0.23.tar.gz",
+      "version": "0.0.23"
     },
     "files_pdfviewer": {
       "meta": {
@@ -2441,9 +2441,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1bg7ibkw1hq473j2kpgf4b236279dqli15iy3jr8cy34ja6g17hb",
-      "url": "https://gitnet.fr/attachments/08da6143-3585-496e-a28b-5a36f0ac4fd3",
-      "version": "1.16.0"
+      "sha256": "1g5jg82krmhlwrajyhpx7k1sb9idhzvg53l9hcj3d6gqr4i9h4ip",
+      "url": "https://gitnet.fr/attachments/a4c37ea1-5fe4-41f0-8796-a32a34c80bda",
+      "version": "1.16.1"
     },
     "smb_test": {
       "meta": {
@@ -2660,9 +2660,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "12innzr970h168pifz7mwca9gd6vqm059v0zr7pjc00731lcbl4x",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.3/tasks.tar.gz",
-      "version": "0.13.3"
+      "sha256": "1jmydndv44d4r4ysmc49gdidqvafhniw32qmng901chc01ppm70s",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.4/tasks.tar.gz",
+      "version": "0.13.4"
     },
     "telephoneprovider": {
       "meta": {
@@ -2689,9 +2689,9 @@
         "name": "Terms of service",
         "summary": "Requires users to accept the terms of service before accessing data."
       },
-      "sha256": "12fbg02wgc2gdzh4r4srb93hqjahms2nz0lnd503n690yhxn009c",
-      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.4.0/terms_of_service-1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "1fmysksghk5l029h4ifps1n90zh6118pcz7fnc6qvj5lr3iifwbl",
+      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.4.1/terms_of_service-1.4.1.tar.gz",
+      "version": "1.4.1"
     },
     "text": {
       "meta": {

@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1lqsxw9b803m8k96gsy2paybcaamppzqgkq27xaslsrfygjgxn4s",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/8b6686f44b5200aa936433a974c5b62c360c3f92/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.8"
+      "sha256": "1jsvndbv1jbjhmfpm9p6mzxqjvav38yywypf3hp6ighf06kvv9d8",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/79eec8abf6e1bce46fbaa58b46d41def0fd2f571/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.9"
     },
     "apporder": {
       "meta": {
@@ -687,6 +687,21 @@
       "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.1/files_markdown.tar.gz",
       "version": "2.3.1"
     },
+    "files_mindmap": {
+      "meta": {
+        "description": "This application enables Nextcloud users to open, save and edit mind map files in the web browser. If enabled, an entry in the New button at the top of the web browser the Mindmap file entry appears. When clicked, a new mindmap file opens in the browser and the file can be saved into the current Nextcloud directory.",
+        "homepage": "https://github.com/ACTom/files_mindmap",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Mind Map",
+        "summary": "A Mind map editor"
+      },
+      "sha256": "1q846w90x4rwc7xp7l9awk9f8xh8nm7vfrfvnsbjb6a6vhjk7ylb",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.23/files_mindmap-0.0.23.tar.gz",
+      "version": "0.0.23"
+    },
     "files_pdfviewer": {
       "meta": {
         "alwaysEnable": false,
@@ -966,9 +981,9 @@
         "name": "Discourse integration",
         "summary": "Integration of Discourse forum and mailing list management system"
       },
-      "sha256": "1vx249ijm5c0wfxpv7fbxlkvbz4m1dsp3ynaqpkjfg05m7aldqij",
-      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.3/integration_discourse-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "12g2szndiv76q0hpf04aznk5qq8rhgqfhdj9cblq1x93fgj9ki67",
+      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.4/integration_discourse-0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "integration_github": {
       "meta": {
@@ -981,13 +996,13 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "09jxn7r82wggyjkzkr7p209yfj40fzrs771d61la57rpb3n1y345",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.5/integration_github-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "01mhd27nr8zb3nsa6nnz1a6k8flms16qgfsk3jq0h1y62hk8kppp",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.6/integration_github-0.0.6.tar.gz",
+      "version": "0.0.6"
     },
     "integration_gitlab": {
       "meta": {
-        "description": "GitLab integration provides a dashboard widget displaying your most important notifications\n    and a unified search provider for repositories.",
+        "description": "GitLab integration provides a dashboard widget displaying your most important notifications\n    and a unified search provider for repositories, issues and merge requests.",
         "homepage": "https://github.com/nextcloud/integration_gitlab",
         "isShipped": false,
         "licenses": [
@@ -996,13 +1011,13 @@
         "name": "GitLab integration",
         "summary": "Integration of GitLab software development management service"
       },
-      "sha256": "0vkafc4cgr0qm71qm0xaxdy4088qnjh3pyvkh7q5xpb9hz9jlswr",
-      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.4/integration_gitlab-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "0ai83macqf42ddmcp6kpcrg8c0jydh24kzqpgacviygihf0727vz",
+      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.5/integration_gitlab-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "integration_google": {
       "meta": {
-        "description": "Google integration allows you to automatically import your Google calendars and contacts into Nextcloud.",
+        "description": "Google integration allows you to automatically import your Google calendars, contacts, photos and files into Nextcloud.",
         "homepage": "https://github.com/nextcloud/integration_google",
         "isShipped": false,
         "licenses": [
@@ -1011,9 +1026,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0kigfd0hp41sz6zxz2miz81s12rdhbf6gj8gyywigzdzq2kpbsys",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.3/integration_google-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1qqrjzvg3y18v54r7mgisqjia0x65zm5m3hvn60llvp0bg9sng38",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.4/integration_google-0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "integration_jira": {
       "meta": {
@@ -1026,9 +1041,9 @@
         "name": "Jira integration",
         "summary": "Integration of Jira user support/ticketing solution"
       },
-      "sha256": "02k7wpi504rdabz2j7s9nvl96k0w5islbqc8q0zp4bnd2vh9h66c",
-      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.3/integration_jira-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "00skz0193n49s6i7fnpv3d28nxpaqzbyxgz84lvn5w794ck184nl",
+      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.5/integration_jira-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "integration_mastodon": {
       "meta": {
@@ -1041,9 +1056,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "19lndrh6dwnri5r4080zpm5y1d5xpvs72bqz1zv78s12bkbggbf5",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.4/integration_mastodon-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "0l2vfwcrzm1rnirywqsxkkq43m6jn14ajk0y4j8jvmgx6khgi9kr",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.5/integration_mastodon-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "integration_moodle": {
       "meta": {
@@ -1056,9 +1071,9 @@
         "name": "Moodle integration",
         "summary": "Integration of Moodle learning management system"
       },
-      "sha256": "179g4yx8lfxs1asmi8y6bbpkv32ijqfl7sf3bdlg9agk64mayrfa",
-      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.2/integration_moodle-0.0.2.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0a85yaznbc8pjmhcz1h8bnsdf2qdz72gzmfg1vs3l8fx7l94ym8p",
+      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.3/integration_moodle-0.0.3.tar.gz",
+      "version": "0.0.3"
     },
     "integration_reddit": {
       "meta": {
@@ -1071,9 +1086,9 @@
         "name": "Reddit integration",
         "summary": "Integration of Reddit social news aggregation service"
       },
-      "sha256": "1fzri4qhjfilzjcw5x5g3cg5slmqa64sfbnsy5dk593g4insax9s",
-      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.3/integration_reddit-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "0s26l7d53a2y85m1fh708zgahg0zzas44qx04hhfihzp491h3762",
+      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.4/integration_reddit-0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "integration_twitter": {
       "meta": {
@@ -1086,9 +1101,9 @@
         "name": "Twitter integration",
         "summary": "Integration of Twitter microblogging and social networking service"
       },
-      "sha256": "1rpk9q0iqjaz2idpp99ihpy2lnxlqz113jp7ppzy1a8djbs8igwz",
-      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.3/integration_twitter-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1rqi7qb3fz9sqcw6id92zi0lsk34apzhnwnwl17c4bk9r8rh8819",
+      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.4/integration_twitter-0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "integration_zammad": {
       "meta": {
@@ -1101,9 +1116,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "1g5hrkmzf5qbjmnn983bqrlav5lk31n8smz2nrdhb6n6ngzaaiyd",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.5/integration_zammad-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "0xw578022nyyq58nlrlgp42cxiyqk5s63h94pm19vvfzgynszfq1",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.6/integration_zammad-0.0.6.tar.gz",
+      "version": "0.0.6"
     },
     "issuetemplate": {
       "meta": {
@@ -1244,9 +1259,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "16ninwj1bd7mjfgdkd26a9fcy8q5sh0jdlq7g4fa43gb4lrxrx6x",
-      "url": "https://github.com/nextcloud/news/releases/download/15.0.3/news.tar.gz",
-      "version": "15.0.3"
+      "sha256": "13ikn24rwn6s6p02r2h6riknyl86z4xyysy1dqmvsw6pk70xn99i",
+      "url": "https://github.com/nextcloud/news/releases/download/15.0.4/news.tar.gz",
+      "version": "15.0.4"
     },
     "nextbackup": {
       "meta": {
@@ -1771,9 +1786,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1bg7ibkw1hq473j2kpgf4b236279dqli15iy3jr8cy34ja6g17hb",
-      "url": "https://gitnet.fr/attachments/08da6143-3585-496e-a28b-5a36f0ac4fd3",
-      "version": "1.16.0"
+      "sha256": "1g5jg82krmhlwrajyhpx7k1sb9idhzvg53l9hcj3d6gqr4i9h4ip",
+      "url": "https://gitnet.fr/attachments/a4c37ea1-5fe4-41f0-8796-a32a34c80bda",
+      "version": "1.16.1"
     },
     "smb_test": {
       "meta": {
@@ -1975,9 +1990,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "12innzr970h168pifz7mwca9gd6vqm059v0zr7pjc00731lcbl4x",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.3/tasks.tar.gz",
-      "version": "0.13.3"
+      "sha256": "1jmydndv44d4r4ysmc49gdidqvafhniw32qmng901chc01ppm70s",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.4/tasks.tar.gz",
+      "version": "0.13.4"
     },
     "terms_of_service": {
       "meta": {
@@ -1990,9 +2005,9 @@
         "name": "Terms of service",
         "summary": "Requires users to accept the terms of service before accessing data."
       },
-      "sha256": "0w8dx35kgwmkjq1wldzibw27yikvffp9rkd11av46546r0sfwcac",
-      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.6.0/terms_of_service-1.6.0.tar.gz",
-      "version": "1.6.0"
+      "sha256": "092rm1ld7gfria2qjzg20r5rvd3klb8nfn9wqvypsfnq859kibyg",
+      "url": "https://github.com/nextcloud/terms_of_service/releases/download/v1.6.1/terms_of_service-1.6.1.tar.gz",
+      "version": "1.6.1"
     },
     "text": {
       "meta": {
@@ -2319,6 +2334,21 @@
       "sha256": "0j9amcwdv8l093fjar0676wj3hj1l3aazbg6p7x7zfbsf5d48wfc",
       "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.5/wopi.tar.gz",
       "version": "3.5.5"
+    },
+    "workflow_ocr": {
+      "meta": {
+        "description": "This app makes it possible to process various files via OCR algorithms. \n\tThe processing is done via workflow-engine and can therefore easily be customized.",
+        "homepage": "https://github.com/R0Wi/workflow_ocr",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Workflow OCR",
+        "summary": "OCR processing via workflow"
+      },
+      "sha256": "09xz5ci089xvz6bawfsyzw15xfmv3gn3azyva24xwp1bp4n90ff7",
+      "url": "https://github.com/R0Wi/workflow_ocr/releases/download/v1.20.0/workflow_ocr.tar.gz",
+      "version": "1.20.0"
     },
     "workflow_pdf_converter": {
       "meta": {

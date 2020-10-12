@@ -925,9 +925,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "0fymy7z0adfrzskpdsz16gznvss7qgqcql99qwplyyy214df4f9x",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.22/files_mindmap-0.0.22.tar.gz",
-      "version": "0.0.22"
+      "sha256": "1q846w90x4rwc7xp7l9awk9f8xh8nm7vfrfvnsbjb6a6vhjk7ylb",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.23/files_mindmap-0.0.23.tar.gz",
+      "version": "0.0.23"
     },
     "files_pdfviewer": {
       "meta": {
@@ -2604,9 +2604,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "12innzr970h168pifz7mwca9gd6vqm059v0zr7pjc00731lcbl4x",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.3/tasks.tar.gz",
-      "version": "0.13.3"
+      "sha256": "1jmydndv44d4r4ysmc49gdidqvafhniw32qmng901chc01ppm70s",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.4/tasks.tar.gz",
+      "version": "0.13.4"
     },
     "telephoneprovider": {
       "meta": {
