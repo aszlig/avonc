@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1zq1rza6jzlgjm5kbjxkf1lsnmnw5r9byv86sma19yawa3h2v847",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/103abed6ef3c082376bd3455b9082e4c86b99ac1/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.7"
+      "sha256": "1lqsxw9b803m8k96gsy2paybcaamppzqgkq27xaslsrfygjgxn4s",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/8b6686f44b5200aa936433a974c5b62c360c3f92/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.8"
     },
     "apporder": {
       "meta": {
@@ -2162,6 +2162,21 @@
       "sha256": "0j3yig719c6vnfqqkfiwcp5j8r5bvhw1s66j0vqxp26mhparg9mw",
       "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.12/user_backend_sql_raw.tar.gz",
       "version": "1.0.12"
+    },
+    "user_external": {
+      "meta": {
+        "description": "Use external user authentication methods to give users acces to your Nextcloud instance:\n\n* IMAP\n* SMB\n* FTP\n* WebDAV\n* HTTP BasicAuth\n* SSH\n* XMPP\n\nRead the [documentation](https://github.com/nextcloud/user_external#readme) to learn how to configure it!",
+        "homepage": "https://github.com/nextcloud/user_external/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External user authentication",
+        "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
+      },
+      "sha256": "1lcksvm0knd6vwwlhvv74f6m4r3c2k4hd7rl0s6cbv2qvcbs3kaq",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v1.0.0/user_external-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "user_ldap": {
       "meta": {

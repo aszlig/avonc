@@ -2920,9 +2920,9 @@
         "name": "External user authentication",
         "summary": "Use external user authentication methods like IMAP, SMB, FTP, WebDAV, HTTP BasicAuth, SSH and XMPP"
       },
-      "sha256": "1p8cpzkgs3b1swchm4xscknd76i24gnphfhzpbsqj1dv3cxy39z8",
-      "url": "https://github.com/nextcloud/user_external/releases/download/v0.10.0/user_external-0.10.0.tar.gz",
-      "version": "0.10.0"
+      "sha256": "1lcksvm0knd6vwwlhvv74f6m4r3c2k4hd7rl0s6cbv2qvcbs3kaq",
+      "url": "https://github.com/nextcloud/user_external/releases/download/v1.0.0/user_external-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "user_ispconfig": {
       "meta": {
