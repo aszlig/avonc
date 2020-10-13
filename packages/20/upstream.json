@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1jsvndbv1jbjhmfpm9p6mzxqjvav38yywypf3hp6ighf06kvv9d8",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/79eec8abf6e1bce46fbaa58b46d41def0fd2f571/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.9"
+      "sha256": "0vjlnw546y1ib5fwk85hqi8hmdi6npinlww4l76qrfr4hg6w5rix",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/fe2e5e52366b1801895584be20267049cf9b2a85/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.10"
     },
     "apporder": {
       "meta": {
@@ -168,9 +168,9 @@
         "name": "Auto Mail Accounts",
         "summary": "Automatically create and delete mail accounts for the mail app for new Nextcloud users."
       },
-      "sha256": "1kfwyfwr15yk78ysnnig77r12bp6z90774iqygy155j7dbdp86fg",
-      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.6/auto_mail_accounts.tar.gz",
-      "version": "0.1.6"
+      "sha256": "1gsx203qawa4cw0pqa0wx2wk0m7lnfyp2np5b93plf3md77cw7z0",
+      "url": "https://github.com/PanCakeConnaisseur/auto_mail_accounts/releases/download/v0.1.7/auto_mail_accounts.tar.gz",
+      "version": "0.1.7"
     },
     "bbb": {
       "meta": {
@@ -440,9 +440,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "19dwkg94lhbl7xnc8viwkk7pw8fjlldp4273ywryx91h2d1hazh9",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.0/deck.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1zcpig230jgy8xlri703a8g81vbl6drsv90d6pih2dcb5zd6p1f6",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.1/deck.tar.gz",
+      "version": "1.1.1"
     },
     "diffuse": {
       "meta": {
@@ -714,6 +714,20 @@
         "name": "PDF viewer",
         "summary": "PDF viewer"
       }
+    },
+    "files_photospheres": {
+      "meta": {
+        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Photo Sphere Viewer",
+        "summary": "Enables viewing of google photosphere images"
+      },
+      "sha256": "0l62scny58v6hdvl6b9llkmpfzbgy0bx7nfb6cxk56bh9vb4nnq7",
+      "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.20.0/files_photospheres.tar.gz",
+      "version": "1.20.0"
     },
     "files_rightclick": {
       "meta": {
@@ -1585,9 +1599,9 @@
         "name": "Quota warning",
         "summary": "This app sends notifications to users when they reached 85, 90 and 95% of their quota."
       },
-      "sha256": "07rqqassb56azh7ca1vgwplvnz39jq919as2ca2mma0icrjxcakf",
-      "url": "https://github.com/nextcloud/quota_warning/releases/download/v1.9.0/quota_warning-1.9.0.tar.gz",
-      "version": "1.9.0"
+      "sha256": "089ghgpxldb6v3gbvbhinlhzk5yhaplhvzn06l26x80fw4fa3arx",
+      "url": "https://github.com/nextcloud/quota_warning/releases/download/v1.9.1/quota_warning-1.9.1.tar.gz",
+      "version": "1.9.1"
     },
     "rainloop": {
       "meta": {
@@ -1694,7 +1708,7 @@
     },
     "riotchat": {
       "meta": {
-        "description": "Element for Nextcloud allows you to install Element Web easily through Nextcloud and join the Matrix decentralized communication network.\n\nThis app does not include a Matrix server, only the client. You will have to either set up your own Matrix homeserver, rent one, or use a public one.\n\nThis project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Element or the Element project, or any of its subsidiaries or its affiliates.\n\nThe name Element as well as related names, marks, emblems and images are registered trademarks of their respective owners.\n\nThe upstream project can be found at [https://github.com/vector-im/riot-web](https://github.com/vector-im/riot-web).",
+        "description": "Element for Nextcloud allows you to install Element Web easily through Nextcloud and join the Matrix decentralized communication network.\n\nThis app does not include a Matrix server, only the client. You will have to either set up your own Matrix homeserver, rent one, or use a public one.\n\nThis project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Element or the Element project, or any of its subsidiaries or its affiliates.\n\nThe name Element as well as related names, marks, emblems and images are registered trademarks of their respective owners.\n\nThe upstream project can be found at [https://github.com/vector-im/element-web](https://github.com/vector-im/element-web).",
         "homepage": "https://github.com/gary-kim/riotchat",
         "isShipped": false,
         "licenses": [
@@ -1703,9 +1717,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1kfp8bk1i53ljm1pm76gn44wf8fyznxf5xxqa6jzcddy9ay42hj1",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.11/riotchat.tar.gz",
-      "version": "0.6.11"
+      "sha256": "09xk3sjyxdngv1yrjd52m367sbr3srxhhz7bb0yx63mzqa2km5pm",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.12/riotchat.tar.gz",
+      "version": "0.6.12"
     },
     "sentry": {
       "meta": {
@@ -1786,9 +1800,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1g5jg82krmhlwrajyhpx7k1sb9idhzvg53l9hcj3d6gqr4i9h4ip",
-      "url": "https://gitnet.fr/attachments/a4c37ea1-5fe4-41f0-8796-a32a34c80bda",
-      "version": "1.16.1"
+      "sha256": "1vbbdcivnv56cm1qihb4b02pl8rd35b03h1s44ws2fg4a41zzggj",
+      "url": "https://gitnet.fr/attachments/8b361c86-7346-430b-8cb1-94c1355e986a",
+      "version": "1.16.3"
     },
     "smb_test": {
       "meta": {
