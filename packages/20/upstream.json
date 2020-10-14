@@ -357,9 +357,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1jhxgyjxgyi4pzm3hksms2f6gjrik4xbjkfzhqrsny8pyjsri77k",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/b89cf1d41850c948d5eca905360be83c/cospend-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "015rck61znfsrpbq0xw4m2j9i1y1kh988l7ibpdxr6pqcnrif121",
+      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/2f9a941ac5ed58b74814722e43e2096b/cospend-1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "cpanelmailsync": {
       "meta": {
@@ -440,9 +440,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1zcpig230jgy8xlri703a8g81vbl6drsv90d6pih2dcb5zd6p1f6",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.1/deck.tar.gz",
-      "version": "1.1.1"
+      "sha256": "15dbpgvsv190cdh552zcpwr2z3x41iqhdmgza7i9mf1m9097ffmv",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.2/deck.tar.gz",
+      "version": "1.1.2"
     },
     "diffuse": {
       "meta": {
@@ -769,6 +769,21 @@
       "sha256": "100s20myxidjnamid0ywdpkmc77sl0hz5w47m553rslwvg3v6b27",
       "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.13.0/files_texteditor.tar.gz",
       "version": "2.14.0"
+    },
+    "files_trackdownloads": {
+      "meta": {
+        "description": "Creates activities (visible to any administrator) for downloads of files that were shared with other users or a group.",
+        "homepage": "https://github.com/timokunze/files_trackdownloads",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Activities for shared file downloads, visible to all admins",
+        "summary": "Creates activities (visible to any administrator) for downloads of files that were shared with other users or a group."
+      },
+      "sha256": "0nkkdsb3y7hyi223ppnjfg7d2xazznkdk433kl3ainvlzy0p61gw",
+      "url": "https://github.com/TimoKunze/files_trackdownloads/releases/download/v1.9.0/files_trackdownloads-1.9.0.tar.gz",
+      "version": "1.9.0"
     },
     "files_trashbin": {
       "meta": {
@@ -1672,9 +1687,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0px34n959z5zia1kjz4d0gnagfjahn6grvn37vqc37a7kzb8v2nr",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.4/richdocuments.tar.gz",
-      "version": "3.7.4"
+      "sha256": "1lgk0vyfq8dmpish4ssam8jq9zy2k0y01jl6qafd43l4lifjw4s2",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.5/richdocuments.tar.gz",
+      "version": "3.7.5"
     },
     "richdocumentscode": {
       "meta": {
@@ -1800,9 +1815,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1vbbdcivnv56cm1qihb4b02pl8rd35b03h1s44ws2fg4a41zzggj",
-      "url": "https://gitnet.fr/attachments/8b361c86-7346-430b-8cb1-94c1355e986a",
-      "version": "1.16.3"
+      "sha256": "1vsbf5i2qlh0m5yizr54c0s216pvpypw6z9qjkp388kk56fwp6wk",
+      "url": "https://gitnet.fr/attachments/3c7c6527-1d47-481a-9f30-f7fea9cfcceb",
+      "version": "1.17.0"
     },
     "smb_test": {
       "meta": {

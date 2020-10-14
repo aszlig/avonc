@@ -100,6 +100,7 @@ in {
   config = lib.mkIf (config.nextcloud.enable && cfg.enable) {
     nextcloud.extraPostPatch = ''
       rm apps/richdocuments/lib/Backgroundjobs/ObtainCapabilities.php \
+         apps/richdocuments/lib/Command/ActivateConfig.php \
          apps/richdocuments/lib/Service/CapabilitiesService.php \
          apps/richdocuments/lib/WOPI/Parser.php \
          apps/richdocuments/lib/WOPI/DiscoveryManager.php

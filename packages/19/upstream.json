@@ -500,9 +500,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1zcpig230jgy8xlri703a8g81vbl6drsv90d6pih2dcb5zd6p1f6",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.1/deck.tar.gz",
-      "version": "1.1.1"
+      "sha256": "15dbpgvsv190cdh552zcpwr2z3x41iqhdmgza7i9mf1m9097ffmv",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.2/deck.tar.gz",
+      "version": "1.1.2"
     },
     "diffuse": {
       "meta": {
@@ -2162,9 +2162,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0px34n959z5zia1kjz4d0gnagfjahn6grvn37vqc37a7kzb8v2nr",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.4/richdocuments.tar.gz",
-      "version": "3.7.4"
+      "sha256": "1lgk0vyfq8dmpish4ssam8jq9zy2k0y01jl6qafd43l4lifjw4s2",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.5/richdocuments.tar.gz",
+      "version": "3.7.5"
     },
     "richdocumentscode": {
       "meta": {
@@ -2378,9 +2378,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1vbbdcivnv56cm1qihb4b02pl8rd35b03h1s44ws2fg4a41zzggj",
-      "url": "https://gitnet.fr/attachments/8b361c86-7346-430b-8cb1-94c1355e986a",
-      "version": "1.16.3"
+      "sha256": "1vsbf5i2qlh0m5yizr54c0s216pvpypw6z9qjkp388kk56fwp6wk",
+      "url": "https://gitnet.fr/attachments/3c7c6527-1d47-481a-9f30-f7fea9cfcceb",
+      "version": "1.17.0"
     },
     "smb_test": {
       "meta": {
