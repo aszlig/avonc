@@ -85,4 +85,25 @@ in pkgs.gcc7Stdenv.mkDerivation rec {
   enableParallelBuilding = true;
 
   passthru.sdk = libreofficeSDK;
+
+  # XXX: This is to prevent Glibc conflicts with newer nixpkgs.
+  passthru.ip2unix = pkgs.stdenv.mkDerivation rec {
+    name = "ip2unix-${version}";
+    version = "2.1.3";
+
+    src = pkgs.fetchFromGitHub {
+      owner = "nixcloud";
+      repo = "ip2unix";
+      rev = "v${version}";
+      sha256 = "19c449h60b2m1d8kawnhpi4y9y4ddm24jmlh8kilqmx8m5l2khr6";
+    };
+
+    nativeBuildInputs = [
+      pkgs.meson pkgs.ninja pkgs.pkgconfig pkgs.python3Packages.pytest
+      pkgs.python3Packages.pytest-timeout
+    ];
+    buildInputs = [ pkgs.libyamlcpp ];
+
+    doCheck = true;
+  };
 }

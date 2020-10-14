@@ -196,7 +196,7 @@ in {
         User = "libreoffice-online";
         Group = "libreoffice-online";
         ExecStart = toString [
-          "${pkgs.ip2unix}/bin/ip2unix"
+          "${package.ip2unix}/bin/ip2unix"
           "-r out,port=9981,ignore"
           "-r out,path=/run/libreoffice-online/internal.socket"
           "${package}/bin/loolwsd ${genOptionFlags settings}"
