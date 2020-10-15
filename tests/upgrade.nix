@@ -102,20 +102,13 @@ import ./make-test.nix (pkgs: {
       systemd.services.libreoffice-online.enable = false;
       systemd.services.mongooseim.enable = false;
 
-      nextcloud.apps = let
-        # XXX: These apps are unsupported in Nextcloud 20.
-        forceEnabled = lib.genAttrs [
-          "social"
-        ] (lib.const { forceEnable = true; enable = true; });
-
-        enabled =  lib.genAttrs [
-          "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
-          "external" "end_to_end_encryption" "files_accesscontrol"
-          "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
-          "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
-          "social" "spreed" "tasks"
-        ] (lib.const { enable = true; });
-      in enabled // forceEnabled;
+      nextcloud.apps = lib.genAttrs [
+        "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
+        "external" "end_to_end_encryption" "files_accesscontrol"
+        "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
+        "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
+        "social" "spreed" "tasks"
+      ] (lib.const { enable = true; });
     };
   };
 
