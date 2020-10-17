@@ -349,7 +349,7 @@
     "cospend": {
       "meta": {
         "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/) and on the [Play store](https://play.google.com/store/apps/details?id=net.eneiluj.moneybuster).\n\n[PayForMe](https://github.com/mayflower/PayForMe) iOS client is currently being developped!\n\n## Features\n\n*  create/edit/delete projects, members, bills, bill categories, currencies\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (daily/weekly/monthly/yearly)\n*  optionally provide custom amount for each member in new bills\n*  link bills with personal files (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share projects with Nextcloud users/groups/circles\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  generate link/QRCode to easily import projects in MoneyBuster\n*  implement Nextcloud notifications and activity stream\n\nThis app is tested on Nextcloud 18 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
-        "homepage": "https://gitlab.com/eneiluj/cospend-nc",
+        "homepage": "https://github.com/eneiluj/cospend-nc",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -357,9 +357,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "015rck61znfsrpbq0xw4m2j9i1y1kh988l7ibpdxr6pqcnrif121",
-      "url": "https://gitlab.com/eneiluj/cospend-nc/-/wikis/uploads/2f9a941ac5ed58b74814722e43e2096b/cospend-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1hrwr1ii6f84c1424g2szxgigvy1i5wbzy5wm222w3l4j63wkrmz",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.1.2/cospend-1.1.2.tar.gz",
+      "version": "1.1.2"
     },
     "cpanelmailsync": {
       "meta": {
@@ -657,6 +657,21 @@
         "summary": "Adds basic external storage support"
       }
     },
+    "files_fulltextsearch": {
+      "meta": {
+        "description": "Extension to the _Full text search_ app to index your users' files.",
+        "homepage": "https://github.com/nextcloud/files_fulltextsearch",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Files",
+        "summary": "Index the content of your files"
+      },
+      "sha256": "1hr63zdjqpjrpvlnv2y3draszmb18hpidi6gfin59a23p5c63ccc",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v2.0.0/files_fulltextsearch-2.0.0.tar.gz",
+      "version": "2.0.0"
+    },
     "files_linkeditor": {
       "meta": {
         "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
@@ -848,9 +863,9 @@
         "name": "Flow Notifications",
         "summary": "Notification action for Nextcloud Flow"
       },
-      "sha256": "0avi1afsla86jy2qn0dlhv1w1d9gmprsjazizknz1d2649llgvzv",
-      "url": "https://github.com/nextcloud/flow_notifications/releases/download/v1.0.1/flow_notifications.tar.gz",
-      "version": "1.0.1"
+      "sha256": "17klb2wskr76wkfxpplr6ac2a1i5l3xqk7ab0vyywr8m15jzabc4",
+      "url": "https://github.com/nextcloud/flow_notifications/releases/download/v1.0.2/flow_notifications.tar.gz",
+      "version": "1.0.2"
     },
     "forms": {
       "meta": {
@@ -866,6 +881,36 @@
       "sha256": "011wdzpbkq5ncvbbap46452d7036qw92jyiip0043ib53zwcjbbh",
       "url": "https://github.com/nextcloud/forms/releases/download/v2.0.4/forms.tar.gz",
       "version": "2.0.4"
+    },
+    "fulltextsearch": {
+      "meta": {
+        "description": "Core App of the full-text search framework for your Nextcloud.",
+        "homepage": "https://github.com/nextcloud/fulltextsearch",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search",
+        "summary": "Core of the full-text search framework for Nextcloud"
+      },
+      "sha256": "0gcfi3gpr7cy5myzq1hrghq76nvigkmnhg12b2rss76rwrzslxn3",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v2.0.0/fulltextsearch-2.0.0.tar.gz",
+      "version": "2.0.0"
+    },
+    "fulltextsearch_elasticsearch": {
+      "meta": {
+        "description": "Extension to the _Full text search_ app to communicate with ElasticSearch.",
+        "homepage": "https://github.com/nextcloud/fulltextsearch_elasticsearch",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Elasticsearch Platform",
+        "summary": "Index using ElasticSearch"
+      },
+      "sha256": "0hja9w2pka42d4rxf0gc8bfrh3abk3m6km46w634ddrn1bh6p9kh",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v2.0.0/fulltextsearch_elasticsearch-2.0.0.tar.gz",
+      "version": "2.0.0"
     },
     "gpgmailer": {
       "meta": {
@@ -1055,9 +1100,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "1qqrjzvg3y18v54r7mgisqjia0x65zm5m3hvn60llvp0bg9sng38",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.4/integration_google-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "17h09vfid7l4gp36zkyrnysjpnisraqili6aplbhjr0q5gl9iy89",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.7/integration_google-0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "integration_jira": {
       "meta": {
@@ -1603,6 +1648,21 @@
       "url": "https://github.com/pbek/qownnotesapi/releases/download/20.9.0/qownnotesapi-nc.tar.gz",
       "version": "20.9.0"
     },
+    "quickaccesssorting": {
+      "meta": {
+        "description": "This app enables to sort the favorites by 'Alphabetically', 'Date Added', 'Last Date Modified' and 'Custom Order'!",
+        "homepage": "https://github.com/newhinton/quickaccess-sorting",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Favorites Quickaccess Sorting",
+        "summary": "Different Sorting for favorites-quickaccess!"
+      },
+      "sha256": "1nsbpag7jjjcaydsdkmrf7xyr258w1a3lbrcnsikcci2j608v8fv",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.0/quickaccesssorting.tar.gz",
+      "version": "1.1.0"
+    },
     "quota_warning": {
       "meta": {
         "description": "This app sends notifications to users when they reached 85, 90 and 95% of their quota (checked once a day).\nIn addition an email can be sent to the users. The three percentages can be changed in the admin settings.\nIt is also possible to have a link in the email and the notification for upsell options.",
@@ -1717,9 +1777,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1xd6di3dnhb5igi8ilrbzq9lghp2gy5lbnqczyr7vp01yrhh9sp6",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.800/richdocumentscode_arm64.tar.gz",
-      "version": "4.2.800"
+      "sha256": "1mblmzz7avdw8kzdcwhsai6959lkyy1amlwnn4w5naq50ywgci3v",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.900/richdocumentscode_arm64.tar.gz",
+      "version": "4.2.900"
     },
     "riotchat": {
       "meta": {
@@ -1815,9 +1875,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1vsbf5i2qlh0m5yizr54c0s216pvpypw6z9qjkp388kk56fwp6wk",
-      "url": "https://gitnet.fr/attachments/3c7c6527-1d47-481a-9f30-f7fea9cfcceb",
-      "version": "1.17.0"
+      "sha256": "1gyv2fm7k112ac1gylap5qma0liyli2sj3gyv5jw949wq54jn9wa",
+      "url": "https://gitnet.fr/attachments/001c38cd-7801-4486-ab63-f538b50a85db",
+      "version": "1.18.0"
     },
     "smb_test": {
       "meta": {
@@ -2336,6 +2396,21 @@
         "summary": "Simple file viewer with slideshow for media"
       }
     },
+    "w2g2": {
+      "meta": {
+        "description": "Nextcloud plugin that allows the users to lock files and folders.\n\t\tIt works with files and folders owned by the user, shared by another user or inside a group folder.\n\n\t\tThis is a fork from the Working2gether app, with enhancements.",
+        "homepage": "https://github.com/newroco/W2G2",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "W2G2",
+        "summary": "Visual locking of files and folders to contribute to a better collaboration"
+      },
+      "sha256": "0w4r68gsfiykgh9rgcx1idrbb3kai5gw8252nahqv4x6f2nms2ax",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.3/w2g2.tar.gz",
+      "version": "3.0.3"
+    },
     "weather_status": {
       "meta": {
         "alwaysEnable": false,
@@ -2363,6 +2438,21 @@
       "sha256": "0dvdnwnjixl6vca1xv1ik4m2s89q0jiwr5caf1ky0zr4fgvpwqwc",
       "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/557a11c16e8e2be632f0f02bce51f8a4/webapppassword.tar.gz",
       "version": "20.10.0"
+    },
+    "whiteboard": {
+      "meta": {
+        "description": "A collaborative white board",
+        "homepage": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Whiteboard",
+        "summary": "A collaborative white board"
+      },
+      "sha256": "0fac5iwr99pf67n6s51r2jix75inmm6mwdcfbnq649i57wfqm6g7",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/-/wikis/uploads/5b30c7bbc06ad1970758f4d8a59684c6/whiteboard.tgz",
+      "version": "0.0.3"
     },
     "wopi": {
       "meta": {

@@ -2441,9 +2441,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1vsbf5i2qlh0m5yizr54c0s216pvpypw6z9qjkp388kk56fwp6wk",
-      "url": "https://gitnet.fr/attachments/3c7c6527-1d47-481a-9f30-f7fea9cfcceb",
-      "version": "1.17.0"
+      "sha256": "1gyv2fm7k112ac1gylap5qma0liyli2sj3gyv5jw949wq54jn9wa",
+      "url": "https://gitnet.fr/attachments/001c38cd-7801-4486-ab63-f538b50a85db",
+      "version": "1.18.0"
     },
     "smb_test": {
       "meta": {
@@ -3120,9 +3120,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "1nm1dyqwg6rvwrrcdxdkb9i4hmssxdhis89rvi8dmaghh7wwdj7z",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.0.2/w2g2.tar.gz",
-      "version": "3.0.2"
+      "sha256": "0w4r68gsfiykgh9rgcx1idrbb3kai5gw8252nahqv4x6f2nms2ax",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.3/w2g2.tar.gz",
+      "version": "3.0.3"
     },
     "weather": {
       "meta": {
@@ -3165,9 +3165,9 @@
         "name": "Whiteboard",
         "summary": "A collaborative white board"
       },
-      "sha256": "13g2l4ivwkmx3vryr5ca8hh3rc181122kzvajkp8bnia3vjb9s37",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/-/wikis/uploads/fe4a2c6060cf8a569241a2b560c16504/whiteboard.tgz",
-      "version": "0.0.2"
+      "sha256": "0fac5iwr99pf67n6s51r2jix75inmm6mwdcfbnq649i57wfqm6g7",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/-/wikis/uploads/5b30c7bbc06ad1970758f4d8a59684c6/whiteboard.tgz",
+      "version": "0.0.3"
     },
     "wopi": {
       "meta": {

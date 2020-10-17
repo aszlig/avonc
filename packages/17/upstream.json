@@ -3064,9 +3064,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "1nm1dyqwg6rvwrrcdxdkb9i4hmssxdhis89rvi8dmaghh7wwdj7z",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.0.2/w2g2.tar.gz",
-      "version": "3.0.2"
+      "sha256": "0w4r68gsfiykgh9rgcx1idrbb3kai5gw8252nahqv4x6f2nms2ax",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.3/w2g2.tar.gz",
+      "version": "3.0.3"
     },
     "weather": {
       "meta": {

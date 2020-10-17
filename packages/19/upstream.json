@@ -2192,9 +2192,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1xd6di3dnhb5igi8ilrbzq9lghp2gy5lbnqczyr7vp01yrhh9sp6",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.800/richdocumentscode_arm64.tar.gz",
-      "version": "4.2.800"
+      "sha256": "1mblmzz7avdw8kzdcwhsai6959lkyy1amlwnn4w5naq50ywgci3v",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.900/richdocumentscode_arm64.tar.gz",
+      "version": "4.2.900"
     },
     "riotchat": {
       "meta": {
@@ -2378,9 +2378,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1vsbf5i2qlh0m5yizr54c0s216pvpypw6z9qjkp388kk56fwp6wk",
-      "url": "https://gitnet.fr/attachments/3c7c6527-1d47-481a-9f30-f7fea9cfcceb",
-      "version": "1.17.0"
+      "sha256": "1gyv2fm7k112ac1gylap5qma0liyli2sj3gyv5jw949wq54jn9wa",
+      "url": "https://gitnet.fr/attachments/001c38cd-7801-4486-ab63-f538b50a85db",
+      "version": "1.18.0"
     },
     "smb_test": {
       "meta": {
@@ -3028,9 +3028,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "1nm1dyqwg6rvwrrcdxdkb9i4hmssxdhis89rvi8dmaghh7wwdj7z",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.0.2/w2g2.tar.gz",
-      "version": "3.0.2"
+      "sha256": "0w4r68gsfiykgh9rgcx1idrbb3kai5gw8252nahqv4x6f2nms2ax",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.0.3/w2g2.tar.gz",
+      "version": "3.0.3"
     },
     "weather": {
       "meta": {
@@ -3061,6 +3061,21 @@
       "sha256": "0dvdnwnjixl6vca1xv1ik4m2s89q0jiwr5caf1ky0zr4fgvpwqwc",
       "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/557a11c16e8e2be632f0f02bce51f8a4/webapppassword.tar.gz",
       "version": "20.10.0"
+    },
+    "whiteboard": {
+      "meta": {
+        "description": "A collaborative white board",
+        "homepage": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Whiteboard",
+        "summary": "A collaborative white board"
+      },
+      "sha256": "0fac5iwr99pf67n6s51r2jix75inmm6mwdcfbnq649i57wfqm6g7",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/whiteboard/-/wikis/uploads/5b30c7bbc06ad1970758f4d8a59684c6/whiteboard.tgz",
+      "version": "0.0.3"
     },
     "wopi": {
       "meta": {
