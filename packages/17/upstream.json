@@ -3201,6 +3201,10 @@
       "version": "0.8.25"
     }
   },
+  "constraints": {
+    "mindmap_app": ">0.0.3",
+    "ocsms": ">1.10.1"
+  },
   "nextcloud": {
     "sha256": "1iysxmax48g50k7yvrhf2q84cx7g77167bdjy82f42lwmrk1zrk7",
     "url": "https://download.nextcloud.com/server/releases/nextcloud-17.0.10.tar.bz2",
