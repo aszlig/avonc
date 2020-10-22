@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0vjlnw546y1ib5fwk85hqi8hmdi6npinlww4l76qrfr4hg6w5rix",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/fe2e5e52366b1801895584be20267049cf9b2a85/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.10"
+      "sha256": "0zl3f0lv4xmwkmy99v5rnij07jyqja44wf99a8vs16fm7m6pl3xn",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/2dacc95fb3238f5e6c47da31417025447cef19b2/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.11"
     },
     "apporder": {
       "meta": {
@@ -198,9 +198,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0w7ljmi5926j60is8f03v7hwjgrjlsyw8n5dx33hfj9vcj4ybc8q",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.3/bookmarks-3.4.3.tar.gz",
-      "version": "3.4.3"
+      "sha256": "09kk1qqcrgx1nlg5irwv9hm80nnp6fr4f7slmwsg57hr9w8ixyyp",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.4/bookmarks-3.4.4.tar.gz",
+      "version": "3.4.4"
     },
     "breezedark": {
       "meta": {
@@ -316,9 +316,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "0l5v2r6cwca2hx5i0x381qc08i7a88jwrrvi9p1qxgl82dny6v1s",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/ac11b0342e0b6ee0402b8addcfe03cc9/collectives-0.2.1.tar.gz",
-      "version": "0.2.1"
+      "sha256": "04ii5ff5k0p1m8wn2gy6jfwc78lwa03vv5khv56qknc53dh3kwf7",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c810886202eeae2527b4e75f93ac16fa/collectives-0.2.2.tar.gz",
+      "version": "0.2.2"
     },
     "comments": {
       "meta": {
@@ -344,9 +344,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1z9hg0wf16cr7f55cga27k8lb09g9cbmnaa436flzh6z6svi64fa",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.0/contacts.tar.gz",
-      "version": "3.4.0"
+      "sha256": "1gggz1ixpxfa1cf3685ppawwz5l6brqfsqdn0n9z406w4ximgzhl",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.1/contacts.tar.gz",
+      "version": "3.4.1"
     },
     "contactsinteraction": {
       "meta": {
@@ -372,9 +372,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1hrwr1ii6f84c1424g2szxgigvy1i5wbzy5wm222w3l4j63wkrmz",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.1.2/cospend-1.1.2.tar.gz",
-      "version": "1.1.2"
+      "sha256": "07wd9g07700fiz38l67bk29cwfvzsjz8l3iq4q2w9lbnin3q9vhn",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.1.4/cospend-1.1.4.tar.gz",
+      "version": "1.1.4"
     },
     "cpanelmailsync": {
       "meta": {
@@ -492,6 +492,7 @@
     "duplicatefinder": {
       "meta": {
         "description": "Click on the icon and find if you have duplicate files.\n    \nYou can either use the command or the gui. \n\n## Command usage\n\n  ```duplicates:find-all [options]```\n\n### Options\n- `-u --user` scan files of the specified user (-u admin)\n- `-p --path` limit scan to this path (--path=\"/alice/files/Photos\")",
+        "homepage": "https://github.com/PaulLereverend/NextcloudDuplicateFinder",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -499,9 +500,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "1vq5x9q5mqdk6npkwdd2w5a9glwmbsfr3mdwic9pijybri4iq3rh",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.2/duplicatefinder.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0rw263bmmgv1nkwnmi5gq0yfxsqiwc3957k413ain0hskkvz3919",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.4/duplicatefinder.tar.gz",
+      "version": "0.0.4"
     },
     "encryption": {
       "meta": {
@@ -530,6 +531,21 @@
       "sha256": "0gvzznbc1z65h231cqvjdhwazh6031rdrx8nnc0mfy1z3h4xdx0s",
       "url": "https://github.com/nextcloud/end_to_end_encryption/releases/download/v1.6.2/end_to_end_encryption.tar.gz",
       "version": "1.6.2"
+    },
+    "epubreader": {
+      "meta": {
+        "description": "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+        "homepage": "https://github.com/e-alfred/epubreader",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "EPUB/CBZ/PDF ebook reader",
+        "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
+      },
+      "sha256": "1ivc7140bmpfsvv7kn4b52mfahb9xnm8pnxlb8hs7k381l5qb6aq",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.3/epubreader-1.4.3.tar.gz",
+      "version": "1.4.3"
     },
     "event_update_notification": {
       "meta": {
@@ -560,6 +576,21 @@
       "sha256": "1i8ig78d3vpy4yvhwzzccn1dyqhbpl2s0b395v9qj029isirb4zc",
       "url": "https://github.com/nextcloud/external/releases/download/v3.7.1/external-3.7.1.tar.gz",
       "version": "3.7.1"
+    },
+    "extract": {
+      "meta": {
+        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n\n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
+        "homepage": "https://github.com/PaulLereverend/NextcloudExtract",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Extract",
+        "summary": "Extract archive from the web interface"
+      },
+      "sha256": "10fwsr8yirm40imnl9xsl5p2whjih92racyj150j65pmyj18p610",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.5/extract.tar.gz",
+      "version": "1.2.4"
     },
     "federatedfilesharing": {
       "meta": {
@@ -758,6 +789,21 @@
       "sha256": "0l62scny58v6hdvl6b9llkmpfzbgy0bx7nfb6cxk56bh9vb4nnq7",
       "url": "https://github.com/nextcloud/files_photospheres/releases/download/1.20.0/files_photospheres.tar.gz",
       "version": "1.20.0"
+    },
+    "files_readmemd": {
+      "meta": {
+        "description": "Show README.md &amp; HEADER.md gitlab style on your NextCloud !\nWith this app you can add a header and a footer to your nextcloud directories.\nThis can be use to explain the goal of a directory, describe the content of a folder ...\nIt show README.md in the way gitlab does.",
+        "homepage": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "README.md",
+        "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
+      },
+      "sha256": "0yc9lni930x3pa9lb9lgqa7h2502aym03jcfgmlihsyd6rfpdarh",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/e772ec018ce4fb2ece1065bea27901cc/files_readmemd.tar.gz",
+      "version": "1.2.0"
     },
     "files_rightclick": {
       "meta": {
@@ -1030,6 +1076,21 @@
       "url": "https://github.com/nextcloud/guests/releases/download/v1.6.0/guests.tar.gz",
       "version": "1.6.0"
     },
+    "hsts": {
+      "meta": {
+        "description": "Add HSTS (HTTP Strict Transport Security) header to HTTPS response, if modheaders is not available.",
+        "homepage": "https://github.com/sualko/cloud_hsts/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "HSTS Header",
+        "summary": "Add HSTS header to HTTPS response"
+      },
+      "sha256": "190235yk507pcd38nyhsbihqn93jqnffgcx4vkayfki55cs9qigw",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.7.0/hsts-v0.7.0.tar.gz",
+      "version": "0.7.0"
+    },
     "imageconverter": {
       "meta": {
         "description": "Very simple app to convert your HEIC/ HEIF files to JPEG using ImagickMagick and the PHP Imagick extension. \n        Needs imagemagick with HEIC support installed and the PHP bindings (Imagick extension) enabled.\n        Check Github for more details.",
@@ -1085,9 +1146,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "01mhd27nr8zb3nsa6nnz1a6k8flms16qgfsk3jq0h1y62hk8kppp",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.6/integration_github-0.0.6.tar.gz",
-      "version": "0.0.6"
+      "sha256": "0y6adm1nkmyqrj0slz94zy00nh817s1q1y43n7hn6rwjlckvr415",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.7/integration_github-0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "integration_gitlab": {
       "meta": {
@@ -1115,9 +1176,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "17h09vfid7l4gp36zkyrnysjpnisraqili6aplbhjr0q5gl9iy89",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.7/integration_google-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "0176l5np0z62l6fnwajrbbj79vwqa6ldbpdjklyp8k601rvcnsyk",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.9/integration_google-0.0.9.tar.gz",
+      "version": "0.0.9"
     },
     "integration_jira": {
       "meta": {
@@ -1130,9 +1191,9 @@
         "name": "Jira integration",
         "summary": "Integration of Jira user support/ticketing solution"
       },
-      "sha256": "00skz0193n49s6i7fnpv3d28nxpaqzbyxgz84lvn5w794ck184nl",
-      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.5/integration_jira-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "1fb1qsrcb5x43ig4yfj12z8a2izknig3nvsgywmw1wlvhjnwl817",
+      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.8/integration_jira-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "integration_mastodon": {
       "meta": {
@@ -1145,9 +1206,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "0l2vfwcrzm1rnirywqsxkkq43m6jn14ajk0y4j8jvmgx6khgi9kr",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.5/integration_mastodon-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "1pr3j830iyi56wrh70wn0cr2zg8fznciv7q6jkwxn4k6qvdj5pnn",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.8/integration_mastodon-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "integration_moodle": {
       "meta": {
@@ -1337,6 +1398,21 @@
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
       "version": "0.12.0"
     },
+    "music": {
+      "meta": {
+        "description": "Plays audio files directly in the Files view or in a stand-alone library view. Depending on the browser, supports playing file types mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3. Also playlist formats m3u, m3u8, and pls are supported.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, search tracks by keywords, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to the next files of the folder or playlist until stopped. The app includes also a server compatible with Ampache and Subsonic clients, allowing playback and browsing of the library on various external applications e.g. on Android or iPhone.\n\nWhen browser and OS support available, the Music app can be controlled with the media keys (play/pause/stop/next/prev) on the keyboard or the OS notification center even when the browser is not focused. This is supported at least on Chrome and Edge (tested on Windows 10 and Android).\n\nThe admin may set up connection to the Last.fm service, allowing the Music app to show biography and background information of the artists, albums, and tracks.\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is optimized for somewhat smaller collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
+        "homepage": "https://github.com/owncloud/music",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Music",
+        "summary": "Music player, library viewer, and server"
+      },
+      "sha256": "1z6kdr0nc5nplnks8hwc5xzg2kck6siira0prnabxm2ibp027fmj",
+      "url": "https://github.com/owncloud/music/releases/download/v0.17.0/music_0.17.0_nc-signed.tar.gz",
+      "version": "0.17.0"
+    },
     "news": {
       "meta": {
         "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
@@ -1452,7 +1528,7 @@
     },
     "onlyoffice": {
       "meta": {
-        "description": "ONLYOFFICE connector enables you to edit Office documents within ONLYOFFICE from the familiar web interface. This will create a new Open in ONLYOFFICE action within the document library for Office documents. This allows multiple users to collaborate in real time and to save back those changes to your file storage.",
+        "description": "ONLYOFFICE connector allows you to view, edit and collaborate on text documents, spreadsheets and presentations within Nextcloud using ONLYOFFICE Docs. This will create a new Edit in ONLYOFFICE action within the document library for Office documents. This allows multiple users to co-author documents in real time from the familiar web interface and save the changes back to your file storage.",
         "homepage": "https://www.onlyoffice.com",
         "isShipped": false,
         "licenses": [
@@ -1461,9 +1537,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "09ssq27p583l60zimv8g98s9cgzbp7f01cqv8v6j7zcfnzsgkz3l",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.0.2/onlyoffice.tar.gz",
-      "version": "6.0.2"
+      "sha256": "01i16ifgg8x0d4yfhp8xnij04xw1vs8kqqr6cmqm8pg4lif90zi4",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.1.0/onlyoffice.tar.gz",
+      "version": "6.1.0"
     },
     "openhab": {
       "meta": {
@@ -1674,9 +1750,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "1nsbpag7jjjcaydsdkmrf7xyr258w1a3lbrcnsikcci2j608v8fv",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.0/quickaccesssorting.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0x6npw2a1362v5knn7py8phjp5jkfihmmzmk3aa7gqmbdr7ia04l",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.1/quickaccesssorting.tar.gz",
+      "version": "1.1.1"
     },
     "quota_warning": {
       "meta": {
@@ -1811,6 +1887,21 @@
       "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.12/riotchat.tar.gz",
       "version": "0.6.12"
     },
+    "sensorlogger": {
+      "meta": {
+        "description": "SensorLogger for ownCloud enables users to log data provided by sensor devices",
+        "homepage": "https://www.html5live.at/sensorlogger/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sensorlogger",
+        "summary": "Log data from any type of sensor and visualize it"
+      },
+      "sha256": "152ywigblj0ns79y4rqqasq58kwzaj6bk1bkd4nlqmqs4k0jjv39",
+      "url": "https://www.html5live.at/wp-content/uploads/2020/10/sensorlogger-0.1.3nc.tar.gz",
+      "version": "0.1.3"
+    },
     "sentry": {
       "meta": {
         "description": "A Sentry integration that sends unhandled exceptions to a Sentry instance to aggregate application crashes. You either have to set up your own Sentry instance or use your sentry.io account. See the admin documentation for how to configure this app.",
@@ -1890,9 +1981,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1gyv2fm7k112ac1gylap5qma0liyli2sj3gyv5jw949wq54jn9wa",
-      "url": "https://gitnet.fr/attachments/001c38cd-7801-4486-ab63-f538b50a85db",
-      "version": "1.18.0"
+      "sha256": "19bprvw2xnsa1c21p8hn42ngb0zyqkwrrmb7p3zmshc8d2cmfxy1",
+      "url": "https://gitnet.fr/attachments/57284c1a-171a-4e25-841b-26b031ba4d7c",
+      "version": "1.19.1"
     },
     "smb_test": {
       "meta": {
@@ -1905,9 +1996,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "0jczf6wvw7dq86mp23fswc7y8z8f7xd36s47iv275ym2v1pjxj8r",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/0.2.6/smb_test.tar.gz",
-      "version": "0.2.6"
+      "sha256": "0izd3rjfwnq5ncd75d80qp7iqjia6p2sfbhn272lfbv7ccqj4ym8",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.0/smb_test.tar.gz",
+      "version": "0.3.0"
     },
     "social": {
       "meta": {
@@ -1920,9 +2011,9 @@
         "name": "Social",
         "summary": "Nextcloud becomes part of the federated social networks!"
       },
-      "sha256": "1l7alikkz6s4fsl5jwrxkdgckfmmwzld52p17cv32lfyhllk1h7v",
-      "url": "https://github.com/nextcloud/social/releases/download/v0.4.0/social-0.4.0.tar.gz",
-      "version": "0.4.0"
+      "sha256": "0hj20q2h12hsjl8amv4rqjgfmbdvp4rnhy9zqddn6922ci64k3m7",
+      "url": "https://github.com/nextcloud/social/releases/download/v0.4.1/social-0.4.1.tar.gz",
+      "version": "0.4.1"
     },
     "sociallogin": {
       "meta": {
@@ -2109,9 +2200,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "1jmydndv44d4r4ysmc49gdidqvafhniw32qmng901chc01ppm70s",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.4/tasks.tar.gz",
-      "version": "0.13.4"
+      "sha256": "05xpq7qd038fh5jqpzb8d1phb38vjgaqmy398f7i5a5lwal8l26j",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.5/tasks.tar.gz",
+      "version": "0.13.5"
     },
     "terms_of_service": {
       "meta": {
@@ -2270,6 +2361,21 @@
       "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v6.0.0/twofactor_u2f.tar.gz",
       "version": "6.0.0"
     },
+    "unsplash": {
+      "meta": {
+        "description": "Show a new random featured nature photo from Unsplash on the log in screen and (optionally) in the header.",
+        "homepage": "https://github.com/jancborchardt/unsplash/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Splash",
+        "summary": "Random background from Unsplash"
+      },
+      "sha256": "1ppln9vcypjx2dsrrasm347kqnada44xfn7cmjrc0ay5b27gvn9h",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.1.7/unsplash.tar.gz",
+      "version": "1.1.7"
+    },
     "updatenotification": {
       "meta": {
         "alwaysEnable": false,
@@ -2397,6 +2503,21 @@
       "sha256": "0zxdqgw22i07v7z4n6879x5md1q1gifmrz8cvjxvmfrga12p7gws",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.4.2/user_usage_report-1.4.2.tar.gz",
       "version": "1.4.2"
+    },
+    "video_converter": {
+      "meta": {
+        "description": "Convert videos within the web interface\n\n*  **Features:**\n    * Video Conversion\n    * Optionally overwrites files\n    * Preset option\n    * Support external local storage\n    * More to come...\n\n*  **Requirements:**\n    * FFmpeg\n\n*  **Note:**\n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
+        "homepage": "https://github.com/PaulLereverend/NextcloudVideo_Converter",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Video converter",
+        "summary": "Convert videos within the web interface"
+      },
+      "sha256": "13pccn1milh9qp19fcj4km6yb5gbjkwspm16xwk1vccwhhlq9zl8",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.5/video_converter.tar.gz",
+      "version": "0.1.5"
     },
     "viewer": {
       "meta": {

@@ -554,6 +554,7 @@
     "duplicatefinder": {
       "meta": {
         "description": "Click on the icon and find if you have duplicate files.\n    \nYou can either use the command or the gui. \n\n## Command usage\n\n  ```duplicates:find-all [options]```\n\n### Options\n- `-u --user` scan files of the specified user (-u admin)\n- `-p --path` limit scan to this path (--path=\"/alice/files/Photos\")",
+        "homepage": "https://github.com/PaulLereverend/NextcloudDuplicateFinder",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -561,9 +562,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "1vq5x9q5mqdk6npkwdd2w5a9glwmbsfr3mdwic9pijybri4iq3rh",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.2/duplicatefinder.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0rw263bmmgv1nkwnmi5gq0yfxsqiwc3957k413ain0hskkvz3919",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.4/duplicatefinder.tar.gz",
+      "version": "0.0.4"
     },
     "emlviewer": {
       "meta": {
@@ -610,18 +611,18 @@
     },
     "epubreader": {
       "meta": {
-        "description": "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+        "description": "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
         "homepage": "https://github.com/e-alfred/epubreader",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Reader (ebook reader)",
+        "name": "EPUB/CBZ/PDF ebook reader",
         "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
       },
-      "sha256": "0xzg3bdlc3z6wqlb67a9rqf233v892g2h6prbq2zdrlv9qnb5nsq",
-      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.2/epubreader-1.4.2.tar.gz",
-      "version": "1.4.2"
+      "sha256": "1ivc7140bmpfsvv7kn4b52mfahb9xnm8pnxlb8hs7k381l5qb6aq",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.3/epubreader-1.4.3.tar.gz",
+      "version": "1.4.3"
     },
     "event_update_notification": {
       "meta": {
@@ -1357,9 +1358,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "1fpgvvsg6asynka4bfx6s37icz9vsjizgnxf53j96izb5cd7bgbs",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.6.0/hsts-v0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "190235yk507pcd38nyhsbihqn93jqnffgcx4vkayfki55cs9qigw",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.7.0/hsts-v0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "imageconverter": {
       "meta": {
@@ -1618,9 +1619,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1kbw6z0aialv9y909msyjhxxccr8lkmi6ggbgdxmdb6r4n8sp71q",
-      "url": "https://github.com/paulijar/music/files/5012823/music_0.16.0_nc-signed.tar.gz",
-      "version": "0.16.0"
+      "sha256": "1z6kdr0nc5nplnks8hwc5xzg2kck6siira0prnabxm2ibp027fmj",
+      "url": "https://github.com/owncloud/music/releases/download/v0.17.0/music_0.17.0_nc-signed.tar.gz",
+      "version": "0.17.0"
     },
     "news": {
       "meta": {
@@ -2094,9 +2095,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "0h7chdfr2wxp0v3qmiihpvs5i9zzy2hag3jdfvlfaiccl9mkkn9a",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.0.3/quickaccesssorting.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0x6npw2a1362v5knn7py8phjp5jkfihmmzmk3aa7gqmbdr7ia04l",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.1/quickaccesssorting.tar.gz",
+      "version": "1.1.1"
     },
     "quicknotes": {
       "meta": {
@@ -2300,9 +2301,9 @@
         "name": "Sensorlogger",
         "summary": "Log data from any type of sensor and visualize it"
       },
-      "sha256": "143fa9yk1z1dh72q1p8h3d2jwi4kxdsgafnfd0lv6gx4y1p5vnwg",
-      "url": "https://www.html5live.at/wp-content/uploads/2019/11/sensorlogger-0.1.2nc.tar.gz",
-      "version": "0.1.2"
+      "sha256": "152ywigblj0ns79y4rqqasq58kwzaj6bk1bkd4nlqmqs4k0jjv39",
+      "url": "https://www.html5live.at/wp-content/uploads/2020/10/sensorlogger-0.1.3nc.tar.gz",
+      "version": "0.1.3"
     },
     "sentry": {
       "meta": {
@@ -2604,9 +2605,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "1jmydndv44d4r4ysmc49gdidqvafhniw32qmng901chc01ppm70s",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.4/tasks.tar.gz",
-      "version": "0.13.4"
+      "sha256": "05xpq7qd038fh5jqpzb8d1phb38vjgaqmy398f7i5a5lwal8l26j",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.5/tasks.tar.gz",
+      "version": "0.13.5"
     },
     "telephoneprovider": {
       "meta": {
@@ -2848,9 +2849,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "138i328gvw855nvswaw3w2jn0mpm1n043hvqcwg8a1wnl0hld7g2",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.1.6/unsplash.tar.gz",
-      "version": "1.1.6"
+      "sha256": "1ppln9vcypjx2dsrrasm347kqnada44xfn7cmjrc0ay5b27gvn9h",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.1.7/unsplash.tar.gz",
+      "version": "1.1.7"
     },
     "updatenotification": {
       "meta": {
@@ -3027,7 +3028,7 @@
     },
     "video_converter": {
       "meta": {
-        "description": "Convert videos within the web interface\n\n*  **Features :**  \n    * Video Conversion\n    * Override or not\n    * Preset option\n    * Support external local storage\n    * More incoming...\n\n*  **Requirements :** \n    * FFmpeg\n\n*  **Note :** \n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
+        "description": "Convert videos within the web interface\n\n*  **Features:**\n    * Video Conversion\n    * Optionally overwrites files\n    * Preset option\n    * Support external local storage\n    * More to come...\n\n*  **Requirements:**\n    * FFmpeg\n\n*  **Note:**\n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
         "homepage": "https://github.com/PaulLereverend/NextcloudVideo_Converter",
         "isShipped": false,
         "licenses": [
@@ -3036,9 +3037,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "05zxxcsw4h7xn3qwx453jfj95jxgia6f0vzihdc6ln9l48wl5cvv",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.4/video_converter.tar.gz",
-      "version": "0.1.4"
+      "sha256": "13pccn1milh9qp19fcj4km6yb5gbjkwspm16xwk1vccwhhlq9zl8",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.5/video_converter.tar.gz",
+      "version": "0.1.5"
     },
     "viewer": {
       "meta": {
