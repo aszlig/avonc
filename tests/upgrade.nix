@@ -77,6 +77,9 @@ import ./make-test.nix (pkgs: {
           # https://github.com/nextcloud/user_oidc/issues/90
           (assert nc19apps.user_oidc.version == "0.2.1"; "user_oidc")
 
+          # https://github.com/e-alfred/epubreader/issues/22
+          (assert nc19apps.epubreader.version == "1.4.3"; "epubreader")
+
           # These apps have non-deterministic download URLs
           "occweb"
           "quicknotes"
