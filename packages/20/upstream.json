@@ -198,9 +198,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "09kk1qqcrgx1nlg5irwv9hm80nnp6fr4f7slmwsg57hr9w8ixyyp",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.4/bookmarks-3.4.4.tar.gz",
-      "version": "3.4.4"
+      "sha256": "07617c29b8pk1ibrad36nn3jxkxv87ghlja4hbpzbi0xcp8drqz1",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.0/bookmarks-4.0.0.tar.gz",
+      "version": "4.0.0"
     },
     "breezedark": {
       "meta": {
@@ -246,6 +246,20 @@
       "sha256": "10iq0zghc9nkvpl8mv9jy39h7pmii4hib5q938411fvvqd9gc97m",
       "url": "https://github.com/nextcloud/calendar/releases/download/v2.1.2/calendar.tar.gz",
       "version": "2.1.2"
+    },
+    "camerarawpreviews": {
+      "meta": {
+        "description": "This app will make previews of &amp;quot;RAW&amp;quot; files from cameras in Nextcloud/ownCloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Camera RAW Previews",
+        "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
+      },
+      "sha256": "05gsh8lgv6wan2rriq7g3l3hdgbx6pqsxabrqd31iqmlw61klvlx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.9/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.9"
     },
     "carnet": {
       "meta": {
@@ -588,9 +602,24 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "10fwsr8yirm40imnl9xsl5p2whjih92racyj150j65pmyj18p610",
+      "sha256": "1xh71kdam4args2kjfhlx1bwy4qifmkgkhpxkf1d9kvyw9y687qb",
       "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.5/extract.tar.gz",
-      "version": "1.2.4"
+      "version": "1.2.5"
+    },
+    "facerecognition": {
+      "meta": {
+        "description": "**Detect and group faces of your loved one in your cloud**\n\n This application requires minimum of 1GB of RAM memory to work! See [Requirements](https://github.com/matiasdelellis/facerecognition/wiki/Requirements-and-Limitations) for details.\n\n Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [Installation](https://github.com/matiasdelellis/facerecognition/wiki/Installation) for details.\n\n- ** Detect faces from images:** Use FaceRecognition app to detect _any_ face in _any_ of your images!\n- ** Group faces to persons:** Detected faces are grouped together based on similarity and then FaceRecognition app can recognize persons!\n- ** Built-in privacy:** No data is leaving your cloud. Defaults are always off and each user controls enabling/disabling face detection. Images from every directory can be excluded from face detection, if needed.\n- ** Power of AI:** FaceRecognition app leverages power of AI and already built neural network models through extensive usage of [DLib](http://dlib.net/) library.\n- ** Build your own thing:** FaceRecognition app is just a basic building block. Through FaceRecognition API, you can build your advanced scenarios - automatically add tags to images, connect contacts and persons, share images from specific person... We want to hear your ideas!",
+        "homepage": "https://github.com/matiasdelellis/facerecognition",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Face Recognition",
+        "summary": "A face recognition app"
+      },
+      "sha256": "0qpphlpq7b7mdwnq2wnca1i4i0ifj47c0iyp0c5l62057bazg5pc",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.0/facerecognition.tar.gz",
+      "version": "0.7.0"
     },
     "federatedfilesharing": {
       "meta": {
@@ -973,6 +1002,21 @@
       "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v2.0.0/fulltextsearch_elasticsearch-2.0.0.tar.gz",
       "version": "2.0.0"
     },
+    "geoblocker": {
+      "meta": {
+        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
+        "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GeoBlocker",
+        "summary": "Blocks user depending on the estimated country of thier IP address."
+      },
+      "sha256": "0c1k59xy0v4lm9wlxy9psqyrmd3w54mjg7h75wpvzna7q9s40vg8",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.0/geoblocker.tar.gz",
+      "version": "0.4.0"
+    },
     "gpgmailer": {
       "meta": {
         "description": "If user a uploads a public key, emails to this user will be encrypted and signed.\nAll other emails will be signed\nThis App depends on gnupg.",
@@ -1072,9 +1116,23 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "0lkivai1y4d6xdxgsr9k00g54nimvlvxvxlw7cb90qryzvacmayw",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.0/guests.tar.gz",
-      "version": "1.6.0"
+      "sha256": "13sv8j8j9f8m1qb6iwkbsy95xiha7xa14gyx625qiwwm6r023hlh",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.1/guests.tar.gz",
+      "version": "1.6.1"
+    },
+    "health": {
+      "meta": {
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n\nMore modules are scheduled\n- breaks\n- Feeling\n- Medicine\n- Activities\n- ...\n\nHealth is everything.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Health",
+        "summary": "[beta] Track your health. Use the advantages of a trusted platform."
+      },
+      "sha256": "09jak7j14w9y4xn0jw0hhk0p82yr4bbff2k199z2lk5b6062gz0g",
+      "url": "https://datenangebot.de/s/X9q3EDyaW4sirpE/download",
+      "version": "0.1.2"
     },
     "hsts": {
       "meta": {
@@ -1131,9 +1189,24 @@
         "name": "Discourse integration",
         "summary": "Integration of Discourse forum and mailing list management system"
       },
-      "sha256": "12g2szndiv76q0hpf04aznk5qq8rhgqfhdj9cblq1x93fgj9ki67",
-      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.4/integration_discourse-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "03sv8bwm58fg1wc04bywdlr8ic13065v71frhqmpmh6n9jibczqd",
+      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.5/integration_discourse-0.0.5.tar.gz",
+      "version": "0.0.5"
+    },
+    "integration_dropbox": {
+      "meta": {
+        "description": "Dropbox integration allows you to automatically import your Dropbox files into Nextcloud.",
+        "homepage": "https://github.com/eneiluj/integration_dropbox",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Dropbox integration",
+        "summary": "Import Dropbox data in Nextcloud"
+      },
+      "sha256": "1bvdb2iaqicdsnvn4r0k6bwghdbp0q7csrpmy47vcw9npzsdlg1q",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.2/integration_dropbox-0.0.2.tar.gz",
+      "version": "0.0.2"
     },
     "integration_github": {
       "meta": {
@@ -1146,9 +1219,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "0y6adm1nkmyqrj0slz94zy00nh817s1q1y43n7hn6rwjlckvr415",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.7/integration_github-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "1j37j2p7ajqhv2336i4s8an2dlhxqyh3k9mfr48kpwd8xmzj9dxn",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.10/integration_github-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_gitlab": {
       "meta": {
@@ -1161,9 +1234,9 @@
         "name": "GitLab integration",
         "summary": "Integration of GitLab software development management service"
       },
-      "sha256": "0ai83macqf42ddmcp6kpcrg8c0jydh24kzqpgacviygihf0727vz",
-      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.5/integration_gitlab-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "18zi5pkzxirrr6pyp404ghjqfs8dva813gh2dr4xk4bvb273b2gr",
+      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.7/integration_gitlab-0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "integration_google": {
       "meta": {
@@ -1206,9 +1279,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "1pr3j830iyi56wrh70wn0cr2zg8fznciv7q6jkwxn4k6qvdj5pnn",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.8/integration_mastodon-0.0.8.tar.gz",
-      "version": "0.0.8"
+      "sha256": "0w4rlzymgwwn0439l804raawzgjcm8qmmrwrgngmw7ay6xxs2rbz",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.9/integration_mastodon-0.0.9.tar.gz",
+      "version": "0.0.9"
     },
     "integration_moodle": {
       "meta": {
@@ -1236,9 +1309,24 @@
         "name": "Reddit integration",
         "summary": "Integration of Reddit social news aggregation service"
       },
-      "sha256": "0s26l7d53a2y85m1fh708zgahg0zzas44qx04hhfihzp491h3762",
-      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.4/integration_reddit-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "04i03ay3i7ca1nm16qyy9alfagycnc0lh7k265s0jijbq6wssc97",
+      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.5/integration_reddit-0.0.5.tar.gz",
+      "version": "0.0.5"
+    },
+    "integration_suitecrm": {
+      "meta": {
+        "description": "SuiteCRM integration provides a dashboard widget displaying your important notifications,\n\ta search provider for content and notifications for activity in SuiteCRM.",
+        "homepage": "https://github.com/eneiluj/integration_suitecrm",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SuiteCRM integration",
+        "summary": "Integration of SuiteCRM Customer Relationship Management application"
+      },
+      "sha256": "1ag0i42yc7f6yjgkrxrjx051bf0gflmwmgf6cdjymsyrychia894",
+      "url": "https://github.com/eneiluj/integration_suitecrm/releases/download/v0.0.2/integration_suitecrm-0.0.2.tar.gz",
+      "version": "0.0.2"
     },
     "integration_twitter": {
       "meta": {
@@ -1251,13 +1339,13 @@
         "name": "Twitter integration",
         "summary": "Integration of Twitter microblogging and social networking service"
       },
-      "sha256": "1rqi7qb3fz9sqcw6id92zi0lsk34apzhnwnwl17c4bk9r8rh8819",
-      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.4/integration_twitter-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "1adh8bb4sald790cppxdicdh3b5klv6gqg7f7d39dbylblmcnzrb",
+      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.5/integration_twitter-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "integration_zammad": {
       "meta": {
-        "description": "Zammad integration provides a dashboard widget displaying your important notifications,\n    a search provider for tickets and notifications for new open tickets.",
+        "description": "Zammad integration provides a dashboard widget displaying your important notifications,\n\ta search provider for tickets and notifications for new open tickets.",
         "homepage": "https://github.com/nextcloud/integration_zammad",
         "isShipped": false,
         "licenses": [
@@ -1266,9 +1354,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "0xw578022nyyq58nlrlgp42cxiyqk5s63h94pm19vvfzgynszfq1",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.6/integration_zammad-0.0.6.tar.gz",
-      "version": "0.0.6"
+      "sha256": "1ngshhf2ll0qvrd4bdrp0kc65v9l0mjqr6j122rwqdh4n8a9wfcc",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.13/integration_zammad-0.0.13.tar.gz",
+      "version": "0.0.13"
     },
     "issuetemplate": {
       "meta": {
@@ -1424,9 +1512,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "13ikn24rwn6s6p02r2h6riknyl86z4xyysy1dqmvsw6pk70xn99i",
-      "url": "https://github.com/nextcloud/news/releases/download/15.0.4/news.tar.gz",
-      "version": "15.0.4"
+      "sha256": "1ph8rbj6lyrzw4hi79a8h0hhys6xbdbzfsj2590aww5xdnrzr2w9",
+      "url": "https://github.com/nextcloud/news/releases/download/15.0.6/news.tar.gz",
+      "version": "15.0.6"
     },
     "nextbackup": {
       "meta": {
@@ -1853,9 +1941,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0rqzibn0mjrnh1dhkm22z7ry7kvq8mh7vgbskqhsi8zdm6g7hjwg",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.800/richdocumentscode.tar.gz",
-      "version": "4.2.800"
+      "sha256": "0wc5j3rx3zpvij06nh9z9cdlrrxga51cvx9gcvwb3mpwfbf5amd1",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.13/richdocumentscode.tar.gz",
+      "version": "6.4.13"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -1868,9 +1956,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1mblmzz7avdw8kzdcwhsai6959lkyy1amlwnn4w5naq50ywgci3v",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/4.2.900/richdocumentscode_arm64.tar.gz",
-      "version": "4.2.900"
+      "sha256": "1yfxggn2mdr74brgf46x154h0aszzbnm57bg5v96r2qmi1kdkswx",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.13/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.13"
     },
     "riotchat": {
       "meta": {
@@ -1883,9 +1971,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "09xk3sjyxdngv1yrjd52m367sbr3srxhhz7bb0yx63mzqa2km5pm",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.12/riotchat.tar.gz",
-      "version": "0.6.12"
+      "sha256": "1hka09k2fbzibg2aqc6ardsvc0hkpqq8yvhshwwd90yj4pyr4pgr",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.13/riotchat.tar.gz",
+      "version": "0.6.13"
     },
     "sensorlogger": {
       "meta": {
@@ -2101,9 +2189,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0c45cc0m5cgsg61j2nx71wi8ccxq4pi97n5fy82z66wkhh6q0nhk",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.0/spreed-10.0.0.tar.gz",
-      "version": "10.0.0"
+      "sha256": "0fwq9bb7hbc4lip9aqsimi2wvf6xmp0rylca8q06znsp0jn50iz4",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.1/spreed-10.0.1.tar.gz",
+      "version": "10.0.1"
     },
     "support": {
       "meta": {
@@ -2161,7 +2249,7 @@
     },
     "talk_matterbridge": {
       "meta": {
-        "description": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services.\nIt allows easy installation and updates of the binary in the known ways.\n\nBinary is licensed under Apache-2.0 License.",
+        "description": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services.\nThis allows admins to easily install and keep updated the Matterbridge binaries through a familiar interface.\n\nBinary is licensed under Apache-2.0 License.",
         "homepage": "https://github.com/nextcloud/talk_matterbridge",
         "isShipped": false,
         "licenses": [
@@ -2170,9 +2258,9 @@
         "name": "Talk Matterbridge",
         "summary": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services."
       },
-      "sha256": "0lfddjcfnfjcvfh6g4p2j39gj93r3lckdsbg0m97c17g36lnhzjr",
-      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.18.3/talk_matterbridge.tar.gz",
-      "version": "1.18.3"
+      "sha256": "169537fd4qjv94h3nrqbvcshbv5gj9xmglc4r7a6irwhd6hi9yhz",
+      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.19.0/talk_matterbridge.tar.gz",
+      "version": "1.19.0"
     },
     "talk_simple_poll": {
       "meta": {
@@ -2601,9 +2689,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0j9amcwdv8l093fjar0676wj3hj1l3aazbg6p7x7zfbsf5d48wfc",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.5/wopi.tar.gz",
-      "version": "3.5.5"
+      "sha256": "08nyrmsq7clzhad1rdf39ynsbvyz1l1iq4gz5k40dqgw36zj7bcp",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.6/wopi.tar.gz",
+      "version": "3.5.6"
     },
     "workflow_ocr": {
       "meta": {

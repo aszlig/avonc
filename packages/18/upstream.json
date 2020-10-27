@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "09kk1qqcrgx1nlg5irwv9hm80nnp6fr4f7slmwsg57hr9w8ixyyp",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.4/bookmarks-3.4.4.tar.gz",
-      "version": "3.4.4"
+      "sha256": "0mg2crs9935hqbp5x04pgwf3kjjzf31wsi05a0hzkr5vry7c0iin",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v3.4.5/bookmarks-3.4.5.tar.gz",
+      "version": "3.4.5"
     },
     "breezedark": {
       "meta": {
@@ -286,9 +286,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "11l4f7jja9dg9gcl40m1ywgk1prvxf6s0zl2n7qh2qvi6jhn9gvg",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.8/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.8"
+      "sha256": "05gsh8lgv6wan2rriq7g3l3hdgbx6pqsxabrqd31iqmlw61klvlx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.9/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.9"
     },
     "carnet": {
       "meta": {
@@ -715,7 +715,7 @@
     },
     "extract": {
       "meta": {
-        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n    \n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
+        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n\n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
         "homepage": "https://github.com/PaulLereverend/NextcloudExtract",
         "isShipped": false,
         "licenses": [
@@ -724,9 +724,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1y4h67jx1i22lmflq2w5sf3ri71yp5al0b0y1gggaaakvpfmza52",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.4/extract.tar.gz",
-      "version": "1.2.4"
+      "sha256": "1xh71kdam4args2kjfhlx1bwy4qifmkgkhpxkf1d9kvyw9y687qb",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.5/extract.tar.gz",
+      "version": "1.2.5"
     },
     "facerecognition": {
       "meta": {
@@ -739,9 +739,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "1zpadwmma1lgy1cncwvfky1svbq1cfav9pdzs1r83nz2kgbfhkpx",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.6.3/facerecognition.tar.gz",
-      "version": "0.6.3"
+      "sha256": "0qpphlpq7b7mdwnq2wnca1i4i0ifj47c0iyp0c5l62057bazg5pc",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.0/facerecognition.tar.gz",
+      "version": "0.7.0"
     },
     "federatedfilesharing": {
       "meta": {
@@ -1246,7 +1246,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\nCountries can be specified using whitelisting or blacklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the Github repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1255,9 +1255,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "1i0lf57y33g0bcn6j2m51lc3s07kqp5r3r176y28mn9krmdhcd29",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.2/geoblocker.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0c1k59xy0v4lm9wlxy9psqyrmd3w54mjg7h75wpvzna7q9s40vg8",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.0/geoblocker.tar.gz",
+      "version": "0.4.0"
     },
     "globalsiteselector": {
       "meta": {
@@ -1392,6 +1392,20 @@
       "sha256": "1jx8a01cmg7z8zgkdmjm1zl1lxkhk7a57iiraqbg992xlamfrvfh",
       "url": "https://github.com/nextcloud/guests/releases/download/v1.5.0/guests.tar.gz",
       "version": "1.5.0"
+    },
+    "health": {
+      "meta": {
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n\nMore modules are scheduled\n- breaks\n- Feeling\n- Medicine\n- Activities\n- ...\n\nHealth is everything.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Health",
+        "summary": "[beta] Track your health. Use the advantages of a trusted platform."
+      },
+      "sha256": "09jak7j14w9y4xn0jw0hhk0p82yr4bbff2k199z2lk5b6062gz0g",
+      "url": "https://datenangebot.de/s/X9q3EDyaW4sirpE/download",
+      "version": "0.1.2"
     },
     "hidesidebars": {
       "meta": {
@@ -2271,9 +2285,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "09xk3sjyxdngv1yrjd52m367sbr3srxhhz7bb0yx63mzqa2km5pm",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.12/riotchat.tar.gz",
-      "version": "0.6.12"
+      "sha256": "1hka09k2fbzibg2aqc6ardsvc0hkpqq8yvhshwwd90yj4pyr4pgr",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.13/riotchat.tar.gz",
+      "version": "0.6.13"
     },
     "scanner": {
       "meta": {
@@ -2577,9 +2591,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0yyfzq7zw3v04wmjirarijlv2d7a7csv5y2301lgyw140nlxrn79",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.11/spreed-8.0.11.tar.gz",
-      "version": "8.0.11"
+      "sha256": "0gbl0c71bdjbzgh8jng00vb0cmf0zxfp7in1bk6psj8vcarjmvfa",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.12/spreed-8.0.12.tar.gz",
+      "version": "8.0.12"
     },
     "support": {
       "meta": {
@@ -3181,9 +3195,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0j9amcwdv8l093fjar0676wj3hj1l3aazbg6p7x7zfbsf5d48wfc",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.5/wopi.tar.gz",
-      "version": "3.5.5"
+      "sha256": "08nyrmsq7clzhad1rdf39ynsbvyz1l1iq4gz5k40dqgw36zj7bcp",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.6/wopi.tar.gz",
+      "version": "3.5.6"
     },
     "workflow_pdf_converter": {
       "meta": {

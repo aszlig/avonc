@@ -256,9 +256,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "11l4f7jja9dg9gcl40m1ywgk1prvxf6s0zl2n7qh2qvi6jhn9gvg",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.8/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.8"
+      "sha256": "05gsh8lgv6wan2rriq7g3l3hdgbx6pqsxabrqd31iqmlw61klvlx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.9/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.9"
     },
     "carnet": {
       "meta": {
@@ -656,7 +656,7 @@
     },
     "extract": {
       "meta": {
-        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n    \n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
+        "description": "Extract archives.\n\n*  **Supported :** \n\n    * Zip \n    * Rar\n    * Tar\n    * Gzip\n    * 7z\n    * Deb\n    * Bzip2\n\n*  **Requirements :** \n    * Rar PHP extension  (pecl -v install rar)\n\n    * **OR** \n    * unrar (sudo apt-get install unrar)\n\n    * **AND**\n    * p7zip (sudo apt-get install p7zip p7zip-full)\n\n*  **Note :** Encrypted files are not supported yet",
         "homepage": "https://github.com/PaulLereverend/NextcloudExtract",
         "isShipped": false,
         "licenses": [
@@ -665,9 +665,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1y4h67jx1i22lmflq2w5sf3ri71yp5al0b0y1gggaaakvpfmza52",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.4/extract.tar.gz",
-      "version": "1.2.4"
+      "sha256": "1xh71kdam4args2kjfhlx1bwy4qifmkgkhpxkf1d9kvyw9y687qb",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.5/extract.tar.gz",
+      "version": "1.2.5"
     },
     "facerecognition": {
       "meta": {
@@ -1185,7 +1185,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (currently only logging is possible!) of login attempts from specified countries. (Early Version)\n\nCountries can be specified using whitelisting or blacklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL Database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the Github repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1194,9 +1194,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "1i0lf57y33g0bcn6j2m51lc3s07kqp5r3r176y28mn9krmdhcd29",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.3.2/geoblocker.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0c1k59xy0v4lm9wlxy9psqyrmd3w54mjg7h75wpvzna7q9s40vg8",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.0/geoblocker.tar.gz",
+      "version": "0.4.0"
     },
     "globalsiteselector": {
       "meta": {
@@ -2242,9 +2242,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "09xk3sjyxdngv1yrjd52m367sbr3srxhhz7bb0yx63mzqa2km5pm",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.12/riotchat.tar.gz",
-      "version": "0.6.12"
+      "sha256": "1hka09k2fbzibg2aqc6ardsvc0hkpqq8yvhshwwd90yj4pyr4pgr",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.13/riotchat.tar.gz",
+      "version": "0.6.13"
     },
     "scanner": {
       "meta": {
@@ -3095,9 +3095,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0j9amcwdv8l093fjar0676wj3hj1l3aazbg6p7x7zfbsf5d48wfc",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.5/wopi.tar.gz",
-      "version": "3.5.5"
+      "sha256": "08nyrmsq7clzhad1rdf39ynsbvyz1l1iq4gz5k40dqgw36zj7bcp",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.6/wopi.tar.gz",
+      "version": "3.5.6"
     },
     "workflow_pdf_converter": {
       "meta": {
