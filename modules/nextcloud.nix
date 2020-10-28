@@ -433,7 +433,7 @@ in {
     majorVersion = mkOption {
       type = types.enum availableMajorVersions;
       default = lib.last availableMajorVersions;
-      example = 17;
+      example = lib.last (lib.init availableMajorVersions);
       description = ''
         The Nextcloud major version to use. By default, the latest stable
         release is used if all apps are compatible.
@@ -836,8 +836,7 @@ in {
       wantedBy = [ "timers.target" ];
 
       timerConfig.OnBootSec = "5m";
-      timerConfig.OnUnitActiveSec =
-        if cfg.majorVersion >= 17 then "5m" else "15m";
+      timerConfig.OnUnitActiveSec = "5m";
     };
 
     systemd.services.nextcloud-init-db = {
