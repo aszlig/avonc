@@ -3310,6 +3310,5 @@
     "sha256": "0bkg8ih7d3dd54k167xsbna26y19n4yip727ki3z3rk6yag5igzz",
     "url": "https://download.nextcloud.com/server/releases/nextcloud-18.0.10.tar.bz2",
     "version": "18.0.10.2"
-  },
-  "themes": {}
+  }
 }

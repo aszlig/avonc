@@ -3,12 +3,10 @@ from typing import NewType, NamedTuple, List, Dict, Optional, Union, Set
 
 
 AppId = NewType('AppId', str)
-ThemeId = NewType('ThemeId', str)
 Sha256 = NewType('Sha256', str)
 
 App = Union['InternalApp', 'ExternalApp']
 AppCollection = Dict[AppId, App]
-ThemeCollection = Dict[ThemeId, 'Theme']
 FetchMethod = Union['FetchFromGitHub']
 Changelogs = Dict[Version, str]
 InternalOrVersion = Optional[Version]
@@ -47,11 +45,6 @@ class FetchFromGitHub(NamedTuple):
     sha256: Optional[Sha256] = None
 
 
-class Theme(NamedTuple):
-    upstream: FetchMethod
-    directory: str
-
-
 class Nextcloud(NamedTuple):
     version: Optional[Version]
     download_url: str
@@ -61,7 +54,6 @@ class Nextcloud(NamedTuple):
 class ReleaseInfo(NamedTuple):
     nextcloud: Nextcloud
     apps: AppCollection
-    themes: ThemeCollection
     constraints: Dict[AppId, Spec]
 
 

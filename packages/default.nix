@@ -1,7 +1,7 @@
 { stdenv, lib, fetchzip, fetchFromGitHub, callPackage
 
 # Args passed by /default.nix.
-, majorVersion, apps, theme, extraPostPatch
+, majorVersion, apps, extraPostPatch
 }:
 
 let
@@ -15,10 +15,7 @@ let
     importReleaseInfo = path: lib.importJSON (path + "/upstream.json");
   in lib.mapAttrs (lib.const importReleaseInfo) packages;
 
-  inherit (releaseInfos.${toString majorVersion}) nextcloud themes;
-
-  # Fetch the theme and return its attributes alongside the fetched result.
-  fetchTheme = attrs: attrs // { result = fetchFromGitHub attrs.github; };
+  inherit (releaseInfos.${toString majorVersion}) nextcloud;
 
   # All the apps zipped into one single attrset providing compatible Nextcloud
   # versions for every app.
@@ -78,12 +75,6 @@ in stdenv.mkDerivation rec {
     cp -TR ${lib.escapeShellArg path} apps/${lib.escapeShellArg appid}
     chmod -R +w apps/${lib.escapeShellArg appid}
   '') appPaths); # FIXME: Avoid the chmod above!
-
-  buildPhase = let
-    inherit (fetchTheme themes.${theme}) result directory;
-  in lib.optionalString (themes ? ${theme}) ''
-    cp -TR ${lib.escapeShellArg result} themes/${lib.escapeShellArg directory}
-  '';
 
   patches = packageAttrs.patches or [];
 

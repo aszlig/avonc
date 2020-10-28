@@ -178,4 +178,4 @@ def upgrade(major: int, info: ReleaseInfo) -> ReleaseInfo:
     if nextcloud.version is not None:
         apps = _get_external_apps(nextcloud, info.constraints)
         apps.update(nix.get_internal_apps(nextcloud))
-    return ReleaseInfo(nextcloud, apps, info.themes, info.constraints)
+    return ReleaseInfo(nextcloud, apps, info.constraints)

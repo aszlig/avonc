@@ -77,8 +77,6 @@ class ReleaseDiff:
     def has_differences(self) -> bool:
         if self.old.nextcloud.version != self.new.nextcloud.version:
             return True
-        if self.old.themes != self.new.themes:
-            return True
 
         return bool(self.removed_apps or self.added_apps or self.updated_apps)
 
@@ -92,5 +90,4 @@ class ReleaseDiff:
                 continue
             apps[appid] = self.old.apps[appid]
 
-        return ReleaseInfo(self.new.nextcloud, apps, self.new.themes,
-                           self.old.constraints)
+        return ReleaseInfo(self.new.nextcloud, apps, self.old.constraints)

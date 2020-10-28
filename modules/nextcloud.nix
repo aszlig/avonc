@@ -284,9 +284,7 @@ let
       cipher = "AES-256-CFB";
 
       "upgrade.disable-web" = true;
-    } // (lib.optionalAttrs (cfg.theme != "default") {
-      theme = "nextcloud-${cfg.theme}";
-    }) // cfg.extraConfig);
+    } // cfg.extraConfig);
   in pkgs.writeTextFile {
     name = "nextcloud-config";
     text = nextcloudConfig;
@@ -606,15 +604,6 @@ in {
       '';
     };
 
-    theme = mkOption {
-      type = types.enum [ "default" "breeze-dark" ];
-      default = "default";
-      example = "breeze-dark";
-      description = ''
-        The UI theme to use for this Nextcloud instance.
-      '';
-    };
-
     maxUploadSize = mkOption {
       type = types.ints.unsigned;
       default = 512;
@@ -726,11 +715,11 @@ in {
       type = types.package;
       # XXX: Bah, this is so ugly!
       default = pkgs.callPackage ../packages {
-        inherit (cfg) majorVersion apps theme extraPostPatch;
+        inherit (cfg) majorVersion apps extraPostPatch;
       };
       defaultText = lib.literalExample
         ( "pkgs.callPackage package/${toString cfg.majorVersion} {"
-        + " inherit (cfg) apps theme extraPostPatch;"
+        + " inherit (cfg) apps extraPostPatch; "
         + "}"
         );
       internal = true;
