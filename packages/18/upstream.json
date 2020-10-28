@@ -1996,9 +1996,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0b4jbbgqw45fjzf4k6wc5az3qz23fwn6h5c28rxnj508r0wh4wll",
-      "url": "https://github.com/nextcloud/polls/releases/download/1.5.4/polls.tar.gz",
-      "version": "1.5.4"
+      "sha256": "0smy9sqbn16nskr3c9mhxgmw91922whig6zl0hy8flsij9hqd9d7",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.5.7/polls.tar.gz",
+      "version": "1.5.7"
     },
     "preferred_providers": {
       "meta": {
@@ -2153,9 +2153,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "0jlkr1lw1yxnxpq9kv9xvl2b9dgp7sz8bj05zpxsci2gfc1vcx26",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.1/quicknotes.tar.gz",
-      "version": "0.6.1"
+      "sha256": "1wm18ivqvr8m1d215q6jzbc91ci6z958qpyvshw9i82fvxm9s84s",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.2/quicknotes.tar.gz",
+      "version": "0.6.2"
     },
     "quota_warning": {
       "meta": {

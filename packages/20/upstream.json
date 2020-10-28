@@ -189,7 +189,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.2+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v18+",
+        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20+",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -198,9 +198,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "07617c29b8pk1ibrad36nn3jxkxv87ghlja4hbpzbi0xcp8drqz1",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.0/bookmarks-4.0.0.tar.gz",
-      "version": "4.0.0"
+      "sha256": "08jl8kpf6l1khllcs8ky8azwdx5lna4iabym672sz8zp61p9j2w0",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.1/bookmarks-4.0.1.tar.gz",
+      "version": "4.0.1"
     },
     "breezedark": {
       "meta": {
@@ -1452,9 +1452,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "09gds1sbk33dslzg2zbrhjjcl70gkfc15lj72k89cbliiw7psf75",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.5.0/mail.tar.gz",
-      "version": "1.5.0"
+      "sha256": "0fbpydpqfrdjziiv838nl4f5cp0q55jkb1xja64c2dda02fvzbq2",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.5.1/mail.tar.gz",
+      "version": "1.5.1"
     },
     "maps": {
       "meta": {
@@ -1739,9 +1739,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0b4jbbgqw45fjzf4k6wc5az3qz23fwn6h5c28rxnj508r0wh4wll",
-      "url": "https://github.com/nextcloud/polls/releases/download/1.5.4/polls.tar.gz",
-      "version": "1.5.4"
+      "sha256": "0smy9sqbn16nskr3c9mhxgmw91922whig6zl0hy8flsij9hqd9d7",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.5.7/polls.tar.gz",
+      "version": "1.5.7"
     },
     "preferred_providers": {
       "meta": {
@@ -1841,6 +1841,21 @@
       "sha256": "0x6npw2a1362v5knn7py8phjp5jkfihmmzmk3aa7gqmbdr7ia04l",
       "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.1/quickaccesssorting.tar.gz",
       "version": "1.1.1"
+    },
+    "quicknotes": {
+      "meta": {
+        "description": "Quick notes with a basic rich text",
+        "homepage": "https://github.com/matiasdelellis/quicknotes",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Quick notes",
+        "summary": "Quick notes with a basic rich text"
+      },
+      "sha256": "1wm18ivqvr8m1d215q6jzbc91ci6z958qpyvshw9i82fvxm9s84s",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.2/quicknotes.tar.gz",
+      "version": "0.6.2"
     },
     "quota_warning": {
       "meta": {
