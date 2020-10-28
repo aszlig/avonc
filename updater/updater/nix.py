@@ -33,7 +33,8 @@ def get_nextcloud_store_path(nextcloud: Nextcloud) -> str:
     }
     '''
 
-    cmd = ['nix-build', '-E', expr, '--argstr', 'attrs', json.dumps(data)]
+    cmd = ['nix-build', '--no-out-link', '--builders', '',
+           '-E', expr, '--argstr', 'attrs', json.dumps(data)]
     result = subprocess.run(cmd, capture_output=True, check=True).stdout
     return result.strip().decode()
 
