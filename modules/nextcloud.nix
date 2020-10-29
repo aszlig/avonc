@@ -358,11 +358,11 @@ let
     touch "$out"
   '';
 
-  php = pkgs.php73-embed;
+  php = pkgs.php74-embed;
 
   phpPackages = let
     needsGhostscript = lib.elem cfg.previewFileTypes [ "PDF" "Postscript" ];
-  in pkgs.php73Packages.override ({
+  in pkgs.php74Packages.override ({
     inherit php;
   } // lib.optionalAttrs needsGhostscript {
     pkgs = pkgs // { imagemagick = pkgs.imagemagickBig; };
