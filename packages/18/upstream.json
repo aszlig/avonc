@@ -2329,9 +2329,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1926s79v3x7r8gmkcnw293r3djjclxndp3r33d4df3xmz0klma7q",
-      "url": "https://download.sendent.nl/serverapp/1.0.15/sendent.tar.gz",
-      "version": "1.0.15"
+      "sha256": "12f407czghym7sx2dcb8rs50fl8km92p021ap0aq9p3hiizwr9qc",
+      "url": "https://download.sendent.nl/serverapp/1.0.16/sendent.tar.gz",
+      "version": "1.0.16"
     },
     "sensorlogger": {
       "meta": {

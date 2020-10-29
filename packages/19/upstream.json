@@ -761,9 +761,9 @@
         "name": "Files 3d",
         "summary": "3D viewer for nextcloud"
       },
-      "sha256": "1wclahbza7az41m1dh4h2sd38dnn5728hc451zhkpxc2yw2mjbm8",
-      "url": "https://github.com/v1r0x/files_3d/releases/download/v0.3.2-beta/files_3d.tar.gz",
-      "version": "0.3.2"
+      "sha256": "1ki4krmdaazv762ndphqzs87arzsh8mxgjvf0jmj06h2j9s27mys",
+      "url": "https://github.com/v1r0x/files_3d/releases/download/v0.3.3-beta/files_3d.tar.gz",
+      "version": "0.3.3"
     },
     "files_accesscontrol": {
       "meta": {
@@ -2207,9 +2207,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0wc5j3rx3zpvij06nh9z9cdlrrxga51cvx9gcvwb3mpwfbf5amd1",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.13/richdocumentscode.tar.gz",
-      "version": "6.4.13"
+      "sha256": "16nvxcv08gkf8dka79rp1cwms7jpyqnr6rikarxwf2zxakqzy7bf",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.14/richdocumentscode.tar.gz",
+      "version": "6.4.14"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2222,9 +2222,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1yfxggn2mdr74brgf46x154h0aszzbnm57bg5v96r2qmi1kdkswx",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.13/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.13"
+      "sha256": "1sp13iiifcv49j9rmjkagyhcs4f7bicq16194ffx9fzgz28jz8az",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.14/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.14"
     },
     "riotchat": {
       "meta": {
@@ -2281,9 +2281,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1926s79v3x7r8gmkcnw293r3djjclxndp3r33d4df3xmz0klma7q",
-      "url": "https://download.sendent.nl/serverapp/1.0.15/sendent.tar.gz",
-      "version": "1.0.15"
+      "sha256": "12f407czghym7sx2dcb8rs50fl8km92p021ap0aq9p3hiizwr9qc",
+      "url": "https://download.sendent.nl/serverapp/1.0.16/sendent.tar.gz",
+      "version": "1.0.16"
     },
     "sensorlogger": {
       "meta": {

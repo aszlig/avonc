@@ -660,6 +660,21 @@
         "summary": "File Management"
       }
     },
+    "files_3d": {
+      "meta": {
+        "description": "Adds support for different 3D file formats (.dae, .fbx, .gltf, .obj) to Nextcloud. Based on three.js.",
+        "homepage": "https://github.com/v1r0x/files_3d",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Files 3d",
+        "summary": "3D viewer for nextcloud"
+      },
+      "sha256": "1ki4krmdaazv762ndphqzs87arzsh8mxgjvf0jmj06h2j9s27mys",
+      "url": "https://github.com/v1r0x/files_3d/releases/download/v0.3.3-beta/files_3d.tar.gz",
+      "version": "0.3.3"
+    },
     "files_accesscontrol": {
       "meta": {
         "description": "Nextcloud's File Access Control app enables administrators to protect data from unauthorized access or modifications.\n\n## How it works\nThe administrator can create and manage a set of rule groups. Each of the rule groups consists of one or more rules. If all rules of a group hold true, the group matches the request and access is being denied or the upload is blocked. The rules criteria range from IP address, mimetype and request time to group membership, tags, user agent and more.\n\nAn example would be to deny access to MS Excel/XLSX files owned by the \"Human Resources\" group accessed from an IP not on the internal company network or to block uploads of files bigger than 512 mb by students in the \"1st year\" group.\n\nLearn more about File Access Control on [https://nextcloud.com/workflow](https://nextcloud.com/workflow)",
@@ -1249,9 +1264,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0176l5np0z62l6fnwajrbbj79vwqa6ldbpdjklyp8k601rvcnsyk",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.9/integration_google-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "1lngqcf414ja91kp755cv6s1y6wyq0b9k4g80mwyq09qdv7g7w11",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.10/integration_google-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_jira": {
       "meta": {
@@ -1956,9 +1971,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0wc5j3rx3zpvij06nh9z9cdlrrxga51cvx9gcvwb3mpwfbf5amd1",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.13/richdocumentscode.tar.gz",
-      "version": "6.4.13"
+      "sha256": "16nvxcv08gkf8dka79rp1cwms7jpyqnr6rikarxwf2zxakqzy7bf",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.14/richdocumentscode.tar.gz",
+      "version": "6.4.14"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -1971,9 +1986,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1yfxggn2mdr74brgf46x154h0aszzbnm57bg5v96r2qmi1kdkswx",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.13/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.13"
+      "sha256": "1sp13iiifcv49j9rmjkagyhcs4f7bicq16194ffx9fzgz28jz8az",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.14/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.14"
     },
     "riotchat": {
       "meta": {
@@ -1989,6 +2004,21 @@
       "sha256": "1hka09k2fbzibg2aqc6ardsvc0hkpqq8yvhshwwd90yj4pyr4pgr",
       "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.13/riotchat.tar.gz",
       "version": "0.6.13"
+    },
+    "sendent": {
+      "meta": {
+        "description": "Sendent allows you to securely exchange files and emails. Sendent is linked to Microsoft Outlook, so you can continue to work from your trusted email program while you mail more easily and securely. Very useful, for example, to share privacy-sensitive documents or content or to send attachments that are normally too large to email. All files are uploaded to your personal Nextcloud environment from which you determine who has access to them.",
+        "homepage": "https://www.sendent.nl",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sendent",
+        "summary": "Sendent allows you to securely exchange files and emails"
+      },
+      "sha256": "12f407czghym7sx2dcb8rs50fl8km92p021ap0aq9p3hiizwr9qc",
+      "url": "https://download.sendent.nl/serverapp/1.0.16/sendent.tar.gz",
+      "version": "1.0.16"
     },
     "sensorlogger": {
       "meta": {
