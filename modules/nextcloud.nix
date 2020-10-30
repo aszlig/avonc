@@ -368,8 +368,22 @@ let
     pkgs = pkgs // { imagemagick = pkgs.imagemagickBig; };
   });
 
+  # At least uWSGI version 2.0.19 is required, otherwise uWSGI will couse heap
+  # corruption with PHP 7.4.
+  uwsgi = let
+    isNewEnough = lib.versionAtLeast pkgs.uwsgi.version "2.0.19";
+    newerUwsgi = pkgs.uwsgi.overrideAttrs (drv: rec {
+      version = "2.0.19.1";
+      src = pkgs.fetchurl {
+        url = "https://projects.unbit.it/downloads/"
+            + "${drv.pname}-${version}.tar.gz";
+        sha256 = "0256v72b7zr6ds4srpaawk1px3bp0djdwm239w3wrxpw7dzk1gjn";
+      };
+    });
+  in if isNewEnough then pkgs.uwsgi else newerUwsgi;
+
   uwsgiNextcloud = pkgs.runCommand "uwsgi-nextcloud" {
-    uwsgi = pkgs.uwsgi.override {
+    uwsgi = uwsgi.override {
       plugins = [ "php" ];
       php-embed = php;
       withPAM = false;
