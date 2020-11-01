@@ -80,9 +80,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0zl3f0lv4xmwkmy99v5rnij07jyqja44wf99a8vs16fm7m6pl3xn",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/2dacc95fb3238f5e6c47da31417025447cef19b2/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.11"
+      "sha256": "13g9l18v6w8b2s4jxsmxq881n2h9lrmsdbhkd17inybmjaxjy35s",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/5639d21dddfdb5eadb448675333927c66e9fb468/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.12"
     },
     "apporder": {
       "meta": {
@@ -557,9 +557,9 @@
         "name": "EPUB/CBZ/PDF ebook reader",
         "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
       },
-      "sha256": "1ivc7140bmpfsvv7kn4b52mfahb9xnm8pnxlb8hs7k381l5qb6aq",
-      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.3/epubreader-1.4.3.tar.gz",
-      "version": "1.4.3"
+      "sha256": "1kr9q0rmcqs6m7swjvcczvlqzy1837ak9bdfxvl7djhsz49rd3jh",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.5/epubreader-1.4.5.tar.gz",
+      "version": "1.4.5"
     },
     "event_update_notification": {
       "meta": {
@@ -972,6 +972,21 @@
       "url": "https://github.com/nextcloud/flow_notifications/releases/download/v1.0.2/flow_notifications.tar.gz",
       "version": "1.0.2"
     },
+    "flowupload": {
+      "meta": {
+        "description": "Provides functions to upload large files with your HTML5-Browser.",
+        "homepage": "https://github.com/e-alfred/flowupload",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Flow Upload",
+        "summary": "Provides functions to upload large files with your HTML5-Browser."
+      },
+      "sha256": "1rby0aklmplpskxg14pycn5cc2n24m8rd0hxdvg9zqwanngpf506",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/1.1.0/flowupload-1.1.0.tar.gz",
+      "version": "1.1.0"
+    },
     "forms": {
       "meta": {
         "description": "**Simple surveys and questionnaires, self-hosted!**\n\n- ** Simple design:** No mass of options, only the essentials. Works well on mobile of course.\n- ** View &amp; export results:** Results are visualized and can also be exported as CSV in the same format used by Google Forms.\n- ** Data under your control!** Unlike in Google Forms, Typeform, Doodle and others, the survey info and responses are kept private on your instance.\n- ** Get involved!** We have lots of stuff planned like more question types, collaboration on forms, [and much more](https://github.com/nextcloud/forms/milestones)!",
@@ -1264,9 +1279,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "1lngqcf414ja91kp755cv6s1y6wyq0b9k4g80mwyq09qdv7g7w11",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.10/integration_google-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "0dzb8rqpvbms19j7dg3srip45nha9fcmlfgh64r8vnqjs4fr8c3z",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.12/integration_google-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "integration_jira": {
       "meta": {
@@ -1868,9 +1883,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "1wm18ivqvr8m1d215q6jzbc91ci6z958qpyvshw9i82fvxm9s84s",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.2/quicknotes.tar.gz",
-      "version": "0.6.2"
+      "sha256": "008c0h7mvxczq931dafl8njh30c4vb8cc5k3q29vvcnngqrd88z9",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.3/quicknotes.tar.gz",
+      "version": "0.6.3"
     },
     "quota_warning": {
       "meta": {
@@ -2001,9 +2016,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1hka09k2fbzibg2aqc6ardsvc0hkpqq8yvhshwwd90yj4pyr4pgr",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.13/riotchat.tar.gz",
-      "version": "0.6.13"
+      "sha256": "0hqqv9b764x7rbs6n5nm1f1g8m0v32481id2wrhplkvqp7xc1hd2",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.14/riotchat.tar.gz",
+      "version": "0.6.14"
     },
     "sendent": {
       "meta": {
