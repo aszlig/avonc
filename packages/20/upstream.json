@@ -983,9 +983,9 @@
         "name": "Flow Upload",
         "summary": "Provides functions to upload large files with your HTML5-Browser."
       },
-      "sha256": "1rby0aklmplpskxg14pycn5cc2n24m8rd0hxdvg9zqwanngpf506",
-      "url": "https://github.com/e-alfred/flowupload/releases/download/1.1.0/flowupload-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1jzczlrsf8xpkjbf3smyv2wci7y4nccgjy74si9jx6r06xldb5xg",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/1.1.2/flowupload-1.1.2.tar.gz",
+      "version": "1.1.2"
     },
     "forms": {
       "meta": {
@@ -1971,9 +1971,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1lgk0vyfq8dmpish4ssam8jq9zy2k0y01jl6qafd43l4lifjw4s2",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.5/richdocuments.tar.gz",
-      "version": "3.7.5"
+      "sha256": "14zlj46dqpqa9ir8ng2x4xhwlfribnm8915ii1ssfn0rncqk3rgz",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.6/richdocuments.tar.gz",
+      "version": "3.7.6"
     },
     "richdocumentscode": {
       "meta": {
