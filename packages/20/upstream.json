@@ -174,7 +174,7 @@
     },
     "bbb": {
       "meta": {
-        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message, ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n* **Activities** Get an overview of your room activities\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
+        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n* **Activities** Get an overview of your room activities\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
         "homepage": "https://github.com/sualko/cloud_bbb/",
         "isShipped": false,
         "licenses": [
@@ -183,9 +183,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0bqgbq3y58aa4hqg2nilazqyazvgkyqxln4b999agmglhp0fxszc",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.0/bbb-v1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1qwh8cpfkp4gsyj2n0lff10ib21ddgs77b162dcwg7l3va9pnbhp",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.1/bbb-v1.1.1.tar.gz",
+      "version": "1.1.1"
     },
     "bookmarks": {
       "meta": {
@@ -198,9 +198,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1knfawya1h2dg9xrlj1hm5j103rrdmvfw9qqywnczybvv3xrdbsg",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.2/bookmarks-4.0.2.tar.gz",
-      "version": "4.0.2"
+      "sha256": "0fd6mqdvjfkdfrgcjsjfzwkpanxis2k0ix7bd9qahhw27x1iflga",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.5/bookmarks-4.0.5.tar.gz",
+      "version": "4.0.5"
     },
     "breezedark": {
       "meta": {
@@ -1279,9 +1279,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0dzb8rqpvbms19j7dg3srip45nha9fcmlfgh64r8vnqjs4fr8c3z",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.12/integration_google-0.0.12.tar.gz",
-      "version": "0.0.12"
+      "sha256": "1j4qsjxyi97nrrrxwq2kj5rliixd433j1bk88n9mbnrhgxlxfka6",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.13/integration_google-0.0.13.tar.gz",
+      "version": "0.0.13"
     },
     "integration_jira": {
       "meta": {
@@ -1482,9 +1482,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0fbpydpqfrdjziiv838nl4f5cp0q55jkb1xja64c2dda02fvzbq2",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.5.1/mail.tar.gz",
-      "version": "1.5.1"
+      "sha256": "1kiigdaqh8hq0fcmcis8bf94xgmnkqnrarpaccly126scpcx6d4b",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.6.0/mail.tar.gz",
+      "version": "1.6.0"
     },
     "maps": {
       "meta": {
@@ -1527,9 +1527,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1z6kdr0nc5nplnks8hwc5xzg2kck6siira0prnabxm2ibp027fmj",
-      "url": "https://github.com/owncloud/music/releases/download/v0.17.0/music_0.17.0_nc-signed.tar.gz",
-      "version": "0.17.0"
+      "sha256": "1fj3a7gis7njakfhlccwchpv7zz4i5vqf5wjxi056z1p7apqwx56",
+      "url": "https://github.com/owncloud/music/releases/download/v0.17.2/music_0.17.2_nc-signed.tar.gz",
+      "version": "0.17.2"
     },
     "news": {
       "meta": {
@@ -2031,9 +2031,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "12f407czghym7sx2dcb8rs50fl8km92p021ap0aq9p3hiizwr9qc",
-      "url": "https://download.sendent.nl/serverapp/1.0.16/sendent.tar.gz",
-      "version": "1.0.16"
+      "sha256": "149x3qr5j4k5fn1l5ym4rnkl7wmq3gzbm6sbdzyj126213qfmyjb",
+      "url": "https://download.sendent.nl/serverapp/1.0.17/sendent.tar.gz",
+      "version": "1.0.17"
     },
     "sensorlogger": {
       "meta": {
@@ -2120,7 +2120,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nIf you like this application and want to support the development:\n\n*  [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n*  [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
+        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n*  [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n*  [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2129,9 +2129,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "19bprvw2xnsa1c21p8hn42ngb0zyqkwrrmb7p3zmshc8d2cmfxy1",
-      "url": "https://gitnet.fr/attachments/57284c1a-171a-4e25-841b-26b031ba4d7c",
-      "version": "1.19.1"
+      "sha256": "1yxy9627h4v0anxqagxyy3nb33vkaz830w2x1v0rsqfi8y60pqka",
+      "url": "https://gitnet.fr/attachments/0ee52af2-ebf1-4018-bd92-e86c2f57e3d2",
+      "version": "1.20.1"
     },
     "smb_test": {
       "meta": {
