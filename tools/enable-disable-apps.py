@@ -2,7 +2,7 @@ import json
 import subprocess
 import sys
 
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 
 NEWSTATE: Dict[str, Dict[str, Any]] = json.load(open(sys.argv[1], 'r'))
 OCC_CMD: List[str] = sys.argv[2:]
@@ -23,15 +23,17 @@ def get_applist() -> Dict[str, Any]:
     return json.loads(subprocess.check_output(cmd))
 
 
-def enable_app(appid: str, groups: Optional[List[str]] = None) -> None:
-    if groups is None:
-        groups = []
+def enable_apps(appids: List[str]) -> None:
+    subprocess.check_call(OCC_CMD + ['app:enable', '--'] + appids)
+
+
+def disable_apps(appids: List[str]) -> None:
+    subprocess.check_call(OCC_CMD + ['app:disable', '--'] + appids)
+
+
+def enable_app_with_groups(appid: str, groups: List[str]) -> None:
     groupargs = [arg for group in groups for arg in ['-g', group]]
     subprocess.check_call(OCC_CMD + ['app:enable'] + groupargs + [appid])
-
-
-def disable_app(appid: str) -> None:
-    subprocess.check_call(OCC_CMD + ['app:disable', appid])
 
 
 oldconfig = get_appconfig()
@@ -41,12 +43,16 @@ if 'enable' in NEWSTATE:
     newenabled = set(NEWSTATE['enable'].keys()) \
                - set(oldstate['enabled'].keys())
 
+    to_enable = []
     for appid in newenabled:
         groups = NEWSTATE['enable'][appid]
         if groups is not None:
-            enable_app(appid, groups)
+            enable_app_with_groups(appid, groups)
         else:
-            enable_app(appid)
+            to_enable.append(appid)
+
+    if to_enable:
+        enable_apps(to_enable)
 
     for appid, cfg in NEWSTATE.get('appconf', {}).items():
         oldcfg = oldconfig.get(appid, {})
@@ -59,8 +65,12 @@ if 'enable' in NEWSTATE:
 newdisabled = set(NEWSTATE['disable']) \
             - set(oldstate['disabled'].keys())
 
+to_disable = []
 for appid in newdisabled:
     if appid not in oldstate['enabled'] and \
        appid not in oldstate['disabled']:
         continue
-    disable_app(appid)
+    to_disable.append(appid)
+
+if to_disable:
+    disable_apps(to_disable)
