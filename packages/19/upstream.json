@@ -219,7 +219,7 @@
     },
     "breezedark": {
       "meta": {
-        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\nThe global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. You can find there global option here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\n#### Personal\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\nThe global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find there global option here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\n#### Personal\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1d72srhfx013k9ixfg8fcrbqgpk2r6di03pryca3sj8jrsbzg7b9",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.6/breezedark.tar.gz",
-      "version": "19.0.6"
+      "sha256": "0biw52pxm6hyl425p6jilj2lcvrbgaxn5zzcljp00xb6kp0n08nc",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.7/breezedark.tar.gz",
+      "version": "19.0.7"
     },
     "browser_warning": {
       "meta": {
@@ -301,9 +301,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "19j0xl0xj9zg2prk2h8vlndnb5rf3k7rzm7c12wjacphbnn2ihmz",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.22.3/carnet-nc-v0.22.3.tar.gz",
-      "version": "0.22.3"
+      "sha256": "00yg9zv5cscmbb1psf06raxrc2rc2y9948rlsmgwwxpznri9yqwj",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.6/carnet-nc-v0.23.6.tar.gz",
+      "version": "0.23.6"
     },
     "checksum": {
       "meta": {
@@ -1355,9 +1355,9 @@
         "name": "Health",
         "summary": "[beta] Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "09jak7j14w9y4xn0jw0hhk0p82yr4bbff2k199z2lk5b6062gz0g",
-      "url": "https://datenangebot.de/s/X9q3EDyaW4sirpE/download",
-      "version": "0.1.2"
+      "sha256": "1p9r1zh0zik6m5nb6dic9xfw2mb8hxvpln147fbfniqch89xx68x",
+      "url": "https://datenangebot.de/s/A34ofdmnikPH73w/download",
+      "version": "0.1.3"
     },
     "hidesidebars": {
       "meta": {
@@ -1607,7 +1607,7 @@
     },
     "music": {
       "meta": {
-        "description": "Plays audio files directly in the Files view or in a stand-alone library view. Depending on the browser, supports playing file types mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3. Also playlist formats m3u, m3u8, and pls are supported.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, search tracks by keywords, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to the next files of the folder or playlist until stopped. The app includes also a server compatible with Ampache and Subsonic clients, allowing playback and browsing of the library on various external applications e.g. on Android or iPhone.\n\nWhen browser and OS support available, the Music app can be controlled with the media keys (play/pause/stop/next/prev) on the keyboard or the OS notification center even when the browser is not focused. This is supported at least on Chrome and Edge (tested on Windows 10 and Android).\n\nThe admin may set up connection to the Last.fm service, allowing the Music app to show biography and background information of the artists, albums, and tracks.\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is optimized for somewhat smaller collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
+        "description": "Plays audio files directly in the Files view or in a stand-alone library view. Depending on the browser, supports playing file types mp3, ogg, m4a, m4b, flac, wav. All browsers should be able to play at least mp3. Also playlist formats m3u, m3u8, and pls are supported.\n\nIn the library view, you can play tracks by album, artist, genre, or folder, create custom playlists, search tracks by keywords, or shuffle play over your whole library. In the Files view, an audio file can be played with one click and the playback continues to the next files of the folder or playlist until stopped. The app includes also a server compatible with Ampache and Subsonic clients, allowing playback and browsing of the library on various external applications e.g. on Android or iPhone.\n\nWhen browser and OS support available, the Music app can be controlled with the media keys (play/pause/stop/next/prev) on the keyboard or the OS notification center even when the browser is not focused.\n\nThe admin may set up connection to the Last.fm service, allowing the Music app to show biography and background information of the artists, albums, and tracks.\n\nLimitations: The app can handle libraries of more than 50 000 tracks on modern desktop browsers, but the user experience is optimized for somewhat smaller collections. Libraries significantly larger than this may fail to function altogether. The playback from Files works regardless of the collection size.",
         "homepage": "https://github.com/owncloud/music",
         "isShipped": false,
         "licenses": [
@@ -1616,9 +1616,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1fj3a7gis7njakfhlccwchpv7zz4i5vqf5wjxi056z1p7apqwx56",
-      "url": "https://github.com/owncloud/music/releases/download/v0.17.2/music_0.17.2_nc-signed.tar.gz",
-      "version": "0.17.2"
+      "sha256": "0n9h2qnn35zg9ywlbgqc5a3yf71hxkh8h2y4mfl9mwp883p2vx77",
+      "url": "https://github.com/owncloud/music/releases/download/v0.17.3/music_0.17.3_nc-signed.tar.gz",
+      "version": "0.17.3"
     },
     "news": {
       "meta": {
@@ -1874,9 +1874,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "130558gg48r1s4iykwd8gbcrdcxmyybm8c840znia42jkq7jgllm",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10449/artifacts/raw/passwords.tar.gz",
-      "version": "2020.10.0"
+      "sha256": "1mx5wdg4h1647siy8wj2mhsjyj1sbk4fwvh4yw5ipnvmyhdhvr7j",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10518/artifacts/raw/passwords.tar.gz",
+      "version": "2020.11.0"
     },
     "phonetrack": {
       "meta": {
@@ -2453,9 +2453,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1z5z5pq4fz213c61qdifnmrkm6dapa3v32vgkghqajvjr18r4vng",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.1/release.tar.gz",
-      "version": "3.4.1"
+      "sha256": "07kf1pkqnix8ch881ahg664yfnj5a7wvfc6b1blppf41vq73zirp",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.2/release.tar.gz",
+      "version": "3.4.2"
     },
     "socialsharing_diaspora": {
       "meta": {
