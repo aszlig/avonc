@@ -15,11 +15,56 @@ index 38cbe9c4..2f5f3f39 100644
  	</commands>
  	<settings>
  		<admin>OCA\Richdocuments\Settings\Admin</admin>
+diff --git a/lib/AppInfo/Application.php b/lib/AppInfo/Application.php
+index c2e78e3b..df09f226 100644
+--- a/lib/AppInfo/Application.php
++++ b/lib/AppInfo/Application.php
+@@ -34,7 +34,6 @@ use OCA\Richdocuments\Preview\MSWord;
+ use OCA\Richdocuments\Preview\OOXML;
+ use OCA\Richdocuments\Preview\OpenDocument;
+ use OCA\Richdocuments\Preview\Pdf;
+-use OCA\Richdocuments\Service\CapabilitiesService;
+ use OCA\Richdocuments\Service\FederationService;
+ use OCA\Richdocuments\WOPI\DiscoveryManager;
+ use OCA\Viewer\Event\LoadViewer;
+@@ -182,11 +181,7 @@ class Application extends App {
+ 			$appConfig->setAppValue('disable_certificate_verification', 'yes');
+ 
+ 			$discoveryManager = $this->getContainer()->query(DiscoveryManager::class);
+-			$capabilitiesService = $this->getContainer()->query(CapabilitiesService::class);
+-
+ 			$discoveryManager->refretch();
+-			$capabilitiesService->clear();
+-			$capabilitiesService->refetch();
+ 		}
+ 	}
+ }
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
-index e8ad527a..ed481793 100644
+index e8ad527a..f2eeee0b 100644
 --- a/lib/Capabilities.php
 +++ b/lib/Capabilities.php
-@@ -87,29 +87,24 @@ class Capabilities implements ICapability {
+@@ -23,7 +23,6 @@
+ 
+ namespace OCA\Richdocuments;
+ 
+-use OCA\Richdocuments\Service\CapabilitiesService;
+ use OCP\Capabilities\ICapability;
+ use OCP\IL10N;
+ 
+@@ -75,41 +74,33 @@ class Capabilities implements ICapability {
+ 	private $l10n;
+ 	/** @var AppConfig */
+ 	private $config;
+-	/** @var CapabilitiesService */
+-	private $capabilitiesService;
+ 
+ 	private $capabilities = null;
+ 
+-	public function __construct(IL10N $l10n, AppConfig $config, CapabilitiesService $capabilitiesService) {
++	public function __construct(IL10N $l10n, AppConfig $config) {
+ 		$this->l10n = $l10n;
+ 		$this->config = $config;
+-		$this->capabilitiesService = $capabilitiesService;
  	}
  
  	public function getCapabilities() {
