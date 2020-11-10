@@ -1,5 +1,5 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 3b184ebd..492123af 100644
+index 38cbe9c4..2f5f3f39 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -31,12 +31,8 @@ You can also edit your documents off-line with the Collabora Office app from the
@@ -16,56 +16,60 @@ index 3b184ebd..492123af 100644
  	<settings>
  		<admin>OCA\Richdocuments\Settings\Admin</admin>
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
-index fc0d9d5f..616b9e81 100644
+index e8ad527a..ed481793 100644
 --- a/lib/Capabilities.php
 +++ b/lib/Capabilities.php
-@@ -101,15 +101,14 @@ class Capabilities implements ICapability {
+@@ -87,29 +87,24 @@ class Capabilities implements ICapability {
  	}
  
  	public function getCapabilities() {
--		$collaboraCapabilities = $this->getCollaboraCapabilities();
- 		return [
- 			'richdocuments' => [
- 				'mimetypes' => self::MIMETYPES,
- 				'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
--				'collabora' => $collaboraCapabilities,
--				'direct_editing' => isset($collaboraCapabilities['hasMobileSupport']) ? : false,
--				'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) || isset($collaboraCapabilities['hasTemplateSource']) ? : false,
--				'productName' => isset($collaboraCapabilities['productName']) ? $collaboraCapabilities['productName'] : $this->l10n->t('Collabora Online'),
+-		if (!$this->capabilities) {
+-			$collaboraCapabilities = $this->capabilitiesService->getCapabilities();
+-			$this->capabilities = [
+-				'richdocuments' => [
+-					'mimetypes' => self::MIMETYPES,
+-					'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
+-					'collabora' => $collaboraCapabilities,
+-					'direct_editing' => isset($collaboraCapabilities['hasMobileSupport']) ?: false,
+-					'templates' => isset($collaboraCapabilities['hasTemplateSaveAs']) || isset($collaboraCapabilities['hasTemplateSource']) ?: false,
+-					'productName' => isset($collaboraCapabilities['productName']) ? $collaboraCapabilities['productName'] : $this->l10n->t('Collabora Online'),
+-					'config' => [
+-						'wopi_url' => $this->config->getAppValue('wopi_url'),
+-						'public_wopi_url' => $this->config->getAppValue('public_wopi_url'),
+-						'disable_certificate_verification' => $this->config->getAppValue('disable_certificate_verification'),
+-						'edit_groups' => $this->config->getAppValue('edit_groups'),
+-						'use_groups' => $this->config->getAppValue('use_groups'),
+-						'doc_format' => $this->config->getAppValue('doc_format'),
+-						'timeout' => $this->config->getAppValue('timeout'),
+-
+-					]
+-				],
+-			];
+-		}
+-		return $this->capabilities;
++		return [
++			'richdocuments' => [
++				'mimetypes' => self::MIMETYPES,
++				'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
 +				'collabora' => ['productName' => 'LibreOffice Online'],
 +				'direct_editing' => false,
 +				'templates' => false,
 +				'productName' => 'LibreOffice Online',
- 				'config' => [
- 					'wopi_url' => $this->config->getAppValue('wopi_url'),
- 					'public_wopi_url' => $this->config->getAppValue('public_wopi_url'),
-@@ -121,24 +120,4 @@ class Capabilities implements ICapability {
- 			],
- 		];
++				'config' => [
++					'wopi_url' => $this->config->getAppValue('wopi_url'),
++					'public_wopi_url' => $this->config->getAppValue('public_wopi_url'),
++					'disable_certificate_verification' => $this->config->getAppValue('disable_certificate_verification'),
++					'edit_groups' => $this->config->getAppValue('edit_groups'),
++					'use_groups' => $this->config->getAppValue('use_groups'),
++					'doc_format' => $this->config->getAppValue('doc_format'),
++					'timeout' => $this->config->getAppValue('timeout'),
++				]
++			],
++		];
  	}
--
--	/**
--	 * TODO: use CapabilitiesService
--	 * @return array
--	 * @throws \OCP\Files\NotPermittedException
--	 */
--	private function getCollaboraCapabilities() {
--		try {
--			$file = $this->appData->getFile('capabilities.json');
--			$decodedFile = \json_decode($file->getContent(), true);
--		} catch (NotFoundException $e) {
--			return [];
--		}
--
--		if (!is_array($decodedFile)) {
--			return [];
--		}
--
--		return $decodedFile;
--	}
  }
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
-index 707c9a81..c8e5bc0a 100644
+index e5a45dd8..025b3727 100644
 --- a/lib/Controller/SettingsController.php
 +++ b/lib/Controller/SettingsController.php
 @@ -11,10 +11,7 @@
@@ -79,7 +83,7 @@ index 707c9a81..c8e5bc0a 100644
  use \OCP\AppFramework\Controller;
  use OCP\AppFramework\Http;
  use OCP\AppFramework\Http\DataResponse;
-@@ -35,14 +32,8 @@ class SettingsController extends Controller{
+@@ -33,14 +30,8 @@ class SettingsController extends Controller{
  	private $appConfig;
  	/** @var IConfig */
  	private $config;
@@ -94,7 +98,7 @@ index 707c9a81..c8e5bc0a 100644
  	/** @var DemoService */
  	private $demoService;
  
-@@ -52,30 +43,21 @@ class SettingsController extends Controller{
+@@ -50,30 +41,21 @@ class SettingsController extends Controller{
  	 * @param IL10N $l10n
  	 * @param AppConfig $appConfig
  	 * @param IConfig $config
@@ -125,7 +129,7 @@ index 707c9a81..c8e5bc0a 100644
  		$this->demoService = $demoService;
  	}
  
-@@ -85,15 +67,6 @@ class SettingsController extends Controller{
+@@ -83,15 +65,6 @@ class SettingsController extends Controller{
  	 * @throws \Exception
  	 */
  	public function checkSettings() {
@@ -141,11 +145,11 @@ index 707c9a81..c8e5bc0a 100644
  		return new DataResponse();
  	}
  
-@@ -171,32 +144,6 @@ class SettingsController extends Controller{
+@@ -169,32 +142,6 @@ class SettingsController extends Controller{
  			$this->appConfig->setAppValue('canonical_webroot', $canonical_webroot);
  		}
  
--		$this->discoveryManager->refretch();
+-		$this->discoveryManager->refetch();
 -		$this->capabilitiesService->clear();
 -		try {
 -			$capaUrlSrc = $this->wopiParser->getUrlSrc('Capabilities');
@@ -169,7 +173,7 @@ index 707c9a81..c8e5bc0a 100644
 -		}
 -
 -		$this->capabilitiesService->clear();
--		$this->capabilitiesService->refretch();
+-		$this->capabilitiesService->refetch();
 -
  		$response = [
  			'status' => 'success',

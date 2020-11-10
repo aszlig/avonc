@@ -386,9 +386,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "07wd9g07700fiz38l67bk29cwfvzsjz8l3iq4q2w9lbnin3q9vhn",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.1.4/cospend-1.1.4.tar.gz",
-      "version": "1.1.4"
+      "sha256": "1p7xi5g3m2a137yy9rb7k862gkpkvw9slvggcxn6ci5ldn6h6jhm",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.0/cospend-1.2.0.tar.gz",
+      "version": "1.2.0"
     },
     "cpanelmailsync": {
       "meta": {
@@ -1117,9 +1117,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "09ya2vpcng29hq3qpmhxgq0a0khdknl1rxlf54lvyd1n9qvdb4m5",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.1.0/groupfolders-8.1.0.tar.gz",
-      "version": "8.1.0"
+      "sha256": "0gmxiqavf2vrxqrydxhvb5rmybj32g437m9l9y4bzn2kbg89ddii",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.1.1/groupfolders-8.1.1.tar.gz",
+      "version": "8.1.1"
     },
     "groupquota": {
       "meta": {
@@ -1249,9 +1249,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "1j37j2p7ajqhv2336i4s8an2dlhxqyh3k9mfr48kpwd8xmzj9dxn",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.10/integration_github-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "02nhi5450y5q6w5inrh57z1x51z9iag31ml0yvpj36nxgby3ggi6",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.11/integration_github-0.0.11.tar.gz",
+      "version": "0.0.11"
     },
     "integration_gitlab": {
       "meta": {
@@ -1264,9 +1264,9 @@
         "name": "GitLab integration",
         "summary": "Integration of GitLab software development management service"
       },
-      "sha256": "18zi5pkzxirrr6pyp404ghjqfs8dva813gh2dr4xk4bvb273b2gr",
-      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.7/integration_gitlab-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "0imwxl48fs5rkqfggn1kc60b82vxscbvykwsm7z85bam450qn01a",
+      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.8/integration_gitlab-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "integration_google": {
       "meta": {
@@ -1279,9 +1279,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0d8aiqkhcmsq4m0dbry61cksvvgrnvr521fwxkw455ms93xw2ypi",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.18/integration_google-0.0.18.tar.gz",
-      "version": "0.0.18"
+      "sha256": "06v830hfbd4q5jln5anxl4arha64hrk8n49y2dic1kadanr5cm56",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.20/integration_google-0.0.20.tar.gz",
+      "version": "0.0.20"
     },
     "integration_jira": {
       "meta": {
@@ -1309,9 +1309,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "0w4rlzymgwwn0439l804raawzgjcm8qmmrwrgngmw7ay6xxs2rbz",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.9/integration_mastodon-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "0v5ah2azr0f1l3xk98463hj6m2jakxbgkk5q8pw99rbhrzmq71hj",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.10/integration_mastodon-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_moodle": {
       "meta": {
@@ -1399,9 +1399,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "1ngshhf2ll0qvrd4bdrp0kc65v9l0mjqr6j122rwqdh4n8a9wfcc",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.13/integration_zammad-0.0.13.tar.gz",
-      "version": "0.0.13"
+      "sha256": "0774wn2zrlcrbxp9a0wdlj75rill6dcqzjhdbdsnrla2nkmv019v",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.14/integration_zammad-0.0.14.tar.gz",
+      "version": "0.0.14"
     },
     "issuetemplate": {
       "meta": {
@@ -1986,9 +1986,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "14zlj46dqpqa9ir8ng2x4xhwlfribnm8915ii1ssfn0rncqk3rgz",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.6/richdocuments.tar.gz",
-      "version": "3.7.6"
+      "sha256": "0idr40ygna8yzkl2ila7xyls9028ss59bn7g6bxc7m8cm4piiqwn",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.8/richdocuments.tar.gz",
+      "version": "3.7.8"
     },
     "richdocumentscode": {
       "meta": {
@@ -2436,6 +2436,20 @@
       "sha256": "0b5xls62mag2c6kfibiflwkzb0d2nhsvznwfhlp6c9dhvdl4zpsv",
       "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.4/timemanager.tar.gz",
       "version": "0.1.4"
+    },
+    "timetracker": {
+      "meta": {
+        "description": "Time Tracker App",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Time Tracker",
+        "summary": "Time Tracker App"
+      },
+      "sha256": "1fs9mdnbfiay43nrzlm1rh2zria7cf0lh99w0v9pls5b3m2v66cq",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.45.tar.gz",
+      "version": "0.0.45"
     },
     "twofactor_admin": {
       "meta": {

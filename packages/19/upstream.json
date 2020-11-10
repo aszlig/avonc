@@ -1312,9 +1312,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "156ipx2wfhba2g01r3p0yvifwyjaxpw90fk8fsbck2paz0dqivyi",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.1.0/groupfolders-7.1.0.tar.gz",
-      "version": "7.1.0"
+      "sha256": "1y4ra7kxf99jpg6sgdvsra2l9yvm12biycls2003myg0i3z9k76s",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.1.1/groupfolders-7.1.1.tar.gz",
+      "version": "7.1.1"
     },
     "groupquota": {
       "meta": {
@@ -2192,9 +2192,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "14zlj46dqpqa9ir8ng2x4xhwlfribnm8915ii1ssfn0rncqk3rgz",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.6/richdocuments.tar.gz",
-      "version": "3.7.6"
+      "sha256": "0idr40ygna8yzkl2ila7xyls9028ss59bn7g6bxc7m8cm4piiqwn",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.8/richdocuments.tar.gz",
+      "version": "3.7.8"
     },
     "richdocumentscode": {
       "meta": {
@@ -2725,9 +2725,9 @@
         "name": "Time Tracker",
         "summary": "Time Tracker App"
       },
-      "sha256": "1x0rsl03hnjxcknmyi01lrpfrr3qbq7vxkrgzhhgl0m1vh83kfph",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.43.tar.gz",
-      "version": "0.0.43"
+      "sha256": "1fs9mdnbfiay43nrzlm1rh2zria7cf0lh99w0v9pls5b3m2v66cq",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.45.tar.gz",
+      "version": "0.0.45"
     },
     "transmission": {
       "meta": {
