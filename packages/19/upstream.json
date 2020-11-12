@@ -301,9 +301,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "00yg9zv5cscmbb1psf06raxrc2rc2y9948rlsmgwwxpznri9yqwj",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.6/carnet-nc-v0.23.6.tar.gz",
-      "version": "0.23.6"
+      "sha256": "1v07lfrifzvg4mx33j9w8r3zkxi0h3w75kp3b00wix4vmkhs58jl",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.7.tar.gz",
+      "version": "0.23.7"
     },
     "checksum": {
       "meta": {
@@ -2237,9 +2237,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0hqqv9b764x7rbs6n5nm1f1g8m0v32481id2wrhplkvqp7xc1hd2",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.14/riotchat.tar.gz",
-      "version": "0.6.14"
+      "sha256": "1ydqrhz3kh0zbql5xp76jdcqxb8wmyd3bra00fgw291j23hxi12i",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.15/riotchat.tar.gz",
+      "version": "0.6.15"
     },
     "scanner": {
       "meta": {
@@ -2627,9 +2627,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "05xpq7qd038fh5jqpzb8d1phb38vjgaqmy398f7i5a5lwal8l26j",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.5/tasks.tar.gz",
-      "version": "0.13.5"
+      "sha256": "1g6xssvymaxcm9wyny5z25hvb611ynbydziviy94qwc4wbdrl49k",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.6/tasks.tar.gz",
+      "version": "0.13.6"
     },
     "tencentcloudcosconfig": {
       "meta": {
