@@ -386,9 +386,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1p7xi5g3m2a137yy9rb7k862gkpkvw9slvggcxn6ci5ldn6h6jhm",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.0/cospend-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "06dv2pgik8h4slx275zca3wsnyn1p4i2ycj6bgm0gh0crpa3ll6j",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.1/cospend-1.2.1.tar.gz",
+      "version": "1.2.1"
     },
     "cpanelmailsync": {
       "meta": {
@@ -1427,9 +1427,23 @@
         "name": "LDAP Contacts Backend",
         "summary": "LDAP backend for Nextcloud Contacts"
       },
-      "sha256": "11hig24l677k59l0daa6z2nkgy9szk32h4ydq6m6ak1wj5fxy9m0",
-      "url": "https://github.com/nextcloud/ldap_contacts_backend/releases/download/v1.0.0/ldap_contacts_backend.tar.gz",
-      "version": "1.0.0"
+      "sha256": "15ardf9kljr5rqbvm3fz1240w31g9mf8q33vqhkwadb9y112sf11",
+      "url": "https://github.com/nextcloud/ldap_contacts_backend/releases/download/v1.0.1/ldap_contacts_backend.tar.gz",
+      "version": "1.0.1"
+    },
+    "ldap_write_support": {
+      "meta": {
+        "description": "The write support for LDAP enriches the LDAP backend with capabilities to manage the directory from Nextcloud.\n* create, edit and delete users\n* create, modify memberships and delete groups\n* prevent fallback to the local database backend (optional)\n* auto generate a user id (optional)\n* and more behavioral switches",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Write support for LDAP",
+        "summary": "Adds support for creating, manipulating and deleting users and groups on LDAP via Nextcloud"
+      },
+      "sha256": "0sqch4fvlvzx057l2mrmalcakfv6gjqfrzkn9sdnkn5l42l28pjw",
+      "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.2.0/ldap_write_support.tar.gz",
+      "version": "1.2.0"
     },
     "loganalyzer": {
       "meta": {
@@ -1986,9 +2000,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0idr40ygna8yzkl2ila7xyls9028ss59bn7g6bxc7m8cm4piiqwn",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.8/richdocuments.tar.gz",
-      "version": "3.7.8"
+      "sha256": "0c0djm16djbjn44c8k5bsiqp6hz438h1x21jvgy51xmh51ma5q4z",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.9/richdocuments.tar.gz",
+      "version": "3.7.9"
     },
     "richdocumentscode": {
       "meta": {
@@ -2132,6 +2146,21 @@
       "sha256": "00rbwbf863pcprhg8zyqipwx5mxpd0g6sfblh2z1k9sal35pz033",
       "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.8.0/sharepoint.tar.gz",
       "version": "1.8.0"
+    },
+    "sharingpath": {
+      "meta": {
+        "description": "Files sharing use file stored path. Now you cau use nextcloud as your CDN origin.\n        What you need to do is just share your files, then click Open Sharing Path to access from files dropdown actions menu.",
+        "homepage": "https://github.com/rookie0/nextcloud-sharing-path",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sharing Path",
+        "summary": "Files sharing use stored path. Easy share, multi-use."
+      },
+      "sha256": "1pbprvdd286rw2di8y844dvaj6kl4pkg16rysq5ijh94gr0jkkwc",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.3.0/sharingpath.tar.gz",
+      "version": "0.3.0"
     },
     "side_menu": {
       "meta": {

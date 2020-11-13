@@ -1,8 +1,8 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 38cbe9c4..2f5f3f39 100644
+index 56bffe41..738340a6 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
-@@ -31,12 +31,8 @@ You can also edit your documents off-line with the Collabora Office app from the
+@@ -31,11 +31,7 @@ You can also edit your documents off-line with the Collabora Office app from the
  	<dependencies>
  		<nextcloud min-version="15" max-version="21" />
  	</dependencies>
@@ -10,11 +10,10 @@ index 38cbe9c4..2f5f3f39 100644
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
 -	</background-jobs>
  	<commands>
- 		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
 -		<command>OCA\Richdocuments\Command\ActivateConfig</command>
+ 		<command>OCA\Richdocuments\Command\ConvertToBigInt</command>
+ 		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
  	</commands>
- 	<settings>
- 		<admin>OCA\Richdocuments\Settings\Admin</admin>
 diff --git a/lib/AppInfo/Application.php b/lib/AppInfo/Application.php
 index c2e78e3b..df09f226 100644
 --- a/lib/AppInfo/Application.php
@@ -224,7 +223,7 @@ index e5a45dd8..025b3727 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index 3c39afd3..93529fe8 100644
+index c60cf646..60c6901e 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
 @@ -23,8 +23,6 @@ namespace OCA\Richdocuments;
@@ -284,7 +283,7 @@ index 3c39afd3..93529fe8 100644
  		$this->userId = $UserId;
 @@ -204,16 +195,10 @@ class TokenManager {
  
- 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, (int)$updatable, $serverHost, $guest_name, 0, $hideDownload, $direct, $isRemoteToken, 0, $shareToken);
+ 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, $updatable, $serverHost, $guest_name, 0, $hideDownload, $direct, $isRemoteToken, 0, $shareToken);
  
 -		try {
 -
@@ -308,13 +307,13 @@ index 3c39afd3..93529fe8 100644
  		$serverHost = $this->urlGenerator->getAbsoluteURL('/');
  
 -		if ($this->capabilitiesService->hasTemplateSource()) {
--			$wopi = $this->wopiMapper->generateFileToken($targetFile->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, 0, false, $direct, false, $templateFile->getId());
+-			$wopi = $this->wopiMapper->generateFileToken($targetFile->getId(), $owneruid, $editoruid, 0, $updatable, $serverHost, null, 0, false, $direct, false, $templateFile->getId());
 -		} else {
 -			// Legacy way of creating new documents from a template
--			$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $targetFile->getId(), $direct);
+-			$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, $updatable, $serverHost, null, $targetFile->getId(), $direct);
 -		}
 +		// Legacy way of creating new documents from a template
-+		$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, (int)$updatable, $serverHost, null, $targetFile->getId(), $direct);
++		$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, $updatable, $serverHost, null, $targetFile->getId(), $direct);
  
 -		return [
 -			$this->wopiParser->getUrlSrc($templateFile->getMimeType())['urlsrc'],

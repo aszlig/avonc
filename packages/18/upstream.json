@@ -2270,9 +2270,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0idr40ygna8yzkl2ila7xyls9028ss59bn7g6bxc7m8cm4piiqwn",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.8/richdocuments.tar.gz",
-      "version": "3.7.8"
+      "sha256": "0c0djm16djbjn44c8k5bsiqp6hz438h1x21jvgy51xmh51ma5q4z",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.9/richdocuments.tar.gz",
+      "version": "3.7.9"
     },
     "riotchat": {
       "meta": {

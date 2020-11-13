@@ -1457,9 +1457,9 @@
         "name": "LDAP Contacts Backend",
         "summary": "LDAP backend for Nextcloud Contacts"
       },
-      "sha256": "11hig24l677k59l0daa6z2nkgy9szk32h4ydq6m6ak1wj5fxy9m0",
-      "url": "https://github.com/nextcloud/ldap_contacts_backend/releases/download/v1.0.0/ldap_contacts_backend.tar.gz",
-      "version": "1.0.0"
+      "sha256": "15ardf9kljr5rqbvm3fz1240w31g9mf8q33vqhkwadb9y112sf11",
+      "url": "https://github.com/nextcloud/ldap_contacts_backend/releases/download/v1.0.1/ldap_contacts_backend.tar.gz",
+      "version": "1.0.1"
     },
     "ldap_write_support": {
       "meta": {
@@ -2192,9 +2192,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0idr40ygna8yzkl2ila7xyls9028ss59bn7g6bxc7m8cm4piiqwn",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.8/richdocuments.tar.gz",
-      "version": "3.7.8"
+      "sha256": "0c0djm16djbjn44c8k5bsiqp6hz438h1x21jvgy51xmh51ma5q4z",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.9/richdocuments.tar.gz",
+      "version": "3.7.9"
     },
     "richdocumentscode": {
       "meta": {
