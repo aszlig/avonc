@@ -1,10 +1,10 @@
+import json
+import sys
+
+from pathlib import Path
 from typing import Dict, Any, Optional, Tuple
 from semantic_version import Version, Spec
 from tqdm import tqdm
-
-import json
-import os
-import sys
 
 from .types import AppId, App, InternalApp, ExternalApp, Nextcloud, \
                    ReleaseInfo, Sha256, SignatureInfo, AppChanges
@@ -103,7 +103,7 @@ def export_data(info: ReleaseInfo) -> Dict[str, Any]:
     return result
 
 
-def update_major(major: int, info_file: str) -> Optional[
+def update_major(major: int, info_file: Path) -> Optional[
     Tuple[str, AppChanges]
 ]:
     current_state: Dict[str, Any]
@@ -121,7 +121,7 @@ def update_major(major: int, info_file: str) -> Optional[
     if not has_differences:
         return None
 
-    ncpath: str = nix.get_nextcloud_store_path(new.nextcloud)
+    ncpath: Path = nix.get_nextcloud_store_path(new.nextcloud)
     joined: ReleaseInfo = diff.join()
 
     to_download: Dict[AppId, ExternalApp] = {}
@@ -154,19 +154,20 @@ def update_major(major: int, info_file: str) -> Optional[
 
 
 def main() -> None:
-    basedir: str = os.path.join(os.getcwd(), 'packages')
-    outfiles: Dict[str, str] = {}
+    basedir: Path = Path.cwd() / 'packages'
+    outfiles: Dict[Path, str] = {}
     changeset: Dict[int, AppChanges] = {}
-    for dirname in os.listdir(basedir):
+    for subdir in basedir.iterdir():
+        dirname = subdir.name
         if not dirname.isdigit():
             continue
 
-        packagedir: str = os.path.join(basedir, dirname)
+        packagedir: Path = basedir / subdir
 
-        if not os.path.isdir(packagedir):
+        if not packagedir.is_dir():
             continue
 
-        info_file: str = os.path.join(packagedir, 'upstream.json')
+        info_file: Path = packagedir / 'upstream.json'
         info = update_major(int(dirname), info_file)
         if info is not None:
             outfiles[info_file] = info[0]

@@ -1,8 +1,8 @@
 import json
-import os
 import subprocess
 import tempfile
 
+from pathlib import Path
 from defusedxml import ElementTree as ET
 from typing import Dict, List
 
@@ -11,16 +11,16 @@ from .types import Nextcloud, AppId, InternalApp, Sha256
 
 def hash_zip_content(fname: str, data: bytes) -> Sha256:
     with tempfile.TemporaryDirectory() as tempdir:
-        destpath = os.path.join(tempdir, fname)
+        destpath = Path(tempdir) / fname
         open(destpath, 'wb').write(data)
-        desturl = 'file://' + destpath
-        cmd = ['nix-prefetch-url', '--type', 'sha256', '--unpack', desturl]
+        cmd = ['nix-prefetch-url', '--type', 'sha256', '--unpack',
+               destpath.as_uri()]
         result = subprocess.run(cmd, capture_output=True, check=True).stdout
         ziphash = result.strip().decode()
         return Sha256(ziphash)
 
 
-def get_nextcloud_store_path(nextcloud: Nextcloud) -> str:
+def get_nextcloud_store_path(nextcloud: Nextcloud) -> Path:
     data: Dict[str, str] = {
         'url': nextcloud.download_url,
         'sha256': nextcloud.sha256
@@ -36,20 +36,20 @@ def get_nextcloud_store_path(nextcloud: Nextcloud) -> str:
     cmd = ['nix-build', '--no-out-link', '--builders', '',
            '-E', expr, '--argstr', 'attrs', json.dumps(data)]
     result = subprocess.run(cmd, capture_output=True, check=True).stdout
-    return result.strip().decode()
+    return Path(result.strip().decode())
 
 
 def get_internal_apps(nextcloud: Nextcloud) -> Dict[AppId, InternalApp]:
     from .api import clean_meta
-    ncpath: str = get_nextcloud_store_path(nextcloud)
-    specpath: str = os.path.join(ncpath, 'core/shipped.json')
+    ncpath: Path = get_nextcloud_store_path(nextcloud)
+    specpath: Path = ncpath / 'core/shipped.json'
     spec: Dict[str, List[str]] = json.load(open(specpath, 'r'))
 
     result: Dict[AppId, InternalApp] = {}
 
     for appid in spec['shippedApps']:
-        app_path: str = os.path.join(ncpath, 'apps', appid)
-        info_path: str = os.path.join(app_path, 'appinfo/info.xml')
+        app_path: Path = ncpath / 'apps' / appid
+        info_path: Path = app_path / 'appinfo' / 'info.xml'
         xml = ET.parse(info_path)
 
         name: str = clean_meta(xml.findtext('name', appid))

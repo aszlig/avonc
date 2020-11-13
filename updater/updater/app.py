@@ -1,8 +1,8 @@
 import base64
 import re
 import string
-import os
 
+from pathlib import Path
 from functools import lru_cache
 from OpenSSL import crypto
 
@@ -14,9 +14,9 @@ PEM_RE = re.compile('-----BEGIN .+?-----\r?\n.+?\r?\n-----END .+?-----\r?\n?',
                     re.DOTALL)
 
 
-def verify_cert(ncpath: str, certdata: str) -> crypto.X509:
-    capath = os.path.join(ncpath, 'resources/codesigning/root.crt')
-    crlpath = os.path.join(ncpath, 'resources/codesigning/root.crl')
+def verify_cert(ncpath: Path, certdata: str) -> crypto.X509:
+    capath = ncpath / 'resources' / 'codesigning' / 'root.crt'
+    crlpath = ncpath / 'resources' / 'codesigning' / 'root.crl'
 
     store = crypto.X509Store()
     with open(capath, 'r') as cafile:
@@ -43,7 +43,7 @@ def _cached_fetch(name: str, download_url: str) -> bytes:
                          desc=f'Downloading app {name}')
 
 
-def fetch_app_hash(ncpath: str, app: App) -> Sha256:
+def fetch_app_hash(ncpath: Path, app: App) -> Sha256:
     if isinstance(app, InternalApp):
         raise ValueError("Can't download internal app {repr(app)}.")
     if not isinstance(app.hash_or_sig, SignatureInfo):

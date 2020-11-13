@@ -3,9 +3,9 @@ import json
 import requests
 import re
 import unicodedata
-import os
 
 from typing import List, Dict, Optional, Any
+from pathlib import Path
 from semantic_version import Spec, Version
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -50,8 +50,8 @@ def _get_nextcloud_versions() -> Dict[Version, str]:
 
 
 def _update_with_real_version(nc: Nextcloud) -> Nextcloud:
-    storepath: str = nix.get_nextcloud_store_path(nc)
-    verfile: str = os.path.join(storepath, 'version.php')
+    storepath: Path = nix.get_nextcloud_store_path(nc)
+    verfile: Path = storepath / 'version.php'
     with open(verfile, 'r') as fp:
         for match in RE_NEXTCLOUD_INTERNAL_VERSION_DIGIT.finditer(fp.read()):
             newver = Version(str(nc.version))
