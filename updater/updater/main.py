@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 from typing import Dict, Any, Optional, Tuple
 from semantic_version import Version, Spec
+from subprocess import run
 from tqdm import tqdm
 
 from .types import AppId, App, InternalApp, ExternalApp, Nextcloud, \
@@ -153,6 +154,18 @@ def update_major(major: int, info_file: Path) -> Optional[
     return result, diff.get_changes()
 
 
+def prepare_commit_message(subject: str, message: str) -> None:
+    result = run(['git', 'rev-parse', '--git-dir'], capture_output=True)
+    if result.returncode != 0:
+        return
+    git_dir = Path(result.stdout.rstrip().decode())
+    if not git_dir.exists():
+        return
+
+    with open(git_dir / 'SQUASH_MSG', 'x') as fp:
+        fp.write(subject + "\n\n" + message)
+
+
 def main() -> None:
     basedir: Path = Path.cwd() / 'packages'
     outfiles: Dict[Path, str] = {}
@@ -181,3 +194,6 @@ def main() -> None:
 
     if pretty_printed:
         tqdm.write("\n" + pretty_printed, file=sys.stderr)
+        prepare_commit_message('Update all Nextcloud apps', pretty_printed)
+        tqdm.write('Commit message prepared, please run "git commit"'
+                   ' after staging files.', file=sys.stderr)
