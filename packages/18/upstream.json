@@ -521,21 +521,6 @@
       "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.2/dicomviewer.tar.gz",
       "version": "1.2.2"
     },
-    "diffuse": {
-      "meta": {
-        "description": "A music player that connects to your cloud/distributed storage",
-        "homepage": "https://diffuse.sh",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Diffuse",
-        "summary": "A music player that connects to your cloud/distributed storage"
-      },
-      "sha256": "02kpxprp7jhklgdqkx22r6y7j3vynw2i9794mf40yyfy0j2kd05c",
-      "url": "https://github.com/icidasset/diffuse/releases/download/2.5.3/diffuse-web.tar.gz",
-      "version": "2.5.3"
-    },
     "discoursesso": {
       "meta": {
         "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
