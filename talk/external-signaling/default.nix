@@ -4,8 +4,12 @@ let
   cfg = config.nextcloud.apps.spreed;
 
   signalingConfig = pkgs.writeText "signaling.conf" (lib.generators.toINI {} {
+    backend.backends = "default";
     backend.timeout = 10;
     backend.connectionsperhost = 8;
+
+    default.url = "http://localhost";
+    default.secret = "internal";
 
     nats.url = ":loopback:";
 
@@ -41,63 +45,28 @@ let
 
   usrsctp = pkgs.stdenv.mkDerivation {
     pname = "usrsctp";
-    version = "2020-05-20";
+    version = "2021-03-29";
 
     src = pkgs.fetchFromGitHub {
       owner = "sctplab";
       repo = "usrsctp";
-      rev = "79ce3f1e13cd1cb283871ec5a9f90cf4062d91d4";
-      sha256 = "058zgpp4h9vkq5p2f9lhhgp0p8cbz552rxiiwbdfdg6fw1na21kf";
+      rev = "70d42ae95a1de83bd317c8cc9503f894671d1392";
+      sha256 = "0n5xm45csnwj9kk82saqlss406k1rynrl37zd8jhpv0rcl6cvnsr";
     };
 
     nativeBuildInputs = [ pkgs.meson pkgs.ninja ];
   };
 
-  # XXX: Backwards-compatibility for NixOS 19.09
-  meson52 = let
-    isTooOld = lib.versionOlder pkgs.meson.version "0.52";
-
-    newerNixpkgs = pkgs.fetchFromGitHub {
-      owner = "NixOS";
-      repo = "nixpkgs";
-      rev = "81b7dad9c5f742886a4ac9cbc64a3800177866cf";
-      sha256 = "0hqck4n4dxfsyd101yzx5ff2ccngil6dbd0fvsgw47fph3c381bn";
-    };
-    mesonPath = "${newerNixpkgs}/pkgs/development/tools/build-managers/meson";
-
-    newerMeson = pkgs.meson.overrideAttrs (drv: rec {
-      version = "0.52.1";
-      src = pkgs.python3Packages.fetchPypi {
-        inherit (drv) pname;
-        inherit version;
-        sha256 = "02fnrk1fjf3yiix0ak0m9vgbpl4h97fafii5pmw7phmvnlv9fyan";
-      };
-      patches = [
-        "${mesonPath}/allow-dirs-outside-of-prefix.patch"
-        "${mesonPath}/gir-fallback-path.patch"
-        (pkgs.runCommand "fix-rpath.patch" {
-          src = "${mesonPath}/fix-rpath.patch";
-          inherit (builtins) storeDir;
-        } "substituteAll \"$src\" \"$out\"")
-        (pkgs.fetchpatch {
-          url = "https://github.com/mesonbuild/meson/commit/"
-              + "972ede1d14fdf17fe5bb8fb99be220f9395c2392.patch";
-          sha256 = "19bfsylhpy0b2xv3ks8ac9x3q6vvvyj1wjcy971v9d5f1455xhbb";
-        })
-      ];
-    });
-  in if isTooOld then newerMeson else pkgs.meson;
-
   libnice = pkgs.stdenv.mkDerivation rec {
     pname = "libnice";
-    version = "0.1.17";
+    version = "0.1.18";
 
     src = pkgs.fetchurl {
       url = "https://nice.freedesktop.org/releases/${pname}-${version}.tar.gz";
-      sha256 = "09lm0rxwvbr53svi3inaharlq96iwbs3s6957z69qp4bqpga0lhr";
+      sha256 = "1x3kj9b3dy9m2h6j96wgywfamas1j8k2ca43k5v82kmml9dx5asy";
     };
 
-    nativeBuildInputs = [ meson52 pkgs.ninja pkgs.pkgconfig ];
+    nativeBuildInputs = [ pkgs.meson pkgs.ninja pkgs.pkgconfig ];
     propagatedBuildInputs = [ pkgs.glib ];
     buildInputs = [
       pkgs.gnutls pkgs.gst_all_1.gstreamer pkgs.gst_all_1.gst-plugins-base
@@ -109,13 +78,13 @@ let
 
   janus = pkgs.stdenv.mkDerivation rec {
     pname = "janus-gateway";
-    version = "0.9.5";
+    version = "0.11.1";
 
     src = pkgs.fetchFromGitHub {
       owner = "meetecho";
       repo = pname;
       rev = "v${version}";
-      sha256 = "1025c21mqndwvwsk04cz5bgyh6a7gj0wy3zq4q39nlha4zggc8v6";
+      sha256 = "1dyvvw3mfn8n5prhyr9d7gbh8abgap0xvgk04vxr97jdm74g9js7";
     };
 
     nativeBuildInputs = [ pkgs.autoreconfHook pkgs.pkgconfig pkgs.gengetopt ];
@@ -135,37 +104,20 @@ let
 
   signalingServer = pkgs.buildGoPackage rec {
     pname = "nextcloud-spreed-signaling";
-    version = "2020-05-20";
+    version = "0.2.0";
 
     src = pkgs.fetchFromGitHub {
       repo = pname;
       owner = "strukturag";
-      rev = "4447078bbb03824bc595a3820eb21fcdd663cd25";
-      sha256 = "0q8lpmskqikbcqh63l9ngaslydvck6mp8i4d37qinyxnyvfd9762";
+      rev = "v${version}";
+      sha256 = "1fz4h520jbvndb96fpi78698lj0287a89hgql1ykcg5j8pzf5q45";
     };
 
     goPackagePath = "github.com/strukturag/${pname}";
 
-    continentMapUpstream = pkgs.fetchurl {
-      url = "https://pkgstore.datahub.io/JohnSnowLabs/"
-          + "country-and-continent-codes-list/"
-          + "country-and-continent-codes-list-csv_json/data/"
-          + "c218eebbf2f8545f3db9051ac893d69c/"
-          + "country-and-continent-codes-list-csv_json.json";
-      sha256 = "0yv21nqb3wlsi3ymya0ixq1qy9w7v59y72y4r1cp5bxp4l6v0pf6";
-    };
-
     nativeBuildInputs = [ pkgs.python3 ];
 
     patches = [ ./signaling-socket-activation.patch ];
-
-    postPatch = ''
-      sed -e '/^  data = subprocess/,/^  \])/c \${''
-        \  import os \
-        \  data = open(os.environ["continentMapUpstream"]).read()
-      ''}' scripts/get_continent_map.py \
-        | python3 - src/signaling/continentmap.go
-    '';
 
     preBuild = ''
       export GOPATH="$NIX_BUILD_TOP/go/src/$goPackagePath:$GOPATH"
@@ -173,11 +125,13 @@ let
         ${pkgs.easyjson}/bin/easyjson -all \
           src/signaling/api_signaling.go \
           src/signaling/api_backend.go \
+          src/signaling/api_proxy.go \
           src/signaling/natsclient.go \
           src/signaling/room.go
       )
     '';
 
+    # All those dependencies are from "dependencies.tsv" in the source tree.
     extraSrcs = let
       mkGoDep = { goPackagePath, rev, sha256, ... }@attrs: let
         matchRepoOwner = builtins.match "github\\.com/([^/]+)/([^/]+)";
@@ -188,8 +142,8 @@ let
           inherit (attrs) url;
           inherit rev sha256;
         } else pkgs.fetchFromGitHub {
-          repo = lib.last matchResult;
-          owner = lib.head matchResult;
+          repo = attrs.github.repo or (lib.last matchResult);
+          owner = attrs.github.owner or (lib.head matchResult);
           inherit rev sha256;
         };
       };
@@ -197,6 +151,10 @@ let
       { goPackagePath = "github.com/dlintw/goconf";
         rev = "dcc070983490608a14480e3bf943bad464785df5";
         sha256 = "1fah0g4f1gpb9hqv80svp39ijamggimdsxsiw8w1bkj67mrhgcd7";
+      }
+      { goPackagePath = "github.com/google/uuid";
+        rev = "0e4e31197428a347842d152773b4cace4645ca25";
+        sha256 = "1rbpfa0v0ly9sdnixcxhf79swki54ikgm1zkwwkj64p1ws66syqd";
       }
       { goPackagePath = "github.com/gorilla/context";
         rev = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42";
@@ -211,6 +169,8 @@ let
         sha256 = "16bqimpxs9vj5n59vm04y04v665l7jh0sddxn787pfafyxcmh410";
       }
       { goPackagePath = "github.com/gorilla/websocket";
+        # Using newer version here, because we need NetDialContext for our
+        # patch.
         rev = "v1.4.2";
         sha256 = "0mkm9w6kjkrlzab5wh8p4qxkc0icqawjbvr01d2nk6ykylrln40s";
       }
@@ -227,12 +187,17 @@ let
         sha256 = "04yb56wvgn7caxqasfwpmz77a9n3w2hsb7ghdl729l7973v96ghl";
       }
       { goPackagePath = "github.com/notedit/janus-go";
-        rev = "8e6e2c423c03884d938d84442d37d6f6f5294197";
-        sha256 = "0glz2zxvblgyivim4658q193qhx83assyrxfvxjdz6341dv6bb38";
+        rev = "10eb8b95d1a0469ac8921c5ce5fb55b4c0d3ad7d";
+        sha256 = "0ng184pp2bhrdd3ak4qp2cnj2y3zch90l2jvd3x5gspy5w6vmszn";
       }
       { goPackagePath = "github.com/oschwald/maxminddb-golang";
         rev = "1960b16a5147df3a4c61ac83b2f31cd8f811d609";
         sha256 = "09hyc457cp27nsia8akp8m2ymcxlnz9xq6xrw6f818k4g1rxfsqh";
+      }
+      { goPackagePath = "go.etcd.io/etcd";
+        github = { owner = "etcd-io"; repo = "etcd"; };
+        rev = "ae9734ed278b7a1a7dfc82e800471ebbf9fce56f";
+        sha256 = "0bvky593241i60qf6793sxzsxwfl3f56cgscnva9f2jfhk157wmy";
       }
       { goPackagePath = "golang.org/x/net";
         url = "https://go.googlesource.com/net";
@@ -244,9 +209,14 @@ let
         rev = "ac767d655b305d4e9612f5f6e33120b9176c4ad4";
         sha256 = "1ds29n5lh4j21hmzxz7vk7hv1k6sixc7f0zsdc9xqdg0j7d212zm";
       }
+      { goPackagePath = "gopkg.in/dgrijalva/jwt-go.v3";
+        url = "https://gopkg.in/dgrijalva/jwt-go.v3";
+        rev = "06ea1031745cb8b3dab3f6a236daf2b0aa468b7e";
+        sha256 = "08m27vlms74pfy5z79w67f9lk9zkx6a9jd68k3c4msxy75ry36mp";
+      }
       { goPackagePath = "github.com/coreos/go-systemd";
-        rev = "v22.0.0";
-        sha256 = "0p4sb2fxxm2j1xny2l4fkq4kwj74plvh600gih8nyniqzannhrdx";
+        rev = "v22.1.0";
+        sha256 = "127dj1iwp69yj74nwh9ckgc0mkk1mv4yzbxmbdxix1r7j6q35z3j";
       }
     ];
   };
