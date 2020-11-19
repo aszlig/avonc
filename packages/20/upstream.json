@@ -287,9 +287,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1lqnrbz4ri2s8wycvdmpzamf104rfcq3wsd9v40axwxd5jifp1jj",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.2/circles-0.20.2.tar.gz",
-      "version": "0.20.2"
+      "sha256": "11ip0gckvsxq94p07r7a7ylrabsccnkcdzpxikhlzy8fp60hs8c3",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.4/circles-0.20.4.tar.gz",
+      "version": "0.20.4"
     },
     "cloud_federation_api": {
       "meta": {
@@ -358,9 +358,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1gggz1ixpxfa1cf3685ppawwz5l6brqfsqdn0n9z406w4ximgzhl",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.1/contacts.tar.gz",
-      "version": "3.4.1"
+      "sha256": "0kx5skrlxmqpzibpswqww32jgzak0kfpyak6f1wjq84f98n2na05",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.2/contacts.tar.gz",
+      "version": "3.4.2"
     },
     "contactsinteraction": {
       "meta": {
@@ -469,9 +469,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "15dbpgvsv190cdh552zcpwr2z3x41iqhdmgza7i9mf1m9097ffmv",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.2/deck.tar.gz",
-      "version": "1.1.2"
+      "sha256": "0xg6l1zzckzzq47c6pzfw352xilkmhl9rrpqaz7zz24j5ix7ddwj",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.1/deck.tar.gz",
+      "version": "1.2.1"
     },
     "documentserver_community": {
       "meta": {
@@ -502,6 +502,21 @@
       "sha256": "0rw263bmmgv1nkwnmi5gq0yfxsqiwc3957k413ain0hskkvz3919",
       "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.4/duplicatefinder.tar.gz",
       "version": "0.0.4"
+    },
+    "emlviewer": {
+      "meta": {
+        "description": "Provides an email preview functionality. It creates preview for the .eml files and displays it as a modal.",
+        "homepage": "https://github.com/newroco/emlviewer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Eml Viewer",
+        "summary": "Preview eml files"
+      },
+      "sha256": "135lx1994qa2g6xmimc72rc0zsdq9w1k2sq0kczjd49ck0rq7gyk",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.20/emlviewer-0.0.20.tar.gz",
+      "version": "0.0.20"
     },
     "encryption": {
       "meta": {
@@ -602,9 +617,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "0qpphlpq7b7mdwnq2wnca1i4i0ifj47c0iyp0c5l62057bazg5pc",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.0/facerecognition.tar.gz",
-      "version": "0.7.0"
+      "sha256": "0r1d9qm4fl7bnpxzfrqzjpxlh6ppx8pgn8fgi03fy7s5r2j4qhyb",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.1/facerecognition.tar.gz",
+      "version": "0.7.1"
     },
     "federatedfilesharing": {
       "meta": {
@@ -1264,9 +1279,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0g1aqaq6vi1bzcvxfbcf9kq6ym81x7zq97pd086b4i8yw5z3a3cr",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.21/integration_google-0.0.21.tar.gz",
-      "version": "0.0.21"
+      "sha256": "1px1lvx0wa2sp981i352yfdqi6ksxm6kvy84n1zqvsfg6xcqgpd9",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.24/integration_google-0.0.24.tar.gz",
+      "version": "0.0.24"
     },
     "integration_jira": {
       "meta": {
@@ -1279,9 +1294,9 @@
         "name": "Jira integration",
         "summary": "Integration of Jira user support/ticketing solution"
       },
-      "sha256": "1fb1qsrcb5x43ig4yfj12z8a2izknig3nvsgywmw1wlvhjnwl817",
-      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.8/integration_jira-0.0.8.tar.gz",
-      "version": "0.0.8"
+      "sha256": "1q4ii0pgbm920c0101yl48drj1i55hlap8103hb4y4i45gzsz1sk",
+      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.10/integration_jira-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_mastodon": {
       "meta": {
@@ -1324,9 +1339,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "14461fri54xf74kqbc0l2kiknwjyfq3zdw6bfgg35qw89v0aba5v",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.3/integration_onedrive-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1gw8v1z611xfy0n62i5kq61kz83il271r718gvsp1hhvc8sxqj5z",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.4/integration_onedrive-0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "integration_reddit": {
       "meta": {
@@ -1639,9 +1654,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "06nv8pn1mn8smmhkchscml5kxjlni7850fx89bkalql66jgi7i90",
-      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.0/officeonline.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1yf5hikir59kgfzy4my2sy788spmnnmq4cqnnmzvxksf1djfl1b0",
+      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.1/officeonline.tar.gz",
+      "version": "1.0.1"
     },
     "oidc_login": {
       "meta": {
@@ -2278,9 +2293,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0fwq9bb7hbc4lip9aqsimi2wvf6xmp0rylca8q06znsp0jn50iz4",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.1/spreed-10.0.1.tar.gz",
-      "version": "10.0.1"
+      "sha256": "0j3xhcw6jwgza01nfwwznay2df7l2y3sc1p19j92vgpkb2a3zn16",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.3/spreed-10.0.3.tar.gz",
+      "version": "10.0.3"
     },
     "support": {
       "meta": {

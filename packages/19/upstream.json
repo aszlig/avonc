@@ -331,9 +331,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1i8hvvvs2p2938gc3lvwm34pm9990mj79pmhxdmk69ylc7i4mm5k",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.7/circles-0.19.7.tar.gz",
-      "version": "0.19.7"
+      "sha256": "130vw5nk6mg8gf06q8b0h777jnpc1lj7y70rg3hsj006559s0jac",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.9/circles-0.19.9.tar.gz",
+      "version": "0.19.9"
     },
     "cloud_federation_api": {
       "meta": {
@@ -387,9 +387,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1gggz1ixpxfa1cf3685ppawwz5l6brqfsqdn0n9z406w4ximgzhl",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.1/contacts.tar.gz",
-      "version": "3.4.1"
+      "sha256": "0kx5skrlxmqpzibpswqww32jgzak0kfpyak6f1wjq84f98n2na05",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.2/contacts.tar.gz",
+      "version": "3.4.2"
     },
     "contactsinteraction": {
       "meta": {
@@ -500,9 +500,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "15dbpgvsv190cdh552zcpwr2z3x41iqhdmgza7i9mf1m9097ffmv",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.1.2/deck.tar.gz",
-      "version": "1.1.2"
+      "sha256": "0xg6l1zzckzzq47c6pzfw352xilkmhl9rrpqaz7zz24j5ix7ddwj",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.1/deck.tar.gz",
+      "version": "1.2.1"
     },
     "discoursesso": {
       "meta": {
@@ -589,9 +589,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1r5i69d4sw7mswsks7xbsrs9ma7zi95cxkb17skgcndmgmxnf69v",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.18/emlviewer-0.0.18.tar.gz",
-      "version": "0.0.18"
+      "sha256": "19vbfkviz1fsj50j9dqabc0v4p3q08753icydbq516lxqsrv4yzn",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.21/emlviewer-0.0.21.tar.gz",
+      "version": "0.0.21"
     },
     "encryption": {
       "meta": {
@@ -692,9 +692,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "0qpphlpq7b7mdwnq2wnca1i4i0ifj47c0iyp0c5l62057bazg5pc",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.0/facerecognition.tar.gz",
-      "version": "0.7.0"
+      "sha256": "0r1d9qm4fl7bnpxzfrqzjpxlh6ppx8pgn8fgi03fy7s5r2j4qhyb",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.1/facerecognition.tar.gz",
+      "version": "0.7.1"
     },
     "federatedfilesharing": {
       "meta": {
@@ -1729,9 +1729,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "06nv8pn1mn8smmhkchscml5kxjlni7850fx89bkalql66jgi7i90",
-      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.0/officeonline.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1yf5hikir59kgfzy4my2sy788spmnnmq4cqnnmzvxksf1djfl1b0",
+      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.1/officeonline.tar.gz",
+      "version": "1.0.1"
     },
     "oidc_login": {
       "meta": {
@@ -2528,9 +2528,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0s8nc8inpa13f9q37anxgp4j15sb4069pm46xx2amdkagql9ydqc",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.5/spreed-9.0.5.tar.gz",
-      "version": "9.0.5"
+      "sha256": "0dnvxn5n4zk2v3sj8xcyz0h4nmx1xd5zm92q5qv5idadvvz0q0ng",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.6/spreed-9.0.6.tar.gz",
+      "version": "9.0.6"
     },
     "support": {
       "meta": {
