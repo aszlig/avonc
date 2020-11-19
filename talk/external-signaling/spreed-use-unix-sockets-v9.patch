@@ -1,5 +1,5 @@
 diff --git a/lib/Controller/SignalingController.php b/lib/Controller/SignalingController.php
-index fe91da0a2..bf2bed3d3 100644
+index 4f75a818f..c96df90b5 100644
 --- a/lib/Controller/SignalingController.php
 +++ b/lib/Controller/SignalingController.php
 @@ -373,35 +373,6 @@ class SignalingController extends OCSController {
@@ -47,11 +47,23 @@ index fe91da0a2..bf2bed3d3 100644
  			return new DataResponse([
  				'type' => 'error',
  				'error' => [
+diff --git a/lib/Settings/Admin/AdminSettings.php b/lib/Settings/Admin/AdminSettings.php
+index 94b69e246..2d43b7dde 100644
+--- a/lib/Settings/Admin/AdminSettings.php
++++ b/lib/Settings/Admin/AdminSettings.php
+@@ -157,7 +157,6 @@ class AdminSettings implements ISettings {
+ 		$this->initialStateService->provideInitialState('talk', 'signaling_mode', $this->talkConfig->getSignalingMode(false));
+ 		$this->initialStateService->provideInitialState('talk', 'signaling_servers', [
+ 			'servers' => $this->talkConfig->getSignalingServers(),
+-			'secret' => $this->talkConfig->getSignalingSecret(),
+ 			'hideWarning' => $this->talkConfig->getHideSignalingWarning(),
+ 		]);
+ 	}
 diff --git a/lib/Signaling/BackendNotifier.php b/lib/Signaling/BackendNotifier.php
-index 3633086cd..cb007fcec 100644
+index da2d3aa0c..83f825e32 100644
 --- a/lib/Signaling/BackendNotifier.php
 +++ b/lib/Signaling/BackendNotifier.php
-@@ -98,38 +98,20 @@ class BackendNotifier {
+@@ -95,38 +95,20 @@ class BackendNotifier {
  			return;
  		}
  
