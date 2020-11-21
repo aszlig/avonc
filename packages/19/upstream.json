@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0y2s8blif30s7701b2nifwaqrp11pnm3ck6cl1z76y3gi4bimr14",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.12.0/audioplayer-2.12.0.tar.gz",
-      "version": "2.12.0"
+      "sha256": "0lnicpa235dxjgb6gnpjahwigsam89h3zyjjhgpg1x7xgbn4nwrs",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.13.0/audioplayer-2.13.0.tar.gz",
+      "version": "2.13.0"
     },
     "audioplayer_editor": {
       "meta": {
@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "1qwh8cpfkp4gsyj2n0lff10ib21ddgs77b162dcwg7l3va9pnbhp",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.1/bbb-v1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "0xibm9r570r0z8k0160dycd1za58z4q448qsrjwjrw9aa1876kkd",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.2/bbb-v1.1.2.tar.gz",
+      "version": "1.1.2"
     },
     "bookmarks": {
       "meta": {
@@ -761,9 +761,9 @@
         "name": "File access control",
         "summary": "Control access to files based on conditions"
       },
-      "sha256": "1h8icplpdbbsqcyq4qq9djl3q614qmzqklk3sr9wpmcpw6gh72bb",
-      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.9.1/files_accesscontrol-1.9.1.tar.gz",
-      "version": "1.9.1"
+      "sha256": "1bih88gyd8fha3agsaa1ab3qr1zv7lhnf1acpj926gcdbjxfklxn",
+      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.9.2/files_accesscontrol-1.9.2.tar.gz",
+      "version": "1.9.2"
     },
     "files_antivirus": {
       "meta": {
