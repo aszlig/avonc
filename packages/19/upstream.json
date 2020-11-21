@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "13g9l18v6w8b2s4jxsmxq881n2h9lrmsdbhkd17inybmjaxjy35s",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/5639d21dddfdb5eadb448675333927c66e9fb468/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.12"
+      "sha256": "10a9m8m5ccv92zpql23gidckmi08v6r1f0cyh0qgap66mzflf179",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/46cc572cd0dda10727ff03cc8e224495bebb391f/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.14"
     },
     "apporder": {
       "meta": {
@@ -1859,9 +1859,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1mx5wdg4h1647siy8wj2mhsjyj1sbk4fwvh4yw5ipnvmyhdhvr7j",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10518/artifacts/raw/passwords.tar.gz",
-      "version": "2020.11.0"
+      "sha256": "1kjak39zaqfz7j0hf9jzp7k69y95b6py40bl57fdvlfv4j30fn7r",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10574/artifacts/raw/passwords.tar.gz",
+      "version": "2020.11.1"
     },
     "phonetrack": {
       "meta": {
@@ -1917,9 +1917,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0smy9sqbn16nskr3c9mhxgmw91922whig6zl0hy8flsij9hqd9d7",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.5.7/polls.tar.gz",
-      "version": "1.5.7"
+      "sha256": "1rmw697fv33j62mpws7s82adrpp7xx1ij33cgx21f2hxkfiid83w",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.6.2/polls.tar.gz",
+      "version": "1.6.2"
     },
     "preferred_providers": {
       "meta": {
@@ -2059,9 +2059,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "0x6npw2a1362v5knn7py8phjp5jkfihmmzmk3aa7gqmbdr7ia04l",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.1/quickaccesssorting.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1hhxd4wk4h6ar1ip32gfriwc2bisjiriailkcd1viahp3vsqbs87",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.2/quickaccesssorting.tar.gz",
+      "version": "1.1.2"
     },
     "quicknotes": {
       "meta": {
