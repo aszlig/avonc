@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0lnicpa235dxjgb6gnpjahwigsam89h3zyjjhgpg1x7xgbn4nwrs",
-      "url": "https://github.com/Rello/audioplayer/releases/download/2.13.0/audioplayer-2.13.0.tar.gz",
-      "version": "2.13.0"
+      "sha256": "0djzkgws9qwvixkk4fkx89ks12h1i1j8y8anp8f9nd0ksk98v9kx",
+      "url": "https://github.com/Rello/audioplayer/releases/download/2.13.1/audioplayer-2.13.1.tar.gz",
+      "version": "2.13.1"
     },
     "audioplayer_editor": {
       "meta": {
@@ -500,9 +500,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0xg6l1zzckzzq47c6pzfw352xilkmhl9rrpqaz7zz24j5ix7ddwj",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.1/deck.tar.gz",
-      "version": "1.2.1"
+      "sha256": "16rs16z37phk9mpr8lhx8dyqd2vn4bkd75v8d9hnzk0hablypgx7",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.2/deck.tar.gz",
+      "version": "1.2.2"
     },
     "discoursesso": {
       "meta": {
@@ -1635,6 +1635,20 @@
       "url": "https://github.com/pbek/nextbackup/releases/download/20.9.0/nextbackup-nc.tar.gz",
       "version": "20.9.0"
     },
+    "nextbox": {
+      "meta": {
+        "description": "NextBox Exclusive App that enables configuration of the Nitrokey Nextbox through a native Nextcloud App",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "NextBox",
+        "summary": "NextBox Configuration App"
+      },
+      "sha256": "1b2f8kl05lnk7w5f0q8rh2w7d0wg9ffanbz4ldlb4c9v06qwncsn",
+      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.1/nextbox-0.1.tar.gz",
+      "version": "0.0.1"
+    },
     "nextcloud_announcements": {
       "meta": {
         "alwaysEnable": false,
@@ -1862,6 +1876,20 @@
       "sha256": "1kjak39zaqfz7j0hf9jzp7k69y95b6py40bl57fdvlfv4j30fn7r",
       "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10574/artifacts/raw/passwords.tar.gz",
       "version": "2020.11.1"
+    },
+    "permissions_overwrite": {
+      "meta": {
+        "description": "Allow overwriting external storage permissions.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Permissions Overwrite",
+        "summary": "Allow overwriting external storage permissions"
+      },
+      "sha256": "0bfc7gfgfqhj4x2bzm2sbjvvqz1vh0b7657pp4afxqnn8gs4p240",
+      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.0/permissions_overwrite.tar.gz",
+      "version": "0.1.0"
     },
     "phonetrack": {
       "meta": {
@@ -2177,9 +2205,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0c0djm16djbjn44c8k5bsiqp6hz438h1x21jvgy51xmh51ma5q4z",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.9/richdocuments.tar.gz",
-      "version": "3.7.9"
+      "sha256": "1z4gbkqlch7hb69gmxhyp9v8jlg71zmvmgf07ky6r2f9mgvbf8dr",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.10/richdocuments.tar.gz",
+      "version": "3.7.10"
     },
     "richdocumentscode": {
       "meta": {
@@ -2237,9 +2265,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "1m7q2rwjr1h6xydk2glk4hkb5vmq4f4cpc8llsyk0byxr399lnkm",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.1.9/scanner-0.1.9.tar.gz",
-      "version": "0.1.9"
+      "sha256": "0bxz2jr20dyabww3xbqdc87xzrs9vkhx53aa6a605rs0w6r1g3fh",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.0/scanner-0.2.0.tar.gz",
+      "version": "0.2.0"
     },
     "secsignid": {
       "meta": {
@@ -3058,9 +3086,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "1mrjpifibxy5375z3m446bvd8fhi8ik8s7knfkifr7qlxjg3x5v9",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.3/weather-1.7.3.tar.gz",
-      "version": "1.7.3"
+      "sha256": "0vnz82zd80sqrzyrlql5qi6kmmx4bsk4ir42fxhvnc08xz7w7q3z",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.4/weather-1.7.4.tar.gz",
+      "version": "1.7.4"
     },
     "webapppassword": {
       "meta": {

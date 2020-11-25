@@ -469,9 +469,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0xg6l1zzckzzq47c6pzfw352xilkmhl9rrpqaz7zz24j5ix7ddwj",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.1/deck.tar.gz",
-      "version": "1.2.1"
+      "sha256": "16rs16z37phk9mpr8lhx8dyqd2vn4bkd75v8d9hnzk0hablypgx7",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.2/deck.tar.gz",
+      "version": "1.2.2"
     },
     "documentserver_community": {
       "meta": {
@@ -1087,9 +1087,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "1x3dwz77smwx3cjnhymxinvrci8982vcacwvlppdjs9p16x23mkd",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/c83556d221f75f01569dd5c5c3f5588e/gpxpod-4.2.3.tar.gz",
-      "version": "4.2.3"
+      "sha256": "11kldpzii3hzg7h2g7f5qbfw64a83z3k6fqwcx40mdgcpw5mzvwd",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d226043695efb4221732e2a5c0a7e690/gpxpod-4.2.4.tar.gz",
+      "version": "4.2.4"
     },
     "group_everyone": {
       "meta": {
@@ -1249,9 +1249,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "02nhi5450y5q6w5inrh57z1x51z9iag31ml0yvpj36nxgby3ggi6",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.11/integration_github-0.0.11.tar.gz",
-      "version": "0.0.11"
+      "sha256": "0nf4s7kylc78wk3gnvnyp55pmqc9y4q37ykpwb3m369233gb7691",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.12/integration_github-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "integration_gitlab": {
       "meta": {
@@ -1279,9 +1279,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "1px1lvx0wa2sp981i352yfdqi6ksxm6kvy84n1zqvsfg6xcqgpd9",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.24/integration_google-0.0.24.tar.gz",
-      "version": "0.0.24"
+      "sha256": "18hddcacs6dnwsafyr6mj24mnglw1kils6xv0v1mcvyz0y6gfky9",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.0.25/integration_google-0.0.25.tar.gz",
+      "version": "0.0.25"
     },
     "integration_jira": {
       "meta": {
@@ -1369,9 +1369,9 @@
         "name": "SuiteCRM integration",
         "summary": "Integration of SuiteCRM Customer Relationship Management application"
       },
-      "sha256": "1ag0i42yc7f6yjgkrxrjx051bf0gflmwmgf6cdjymsyrychia894",
-      "url": "https://github.com/eneiluj/integration_suitecrm/releases/download/v0.0.2/integration_suitecrm-0.0.2.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0bpmzvdr601d0lwjb6bxrp5dvgrriwmgnhj6r3h22s7cx28cnk4i",
+      "url": "https://github.com/eneiluj/integration_suitecrm/releases/download/v0.0.4/integration_suitecrm-0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "integration_twitter": {
       "meta": {
@@ -1590,6 +1590,20 @@
       "url": "https://github.com/pbek/nextbackup/releases/download/20.9.0/nextbackup-nc.tar.gz",
       "version": "20.9.0"
     },
+    "nextbox": {
+      "meta": {
+        "description": "NextBox Exclusive App that enables configuration of the Nitrokey Nextbox through a native Nextcloud App",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "NextBox",
+        "summary": "NextBox Configuration App"
+      },
+      "sha256": "1b2f8kl05lnk7w5f0q8rh2w7d0wg9ffanbz4ldlb4c9v06qwncsn",
+      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.1/nextbox-0.1.tar.gz",
+      "version": "0.0.1"
+    },
     "nextcloud_announcements": {
       "meta": {
         "alwaysEnable": false,
@@ -1614,9 +1628,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0za6w73v8c9yc648r4r7f4m9nrpill9kbcy9ncyb2dnlrhmj82i8",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.0/notes.tar.gz",
-      "version": "4.0.0"
+      "sha256": "033aiv4rj3wrjb970gzdg99ng5xbdyyq1z99f4xhsh728kyqbj8z",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.1/notes.tar.gz",
+      "version": "4.0.1"
     },
     "notifications": {
       "meta": {
@@ -1743,6 +1757,20 @@
       "sha256": "1kjak39zaqfz7j0hf9jzp7k69y95b6py40bl57fdvlfv4j30fn7r",
       "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10574/artifacts/raw/passwords.tar.gz",
       "version": "2020.11.1"
+    },
+    "permissions_overwrite": {
+      "meta": {
+        "description": "Allow overwriting external storage permissions.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Permissions Overwrite",
+        "summary": "Allow overwriting external storage permissions"
+      },
+      "sha256": "0bfc7gfgfqhj4x2bzm2sbjvvqz1vh0b7657pp4afxqnn8gs4p240",
+      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.0/permissions_overwrite.tar.gz",
+      "version": "0.1.0"
     },
     "phonetrack": {
       "meta": {
@@ -1931,6 +1959,21 @@
       "url": "https://github.com/nextcloud/quota_warning/releases/download/v1.9.1/quota_warning-1.9.1.tar.gz",
       "version": "1.9.1"
     },
+    "radio": {
+      "meta": {
+        "description": "Listening to your favorite radio stations in Nextcloud",
+        "homepage": "https://git.project-insanity.org/onny/nextcloud-app-radio",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Radio",
+        "summary": "Radio listening app"
+      },
+      "sha256": "1nhknp59l40vjjxglf4si8xs9ah46h01346763r7hag40vv5fpdz",
+      "url": "https://onny.project-insanity.org/files/radio-1.0.tar.gz",
+      "version": "1.0.0"
+    },
     "rainloop": {
       "meta": {
         "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01).",
@@ -2000,9 +2043,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0c0djm16djbjn44c8k5bsiqp6hz438h1x21jvgy51xmh51ma5q4z",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.9/richdocuments.tar.gz",
-      "version": "3.7.9"
+      "sha256": "1z4gbkqlch7hb69gmxhyp9v8jlg71zmvmgf07ky6r2f9mgvbf8dr",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.10/richdocuments.tar.gz",
+      "version": "3.7.10"
     },
     "richdocumentscode": {
       "meta": {
@@ -2048,6 +2091,21 @@
       "sha256": "1ydqrhz3kh0zbql5xp76jdcqxb8wmyd3bra00fgw291j23hxi12i",
       "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.15/riotchat.tar.gz",
       "version": "0.6.15"
+    },
+    "scanner": {
+      "meta": {
+        "description": "Adds the ability to acquire images from a network-enabled or local scanner. You need a working SANE configuration and a supported scanner. Please see the readme on how to set up this app on your system.",
+        "homepage": "https://github.com/e-alfred/nextcloud-scanner",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Scanner",
+        "summary": "Scanner app for Nextcloud using the SANE framework"
+      },
+      "sha256": "0bxz2jr20dyabww3xbqdc87xzrs9vkhx53aa6a605rs0w6r1g3fh",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.0/scanner-0.2.0.tar.gz",
+      "version": "0.2.0"
     },
     "sendent": {
       "meta": {
@@ -2752,6 +2810,21 @@
       "sha256": "0w4r68gsfiykgh9rgcx1idrbb3kai5gw8252nahqv4x6f2nms2ax",
       "url": "https://github.com/newroco/W2G2/releases/download/3.0.3/w2g2.tar.gz",
       "version": "3.0.3"
+    },
+    "weather": {
+      "meta": {
+        "description": "Watch the weather directly on your Nextcloud.",
+        "homepage": "https://github.com/nextcloud/weather",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Weather",
+        "summary": "Watch the weather directly on your Nextcloud."
+      },
+      "sha256": "0vnz82zd80sqrzyrlql5qi6kmmx4bsk4ir42fxhvnc08xz7w7q3z",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.4/weather-1.7.4.tar.gz",
+      "version": "1.7.4"
     },
     "weather_status": {
       "meta": {

@@ -1,5 +1,5 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 56bffe41..738340a6 100644
+index 8c5ffaec..49630f89 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -31,11 +31,7 @@ You can also edit your documents off-line with the Collabora Office app from the
@@ -15,7 +15,7 @@ index 56bffe41..738340a6 100644
  		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
  	</commands>
 diff --git a/lib/AppInfo/Application.php b/lib/AppInfo/Application.php
-index c2e78e3b..df09f226 100644
+index 044e7ab4..303aebfb 100644
 --- a/lib/AppInfo/Application.php
 +++ b/lib/AppInfo/Application.php
 @@ -34,7 +34,6 @@ use OCA\Richdocuments\Preview\MSWord;
@@ -26,13 +26,13 @@ index c2e78e3b..df09f226 100644
  use OCA\Richdocuments\Service\FederationService;
  use OCA\Richdocuments\WOPI\DiscoveryManager;
  use OCA\Viewer\Event\LoadViewer;
-@@ -182,11 +181,7 @@ class Application extends App {
+@@ -203,11 +202,7 @@ class Application extends App {
  			$appConfig->setAppValue('disable_certificate_verification', 'yes');
  
  			$discoveryManager = $this->getContainer()->query(DiscoveryManager::class);
 -			$capabilitiesService = $this->getContainer()->query(CapabilitiesService::class);
 -
- 			$discoveryManager->refretch();
+ 			$discoveryManager->refetch();
 -			$capabilitiesService->clear();
 -			$capabilitiesService->refetch();
  		}
