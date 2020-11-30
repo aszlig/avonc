@@ -386,9 +386,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "06dv2pgik8h4slx275zca3wsnyn1p4i2ycj6bgm0gh0crpa3ll6j",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.1/cospend-1.2.1.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1paq0n704b6k6br4n6if54ywj9q4jhwwfl89slnskjsiw5bcv9gv",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.2/cospend-1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "cpanelmailsync": {
       "meta": {
@@ -1768,9 +1768,9 @@
         "name": "Permissions Overwrite",
         "summary": "Allow overwriting external storage permissions"
       },
-      "sha256": "0bfc7gfgfqhj4x2bzm2sbjvvqz1vh0b7657pp4afxqnn8gs4p240",
-      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.0/permissions_overwrite.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0wz154j4lpslaqx1h0nx9crs2vwx6bah4h31n604p9853dj1p1fk",
+      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.1/permissions_overwrite.tar.gz",
+      "version": "0.1.1"
     },
     "phonetrack": {
       "meta": {
@@ -2520,9 +2520,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0b5xls62mag2c6kfibiflwkzb0d2nhsvznwfhlp6c9dhvdl4zpsv",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.4/timemanager.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0xsszbfjhmgjc0bsc4n4bqwdmrdgdgy36ipy2pvnbxih02r0q3sn",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.5/timemanager.tar.gz",
+      "version": "0.1.5"
     },
     "timetracker": {
       "meta": {

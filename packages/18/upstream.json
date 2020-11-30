@@ -1778,9 +1778,9 @@
         "name": "Optical character recognition",
         "summary": "Text recognition for your images"
       },
-      "sha256": "1chbmcqf4pnb2y6q4dwc6lkbyy27sddfi2p599jdwqn1ygwl0nnk",
-      "url": "https://github.com/janis91/ocr/releases/download/6.0.57/ocr.tar.gz",
-      "version": "6.0.57"
+      "sha256": "0rc8c8mw19534cpgnb9vvbqbyhmkilmhhawa2zfaxfl4314mpmpr",
+      "url": "https://github.com/janis91/ocr/releases/download/6.0.58/ocr.tar.gz",
+      "version": "6.0.58"
     },
     "ocsms": {
       "meta": {
@@ -2758,9 +2758,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0b5xls62mag2c6kfibiflwkzb0d2nhsvznwfhlp6c9dhvdl4zpsv",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.4/timemanager.tar.gz",
-      "version": "0.1.4"
+      "sha256": "0xsszbfjhmgjc0bsc4n4bqwdmrdgdgy36ipy2pvnbxih02r0q3sn",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.5/timemanager.tar.gz",
+      "version": "0.1.5"
     },
     "timetracker": {
       "meta": {
