@@ -79,10 +79,6 @@ import ./make-test.nix (pkgs: {
         # https://github.com/nextcloud/user_oidc/issues/90
         (assert nc19apps.user_oidc.version == "0.2.1"; "user_oidc")
 
-        # https://github.com/icewind1991/permissions_overwrite/issues/1
-        (assert nc19apps.permissions_overwrite.version == "0.1.1";
-         "permissions_overwrite")
-
         # These apps have non-deterministic download URLs
         "occweb"
         "quicknotes"

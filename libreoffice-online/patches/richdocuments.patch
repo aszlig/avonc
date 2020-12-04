@@ -1,5 +1,5 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index 8c5ffaec..49630f89 100644
+index f8b88cd1..e9d6c09e 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -31,11 +31,7 @@ You can also edit your documents off-line with the Collabora Office app from the
@@ -15,7 +15,7 @@ index 8c5ffaec..49630f89 100644
  		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
  	</commands>
 diff --git a/lib/AppInfo/Application.php b/lib/AppInfo/Application.php
-index 044e7ab4..303aebfb 100644
+index 7e86f801..acf7a624 100644
 --- a/lib/AppInfo/Application.php
 +++ b/lib/AppInfo/Application.php
 @@ -34,7 +34,6 @@ use OCA\Richdocuments\Preview\MSWord;
@@ -26,7 +26,7 @@ index 044e7ab4..303aebfb 100644
  use OCA\Richdocuments\Service\FederationService;
  use OCA\Richdocuments\WOPI\DiscoveryManager;
  use OCA\Viewer\Event\LoadViewer;
-@@ -203,11 +202,7 @@ class Application extends App {
+@@ -209,11 +208,7 @@ class Application extends App {
  			$appConfig->setAppValue('disable_certificate_verification', 'yes');
  
  			$discoveryManager = $this->getContainer()->query(DiscoveryManager::class);
@@ -39,7 +39,7 @@ index 044e7ab4..303aebfb 100644
  	}
  }
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
-index e8ad527a..f2eeee0b 100644
+index 3cd1b8c5..dea03953 100644
 --- a/lib/Capabilities.php
 +++ b/lib/Capabilities.php
 @@ -23,7 +23,6 @@
@@ -50,7 +50,7 @@ index e8ad527a..f2eeee0b 100644
  use OCP\Capabilities\ICapability;
  use OCP\IL10N;
  
-@@ -75,41 +74,33 @@ class Capabilities implements ICapability {
+@@ -75,42 +74,34 @@ class Capabilities implements ICapability {
  	private $l10n;
  	/** @var AppConfig */
  	private $config;
@@ -71,6 +71,7 @@ index e8ad527a..f2eeee0b 100644
 -			$collaboraCapabilities = $this->capabilitiesService->getCapabilities();
 -			$this->capabilities = [
 -				'richdocuments' => [
+-					'version' => \OC::$server->getAppManager()->getAppVersion('richdocuments'),
 -					'mimetypes' => self::MIMETYPES,
 -					'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
 -					'collabora' => $collaboraCapabilities,
@@ -93,6 +94,7 @@ index e8ad527a..f2eeee0b 100644
 -		return $this->capabilities;
 +		return [
 +			'richdocuments' => [
++				'version' => \OC::$server->getAppManager()->getAppVersion('richdocuments'),
 +				'mimetypes' => self::MIMETYPES,
 +				'mimetypesNoDefaultOpen' => self::MIMETYPES_OPTIONAL,
 +				'collabora' => ['productName' => 'LibreOffice Online'],
@@ -113,7 +115,7 @@ index e8ad527a..f2eeee0b 100644
  	}
  }
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
-index e5a45dd8..025b3727 100644
+index ce73dd1d..025b3727 100644
 --- a/lib/Controller/SettingsController.php
 +++ b/lib/Controller/SettingsController.php
 @@ -11,10 +11,7 @@
@@ -189,7 +191,7 @@ index e5a45dd8..025b3727 100644
  		return new DataResponse();
  	}
  
-@@ -169,32 +142,6 @@ class SettingsController extends Controller{
+@@ -169,38 +142,6 @@ class SettingsController extends Controller{
  			$this->appConfig->setAppValue('canonical_webroot', $canonical_webroot);
  		}
  
@@ -218,6 +220,12 @@ index e5a45dd8..025b3727 100644
 -
 -		$this->capabilitiesService->clear();
 -		$this->capabilitiesService->refetch();
+-		if ($this->capabilitiesService->getCapabilities() === []) {
+-			return new JSONResponse([
+-				'status' => 'error',
+-				'data' => ['message' => 'Failed to connect to the remote server', 'hint' => 'missing_capabilities']
+-			], 500);
+-		}
 -
  		$response = [
  			'status' => 'success',

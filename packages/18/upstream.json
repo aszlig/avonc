@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "06habskr3znyhxwnn22hhi98zz793kcx9hy1597gyklbzcwv8q12",
-      "url": "https://github.com/Rello/analytics/releases/download/2.5.0/analytics-2.5.0.tar.gz",
-      "version": "2.5.0"
+      "sha256": "0kxryw1h0xlhd6d5vaqad6yaxdm5004swzsw3nr0zfixyvfwzxni",
+      "url": "https://github.com/Rello/analytics/releases/download/2.6.0/analytics-2.6.0.tar.gz",
+      "version": "2.6.0"
     },
     "announcementcenter": {
       "meta": {
@@ -286,9 +286,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "05gsh8lgv6wan2rriq7g3l3hdgbx6pqsxabrqd31iqmlw61klvlx",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.9/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.9"
+      "sha256": "00dfm4wcbavzyjgx3j2h4gpwq5c2x395ixcrr1ckjpcil0q6qdgz",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.10/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.10"
     },
     "carnet": {
       "meta": {
@@ -561,9 +561,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "05jh9f3kv2bs0z118v32a93fhnz4n6svpx6c9bhhjyjarnmy4qik",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.7/drawio-v0.9.7.tar.gz",
-      "version": "0.9.7"
+      "sha256": "0lbiiynfdrpshm13bhnwpa7a5q0inj0i3sg4yyyjgwac1z9bb7a6",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.8/drawio-v0.9.8.tar.gz",
+      "version": "0.9.8"
     },
     "drop_account": {
       "meta": {
@@ -940,9 +940,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "1j1xi2zr75b12r511rffvqbg5q9ybqz05ypzj35nk1ah4pr7qa7a",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.2/files_linkeditor.tar.gz",
-      "version": "1.1.2"
+      "sha256": "0vv4sqqf0aghw80hg9sl4s3qwp8pca1fh4db6dfj0kvd7ixwfq62",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.3/files_linkeditor.tar.gz",
+      "version": "1.1.3"
     },
     "files_lock": {
       "meta": {
@@ -955,9 +955,9 @@
         "name": "Temporary files lock",
         "summary": "Temporary lock your files"
       },
-      "sha256": "1cm6rd34mylxi4g1vzpqp1h720pg2frcwg24iix438qpbfnb7pni",
-      "url": "https://github.com/nextcloud/files_lock/releases/download/v0.8.3/files_lock-0.8.3.tar.gz",
-      "version": "0.8.3"
+      "sha256": "1b2gkic5sws2px0xaq33a42rb9fxv9p2kwz49vdya4901jz2prl1",
+      "url": "https://github.com/nextcloud/files_lock/releases/download/v19.0.0/files_lock-19.0.0.tar.gz",
+      "version": "19.0.0"
     },
     "files_markdown": {
       "meta": {
@@ -1822,9 +1822,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "16v53zmzvblg12y24lm6yyfq83494bwxvqgkjzivxrg75hwzpmc4",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.6.0/oidc_login.tar.gz",
-      "version": "1.6.0"
+      "sha256": "0nill7g8qizvq6a88086mxnkmxlp3y6znrbhagk1h4ghyhfz6vxv",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.6.1/oidc_login.tar.gz",
+      "version": "1.6.1"
     },
     "ojsxc": {
       "meta": {
@@ -1940,6 +1940,21 @@
       "sha256": "1kjak39zaqfz7j0hf9jzp7k69y95b6py40bl57fdvlfv4j30fn7r",
       "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10574/artifacts/raw/passwords.tar.gz",
       "version": "2020.11.1"
+    },
+    "pdfdraw": {
+      "meta": {
+        "description": "PDF annotations for Nextcloud\n\nAnnotate any PDF document collaboratively inside Nextcloud. Select \"Annotate\" from the context menu of PDF files to open the annotation mode.\n\nRequires a separate nodejs server running on the backend to distribute the signaling messages between clients.\nThe server is available on [GitHub](https://github.com/strukturag/pdfdraw/tree/master/server).",
+        "homepage": "https://github.com/strukturag/pdfdraw",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "PDF annotations",
+        "summary": "Annotate PDF documents"
+      },
+      "sha256": "083bkvixl9zlx0gp730d4d7fwbkxfm2zi4cgzq4qk77dqjgxcrgq",
+      "url": "https://github.com/strukturag/pdfdraw/releases/download/v0.1.1/pdfdraw-0.1.1.tar.gz",
+      "version": "0.1.0"
     },
     "phonetrack": {
       "meta": {
@@ -2269,9 +2284,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1z4gbkqlch7hb69gmxhyp9v8jlg71zmvmgf07ky6r2f9mgvbf8dr",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.10/richdocuments.tar.gz",
-      "version": "3.7.10"
+      "sha256": "0qwm0yg5w0d4h5a6jvwrjrr0595jkccq80p9n5n35jxjafv2bzzf",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.11/richdocuments.tar.gz",
+      "version": "3.7.11"
     },
     "riotchat": {
       "meta": {
@@ -2284,9 +2299,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1ydqrhz3kh0zbql5xp76jdcqxb8wmyd3bra00fgw291j23hxi12i",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.15/riotchat.tar.gz",
-      "version": "0.6.15"
+      "sha256": "0pwkichfzichjmlgxrp6rmvkwhk5jf7pdz3nr2wrvpdl6gry5j5q",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.16/riotchat.tar.gz",
+      "version": "0.6.16"
     },
     "scanner": {
       "meta": {
@@ -2446,7 +2461,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n*  [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n*  [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
+        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2455,9 +2470,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1yxy9627h4v0anxqagxyy3nb33vkaz830w2x1v0rsqfi8y60pqka",
-      "url": "https://gitnet.fr/attachments/0ee52af2-ebf1-4018-bd92-e86c2f57e3d2",
-      "version": "1.20.1"
+      "sha256": "1rf9dwxbzl15iw03s0gw9nr5w3i6xmgs3xkaz5x9m2bkzlanibg9",
+      "url": "https://gitnet.fr/attachments/a3ce9514-8a7c-4447-a160-a98da8c91cf9",
+      "version": "1.21.0"
     },
     "smb_test": {
       "meta": {
@@ -2758,9 +2773,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0xsszbfjhmgjc0bsc4n4bqwdmrdgdgy36ipy2pvnbxih02r0q3sn",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.5/timemanager.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0d624ipvjqbc4vd3j5ljyrywv6rfchljxjhp25sr2f2k47wm8brq",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.6/timemanager.tar.gz",
+      "version": "0.1.6"
     },
     "timetracker": {
       "meta": {
