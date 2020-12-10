@@ -107,12 +107,7 @@ import ./make-test.nix (pkgs: {
           "external" "end_to_end_encryption" "files_accesscontrol"
           "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
           "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
-          # XXX: Temporarily disable "social" app, but attach assertion to
-          #      "spreed" to maximum ugliness (and to possibly trigger OCD).
-          # Upstream issue: https://github.com/nextcloud/social/issues/1034
-          (let inherit (config.nextcloud.package) applications;
-          in assert applications.social."20".version == "0.4.1"; "spreed")
-          "tasks"
+          "social" "spreed" "tasks"
         ] (lib.const { enable = true; });
       }
     ];
