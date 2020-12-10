@@ -350,7 +350,7 @@
     },
     "cms_pico": {
       "meta": {
-        "description": "[Pico CMS for Nextcloud](https://github.com/nextcloud/cms_pico) combines the power of [**Pico**](http://picocms.org/) and [**Nextcloud**](https://nextcloud.com/) to create simple, secure, shareable and amazingly powerful websites with just a few clicks. Pico is a stupidly simple, blazing fast, flat file CMS - making the web easy.\n\n* Start a blog\n* Share your resume with the world\n* Create a plan for world domination and only share with the right friends\n* Build a knowledge base and let the smart ones among your colleagues help out\n\nInstalling Pico CMS for Nextcloud allows your users to create and manage their own websites. Creating a new page with Pico is no more than creating a simple text file in a users' Nextcloud files. No config is required, no utterly complex management interfaces - just files. It's the perfect match with Nextcloud. Secure Sharing, Collaboration, Access Control - not just for your files, but also your websites, all made possible by Pico CMS for Nextcloud! Breaking the boundaries between your Mobile &amp; Desktop devices and your Server.\n\nWebsites will be accessible through URLs like `https://cloud.example.com/sites/my_site/` and consist of just a bunch of `.md` text files in a user's Nextcloud files. `.md` stands for [**Markdown**](https://www.markdownguide.org/) - a super simple and intuitive markup to create headings, paragraphs, text formatting, lists, images and links. But don't despair - you don't have to learn yet another language if you don't want to. Consider enabling Nextcloud's [Text](https://apps.nextcloud.com/apps/text) or [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) apps to make easy things stupidly simple. But what about meta data like a page's title or release date? Guess right, it's all in one place. At the top of your Markdown files you can place a block with such meta data - called the [**YAML**](https://en.wikipedia.org/wiki/YAML) Front Matter. Creating websites can't be easier...\n\nBut that wasn't everything... Pico CMS for Nextcloud is highly customizable. You can change Picos appearance by using custom themes and add new functionality by using custom plugins. For security reasons users can neither add custom themes nor plugins on their own - but as an admin you can. Plugins and themes arent just new \"skins\" or \"widgets\", the underlying technologies are powerful frameworks you can leverage to make your users' websites truly unique. However, with great power comes great responsibility. Pico CMS for Nextcloud does its best to prevent users from including scripts into websites, since this might bear security risks (so called \"Cross Scripting\"). Since this risk doesn't apply to Pico itself, 3rd-party developers of plugins and themes might not be aware of this issue - so be careful when installing custom plugins and themes.\n\nYou want to learn more about Pico CMS for Nextcloud? Easy! Just download and enable the app from [Nextcloud's App Store](https://apps.nextcloud.com/apps/cms_pico) and navigate to Nextcloud's settings page. As an admin you'll find two \"Pico CMS\" sections in your Nextcloud settings - one below \"Personal\", another below \"Administration\". The latter allows you to add custom themes, plugins and templates to Pico, as well as tweaking some advanced settings. The \"Pico CMS\" section below \"Personal\" exists for all Nextcloud users and allows one to create personal websites. Simply create your first personal website and choose \"sample_pico\" as website template. Pico's sample contents will explain all you need to know...",
+        "description": "[Pico CMS for Nextcloud](https://github.com/nextcloud/cms_pico) combines the power of [**Pico**](http://picocms.org/) and [**Nextcloud**](https://nextcloud.com/) to create simple, secure, shareable and amazingly powerful websites with just a few clicks. Pico is a stupidly simple, blazing fast, flat file CMS - making the web easy.\n\n* Start a blog\n* Share your resume with the world\n* Create a plan for world domination and only share with the right friends\n* Build a knowledge base and let the smart ones among your colleagues help out\n\nInstalling Pico CMS for Nextcloud allows your users to create and manage their own websites. Creating a new page with Pico is no more than creating a simple text file in a users' Nextcloud files. No config is required, no utterly complex management interfaces - just files. It's the perfect match with Nextcloud. Secure Sharing, Collaboration, Access Control - not just for your files, but also your websites, all made possible by Pico CMS for Nextcloud! Breaking the boundaries between your Mobile &amp; Desktop devices and your Server.\n\nWebsites will be accessible through URLs like `https://cloud.example.com/sites/my_site/` and consist of just a bunch of `.md` text files in a user's Nextcloud files. `.md` stands for [**Markdown**](https://www.markdownguide.org/) - a super simple and intuitive markup to create headings, paragraphs, text formatting, lists, images and links. But don't despair - you don't have to learn yet another language if you don't want to. Consider enabling Nextcloud's [Markdown Editor](https://apps.nextcloud.com/apps/files_markdown) app to make easy things stupidly simple. Please note that Nextcloud's built-in Text editor is incompatible with Pico CMS for Nextcloud. But what about meta data like a page's title or release date? Guess right, it's all in one place. At the top of your Markdown files you can place a block with such meta data - called the [**YAML**](https://en.wikipedia.org/wiki/YAML) Front Matter. Creating websites can't be easier...\n\nBut that wasn't everything... Pico CMS for Nextcloud is highly customizable. You can change Picos appearance by using custom themes and add new functionality by using custom plugins. For security reasons users can neither add custom themes nor plugins on their own - but as an admin you can. Plugins and themes arent just new \"skins\" or \"widgets\", the underlying technologies are powerful frameworks you can leverage to make your users' websites truly unique. However, with great power comes great responsibility. Pico CMS for Nextcloud does its best to prevent users from including scripts into websites, since this might bear security risks (so called \"Cross Scripting\"). Since this risk doesn't apply to Pico itself, 3rd-party developers of plugins and themes might not be aware of this issue - so be careful when installing custom plugins and themes.\n\nYou want to learn more about Pico CMS for Nextcloud? Easy! Just download and enable the app from [Nextcloud's App Store](https://apps.nextcloud.com/apps/cms_pico) and navigate to Nextcloud's settings page. As an admin you'll find two \"Pico CMS\" sections in your Nextcloud settings - one below \"Personal\", another below \"Administration\". The latter allows you to add custom themes, plugins and templates to Pico, as well as tweaking some advanced settings. The \"Pico CMS\" section below \"Personal\" exists for all Nextcloud users and allows one to create personal websites. Simply create your first personal website and choose \"sample_pico\" as website template. Pico's sample contents will explain all you need to know...",
         "homepage": "https://github.com/nextcloud/cms_pico",
         "isShipped": false,
         "licenses": [
@@ -359,9 +359,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "0xbr6cjmiyv9jyxizl9189cjbqmnfc939pnvr8v1hv0v8rdq048x",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.10/cms_pico-v1.0.10.tar.gz",
-      "version": "1.0.10"
+      "sha256": "1arv6iqhb5zm736h870m7qi9c5n795zxqd0fimd4mb84474d8h8c",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.12/cms_pico-v1.0.12.tar.gz",
+      "version": "1.0.12"
     },
     "comments": {
       "meta": {
@@ -1403,9 +1403,9 @@
         "name": "Hide sidebars",
         "summary": "Hide left sidebar and top header bar for use in iframe or some other scenarios."
       },
-      "sha256": "0z7w771xgznd8z5imbi7sg4ldhzdp2xih59fpzsvi355lfdfadvq",
-      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.6/hidesidebars.tar.gz",
-      "version": "1.0.6"
+      "sha256": "1z3l97hsdjz2ghh19q41qddp9vrrp414hd4kx6h7qlj9gs3ddpxi",
+      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.7/hidesidebars.tar.gz",
+      "version": "1.0.7"
     },
     "hsts": {
       "meta": {
@@ -1590,9 +1590,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "05mrd1bb0233c3mvy62sqvpy3ryp1gppn6nx7n8n8jwq295ix1nh",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.1/mail.tar.gz",
-      "version": "1.4.1"
+      "sha256": "1zwaw82gw24k5nms22aizil1pinxq0sl4f3ay0xb025vk0ml9sdb",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.2/mail.tar.gz",
+      "version": "1.4.2"
     },
     "maps": {
       "meta": {
@@ -1852,9 +1852,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "01i16ifgg8x0d4yfhp8xnij04xw1vs8kqqr6cmqm8pg4lif90zi4",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.1.0/onlyoffice.tar.gz",
-      "version": "6.1.0"
+      "sha256": "0hjiy4107hllgzm6hqh5cqhvr7j4n70685yqjsijh8lsv03cakcf",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.2.0/onlyoffice.tar.gz",
+      "version": "6.2.0"
     },
     "openhab": {
       "meta": {
@@ -1937,9 +1937,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1kjak39zaqfz7j0hf9jzp7k69y95b6py40bl57fdvlfv4j30fn7r",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10574/artifacts/raw/passwords.tar.gz",
-      "version": "2020.11.1"
+      "sha256": "0vc5gnzlydl2yy803rwsiapnfhpxkpsy98c3wf2hb68hcrc6kwqr",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10651/artifacts/raw/passwords.tar.gz",
+      "version": "2020.12.0"
     },
     "pdfdraw": {
       "meta": {
@@ -2299,9 +2299,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0pwkichfzichjmlgxrp6rmvkwhk5jf7pdz3nr2wrvpdl6gry5j5q",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.16/riotchat.tar.gz",
-      "version": "0.6.16"
+      "sha256": "1g1g4pr70g70iv63wk161sw76vzf4rbyf10211qq15rfjrsjb7kv",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.17/riotchat.tar.gz",
+      "version": "0.6.17"
     },
     "scanner": {
       "meta": {
@@ -3266,9 +3266,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "0580zi0j612pqn7xjnnnzxz88s8z72l40sbprhd45jypwjy1hc8g",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.4/wrikesync.tar.gz",
-      "version": "1.2.4"
+      "sha256": "0r66clvqbds9nwf9mrv59bhn2a9h8wdbp1wd6kydrx6jff8a65b8",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.5/wrikesync.tar.gz",
+      "version": "1.2.5"
     },
     "xray": {
       "meta": {
