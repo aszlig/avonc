@@ -375,6 +375,21 @@
         "summary": "Manages interaction between users and contacts"
       }
     },
+    "cookbook": {
+      "meta": {
+        "description": "A library for all your recipes. It uses JSON files following the schema.org recipe format. To add a recipe to the collection, you can paste in the URL of the recipe, and the provided web page will be parsed and downloaded to whichever folder you specify in the app settings.",
+        "homepage": "https://github.com/mrzapp/nextcloud-cookbook/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Cookbook",
+        "summary": "An integrated cookbook using schema.org JSON files as recipes"
+      },
+      "sha256": "1krqx0vd4sa50sl3d6gki8vn8m9vgwr8qs70irmfdw8hgz6b4cyd",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.7/cookbook.tar.gz",
+      "version": "0.7.7"
+    },
     "cospend": {
       "meta": {
         "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/) and on the [Play store](https://play.google.com/store/apps/details?id=net.eneiluj.moneybuster).\n\n[PayForMe](https://github.com/mayflower/PayForMe) iOS client is currently being developped!\n\n## Features\n\n*  create/edit/delete projects, members, bills, bill categories, currencies\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (daily/weekly/monthly/yearly)\n*  optionally provide custom amount for each member in new bills\n*  link bills with personal files (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share projects with Nextcloud users/groups/circles\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  generate link/QRCode to easily import projects in MoneyBuster\n*  implement Nextcloud notifications and activity stream\n\nThis app is tested on Nextcloud 18 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
@@ -707,17 +722,17 @@
     },
     "files_antivirus": {
       "meta": {
-        "description": "Antivirus for files is an antivirus app for Nextcloud based on ClamAV.\n\n*  When the user uploads a file, it's checked\n*  Uploaded and infected files will be deleted and a notification will be shown and/or sent via email\n*  Background Job to scan all files\n\nThis application inspects files that are uploaded to Nextcloud for viruses before they are written to the Nextcloud storage. If a file is identified as a virus, it is either logged or not uploaded to the server. The application relies on the underlying ClamAV virus scanning engine, which the admin points Nextcloud to when configuring the application.\nFor this app to be effective, the ClamAV virus definitions should be kept up to date. Also note that enabling this app will impact system performance as additional processing is required for every upload. More information is available in the Antivirus documentation.",
+        "description": "Antivirus for files is an antivirus app for Nextcloud.\n\n*  When the user uploads a file, it's checked\n*  Uploaded and infected files will be deleted and a notification will be shown and/or sent via email\n*  Background Job to scan all files\n*  Use ClamAV (open source) or Kaspersky Scan Engine\n\nThis application inspects files that are uploaded to Nextcloud for viruses before they are written to the Nextcloud storage. If a file is identified as a virus, it is either logged or not uploaded to the server. The application relies on the underlying ClamAV virus scanning engine, which the admin points Nextcloud to when configuring the application. Alternatively, a Kaspersky Scan Engine can be configured, which has to run on a separate server.\nFor this app to be effective, the ClamAV virus definitions should be kept up to date. Also note that enabling this app will impact system performance as additional processing is required for every upload. More information is available in the Antivirus documentation.",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Antivirus for files",
-        "summary": "An antivirus app for Nextcloud based on ClamAV"
+        "summary": "An antivirus app for Nextcloud"
       },
-      "sha256": "1wmi3v0a3kqjdbcg6ghfhnlqhwr444r1nxks1wibpyvijxvgqdhv",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.0.0/files_antivirus.tar.gz",
-      "version": "3.0.0"
+      "sha256": "19sry1vm5f2q3r87dfq0820qyifq0cmdzbq63fzp54vjspvmjqc9",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.0/files_antivirus.tar.gz",
+      "version": "3.1.0"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1294,9 +1309,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "0nf4s7kylc78wk3gnvnyp55pmqc9y4q37ykpwb3m369233gb7691",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.12/integration_github-0.0.12.tar.gz",
-      "version": "0.0.12"
+      "sha256": "1axh1xsmynfls16xi0nv5yv359jcs4c2h776ii5jwrnh7ilxi6y2",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.14/integration_github-0.0.14.tar.gz",
+      "version": "0.0.14"
     },
     "integration_gitlab": {
       "meta": {
@@ -1339,9 +1354,9 @@
         "name": "Jira integration",
         "summary": "Integration of Jira user support/ticketing solution"
       },
-      "sha256": "1q4ii0pgbm920c0101yl48drj1i55hlap8103hb4y4i45gzsz1sk",
-      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.10/integration_jira-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "1dgndwxwl9szhvjnpgh7f7k8gmikhg6h33ihil0djgfjqcki421g",
+      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.11/integration_jira-0.0.11.tar.gz",
+      "version": "0.0.11"
     },
     "integration_mastodon": {
       "meta": {
@@ -1354,9 +1369,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "0v5ah2azr0f1l3xk98463hj6m2jakxbgkk5q8pw99rbhrzmq71hj",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.10/integration_mastodon-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "0lpwqgydkkbx97s0qlp5cxyzi1n31p8n6dj4s1swvq4myzs8y0f1",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.11/integration_mastodon-0.0.11.tar.gz",
+      "version": "0.0.11"
     },
     "integration_moodle": {
       "meta": {
@@ -1399,9 +1414,9 @@
         "name": "Reddit integration",
         "summary": "Integration of Reddit social news aggregation service"
       },
-      "sha256": "04i03ay3i7ca1nm16qyy9alfagycnc0lh7k265s0jijbq6wssc97",
-      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.5/integration_reddit-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "1vcha42myfz83pbcrjhls925aqs5n3ykdx4zx7a2zp77b2wfd4xd",
+      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.6/integration_reddit-0.0.6.tar.gz",
+      "version": "0.0.6"
     },
     "integration_suitecrm": {
       "meta": {
@@ -1429,9 +1444,9 @@
         "name": "Twitter integration",
         "summary": "Integration of Twitter microblogging and social networking service"
       },
-      "sha256": "1adh8bb4sald790cppxdicdh3b5klv6gqg7f7d39dbylblmcnzrb",
-      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.5/integration_twitter-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "0q228cp4sgnma1dacvxk0pq6vh3szm6aiql6520rsh5bbs2066kk",
+      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.6/integration_twitter-0.0.6.tar.gz",
+      "version": "0.0.6"
     },
     "integration_zammad": {
       "meta": {
@@ -2021,18 +2036,18 @@
     },
     "radio": {
       "meta": {
-        "description": "Listening to your favorite radio stations in Nextcloud",
+        "description": "Listening to your favorite radio stations in Nextcloud! This\napp uses radio-browser.info database as a backend.\n\n\n-  Listen to radio stations directly in Nextcloud\n-  Browse thousands of stations worldwide\n-  Create your own list of favorite stations\n-  Dashboard widget support\n-  Keep track of recent played stations\n-  Browse stations by language, country, etc.\n-  Smoth audio playback and transitions",
         "homepage": "https://git.project-insanity.org/onny/nextcloud-app-radio",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Radio",
-        "summary": "Radio listening app"
+        "summary": "Listen to your favorite radio stations"
       },
-      "sha256": "1nhknp59l40vjjxglf4si8xs9ah46h01346763r7hag40vv5fpdz",
-      "url": "https://onny.project-insanity.org/files/radio-1.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "05gjljsm0fi86raamcd90dspnsngl40ziwkg4jpzp657c7a0mqlf",
+      "url": "https://git.project-insanity.org/onny/nextcloud-app-radio/-/jobs/934/artifacts/raw/build/artifacts/radio.tar.gz",
+      "version": "1.0.1"
     },
     "rainloop": {
       "meta": {
@@ -2925,9 +2940,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV CORS header injection"
       },
-      "sha256": "0dvdnwnjixl6vca1xv1ik4m2s89q0jiwr5caf1ky0zr4fgvpwqwc",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/557a11c16e8e2be632f0f02bce51f8a4/webapppassword.tar.gz",
-      "version": "20.10.0"
+      "sha256": "0aw5cd9gfpppv4m7fjzss2bqnfz6yjj3vfwgbw8lnssabw0ww72g",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/77559de3ddffae0fe03c2e803a0e39db/webapppassword.tar.gz",
+      "version": "20.12.1"
     },
     "whiteboard": {
       "meta": {
