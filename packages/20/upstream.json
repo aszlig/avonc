@@ -276,6 +276,21 @@
       "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.7.tar.gz",
       "version": "0.23.7"
     },
+    "checksum": {
+      "meta": {
+        "description": "Allows users to create a hash checksum of a file.\n        Possible algorithms are md5, sha1, sha256, sha384, sha512 and crc32.\n\n        Just open the details view of the file (Sidebar). There should be a new tab called \"Checksum\".\n        Select a algorithm and it will try to generate a hash.\n        If you want an other algorithm, just click on the reload button.",
+        "homepage": "https://github.com/westberliner/checksum/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Checksum",
+        "summary": "Creating a hash checksum of a file."
+      },
+      "sha256": "109cns5c56znqsa7l6h3vhh6km5a5qbfnk2prcgdrmj5i2ypya67",
+      "url": "https://github.com/westberliner/checksum/releases/download/1.0.0/checksum.tar.gz",
+      "version": "1.0.0"
+    },
     "circles": {
       "meta": {
         "description": "Circles allows your users to create their own groups of users/colleagues/friends.\nThose groups of users (or 'circles') can then be used by any other app for sharing purpose (files, social feed, status update, messaging, ...).\n\nDifferent type of circles can be created:\n\n- A personal circle is a list of users known only to the owner.\nThis is the right option if you want to do recurrent sharing with the same group of people.\n\n- A public circle is an open group visible to anyone willing to join.\nYour circle will be visible to everyone and everyone will be able to join the circle.\n\n- A closed circle requires invitation or confirmation by an admin.\nThis is the right circle if you are looking for privacy when sharing your files or ideas.\n\n- An Secret circle is an open group that can be protected by a password.\nUsers won't be able to find this Circle using Nextcloud search engine.",
@@ -647,9 +662,9 @@
         "name": "Face Recognition",
         "summary": "A face recognition app"
       },
-      "sha256": "0r1d9qm4fl7bnpxzfrqzjpxlh6ppx8pgn8fgi03fy7s5r2j4qhyb",
-      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.1/facerecognition.tar.gz",
-      "version": "0.7.1"
+      "sha256": "04vhl98r1n0cf6hk7g48syc8x3szay9wpdzd2xfwjca9b4a6icyq",
+      "url": "https://github.com/matiasdelellis/facerecognition/releases/download/v0.7.2/facerecognition.tar.gz",
+      "version": "0.7.2"
     },
     "federatedfilesharing": {
       "meta": {
@@ -788,9 +803,24 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "1hr63zdjqpjrpvlnv2y3draszmb18hpidi6gfin59a23p5c63ccc",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v2.0.0/files_fulltextsearch-2.0.0.tar.gz",
-      "version": "2.0.0"
+      "sha256": "140s22f377c2vxwdhwpp74227mgm4cjda4v3jdrbhg5cwlvfv3pj",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.0/files_fulltextsearch-20.0.0.tar.gz",
+      "version": "20.0.0"
+    },
+    "files_fulltextsearch_tesseract": {
+      "meta": {
+        "description": "Extension to the _Full text search - Files_ app to OCR your documents before index.\n\nThis is a simple app that use [Tesseract OCR for PHP](https://github.com/thiagoalessio/tesseract-ocr-for-php),\nwhich is a wrapper for the command line program [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)\n\nTesseract must be installed locally, and configured.",
+        "homepage": "https://github.com/daita/files_fulltextsearch_tesseract",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Files - Tesseract OCR",
+        "summary": "OCR Some format"
+      },
+      "sha256": "0w8plxriy76igri3jr44lr31pyn9gdca01wmsjk946x8nmachad4",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v20.0.0/files_fulltextsearch_tesseract-20.0.0.tar.gz",
+      "version": "20.0.0"
     },
     "files_linkeditor": {
       "meta": {
@@ -1058,9 +1088,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "0gcfi3gpr7cy5myzq1hrghq76nvigkmnhg12b2rss76rwrzslxn3",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v2.0.0/fulltextsearch-2.0.0.tar.gz",
-      "version": "2.0.0"
+      "sha256": "166hkfk5fjkl1sjsp7zm22srjdfnvm1ck1nivf3gzn5lx1dkfqhg",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v20.0.0/fulltextsearch-20.0.0.tar.gz",
+      "version": "20.0.0"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1073,9 +1103,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0hja9w2pka42d4rxf0gc8bfrh3abk3m6km46w634ddrn1bh6p9kh",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v2.0.0/fulltextsearch_elasticsearch-2.0.0.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0fyhlbkv23fzxc2dgi7n2ibh4zm2mrvhxvyr0z3pbpq365gfqr10",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v20.0.0/fulltextsearch_elasticsearch-20.0.0.tar.gz",
+      "version": "20.0.0"
     },
     "geoblocker": {
       "meta": {
