@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0xibm9r570r0z8k0160dycd1za58z4q448qsrjwjrw9aa1876kkd",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.2/bbb-v1.1.2.tar.gz",
-      "version": "1.1.2"
+      "sha256": "15v7rd2nfj2rm66zfxqiiay3sqgsn710ahgichdc3jyyvhxn1swz",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.4/bbb-v1.1.4.tar.gz",
+      "version": "1.1.4"
     },
     "bookmarks": {
       "meta": {
@@ -331,9 +331,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1c0lyimmzs8z9jhxiyn7jn9bsgq4w65kcwkfd9s4jmmj0d0b1qdj",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.10/circles-0.18.10.tar.gz",
-      "version": "0.18.10"
+      "sha256": "0h3g7pxhikfq7b9zb3d99kiv3jr11cnh9sqz2gk63g01wf283jwc",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.18.11/circles-0.18.11.tar.gz",
+      "version": "0.18.11"
     },
     "cloud_federation_api": {
       "meta": {
@@ -868,6 +868,21 @@
       "sha256": "0sla29nkgpk5g0ysi7d6xyplkpq2sa1928g904x8lxipmnwhwgff",
       "url": "https://github.com/justicenode/files_external_ipfs/releases/download/V0.2/files_external_ipfs.tar.gz",
       "version": "0.2.0"
+    },
+    "files_external_onedrive": {
+      "meta": {
+        "description": "The OneDrive Backend allows administrators and users to add their own OneDrive as folders in Nextcloud. This offers an easy way for users to access OneDrive data in the same place where they find their other files.\nNextcloud accesses OneDrive through the Microsoft GRAPH API and uses Oauth2 authentication.",
+        "homepage": "https://github.com/hevelius/files_external_onedrive",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "External Storage: OneDrive",
+        "summary": "Integrate OneDrive as an external storage"
+      },
+      "sha256": "0cr1prkk2pg5qyf63j0r3q79p837wcsnamfp0f8vpn6z6z2zlrsh",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.9/files_external_onedrive.tar.gz",
+      "version": "1.0.9"
     },
     "files_frommail": {
       "meta": {
@@ -1476,9 +1491,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "1ph89m2mxpgsq2mj7i06m9xf4wdw35icqnjffdkfsiv21qnzg9nf",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.3/keeweb-0.6.3.tar.gz",
-      "version": "0.6.3"
+      "sha256": "1w4xm1gxp6xx7d84dsyw21yrwjqasrmhawq8g2yan2s4m0c5b1gf",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.4/keeweb-0.6.4.tar.gz",
+      "version": "0.6.4"
     },
     "ldap_write_support": {
       "meta": {
@@ -1763,9 +1778,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "0wqsxaqjim9mv55s79qy7k830di3wvxkwmz8d73gxkh74zsxdrwx",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.8/ocdownloader-1.7.8.tar.gz",
-      "version": "1.7.8"
+      "sha256": "1bsv2l8pkkqf7gvkqyfv7d9ncmb332m19if7hbgwb9zzbz0fn7hj",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.9/ocdownloader-1.7.9.tar.gz",
+      "version": "1.7.9"
     },
     "ocr": {
       "meta": {
@@ -1837,9 +1852,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "0hsmyxcbrc9wlnnlai3i6yjh8brqr923cfvy8vcprn2gpzx4qdfi",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.1.1/ojsxc-4.1.1.tar.gz",
-      "version": "4.1.1"
+      "sha256": "0c79miv29xdbr5vs5v0qb6pg337aqahskgyvkh5ay8dgpizkmvcl",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.2.0/ojsxc-4.2.0.tar.gz",
+      "version": "4.2.0"
     },
     "onlyoffice": {
       "meta": {
@@ -1952,9 +1967,9 @@
         "name": "PDF annotations",
         "summary": "Annotate PDF documents"
       },
-      "sha256": "083bkvixl9zlx0gp730d4d7fwbkxfm2zi4cgzq4qk77dqjgxcrgq",
-      "url": "https://github.com/strukturag/pdfdraw/releases/download/v0.1.1/pdfdraw-0.1.1.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0lx8b4cbhj1n2c7ls6wwzhc1bjw3h3d8yfv4gkiwq474rhylss6a",
+      "url": "https://github.com/strukturag/pdfdraw/releases/download/v0.1.2/pdfdraw-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "phonetrack": {
       "meta": {
@@ -2068,9 +2083,9 @@
         "name": "Printer",
         "summary": "Allows to print files directly inside Nextcloud to a printer."
       },
-      "sha256": "1l5lnn8265mf8hri78ig80qbpbnww2yfvplbnxi78d71v4pih6f5",
-      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.3/nextcloud-print_0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "11jv564kmadjj3lzmkg17g3w0jk7qhgbgbhfh4j8j6fdfcqrvkhw",
+      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.4/nextcloud-print_0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "privacy": {
       "meta": {
@@ -2506,7 +2521,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url. To make proper button visible, just fill certain provider settings with random data and change it later.\n\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\nTo set timeout for http client, you can use\n```php\n  'social_login_http_client' =&gt; [\n    'timeout' =&gt; 45,\n  ],\n```\nin `config.php`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url. To make proper button visible, just fill certain provider settings with random data and change it later.\n\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -2515,9 +2530,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "07kf1pkqnix8ch881ahg664yfnj5a7wvfc6b1blppf41vq73zirp",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.4.2/release.tar.gz",
-      "version": "3.4.2"
+      "sha256": "15jpgscc62ha058wmprdg6bkp9wb7q493sb9f0dx367ivlgmxly8",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.0/release.tar.gz",
+      "version": "3.5.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2918,9 +2933,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "1xi5wsl540sj6hg7rr5nfh970fvs1k6ndjbmnymx27ad0dqpp6sh",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.5/twofactor_webauthn-0.2.5.tar.gz",
-      "version": "0.2.5"
+      "sha256": "0c8h54pnvqcbha0gz9pm6cazmlbdg62c69pm4l33sx9vjqx6rbyp",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/0.2.6/twofactor_webauthn-0.2.6.tar.gz",
+      "version": "0.2.6"
     },
     "unsplash": {
       "meta": {
