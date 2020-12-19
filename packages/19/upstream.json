@@ -50,9 +50,9 @@
         "name": "Afterlogic",
         "summary": "Integration with Afterlogic WebMail client"
       },
-      "sha256": "0py4gnnwmdlpg6s60xjmimihkk2m1c03q4fr4sd1b7ff7yz2l2lk",
-      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-19.tar.gz",
-      "version": "1.2.19"
+      "sha256": "0ijkryyq8nqkv5618baj01w9y8423db4fzacc01j7lqg2kwip0p9",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-20.tar.gz",
+      "version": "1.2.20"
     },
     "analytics": {
       "meta": {
@@ -790,9 +790,9 @@
         "name": "Files automated tagging",
         "summary": "Automatically assign collaborative tags to files based on conditions"
       },
-      "sha256": "0205f6s30g9pp9dd2manx5vkhwx7bd01294p7fdnbyyzhp7rxnyb",
-      "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.9.0/files_automatedtagging-1.9.0.tar.gz",
-      "version": "1.9.0"
+      "sha256": "04na0nanp4sxvaagsmnhvqyzvqgf9rwjkx7kwfw891h927bg8kds",
+      "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.9.1/files_automatedtagging-1.9.1.tar.gz",
+      "version": "1.9.1"
     },
     "files_downloadactivity": {
       "meta": {
@@ -2496,9 +2496,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "15jpgscc62ha058wmprdg6bkp9wb7q493sb9f0dx367ivlgmxly8",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.0/release.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1qdkc4waqp8r359m4biw7f5zr7dmfq213mvnm7calqh1ad4vcxcq",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.1/release.tar.gz",
+      "version": "3.5.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2586,9 +2586,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0dnvxn5n4zk2v3sj8xcyz0h4nmx1xd5zm92q5qv5idadvvz0q0ng",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.6/spreed-9.0.6.tar.gz",
-      "version": "9.0.6"
+      "sha256": "16bxjzwd62snlwbab0wjm8v8j821wn7mwqpxf4fbl4bgc2l8zx2s",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.7/spreed-9.0.7.tar.gz",
+      "version": "9.0.7"
     },
     "support": {
       "meta": {

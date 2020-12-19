@@ -50,9 +50,9 @@
         "name": "Afterlogic",
         "summary": "Integration with Afterlogic WebMail client"
       },
-      "sha256": "0py4gnnwmdlpg6s60xjmimihkk2m1c03q4fr4sd1b7ff7yz2l2lk",
-      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-19.tar.gz",
-      "version": "1.2.19"
+      "sha256": "0ijkryyq8nqkv5618baj01w9y8423db4fzacc01j7lqg2kwip0p9",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-20.tar.gz",
+      "version": "1.2.20"
     },
     "analytics": {
       "meta": {
@@ -2530,9 +2530,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "15jpgscc62ha058wmprdg6bkp9wb7q493sb9f0dx367ivlgmxly8",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.0/release.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1qdkc4waqp8r359m4biw7f5zr7dmfq213mvnm7calqh1ad4vcxcq",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.1/release.tar.gz",
+      "version": "3.5.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2620,9 +2620,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1xkajd9nysbyhyxpdhhpz22xf1j9gblcj18jqg41l87bg47s0r68",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.13/spreed-8.0.13.tar.gz",
-      "version": "8.0.13"
+      "sha256": "0j2wn2m7m8xk6svy5468al1lnn5xa1cvx55lnlvqq3vqz1i6zipv",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v8.0.14/spreed-8.0.14.tar.gz",
+      "version": "8.0.14"
     },
     "support": {
       "meta": {

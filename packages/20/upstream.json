@@ -39,6 +39,21 @@
         "summary": "Provides logging abilities for Nextcloud such as logging file accesses or otherwise sensitive actions."
       }
     },
+    "afterlogic": {
+      "meta": {
+        "description": "Afterlogic WebMail",
+        "homepage": "https://afterlogic.org/webmail-lite",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Afterlogic",
+        "summary": "Integration with Afterlogic WebMail client"
+      },
+      "sha256": "0ijkryyq8nqkv5618baj01w9y8423db4fzacc01j7lqg2kwip0p9",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-20.tar.gz",
+      "version": "1.2.20"
+    },
     "analytics": {
       "meta": {
         "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
@@ -407,7 +422,7 @@
     },
     "cospend": {
       "meta": {
-        "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/) and on the [Play store](https://play.google.com/store/apps/details?id=net.eneiluj.moneybuster).\n\n[PayForMe](https://github.com/mayflower/PayForMe) iOS client is currently being developped!\n\n## Features\n\n*  create/edit/delete projects, members, bills, bill categories, currencies\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (daily/weekly/monthly/yearly)\n*  optionally provide custom amount for each member in new bills\n*  link bills with personal files (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share projects with Nextcloud users/groups/circles\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  generate link/QRCode to easily import projects in MoneyBuster\n*  implement Nextcloud notifications and activity stream\n\nThis app is tested on Nextcloud 18 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/) and on the [Play store](https://play.google.com/store/apps/details?id=net.eneiluj.moneybuster).\n\n[PayForMe](https://github.com/mayflower/PayForMe) iOS client is currently being developped!\n\n## Features\n\n*  create/edit/delete projects, members, bills, bill categories, currencies\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (daily/weekly/monthly/yearly)\n*  optionally provide custom amount for each member in new bills\n*  link bills with personal files (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share projects with Nextcloud users/groups/circles\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  generate link/QRCode to easily import projects in MoneyBuster\n*  implement Nextcloud notifications and activity stream\n\nThis app is tested on Nextcloud 20+ with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Documentation\n\n* [User documentation](https://github.com/eneiluj/cospend-nc/blob/master/docs/user.md)\n* [Admin documentation](https://github.com/eneiluj/cospend-nc/blob/master/docs/admin.md)\n* [Developer documentation](https://github.com/eneiluj/cospend-nc/blob/master/docs/dev.md)\n* [CHANGELOG](https://github.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log)\n* [AUTHORS](https://github.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors)\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
         "homepage": "https://github.com/eneiluj/cospend-nc",
         "isShipped": false,
         "licenses": [
@@ -416,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1paq0n704b6k6br4n6if54ywj9q4jhwwfl89slnskjsiw5bcv9gv",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.2/cospend-1.2.2.tar.gz",
-      "version": "1.2.2"
+      "sha256": "1bx9vk896raf93s0qz20vkahfilp4w9ixmw847jj53zm3x5g27px",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.4/cospend-1.2.4.tar.gz",
+      "version": "1.2.4"
     },
     "cpanelmailsync": {
       "meta": {
@@ -760,9 +775,9 @@
         "name": "Files automated tagging",
         "summary": "Automatically assign collaborative tags to files based on conditions"
       },
-      "sha256": "1mfhabj230740nxw67s5pq81a18h5nfhw6nng1j8y674bbgkwc3s",
-      "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.10.0/files_automatedtagging-1.10.0.tar.gz",
-      "version": "1.10.0"
+      "sha256": "0bqkblvf5pkm61rx13jivfzglxx0frd4ykzi7zylf68mr4b2a385",
+      "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.10.1/files_automatedtagging-1.10.1.tar.gz",
+      "version": "1.10.1"
     },
     "files_downloadactivity": {
       "meta": {
@@ -833,9 +848,9 @@
         "name": "Full text search - Files - Tesseract OCR",
         "summary": "OCR Some format"
       },
-      "sha256": "0w8plxriy76igri3jr44lr31pyn9gdca01wmsjk946x8nmachad4",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v20.0.0/files_fulltextsearch_tesseract-20.0.0.tar.gz",
-      "version": "20.0.0"
+      "sha256": "0a702gbhmzxl9pcd29m080v0xb9czqyw134zy3mz5lix7h4vg14q",
+      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v20.0.1/files_fulltextsearch_tesseract-20.0.1.tar.gz",
+      "version": "20.0.1"
     },
     "files_linkeditor": {
       "meta": {
@@ -2456,9 +2471,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "15jpgscc62ha058wmprdg6bkp9wb7q493sb9f0dx367ivlgmxly8",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.0/release.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1qdkc4waqp8r359m4biw7f5zr7dmfq213mvnm7calqh1ad4vcxcq",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.1/release.tar.gz",
+      "version": "3.5.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2531,9 +2546,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0j3xhcw6jwgza01nfwwznay2df7l2y3sc1p19j92vgpkb2a3zn16",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.3/spreed-10.0.3.tar.gz",
-      "version": "10.0.3"
+      "sha256": "1bqqxs88xwn61crqsqhpkwjc851h92i3zl4hxfz41ll0glx5gcvd",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.4/spreed-10.0.4.tar.gz",
+      "version": "10.0.4"
     },
     "support": {
       "meta": {
