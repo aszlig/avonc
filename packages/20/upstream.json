@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0dy6ij33sj2ggcdzk0rlmq9dvck3b904kdq565js985rnfnraj38",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.1/breezedark.tar.gz",
-      "version": "20.0.1"
+      "sha256": "1hrv8sif3nvd28xbgw90sn5g9mfv8pblbw39hp87f7bmah94kqas",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.2/breezedark.tar.gz",
+      "version": "20.0.2"
     },
     "bruteforcesettings": {
       "meta": {
@@ -2184,6 +2184,20 @@
       "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.3/rainloop.tar.gz",
       "version": "7.0.3"
     },
+    "ransomware_detection": {
+      "meta": {
+        "description": "!!WARNING!!: DEACTIVATE OR REMOVE THIS APP FROM YOUR NEXTCLOUD INSTALLATION BECAUSE OF A NOT RESOLVED BUG WHICH CAN LEAD TO THE DELETION OF YOUR FILES IF YOU TRY TO RECOVER FILES. YOU CAN ALSO UPDATE TO THIS VERSION AS THIS IS AN EMPTY APP WITHOUT ANY FUNCTIONALITY.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Ransomware recovery",
+        "summary": "!!WARNING!!: DEACTIVATE OR REMOVE THIS APP FROM YOUR NEXTCLOUD INSTALLATION."
+      },
+      "sha256": "09yl9n21ckhwq91ibw6wk0b8dn2cxrz752z54m478f4yadv5g8ch",
+      "url": "https://wusa.io/ransomware_detection-0.10.0.tar.gz",
+      "version": "0.10.0"
+    },
     "ransomware_protection": {
       "meta": {
         "description": "This app prevents the Nextcloud Sync clients from uploading files with known ransomware file endings.\n\n This app does not replace regular backups. Especially since it only prevents infected clients from uploading and overwriting files on your Nextcloud server. It does not help in case your server is infected directly by a ransomware.\n\n Neither the developer nor Nextcloud GmbH give any guarantee that your files can not be affected by another way.",
@@ -2535,6 +2549,21 @@
       "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
       "version": "2.1.0"
     },
+    "spgverein": {
+      "meta": {
+        "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.",
+        "homepage": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SPG Verein",
+        "summary": "Access data of SPG-Verein in your Nextcloud instance"
+      },
+      "sha256": "100y1viw55v8j258nmk3c9n6d3s7p06ms6vvmcnzm200i7hks0ri",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/923488142/artifacts/raw/spgverein.tar.gz",
+      "version": "0.8.0"
+    },
     "spreed": {
       "meta": {
         "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 52 (or newer), latest Edge or Chrome 49 (or newer) with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
@@ -2876,6 +2905,21 @@
       "sha256": "0j3yig719c6vnfqqkfiwcp5j8r5bvhw1s66j0vqxp26mhparg9mw",
       "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.0.12/user_backend_sql_raw.tar.gz",
       "version": "1.0.12"
+    },
+    "user_cas": {
+      "meta": {
+        "description": "This app provides in-depth features to authenticate and authorize users against a [jasig/apereo Central Authentication Server (CAS)](https://www.apereo.org/projects/cas). The app provides all necessary options needed to connect to your CAS instance and also advanced features to manage the groups accessible by your CAS infrastructure to implement an authorization feature. This version supports ECAS instances used by the European Commission. Additionally this version supports ActiveDirectory (LDAP) import via commandline. Commercial support for user_cas is available through ownCloud GmbH and myself personally.",
+        "homepage": "https://github.com/felixrupp/user_cas",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "CAS user and group backend",
+        "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
+      },
+      "sha256": "1g2axnsfaarmrzynlg832q65qyjlhrnbv28k720n63krsj1433lj",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.7/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.7"
     },
     "user_external": {
       "meta": {

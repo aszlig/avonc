@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0biw52pxm6hyl425p6jilj2lcvrbgaxn5zzcljp00xb6kp0n08nc",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.7/breezedark.tar.gz",
-      "version": "19.0.7"
+      "sha256": "1gp8bd54ic9v3f5sggrc2irjpzny0m0alrakrcdp7a92ida61xbc",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.8/breezedark.tar.gz",
+      "version": "19.0.8"
     },
     "browser_warning": {
       "meta": {
@@ -2168,18 +2168,17 @@
     },
     "ransomware_detection": {
       "meta": {
-        "description": "This app monitors file operations during the synchronization to detect ransomware attacks and also offers a post infection file storage scanner, which works even if it happend that you didn't have this app installed during an attack. This is done by using generic indicators for a guided user-controlled one-step recovery utilizing the integrated file versioning methods. Sponsored by the German Federal Ministry of Education and Research, and Prototype Fund.",
-        "homepage": "https://github.com/undo-ransomware/ransomware_detection",
+        "description": "!!WARNING!!: DEACTIVATE OR REMOVE THIS APP FROM YOUR NEXTCLOUD INSTALLATION BECAUSE OF A NOT RESOLVED BUG WHICH CAN LEAD TO THE DELETION OF YOUR FILES IF YOU TRY TO RECOVER FILES. YOU CAN ALSO UPDATE TO THIS VERSION AS THIS IS AN EMPTY APP WITHOUT ANY FUNCTIONALITY.",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Ransomware recovery",
-        "summary": "This app offers synchronization monitoring and a file storage scanner for a guided user-controlled one-step ransomare recovery."
+        "summary": "!!WARNING!!: DEACTIVATE OR REMOVE THIS APP FROM YOUR NEXTCLOUD INSTALLATION."
       },
-      "sha256": "1qnmij5dx179nzy8nam6b52iipv0pyzsmx1q6rif348zj4p6sqpn",
-      "url": "https://github.com/undo-ransomware/ransomware_detection/releases/download/0.9.0/ransomware_detection.tar.gz",
-      "version": "0.9.0"
+      "sha256": "09yl9n21ckhwq91ibw6wk0b8dn2cxrz752z54m478f4yadv5g8ch",
+      "url": "https://wusa.io/ransomware_detection-0.10.0.tar.gz",
+      "version": "0.10.0"
     },
     "ransomware_protection": {
       "meta": {
@@ -2571,9 +2570,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "0426ks96csvbqjh7as3lxhndwyg2xzccabmibkanii5k5mgksidk",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/721890000/artifacts/raw/spgverein.tar.gz",
-      "version": "0.7.2"
+      "sha256": "100y1viw55v8j258nmk3c9n6d3s7p06ms6vvmcnzm200i7hks0ri",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/923488142/artifacts/raw/spgverein.tar.gz",
+      "version": "0.8.0"
     },
     "spreed": {
       "meta": {
@@ -2941,9 +2940,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "0v86ig7w3xkbbsshm7xspqk0w3mrj4ny60ks4i0alw8lf7zdnjf6",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.6/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.6"
+      "sha256": "1g2axnsfaarmrzynlg832q65qyjlhrnbv28k720n63krsj1433lj",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.7/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.8.7"
     },
     "user_external": {
       "meta": {
