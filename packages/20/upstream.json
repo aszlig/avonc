@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "10a9m8m5ccv92zpql23gidckmi08v6r1f0cyh0qgap66mzflf179",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/46cc572cd0dda10727ff03cc8e224495bebb391f/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.14"
+      "sha256": "1z8n1gjnw14zhi4xnv16abs6k7jzhr55msax4cc5r9w8ysrhfmb9",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/da208c082672ef0da34848cf60dfe6fe40ff65e3/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.7.15"
     },
     "apporder": {
       "meta": {
@@ -302,9 +302,9 @@
         "name": "Checksum",
         "summary": "Creating a hash checksum of a file."
       },
-      "sha256": "109cns5c56znqsa7l6h3vhh6km5a5qbfnk2prcgdrmj5i2ypya67",
-      "url": "https://github.com/westberliner/checksum/releases/download/1.0.0/checksum.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1w1km5rli55ldr6izfdj7cs07969g61wx5kpl65q2dc8jci1fcin",
+      "url": "https://github.com/westberliner/checksum/releases/download/1.0.1/checksum.tar.gz",
+      "version": "1.0.1"
     },
     "circles": {
       "meta": {
@@ -760,9 +760,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud"
       },
-      "sha256": "19sry1vm5f2q3r87dfq0820qyifq0cmdzbq63fzp54vjspvmjqc9",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.0/files_antivirus.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0wg2b18l42vfwlg65dvw0djcmkq9lij8kf3jfpapgnfw8gkabwjl",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.1/files_antivirus.tar.gz",
+      "version": "3.1.1"
     },
     "files_automatedtagging": {
       "meta": {
@@ -953,6 +953,21 @@
       "sha256": "0yc9lni930x3pa9lb9lgqa7h2502aym03jcfgmlihsyd6rfpdarh",
       "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/e772ec018ce4fb2ece1065bea27901cc/files_readmemd.tar.gz",
       "version": "1.2.0"
+    },
+    "files_retention": {
+      "meta": {
+        "description": "This application allows for automatic deletion of files after a given time",
+        "homepage": "https://github.com/nextcloud/files_retention",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Retention",
+        "summary": "This application allows for automatic deletion of files after a given time"
+      },
+      "sha256": "1gkcf50zixf0yilc2lj38y2gygpcsf6ignq0vjqk069vhqqmgr51",
+      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.9.0/files_retention-1.9.0.tar.gz",
+      "version": "1.9.0"
     },
     "files_rightclick": {
       "meta": {
@@ -1251,9 +1266,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "13sv8j8j9f8m1qb6iwkbsy95xiha7xa14gyx625qiwwm6r023hlh",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.1/guests.tar.gz",
-      "version": "1.6.1"
+      "sha256": "0h6y2z9ig8h7vmxgy8fwa8nqbc8jcwf1rzy1plqra7d2k24xi47l",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.2/guests.tar.gz",
+      "version": "1.6.2"
     },
     "health": {
       "meta": {
@@ -1459,9 +1474,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "1gw8v1z611xfy0n62i5kq61kz83il271r718gvsp1hhvc8sxqj5z",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.4/integration_onedrive-0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "1nmrkn9k2yjh6pknk3kxn04kfrgw69x0k1brnw0ja7iyx5r23fxx",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.5/integration_onedrive-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "integration_reddit": {
       "meta": {
@@ -2035,9 +2050,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "0jy62axkfbnc2mrvkppv85465r82fwazg63vvs930z8jfdpx6mzg",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v3.0.1/previewgenerator.tar.gz",
-      "version": "3.0.1"
+      "sha256": "02j6ssc1d2ad9js72haqcgcgmf1yh51gvqhq24bplhwk6r2wyix5",
+      "url": "https://github.com/rullzer/previewgenerator/releases/download/v3.1.0/previewgenerator.tar.gz",
+      "version": "3.1.0"
     },
     "pride": {
       "meta": {
@@ -2064,9 +2079,9 @@
         "name": "Printer",
         "summary": "Allows to print files directly inside Nextcloud to a printer."
       },
-      "sha256": "11jv564kmadjj3lzmkg17g3w0jk7qhgbgbhfh4j8j6fdfcqrvkhw",
-      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.4/nextcloud-print_0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "0q7gbx2an9w3qm23dv5bxlszl1vk43z7z1aq4zwf62w57rnfjqwb",
+      "url": "https://github.com/e-alfred/nextcloud-printer/releases/download/0.0.5/nextcloud-print_0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "privacy": {
       "meta": {
@@ -2815,9 +2830,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "0pb9bbp1fmxz5k96w9cwlwxra27gzrj28a7llhx4safnqllz1q7h",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.0.0/twofactor_nextcloud_notification.tar.gz",
-      "version": "3.0.0"
+      "sha256": "0h38vmd7gh5kn2pbgm7vdb9sx94n8f4b4s0qcgadfn31zqybwmw9",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.1.0/twofactor_nextcloud_notification.tar.gz",
+      "version": "3.1.0"
     },
     "twofactor_totp": {
       "meta": {

@@ -79,9 +79,6 @@ import ./make-test.nix (pkgs: {
         # https://github.com/nextcloud/user_oidc/issues/90
         (assert nc19apps.user_oidc.version == "0.2.1"; "user_oidc")
 
-        # https://github.com/e-alfred/nextcloud-printer/issues/13
-        (assert nc19apps.printer.version == "0.0.4"; "printer")
-
         # These apps have non-deterministic download URLs
         "occweb"
         "quicknotes"
