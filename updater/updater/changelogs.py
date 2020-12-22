@@ -16,6 +16,7 @@ class AppChangeCollection(NamedTuple):
     added: RegroupOut[Tuple[AppId, InternalOrVersion]]
     removed: RegroupOut[AppId]
     updated: RegroupOut[Tuple[AppId, VersionChanges]]
+    downgraded: RegroupOut[Tuple[AppId, InternalOrVersion, InternalOrVersion]]
 
 
 def _format_changelog(changelog: str, indent: str) -> str:
@@ -105,6 +106,10 @@ def _narrow_changes(changeset: Dict[int, AppChanges]) -> AppChangeCollection:
              for major, changes in changeset.items()},
             key=lambda x: (x[0], x[1].old_version, x[1].new_version)
         ),
+        downgraded=_regroup(
+            {major: [(k, v[0], v[1]) for k, v in changes.downgraded.items()]
+             for major, changes in changeset.items()},
+        ),
     )
 
 
@@ -159,6 +164,13 @@ def pretty_print_changes(changeset: Dict[int, AppChanges]) -> str:
                 else:
                     clentry = vinfo.changelogs[vinfo.new_version]
                     out.append(_format_changelog(clentry, '    '))
+
+    for majors, downgraded in changes.downgraded.items():
+        out.append(_format_description("downgraded", majors))
+        maxlen = max(len(d[0]) for d in downgraded)
+        for appid, prev_ver, next_ver in sorted(downgraded):
+            label = f'{appid}:'.ljust(maxlen + 2)
+            out.append(f"  {label}{prev_ver} -> {next_ver}\n")
 
     for majors, removed in changes.removed.items():
         out.append(_format_description("removed", majors))

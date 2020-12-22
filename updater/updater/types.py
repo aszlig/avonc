@@ -1,5 +1,5 @@
 from semantic_version import Version, Spec
-from typing import NewType, NamedTuple, List, Dict, Optional, Union, Set
+from typing import NewType, Tuple, NamedTuple, List, Dict, Optional, Union, Set
 
 
 AppId = NewType('AppId', str)
@@ -67,3 +67,4 @@ class AppChanges(NamedTuple):
     added: Dict[AppId, InternalOrVersion]
     removed: Set[AppId]
     updated: Dict[AppId, VersionChanges]
+    downgraded: Dict[AppId, Tuple[InternalOrVersion, InternalOrVersion]]
