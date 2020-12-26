@@ -1369,9 +1369,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "0dx4qrrvlggkqzldyhizbzxx05x61rljl2gyi1wc6bjmaij1lha5",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.7/integration_dropbox-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "0hd68idz5nxq4cakz6kz67g6zl0hv6mywv4ns503a5pwaxfiw5ks",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.8/integration_dropbox-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "integration_github": {
       "meta": {
@@ -1819,9 +1819,24 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "1bsv2l8pkkqf7gvkqyfv7d9ncmb332m19if7hbgwb9zzbz0fn7hj",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.9/ocdownloader-1.7.9.tar.gz",
-      "version": "1.7.9"
+      "sha256": "1m5wvpjs7kxva56hd4l77bsx50mysy0d6i1cwbf5qbbxpcid1zfg",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.10/ocdownloader-1.7.10.tar.gz",
+      "version": "1.7.10"
+    },
+    "ocsms": {
+      "meta": {
+        "description": "An app to sync SMS with your cloud",
+        "homepage": "https://github.com/nextcloud/ocsms",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Phone Sync",
+        "summary": "An app to sync SMS with your cloud"
+      },
+      "sha256": "1nxyrwa2zx8vrj9d3gadd7gvpgckg4rp0czd56924glylnjm9gwi",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.2.0/ocsms-2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "officeonline": {
       "meta": {
@@ -2282,9 +2297,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1m252jy5lasd84mh81843644qrc49mf6c5zwyj1dd31gyffh3ywr",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.202/richdocumentscode.tar.gz",
-      "version": "6.4.202"
+      "sha256": "0sxf3vfgf1jjdfj56p5j9r2v64mdzdgsai536qnfn3hxzrr8897c",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.203/richdocumentscode.tar.gz",
+      "version": "6.4.203"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2297,9 +2312,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0zc5pg05mv916jrqi5gqrrvr8w301hz3b05wrmyk333qxd1dxgsb",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.202/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.202"
+      "sha256": "123jz5p34pbgb7lvy45sa7sdfdazc5cvygs6cb9y9r159rfm1jcy",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.203/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.203"
     },
     "riotchat": {
       "meta": {
@@ -2414,6 +2429,21 @@
         "name": "Share by mail",
         "summary": "Share provider which allows you to share files by mail"
       }
+    },
+    "sharepermissions": {
+      "meta": {
+        "description": "Provide a way to provide allow/block lists for sharing based on group membership",
+        "homepage": "https://github.com/rullzer/sharepermissions",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Share permissions",
+        "summary": "Allow/disallow sharing based on group membership"
+      },
+      "sha256": "1211712927hblhshxzd5f02c3jhwsi6wq8zvmdxyp3gc68lkl36v",
+      "url": "https://github.com/rullzer/sharepermissions/releases/download/v1.0.1/sharepermissions.tar.gz",
+      "version": "1.0.1"
     },
     "sharepoint": {
       "meta": {
@@ -2744,9 +2774,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "1mpfkd35gr4sri9amdy1slw5ijwjbnc5bi80yjy3h9dpcnfpb2y1",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.7.0/theming_customcss.tar.gz",
-      "version": "1.7.0"
+      "sha256": "0z339d7xjxgvigz7n1xsjipr3xc6yi9l76704qq0kahdy60qxnnv",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.8.0/theming_customcss.tar.gz",
+      "version": "1.8.0"
     },
     "timemanager": {
       "meta": {
@@ -2803,6 +2833,21 @@
         "name": "Two factor backup codes",
         "summary": "A two-factor auth backup codes provider"
       }
+    },
+    "twofactor_email": {
+      "meta": {
+        "description": "A Two-Factor-Auth Provider for e-mail",
+        "homepage": "https://github.com/rullzer/twofactor_email",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Two Factor e-mail provider",
+        "summary": "E-mail two-factor provider"
+      },
+      "sha256": "0pxqmacfiginc5kk88r56i4ngsbdmsq7xfcszcy5bpfa4fc33sw1",
+      "url": "https://github.com/rullzer/twofactor_email/releases/download/v2.0.0/twofactor_email.tar.gz",
+      "version": "2.0.0"
     },
     "twofactor_gateway": {
       "meta": {

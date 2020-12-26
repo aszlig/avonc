@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1gp8bd54ic9v3f5sggrc2irjpzny0m0alrakrcdp7a92ida61xbc",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.8/breezedark.tar.gz",
-      "version": "19.0.8"
+      "sha256": "0nssw2zg96s8jav6hbnp7w6v2b4n7xs9n5s6hn4fxs13z7zvl2ba",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.9/breezedark.tar.gz",
+      "version": "19.0.9"
     },
     "browser_warning": {
       "meta": {
@@ -1729,9 +1729,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "1bsv2l8pkkqf7gvkqyfv7d9ncmb332m19if7hbgwb9zzbz0fn7hj",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.9/ocdownloader-1.7.9.tar.gz",
-      "version": "1.7.9"
+      "sha256": "1m5wvpjs7kxva56hd4l77bsx50mysy0d6i1cwbf5qbbxpcid1zfg",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.10/ocdownloader-1.7.10.tar.gz",
+      "version": "1.7.10"
     },
     "ocsms": {
       "meta": {
@@ -1744,9 +1744,9 @@
         "name": "Phone Sync",
         "summary": "An app to sync SMS with your cloud"
       },
-      "sha256": "1l47f6j6g5s8drzf7gj9ycnvp6ypls2g3qjalb83l2346snmkffw",
-      "url": "https://github.com/nextcloud/ocsms/releases/download/2.1.8/ocsms-2.1.8.tar.gz",
-      "version": "2.1.8"
+      "sha256": "1nxyrwa2zx8vrj9d3gadd7gvpgckg4rp0czd56924glylnjm9gwi",
+      "url": "https://github.com/nextcloud/ocsms/releases/download/2.2.0/ocsms-2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "officeonline": {
       "meta": {
@@ -2249,9 +2249,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1m252jy5lasd84mh81843644qrc49mf6c5zwyj1dd31gyffh3ywr",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.202/richdocumentscode.tar.gz",
-      "version": "6.4.202"
+      "sha256": "0sxf3vfgf1jjdfj56p5j9r2v64mdzdgsai536qnfn3hxzrr8897c",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.203/richdocumentscode.tar.gz",
+      "version": "6.4.203"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2264,9 +2264,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0zc5pg05mv916jrqi5gqrrvr8w301hz3b05wrmyk333qxd1dxgsb",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.202/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.202"
+      "sha256": "123jz5p34pbgb7lvy45sa7sdfdazc5cvygs6cb9y9r159rfm1jcy",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.203/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.203"
     },
     "riotchat": {
       "meta": {
@@ -2811,6 +2811,21 @@
         "name": "Two factor backup codes",
         "summary": "A two-factor auth backup codes provider"
       }
+    },
+    "twofactor_email": {
+      "meta": {
+        "description": "A Two-Factor-Auth Provider for e-mail",
+        "homepage": "https://github.com/rullzer/twofactor_email",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Two Factor e-mail provider",
+        "summary": "E-mail two-factor provider"
+      },
+      "sha256": "0pxqmacfiginc5kk88r56i4ngsbdmsq7xfcszcy5bpfa4fc33sw1",
+      "url": "https://github.com/rullzer/twofactor_email/releases/download/v2.0.0/twofactor_email.tar.gz",
+      "version": "2.0.0"
     },
     "twofactor_gateway": {
       "meta": {
