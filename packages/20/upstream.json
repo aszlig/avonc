@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1bx9vk896raf93s0qz20vkahfilp4w9ixmw847jj53zm3x5g27px",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.4/cospend-1.2.4.tar.gz",
-      "version": "1.2.4"
+      "sha256": "03883m74747sf42ry8gavr8ww5d77chw1wmwf5vgkcrdc5mbbak2",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.7/cospend-1.2.7.tar.gz",
+      "version": "1.2.7"
     },
     "cpanelmailsync": {
       "meta": {
@@ -818,9 +818,9 @@
         "name": "External Storage: OneDrive",
         "summary": "Integrate OneDrive as an external storage"
       },
-      "sha256": "0cr1prkk2pg5qyf63j0r3q79p837wcsnamfp0f8vpn6z6z2zlrsh",
-      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.0.9/files_external_onedrive.tar.gz",
-      "version": "1.0.9"
+      "sha256": "0r9lzk6a2z14i85msmg1slrvgk2q5p4bg7aqrh4gj8d4m2b4s1dy",
+      "url": "https://github.com/hevelius/files_external_onedrive/releases/download/v1.1.0/files_external_onedrive.tar.gz",
+      "version": "1.1.0"
     },
     "files_fulltextsearch": {
       "meta": {
@@ -908,9 +908,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "1q846w90x4rwc7xp7l9awk9f8xh8nm7vfrfvnsbjb6a6vhjk7ylb",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.23/files_mindmap-0.0.23.tar.gz",
-      "version": "0.0.23"
+      "sha256": "0l9xl3fk4higfjz0dnp1snccg1qm1x0lwvn4vkj2408rdii1vfvj",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.24/files_mindmap-0.0.24.tar.gz",
+      "version": "0.0.24"
     },
     "files_pdfviewer": {
       "meta": {
@@ -1369,9 +1369,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "0hd68idz5nxq4cakz6kz67g6zl0hv6mywv4ns503a5pwaxfiw5ks",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.8/integration_dropbox-0.0.8.tar.gz",
-      "version": "0.0.8"
+      "sha256": "1xzniihcq83d1ngi2kmimwp0zsggd5i6f85bjscs1zqfppri1i0l",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.12/integration_dropbox-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "integration_github": {
       "meta": {
@@ -1721,9 +1721,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "19ajhdprhg6rbsy8mr84096l3z7d0a9jajd2fsb8hh0wgflkk5r8",
-      "url": "https://github.com/nextcloud/news/releases/download/15.1.0/news.tar.gz",
-      "version": "15.1.0"
+      "sha256": "0d4pfxa6050qzb9qbknf47hg18kvq31vif4cb0qpmicfl8dx612h",
+      "url": "https://github.com/nextcloud/news/releases/download/15.1.1/news.tar.gz",
+      "version": "15.1.1"
     },
     "nextbackup": {
       "meta": {
@@ -1878,9 +1878,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "0c79miv29xdbr5vs5v0qb6pg337aqahskgyvkh5ay8dgpizkmvcl",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.2.0/ojsxc-4.2.0.tar.gz",
-      "version": "4.2.0"
+      "sha256": "0zp5qsfsggmmkfydy17m2npds6lf97hkdfw2hy2g6dh3x55z79qb",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.2.1/ojsxc-4.2.1.tar.gz",
+      "version": "4.2.1"
     },
     "onlyoffice": {
       "meta": {
@@ -1949,9 +1949,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0vc5gnzlydl2yy803rwsiapnfhpxkpsy98c3wf2hb68hcrc6kwqr",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10651/artifacts/raw/passwords.tar.gz",
-      "version": "2020.12.0"
+      "sha256": "1jznzy2z0q15mg242v1vwqakfhgz2g6ycwaf726sbwzlsiagbz5a",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10845/artifacts/raw/passwords.tar.gz",
+      "version": "2020.12.1"
     },
     "pdfdraw": {
       "meta": {
