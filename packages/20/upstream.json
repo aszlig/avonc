@@ -1384,9 +1384,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "1axh1xsmynfls16xi0nv5yv359jcs4c2h776ii5jwrnh7ilxi6y2",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.14/integration_github-0.0.14.tar.gz",
-      "version": "0.0.14"
+      "sha256": "0mf9mlm6a4d7ww13cc8nv8937znxldfdjidlfjz7q77m6qmd5hdq",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.16/integration_github-0.0.16.tar.gz",
+      "version": "0.0.16"
     },
     "integration_gitlab": {
       "meta": {
@@ -1778,9 +1778,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "033aiv4rj3wrjb970gzdg99ng5xbdyyq1z99f4xhsh728kyqbj8z",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.1/notes.tar.gz",
-      "version": "4.0.1"
+      "sha256": "0zrrdjnwzf9m7ji2a41gz33bq2mpgk99ig88gxhiyl9ngsrmjsrn",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.2/notes.tar.gz",
+      "version": "4.0.2"
     },
     "notifications": {
       "meta": {
@@ -2327,9 +2327,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1g1g4pr70g70iv63wk161sw76vzf4rbyf10211qq15rfjrsjb7kv",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.17/riotchat.tar.gz",
-      "version": "0.6.17"
+      "sha256": "10hriq7jd7iv5514gkvq8acs15bz7v918m24x7q4kff7k7mgmf66",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.18/riotchat.tar.gz",
+      "version": "0.6.18"
     },
     "scanner": {
       "meta": {
