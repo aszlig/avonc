@@ -387,9 +387,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "0kx5skrlxmqpzibpswqww32jgzak0kfpyak6f1wjq84f98n2na05",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.2/contacts.tar.gz",
-      "version": "3.4.2"
+      "sha256": "1i4c8w6gchzwkcmc2rgmpqcy8dyxivdcr79grwkricnk1zxfyaq9",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.3/contacts.tar.gz",
+      "version": "3.4.3"
     },
     "cookbook": {
       "meta": {
@@ -502,9 +502,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "16rs16z37phk9mpr8lhx8dyqd2vn4bkd75v8d9hnzk0hablypgx7",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.2/deck.tar.gz",
-      "version": "1.2.2"
+      "sha256": "1fww9zjx2rfh7x7zznnzqvvxjkixri5455dz526ay09m622n4ijc",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.3/deck.tar.gz",
+      "version": "1.2.3"
     },
     "dicomviewer": {
       "meta": {
@@ -709,9 +709,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1xh71kdam4args2kjfhlx1bwy4qifmkgkhpxkf1d9kvyw9y687qb",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.2.5/extract.tar.gz",
-      "version": "1.2.5"
+      "sha256": "0jpq2fxibnkzbrn5xdwpwc8dgmlgzl66p9cwm6xad5dj3qj2gzhz",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.0/extract.tar.gz",
+      "version": "1.3.0"
     },
     "facerecognition": {
       "meta": {
@@ -1210,9 +1210,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "011wdzpbkq5ncvbbap46452d7036qw92jyiip0043ib53zwcjbbh",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.0.4/forms.tar.gz",
-      "version": "2.0.4"
+      "sha256": "1xjj5i5bfi7qq5km9inkxml67fzckv9msjd0r0b5v8xzyk8gqws5",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.1.0/forms.tar.gz",
+      "version": "2.1.0"
     },
     "fulltextsearch": {
       "meta": {
@@ -1246,7 +1246,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Reginal Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Regional Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1255,9 +1255,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0c1k59xy0v4lm9wlxy9psqyrmd3w54mjg7h75wpvzna7q9s40vg8",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.0/geoblocker.tar.gz",
-      "version": "0.4.0"
+      "sha256": "0cfhsxslg9yixd4pa02skky8qm46dm6lsh0xk08c6xwxs7spqx4j",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.5/geoblocker.tar.gz",
+      "version": "0.4.5"
     },
     "globalsiteselector": {
       "meta": {
@@ -1395,7 +1395,7 @@
     },
     "health": {
       "meta": {
-        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n\nMore modules are scheduled\n- breaks\n- Feeling\n- Medicine\n- Activities\n- ...\n\nHealth is everything.",
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling (only basic for now)\n- Measurement (only basic for now)\n- Sleep (only basic for now)\n\nMore modules are scheduled\n- Breaks\n- Medicine\n- Activities\n- Nutrition\n\nHealth is everything.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1403,9 +1403,9 @@
         "name": "Health",
         "summary": "[beta] Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "1p9r1zh0zik6m5nb6dic9xfw2mb8hxvpln147fbfniqch89xx68x",
-      "url": "https://datenangebot.de/s/A34ofdmnikPH73w/download",
-      "version": "0.1.3"
+      "sha256": "1qblfl44f579lpgwsx97y71g49pjz4ll9kc63hfxrid70g9jhn34",
+      "url": "https://datenangebot.de/s/j4CsFfRrZi4d9dc/download",
+      "version": "0.2.2"
     },
     "hidesidebars": {
       "meta": {
@@ -2530,9 +2530,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1qdkc4waqp8r359m4biw7f5zr7dmfq213mvnm7calqh1ad4vcxcq",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.1/release.tar.gz",
-      "version": "3.5.1"
+      "sha256": "1365pgpppx8mnmgm76p09bhq45pklswdjh69zl78xsvaqfsv1sci",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.2/release.tar.gz",
+      "version": "3.5.2"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3127,7 +3127,7 @@
     },
     "video_converter": {
       "meta": {
-        "description": "Convert videos within the web interface\n\n*  **Features:**\n    * Video Conversion\n    * Optionally overwrites files\n    * Preset option\n    * Support external local storage\n    * More to come...\n\n*  **Requirements:**\n    * FFmpeg\n\n*  **Note:**\n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
+        "description": "Convert videos within the web interface\n\n*  **Features:**\n    * Video Conversion\n    * Optionally overwrites files\n    * Preset option\n    * More to come...\n\n*  **Requirements:**\n    * FFmpeg\n\n*  **Note:**\n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
         "homepage": "https://github.com/PaulLereverend/NextcloudVideo_Converter",
         "isShipped": false,
         "licenses": [
@@ -3136,9 +3136,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "13pccn1milh9qp19fcj4km6yb5gbjkwspm16xwk1vccwhhlq9zl8",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/0.1.5/video_converter.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0zc6g8ddckfwq1h46brvwgrhgvfxkkj97hk8mxx554iq9qf8h8an",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.0/video_converter.tar.gz",
+      "version": "1.0.0"
     },
     "viewer": {
       "meta": {
