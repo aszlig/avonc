@@ -548,6 +548,21 @@
       "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.8/drawio-v0.9.8.tar.gz",
       "version": "0.9.8"
     },
+    "drop_account": {
+      "meta": {
+        "description": "# Description\n\nThis app allows users to delete their accounts by removing all their data.\n\nIt can also send activities to the admins about deleted accounts.",
+        "homepage": "https://framagit.org/framasoft/nextcloud/drop_account",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User account deletion",
+        "summary": "An app to allow users to delete their accounts."
+      },
+      "sha256": "0vg2y89s8dkxfivw3zrr38zrn1y1iwih6ajanmnbw6f7x4hbanhq",
+      "url": "https://framagit.org/framasoft/nextcloud/drop_account/uploads/40bf237933b51bdcfa7be319ffdf0506/drop_account.tar.gz",
+      "version": "1.0.1"
+    },
     "duplicatefinder": {
       "meta": {
         "description": "Click on the icon and find if you have duplicate files.\n    \nYou can either use the command or the gui. \n\n## Command usage\n\n  ```duplicates:find-all [options]```\n\n### Options\n- `-u --user` scan files of the specified user (-u admin)\n- `-p --path` limit scan to this path (--path=\"/alice/files/Photos\")",
@@ -632,9 +647,9 @@
         "name": "Notifications for calendar event updates",
         "summary": "Receive a notification when an event in a shared calendar was added, modified or deleted."
       },
-      "sha256": "0dkan1rw8x86hlfdpz0cf30d8pqsfwv44m0cnzn2695m649xsnzr",
-      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.1.0/event_update_notification-1.1.0.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1m7n46r9hyjj0zqn8zgrqghna4mnh24cpnkp83b1f9wz834hrchd",
+      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.2.0/event_update_notification-1.2.0.tar.gz",
+      "version": "1.2.0"
     },
     "external": {
       "meta": {
@@ -1369,9 +1384,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "0xxriy1vd60f4x9l9b7v7h80bdzkgcq3ikr6b6mf3199f2fsghhj",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.13/integration_dropbox-0.0.13.tar.gz",
-      "version": "0.0.13"
+      "sha256": "01l8q689chh9bvjmap5cnsparvd4dc3xyqzyw2fc3k18sk87m04x",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.15/integration_dropbox-0.0.15.tar.gz",
+      "version": "0.0.15"
     },
     "integration_github": {
       "meta": {
@@ -1848,9 +1863,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1yf5hikir59kgfzy4my2sy788spmnnmq4cqnnmzvxksf1djfl1b0",
-      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.1/officeonline.tar.gz",
-      "version": "1.0.1"
+      "sha256": "017bffnraflc7mhk1j033hq2ppb8ac7bsslrsk7kdjgq6d6g4z71",
+      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.2/officeonline.tar.gz",
+      "version": "1.0.2"
     },
     "oidc_login": {
       "meta": {
@@ -2036,9 +2051,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1rmw697fv33j62mpws7s82adrpp7xx1ij33cgx21f2hxkfiid83w",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.6.2/polls.tar.gz",
-      "version": "1.6.2"
+      "sha256": "0576k9iq017jkh4gr2jwn8wakfqayqkdyfvy3nbhf0mbjxy40b6r",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.6.3/polls.tar.gz",
+      "version": "1.6.3"
     },
     "preferred_providers": {
       "meta": {
@@ -2297,9 +2312,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0sxf3vfgf1jjdfj56p5j9r2v64mdzdgsai536qnfn3hxzrr8897c",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.203/richdocumentscode.tar.gz",
-      "version": "6.4.203"
+      "sha256": "1qbaljp0g48l83c1aymrys5pd3h6a6p55zx7z0facnxyaz4z4s2g",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.301/richdocumentscode.tar.gz",
+      "version": "6.4.301"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2312,9 +2327,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "123jz5p34pbgb7lvy45sa7sdfdazc5cvygs6cb9y9r159rfm1jcy",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.203/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.203"
+      "sha256": "1d5wv2506yvddnphdxail6q1i1b5br5w9qmgnnikfca2nfwhqad1",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.301/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.301"
     },
     "riotchat": {
       "meta": {
@@ -2530,9 +2545,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1365pgpppx8mnmgm76p09bhq45pklswdjh69zl78xsvaqfsv1sci",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.2/release.tar.gz",
-      "version": "3.5.2"
+      "sha256": "1chlw8hi4yfmpmf2zykwz63nknzm56k957y83g3ik069bl6r6khw",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.3/release.tar.gz",
+      "version": "3.5.3"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2620,9 +2635,23 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1bqqxs88xwn61crqsqhpkwjc851h92i3zl4hxfz41ll0glx5gcvd",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.4/spreed-10.0.4.tar.gz",
-      "version": "10.0.4"
+      "sha256": "0qvcv7ya84n2g176zw6ziw7x1xg1364k9apk65vyc6lj3klpprhp",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.5/spreed-10.0.5.tar.gz",
+      "version": "10.0.5"
+    },
+    "sqreen_sdk": {
+      "meta": {
+        "description": "The plugin will automatically track:\n* Login success\n* Login failure\n* User creation\n* Password update\n\n---\n\nSqreen library is required to install this plugin. You can install it following this documentation: [https://docs.sqreen.com/php/installation/](https://docs.sqreen.com/php/installation/)",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sqreen SDK",
+        "summary": "Integrate Sqreen SDk"
+      },
+      "sha256": "0avycl4iz7b1rfd3hkg9sdnwp8zz2lssani3pmfv1gziqa58i1v7",
+      "url": "https://nextcloud.pasteques4.life/index.php/s/T8gadKmE7Rz8FSp/download",
+      "version": "0.0.1"
     },
     "support": {
       "meta": {
@@ -3023,6 +3052,20 @@
       "sha256": "0l9pjai69w5fjigcy2h7d2hqwsgwmz2h5mpjzw607ffaf8rb1vq1",
       "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.1/user_oidc.tar.gz",
       "version": "0.2.1"
+    },
+    "user_pwauth": {
+      "meta": {
+        "description": "Allows you to authenticate with the local users from the hosting machine onto your hosted NextCloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Unix user backend",
+        "summary": "Authenticate Users by PAM"
+      },
+      "sha256": "0jvk3mc6kppdg8dn7z3rja66a4hkhfvgkcnl88shnr3rqpr0h4dr",
+      "url": "https://r.mateu.be/user_pwauth-2.7.2.tar.gz",
+      "version": "2.7.2"
     },
     "user_retention": {
       "meta": {
