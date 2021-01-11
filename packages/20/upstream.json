@@ -408,7 +408,7 @@
     "cookbook": {
       "meta": {
         "description": "A library for all your recipes. It uses JSON files following the schema.org recipe format. To add a recipe to the collection, you can paste in the URL of the recipe, and the provided web page will be parsed and downloaded to whichever folder you specify in the app settings.",
-        "homepage": "https://github.com/mrzapp/nextcloud-cookbook/",
+        "homepage": "https://github.com/nextcloud/cookbook/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -416,9 +416,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1krqx0vd4sa50sl3d6gki8vn8m9vgwr8qs70irmfdw8hgz6b4cyd",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.7/cookbook.tar.gz",
-      "version": "0.7.7"
+      "sha256": "0b8cw7njmq9r5yqafgl65r613pzs1qnj2r17ycmnwnzkb21nj709",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.8/Cookbook-0.7.8.tar.gz",
+      "version": "0.7.8"
     },
     "cospend": {
       "meta": {
@@ -1384,9 +1384,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "01l8q689chh9bvjmap5cnsparvd4dc3xyqzyw2fc3k18sk87m04x",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.15/integration_dropbox-0.0.15.tar.gz",
-      "version": "0.0.15"
+      "sha256": "0wqpmy4vkcb7lz25spyn7wynkqigxrz0xvgc8x9kv98qgr5p1jp5",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.16/integration_dropbox-0.0.16.tar.gz",
+      "version": "0.0.16"
     },
     "integration_github": {
       "meta": {
@@ -2545,9 +2545,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1chlw8hi4yfmpmf2zykwz63nknzm56k957y83g3ik069bl6r6khw",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.3/release.tar.gz",
-      "version": "3.5.3"
+      "sha256": "0sq2x8dn0zgmaaagw4jycjrs91rwv5vkpzmk5gjzhrxqxcsg1qxq",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.0.1/release.tar.gz",
+      "version": "4.0.1"
     },
     "socialsharing_diaspora": {
       "meta": {

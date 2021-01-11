@@ -407,7 +407,7 @@
     "cookbook": {
       "meta": {
         "description": "A library for all your recipes. It uses JSON files following the schema.org recipe format. To add a recipe to the collection, you can paste in the URL of the recipe, and the provided web page will be parsed and downloaded to whichever folder you specify in the app settings.",
-        "homepage": "https://github.com/mrzapp/nextcloud-cookbook/",
+        "homepage": "https://github.com/nextcloud/cookbook/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -415,9 +415,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1krqx0vd4sa50sl3d6gki8vn8m9vgwr8qs70irmfdw8hgz6b4cyd",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.7/cookbook.tar.gz",
-      "version": "0.7.7"
+      "sha256": "0b8cw7njmq9r5yqafgl65r613pzs1qnj2r17ycmnwnzkb21nj709",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.8/Cookbook-0.7.8.tar.gz",
+      "version": "0.7.8"
     },
     "cospend": {
       "meta": {
@@ -2495,9 +2495,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1chlw8hi4yfmpmf2zykwz63nknzm56k957y83g3ik069bl6r6khw",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.5.3/release.tar.gz",
-      "version": "3.5.3"
+      "sha256": "1n7khqdw7jvpjwyqci1g7xw8fjz7zcv9sd84kcqm4mzr2ynmgz94",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v3.6.0/release.tar.gz",
+      "version": "3.6.0"
     },
     "socialsharing_diaspora": {
       "meta": {
