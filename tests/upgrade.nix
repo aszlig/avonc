@@ -81,6 +81,11 @@ import ./make-test.nix (pkgs: {
         # https://github.com/nextcloud/user_oidc/issues/90
         (assert nc19apps.user_oidc.version == "0.2.1"; "user_oidc")
 
+        # https://github.com/marius-wieschollek/passwords/issues/330
+        (let
+          inherit (lib.importJSON ../packages/20/upstream.json) applications;
+        in assert applications.passwords.version == "2021.1.0"; "passwords")
+
         # These apps have non-deterministic download URLs
         "occweb"
         "quicknotes"
