@@ -57,6 +57,8 @@ import ./make-test.nix (pkgs: {
         "cms_pico"
         # No OCC support, since it requires $_SERVER['REQUEST_URI']
         "sendent"
+        # Needs the "sqreen" library
+        "sqreen_sdk"
         # XXX: Currently (2019-12-12) results in HTTP 404
         "emlviewer"
         # XXX: Conflicts with the "news" app - investigate this someday.
