@@ -402,9 +402,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0b8cw7njmq9r5yqafgl65r613pzs1qnj2r17ycmnwnzkb21nj709",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.8/Cookbook-0.7.8.tar.gz",
-      "version": "0.7.8"
+      "sha256": "07mh5hr8zr0f2jcl0fc7gvkmqdmbk24v2crq0dmqgqxn7zjs8gh9",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.9/Cookbook-0.7.9.tar.gz",
+      "version": "0.7.9"
     },
     "cospend": {
       "meta": {
@@ -1680,9 +1680,9 @@
         "name": "NextBackup",
         "summary": "Simple database backup solutions for your Nextcloud or ownCloud installation."
       },
-      "sha256": "0nhij4isia352fiqyghxhkvs72ji8jbnffsm76adsc3izqa50q2p",
-      "url": "https://github.com/pbek/nextbackup/releases/download/20.9.0/nextbackup-nc.tar.gz",
-      "version": "20.9.0"
+      "sha256": "1ndj3pc5vr57vglqwccvjjrwfxyp761m6ran0vk6xq6sp4f2sccg",
+      "url": "https://github.com/pbek/nextbackup/releases/download/21.1.0/nextbackup-nc.tar.gz",
+      "version": "21.1.0"
     },
     "nextbox": {
       "meta": {
@@ -1952,9 +1952,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1jznzy2z0q15mg242v1vwqakfhgz2g6ycwaf726sbwzlsiagbz5a",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10845/artifacts/raw/passwords.tar.gz",
-      "version": "2020.12.1"
+      "sha256": "0dz4r8524kcpgk5iwxpsbsbl42lg9mf1bafw8ffbj8vygn6ab1nh",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11239/artifacts/raw/passwords.tar.gz",
+      "version": "2020.12.2"
     },
     "pdfdraw": {
       "meta": {
@@ -2794,17 +2794,17 @@
     },
     "timetracker": {
       "meta": {
-        "description": "Time Tracker App",
+        "description": "Track your time spent with different tasks each day using this time tracker app! Features include:\n        \n        # Adding entries\n        With the integrated timer, you only need to press start and stop! Times will be stored automatically, with 1-second-precision. Forgot to press start? Just use the manual editor, to add entries from the past. Or edit existing ones in case you need to change something!\n        \n        # Projects, Clients and Tags\n        Assign tasks to projects and clients! This allows you to display aggregated durations for each project or client, or filter for tasks by projects or clients. You need some more categorization? That's what tags are made for! Create tags to categorize tasks independently from projects or clients.\n        \n        # Lost track of your work time?\n        No problem! Just use the Dashboard view to display a nice donut / pie chart of your tasks! Or filter for tasks in the Reports or Timeline view to display total or aggregated values.\n        \n        This app is still under development, so stay tuned for updates and additional features! If you have any suggestions, bug reports or feature requests, feel free to head over to our [GitHub project page](https://github.com/mtierltd/timetracker) and search through the existing issues, maybe your topic is already under discussion! And if it's not, feel free to file a new issue for it.\n        \n        And for now, start making your time tracking easier by using this app!",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Time Tracker",
-        "summary": "Time Tracker App"
+        "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1fs9mdnbfiay43nrzlm1rh2zria7cf0lh99w0v9pls5b3m2v66cq",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.45.tar.gz",
-      "version": "0.0.45"
+      "sha256": "1yigfhg11z7hd1z75w1fm7kfcys8jj38qwddhqv62kq85r6r5dnq",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.48.tar.gz",
+      "version": "0.0.48"
     },
     "transmission": {
       "meta": {
@@ -2816,9 +2816,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "1jn0j5zvj54ygsshgs8lkjr0c0b2qr6xbyi6kyydwsrq6iwjnc12",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6/transmission-0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0wv53yzwbcsfhz5hg8x9halpypx9raj2wwyqg88cp4r02k9jy0rh",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6.5/transmission-0.6.5.tar.gz",
+      "version": "0.6.5"
     },
     "twofactor_admin": {
       "meta": {
@@ -3254,9 +3254,9 @@
         "name": "Workflow external scripts",
         "summary": "Rule based processing of files through specified external scripts"
       },
-      "sha256": "1y8f473lxiry4g11fjmrsdi6yfhywsndd6jbx0rlfnnc5p24pzc8",
-      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.3.2/workflow_script.tar.gz",
-      "version": "1.3.2"
+      "sha256": "0rla1wnjf8r354gk8q16bz13q2m86nf037prbi6wb56lg2b9m74i",
+      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.3.3/workflow_script.tar.gz",
+      "version": "1.3.3"
     },
     "workflowengine": {
       "meta": {

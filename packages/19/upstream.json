@@ -415,9 +415,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0b8cw7njmq9r5yqafgl65r613pzs1qnj2r17ycmnwnzkb21nj709",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.8/Cookbook-0.7.8.tar.gz",
-      "version": "0.7.8"
+      "sha256": "07mh5hr8zr0f2jcl0fc7gvkmqdmbk24v2crq0dmqgqxn7zjs8gh9",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.9/Cookbook-0.7.9.tar.gz",
+      "version": "0.7.9"
     },
     "cospend": {
       "meta": {
@@ -559,9 +559,9 @@
         "name": "User account deletion",
         "summary": "An app to allow users to delete their accounts."
       },
-      "sha256": "0vg2y89s8dkxfivw3zrr38zrn1y1iwih6ajanmnbw6f7x4hbanhq",
-      "url": "https://framagit.org/framasoft/nextcloud/drop_account/uploads/40bf237933b51bdcfa7be319ffdf0506/drop_account.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0w44zl0q5yiw03wd5jhvwqq8hflfv5gk9zyd2f31vwv3fqxy5j7v",
+      "url": "https://framagit.org/framasoft/nextcloud/drop_account/uploads/f4bba3da2e1db522eb41297b7fd2c001/drop_account.tar.gz",
+      "version": "1.0.2"
     },
     "duplicatefinder": {
       "meta": {
@@ -761,9 +761,9 @@
         "name": "File access control",
         "summary": "Control access to files based on conditions"
       },
-      "sha256": "1bih88gyd8fha3agsaa1ab3qr1zv7lhnf1acpj926gcdbjxfklxn",
-      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.9.2/files_accesscontrol-1.9.2.tar.gz",
-      "version": "1.9.2"
+      "sha256": "1ixzjr889mz427wv36slxw47sgqjb2jgzqy781g0gj7sh2mxi9p4",
+      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.9.3/files_accesscontrol-1.9.3.tar.gz",
+      "version": "1.9.3"
     },
     "files_antivirus": {
       "meta": {
@@ -1646,9 +1646,9 @@
         "name": "NextBackup",
         "summary": "Simple database backup solutions for your Nextcloud or ownCloud installation."
       },
-      "sha256": "0nhij4isia352fiqyghxhkvs72ji8jbnffsm76adsc3izqa50q2p",
-      "url": "https://github.com/pbek/nextbackup/releases/download/20.9.0/nextbackup-nc.tar.gz",
-      "version": "20.9.0"
+      "sha256": "1ndj3pc5vr57vglqwccvjjrwfxyp761m6ran0vk6xq6sp4f2sccg",
+      "url": "https://github.com/pbek/nextbackup/releases/download/21.1.0/nextbackup-nc.tar.gz",
+      "version": "21.1.0"
     },
     "nextbox": {
       "meta": {
@@ -1888,9 +1888,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1jznzy2z0q15mg242v1vwqakfhgz2g6ycwaf726sbwzlsiagbz5a",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/10845/artifacts/raw/passwords.tar.gz",
-      "version": "2020.12.1"
+      "sha256": "0dz4r8524kcpgk5iwxpsbsbl42lg9mf1bafw8ffbj8vygn6ab1nh",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11239/artifacts/raw/passwords.tar.gz",
+      "version": "2020.12.2"
     },
     "pdfdraw": {
       "meta": {
@@ -2773,17 +2773,17 @@
     },
     "timetracker": {
       "meta": {
-        "description": "Time Tracker App",
+        "description": "Track your time spent with different tasks each day using this time tracker app! Features include:\n        \n        # Adding entries\n        With the integrated timer, you only need to press start and stop! Times will be stored automatically, with 1-second-precision. Forgot to press start? Just use the manual editor, to add entries from the past. Or edit existing ones in case you need to change something!\n        \n        # Projects, Clients and Tags\n        Assign tasks to projects and clients! This allows you to display aggregated durations for each project or client, or filter for tasks by projects or clients. You need some more categorization? That's what tags are made for! Create tags to categorize tasks independently from projects or clients.\n        \n        # Lost track of your work time?\n        No problem! Just use the Dashboard view to display a nice donut / pie chart of your tasks! Or filter for tasks in the Reports or Timeline view to display total or aggregated values.\n        \n        This app is still under development, so stay tuned for updates and additional features! If you have any suggestions, bug reports or feature requests, feel free to head over to our [GitHub project page](https://github.com/mtierltd/timetracker) and search through the existing issues, maybe your topic is already under discussion! And if it's not, feel free to file a new issue for it.\n        \n        And for now, start making your time tracking easier by using this app!",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Time Tracker",
-        "summary": "Time Tracker App"
+        "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1fs9mdnbfiay43nrzlm1rh2zria7cf0lh99w0v9pls5b3m2v66cq",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.45.tar.gz",
-      "version": "0.0.45"
+      "sha256": "1yigfhg11z7hd1z75w1fm7kfcys8jj38qwddhqv62kq85r6r5dnq",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.48.tar.gz",
+      "version": "0.0.48"
     },
     "transmission": {
       "meta": {
@@ -2795,9 +2795,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "1jn0j5zvj54ygsshgs8lkjr0c0b2qr6xbyi6kyydwsrq6iwjnc12",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6/transmission-0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0wv53yzwbcsfhz5hg8x9halpypx9raj2wwyqg88cp4r02k9jy0rh",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6.5/transmission-0.6.5.tar.gz",
+      "version": "0.6.5"
     },
     "twofactor_admin": {
       "meta": {
@@ -3071,9 +3071,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "0l1a87v4iigcs4whhik2jqx53j8xjkfckvn6r5fzih2dyqrr0hqz",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.1/user_saml-3.2.1.tar.gz",
-      "version": "3.2.1"
+      "sha256": "1c7k2v5cybnyxx0330mwkv722arv15lw5yjzjci0rn0xw5bm7v1g",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.2/user_saml-3.2.2.tar.gz",
+      "version": "3.2.2"
     },
     "user_sql": {
       "meta": {
@@ -3248,9 +3248,9 @@
         "name": "Workflow external scripts",
         "summary": "Rule based processing of files through specified external scripts"
       },
-      "sha256": "1a73lnbl4l2w365sj0pv1klf8lm0233jvkj5gw7cbj5r896vkamn",
-      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.4.0/workflow_script.tar.gz",
-      "version": "1.4.0"
+      "sha256": "1vklagarj4cybhrljsn2b7x3cnx15rksmffhbggdrj2abf0rwisa",
+      "url": "https://github.com/nextcloud/workflow_script/releases/download/v1.4.1/workflow_script.tar.gz",
+      "version": "1.4.1"
     },
     "workflowengine": {
       "meta": {
