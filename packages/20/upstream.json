@@ -219,7 +219,7 @@
     },
     "breezedark": {
       "meta": {
-        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\nThe global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find there global option here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\n#### Personal\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n#### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1hrv8sif3nvd28xbgw90sn5g9mfv8pblbw39hp87f7bmah94kqas",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.2/breezedark.tar.gz",
-      "version": "20.0.2"
+      "sha256": "0i5faf6alxzba56zxcymazlihf4x1w05c9awgfjah3ja7h75gnvl",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.3/breezedark.tar.gz",
+      "version": "20.0.3"
     },
     "bruteforcesettings": {
       "meta": {
@@ -416,9 +416,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "07mh5hr8zr0f2jcl0fc7gvkmqdmbk24v2crq0dmqgqxn7zjs8gh9",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.9/Cookbook-0.7.9.tar.gz",
-      "version": "0.7.9"
+      "sha256": "1cw32f3mqn9jz1r8hh8a443vr2awfxx6pprcxiwydmljccvwxbc4",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.10/Cookbook-0.7.10.tar.gz",
+      "version": "0.7.10"
     },
     "cospend": {
       "meta": {
@@ -1226,6 +1226,21 @@
       "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d226043695efb4221732e2a5c0a7e690/gpxpod-4.2.4.tar.gz",
       "version": "4.2.4"
     },
+    "grauphel": {
+      "meta": {
+        "description": "Tomboy REST API server to sync notes between devices.\n\n  Tomboy, Conboy and Tomdroid clients are supported.",
+        "homepage": "https://cweiske.de/grauphel.htm",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Grauphel: Tomboy note server",
+        "summary": "Tomboy REST API server to sync notes between devices"
+      },
+      "sha256": "0pryrvya2rggfxm4b1qlnjpi0xzarwwg5fi6hmf5v1p9z215kcvc",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.5.tar.gz",
+      "version": "0.7.5"
+    },
     "group_everyone": {
       "meta": {
         "description": "Adds a virtual \"Everyone\" group.",
@@ -1384,9 +1399,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "0wqpmy4vkcb7lz25spyn7wynkqigxrz0xvgc8x9kv98qgr5p1jp5",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.16/integration_dropbox-0.0.16.tar.gz",
-      "version": "0.0.16"
+      "sha256": "0a70ldvmvz4v2sm0mgpnwzrxq9g5hh1pgzvvzjs52szwv716dwkd",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.17/integration_dropbox-0.0.17.tar.gz",
+      "version": "0.0.17"
     },
     "integration_github": {
       "meta": {
@@ -1399,9 +1414,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "0mf9mlm6a4d7ww13cc8nv8937znxldfdjidlfjz7q77m6qmd5hdq",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.16/integration_github-0.0.16.tar.gz",
-      "version": "0.0.16"
+      "sha256": "1pri2c63chkd6jr19snkzd3kph0kjznqa6rncfcrl1r54xgzpxc3",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.17/integration_github-0.0.17.tar.gz",
+      "version": "0.0.17"
     },
     "integration_gitlab": {
       "meta": {
@@ -1414,9 +1429,9 @@
         "name": "GitLab integration",
         "summary": "Integration of GitLab software development management service"
       },
-      "sha256": "0ydzpps8h5jgjsjbih8chd20jv6bryqzlfjp38szp43q0mz43rvj",
-      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.9/integration_gitlab-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "1805zsniszzdps61y19xgqf6gh410zvzahq50asdlkhjhvmhh2l1",
+      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.10/integration_gitlab-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_google": {
       "meta": {
@@ -1757,7 +1772,7 @@
     },
     "nextbox": {
       "meta": {
-        "description": "NextBox Exclusive App that enables configuration of the Nitrokey Nextbox through a native Nextcloud App",
+        "description": "NextBox-exclusive app that enables configuration of the Nitrokey NextBox through a native Nextcloud app.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1765,9 +1780,9 @@
         "name": "NextBox",
         "summary": "NextBox Configuration App"
       },
-      "sha256": "1b2f8kl05lnk7w5f0q8rh2w7d0wg9ffanbz4ldlb4c9v06qwncsn",
-      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.1/nextbox-0.1.tar.gz",
-      "version": "0.0.1"
+      "sha256": "099zvmxaan16s7kf5164ir88ky73p9rn0pcvb43qy15ag21k6m9n",
+      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.2.4/nextbox-0.2.4.tar.gz",
+      "version": "0.2.4"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -1964,9 +1979,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "03xdwv1yykrwjsiqfqqka436hyx2zwfv80r5xpsjfi9in2icn5mg",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11229/artifacts/raw/passwords.tar.gz",
-      "version": "2021.1.0"
+      "sha256": "02a3yfkzibx8nyp1b0wkk8qsflsk14nfazlnkxfb8fjgyvkyx359",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11292/artifacts/raw/passwords.tar.gz",
+      "version": "2021.1.2"
     },
     "pdfdraw": {
       "meta": {
@@ -2357,9 +2372,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "10hriq7jd7iv5514gkvq8acs15bz7v918m24x7q4kff7k7mgmf66",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.18/riotchat.tar.gz",
-      "version": "0.6.18"
+      "sha256": "14f5p4kgb8rl92i0xyjxihgcifpccbbdrb533dqx2lb57i3k13ik",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.19/riotchat.tar.gz",
+      "version": "0.6.19"
     },
     "scanner": {
       "meta": {
@@ -2387,9 +2402,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "149x3qr5j4k5fn1l5ym4rnkl7wmq3gzbm6sbdzyj126213qfmyjb",
-      "url": "https://download.sendent.nl/serverapp/1.0.17/sendent.tar.gz",
-      "version": "1.0.17"
+      "sha256": "08ny8z09rsry6dnrzxgxfm9nfgpqmznffdp7lfh59nhsp5m4h4lp",
+      "url": "https://download.sendent.nl/serverapp/1.0.18/sendent.tar.gz",
+      "version": "1.0.18"
     },
     "sensorlogger": {
       "meta": {
@@ -2984,7 +2999,7 @@
     },
     "unsplash": {
       "meta": {
-        "description": "Show a new random featured nature photo from Unsplash on the log in screen and (optionally) in the header.",
+        "description": "Show a new random featured nature photo from Unsplash in your nextcloud.",
         "homepage": "https://github.com/jancborchardt/unsplash/",
         "isShipped": false,
         "licenses": [
@@ -2993,9 +3008,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "1ppln9vcypjx2dsrrasm347kqnada44xfn7cmjrc0ay5b27gvn9h",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.1.7/unsplash.tar.gz",
-      "version": "1.1.7"
+      "sha256": "09np84jxvcha83sfsrbz01gpa3qpqar4zvfxqk036xrvydb48glq",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.0/unsplash.tar.gz",
+      "version": "1.2.0"
     },
     "updatenotification": {
       "meta": {
@@ -3125,6 +3140,20 @@
       "sha256": "1x0cfqjw56c6xly3zadxb1y146lkfciicwimkqiqy8adlhkl1z2w",
       "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.3/user_saml-3.3.3.tar.gz",
       "version": "3.3.3"
+    },
+    "user_sql": {
+      "meta": {
+        "description": "Use external database as a source for Nextcloud users and groups.\n        Retrieve the users and groups info. Allow the users to change their passwords.\n        Sync the users' email addresses with the addresses stored by Nextcloud.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User and Group SQL Backends",
+        "summary": "Control users and groups by SQL queries"
+      },
+      "sha256": "1nivw349rpik03fw3z2wvf305ilncpypvknrkpj4l9iyy2l34xzr",
+      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.6.0/user_sql-4.6.0.tar.gz",
+      "version": "4.6.0"
     },
     "user_status": {
       "meta": {

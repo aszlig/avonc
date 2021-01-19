@@ -402,9 +402,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "07mh5hr8zr0f2jcl0fc7gvkmqdmbk24v2crq0dmqgqxn7zjs8gh9",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.9/Cookbook-0.7.9.tar.gz",
-      "version": "0.7.9"
+      "sha256": "1cw32f3mqn9jz1r8hh8a443vr2awfxx6pprcxiwydmljccvwxbc4",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.10/Cookbook-0.7.10.tar.gz",
+      "version": "0.7.10"
     },
     "cospend": {
       "meta": {
@@ -1330,9 +1330,9 @@
         "name": "Grauphel: Tomboy note server",
         "summary": "Tomboy REST API server to sync notes between devices"
       },
-      "sha256": "1ma5s8nywxwibrcp1l3i0wjp95zka5ydz26klpi7i1mqpsiqqx40",
-      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.4.tar.gz",
-      "version": "0.7.4"
+      "sha256": "0pryrvya2rggfxm4b1qlnjpi0xzarwwg5fi6hmf5v1p9z215kcvc",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.5.tar.gz",
+      "version": "0.7.5"
     },
     "group_everyone": {
       "meta": {
@@ -1686,7 +1686,7 @@
     },
     "nextbox": {
       "meta": {
-        "description": "NextBox Exclusive App that enables configuration of the Nitrokey Nextbox through a native Nextcloud App",
+        "description": "NextBox-exclusive app that enables configuration of the Nitrokey NextBox through a native Nextcloud app.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1694,9 +1694,9 @@
         "name": "NextBox",
         "summary": "NextBox Configuration App"
       },
-      "sha256": "1b2f8kl05lnk7w5f0q8rh2w7d0wg9ffanbz4ldlb4c9v06qwncsn",
-      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.1/nextbox-0.1.tar.gz",
-      "version": "0.0.1"
+      "sha256": "099zvmxaan16s7kf5164ir88ky73p9rn0pcvb43qy15ag21k6m9n",
+      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.2.4/nextbox-0.2.4.tar.gz",
+      "version": "0.2.4"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -2314,9 +2314,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "10hriq7jd7iv5514gkvq8acs15bz7v918m24x7q4kff7k7mgmf66",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.18/riotchat.tar.gz",
-      "version": "0.6.18"
+      "sha256": "14f5p4kgb8rl92i0xyjxihgcifpccbbdrb533dqx2lb57i3k13ik",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.19/riotchat.tar.gz",
+      "version": "0.6.19"
     },
     "scanner": {
       "meta": {
@@ -2358,9 +2358,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "149x3qr5j4k5fn1l5ym4rnkl7wmq3gzbm6sbdzyj126213qfmyjb",
-      "url": "https://download.sendent.nl/serverapp/1.0.17/sendent.tar.gz",
-      "version": "1.0.17"
+      "sha256": "08ny8z09rsry6dnrzxgxfm9nfgpqmznffdp7lfh59nhsp5m4h4lp",
+      "url": "https://download.sendent.nl/serverapp/1.0.18/sendent.tar.gz",
+      "version": "1.0.18"
     },
     "sensorlogger": {
       "meta": {
@@ -2939,7 +2939,7 @@
     },
     "unsplash": {
       "meta": {
-        "description": "Show a new random featured nature photo from Unsplash on the log in screen and (optionally) in the header.",
+        "description": "Show a new random featured nature photo from Unsplash in your nextcloud.",
         "homepage": "https://github.com/jancborchardt/unsplash/",
         "isShipped": false,
         "licenses": [
@@ -2948,9 +2948,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "1ppln9vcypjx2dsrrasm347kqnada44xfn7cmjrc0ay5b27gvn9h",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.1.7/unsplash.tar.gz",
-      "version": "1.1.7"
+      "sha256": "09np84jxvcha83sfsrbz01gpa3qpqar4zvfxqk036xrvydb48glq",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.0/unsplash.tar.gz",
+      "version": "1.2.0"
     },
     "updatenotification": {
       "meta": {
@@ -3106,9 +3106,9 @@
         "name": "User and Group SQL Backends",
         "summary": "Control users and groups by SQL queries"
       },
-      "sha256": "1yln0gwfqkd9pbn8hbxpn9h8v2z2977fblz60dg157avqhxv9vmr",
-      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.5.0/user_sql-4.5.0.tar.gz",
-      "version": "4.5.0"
+      "sha256": "1nivw349rpik03fw3z2wvf305ilncpypvknrkpj4l9iyy2l34xzr",
+      "url": "https://github.com/nextcloud/user_sql/releases/download/v4.6.0/user_sql-4.6.0.tar.gz",
+      "version": "4.6.0"
     },
     "user_usage_report": {
       "meta": {
