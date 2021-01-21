@@ -204,7 +204,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20+",
+        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0fd6mqdvjfkdfrgcjsjfzwkpanxis2k0ix7bd9qahhw27x1iflga",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.5/bookmarks-4.0.5.tar.gz",
-      "version": "4.0.5"
+      "sha256": "1il2zmcscvg43xsnx3jvpzcgk6s2bg1pm7fy1rbcrzv81ij2v02h",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.6/bookmarks-4.0.6.tar.gz",
+      "version": "4.0.6"
     },
     "breezedark": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "03883m74747sf42ry8gavr8ww5d77chw1wmwf5vgkcrdc5mbbak2",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.7/cospend-1.2.7.tar.gz",
-      "version": "1.2.7"
+      "sha256": "18d458aqdc20xc87dqp0cac4h851p2zfdwkfxijyxbmsvq75cg9z",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.8/cospend-1.2.8.tar.gz",
+      "version": "1.2.8"
     },
     "cpanelmailsync": {
       "meta": {
@@ -1444,9 +1444,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0c1w1c10z785j1ni33hjjl6qnkcqgxxa65b004br1nrmv581232c",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.4/integration_google-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "18wdqsxjrpnv4py00xzldg9vphal8r4hqiwa7h0nk4clyyb70z34",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.5/integration_google-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "integration_jira": {
       "meta": {
@@ -1691,9 +1691,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1fakpbhycchxrd9kpwl3vc5s1sis0zfbxnvc4maj66gm9fj3sd03",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.7.2/mail.tar.gz",
-      "version": "1.7.2"
+      "sha256": "1zc9ny4sigpg93b7sjrzs72zsh63ggdxx66bmphw8p5jidsk2kd6",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.8.0/mail.tar.gz",
+      "version": "1.8.0"
     },
     "maps": {
       "meta": {
@@ -2342,9 +2342,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1qbaljp0g48l83c1aymrys5pd3h6a6p55zx7z0facnxyaz4z4s2g",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.301/richdocumentscode.tar.gz",
-      "version": "6.4.301"
+      "sha256": "1lcfbrwca65jdxij303vamha69mqp9p88m4z0z56v18ar2cxd2x9",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.303/richdocumentscode.tar.gz",
+      "version": "6.4.303"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2357,9 +2357,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1d5wv2506yvddnphdxail6q1i1b5br5w9qmgnnikfca2nfwhqad1",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.301/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.301"
+      "sha256": "1zvwiwm47rbbm6rnf1m4g2vz59grsg8b2dmx8fn96y08fbbn4f0v",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.303/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.303"
     },
     "riotchat": {
       "meta": {
@@ -2854,7 +2854,7 @@
     },
     "timetracker": {
       "meta": {
-        "description": "Track your time spent with different tasks each day using this time tracker app! Features include:\n        \n        # Adding entries\n        With the integrated timer, you only need to press start and stop! Times will be stored automatically, with 1-second-precision. Forgot to press start? Just use the manual editor, to add entries from the past. Or edit existing ones in case you need to change something!\n        \n        # Projects, Clients and Tags\n        Assign tasks to projects and clients! This allows you to display aggregated durations for each project or client, or filter for tasks by projects or clients. You need some more categorization? That's what tags are made for! Create tags to categorize tasks independently from projects or clients.\n        \n        # Lost track of your work time?\n        No problem! Just use the Dashboard view to display a nice donut / pie chart of your tasks! Or filter for tasks in the Reports or Timeline view to display total or aggregated values.\n        \n        This app is still under development, so stay tuned for updates and additional features! If you have any suggestions, bug reports or feature requests, feel free to head over to our [GitHub project page](https://github.com/mtierltd/timetracker) and search through the existing issues, maybe your topic is already under discussion! And if it's not, feel free to file a new issue for it.\n        \n        And for now, start making your time tracking easier by using this app!",
+        "description": "Track your time spent with different tasks each day using this time tracker app! Features include:\n\n# Adding entries\nWith the integrated timer, you only need to press start and stop! Times will be stored automatically, with 1-second-precision. Forgot to press start? Just use the manual editor, to add entries from the past. Or edit existing ones in case you need to change something!\n\n# Projects, Clients and Tags\nAssign tasks to projects and clients! This allows you to display aggregated durations for each project or client, or filter for tasks by projects or clients. You need some more categorization? That's what tags are made for! Create tags to categorize tasks independently from projects or clients.\n\n# Lost track of your work time?\nNo problem! Just use the Dashboard view to display a nice donut / pie chart of your tasks! Or filter for tasks in the Reports or Timeline view to display total or aggregated values.\n\nThis app is still under development, so stay tuned for updates and additional features! If you have any suggestions, bug reports or feature requests, feel free to head over to our [GitHub project page](https://github.com/mtierltd/timetracker) and search through the existing issues, maybe your topic is already under discussion! And if it's not, feel free to file a new issue for it.\n\nAnd for now, start making your time tracking easier by using this app!",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2862,9 +2862,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1yigfhg11z7hd1z75w1fm7kfcys8jj38qwddhqv62kq85r6r5dnq",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.48.tar.gz",
-      "version": "0.0.48"
+      "sha256": "0gf0nxlkj8a2fmncxklandn3v0ni0clilyj99i6xvzlf0kzp4vgz",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.49.tar.gz",
+      "version": "0.0.49"
     },
     "transmission": {
       "meta": {
@@ -3008,9 +3008,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "09np84jxvcha83sfsrbz01gpa3qpqar4zvfxqk036xrvydb48glq",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.0/unsplash.tar.gz",
-      "version": "1.2.0"
+      "sha256": "0vnw8nxfxrlzb1xha4dznnj7crwl2kcw90wwppdwh0yrnkfg00zd",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.1/unsplash.tar.gz",
+      "version": "1.2.1"
     },
     "updatenotification": {
       "meta": {
