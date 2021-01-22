@@ -1330,9 +1330,9 @@
         "name": "Grauphel: Tomboy note server",
         "summary": "Tomboy REST API server to sync notes between devices"
       },
-      "sha256": "0pryrvya2rggfxm4b1qlnjpi0xzarwwg5fi6hmf5v1p9z215kcvc",
-      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.5.tar.gz",
-      "version": "0.7.5"
+      "sha256": "0znwy73vz3sf1zc89i8rpnjh90hq6npj48cxi6paszz25kjys0km",
+      "url": "https://cweiske.de/download/grauphel/grauphel-0.7.6.tar.gz",
+      "version": "0.7.6"
     },
     "group_everyone": {
       "meta": {
@@ -1694,9 +1694,9 @@
         "name": "NextBox",
         "summary": "NextBox Configuration App"
       },
-      "sha256": "099zvmxaan16s7kf5164ir88ky73p9rn0pcvb43qy15ag21k6m9n",
-      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.2.4/nextbox-0.2.4.tar.gz",
-      "version": "0.2.4"
+      "sha256": "101zdiyxsz3w1khh567pilw62vwrl2sw5vj2y90pszglwqj5mz9w",
+      "url": "https://github.com/Nitrokey/nextbox-app/releases/download/v0.3.0/nextbox-0.3.0.tar.gz",
+      "version": "0.3.0"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -2802,9 +2802,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0gf0nxlkj8a2fmncxklandn3v0ni0clilyj99i6xvzlf0kzp4vgz",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.49.tar.gz",
-      "version": "0.0.49"
+      "sha256": "1sdj0mii5vpmz2pr91xd4md24w6svk08a6rmg0az7n0kp5lnhi46",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.50.tar.gz",
+      "version": "0.0.50"
     },
     "transmission": {
       "meta": {
