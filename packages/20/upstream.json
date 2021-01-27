@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1il2zmcscvg43xsnx3jvpzcgk6s2bg1pm7fy1rbcrzv81ij2v02h",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.6/bookmarks-4.0.6.tar.gz",
-      "version": "4.0.6"
+      "sha256": "0dc6y8j712ksvmz7bwb8aknl56rxr5sic1jqciv9q5fr77jkmycc",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.0.8/bookmarks-4.0.8.tar.gz",
+      "version": "4.0.8"
     },
     "breezedark": {
       "meta": {
@@ -662,9 +662,9 @@
         "name": "External sites",
         "summary": "Add external sites to your Nextcloud navigation"
       },
-      "sha256": "1i8ig78d3vpy4yvhwzzccn1dyqhbpl2s0b395v9qj029isirb4zc",
-      "url": "https://github.com/nextcloud/external/releases/download/v3.7.1/external-3.7.1.tar.gz",
-      "version": "3.7.1"
+      "sha256": "1khmq1hjs2676f1kz9z03qj75h13hnw3ajlcm0bnlyvdqydps386",
+      "url": "https://github.com/nextcloud/external/releases/download/v3.7.2/external-3.7.2.tar.gz",
+      "version": "3.7.2"
     },
     "extract": {
       "meta": {
@@ -1103,9 +1103,9 @@
         "name": "Flow Notifications",
         "summary": "Notification action for Nextcloud Flow"
       },
-      "sha256": "17klb2wskr76wkfxpplr6ac2a1i5l3xqk7ab0vyywr8m15jzabc4",
-      "url": "https://github.com/nextcloud/flow_notifications/releases/download/v1.0.2/flow_notifications.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1vfxc658pyl5w0igc6vjw5863va5gqwphby1s9zyfvi3c8cysmjf",
+      "url": "https://github.com/nextcloud/flow_notifications/releases/download/v1.0.3/flow_notifications.tar.gz",
+      "version": "1.0.3"
     },
     "flowupload": {
       "meta": {
@@ -1444,9 +1444,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "18wdqsxjrpnv4py00xzldg9vphal8r4hqiwa7h0nk4clyyb70z34",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.5/integration_google-0.1.5.tar.gz",
-      "version": "0.1.5"
+      "sha256": "17gdwil8s58xjyza64zj9w5xcdp63w7gkrg6hnnv7gcchk4a7dn4",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.7/integration_google-0.1.7.tar.gz",
+      "version": "0.1.7"
     },
     "integration_jira": {
       "meta": {
@@ -1489,9 +1489,9 @@
         "name": "Moodle integration",
         "summary": "Integration of Moodle learning management system"
       },
-      "sha256": "16a8jr464nhzz976ivk5v5iqwv7lhd787i3na8p25cwf887imkgv",
-      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.5/integration_moodle-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "0dgp8lmqsh5b47h8xmm6yip8n8rkgc2wfvdzr657w78g6j2sbgh7",
+      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.7/integration_moodle-0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "integration_onedrive": {
       "meta": {
@@ -1504,9 +1504,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "1nmrkn9k2yjh6pknk3kxn04kfrgw69x0k1brnw0ja7iyx5r23fxx",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.5/integration_onedrive-0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "19mj28x8qabinsqxpkv0nvapfbs9fbkyggq94iq3061n249l365b",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.7/integration_onedrive-0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "integration_reddit": {
       "meta": {
@@ -1564,9 +1564,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "0d7fsf6jwp0lv4hh6jyhsm9c79skr36bg6b39n2miq0zq86hci8p",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.15/integration_zammad-0.0.15.tar.gz",
-      "version": "0.0.15"
+      "sha256": "01d02g3dj5pzrnawwgnk12xj0yx450909rm8q0qbj8hlzdw0xxbd",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.16/integration_zammad-0.0.16.tar.gz",
+      "version": "0.0.16"
     },
     "issuetemplate": {
       "meta": {
@@ -2110,9 +2110,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "02j6ssc1d2ad9js72haqcgcgmf1yh51gvqhq24bplhwk6r2wyix5",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v3.1.0/previewgenerator.tar.gz",
-      "version": "3.1.0"
+      "sha256": "1dy4ilrvfmavy68f8jz417y0n3h3jz3y8xjxjzdhrbsdwgi9di45",
+      "url": "https://github.com/rullzer/previewgenerator/releases/download/v3.1.1/previewgenerator.tar.gz",
+      "version": "3.1.1"
     },
     "pride": {
       "meta": {
@@ -2327,9 +2327,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0qwm0yg5w0d4h5a6jvwrjrr0595jkccq80p9n5n35jxjafv2bzzf",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.11/richdocuments.tar.gz",
-      "version": "3.7.11"
+      "sha256": "1aisg0b6xd08ib9jim9wg8fa89c5xaxqxf9nllhcywkx2s3lr6n9",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.13/richdocuments.tar.gz",
+      "version": "3.7.13"
     },
     "richdocumentscode": {
       "meta": {
@@ -2372,9 +2372,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "14f5p4kgb8rl92i0xyjxihgcifpccbbdrb533dqx2lb57i3k13ik",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.19/riotchat.tar.gz",
-      "version": "0.6.19"
+      "sha256": "1f43yhbdww31pyllp0436xbnk9aa9jzillmwnlf56qjf6zx4n83q",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.0/riotchat.tar.gz",
+      "version": "0.7.0"
     },
     "scanner": {
       "meta": {
@@ -2390,6 +2390,20 @@
       "sha256": "0bxz2jr20dyabww3xbqdc87xzrs9vkhx53aa6a605rs0w6r1g3fh",
       "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.0/scanner-0.2.0.tar.gz",
       "version": "0.2.0"
+    },
+    "secsignid": {
+      "meta": {
+        "description": "This app makes it possible to use the SecSign two-factor authentication SecSign ID\nto authenticate users in Nextcloud.\n\nOnce installed, go to **Settings/Security** and add an existing SecSign ID to enable 2FA\nfor yourself. Make sure to also generate backup codes, so you always have a backup plan.\n\nAdmins can go to the SecSign ID tab and manage the SecSign IDs for every user and enable/disable\ntwo-factor authentication.\n\nWith the new User Onboarding feature, enabling SecSign 2FA for all users is a very easy process. Simply enable User Onboarding and then choose a suffix for your users SecSign IDs. Make sure to either enforce 2FA for the user groups which should use SecSign 2FA or enable it for single users. Only users with Two-Factor Authentication enabled in the NextCloud settings can use SecSign 2FA.\n\nIf you do not already have a SecSign ID, go to [secsign.com](https://www.secsign.com/try-secsign-id-now/) to learn\nhow to create and use one.\n\n[PHP QR Code library](http://phpqrcode.sourceforge.net/) was used for the creating QR codes. Many thanks to the developers.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "SecSign ID",
+        "summary": "Plugin to enable use of SecSign 2FA"
+      },
+      "sha256": "1c8ah318irj8gz1ak6pbfc6vpj8jvdqvzhyif1pzr542cpi32ahd",
+      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.3.tar.gz",
+      "version": "0.3.3"
     },
     "sendent": {
       "meta": {
@@ -2862,9 +2876,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1sdj0mii5vpmz2pr91xd4md24w6svk08a6rmg0az7n0kp5lnhi46",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.50.tar.gz",
-      "version": "0.0.50"
+      "sha256": "0lhwv7qbxd8d4akjr9m9irysn3sqn99a33v100kpqjahc9g92llj",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.52.tar.gz",
+      "version": "0.0.52"
     },
     "transmission": {
       "meta": {
@@ -2978,9 +2992,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "1pgjj5z6q9kpwjx4w54sqyd79j16jwf7kp20qy9grs1i6xfk04ii",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v6.0.0/twofactor_u2f.tar.gz",
-      "version": "6.0.0"
+      "sha256": "0inplcf1jiq7y7iczbnr61iiccmji1i0c5zis8m9w3kf8xk8aqc4",
+      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v6.1.0/twofactor_u2f.tar.gz",
+      "version": "6.1.0"
     },
     "twofactor_webauthn": {
       "meta": {
@@ -3068,6 +3082,21 @@
       "sha256": "1lcksvm0knd6vwwlhvv74f6m4r3c2k4hd7rl0s6cbv2qvcbs3kaq",
       "url": "https://github.com/nextcloud/user_external/releases/download/v1.0.0/user_external-1.0.0.tar.gz",
       "version": "1.0.0"
+    },
+    "user_ispconfig": {
+      "meta": {
+        "description": "Using this authentication provider you allow your users to use login credentials from their mailboxes as managed by ISPConfig 3 hosting controlpanel.\n\nTo do so, you have to configure the URL of your panel server for API requests along with user credentials for a ISPConfig remote api user.\nSee Readme in admin documentation for details.\n\nFurthermore, you can set default quota and group memberships for all newly created users.\n\nFor users from specific domains you can add individual quota and group settings and also allow them to use simplified usernames, e.g. instead of john@doe.com just john or john.doe. For more information on this, take a look at prefix, suffix and bare-name configuration contained in the Readme file.\n\nRequires SOAP PHP Extension to be installed and enabled and an ISPConfig remote user with permissions for Customer Functions, Server Functions, E-Mail User Functions.",
+        "homepage": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "User support for ISPConfig mail accounts",
+        "summary": "Allow users logging in using their mailbox credentials as managed via ISPConfig"
+      },
+      "sha256": "1pqrm5c6kjrrh6x9hy9sg1s1lx244la6dbvyancwmkn2fypsmf0g",
+      "url": "https://github.com/SpicyWeb-de/nextcloud-user-ispconfig/releases/download/v0.4.8/user-ispconfig-0.4.8.tar.gz",
+      "version": "0.4.8"
     },
     "user_ldap": {
       "meta": {
@@ -3325,9 +3354,9 @@
         "name": "Automated PDF conversion",
         "summary": "Rule based conversion of Documents into the PDF format"
       },
-      "sha256": "16idqp7xmz0ivcnvxcqfiqg8xrav7fd3k47pkxd7mn5nk8ssz4h6",
-      "url": "https://github.com/nextcloud/workflow_pdf_converter/releases/download/v1.5.0/workflow_pdf_converter.tar.gz",
-      "version": "1.5.0"
+      "sha256": "0djqz9bzwsrj2rf4bz1r1aycwjvcr033790kyz318i643gy09js5",
+      "url": "https://github.com/nextcloud/workflow_pdf_converter/releases/download/v1.5.1/workflow_pdf_converter.tar.gz",
+      "version": "1.5.1"
     },
     "workflow_script": {
       "meta": {

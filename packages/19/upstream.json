@@ -2249,9 +2249,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0qwm0yg5w0d4h5a6jvwrjrr0595jkccq80p9n5n35jxjafv2bzzf",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.11/richdocuments.tar.gz",
-      "version": "3.7.11"
+      "sha256": "1aisg0b6xd08ib9jim9wg8fa89c5xaxqxf9nllhcywkx2s3lr6n9",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.13/richdocuments.tar.gz",
+      "version": "3.7.13"
     },
     "richdocumentscode": {
       "meta": {
@@ -2294,9 +2294,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "14f5p4kgb8rl92i0xyjxihgcifpccbbdrb533dqx2lb57i3k13ik",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.6.19/riotchat.tar.gz",
-      "version": "0.6.19"
+      "sha256": "1f43yhbdww31pyllp0436xbnk9aa9jzillmwnlf56qjf6zx4n83q",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.0/riotchat.tar.gz",
+      "version": "0.7.0"
     },
     "scanner": {
       "meta": {
@@ -2323,9 +2323,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "1a64ifmi082hqlpml9gmybdnl9zryy2nwkwbcqmbm0g8b50hd2al",
-      "url": "https://github.com/SecSign/SecSign-ID-Nextcloud-Plugin/blob/master/build/artifacts/appstore/secsignid.tar.gz?raw=true",
-      "version": "0.3.2"
+      "sha256": "1c8ah318irj8gz1ak6pbfc6vpj8jvdqvzhyif1pzr542cpi32ahd",
+      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.3.tar.gz",
+      "version": "0.3.3"
     },
     "sendent": {
       "meta": {
@@ -2796,9 +2796,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1sdj0mii5vpmz2pr91xd4md24w6svk08a6rmg0az7n0kp5lnhi46",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.50.tar.gz",
-      "version": "0.0.50"
+      "sha256": "0lhwv7qbxd8d4akjr9m9irysn3sqn99a33v100kpqjahc9g92llj",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.52.tar.gz",
+      "version": "0.0.52"
     },
     "transmission": {
       "meta": {
@@ -3014,9 +3014,9 @@
         "name": "User support for ISPConfig mail accounts",
         "summary": "Allow users logging in using their mailbox credentials as managed via ISPConfig"
       },
-      "sha256": "0c0d4frjbx09a50lwrnq227j23ap5xwwq720c9mqp3ds4dj9hvva",
-      "url": "https://spicyhub.de/spicy-web/nextcloud-user-ispconfig/uploads/833511068b339a0a5450959024ae71d7/user-ispconfig-0.4.7.tar.gz",
-      "version": "0.4.7"
+      "sha256": "1pqrm5c6kjrrh6x9hy9sg1s1lx244la6dbvyancwmkn2fypsmf0g",
+      "url": "https://github.com/SpicyWeb-de/nextcloud-user-ispconfig/releases/download/v0.4.8/user-ispconfig-0.4.8.tar.gz",
+      "version": "0.4.8"
     },
     "user_ldap": {
       "meta": {
@@ -3248,9 +3248,9 @@
         "name": "Automated PDF conversion",
         "summary": "Rule based conversion of Documents into the PDF format"
       },
-      "sha256": "0pwl6b8wrh5xsl8a2ws1ya2373fnh94zb41b0198hvwcqhgpgdzz",
-      "url": "https://github.com/nextcloud/workflow_pdf_converter/releases/download/v1.4.0/workflow_pdf_converter.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0fg60phfcpgsfjcyam23590svhw8cwdb3120l36qmcryp1hcbvx4",
+      "url": "https://github.com/nextcloud/workflow_pdf_converter/releases/download/v1.4.1/workflow_pdf_converter.tar.gz",
+      "version": "1.4.1"
     },
     "workflow_script": {
       "meta": {
