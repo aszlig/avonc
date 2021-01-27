@@ -3336,8 +3336,8 @@
     "ocsms": ">1.10.1"
   },
   "nextcloud": {
-    "sha256": "0d32fxlm6ambnwaq8p1zjxhplx5v3lnvlg7qzfpmvfi2bv56kmbd",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-18.0.13.tar.bz2",
-    "version": "18.0.13.1"
+    "sha256": "0smy7kfalvihd4s72mrk0zi0y9zdzridv12pa87jay0g39r5pcgj",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-18.0.14.tar.bz2",
+    "version": "18.0.14.1"
   }
 }
