@@ -775,9 +775,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud"
       },
-      "sha256": "0wg2b18l42vfwlg65dvw0djcmkq9lij8kf3jfpapgnfw8gkabwjl",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.1/files_antivirus.tar.gz",
-      "version": "3.1.1"
+      "sha256": "0zs9g3zjpxq08cnz2mmxjjql8rf11irqwhxfainkcjjyc0dkyq94",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.2/files_antivirus.tar.gz",
+      "version": "3.1.2"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1302,7 +1302,7 @@
     },
     "health": {
       "meta": {
-        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling (only basic for now)\n- Measurement (only basic for now)\n- Sleep (only basic for now)\n\nMore modules are scheduled\n- Breaks\n- Medicine\n- Activities\n- Nutrition\n\nHealth is everything.",
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n\n=&gt; This update will not migrate data from the modules except weight due to big database changes!\n=&gt; Sorry for that, but it is still beta software. But this should be the last change this way.\n\nHealth is everything.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1310,9 +1310,9 @@
         "name": "Health",
         "summary": "[beta] Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "1qblfl44f579lpgwsx97y71g49pjz4ll9kc63hfxrid70g9jhn34",
-      "url": "https://datenangebot.de/s/j4CsFfRrZi4d9dc/download",
-      "version": "0.2.2"
+      "sha256": "001bhavlpd9cy31rgg347z24dhyzyscj4rwb803mx5synhnq02hs",
+      "url": "https://datenangebot.de/s/ysHpgksqJNS7wLd/download",
+      "version": "0.3.0"
     },
     "hidesidebars": {
       "meta": {
@@ -1624,6 +1624,21 @@
       "sha256": "0sqch4fvlvzx057l2mrmalcakfv6gjqfrzkn9sdnkn5l42l28pjw",
       "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.2.0/ldap_write_support.tar.gz",
       "version": "1.2.0"
+    },
+    "limit_login_to_ip": {
+      "meta": {
+        "description": "This app allows administrators to restrict login to their\nNextcloud server to specific IP ranges. Note that existing sessions will be kept\nopen.\n\nThe allowed IP ranges can be administrated using the OCC command line interface\nor graphically using the admin settings. If you plan to use the OCC tool, the\nfollowing commands would be applicable.\n\nTo whitelist `127.0.0.0/24`:\n\n- `occ config:app:set limit_login_to_ip whitelisted.ranges --value 127.0.0.0/24`\n\nTo whitelist `127.0.0.0/24` and also `192.168.0.0/24`:\n\n- `occ config:app:set limit_login_to_ip whitelisted.ranges --value 127.0.0.0/24,192.168.0.0/24`",
+        "homepage": "https://github.com/nextcloud/limit_login_to_ip",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Restrict login to IP addresses",
+        "summary": "Allows administrators to restrict logins to their instance to specific IP ranges."
+      },
+      "sha256": "11bisnavlr7r90vj9aqrk8fj8wilrkfvy4j1vsp3hhsbr782pvix",
+      "url": "https://github.com/nextcloud/limit_login_to_ip/releases/download/v3.1.0/limit_login_to_ip.tar.gz",
+      "version": "3.1.0"
     },
     "loganalyzer": {
       "meta": {
@@ -2155,6 +2170,20 @@
         "name": "Privacy",
         "summary": "-"
       }
+    },
+    "privatedata": {
+      "meta": {
+        "description": "This app implements the OCS Private Data API",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Private Data API",
+        "summary": "Private data OCS API"
+      },
+      "sha256": "0qz4vn7n8hb44zn4svr3rxllbshz2qk80n9id8vsa34hlil1p5pm",
+      "url": "https://github.com/nextcloud/privatedata/releases/download/v1.2.0/privatedata.tar.gz",
+      "version": "1.2.0"
     },
     "provisioning_api": {
       "meta": {
@@ -2876,9 +2905,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0lhwv7qbxd8d4akjr9m9irysn3sqn99a33v100kpqjahc9g92llj",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.52.tar.gz",
-      "version": "0.0.52"
+      "sha256": "1id2771mccarlmck2iyv4g5lnsva44jnxnlyi86bxa6nf5ab7svi",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.53.tar.gz",
+      "version": "0.0.53"
     },
     "transmission": {
       "meta": {

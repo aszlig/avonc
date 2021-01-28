@@ -792,9 +792,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud"
       },
-      "sha256": "0wg2b18l42vfwlg65dvw0djcmkq9lij8kf3jfpapgnfw8gkabwjl",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.1/files_antivirus.tar.gz",
-      "version": "3.1.1"
+      "sha256": "0zs9g3zjpxq08cnz2mmxjjql8rf11irqwhxfainkcjjyc0dkyq94",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.2/files_antivirus.tar.gz",
+      "version": "3.1.2"
     },
     "files_automatedtagging": {
       "meta": {
@@ -1535,9 +1535,9 @@
         "name": "Restrict login to IP addresses",
         "summary": "Allows administrators to restrict logins to their instance to specific IP ranges."
       },
-      "sha256": "0mdhdzci5fn1kvrs91khpl16izk18nxysfclm1ln1by877x98bv7",
-      "url": "https://github.com/nextcloud/limit_login_to_ip/releases/download/v3.0.0/limit_login_to_ip-3.0.0.tar.gz",
-      "version": "3.0.0"
+      "sha256": "11bisnavlr7r90vj9aqrk8fj8wilrkfvy4j1vsp3hhsbr782pvix",
+      "url": "https://github.com/nextcloud/limit_login_to_ip/releases/download/v3.1.0/limit_login_to_ip.tar.gz",
+      "version": "3.1.0"
     },
     "loganalyzer": {
       "meta": {
@@ -2110,9 +2110,9 @@
         "name": "Private Data API",
         "summary": "Private data OCS API"
       },
-      "sha256": "1ndyl8bf68czgfki1bh09v3varnnwch7m4mjs9vj0qh3gbmj0q6d",
-      "url": "https://github.com/nextcloud/privatedata/releases/download/v1.1.0/privatedata.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0qz4vn7n8hb44zn4svr3rxllbshz2qk80n9id8vsa34hlil1p5pm",
+      "url": "https://github.com/nextcloud/privatedata/releases/download/v1.2.0/privatedata.tar.gz",
+      "version": "1.2.0"
     },
     "provisioning_api": {
       "meta": {
@@ -2802,9 +2802,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0lhwv7qbxd8d4akjr9m9irysn3sqn99a33v100kpqjahc9g92llj",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.52.tar.gz",
-      "version": "0.0.52"
+      "sha256": "1id2771mccarlmck2iyv4g5lnsva44jnxnlyi86bxa6nf5ab7svi",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.53.tar.gz",
+      "version": "0.0.53"
     },
     "transmission": {
       "meta": {
