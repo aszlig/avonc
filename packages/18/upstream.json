@@ -2299,9 +2299,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1aisg0b6xd08ib9jim9wg8fa89c5xaxqxf9nllhcywkx2s3lr6n9",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.13/richdocuments.tar.gz",
-      "version": "3.7.13"
+      "sha256": "1ymnrwqv6fmsf8ba9iijac95i1lbsyyd1s7nr56g05721n4jplrm",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.14/richdocuments.tar.gz",
+      "version": "3.7.14"
     },
     "riotchat": {
       "meta": {
@@ -2605,9 +2605,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "100y1viw55v8j258nmk3c9n6d3s7p06ms6vvmcnzm200i7hks0ri",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/923488142/artifacts/raw/spgverein.tar.gz",
-      "version": "0.8.0"
+      "sha256": "0rgjdi6920plirbif7vshnyjdkrxcd73irwacxq02ifli9wjkszc",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/d948e311ba5332f4107f48b20e595a65/spgverein.tar.gz",
+      "version": "0.8.1"
     },
     "spreed": {
       "meta": {

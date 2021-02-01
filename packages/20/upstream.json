@@ -80,9 +80,9 @@
         "name": "Announcement center",
         "summary": "This app allows admins to post announcements."
       },
-      "sha256": "0v5b2bqzkam3g6vkxc666is9xrqkbrir1gimcri77wrwkmmhcx9f",
-      "url": "https://github.com/nextcloud/announcementcenter/releases/download/v4.0.0/announcementcenter-4.0.0.tar.gz",
-      "version": "4.0.0"
+      "sha256": "1s6i32clzsybxl5jxjc4wiml9xisjcf69bvzy83m8pj7j3brdx07",
+      "url": "https://github.com/nextcloud/announcementcenter/releases/download/v4.0.1/announcementcenter-4.0.1.tar.gz",
+      "version": "4.0.1"
     },
     "appointments": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "18d458aqdc20xc87dqp0cac4h851p2zfdwkfxijyxbmsvq75cg9z",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.8/cospend-1.2.8.tar.gz",
-      "version": "1.2.8"
+      "sha256": "07bk51d7bzi3m4f2az86y2z334kapsx45icgylvb14zdgkxh1gmz",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.9/cospend-1.2.9.tar.gz",
+      "version": "1.2.9"
     },
     "cpanelmailsync": {
       "meta": {
@@ -1066,6 +1066,21 @@
         "summary": "This application automatically maintains older versions of files that are changed."
       }
     },
+    "files_versions_s3": {
+      "meta": {
+        "description": "Use S3 object versioning for file versioning.\n\n## Warning\n\nThis app does not include any mechanism for expiring old s3 versions,\nyou should setup your own version expiry (also called \"Lifecycle management\" in S3)\nto prevent versions from taking up an ever increasing amount of space.\n\n## Usage\n\n- install the app\n- check if bucket versioning is enabled for your storage using `occ files_versions_s3:status`\n- enable bucket versioning if not yet enabled using `occ files_versions_s3:enable &lt;id&gt;`",
+        "homepage": "https://github.com/icewind1991/files_versions_s3",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "S3 Versioning",
+        "summary": "Use S3 object versioning for file versioning"
+      },
+      "sha256": "1z8kswg10257dkkq4269i81z730abfdxs20qxmxaxdgmvs92hhjb",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.4/files_versions_s3.tar.gz",
+      "version": "0.1.4"
+    },
     "files_videoplayer": {
       "meta": {
         "alwaysEnable": false,
@@ -1621,9 +1636,9 @@
         "name": "Write support for LDAP",
         "summary": "Adds support for creating, manipulating and deleting users and groups on LDAP via Nextcloud"
       },
-      "sha256": "0sqch4fvlvzx057l2mrmalcakfv6gjqfrzkn9sdnkn5l42l28pjw",
-      "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.2.0/ldap_write_support.tar.gz",
-      "version": "1.2.0"
+      "sha256": "0nz6dhy9wn0c6ina2rhwlz23c0g21pbzpjl0jnawbypb2xb2zw0b",
+      "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.2.1/ldap_write_support.tar.gz",
+      "version": "1.2.1"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -2096,9 +2111,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0576k9iq017jkh4gr2jwn8wakfqayqkdyfvy3nbhf0mbjxy40b6r",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.6.3/polls.tar.gz",
-      "version": "1.6.3"
+      "sha256": "0hhjpzzm3xry2fnc83lw38qzqmv3nh22f3y9jcxz9hfp4nb6z1ah",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.7.4/polls.tar.gz",
+      "version": "1.7.4"
     },
     "preferred_providers": {
       "meta": {
@@ -2356,9 +2371,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1aisg0b6xd08ib9jim9wg8fa89c5xaxqxf9nllhcywkx2s3lr6n9",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.13/richdocuments.tar.gz",
-      "version": "3.7.13"
+      "sha256": "1ymnrwqv6fmsf8ba9iijac95i1lbsyyd1s7nr56g05721n4jplrm",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.14/richdocuments.tar.gz",
+      "version": "3.7.14"
     },
     "richdocumentscode": {
       "meta": {
@@ -2693,9 +2708,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "100y1viw55v8j258nmk3c9n6d3s7p06ms6vvmcnzm200i7hks0ri",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/923488142/artifacts/raw/spgverein.tar.gz",
-      "version": "0.8.0"
+      "sha256": "0rgjdi6920plirbif7vshnyjdkrxcd73irwacxq02ifli9wjkszc",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/d948e311ba5332f4107f48b20e595a65/spgverein.tar.gz",
+      "version": "0.8.1"
     },
     "spreed": {
       "meta": {

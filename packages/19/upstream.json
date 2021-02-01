@@ -1107,9 +1107,9 @@
         "name": "S3 Versioning",
         "summary": "Use S3 object versioning for file versioning"
       },
-      "sha256": "136fvmr5bg0bzjpx0pgxx4ywyw4n97msm862kjix3lnaxyh0mc8c",
-      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.3/files_versions_s3.tar.gz",
-      "version": "0.1.3"
+      "sha256": "1z8kswg10257dkkq4269i81z730abfdxs20qxmxaxdgmvs92hhjb",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.4/files_versions_s3.tar.gz",
+      "version": "0.1.4"
     },
     "files_videoplayer": {
       "meta": {
@@ -1990,9 +1990,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "0576k9iq017jkh4gr2jwn8wakfqayqkdyfvy3nbhf0mbjxy40b6r",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.6.3/polls.tar.gz",
-      "version": "1.6.3"
+      "sha256": "0hhjpzzm3xry2fnc83lw38qzqmv3nh22f3y9jcxz9hfp4nb6z1ah",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.7.4/polls.tar.gz",
+      "version": "1.7.4"
     },
     "preferred_providers": {
       "meta": {
@@ -2249,9 +2249,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1aisg0b6xd08ib9jim9wg8fa89c5xaxqxf9nllhcywkx2s3lr6n9",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.13/richdocuments.tar.gz",
-      "version": "3.7.13"
+      "sha256": "1ymnrwqv6fmsf8ba9iijac95i1lbsyyd1s7nr56g05721n4jplrm",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.14/richdocuments.tar.gz",
+      "version": "3.7.14"
     },
     "richdocumentscode": {
       "meta": {
@@ -2585,9 +2585,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "100y1viw55v8j258nmk3c9n6d3s7p06ms6vvmcnzm200i7hks0ri",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/923488142/artifacts/raw/spgverein.tar.gz",
-      "version": "0.8.0"
+      "sha256": "0rgjdi6920plirbif7vshnyjdkrxcd73irwacxq02ifli9wjkszc",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/d948e311ba5332f4107f48b20e595a65/spgverein.tar.gz",
+      "version": "0.8.1"
     },
     "spreed": {
       "meta": {
