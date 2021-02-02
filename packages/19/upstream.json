@@ -506,7 +506,7 @@
     },
     "discoursesso": {
       "meta": {
-        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -514,9 +514,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "1aiajjpaf13yh7fhj33fn2m0fy92rwng17wa1dw315j26mhhsrcb",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.23/discoursesso-0.9.23.tar.gz",
-      "version": "0.9.23"
+      "sha256": "0m6m31jzgrd9ppf517zfmzjfg4imgdxlaqhs8hyb4ycwbjyjlh30",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.0/discoursesso-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "documentserver_community": {
       "meta": {
@@ -2264,9 +2264,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1lcfbrwca65jdxij303vamha69mqp9p88m4z0z56v18ar2cxd2x9",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.303/richdocumentscode.tar.gz",
-      "version": "6.4.303"
+      "sha256": "1b83dnwq1ylfsmfxjnz6047d61ln64d6ahswhgszilwjxhv95kcg",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode.tar.gz",
+      "version": "6.4.403"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2279,9 +2279,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1zvwiwm47rbbm6rnf1m4g2vz59grsg8b2dmx8fn96y08fbbn4f0v",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.303/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.303"
+      "sha256": "0ba6a8im31p4myx0y8kip0v9dwk55b8dksb84ybjinsnlc200pjg",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.403"
     },
     "riotchat": {
       "meta": {
@@ -3042,9 +3042,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "19bxdp08y52frwj7s63gk0ykkaw69vb22cvyc3vkjb6r9q0d7kq2",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.0/user_oidc.tar.gz",
-      "version": "0.3.0"
+      "sha256": "14rx5agdcp41azqfzaar2wkfy4nacvfsnsnpimiayqw3pg96chjs",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.1/user_oidc.tar.gz",
+      "version": "0.3.1"
     },
     "user_pwauth": {
       "meta": {

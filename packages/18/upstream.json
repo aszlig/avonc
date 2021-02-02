@@ -523,7 +523,7 @@
     },
     "discoursesso": {
       "meta": {
-        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.\n\nDiscourse can then be used as an external app inside Nextcloud.",
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -531,9 +531,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "1aiajjpaf13yh7fhj33fn2m0fy92rwng17wa1dw315j26mhhsrcb",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v0.9.23/discoursesso-0.9.23.tar.gz",
-      "version": "0.9.23"
+      "sha256": "0m6m31jzgrd9ppf517zfmzjfg4imgdxlaqhs8hyb4ycwbjyjlh30",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.0/discoursesso-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "documentserver_community": {
       "meta": {
@@ -1389,9 +1389,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "1jx8a01cmg7z8zgkdmjm1zl1lxkhk7a57iiraqbg992xlamfrvfh",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.5.0/guests.tar.gz",
-      "version": "1.5.0"
+      "sha256": "1a98s2nsj01zfbk7wkrymxn27ff0k2g5l1kqgdzfpd1z6xk30jab",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.5.1/guests.tar.gz",
+      "version": "1.5.1"
     },
     "health": {
       "meta": {
@@ -3048,9 +3048,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "19bxdp08y52frwj7s63gk0ykkaw69vb22cvyc3vkjb6r9q0d7kq2",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.0/user_oidc.tar.gz",
-      "version": "0.3.0"
+      "sha256": "14rx5agdcp41azqfzaar2wkfy4nacvfsnsnpimiayqw3pg96chjs",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.1/user_oidc.tar.gz",
+      "version": "0.3.1"
     },
     "user_pwauth": {
       "meta": {

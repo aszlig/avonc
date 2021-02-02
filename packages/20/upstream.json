@@ -518,6 +518,20 @@
       "url": "https://github.com/nextcloud/deck/releases/download/v1.2.3/deck.tar.gz",
       "version": "1.2.3"
     },
+    "discoursesso": {
+      "meta": {
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Discourse SSO",
+        "summary": "Enable Discourse to authenticate via Nextcloud"
+      },
+      "sha256": "0m6m31jzgrd9ppf517zfmzjfg4imgdxlaqhs8hyb4ycwbjyjlh30",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.0/discoursesso-1.0.0.tar.gz",
+      "version": "1.0.0"
+    },
     "documentserver_community": {
       "meta": {
         "description": "Document server for OnlyOffice, community edition.\n\nThe community document server is designed to make it easy to get OnlyOffice running in a Nextcloud instance without the need to setup an external document server,\nthe community document server does not support all features of the official OnlyOffice document server and does not provide the same performance and scalability.\n\nIf you are setting up a larger instance or require the additional performance, please see https://onlyoffice.com for options for getting the official document server.\n\nThe community document server will automatically be configured if no other document server is configured for OnlyOffice.\n\nAdditionally, the community document server only supports running on x86-64 Linux servers.",
@@ -1781,9 +1795,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0d4pfxa6050qzb9qbknf47hg18kvq31vif4cb0qpmicfl8dx612h",
-      "url": "https://github.com/nextcloud/news/releases/download/15.1.1/news.tar.gz",
-      "version": "15.1.1"
+      "sha256": "03p82icbahi2b845n6imnhp69c29val19k6jxn4h1fr6p89jw3z3",
+      "url": "https://github.com/nextcloud/news/releases/download/15.2.0/news.tar.gz",
+      "version": "15.2.0"
     },
     "nextbackup": {
       "meta": {
@@ -2386,9 +2400,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1lcfbrwca65jdxij303vamha69mqp9p88m4z0z56v18ar2cxd2x9",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.303/richdocumentscode.tar.gz",
-      "version": "6.4.303"
+      "sha256": "1b83dnwq1ylfsmfxjnz6047d61ln64d6ahswhgszilwjxhv95kcg",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode.tar.gz",
+      "version": "6.4.403"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2401,9 +2415,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1zvwiwm47rbbm6rnf1m4g2vz59grsg8b2dmx8fn96y08fbbn4f0v",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.303/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.303"
+      "sha256": "0ba6a8im31p4myx0y8kip0v9dwk55b8dksb84ybjinsnlc200pjg",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.403"
     },
     "riotchat": {
       "meta": {
@@ -3166,9 +3180,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "19bxdp08y52frwj7s63gk0ykkaw69vb22cvyc3vkjb6r9q0d7kq2",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.0/user_oidc.tar.gz",
-      "version": "0.3.0"
+      "sha256": "14rx5agdcp41azqfzaar2wkfy4nacvfsnsnpimiayqw3pg96chjs",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.1/user_oidc.tar.gz",
+      "version": "0.3.1"
     },
     "user_pwauth": {
       "meta": {
