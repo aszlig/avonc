@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1z8n1gjnw14zhi4xnv16abs6k7jzhr55msax4cc5r9w8ysrhfmb9",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/da208c082672ef0da34848cf60dfe6fe40ff65e3/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.7.15"
+      "sha256": "0i5mcmgl4j183bfgsc94lyhy9myz9rryp5ddqpn2prlhawjxxdnc",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/492f543ce42099288b6803a14df2aa1e86b9541a/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.1"
     },
     "apporder": {
       "meta": {
@@ -189,7 +189,7 @@
     },
     "bbb": {
       "meta": {
-        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message ...\n* **Share guest link** Share the room link with all your guests\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n* **Activities** Get an overview of your room activities\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
+        "description": "This app allows to create meetings with an external installation of [BigBlueButton](https://bigbluebutton.org).\n\n* **Room setup** Create multiple room configurations with name, welcome message ...\n* **Share guest link** Share the room link with all your guests\n* **Share moderator link** Invite moderators to the room\n* **Share rooms** Share rooms with members, groups or circles\n* **Custom presentation** Start a room with a selected presentation from your file browser\n* **Manage recordings** View, share and delete recordings for your rooms\n* **Restrictions** Restrict room creation to certain groups\n* **Activities** Get an overview of your room activities\n\nQuick start guide and further information in our [readme](https://github.com/sualko/cloud_bbb).\nDo you like this application? Give something back to the open source community and checkout our\n[ways to contribute](https://github.com/sualko/cloud_bbb/blob/master/.github/contributing.md).\n\nDeveloper wanted! If you have time it would be awesome if you could help to enhance this application.\n\n*This app integrates BigBlueButton and is not endorsed or certified by BigBlueButton Inc. BigBlueButton and the BigBlueButton Logo are trademarks of BigBlueButton Inc.*",
         "homepage": "https://github.com/sualko/cloud_bbb/",
         "isShipped": false,
         "licenses": [
@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "15v7rd2nfj2rm66zfxqiiay3sqgsn710ahgichdc3jyyvhxn1swz",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.1.4/bbb-v1.1.4.tar.gz",
-      "version": "1.1.4"
+      "sha256": "027cl83zqqwx4wq88l5kxss98r3nnjl22nwj66vvxsj61j4d2jrz",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.2.0/bbb-v1.2.0.tar.gz",
+      "version": "1.2.0"
     },
     "bookmarks": {
       "meta": {
@@ -3048,9 +3048,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "0l9pjai69w5fjigcy2h7d2hqwsgwmz2h5mpjzw607ffaf8rb1vq1",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.2.1/user_oidc.tar.gz",
-      "version": "0.2.1"
+      "sha256": "19bxdp08y52frwj7s63gk0ykkaw69vb22cvyc3vkjb6r9q0d7kq2",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.0/user_oidc.tar.gz",
+      "version": "0.3.0"
     },
     "user_pwauth": {
       "meta": {

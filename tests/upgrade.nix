@@ -79,7 +79,7 @@ import ./make-test.nix (pkgs: {
         "richdocumentscode_arm64"
 
         # https://github.com/nextcloud/user_oidc/issues/90
-        (assert nc19apps.user_oidc.version == "0.2.1"; "user_oidc")
+        (assert nc19apps.user_oidc.version == "0.3.0"; "user_oidc")
 
         # These apps have non-deterministic download URLs
         "occweb"
