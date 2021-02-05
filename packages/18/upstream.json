@@ -502,9 +502,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1fww9zjx2rfh7x7zznnzqvvxjkixri5455dz526ay09m622n4ijc",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.3/deck.tar.gz",
-      "version": "1.2.3"
+      "sha256": "0m4kl6cb6sd5744vrwfn3sdmppbd3979543yhq4fx6mnaxhbdays",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.4/deck.tar.gz",
+      "version": "1.2.4"
     },
     "dicomviewer": {
       "meta": {
@@ -2485,9 +2485,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1rf9dwxbzl15iw03s0gw9nr5w3i6xmgs3xkaz5x9m2bkzlanibg9",
-      "url": "https://gitnet.fr/attachments/a3ce9514-8a7c-4447-a160-a98da8c91cf9",
-      "version": "1.21.0"
+      "sha256": "03hci6jdjxcsdsv4132bac8awn2nvmh5cw3pn59f9gc1jlh6s68f",
+      "url": "https://gitnet.fr/attachments/ceb0c261-8d7b-41b3-90d2-31a21c731072",
+      "version": "1.22.0"
     },
     "smb_test": {
       "meta": {

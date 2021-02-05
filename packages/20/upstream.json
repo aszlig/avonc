@@ -514,9 +514,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1fww9zjx2rfh7x7zznnzqvvxjkixri5455dz526ay09m622n4ijc",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.3/deck.tar.gz",
-      "version": "1.2.3"
+      "sha256": "0m4kl6cb6sd5744vrwfn3sdmppbd3979543yhq4fx6mnaxhbdays",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.4/deck.tar.gz",
+      "version": "1.2.4"
     },
     "discoursesso": {
       "meta": {
@@ -1735,9 +1735,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1zc9ny4sigpg93b7sjrzs72zsh63ggdxx66bmphw8p5jidsk2kd6",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.8.0/mail.tar.gz",
-      "version": "1.8.0"
+      "sha256": "19s5gk6v40mfajv43qcxzx998an5a1ng2knvp52qh7n1l0v2ny2x",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.8.1/mail.tar.gz",
+      "version": "1.8.1"
     },
     "maps": {
       "meta": {
@@ -1795,9 +1795,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "03p82icbahi2b845n6imnhp69c29val19k6jxn4h1fr6p89jw3z3",
-      "url": "https://github.com/nextcloud/news/releases/download/15.2.0/news.tar.gz",
-      "version": "15.2.0"
+      "sha256": "02yr1h1j0zam06armnad1y4q52swybi7i75vpwlr0b3r24jyqf42",
+      "url": "https://github.com/nextcloud/news/releases/download/15.2.2/news.tar.gz",
+      "version": "15.2.2"
     },
     "nextbackup": {
       "meta": {
@@ -2602,9 +2602,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1rf9dwxbzl15iw03s0gw9nr5w3i6xmgs3xkaz5x9m2bkzlanibg9",
-      "url": "https://gitnet.fr/attachments/a3ce9514-8a7c-4447-a160-a98da8c91cf9",
-      "version": "1.21.0"
+      "sha256": "03hci6jdjxcsdsv4132bac8awn2nvmh5cw3pn59f9gc1jlh6s68f",
+      "url": "https://gitnet.fr/attachments/ceb0c261-8d7b-41b3-90d2-31a21c731072",
+      "version": "1.22.0"
     },
     "smb_test": {
       "meta": {
@@ -3224,9 +3224,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1x0cfqjw56c6xly3zadxb1y146lkfciicwimkqiqy8adlhkl1z2w",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.3/user_saml-3.3.3.tar.gz",
-      "version": "3.3.3"
+      "sha256": "0js02qs9sq3j4940i5ihn3zafzb91qjyc7nya51zmh52xf695ja6",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.4/user_saml-3.3.4.tar.gz",
+      "version": "3.3.4"
     },
     "user_sql": {
       "meta": {
