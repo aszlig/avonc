@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0i5faf6alxzba56zxcymazlihf4x1w05c9awgfjah3ja7h75gnvl",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.3/breezedark.tar.gz",
-      "version": "20.0.3"
+      "sha256": "13rybnv05073bixmcvrb7q1r969kfiz2s1xv8gazzlh3mlk4s0g5",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.4/breezedark.tar.gz",
+      "version": "20.0.4"
     },
     "bruteforcesettings": {
       "meta": {
@@ -1780,9 +1780,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0n9h2qnn35zg9ywlbgqc5a3yf71hxkh8h2y4mfl9mwp883p2vx77",
-      "url": "https://github.com/owncloud/music/releases/download/v0.17.3/music_0.17.3_nc-signed.tar.gz",
-      "version": "0.17.3"
+      "sha256": "0ca02yhpnvday64ra4igjw8c1dkppkcxilbyy92p10iaihxvpcbd",
+      "url": "https://github.com/owncloud/music/releases/download/v1.0.0/music_1.0.0_nc-signed.tar.gz",
+      "version": "1.0.0"
     },
     "news": {
       "meta": {
@@ -1795,9 +1795,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "02yr1h1j0zam06armnad1y4q52swybi7i75vpwlr0b3r24jyqf42",
-      "url": "https://github.com/nextcloud/news/releases/download/15.2.2/news.tar.gz",
-      "version": "15.2.2"
+      "sha256": "045khbw2g5i57ym5rfisjk5r547l02ymz7jq9nl64b7lx7s5b22k",
+      "url": "https://github.com/nextcloud/news/releases/download/15.3.1/news.tar.gz",
+      "version": "15.3.1"
     },
     "nextbackup": {
       "meta": {
@@ -2430,9 +2430,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1f43yhbdww31pyllp0436xbnk9aa9jzillmwnlf56qjf6zx4n83q",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.0/riotchat.tar.gz",
-      "version": "0.7.0"
+      "sha256": "0yigl022z18vmm5g2ap5il0is3xz1cbz1r4vpsqd9z9k05vm0g1z",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.1/riotchat.tar.gz",
+      "version": "0.7.1"
     },
     "scanner": {
       "meta": {
@@ -2602,9 +2602,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "03hci6jdjxcsdsv4132bac8awn2nvmh5cw3pn59f9gc1jlh6s68f",
-      "url": "https://gitnet.fr/attachments/ceb0c261-8d7b-41b3-90d2-31a21c731072",
-      "version": "1.22.0"
+      "sha256": "14cdwjvbgp79d5qdzli3daj0zw43435ys5681yqwmc2q7clh3fsp",
+      "url": "https://gitnet.fr/attachments/1da5e9c4-ffb9-43f9-89e7-94884f0bf152",
+      "version": "1.22.1"
     },
     "smb_test": {
       "meta": {
@@ -2820,9 +2820,9 @@
         "name": "Talk Matterbridge",
         "summary": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services."
       },
-      "sha256": "1asajqfc4dn810i0ypr6dks4m063y4n5l1hypc6079q6zbl638sl",
-      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.21.0/talk_matterbridge.tar.gz",
-      "version": "1.21.0"
+      "sha256": "1snl51n816gbk7ghzsr70ninw3dq1i7g7ri764l51wi4q8jbvgvz",
+      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.0/talk_matterbridge.tar.gz",
+      "version": "1.22.0"
     },
     "talk_simple_poll": {
       "meta": {

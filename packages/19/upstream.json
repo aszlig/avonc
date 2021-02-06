@@ -219,7 +219,7 @@
     },
     "breezedark": {
       "meta": {
-        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\nThe global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find there global option here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\n#### Personal\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n#### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0nssw2zg96s8jav6hbnp7w6v2b4n7xs9n5s6hn4fxs13z7zvl2ba",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.9/breezedark.tar.gz",
-      "version": "19.0.9"
+      "sha256": "0s856y7fssk2p0lr8jdiyx5mraz5k801fdm7vpbn77pqxhz2mimj",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v19.0.10/breezedark.tar.gz",
+      "version": "19.0.10"
     },
     "browser_warning": {
       "meta": {
@@ -1631,9 +1631,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0n9h2qnn35zg9ywlbgqc5a3yf71hxkh8h2y4mfl9mwp883p2vx77",
-      "url": "https://github.com/owncloud/music/releases/download/v0.17.3/music_0.17.3_nc-signed.tar.gz",
-      "version": "0.17.3"
+      "sha256": "0ca02yhpnvday64ra4igjw8c1dkppkcxilbyy92p10iaihxvpcbd",
+      "url": "https://github.com/owncloud/music/releases/download/v1.0.0/music_1.0.0_nc-signed.tar.gz",
+      "version": "1.0.0"
     },
     "news": {
       "meta": {
@@ -2294,9 +2294,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1f43yhbdww31pyllp0436xbnk9aa9jzillmwnlf56qjf6zx4n83q",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.0/riotchat.tar.gz",
-      "version": "0.7.0"
+      "sha256": "0yigl022z18vmm5g2ap5il0is3xz1cbz1r4vpsqd9z9k05vm0g1z",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.1/riotchat.tar.gz",
+      "version": "0.7.1"
     },
     "scanner": {
       "meta": {
@@ -2465,9 +2465,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "03hci6jdjxcsdsv4132bac8awn2nvmh5cw3pn59f9gc1jlh6s68f",
-      "url": "https://gitnet.fr/attachments/ceb0c261-8d7b-41b3-90d2-31a21c731072",
-      "version": "1.22.0"
+      "sha256": "14cdwjvbgp79d5qdzli3daj0zw43435ys5681yqwmc2q7clh3fsp",
+      "url": "https://gitnet.fr/attachments/1da5e9c4-ffb9-43f9-89e7-94884f0bf152",
+      "version": "1.22.1"
     },
     "smb_test": {
       "meta": {
