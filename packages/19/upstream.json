@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0i5mcmgl4j183bfgsc94lyhy9myz9rryp5ddqpn2prlhawjxxdnc",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/492f543ce42099288b6803a14df2aa1e86b9541a/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.1"
+      "sha256": "1yd3rr5p492ylx0kpm8i3w7s1k8m72nikpicngg8gi5y2kjlh3ls",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/20c7a4433d02d89af5702adada6213ec7ae9de03/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.2"
     },
     "apporder": {
       "meta": {
@@ -2264,9 +2264,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1b83dnwq1ylfsmfxjnz6047d61ln64d6ahswhgszilwjxhv95kcg",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode.tar.gz",
-      "version": "6.4.403"
+      "sha256": "0fz8hdp1ghfbvs7s3d8calgm2bci2i3n49mam5ahdgj30j8jjmrp",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.503/richdocumentscode.tar.gz",
+      "version": "6.4.503"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2279,9 +2279,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0ba6a8im31p4myx0y8kip0v9dwk55b8dksb84ybjinsnlc200pjg",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.403"
+      "sha256": "0hbj8vbs57ddkzqd2mbm6lr36j4jvp3c0imck3gi28gh7z9013wd",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.503/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.503"
     },
     "riotchat": {
       "meta": {
@@ -2465,9 +2465,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "14cdwjvbgp79d5qdzli3daj0zw43435ys5681yqwmc2q7clh3fsp",
-      "url": "https://gitnet.fr/attachments/1da5e9c4-ffb9-43f9-89e7-94884f0bf152",
-      "version": "1.22.1"
+      "sha256": "1hjf1jqpsj8351h4cca7xxcrx6g9c5vchidaw6f051944j4mgjd8",
+      "url": "https://gitnet.fr/attachments/95ef123e-b040-401a-afbf-e6dc6a84630b",
+      "version": "1.22.2"
     },
     "smb_test": {
       "meta": {
@@ -2984,9 +2984,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1g2axnsfaarmrzynlg832q65qyjlhrnbv28k720n63krsj1433lj",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.7/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.7"
+      "sha256": "1avnr925g201nvbqq06vwz7wbbqnnpgm082yk86vjzgi74myz2qr",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.9.0/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.9.0"
     },
     "user_external": {
       "meta": {

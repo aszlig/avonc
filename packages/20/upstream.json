@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0i5mcmgl4j183bfgsc94lyhy9myz9rryp5ddqpn2prlhawjxxdnc",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/492f543ce42099288b6803a14df2aa1e86b9541a/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.1"
+      "sha256": "1yd3rr5p492ylx0kpm8i3w7s1k8m72nikpicngg8gi5y2kjlh3ls",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/20c7a4433d02d89af5702adada6213ec7ae9de03/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.2"
     },
     "apporder": {
       "meta": {
@@ -1251,9 +1251,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "11kldpzii3hzg7h2g7f5qbfw64a83z3k6fqwcx40mdgcpw5mzvwd",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d226043695efb4221732e2a5c0a7e690/gpxpod-4.2.4.tar.gz",
-      "version": "4.2.4"
+      "sha256": "00c6726drchglpdcpvk3vn4dx5xh0yzlxwfzp344vdmq18ydh2bm",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d83eb58e98017f24a859e7ab2c268de9/gpxpod-4.2.6.tar.gz",
+      "version": "4.2.6"
     },
     "grauphel": {
       "meta": {
@@ -1443,9 +1443,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "1pri2c63chkd6jr19snkzd3kph0kjznqa6rncfcrl1r54xgzpxc3",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.17/integration_github-0.0.17.tar.gz",
-      "version": "0.0.17"
+      "sha256": "1j073sa56mhjzz5cc4mgancwa9r19mg8i1qf4bx4wbah0f2rlgbb",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.18/integration_github-0.0.18.tar.gz",
+      "version": "0.0.18"
     },
     "integration_gitlab": {
       "meta": {
@@ -1458,9 +1458,9 @@
         "name": "GitLab integration",
         "summary": "Integration of GitLab software development management service"
       },
-      "sha256": "1805zsniszzdps61y19xgqf6gh410zvzahq50asdlkhjhvmhh2l1",
-      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.10/integration_gitlab-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "1zka14p4skpkpsyly30snjyv9qw1xg6x6jcz19nrbcdzf6w4xfpn",
+      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.13/integration_gitlab-0.0.13.tar.gz",
+      "version": "0.0.13"
     },
     "integration_google": {
       "meta": {
@@ -2023,9 +2023,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "02a3yfkzibx8nyp1b0wkk8qsflsk14nfazlnkxfb8fjgyvkyx359",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11292/artifacts/raw/passwords.tar.gz",
-      "version": "2021.1.2"
+      "sha256": "1rw07ajkxm0a3jl70xy9n1s41gz5k8vvhb8zrz7mij1ynmdk9dyl",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11555/artifacts/raw/passwords.tar.gz",
+      "version": "2021.1.3"
     },
     "pdfdraw": {
       "meta": {
@@ -2067,9 +2067,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phone's positions in real time"
       },
-      "sha256": "1p2wyv1h6l1x1llqqx68xl8b27jzbwvm8kg3pldvdpb5v455hpal",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/4ef4dfab686d1b887959536fe672eda1/phonetrack-0.6.5.tar.gz",
-      "version": "0.6.5"
+      "sha256": "1mca149d1ds0q4hrnvhqspdlzx6dkdkhpz42vrq16cyda3kbz2mf",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/da68b346634ec972a5ef693c0190035f/phonetrack-0.6.7.tar.gz",
+      "version": "0.6.7"
     },
     "photos": {
       "meta": {
@@ -2400,9 +2400,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1b83dnwq1ylfsmfxjnz6047d61ln64d6ahswhgszilwjxhv95kcg",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode.tar.gz",
-      "version": "6.4.403"
+      "sha256": "0fz8hdp1ghfbvs7s3d8calgm2bci2i3n49mam5ahdgj30j8jjmrp",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.503/richdocumentscode.tar.gz",
+      "version": "6.4.503"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2415,9 +2415,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0ba6a8im31p4myx0y8kip0v9dwk55b8dksb84ybjinsnlc200pjg",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.403/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.403"
+      "sha256": "0hbj8vbs57ddkzqd2mbm6lr36j4jvp3c0imck3gi28gh7z9013wd",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.503/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.503"
     },
     "riotchat": {
       "meta": {
@@ -2602,9 +2602,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "14cdwjvbgp79d5qdzli3daj0zw43435ys5681yqwmc2q7clh3fsp",
-      "url": "https://gitnet.fr/attachments/1da5e9c4-ffb9-43f9-89e7-94884f0bf152",
-      "version": "1.22.1"
+      "sha256": "1hjf1jqpsj8351h4cca7xxcrx6g9c5vchidaw6f051944j4mgjd8",
+      "url": "https://gitnet.fr/attachments/95ef123e-b040-401a-afbf-e6dc6a84630b",
+      "version": "1.22.2"
     },
     "smb_test": {
       "meta": {
@@ -3122,9 +3122,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1g2axnsfaarmrzynlg832q65qyjlhrnbv28k720n63krsj1433lj",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.7/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.7"
+      "sha256": "1avnr925g201nvbqq06vwz7wbbqnnpgm082yk86vjzgi74myz2qr",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.9.0/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.9.0"
     },
     "user_external": {
       "meta": {

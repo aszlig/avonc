@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0i5mcmgl4j183bfgsc94lyhy9myz9rryp5ddqpn2prlhawjxxdnc",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/492f543ce42099288b6803a14df2aa1e86b9541a/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.1"
+      "sha256": "1yd3rr5p492ylx0kpm8i3w7s1k8m72nikpicngg8gi5y2kjlh3ls",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/20c7a4433d02d89af5702adada6213ec7ae9de03/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.2"
     },
     "apporder": {
       "meta": {
@@ -2485,9 +2485,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "14cdwjvbgp79d5qdzli3daj0zw43435ys5681yqwmc2q7clh3fsp",
-      "url": "https://gitnet.fr/attachments/1da5e9c4-ffb9-43f9-89e7-94884f0bf152",
-      "version": "1.22.1"
+      "sha256": "1hjf1jqpsj8351h4cca7xxcrx6g9c5vchidaw6f051944j4mgjd8",
+      "url": "https://gitnet.fr/attachments/95ef123e-b040-401a-afbf-e6dc6a84630b",
+      "version": "1.22.2"
     },
     "smb_test": {
       "meta": {
@@ -2990,9 +2990,9 @@
         "name": "CAS user and group backend",
         "summary": "Authenticate users against an jasig/apereo CAS Server (https://github.com/apereo/cas)"
       },
-      "sha256": "1g2axnsfaarmrzynlg832q65qyjlhrnbv28k720n63krsj1433lj",
-      "url": "https://github.com/felixrupp/user_cas/releases/download/1.8.7/user_cas-nextcloud-with-phpcas.tar.gz",
-      "version": "1.8.7"
+      "sha256": "1avnr925g201nvbqq06vwz7wbbqnnpgm082yk86vjzgi74myz2qr",
+      "url": "https://github.com/felixrupp/user_cas/releases/download/1.9.0/user_cas-nextcloud-with-phpcas.tar.gz",
+      "version": "1.9.0"
     },
     "user_external": {
       "meta": {
