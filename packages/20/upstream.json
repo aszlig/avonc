@@ -1795,9 +1795,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "045khbw2g5i57ym5rfisjk5r547l02ymz7jq9nl64b7lx7s5b22k",
-      "url": "https://github.com/nextcloud/news/releases/download/15.3.1/news.tar.gz",
-      "version": "15.3.1"
+      "sha256": "0y9rm1k0861vbqk82pvx0z2mlj1hhi1ihin3j3w6h07kmk7xgc92",
+      "url": "https://github.com/nextcloud/news/releases/download/15.3.2/news.tar.gz",
+      "version": "15.3.2"
     },
     "nextbackup": {
       "meta": {
@@ -2911,7 +2911,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics**.",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://github.com/joleaf)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -2920,9 +2920,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0d624ipvjqbc4vd3j5ljyrywv6rfchljxjhp25sr2f2k47wm8brq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.6/timemanager.tar.gz",
-      "version": "0.1.6"
+      "sha256": "01qizb8f0m7igz3mw2hcn337mn3z3cbwmncsgrwsk97248jnbbdc",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.7/timemanager.tar.gz",
+      "version": "0.1.7"
     },
     "timetracker": {
       "meta": {
