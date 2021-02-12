@@ -1207,9 +1207,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0cfhsxslg9yixd4pa02skky8qm46dm6lsh0xk08c6xwxs7spqx4j",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.5/geoblocker.tar.gz",
-      "version": "0.4.5"
+      "sha256": "1nk2c7hrpi5cf9zgbd5ca1f25drwsl3g4r49kk1gyb98gw9qdzsc",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.6/geoblocker.tar.gz",
+      "version": "0.4.6"
     },
     "gpgmailer": {
       "meta": {
@@ -1413,9 +1413,9 @@
         "name": "Discourse integration",
         "summary": "Integration of Discourse forum and mailing list management system"
       },
-      "sha256": "0j1irl9fxbir32a1pl2frnc74a10s266bpig096ll97as90swi7j",
-      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.7/integration_discourse-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "1xz6f6dfz3sd3jniwi9xavhr4765a1drf8cjyc7lgh50vflhncj4",
+      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.8/integration_discourse-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "integration_dropbox": {
       "meta": {
@@ -1428,9 +1428,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "0a70ldvmvz4v2sm0mgpnwzrxq9g5hh1pgzvvzjs52szwv716dwkd",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.17/integration_dropbox-0.0.17.tar.gz",
-      "version": "0.0.17"
+      "sha256": "01sb10571161680i53pxirdnplysfavbmr2xk9l6fh1c7f802hy0",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.18/integration_dropbox-0.0.18.tar.gz",
+      "version": "0.0.18"
     },
     "integration_github": {
       "meta": {
@@ -1473,9 +1473,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "17gdwil8s58xjyza64zj9w5xcdp63w7gkrg6hnnv7gcchk4a7dn4",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.7/integration_google-0.1.7.tar.gz",
-      "version": "0.1.7"
+      "sha256": "1r8mf4c118fii62hjfhpghkiw31jb8wf9rgwpxgivmgqqs814dfk",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.9/integration_google-0.1.9.tar.gz",
+      "version": "0.1.9"
     },
     "integration_jira": {
       "meta": {
@@ -1488,9 +1488,9 @@
         "name": "Jira integration",
         "summary": "Integration of Jira user support/ticketing solution"
       },
-      "sha256": "1dgndwxwl9szhvjnpgh7f7k8gmikhg6h33ihil0djgfjqcki421g",
-      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.11/integration_jira-0.0.11.tar.gz",
-      "version": "0.0.11"
+      "sha256": "105xlx85q42z0kkjv83a8l9a537il0g3v58crgdzx9fks37yqpm1",
+      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.12/integration_jira-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "integration_mastodon": {
       "meta": {
@@ -1503,9 +1503,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "0lpwqgydkkbx97s0qlp5cxyzi1n31p8n6dj4s1swvq4myzs8y0f1",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.11/integration_mastodon-0.0.11.tar.gz",
-      "version": "0.0.11"
+      "sha256": "0dgv0ykhdrqwmn0vlbsbcy9b9jwk19n2abjlrd8jsh86w206qssp",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.12/integration_mastodon-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "integration_moodle": {
       "meta": {
@@ -1518,9 +1518,9 @@
         "name": "Moodle integration",
         "summary": "Integration of Moodle learning management system"
       },
-      "sha256": "0dgp8lmqsh5b47h8xmm6yip8n8rkgc2wfvdzr657w78g6j2sbgh7",
-      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.7/integration_moodle-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "18vzb0cnrrb6iywi81g4rlnsad76flz17c5r9sd5vvbaak251dwh",
+      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.8/integration_moodle-0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "integration_onedrive": {
       "meta": {
@@ -1533,9 +1533,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "19mj28x8qabinsqxpkv0nvapfbs9fbkyggq94iq3061n249l365b",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.7/integration_onedrive-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "0c5mjwz05razzxsvs5inksc7mq00j7cpa7q7airwyjdz08g1r44x",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.9/integration_onedrive-0.0.9.tar.gz",
+      "version": "0.0.9"
     },
     "integration_reddit": {
       "meta": {
@@ -1548,9 +1548,9 @@
         "name": "Reddit integration",
         "summary": "Integration of Reddit social news aggregation service"
       },
-      "sha256": "1xpkx5ddjdr200qb0vn3kga7hlvls0750djwy2213zf6nan9ai9q",
-      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.9/integration_reddit-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "0997awb799lz202ihgwadbvbyganhsassw08bnk6xncixs8kyk1b",
+      "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.10/integration_reddit-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_suitecrm": {
       "meta": {
@@ -1593,9 +1593,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "01d02g3dj5pzrnawwgnk12xj0yx450909rm8q0qbj8hlzdw0xxbd",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.16/integration_zammad-0.0.16.tar.gz",
-      "version": "0.0.16"
+      "sha256": "1330g88qf2x3rdvmfsiflsnbfzk26xgb7231x9g7fjj3lmapq91l",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.17/integration_zammad-0.0.17.tar.gz",
+      "version": "0.0.17"
     },
     "issuetemplate": {
       "meta": {
@@ -2095,9 +2095,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "0622i3bmz2rbrqrvmivrq72ld711ix4yk0r0aqf8mi0hspxmky88",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.7.0/cloud_piwik-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "1ln69dkfj1309bnrwcbnxpb7f1g5jw912zv09zh2rycil7bpidvf",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.8.0/cloud_piwik-0.8.0.tar.gz",
+      "version": "0.8.0"
     },
     "podcast": {
       "meta": {
@@ -2400,9 +2400,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0fz8hdp1ghfbvs7s3d8calgm2bci2i3n49mam5ahdgj30j8jjmrp",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.503/richdocumentscode.tar.gz",
-      "version": "6.4.503"
+      "sha256": "0pm7z2il3pvnjvkx9pp04xrjflaz7kym6hav13hpfb8h555vyf63",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.601/richdocumentscode.tar.gz",
+      "version": "6.4.601"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2415,9 +2415,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0hbj8vbs57ddkzqd2mbm6lr36j4jvp3c0imck3gi28gh7z9013wd",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.503/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.503"
+      "sha256": "1vv5dsb7v0afhb5lbafa314cndh1d3h7hhbignzjdd27bpskvjmj",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.601/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.601"
     },
     "riotchat": {
       "meta": {
@@ -3343,18 +3343,18 @@
     },
     "webapppassword": {
       "meta": {
-        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the\nNextcloud WebDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
+        "description": "Temporary app password generator and WebDAV/CalDAV CORS header injection to be able access the\nNextcloud WebDAV/CalDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
         "homepage": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "WebAppPassword",
-        "summary": "Temporary app password generator and WebDAV CORS header injection"
+        "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "0aw5cd9gfpppv4m7fjzss2bqnfz6yjj3vfwgbw8lnssabw0ww72g",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/77559de3ddffae0fe03c2e803a0e39db/webapppassword.tar.gz",
-      "version": "20.12.1"
+      "sha256": "12r7q9m5xiy40x3j4qwnq8rzgpsmd2m597bswswffy66wvxwqadx",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/188221e4ea4b42b40c312e86b103a1f4/webapppassword.tar.gz",
+      "version": "21.2.1"
     },
     "whiteboard": {
       "meta": {

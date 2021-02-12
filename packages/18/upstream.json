@@ -1255,9 +1255,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0cfhsxslg9yixd4pa02skky8qm46dm6lsh0xk08c6xwxs7spqx4j",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.5/geoblocker.tar.gz",
-      "version": "0.4.5"
+      "sha256": "1nk2c7hrpi5cf9zgbd5ca1f25drwsl3g4r49kk1gyb98gw9qdzsc",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.6/geoblocker.tar.gz",
+      "version": "0.4.6"
     },
     "globalsiteselector": {
       "meta": {
@@ -3185,18 +3185,18 @@
     },
     "webapppassword": {
       "meta": {
-        "description": "Temporary app password generator and WebDAV CORS header injection to be able access the\nNextcloud WebDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
+        "description": "Temporary app password generator and WebDAV/CalDAV CORS header injection to be able access the\nNextcloud WebDAV/CalDAV service from inside web applications.\n\nThere is an [example implementation](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/blob/master/docs/example/index.html)\nthat uses this app to generate a temporary password and make a WebDAV request to a Nextcloud instance\n([docker container](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/-/tree/master/docker) included).\n\nSee [Example](https://gitlab.tugraz.at/dbp/nextcloud/webapppassword#example) for a Nextcloud WebDAV file picker example\nthat uses this application.",
         "homepage": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "WebAppPassword",
-        "summary": "Temporary app password generator and WebDAV CORS header injection"
+        "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "0aw5cd9gfpppv4m7fjzss2bqnfz6yjj3vfwgbw8lnssabw0ww72g",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/77559de3ddffae0fe03c2e803a0e39db/webapppassword.tar.gz",
-      "version": "20.12.1"
+      "sha256": "12r7q9m5xiy40x3j4qwnq8rzgpsmd2m597bswswffy66wvxwqadx",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/188221e4ea4b42b40c312e86b103a1f4/webapppassword.tar.gz",
+      "version": "21.2.1"
     },
     "whiteboard": {
       "meta": {
