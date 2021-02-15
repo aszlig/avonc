@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1yd3rr5p492ylx0kpm8i3w7s1k8m72nikpicngg8gi5y2kjlh3ls",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/20c7a4433d02d89af5702adada6213ec7ae9de03/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.2"
+      "sha256": "03s746362xa0ffzg2sbhf04g2qk539hpgil3q44nvlgkmh37fh3p",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/18f210f54f82d2deab11c4a61d7c21e7245fe201/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.3"
     },
     "apporder": {
       "meta": {
@@ -402,9 +402,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1cw32f3mqn9jz1r8hh8a443vr2awfxx6pprcxiwydmljccvwxbc4",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.7.10/Cookbook-0.7.10.tar.gz",
-      "version": "0.7.10"
+      "sha256": "08y2jjck325pw3h04ckhnp995kz7wm5jdwdh4qcxfxg2misc4lf1",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.1/Cookbook-0.8.1.tar.gz",
+      "version": "0.8.1"
     },
     "cospend": {
       "meta": {
@@ -1433,9 +1433,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "190235yk507pcd38nyhsbihqn93jqnffgcx4vkayfki55cs9qigw",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.7.0/hsts-v0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "152b4v5dck9c4mbpq14pa59b4lr4zv5riwa2sylda9pvin89474b",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.8.0/hsts-v0.8.0.tar.gz",
+      "version": "0.8.0"
     },
     "imageconverter": {
       "meta": {
@@ -1491,9 +1491,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "1w4xm1gxp6xx7d84dsyw21yrwjqasrmhawq8g2yan2s4m0c5b1gf",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.4/keeweb-0.6.4.tar.gz",
-      "version": "0.6.4"
+      "sha256": "0l3fkk27c0nn5l7lp9r1i936rjh78vsmqgq6bmp1ygpxix74s4d3",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.5/keeweb-0.6.5.tar.gz",
+      "version": "0.6.5"
     },
     "ldap_write_support": {
       "meta": {
