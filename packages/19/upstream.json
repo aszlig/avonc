@@ -529,9 +529,9 @@
         "name": "Community Document Server",
         "summary": "Document server for OnlyOffice, community edition"
       },
-      "sha256": "0nqkyb2xyzakpykwas84fbz7vghh63gwbx4idrsbil0vc9dif8g9",
-      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.8/documentserver_community.tar.gz",
-      "version": "0.1.8"
+      "sha256": "1lli1s7limph7nfadm19p3g5lgwz42xsdyz93yp99bfyjs8bzqmk",
+      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.9/documentserver_community.tar.gz",
+      "version": "0.1.9"
     },
     "drawio": {
       "meta": {
@@ -577,6 +577,21 @@
       "sha256": "0rw263bmmgv1nkwnmi5gq0yfxsqiwc3957k413ain0hskkvz3919",
       "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.4/duplicatefinder.tar.gz",
       "version": "0.0.4"
+    },
+    "ehr": {
+      "meta": {
+        "description": "The Kailona Personal Health Record allows you to regain control over your health data. We provide an open source platform that allows everyone to add plugins and make improvements.\n\nIt helps you aggregate, manage, securely share and visualize your health data including lab data, medical images, FHIR data from hospitals, vital signs, nutritional and activity data.\n\n**Note that this app is under alpha development!**",
+        "homepage": "https://docs.kailona.org",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "EHR (Electronic Health Records)",
+        "summary": "Kailona: Personal Health Records"
+      },
+      "sha256": "0r783rk21nbmf9jkqky8mlldgx7qqdmwr0wsr7ljlv1m56jngnvf",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.1/ehr-0.1.1.tar.gz",
+      "version": "0.1.1"
     },
     "emlviewer": {
       "meta": {
@@ -1932,9 +1947,9 @@
         "name": "Permissions Overwrite",
         "summary": "Allow overwriting external storage permissions"
       },
-      "sha256": "0xnz0an0jmydijv9l49l8nf553dy7pii990iph68wk2ryp3c8651",
-      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.3/permissions_overwrite.tar.gz",
-      "version": "0.1.3"
+      "sha256": "1xi549zwwk5rvzjzfrc7m42fnq6ib2smf3y440c3i6mbxfzysk49",
+      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.4/permissions_overwrite.tar.gz",
+      "version": "0.1.4"
     },
     "phonetrack": {
       "meta": {
@@ -2480,9 +2495,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "0izd3rjfwnq5ncd75d80qp7iqjia6p2sfbhn272lfbv7ccqj4ym8",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.0/smb_test.tar.gz",
-      "version": "0.3.0"
+      "sha256": "0nmsn0kn13vgqsaq5d37w5l6nk0nwxbnx17ycjin3slavpmkz9a8",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.1/smb_test.tar.gz",
+      "version": "0.3.1"
     },
     "social": {
       "meta": {
@@ -3086,9 +3101,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "1c7k2v5cybnyxx0330mwkv722arv15lw5yjzjci0rn0xw5bm7v1g",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.2/user_saml-3.2.2.tar.gz",
-      "version": "3.2.2"
+      "sha256": "077pc56y3a9b1gjh970rgm8cynl9hmca8crxrpg5b1ycvdniqqzl",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.2.3/user_saml-3.2.3.tar.gz",
+      "version": "3.2.3"
     },
     "user_sql": {
       "meta": {
