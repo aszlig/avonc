@@ -1605,9 +1605,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1zwaw82gw24k5nms22aizil1pinxq0sl4f3ay0xb025vk0ml9sdb",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.2/mail.tar.gz",
-      "version": "1.4.2"
+      "sha256": "1p1py7nk2fdadq37p7mhdjh31fgz9fh61rc31sl4pmjznkqdycqi",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.4.3/mail.tar.gz",
+      "version": "1.4.3"
     },
     "maps": {
       "meta": {
@@ -1650,9 +1650,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0cqsfds23a97wl7jqcvq68xhnxhacjgdinmp0g32xr79bk7f7xlp",
-      "url": "https://github.com/owncloud/music/releases/download/v1.0.1/music_1.0.1_nc-signed.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0frpd7fr9c56psaawh1jcs13bs1dq09xsgss7z0h5alvx6hkni0i",
+      "url": "https://github.com/owncloud/music/releases/download/v1.0.2/music_1.0.2_nc-signed.tar.gz",
+      "version": "1.0.2"
     },
     "news": {
       "meta": {

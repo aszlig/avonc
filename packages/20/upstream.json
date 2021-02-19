@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0js61wqbq4bba2jrzdib9c08636zvxirwyjf4730lkaxk8b4k3mf",
-      "url": "https://github.com/Rello/analytics/releases/download/3.3.1/analytics-3.3.1.tar.gz",
-      "version": "3.3.1"
+      "sha256": "0svs8g6jika3g6sc4bgnx4f8b50zinxbz4j8dl8i48f88jkf7p6f",
+      "url": "https://github.com/Rello/analytics/releases/download/3.3.2/analytics-3.3.2.tar.gz",
+      "version": "3.3.2"
     },
     "announcementcenter": {
       "meta": {
@@ -115,7 +115,7 @@
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, AIF, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
+        "description": "A music player for FLAC, MP3, MP4, AIF, AAC, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0xy1m2fh8kgxyz4sgm8bvw86w3dmqxbc84sxkx5wzcazm2bkqz0d",
-      "url": "https://github.com/Rello/audioplayer/releases/download/3.0.0/audioplayer-3.0.0.tar.gz",
-      "version": "3.0.0"
+      "sha256": "0d2fp62r5bss1p767l7c4amxqpqlbvpahb4cgxy0rcssxjg1nxhp",
+      "url": "https://github.com/Rello/audioplayer/releases/download/3.1.0/audioplayer-3.1.0.tar.gz",
+      "version": "3.1.0"
     },
     "audioplayer_editor": {
       "meta": {
@@ -603,9 +603,9 @@
         "name": "EHR (Electronic Health Records)",
         "summary": "Kailona: Personal Health Records"
       },
-      "sha256": "0r783rk21nbmf9jkqky8mlldgx7qqdmwr0wsr7ljlv1m56jngnvf",
-      "url": "https://github.com/Kailona/ehr/releases/download/0.1.1/ehr-0.1.1.tar.gz",
-      "version": "0.1.1"
+      "sha256": "105g8ha52pq75y8mfz4kxf0r3yc967vfalr08r7k6whsxgqplk0n",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.2/ehr-0.1.2.tar.gz",
+      "version": "0.1.2"
     },
     "emlviewer": {
       "meta": {
@@ -1750,9 +1750,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "19s5gk6v40mfajv43qcxzx998an5a1ng2knvp52qh7n1l0v2ny2x",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.8.1/mail.tar.gz",
-      "version": "1.8.1"
+      "sha256": "1yk8q1a0kivlxhdvnv91jzh62hvbbj5ifdz5k8il383qjsq1r075",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.8.3/mail.tar.gz",
+      "version": "1.8.3"
     },
     "maps": {
       "meta": {
@@ -1795,9 +1795,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0cqsfds23a97wl7jqcvq68xhnxhacjgdinmp0g32xr79bk7f7xlp",
-      "url": "https://github.com/owncloud/music/releases/download/v1.0.1/music_1.0.1_nc-signed.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0frpd7fr9c56psaawh1jcs13bs1dq09xsgss7z0h5alvx6hkni0i",
+      "url": "https://github.com/owncloud/music/releases/download/v1.0.2/music_1.0.2_nc-signed.tar.gz",
+      "version": "1.0.2"
     },
     "news": {
       "meta": {
@@ -3396,9 +3396,9 @@
         "name": "Welcome",
         "summary": "Dashboard widget to display welcome content"
       },
-      "sha256": "0s47n1kmy6pmygpf4iw2x8j8n2bp62c58j992xh1rnycrzsnradl",
-      "url": "https://github.com/eneiluj/welcome/releases/download/v0.0.3/welcome-0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1jskjr0ssxxmbzbsqhj7a3g03qhdbv94829q1mb8qpyijas8ji8f",
+      "url": "https://github.com/eneiluj/welcome/releases/download/v0.0.5/welcome-0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "whiteboard": {
       "meta": {
