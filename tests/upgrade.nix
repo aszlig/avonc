@@ -4,7 +4,7 @@ import ./make-test.nix (pkgs: {
   machine = { config, lib, pkgs, ... }: {
     nextcloud.enable = true;
     nextcloud.domain = "localhost";
-    nextcloud.majorVersion = lib.mkDefault 19;
+    nextcloud.majorVersion = lib.mkDefault 20;
 
     services.nginx.enable = true;
     services.postgresql.enable = true;
@@ -26,7 +26,7 @@ import ./make-test.nix (pkgs: {
     in "echo ${lib.escapeShellArg json} > \"$out/nc-enabled-apps.json\"";
 
     nesting.clone = let
-      nc19apps = (lib.importJSON ../packages/19/upstream.json).applications;
+      nc20apps = (lib.importJSON ../packages/20/upstream.json).applications;
 
       excludedApps = [
         # We'll need dpendency ordering for this app
@@ -77,12 +77,8 @@ import ./make-test.nix (pkgs: {
         # XXX: Requires GnuPG
         "gpgmailer"
 
-        # https://github.com/nickv-nextcloud/talk_simple_poll/issues/22
-        (assert nc19apps.talk_simple_poll.version == "1.3.0";
-         "talk_simple_poll")
-
-        # https://github.com/thrillfall/nextcloud-gpodder/issues/6
-        (assert nc19apps.gpoddersync.version == "1.0.4"; "gpoddersync")
+        # https://git.project-insanity.org/onny/nextcloud-app-podcast/issues/225
+        (assert nc20apps.podcast.version == "0.3.1"; "podcast")
 
         # Don't test packages that include binaries:
         "documentserver_community"
@@ -111,10 +107,10 @@ import ./make-test.nix (pkgs: {
       });
 
     in [
-      { nextcloud.majorVersion = 19;
-        nextcloud.apps = lib.mapAttrs enableApp nc19apps;
-      }
       { nextcloud.majorVersion = 20;
+        nextcloud.apps = lib.mapAttrs enableApp nc20apps;
+      }
+      { nextcloud.majorVersion = 21;
         nextcloud.apps = lib.genAttrs [
           "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
           "external" "end_to_end_encryption" "files_accesscontrol"
