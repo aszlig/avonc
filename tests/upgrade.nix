@@ -4,7 +4,7 @@ import ./make-test.nix (pkgs: {
   machine = { config, lib, pkgs, ... }: {
     nextcloud.enable = true;
     nextcloud.domain = "localhost";
-    nextcloud.majorVersion = lib.mkDefault 19;
+    nextcloud.majorVersion = lib.mkDefault 20;
 
     services.nginx.enable = true;
     services.postgresql.enable = true;
@@ -26,7 +26,7 @@ import ./make-test.nix (pkgs: {
     in "echo ${lib.escapeShellArg json} > \"$out/nc-enabled-apps.json\"";
 
     nesting.clone = let
-      nc19apps = (lib.importJSON ../packages/19/upstream.json).applications;
+      nc20apps = (lib.importJSON ../packages/20/upstream.json).applications;
 
       excludedApps = [
         # We'll need dpendency ordering for this app
@@ -75,17 +75,29 @@ import ./make-test.nix (pkgs: {
         # XXX: Requires GnuPG
         "gpgmailer"
 
+        # XXX: The following apps break the upgrade from NC 20 to NC 21:
+        # https://github.com/nextcloud/passman/issues/683
+        "passman"
+        # https://github.com/newroco/W2G2/issues/63
+        "w2g2"
+
         # https://github.com/nickv-nextcloud/talk_simple_poll/issues/22
-        (assert nc19apps.talk_simple_poll.version == "1.3.0";
-         "talk_simple_poll")
+        (let
+           apps = (lib.importJSON ../packages/19/upstream.json).applications;
+           versionAssertion = apps.talk_simple_poll.version == "1.3.0";
+         in assert versionAssertion; "talk_simple_poll")
 
         # https://github.com/eid-login/eid-login-nextcloud/issues/3
-        (assert nc19apps.eidlogin.version == "1.0.2"; "eidlogin")
+        (let apps = (lib.importJSON ../packages/19/upstream.json).applications;
+         in assert apps.eidlogin.version == "1.0.2"; "eidlogin")
 
         # We already have a LibreOffice Online build from source, so no need
         # to test the binary releases:
         "richdocumentscode"
         "richdocumentscode_arm64"
+
+        # Another BLOB we don't need.
+        "documentserver_community"
 
         # These apps have non-deterministic download URLs
         "occweb"
@@ -106,10 +118,10 @@ import ./make-test.nix (pkgs: {
       });
 
     in [
-      { nextcloud.majorVersion = 19;
-        nextcloud.apps = lib.mapAttrs enableApp nc19apps;
-      }
       { nextcloud.majorVersion = 20;
+        nextcloud.apps = lib.mapAttrs enableApp nc20apps;
+      }
+      { nextcloud.majorVersion = 21;
         nextcloud.apps = lib.genAttrs [
           "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
           "external" "end_to_end_encryption" "files_accesscontrol"
