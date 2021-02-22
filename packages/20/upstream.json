@@ -219,7 +219,7 @@
     },
     "breezedark": {
       "meta": {
-        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n#### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "13rybnv05073bixmcvrb7q1r969kfiz2s1xv8gazzlh3mlk4s0g5",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.4/breezedark.tar.gz",
-      "version": "20.0.4"
+      "sha256": "0ixlg2v9hk7iwb36l0acc1r3x5ryp2ky25r3apkp120wmrklg8mc",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.5/breezedark.tar.gz",
+      "version": "20.0.5"
     },
     "bruteforcesettings": {
       "meta": {
@@ -896,6 +896,21 @@
       "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v20.0.1/files_fulltextsearch_tesseract-20.0.1.tar.gz",
       "version": "20.0.1"
     },
+    "files_inotify": {
+      "meta": {
+        "description": "Adds support detecting changes in local external storages with\nocc files_external:notify.\n\nNote that there are scalability limitations to using `inotify` on large folder structures, see the [README](https://github.com/icewind1991/files_inotify/blob/master/README.md) for more information",
+        "homepage": "https://github.com/icewind1991/files_inotify",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "INotify file watcher",
+        "summary": "Adds support detecting changes in local external storages"
+      },
+      "sha256": "03i1r9pr8f7slh6zzzyiavzb5bnmxp8p52kzxggdfa1ckl26sgsj",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.9/files_inotify.tar.gz",
+      "version": "0.1.9"
+    },
     "files_linkeditor": {
       "meta": {
         "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
@@ -1038,6 +1053,21 @@
         "name": "File sharing",
         "summary": "File sharing"
       }
+    },
+    "files_snapshots": {
+      "meta": {
+        "description": "Allows using filesystem snapshots (from btrfs, zfs, etc) as versions trough the Nextcloud web interface. A full description can be found [in the README](https://github.com/icewind1991/files_snapshots)",
+        "homepage": "https://github.com/icewind1991/files_snapshots",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Snapshots",
+        "summary": "Access filesystem snapshots trough Nextcloud"
+      },
+      "sha256": "0dds57l42i8diid15jqpaimpl025a16ir4cnd9r2d9vvaj1hi3n5",
+      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.0/files_snapshots.tar.gz",
+      "version": "1.0.0"
     },
     "files_texteditor": {
       "meta": {
@@ -2766,9 +2796,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0qvcv7ya84n2g176zw6ziw7x1xg1364k9apk65vyc6lj3klpprhp",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.5/spreed-10.0.5.tar.gz",
-      "version": "10.0.5"
+      "sha256": "1hfqfyib83cpsxnmg6cxqirlmqcb2slbinqdg6xhs3zigzmpgqsz",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.6/spreed-10.0.6.tar.gz",
+      "version": "10.0.6"
     },
     "sqreen_sdk": {
       "meta": {

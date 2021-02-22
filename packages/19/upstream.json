@@ -908,9 +908,9 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "0nfsxcj93jcrlvb6y3zm40bj8wvpwgk6wpnffkr81n9gbkgf0vcy",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.8/files_inotify.tar.gz",
-      "version": "0.1.8"
+      "sha256": "03i1r9pr8f7slh6zzzyiavzb5bnmxp8p52kzxggdfa1ckl26sgsj",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.9/files_inotify.tar.gz",
+      "version": "0.1.9"
     },
     "files_linkeditor": {
       "meta": {
@@ -2615,9 +2615,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1lf3wm9i5m6lx5h1bj4mvnxhb9z41ga3jcaaa9qhc84gv27rhmap",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.8/spreed-9.0.8.tar.gz",
-      "version": "9.0.8"
+      "sha256": "08rmgn92506lvl9iqqjn9sl6fsmsa641fipgdj8n0m5syhj7w6s9",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v9.0.9/spreed-9.0.9.tar.gz",
+      "version": "9.0.9"
     },
     "sqreen_sdk": {
       "meta": {
