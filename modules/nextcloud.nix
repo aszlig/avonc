@@ -199,95 +199,9 @@ let
     "ocm-provider/index"
   ];
 
-  nextcloudConfigDir = let
-    nextcloudConfig = mkPhpConfig ({
-      instanceid.__fromEnv = "__NEXTCLOUD_SECRETS_INSTANCEID";
-      passwordsalt.__fromEnv = "__NEXTCLOUD_SECRETS_PASSWORDSALT";
-      secret.__fromEnv = "__NEXTCLOUD_SECRETS_SECRET";
-
-      trusted_domains = [];
-      datadirectory = "/var/lib/nextcloud/data";
-      version.__fromEnv = "__NEXTCLOUD_VERSION";
-      dbtype = "pgsql";
-      dbhost = "/run/postgresql";
-      dbname = "nextcloud";
-      dbuser = "nextcloud";
-      installed = true;
-      knowledgebaseenabled = true;
-      allow_user_to_change_display_name = true;
-      skeletondirectory = "";
-      lost_password_link = "disabled";
-      mail_domain = cfg.domain;
-
-      app_install_overwrite = let
-        isForced = name: cfg.apps.${name}.forceEnable or false;
-      in lib.filter isForced (lib.attrNames package.applications);
-
-      overwritehost = "${cfg.domain}${maybePort}";
-      overwriteprotocol = urlScheme;
-      overwritewebroot = "/";
-      "overwrite.cli.url" = cfg.baseUrl;
-      "htaccess.RewriteBase" = "/";
-      "htaccess.IgnoreFrontController" = true;
-
-      updatechecker = false;
-      check_for_working_wellknown_setup = false;
-      check_for_working_htaccess = false;
-      config_is_read_only = true;
-
-      # We do check integrity on our end via the updater and tampering on the
-      # server can be verified via the store paths checksum, eg. comparing it
-      # against one from a different host.
-      "integrity.check.disabled" = true;
-      lastupdateat = 0;
-
-      log_type = "errorlog";
-      logdateformat = ""; # Already taken care by journald.
-
-      appstoreenabled = false;
-      apps_paths = [
-        { path = "${package}/apps";
-          url = "/apps";
-          writable = false;
-        }
-      ];
-
-      nix_executable_map = {
-        smbclient = "${pkgs.samba}/bin/smbclient";
-        sendmail = "${config.security.wrapperDir}/sendmail";
-        ffmpeg = "${pkgs.ffmpeg.bin}/bin/ffmpeg";
-      };
-
-      enabledPreviewProviders =
-        map (ft: "OC\\Preview\\${ft}") cfg.previewFileTypes;
-
-      preview_libreoffice_path = let
-        isNeeded = !lib.mutuallyExclusive cfg.previewFileTypes [
-          "MSOffice2003" "MSOffice2007" "MSOfficeDoc" "OpenDocument"
-          "StarOffice"
-        ];
-        # TODO: Put into a separate sandbox.
-        libreoffice = "${pkgs.libreoffice-unwrapped}/lib/libreoffice/program/"
-                    + "soffice.bin";
-      in lib.optionalString isNeeded libreoffice;
-
-      "memcache.local" = "\\OC\\Memcache\\Redis";
-      "memcache.locking" = "\\OC\\Memcache\\Redis";
-      redis.host = "/run/nextcloud-redis.socket";
-
-      supportedDatabases = [ "pgsql" ];
-      tempdirectory = "/var/cache/nextcloud/uploads";
-
-      # By default this contains '.htaccess', but our web server doesn't parse
-      # these files, so we can safely allow them.
-      blacklisted_files = [];
-      cipher = "AES-256-CFB";
-
-      "upgrade.disable-web" = true;
-    } // cfg.extraConfig);
-  in pkgs.writeTextFile {
+  nextcloudConfigDir = pkgs.writeTextFile {
     name = "nextcloud-config";
-    text = nextcloudConfig;
+    text = mkPhpConfig cfg.settings;
     destination = "/config.php";
     checkPhase = "${php}/bin/php -l \"$out/config.php\"";
   };
@@ -693,13 +607,13 @@ in {
         default = {};
         internal = true;
         description = ''
-          A set of configuration options to set for this app after it has been
-          enabled.
+          A set of app-specific configuration options to set for this app in
+          the database after it has been enabled.
         '';
       };
     } // (extraAppOptions.${appId} or {}) // maybeForce) package.applications;
 
-    extraConfig = lib.mkOption {
+    settings = lib.mkOption {
       type = types.attrsOf types.unspecified;
       default = {};
       example = {
@@ -707,8 +621,8 @@ in {
         lost_password_link = "disabled";
       };
       description = ''
-        Extra options to add to the Nextcloud config file, which will be
-        serialised into a PHP array.
+        Options for the main Nextcloud config file, which will be serialised
+        into a PHP array.
       '';
     };
 
@@ -760,6 +674,92 @@ in {
     ] ++ appVersionAssertions ++ appAlwaysEnableAssertions;
 
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
+
+    nextcloud.settings = {
+      instanceid.__fromEnv = "__NEXTCLOUD_SECRETS_INSTANCEID";
+      passwordsalt.__fromEnv = "__NEXTCLOUD_SECRETS_PASSWORDSALT";
+      secret.__fromEnv = "__NEXTCLOUD_SECRETS_SECRET";
+
+      trusted_domains = [];
+      datadirectory = "/var/lib/nextcloud/data";
+      version.__fromEnv = "__NEXTCLOUD_VERSION";
+      dbtype = "pgsql";
+      dbhost = "/run/postgresql";
+      dbname = "nextcloud";
+      dbuser = "nextcloud";
+      installed = true;
+      knowledgebaseenabled = true;
+      allow_user_to_change_display_name = true;
+      skeletondirectory = "";
+      lost_password_link = "disabled";
+      mail_domain = cfg.domain;
+
+      app_install_overwrite = let
+        isForced = name: cfg.apps.${name}.forceEnable or false;
+      in lib.filter isForced (lib.attrNames package.applications);
+
+      overwritehost = "${cfg.domain}${maybePort}";
+      overwriteprotocol = urlScheme;
+      overwritewebroot = "/";
+      "overwrite.cli.url" = cfg.baseUrl;
+      "htaccess.RewriteBase" = "/";
+      "htaccess.IgnoreFrontController" = true;
+
+      updatechecker = false;
+      check_for_working_wellknown_setup = false;
+      check_for_working_htaccess = false;
+      config_is_read_only = true;
+
+      # We do check integrity on our end via the updater and tampering on the
+      # server can be verified via the store paths checksum, eg. comparing it
+      # against one from a different host.
+      "integrity.check.disabled" = true;
+      lastupdateat = 0;
+
+      log_type = "errorlog";
+      logdateformat = ""; # Already taken care by journald.
+
+      appstoreenabled = false;
+      apps_paths = [
+        { path = "${package}/apps";
+          url = "/apps";
+          writable = false;
+        }
+      ];
+
+      nix_executable_map = {
+        smbclient = "${pkgs.samba}/bin/smbclient";
+        sendmail = "${config.security.wrapperDir}/sendmail";
+        ffmpeg = "${pkgs.ffmpeg.bin}/bin/ffmpeg";
+      };
+
+      enabledPreviewProviders =
+        map (ft: "OC\\Preview\\${ft}") cfg.previewFileTypes;
+
+      preview_libreoffice_path = let
+        isNeeded = !lib.mutuallyExclusive cfg.previewFileTypes [
+          "MSOffice2003" "MSOffice2007" "MSOfficeDoc" "OpenDocument"
+          "StarOffice"
+        ];
+        # TODO: Put into a separate sandbox.
+        libreoffice = "${pkgs.libreoffice-unwrapped}/lib/libreoffice/program/"
+                    + "soffice.bin";
+      in lib.optionalString isNeeded libreoffice;
+
+      "memcache.local" = "\\OC\\Memcache\\Redis";
+      "memcache.locking" = "\\OC\\Memcache\\Redis";
+      redis.host = "/run/nextcloud-redis.socket";
+
+      supportedDatabases = [ "pgsql" ];
+      tempdirectory = "/var/cache/nextcloud/uploads";
+
+      # By default this contains '.htaccess', but our web server doesn't parse
+      # these files, so we can safely allow them.
+      blacklisted_files = [];
+      cipher = "AES-256-CFB";
+
+      "upgrade.disable-web" = true;
+    };
 
     services.nginx.virtualHosts.${cfg.domain} = {
       forceSSL = cfg.useSSL;
