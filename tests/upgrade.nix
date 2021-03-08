@@ -73,6 +73,10 @@ import ./make-test.nix (pkgs: {
         # XXX: Requires GnuPG
         "gpgmailer"
 
+        # https://github.com/nickv-nextcloud/talk_simple_poll/issues/22
+        (assert nc19apps.talk_simple_poll.version == "1.3.0";
+         "talk_simple_poll")
+
         # We already have a LibreOffice Online build from source, so no need
         # to test the binary releases:
         "richdocumentscode"
