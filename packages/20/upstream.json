@@ -50,9 +50,9 @@
         "name": "Afterlogic",
         "summary": "Integration with Afterlogic WebMail client"
       },
-      "sha256": "0ijkryyq8nqkv5618baj01w9y8423db4fzacc01j7lqg2kwip0p9",
-      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-20.tar.gz",
-      "version": "1.2.20"
+      "sha256": "1w3vq39klnxqxiy76pqa03fm15prya5rc3l4aw2v0xl266accd02",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-21.tar.gz",
+      "version": "1.2.21"
     },
     "analytics": {
       "meta": {
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0svs8g6jika3g6sc4bgnx4f8b50zinxbz4j8dl8i48f88jkf7p6f",
-      "url": "https://github.com/Rello/analytics/releases/download/3.3.2/analytics-3.3.2.tar.gz",
-      "version": "3.3.2"
+      "sha256": "1b4z8dc421s1pmn07bcr46mmlhzm6cln3bqk1xd7a833znvmajj7",
+      "url": "https://github.com/Rello/analytics/releases/download/3.3.3/analytics-3.3.3.tar.gz",
+      "version": "3.3.3"
     },
     "announcementcenter": {
       "meta": {
@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "03s746362xa0ffzg2sbhf04g2qk539hpgil3q44nvlgkmh37fh3p",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/18f210f54f82d2deab11c4a61d7c21e7245fe201/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.3"
+      "sha256": "12d351xq1861hriqi8c416x42srqc1xihsxzky96qb6g1krysk46",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/fbc85927e5091ff36fcfefafca92627eff0a2adf/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.10"
     },
     "apporder": {
       "meta": {
@@ -109,9 +109,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "0nb4mlhjzk9n4njczk93hqmrvl84jj0brkyf5k56rs021rfs4vvj",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.11.0/apporder.tar.gz",
-      "version": "0.11.0"
+      "sha256": "0i47lgwj2hx8gmkx7zw3k3hqigzyqs740fpr60qn4r77797jq364",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.12.0/apporder.tar.gz",
+      "version": "0.12.0"
     },
     "audioplayer": {
       "meta": {
@@ -169,9 +169,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "1yy6di3hiw584gvbb1zs1b22imqnsv0fwpwg6x8ipnks5dw7cj1k",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.2.0/auto_groups-v1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1jq3pyf2r0kip4wrq90z2vm0bymfp4qm0vcy18nd97yhd9nx85qb",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.0/auto_groups-v1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0ixlg2v9hk7iwb36l0acc1r3x5ryp2ky25r3apkp120wmrklg8mc",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.5/breezedark.tar.gz",
-      "version": "20.0.5"
+      "sha256": "08lz28n1ck4khix326jkxnp3nbvc26z010yz6yl8alid0b8plvf0",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.7/breezedark.tar.gz",
+      "version": "20.0.7"
     },
     "bruteforcesettings": {
       "meta": {
@@ -287,9 +287,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1v07lfrifzvg4mx33j9w8r3zkxi0h3w75kp3b00wix4vmkhs58jl",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.7.tar.gz",
-      "version": "0.23.7"
+      "sha256": "1nsn8d6375yqm21q858b0ybg7flj5b6avrw7r1mzx9ahm6x5cqb7",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.8.tar.gz",
+      "version": "0.23.8"
     },
     "checksum": {
       "meta": {
@@ -302,9 +302,9 @@
         "name": "Checksum",
         "summary": "Creating a hash checksum of a file."
       },
-      "sha256": "1w1km5rli55ldr6izfdj7cs07969g61wx5kpl65q2dc8jci1fcin",
-      "url": "https://github.com/westberliner/checksum/releases/download/1.0.1/checksum.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1j6ylr1xjr2h41zr15qwklgin5xhh16zr6qczszc15y7wa3qvb72",
+      "url": "https://github.com/westberliner/checksum/releases/download/v1.1.1/checksum.tar.gz",
+      "version": "1.1.1"
     },
     "circles": {
       "meta": {
@@ -317,9 +317,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1rhl6qjg05pii35klwmxggfpn6icmdnrxlbr26kb7m52lpql1knz",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.6/circles-0.20.6.tar.gz",
-      "version": "0.20.6"
+      "sha256": "0qj9y49wrhjfmksxrdyk772jqbaaldiiz0szp6ppsc9g543bxsva",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.7/circles-0.20.7.tar.gz",
+      "version": "0.20.7"
     },
     "cloud_federation_api": {
       "meta": {
@@ -345,9 +345,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1arv6iqhb5zm736h870m7qi9c5n795zxqd0fimd4mb84474d8h8c",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.12/cms_pico-v1.0.12.tar.gz",
-      "version": "1.0.12"
+      "sha256": "1dzrkk9n38mi5whsh6har8iz26wax7dmdf2qnkwxa4y31an41mng",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.14/cms_pico-v1.0.14.tar.gz",
+      "version": "1.0.14"
     },
     "collectives": {
       "meta": {
@@ -416,9 +416,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "08y2jjck325pw3h04ckhnp995kz7wm5jdwdh4qcxfxg2misc4lf1",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.1/Cookbook-0.8.1.tar.gz",
-      "version": "0.8.1"
+      "sha256": "0qm0aqh4sss9k04lqawrc5h113f9s85xfvfj2m2cxb1q1px8mq8v",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.3/Cookbook-0.8.3.tar.gz",
+      "version": "0.8.3"
     },
     "cospend": {
       "meta": {
@@ -514,9 +514,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0m4kl6cb6sd5744vrwfn3sdmppbd3979543yhq4fx6mnaxhbdays",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.4/deck.tar.gz",
-      "version": "1.2.4"
+      "sha256": "1nwcv3f8zrzfwg7syss4yqafj025g0qhn7yb4kny67xqq8is598f",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.5/deck.tar.gz",
+      "version": "1.2.5"
     },
     "discoursesso": {
       "meta": {
@@ -558,9 +558,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "0lbiiynfdrpshm13bhnwpa7a5q0inj0i3sg4yyyjgwac1z9bb7a6",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.8/drawio-v0.9.8.tar.gz",
-      "version": "0.9.8"
+      "sha256": "0nzfhfm7gk98apfarn47rkzrck182ariwi12pghfpn41f9qa5sq9",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.9/drawio-v0.9.9.tar.gz",
+      "version": "0.9.9"
     },
     "drop_account": {
       "meta": {
@@ -588,9 +588,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "0rw263bmmgv1nkwnmi5gq0yfxsqiwc3957k413ain0hskkvz3919",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.4/duplicatefinder.tar.gz",
-      "version": "0.0.4"
+      "sha256": "16jcy53bcanrwqgffazl270msxffm7hi2g9vlc2ziq1yx4s1z01j",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.6/duplicatefinder.tar.gz",
+      "version": "0.0.6"
     },
     "ehr": {
       "meta": {
@@ -706,9 +706,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "0jpq2fxibnkzbrn5xdwpwc8dgmlgzl66p9cwm6xad5dj3qj2gzhz",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.0/extract.tar.gz",
-      "version": "1.3.0"
+      "sha256": "10jh0nd194wwlqwqr22m6zj0l3n1wapgl5q4mi4vri2rb9prc88r",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.1/extract.tar.gz",
+      "version": "1.3.1"
     },
     "facerecognition": {
       "meta": {
@@ -804,9 +804,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud"
       },
-      "sha256": "0zs9g3zjpxq08cnz2mmxjjql8rf11irqwhxfainkcjjyc0dkyq94",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.1.2/files_antivirus.tar.gz",
-      "version": "3.1.2"
+      "sha256": "0f7qv4n38k28dwjzkl7v6jik37538h4vjqz70q52wwfmdgm112hf",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.2.0/files_antivirus.tar.gz",
+      "version": "3.2.0"
     },
     "files_automatedtagging": {
       "meta": {
@@ -952,9 +952,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "0didrpznycfkgapnn2hhxfdy22nj0waw371s5dyymjphqy9vzdji",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.1/files_markdown.tar.gz",
-      "version": "2.3.1"
+      "sha256": "03c1adch082dj5nqmch4qc9ip9r7zh252wfr5y54hfwm45xmm5if",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.2/files_markdown.tar.gz",
+      "version": "2.3.2"
     },
     "files_mindmap": {
       "meta": {
@@ -1136,9 +1136,9 @@
         "name": "S3 Versioning",
         "summary": "Use S3 object versioning for file versioning"
       },
-      "sha256": "1z8kswg10257dkkq4269i81z730abfdxs20qxmxaxdgmvs92hhjb",
-      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.4/files_versions_s3.tar.gz",
-      "version": "0.1.4"
+      "sha256": "1l7l6sh8xlccd2ghh50il61z3ys4bsv90xcbmknhxjabj8j9sxa3",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.5/files_versions_s3.tar.gz",
+      "version": "0.1.5"
     },
     "files_videoplayer": {
       "meta": {
@@ -1258,17 +1258,17 @@
     },
     "gpgmailer": {
       "meta": {
-        "description": "If user a uploads a public key, emails to this user will be encrypted and signed.\nAll other emails will be signed\nThis App depends on gnupg.",
+        "description": "If user uploads public key, emails to this user will be encrypted and signed.\nAll other emails will be signed\nThis App depends on gnupg.",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Gpg Mailer",
+        "name": "GPG Mailer",
         "summary": "Send encrypted emails to registered users"
       },
-      "sha256": "1zsnk7x0rkb84j5qkhk3i1fp84axkgsdwrr2g88zm7bpz6vl0jky",
-      "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.2/gpgmailer.tar.gz",
-      "version": "0.0.2"
+      "sha256": "19yr4cdw3b0y79zb07ibrzrqm2nkvwgw0hsl7q204crlpzsfx27j",
+      "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
+      "version": "0.0.3"
     },
     "gpxmotion": {
       "meta": {
@@ -1296,9 +1296,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "00c6726drchglpdcpvk3vn4dx5xh0yzlxwfzp344vdmq18ydh2bm",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d83eb58e98017f24a859e7ab2c268de9/gpxpod-4.2.6.tar.gz",
-      "version": "4.2.6"
+      "sha256": "1ifls74bnj01kxskwlwd17mb2f215jxazzfkbsp30p5a4hzbs06l",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d91a1db49b783c1241722913ed0acb72/gpxpod-4.2.7.tar.gz",
+      "version": "4.2.7"
     },
     "grauphel": {
       "meta": {
@@ -1315,6 +1315,21 @@
       "url": "https://cweiske.de/download/grauphel/grauphel-0.7.6.tar.gz",
       "version": "0.7.6"
     },
+    "group_default_quota": {
+      "meta": {
+        "description": "Allow setting the default quota for users based on their group membership.",
+        "homepage": "https://github.com/icewind1991/group_default_quota",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Default group quota",
+        "summary": "Set default user quotas for group members"
+      },
+      "sha256": "0c7c95nqmjwhgm5vjqb0d0q7f26ynv97hr7mw7i91vchxg159bxc",
+      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.0/group_default_quota.tar.gz",
+      "version": "0.1.0"
+    },
     "group_everyone": {
       "meta": {
         "description": "Adds a virtual \"Everyone\" group.",
@@ -1326,9 +1341,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "1yjjsgyp1q1jjb3sxjwicrp8gkv19abhm4fg4v18ka1rn1x8b0bx",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.6/group_everyone.tar.gz",
-      "version": "0.1.6"
+      "sha256": "1v7xyr9layz6yx8svwa5ka7ic2m9ln98izx5mzby7gvcq46pcwf2",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.7/group_everyone.tar.gz",
+      "version": "0.1.7"
     },
     "groupfolders": {
       "meta": {
@@ -1356,9 +1371,9 @@
         "name": "Group quota",
         "summary": "Give filesystem quotas to groups"
       },
-      "sha256": "1v2gv7fs9a77fh48pmdwp4gsjbv3h2y01f90qjsl3mdbwwv62s2f",
-      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.4/groupquota.tar.gz",
-      "version": "0.1.4"
+      "sha256": "1z32i1j535v5mgfrwm7fc2bkv10bgpyapxvqrd9vpg95rhfbhzsf",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.5/groupquota.tar.gz",
+      "version": "0.1.5"
     },
     "guests": {
       "meta": {
@@ -1376,17 +1391,17 @@
     },
     "health": {
       "meta": {
-        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n\n=&gt; This update will not migrate data from the modules except weight due to big database changes!\n=&gt; Sorry for that, but it is still beta software. But this should be the last change this way.\n\nHealth is everything.",
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n\nHealth is everything.",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Health",
-        "summary": "[beta] Track your health. Use the advantages of a trusted platform."
+        "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "001bhavlpd9cy31rgg347z24dhyzyscj4rwb803mx5synhnq02hs",
-      "url": "https://datenangebot.de/s/ysHpgksqJNS7wLd/download",
-      "version": "0.3.0"
+      "sha256": "0p4whpx6qp28lkblh300xrnkal1l3mylpc64xmbpj8yd9lz88l7f",
+      "url": "https://datenangebot.de/s/t873YnYFcEfebW2/download",
+      "version": "1.0.1"
     },
     "hidesidebars": {
       "meta": {
@@ -1399,9 +1414,9 @@
         "name": "Hide sidebars",
         "summary": "Hide left sidebar and top header bar for use in iframe or some other scenarios."
       },
-      "sha256": "1z3l97hsdjz2ghh19q41qddp9vrrp414hd4kx6h7qlj9gs3ddpxi",
-      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.7/hidesidebars.tar.gz",
-      "version": "1.0.7"
+      "sha256": "0fpqk7sjd5wwryywqnw7qcj41ivs7zsv29r34j6na9vfxmkzr0zp",
+      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.1.0/hidesidebars.tar.gz",
+      "version": "1.1.0"
     },
     "hsts": {
       "meta": {
@@ -1578,9 +1593,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "1jywc2rly49sx1153yilf0b9rsg48yn1gv3c6v8sa6as430ca633",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.10/integration_onedrive-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "1rvb55a0k5n086ca7hcvzbbak3h4h93h97v8rnhganmj3b2b6dcz",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.12/integration_onedrive-0.0.12.tar.gz",
+      "version": "0.0.12"
     },
     "integration_reddit": {
       "meta": {
@@ -1623,9 +1638,9 @@
         "name": "Twitter integration",
         "summary": "Integration of Twitter microblogging and social networking service"
       },
-      "sha256": "1h9ss01ql0fs0h4dvh6cli18ndj8jwdy1j34zkhnaxzqfz076gh1",
-      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.7/integration_twitter-0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "1b38b03spmj51kmgc4x5jk6gw4d56iy99rkp4fy43bdsrbji7ilf",
+      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.10/integration_twitter-0.0.10.tar.gz",
+      "version": "0.0.10"
     },
     "integration_zammad": {
       "meta": {
@@ -1739,9 +1754,9 @@
         "name": "Login notes",
         "summary": "Display notes on log-in page"
       },
-      "sha256": "0362a91z6g03i4pylqr7sbp8xkq1lc7gyd6ycwc41vvzvvdnr2gj",
-      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/4374f386ab3a3354d17298f81d858089/login_notes.tar.gz",
-      "version": "0.3.0"
+      "sha256": "132ld5sbnq3cf6vg5f4aknzwhr8q2sz54wkdqqzvpldg6ljqnif0",
+      "url": "https://framagit.org/framasoft/nextcloud/login-notes/uploads/491070b7ded6ef0e47476e60c16c3cde/login_notes.tar.gz",
+      "version": "0.4.0"
     },
     "logreader": {
       "meta": {
@@ -1780,9 +1795,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1yk8q1a0kivlxhdvnv91jzh62hvbbj5ifdz5k8il383qjsq1r075",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.8.3/mail.tar.gz",
-      "version": "1.8.3"
+      "sha256": "0zwvfhwnk6byan3n3cqmwmr97277nbqri1kqga6a01ljnli2lgbf",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.9.1/mail.tar.gz",
+      "version": "1.9.1"
     },
     "maps": {
       "meta": {
@@ -1810,9 +1825,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "0wqr7q4dshj9sdf50zr155hqs8annwaa1h06b7k8w2m84mgz6dks",
+      "sha256": "0m0gcz0xvxsa0cw6ngnm9n1vg7qb55a61nhr0x8c4p2g17fhxcfs",
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
-      "version": "0.12.0"
+      "version": "0.13.0"
     },
     "music": {
       "meta": {
@@ -1825,9 +1840,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0frpd7fr9c56psaawh1jcs13bs1dq09xsgss7z0h5alvx6hkni0i",
-      "url": "https://github.com/owncloud/music/releases/download/v1.0.2/music_1.0.2_nc-signed.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1dljslb82ci4djvmpm6iccp3gp6jbgcsy3wjh2v0s2dncaygcl5d",
+      "url": "https://github.com/owncloud/music/releases/download/v1.0.3/music_1.0.3_nc-signed.tar.gz",
+      "version": "1.0.3"
     },
     "news": {
       "meta": {
@@ -1897,9 +1912,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0zrrdjnwzf9m7ji2a41gz33bq2mpgk99ig88gxhiyl9ngsrmjsrn",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.2/notes.tar.gz",
-      "version": "4.0.2"
+      "sha256": "04xbpkaxis78r8njhf16fd65qrb17h0i2gpdiamhr5dk9x55lmfr",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.4/notes.tar.gz",
+      "version": "4.0.4"
     },
     "notifications": {
       "meta": {
@@ -1982,9 +1997,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0nill7g8qizvq6a88086mxnkmxlp3y6znrbhagk1h4ghyhfz6vxv",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.6.1/oidc_login.tar.gz",
-      "version": "1.6.1"
+      "sha256": "0vj7vqhl8y9m96il15kvgqacic75rzj8na9yxwqcqp7ccmjsdkch",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.7.1/oidc_login.tar.gz",
+      "version": "1.7.1"
     },
     "ojsxc": {
       "meta": {
@@ -2012,9 +2027,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "0hjiy4107hllgzm6hqh5cqhvr7j4n70685yqjsijh8lsv03cakcf",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.2.0/onlyoffice.tar.gz",
-      "version": "6.2.0"
+      "sha256": "0d7hq57wz1b0n72lzjbb96sf60zy29jg5rx97j9lp0f4mqm5krpr",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.3.0/onlyoffice.tar.gz",
+      "version": "6.3.0"
     },
     "openhab": {
       "meta": {
@@ -2068,9 +2083,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "1hm07pglzbjqr2z8jy8i31z5cyahym611p4sinmvb5rq1k9yx38w",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11640/artifacts/raw/passwords.tar.gz",
-      "version": "2021.2.0"
+      "sha256": "0d8qs8b612lg1l0fdfg3bjyaclj8pls2fgbbm84z7zz3dh7basjs",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/11787/artifacts/raw/passwords.tar.gz",
+      "version": "2021.3.0"
     },
     "pdfdraw": {
       "meta": {
@@ -2146,7 +2161,7 @@
     },
     "podcast": {
       "meta": {
-        "description": "Listening to your favorite radio stations in Nextcloud! This\napp uses radio-browser.info database as a backend.\n\n\n-  Listen to radio stations directly in Nextcloud\n-  Browse thousands of stations worldwide\n-  Create your own list of favorite stations\n-  Dashboard widget support\n-  Keep track of recent played stations\n-  Browse stations by language, country, etc.\n-  Smoth audio playback and transitions",
+        "description": "** Browse, listen and subscribe to podcasts**\n\n      Full featured podcatcher which uses the community index fyyd.de as a\n      source.\n\n-  Browse and subscribe huge collection of podcasts\n-  Listen to episodes directly in Nextcloud\n-  Support episode chapters\n-  Smoth audio playback and transitions",
         "homepage": "https://git.project-insanity.org/onny/nextcloud-app-podcast",
         "isShipped": false,
         "licenses": [
@@ -2155,9 +2170,9 @@
         "name": "Podcast",
         "summary": "Browse, manage and listen to podcasts"
       },
-      "sha256": "0qpqrgfdrbx725q6qg0jilzfyqfc6hs9aigl8cvbjw9kd2157g6q",
-      "url": "https://git.project-insanity.org/onny/nextcloud-app-podcast/-/jobs/1012/artifacts/raw/build/artifacts/podcast.tar.gz",
-      "version": "0.0.1"
+      "sha256": "17q5i5ap3wwndax5pcsipdrgzgf83m3kz7smlzg59fwlyn835q87",
+      "url": "https://git.project-insanity.org/onny/nextcloud-app-podcast/-/jobs/1169/artifacts/raw/build/artifacts/podcast.tar.gz",
+      "version": "0.2.0"
     },
     "polls": {
       "meta": {
@@ -2349,7 +2364,7 @@
     },
     "rainloop": {
       "meta": {
-        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.14.0 (2020-01).",
+        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.15.0 (2021-01).",
         "homepage": "https://github.com/pierre-alain-b/rainloop-nextcloud",
         "isShipped": false,
         "licenses": [
@@ -2358,9 +2373,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "1185nncmscay4q5dnwsr5lz1pimd5r23yqabz7rrv8z4an7dx0aw",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.0.3/rainloop.tar.gz",
-      "version": "7.0.3"
+      "sha256": "1b9mpv7dblaw7lv6gkxls5ansck0d29jbdcbz3bpr3s2z451ki82",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.1.1c/rainloop.tar.gz",
+      "version": "7.1.1"
     },
     "ransomware_detection": {
       "meta": {
@@ -2415,9 +2430,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "04k3crrv2ab1gcwikn6x1firhw3q4v86i26cnbg46a9ydvqd7lyk",
-      "url": "https://github.com/nextcloud/registration/releases/download/v0.6.0/registration-0.6.0.tar.gz",
-      "version": "0.6.0"
+      "sha256": "0jllb4vzm9ifqx3k97py4w47a2cjklbzhc87zkg2i7b2nbc4mdv9",
+      "url": "https://github.com/nextcloud/registration/releases/download/v0.7.0/registration-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "richdocuments": {
       "meta": {
@@ -2430,9 +2445,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1ymnrwqv6fmsf8ba9iijac95i1lbsyyd1s7nr56g05721n4jplrm",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.14/richdocuments.tar.gz",
-      "version": "3.7.14"
+      "sha256": "0kh5cdlwnhrcnxxqjl8phr0l2nrv4x8a5hhqiqk0f5c5hsngjdac",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.15/richdocuments.tar.gz",
+      "version": "3.7.15"
     },
     "richdocumentscode": {
       "meta": {
@@ -2445,13 +2460,13 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0pm7z2il3pvnjvkx9pp04xrjflaz7kym6hav13hpfb8h555vyf63",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.601/richdocumentscode.tar.gz",
-      "version": "6.4.601"
+      "sha256": "02s482k1xlk199zvdi0ahbr1pc54f92xwydf75f6knwj6xrbbf5z",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.607/richdocumentscode.tar.gz",
+      "version": "6.4.607"
     },
     "richdocumentscode_arm64": {
       "meta": {
-        "description": "This app has to be installed and used together with the **[Collabora Online](https://apps.nextcloud.com/apps/richdocuments)** app.\n\nCollabora Online is a powerful LibreOffice-based online office suite with collaborative editing, which supports all major documents, spreadsheet and presentation file formats and works together with all modern browsers.\n\nThis app provides a built-in server with all of the document editing features of Collabora Online. Easy to install, for personal use or for small teams. A bit slower than a standalone server and without the advanced scalability features.\n\nThe download is rather big so it is possible you experience a time-out when using the web interface. You can use the OCC command line tool to install the built-in server:\n\n```\nsudo -u wwwrun php -d memory_limit=512M ./occ app:install richdocumentscode\n```\nWhere `wwwrun` is the user of your web server. This is ```www-data``` on Debian, Ubuntu and derivatives, `wwwrun` on SUSE based distributions, `apache` on Red Hat/Fedora and `http` on Arch linux and derivatives.\n\nUpdates can be done like this:\n```\nsudo -u wwwrun php -d memory_limit=512M ./occ app:update --all\n```\n\nOf course, alternatively you could increase memory usage and PHP time-outs by default, see the [Nextcloud documentation.](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html?highlight=php%20timeout#configuring-your-web-server)",
+        "description": "This app has to be installed and used together with the **[Collabora Online](https://apps.nextcloud.com/apps/richdocuments)** app.\n\nCollabora Online is a powerful LibreOffice-based online office suite with collaborative editing, which supports all major documents, spreadsheet and presentation file formats and works together with all modern browsers.\n\nThis app provides a built-in server with all of the document editing features of Collabora Online. Easy to install, for personal use or for small teams. A bit slower than a standalone server and without the advanced scalability features.\n\nThe download is rather big so it is possible you experience a time-out when using the web interface. You can use the OCC command line tool to install the built-in server:\n\n```\nsudo -u wwwrun php -d memory_limit=512M ./occ app:install richdocumentscode_arm64\n```\nWhere `wwwrun` is the user of your web server. This is ```www-data``` on Debian, Ubuntu and derivatives, `wwwrun` on SUSE based distributions, `apache` on Red Hat/Fedora and `http` on Arch linux and derivatives.\n\nUpdates can be done like this:\n```\nsudo -u wwwrun php -d memory_limit=512M ./occ app:update --all\n```\n\nOf course, alternatively you could increase memory usage and PHP time-outs by default, see the [Nextcloud documentation.](https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/big_file_upload_configuration.html?highlight=php%20timeout#configuring-your-web-server)",
         "homepage": "https://collaboraoffice.com/",
         "isShipped": false,
         "licenses": [
@@ -2460,9 +2475,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1vv5dsb7v0afhb5lbafa314cndh1d3h7hhbignzjdd27bpskvjmj",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.601/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.601"
+      "sha256": "0d5zis03hvz83mxqdmrxiy542i523yc7pvapjn4xyz77l2089jc1",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.607/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.607"
     },
     "riotchat": {
       "meta": {
@@ -2519,9 +2534,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "08ny8z09rsry6dnrzxgxfm9nfgpqmznffdp7lfh59nhsp5m4h4lp",
-      "url": "https://download.sendent.nl/serverapp/1.0.18/sendent.tar.gz",
-      "version": "1.0.18"
+      "sha256": "0b1mdwnvr2lbx0cqiva02vwnn87sgz4p4qliamr3ynyny6n7fqcw",
+      "url": "https://download.sendent.nl/serverapp/1.0.22/sendent.tar.gz",
+      "version": "1.0.22"
     },
     "sensorlogger": {
       "meta": {
@@ -2652,7 +2667,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
+        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nYou can customize colors depending of the theme (Dark theme and Breeze Dark). Comptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2661,9 +2676,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1hjf1jqpsj8351h4cca7xxcrx6g9c5vchidaw6f051944j4mgjd8",
-      "url": "https://gitnet.fr/attachments/95ef123e-b040-401a-afbf-e6dc6a84630b",
-      "version": "1.22.2"
+      "sha256": "175b7hzlmkm207mvrs1zpckw2iqb6fnndz5j3ymm5dnh9kmjxbwg",
+      "url": "https://gitnet.fr/attachments/72515dc5-315d-4368-b162-a93de0c7b069",
+      "version": "1.23.1"
     },
     "smb_test": {
       "meta": {
@@ -2697,7 +2712,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\nTo set timeout for http client, you can use\n```php\n  'social_login_http_client' =&gt; [\n    'timeout' =&gt; 45,\n  ],\n```\nin `config.php`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url. To make proper button visible, just fill certain provider settings with random data and change it later.\n\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\nThere is also support for setting the displayName:\n```\n{\"roles\": [{gid: 1, displayName: \"admin\"}, {gid: 2, displayName: \"user\"}]}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\n## Examples for groups\n\n* You can find example how to configure WSO2IS for return roles claim with OIDC [here](https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff)\n* [GitLab OIDC allowing specific GitLab groups](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/gitlab.md)\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\nTo set timeout for http client, you can use\n```php\n  'social_login_http_client' =&gt; [\n    'timeout' =&gt; 45,\n  ],\n```\nin `config.php`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url. To make proper button visible, just fill certain provider settings with random data and change it later.\n\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -2706,9 +2721,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1p1lvy53sqqf45s4x058zwbadnriqg2y373zhbgdxc4qavh4y9cp",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.0.3/release.tar.gz",
-      "version": "4.0.3"
+      "sha256": "0im76784c2cx17r31pmx2qzj6vr6mhx04r2klpn5ym2s57qvbdsm",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.3.1/release.tar.gz",
+      "version": "4.3.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2769,6 +2784,21 @@
       "sha256": "1xjlskgq820p0cdnlmwmlmywj6557s9y7s7393cwq91vxzj37465",
       "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
       "version": "2.1.0"
+    },
+    "souvenirs": {
+      "meta": {
+        "description": "View and share albums made by the [Souvenirs android application](https://github.com/zorgluf/souvenirs-android)",
+        "homepage": "https://github.com/zorgluf/souvenirs-nextcloud",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Souvenirs",
+        "summary": "Display \"souvenir\" albums in nextcloud web interface"
+      },
+      "sha256": "02j483my7yl01vwxfwd5hglk3pv6m1q5l970cca3sykcq7414kbg",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.0.0/souvenirs.tar.gz",
+      "version": "1.0.0"
     },
     "spgverein": {
       "meta": {
@@ -2879,9 +2909,9 @@
         "name": "Talk Matterbridge",
         "summary": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services."
       },
-      "sha256": "1snl51n816gbk7ghzsr70ninw3dq1i7g7ri764l51wi4q8jbvgvz",
-      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.0/talk_matterbridge.tar.gz",
-      "version": "1.22.0"
+      "sha256": "0z24bx6i446zc08fg80xmc080i7zg6vjwiv11n1j2fb4alwjh6ib",
+      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.1/talk_matterbridge.tar.gz",
+      "version": "1.22.1"
     },
     "talk_simple_poll": {
       "meta": {
@@ -2894,9 +2924,9 @@
         "name": "Simple poll for Nextcloud Talk",
         "summary": "A simple chat based poll for Nextcloud Talk"
       },
-      "sha256": "1v700dqlhcr9ad1f22xc197icpnsr2j9xfyd8i47m84zbdxxgrfr",
-      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.2.0/talk_simple_poll-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "0ykgh3l6bisdx5rchyqrf37nffy2p31qnjjkm6rwkl45bmy2k3sg",
+      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.3.0/talk_simple_poll-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "tasks": {
       "meta": {
@@ -2979,9 +3009,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "01qizb8f0m7igz3mw2hcn337mn3z3cbwmncsgrwsk97248jnbbdc",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.7/timemanager.tar.gz",
-      "version": "0.1.7"
+      "sha256": "0f8yk86z8q0zn25sbi9kmknvg2z0w4lplzz1lp7i4d1417iabysg",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.8/timemanager.tar.gz",
+      "version": "0.1.8"
     },
     "timetracker": {
       "meta": {
@@ -2993,9 +3023,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1id2771mccarlmck2iyv4g5lnsva44jnxnlyi86bxa6nf5ab7svi",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.53.tar.gz",
-      "version": "0.0.53"
+      "sha256": "0r84mrcw7y30kz338ski50za67mv7z5sdz3h3yafqyv8xvnzymxd",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.54.tar.gz",
+      "version": "0.0.54"
     },
     "transmission": {
       "meta": {
@@ -3079,9 +3109,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "0h38vmd7gh5kn2pbgm7vdb9sx94n8f4b4s0qcgadfn31zqybwmw9",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.1.0/twofactor_nextcloud_notification.tar.gz",
-      "version": "3.1.0"
+      "sha256": "1ri11b34bncg97j0fcwn5hs0vxrbid9fg2yl6zhhqwws12x3fas2",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.1.2/twofactor_nextcloud_notification.tar.gz",
+      "version": "3.1.2"
     },
     "twofactor_totp": {
       "meta": {
@@ -3124,9 +3154,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "0c8h54pnvqcbha0gz9pm6cazmlbdg62c69pm4l33sx9vjqx6rbyp",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/0.2.6/twofactor_webauthn-0.2.6.tar.gz",
-      "version": "0.2.6"
+      "sha256": "197ckwqcjmqbzw622jl6032kv571mkmrs2rygg19ph0kp41gibf9",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.9/twofactor_webauthn-0.2.9.tar.gz",
+      "version": "0.2.9"
     },
     "unsplash": {
       "meta": {
@@ -3340,9 +3370,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "0zc6g8ddckfwq1h46brvwgrhgvfxkkj97hk8mxx554iq9qf8h8an",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.0/video_converter.tar.gz",
-      "version": "1.0.0"
+      "sha256": "15dnlnh1awkg8p849kk16dsmza766s64sk20n6hfh1b3rdfzfddb",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.1/video_converter.tar.gz",
+      "version": "1.0.1"
     },
     "viewer": {
       "meta": {
@@ -3411,9 +3441,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "12r7q9m5xiy40x3j4qwnq8rzgpsmd2m597bswswffy66wvxwqadx",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/188221e4ea4b42b40c312e86b103a1f4/webapppassword.tar.gz",
-      "version": "21.2.1"
+      "sha256": "1cqzp2rfjvlfk6aznc8xi2jk32x2n0cijblv3zzhbhr1lq2975f2",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/d8d58eaf4b4ef067cace61a170235660/webapppassword.tar.gz",
+      "version": "21.3.0"
     },
     "welcome": {
       "meta": {

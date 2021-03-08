@@ -50,9 +50,9 @@
         "name": "Afterlogic",
         "summary": "Integration with Afterlogic WebMail client"
       },
-      "sha256": "0ijkryyq8nqkv5618baj01w9y8423db4fzacc01j7lqg2kwip0p9",
-      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-20.tar.gz",
-      "version": "1.2.20"
+      "sha256": "1w3vq39klnxqxiy76pqa03fm15prya5rc3l4aw2v0xl266accd02",
+      "url": "https://afterlogic.com/download/nextcloud/afterlogic-nextcloud-21.tar.gz",
+      "version": "1.2.21"
     },
     "analytics": {
       "meta": {
@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "03s746362xa0ffzg2sbhf04g2qk539hpgil3q44nvlgkmh37fh3p",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/18f210f54f82d2deab11c4a61d7c21e7245fe201/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.3"
+      "sha256": "12d351xq1861hriqi8c416x42srqc1xihsxzky96qb6g1krysk46",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/fbc85927e5091ff36fcfefafca92627eff0a2adf/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.8.10"
     },
     "apporder": {
       "meta": {
@@ -109,9 +109,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "0nb4mlhjzk9n4njczk93hqmrvl84jj0brkyf5k56rs021rfs4vvj",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.11.0/apporder.tar.gz",
-      "version": "0.11.0"
+      "sha256": "0i47lgwj2hx8gmkx7zw3k3hqigzyqs740fpr60qn4r77797jq364",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.12.0/apporder.tar.gz",
+      "version": "0.12.0"
     },
     "audioplayer": {
       "meta": {
@@ -169,9 +169,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "1yy6di3hiw584gvbb1zs1b22imqnsv0fwpwg6x8ipnks5dw7cj1k",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.2.0/auto_groups-v1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1jq3pyf2r0kip4wrq90z2vm0bymfp4qm0vcy18nd97yhd9nx85qb",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.0/auto_groups-v1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -272,9 +272,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1pcj3ga1iqrlnz1q4nz0v8a3f8ffirvk3yy0k847xnfzk7k6aisq",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.4/calendar.tar.gz",
-      "version": "2.0.4"
+      "sha256": "0qngxmcmcsq0ihlfsswh8b369gdihihcln50kssjj0c08rmkb75s",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.0.5/calendar.tar.gz",
+      "version": "2.0.5"
     },
     "camerarawpreviews": {
       "meta": {
@@ -301,9 +301,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1v07lfrifzvg4mx33j9w8r3zkxi0h3w75kp3b00wix4vmkhs58jl",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.7.tar.gz",
-      "version": "0.23.7"
+      "sha256": "1nsn8d6375yqm21q858b0ybg7flj5b6avrw7r1mzx9ahm6x5cqb7",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.8.tar.gz",
+      "version": "0.23.8"
     },
     "checksum": {
       "meta": {
@@ -402,9 +402,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "08y2jjck325pw3h04ckhnp995kz7wm5jdwdh4qcxfxg2misc4lf1",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.1/Cookbook-0.8.1.tar.gz",
-      "version": "0.8.1"
+      "sha256": "13c1ldxrzxgpfzy1s388nz0xf02ym98hdhhjdbs9n06yj6k2ajwq",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.2/Cookbook-0.8.2.tar.gz",
+      "version": "0.8.2"
     },
     "cospend": {
       "meta": {
@@ -502,9 +502,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0m4kl6cb6sd5744vrwfn3sdmppbd3979543yhq4fx6mnaxhbdays",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.4/deck.tar.gz",
-      "version": "1.2.4"
+      "sha256": "1nwcv3f8zrzfwg7syss4yqafj025g0qhn7yb4kny67xqq8is598f",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.5/deck.tar.gz",
+      "version": "1.2.5"
     },
     "dicomviewer": {
       "meta": {
@@ -561,9 +561,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "0lbiiynfdrpshm13bhnwpa7a5q0inj0i3sg4yyyjgwac1z9bb7a6",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.8/drawio-v0.9.8.tar.gz",
-      "version": "0.9.8"
+      "sha256": "0nzfhfm7gk98apfarn47rkzrck182ariwi12pghfpn41f9qa5sq9",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.9/drawio-v0.9.9.tar.gz",
+      "version": "0.9.9"
     },
     "drop_account": {
       "meta": {
@@ -606,9 +606,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "0rw263bmmgv1nkwnmi5gq0yfxsqiwc3957k413ain0hskkvz3919",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.4/duplicatefinder.tar.gz",
-      "version": "0.0.4"
+      "sha256": "16jcy53bcanrwqgffazl270msxffm7hi2g9vlc2ziq1yx4s1z01j",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.6/duplicatefinder.tar.gz",
+      "version": "0.0.6"
     },
     "emlviewer": {
       "meta": {
@@ -709,9 +709,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "0jpq2fxibnkzbrn5xdwpwc8dgmlgzl66p9cwm6xad5dj3qj2gzhz",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.0/extract.tar.gz",
-      "version": "1.3.0"
+      "sha256": "10jh0nd194wwlqwqr22m6zj0l3n1wapgl5q4mi4vri2rb9prc88r",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.1/extract.tar.gz",
+      "version": "1.3.1"
     },
     "facerecognition": {
       "meta": {
@@ -1418,9 +1418,9 @@
         "name": "Hide sidebars",
         "summary": "Hide left sidebar and top header bar for use in iframe or some other scenarios."
       },
-      "sha256": "1z3l97hsdjz2ghh19q41qddp9vrrp414hd4kx6h7qlj9gs3ddpxi",
-      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.0.7/hidesidebars.tar.gz",
-      "version": "1.0.7"
+      "sha256": "0fpqk7sjd5wwryywqnw7qcj41ivs7zsv29r34j6na9vfxmkzr0zp",
+      "url": "https://github.com/pointcz/hidesidebars/releases/download/v1.1.0/hidesidebars.tar.gz",
+      "version": "1.1.0"
     },
     "hsts": {
       "meta": {
@@ -1635,9 +1635,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "0wqr7q4dshj9sdf50zr155hqs8annwaa1h06b7k8w2m84mgz6dks",
+      "sha256": "0m0gcz0xvxsa0cw6ngnm9n1vg7qb55a61nhr0x8c4p2g17fhxcfs",
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
-      "version": "0.12.0"
+      "version": "0.13.0"
     },
     "music": {
       "meta": {
@@ -1650,9 +1650,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0frpd7fr9c56psaawh1jcs13bs1dq09xsgss7z0h5alvx6hkni0i",
-      "url": "https://github.com/owncloud/music/releases/download/v1.0.2/music_1.0.2_nc-signed.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1dljslb82ci4djvmpm6iccp3gp6jbgcsy3wjh2v0s2dncaygcl5d",
+      "url": "https://github.com/owncloud/music/releases/download/v1.0.3/music_1.0.3_nc-signed.tar.gz",
+      "version": "1.0.3"
     },
     "news": {
       "meta": {
@@ -1837,9 +1837,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0nill7g8qizvq6a88086mxnkmxlp3y6znrbhagk1h4ghyhfz6vxv",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.6.1/oidc_login.tar.gz",
-      "version": "1.6.1"
+      "sha256": "0vj7vqhl8y9m96il15kvgqacic75rzj8na9yxwqcqp7ccmjsdkch",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.7.1/oidc_login.tar.gz",
+      "version": "1.7.1"
     },
     "ojsxc": {
       "meta": {
@@ -2299,9 +2299,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1ymnrwqv6fmsf8ba9iijac95i1lbsyyd1s7nr56g05721n4jplrm",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.14/richdocuments.tar.gz",
-      "version": "3.7.14"
+      "sha256": "0kh5cdlwnhrcnxxqjl8phr0l2nrv4x8a5hhqiqk0f5c5hsngjdac",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.15/richdocuments.tar.gz",
+      "version": "3.7.15"
     },
     "riotchat": {
       "meta": {
@@ -2358,9 +2358,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "08ny8z09rsry6dnrzxgxfm9nfgpqmznffdp7lfh59nhsp5m4h4lp",
-      "url": "https://download.sendent.nl/serverapp/1.0.18/sendent.tar.gz",
-      "version": "1.0.18"
+      "sha256": "0b1mdwnvr2lbx0cqiva02vwnn87sgz4p4qliamr3ynyny6n7fqcw",
+      "url": "https://download.sendent.nl/serverapp/1.0.22/sendent.tar.gz",
+      "version": "1.0.22"
     },
     "sensorlogger": {
       "meta": {
@@ -2476,7 +2476,7 @@
     },
     "side_menu": {
       "meta": {
-        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nComptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
+        "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nYou can customize colors depending of the theme (Dark theme and Breeze Dark). Comptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
         "homepage": "https://gitnet.fr/deblan/side_menu",
         "isShipped": false,
         "licenses": [
@@ -2485,9 +2485,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1hjf1jqpsj8351h4cca7xxcrx6g9c5vchidaw6f051944j4mgjd8",
-      "url": "https://gitnet.fr/attachments/95ef123e-b040-401a-afbf-e6dc6a84630b",
-      "version": "1.22.2"
+      "sha256": "175b7hzlmkm207mvrs1zpckw2iqb6fnndz5j3ymm5dnh9kmjxbwg",
+      "url": "https://gitnet.fr/attachments/72515dc5-315d-4368-b162-a93de0c7b069",
+      "version": "1.23.1"
     },
     "smb_test": {
       "meta": {
@@ -2594,6 +2594,21 @@
       "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
       "version": "2.1.0"
     },
+    "souvenirs": {
+      "meta": {
+        "description": "View and share albums made by the [Souvenirs android application](https://github.com/zorgluf/souvenirs-android)",
+        "homepage": "https://github.com/zorgluf/souvenirs-nextcloud",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Souvenirs",
+        "summary": "Display \"souvenir\" albums in nextcloud web interface"
+      },
+      "sha256": "02j483my7yl01vwxfwd5hglk3pv6m1q5l970cca3sykcq7414kbg",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.0.0/souvenirs.tar.gz",
+      "version": "1.0.0"
+    },
     "spgverein": {
       "meta": {
         "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.",
@@ -2689,9 +2704,9 @@
         "name": "Simple poll for Nextcloud Talk",
         "summary": "A simple chat based poll for Nextcloud Talk"
       },
-      "sha256": "1v700dqlhcr9ad1f22xc197icpnsr2j9xfyd8i47m84zbdxxgrfr",
-      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.2.0/talk_simple_poll-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "0ykgh3l6bisdx5rchyqrf37nffy2p31qnjjkm6rwkl45bmy2k3sg",
+      "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.3.0/talk_simple_poll-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "tasks": {
       "meta": {
@@ -2788,9 +2803,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "01qizb8f0m7igz3mw2hcn337mn3z3cbwmncsgrwsk97248jnbbdc",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.7/timemanager.tar.gz",
-      "version": "0.1.7"
+      "sha256": "0f8yk86z8q0zn25sbi9kmknvg2z0w4lplzz1lp7i4d1417iabysg",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.8/timemanager.tar.gz",
+      "version": "0.1.8"
     },
     "timetracker": {
       "meta": {
@@ -2802,9 +2817,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1id2771mccarlmck2iyv4g5lnsva44jnxnlyi86bxa6nf5ab7svi",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.53.tar.gz",
-      "version": "0.0.53"
+      "sha256": "0r84mrcw7y30kz338ski50za67mv7z5sdz3h3yafqyv8xvnzymxd",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.54.tar.gz",
+      "version": "0.0.54"
     },
     "transmission": {
       "meta": {
@@ -2933,9 +2948,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "0c8h54pnvqcbha0gz9pm6cazmlbdg62c69pm4l33sx9vjqx6rbyp",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/0.2.6/twofactor_webauthn-0.2.6.tar.gz",
-      "version": "0.2.6"
+      "sha256": "197ckwqcjmqbzw622jl6032kv571mkmrs2rygg19ph0kp41gibf9",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.9/twofactor_webauthn-0.2.9.tar.gz",
+      "version": "0.2.9"
     },
     "unsplash": {
       "meta": {
@@ -3136,9 +3151,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "0zc6g8ddckfwq1h46brvwgrhgvfxkkj97hk8mxx554iq9qf8h8an",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.0/video_converter.tar.gz",
-      "version": "1.0.0"
+      "sha256": "15dnlnh1awkg8p849kk16dsmza766s64sk20n6hfh1b3rdfzfddb",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.1/video_converter.tar.gz",
+      "version": "1.0.1"
     },
     "viewer": {
       "meta": {
@@ -3194,9 +3209,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "12r7q9m5xiy40x3j4qwnq8rzgpsmd2m597bswswffy66wvxwqadx",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/188221e4ea4b42b40c312e86b103a1f4/webapppassword.tar.gz",
-      "version": "21.2.1"
+      "sha256": "1cqzp2rfjvlfk6aznc8xi2jk32x2n0cijblv3zzhbhr1lq2975f2",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/d8d58eaf4b4ef067cace61a170235660/webapppassword.tar.gz",
+      "version": "21.3.0"
     },
     "whiteboard": {
       "meta": {
