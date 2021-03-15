@@ -136,7 +136,10 @@ import ./make-test.nix (pkgs: {
         enabled = json.loads(applist)['enabled'].keys()
         with open('${systemRoot}/nc-enabled-apps.json', 'r') as fp:
           expected = set(json.load(fp))
-        assert enabled == expected, f'{enabled} != {expected}'
+        if enabled != expected:
+          diffstr = '\n'.join(ndiff(sorted(enabled), sorted(expected)))
+          msg = f'Enabled apps do not match expected apps:\n{diffstr}'
+          raise AssertionError(msg)
     '';
 
     switchToGeneration = num: desc: ''
@@ -151,6 +154,7 @@ import ./make-test.nix (pkgs: {
   in ''
     # fmt: off
     import json
+    from difflib import ndiff
     machine.wait_for_unit('multi-user.target')
 
     machine.start_job('nextcloud.service')
