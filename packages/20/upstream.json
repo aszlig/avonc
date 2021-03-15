@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "1b4z8dc421s1pmn07bcr46mmlhzm6cln3bqk1xd7a833znvmajj7",
-      "url": "https://github.com/Rello/analytics/releases/download/3.3.3/analytics-3.3.3.tar.gz",
-      "version": "3.3.3"
+      "sha256": "13x7v9hf00xfz1z659hzn2kjj4vddz4h21ipz80rb1z9pdfrp4qb",
+      "url": "https://github.com/Rello/analytics/releases/download/3.4.1/analytics-3.4.1.tar.gz",
+      "version": "3.4.1"
     },
     "announcementcenter": {
       "meta": {
@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "027cl83zqqwx4wq88l5kxss98r3nnjl22nwj66vvxsj61j4d2jrz",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.2.0/bbb-v1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "131w4j5rhs2l8aaibdjmh8lrsdnlv5j1mpxs0pxjxk18mm3zb0xf",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.3.0/bbb-v1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "bookmarks": {
       "meta": {
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "08lz28n1ck4khix326jkxnp3nbvc26z010yz6yl8alid0b8plvf0",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.7/breezedark.tar.gz",
-      "version": "20.0.7"
+      "sha256": "17869a1y0pv9ah6n8qlb0cnh1b1556qskr7gydblhncc5yjz6ivm",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.8/breezedark.tar.gz",
+      "version": "20.0.8"
     },
     "bruteforcesettings": {
       "meta": {
@@ -302,9 +302,9 @@
         "name": "Checksum",
         "summary": "Creating a hash checksum of a file."
       },
-      "sha256": "1j6ylr1xjr2h41zr15qwklgin5xhh16zr6qczszc15y7wa3qvb72",
-      "url": "https://github.com/westberliner/checksum/releases/download/v1.1.1/checksum.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1plfx3scp2zbfhj8gvy1vqc2fbvb9y2qzdjawj096qyahqqc94jz",
+      "url": "https://github.com/westberliner/checksum/releases/download/v1.1.2/checksum.tar.gz",
+      "version": "1.1.2"
     },
     "circles": {
       "meta": {
@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "04ii5ff5k0p1m8wn2gy6jfwc78lwa03vv5khv56qknc53dh3kwf7",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c810886202eeae2527b4e75f93ac16fa/collectives-0.2.2.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1ffkk8acpqwsrhdlig9dbppcsf51dl0s59nswrjxca0zfyl8baj6",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/d9ba2f8ef7e110c5991695ae0980c223/collectives-0.2.3.tar.gz",
+      "version": "0.2.3"
     },
     "comments": {
       "meta": {
@@ -388,9 +388,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1i4c8w6gchzwkcmc2rgmpqcy8dyxivdcr79grwkricnk1zxfyaq9",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.3/contacts.tar.gz",
-      "version": "3.4.3"
+      "sha256": "1a0169gq1hid3mh3qksypxg87s1flc5iap7v21q93abk0af436dz",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.0/contacts.tar.gz",
+      "version": "3.5.0"
     },
     "contactsinteraction": {
       "meta": {
@@ -416,9 +416,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0qm0aqh4sss9k04lqawrc5h113f9s85xfvfj2m2cxb1q1px8mq8v",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.3/Cookbook-0.8.3.tar.gz",
-      "version": "0.8.3"
+      "sha256": "0ab5qfpbchpwfyql9phn35i8mn0rm1kalhj3j951hg9c08ay8827",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.4/Cookbook-0.8.4.tar.gz",
+      "version": "0.8.4"
     },
     "cospend": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "07bk51d7bzi3m4f2az86y2z334kapsx45icgylvb14zdgkxh1gmz",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.2.9/cospend-1.2.9.tar.gz",
-      "version": "1.2.9"
+      "sha256": "1k935pmx3r5klkg77b87gp4fpbcas0dqhavcbfz5qpznhcrmdylh",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.0/cospend-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "cpanelmailsync": {
       "meta": {
@@ -558,9 +558,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "0nzfhfm7gk98apfarn47rkzrck182ariwi12pghfpn41f9qa5sq9",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.0.9.9/drawio-v0.9.9.tar.gz",
-      "version": "0.9.9"
+      "sha256": "109myfpjd936wgq2z5wzhypl1nm09pvdwxln7anjfwz61bd809fk",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.0/drawio-v1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "drop_account": {
       "meta": {
@@ -877,9 +877,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "140s22f377c2vxwdhwpp74227mgm4cjda4v3jdrbhg5cwlvfv3pj",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.0/files_fulltextsearch-20.0.0.tar.gz",
-      "version": "20.0.0"
+      "sha256": "1mssxwsx8h1k7zrz0ds68rdrgyx6harwiwrl06nfv1g9qgv42rpd",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.1/files_fulltextsearch-20.0.1.tar.gz",
+      "version": "20.0.1"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -922,9 +922,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0vv4sqqf0aghw80hg9sl4s3qwp8pca1fh4db6dfj0kvd7ixwfq62",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.3/files_linkeditor.tar.gz",
-      "version": "1.1.3"
+      "sha256": "080548ix1zmqpdflh9am9g61pdv7jyryj9ifs1y8apx42dhd2dqq",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.4/files_linkeditor.tar.gz",
+      "version": "1.1.4"
     },
     "files_lock": {
       "meta": {
@@ -952,9 +952,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "03c1adch082dj5nqmch4qc9ip9r7zh252wfr5y54hfwm45xmm5if",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.2/files_markdown.tar.gz",
-      "version": "2.3.2"
+      "sha256": "1d75h5vrdhyjzgn0q2s9h729k3id1n7bnm6i0ds4ilj20pzh3bi5",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.3/files_markdown.tar.gz",
+      "version": "2.3.3"
     },
     "files_mindmap": {
       "meta": {
@@ -1065,9 +1065,9 @@
         "name": "Snapshots",
         "summary": "Access filesystem snapshots trough Nextcloud"
       },
-      "sha256": "0dds57l42i8diid15jqpaimpl025a16ir4cnd9r2d9vvaj1hi3n5",
-      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.0/files_snapshots.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1jzl0ncnwk0df6q1an73aklga9ia8gcqfys1v98ldiv3fldy05si",
+      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.1/files_snapshots.tar.gz",
+      "version": "1.0.1"
     },
     "files_texteditor": {
       "meta": {
@@ -1207,9 +1207,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "1xjj5i5bfi7qq5km9inkxml67fzckv9msjd0r0b5v8xzyk8gqws5",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.1.0/forms.tar.gz",
-      "version": "2.1.0"
+      "sha256": "0qyrjnia609m20dyn6dzrrfd7ws8m43wijvacfy268icvkqigwyv",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.2.2/forms.tar.gz",
+      "version": "2.2.2"
     },
     "fulltextsearch": {
       "meta": {
@@ -1296,9 +1296,9 @@
         "name": "GpxPod",
         "summary": "Display, analyse, compare and share GPS track files"
       },
-      "sha256": "1ifls74bnj01kxskwlwd17mb2f215jxazzfkbsp30p5a4hzbs06l",
-      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/d91a1db49b783c1241722913ed0acb72/gpxpod-4.2.7.tar.gz",
-      "version": "4.2.7"
+      "sha256": "1prm9sf8dri919khgq5249505dz5vdsrpsabs9zary4rpw4h2bpy",
+      "url": "https://gitlab.com/eneiluj/gpxpod-oc/-/wikis/uploads/630aee117900664644669890e6693383/gpxpod-4.2.8.tar.gz",
+      "version": "4.2.8"
     },
     "grauphel": {
       "meta": {
@@ -1714,6 +1714,21 @@
       "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.2.1/ldap_write_support.tar.gz",
       "version": "1.2.1"
     },
+    "libresign": {
+      "meta": {
+        "description": "This is a libre digital PDF signature app for Nextcloud",
+        "homepage": "https://github.com/lyseontech/libresign",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "LibreSign",
+        "summary": "Libre digital signature app for Nextcloud."
+      },
+      "sha256": "1hkk7ya3q7b2brhkj3v742lf7h3mmd61n32rnja9jvgzwy3im9qf",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.0.5/libresign.tar.gz",
+      "version": "2.0.5"
+    },
     "limit_login_to_ip": {
       "meta": {
         "description": "This app allows administrators to restrict login to their\nNextcloud server to specific IP ranges. Note that existing sessions will be kept\nopen.\n\nThe allowed IP ranges can be administrated using the OCC command line interface\nor graphically using the admin settings. If you plan to use the OCC tool, the\nfollowing commands would be applicable.\n\nTo whitelist `127.0.0.0/24`:\n\n- `occ config:app:set limit_login_to_ip whitelisted.ranges --value 127.0.0.0/24`\n\nTo whitelist `127.0.0.0/24` and also `192.168.0.0/24`:\n\n- `occ config:app:set limit_login_to_ip whitelisted.ranges --value 127.0.0.0/24,192.168.0.0/24`",
@@ -1795,9 +1810,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0zwvfhwnk6byan3n3cqmwmr97277nbqri1kqga6a01ljnli2lgbf",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.9.1/mail.tar.gz",
-      "version": "1.9.1"
+      "sha256": "1jg9nndyj7f7g53r5zl6iy2s4f9ymaz2sigym8acdjwgc9660zh1",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.9.3/mail.tar.gz",
+      "version": "1.9.3"
     },
     "maps": {
       "meta": {
@@ -1982,9 +1997,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "017bffnraflc7mhk1j033hq2ppb8ac7bsslrsk7kdjgq6d6g4z71",
-      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.2/officeonline.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0h2jkmszjxvf2xy8c04pf5yjkp0bny5d8s00gsp40hhrx4q9g71m",
+      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.3/officeonline.tar.gz",
+      "version": "1.0.3"
     },
     "oidc_login": {
       "meta": {
@@ -2349,7 +2364,7 @@
     },
     "radio": {
       "meta": {
-        "description": "Listening to your favorite radio stations in Nextcloud! This\napp uses radio-browser.info database as a backend.\n\n\n-  Listen to radio stations directly in Nextcloud\n-  Browse thousands of stations worldwide\n-  Create your own list of favorite stations\n-  Dashboard widget support\n-  Keep track of recent played stations\n-  Browse stations by language, country, etc.\n-  Smoth audio playback and transitions",
+        "description": "Listening to your favorite radio stations in Nextcloud! This\napp uses radio-browser.info database as a backend.\n\n-  Listen to radio stations directly in Nextcloud\n-  Browse thousands of stations worldwide\n-  Create your own list of favorite stations\n-  Dashboard widget support\n-  Keep track of recent played stations\n-  Browse stations by language, country, etc.\n-  Smoth audio playback and transitions",
         "homepage": "https://git.project-insanity.org/onny/nextcloud-app-radio",
         "isShipped": false,
         "licenses": [
@@ -2358,9 +2373,9 @@
         "name": "Radio",
         "summary": "Listen to your favorite radio stations"
       },
-      "sha256": "04gfdy2g7zcpfqbvinr8rksi2grn0n5fxilyx7il8j0ig2mxaqyf",
-      "url": "https://git.project-insanity.org/onny/nextcloud-app-radio/-/jobs/1038/artifacts/raw/build/artifacts/radio.tar.gz",
-      "version": "1.0.2"
+      "sha256": "10si6q3zak7xnr69g40kh4sfd0i73n27s3ygf05dc2v5f7hk6mny",
+      "url": "https://git.project-insanity.org/onny/nextcloud-app-radio/-/jobs/1230/artifacts/raw/build/artifacts/radio.tar.gz",
+      "version": "1.0.3"
     },
     "rainloop": {
       "meta": {
@@ -2373,9 +2388,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "1b9mpv7dblaw7lv6gkxls5ansck0d29jbdcbz3bpr3s2z451ki82",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.1.1c/rainloop.tar.gz",
-      "version": "7.1.1"
+      "sha256": "1nw0n1zggs3d0x4v83ql00synx5dxnrqafjz5b8hia3x06gvc60m",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.1.2/rainloop.tar.gz",
+      "version": "7.1.2"
     },
     "ransomware_detection": {
       "meta": {
@@ -2445,9 +2460,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0kh5cdlwnhrcnxxqjl8phr0l2nrv4x8a5hhqiqk0f5c5hsngjdac",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.15/richdocuments.tar.gz",
-      "version": "3.7.15"
+      "sha256": "1ar7xnjs4iik0k4i2l91cdqqrxg40kzpqh87wych88mb1dv1sj6n",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.17/richdocuments.tar.gz",
+      "version": "3.7.17"
     },
     "richdocumentscode": {
       "meta": {
@@ -2460,9 +2475,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "02s482k1xlk199zvdi0ahbr1pc54f92xwydf75f6knwj6xrbbf5z",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.607/richdocumentscode.tar.gz",
-      "version": "6.4.607"
+      "sha256": "1lfb5nhfqachsix8cqsqy3jdm80ynsyydgnbvvpiisfmnjk112ym",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.608/richdocumentscode.tar.gz",
+      "version": "6.4.608"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2475,9 +2490,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0d5zis03hvz83mxqdmrxiy542i523yc7pvapjn4xyz77l2089jc1",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.607/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.607"
+      "sha256": "11zssnr23kwmrs2p9drbsw8wyzx8fcm2sp7skhrdf7pln1k8qdw9",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.608/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.608"
     },
     "riotchat": {
       "meta": {
@@ -2490,9 +2505,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0nacs3sirwyrbjp3wif1nzw6ycxqsy85vflwgnmlr7i1ah0dhgwf",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.2/riotchat.tar.gz",
-      "version": "0.7.2"
+      "sha256": "1ad6h5dc140nq2iq7xidjb3b56jxph1rd4s96j031z7s8jydqfyq",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.3/riotchat.tar.gz",
+      "version": "0.7.3"
     },
     "scanner": {
       "meta": {
@@ -2721,9 +2736,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0im76784c2cx17r31pmx2qzj6vr6mhx04r2klpn5ym2s57qvbdsm",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.3.1/release.tar.gz",
-      "version": "4.3.1"
+      "sha256": "0amh7hylylwn9aqn2gs9qsx5y3y0ra2ysf9q7x2cjhwc191hhrhy",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.3.2/release.tar.gz",
+      "version": "4.3.2"
     },
     "socialsharing_diaspora": {
       "meta": {
