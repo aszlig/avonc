@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "17869a1y0pv9ah6n8qlb0cnh1b1556qskr7gydblhncc5yjz6ivm",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.8/breezedark.tar.gz",
-      "version": "20.0.8"
+      "sha256": "0q507h8jraynflkapqmkfql6h5nkfsv0f22bv5x8wzijzj4yrrc0",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.9/breezedark.tar.gz",
+      "version": "20.0.9"
     },
     "bruteforcesettings": {
       "meta": {
