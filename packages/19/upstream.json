@@ -387,9 +387,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1a0169gq1hid3mh3qksypxg87s1flc5iap7v21q93abk0af436dz",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.0/contacts.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1xm4c2yn3x26i3vbg1dgnmnk2hn67bzfwskd7mlpdizprm0ciqqk",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.1/contacts.tar.gz",
+      "version": "3.5.1"
     },
     "contactsinteraction": {
       "meta": {
@@ -923,9 +923,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "080548ix1zmqpdflh9am9g61pdv7jyryj9ifs1y8apx42dhd2dqq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.4/files_linkeditor.tar.gz",
-      "version": "1.1.4"
+      "sha256": "11rmlf7nc833c38p82rw47zp8n7fk8cmzl7h8ypgnrmpvn7izn1s",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.5/files_linkeditor.tar.gz",
+      "version": "1.1.5"
     },
     "files_lock": {
       "meta": {
@@ -1522,18 +1522,18 @@
     },
     "libresign": {
       "meta": {
-        "description": "This is a libre digital PDF signature app for Nextcloud",
-        "homepage": "https://github.com/lyseontech/libresign",
+        "description": "**This is a libre digital PDF signature app for Nextcloud**\n\n*  Sign PDF documents using digital signature\n*  Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [setup instructions](https://github.com/LibreSign/libresign/blob/main/README.md#setup) for details.\n* **Requirements :**\n    * CFSSL server\n    * Java\n    * JSignPDF",
+        "homepage": "https://github.com/LibreSign/libresign",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "LibreSign",
-        "summary": "Libre digital signature app for Nextcloud."
+        "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1hkk7ya3q7b2brhkj3v742lf7h3mmd61n32rnja9jvgzwy3im9qf",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.0.5/libresign.tar.gz",
-      "version": "2.0.5"
+      "sha256": "1rji4601figjqbsh0kiwssnlcnv1zghivp6jqkpjz46ml38xhn6f",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.1.2/libresign.tar.gz",
+      "version": "2.1.2"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -1774,9 +1774,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "1m5wvpjs7kxva56hd4l77bsx50mysy0d6i1cwbf5qbbxpcid1zfg",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.10/ocdownloader-1.7.10.tar.gz",
-      "version": "1.7.10"
+      "sha256": "18ksyw3s5izircmy4ik8q09n6qv3yc4m5nrh36dzw4zbzd9vggkv",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.11/ocdownloader-1.7.11.tar.gz",
+      "version": "1.7.11"
     },
     "ocsms": {
       "meta": {
@@ -2177,9 +2177,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "008c0h7mvxczq931dafl8njh30c4vb8cc5k3q29vvcnngqrd88z9",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.3/quicknotes.tar.gz",
-      "version": "0.6.3"
+      "sha256": "02f5csnwzk96pmwcg2mv9kgk547s8zccvmikj33cywh8fibkjfb8",
+      "url": "https://services.delellis.com.ar/data/quicknotes.tar.gz",
+      "version": "0.6.6"
     },
     "quota_warning": {
       "meta": {
@@ -2294,9 +2294,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1lfb5nhfqachsix8cqsqy3jdm80ynsyydgnbvvpiisfmnjk112ym",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.608/richdocumentscode.tar.gz",
-      "version": "6.4.608"
+      "sha256": "1rfyhlblm50rc46xwxkm0dv3mqdi10lm2zi9f5543cj7dnrmrx8j",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode.tar.gz",
+      "version": "6.4.703"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2309,9 +2309,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "11zssnr23kwmrs2p9drbsw8wyzx8fcm2sp7skhrdf7pln1k8qdw9",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.608/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.608"
+      "sha256": "1bghv996156cgzgxs7icvnaziapn4bmiz480apc56y07x586mk0r",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.703"
     },
     "riotchat": {
       "meta": {
@@ -2324,9 +2324,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1ad6h5dc140nq2iq7xidjb3b56jxph1rd4s96j031z7s8jydqfyq",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.3/riotchat.tar.gz",
-      "version": "0.7.3"
+      "sha256": "158vv8ja7knx875yhhrz4cpvvgfqprj4nlnx06iizghavfbd2l6j",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.4/riotchat.tar.gz",
+      "version": "0.7.4"
     },
     "scanner": {
       "meta": {
@@ -2603,6 +2603,20 @@
       "sha256": "1xjlskgq820p0cdnlmwmlmywj6557s9y7s7393cwq91vxzj37465",
       "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
       "version": "2.1.0"
+    },
+    "solid": {
+      "meta": {
+        "description": "# WebID-openID Connect identity Provider\n\nThis app gives you a WebID URL and login flow to connect to a Solid App with your Nextcloud User.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Solid",
+        "summary": "A WebID-OIDC Identity Provider, to allow interoperability with SolidProject.org"
+      },
+      "sha256": "0ilv92nq940vqwx3f2hw9pljyxz2nbch811mj8wj5j2xdgjavqag",
+      "url": "https://github.com/pdsinterop/solid-nextcloud/raw/release/dist/solid.tar.gz",
+      "version": "0.0.1"
     },
     "souvenirs": {
       "meta": {
@@ -2987,9 +3001,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "0vnw8nxfxrlzb1xha4dznnj7crwl2kcw90wwppdwh0yrnkfg00zd",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.1/unsplash.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1g2ql8lnq8l9j9wd6lhzd33axkh3yb18dci779bgl0fdp84wabbd",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.2/unsplash.tar.gz",
+      "version": "1.2.2"
     },
     "updatenotification": {
       "meta": {
@@ -3218,9 +3232,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "0vnz82zd80sqrzyrlql5qi6kmmx4bsk4ir42fxhvnc08xz7w7q3z",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.4/weather-1.7.4.tar.gz",
-      "version": "1.7.4"
+      "sha256": "1xxmvxh0w53a3j6pc9ixs3q32jp7050pvpf1rgiblngmihn227yk",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.5/weather-1.7.5.tar.gz",
+      "version": "1.7.5"
     },
     "webapppassword": {
       "meta": {

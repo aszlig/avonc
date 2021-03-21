@@ -388,9 +388,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1a0169gq1hid3mh3qksypxg87s1flc5iap7v21q93abk0af436dz",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.0/contacts.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1xm4c2yn3x26i3vbg1dgnmnk2hn67bzfwskd7mlpdizprm0ciqqk",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.1/contacts.tar.gz",
+      "version": "3.5.1"
     },
     "contactsinteraction": {
       "meta": {
@@ -922,9 +922,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "080548ix1zmqpdflh9am9g61pdv7jyryj9ifs1y8apx42dhd2dqq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.4/files_linkeditor.tar.gz",
-      "version": "1.1.4"
+      "sha256": "11rmlf7nc833c38p82rw47zp8n7fk8cmzl7h8ypgnrmpvn7izn1s",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.5/files_linkeditor.tar.gz",
+      "version": "1.1.5"
     },
     "files_lock": {
       "meta": {
@@ -1473,9 +1473,9 @@
         "name": "Discourse integration",
         "summary": "Integration of Discourse forum and mailing list management system"
       },
-      "sha256": "1wnmrl17fxxq27nzzg1zxrwz4cknhxn1s48fh4ddnsh9ik2whlsd",
-      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v0.0.9/integration_discourse-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "01201vi73zl6v3lbyzhy1j8j5fx9gxha40l5ljaq2b8skwi4wk0l",
+      "url": "https://github.com/nextcloud/integration_discourse/releases/download/v1.0.0/integration_discourse-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_dropbox": {
       "meta": {
@@ -1488,9 +1488,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "01sb10571161680i53pxirdnplysfavbmr2xk9l6fh1c7f802hy0",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v0.0.18/integration_dropbox-0.0.18.tar.gz",
-      "version": "0.0.18"
+      "sha256": "0qjf1m5sf5c8df3qpslghdznlbh4qg9gm0n0amcww7aqigsa45l4",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v1.0.0/integration_dropbox-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_github": {
       "meta": {
@@ -1503,9 +1503,9 @@
         "name": "GitHub integration",
         "summary": "Integration of GitHub software development management service"
       },
-      "sha256": "015z4w7jwqkwbz8yfc3msa6rxgygahkyg5ddglg8g18v45h2mbq6",
-      "url": "https://github.com/nextcloud/integration_github/releases/download/v0.0.20/integration_github-0.0.20.tar.gz",
-      "version": "0.0.20"
+      "sha256": "0lqb4vw6wq523bbpnr8xak8knhjzd13bn5l4vkkdqfarmnv9bbf8",
+      "url": "https://github.com/nextcloud/integration_github/releases/download/v1.0.0/integration_github-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_gitlab": {
       "meta": {
@@ -1518,9 +1518,9 @@
         "name": "GitLab integration",
         "summary": "Integration of GitLab software development management service"
       },
-      "sha256": "0fifqx7bx45ic0hcvh9lki0k9xxch767njwp212q58vkbkhw8yik",
-      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v0.0.15/integration_gitlab-0.0.15.tar.gz",
-      "version": "0.0.15"
+      "sha256": "18i29k07fvqi4dxwwxsim2zmcdfgv4551qxiib2d8x4i96ghqnwd",
+      "url": "https://github.com/nextcloud/integration_gitlab/releases/download/v1.0.0/integration_gitlab-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_google": {
       "meta": {
@@ -1533,9 +1533,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "1pb37pm99fras676cgglrpn8maf7vkiy0maybxgihbs7w78chcb7",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v0.1.10/integration_google-0.1.10.tar.gz",
-      "version": "0.1.10"
+      "sha256": "0gjajlm96jv1d6aal4rffc5dsbqw30n11cnxalf6gsysza0xb404",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v1.0.0/integration_google-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_jira": {
       "meta": {
@@ -1548,9 +1548,9 @@
         "name": "Jira integration",
         "summary": "Integration of Jira user support/ticketing solution"
       },
-      "sha256": "1s5mrn4vvylhcaivsqhnybf7xc2dx9vyhcml40254g28yy1cgwyw",
-      "url": "https://github.com/nextcloud/integration_jira/releases/download/v0.0.15/integration_jira-0.0.15.tar.gz",
-      "version": "0.0.15"
+      "sha256": "1ixzw1hd8v5j7n41h4jqz5k4kgf8nfjpsdsp7d6py51n8rkbr0xz",
+      "url": "https://github.com/nextcloud/integration_jira/releases/download/v1.0.0/integration_jira-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_mastodon": {
       "meta": {
@@ -1563,9 +1563,9 @@
         "name": "Mastodon integration",
         "summary": "Integration of Mastodon self-hosted social networking service"
       },
-      "sha256": "0kg8ng8f8xm4fdqs6sfx924f3h4bdr8fl2vgqng9j9akalmqhyms",
-      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v0.0.13/integration_mastodon-0.0.13.tar.gz",
-      "version": "0.0.13"
+      "sha256": "0nb96by0qgnk87s33ryl6qzb75ccyqdidmmifpihvbvhjjz6n20a",
+      "url": "https://github.com/nextcloud/integration_mastodon/releases/download/v1.0.0/integration_mastodon-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_moodle": {
       "meta": {
@@ -1578,9 +1578,9 @@
         "name": "Moodle integration",
         "summary": "Integration of Moodle learning management system"
       },
-      "sha256": "0q5y50xhxn1zq7c32w1ar5hxjj2mbiixa83l3pwsl5im9zd8iwf5",
-      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v0.0.9/integration_moodle-0.0.9.tar.gz",
-      "version": "0.0.9"
+      "sha256": "0g98n71dxhmzac08w52ckzc89c70c8dbcj8b9m5xnbpqzdvl1h94",
+      "url": "https://github.com/nextcloud/integration_moodle/releases/download/v1.0.0/integration_moodle-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_onedrive": {
       "meta": {
@@ -1593,9 +1593,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "1rvb55a0k5n086ca7hcvzbbak3h4h93h97v8rnhganmj3b2b6dcz",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v0.0.12/integration_onedrive-0.0.12.tar.gz",
-      "version": "0.0.12"
+      "sha256": "1l7kp28v6dyxzi6s6w7l688bh5hdd844pn0y5hkk2avglavyp6iw",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v1.0.0/integration_onedrive-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_reddit": {
       "meta": {
@@ -1638,9 +1638,9 @@
         "name": "Twitter integration",
         "summary": "Integration of Twitter microblogging and social networking service"
       },
-      "sha256": "1b38b03spmj51kmgc4x5jk6gw4d56iy99rkp4fy43bdsrbji7ilf",
-      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v0.0.10/integration_twitter-0.0.10.tar.gz",
-      "version": "0.0.10"
+      "sha256": "0zgpda5srpy34y94lygyip05v9f5cazbbihd7z6assrksxwibmnv",
+      "url": "https://github.com/nextcloud/integration_twitter/releases/download/v1.0.0/integration_twitter-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "integration_zammad": {
       "meta": {
@@ -1653,9 +1653,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "13ncb81cx8mc56c1bhnv89jiv9y92bg1nj8xfdlx5xrdxa8s9kkn",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v0.0.18/integration_zammad-0.0.18.tar.gz",
-      "version": "0.0.18"
+      "sha256": "18gk0r2mgrw92zjgk3gilmh0idgv0ar0g6gkgrhzn5azyrmddp3w",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v1.0.0/integration_zammad-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "issuetemplate": {
       "meta": {
@@ -1716,18 +1716,18 @@
     },
     "libresign": {
       "meta": {
-        "description": "This is a libre digital PDF signature app for Nextcloud",
-        "homepage": "https://github.com/lyseontech/libresign",
+        "description": "**This is a libre digital PDF signature app for Nextcloud**\n\n*  Sign PDF documents using digital signature\n*  Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [setup instructions](https://github.com/LibreSign/libresign/blob/main/README.md#setup) for details.\n* **Requirements :**\n    * CFSSL server\n    * Java\n    * JSignPDF",
+        "homepage": "https://github.com/LibreSign/libresign",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "LibreSign",
-        "summary": "Libre digital signature app for Nextcloud."
+        "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1hkk7ya3q7b2brhkj3v742lf7h3mmd61n32rnja9jvgzwy3im9qf",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.0.5/libresign.tar.gz",
-      "version": "2.0.5"
+      "sha256": "1rji4601figjqbsh0kiwssnlcnv1zghivp6jqkpjz46ml38xhn6f",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.1.2/libresign.tar.gz",
+      "version": "2.1.2"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -1968,9 +1968,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "1m5wvpjs7kxva56hd4l77bsx50mysy0d6i1cwbf5qbbxpcid1zfg",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.10/ocdownloader-1.7.10.tar.gz",
-      "version": "1.7.10"
+      "sha256": "18ksyw3s5izircmy4ik8q09n6qv3yc4m5nrh36dzw4zbzd9vggkv",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.11/ocdownloader-1.7.11.tar.gz",
+      "version": "1.7.11"
     },
     "ocsms": {
       "meta": {
@@ -2343,9 +2343,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "008c0h7mvxczq931dafl8njh30c4vb8cc5k3q29vvcnngqrd88z9",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.3/quicknotes.tar.gz",
-      "version": "0.6.3"
+      "sha256": "02f5csnwzk96pmwcg2mv9kgk547s8zccvmikj33cywh8fibkjfb8",
+      "url": "https://services.delellis.com.ar/data/quicknotes.tar.gz",
+      "version": "0.6.6"
     },
     "quota_warning": {
       "meta": {
@@ -2417,9 +2417,9 @@
         "name": "Ransomware protection",
         "summary": "This app prevents uploading files with known ransomware file endings"
       },
-      "sha256": "1dmvsx8nvjfl0vdxxiaa5vbaabd13j0lild34p4gdivda2zpza47",
-      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.8.0/ransomware_protection-1.8.0.tar.gz",
-      "version": "1.8.0"
+      "sha256": "0f3dfvgrr326w8wk459n5cy989id3fip9y4ib6p84b96caiim5ri",
+      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.10.0/ransomware_protection-1.10.0.tar.gz",
+      "version": "1.10.0"
     },
     "recommendations": {
       "meta": {
@@ -2475,9 +2475,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1lfb5nhfqachsix8cqsqy3jdm80ynsyydgnbvvpiisfmnjk112ym",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.608/richdocumentscode.tar.gz",
-      "version": "6.4.608"
+      "sha256": "1rfyhlblm50rc46xwxkm0dv3mqdi10lm2zi9f5543cj7dnrmrx8j",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode.tar.gz",
+      "version": "6.4.703"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2490,9 +2490,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "11zssnr23kwmrs2p9drbsw8wyzx8fcm2sp7skhrdf7pln1k8qdw9",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.608/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.608"
+      "sha256": "1bghv996156cgzgxs7icvnaziapn4bmiz480apc56y07x586mk0r",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.703"
     },
     "riotchat": {
       "meta": {
@@ -2505,9 +2505,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1ad6h5dc140nq2iq7xidjb3b56jxph1rd4s96j031z7s8jydqfyq",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.3/riotchat.tar.gz",
-      "version": "0.7.3"
+      "sha256": "158vv8ja7knx875yhhrz4cpvvgfqprj4nlnx06iizghavfbd2l6j",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.4/riotchat.tar.gz",
+      "version": "0.7.4"
     },
     "scanner": {
       "meta": {
@@ -2800,6 +2800,20 @@
       "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
       "version": "2.1.0"
     },
+    "solid": {
+      "meta": {
+        "description": "# WebID-openID Connect identity Provider\n\nThis app gives you a WebID URL and login flow to connect to a Solid App with your Nextcloud User.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Solid",
+        "summary": "A WebID-OIDC Identity Provider, to allow interoperability with SolidProject.org"
+      },
+      "sha256": "0ilv92nq940vqwx3f2hw9pljyxz2nbch811mj8wj5j2xdgjavqag",
+      "url": "https://github.com/pdsinterop/solid-nextcloud/raw/release/dist/solid.tar.gz",
+      "version": "0.0.1"
+    },
     "souvenirs": {
       "meta": {
         "description": "View and share albums made by the [Souvenirs android application](https://github.com/zorgluf/souvenirs-android)",
@@ -2817,7 +2831,7 @@
     },
     "spgverein": {
       "meta": {
-        "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.",
+        "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.\n\nIf you like the project or if it provides real value to your organization, please\nconsider donating. Just click on the button below:\n\n[![pipeline status](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/schrieveslaach/donate)",
         "homepage": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app",
         "isShipped": false,
         "licenses": [
@@ -2826,9 +2840,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "0rgjdi6920plirbif7vshnyjdkrxcd73irwacxq02ifli9wjkszc",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/d948e311ba5332f4107f48b20e595a65/spgverein.tar.gz",
-      "version": "0.8.1"
+      "sha256": "040iw45w1dplcfvlqjjdiwl1pl1is1jrisq8hcxbja8j1d33lzv7",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/1114984188/artifacts/raw/spgverein.tar.gz",
+      "version": "0.9.0"
     },
     "spreed": {
       "meta": {
@@ -3184,9 +3198,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "0vnw8nxfxrlzb1xha4dznnj7crwl2kcw90wwppdwh0yrnkfg00zd",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.1/unsplash.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1g2ql8lnq8l9j9wd6lhzd33axkh3yb18dci779bgl0fdp84wabbd",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.2/unsplash.tar.gz",
+      "version": "1.2.2"
     },
     "updatenotification": {
       "meta": {
@@ -3428,9 +3442,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "0vnz82zd80sqrzyrlql5qi6kmmx4bsk4ir42fxhvnc08xz7w7q3z",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.4/weather-1.7.4.tar.gz",
-      "version": "1.7.4"
+      "sha256": "1xxmvxh0w53a3j6pc9ixs3q32jp7050pvpf1rgiblngmihn227yk",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.5/weather-1.7.5.tar.gz",
+      "version": "1.7.5"
     },
     "weather_status": {
       "meta": {

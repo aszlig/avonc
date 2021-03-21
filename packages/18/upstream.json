@@ -387,9 +387,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1a0169gq1hid3mh3qksypxg87s1flc5iap7v21q93abk0af436dz",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.0/contacts.tar.gz",
-      "version": "3.5.0"
+      "sha256": "1i4c8w6gchzwkcmc2rgmpqcy8dyxivdcr79grwkricnk1zxfyaq9",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v3.4.3/contacts.tar.gz",
+      "version": "3.4.3"
     },
     "cookbook": {
       "meta": {
@@ -955,9 +955,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "080548ix1zmqpdflh9am9g61pdv7jyryj9ifs1y8apx42dhd2dqq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.4/files_linkeditor.tar.gz",
-      "version": "1.1.4"
+      "sha256": "11rmlf7nc833c38p82rw47zp8n7fk8cmzl7h8ypgnrmpvn7izn1s",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.5/files_linkeditor.tar.gz",
+      "version": "1.1.5"
     },
     "files_lock": {
       "meta": {
@@ -1526,18 +1526,18 @@
     },
     "libresign": {
       "meta": {
-        "description": "This is a libre digital PDF signature app for Nextcloud",
-        "homepage": "https://github.com/lyseontech/libresign",
+        "description": "**This is a libre digital PDF signature app for Nextcloud**\n\n*  Sign PDF documents using digital signature\n*  Setup of this app requires access to terminal and even getting your hands dirty with installation of additional software. See [setup instructions](https://github.com/LibreSign/libresign/blob/main/README.md#setup) for details.\n* **Requirements :**\n    * CFSSL server\n    * Java\n    * JSignPDF",
+        "homepage": "https://github.com/LibreSign/libresign",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "LibreSign",
-        "summary": "Libre digital signature app for Nextcloud."
+        "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1hkk7ya3q7b2brhkj3v742lf7h3mmd61n32rnja9jvgzwy3im9qf",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.0.5/libresign.tar.gz",
-      "version": "2.0.5"
+      "sha256": "1rji4601figjqbsh0kiwssnlcnv1zghivp6jqkpjz46ml38xhn6f",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.1.2/libresign.tar.gz",
+      "version": "2.1.2"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -2197,9 +2197,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "008c0h7mvxczq931dafl8njh30c4vb8cc5k3q29vvcnngqrd88z9",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.3/quicknotes.tar.gz",
-      "version": "0.6.3"
+      "sha256": "02f5csnwzk96pmwcg2mv9kgk547s8zccvmikj33cywh8fibkjfb8",
+      "url": "https://services.delellis.com.ar/data/quicknotes.tar.gz",
+      "version": "0.6.6"
     },
     "quota_warning": {
       "meta": {
@@ -2609,6 +2609,20 @@
       "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.1.0/socialsharing_twitter.tar.gz",
       "version": "2.1.0"
     },
+    "solid": {
+      "meta": {
+        "description": "# WebID-openID Connect identity Provider\n\nThis app gives you a WebID URL and login flow to connect to a Solid App with your Nextcloud User.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Solid",
+        "summary": "A WebID-OIDC Identity Provider, to allow interoperability with SolidProject.org"
+      },
+      "sha256": "0ilv92nq940vqwx3f2hw9pljyxz2nbch811mj8wj5j2xdgjavqag",
+      "url": "https://github.com/pdsinterop/solid-nextcloud/raw/release/dist/solid.tar.gz",
+      "version": "0.0.1"
+    },
     "souvenirs": {
       "meta": {
         "description": "View and share albums made by the [Souvenirs android application](https://github.com/zorgluf/souvenirs-android)",
@@ -2978,9 +2992,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "0vnw8nxfxrlzb1xha4dznnj7crwl2kcw90wwppdwh0yrnkfg00zd",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.1/unsplash.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1g2ql8lnq8l9j9wd6lhzd33axkh3yb18dci779bgl0fdp84wabbd",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.2/unsplash.tar.gz",
+      "version": "1.2.2"
     },
     "updatenotification": {
       "meta": {
