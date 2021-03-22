@@ -2075,6 +2075,21 @@
       "url": "https://github.com/nextcloud/orcid/releases/download/v1.1.1/orcid-1.1.1.tar.gz",
       "version": "1.1.1"
     },
+    "passman": {
+      "meta": {
+        "description": "Passman is a full featured password manager.\nFeatures:\n- Vaults\n- Vault key is never sent to the server\n- Browser extension for easy access to passwords\n- Android app for on the road access\n- Credentials are client side encrypted with 256bit AES\n- Credentials are server side encrypted with 256bit AES\n- Ability to add custom fields to credentials\n- Built-in OTP (One Time Password) generator\n- Password analyzer\n- Share passwords internally and via link in a secure manner.\n- Import from various password managers (KeePass, LastPass, DashLane, ZOHO, Clipperz.is )\nFor an demo of this app visit [https://demo.passman.cc](https://demo.passman.cc)",
+        "homepage": "https://demo.passman.cc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Passman",
+        "summary": "Passman is a full featured password manager."
+      },
+      "sha256": "1qbyc90iz9rjb36ja0ymnbw7xfym1wx2m5q3nalndpcd4sgnvjpd",
+      "url": "https://releases.passman.cc/passman_2.3.7.tar.gz",
+      "version": "2.3.7"
+    },
     "password_policy": {
       "meta": {
         "alwaysEnable": false,
@@ -2445,9 +2460,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "0jllb4vzm9ifqx3k97py4w47a2cjklbzhc87zkg2i7b2nbc4mdv9",
-      "url": "https://github.com/nextcloud/registration/releases/download/v0.7.0/registration-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "1f36g1y5j6hzr75949d3n91irpdhyiq1w7jidmcy5a14pzawixsi",
+      "url": "https://github.com/nextcloud/registration/releases/download/v1.0.0/registration-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "richdocuments": {
       "meta": {
@@ -2475,9 +2490,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1rfyhlblm50rc46xwxkm0dv3mqdi10lm2zi9f5543cj7dnrmrx8j",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode.tar.gz",
-      "version": "6.4.703"
+      "sha256": "09yijkg7w4rg2xhmslry3n3kvpsffrs0r1j7wm83shy7445lg446",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.705/richdocumentscode.tar.gz",
+      "version": "6.4.705"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2490,9 +2505,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1bghv996156cgzgxs7icvnaziapn4bmiz480apc56y07x586mk0r",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.703"
+      "sha256": "00jvc6p4668rwx6h4ik58inqfw99h73b67i6d58p44pks2gdv5jd",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.705/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.705"
     },
     "riotchat": {
       "meta": {

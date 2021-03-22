@@ -2294,9 +2294,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1rfyhlblm50rc46xwxkm0dv3mqdi10lm2zi9f5543cj7dnrmrx8j",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode.tar.gz",
-      "version": "6.4.703"
+      "sha256": "09yijkg7w4rg2xhmslry3n3kvpsffrs0r1j7wm83shy7445lg446",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.705/richdocumentscode.tar.gz",
+      "version": "6.4.705"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2309,9 +2309,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1bghv996156cgzgxs7icvnaziapn4bmiz480apc56y07x586mk0r",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.703/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.703"
+      "sha256": "00jvc6p4668rwx6h4ik58inqfw99h73b67i6d58p44pks2gdv5jd",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.705/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.705"
     },
     "riotchat": {
       "meta": {
