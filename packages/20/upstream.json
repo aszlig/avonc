@@ -258,9 +258,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "0jm8q20613kvahdwgbglm0cxxb1alq64yamb5h0zicfcsaylpd61",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.1.3/calendar.tar.gz",
-      "version": "2.1.3"
+      "sha256": "1z99ay9nv7wrpv9pphgyv8c1aniccf8cdrir1sa24f8s5ha7mqvw",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.2.0/calendar.tar.gz",
+      "version": "2.2.0"
     },
     "camerarawpreviews": {
       "meta": {
@@ -1855,9 +1855,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1dljslb82ci4djvmpm6iccp3gp6jbgcsy3wjh2v0s2dncaygcl5d",
-      "url": "https://github.com/owncloud/music/releases/download/v1.0.3/music_1.0.3_nc-signed.tar.gz",
-      "version": "1.0.3"
+      "sha256": "1zil053dcb3fn72xb01ndhpv5vwa6zrklycy6j14f188lf4nb59d",
+      "url": "https://github.com/owncloud/music/releases/download/v1.1.0/music_1.1.0_nc-signed.tar.gz",
+      "version": "1.1.0"
     },
     "news": {
       "meta": {
@@ -2074,6 +2074,20 @@
       "sha256": "1k2s7jjgqhm6flqwh36vqhavyahi6dz30riig5w4prj0jfjm4k1b",
       "url": "https://github.com/nextcloud/orcid/releases/download/v1.1.1/orcid-1.1.1.tar.gz",
       "version": "1.1.1"
+    },
+    "ownpad": {
+      "meta": {
+        "description": "Ownpad is a Nextcloud application that allows to create and open\n    Etherpad and Ethercalc documents.\n\n    This application requires to have access to an instance of\n    Etherpad and/or Ethercalc to work properly.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Ownpad",
+        "summary": "Create and open Etherpad and Ethercalc documents."
+      },
+      "sha256": "133x3fydwd0f0awh5nnfmzm8m3jbgzkg52ahakyphbj9bvvpk11b",
+      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.16/ownpad.tar.gz",
+      "version": "0.6.16"
     },
     "passman": {
       "meta": {

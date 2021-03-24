@@ -1661,9 +1661,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1dljslb82ci4djvmpm6iccp3gp6jbgcsy3wjh2v0s2dncaygcl5d",
-      "url": "https://github.com/owncloud/music/releases/download/v1.0.3/music_1.0.3_nc-signed.tar.gz",
-      "version": "1.0.3"
+      "sha256": "1zil053dcb3fn72xb01ndhpv5vwa6zrklycy6j14f188lf4nb59d",
+      "url": "https://github.com/owncloud/music/releases/download/v1.1.0/music_1.1.0_nc-signed.tar.gz",
+      "version": "1.1.0"
     },
     "news": {
       "meta": {
@@ -1891,9 +1891,9 @@
         "name": "Ownpad",
         "summary": "Create and open Etherpad and Ethercalc documents."
       },
-      "sha256": "033g54k4yssrs3cddqwb52xzka3hcc0lrrb5xvraq8a3kwh0xb1c",
-      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.15/ownpad.tar.gz",
-      "version": "0.6.15"
+      "sha256": "133x3fydwd0f0awh5nnfmzm8m3jbgzkg52ahakyphbj9bvvpk11b",
+      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.16/ownpad.tar.gz",
+      "version": "0.6.16"
     },
     "passman": {
       "meta": {
