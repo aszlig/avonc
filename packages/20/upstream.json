@@ -351,7 +351,7 @@
     },
     "collectives": {
       "meta": {
-        "description": "Collectives is a Nextcloud App for activist and community projects to organize together. Come and gather in collectives to build shared knowledge.",
+        "description": "Collectives is a Nextcloud App for activist and community projects to organize together.\nCome and gather in collectives to build shared knowledge.\n\n*  **Collective and non-hierarchical workflow by heart**: Collectives are\n  tied to a [Nextcloud Circle](https://github.com/nextcloud/circles) and\n  owned by the collective.\n*  **Collaborative page editing** like known from Etherpad thanks to the\n  [Text app](https://github.com/nextcloud/text).\n*  **Well-known [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax**\n  for page formatting.\n\n## Installation\n\nIn your Nextcloud instance, simply navigate to **Apps**, find the\n**Circles** and **Collectives** apps and enable them.",
         "homepage": "https://gitlab.com/collectivecloud/collectives",
         "isShipped": false,
         "licenses": [
@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "1ffkk8acpqwsrhdlig9dbppcsf51dl0s59nswrjxca0zfyl8baj6",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/d9ba2f8ef7e110c5991695ae0980c223/collectives-0.2.3.tar.gz",
-      "version": "0.2.3"
+      "sha256": "11k57dd275z391rwp1gprj8373jy98i5vkvy5ik8a6rfwyqi50bi",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c4fa7f203efdae0b8d75bbfbcc2bf882/collectives-0.3.0.tar.gz",
+      "version": "0.3.0"
     },
     "comments": {
       "meta": {
