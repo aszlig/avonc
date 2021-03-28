@@ -1178,9 +1178,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "0qyrjnia609m20dyn6dzrrfd7ws8m43wijvacfy268icvkqigwyv",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.2.2/forms.tar.gz",
-      "version": "2.2.2"
+      "sha256": "043309shahli270ccg3kdm37hw7x9iafr8i0h1yxxs529xv4ijkd",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.2.3/forms.tar.gz",
+      "version": "2.2.3"
     },
     "fulltextsearch": {
       "meta": {
@@ -2020,9 +2020,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1jvdkm19c1k1wxiwhc32nqlx7vpcgi74nxi0708a9hpsj7v86pjd",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.7.5/polls.tar.gz",
-      "version": "1.7.5"
+      "sha256": "169f87ph0gjsw8ma5bfhgg8vqv077vb206l1pnv4001vcnpx9cx9",
+      "url": "https://github.com/nextcloud/polls/releases/download/1.8.1/polls.tar.gz",
+      "version": "1.8.1"
     },
     "preferred_providers": {
       "meta": {
@@ -2177,9 +2177,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "02f5csnwzk96pmwcg2mv9kgk547s8zccvmikj33cywh8fibkjfb8",
-      "url": "https://services.delellis.com.ar/data/quicknotes.tar.gz",
-      "version": "0.6.6"
+      "sha256": "1w2szam6im4kmndkz8z0gspaywin1g72csn9w21rdixaprhg45j4",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.6.7/quicknotes.tar.gz",
+      "version": "0.6.7"
     },
     "quota_warning": {
       "meta": {
@@ -2855,9 +2855,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0r84mrcw7y30kz338ski50za67mv7z5sdz3h3yafqyv8xvnzymxd",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.54.tar.gz",
-      "version": "0.0.54"
+      "sha256": "02gnbyqijq51fpdx6yzkg11vkq8m5hxz63k9lvfibqcywqq1siml",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.55.tar.gz",
+      "version": "0.0.55"
     },
     "transmission": {
       "meta": {
