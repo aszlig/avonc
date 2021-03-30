@@ -1,6 +1,7 @@
 import json
 import sys
 
+from argparse import ArgumentParser
 from pathlib import Path
 from typing import Dict, Any, Optional, Tuple
 from semantic_version import Version, Spec
@@ -167,6 +168,11 @@ def prepare_commit_message(subject: str, message: str) -> None:
 
 
 def main() -> None:
+    parser = ArgumentParser(description='Update Nextcloud Server and Apps')
+    parser.add_argument('-g', '--git-commit', action='store_true',
+                        help='Prepare Git commit message')
+    options = parser.parse_args()
+
     basedir: Path = Path.cwd() / 'packages'
     outfiles: Dict[Path, str] = {}
     changeset: Dict[int, AppChanges] = {}
@@ -194,6 +200,7 @@ def main() -> None:
 
     if pretty_printed:
         tqdm.write("\n" + pretty_printed, file=sys.stderr)
-        prepare_commit_message('Update all Nextcloud apps', pretty_printed)
-        tqdm.write('Commit message prepared, please run "git commit"'
-                   ' after staging files.', file=sys.stderr)
+        if options.git_commit:
+            prepare_commit_message('Update all Nextcloud apps', pretty_printed)
+            tqdm.write('Commit message prepared, please run "git commit"'
+                       ' after staging files.', file=sys.stderr)
