@@ -506,7 +506,7 @@
     },
     "discoursesso": {
       "meta": {
-        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.",
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance. Please look at the admin documentation for security issues!",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -514,9 +514,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0m6m31jzgrd9ppf517zfmzjfg4imgdxlaqhs8hyb4ycwbjyjlh30",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.0/discoursesso-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0591r3yaz1dlhvwv276wvx3wmrs1pminkrp7paa7sj9ghjj1cdb8",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.21/discoursesso-1.0.21.tar.gz",
+      "version": "1.0.21"
     },
     "documentserver_community": {
       "meta": {

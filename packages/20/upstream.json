@@ -520,7 +520,7 @@
     },
     "discoursesso": {
       "meta": {
-        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance.",
+        "description": "Discourse has it&amp;#39;s own SSO protocol, that needs an specially designed endpoint to authenticate with. This app implements this endpoint and allows Discourse instances to authenticate against an Nextcloud instance. Please look at the admin documentation for security issues!",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -528,9 +528,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0m6m31jzgrd9ppf517zfmzjfg4imgdxlaqhs8hyb4ycwbjyjlh30",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.0/discoursesso-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0591r3yaz1dlhvwv276wvx3wmrs1pminkrp7paa7sj9ghjj1cdb8",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.21/discoursesso-1.0.21.tar.gz",
+      "version": "1.0.21"
     },
     "documentserver_community": {
       "meta": {
@@ -2869,9 +2869,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "040iw45w1dplcfvlqjjdiwl1pl1is1jrisq8hcxbja8j1d33lzv7",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/-/jobs/1114984188/artifacts/raw/spgverein.tar.gz",
-      "version": "0.9.0"
+      "sha256": "0b1jw3brikgvbxjahnrxznhkcvsrbmchynm6mp6qwk0fm4vbic7b",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/8bd4058bcd1cbca6f84b2b1fe9d8ef5c/spgverein.tar.gz",
+      "version": "0.10.2"
     },
     "spreed": {
       "meta": {
