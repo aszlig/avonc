@@ -1207,9 +1207,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "043309shahli270ccg3kdm37hw7x9iafr8i0h1yxxs529xv4ijkd",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.2.3/forms.tar.gz",
-      "version": "2.2.3"
+      "sha256": "14qi10rd18h8q5ifyymgakgrmg1137f7vpngqscn8is0dwkidcrl",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.2.4/forms.tar.gz",
+      "version": "2.2.4"
     },
     "fulltextsearch": {
       "meta": {
