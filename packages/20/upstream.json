@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "11k57dd275z391rwp1gprj8373jy98i5vkvy5ik8a6rfwyqi50bi",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c4fa7f203efdae0b8d75bbfbcc2bf882/collectives-0.3.0.tar.gz",
-      "version": "0.3.0"
+      "sha256": "1xxc57flibsb0yq50wgs1ak1dv1vs1m8v4lx9nhckc713rfahq9z",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/6997120e2877dd03bc575f4e853b2fb5/collectives-0.3.1.tar.gz",
+      "version": "0.3.1"
     },
     "comments": {
       "meta": {
@@ -2056,9 +2056,9 @@
         "name": "Openhab Viewer",
         "summary": "Renders sitemaps of an Openhab instance."
       },
-      "sha256": "0fa620apb2z34f5x1dqyk9ycx8sq5ykqi5bmllh627af1ar6zvc5",
-      "url": "https://github.com/kenda/nextcloud-openhab/releases/download/v0.9.4/openhab.tar.gz",
-      "version": "0.9.4"
+      "sha256": "1yc6r6zndmkqhz1plf157jpjrb9ixnm5s1vwrlrf61zjk8s9lfsa",
+      "url": "https://github.com/kenda/nextcloud-openhab/releases/download/0.9.5/openhab.tar.gz",
+      "version": "0.9.5"
     },
     "orcid": {
       "meta": {
@@ -2854,9 +2854,9 @@
         "name": "Souvenirs",
         "summary": "Display \"souvenir\" albums in nextcloud web interface"
       },
-      "sha256": "02j483my7yl01vwxfwd5hglk3pv6m1q5l970cca3sykcq7414kbg",
-      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.0.0/souvenirs.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0qcp13wr699j6vy3sm7r7myv46js69nkc5s7ykngsapn4n1vqc5g",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.1.0/souvenirs.tar.gz",
+      "version": "1.1.0"
     },
     "spgverein": {
       "meta": {
