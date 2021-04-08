@@ -502,9 +502,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1nwcv3f8zrzfwg7syss4yqafj025g0qhn7yb4kny67xqq8is598f",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.5/deck.tar.gz",
-      "version": "1.2.5"
+      "sha256": "04dylbgbmga43cni5np4cr6vcvvqzwvw63wpdn5vc3cplj41zpfx",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.6/deck.tar.gz",
+      "version": "1.2.6"
     },
     "dicomviewer": {
       "meta": {
@@ -2634,9 +2634,9 @@
         "name": "Souvenirs",
         "summary": "Display \"souvenir\" albums in nextcloud web interface"
       },
-      "sha256": "0qcp13wr699j6vy3sm7r7myv46js69nkc5s7ykngsapn4n1vqc5g",
-      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.1.0/souvenirs.tar.gz",
-      "version": "1.1.0"
+      "sha256": "16bqnrk01glkcp518pf5z2fla339ppg1af85kx82c6vccsxadkfq",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.1.1/souvenirs.tar.gz",
+      "version": "1.1.1"
     },
     "spgverein": {
       "meta": {

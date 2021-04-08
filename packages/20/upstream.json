@@ -514,9 +514,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1nwcv3f8zrzfwg7syss4yqafj025g0qhn7yb4kny67xqq8is598f",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.5/deck.tar.gz",
-      "version": "1.2.5"
+      "sha256": "04dylbgbmga43cni5np4cr6vcvvqzwvw63wpdn5vc3cplj41zpfx",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.6/deck.tar.gz",
+      "version": "1.2.6"
     },
     "discoursesso": {
       "meta": {
@@ -1810,9 +1810,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1d2d6n7xymbw7k0r9wllqbx9nv85608f9rg2bfcnlzirlap01bd5",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.9.4/mail.tar.gz",
-      "version": "1.9.4"
+      "sha256": "0hy1b5s9g4l600ysgx7kkzs2xwfchilp1ijzi7fcxz8gjnds5hni",
+      "url": "https://github.com/nextcloud/mail/releases/download/v1.9.5/mail.tar.gz",
+      "version": "1.9.5"
     },
     "maps": {
       "meta": {
@@ -2205,7 +2205,7 @@
     },
     "podcast": {
       "meta": {
-        "description": "** Browse, listen and subscribe to podcasts**\n\n      Full featured podcatcher which uses the community index fyyd.de as a\n      source.\n\n-  Browse and subscribe huge collection of podcasts\n-  Listen to episodes directly in Nextcloud\n-  Support episode chapters\n-  Smoth audio playback and transitions",
+        "description": "** Browse, listen and subscribe to podcasts**\n\nFull featured podcatcher which uses the community index fyyd.de as a source.\n\n-  Browse and subscribe huge collection of podcasts\n-  Listen to episodes directly in Nextcloud\n-  Support episode chapters\n-  Smoth audio playback and transitions",
         "homepage": "https://git.project-insanity.org/onny/nextcloud-app-podcast",
         "isShipped": false,
         "licenses": [
@@ -2214,9 +2214,9 @@
         "name": "Podcast",
         "summary": "Browse, manage and listen to podcasts"
       },
-      "sha256": "17q5i5ap3wwndax5pcsipdrgzgf83m3kz7smlzg59fwlyn835q87",
-      "url": "https://git.project-insanity.org/onny/nextcloud-app-podcast/-/jobs/1169/artifacts/raw/build/artifacts/podcast.tar.gz",
-      "version": "0.2.0"
+      "sha256": "0f1jd6qf0dlli8371blz3sqmji49rgad4wc30gin6z70k36h7v2a",
+      "url": "https://git.project-insanity.org/onny/nextcloud-app-podcast/-/jobs/1312/artifacts/raw/build/artifacts/podcast.tar.gz",
+      "version": "0.3.1"
     },
     "polls": {
       "meta": {
@@ -2474,9 +2474,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their e-mail address."
       },
-      "sha256": "1ym7rql3m4k1vdjpmhd5x1fnd0gya6s7sm8zbzjafbh6b3sgxjmi",
-      "url": "https://github.com/nextcloud/registration/releases/download/v1.1.1/registration-1.1.1.tar.gz",
-      "version": "1.1.1"
+      "sha256": "141b5wldarvsvzxfpyzpvcav1r9nfsal74nhfaqglcqwxl0rp7zb",
+      "url": "https://github.com/nextcloud/registration/releases/download/v1.1.2/registration-1.1.2.tar.gz",
+      "version": "1.1.2"
     },
     "richdocuments": {
       "meta": {
@@ -2534,9 +2534,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "158vv8ja7knx875yhhrz4cpvvgfqprj4nlnx06iizghavfbd2l6j",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.4/riotchat.tar.gz",
-      "version": "0.7.4"
+      "sha256": "193sq741im61wvmdl0v1vnlzxrm51zhx31q4lvc2m061ny0759if",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.5/riotchat.tar.gz",
+      "version": "0.7.5"
     },
     "scanner": {
       "meta": {
@@ -2765,9 +2765,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1gl2pydc97r6mq19ma6382ghapixz9mkxrskqkmacg07ms954m52",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.4.0/release.tar.gz",
-      "version": "4.4.0"
+      "sha256": "1qxv2qiqr62bag70pydrjqrh1r6ddm7c9ppzni7cimcza719y5ka",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.4.1/release.tar.gz",
+      "version": "4.4.1"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -2854,9 +2854,9 @@
         "name": "Souvenirs",
         "summary": "Display \"souvenir\" albums in nextcloud web interface"
       },
-      "sha256": "0qcp13wr699j6vy3sm7r7myv46js69nkc5s7ykngsapn4n1vqc5g",
-      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.1.0/souvenirs.tar.gz",
-      "version": "1.1.0"
+      "sha256": "16bqnrk01glkcp518pf5z2fla339ppg1af85kx82c6vccsxadkfq",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.1.1/souvenirs.tar.gz",
+      "version": "1.1.1"
     },
     "spgverein": {
       "meta": {
