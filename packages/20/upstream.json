@@ -243,9 +243,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "0awpn49kr6p3w3kln0akn83ansbpdw3wj24lp2rywh2g1016s7i1",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.0.1/bruteforcesettings.tar.gz",
-      "version": "2.0.1"
+      "sha256": "17lgc8qm16k68p2xrlzli267kzi2pbni26qch9ppy8wxk7ngm1g7",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.1.0/bruteforcesettings.tar.gz",
+      "version": "2.1.0"
     },
     "calendar": {
       "meta": {
@@ -345,9 +345,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1dzrkk9n38mi5whsh6har8iz26wax7dmdf2qnkwxa4y31an41mng",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.14/cms_pico-v1.0.14.tar.gz",
-      "version": "1.0.14"
+      "sha256": "0npd743jqrnxnhq8d4b8fwbw7r456yzfi59li7ahp1hdmcg3mlsp",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.15/cms_pico-v1.0.15.tar.gz",
+      "version": "1.0.15"
     },
     "collectives": {
       "meta": {
@@ -1326,9 +1326,9 @@
         "name": "Default group quota",
         "summary": "Set default user quotas for group members"
       },
-      "sha256": "0c7c95nqmjwhgm5vjqb0d0q7f26ynv97hr7mw7i91vchxg159bxc",
-      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.0/group_default_quota.tar.gz",
-      "version": "0.1.0"
+      "sha256": "1xpk0g8gnaq6fw2mpp6zlbi9dvgj00mjrlhchnm872dz4jrhgiqs",
+      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.1/group_default_quota.tar.gz",
+      "version": "0.1.1"
     },
     "group_everyone": {
       "meta": {
@@ -1725,9 +1725,9 @@
         "name": "LibreSign",
         "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1rji4601figjqbsh0kiwssnlcnv1zghivp6jqkpjz46ml38xhn6f",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.1.2/libresign.tar.gz",
-      "version": "2.1.2"
+      "sha256": "1c558b1slvv500w1jc28cmkpwg5l77x2cdpy3p8a51nzng26jzm7",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.0/libresign.tar.gz",
+      "version": "2.2.0"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -2489,9 +2489,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1ar7xnjs4iik0k4i2l91cdqqrxg40kzpqh87wych88mb1dv1sj6n",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.17/richdocuments.tar.gz",
-      "version": "3.7.17"
+      "sha256": "0jvfp0lz9abh87psr0m7g0ra9l4wf6jvaqs6hmv6wcrq0ipyxx3k",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.18/richdocuments.tar.gz",
+      "version": "3.7.18"
     },
     "richdocumentscode": {
       "meta": {
@@ -2690,9 +2690,9 @@
         "name": "SharePoint Backend",
         "summary": "SharePoint Backend for External storages"
       },
-      "sha256": "00rbwbf863pcprhg8zyqipwx5mxpd0g6sfblh2z1k9sal35pz033",
-      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.8.0/sharepoint.tar.gz",
-      "version": "1.8.0"
+      "sha256": "1km80z0ms86lgykvh7c8p6z2hfhzf7mcp0irsh5wh0a5lcdkk6vb",
+      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.8.1/sharepoint.tar.gz",
+      "version": "1.8.1"
     },
     "sharingpath": {
       "meta": {
@@ -2884,9 +2884,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1hfqfyib83cpsxnmg6cxqirlmqcb2slbinqdg6xhs3zigzmpgqsz",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.6/spreed-10.0.6.tar.gz",
-      "version": "10.0.6"
+      "sha256": "0iccq3cy63m7152d521yls5v6pw7q8zhndfrwh38qbqs6rd86s5z",
+      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.7/spreed-10.0.7.tar.gz",
+      "version": "10.0.7"
     },
     "sqreen_sdk": {
       "meta": {

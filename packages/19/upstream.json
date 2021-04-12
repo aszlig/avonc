@@ -257,9 +257,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "0awpn49kr6p3w3kln0akn83ansbpdw3wj24lp2rywh2g1016s7i1",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.0.1/bruteforcesettings.tar.gz",
-      "version": "2.0.1"
+      "sha256": "17lgc8qm16k68p2xrlzli267kzi2pbni26qch9ppy8wxk7ngm1g7",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.1.0/bruteforcesettings.tar.gz",
+      "version": "2.1.0"
     },
     "calendar": {
       "meta": {
@@ -359,9 +359,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1dzrkk9n38mi5whsh6har8iz26wax7dmdf2qnkwxa4y31an41mng",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.14/cms_pico-v1.0.14.tar.gz",
-      "version": "1.0.14"
+      "sha256": "0npd743jqrnxnhq8d4b8fwbw7r456yzfi59li7ahp1hdmcg3mlsp",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.15/cms_pico-v1.0.15.tar.gz",
+      "version": "1.0.15"
     },
     "comments": {
       "meta": {
@@ -1531,9 +1531,9 @@
         "name": "LibreSign",
         "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1rji4601figjqbsh0kiwssnlcnv1zghivp6jqkpjz46ml38xhn6f",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.1.2/libresign.tar.gz",
-      "version": "2.1.2"
+      "sha256": "1c558b1slvv500w1jc28cmkpwg5l77x2cdpy3p8a51nzng26jzm7",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.0/libresign.tar.gz",
+      "version": "2.2.0"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -2279,9 +2279,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1ar7xnjs4iik0k4i2l91cdqqrxg40kzpqh87wych88mb1dv1sj6n",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.17/richdocuments.tar.gz",
-      "version": "3.7.17"
+      "sha256": "0jvfp0lz9abh87psr0m7g0ra9l4wf6jvaqs6hmv6wcrq0ipyxx3k",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.18/richdocuments.tar.gz",
+      "version": "3.7.18"
     },
     "richdocumentscode": {
       "meta": {
@@ -2465,9 +2465,9 @@
         "name": "SharePoint Backend",
         "summary": "SharePoint Backend for External storages"
       },
-      "sha256": "0igj6zwmfspr1lv16xsfg3sqwfskgfwc58dyjpjyr4bxwa7xhsc4",
-      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.7.0/sharepoint.tar.gz",
-      "version": "1.7.0"
+      "sha256": "15gnl63acpfs9c8c6cpr1lgf9i1b8iyl5l8m1z5jprfkg0a50m90",
+      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.7.1/sharepoint.tar.gz",
+      "version": "1.7.1"
     },
     "sharingpath": {
       "meta": {
