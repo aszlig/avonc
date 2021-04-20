@@ -169,9 +169,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "1jq3pyf2r0kip4wrq90z2vm0bymfp4qm0vcy18nd97yhd9nx85qb",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.0/auto_groups-v1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "0yxnrjfjjy19lm7x3b68qv10f5kawmspvf9430qiha2qgxn520z5",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.1/auto_groups-v1.3.1.tar.gz",
+      "version": "1.3.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -502,9 +502,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "04dylbgbmga43cni5np4cr6vcvvqzwvw63wpdn5vc3cplj41zpfx",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.6/deck.tar.gz",
-      "version": "1.2.6"
+      "sha256": "18v10dadr857mahp9r0pbv67gs71wp3z9rjsqbs0mcd58n09il9v",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.7/deck.tar.gz",
+      "version": "1.2.7"
     },
     "dicomviewer": {
       "meta": {
@@ -1852,9 +1852,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0vj7vqhl8y9m96il15kvgqacic75rzj8na9yxwqcqp7ccmjsdkch",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.7.1/oidc_login.tar.gz",
-      "version": "1.7.1"
+      "sha256": "1bkmrz2c3lq4l1ddxznb5jydas2l6m5qgw1lc3jgc6iq3k8zgfzb",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.9.2/oidc_login.tar.gz",
+      "version": "1.9.2"
     },
     "ojsxc": {
       "meta": {
@@ -2314,9 +2314,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0jvfp0lz9abh87psr0m7g0ra9l4wf6jvaqs6hmv6wcrq0ipyxx3k",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.18/richdocuments.tar.gz",
-      "version": "3.7.18"
+      "sha256": "1fpk8blnvg1z4af9smricnzf94azb5bd8ka7g7937225dq9m8kh4",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.19/richdocuments.tar.gz",
+      "version": "3.7.19"
     },
     "riotchat": {
       "meta": {

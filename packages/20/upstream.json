@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "12d351xq1861hriqi8c416x42srqc1xihsxzky96qb6g1krysk46",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/fbc85927e5091ff36fcfefafca92627eff0a2adf/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.8.10"
+      "sha256": "1qrdcmvkd49a5ks9cqfw7id4npz6c0k2j0i11s3lzgnp3ywrnx02",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.9.0/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.9.0"
     },
     "apporder": {
       "meta": {
@@ -169,9 +169,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "1jq3pyf2r0kip4wrq90z2vm0bymfp4qm0vcy18nd97yhd9nx85qb",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.0/auto_groups-v1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "0yxnrjfjjy19lm7x3b68qv10f5kawmspvf9430qiha2qgxn520z5",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.1/auto_groups-v1.3.1.tar.gz",
+      "version": "1.3.1"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "1xxc57flibsb0yq50wgs1ak1dv1vs1m8v4lx9nhckc713rfahq9z",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/6997120e2877dd03bc575f4e853b2fb5/collectives-0.3.1.tar.gz",
-      "version": "0.3.1"
+      "sha256": "0jsqiy4pkrbx5a5mxsm3xbbb7lrnyr5k3mm8z94cx6kxfw695b7c",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c9a28a8f228dc31fb76ab1f9637c2657/collectives-0.4.0.tar.gz",
+      "version": "0.4.0"
     },
     "comments": {
       "meta": {
@@ -514,9 +514,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "04dylbgbmga43cni5np4cr6vcvvqzwvw63wpdn5vc3cplj41zpfx",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.6/deck.tar.gz",
-      "version": "1.2.6"
+      "sha256": "18v10dadr857mahp9r0pbv67gs71wp3z9rjsqbs0mcd58n09il9v",
+      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.7/deck.tar.gz",
+      "version": "1.2.7"
     },
     "discoursesso": {
       "meta": {
@@ -822,6 +822,21 @@
       "sha256": "0bqkblvf5pkm61rx13jivfzglxx0frd4ykzi7zylf68mr4b2a385",
       "url": "https://github.com/nextcloud/files_automatedtagging/releases/download/v1.10.1/files_automatedtagging-1.10.1.tar.gz",
       "version": "1.10.1"
+    },
+    "files_bpm": {
+      "meta": {
+        "description": "A BPMN 2.0/DMN 1.3 Viewer and Editor",
+        "homepage": "https://github.com/Loydl/nc-bpm-app/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "BPM Files",
+        "summary": "A BPMN 2.0/DMN 1.3 Viewer and Editor"
+      },
+      "sha256": "1w3wj89yv0k046p4gbr8ipy5xpr7dxvv5m8mvwvsahqhzkvfvkk0",
+      "url": "https://github.com/Loydl/nc-bpm-app/releases/download/v0.2.1/files_bpm-v0.2.1.tar.gz",
+      "version": "0.2.1"
     },
     "files_downloadactivity": {
       "meta": {
@@ -1391,7 +1406,7 @@
     },
     "health": {
       "meta": {
-        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n\nHealth is everything.",
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n- Activities\n\nHealth is everything.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1399,9 +1414,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "0p4whpx6qp28lkblh300xrnkal1l3mylpc64xmbpj8yd9lz88l7f",
-      "url": "https://datenangebot.de/s/t873YnYFcEfebW2/download",
-      "version": "1.0.1"
+      "sha256": "198vdpijm3kf81jn7n011j4bbb0fn56rav3ib5y8lm47q39cwj87",
+      "url": "https://datenangebot.de/s/iZk8ytpG8ZH8kZP/download",
+      "version": "1.1.0"
     },
     "hidesidebars": {
       "meta": {
@@ -1488,9 +1503,9 @@
         "name": "Dropbox integration",
         "summary": "Import Dropbox data in Nextcloud"
       },
-      "sha256": "0qjf1m5sf5c8df3qpslghdznlbh4qg9gm0n0amcww7aqigsa45l4",
-      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v1.0.0/integration_dropbox-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "06q29mnys7lmahxr01x2crp7qb1b4as2h7qr7615x48ggi7974nd",
+      "url": "https://github.com/eneiluj/integration_dropbox/releases/download/v1.0.1/integration_dropbox-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "integration_github": {
       "meta": {
@@ -1533,9 +1548,9 @@
         "name": "Google integration",
         "summary": "Import Google data into Nextcloud"
       },
-      "sha256": "0gjajlm96jv1d6aal4rffc5dsbqw30n11cnxalf6gsysza0xb404",
-      "url": "https://github.com/nextcloud/integration_google/releases/download/v1.0.0/integration_google-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0mhpp4h2f0ga76rvh0z12ab5vndqqra8byagqr2rnjd97ciyp2iz",
+      "url": "https://github.com/nextcloud/integration_google/releases/download/v1.0.2/integration_google-1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "integration_jira": {
       "meta": {
@@ -1593,9 +1608,9 @@
         "name": "OneDrive integration",
         "summary": "Integration of Microsoft OneDrive"
       },
-      "sha256": "1l7kp28v6dyxzi6s6w7l688bh5hdd844pn0y5hkk2avglavyp6iw",
-      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v1.0.0/integration_onedrive-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1vcg5qjwlj5lgn242sy1liknl0w8s2vw3cfvq8ywk8r10wyb6s95",
+      "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v1.0.1/integration_onedrive-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "integration_reddit": {
       "meta": {
@@ -1725,9 +1740,9 @@
         "name": "LibreSign",
         "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1c558b1slvv500w1jc28cmkpwg5l77x2cdpy3p8a51nzng26jzm7",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.0/libresign.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1jz6z3isnw5bf0cvkq00j3labgpbdfv2a8xcwf1sw5hirnc605aa",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.1/libresign.tar.gz",
+      "version": "2.2.1"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -2012,9 +2027,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0vj7vqhl8y9m96il15kvgqacic75rzj8na9yxwqcqp7ccmjsdkch",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.7.1/oidc_login.tar.gz",
-      "version": "1.7.1"
+      "sha256": "0plvywr9sfqydnpjjlkqp3gp5ccgivz6l51jzagjc6g8f9mwslln",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.0.2/oidc_login.tar.gz",
+      "version": "2.0.2"
     },
     "ojsxc": {
       "meta": {
@@ -2489,9 +2504,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0jvfp0lz9abh87psr0m7g0ra9l4wf6jvaqs6hmv6wcrq0ipyxx3k",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.18/richdocuments.tar.gz",
-      "version": "3.7.18"
+      "sha256": "1fpk8blnvg1z4af9smricnzf94azb5bd8ka7g7937225dq9m8kh4",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.19/richdocuments.tar.gz",
+      "version": "3.7.19"
     },
     "richdocumentscode": {
       "meta": {
@@ -2534,9 +2549,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "193sq741im61wvmdl0v1vnlzxrm51zhx31q4lvc2m061ny0759if",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.5/riotchat.tar.gz",
-      "version": "0.7.5"
+      "sha256": "1jamwmbv3kjv7zhnjx4hvczcgnxbbvfb7dlgc9wxqxxbnb156myj",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.6/riotchat.tar.gz",
+      "version": "0.7.6"
     },
     "scanner": {
       "meta": {
@@ -2869,9 +2884,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "0b1jw3brikgvbxjahnrxznhkcvsrbmchynm6mp6qwk0fm4vbic7b",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/8bd4058bcd1cbca6f84b2b1fe9d8ef5c/spgverein.tar.gz",
-      "version": "0.10.2"
+      "sha256": "1sz9xy3lb6rg8m2slr28pb4mhkh6x503xw1sar0m9vqjw48qwyx5",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/b61a9afaedbd5ff86c4d39a7eddbec0f/spgverein.tar.gz",
+      "version": "0.10.3"
     },
     "spreed": {
       "meta": {
