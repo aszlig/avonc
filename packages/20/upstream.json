@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1qrdcmvkd49a5ks9cqfw7id4npz6c0k2j0i11s3lzgnp3ywrnx02",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.9.0/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.9.0"
+      "sha256": "18xhyj1w0fal6zwfn7fpjd6g4lsxzgdpl9qw1prj19kbl71qci50",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.9.1/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.9.1"
     },
     "apporder": {
       "meta": {
@@ -594,7 +594,7 @@
     },
     "ehr": {
       "meta": {
-        "description": "The Kailona Personal Health Record allows you to regain control over your health data. We provide an open source platform that allows everyone to add plugins and make improvements.\n\nIt helps you aggregate, manage, securely share and visualize your health data including lab data, medical images, FHIR data from hospitals, vital signs, nutritional and activity data.\n\n**Note that this app is under alpha development!**",
+        "description": "The Kailona Personal Health Record allows you to regain control over your health data. We provide an open source platform that allows everyone to add plugins and make improvements.\n\nIt helps you aggregate, manage, securely share and visualize your health data including lab data, medical images, FHIR data from hospitals, vital signs, nutritional and activity data.\n\nThis app works with a FHIR server. Please read the [documentation](https://docs.kailona.org/docs/#installation) to learn more about that.\n\n**Note that this app is under alpha development!**",
         "homepage": "https://docs.kailona.org",
         "isShipped": false,
         "licenses": [
@@ -603,9 +603,9 @@
         "name": "EHR (Electronic Health Records)",
         "summary": "Kailona: Personal Health Records"
       },
-      "sha256": "105g8ha52pq75y8mfz4kxf0r3yc967vfalr08r7k6whsxgqplk0n",
-      "url": "https://github.com/Kailona/ehr/releases/download/0.1.2/ehr-0.1.2.tar.gz",
-      "version": "0.1.2"
+      "sha256": "162mvf7ar8xky8vzzprw50j08y77l85xsc1b660iwwx0lhs488si",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.4/ehr-0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "emlviewer": {
       "meta": {
@@ -1612,6 +1612,21 @@
       "url": "https://github.com/eneiluj/integration_onedrive/releases/download/v1.0.1/integration_onedrive-1.0.1.tar.gz",
       "version": "1.0.1"
     },
+    "integration_openproject": {
+      "meta": {
+        "description": "OpenProject integration provides a dashboard widget displaying your important notifications,\n\ta search provider for work packages and notifications for changes in active work packages.",
+        "homepage": "https://github.com/eneiluj/integration_openproject",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OpenProject integration",
+        "summary": "Integration of OpenProject project management tool"
+      },
+      "sha256": "0hddyrhhfad5hxl8zl8gzc9a9swdmsiwdx8j8a0888n7sag8bqn8",
+      "url": "https://github.com/eneiluj/integration_openproject/releases/download/v1.0.1/integration_openproject-1.0.1.tar.gz",
+      "version": "1.0.1"
+    },
     "integration_reddit": {
       "meta": {
         "description": "Reddit integration provides a dashboard widget displaying your recent subscribed news.",
@@ -1986,6 +2001,20 @@
       "sha256": "18ksyw3s5izircmy4ik8q09n6qv3yc4m5nrh36dzw4zbzd9vggkv",
       "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.11/ocdownloader-1.7.11.tar.gz",
       "version": "1.7.11"
+    },
+    "ocjobs": {
+      "meta": {
+        "description": "OC Jobs",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OC Jobs",
+        "summary": "OC Jobs"
+      },
+      "sha256": "1s6ijm168ikgmmfal704jh6gkh8fiy69m8aiq4x216i0v6pv775y",
+      "url": "https://github.com/Lea9250/ocjobs/releases/download/1.0/ocjobs-1.0.tar.gz",
+      "version": "0.0.1"
     },
     "ocsms": {
       "meta": {
