@@ -1701,6 +1701,21 @@
       "url": "https://github.com/juliushaertl/issuetemplate/releases/download/v0.7.0/issuetemplate.tar.gz",
       "version": "0.7.0"
     },
+    "jsloader": {
+      "meta": {
+        "description": "This application allows the admin to include JavaScript into all Nextcloud pages for web analytics for example.",
+        "homepage": "https://github.com/nextcloud/jsloader/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "JSLoader",
+        "summary": "Load custom javascript on all Nextcloud pages"
+      },
+      "sha256": "169266k2pb7w9kw5xa24asw8fjq63bvgxn3yl83r5d6aigmm25f7",
+      "url": "https://github.com/nextcloud/jsloader/releases/download/v1.5.0/jsloader-1.5.0.tar.gz",
+      "version": "1.5.0"
+    },
     "keeweb": {
       "meta": {
         "description": "Open Keepass stores inside Nextcloud with Keeweb just by clicking on an *.kdbx file in your Nextcloud.",
@@ -1743,6 +1758,21 @@
       "sha256": "0nz6dhy9wn0c6ina2rhwlz23c0g21pbzpjl0jnawbypb2xb2zw0b",
       "url": "https://github.com/nextcloud/ldap_write_support/releases/download/v1.2.1/ldap_write_support.tar.gz",
       "version": "1.2.1"
+    },
+    "ldapcontacts": {
+      "meta": {
+        "description": "# LdapContacts\nView other LDAP users as contacts in Nextcloud and see the personal data they shared.\n\n### Features\n  * view all LDAP users as contacts\n  * search these users\n  * restrict your search to certain LDAP groups\n  * hide certain users and groups from the contacts app\n  * define which LDAP attributes are available for your contacts\n\n### Requirements\n  * active LDAP authentification (check [Nextcloud admin manual](https://docs.nextcloud.com/server/latest/admin_manual/configuration_user/user_auth_ldap.html) for details)\n  * php 7.0",
+        "homepage": "https://github.com/KircheNeuenburg/ldapcontacts",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "LDAP Contacts",
+        "summary": "Display your LDAP contacts"
+      },
+      "sha256": "0lv7m33130iq59j7gxczg1wjdxcn2n7smw59hrvck1zm65m0knrz",
+      "url": "https://h-software.de/nextcloud_apps/ldapcontacts/ldapcontacts-2.0.5.tar.gz",
+      "version": "2.0.5"
     },
     "libresign": {
       "meta": {
@@ -2004,7 +2034,7 @@
     },
     "ocjobs": {
       "meta": {
-        "description": "OC Jobs",
+        "description": "This simple app allows admin users to retrieve background jobs data via API calls. To do so, a new route is created to send back a json output containing all jobs informations from oc_jobs table. See README file for more infos.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2012,9 +2042,9 @@
         "name": "OC Jobs",
         "summary": "OC Jobs"
       },
-      "sha256": "1s6ijm168ikgmmfal704jh6gkh8fiy69m8aiq4x216i0v6pv775y",
-      "url": "https://github.com/Lea9250/ocjobs/releases/download/1.0/ocjobs-1.0.tar.gz",
-      "version": "0.0.1"
+      "sha256": "0vdzmpa196xlv3lxhpslj56wvai173mad07hhm9303d5d1sgr7sl",
+      "url": "https://github.com/Lea9250/ocjobs/releases/download/v1.0.1/ocjobs-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "ocsms": {
       "meta": {
@@ -2518,9 +2548,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their email address."
       },
-      "sha256": "12pi6gxs19in1v4f6cy4wn7d9jvb8m1ln8556xacywinmylij1mm",
-      "url": "https://github.com/nextcloud/registration/releases/download/v1.2.0/registration-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1cc54sqmns2795976rq8z8fzp6zw0yvg4j5fvhvvi61y59mv1329",
+      "url": "https://github.com/nextcloud/registration/releases/download/v1.2.1/registration-1.2.1.tar.gz",
+      "version": "1.2.1"
     },
     "richdocuments": {
       "meta": {
@@ -2809,9 +2839,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1qxv2qiqr62bag70pydrjqrh1r6ddm7c9ppzni7cimcza719y5ka",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.4.1/release.tar.gz",
-      "version": "4.4.1"
+      "sha256": "0xdwass7d5dc1gapgyzgqhjfi5mc2xla1q792aydh5h2giz8casl",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.0/release.tar.gz",
+      "version": "4.5.0"
     },
     "socialsharing_diaspora": {
       "meta": {

@@ -1462,6 +1462,21 @@
       "url": "https://github.com/juliushaertl/issuetemplate/releases/download/v0.7.0/issuetemplate.tar.gz",
       "version": "0.7.0"
     },
+    "jsloader": {
+      "meta": {
+        "description": "This application allows the admin to include JavaScript into all Nextcloud pages for web analytics for example.",
+        "homepage": "https://github.com/nextcloud/jsloader/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "JSLoader",
+        "summary": "Load custom javascript on all Nextcloud pages"
+      },
+      "sha256": "169266k2pb7w9kw5xa24asw8fjq63bvgxn3yl83r5d6aigmm25f7",
+      "url": "https://github.com/nextcloud/jsloader/releases/download/v1.5.0/jsloader-1.5.0.tar.gz",
+      "version": "1.5.0"
+    },
     "keeweb": {
       "meta": {
         "description": "Open Keepass stores inside Nextcloud with Keeweb just by clicking on an *.kdbx file in your Nextcloud.",
