@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "131w4j5rhs2l8aaibdjmh8lrsdnlv5j1mpxs0pxjxk18mm3zb0xf",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.3.0/bbb-v1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "125mbffax62v4agm3w20nl9a0ylrkma3fi6qas1nk4y91hsr0627",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.0/bbb-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "bookmarks": {
       "meta": {
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0882rc1syjlzy743pfd4c2jgs533nfgfz962r7jff7nwfdhzy9g4",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.10/breezedark.tar.gz",
-      "version": "20.0.10"
+      "sha256": "0syz1jd009jybb2sklbyfh75fj914gsmxzhy2rrr0q6zwdlvjghj",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.11/breezedark.tar.gz",
+      "version": "20.0.11"
     },
     "bruteforcesettings": {
       "meta": {
@@ -603,9 +603,9 @@
         "name": "EHR (Electronic Health Records)",
         "summary": "Kailona: Personal Health Records"
       },
-      "sha256": "162mvf7ar8xky8vzzprw50j08y77l85xsc1b660iwwx0lhs488si",
-      "url": "https://github.com/Kailona/ehr/releases/download/0.1.4/ehr-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "1kzpqy9nimjx281nq0p1hrkx8y7rkh5nr1hv2g7392qjhh849n8c",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.5/ehr-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "emlviewer": {
       "meta": {
@@ -892,9 +892,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "1mssxwsx8h1k7zrz0ds68rdrgyx6harwiwrl06nfv1g9qgv42rpd",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.1/files_fulltextsearch-20.0.1.tar.gz",
-      "version": "20.0.1"
+      "sha256": "11jvj1xi8c4qyf1vwsgza4x7m7fps520pv045r7mm0mzxah5aynk",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.2/files_fulltextsearch-20.0.2.tar.gz",
+      "version": "20.0.2"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1785,9 +1785,9 @@
         "name": "LibreSign",
         "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1jz6z3isnw5bf0cvkq00j3labgpbdfv2a8xcwf1sw5hirnc605aa",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.1/libresign.tar.gz",
-      "version": "2.2.1"
+      "sha256": "1pjp8ankk3wwk1xh2mkzqmxnllxlsqx6ll6cccbvkwrxjwvxg06z",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.2/libresign.tar.gz",
+      "version": "2.2.2"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -2523,6 +2523,21 @@
       "sha256": "0f3dfvgrr326w8wk459n5cy989id3fip9y4ib6p84b96caiim5ri",
       "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.10.0/ransomware_protection-1.10.0.tar.gz",
       "version": "1.10.0"
+    },
+    "recognize": {
+      "meta": {
+        "description": "This app goes through your photo collection and adds fitting tags, automatically categorizing your photos.\n\nThis is still experimental and currently only works for photos that don't reside in external storage.",
+        "homepage": "https://github.com/marcelklehr/recognize",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Recognize",
+        "summary": "Image recognition for your photos"
+      },
+      "sha256": "08lqmw37ynbnb3168bf4105hp11fymsm7gq6cklr8y1sqd7jajcf",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.2.1/recognize-1.2.1.tar.gz",
+      "version": "1.2.1"
     },
     "recommendations": {
       "meta": {

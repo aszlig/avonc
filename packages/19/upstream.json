@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "131w4j5rhs2l8aaibdjmh8lrsdnlv5j1mpxs0pxjxk18mm3zb0xf",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.3.0/bbb-v1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "125mbffax62v4agm3w20nl9a0ylrkma3fi6qas1nk4y91hsr0627",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.0/bbb-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "bookmarks": {
       "meta": {
@@ -589,9 +589,9 @@
         "name": "EHR (Electronic Health Records)",
         "summary": "Kailona: Personal Health Records"
       },
-      "sha256": "162mvf7ar8xky8vzzprw50j08y77l85xsc1b660iwwx0lhs488si",
-      "url": "https://github.com/Kailona/ehr/releases/download/0.1.4/ehr-0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "1kzpqy9nimjx281nq0p1hrkx8y7rkh5nr1hv2g7392qjhh849n8c",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.5/ehr-0.1.5.tar.gz",
+      "version": "0.1.5"
     },
     "emlviewer": {
       "meta": {
