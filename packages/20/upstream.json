@@ -317,9 +317,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0qj9y49wrhjfmksxrdyk772jqbaaldiiz0szp6ppsc9g543bxsva",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.7/circles-0.20.7.tar.gz",
-      "version": "0.20.7"
+      "sha256": "1dfjaxl8gfr902lfgq947c6gpn7qz9k0drshghysrkph2q6mw2p4",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.8/circles-0.20.8.tar.gz",
+      "version": "0.20.8"
     },
     "cloud_federation_api": {
       "meta": {
@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "0jsqiy4pkrbx5a5mxsm3xbbb7lrnyr5k3mm8z94cx6kxfw695b7c",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c9a28a8f228dc31fb76ab1f9637c2657/collectives-0.4.0.tar.gz",
-      "version": "0.4.0"
+      "sha256": "1al2s4knwp0a3j02d71mqsghz4dgh62nm88a31b6cc99gpis1z8v",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/2013ae7a03fb3a17031f9239f7588128/collectives-0.5.1.tar.gz",
+      "version": "0.5.1"
     },
     "comments": {
       "meta": {
@@ -1623,9 +1623,9 @@
         "name": "OpenProject integration",
         "summary": "Integration of OpenProject project management tool"
       },
-      "sha256": "0hddyrhhfad5hxl8zl8gzc9a9swdmsiwdx8j8a0888n7sag8bqn8",
-      "url": "https://github.com/eneiluj/integration_openproject/releases/download/v1.0.1/integration_openproject-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1lmly7y9qdnrsz0d2z1052fcbz15z1wir556y5sqigbbzqknv3bn",
+      "url": "https://github.com/eneiluj/integration_openproject/releases/download/v1.0.2/integration_openproject-1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "integration_reddit": {
       "meta": {
@@ -2303,9 +2303,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "169f87ph0gjsw8ma5bfhgg8vqv077vb206l1pnv4001vcnpx9cx9",
-      "url": "https://github.com/nextcloud/polls/releases/download/1.8.1/polls.tar.gz",
-      "version": "1.8.1"
+      "sha256": "1srs42hc7l9gnnhv9ki09q22rs6idm7wd0wrhf0wi6817s745326",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.8.3/polls.tar.gz",
+      "version": "1.8.3"
     },
     "preferred_providers": {
       "meta": {
