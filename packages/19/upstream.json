@@ -1342,9 +1342,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "1y4ra7kxf99jpg6sgdvsra2l9yvm12biycls2003myg0i3z9k76s",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.1.1/groupfolders-7.1.1.tar.gz",
-      "version": "7.1.1"
+      "sha256": "01aavb1wh9f77x091p0vjafm25f4apl04pvm7yklp0lq10crkgcc",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.1.2/groupfolders-7.1.2.tar.gz",
+      "version": "7.1.2"
     },
     "groupquota": {
       "meta": {

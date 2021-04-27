@@ -258,9 +258,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1z99ay9nv7wrpv9pphgyv8c1aniccf8cdrir1sa24f8s5ha7mqvw",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.2.0/calendar.tar.gz",
-      "version": "2.2.0"
+      "sha256": "08mvbgmc8wpjjjbacqqacl0a41zbpsz8i93gyz2brmlmgra82ixx",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.2.1/calendar.tar.gz",
+      "version": "2.2.1"
     },
     "camerarawpreviews": {
       "meta": {
@@ -1371,9 +1371,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "1kv4w0j0dl579l2f89h4vnkszpm5jinfvb3qdd5k0baxzyvvnp1s",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.2.0/groupfolders-8.2.0.tar.gz",
-      "version": "8.2.0"
+      "sha256": "19qmck5p4gm0n15ipk24mxc1y02s9dngidjvf04vgchm20248b3j",
+      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.2.1/groupfolders-8.2.1.tar.gz",
+      "version": "8.2.1"
     },
     "groupquota": {
       "meta": {
@@ -1623,9 +1623,9 @@
         "name": "OpenProject integration",
         "summary": "Integration of OpenProject project management tool"
       },
-      "sha256": "1lmly7y9qdnrsz0d2z1052fcbz15z1wir556y5sqigbbzqknv3bn",
-      "url": "https://github.com/eneiluj/integration_openproject/releases/download/v1.0.2/integration_openproject-1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0w4mj6h4nc70zk7crd4x39bqwqizgbb0h1vbn7k1myl3k6sy135l",
+      "url": "https://github.com/eneiluj/integration_openproject/releases/download/v1.0.4/integration_openproject-1.0.4.tar.gz",
+      "version": "1.0.4"
     },
     "integration_reddit": {
       "meta": {
