@@ -2353,9 +2353,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1jamwmbv3kjv7zhnjx4hvczcgnxbbvfb7dlgc9wxqxxbnb156myj",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.6/riotchat.tar.gz",
-      "version": "0.7.6"
+      "sha256": "10q9jq7vmwam9kwqssrr494dshgrvhvf82acmbfzhb5k4fcicggn",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.7/riotchat.tar.gz",
+      "version": "0.7.7"
     },
     "scanner": {
       "meta": {

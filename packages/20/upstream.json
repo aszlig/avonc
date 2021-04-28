@@ -1930,9 +1930,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0y9rm1k0861vbqk82pvx0z2mlj1hhi1ihin3j3w6h07kmk7xgc92",
-      "url": "https://github.com/nextcloud/news/releases/download/15.3.2/news.tar.gz",
-      "version": "15.3.2"
+      "sha256": "0x5n7knc6v108yw707szzkl88cxvzs687d8fir3zr25d1r4vx96g",
+      "url": "https://github.com/nextcloud/news/releases/download/15.4.0/news.tar.gz",
+      "version": "15.4.0"
     },
     "nextbackup": {
       "meta": {
@@ -2623,9 +2623,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1jamwmbv3kjv7zhnjx4hvczcgnxbbvfb7dlgc9wxqxxbnb156myj",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.6/riotchat.tar.gz",
-      "version": "0.7.6"
+      "sha256": "10q9jq7vmwam9kwqssrr494dshgrvhvf82acmbfzhb5k4fcicggn",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.7/riotchat.tar.gz",
+      "version": "0.7.7"
     },
     "scanner": {
       "meta": {
