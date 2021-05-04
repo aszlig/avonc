@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "125mbffax62v4agm3w20nl9a0ylrkma3fi6qas1nk4y91hsr0627",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.0/bbb-v1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0h056c3gdjm6igq2983kr8j9mi3a3p9ppy1cnwdw1jz0s0r6n059",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.1/bbb-v1.4.1.tar.gz",
+      "version": "1.4.1"
     },
     "bookmarks": {
       "meta": {
@@ -286,9 +286,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "00dfm4wcbavzyjgx3j2h4gpwq5c2x395ixcrr1ckjpcil0q6qdgz",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.10/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.10"
+      "sha256": "0qnqn58fdh58m6klzxsh5h4fn67ycqnlz2jm3gfmkjz4zpyf4h3i",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.11/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.11"
     },
     "carnet": {
       "meta": {
@@ -647,9 +647,9 @@
         "name": "EPUB/CBZ/PDF ebook reader",
         "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
       },
-      "sha256": "1kr9q0rmcqs6m7swjvcczvlqzy1837ak9bdfxvl7djhsz49rd3jh",
-      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.5/epubreader-1.4.5.tar.gz",
-      "version": "1.4.5"
+      "sha256": "12mz62w9s20i1fgcalm4vihh2c52nm71zz7hmazhxiyj8cgznk5v",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.6/epubreader-1.4.6.tar.gz",
+      "version": "1.4.6"
     },
     "event_update_notification": {
       "meta": {

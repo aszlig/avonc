@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "125mbffax62v4agm3w20nl9a0ylrkma3fi6qas1nk4y91hsr0627",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.0/bbb-v1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0h056c3gdjm6igq2983kr8j9mi3a3p9ppy1cnwdw1jz0s0r6n059",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.1/bbb-v1.4.1.tar.gz",
+      "version": "1.4.1"
     },
     "bookmarks": {
       "meta": {
@@ -272,9 +272,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "00dfm4wcbavzyjgx3j2h4gpwq5c2x395ixcrr1ckjpcil0q6qdgz",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.10/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.10"
+      "sha256": "0qnqn58fdh58m6klzxsh5h4fn67ycqnlz2jm3gfmkjz4zpyf4h3i",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.11/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.11"
     },
     "carnet": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "1k935pmx3r5klkg77b87gp4fpbcas0dqhavcbfz5qpznhcrmdylh",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.0/cospend-1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "18d4jkdywjxn84sx7ccq5dzip5ghij8liarbr0vvxahml7x07yn4",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.2/cospend-1.3.2.tar.gz",
+      "version": "1.3.2"
     },
     "cpanelmailsync": {
       "meta": {
@@ -661,9 +661,9 @@
         "name": "EPUB/CBZ/PDF ebook reader",
         "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
       },
-      "sha256": "1kr9q0rmcqs6m7swjvcczvlqzy1837ak9bdfxvl7djhsz49rd3jh",
-      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.5/epubreader-1.4.5.tar.gz",
-      "version": "1.4.5"
+      "sha256": "12mz62w9s20i1fgcalm4vihh2c52nm71zz7hmazhxiyj8cgznk5v",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.6/epubreader-1.4.6.tar.gz",
+      "version": "1.4.6"
     },
     "event_update_notification": {
       "meta": {
@@ -1406,7 +1406,7 @@
     },
     "health": {
       "meta": {
-        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n- Activities\n\nHealth is everything.",
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served:\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n- Activities\n\nHealth is everything.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1414,9 +1414,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "198vdpijm3kf81jn7n011j4bbb0fn56rav3ib5y8lm47q39cwj87",
-      "url": "https://datenangebot.de/s/iZk8ytpG8ZH8kZP/download",
-      "version": "1.1.0"
+      "sha256": "15zzgfals7vazpm4mg6ln7dgq5m6gxy0c3kg9z9gdxz01svkvzln",
+      "url": "https://datenangebot.de/s/cd8rMBxtNzt4K3e/download",
+      "version": "1.2.0"
     },
     "hidesidebars": {
       "meta": {
@@ -1930,9 +1930,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0x5n7knc6v108yw707szzkl88cxvzs687d8fir3zr25d1r4vx96g",
-      "url": "https://github.com/nextcloud/news/releases/download/15.4.0/news.tar.gz",
-      "version": "15.4.0"
+      "sha256": "16aidhhsllbjv09f6gngdm75q2fi91cq8wf5y718ikgk3lg2c3q4",
+      "url": "https://github.com/nextcloud/news/releases/download/15.4.2/news.tar.gz",
+      "version": "15.4.2"
     },
     "nextbackup": {
       "meta": {
@@ -2201,9 +2201,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0lcwxadwg0jfl2wd92w5nbvwdlmxkf39920l7zdhj3zqlxhlnxx9",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12073/artifacts/raw/passwords.tar.gz",
-      "version": "2021.4.0"
+      "sha256": "1mhjh310a8l28xxi2rpfrqqd832m3vsw601f48c7qqdqvdvzv4sv",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12123/artifacts/raw/passwords.tar.gz",
+      "version": "2021.5.0"
     },
     "pdfdraw": {
       "meta": {
@@ -2535,9 +2535,9 @@
         "name": "Recognize",
         "summary": "Image recognition for your photos"
       },
-      "sha256": "08lqmw37ynbnb3168bf4105hp11fymsm7gq6cklr8y1sqd7jajcf",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.2.1/recognize-1.2.1.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1346qcrr9ycqbivw7fhqnm6zxbhhabll53smlbdgchk6zfs09dni",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.2.2/recognize-1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "recommendations": {
       "meta": {
@@ -2667,9 +2667,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1sc44fb5jpn1ymprbji8fd5i3fi68q3gyf06knqa95ghjk7vl09s",
-      "url": "https://download.sendent.nl/serverapp/1.1.2/sendent.tar.gz",
-      "version": "1.1.2"
+      "sha256": "12yh5c3d5l88i2c6sf5xglwzl839navdjnwp1y1ixf80fbs5fa3g",
+      "url": "https://download.sendent.nl/serverapp/1.1.4/sendent.tar.gz",
+      "version": "1.1.4"
     },
     "sensorlogger": {
       "meta": {
@@ -3056,9 +3056,9 @@
         "name": "Talk Matterbridge",
         "summary": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services."
       },
-      "sha256": "0z24bx6i446zc08fg80xmc080i7zg6vjwiv11n1j2fb4alwjh6ib",
-      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.1/talk_matterbridge.tar.gz",
-      "version": "1.22.1"
+      "sha256": "1lzrxsl2s9y39fflq7f3ls59x12a39sf2b8v3m3z130wjcixlqqc",
+      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.2/talk_matterbridge.tar.gz",
+      "version": "1.22.2"
     },
     "talk_simple_poll": {
       "meta": {
