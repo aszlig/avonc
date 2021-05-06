@@ -317,9 +317,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "1dfjaxl8gfr902lfgq947c6gpn7qz9k0drshghysrkph2q6mw2p4",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.8/circles-0.20.8.tar.gz",
-      "version": "0.20.8"
+      "sha256": "12axmz0qrwjl47715gxmjk179zmpkqx70yqvpzdivjy4qlcgdkgf",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.20.9/circles-0.20.9.tar.gz",
+      "version": "0.20.9"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1237,9 +1237,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "166hkfk5fjkl1sjsp7zm22srjdfnvm1ck1nivf3gzn5lx1dkfqhg",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v20.0.0/fulltextsearch-20.0.0.tar.gz",
-      "version": "20.0.0"
+      "sha256": "0zqqzn4chz6vbliqz3z7p3xb1mdyh6byk7afga64mxmg1q4gx6j2",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v20.0.1/fulltextsearch-20.0.1.tar.gz",
+      "version": "20.0.1"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -2854,9 +2854,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0xdwass7d5dc1gapgyzgqhjfi5mc2xla1q792aydh5h2giz8casl",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.0/release.tar.gz",
-      "version": "4.5.0"
+      "sha256": "1p1s23ijgliz5ig9m2ha8w12klljlrkvr2lva8jwfw8q8plr07mh",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.1/release.tar.gz",
+      "version": "4.5.1"
     },
     "socialsharing_diaspora": {
       "meta": {

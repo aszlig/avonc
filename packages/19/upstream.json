@@ -331,9 +331,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "10v0bm1b6xlblay8739p3gvk1l6d7pagsjr41z8gdnq837gbznbz",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.12/circles-0.19.12.tar.gz",
-      "version": "0.19.12"
+      "sha256": "0nawk5fzwcnwsp3nf3dwawk60xgwm04z19qp1vr3c543ypf930sx",
+      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.13/circles-0.19.13.tar.gz",
+      "version": "0.19.13"
     },
     "cloud_federation_api": {
       "meta": {
@@ -878,9 +878,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "1alr1mghbiav49dzncs96lfaarpy61jrdps8ga8q33gr43qdm6q1",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.3/files_fulltextsearch-1.4.3.tar.gz",
-      "version": "1.4.3"
+      "sha256": "0ka2bm5f3nigsqk2wmwpdi7rbfjh49mxgpvwnidz6h37wma39hdg",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v1.4.4/files_fulltextsearch-1.4.4.tar.gz",
+      "version": "1.4.4"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1193,9 +1193,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "0i96djb9s027scb6znk5g0jjlq3biy5j08ic4a9b369x8wi6fj80",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.4.2/fulltextsearch-1.4.2.tar.gz",
-      "version": "1.4.2"
+      "sha256": "03c4cm0gshpvvqhn8v9gx0n6d6mf223w1hv5jjv8v2ic6q9sff1a",
+      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v1.4.3/fulltextsearch-1.4.3.tar.gz",
+      "version": "1.4.3"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1208,9 +1208,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0gsr18abvb5q9irplslgci7yal4611ip25ixg5a9wg3y52j0liz9",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.2/fulltextsearch_elasticsearch-1.5.2.tar.gz",
-      "version": "1.5.2"
+      "sha256": "18jpdkv6mxqggz93dlkskpyzax73k1hz06sx7896k9yvz0037b46",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v1.5.3/fulltextsearch_elasticsearch-1.5.3.tar.gz",
+      "version": "1.5.3"
     },
     "geoblocker": {
       "meta": {
