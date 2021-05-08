@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "18d4jkdywjxn84sx7ccq5dzip5ghij8liarbr0vvxahml7x07yn4",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.2/cospend-1.3.2.tar.gz",
-      "version": "1.3.2"
+      "sha256": "0rhwwwz55kg52ag6jkz6dlgjkgz288gn1kwiv1lsl78xy919hwry",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.4/cospend-1.3.4.tar.gz",
+      "version": "1.3.4"
     },
     "cpanelmailsync": {
       "meta": {
@@ -2854,9 +2854,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1p1s23ijgliz5ig9m2ha8w12klljlrkvr2lva8jwfw8q8plr07mh",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.1/release.tar.gz",
-      "version": "4.5.1"
+      "sha256": "1d0av7zp7a4rj8k60w9pmipz5lp1ghcbffpiii26wn0gywmfbiyk",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.2/release.tar.gz",
+      "version": "4.5.2"
     },
     "socialsharing_diaspora": {
       "meta": {
