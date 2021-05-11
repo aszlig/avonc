@@ -606,9 +606,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "16jcy53bcanrwqgffazl270msxffm7hi2g9vlc2ziq1yx4s1z01j",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.6/duplicatefinder.tar.gz",
-      "version": "0.0.6"
+      "sha256": "0ck5g8sk8v74s21a4pd936qsrj3bh4q41dzlj23p206dpda59y1s",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.8/duplicatefinder.tar.gz",
+      "version": "0.0.8"
     },
     "emlviewer": {
       "meta": {
@@ -2328,9 +2328,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1fpk8blnvg1z4af9smricnzf94azb5bd8ka7g7937225dq9m8kh4",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.7.19/richdocuments.tar.gz",
-      "version": "3.7.19"
+      "sha256": "0d7m726rz3wlc2cvbnzgnyl11kc1a1xwzjn0jfsja3yvfdk0i77y",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.8.1/richdocuments.tar.gz",
+      "version": "3.8.1"
     },
     "riotchat": {
       "meta": {
@@ -2375,21 +2375,6 @@
       "sha256": "1c8ah318irj8gz1ak6pbfc6vpj8jvdqvzhyif1pzr542cpi32ahd",
       "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.3.tar.gz",
       "version": "0.3.3"
-    },
-    "sendent": {
-      "meta": {
-        "description": "Sendent allows you to securely exchange files and emails. Sendent is linked to Microsoft Outlook, so you can continue to work from your trusted email program while you mail more easily and securely. Very useful, for example, to share privacy-sensitive documents or content or to send attachments that are normally too large to email. All files are uploaded to your personal Nextcloud environment from which you determine who has access to them.",
-        "homepage": "https://www.sendent.nl",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Sendent",
-        "summary": "Sendent allows you to securely exchange files and emails"
-      },
-      "sha256": "1sc44fb5jpn1ymprbji8fd5i3fi68q3gyf06knqa95ghjk7vl09s",
-      "url": "https://download.sendent.nl/serverapp/1.1.2/sendent.tar.gz",
-      "version": "1.1.2"
     },
     "sensorlogger": {
       "meta": {
@@ -3106,9 +3091,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "14rx5agdcp41azqfzaar2wkfy4nacvfsnsnpimiayqw3pg96chjs",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.1/user_oidc.tar.gz",
-      "version": "0.3.1"
+      "sha256": "1g9al604anzx9pk3078kpn612lhmv94w2psyxp3nikfn03rxmyy7",
+      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.2/user_oidc.tar.gz",
+      "version": "0.3.2"
     },
     "user_pwauth": {
       "meta": {
@@ -3391,7 +3376,8 @@
   },
   "constraints": {
     "mindmap_app": ">0.0.3",
-    "ocsms": ">1.10.1"
+    "ocsms": ">1.10.1",
+    "sendent": "0.0.0"
   },
   "nextcloud": {
     "sha256": "0smy7kfalvihd4s72mrk0zi0y9zdzridv12pa87jay0g39r5pcgj",

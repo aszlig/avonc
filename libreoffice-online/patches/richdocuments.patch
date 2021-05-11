@@ -1,10 +1,10 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index f8b88cd1..e9d6c09e 100644
+index d53797e3..cbfc626d 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -31,11 +31,7 @@ You can also edit your documents off-line with the Collabora Office app from the
  	<dependencies>
- 		<nextcloud min-version="15" max-version="21" />
+ 		<nextcloud min-version="15" max-version="20" />
  	</dependencies>
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
@@ -15,7 +15,7 @@ index f8b88cd1..e9d6c09e 100644
  		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
  	</commands>
 diff --git a/lib/AppInfo/Application.php b/lib/AppInfo/Application.php
-index 7e86f801..acf7a624 100644
+index ecd3d7ce..0ba92035 100644
 --- a/lib/AppInfo/Application.php
 +++ b/lib/AppInfo/Application.php
 @@ -34,7 +34,6 @@ use OCA\Richdocuments\Preview\MSWord;
@@ -231,11 +231,11 @@ index ce73dd1d..025b3727 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index c60cf646..60c6901e 100644
+index 90eb420a..c9248233 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
-@@ -23,8 +23,6 @@ namespace OCA\Richdocuments;
- 
+@@ -24,8 +24,6 @@ namespace OCA\Richdocuments;
+ use OCA\Richdocuments\Db\Direct;
  use OCA\Richdocuments\Db\WopiMapper;
  use OCA\Richdocuments\Db\Wopi;
 -use OCA\Richdocuments\Service\CapabilitiesService;
@@ -243,7 +243,7 @@ index c60cf646..60c6901e 100644
  use OCP\Files\File;
  use OCP\Files\IRootFolder;
  use OCP\Files\Node;
-@@ -42,8 +40,6 @@ class TokenManager {
+@@ -44,8 +42,6 @@ class TokenManager {
  	private $shareManager;
  	/** @var IURLGenerator */
  	private $urlGenerator;
@@ -252,7 +252,7 @@ index c60cf646..60c6901e 100644
  	/** @var AppConfig */
  	private $appConfig;
  	/** @var string */
-@@ -56,16 +52,15 @@ class TokenManager {
+@@ -58,17 +54,15 @@ class TokenManager {
  	private $userManager;
  	/** @var IGroupManager */
  	private $groupManager;
@@ -263,15 +263,7 @@ index c60cf646..60c6901e 100644
  
 +	const LOOL_MIME_TYPES = @LOOL_MIME_TYPES_ARRAY@;
 +
- 	/**
- 	 * @param IRootFolder $rootFolder
- 	 * @param IManager $shareManager
- 	 * @param IURLGenerator $urlGenerator
--	 * @param Parser $wopiParser
- 	 * @param AppConfig $appConfig
- 	 * @param string $UserId
- 	 * @param WopiMapper $wopiMapper
-@@ -75,8 +70,6 @@ class TokenManager {
+ 	public function __construct(
  		IRootFolder $rootFolder,
  		IManager $shareManager,
  		IURLGenerator $urlGenerator,
@@ -280,7 +272,7 @@ index c60cf646..60c6901e 100644
  		AppConfig $appConfig,
  		$UserId,
  		WopiMapper $wopiMapper,
-@@ -88,8 +81,6 @@ class TokenManager {
+@@ -80,8 +74,6 @@ class TokenManager {
  		$this->rootFolder = $rootFolder;
  		$this->shareManager = $shareManager;
  		$this->urlGenerator = $urlGenerator;
@@ -289,9 +281,9 @@ index c60cf646..60c6901e 100644
  		$this->appConfig = $appConfig;
  		$this->trans = $trans;
  		$this->userId = $UserId;
-@@ -204,16 +195,10 @@ class TokenManager {
- 
- 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, $updatable, $serverHost, $guest_name, 0, $hideDownload, $direct, $isRemoteToken, 0, $shareToken);
+@@ -202,16 +194,10 @@ class TokenManager {
+ 		}
+ 		$wopi = $this->wopiMapper->generateFileToken($fileId, $owneruid, $editoruid, $version, $updatable, $serverHost, $guestName, 0, $hideDownload, $direct, 0, $shareToken);
  
 -		try {
 -
@@ -309,8 +301,8 @@ index c60cf646..60c6901e 100644
 +			throw new \Exception('Could not find urlsrc in WOPI');
  	}
  
- 	public function updateToRemoteToken(Wopi $wopi, $shareToken, $remoteServer, $remoteServerToken, $remoteWopi) {
-@@ -258,17 +243,13 @@ class TokenManager {
+ 	/**
+@@ -279,17 +265,13 @@ class TokenManager {
  
  		$serverHost = $this->urlGenerator->getAbsoluteURL('/');
  
@@ -333,4 +325,4 @@ index c60cf646..60c6901e 100644
 +			throw new \Exception('Could not find urlsrc in WOPI');
  	}
  
- 	/**
+ 	public function newInitiatorToken($sourceServer, Node $node = null, $shareToken = null, bool $direct = false, $userId = null): Wopi {
