@@ -1915,9 +1915,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1zil053dcb3fn72xb01ndhpv5vwa6zrklycy6j14f188lf4nb59d",
-      "url": "https://github.com/owncloud/music/releases/download/v1.1.0/music_1.1.0_nc-signed.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0wb18m4d32zgpaar7l986aj87m6gjznwfxrfh9yjrjxasv34pvyc",
+      "url": "https://github.com/owncloud/music/releases/download/v1.2.0/music_1.2.0_nc-signed.tar.gz",
+      "version": "1.2.0"
     },
     "news": {
       "meta": {
@@ -2116,9 +2116,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "0d7hq57wz1b0n72lzjbb96sf60zy29jg5rx97j9lp0f4mqm5krpr",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.3.0/onlyoffice.tar.gz",
-      "version": "6.3.0"
+      "sha256": "02v6gncycvcyi1xzq184zi9r1xd9y6b20x658h7qpm2rmwf9n1lf",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.4.0/onlyoffice.tar.gz",
+      "version": "6.4.0"
     },
     "openhab": {
       "meta": {
@@ -2623,9 +2623,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "10q9jq7vmwam9kwqssrr494dshgrvhvf82acmbfzhb5k4fcicggn",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.7/riotchat.tar.gz",
-      "version": "0.7.7"
+      "sha256": "1svrmm42jsnskhqg5wy3h0nq1xrdzz73ydfgkcxf4653k4hn22w1",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.8/riotchat.tar.gz",
+      "version": "0.7.8"
     },
     "scanner": {
       "meta": {
@@ -2854,9 +2854,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1d0av7zp7a4rj8k60w9pmipz5lp1ghcbffpiii26wn0gywmfbiyk",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.2/release.tar.gz",
-      "version": "4.5.2"
+      "sha256": "1a2dli8rd58ksyrj68l1v2nxnm27k9kfkgqn9hx1wxxdikqhhil3",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.3/release.tar.gz",
+      "version": "4.5.3"
     },
     "socialsharing_diaspora": {
       "meta": {

@@ -1665,9 +1665,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1zil053dcb3fn72xb01ndhpv5vwa6zrklycy6j14f188lf4nb59d",
-      "url": "https://github.com/owncloud/music/releases/download/v1.1.0/music_1.1.0_nc-signed.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0wb18m4d32zgpaar7l986aj87m6gjznwfxrfh9yjrjxasv34pvyc",
+      "url": "https://github.com/owncloud/music/releases/download/v1.2.0/music_1.2.0_nc-signed.tar.gz",
+      "version": "1.2.0"
     },
     "news": {
       "meta": {
