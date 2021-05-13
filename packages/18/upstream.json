@@ -2376,6 +2376,21 @@
       "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.3.tar.gz",
       "version": "0.3.3"
     },
+    "sendent": {
+      "meta": {
+        "description": "Sendent allows you to securely exchange files and emails. Sendent is linked to Microsoft Outlook, so you can continue to work from your trusted email program while you mail more easily and securely. Very useful, for example, to share privacy-sensitive documents or content or to send attachments that are normally too large to email. All files are uploaded to your personal Nextcloud environment from which you determine who has access to them.",
+        "homepage": "https://www.sendent.nl",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Sendent",
+        "summary": "Sendent allows you to securely exchange files and emails"
+      },
+      "sha256": "1sc44fb5jpn1ymprbji8fd5i3fi68q3gyf06knqa95ghjk7vl09s",
+      "url": "https://download.sendent.nl/serverapp/1.1.2/sendent.tar.gz",
+      "version": "1.1.2"
+    },
     "sensorlogger": {
       "meta": {
         "description": "SensorLogger for ownCloud enables users to log data provided by sensor devices",
@@ -3376,8 +3391,7 @@
   },
   "constraints": {
     "mindmap_app": ">0.0.3",
-    "ocsms": ">1.10.1",
-    "sendent": "0.0.0"
+    "ocsms": ">1.10.1"
   },
   "nextcloud": {
     "sha256": "0smy7kfalvihd4s72mrk0zi0y9zdzridv12pa87jay0g39r5pcgj",
