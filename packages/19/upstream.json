@@ -1371,9 +1371,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "0h6y2z9ig8h7vmxgy8fwa8nqbc8jcwf1rzy1plqra7d2k24xi47l",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.2/guests.tar.gz",
-      "version": "1.6.2"
+      "sha256": "0bygc1s9c2mj4pjkvhp3qm35hsan87i2m29091z9v7w13w8bkjdy",
+      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.3/guests.tar.gz",
+      "version": "1.6.3"
     },
     "health": {
       "meta": {
@@ -1877,9 +1877,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "02v6gncycvcyi1xzq184zi9r1xd9y6b20x658h7qpm2rmwf9n1lf",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.4.0/onlyoffice.tar.gz",
-      "version": "6.4.0"
+      "sha256": "1g7zxbv9nq7gbl53r3snq1p9hrs7awc1vhwhzxl362zggsb6c19c",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v6.4.2/onlyoffice.tar.gz",
+      "version": "6.4.2"
     },
     "openhab": {
       "meta": {
