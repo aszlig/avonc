@@ -3306,9 +3306,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "08nyrmsq7clzhad1rdf39ynsbvyz1l1iq4gz5k40dqgw36zj7bcp",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.6/wopi.tar.gz",
-      "version": "3.5.6"
+      "sha256": "01hkpf6pca8r6vdj615580vxbhg6linagcp1mivwrd8il0hz7d2r",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.7/wopi.tar.gz",
+      "version": "3.5.7"
     },
     "workflow_ocr": {
       "meta": {

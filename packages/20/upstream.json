@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1snxpdfyqz7fqg3j5bybhzgvkprvlfc7q2f6xqgfi5v3lqnr4frp",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.2.0/bookmarks-4.2.0.tar.gz",
-      "version": "4.2.0"
+      "sha256": "1gqya0yw2zjz9xrhd8x7bhb9w3l00b8ligb8i2c0b86k3qlk2pxa",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.2.1/bookmarks-4.2.1.tar.gz",
+      "version": "4.2.1"
     },
     "breezedark": {
       "meta": {
@@ -892,9 +892,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "11jvj1xi8c4qyf1vwsgza4x7m7fps520pv045r7mm0mzxah5aynk",
-      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.2/files_fulltextsearch-20.0.2.tar.gz",
-      "version": "20.0.2"
+      "sha256": "1k9fd7h38aq7qfqk1pwhdcn6f4c2sn337pain5h9ip4dxif4hsxk",
+      "url": "https://github.com/nextcloud/files_fulltextsearch/releases/download/v20.0.3/files_fulltextsearch-20.0.3.tar.gz",
+      "version": "20.0.3"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1252,9 +1252,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0fyhlbkv23fzxc2dgi7n2ibh4zm2mrvhxvyr0z3pbpq365gfqr10",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v20.0.0/fulltextsearch_elasticsearch-20.0.0.tar.gz",
-      "version": "20.0.0"
+      "sha256": "1sqzkb5dy85amajvkvbrxbzf5prvgrrnyk3kl6ghp3h48g4l2kcy",
+      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v20.0.1/fulltextsearch_elasticsearch-20.0.1.tar.gz",
+      "version": "20.0.1"
     },
     "geoblocker": {
       "meta": {
@@ -1700,6 +1700,21 @@
       "sha256": "1brs3f98nq3wbybzrh43lgvsmj5si5k7zazsdxpbvx8kfy56x39b",
       "url": "https://github.com/juliushaertl/issuetemplate/releases/download/v0.7.0/issuetemplate.tar.gz",
       "version": "0.7.0"
+    },
+    "jitsi": {
+      "meta": {
+        "description": "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n-  Easy online conferences in Nextcloud utilising Jitsi\n-  Sharable conference room links\n-  Shows conference rooms in the global search\n-  System test before joining a conference\n\nThis app requires a Jitsi instance with JSON Web Token authentication.\nPlease read the documentation.",
+        "homepage": "https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Jitsi Integration",
+        "summary": "Jitsi Integration (unofficial)"
+      },
+      "sha256": "0zfayc4bvfzgwagfn61q8hq0fa1sxfx2g4ggkdly3rz1yq4sbi69",
+      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/6/artifacts/nextcloud-jitsi.tar.gz",
+      "version": "0.9.0"
     },
     "jsloader": {
       "meta": {
@@ -2174,9 +2189,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "1qbyc90iz9rjb36ja0ymnbw7xfym1wx2m5q3nalndpcd4sgnvjpd",
-      "url": "https://releases.passman.cc/passman_2.3.7.tar.gz",
-      "version": "2.3.7"
+      "sha256": "0llhnjblhl25a1dahjrqvinmy7w91547d1bfqpsjbm8wffgad134",
+      "url": "https://releases.passman.cc/passman_2.3.8.tar.gz",
+      "version": "2.3.8"
     },
     "password_policy": {
       "meta": {
@@ -2511,7 +2526,7 @@
     },
     "ransomware_protection": {
       "meta": {
-        "description": "This app prevents the Nextcloud Sync clients from uploading files with known ransomware file endings.\n\n This app does not replace regular backups. Especially since it only prevents infected clients from uploading and overwriting files on your Nextcloud server. It does not help in case your server is infected directly by a ransomware.\n\n Neither the developer nor Nextcloud GmbH give any guarantee that your files can not be affected by another way.",
+        "description": "This app prevents the Nextcloud Sync clients from uploading files with known ransomware file endings.\n\n This app does not replace regular backups. Especially since it only prevents infected clients from uploading and overwriting files on your Nextcloud server. It does not help in case your server is infected directly by a ransomware.\n\n Neither the developer nor Nextcloud GmbH give any guarantee that your files cannot be affected by another way.",
         "homepage": "https://github.com/nextcloud/ransomware_protection",
         "isShipped": false,
         "licenses": [
@@ -2520,9 +2535,9 @@
         "name": "Ransomware protection",
         "summary": "This app prevents uploading files with known ransomware file endings"
       },
-      "sha256": "0f3dfvgrr326w8wk459n5cy989id3fip9y4ib6p84b96caiim5ri",
-      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.10.0/ransomware_protection-1.10.0.tar.gz",
-      "version": "1.10.0"
+      "sha256": "099j3bv51xbf5smvabsmsnyyqkasm6lw0893r6d2c8f7yyx8c74h",
+      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.10.1/ransomware_protection-1.10.1.tar.gz",
+      "version": "1.10.1"
     },
     "recognize": {
       "meta": {
@@ -3460,9 +3475,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "0js02qs9sq3j4940i5ihn3zafzb91qjyc7nya51zmh52xf695ja6",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.4/user_saml-3.3.4.tar.gz",
-      "version": "3.3.4"
+      "sha256": "1pzi7vz2q310hl4bajl743j75k0bx7yr4mmn3h7cabwb2l2035dc",
+      "url": "https://github.com/nextcloud/user_saml/releases/download/v3.3.5/user_saml-3.3.5.tar.gz",
+      "version": "3.3.5"
     },
     "user_sql": {
       "meta": {
@@ -3633,9 +3648,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "08nyrmsq7clzhad1rdf39ynsbvyz1l1iq4gz5k40dqgw36zj7bcp",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.6/wopi.tar.gz",
-      "version": "3.5.6"
+      "sha256": "01hkpf6pca8r6vdj615580vxbhg6linagcp1mivwrd8il0hz7d2r",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.7/wopi.tar.gz",
+      "version": "3.5.7"
     },
     "workflow_ocr": {
       "meta": {
