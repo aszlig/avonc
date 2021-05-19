@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "13x7v9hf00xfz1z659hzn2kjj4vddz4h21ipz80rb1z9pdfrp4qb",
-      "url": "https://github.com/Rello/analytics/releases/download/3.4.1/analytics-3.4.1.tar.gz",
-      "version": "3.4.1"
+      "sha256": "01jms9y2idwknsd19xzjjs36mbxdknd2hbhsvygb07y9qc1yg59k",
+      "url": "https://github.com/Rello/analytics/releases/download/3.5.0/analytics-3.5.0.tar.gz",
+      "version": "3.5.0"
     },
     "announcementcenter": {
       "meta": {
@@ -2101,9 +2101,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "0plvywr9sfqydnpjjlkqp3gp5ccgivz6l51jzagjc6g8f9mwslln",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.0.2/oidc_login.tar.gz",
-      "version": "2.0.2"
+      "sha256": "1ka16pafmaxabc07x7ar1ijp01kslrbljkw27zc35hq08ykbrnfi",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.0.3/oidc_login.tar.gz",
+      "version": "2.0.3"
     },
     "ojsxc": {
       "meta": {
@@ -2638,9 +2638,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1svrmm42jsnskhqg5wy3h0nq1xrdzz73ydfgkcxf4653k4hn22w1",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.8/riotchat.tar.gz",
-      "version": "0.7.8"
+      "sha256": "1l1w1r0afzmlp8lq8pdw23kb3yybx6h38v355hj1vljs69b7y59m",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.9/riotchat.tar.gz",
+      "version": "0.7.9"
     },
     "scanner": {
       "meta": {
@@ -2682,9 +2682,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1hqzfds3gxgzdbjhksz5dj7slz01jik4zll9y0w2s5ivqy05rscp",
-      "url": "https://download.sendent.nl/serverapp/1.1.5/sendent.tar.gz",
-      "version": "1.1.5"
+      "sha256": "0cfv2x7fxmlnanljmf213cy38zh1n76kvx2amdklcp6pyf22l7vq",
+      "url": "https://download.sendent.nl/serverapp/1.1.6/sendent.tar.gz",
+      "version": "1.1.6"
     },
     "sensorlogger": {
       "meta": {
@@ -2869,9 +2869,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1a2dli8rd58ksyrj68l1v2nxnm27k9kfkgqn9hx1wxxdikqhhil3",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.5.3/release.tar.gz",
-      "version": "4.5.3"
+      "sha256": "11zx9ikhz3g4mq733vfa9hhc9xh8ss9a5nj10zx60vv1fxjay17b",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.0/release.tar.gz",
+      "version": "4.6.0"
     },
     "socialsharing_diaspora": {
       "meta": {

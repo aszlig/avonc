@@ -2256,7 +2256,7 @@
     },
     "ransomware_protection": {
       "meta": {
-        "description": "This app prevents the Nextcloud Sync clients from uploading files with known ransomware file endings.\n\n This app does not replace regular backups. Especially since it only prevents infected clients from uploading and overwriting files on your Nextcloud server. It does not help in case your server is infected directly by a ransomware.\n\n Neither the developer nor Nextcloud GmbH give any guarantee that your files can not be affected by another way.",
+        "description": "This app prevents the Nextcloud Sync clients from uploading files with known ransomware file endings.\n\n This app does not replace regular backups. Especially since it only prevents infected clients from uploading and overwriting files on your Nextcloud server. It does not help in case your server is infected directly by a ransomware.\n\n Neither the developer nor Nextcloud GmbH give any guarantee that your files cannot be affected by another way.",
         "homepage": "https://github.com/nextcloud/ransomware_protection",
         "isShipped": false,
         "licenses": [
@@ -2265,9 +2265,9 @@
         "name": "Ransomware protection",
         "summary": "This app prevents uploading files with known ransomware file endings"
       },
-      "sha256": "1wnihdwq73gjc2z6h634b2v8hj2qwdhvf386m64cbbxqbmq71gmj",
-      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.7.0/ransomware_protection-1.7.0.tar.gz",
-      "version": "1.7.0"
+      "sha256": "0aabndjya3ar0m5827d4d8sc1v573x1gqv1icixbwlg5ncj6j0l1",
+      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.7.1/ransomware_protection-1.7.1.tar.gz",
+      "version": "1.7.1"
     },
     "recommendations": {
       "meta": {
@@ -2353,9 +2353,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1svrmm42jsnskhqg5wy3h0nq1xrdzz73ydfgkcxf4653k4hn22w1",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.8/riotchat.tar.gz",
-      "version": "0.7.8"
+      "sha256": "1l1w1r0afzmlp8lq8pdw23kb3yybx6h38v355hj1vljs69b7y59m",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.9/riotchat.tar.gz",
+      "version": "0.7.9"
     },
     "scanner": {
       "meta": {
