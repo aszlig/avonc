@@ -2308,9 +2308,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0d7m726rz3wlc2cvbnzgnyl11kc1a1xwzjn0jfsja3yvfdk0i77y",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.8.1/richdocuments.tar.gz",
-      "version": "3.8.1"
+      "sha256": "06prnxjhn7bidbdylia8ccvzdpws973d4cs0gm9az3cqlvpx318d",
+      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.8.2/richdocuments.tar.gz",
+      "version": "3.8.2"
     },
     "richdocumentscode": {
       "meta": {
@@ -2323,9 +2323,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "09yijkg7w4rg2xhmslry3n3kvpsffrs0r1j7wm83shy7445lg446",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.705/richdocumentscode.tar.gz",
-      "version": "6.4.705"
+      "sha256": "0phvhymqd4gsvkbv9lwrid2wzws051yvij92cxnvsqgkx717q59j",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.806/richdocumentscode.tar.gz",
+      "version": "6.4.806"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2338,9 +2338,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "00jvc6p4668rwx6h4ik58inqfw99h73b67i6d58p44pks2gdv5jd",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.705/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.705"
+      "sha256": "0jhnqziiks65nbdb9vh6iyp6yf10x0dgdvfc9g2h37ywpfpzdphf",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.806/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.806"
     },
     "riotchat": {
       "meta": {

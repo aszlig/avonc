@@ -1,5 +1,5 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index d53797e3..cbfc626d 100644
+index eb1e82b4..09367f5c 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -31,11 +31,7 @@ You can also edit your documents off-line with the Collabora Office app from the
@@ -231,7 +231,7 @@ index ce73dd1d..025b3727 100644
  			'status' => 'success',
  			'data' => ['message' => $message]
 diff --git a/lib/TokenManager.php b/lib/TokenManager.php
-index 90eb420a..c9248233 100644
+index 503c25e9..c9248233 100644
 --- a/lib/TokenManager.php
 +++ b/lib/TokenManager.php
 @@ -24,8 +24,6 @@ namespace OCA\Richdocuments;
@@ -307,7 +307,7 @@ index 90eb420a..c9248233 100644
  		$serverHost = $this->urlGenerator->getAbsoluteURL('/');
  
 -		if ($this->capabilitiesService->hasTemplateSource()) {
--			$wopi = $this->wopiMapper->generateFileToken($targetFile->getId(), $owneruid, $editoruid, 0, $updatable, $serverHost, null, 0, false, $direct, false, $templateFile->getId());
+-			$wopi = $this->wopiMapper->generateFileToken($targetFile->getId(), $owneruid, $editoruid, 0, $updatable, $serverHost, null, 0, false, $direct, $templateFile->getId());
 -		} else {
 -			// Legacy way of creating new documents from a template
 -			$wopi = $this->wopiMapper->generateFileToken($templateFile->getId(), $owneruid, $editoruid, 0, $updatable, $serverHost, null, $targetFile->getId(), $direct);
