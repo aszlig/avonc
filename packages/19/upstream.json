@@ -301,9 +301,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1nsn8d6375yqm21q858b0ybg7flj5b6avrw7r1mzx9ahm6x5cqb7",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.8.tar.gz",
-      "version": "0.23.8"
+      "sha256": "07fgv0nn2i4c8d7f4sdknbvfh2cvpbizw4r9qykm6jmdl8isgff4",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.1/carnet-nc-v0.24.1.tar.gz",
+      "version": "0.24.1"
     },
     "checksum": {
       "meta": {
@@ -514,9 +514,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0591r3yaz1dlhvwv276wvx3wmrs1pminkrp7paa7sj9ghjj1cdb8",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.21/discoursesso-1.0.21.tar.gz",
-      "version": "1.0.21"
+      "sha256": "0019xhhil6k8pzwsli4dh9cn1dxf7p78cd2mxqsxnfnqf4anf7kq",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.21.1/discoursesso-1.21.1.tar.gz",
+      "version": "1.21.1"
     },
     "documentserver_community": {
       "meta": {
@@ -2353,9 +2353,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1l1w1r0afzmlp8lq8pdw23kb3yybx6h38v355hj1vljs69b7y59m",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.9/riotchat.tar.gz",
-      "version": "0.7.9"
+      "sha256": "06lgafpjp2jnsglrbs0229wmxb4azh4srh3x6ikjpzz5a1n231yv",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.10/riotchat.tar.gz",
+      "version": "0.7.10"
     },
     "scanner": {
       "meta": {
@@ -2898,9 +2898,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "0wv53yzwbcsfhz5hg8x9halpypx9raj2wwyqg88cp4r02k9jy0rh",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6.5/transmission-0.6.5.tar.gz",
-      "version": "0.6.5"
+      "sha256": "0ryriigyw3cq7vxnm4ml6bl7prhh1cr6bmzzzhbq30p82xw7qvdz",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.0/transmission-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "twofactor_admin": {
       "meta": {

@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "01jms9y2idwknsd19xzjjs36mbxdknd2hbhsvygb07y9qc1yg59k",
-      "url": "https://github.com/Rello/analytics/releases/download/3.5.0/analytics-3.5.0.tar.gz",
-      "version": "3.5.0"
+      "sha256": "02xsmrndvk4mcmwf1rk08p7968v9cjg19c1j78ag0na4d8rbjx2f",
+      "url": "https://github.com/Rello/analytics/releases/download/3.5.1/analytics-3.5.1.tar.gz",
+      "version": "3.5.1"
     },
     "announcementcenter": {
       "meta": {
@@ -258,9 +258,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "08mvbgmc8wpjjjbacqqacl0a41zbpsz8i93gyz2brmlmgra82ixx",
-      "url": "https://github.com/nextcloud/calendar/releases/download/v2.2.1/calendar.tar.gz",
-      "version": "2.2.1"
+      "sha256": "0cqsiw7ac84a2ppnswxdh7mpwqf7xjf7xb0z58cjypzppddx68sl",
+      "url": "https://github.com/nextcloud/calendar/releases/download/v2.2.2/calendar.tar.gz",
+      "version": "2.2.2"
     },
     "camerarawpreviews": {
       "meta": {
@@ -287,9 +287,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "1nsn8d6375yqm21q858b0ybg7flj5b6avrw7r1mzx9ahm6x5cqb7",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.23.7/carnet-nc-v0.23.8.tar.gz",
-      "version": "0.23.8"
+      "sha256": "07fgv0nn2i4c8d7f4sdknbvfh2cvpbizw4r9qykm6jmdl8isgff4",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.1/carnet-nc-v0.24.1.tar.gz",
+      "version": "0.24.1"
     },
     "checksum": {
       "meta": {
@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "007rb0zjx5w5sgqhl02h6bbxavs9p3y55cgq9xxafk9jhqwiq6fs",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/08e093d12b942b3001ea7a110838a608/collectives-0.6.1.tar.gz",
-      "version": "0.6.1"
+      "sha256": "1z2w2wyd695wj1adhbxs2nn22m2g22ws09bj9a49zc87iyhkxbfg",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/65a50ece588dc13f17a535bf32a068e6/collectives-0.6.2.tar.gz",
+      "version": "0.6.2"
     },
     "comments": {
       "meta": {
@@ -528,9 +528,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0591r3yaz1dlhvwv276wvx3wmrs1pminkrp7paa7sj9ghjj1cdb8",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v1.0.21/discoursesso-1.0.21.tar.gz",
-      "version": "1.0.21"
+      "sha256": "0019xhhil6k8pzwsli4dh9cn1dxf7p78cd2mxqsxnfnqf4anf7kq",
+      "url": "https://github.com/soudis/discoursesso/releases/download/v1.21.1/discoursesso-1.21.1.tar.gz",
+      "version": "1.21.1"
     },
     "documentserver_community": {
       "meta": {
@@ -1703,7 +1703,7 @@
     },
     "jitsi": {
       "meta": {
-        "description": "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n-  Easy online conferences in Nextcloud utilising Jitsi\n-  Sharable conference room links\n-  Shows conference rooms in the global search\n-  System test before joining a conference\n\nThis app requires a Jitsi instance with JSON Web Token authentication.\nPlease read the documentation.",
+        "description": "This app integrates Jitsi conferences into Nextcloud.\n\nFeatures:\n-  Easy online conferences in Nextcloud utilising Jitsi\n-  Sharable conference room links\n-  Shows conference rooms in the global search\n-  System test before joining a conference\n\nPlease read the [documentation](https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md).",
         "homepage": "https://pubcode.weimann.digital/projects/nextcloud-jitsi/blob/master/README.md",
         "isShipped": false,
         "licenses": [
@@ -1712,9 +1712,9 @@
         "name": "Jitsi Integration",
         "summary": "Jitsi Integration (unofficial)"
       },
-      "sha256": "0zfayc4bvfzgwagfn61q8hq0fa1sxfx2g4ggkdly3rz1yq4sbi69",
-      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/6/artifacts/nextcloud-jitsi.tar.gz",
-      "version": "0.9.0"
+      "sha256": "089why3i98czxvb3yls6q5yw3savhyjxgx24zix71rwdqfp4abxa",
+      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/9/artifacts/nextcloud-jitsi.tar.gz",
+      "version": "0.10.0"
     },
     "jsloader": {
       "meta": {
@@ -1800,9 +1800,9 @@
         "name": "LibreSign",
         "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1pjp8ankk3wwk1xh2mkzqmxnllxlsqx6ll6cccbvkwrxjwvxg06z",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.2.2/libresign.tar.gz",
-      "version": "2.2.2"
+      "sha256": "1c0r7ld1rclw08a6vspqkfg8gkah9nvvajcmkwr1frh07blmbkd9",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.3.0/libresign.tar.gz",
+      "version": "2.3.0"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -1936,7 +1936,7 @@
     },
     "news": {
       "meta": {
-        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
+        "description": "A RSS/Atom Feed reader App for Nextcloud\n\n-  Synchronize your feeds with multiple mobile or desktop [clients](https://nextcloud.github.io/news/clients/)\n-  Automatic updates of your news feeds\n-  Free and open source under AGPLv3, no ads or premium functions\n\n**System Cron is currently required for this app to work**\nRequirements can be found [here](https://nextcloud.github.io/news/install/#dependencies)\nThe Changelog is available [here](https://github.com/nextcloud/news/blob/master/CHANGELOG.md)\n\nCreate a [bug report](https://github.com/nextcloud/news/issues/new/choose)\nCreate a [feature request](https://github.com/nextcloud/news/discussions/new)\nReport a [feed issue](https://github.com/nextcloud/news/discussions/new)",
         "homepage": "https://github.com/nextcloud/news",
         "isShipped": false,
         "licenses": [
@@ -1945,9 +1945,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "186gzgyw9rfwiva5rgfj6bhmd5r7axkbhcch5hhh9m7yybfslvqr",
-      "url": "https://github.com/nextcloud/news/releases/download/15.4.3/news.tar.gz",
-      "version": "15.4.3"
+      "sha256": "0zc52y68jayga9xrgfd7pq3jyv8m8skwbx4qfp0hwh3saf669alh",
+      "url": "https://github.com/nextcloud/news/releases/download/15.4.4/news.tar.gz",
+      "version": "15.4.4"
     },
     "nextbackup": {
       "meta": {
@@ -2638,9 +2638,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1l1w1r0afzmlp8lq8pdw23kb3yybx6h38v355hj1vljs69b7y59m",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.9/riotchat.tar.gz",
-      "version": "0.7.9"
+      "sha256": "06lgafpjp2jnsglrbs0229wmxb4azh4srh3x6ikjpzz5a1n231yv",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.10/riotchat.tar.gz",
+      "version": "0.7.10"
     },
     "scanner": {
       "meta": {
@@ -2682,9 +2682,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0cfv2x7fxmlnanljmf213cy38zh1n76kvx2amdklcp6pyf22l7vq",
-      "url": "https://download.sendent.nl/serverapp/1.1.6/sendent.tar.gz",
-      "version": "1.1.6"
+      "sha256": "08n6bk1h18y1z4ch7zpkkc15fn5bw4790j1ky8l3is027v7b6k99",
+      "url": "https://download.sendent.nl/serverapp/1.1.9/sendent.tar.gz",
+      "version": "1.1.9"
     },
     "sensorlogger": {
       "meta": {
@@ -2869,9 +2869,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "11zx9ikhz3g4mq733vfa9hhc9xh8ss9a5nj10zx60vv1fxjay17b",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.0/release.tar.gz",
-      "version": "4.6.0"
+      "sha256": "024v113385jlsvnbqxk9bbq31kjnrgmbzrx83pb36k7xiwri89xr",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.7/release.tar.gz",
+      "version": "4.6.7"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3199,9 +3199,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "0wv53yzwbcsfhz5hg8x9halpypx9raj2wwyqg88cp4r02k9jy0rh",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.6.5/transmission-0.6.5.tar.gz",
-      "version": "0.6.5"
+      "sha256": "0ryriigyw3cq7vxnm4ml6bl7prhh1cr6bmzzzhbq30p82xw7qvdz",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.0/transmission-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "twofactor_admin": {
       "meta": {
