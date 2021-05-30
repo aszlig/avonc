@@ -2860,9 +2860,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "02gnbyqijq51fpdx6yzkg11vkq8m5hxz63k9lvfibqcywqq1siml",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.55.tar.gz",
-      "version": "0.0.55"
+      "sha256": "1vhya6ck89xzb7b9wk9wmv6alqbgljgkmn7pmsswnbkazgklzfrw",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.56.tar.gz",
+      "version": "0.0.56"
     },
     "transmission": {
       "meta": {
