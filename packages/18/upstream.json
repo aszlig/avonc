@@ -1866,9 +1866,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1bkmrz2c3lq4l1ddxznb5jydas2l6m5qgw1lc3jgc6iq3k8zgfzb",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.9.2/oidc_login.tar.gz",
-      "version": "1.9.2"
+      "sha256": "0qc4kjxlcmxqar3r5qx5pn80gn6l49ksd74p2gr7p7jkz3vh0dj1",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v1.9.4/oidc_login.tar.gz",
+      "version": "1.9.4"
     },
     "ojsxc": {
       "meta": {

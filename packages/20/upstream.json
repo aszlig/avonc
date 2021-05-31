@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "1z2w2wyd695wj1adhbxs2nn22m2g22ws09bj9a49zc87iyhkxbfg",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/65a50ece588dc13f17a535bf32a068e6/collectives-0.6.2.tar.gz",
-      "version": "0.6.2"
+      "sha256": "1789qs50wfwbxb6jbqwyfxs5gcz9gb9mqf4gp9vfjz4419lhgvnr",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/5f7c53a473c78e5447a0fb17b597cfd3/collectives-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "comments": {
       "meta": {
@@ -2101,9 +2101,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1ka16pafmaxabc07x7ar1ijp01kslrbljkw27zc35hq08ykbrnfi",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.0.3/oidc_login.tar.gz",
-      "version": "2.0.3"
+      "sha256": "1rxs4w0jwl915v4yq9gc85ca38qda240xy181a98xbwjwjpryq4b",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.0.4/oidc_login.tar.gz",
+      "version": "2.0.4"
     },
     "ojsxc": {
       "meta": {
@@ -2869,9 +2869,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "024v113385jlsvnbqxk9bbq31kjnrgmbzrx83pb36k7xiwri89xr",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.7/release.tar.gz",
-      "version": "4.6.7"
+      "sha256": "0d11wsl9p3ri8g9gkzf8vmbdhd5ywy5anjj3cmzgam4w33qiy5zf",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.8/release.tar.gz",
+      "version": "4.6.8"
     },
     "socialsharing_diaspora": {
       "meta": {
