@@ -2625,17 +2625,17 @@
     },
     "solid": {
       "meta": {
-        "description": "# WebID-openID Connect identity Provider\n\nThis app gives you a WebID URL and login flow to connect to a Solid App with your Nextcloud User.",
+        "description": "# Solid pod server\n\nThis app gives every user on the server a Solid pod storage space and a corresponding WebID URL.\nIt supports the webid-oidc-dpop-pkce login flow to connect to a Solid App with your Nextcloud User.\nWhen you do this, the Solid App can store data in your Nextcloud account through the Solid protocol.",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Solid",
-        "summary": "A WebID-OIDC Identity Provider, to allow interoperability with SolidProject.org"
+        "summary": "Makes your Nextcloud server into a Solid pod server, to allow interoperability with SolidProject.org"
       },
-      "sha256": "0ilv92nq940vqwx3f2hw9pljyxz2nbch811mj8wj5j2xdgjavqag",
-      "url": "https://github.com/pdsinterop/solid-nextcloud/raw/release/dist/solid.tar.gz",
-      "version": "0.0.1"
+      "sha256": "191sh6wsb92qp7lpkm5z84zwjz5sx6qmylbdhhp664i8iqr8mwz0",
+      "url": "https://github.com/pdsinterop/solid-nextcloud/releases/download/v0.0.2/solid.tar.gz",
+      "version": "0.0.2"
     },
     "souvenirs": {
       "meta": {
@@ -2991,9 +2991,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "197ckwqcjmqbzw622jl6032kv571mkmrs2rygg19ph0kp41gibf9",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.9/twofactor_webauthn-0.2.9.tar.gz",
-      "version": "0.2.9"
+      "sha256": "142mr6ncvixmc4kzkk00nmqk8j2wa2a5pllv11asqr4p98ggsybp",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.10/twofactor_webauthn-0.2.10.tar.gz",
+      "version": "0.2.10"
     },
     "unsplash": {
       "meta": {
