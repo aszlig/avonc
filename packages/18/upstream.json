@@ -1393,6 +1393,21 @@
       "url": "https://github.com/nextcloud/guests/releases/download/v1.5.1/guests.tar.gz",
       "version": "1.5.1"
     },
+    "hancomoffice": {
+      "meta": {
+        "description": "The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.",
+        "homepage": "https://office.hancom.com",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Hancom Office Connector",
+        "summary": "Enable seamless integration with Hancom Office Online and Hancom DocsConverter"
+      },
+      "sha256": "0qgrl9pzghi6k7n96pxscvbgflky7dq6dj71cjk439kxsyqz2ppf",
+      "url": "https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/hancomoffice.tar.gz",
+      "version": "0.0.9"
+    },
     "health": {
       "meta": {
         "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling (only basic for now)\n- Measurement (only basic for now)\n- Sleep (only basic for now)\n\nMore modules are scheduled\n- Breaks\n- Medicine\n- Activities\n- Nutrition\n\nHealth is everything.",
