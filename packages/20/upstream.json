@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "18xhyj1w0fal6zwfn7fpjd6g4lsxzgdpl9qw1prj19kbl71qci50",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.9.1/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.9.1"
+      "sha256": "16fs2pk89sz2dimyz9hlahy5xrh46j9v8lwshif3kvamln323b12",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/2edf60cc3928a50025e0fe15a0f39fa42d5f4780/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.9.2"
     },
     "apporder": {
       "meta": {
@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1gqya0yw2zjz9xrhd8x7bhb9w3l00b8ligb8i2c0b86k3qlk2pxa",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.2.1/bookmarks-4.2.1.tar.gz",
-      "version": "4.2.1"
+      "sha256": "0w282zkzfy2cy24a5n45r152nw9lrnjg2rymvap4qpa83i8p06j3",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.2.2/bookmarks-4.2.2.tar.gz",
+      "version": "4.2.2"
     },
     "breezedark": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0rhwwwz55kg52ag6jkz6dlgjkgz288gn1kwiv1lsl78xy919hwry",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.4/cospend-1.3.4.tar.gz",
-      "version": "1.3.4"
+      "sha256": "11whl7pmcivb1zyp762kz1cwq8rfdvwsinxh1paf634bcy0j17q4",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.5/cospend-1.3.5.tar.gz",
+      "version": "1.3.5"
     },
     "cpanelmailsync": {
       "meta": {
@@ -459,9 +459,9 @@
         "name": "Custom Properties",
         "summary": "Files app plugin to add custom properties to files and folders"
       },
-      "sha256": "0khaqyc45qikk1gzyw7yzbfsg1cx6lnl2khv4pd67fknmd5f102h",
-      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v2.0.0/customproperties_2.0.0.tar.gz",
-      "version": "2.0.0"
+      "sha256": "03wzj1x3266hh1r0zz2q5llf3vq48phlf4b0kn1yrgjzhq3ibj4l",
+      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v2.0.2/customproperties_2.0.2.tar.gz",
+      "version": "2.0.2"
     },
     "dashboard": {
       "meta": {
@@ -1258,7 +1258,7 @@
     },
     "geoblocker": {
       "meta": {
-        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Regional Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
+        "description": "This is a front end to geo localization services, that allows blocking (beta), delaying (beta) and logging of login attempts from specified countries.\nLogin attempts from local network IP addresses are never blocked, delayed or logged.\nIn the current implementation the login page is normally shown to everybody independent of the country. Also login attempts with a non existing user are failing as usual independent of the country.\nWrong Nextcloud configuration (especially in container) can lead to all access seems to come from local network IP address.\nDetermination of the country from IP address is only as good as the chosen service.\n\nCountries can be specified using allowlisting or blocklisting.\n\nCurrently available localization services are:\n- Geoiplookup (local programm on the host)\n- MaxMind GeoLite2 (local database accessed via PHP API)\n- Data from Regional Internet Registries (Nextcloud SQL database build up with data downloaded from the RIRs FTP servers)\n\nFor help how to set up the localization services please have a look at the GitHub repository (homepage on the right side).",
         "homepage": "https://github.com/HomeITAdmin/nextcloud_geoblocker/",
         "isShipped": false,
         "licenses": [
@@ -1267,9 +1267,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "1nk2c7hrpi5cf9zgbd5ca1f25drwsl3g4r49kk1gyb98gw9qdzsc",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.4.6/geoblocker.tar.gz",
-      "version": "0.4.6"
+      "sha256": "11cfqak4zzaxmhaqjhnm84pwid5pm6xhci7igsp5q6x5yp9f3f20",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.5.0/geoblocker.tar.gz",
+      "version": "0.5.0"
     },
     "gpgmailer": {
       "meta": {
@@ -1727,9 +1727,9 @@
         "name": "Jitsi Integration",
         "summary": "Jitsi Integration (unofficial)"
       },
-      "sha256": "089why3i98czxvb3yls6q5yw3savhyjxgx24zix71rwdqfp4abxa",
-      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/9/artifacts/nextcloud-jitsi.tar.gz",
-      "version": "0.10.0"
+      "sha256": "021lynb2x6rgshjjnirb4sq3rrv4qww3ynwp9vqxm0h0wa28qz7g",
+      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/12/artifacts/nextcloud-jitsi.tar.gz",
+      "version": "0.11.0"
     },
     "jsloader": {
       "meta": {
@@ -2697,9 +2697,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "08n6bk1h18y1z4ch7zpkkc15fn5bw4790j1ky8l3is027v7b6k99",
-      "url": "https://download.sendent.nl/serverapp/1.1.9/sendent.tar.gz",
-      "version": "1.1.9"
+      "sha256": "1k1ac5205zdcr70dq073pwbp95d1xfp7qpl78956djh4bjzigvlk",
+      "url": "https://download.sendent.nl/serverapp/1.2.1/sendent.tar.gz",
+      "version": "1.2.1"
     },
     "sensorlogger": {
       "meta": {
