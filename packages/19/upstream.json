@@ -2064,9 +2064,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1yyvh0wh6xphw7n9cdchwbnwn8149yijp13ixr2dzki8nkj0b87i",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.9.5/polls.tar.gz",
-      "version": "1.9.5"
+      "sha256": "1f79zlrs8zhvwkil1pspylprxa7c48nabb00njwxx5hvwc4ja5zy",
+      "url": "https://github.com/nextcloud/polls/releases/download/v1.9.7/polls.tar.gz",
+      "version": "1.9.7"
     },
     "preferred_providers": {
       "meta": {

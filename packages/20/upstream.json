@@ -459,9 +459,9 @@
         "name": "Custom Properties",
         "summary": "Files app plugin to add custom properties to files and folders"
       },
-      "sha256": "03wzj1x3266hh1r0zz2q5llf3vq48phlf4b0kn1yrgjzhq3ibj4l",
-      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v2.0.2/customproperties_2.0.2.tar.gz",
-      "version": "2.0.2"
+      "sha256": "0mxzrxny6g0yairxs0g01ry24fiwi8n27w7l4c8k5xwnh290rx2b",
+      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v2.0.3/customproperties_2.0.3.tar.gz",
+      "version": "2.0.3"
     },
     "dashboard": {
       "meta": {
@@ -2333,9 +2333,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1yyvh0wh6xphw7n9cdchwbnwn8149yijp13ixr2dzki8nkj0b87i",
-      "url": "https://github.com/nextcloud/polls/releases/download/v1.9.5/polls.tar.gz",
-      "version": "1.9.5"
+      "sha256": "06mysh5abvm6c8wvffiv5cyalcl6djvdq9bac1wilkpj51w5c6wk",
+      "url": "https://github.com/nextcloud/polls/releases/download/v2.0.2/polls.tar.gz",
+      "version": "1.9.6"
     },
     "preferred_providers": {
       "meta": {
