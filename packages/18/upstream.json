@@ -2875,9 +2875,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0ci384h96jqazjqvhcvx8fhjkn2w9083xdy4cazqaaamk30ggbkp",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.58.tar.gz",
-      "version": "0.0.58"
+      "sha256": "1p0r82i8w45h3lnxkpw6hcp48hhia93pn4wbq4k81nz2rcv018y0",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.59.tar.gz",
+      "version": "0.0.59"
     },
     "transmission": {
       "meta": {
@@ -2889,9 +2889,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "0ryriigyw3cq7vxnm4ml6bl7prhh1cr6bmzzzhbq30p82xw7qvdz",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.0/transmission-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "07a52z235szlfw4f54p4k83zm7hpf4s0dp1fyvqnzcjs4fhz02j5",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.2/transmission-0.7.2.tar.gz",
+      "version": "0.7.2"
     },
     "twofactor_admin": {
       "meta": {

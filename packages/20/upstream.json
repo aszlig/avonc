@@ -243,9 +243,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "17lgc8qm16k68p2xrlzli267kzi2pbni26qch9ppy8wxk7ngm1g7",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.1.0/bruteforcesettings.tar.gz",
-      "version": "2.1.0"
+      "sha256": "15wnvdvfhm5ryk79mmgjirikhj3li1hbrsq74xyr8a5ih6c4bdnn",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.2.0/bruteforcesettings.tar.gz",
+      "version": "2.2.0"
     },
     "calendar": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "11whl7pmcivb1zyp762kz1cwq8rfdvwsinxh1paf634bcy0j17q4",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.5/cospend-1.3.5.tar.gz",
-      "version": "1.3.5"
+      "sha256": "0y8zm6hncy229k64frf0ky20mw87967jfqxazgsna96pxj27pgh9",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.6/cospend-1.3.6.tar.gz",
+      "version": "1.3.6"
     },
     "cpanelmailsync": {
       "meta": {
@@ -607,6 +607,21 @@
       "url": "https://github.com/Kailona/ehr/releases/download/0.1.5/ehr-0.1.5.tar.gz",
       "version": "0.1.5"
     },
+    "eidlogin": {
+      "meta": {
+        "description": "The eID-Login App allows to use the German eID-card and similar electronic identity documents for secure and privacy-friendly login to Nextcloud. For this purpose, a so-called eID-Client, such as the AusweisApp2 or the Open eCard App and eID-Service are required. In the default configuration a suitable eID-Service is provided without any additional costs.",
+        "homepage": "https://eID.services/eidlogin/nextcloud",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "eID-Login",
+        "summary": "Integration of mobile electronic identities at a substantial security level"
+      },
+      "sha256": "04rn7zgz6l6vbc81d23p4104m0d575hmarq6xj856xhmj9n6d4bx",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.2/eidlogin.tar.gz",
+      "version": "1.0.2"
+    },
     "emlviewer": {
       "meta": {
         "description": "Provides an email preview functionality. It creates preview for the .eml files and displays it as a modal.",
@@ -618,9 +633,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "135lx1994qa2g6xmimc72rc0zsdq9w1k2sq0kczjd49ck0rq7gyk",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.20/emlviewer-0.0.20.tar.gz",
-      "version": "0.0.20"
+      "sha256": "0iydw8x0h7qiyf87cr5lfcwkrdv7vzsh0x0a6sc963f5j7g40fxw",
+      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.23/emlviewer-0.0.23.tar.gz",
+      "version": "0.0.22"
     },
     "encryption": {
       "meta": {
@@ -1371,9 +1386,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "19qmck5p4gm0n15ipk24mxc1y02s9dngidjvf04vgchm20248b3j",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v8.2.1/groupfolders-8.2.1.tar.gz",
-      "version": "8.2.1"
+      "sha256": "1935dzzrskkcz3vc5ndg5pinl9zv2c3z6ifd47i0ydshzhcdhypy",
+      "url": "https://github.com/nextcloud-releases/groupfolders/releases/download/v8.2.2/groupfolders-8.2.2.tar.gz",
+      "version": "8.2.2"
     },
     "groupquota": {
       "meta": {
@@ -1422,6 +1437,7 @@
     "health": {
       "meta": {
         "description": "The app provides different modules to track health data.\n\nFollowing modules are served:\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n- Activities\n\nHealth is everything.",
+        "homepage": "https://github.com/datenangebot/health",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1429,9 +1445,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "15zzgfals7vazpm4mg6ln7dgq5m6gxy0c3kg9z9gdxz01svkvzln",
-      "url": "https://datenangebot.de/s/cd8rMBxtNzt4K3e/download",
-      "version": "1.2.0"
+      "sha256": "02bwilqvyn064g4kjmr6z40spdyhh7mss3x02j0p5r43mmc8749m",
+      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.2.1.tar.gz",
+      "version": "1.2.1"
     },
     "hidesidebars": {
       "meta": {
@@ -2593,9 +2609,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their email address."
       },
-      "sha256": "1cc54sqmns2795976rq8z8fzp6zw0yvg4j5fvhvvi61y59mv1329",
-      "url": "https://github.com/nextcloud/registration/releases/download/v1.2.1/registration-1.2.1.tar.gz",
-      "version": "1.2.1"
+      "sha256": "0zy71xjbwfpa9vssb2l2c4ymb93iymbjg06rv5ms8gnb267fi736",
+      "url": "https://github.com/nextcloud-releases/registration/releases/download/v1.3.0/registration-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "richdocuments": {
       "meta": {
@@ -3086,9 +3102,9 @@
         "name": "Talk Matterbridge",
         "summary": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services."
       },
-      "sha256": "0xxvh5ny8fh8ml572r3x70r0d9ispaa5a4w4iwpwhhz4570p5s6b",
-      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.3/talk_matterbridge.tar.gz",
-      "version": "1.22.3"
+      "sha256": "0fh1m1xp4fqjz9q8cm7ihxcc576233v2qz90dk1dy2vhn6g6ay2l",
+      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.4/talk_matterbridge.tar.gz",
+      "version": "1.22.4"
     },
     "talk_simple_poll": {
       "meta": {
@@ -3200,9 +3216,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0ci384h96jqazjqvhcvx8fhjkn2w9083xdy4cazqaaamk30ggbkp",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.58.tar.gz",
-      "version": "0.0.58"
+      "sha256": "1p0r82i8w45h3lnxkpw6hcp48hhia93pn4wbq4k81nz2rcv018y0",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.59.tar.gz",
+      "version": "0.0.59"
     },
     "transmission": {
       "meta": {
@@ -3214,9 +3230,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "0ryriigyw3cq7vxnm4ml6bl7prhh1cr6bmzzzhbq30p82xw7qvdz",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.0/transmission-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "07a52z235szlfw4f54p4k83zm7hpf4s0dp1fyvqnzcjs4fhz02j5",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.2/transmission-0.7.2.tar.gz",
+      "version": "0.7.2"
     },
     "twofactor_admin": {
       "meta": {

@@ -257,9 +257,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "17lgc8qm16k68p2xrlzli267kzi2pbni26qch9ppy8wxk7ngm1g7",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.1.0/bruteforcesettings.tar.gz",
-      "version": "2.1.0"
+      "sha256": "15wnvdvfhm5ryk79mmgjirikhj3li1hbrsq74xyr8a5ih6c4bdnn",
+      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.2.0/bruteforcesettings.tar.gz",
+      "version": "2.2.0"
     },
     "calendar": {
       "meta": {
@@ -592,6 +592,21 @@
       "sha256": "1kzpqy9nimjx281nq0p1hrkx8y7rkh5nr1hv2g7392qjhh849n8c",
       "url": "https://github.com/Kailona/ehr/releases/download/0.1.5/ehr-0.1.5.tar.gz",
       "version": "0.1.5"
+    },
+    "eidlogin": {
+      "meta": {
+        "description": "The eID-Login App allows to use the German eID-card and similar electronic identity documents for secure and privacy-friendly login to Nextcloud. For this purpose, a so-called eID-Client, such as the AusweisApp2 or the Open eCard App and eID-Service are required. In the default configuration a suitable eID-Service is provided without any additional costs.",
+        "homepage": "https://eID.services/eidlogin/nextcloud",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "eID-Login",
+        "summary": "Integration of mobile electronic identities at a substantial security level"
+      },
+      "sha256": "04rn7zgz6l6vbc81d23p4104m0d575hmarq6xj856xhmj9n6d4bx",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.2/eidlogin.tar.gz",
+      "version": "1.0.2"
     },
     "emlviewer": {
       "meta": {
@@ -1342,9 +1357,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "01aavb1wh9f77x091p0vjafm25f4apl04pvm7yklp0lq10crkgcc",
-      "url": "https://github.com/nextcloud/groupfolders/releases/download/v7.1.2/groupfolders-7.1.2.tar.gz",
-      "version": "7.1.2"
+      "sha256": "0qpl8i7qfcgnwzmynlmkbp6nhd0zywz873k3wq0azbvfz9f65whf",
+      "url": "https://github.com/nextcloud-releases/groupfolders/releases/download/v7.1.3/groupfolders-7.1.3.tar.gz",
+      "version": "7.1.3"
     },
     "groupquota": {
       "meta": {
@@ -2899,9 +2914,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0ci384h96jqazjqvhcvx8fhjkn2w9083xdy4cazqaaamk30ggbkp",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.58.tar.gz",
-      "version": "0.0.58"
+      "sha256": "1p0r82i8w45h3lnxkpw6hcp48hhia93pn4wbq4k81nz2rcv018y0",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.59.tar.gz",
+      "version": "0.0.59"
     },
     "transmission": {
       "meta": {
@@ -2913,9 +2928,9 @@
         "name": "Transmission",
         "summary": "Integrate the torrent manager Transmission within Nextcloud"
       },
-      "sha256": "0ryriigyw3cq7vxnm4ml6bl7prhh1cr6bmzzzhbq30p82xw7qvdz",
-      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.0/transmission-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "07a52z235szlfw4f54p4k83zm7hpf4s0dp1fyvqnzcjs4fhz02j5",
+      "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.2/transmission-0.7.2.tar.gz",
+      "version": "0.7.2"
     },
     "twofactor_admin": {
       "meta": {
