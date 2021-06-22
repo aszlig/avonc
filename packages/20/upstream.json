@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "16fs2pk89sz2dimyz9hlahy5xrh46j9v8lwshif3kvamln323b12",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/2edf60cc3928a50025e0fe15a0f39fa42d5f4780/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.9.2"
+      "sha256": "16c61sdy088b7w2j7lc1pcb74vwllwh0n0b4a2r6vaggiw8gg6m4",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/1e4f3fcd3a1fdafee4c0fea578c34b0fc804b1d7/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.9.3"
     },
     "apporder": {
       "meta": {
@@ -228,9 +228,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "0syz1jd009jybb2sklbyfh75fj914gsmxzhy2rrr0q6zwdlvjghj",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.11/breezedark.tar.gz",
-      "version": "20.0.11"
+      "sha256": "12kagd9b322gldc7mz0qmbqla4pqmvasbgds5j36ccsv7v88s09x",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v20.0.12/breezedark.tar.gz",
+      "version": "20.0.12"
     },
     "bruteforcesettings": {
       "meta": {
@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "1789qs50wfwbxb6jbqwyfxs5gcz9gb9mqf4gp9vfjz4419lhgvnr",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/5f7c53a473c78e5447a0fb17b597cfd3/collectives-0.7.0.tar.gz",
-      "version": "0.7.0"
+      "sha256": "1dkg64snnvspy86phimhxj40fcz52ljkfnfmsw94p0dzsvldr5kn",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c05983f3f12a05ff74c1af6d3437092a/collectives-0.8.21.tar.gz",
+      "version": "0.8.21"
     },
     "comments": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cospend",
         "summary": "Shared budget manager"
       },
-      "sha256": "0y8zm6hncy229k64frf0ky20mw87967jfqxazgsna96pxj27pgh9",
-      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.6/cospend-1.3.6.tar.gz",
-      "version": "1.3.6"
+      "sha256": "0vbb91akn27vk67dq863q2xs4pcjy1dbnj95qvh1bxnhzhip5hv6",
+      "url": "https://github.com/eneiluj/cospend-nc/releases/download/v1.3.7/cospend-1.3.7.tar.gz",
+      "version": "1.3.7"
     },
     "cpanelmailsync": {
       "meta": {
@@ -1714,9 +1714,9 @@
         "name": "Zammad integration",
         "summary": "Integration of Zammad user support/ticketing solution"
       },
-      "sha256": "18gk0r2mgrw92zjgk3gilmh0idgv0ar0g6gkgrhzn5azyrmddp3w",
-      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v1.0.0/integration_zammad-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "1wn7di5di2xk80dhad0s9qn96p36c4vwv01nvr2cd51a5cm9vl3r",
+      "url": "https://github.com/nextcloud/integration_zammad/releases/download/v1.0.1/integration_zammad-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "issuetemplate": {
       "meta": {
@@ -2669,9 +2669,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "17rnjg9mschdjxq635i998amgvblgs8i5wlyi4z2jqkczxhd1zr7",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.11/riotchat.tar.gz",
-      "version": "0.7.11"
+      "sha256": "0b19za18yfy4v2m83gqidlz5fz2dxb2xrg8hcdyf0b3c497mcc0f",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.12/riotchat.tar.gz",
+      "version": "0.7.12"
     },
     "scanner": {
       "meta": {
@@ -2713,9 +2713,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1k1ac5205zdcr70dq073pwbp95d1xfp7qpl78956djh4bjzigvlk",
-      "url": "https://download.sendent.nl/serverapp/1.2.1/sendent.tar.gz",
-      "version": "1.2.1"
+      "sha256": "0mck3hvkbisnhnn7kz9c0c9s1jqimzk6fdsz46p44dlgpzac1pgq",
+      "url": "https://download.sendent.nl/serverapp/1.2.2/sendent.tar.gz",
+      "version": "1.2.2"
     },
     "sensorlogger": {
       "meta": {
@@ -2900,9 +2900,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0d11wsl9p3ri8g9gkzf8vmbdhd5ywy5anjj3cmzgam4w33qiy5zf",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.8/release.tar.gz",
-      "version": "4.6.8"
+      "sha256": "0z972h2xha4bag4lfplyn0g401j9khn1jr7krybyjaanm89xp4lg",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.11/release.tar.gz",
+      "version": "4.6.11"
     },
     "socialsharing_diaspora": {
       "meta": {
