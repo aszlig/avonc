@@ -633,9 +633,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0iydw8x0h7qiyf87cr5lfcwkrdv7vzsh0x0a6sc963f5j7g40fxw",
+      "sha256": "1gpjnrwxikm4x7rik7c58ayyprbr6nckn3b8njrdz2vl593bl7k2",
       "url": "https://github.com/newroco/emlviewer/releases/download/0.0.23/emlviewer-0.0.23.tar.gz",
-      "version": "0.0.22"
+      "version": "0.0.23"
     },
     "encryption": {
       "meta": {
@@ -2349,9 +2349,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1aalhsfdria1qrp69kyf6rk4mlps976pppghsj0774xpaybr8ssx",
-      "url": "https://github.com/nextcloud/polls/releases/download/v2.0.2/polls.tar.gz",
-      "version": "2.0.2"
+      "sha256": "1c7z9gqkhjb6a07yj0yw8w0q0lc6a19q9glrkx77abam26083a1x",
+      "url": "https://github.com/nextcloud/polls/releases/download/2.0.4/polls.tar.gz",
+      "version": "2.0.4"
     },
     "preferred_providers": {
       "meta": {
@@ -3332,9 +3332,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "0inplcf1jiq7y7iczbnr61iiccmji1i0c5zis8m9w3kf8xk8aqc4",
-      "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v6.1.0/twofactor_u2f.tar.gz",
-      "version": "6.1.0"
+      "sha256": "05savgxw9k6z35zbxvscybmf8ig551c7g627b1nqafa1m3y7jjh9",
+      "url": "https://github.com/nextcloud-releases/twofactor_u2f/releases/download/v6.2.0/twofactor_u2f.tar.gz",
+      "version": "6.2.0"
     },
     "twofactor_webauthn": {
       "meta": {
