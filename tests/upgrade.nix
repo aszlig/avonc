@@ -79,6 +79,9 @@ import ./make-test.nix (pkgs: {
         (assert nc19apps.talk_simple_poll.version == "1.3.0";
          "talk_simple_poll")
 
+        # https://github.com/eid-login/eid-login-nextcloud/issues/3
+        (assert nc19apps.eidlogin.version == "1.0.2"; "eidlogin")
+
         # We already have a LibreOffice Online build from source, so no need
         # to test the binary releases:
         "richdocumentscode"
