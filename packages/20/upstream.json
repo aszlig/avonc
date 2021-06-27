@@ -109,9 +109,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "0i47lgwj2hx8gmkx7zw3k3hqigzyqs740fpr60qn4r77797jq364",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.12.0/apporder.tar.gz",
-      "version": "0.12.0"
+      "sha256": "0kd2174j4j6vcpfcf0z4qs1d6mskf7lh3klj13a4xg49288nw7df",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.13.0/apporder.tar.gz",
+      "version": "0.13.0"
     },
     "audioplayer": {
       "meta": {
@@ -1300,6 +1300,21 @@
       "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
       "version": "0.0.3"
     },
+    "gpxedit": {
+      "meta": {
+        "description": "# GpxEdit Nextcloud application\n\nSimple Nextcloud app to load, edit and save GPX files on an interactive map. You can load/save files from your Nextcloud file storage. GPX, KML, CSV (unicsv format) and geotagged JPG are supported for loading. JPG files are loaded as waypoints. Files can be loaded in GpxEdit interface or in Files app.\n\nGo to [GpxEdit Crowdin project](https://crowdin.com/project/gpxedit) if you want to help to translate this app in your language.\n\nThis is not a perfect GPX editor.\n\nWhat's saved :\n- metadata\n    - name\n    - link url\n    - link text\n- tracks\n    - name\n    - comment\n    - description\n    - points\n        - coordinates\n        - elevation (just preserves loaded values)\n        - time (just preserves loaded values)\n- waypoint\n    - coordinates\n    - name\n    - comment\n    - description\n    - symbol\n    - elevation (just preserves loaded value)\n    - time (just preserves loaded values)\n\nGpxEdit does load/save time data. Elevation data is loaded and saved but every new waypoint/track/trackpoint added by user actions in GpxEdit will have neither elevation nor time data. There is an \"approximate\" option to set elevation to new points if surrounding points have elevation data.\n\nTracks are saved with one segment (trkseg tag).\n\nGpxEdit :\n- allows you to add extra symbols in admin settings (section : additional)\n- works with server-side encryption.\n- works with shared files.\n- loads GPX, KML, unicsv CSV, geotagged JPG files (no more Gpsbabel dependency)\n- loads tracks, routes and waypoints\n- saves tracks, routes and waypoints\n- supports waypoint symbols\n- uses [Leaflet.Draw](https://github.com/Leaflet/Leaflet.draw) and [Leaflet.draw.plus](https://github.com/Dominique92/Leaflet.draw.plus) amazing plugins\n- uses many other Leaflet plugins like Minimap, Sidebar2, MeasureControl, MousePositionControl\n- adds possibility to edit .gpx files directly from the \"Files\" app\n- is able to cut lines in two\n\nThis app is tested on Nextcloud 14 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxedit-oc/wikis/admindoc) for installation details, integration in \"Files\" app and GpxEdit admin settings.\n\n## Alternatives\n\nIf you look for more powerfull GPX editors, take a look at :\n- [Viking](https://sourceforge.net/projects/viking/) which is the best IMHO\n- [QLandKarteGT](https://bitbucket.org/kiozen/qlandkarte-gt)\n- [QMapShack](https://bitbucket.org/maproom/qmapshack/wiki/Home)\n- [JOSM](https://josm.openstreetmap.de/)\n\n\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "homepage": "https://gitlab.com/eneiluj/gpxedit-oc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GpxEdit",
+        "summary": "Simple GPX file editor"
+      },
+      "sha256": "0pald5dvp44pi06jvw0325xpjc2hxhax1h6m394nag0ksb6qina3",
+      "url": "https://gitlab.com/eneiluj/gpxedit-oc/-/wikis/uploads/5b184c24f9e767ad19a84e177a9b473c/gpxedit-0.0.14.tar.gz",
+      "version": "0.0.14"
+    },
     "gpxmotion": {
       "meta": {
         "description": "# GpxMotion Nextcloud application\n\nGpxMotion is a Nextcloud application to create and display path animations on an interactive map.\n\nTo watch an animation, click the \"Load and view file\" button in GpxMotion main page. If no animation information was set, a default one (one section of 10 seconds per tracks/routes) is shown. If no time information is missing in an animation section and the \"use real time proportions\" is enabled (by default, it is), the animation duration will not change but the animation speed will be proportional to real speed.\n\nTo define an animation, go to GpxMotion main page and load a GPX file already containing ordered tracks/routes. Then define the animation steps. Then check you are satisfied with the animation preview. Then save the result to a GPX file (the animation data is saved as JSON in the GPX description field).\n\nIf a file is publicly shared without password in \"Files\" app, you can produce a GpxMotion public link to its animation with the \"Share\" button in the \"view\" page.\n\nThis app is tested on Nextcloud 16 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\nGo to [GpxMotion Crowdin project](https://crowdin.com/project/gpxmotion) if you want to help to translate this app in your language.\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxmotion-oc/wikis/admindoc) for installation details and integration in \"Files\" app.\n\n## Alternatives\n\nIf you look for alternatives, take a look at :\n- [gpxanim](https://github.com/rvl/gpxanim) creates a video file\n- [GPX Animator](http://zdila.github.io/gpx-animator/) creates a video file\n\n\n\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
@@ -1961,9 +1976,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0wb18m4d32zgpaar7l986aj87m6gjznwfxrfh9yjrjxasv34pvyc",
-      "url": "https://github.com/owncloud/music/releases/download/v1.2.0/music_1.2.0_nc-signed.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1r4warypjb5sk8gqkhi5pkiss387s5ddgb8p7gxl9rfkjrd9xqjh",
+      "url": "https://github.com/owncloud/music/releases/download/v1.2.1/music_1.2.1_for_nextcloud.tar.gz",
+      "version": "1.2.1"
     },
     "news": {
       "meta": {
@@ -2033,9 +2048,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "04xbpkaxis78r8njhf16fd65qrb17h0i2gpdiamhr5dk9x55lmfr",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.0.4/notes.tar.gz",
-      "version": "4.0.4"
+      "sha256": "0gdhkl5gn0y8pip7m361ihiqr9n70lk2p63m9j4ilwanb6zx4rf5",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.1.0/notes.tar.gz",
+      "version": "4.1.0"
     },
     "notifications": {
       "meta": {
@@ -3187,9 +3202,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "0z339d7xjxgvigz7n1xsjipr3xc6yi9l76704qq0kahdy60qxnnv",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.8.0/theming_customcss.tar.gz",
-      "version": "1.8.0"
+      "sha256": "0hidg726r4gw5yml6n3mbq6ld62lnq9fv6ryis5x67jkxyfa3mfd",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.9.0/theming_customcss.tar.gz",
+      "version": "1.9.0"
     },
     "timemanager": {
       "meta": {
@@ -3202,9 +3217,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0f8yk86z8q0zn25sbi9kmknvg2z0w4lplzz1lp7i4d1417iabysg",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.8/timemanager.tar.gz",
-      "version": "0.1.8"
+      "sha256": "0khaz83b6h96qsfhcs8vd17x8snm8ssj2zpzshgrg7zs39bmyhy1",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.0/timemanager.tar.gz",
+      "version": "0.1.9"
     },
     "timetracker": {
       "meta": {

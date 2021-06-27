@@ -1081,9 +1081,9 @@
         "name": "Plain text editor",
         "summary": "Open, save and edit text files"
       },
-      "sha256": "100s20myxidjnamid0ywdpkmc77sl0hz5w47m553rslwvg3v6b27",
-      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.13.0/files_texteditor.tar.gz",
-      "version": "2.14.0"
+      "sha256": "0c9kd8xlnkkpgxh3i8adcpaq7l5mrh705jkxhnd3hcl411kyxmp8",
+      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.12.0/files_texteditor.tar.gz",
+      "version": "2.13.0"
     },
     "files_trackdownloads": {
       "meta": {
@@ -1282,9 +1282,9 @@
         "name": "GpxEdit",
         "summary": "Simple GPX file editor"
       },
-      "sha256": "125fd1b0bcva0gl9g0i32rfrbvgi6s6gz3k01wl8vg07pi4vmls9",
-      "url": "https://gitlab.com/eneiluj/gpxedit-oc/-/wikis/uploads/a7c638d1b038514d07bb5c787b6e7961/gpxedit-0.0.13.tar.gz",
-      "version": "0.0.13"
+      "sha256": "0pald5dvp44pi06jvw0325xpjc2hxhax1h6m394nag0ksb6qina3",
+      "url": "https://gitlab.com/eneiluj/gpxedit-oc/-/wikis/uploads/5b184c24f9e767ad19a84e177a9b473c/gpxedit-0.0.14.tar.gz",
+      "version": "0.0.14"
     },
     "gpxmotion": {
       "meta": {
@@ -1706,9 +1706,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0wb18m4d32zgpaar7l986aj87m6gjznwfxrfh9yjrjxasv34pvyc",
-      "url": "https://github.com/owncloud/music/releases/download/v1.2.0/music_1.2.0_nc-signed.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1r4warypjb5sk8gqkhi5pkiss387s5ddgb8p7gxl9rfkjrd9xqjh",
+      "url": "https://github.com/owncloud/music/releases/download/v1.2.1/music_1.2.1_for_nextcloud.tar.gz",
+      "version": "1.2.1"
     },
     "news": {
       "meta": {
@@ -2900,9 +2900,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0f8yk86z8q0zn25sbi9kmknvg2z0w4lplzz1lp7i4d1417iabysg",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.1.8/timemanager.tar.gz",
-      "version": "0.1.8"
+      "sha256": "0khaz83b6h96qsfhcs8vd17x8snm8ssj2zpzshgrg7zs39bmyhy1",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.0/timemanager.tar.gz",
+      "version": "0.1.9"
     },
     "timetracker": {
       "meta": {
