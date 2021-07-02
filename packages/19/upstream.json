@@ -331,9 +331,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0nawk5fzwcnwsp3nf3dwawk60xgwm04z19qp1vr3c543ypf930sx",
-      "url": "https://github.com/nextcloud/circles/releases/download/v0.19.13/circles-0.19.13.tar.gz",
-      "version": "0.19.13"
+      "sha256": "08qa3aj1s1rnwsn05as14rmzkrr8s19vfa0s0z9fnkgzhy654v4r",
+      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.14/circles-0.19.14.tar.gz",
+      "version": "0.19.14"
     },
     "cloud_federation_api": {
       "meta": {
@@ -544,9 +544,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "109myfpjd936wgq2z5wzhypl1nm09pvdwxln7anjfwz61bd809fk",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.0/drawio-v1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0pwi2w2gk2pplbnd8lan73iaa037gm21jxnsr3lgirr75ca19i2s",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.1/drawio-v1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "drop_account": {
       "meta": {
@@ -1153,6 +1153,21 @@
         "name": "Video player",
         "summary": "Video player"
       }
+    },
+    "fileslibreofficeedit": {
+      "meta": {
+        "description": "This adds a new context menu item to the Files dropdown menu &amp;quot;Edit with LibreOffice&amp;quot;.\nClicking that item will open the file in LibreOffice via WebDav (the file can then be edited and saved back directly in LibreOffice).\n\nThis greatly improves the user experience when working with Office files in the browser. No need to download, edit, reupload. Instead use the &amp;quot;Edit with LibreOffice&amp;quot; item.",
+        "homepage": "https://github.com/allotropia/nextcloud_files_libreoffice_edit",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Edit Files with LibreOffice",
+        "summary": "Open files with LibreOffice for editing (via WebDav)"
+      },
+      "sha256": "1jbswmz1vxfkflx329k18l3633ml8b78bmc6qq3c5piyr00mlzbg",
+      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.1/fileslibreofficeedit.tar.gz",
+      "version": "1.0.1"
     },
     "firstrunwizard": {
       "meta": {
@@ -2383,9 +2398,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0b19za18yfy4v2m83gqidlz5fz2dxb2xrg8hcdyf0b3c497mcc0f",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.12/riotchat.tar.gz",
-      "version": "0.7.12"
+      "sha256": "07vfqnkz01g50zjvfkc10w3plrzhgpyr4h5m6angpxgznad4mdqr",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.13/riotchat.tar.gz",
+      "version": "0.7.13"
     },
     "scanner": {
       "meta": {
@@ -2891,7 +2906,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://github.com/joleaf)",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://github.com/joleaf)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -2900,9 +2915,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0khaz83b6h96qsfhcs8vd17x8snm8ssj2zpzshgrg7zs39bmyhy1",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.0/timemanager.tar.gz",
-      "version": "0.1.9"
+      "sha256": "0dnwl2carpksj2ssgbyk99m5nscpx6g7lb325wk5j71sxknahkcs",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.2/timemanager.tar.gz",
+      "version": "0.2.2"
     },
     "timetracker": {
       "meta": {
