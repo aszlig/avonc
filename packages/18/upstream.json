@@ -2544,9 +2544,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "175b7hzlmkm207mvrs1zpckw2iqb6fnndz5j3ymm5dnh9kmjxbwg",
-      "url": "https://gitnet.fr/attachments/72515dc5-315d-4368-b162-a93de0c7b069",
-      "version": "1.23.1"
+      "sha256": "1i7yxk6vb60fanvcqi3rda7hghxbl73m0xmilv3pdzcd05r6dggc",
+      "url": "https://gitnet.fr/attachments/46aa0a6a-8792-4e75-bf03-b5dad0ccf91c",
+      "version": "1.24.0"
     },
     "smb_test": {
       "meta": {

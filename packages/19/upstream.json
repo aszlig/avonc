@@ -198,9 +198,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0h056c3gdjm6igq2983kr8j9mi3a3p9ppy1cnwdw1jz0s0r6n059",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.1/bbb-v1.4.1.tar.gz",
-      "version": "1.4.1"
+      "sha256": "0dnbzik5nsak8c3agph3raqiqjmbj5jn2m6qzg5ann3wh8cm8pmi",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.2/bbb-v1.4.2.tar.gz",
+      "version": "1.4.2"
     },
     "bookmarks": {
       "meta": {
@@ -2569,9 +2569,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "175b7hzlmkm207mvrs1zpckw2iqb6fnndz5j3ymm5dnh9kmjxbwg",
-      "url": "https://gitnet.fr/attachments/72515dc5-315d-4368-b162-a93de0c7b069",
-      "version": "1.23.1"
+      "sha256": "1i7yxk6vb60fanvcqi3rda7hghxbl73m0xmilv3pdzcd05r6dggc",
+      "url": "https://gitnet.fr/attachments/46aa0a6a-8792-4e75-bf03-b5dad0ccf91c",
+      "version": "1.24.0"
     },
     "smb_test": {
       "meta": {
