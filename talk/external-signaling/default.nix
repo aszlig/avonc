@@ -104,13 +104,13 @@ let
 
   signalingServer = pkgs.buildGoPackage rec {
     pname = "nextcloud-spreed-signaling";
-    version = "0.2.0";
+    version = "0.3.0";
 
     src = pkgs.fetchFromGitHub {
       repo = pname;
       owner = "strukturag";
       rev = "v${version}";
-      sha256 = "1fz4h520jbvndb96fpi78698lj0287a89hgql1ykcg5j8pzf5q45";
+      sha256 = "1rdkinmkk5ymrxrr46gbwglvdy18nmkfj0q4makj3y2sjspgv8d0";
     };
 
     goPackagePath = "github.com/strukturag/${pname}";
@@ -123,15 +123,15 @@ let
       export GOPATH="$NIX_BUILD_TOP/go/src/$goPackagePath:$GOPATH"
       ( cd "$NIX_BUILD_TOP/go/src/$goPackagePath"
         ${pkgs.easyjson}/bin/easyjson -all \
-          src/signaling/api_signaling.go \
-          src/signaling/api_backend.go \
-          src/signaling/api_proxy.go \
-          src/signaling/natsclient.go \
-          src/signaling/room.go
+          api_signaling.go \
+          api_backend.go \
+          api_proxy.go \
+          natsclient.go \
+          room.go
       )
     '';
 
-    # All those dependencies are from "dependencies.tsv" in the source tree.
+    # All those dependencies are from "go.mod" and "go.sum" in the source tree.
     extraSrcs = let
       mkGoDep = { goPackagePath, rev, sha256, ... }@attrs: let
         matchRepoOwner = builtins.match "github\\.com/([^/]+)/([^/]+)";
@@ -153,70 +153,81 @@ let
         sha256 = "1fah0g4f1gpb9hqv80svp39ijamggimdsxsiw8w1bkj67mrhgcd7";
       }
       { goPackagePath = "github.com/google/uuid";
-        rev = "0e4e31197428a347842d152773b4cace4645ca25";
-        sha256 = "1rbpfa0v0ly9sdnixcxhf79swki54ikgm1zkwwkj64p1ws66syqd";
-      }
-      { goPackagePath = "github.com/gorilla/context";
-        rev = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42";
-        sha256 = "03p4hn87vcmfih0p9w663qbx9lpsf7i7j3lc7yl7n84la3yz63m4";
+        rev = "v1.2.0";
+        sha256 = "08wqig98w23cg2ngjijhgm6s0mdayb95awa3cn3bs69lg20gryac";
       }
       { goPackagePath = "github.com/gorilla/mux";
-        rev = "ac112f7d75a0714af1bd86ab17749b31f7809640";
-        sha256 = "1fwn36y9zd8fh9rbdiq5gg69d9crp2hvbdziy1kf9hq65426pydk";
+        rev = "v1.8.0";
+        sha256 = "18f0q9qxgq1yh4ji07mqhiydfcwvi56z9d775v7dc7yckj33kpdk";
       }
       { goPackagePath = "github.com/gorilla/securecookie";
-        rev = "e59506cc896acb7f7bf732d4fdf5e25f7ccd8983";
+        rev = "v1.1.1";
         sha256 = "16bqimpxs9vj5n59vm04y04v665l7jh0sddxn787pfafyxcmh410";
       }
       { goPackagePath = "github.com/gorilla/websocket";
-        # Using newer version here, because we need NetDialContext for our
-        # patch.
         rev = "v1.4.2";
         sha256 = "0mkm9w6kjkrlzab5wh8p4qxkc0icqawjbvr01d2nk6ykylrln40s";
       }
       { goPackagePath = "github.com/mailru/easyjson";
-        rev = "2f5df55504ebc322e4d52d34df6a1f5b503bf26d";
-        sha256 = "0d9m8kyhbawa452vnwn255xxnh6pkp3im0d2310rw1k14nh3yh1p";
+        rev = "v0.7.7";
+        sha256 = "0clifkvvy8f45rv3cdyv58dglzagyvfcqb63wl6rij30c5j2pzc1";
       }
-      { goPackagePath = "github.com/nats-io/go-nats";
-        rev = "d4ca4c8b588d5da9c2ac82d6e445ce4feaba18ba";
-        sha256 = "0raaki95zbl5nnmkbyy77lpq8qsyr50kmsd7g2wvk1yfxar2c5ia";
+      { goPackagePath = "github.com/josharian/intern";
+        rev = "v1.0.0";
+        sha256 = "1za48ppvwd5vg8vv25ldmwz1biwpb3p6qhf8vazhsfdg9m07951c";
+      }
+      { goPackagePath = "github.com/nats-io/nats-server";
+        rev = "v2.2.6";
+        sha256 = "0yc3paznkjmkdzs1r7mnlvlsyh7wb9r5vslbr6bw3h4fk94b7dxb";
+      }
+      { goPackagePath = "github.com/nats-io/nats.go";
+        rev = "v1.11.0";
+        sha256 = "133a9xa573519innd2xbzd3qiv799k2z0888cs9iilj60gkb7kqx";
+      }
+      { goPackagePath = "github.com/nats-io/nkeys";
+        rev = "v0.3.0";
+        sha256 = "06wbmb3cxjrcfvgfbn6rdfzb4pfaaw11bnvl1r4kig4ag22qcz7b";
       }
       { goPackagePath = "github.com/nats-io/nuid";
-        rev = "3cf34f9fca4e88afa9da8eabd75e3326c9941b44";
-        sha256 = "04yb56wvgn7caxqasfwpmz77a9n3w2hsb7ghdl729l7973v96ghl";
+        rev = "v1.0.1";
+        sha256 = "11zbhg4kds5idsya04bwz4plj0mmiigypzppzih731ppbk2ms1zg";
       }
       { goPackagePath = "github.com/notedit/janus-go";
         rev = "10eb8b95d1a0469ac8921c5ce5fb55b4c0d3ad7d";
         sha256 = "0ng184pp2bhrdd3ak4qp2cnj2y3zch90l2jvd3x5gspy5w6vmszn";
       }
       { goPackagePath = "github.com/oschwald/maxminddb-golang";
-        rev = "1960b16a5147df3a4c61ac83b2f31cd8f811d609";
-        sha256 = "09hyc457cp27nsia8akp8m2ymcxlnz9xq6xrw6f818k4g1rxfsqh";
+        rev = "v1.8.0";
+        sha256 = "1047hgf3ly78083rldfnrygdihwb6hifbphl9b0iszcm77h52lh9";
       }
       { goPackagePath = "go.etcd.io/etcd";
         github = { owner = "etcd-io"; repo = "etcd"; };
-        rev = "ae9734ed278b7a1a7dfc82e800471ebbf9fce56f";
-        sha256 = "0bvky593241i60qf6793sxzsxwfl3f56cgscnva9f2jfhk157wmy";
+        rev = "aa7126864d82e88c477594b8a53f55f2e2408aa3";
+        sha256 = "0vjkwqadmjcvr52nnz26xj8flghc5grnimajp8cqv2pl7gxvd44c";
       }
-      { goPackagePath = "golang.org/x/net";
-        url = "https://go.googlesource.com/net";
-        rev = "f01ecb60fe3835d80d9a0b7b2bf24b228c89260e";
-        sha256 = "0j992rd9mjbyqmn53b5g41x8x0i1q8723qy8138fj96brqis3xda";
+      { goPackagePath = "google.golang.org/protobuf";
+        github = { owner = "protocolbuffers"; repo = "protobuf-go"; };
+        rev = "v1.26.0";
+        sha256 = "0xq6phaps6d0vcv13ga59gzj4306l0ki9kikhmb52h6pq0iwfqlz";
+      }
+      { goPackagePath = "golang.org/x/crypto";
+        url = "https://go.googlesource.com/crypto";
+        rev = "e6e6c4f2bb5b5887c7f7dd52f01ea7b2fbeb297d";
+        sha256 = "1q4kr6cmz8ybx9qvz4553j81azwkxircmr24qw2d506k4my7wppj";
       }
       { goPackagePath = "golang.org/x/sys";
         url = "https://go.googlesource.com/sys";
-        rev = "ac767d655b305d4e9612f5f6e33120b9176c4ad4";
-        sha256 = "1ds29n5lh4j21hmzxz7vk7hv1k6sixc7f0zsdc9xqdg0j7d212zm";
+        rev = "c709ea063b76879dc9915358f55d4d77c16ab6d5";
+        sha256 = "15nq53a6kcqchng4j0d1pjw0m6hny6126nhjdwqw5n9dzh6a226d";
       }
       { goPackagePath = "gopkg.in/dgrijalva/jwt-go.v3";
         url = "https://gopkg.in/dgrijalva/jwt-go.v3";
-        rev = "06ea1031745cb8b3dab3f6a236daf2b0aa468b7e";
+        rev = "v3.2.0";
         sha256 = "08m27vlms74pfy5z79w67f9lk9zkx6a9jd68k3c4msxy75ry36mp";
       }
       { goPackagePath = "github.com/coreos/go-systemd";
-        rev = "v22.1.0";
-        sha256 = "127dj1iwp69yj74nwh9ckgc0mkk1mv4yzbxmbdxix1r7j6q35z3j";
+        rev = "v22.3.2";
+        sha256 = "1ndi86b8va84ha93njqgafypz4di7yxfd5r5kf1r0s3y3ghcjajq";
       }
     ];
   };

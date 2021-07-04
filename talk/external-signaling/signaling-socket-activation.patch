@@ -1,7 +1,365 @@
-diff --git a/src/server/main.go b/src/server/main.go
-index df7791c..3acec72 100644
---- a/src/server/main.go
-+++ b/src/server/main.go
+diff --git a/backend_client.go b/backend_client.go
+index 363e52c..47109ed 100644
+--- a/backend_client.go
++++ b/backend_client.go
+@@ -25,11 +25,13 @@ import (
+ 	"bytes"
+ 	"context"
+ 	"crypto/tls"
++	stdctx "context"
+ 	"encoding/json"
+ 	"fmt"
+ 	"io"
+ 	"io/ioutil"
+ 	"log"
++	"net"
+ 	"net/http"
+ 	"net/url"
+ 	"strings"
+@@ -86,6 +88,9 @@ func NewBackendClient(config *goconf.ConfigFile, maxConcurrentRequestsPerHost in
+ 	transport := &http.Transport{
+ 		MaxIdleConnsPerHost: maxConcurrentRequestsPerHost,
+ 		TLSClientConfig:     tlsconfig,
++		DialContext: func(_ stdctx.Context, _, _ string) (net.Conn, error) {
++			return net.Dial("unix", "/run/nextcloud-signaling/nextcloud.sock")
++		},
+ 	}
+ 
+ 	return &BackendClient{
+@@ -444,27 +449,26 @@ func (b *BackendClient) HasCapabilityFeature(ctx context.Context, u *url.URL, fe
+ 
+ // PerformJSONRequest sends a JSON POST request to the given url and decodes
+ // the result into "response".
+-func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, request interface{}, response interface{}) error {
+-	if u == nil {
++func (b *BackendClient) PerformJSONRequest(ctx context.Context, maybeUrl *url.URL, request interface{}, response interface{}) error {
++	if maybeUrl == nil {
+ 		return fmt.Errorf("no url passed to perform JSON request %+v", request)
+ 	}
+ 
+-	secret := b.backends.GetSecret(u)
+-	if secret == nil {
+-		return fmt.Errorf("no backend secret configured for for %s", u)
+-	}
++	u := *maybeUrl
++	u.Scheme = "http"
++	u.Host = "localhost"
+ 
+ 	var requestUrl *url.URL
+-	if b.HasCapabilityFeature(ctx, u, FeatureSignalingV3Api) {
+-		newUrl := *u
++	if b.HasCapabilityFeature(ctx, &u, FeatureSignalingV3Api) {
++		newUrl := u
+ 		newUrl.Path = strings.Replace(newUrl.Path, "/spreed/api/v1/signaling/", "/spreed/api/v3/signaling/", -1)
+ 		newUrl.Path = strings.Replace(newUrl.Path, "/spreed/api/v2/signaling/", "/spreed/api/v3/signaling/", -1)
+ 		requestUrl = &newUrl
+ 	} else {
+-		requestUrl = u
++		requestUrl = &u
+ 	}
+ 
+-	pool, err := b.getPool(u)
++	pool, err := b.getPool(&u)
+ 	if err != nil {
+ 		log.Printf("Could not get client pool for host %s: %s", u.Host, err)
+ 		return err
+@@ -497,9 +501,6 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
+ 	req.Header.Set("OCS-APIRequest", "true")
+ 	req.Header.Set("User-Agent", "nextcloud-spreed-signaling/"+b.version)
+ 
+-	// Add checksum so the backend can validate the request.
+-	AddBackendChecksum(req, data, secret)
+-
+ 	resp, err := performRequestWithRedirects(ctx, c, req, data)
+ 	if err != nil {
+ 		log.Printf("Could not send request %s to %s: %s", string(data), req.URL, err)
+@@ -519,7 +520,7 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
+ 		return err
+ 	}
+ 
+-	if isOcsRequest(u) || req.Header.Get("OCS-APIRequest") != "" {
++	if isOcsRequest(&u) || req.Header.Get("OCS-APIRequest") != "" {
+ 		// OCS response are wrapped in an OCS container that needs to be parsed
+ 		// to get the actual contents:
+ 		// {
+diff --git a/backend_configuration.go b/backend_configuration.go
+index 80fabe9..47545ba 100644
+--- a/backend_configuration.go
++++ b/backend_configuration.go
+@@ -324,31 +324,10 @@ func (b *BackendConfiguration) GetCompatBackend() *Backend {
+ }
+ 
+ func (b *BackendConfiguration) GetBackend(u *url.URL) *Backend {
+-	if strings.Contains(u.Host, ":") && hasStandardPort(u) {
+-		u.Host = u.Hostname()
++	entries, found := b.backends["localhost"]
++	if found {
++		return entries[0]
+ 	}
+-
+-	entries, found := b.backends[u.Host]
+-	if !found {
+-		if b.allowAll {
+-			return b.compatBackend
+-		}
+-		return nil
+-	}
+-
+-	s := u.String()
+-	if s[len(s)-1] != '/' {
+-		s += "/"
+-	}
+-	for _, entry := range entries {
+-		if entry.url == "" {
+-			// Old-style configuration, only hosts are configured.
+-			return entry
+-		} else if strings.HasPrefix(s, entry.url) {
+-			return entry
+-		}
+-	}
+-
+ 	return nil
+ }
+ 
+diff --git a/backend_server.go b/backend_server.go
+index 85804f3..75a7803 100644
+--- a/backend_server.go
++++ b/backend_server.go
+@@ -33,7 +33,6 @@ import (
+ 	"log"
+ 	"net"
+ 	"net/http"
+-	"net/url"
+ 	"reflect"
+ 	"strings"
+ 	"sync"
+@@ -255,12 +254,6 @@ func (b *BackendServer) parseRequestBody(f func(http.ResponseWriter, *http.Reque
+ 			return
+ 		}
+ 
+-		if r.Header.Get(HeaderBackendSignalingRandom) == "" ||
+-			r.Header.Get(HeaderBackendSignalingChecksum) == "" {
+-			http.Error(w, "Authentication check failed", http.StatusForbidden)
+-			return
+-		}
+-
+ 		body, err := ioutil.ReadAll(r.Body)
+ 		if err != nil {
+ 			log.Println("Error reading body: ", err)
+@@ -514,45 +507,7 @@ func (b *BackendServer) roomHandler(w http.ResponseWriter, r *http.Request, body
+ 	v := mux.Vars(r)
+ 	roomid := v["roomid"]
+ 
+-	var backend *Backend
+-	backendUrl := r.Header.Get(HeaderBackendServer)
+-	if backendUrl != "" {
+-		if u, err := url.Parse(backendUrl); err == nil {
+-			backend = b.hub.backend.GetBackend(u)
+-		}
+-
+-		if backend == nil {
+-			// Unknown backend URL passed, return immediately.
+-			http.Error(w, "Authentication check failed", http.StatusForbidden)
+-			return
+-		}
+-	}
+-
+-	if backend == nil {
+-		if compatBackend := b.hub.backend.GetCompatBackend(); compatBackend != nil {
+-			// Old-style configuration using a single secret for all backends.
+-			backend = compatBackend
+-		} else {
+-			// Old-style Talk, find backend that created the checksum.
+-			// TODO(fancycode): Remove once all supported Talk versions send the backend header.
+-			for _, b := range b.hub.backend.GetBackends() {
+-				if ValidateBackendChecksum(r, body, b.Secret()) {
+-					backend = b
+-					break
+-				}
+-			}
+-		}
+-
+-		if backend == nil {
+-			http.Error(w, "Authentication check failed", http.StatusForbidden)
+-			return
+-		}
+-	}
+-
+-	if !ValidateBackendChecksum(r, body, backend.Secret()) {
+-		http.Error(w, "Authentication check failed", http.StatusForbidden)
+-		return
+-	}
++	backend := b.hub.backend.GetBackends()[0]
+ 
+ 	var request BackendServerRoomRequest
+ 	if err := json.Unmarshal(body, &request); err != nil {
+diff --git a/hub.go b/hub.go
+index 1eae587..8f18728 100644
+--- a/hub.go
++++ b/hub.go
+@@ -23,10 +23,7 @@ package signaling
+ 
+ import (
+ 	"context"
+-	"crypto/hmac"
+-	"crypto/sha256"
+ 	"encoding/base64"
+-	"encoding/hex"
+ 	"encoding/json"
+ 	"fmt"
+ 	"hash/fnv"
+@@ -37,6 +34,7 @@ import (
+ 	"sync"
+ 	"sync/atomic"
+ 	"time"
++	"os"
+ 
+ 	"github.com/dlintw/goconf"
+ 	"github.com/gorilla/mux"
+@@ -129,7 +127,6 @@ type Hub struct {
+ 
+ 	mcu                   Mcu
+ 	mcuTimeout            time.Duration
+-	internalClientsSecret []byte
+ 
+ 	expiredSessions    map[Session]bool
+ 	expectHelloClients map[*Client]time.Time
+@@ -144,29 +141,15 @@ type Hub struct {
+ }
+ 
+ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version string) (*Hub, error) {
+-	hashKey, _ := config.GetString("sessions", "hashkey")
+-	switch len(hashKey) {
+-	case 32:
+-	case 64:
+-	default:
+-		log.Printf("WARNING: The sessions hash key should be 32 or 64 bytes but is %d bytes", len(hashKey))
+-	}
+-
+-	blockKey, _ := config.GetString("sessions", "blockkey")
+-	blockBytes := []byte(blockKey)
+-	switch len(blockKey) {
+-	case 0:
+-		blockBytes = nil
+-	case 16:
+-	case 24:
+-	case 32:
+-	default:
+-		return nil, fmt.Errorf("the sessions block key must be 16, 24 or 32 bytes but is %d bytes", len(blockKey))
++	decoder := base64.URLEncoding.WithPadding(base64.NoPadding)
++	hashKey, err := decoder.DecodeString(os.Getenv("NEXTCLOUD_SIGNALING_HASHKEY"))
++	if err != nil {
++		return nil, err
+ 	}
+ 
+-	internalClientsSecret, _ := config.GetString("clients", "internalsecret")
+-	if internalClientsSecret == "" {
+-		log.Println("WARNING: No shared secret has been set for internal clients.")
++	blockKey, err := decoder.DecodeString(os.Getenv("NEXTCLOUD_SIGNALING_BLOCKKEY"))
++	if err != nil {
++		return nil, err
+ 	}
+ 
+ 	maxConcurrentRequestsPerHost, _ := config.GetInt("backend", "connectionsperhost")
+@@ -280,7 +263,7 @@ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version s
+ 			ReadBufferSize:  websocketReadBufferSize,
+ 			WriteBufferSize: websocketWriteBufferSize,
+ 		},
+-		cookie: securecookie.New([]byte(hashKey), blockBytes).MaxAge(0),
++		cookie: securecookie.New(hashKey, blockKey).MaxAge(0),
+ 		info: &HelloServerMessageServer{
+ 			Version:  version,
+ 			Features: DefaultFeatures,
+@@ -307,7 +290,6 @@ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version s
+ 		decodeCaches: decodeCaches,
+ 
+ 		mcuTimeout:            mcuTimeout,
+-		internalClientsSecret: []byte(internalClientsSecret),
+ 
+ 		expiredSessions:    make(map[Session]bool),
+ 		anonymousClients:   make(map[*Client]time.Time),
+@@ -892,8 +874,6 @@ func (h *Hub) processHello(client *Client, message *ClientMessage) {
+ 	switch message.Hello.Auth.Type {
+ 	case HelloClientTypeClient:
+ 		h.processHelloClient(client, message)
+-	case HelloClientTypeInternal:
+-		h.processHelloInternal(client, message)
+ 	default:
+ 		h.startExpectHello(client)
+ 		client.SendMessage(message.NewErrorServerMessage(InvalidClientType))
+@@ -927,36 +907,6 @@ func (h *Hub) processHelloClient(client *Client, message *ClientMessage) {
+ 	h.processRegister(client, message, backend, &auth)
+ }
+ 
+-func (h *Hub) processHelloInternal(client *Client, message *ClientMessage) {
+-	defer h.startExpectHello(client)
+-	if len(h.internalClientsSecret) == 0 {
+-		client.SendMessage(message.NewErrorServerMessage(InvalidClientType))
+-		return
+-	}
+-
+-	// Validate internal connection.
+-	rnd := message.Hello.Auth.internalParams.Random
+-	mac := hmac.New(sha256.New, h.internalClientsSecret)
+-	mac.Write([]byte(rnd)) // nolint
+-	check := hex.EncodeToString(mac.Sum(nil))
+-	if len(rnd) < minTokenRandomLength || check != message.Hello.Auth.internalParams.Token {
+-		client.SendMessage(message.NewErrorServerMessage(InvalidToken))
+-		return
+-	}
+-
+-	backend := h.backend.GetBackend(message.Hello.Auth.internalParams.parsedBackend)
+-	if backend == nil {
+-		client.SendMessage(message.NewErrorServerMessage(InvalidBackendUrl))
+-		return
+-	}
+-
+-	auth := &BackendClientResponse{
+-		Type: "auth",
+-		Auth: &BackendClientAuthResponse{},
+-	}
+-	h.processRegister(client, message, backend, auth)
+-}
+-
+ func (h *Hub) disconnectByRoomSessionId(roomSessionId string) {
+ 	sessionId, err := h.roomSessions.GetSessionId(roomSessionId)
+ 	if err == ErrNoSuchRoomSession {
+diff --git a/janus_client.go b/janus_client.go
+index 8e644c6..83b9cda 100644
+--- a/janus_client.go
++++ b/janus_client.go
+@@ -34,11 +34,13 @@ import (
+ 	"encoding/json"
+ 	"fmt"
+ 	"log"
++	"net"
+ 	"net/http"
+ 	"strconv"
+ 	"sync"
+ 	"sync/atomic"
+ 	"time"
++	stdctx "context"
+ 
+ 	"github.com/gorilla/websocket"
+ 	"github.com/notedit/janus-go"
+@@ -119,8 +121,11 @@ const (
+ 
+ var (
+ 	janusDialer = websocket.Dialer{
+-		Subprotocols: []string{"janus-protocol"},
+-		Proxy:        http.ProxyFromEnvironment,
++		Subprotocols:   []string{"janus-protocol"},
++		Proxy:          http.ProxyFromEnvironment,
++		NetDialContext: func(_ stdctx.Context, _, _ string) (net.Conn, error) {
++			return net.Dial("unix", "/run/nextcloud-signaling-sfu.sock")
++		},
+ 	}
+ )
+ 
+diff --git a/server/main.go b/server/main.go
+index 5568048..ef8082f 100644
+--- a/server/main.go
++++ b/server/main.go
 @@ -33,7 +33,6 @@ import (
  	"os/signal"
  	"runtime"
@@ -10,16 +368,16 @@ index df7791c..3acec72 100644
  	"syscall"
  	"time"
  
-@@ -43,6 +42,8 @@ import (
- 	"github.com/nats-io/go-nats"
+@@ -42,6 +41,8 @@ import (
+ 	"github.com/nats-io/nats.go"
  
- 	"signaling"
+ 	signaling "github.com/strukturag/nextcloud-spreed-signaling"
 +
 +	"github.com/coreos/go-systemd/activation"
  )
  
  var (
-@@ -148,8 +149,10 @@ func main() {
+@@ -151,8 +152,10 @@ func main() {
  		log.Fatal("Could not create NATS client: ", err)
  	}
  
@@ -32,7 +390,7 @@ index df7791c..3acec72 100644
  	if err != nil {
  		log.Fatal("Could not create hub: ", err)
  	}
-@@ -235,87 +238,60 @@ func main() {
+@@ -238,87 +241,60 @@ func main() {
  	if err != nil {
  		log.Fatal("Could not create backend server: ", err)
  	}
@@ -159,357 +517,3 @@ index df7791c..3acec72 100644
  	}
  
  loop:
-diff --git a/src/signaling/backend_client.go b/src/signaling/backend_client.go
-index 882bc95..ed1dc31 100644
---- a/src/signaling/backend_client.go
-+++ b/src/signaling/backend_client.go
-@@ -25,11 +25,13 @@ import (
- 	"bytes"
- 	"context"
- 	"crypto/tls"
-+	stdctx "context"
- 	"encoding/json"
- 	"fmt"
- 	"io"
- 	"io/ioutil"
- 	"log"
-+	"net"
- 	"net/http"
- 	"net/url"
- 	"strings"
-@@ -71,6 +73,9 @@ func NewBackendClient(config *goconf.ConfigFile, maxConcurrentRequestsPerHost in
- 	transport := &http.Transport{
- 		MaxIdleConnsPerHost: maxConcurrentRequestsPerHost,
- 		TLSClientConfig:     tlsconfig,
-+		DialContext: func(_ stdctx.Context, _, _ string) (net.Conn, error) {
-+			return net.Dial("unix", "/run/nextcloud-signaling/nextcloud.sock")
-+		},
- 	}
- 
- 	return &BackendClient{
-@@ -282,17 +287,16 @@ func performRequestWithRedirects(ctx context.Context, client *http.Client, req *
- 
- // PerformJSONRequest sends a JSON POST request to the given url and decodes
- // the result into "response".
--func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, request interface{}, response interface{}) error {
--	if u == nil {
-+func (b *BackendClient) PerformJSONRequest(ctx context.Context, maybeUrl *url.URL, request interface{}, response interface{}) error {
-+	if maybeUrl == nil {
- 		return fmt.Errorf("No url passed to perform JSON request %+v", request)
- 	}
- 
--	secret := b.backends.GetSecret(u)
--	if secret == nil {
--		return fmt.Errorf("No backend secret configured for for %s", u)
--	}
-+	u := *maybeUrl
-+	u.Scheme = "http"
-+	u.Host = "localhost"
- 
--	pool, err := b.getPool(u)
-+	pool, err := b.getPool(&u)
- 	if err != nil {
- 		log.Printf("Could not get client pool for host %s: %s\n", u.Host, err)
- 		return err
-@@ -313,7 +317,7 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
- 
- 	req := &http.Request{
- 		Method:     "POST",
--		URL:        u,
-+		URL:        &u,
- 		Proto:      "HTTP/1.1",
- 		ProtoMajor: 1,
- 		ProtoMinor: 1,
-@@ -325,9 +329,6 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
- 	req.Header.Set("OCS-APIRequest", "true")
- 	req.Header.Set("User-Agent", "nextcloud-spreed-signaling/"+b.version)
- 
--	// Add checksum so the backend can validate the request.
--	AddBackendChecksum(req, data, secret)
--
- 	resp, err := performRequestWithRedirects(ctx, c, req, data)
- 	if err != nil {
- 		log.Printf("Could not send request %s to %s: %s\n", string(data), u.String(), err)
-@@ -347,7 +348,7 @@ func (b *BackendClient) PerformJSONRequest(ctx context.Context, u *url.URL, requ
- 		return err
- 	}
- 
--	if isOcsRequest(u) || req.Header.Get("OCS-APIRequest") != "" {
-+	if isOcsRequest(&u) || req.Header.Get("OCS-APIRequest") != "" {
- 		// OCS response are wrapped in an OCS container that needs to be parsed
- 		// to get the actual contents:
- 		// {
-diff --git a/src/signaling/backend_configuration.go b/src/signaling/backend_configuration.go
-index a1ecc35..942f283 100644
---- a/src/signaling/backend_configuration.go
-+++ b/src/signaling/backend_configuration.go
-@@ -246,31 +246,10 @@ func (b *BackendConfiguration) GetCompatBackend() *Backend {
- }
- 
- func (b *BackendConfiguration) GetBackend(u *url.URL) *Backend {
--	if strings.Contains(u.Host, ":") && hasStandardPort(u) {
--		u.Host = u.Hostname()
-+	entries, found := b.backends["localhost"]
-+	if found {
-+		return entries[0]
- 	}
--
--	entries, found := b.backends[u.Host]
--	if !found {
--		if b.allowAll {
--			return b.compatBackend
--		}
--		return nil
--	}
--
--	s := u.String()
--	if s[len(s)-1] != '/' {
--		s += "/"
--	}
--	for _, entry := range entries {
--		if entry.url == "" {
--			// Old-style configuration, only hosts are configured.
--			return entry
--		} else if strings.HasPrefix(s, entry.url) {
--			return entry
--		}
--	}
--
- 	return nil
- }
- 
-diff --git a/src/signaling/backend_server.go b/src/signaling/backend_server.go
-index d84a393..e5776ba 100644
---- a/src/signaling/backend_server.go
-+++ b/src/signaling/backend_server.go
-@@ -33,7 +33,6 @@ import (
- 	"log"
- 	"net"
- 	"net/http"
--	"net/url"
- 	"reflect"
- 	"strings"
- 	"sync"
-@@ -255,12 +254,6 @@ func (b *BackendServer) parseRequestBody(f func(http.ResponseWriter, *http.Reque
- 			return
- 		}
- 
--		if r.Header.Get(HeaderBackendSignalingRandom) == "" ||
--			r.Header.Get(HeaderBackendSignalingChecksum) == "" {
--			http.Error(w, "Authentication check failed", http.StatusForbidden)
--			return
--		}
--
- 		body, err := ioutil.ReadAll(r.Body)
- 		if err != nil {
- 			log.Println("Error reading body: ", err)
-@@ -506,45 +499,7 @@ func (b *BackendServer) roomHandler(w http.ResponseWriter, r *http.Request, body
- 	v := mux.Vars(r)
- 	roomid := v["roomid"]
- 
--	var backend *Backend
--	backendUrl := r.Header.Get(HeaderBackendServer)
--	if backendUrl != "" {
--		if u, err := url.Parse(backendUrl); err == nil {
--			backend = b.hub.backend.GetBackend(u)
--		}
--
--		if backend == nil {
--			// Unknown backend URL passed, return immediately.
--			http.Error(w, "Authentication check failed", http.StatusForbidden)
--			return
--		}
--	}
--
--	if backend == nil {
--		if compatBackend := b.hub.backend.GetCompatBackend(); compatBackend != nil {
--			// Old-style configuration using a single secret for all backends.
--			backend = compatBackend
--		} else {
--			// Old-style Talk, find backend that created the checksum.
--			// TODO(fancycode): Remove once all supported Talk versions send the backend header.
--			for _, b := range b.hub.backend.GetBackends() {
--				if ValidateBackendChecksum(r, body, b.Secret()) {
--					backend = b
--					break
--				}
--			}
--		}
--
--		if backend == nil {
--			http.Error(w, "Authentication check failed", http.StatusForbidden)
--			return
--		}
--	}
--
--	if !ValidateBackendChecksum(r, body, backend.Secret()) {
--		http.Error(w, "Authentication check failed", http.StatusForbidden)
--		return
--	}
-+	backend := b.hub.backend.GetBackends()[0]
- 
- 	var request BackendServerRoomRequest
- 	if err := json.Unmarshal(body, &request); err != nil {
-diff --git a/src/signaling/hub.go b/src/signaling/hub.go
-index 5c7f795..cbdd4db 100644
---- a/src/signaling/hub.go
-+++ b/src/signaling/hub.go
-@@ -23,10 +23,7 @@ package signaling
- 
- import (
- 	"context"
--	"crypto/hmac"
--	"crypto/sha256"
- 	"encoding/base64"
--	"encoding/hex"
- 	"encoding/json"
- 	"fmt"
- 	"hash/fnv"
-@@ -37,6 +34,7 @@ import (
- 	"sync"
- 	"sync/atomic"
- 	"time"
-+	"os"
- 
- 	"github.com/dlintw/goconf"
- 	"github.com/gorilla/mux"
-@@ -125,7 +123,6 @@ type Hub struct {
- 
- 	mcu                   Mcu
- 	mcuTimeout            time.Duration
--	internalClientsSecret []byte
- 
- 	expiredSessions    map[Session]bool
- 	expectHelloClients map[*Client]time.Time
-@@ -140,29 +137,15 @@ type Hub struct {
- }
- 
- func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version string) (*Hub, error) {
--	hashKey, _ := config.GetString("sessions", "hashkey")
--	switch len(hashKey) {
--	case 32:
--	case 64:
--	default:
--		log.Printf("WARNING: The sessions hash key should be 32 or 64 bytes but is %d bytes", len(hashKey))
--	}
--
--	blockKey, _ := config.GetString("sessions", "blockkey")
--	blockBytes := []byte(blockKey)
--	switch len(blockKey) {
--	case 0:
--		blockBytes = nil
--	case 16:
--	case 24:
--	case 32:
--	default:
--		return nil, fmt.Errorf("The sessions block key must be 16, 24 or 32 bytes but is %d bytes", len(blockKey))
-+	decoder := base64.URLEncoding.WithPadding(base64.NoPadding)
-+	hashKey, err := decoder.DecodeString(os.Getenv("NEXTCLOUD_SIGNALING_HASHKEY"))
-+	if err != nil {
-+		return nil, err
- 	}
- 
--	internalClientsSecret, _ := config.GetString("clients", "internalsecret")
--	if internalClientsSecret == "" {
--		log.Println("WARNING: No shared secret has been set for internal clients.")
-+	blockKey, err := decoder.DecodeString(os.Getenv("NEXTCLOUD_SIGNALING_BLOCKKEY"))
-+	if err != nil {
-+		return nil, err
- 	}
- 
- 	maxConcurrentRequestsPerHost, _ := config.GetInt("backend", "connectionsperhost")
-@@ -276,7 +259,7 @@ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version s
- 			ReadBufferSize:  websocketReadBufferSize,
- 			WriteBufferSize: websocketWriteBufferSize,
- 		},
--		cookie: securecookie.New([]byte(hashKey), blockBytes).MaxAge(0),
-+		cookie: securecookie.New(hashKey, blockKey).MaxAge(0),
- 		info: &HelloServerMessageServer{
- 			Version:  version,
- 			Features: DefaultFeatures,
-@@ -303,7 +286,6 @@ func NewHub(config *goconf.ConfigFile, nats NatsClient, r *mux.Router, version s
- 		decodeCaches: decodeCaches,
- 
- 		mcuTimeout:            mcuTimeout,
--		internalClientsSecret: []byte(internalClientsSecret),
- 
- 		expiredSessions:    make(map[Session]bool),
- 		anonymousClients:   make(map[*Client]time.Time),
-@@ -871,8 +853,6 @@ func (h *Hub) processHello(client *Client, message *ClientMessage) {
- 	switch message.Hello.Auth.Type {
- 	case HelloClientTypeClient:
- 		h.processHelloClient(client, message)
--	case HelloClientTypeInternal:
--		h.processHelloInternal(client, message)
- 	default:
- 		h.startExpectHello(client)
- 		client.SendMessage(message.NewErrorServerMessage(InvalidClientType))
-@@ -906,36 +886,6 @@ func (h *Hub) processHelloClient(client *Client, message *ClientMessage) {
- 	h.processRegister(client, message, backend, &auth)
- }
- 
--func (h *Hub) processHelloInternal(client *Client, message *ClientMessage) {
--	defer h.startExpectHello(client)
--	if len(h.internalClientsSecret) == 0 {
--		client.SendMessage(message.NewErrorServerMessage(InvalidClientType))
--		return
--	}
--
--	// Validate internal connection.
--	rnd := message.Hello.Auth.internalParams.Random
--	mac := hmac.New(sha256.New, h.internalClientsSecret)
--	mac.Write([]byte(rnd))
--	check := hex.EncodeToString(mac.Sum(nil))
--	if len(rnd) < minTokenRandomLength || check != message.Hello.Auth.internalParams.Token {
--		client.SendMessage(message.NewErrorServerMessage(InvalidToken))
--		return
--	}
--
--	backend := h.backend.GetBackend(message.Hello.Auth.internalParams.parsedBackend)
--	if backend == nil {
--		client.SendMessage(message.NewErrorServerMessage(InvalidBackendUrl))
--		return
--	}
--
--	auth := &BackendClientResponse{
--		Type: "auth",
--		Auth: &BackendClientAuthResponse{},
--	}
--	h.processRegister(client, message, backend, auth)
--}
--
- func (h *Hub) disconnectByRoomSessionId(roomSessionId string) {
- 	sessionId, err := h.roomSessions.GetSessionId(roomSessionId)
- 	if err == ErrNoSuchRoomSession {
-diff --git a/src/signaling/janus_client.go b/src/signaling/janus_client.go
-index 9c00206..b345f62 100644
---- a/src/signaling/janus_client.go
-+++ b/src/signaling/janus_client.go
-@@ -34,11 +34,13 @@ import (
- 	"encoding/json"
- 	"fmt"
- 	"log"
-+	"net"
- 	"net/http"
- 	"strconv"
- 	"sync"
- 	"sync/atomic"
- 	"time"
-+	stdctx "context"
- 
- 	"github.com/gorilla/websocket"
- 	"github.com/notedit/janus-go"
-@@ -119,8 +121,11 @@ const (
- 
- var (
- 	janusDialer = websocket.Dialer{
--		Subprotocols: []string{"janus-protocol"},
--		Proxy:        http.ProxyFromEnvironment,
-+		Subprotocols:   []string{"janus-protocol"},
-+		Proxy:          http.ProxyFromEnvironment,
-+		NetDialContext: func(_ stdctx.Context, _, _ string) (net.Conn, error) {
-+			return net.Dial("unix", "/run/nextcloud-signaling-sfu.sock")
-+		},
- 	}
- )
- 
