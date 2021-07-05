@@ -937,9 +937,9 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "03i1r9pr8f7slh6zzzyiavzb5bnmxp8p52kzxggdfa1ckl26sgsj",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.9/files_inotify.tar.gz",
-      "version": "0.1.9"
+      "sha256": "0hpsjc5rg15clczh69m7gwivdl6adwi0f25xz84qb4racnz1c4qr",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.10/files_inotify.tar.gz",
+      "version": "0.1.10"
     },
     "files_linkeditor": {
       "meta": {
@@ -982,9 +982,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "1d75h5vrdhyjzgn0q2s9h729k3id1n7bnm6i0ds4ilj20pzh3bi5",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.3/files_markdown.tar.gz",
-      "version": "2.3.3"
+      "sha256": "0i510dbrjc3nfhy4ha9s9gpjm9679c60y9aqkdkwrh6xx9ncb61g",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.4/files_markdown.tar.gz",
+      "version": "2.3.4"
     },
     "files_mindmap": {
       "meta": {
@@ -1095,9 +1095,9 @@
         "name": "Snapshots",
         "summary": "Access filesystem snapshots trough Nextcloud"
       },
-      "sha256": "1jzl0ncnwk0df6q1an73aklga9ia8gcqfys1v98ldiv3fldy05si",
-      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.1/files_snapshots.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1fi4vp3qrcg1aphhpr51lzvm8vzpnj37cqalb9dz037yz796b7pk",
+      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.2/files_snapshots.tar.gz",
+      "version": "1.0.2"
     },
     "files_texteditor": {
       "meta": {
@@ -1166,9 +1166,9 @@
         "name": "S3 Versioning",
         "summary": "Use S3 object versioning for file versioning"
       },
-      "sha256": "1l7l6sh8xlccd2ghh50il61z3ys4bsv90xcbmknhxjabj8j9sxa3",
-      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.5/files_versions_s3.tar.gz",
-      "version": "0.1.5"
+      "sha256": "083qffjkbg13ikqzj2la1yr6sjf4632p02hlwmfihy5pm00is797",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.6/files_versions_s3.tar.gz",
+      "version": "0.1.6"
     },
     "files_videoplayer": {
       "meta": {
@@ -1194,9 +1194,9 @@
         "name": "Edit Files with LibreOffice",
         "summary": "Open files with LibreOffice for editing (via WebDav)"
       },
-      "sha256": "1jbswmz1vxfkflx329k18l3633ml8b78bmc6qq3c5piyr00mlzbg",
-      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.1/fileslibreofficeedit.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0pir3w024fvnlvwiks4d48pib8y4h6ffqyccwvf70jlm1dfigqpy",
+      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.2/fileslibreofficeedit.tar.gz",
+      "version": "1.0.2"
     },
     "firstrunwizard": {
       "meta": {
@@ -1315,6 +1315,20 @@
       "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
       "version": "0.0.3"
     },
+    "gpoddersync": {
+      "meta": {
+        "description": "Expose GPodder API to sync podcast consumer apps like AntennaPod",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GPodder Sync",
+        "summary": "replicate basic GPodder.net API"
+      },
+      "sha256": "1kbinqb6hja0hlhkwhcxss599y0fc6pjmycvjmiyzg05swbv6fcw",
+      "url": "https://filebin.net/jbhxolghh7fnfizi/gpoddersync_0.1.tar.gz",
+      "version": "0.0.1"
+    },
     "gpxedit": {
       "meta": {
         "description": "# GpxEdit Nextcloud application\n\nSimple Nextcloud app to load, edit and save GPX files on an interactive map. You can load/save files from your Nextcloud file storage. GPX, KML, CSV (unicsv format) and geotagged JPG are supported for loading. JPG files are loaded as waypoints. Files can be loaded in GpxEdit interface or in Files app.\n\nGo to [GpxEdit Crowdin project](https://crowdin.com/project/gpxedit) if you want to help to translate this app in your language.\n\nThis is not a perfect GPX editor.\n\nWhat's saved :\n- metadata\n    - name\n    - link url\n    - link text\n- tracks\n    - name\n    - comment\n    - description\n    - points\n        - coordinates\n        - elevation (just preserves loaded values)\n        - time (just preserves loaded values)\n- waypoint\n    - coordinates\n    - name\n    - comment\n    - description\n    - symbol\n    - elevation (just preserves loaded value)\n    - time (just preserves loaded values)\n\nGpxEdit does load/save time data. Elevation data is loaded and saved but every new waypoint/track/trackpoint added by user actions in GpxEdit will have neither elevation nor time data. There is an \"approximate\" option to set elevation to new points if surrounding points have elevation data.\n\nTracks are saved with one segment (trkseg tag).\n\nGpxEdit :\n- allows you to add extra symbols in admin settings (section : additional)\n- works with server-side encryption.\n- works with shared files.\n- loads GPX, KML, unicsv CSV, geotagged JPG files (no more Gpsbabel dependency)\n- loads tracks, routes and waypoints\n- saves tracks, routes and waypoints\n- supports waypoint symbols\n- uses [Leaflet.Draw](https://github.com/Leaflet/Leaflet.draw) and [Leaflet.draw.plus](https://github.com/Dominique92/Leaflet.draw.plus) amazing plugins\n- uses many other Leaflet plugins like Minimap, Sidebar2, MeasureControl, MousePositionControl\n- adds possibility to edit .gpx files directly from the \"Files\" app\n- is able to cut lines in two\n\nThis app is tested on Nextcloud 14 with Firefox and Chromium.\n\nAny feedback will be appreciated.\n\n## Installation\n\nCheck the [AdminDoc](https://gitlab.com/eneiluj/gpxedit-oc/wikis/admindoc) for installation details, integration in \"Files\" app and GpxEdit admin settings.\n\n## Alternatives\n\nIf you look for more powerfull GPX editors, take a look at :\n- [Viking](https://sourceforge.net/projects/viking/) which is the best IMHO\n- [QLandKarteGT](https://bitbucket.org/kiozen/qlandkarte-gt)\n- [QMapShack](https://bitbucket.org/maproom/qmapshack/wiki/Home)\n- [JOSM](https://josm.openstreetmap.de/)\n\n\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
@@ -1386,9 +1400,9 @@
         "name": "Default group quota",
         "summary": "Set default user quotas for group members"
       },
-      "sha256": "1xpk0g8gnaq6fw2mpp6zlbi9dvgj00mjrlhchnm872dz4jrhgiqs",
-      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.1/group_default_quota.tar.gz",
-      "version": "0.1.1"
+      "sha256": "0h7n2vvdzhdcxm7vwqs6095bdhxpf8jhj6xfwmm2ynkx3bds1zxb",
+      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.2/group_default_quota.tar.gz",
+      "version": "0.1.2"
     },
     "group_everyone": {
       "meta": {
@@ -1401,9 +1415,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "1v7xyr9layz6yx8svwa5ka7ic2m9ln98izx5mzby7gvcq46pcwf2",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.7/group_everyone.tar.gz",
-      "version": "0.1.7"
+      "sha256": "1yy7p0lkbng8akn5yrq0wvyamvfr6qki55hczhbm4xbvhhy38qj9",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.8/group_everyone.tar.gz",
+      "version": "0.1.8"
     },
     "groupfolders": {
       "meta": {
@@ -1431,9 +1445,9 @@
         "name": "Group quota",
         "summary": "Give filesystem quotas to groups"
       },
-      "sha256": "1z32i1j535v5mgfrwm7fc2bkv10bgpyapxvqrd9vpg95rhfbhzsf",
-      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.5/groupquota.tar.gz",
-      "version": "0.1.5"
+      "sha256": "16qaafi05qcqx8xyn0c69b54apmhf3dmy9brhbmsy7m8ylz9hykb",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.6/groupquota.tar.gz",
+      "version": "0.1.6"
     },
     "guests": {
       "meta": {
@@ -1937,7 +1951,7 @@
     },
     "mail": {
       "meta": {
-        "description": "** A mail app for Nextcloud**\n\n- ** Integration with other Nextcloud apps!** Currently Contacts, Calendar &amp; Files  more to come.\n- ** Multiple mail accounts!** Personal and company account? No problem, and a nice unified inbox. Connect any IMAP account.\n- ** Send &amp; receive encrypted mails!** Using the great [Mailvelope](https://mailvelope.com) browser extension.\n- ** Were not reinventing the wheel!** Based on the great [Horde](http://horde.org) libraries.\n- ** Want to host your own mail server?** We dont have to reimplement this as you could set up [Mail-in-a-Box](https://mailinabox.email)!",
+        "description": "** A mail app for Nextcloud**\n\n- ** Integration with other Nextcloud apps!** Currently Contacts, Calendar &amp; Files  more to come.\n- ** Multiple mail accounts!** Personal and company account? No problem, and a nice unified inbox. Connect any IMAP account.\n- ** Send &amp; receive encrypted mails!** Using the great [Mailvelope](https://mailvelope.com) browser extension.\n- ** Were not reinventing the wheel!** Based on the great [Horde](https://horde.org) libraries.\n- ** Want to host your own mail server?** We dont have to reimplement this as you could set up [Mail-in-a-Box](https://mailinabox.email)!",
         "homepage": "https://github.com/nextcloud/mail#readme",
         "isShipped": false,
         "licenses": [
@@ -1946,9 +1960,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0hy1b5s9g4l600ysgx7kkzs2xwfchilp1ijzi7fcxz8gjnds5hni",
-      "url": "https://github.com/nextcloud/mail/releases/download/v1.9.5/mail.tar.gz",
-      "version": "1.9.5"
+      "sha256": "1d3cdi2s61v0lqaxfp6bbwazk3qhf0k596ydw8wrvj6x7jrnfx2g",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.0/mail.tar.gz",
+      "version": "1.10.0"
     },
     "maps": {
       "meta": {
@@ -2177,9 +2191,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "0zp5qsfsggmmkfydy17m2npds6lf97hkdfw2hy2g6dh3x55z79qb",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.2.1/ojsxc-4.2.1.tar.gz",
-      "version": "4.2.1"
+      "sha256": "0wclvwq1vwh1a5h6gfs8yh93nyyp2jqzrf8pr76qk5v2qy9j9f6y",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.3.0/ojsxc-4.3.0.tar.gz",
+      "version": "4.3.0"
     },
     "onlyoffice": {
       "meta": {
@@ -2306,9 +2320,9 @@
         "name": "Permissions Overwrite",
         "summary": "Allow overwriting external storage permissions"
       },
-      "sha256": "1xi549zwwk5rvzjzfrc7m42fnq6ib2smf3y440c3i6mbxfzysk49",
-      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.4/permissions_overwrite.tar.gz",
-      "version": "0.1.4"
+      "sha256": "12kz2fffyxwfyrxjg359fadzc17sif3vv60i8rfsb7kym6yxaw0p",
+      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.5/permissions_overwrite.tar.gz",
+      "version": "0.1.5"
     },
     "phonetrack": {
       "meta": {
@@ -2379,9 +2393,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1c7z9gqkhjb6a07yj0yw8w0q0lc6a19q9glrkx77abam26083a1x",
-      "url": "https://github.com/nextcloud/polls/releases/download/2.0.4/polls.tar.gz",
-      "version": "2.0.4"
+      "sha256": "1ifr59xban6858mxd633wlylxd63qvz1pfg1akrkdnpk8dfjnkib",
+      "url": "https://github.com/nextcloud/polls/releases/download/v2.0.5/polls.tar.gz",
+      "version": "2.0.5"
     },
     "preferred_providers": {
       "meta": {
@@ -2654,9 +2668,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "06prnxjhn7bidbdylia8ccvzdpws973d4cs0gm9az3cqlvpx318d",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.8.2/richdocuments.tar.gz",
-      "version": "3.8.2"
+      "sha256": "1h67kvb8kyw8zk8h6dyxwvhqi1apybxjmayh05h5wjk00ccci1zx",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.3/richdocuments.tar.gz",
+      "version": "3.8.3"
     },
     "richdocumentscode": {
       "meta": {
@@ -2699,9 +2713,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "07vfqnkz01g50zjvfkc10w3plrzhgpyr4h5m6angpxgznad4mdqr",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.13/riotchat.tar.gz",
-      "version": "0.7.13"
+      "sha256": "19gnd2x2hs49afswy9lf1hprzg6n0m0lh40h38kb5lwvsb2wc8nx",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.8.0/riotchat.tar.gz",
+      "version": "0.8.0"
     },
     "scanner": {
       "meta": {
@@ -2900,9 +2914,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "0nmsn0kn13vgqsaq5d37w5l6nk0nwxbnx17ycjin3slavpmkz9a8",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.1/smb_test.tar.gz",
-      "version": "0.3.1"
+      "sha256": "1nrai4zbl4i60sp4kpad63r1kf46c9ck9ib8pf9ls2cn87c3nwrb",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.2/smb_test.tar.gz",
+      "version": "0.3.2"
     },
     "social": {
       "meta": {

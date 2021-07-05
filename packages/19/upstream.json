@@ -1165,9 +1165,9 @@
         "name": "Edit Files with LibreOffice",
         "summary": "Open files with LibreOffice for editing (via WebDav)"
       },
-      "sha256": "1jbswmz1vxfkflx329k18l3633ml8b78bmc6qq3c5piyr00mlzbg",
-      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.1/fileslibreofficeedit.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0pir3w024fvnlvwiks4d48pib8y4h6ffqyccwvf70jlm1dfigqpy",
+      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.2/fileslibreofficeedit.tar.gz",
+      "version": "1.0.2"
     },
     "firstrunwizard": {
       "meta": {
@@ -1285,6 +1285,20 @@
       "sha256": "19yr4cdw3b0y79zb07ibrzrqm2nkvwgw0hsl7q204crlpzsfx27j",
       "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
       "version": "0.0.3"
+    },
+    "gpoddersync": {
+      "meta": {
+        "description": "Expose GPodder API to sync podcast consumer apps like AntennaPod",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GPodder Sync",
+        "summary": "replicate basic GPodder.net API"
+      },
+      "sha256": "1kbinqb6hja0hlhkwhcxss599y0fc6pjmycvjmiyzg05swbv6fcw",
+      "url": "https://filebin.net/jbhxolghh7fnfizi/gpoddersync_0.1.tar.gz",
+      "version": "0.0.1"
     },
     "gpxedit": {
       "meta": {
@@ -1907,9 +1921,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "0zp5qsfsggmmkfydy17m2npds6lf97hkdfw2hy2g6dh3x55z79qb",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.2.1/ojsxc-4.2.1.tar.gz",
-      "version": "4.2.1"
+      "sha256": "0wclvwq1vwh1a5h6gfs8yh93nyyp2jqzrf8pr76qk5v2qy9j9f6y",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.3.0/ojsxc-4.3.0.tar.gz",
+      "version": "4.3.0"
     },
     "onlyoffice": {
       "meta": {
@@ -2353,9 +2367,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "06prnxjhn7bidbdylia8ccvzdpws973d4cs0gm9az3cqlvpx318d",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.8.2/richdocuments.tar.gz",
-      "version": "3.8.2"
+      "sha256": "1h67kvb8kyw8zk8h6dyxwvhqi1apybxjmayh05h5wjk00ccci1zx",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.3/richdocuments.tar.gz",
+      "version": "3.8.3"
     },
     "richdocumentscode": {
       "meta": {
@@ -2398,9 +2412,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "07vfqnkz01g50zjvfkc10w3plrzhgpyr4h5m6angpxgznad4mdqr",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.7.13/riotchat.tar.gz",
-      "version": "0.7.13"
+      "sha256": "19gnd2x2hs49afswy9lf1hprzg6n0m0lh40h38kb5lwvsb2wc8nx",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.8.0/riotchat.tar.gz",
+      "version": "0.8.0"
     },
     "scanner": {
       "meta": {

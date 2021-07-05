@@ -1182,9 +1182,9 @@
         "name": "Edit Files with LibreOffice",
         "summary": "Open files with LibreOffice for editing (via WebDav)"
       },
-      "sha256": "1jbswmz1vxfkflx329k18l3633ml8b78bmc6qq3c5piyr00mlzbg",
-      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.1/fileslibreofficeedit.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0pir3w024fvnlvwiks4d48pib8y4h6ffqyccwvf70jlm1dfigqpy",
+      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.2/fileslibreofficeedit.tar.gz",
+      "version": "1.0.2"
     },
     "firstrunwizard": {
       "meta": {
@@ -1288,6 +1288,20 @@
       "sha256": "1xn4n69z62bqj73qz37fk9akga22xsiwy59kpwfklxxn2n1pkww2",
       "url": "https://github.com/nextcloud/globalsiteselector/releases/download/v1.3.0/globalsiteselector-1.3.0.tar.gz",
       "version": "1.3.0"
+    },
+    "gpoddersync": {
+      "meta": {
+        "description": "Expose GPodder API to sync podcast consumer apps like AntennaPod",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "GPodder Sync",
+        "summary": "replicate basic GPodder.net API"
+      },
+      "sha256": "1kbinqb6hja0hlhkwhcxss599y0fc6pjmycvjmiyzg05swbv6fcw",
+      "url": "https://filebin.net/jbhxolghh7fnfizi/gpoddersync_0.1.tar.gz",
+      "version": "0.0.1"
     },
     "gpxedit": {
       "meta": {
@@ -2358,9 +2372,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "06prnxjhn7bidbdylia8ccvzdpws973d4cs0gm9az3cqlvpx318d",
-      "url": "https://github.com/nextcloud/richdocuments/releases/download/v3.8.2/richdocuments.tar.gz",
-      "version": "3.8.2"
+      "sha256": "1h67kvb8kyw8zk8h6dyxwvhqi1apybxjmayh05h5wjk00ccci1zx",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.3/richdocuments.tar.gz",
+      "version": "3.8.3"
     },
     "riotchat": {
       "meta": {
