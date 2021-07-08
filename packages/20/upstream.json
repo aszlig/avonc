@@ -360,9 +360,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "1dkg64snnvspy86phimhxj40fcz52ljkfnfmsw94p0dzsvldr5kn",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/c05983f3f12a05ff74c1af6d3437092a/collectives-0.8.21.tar.gz",
-      "version": "0.8.21"
+      "sha256": "0r1r01kh2rhw554nvrzjjzbhrsph2s92kklmd0250ql7axya6a6i",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/236a8f1b167fac2c734d24c5bda12f5c/collectives-0.9.21.tar.gz",
+      "version": "0.9.21"
     },
     "comments": {
       "meta": {
@@ -388,9 +388,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1xm4c2yn3x26i3vbg1dgnmnk2hn67bzfwskd7mlpdizprm0ciqqk",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v3.5.1/contacts.tar.gz",
-      "version": "3.5.1"
+      "sha256": "0cccxvh2q0xlvy880cml8jkkwq39kml11giqinrb2c2a86fmvvqn",
+      "url": "https://github.com/nextcloud/contacts/releases/download/v4.0.0/contacts.tar.gz",
+      "version": "4.0.0"
     },
     "contactsinteraction": {
       "meta": {
@@ -543,9 +543,9 @@
         "name": "Community Document Server",
         "summary": "Document server for OnlyOffice, community edition"
       },
-      "sha256": "1lli1s7limph7nfadm19p3g5lgwz42xsdyz93yp99bfyjs8bzqmk",
-      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.9/documentserver_community.tar.gz",
-      "version": "0.1.9"
+      "sha256": "14yahd8llbnkzzcwplr53fvhqqspsvs6hz1xakiysbha5dwmbib9",
+      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.10/documentserver_community.tar.gz",
+      "version": "0.1.10"
     },
     "drawio": {
       "meta": {
@@ -691,9 +691,9 @@
         "name": "Notifications for calendar event updates",
         "summary": "Receive a notification when an event in a shared calendar was added, modified or deleted."
       },
-      "sha256": "1m7n46r9hyjj0zqn8zgrqghna4mnh24cpnkp83b1f9wz834hrchd",
-      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.2.0/event_update_notification-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1xgyzy1wbi9sz4n3ph7kq3wzy4r9vdkbc7qsbrcnpz23qlwk8m5q",
+      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.3.0/event_update_notification-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "external": {
       "meta": {
@@ -1325,9 +1325,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "1kbinqb6hja0hlhkwhcxss599y0fc6pjmycvjmiyzg05swbv6fcw",
-      "url": "https://filebin.net/jbhxolghh7fnfizi/gpoddersync_0.1.tar.gz",
-      "version": "0.0.1"
+      "sha256": "0cqmr1kg6fyl95g1l4ns1374yas07fyl5bx0bxfl1xscq6v4xr5b",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "gpxedit": {
       "meta": {
@@ -1875,9 +1875,9 @@
         "name": "LibreSign",
         "summary": "Libre digital signature app for Nextcloud"
       },
-      "sha256": "1c0r7ld1rclw08a6vspqkfg8gkah9nvvajcmkwr1frh07blmbkd9",
-      "url": "https://github.com/LibreSign/libresign/releases/download/v2.3.0/libresign.tar.gz",
-      "version": "2.3.0"
+      "sha256": "078p0d2g83ifb1wr11dzg96qpj0h04lby9j1kkfx2dsnqq3m4pad",
+      "url": "https://github.com/LibreSign/libresign/releases/download/v2.4.2/libresign.tar.gz",
+      "version": "2.4.2"
     },
     "limit_login_to_ip": {
       "meta": {
@@ -1975,9 +1975,9 @@
         "name": "Maps",
         "summary": "The whole world fits inside your cloud!"
       },
-      "sha256": "1c89cv552dizyxgr4b77sp69cn9248p468nb87158as082prjaw7",
-      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.8/maps-0.1.8.tar.gz",
-      "version": "0.1.8"
+      "sha256": "09mqq5h473myz39cjdr13nla8nncy157ijw0xna7b10d9d9dfy5k",
+      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.9/maps-0.1.9.tar.gz",
+      "version": "0.1.9"
     },
     "metadata": {
       "meta": {
@@ -2393,9 +2393,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
       },
-      "sha256": "1ifr59xban6858mxd633wlylxd63qvz1pfg1akrkdnpk8dfjnkib",
-      "url": "https://github.com/nextcloud/polls/releases/download/v2.0.5/polls.tar.gz",
-      "version": "2.0.5"
+      "sha256": "190ry1l2w9q4l7d8x6i2pcdn1kc24vkah1anbdldk2xs9cxfvdlw",
+      "url": "https://github.com/nextcloud/polls/releases/download/v2.0.6/polls.tar.gz",
+      "version": "2.0.6"
     },
     "preferred_providers": {
       "meta": {
@@ -2683,9 +2683,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0phvhymqd4gsvkbv9lwrid2wzws051yvij92cxnvsqgkx717q59j",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.806/richdocumentscode.tar.gz",
-      "version": "6.4.806"
+      "sha256": "12i24a1spm2fb37rpvnsw5k6krz6cyx765mbfld27giqq17pal0v",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1003/richdocumentscode.tar.gz",
+      "version": "6.4.1003"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2698,9 +2698,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0jhnqziiks65nbdb9vh6iyp6yf10x0dgdvfc9g2h37ywpfpzdphf",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.806/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.806"
+      "sha256": "1cyla2fpnqgfdqgz0vagnlc6xrkwadw545vivb0i3wk92lydk2hq",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1003/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1003"
     },
     "riotchat": {
       "meta": {
@@ -2742,9 +2742,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "1c8ah318irj8gz1ak6pbfc6vpj8jvdqvzhyif1pzr542cpi32ahd",
-      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.3.tar.gz",
-      "version": "0.3.3"
+      "sha256": "18i9kip1ns6af16yqaacnyw5y0rvcnfbsw8a7klgsvql4f2db2p0",
+      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.4.tar.gz",
+      "version": "0.3.4"
     },
     "sendent": {
       "meta": {
@@ -2757,9 +2757,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0mck3hvkbisnhnn7kz9c0c9s1jqimzk6fdsz46p44dlgpzac1pgq",
-      "url": "https://download.sendent.nl/serverapp/1.2.2/sendent.tar.gz",
-      "version": "1.2.2"
+      "sha256": "0iyidppj7p4qr4i6p5w39cp968xbwx97nhmanvrkiz62zrcfkqjb",
+      "url": "https://download.sendent.nl/serverapp/1.2.3/sendent.tar.gz",
+      "version": "1.2.3"
     },
     "sensorlogger": {
       "meta": {
@@ -2899,9 +2899,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1i7yxk6vb60fanvcqi3rda7hghxbl73m0xmilv3pdzcd05r6dggc",
-      "url": "https://gitnet.fr/attachments/46aa0a6a-8792-4e75-bf03-b5dad0ccf91c",
-      "version": "1.24.0"
+      "sha256": "1n2lq4139h4all5f48y8xz5l49ca6lymbanc8qi2cyznw0li5xn8",
+      "url": "https://gitnet.fr/attachments/80d1c81a-a7be-4f3a-afae-2f57d9c73b28",
+      "version": "1.25.0"
     },
     "smb_test": {
       "meta": {
@@ -2944,9 +2944,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1wasdjl56641kf708hh2kgcyljl1nmby7716psxqvwar6bq569fn",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.16/release.tar.gz",
-      "version": "4.6.16"
+      "sha256": "0hpr1rghmhbsmdhvdy6g88dr89n22rcz7l2bnhvrq9nc141kcvzk",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.17/release.tar.gz",
+      "version": "4.6.17"
     },
     "socialsharing_diaspora": {
       "meta": {

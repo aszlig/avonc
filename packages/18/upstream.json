@@ -2416,9 +2416,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "1c8ah318irj8gz1ak6pbfc6vpj8jvdqvzhyif1pzr542cpi32ahd",
-      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.3.tar.gz",
-      "version": "0.3.3"
+      "sha256": "18i9kip1ns6af16yqaacnyw5y0rvcnfbsw8a7klgsvql4f2db2p0",
+      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.4.tar.gz",
+      "version": "0.3.4"
     },
     "sendent": {
       "meta": {
@@ -2558,9 +2558,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1i7yxk6vb60fanvcqi3rda7hghxbl73m0xmilv3pdzcd05r6dggc",
-      "url": "https://gitnet.fr/attachments/46aa0a6a-8792-4e75-bf03-b5dad0ccf91c",
-      "version": "1.24.0"
+      "sha256": "1n2lq4139h4all5f48y8xz5l49ca6lymbanc8qi2cyznw0li5xn8",
+      "url": "https://gitnet.fr/attachments/80d1c81a-a7be-4f3a-afae-2f57d9c73b28",
+      "version": "1.25.0"
     },
     "smb_test": {
       "meta": {
