@@ -79,6 +79,9 @@ import ./make-test.nix (pkgs: {
         (assert nc19apps.talk_simple_poll.version == "1.3.0";
          "talk_simple_poll")
 
+        # https://github.com/thrillfall/nextcloud-gpodder/issues/6
+        (assert nc19apps.gpoddersync.version == "1.0.4"; "gpoddersync")
+
         # We already have a LibreOffice Online build from source, so no need
         # to test the binary releases:
         "richdocumentscode"
