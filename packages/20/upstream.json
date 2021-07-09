@@ -514,9 +514,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "18v10dadr857mahp9r0pbv67gs71wp3z9rjsqbs0mcd58n09il9v",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.7/deck.tar.gz",
-      "version": "1.2.7"
+      "sha256": "0ijhxdwqv6jy0l81py7gxlhyc1kl14s179w5dicjl9a9wqpxdyf7",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.8/deck.tar.gz",
+      "version": "1.2.8"
     },
     "discoursesso": {
       "meta": {
@@ -618,9 +618,9 @@
         "name": "eID-Login",
         "summary": "Integration of mobile electronic identities at a substantial security level"
       },
-      "sha256": "04rn7zgz6l6vbc81d23p4104m0d575hmarq6xj856xhmj9n6d4bx",
-      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.2/eidlogin.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0vgp4srn6qwx881hbd3vsdnrlqwqi89nmkfcp3aah19n4fgjish3",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.3/eidlogin.tar.gz",
+      "version": "1.0.3"
     },
     "emlviewer": {
       "meta": {
@@ -1325,9 +1325,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "0cqmr1kg6fyl95g1l4ns1374yas07fyl5bx0bxfl1xscq6v4xr5b",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1qhim69w289ywwgz7hq49gs249l1n71hamyl3081nysqs9g3qh9p",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.4.tar.gz",
+      "version": "1.0.4"
     },
     "gpxedit": {
       "meta": {
@@ -2161,9 +2161,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0h2jkmszjxvf2xy8c04pf5yjkp0bny5d8s00gsp40hhrx4q9g71m",
-      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.3/officeonline.tar.gz",
-      "version": "1.0.3"
+      "sha256": "00yi0i7ankg08nb2qvx9vk4j6naqgqnmn15gaj1mq57jw9klmq13",
+      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.0/officeonline.tar.gz",
+      "version": "1.1.0"
     },
     "oidc_login": {
       "meta": {
@@ -2191,9 +2191,9 @@
         "name": "JavaScript XMPP Chat",
         "summary": "Facebook-like chat"
       },
-      "sha256": "0wclvwq1vwh1a5h6gfs8yh93nyyp2jqzrf8pr76qk5v2qy9j9f6y",
-      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.3.0/ojsxc-4.3.0.tar.gz",
-      "version": "4.3.0"
+      "sha256": "18c5iry225n3gsqaizj4m7h9lfxj3bxzqzqggsfig0kwf88jdrpz",
+      "url": "https://github.com/nextcloud/jsxc.nextcloud/releases/download/v4.3.1/ojsxc-4.3.1.tar.gz",
+      "version": "4.3.1"
     },
     "onlyoffice": {
       "meta": {
@@ -2291,9 +2291,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "196g3n847b53lpmk9xg7fclsjhpx9zrkcrfvp8jlj1h0hilasgyl",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12568/artifacts/raw/passwords.tar.gz",
-      "version": "2021.7.21"
+      "sha256": "0kr3llisqf6ppiyk4skgcafl9my4hr0a21j7s1aiac00dq4nx03h",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12683/artifacts/raw/passwords.tar.gz",
+      "version": "2021.7.22"
     },
     "pdfdraw": {
       "meta": {
@@ -2497,18 +2497,18 @@
     },
     "qownnotesapi": {
       "meta": {
-        "description": "QOwnNotesAPI is the Nextcloud/ownCloud API for [QOwnNotes](http://www.qownnotes.org), the open source (GPL) notepad for Linux, Mac OS X and Windows, that works together with the notes application of Nextcloud/ownCloud.\n\nThe only purpose of this App is to provide API access to your Nextcloud/ownCloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
+        "description": "QOwnNotesAPI is the Nextcloud/ownCloud API for [QOwnNotes](http://www.qownnotes.org), the open source notepad for Linux, macOS and Windows, that works together with the notes application of Nextcloud/ownCloud.\n\nThe only purpose of this App is to provide API access to your Nextcloud/ownCloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
         "homepage": "https://github.com/pbek/qownnotesapi",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "QOwnNotesAPI",
-        "summary": "API for QOwnNotes, the open source (GPL) notepad for Linux, Mac OS X and Windows"
+        "summary": "API for QOwnNotes, the open source notepad for Linux, macOS and Windows"
       },
-      "sha256": "19bc45mb9aq0izbljljl0x4pkizxz019wjkw0s8j2f6jwlqz404b",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/20.9.0/qownnotesapi-nc.tar.gz",
-      "version": "20.9.0"
+      "sha256": "07d4wdqri7mh6z8lydb20m6a58k6z71ncs17czn486gc6cdv3rii",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/21.7.0/qownnotesapi-nc.tar.gz",
+      "version": "21.7.0"
     },
     "quickaccesssorting": {
       "meta": {
@@ -2610,9 +2610,9 @@
         "name": "Ransomware protection",
         "summary": "This app prevents uploading files with known ransomware file endings"
       },
-      "sha256": "099j3bv51xbf5smvabsmsnyyqkasm6lw0893r6d2c8f7yyx8c74h",
-      "url": "https://github.com/nextcloud/ransomware_protection/releases/download/v1.10.1/ransomware_protection-1.10.1.tar.gz",
-      "version": "1.10.1"
+      "sha256": "072xw1rkksm1cwdrwvf28h5jiymfrhqzfvp208jq9vf81gn1nfsn",
+      "url": "https://github.com/nextcloud-releases/ransomware_protection/releases/download/v1.11.0/ransomware_protection-1.11.0.tar.gz",
+      "version": "1.11.0"
     },
     "recognize": {
       "meta": {
@@ -2899,9 +2899,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1n2lq4139h4all5f48y8xz5l49ca6lymbanc8qi2cyznw0li5xn8",
-      "url": "https://gitnet.fr/attachments/80d1c81a-a7be-4f3a-afae-2f57d9c73b28",
-      "version": "1.25.0"
+      "sha256": "0wn0fv811aa656f79vv65dkl9gpp3bch185drw5zgh5h95la8n10",
+      "url": "https://gitnet.fr/attachments/1129b902-fe24-48cd-a31d-43ec167c7391",
+      "version": "1.25.2"
     },
     "smb_test": {
       "meta": {
@@ -3678,9 +3678,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "1cqzp2rfjvlfk6aznc8xi2jk32x2n0cijblv3zzhbhr1lq2975f2",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/d8d58eaf4b4ef067cace61a170235660/webapppassword.tar.gz",
-      "version": "21.3.0"
+      "sha256": "112zp4nzzblhvj7pkw8ywzzl0k5g4pagg42cxc7fdvmr5wkh67hz",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/e562e2cd7dd179eadea8dd2545421b97/webapppassword.tar.gz",
+      "version": "21.7.0"
     },
     "welcome": {
       "meta": {

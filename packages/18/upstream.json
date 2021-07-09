@@ -502,9 +502,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "18v10dadr857mahp9r0pbv67gs71wp3z9rjsqbs0mcd58n09il9v",
-      "url": "https://github.com/nextcloud/deck/releases/download/v1.2.7/deck.tar.gz",
-      "version": "1.2.7"
+      "sha256": "0ijhxdwqv6jy0l81py7gxlhyc1kl14s179w5dicjl9a9wqpxdyf7",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.8/deck.tar.gz",
+      "version": "1.2.8"
     },
     "dicomviewer": {
       "meta": {
@@ -1895,9 +1895,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0h2jkmszjxvf2xy8c04pf5yjkp0bny5d8s00gsp40hhrx4q9g71m",
-      "url": "https://github.com/nextcloud/officeonline/releases/download/v1.0.3/officeonline.tar.gz",
-      "version": "1.0.3"
+      "sha256": "00yi0i7ankg08nb2qvx9vk4j6naqgqnmn15gaj1mq57jw9klmq13",
+      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.0/officeonline.tar.gz",
+      "version": "1.1.0"
     },
     "oidc_login": {
       "meta": {
@@ -2202,18 +2202,18 @@
     },
     "qownnotesapi": {
       "meta": {
-        "description": "QOwnNotesAPI is the Nextcloud/ownCloud API for [QOwnNotes](http://www.qownnotes.org), the open source (GPL) notepad for Linux, Mac OS X and Windows, that works together with the notes application of Nextcloud/ownCloud.\n\nThe only purpose of this App is to provide API access to your Nextcloud/ownCloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
+        "description": "QOwnNotesAPI is the Nextcloud/ownCloud API for [QOwnNotes](http://www.qownnotes.org), the open source notepad for Linux, macOS and Windows, that works together with the notes application of Nextcloud/ownCloud.\n\nThe only purpose of this App is to provide API access to your Nextcloud/ownCloud server for your QOwnNotes desktop installation, you cannot use this App for anything else, if you don't have QOwnNotes installed on your desktop computer!",
         "homepage": "https://github.com/pbek/qownnotesapi",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "QOwnNotesAPI",
-        "summary": "API for QOwnNotes, the open source (GPL) notepad for Linux, Mac OS X and Windows"
+        "summary": "API for QOwnNotes, the open source notepad for Linux, macOS and Windows"
       },
-      "sha256": "19bc45mb9aq0izbljljl0x4pkizxz019wjkw0s8j2f6jwlqz404b",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/20.9.0/qownnotesapi-nc.tar.gz",
-      "version": "20.9.0"
+      "sha256": "07d4wdqri7mh6z8lydb20m6a58k6z71ncs17czn486gc6cdv3rii",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/21.7.0/qownnotesapi-nc.tar.gz",
+      "version": "21.7.0"
     },
     "quest": {
       "meta": {
@@ -2558,9 +2558,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1n2lq4139h4all5f48y8xz5l49ca6lymbanc8qi2cyznw0li5xn8",
-      "url": "https://gitnet.fr/attachments/80d1c81a-a7be-4f3a-afae-2f57d9c73b28",
-      "version": "1.25.0"
+      "sha256": "0wn0fv811aa656f79vv65dkl9gpp3bch185drw5zgh5h95la8n10",
+      "url": "https://gitnet.fr/attachments/1129b902-fe24-48cd-a31d-43ec167c7391",
+      "version": "1.25.2"
     },
     "smb_test": {
       "meta": {
@@ -3296,9 +3296,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "1cqzp2rfjvlfk6aznc8xi2jk32x2n0cijblv3zzhbhr1lq2975f2",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/d8d58eaf4b4ef067cace61a170235660/webapppassword.tar.gz",
-      "version": "21.3.0"
+      "sha256": "112zp4nzzblhvj7pkw8ywzzl0k5g4pagg42cxc7fdvmr5wkh67hz",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/e562e2cd7dd179eadea8dd2545421b97/webapppassword.tar.gz",
+      "version": "21.7.0"
     },
     "whiteboard": {
       "meta": {
