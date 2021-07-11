@@ -709,9 +709,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "10jh0nd194wwlqwqr22m6zj0l3n1wapgl5q4mi4vri2rb9prc88r",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.1/extract.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1skx0k955avjsivgzfvmd5kd8rlam37bz3nf0fq7gv2r87qw4899",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.2/extract.tar.gz",
+      "version": "1.3.2"
     },
     "facerecognition": {
       "meta": {
@@ -1694,9 +1694,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "0m0gcz0xvxsa0cw6ngnm9n1vg7qb55a61nhr0x8c4p2g17fhxcfs",
+      "sha256": "10wfw1bchjvy01rmq9wcp9afrjgnzsv7pcz7i1xi6j9xjkjc9m8j",
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
-      "version": "0.13.0"
+      "version": "0.14.0"
     },
     "music": {
       "meta": {
@@ -3050,9 +3050,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "1g2ql8lnq8l9j9wd6lhzd33axkh3yb18dci779bgl0fdp84wabbd",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.2/unsplash.tar.gz",
-      "version": "1.2.2"
+      "sha256": "03mcys9dfy5h8hcywdhv51y0gn4gf5ddwa1kklj4mvm6h4pqaxl1",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.3/unsplash.tar.gz",
+      "version": "1.2.3"
     },
     "updatenotification": {
       "meta": {
@@ -3238,9 +3238,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "15dnlnh1awkg8p849kk16dsmza766s64sk20n6hfh1b3rdfzfddb",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.1/video_converter.tar.gz",
-      "version": "1.0.1"
+      "sha256": "06iq7fazwvh05rhjv8rr2d61bnqijywifkdvb5s10646g46ni8dk",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.2/video_converter.tar.gz",
+      "version": "1.0.2"
     },
     "viewer": {
       "meta": {
