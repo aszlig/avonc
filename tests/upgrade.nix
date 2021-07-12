@@ -82,10 +82,13 @@ import ./make-test.nix (pkgs: {
         # https://github.com/thrillfall/nextcloud-gpodder/issues/6
         (assert nc19apps.gpoddersync.version == "1.0.4"; "gpoddersync")
 
-        # We already have a LibreOffice Online build from source, so no need
-        # to test the binary releases:
+        # Don't test packages that include binaries:
+        "documentserver_community"
+        "integration_whiteboard"
+        "recognize"
         "richdocumentscode"
         "richdocumentscode_arm64"
+        "talk_matterbridge"
 
         # These apps have non-deterministic download URLs
         "occweb"
