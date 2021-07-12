@@ -287,9 +287,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "07fgv0nn2i4c8d7f4sdknbvfh2cvpbizw4r9qykm6jmdl8isgff4",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.1/carnet-nc-v0.24.1.tar.gz",
-      "version": "0.24.1"
+      "sha256": "18zv1zyc2i0g9ljvxx5zlffapy6ai2ywlz84zm7x65z8xqizlx4j",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.2/carnet-nc-v0.24.2.tar.gz",
+      "version": "0.24.2"
     },
     "checksum": {
       "meta": {
@@ -1325,9 +1325,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "0srl264cnkkgkfmhq7apisj5vh9rqhwlnpg4z9m734wl58q7vm26",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.5.tar.gz",
-      "version": "1.0.5"
+      "sha256": "100ljhla6jgq38yix5mwy8417jf235bpl6vlaw3y685b4qbvmysz",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.6.tar.gz",
+      "version": "1.0.6"
     },
     "gpxedit": {
       "meta": {
