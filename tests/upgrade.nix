@@ -45,8 +45,10 @@ import ./make-test.nix (pkgs: {
         "grauphel"
         # Needs to have an LDAP provide
         "ldap_write_support"
-        # Needs to Java
+        # Needs Java
         "libresign"
+        # Needs an external backend
+        "pdfdraw"
         # Only works with MyQSL
         "sensorlogger"
         # Windows only (at least it seems)
