@@ -611,6 +611,13 @@ in {
           the database after it has been enabled.
         '';
       };
+
+      patches = mkOption {
+        type = types.listOf types.path;
+        default = [];
+        internal = true;
+        description = "A list of patch files to apply to this app.";
+      };
     } // (extraAppOptions.${appId} or {}) // maybeForce) package.applications;
 
     settings = lib.mkOption {

@@ -104,10 +104,12 @@ in {
          apps/richdocuments/lib/Service/CapabilitiesService.php \
          apps/richdocuments/lib/WOPI/Parser.php \
          apps/richdocuments/lib/WOPI/DiscoveryManager.php
-      patch -p1 -d apps/richdocuments < ${richdocumentsPatch}
     '';
 
-    nextcloud.apps.richdocuments.config.wopi_url = config.nextcloud.baseUrl;
+    nextcloud.apps.richdocuments = {
+      config.wopi_url = config.nextcloud.baseUrl;
+      patches = lib.singleton richdocumentsPatch;
+    };
 
     users.users.libreoffice-online = {
       description = "LibreOffice Online User";

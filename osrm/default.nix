@@ -59,42 +59,25 @@ in {
   };
 
   config = lib.mkIf (config.nextcloud.enable && cfg.enable) (lib.mkMerge [
-    # XXX: Drop once https://github.com/nextcloud/maps/pull/167 is merged.
-    { nextcloud.extraPostPatch = if config.nextcloud.majorVersion > 19 then ''
-        patch -p1 -d apps/maps < ${./proxy-routing-nc20.patch}
-        patch -p1 -d apps/maps < ${./proxy-routing.dist-nc20.patch}
-      '' else ''
-        patch -p1 -d apps/maps < ${./proxy-routing.patch}
-        patch -p1 -d apps/maps < ${./proxy-routing.dist.patch}
-        patch -p1 -d apps/maps < ${pkgs.fetchpatch {
-          url = "https://github.com/nextcloud/maps/commit/"
-              + "e130afbd65a875eeb620d49d7806f8d15765f9d1.patch";
-          sha256 = "105wx00cl6v1h77iv49m45jsw91q0w551xvhlbfarvcmh6zl4i08";
-        }}
-      '';
+    { nextcloud.apps.maps = {
+        # XXX: Drop once https://github.com/nextcloud/maps/pull/167 is merged.
+        patches = if config.nextcloud.majorVersion > 19 then [
+          ./proxy-routing-nc20.patch
+          ./proxy-routing.dist-nc20.patch
+        ] else [
+          ./proxy-routing.patch
+          ./proxy-routing.dist.patch
+          (pkgs.fetchpatch {
+            url = "https://github.com/nextcloud/maps/commit/"
+                + "e130afbd65a875eeb620d49d7806f8d15765f9d1.patch";
+            sha256 = "105wx00cl6v1h77iv49m45jsw91q0w551xvhlbfarvcmh6zl4i08";
+          })
+        ];
+      };
     }
     (lib.mkIf (cfg.osmDataset != null && cfg.profiles != []) {
-      nextcloud.apps.maps.config = let
-        urlOptions = {
-          car     = "osrmCarURL";
-          bicycle = "osrmBikeURL";
-          foot    = "osrmFootURL";
-        };
-        mkInternal = profile: {
-          name = urlOptions.${profile};
-          value = "internal";
-        };
-      in lib.listToAttrs (map mkInternal cfg.profiles);
-
-      users.users.nextcloud-osrm = {
-        description = "Nextcloud OSRM User";
-        group = "nextcloud-osrm";
-      };
-
-      users.groups.nextcloud-osrm = {};
-
-      nextcloud.extraPostPatch = ''
-        patch -p1 -d apps/maps < ${pkgs.substituteAll {
+      nextcloud.apps.maps = {
+        patches = lib.singleton (pkgs.substituteAll {
           src = ./unix-sockets.patch;
           unixSocketMap = let
             mkPhpString = value: "'${lib.escape ["\\" "'"] value}'";
@@ -102,8 +85,27 @@ in {
               sockPath = "/run/nextcloud-osrm-${profile}.sock";
             in "${mkPhpString profile} => ${mkPhpString sockPath}";
           in "[${lib.concatMapStringsSep ", " mkEntry cfg.profiles}]";
-        }}
-      '';
+        });
+
+        config = let
+          urlOptions = {
+            car     = "osrmCarURL";
+            bicycle = "osrmBikeURL";
+            foot    = "osrmFootURL";
+          };
+          mkInternal = profile: {
+            name = urlOptions.${profile};
+            value = "internal";
+          };
+        in lib.listToAttrs (map mkInternal cfg.profiles);
+      };
+
+      users.users.nextcloud-osrm = {
+        description = "Nextcloud OSRM User";
+        group = "nextcloud-osrm";
+      };
+
+      users.groups.nextcloud-osrm = {};
 
       systemd.sockets = genProfileUnits (profile: {
         description = "OSRM Socket for Profile ${profile}";

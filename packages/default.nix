@@ -78,7 +78,19 @@ in stdenv.mkDerivation rec {
 
   patches = packageAttrs.patches or [];
 
-  postPatch = extraPostPatch;
+  postPatch = let
+    mkAppPatches = appid: cfg: let
+      mkPatchCmd = path: let
+        pathEsc = lib.escapeShellArg "${path}"; # Carry string context
+        appidEsc = lib.escapeShellArg appid;
+      in ''
+        echo applying patch ${pathEsc} for app \"${appidEsc}\" >&2
+        patch -p1 -d apps/${appidEsc} < ${pathEsc}
+      '';
+      patchCmds = lib.concatMapStrings mkPatchCmd cfg.patches;
+    in lib.optionalString cfg.enable patchCmds;
+    appPatches = lib.concatStrings (lib.mapAttrsToList mkAppPatches apps);
+  in appPatches + extraPostPatch;
 
   installPhase = "mkdir -p \"\$out/\"\ncp -R . \"$out/\"";
 

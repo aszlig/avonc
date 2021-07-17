@@ -58,20 +58,19 @@ in {
     };
     users.groups.nextcloud-coturn = {};
 
-    nextcloud.apps.spreed.config = {
-      stun_servers = builtins.toJSON [
-        "${config.nextcloud.domain}:${toString cfg.port}"
-      ];
-      turn_servers = builtins.toJSON (lib.singleton {
-        server = "${config.nextcloud.domain}:${toString cfg.port}";
-        secret = "__FROM_ENV";
-        protocols = "udp,tcp";
-      });
+    nextcloud.apps.spreed = {
+      patches = lib.singleton ./spreed-secret-from-env.patch;
+      config = {
+        stun_servers = builtins.toJSON [
+          "${config.nextcloud.domain}:${toString cfg.port}"
+        ];
+        turn_servers = builtins.toJSON (lib.singleton {
+          server = "${config.nextcloud.domain}:${toString cfg.port}";
+          secret = "__FROM_ENV";
+          protocols = "udp,tcp";
+        });
+      };
     };
-
-    nextcloud.extraPostPatch = ''
-      patch -p1 -d apps/spreed < ${./spreed-secret-from-env.patch}
-    '';
 
     systemd.services.nextcloud-coturn-secrets = {
       description = "Secrets for Nextcloud Talk STUN/TURN Server";
