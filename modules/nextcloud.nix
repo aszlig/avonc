@@ -680,6 +680,17 @@ in {
       }
     ] ++ appVersionAssertions ++ appAlwaysEnableAssertions;
 
+    nextcloud.apps.social = {
+      # TODO: Drop this as soon as social 0.4.3 lands, which hopefully fixes
+      #       the Doctrine types.
+      patches = lib.optional (cfg.majorVersion >= 20) (pkgs.fetchpatch {
+        # https://github.com/nextcloud/social/pull/1249
+        url = "https://github.com/nextcloud/social/commit/"
+            + "5b60cab30454b62b5ecb8616a09040a59ca3b27e.patch";
+        sha256 = "13n048ma73mz390ni8bhigiyfvf4fl5haxnh0hb3r76sq6s5s2h3";
+      });
+    };
+
     nextcloud.baseUrl = "${urlScheme}://${cfg.domain}${maybePort}";
 
     nextcloud.settings = {
