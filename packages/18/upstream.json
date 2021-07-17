@@ -955,9 +955,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "11rmlf7nc833c38p82rw47zp8n7fk8cmzl7h8ypgnrmpvn7izn1s",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.5/files_linkeditor.tar.gz",
-      "version": "1.1.5"
+      "sha256": "0rxvblmzscr1sg3nv8zcs4j8sydv4diki0r7d3ccm305zxshhyi3",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.6/files_linkeditor.tar.gz",
+      "version": "1.1.6"
     },
     "files_lock": {
       "meta": {
@@ -2890,9 +2890,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0dnwl2carpksj2ssgbyk99m5nscpx6g7lb325wk5j71sxknahkcs",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.2/timemanager.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1qfcqpxlkh2ykgwgiiglg4l3kk7c9655jip7rk51bbx1m3rp69hl",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.4/timemanager.tar.gz",
+      "version": "0.2.4"
     },
     "timetracker": {
       "meta": {
@@ -2932,9 +2932,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "10mxb2v7m0lcpx0lx13bahhzbm6dn8hk0xw6nfkzpcqpsz78520p",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.0.0/twofactor_admin.tar.gz",
-      "version": "3.0.0"
+      "sha256": "1hm4fp9clm8f2mmmhlskn8ryqm54qkcsgavy6vsfb4dg189caw3f",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.1.0/twofactor_admin.tar.gz",
+      "version": "3.1.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -2978,21 +2978,6 @@
       "sha256": "1s0yym17pl4ysnh87s9j8wbrd6v95pxjpjwmd99s5yb3l91iw50g",
       "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.17.0/twofactor_gateway.tar.gz",
       "version": "0.17.0"
-    },
-    "twofactor_nextcloud_notification": {
-      "meta": {
-        "description": "Allows using any of your logged in devices as second factor",
-        "homepage": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Two-Factor Authentication via Nextcloud notification",
-        "summary": "Allows using any of your logged in devices as second factor"
-      },
-      "sha256": "18l27hgb7w2nmd2ch2prhcyq32mc0qh9yq4gn2ksxjyp8bkryrbm",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v2.3.0/twofactor_nextcloud_notification.tar.gz",
-      "version": "2.3.0"
     },
     "twofactor_totp": {
       "meta": {

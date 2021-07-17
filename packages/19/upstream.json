@@ -938,9 +938,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "11rmlf7nc833c38p82rw47zp8n7fk8cmzl7h8ypgnrmpvn7izn1s",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.5/files_linkeditor.tar.gz",
-      "version": "1.1.5"
+      "sha256": "0rxvblmzscr1sg3nv8zcs4j8sydv4diki0r7d3ccm305zxshhyi3",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.6/files_linkeditor.tar.gz",
+      "version": "1.1.6"
     },
     "files_lock": {
       "meta": {
@@ -1635,9 +1635,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1pd5zggbawqcf61ap9h2mk5qafshz52xxbffxdla4d4dvs2vnpjg",
-      "url": "https://dalliance.net/listman.tar.gz",
-      "version": "20.0.0"
+      "sha256": "0x2rmb0afijb78g1fmr3k88d5ivm11h6lz79mf2r2rh19xa98mnj",
+      "url": "https://dalliance.net/listman/listman-20.0.4.tar.gz",
+      "version": "20.0.4"
     },
     "loganalyzer": {
       "meta": {
@@ -2397,9 +2397,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "12i24a1spm2fb37rpvnsw5k6krz6cyx765mbfld27giqq17pal0v",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1003/richdocumentscode.tar.gz",
-      "version": "6.4.1003"
+      "sha256": "1fqwjawq11v0h40h9q3m67bcchi6vh9m3pkg36ndl6il31lr1hs0",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode.tar.gz",
+      "version": "6.4.1004"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2412,9 +2412,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1cyla2fpnqgfdqgz0vagnlc6xrkwadw545vivb0i3wk92lydk2hq",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1003/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1003"
+      "sha256": "0phddvz0fp0wzi9lvqnm5cj79s2m2jpmy465lixi7s22y4s5g3az",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1004"
     },
     "riotchat": {
       "meta": {
@@ -2780,6 +2780,20 @@
       "url": "https://nextcloud.pasteques4.life/index.php/s/T8gadKmE7Rz8FSp/download",
       "version": "0.0.1"
     },
+    "stromquittung": {
+      "meta": {
+        "description": "Only suitable for use in Germany. - Creates an energy receipt for third party energy delivery (as seen on private wallboxes).",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "StromQuittung",
+        "summary": "StromQuittung erstellen und nutzen in Nextcloud"
+      },
+      "sha256": "11w58fkg2f0lhcsv5bby2i4xi1n6179r66wr2ygw8m9p631lnpxl",
+      "url": "https://github.com/energychain/stromquittung-nextcloud/releases/download/v1.0.0/stromquittung.tar.gz",
+      "version": "1.0.0"
+    },
     "support": {
       "meta": {
         "alwaysEnable": false,
@@ -2944,9 +2958,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0dnwl2carpksj2ssgbyk99m5nscpx6g7lb325wk5j71sxknahkcs",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.2/timemanager.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1qfcqpxlkh2ykgwgiiglg4l3kk7c9655jip7rk51bbx1m3rp69hl",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.4/timemanager.tar.gz",
+      "version": "0.2.4"
     },
     "timetracker": {
       "meta": {
@@ -2986,9 +3000,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "10mxb2v7m0lcpx0lx13bahhzbm6dn8hk0xw6nfkzpcqpsz78520p",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.0.0/twofactor_admin.tar.gz",
-      "version": "3.0.0"
+      "sha256": "1hm4fp9clm8f2mmmhlskn8ryqm54qkcsgavy6vsfb4dg189caw3f",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.1.0/twofactor_admin.tar.gz",
+      "version": "3.1.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -3032,21 +3046,6 @@
       "sha256": "1s0yym17pl4ysnh87s9j8wbrd6v95pxjpjwmd99s5yb3l91iw50g",
       "url": "https://github.com/nextcloud/twofactor_gateway/releases/download/v0.17.0/twofactor_gateway.tar.gz",
       "version": "0.17.0"
-    },
-    "twofactor_nextcloud_notification": {
-      "meta": {
-        "description": "Allows using any of your logged in devices as second factor",
-        "homepage": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Two-Factor Authentication via Nextcloud notification",
-        "summary": "Allows using any of your logged in devices as second factor"
-      },
-      "sha256": "18l27hgb7w2nmd2ch2prhcyq32mc0qh9yq4gn2ksxjyp8bkryrbm",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v2.3.0/twofactor_nextcloud_notification.tar.gz",
-      "version": "2.3.0"
     },
     "twofactor_totp": {
       "meta": {

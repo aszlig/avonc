@@ -543,9 +543,9 @@
         "name": "Community Document Server",
         "summary": "Document server for OnlyOffice, community edition"
       },
-      "sha256": "14yahd8llbnkzzcwplr53fvhqqspsvs6hz1xakiysbha5dwmbib9",
-      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.10/documentserver_community.tar.gz",
-      "version": "0.1.10"
+      "sha256": "197b3xrjs49z9jhw4v5fh80zx2xhd33cg0n1qp60v51mrj2h9x2a",
+      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz",
+      "version": "0.1.11"
     },
     "drawio": {
       "meta": {
@@ -952,9 +952,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "11rmlf7nc833c38p82rw47zp8n7fk8cmzl7h8ypgnrmpvn7izn1s",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.5/files_linkeditor.tar.gz",
-      "version": "1.1.5"
+      "sha256": "0rxvblmzscr1sg3nv8zcs4j8sydv4diki0r7d3ccm305zxshhyi3",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.6/files_linkeditor.tar.gz",
+      "version": "1.1.6"
     },
     "files_lock": {
       "meta": {
@@ -1300,6 +1300,21 @@
       "sha256": "1bj4a4dwaqw0mh1kf648g4h6dvyb49lnj5fz9gr6290mzcliq0ys",
       "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.5.1/geoblocker.tar.gz",
       "version": "0.5.1"
+    },
+    "gestion": {
+      "meta": {
+        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for auto-entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud.\n\nVideo presentation coming soon\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
+        "homepage": "https://github.com/baimard/gestion",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Gestion facturation",
+        "summary": "Invoicing management application for \"auto-entreprise\" in France"
+      },
+      "sha256": "0fwwkvi29x5i2iwprfnr23irlq5ymrln86axmqqrhrimv6yxp3kb",
+      "url": "https://github.com/baimard/gestion/releases/download/1.0.1/gestion.tar.gz",
+      "version": "1.0.1"
     },
     "gpgmailer": {
       "meta": {
@@ -1905,9 +1920,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1pd5zggbawqcf61ap9h2mk5qafshz52xxbffxdla4d4dvs2vnpjg",
-      "url": "https://dalliance.net/listman.tar.gz",
-      "version": "20.0.0"
+      "sha256": "0x2rmb0afijb78g1fmr3k88d5ivm11h6lz79mf2r2rh19xa98mnj",
+      "url": "https://dalliance.net/listman/listman-20.0.4.tar.gz",
+      "version": "20.0.4"
     },
     "loganalyzer": {
       "meta": {
@@ -2306,9 +2321,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0kr3llisqf6ppiyk4skgcafl9my4hr0a21j7s1aiac00dq4nx03h",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12683/artifacts/raw/passwords.tar.gz",
-      "version": "2021.7.22"
+      "sha256": "0q4p08yxni8fy7wv1wxamyjq8abr7p3yysqy4pddws78camlvps1",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12722/artifacts/raw/passwords.tar.gz",
+      "version": "2021.7.23"
     },
     "pdfdraw": {
       "meta": {
@@ -2698,9 +2713,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "12i24a1spm2fb37rpvnsw5k6krz6cyx765mbfld27giqq17pal0v",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1003/richdocumentscode.tar.gz",
-      "version": "6.4.1003"
+      "sha256": "1fqwjawq11v0h40h9q3m67bcchi6vh9m3pkg36ndl6il31lr1hs0",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode.tar.gz",
+      "version": "6.4.1004"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2713,9 +2728,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1cyla2fpnqgfdqgz0vagnlc6xrkwadw545vivb0i3wk92lydk2hq",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1003/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1003"
+      "sha256": "0phddvz0fp0wzi9lvqnm5cj79s2m2jpmy465lixi7s22y4s5g3az",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1004"
     },
     "riotchat": {
       "meta": {
@@ -3069,7 +3084,7 @@
     },
     "spreed": {
       "meta": {
-        "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 52 (or newer), latest Edge or Chrome 49 (or newer) with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
+        "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 66 (or newer), latest Edge or Chrome 72 (or newer, also possible using Chrome 49 with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol)).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
         "homepage": "https://github.com/nextcloud/spreed",
         "isShipped": false,
         "licenses": [
@@ -3078,9 +3093,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "102wwcn091g2aqnnvazjd8j288v137p1818430w2rmipscdb94gg",
-      "url": "https://github.com/nextcloud/spreed/releases/download/v10.0.8/spreed-10.0.8.tar.gz",
-      "version": "10.0.8"
+      "sha256": "1p52fjrss48i4vy012f2c6w4yrhm3xy92cvza2ya283nmc7qxfgi",
+      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v10.0.9/spreed-10.0.9.tar.gz",
+      "version": "10.0.9"
     },
     "sqreen_sdk": {
       "meta": {
@@ -3095,6 +3110,20 @@
       "sha256": "0avycl4iz7b1rfd3hkg9sdnwp8zz2lssani3pmfv1gziqa58i1v7",
       "url": "https://nextcloud.pasteques4.life/index.php/s/T8gadKmE7Rz8FSp/download",
       "version": "0.0.1"
+    },
+    "stromquittung": {
+      "meta": {
+        "description": "Only suitable for use in Germany. - Creates an energy receipt for third party energy delivery (as seen on private wallboxes).",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "StromQuittung",
+        "summary": "StromQuittung erstellen und nutzen in Nextcloud"
+      },
+      "sha256": "11w58fkg2f0lhcsv5bby2i4xi1n6179r66wr2ygw8m9p631lnpxl",
+      "url": "https://github.com/energychain/stromquittung-nextcloud/releases/download/v1.0.0/stromquittung.tar.gz",
+      "version": "1.0.0"
     },
     "support": {
       "meta": {
@@ -3261,9 +3290,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0dnwl2carpksj2ssgbyk99m5nscpx6g7lb325wk5j71sxknahkcs",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.2/timemanager.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1qfcqpxlkh2ykgwgiiglg4l3kk7c9655jip7rk51bbx1m3rp69hl",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.4/timemanager.tar.gz",
+      "version": "0.2.4"
     },
     "timetracker": {
       "meta": {
@@ -3303,9 +3332,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "10mxb2v7m0lcpx0lx13bahhzbm6dn8hk0xw6nfkzpcqpsz78520p",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.0.0/twofactor_admin.tar.gz",
-      "version": "3.0.0"
+      "sha256": "1hm4fp9clm8f2mmmhlskn8ryqm54qkcsgavy6vsfb4dg189caw3f",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.1.0/twofactor_admin.tar.gz",
+      "version": "3.1.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -3361,9 +3390,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "1ri11b34bncg97j0fcwn5hs0vxrbid9fg2yl6zhhqwws12x3fas2",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.1.2/twofactor_nextcloud_notification.tar.gz",
-      "version": "3.1.2"
+      "sha256": "07j142h896nnkapsrl0hj8dnykpm5i5h1wblmp4sprk70vl67bpf",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.2.0/twofactor_nextcloud_notification-3.2.0.tar.gz",
+      "version": "3.2.0"
     },
     "twofactor_totp": {
       "meta": {
