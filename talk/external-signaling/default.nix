@@ -78,13 +78,13 @@ let
 
   janus = pkgs.stdenv.mkDerivation rec {
     pname = "janus-gateway";
-    version = "0.11.1";
+    version = "0.11.3";
 
     src = pkgs.fetchFromGitHub {
       owner = "meetecho";
       repo = pname;
       rev = "v${version}";
-      sha256 = "1dyvvw3mfn8n5prhyr9d7gbh8abgap0xvgk04vxr97jdm74g9js7";
+      sha256 = "15nadpz67w24f4wz8ya0kx0a1jc4wxv1kl0d5fr7kckkdyijh7gz";
     };
 
     nativeBuildInputs = [ pkgs.autoreconfHook pkgs.pkgconfig pkgs.gengetopt ];
