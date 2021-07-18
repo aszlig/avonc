@@ -30,5 +30,8 @@ in makeTest (removeAttrs testAttrs [ "machine" ] // {
     nextcloud.enable = let
       hasOnlyOneNode = lib.length (lib.attrNames nodesOrig) == 1;
     in lib.mkDefault hasOnlyOneNode;
+
+    # Needs network support
+    nextcloud.apps.nextcloud_announcements.enable = lib.mkOverride 90 false;
   }) nodesOrig;
 })

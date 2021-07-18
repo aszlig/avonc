@@ -1,0 +1,15 @@
+diff --git a/lib/private/Updater/VersionCheck.php b/lib/private/Updater/VersionCheck.php
+index d9f795796b8..57188a9c54e 100644
+--- a/lib/private/Updater/VersionCheck.php
++++ b/lib/private/Updater/VersionCheck.php
+@@ -60,6 +60,10 @@ class VersionCheck {
+ 			return false;
+ 		}
+ 
++		if (!$this->config->getSystemValueBool('updatechecker', true)) {
++			return false;
++		}
++
+ 		// Look up the cache - it is invalidated all 30 minutes
+ 		if (((int)$this->config->getAppValue('core', 'lastupdatedat') + 1800) > time()) {
+ 			return json_decode($this->config->getAppValue('core', 'lastupdateResult'), true);

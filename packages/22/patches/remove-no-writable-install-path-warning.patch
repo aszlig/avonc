@@ -1,0 +1,12 @@
+diff --git a/lib/private/legacy/OC_App.php b/lib/private/legacy/OC_App.php
+index 1ce3662000..561edc8e9d 100644
+--- a/lib/private/legacy/OC_App.php
++++ b/lib/private/legacy/OC_App.php
+@@ -467,7 +467,6 @@ class OC_App {
+ 			}
+ 		}
+ 
+-		\OCP\Util::writeLog('core', 'No application directories are marked as writable.', ILogger::ERROR);
+ 		return null;
+ 	}
+ 

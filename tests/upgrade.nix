@@ -4,7 +4,7 @@ import ./make-test.nix (pkgs: {
   machine = { config, lib, pkgs, ... }: {
     nextcloud.enable = true;
     nextcloud.domain = "localhost";
-    nextcloud.majorVersion = lib.mkDefault 20;
+    nextcloud.majorVersion = lib.mkDefault 21;
 
     services.nginx.enable = true;
     services.postgresql.enable = true;
@@ -26,7 +26,7 @@ import ./make-test.nix (pkgs: {
     in "echo ${lib.escapeShellArg json} > \"$out/nc-enabled-apps.json\"";
 
     nesting.clone = let
-      nc20apps = (lib.importJSON ../packages/20/upstream.json).applications;
+      nc21apps = (lib.importJSON ../packages/21/upstream.json).applications;
 
       excludedApps = [
         # We'll need dpendency ordering for this app
@@ -82,13 +82,16 @@ import ./make-test.nix (pkgs: {
         "gpgmailer"
 
         # https://git.project-insanity.org/onny/nextcloud-app-podcast/issues/225
-        (assert nc20apps.podcast.version == "0.3.1"; "podcast")
+        (assert nc21apps.podcast.version == "0.3.1"; "podcast")
 
         # https://github.com/eblah/nextcloud-messagevault/issues/1
-        (assert nc20apps.messagevault.version == "1.0.0"; "messagevault")
+        (assert nc21apps.messagevault.version == "1.0.0"; "messagevault")
 
         # https://github.com/mziech/nextcloud-cas/issues/5
-        (assert nc20apps.cas.version == "0.2.7"; "cas")
+        (assert nc21apps.cas.version == "0.2.7"; "cas")
+
+        # Abandoned, see https://github.com/nextcloud/social/issues/1290
+        "social"
 
         # Don't test packages that include binaries:
         "documentserver_community"
@@ -117,10 +120,10 @@ import ./make-test.nix (pkgs: {
       });
 
     in [
-      { nextcloud.majorVersion = 20;
-        nextcloud.apps = lib.mapAttrs enableApp nc20apps;
-      }
       { nextcloud.majorVersion = 21;
+        nextcloud.apps = lib.mapAttrs enableApp nc21apps;
+      }
+      { nextcloud.majorVersion = 22;
         nextcloud.apps = lib.genAttrs [
           "apporder" "bookmarks" "calendar" "circles" "contacts" "deck"
           "external" "end_to_end_encryption" "files_accesscontrol"

@@ -251,7 +251,7 @@ import ../make-test.nix {
     server.wait_for_unit('nextcloud.service')
 
     server.succeed(
-      'OC_PASS=VogibOc9 nextcloud-occ user:add --password-from-env someuser'
+      'OC_PASS=RiejFafphi nextcloud-occ user:add --password-from-env someuser'
     )
 
     with server.nested('check connectivity between nodes'):
@@ -277,7 +277,7 @@ import ../make-test.nix {
         globals()[f'client{i}'].fail('ping -c1 80.81.82.2')
         globals()[f'client{i}'].fail('ping -c1 beef::2')
 
-    client1.succeed('test-client login someuser VogibOc9')
+    client1.succeed('test-client login someuser RiejFafphi')
     client1.selenium_screenshot('logged_in')
 
     url = client1.succeed('test-client create_conversation foobar')
