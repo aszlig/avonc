@@ -199,9 +199,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0w282zkzfy2cy24a5n45r152nw9lrnjg2rymvap4qpa83i8p06j3",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.2.2/bookmarks-4.2.2.tar.gz",
-      "version": "4.2.2"
+      "sha256": "0yz7v39x6fjhmdja90c5kr38vk0dg48hf54gwqavazaf2q1zj89n",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.3.0/bookmarks-4.3.0.tar.gz",
+      "version": "4.3.0"
     },
     "breezedark": {
       "meta": {
@@ -346,9 +346,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "0r1r01kh2rhw554nvrzjjzbhrsph2s92kklmd0250ql7axya6a6i",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/236a8f1b167fac2c734d24c5bda12f5c/collectives-0.9.21.tar.gz",
-      "version": "0.9.21"
+      "sha256": "0pgvbvwkim72l3mwhxgzkrfbrps6sj4458fpmiibx5hwdx2vf6jh",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/722d15733489f1b6a4d99c18756f5f58/collectives-0.10.21.tar.gz",
+      "version": "0.10.21"
     },
     "comments": {
       "meta": {
@@ -1214,18 +1214,18 @@
     },
     "gestion": {
       "meta": {
-        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for auto-entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud.\n\nVideo presentation coming soon\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
+        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud.\n\nVideo presentation coming soon\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
         "homepage": "https://github.com/baimard/gestion",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Gestion facturation",
-        "summary": "Invoicing management application for \"auto-entreprise\" in France"
+        "name": "Gestion",
+        "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "0fwwkvi29x5i2iwprfnr23irlq5ymrln86axmqqrhrimv6yxp3kb",
-      "url": "https://github.com/baimard/gestion/releases/download/1.0.1/gestion.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1c32hf8yhl9krg0k46vy188a5lp010h7vj2phjgg5xr3a6nc8xzg",
+      "url": "https://github.com/baimard/gestion/releases/download/1.0.2/gestion.tar.gz",
+      "version": "1.0.2"
     },
     "gpgmailer": {
       "meta": {
@@ -1628,6 +1628,21 @@
       "url": "https://github.com/nextcloud/integration_reddit/releases/download/v0.0.11/integration_reddit-0.0.11.tar.gz",
       "version": "0.0.11"
     },
+    "integration_restya": {
+      "meta": {
+        "description": "The Restyaboard integration adds a dashboard widget to your dashboard that shows all of your essential alerts,\na search provider that searches for cards in a consistent way\nand alerts about recent activity related to your assigned cards.\nRestyaboard is an open-source alternative to Trello. Restyaboard comes in both self-hosted downloadable and cloud options. It has features like offline sync, diff /revisions, nested comments, multiple view layouts. It is more like an electronic sticky note for organizing tasks and todos.",
+        "homepage": "https://github.com/nextcloud/integration_restya",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Restyaboard integration",
+        "summary": "Integration of Restyaboard software development management service"
+      },
+      "sha256": "13ixp3mb6snnnm5i5y9nyaramwb9d0jfzqg1a3jnisfkmv4i5ja9",
+      "url": "https://restya.com/integration_restya.tar.gz",
+      "version": "1.0.1"
+    },
     "integration_suitecrm": {
       "meta": {
         "description": "SuiteCRM integration provides a dashboard widget displaying your important notifications,\n\ta search provider for content and notifications for activity in SuiteCRM.",
@@ -1817,9 +1832,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "0x2rmb0afijb78g1fmr3k88d5ivm11h6lz79mf2r2rh19xa98mnj",
-      "url": "https://dalliance.net/listman/listman-20.0.4.tar.gz",
-      "version": "20.0.4"
+      "sha256": "1nd9hp7zk18swng3jl6nr3kzbqnj979almn5pimmfa6g0i2rf0sn",
+      "url": "https://dalliance.net/listman/listman-20.0.5.tar.gz",
+      "version": "20.0.5"
     },
     "login_notes": {
       "meta": {
@@ -2553,9 +2568,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0iyidppj7p4qr4i6p5w39cp968xbwx97nhmanvrkiz62zrcfkqjb",
-      "url": "https://download.sendent.nl/serverapp/1.2.3/sendent.tar.gz",
-      "version": "1.2.3"
+      "sha256": "0n4zrzv9zqz34njyafzi8gpx6kw1wh0zl85b59qhywfxhfdvp4d0",
+      "url": "https://download.sendent.nl/serverapp/1.2.4/sendent.tar.gz",
+      "version": "1.2.4"
     },
     "sentry": {
       "meta": {
@@ -2971,9 +2986,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "1g6xssvymaxcm9wyny5z25hvb611ynbydziviy94qwc4wbdrl49k",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.13.6/tasks.tar.gz",
-      "version": "0.13.6"
+      "sha256": "14882qwqpinb2aagw56hrpz0yg9dyk0qlaklppmx8ar71wazgg0z",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.14.0/tasks.tar.gz",
+      "version": "0.14.0"
     },
     "terms_of_service": {
       "meta": {
@@ -3055,9 +3070,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1p0r82i8w45h3lnxkpw6hcp48hhia93pn4wbq4k81nz2rcv018y0",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.59.tar.gz",
-      "version": "0.0.59"
+      "sha256": "17b9cxcwv6z9axjwx4dhj0z5ri6q4d4czb8rn3f8p0ad57qq91qv",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.61.tar.gz",
+      "version": "0.0.61"
     },
     "transmission": {
       "meta": {
