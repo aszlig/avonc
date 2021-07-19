@@ -56,6 +56,7 @@
         extraModules = [ self.nixosModules.nextcloud ];
       } // args);
     in {
+      smoke = callTest tests/smoke.nix {};
       talk = callTest tests/talk {
         inherit (nixpkgs-webdriver.legacyPackages.${system})
           geckodriver firefox-unwrapped;

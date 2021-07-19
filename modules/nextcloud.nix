@@ -1036,7 +1036,7 @@ in {
         Group = "nextcloud";
         StateDirectory = "nextcloud/data";
         CacheDirectory = [ "nextcloud/uploads" "nextcloud/sessions" ];
-        ExecStart = "${php}/bin/php -f ${package}/cron.php";
+        ExecStart = "${phpCli} -f ${package}/cron.php";
         EnvironmentFile = [ "/var/lib/nextcloud/secrets.env" ];
 
         BindReadOnlyPaths = [
