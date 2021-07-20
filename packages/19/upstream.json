@@ -1635,9 +1635,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1nd9hp7zk18swng3jl6nr3kzbqnj979almn5pimmfa6g0i2rf0sn",
-      "url": "https://dalliance.net/listman/listman-20.0.5.tar.gz",
-      "version": "20.0.5"
+      "sha256": "0hh9hqhda9msdy80bd6syrkyf4scwfb5m6frvn015lwjrnpqr0im",
+      "url": "https://dalliance.net/listman/listman-20.0.6.tar.gz",
+      "version": "20.0.6"
     },
     "loganalyzer": {
       "meta": {

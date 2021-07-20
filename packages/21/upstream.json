@@ -1832,9 +1832,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1nd9hp7zk18swng3jl6nr3kzbqnj979almn5pimmfa6g0i2rf0sn",
-      "url": "https://dalliance.net/listman/listman-20.0.5.tar.gz",
-      "version": "20.0.5"
+      "sha256": "0hh9hqhda9msdy80bd6syrkyf4scwfb5m6frvn015lwjrnpqr0im",
+      "url": "https://dalliance.net/listman/listman-20.0.6.tar.gz",
+      "version": "20.0.6"
     },
     "login_notes": {
       "meta": {
@@ -2203,9 +2203,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phone's positions in real time"
       },
-      "sha256": "1mca149d1ds0q4hrnvhqspdlzx6dkdkhpz42vrq16cyda3kbz2mf",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/da68b346634ec972a5ef693c0190035f/phonetrack-0.6.7.tar.gz",
-      "version": "0.6.7"
+      "sha256": "1249qa4nn83lyz0s7g2m31dx64dnkrsnraxhp90az4kwipa6z3dx",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/7c82c8bcacd47a4af31b5ac6b7ece09d/phonetrack-0.6.8.tar.gz",
+      "version": "0.6.8"
     },
     "photos": {
       "meta": {
@@ -3070,9 +3070,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "17b9cxcwv6z9axjwx4dhj0z5ri6q4d4czb8rn3f8p0ad57qq91qv",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.61.tar.gz",
-      "version": "0.0.61"
+      "sha256": "1a1n2djmj1fzsr4jjifyii94nqla9bxn5wclbmdb2grnn7pplp38",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.62.tar.gz",
+      "version": "0.0.62"
     },
     "transmission": {
       "meta": {

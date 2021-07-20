@@ -80,9 +80,6 @@ import ./make-test.nix (pkgs: {
         # https://git.project-insanity.org/onny/nextcloud-app-podcast/issues/225
         (assert nc20apps.podcast.version == "0.3.1"; "podcast")
 
-        # https://github.com/mtierltd/timetracker/issues/129
-        (assert nc20apps.timetracker.version == "0.0.61"; "timetracker")
-
         # Don't test packages that include binaries:
         "documentserver_community"
         "integration_whiteboard"
