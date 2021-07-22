@@ -560,9 +560,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "0qcxbzbdr29d87wl4zfrdp8bw03ilv753w7is96p5q972wgcsj8b",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.9/duplicatefinder.tar.gz",
-      "version": "0.0.9"
+      "sha256": "0r1j8xa1clmgfzf68pbxd5cw54kr1r9h6rdx2yjg3msrjdqdhwzs",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.11/duplicatefinder.tar.gz",
+      "version": "0.0.11"
     },
     "ehr": {
       "meta": {
@@ -1178,9 +1178,9 @@
         "name": "Full text search",
         "summary": "Core of the full-text search framework for Nextcloud"
       },
-      "sha256": "0qilhv2v3lma70kaq5zjclwy61z2n43iabzq63z5a5m7hcnk0hg0",
-      "url": "https://github.com/nextcloud/fulltextsearch/releases/download/v21.0.1/fulltextsearch-21.0.1.tar.gz",
-      "version": "21.0.1"
+      "sha256": "1j49raygh4nn02dy1j604fgy986w975dvsk7a9cfbadzwv4ihy6z",
+      "url": "https://github.com/nextcloud-releases/fulltextsearch/releases/download/21.0.2/fulltextsearch-21.0.2.tar.gz",
+      "version": "21.0.2"
     },
     "fulltextsearch_elasticsearch": {
       "meta": {
@@ -1193,9 +1193,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0xjnn2s0c6xrdmm4bhywz7wavhqgf487sz8j8602ywgqymkppnkq",
-      "url": "https://github.com/nextcloud/fulltextsearch_elasticsearch/releases/download/v21.0.1/fulltextsearch_elasticsearch-21.0.1.tar.gz",
-      "version": "21.0.1"
+      "sha256": "0kc8sdq9hm9iizpm146wirynfmjl7zmgivbz25a1hwkb1hq4xvpj",
+      "url": "https://github.com/nextcloud-releases/fulltextsearch_elasticsearch/releases/download/21.0.2/fulltextsearch_elasticsearch-21.0.2.tar.gz",
+      "version": "21.0.2"
     },
     "geoblocker": {
       "meta": {
@@ -2203,9 +2203,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phone's positions in real time"
       },
-      "sha256": "1249qa4nn83lyz0s7g2m31dx64dnkrsnraxhp90az4kwipa6z3dx",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/7c82c8bcacd47a4af31b5ac6b7ece09d/phonetrack-0.6.8.tar.gz",
-      "version": "0.6.8"
+      "sha256": "1c5bpmfj31b7iqiqcw93bcdk40l38xc87ahxqlwa9252hv224gfb",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/931aaaf8dca24bf31a7e169a83c17235/phonetrack-0.6.9.tar.gz",
+      "version": "0.6.9"
     },
     "photos": {
       "meta": {
@@ -2390,9 +2390,9 @@
         "name": "Quota warning",
         "summary": "This app sends notifications to users when they reached 85, 90 and 95% of their quota."
       },
-      "sha256": "1rq2wxqi8mjbrvs74pq30k8jaicksp5g0n1w16bv9mdwqkiybynf",
-      "url": "https://github.com/nextcloud/quota_warning/releases/download/v1.10.0/quota_warning-1.10.0.tar.gz",
-      "version": "1.10.0"
+      "sha256": "04f3kw07wjwsd9j9mg3hm6m5rs6pi8g6hcp7a3zyqj1zr9fpq3ds",
+      "url": "https://github.com/nextcloud-releases/quota_warning/releases/download/v1.11.0/quota_warning-1.11.0.tar.gz",
+      "version": "1.11.0"
     },
     "radio": {
       "meta": {
@@ -3156,9 +3156,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "07j142h896nnkapsrl0hj8dnykpm5i5h1wblmp4sprk70vl67bpf",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.2.0/twofactor_nextcloud_notification-3.2.0.tar.gz",
-      "version": "3.2.0"
+      "sha256": "0brblyyqf9brlnwg5xqhx8hy1m0cc6kvg3j0r4ka1m3grj42cqaa",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.2.1/twofactor_nextcloud_notification-3.2.1.tar.gz",
+      "version": "3.2.1"
     },
     "twofactor_totp": {
       "meta": {
@@ -3519,9 +3519,9 @@
         "name": "Workflow OCR",
         "summary": "OCR processing via workflow"
       },
-      "sha256": "1vivkd2ms3qqqpyz38n4mvy92r3qqfhxc0qamd9wk4ig0q8gwrvy",
-      "url": "https://github.com/R0Wi/workflow_ocr/releases/download/v1.21.0/workflow_ocr.tar.gz",
-      "version": "1.21.0"
+      "sha256": "009my11p8s6yck16ka8d7sws1i2lyspp1nbp2v5w34c4xh2law8m",
+      "url": "https://github.com/R0Wi/workflow_ocr/releases/download/v1.21.1/workflow_ocr.tar.gz",
+      "version": "1.21.1"
     },
     "workflow_pdf_converter": {
       "meta": {

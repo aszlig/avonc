@@ -588,9 +588,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "0qcxbzbdr29d87wl4zfrdp8bw03ilv753w7is96p5q972wgcsj8b",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.9/duplicatefinder.tar.gz",
-      "version": "0.0.9"
+      "sha256": "0r1j8xa1clmgfzf68pbxd5cw54kr1r9h6rdx2yjg3msrjdqdhwzs",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.11/duplicatefinder.tar.gz",
+      "version": "0.0.11"
     },
     "ehr": {
       "meta": {
@@ -1282,9 +1282,9 @@
         "name": "Full text search - Elasticsearch Platform",
         "summary": "Index using ElasticSearch"
       },
-      "sha256": "0glm88pgx7fr3ygz6hsvlzgrmjlmxr07hjjfj2vx9104dw74r7w5",
-      "url": "https://github.com/nextcloud-releases/fulltextsearch_elasticsearch/releases/download/20.0.2/fulltextsearch_elasticsearch-20.0.2.tar.gz",
-      "version": "20.0.2"
+      "sha256": "1hw6v6n55p0lhml0qx6iy4h0lfkrfk2adz1409drzqzrl35lsqsk",
+      "url": "https://github.com/nextcloud-releases/fulltextsearch_elasticsearch/releases/download/20.0.3/fulltextsearch_elasticsearch-20.0.3.tar.gz",
+      "version": "20.0.3"
     },
     "geoblocker": {
       "meta": {
@@ -2380,9 +2380,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phone's positions in real time"
       },
-      "sha256": "1249qa4nn83lyz0s7g2m31dx64dnkrsnraxhp90az4kwipa6z3dx",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/7c82c8bcacd47a4af31b5ac6b7ece09d/phonetrack-0.6.8.tar.gz",
-      "version": "0.6.8"
+      "sha256": "1c5bpmfj31b7iqiqcw93bcdk40l38xc87ahxqlwa9252hv224gfb",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/931aaaf8dca24bf31a7e169a83c17235/phonetrack-0.6.9.tar.gz",
+      "version": "0.6.9"
     },
     "photos": {
       "meta": {
@@ -3405,9 +3405,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "07j142h896nnkapsrl0hj8dnykpm5i5h1wblmp4sprk70vl67bpf",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.2.0/twofactor_nextcloud_notification-3.2.0.tar.gz",
-      "version": "3.2.0"
+      "sha256": "0brblyyqf9brlnwg5xqhx8hy1m0cc6kvg3j0r4ka1m3grj42cqaa",
+      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.2.1/twofactor_nextcloud_notification-3.2.1.tar.gz",
+      "version": "3.2.1"
     },
     "twofactor_totp": {
       "meta": {
@@ -3788,7 +3788,7 @@
     },
     "workflow_ocr": {
       "meta": {
-        "description": "This app makes it possible to process various files via OCR algorithms. \n\tThe processing is done via workflow-engine and can therefore easily be customized.",
+        "description": "This app makes it possible to process various files via OCR algorithms.\n\tThe processing is done via workflow-engine and can therefore easily be customized.",
         "homepage": "https://github.com/R0Wi/workflow_ocr",
         "isShipped": false,
         "licenses": [
@@ -3797,9 +3797,9 @@
         "name": "Workflow OCR",
         "summary": "OCR processing via workflow"
       },
-      "sha256": "1fzsbcy1ysmc1zf2akgypy06ccmqr7dmgcs495x3g3mfs6khgsqh",
-      "url": "https://github.com/R0Wi/workflow_ocr/releases/download/v1.20.2/workflow_ocr.tar.gz",
-      "version": "1.20.2"
+      "sha256": "0bh4rm27zzfjwiy7q9iigdw01j7l9pzlr5irp4xs22a7z69mvz8c",
+      "url": "https://github.com/R0Wi/workflow_ocr/releases/download/v1.20.3/workflow_ocr.tar.gz",
+      "version": "1.20.3"
     },
     "workflow_pdf_converter": {
       "meta": {
