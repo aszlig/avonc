@@ -971,14 +971,14 @@
     },
     "files_retention": {
       "meta": {
-        "description": "This application allows for automatic deletion of files after a given time",
+        "description": "An app for Nextcloud to control automatic deletion of files after a given time.\nOptionally the users can be informed the day before.",
         "homepage": "https://github.com/nextcloud/files_retention",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Retention",
-        "summary": "This application allows for automatic deletion of files after a given time"
+        "summary": "This application allows for automatic deletion of files after a given time."
       },
       "sha256": "1hszp83jbx2y4314qh88f0zqavf6lpqsz1xr7s168ks2fj7x5892",
       "url": "https://github.com/nextcloud/files_retention/releases/download/v1.10.1/files_retention-1.5.1.tar.gz",
@@ -2657,7 +2657,7 @@
     },
     "sharepoint": {
       "meta": {
-        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nRequires Nextcloud 10 or newer. Supports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
+        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nSupports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3307,7 +3307,7 @@
     },
     "user_retention": {
       "meta": {
-        "description": "Deletes users that did not log in in the last days.",
+        "description": "Users are deleted when they did not log into their account within the given number of days. This will also delete all files and other data of the affected users.\n\n*  Different retention possible for normal users and users of the [guests app](https://apps.nextcloud.com/apps/guests)\n*  Exclude users based on group memberships (default: admin group)\n*  Exclude users that never logged in (default: enabled)",
         "homepage": "https://github.com/nextcloud/user_retention",
         "isShipped": false,
         "licenses": [
@@ -3364,14 +3364,14 @@
     },
     "user_usage_report": {
       "meta": {
-        "description": "User usage report",
+        "description": "Provides a command which generates a report about all the users and their usage:\n\n```\n$ sudo -u www-data ./occ usage-report:generate admin\n\"admin\",\"2017-09-18T09:00:01+00:00\",5368709120,786432000,12,1,1,2\n```",
         "homepage": "https://github.com/nextcloud/user_usage_report",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "User usage report",
-        "summary": "User usage report"
+        "summary": "Provides a command which generates a report about all the users and their usage"
       },
       "sha256": "1lbyrcl408fbcdsbpwnis0pak674b9h3bgzbqgspavyyqmppdij8",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.5.0/user_usage_report-1.5.0.tar.gz",

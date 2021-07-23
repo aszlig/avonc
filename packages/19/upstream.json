@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: local/remote file, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard (NC20), Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -71,7 +71,7 @@
     },
     "announcementcenter": {
       "meta": {
-        "description": "This app allows admins to post announcements. Also supports the following features:\n\n Activities (Requires the activity app to be enabled)\n\n Comments\n\n Group permissions\n\n Notifications (Requires the notifications app to be enabled)",
+        "description": "Announce your maintenance window , introduce a new colleague  or make sure everyone knows about the big event next month \n\n Markdown support\n\n Comments including @-mentions\n\n Group permissions\n\n Dashboard integration\n\n Activities integration\n\n Notifications integration",
         "homepage": "https://github.com/nextcloud/announcementcenter",
         "isShipped": false,
         "licenses": [
@@ -115,7 +115,7 @@
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, AIF, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
+        "description": "A music player for FLAC, MP3, MP4, AIF, AAC, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -219,7 +219,7 @@
     },
     "breezedark": {
       "meta": {
-        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.\n\n#### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n#### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project.\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a two options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -263,7 +263,7 @@
     },
     "calendar": {
       "meta": {
-        "description": "The Calendar app is a user interface for Nextcloud's CalDAV server. Easily sync events from various devices with your Nextcloud and edit them online.\n\n*  **Integration with other Nextcloud apps!** Currently Contacts - more to come.\n*  **WebCal Support!** Want to see your favorite teams matchdays in your calendar? No problem!\n*  **Attendees!** Invite people to your events\n*  **Free/Busy:** See when your attendees are available to meet\n*  **Reminders!** Get alarms for events inside your browser and via email.\n*  **Were not reinventing the wheel!** Based on the great [c-dav library](https://github.com/nextcloud/cdav-library), [ical.js](https://github.com/mozilla-comm/ical.js) and [fullcalendar](https://github.com/fullcalendar/fullcalendar) libraries.",
+        "description": "The Calendar app is a user interface for Nextcloud's CalDAV server. Easily sync events from various devices with your Nextcloud and edit them online.\n\n*  **Integration with other Nextcloud apps!** Currently Contacts - more to come.\n*  **WebCal Support!** Want to see your favorite teams matchdays in your calendar? No problem!\n*  **Attendees!** Invite people to your events\n*  **Free/Busy!** See when your attendees are available to meet\n*  **Reminders!** Get alarms for events inside your browser and via email\n*  Search! Find your events at ease\n*  Tasks! See tasks with a due date directly in the calendar\n*  **Were not reinventing the wheel!** Based on the great [c-dav library](https://github.com/nextcloud/cdav-library), [ical.js](https://github.com/mozilla-comm/ical.js) and [fullcalendar](https://github.com/fullcalendar/fullcalendar) libraries.",
         "homepage": "https://github.com/nextcloud/calendar/",
         "isShipped": false,
         "licenses": [
@@ -308,7 +308,7 @@
     "checksum": {
       "meta": {
         "description": "Allows users to create a hash checksum of a file.\n        Possible algorithms are md5, sha1, sha256, sha384, sha512 and crc32.\n\n        Just open the details view of the file (Sidebar). There should be a new tab called \"Checksum\".\n        Select a algorithm and it will try to generate a hash.\n        If you want an other algorithm, just click on the reload button.",
-        "homepage": "https://github.com/westberliner/owncloud-checksum/",
+        "homepage": "https://github.com/westberliner/checksum/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -421,8 +421,8 @@
     },
     "cospend": {
       "meta": {
-        "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/) and on the [Play store](https://play.google.com/store/apps/details?id=net.eneiluj.moneybuster).\n\n[PayForMe](https://github.com/mayflower/PayForMe) iOS client is currently being developped!\n\n## Features\n\n*  create/edit/delete projects, members, bills, bill categories, currencies\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (daily/weekly/monthly/yearly)\n*  optionally provide custom amount for each member in new bills\n*  link bills with personal files (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share projects with Nextcloud users/groups/circles\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  generate link/QRCode to easily import projects in MoneyBuster\n*  implement Nextcloud notifications and activity stream\n\nThis app is tested on Nextcloud 18 with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Install\n\nSee the [AdminDoc](https://gitlab.com/eneiluj/cospend-nc/wikis/admindoc) for installation details.\n\nCheck [CHANGELOG](https://gitlab.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log) file to see what's new and what's coming in next release.\n\nCheck [AUTHORS](https://gitlab.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors) file to see complete list of authors.\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
-        "homepage": "https://gitlab.com/eneiluj/cospend-nc",
+        "description": "# Nextcloud Cospend \n\nNextcloud Cospend is a group/shared budget manager. It was inspired by the great [IHateMoney](https://github.com/spiral-project/ihatemoney/).\n\nYou can use it when you share a house, when you go on vacation with friends, whenever you share money with others.\n\nIt lets you create projects with members and bills. Each member has a balance computed from the project bills. This way you can see who owes the group and who the group owes. Ultimately you can ask for a settlement plan telling you which payments to make to reset members balances.\n\nProject members are independent from Nextcloud users. Projects can be accessed and modified by people without a Nextcloud account. Each project has an ID and a password for guest access.\n\n[MoneyBuster](https://gitlab.com/eneiluj/moneybuster) Android client is [available in F-Droid](https://f-droid.org/packages/net.eneiluj.moneybuster/) and on the [Play store](https://play.google.com/store/apps/details?id=net.eneiluj.moneybuster).\n\n[PayForMe](https://github.com/mayflower/PayForMe) iOS client is currently being developped!\n\n## Features\n\n*  create/edit/delete projects, members, bills, bill categories, currencies\n*  check member balances\n*  display project statistics\n*  display settlement plan\n*  automatically create reimbursement bills from settlement plan\n*  create recurring bills (daily/weekly/monthly/yearly)\n*  optionally provide custom amount for each member in new bills\n*  link bills with personal files (picture of physical bill for example)\n*  guest access for people outside Nextcloud\n*  share projects with Nextcloud users/groups/circles\n*  import/export projects as csv (compatible with csv files from IHateMoney)\n*  generate link/QRCode to easily import projects in MoneyBuster\n*  implement Nextcloud notifications and activity stream\n\nThis app is tested on Nextcloud 20+ with Firefox 57+ and Chromium.\n\nThis app is under development.\n\n Help us to translate this app on [Nextcloud-Cospend/MoneyBuster Crowdin project](https://crowdin.com/project/moneybuster).\n\n Check out other ways to help in the [contribution guidelines](https://gitlab.com/eneiluj/cospend-nc/blob/master/CONTRIBUTING.md).\n\n## Documentation\n\n* [User documentation](https://github.com/eneiluj/cospend-nc/blob/master/docs/user.md)\n* [Admin documentation](https://github.com/eneiluj/cospend-nc/blob/master/docs/admin.md)\n* [Developer documentation](https://github.com/eneiluj/cospend-nc/blob/master/docs/dev.md)\n* [CHANGELOG](https://github.com/eneiluj/cospend-nc/blob/master/CHANGELOG.md#change-log)\n* [AUTHORS](https://github.com/eneiluj/cospend-nc/blob/master/AUTHORS.md#authors)\n\n## Known issues\n\n* it does not make you rich\n\nAny feedback will be appreciated.\n\n## Donation\n\nI develop this app during my free time.\n\n* [Donate with Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=66PALMY8SF5JE) (you don't need a paypal account)\n* [Donate with Liberapay : ![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eneiluj/donate)",
+        "homepage": "https://github.com/eneiluj/cospend-nc",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -450,7 +450,7 @@
     },
     "customproperties": {
       "meta": {
-        "description": "Files app plugin to add custom properties to files and folders",
+        "description": "DAV's `PROPPATCH` request type allows adding custom properties to items.\n        Since custom properties are not accessible via the frontend, this plugin will list all properties of an item in\n        the sidebar.\n        The plugin allows to define \"well-known\" properties in the admin settings which are presented as input fields in\n        the \"properties\" tab in files app sidebar.\n        Changing the property in the tab will also change the DAV property and hence it will be possible to access the\n        properties via DAV call `PROPFIND`.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -565,7 +565,7 @@
     },
     "duplicatefinder": {
       "meta": {
-        "description": "Click on the icon and find if you have duplicate files.\n    \nYou can either use the command or the gui. \n\n## Command usage\n\n  ```duplicates:find-all [options]```\n\n### Options\n- `-u --user` scan files of the specified user (-u admin)\n- `-p --path` limit scan to this path (--path=\"/alice/files/Photos\")",
+        "description": "Click on the icon and find if you have duplicate files.\n    # Duplicate Finder\n    Install app using the Nextcloud App Store inside your Nextcloud. See https://apps.nextcloud.com/apps/duplicatefinder\n\n    Click on the icon and find if you have duplicate files.\n\n    You can either use the command or the cron job to do a full scan.\n    Each time a new file is uploaded or a file is changed the app automatically checks if a duplicate of this file exists.\n\n    ## Usage\n    Beginning with version 0.0.9 the detection of duplicates has changed. If you're updating from an older version you don't have to do anything special.\n    There are there are three possible ways duplicates can be detected.\n    1. Event-based-detection\n       For every new or changed file Nextcloud creates an internal event. The app is listening to these and analyse if the file has a duplicate\n    2. Background-job-based-detection\n       With an interval of 5 days a background job is executed, if you have enabled either cron, webcron or ajax based background jobs. This is only for events that have not been processed for any reason or a file was added manually.\n    3. Command-based-detection\n       A scan for duplicates can be forced by using the occ-command (please see #Command usage)\n\n    Normally the detection-methods should by used in the order as listed, but if you are installing the app on an existing installation it can be quite useful to start with a full scan by using the command-based-detection.\n\n    ## Command usage\n\n      `occ [-v] duplicates:ACTION [options]`\n\n    Depending on your NextCloud setup, the `occ` command may need to be called differently, such as `sudo php occ duplicates:find-all [options]` or `nextcloud.occ duplicates:find-all [options]`. Please refer to the [occ documentation](https://docs.nextcloud.com/server/15/admin_manual/configuration_server/occ_command.html) for more details\n\n    If you increase the verbosity of the occ command, the shows a little bit more what is currently done (e.g. what file is currently scanned).\n\n        ACTION\n        find-all    The command scans the files for duplicates. By using the options the scan can be limited\n          options\n            -u, --user scan files of the specified user (-u admin)\n            -p, --path limit scan to this path (--path=\"./Photos\"). The path is relative the root of each user or the specified user.\n        list        The command lists all duplicates that have been found until yet. If no option is given duplicates across users are shown.\n          options\n            -u, --user list only duplicates of the specified user (-u admin)\n        clear       The command will clear all information that has been stored in the database\n          options\n            -f, --force the flag forces to do the cleanup. _attention_ you will not be asked any questions\n\n    ## Preview\n\n    ![Preview of the GUI](https://raw.githubusercontent.com/PaulLereverend/NextcloudDuplicateFinder/master/img/preview.png)",
         "homepage": "https://github.com/PaulLereverend/NextcloudDuplicateFinder",
         "isShipped": false,
         "licenses": [
@@ -1002,7 +1002,7 @@
     },
     "files_photospheres": {
       "meta": {
-        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "description": "Enables viewing of google photosphere images by\n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1031,14 +1031,14 @@
     },
     "files_retention": {
       "meta": {
-        "description": "This application allows for automatic deletion of files after a given time",
+        "description": "An app for Nextcloud to control automatic deletion of files after a given time.\nOptionally the users can be informed the day before.",
         "homepage": "https://github.com/nextcloud/files_retention",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Retention",
-        "summary": "This application allows for automatic deletion of files after a given time"
+        "summary": "This application allows for automatic deletion of files after a given time."
       },
       "sha256": "16adhzlfx44p7bnlhxsdqcps2fcbiwvi41jpicvps4i8p0gzcsxy",
       "url": "https://github.com/nextcloud/files_retention/releases/download/v1.8.2/files_retention-1.8.2.tar.gz",
@@ -1407,7 +1407,7 @@
     },
     "guests": {
       "meta": {
-        "description": "Allows for better collaboration with external users by allowing users to create guests account.\n\nGuests accounts can be created from the share menu by entering either the recipients email or name and choosing \"create guest account\", once the share is created the guest user will receive an email notification about the mail with a link to set their password.\n\nGuests users can only access files shared to them and can't create any files outside of shares, additionally, the apps accessible to guest accounts are whitelisted.",
+        "description": "Allows for better collaboration with external users by allowing users to create guests account.\n\nGuests accounts can be created from the share menu by entering either the recipients email or name and choosing \"create guest account\", once the share is created the guest user will receive an email notification about the mail with a link to set their password.\n\nGuests users can only access files shared to them and cannot create any files outside of shares, additionally, the apps accessible to guest accounts are whitelisted.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1422,7 +1422,7 @@
     "hancomoffice": {
       "meta": {
         "description": "The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.",
-        "homepage": "https://office.hancom.com",
+        "homepage": "https://office.hancom.com/connector/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1436,7 +1436,8 @@
     },
     "health": {
       "meta": {
-        "description": "The app provides different modules to track health data.\n\nFollowing modules are served\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n- Activities\n\nHealth is everything.",
+        "description": "The app provides different modules to track health data.\n\nFollowing modules are served:\n- Weight\n- Feeling\n- Measurement\n- Sleep\n- Smoking\n- Activities\n\nHealth is everything.",
+        "homepage": "https://github.com/datenangebot/health",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1567,7 +1568,7 @@
     },
     "ldap_write_support": {
       "meta": {
-        "description": "The write support for LDAP enriches the LDAP backend with capabilities to manage the directory from Nextcloud.\n* create, edit and delete users\n* create, modify memberships and delete groups\n* prevent fallback to the local database backend (optional)\n* auto generate a user id (optional)\n* and more behavioral switches\n\n### Nextcloud 16.0.1 ###\n\nCurrent Nextcloud 16.0.1 misses some bug fixes that will be included in 16.0.2. Full feature support is available for upcoming 17. A patch for 16.0.1 is available and has to be applied accordingly (please replace the path):\n\n```\ncd /path/to/nextcloud\nwget https://raw.githubusercontent.com/nextcloud/ldap_write_support/master/utilities/ldap_write_support-v16.0.1.patch\ngit apply -p1 &lt; /path/to/ldap_write_support-v16.0.1.patch\n```",
+        "description": "The write support for LDAP enriches the LDAP backend with capabilities to manage the directory from Nextcloud.\n* create, edit and delete users\n* create, modify memberships and delete groups\n* prevent fallback to the local database backend (optional)\n* auto generate a user id (optional)\n* and more behavioral switches",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1696,7 +1697,7 @@
     },
     "mail": {
       "meta": {
-        "description": "** A mail app for Nextcloud**\n\n- ** Integration with other Nextcloud apps!** Currently Contacts, Calendar &amp; Files  more to come.\n- ** Multiple mail accounts!** Personal and company account? No problem, and a nice unified inbox. Connect any IMAP account.\n- ** Send &amp; receive encrypted mails!** Using the great [Mailvelope](https://mailvelope.com) browser extension.\n- ** Were not reinventing the wheel!** Based on the great [Horde](http://horde.org) libraries.\n- ** Want to host your own mail server?** We dont have to reimplement this as you could set up [Mail-in-a-Box](https://mailinabox.email)!",
+        "description": "** A mail app for Nextcloud**\n\n- ** Integration with other Nextcloud apps!** Currently Contacts, Calendar &amp; Files  more to come.\n- ** Multiple mail accounts!** Personal and company account? No problem, and a nice unified inbox. Connect any IMAP account.\n- ** Send &amp; receive encrypted mails!** Using the great [Mailvelope](https://mailvelope.com) browser extension.\n- ** Were not reinventing the wheel!** Based on the great [Horde](https://horde.org) libraries.\n- ** Want to host your own mail server?** We dont have to reimplement this as you could set up [Mail-in-a-Box](https://mailinabox.email)!",
         "homepage": "https://github.com/nextcloud/mail#readme",
         "isShipped": false,
         "licenses": [
@@ -1756,7 +1757,7 @@
     },
     "news": {
       "meta": {
-        "description": "The News app is an RSS/Atom feed reader for Nextcloud which can be synced with many mobile devices. A list of all clients and requirements can be found [in the README](https://github.com/nextcloud/news)\n\nBefore you update to a new version, [check the changelog](https://github.com/nextcloud/news/blob/master/CHANGELOG.md) to avoid surprises.\n\n**Important**: To enable feed updates you will need to enable either [Nextcloud system cron](https://docs.nextcloud.org/server/latest/admin_manual/configuration_server/background_jobs_configuration.html#cron) or use [an updater](https://github.com/nextcloud/news-updater) which uses the built in update API and disable cron updates. More information can be found [in the README](https://github.com/nextcloud/news).",
+        "description": "A RSS/Atom Feed reader App for Nextcloud\n\n-  Synchronize your feeds with multiple mobile or desktop [clients](https://nextcloud.github.io/news/clients/)\n-  Automatic updates of your news feeds\n-  Free and open source under AGPLv3, no ads or premium functions\n\n**System Cron is currently required for this app to work**\nRequirements can be found [here](https://nextcloud.github.io/news/install/#dependencies)\nThe Changelog is available [here](https://github.com/nextcloud/news/blob/master/CHANGELOG.md)\n\nCreate a [bug report](https://github.com/nextcloud/news/issues/new/choose)\nCreate a [feature request](https://github.com/nextcloud/news/discussions/new)\nReport a [feed issue](https://github.com/nextcloud/news/discussions/new)",
         "homepage": "https://github.com/nextcloud/news",
         "isShipped": false,
         "licenses": [
@@ -2028,7 +2029,7 @@
     },
     "passwords": {
       "meta": {
-        "description": "Passwords is the most advanced password manager for Nextcloud and allows you to manage and store your passwords safely in your own cloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions\n * ... and many more to come\n\n**Support**\n * [Official Chat](https://t.me/nc_passwords)\n * [Official Forum](https://help.nextcloud.com/c/apps/passwords)\n * [User Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Users/Index)\n * [Administrator Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Administrators/Index)\n\n**Apps &amp; Extensions**\n * [Firefox Extension](https://addons.mozilla.org/de/firefox/addon/nextcloud-passwords?src=external-ncapps)\n * [Chrome Extension](https://chrome.google.com/webstore/detail/nextcloud-passwords/mhajlicjhgoofheldnmollgbgjheenbi)\n * [Android App](https://play.google.com/store/apps/details?id=com.nextcloudpasswords) by [daper](https://github.com/daper/nextcloud-passwords-app)\n * [Android App](https://play.google.com/store/apps/details?id=de.jbservices.nc_passwords_app) by [joleaf](https://gitlab.com/joleaf/nc-passwords-app)",
+        "description": "Passwords is the most advanced password manager for Nextcloud and allows you to manage and store your passwords safely in your own cloud.\nThe intuitive and modern web interface of the app makes it easy to update and add new passwords from anywhere.\nIncluded security checks help you to keep your online accounts safe and up-to-date.\nYou can also share passwords with other Nextcloud users.\n\n**Features**\n * Intuitive and modern user interface\n * Password security monitor\n * Secure encryption\n * Folders &amp;amp; tags\n * Sharing\n * API for apps\n * Extensive handbook\n * Import &amp;amp; Export\n * Browser extensions &amp;amp; Apps\n * ... and many more to come\n\n**Support**\n * [Official Chat](https://t.me/nc_passwords)\n * [Official Forum](https://help.nextcloud.com/c/apps/passwords)\n * [User Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Users/Index)\n * [Administrator Handbook](https://git.mdns.eu/nextcloud/passwords/wikis/Administrators/Index)\n\n**Apps &amp; Extensions**\n * [Official Firefox Add-On](https://addons.mozilla.org/de/firefox/addon/nextcloud-passwords?src=external-ncapps)\n * [Official Chrome Extension](https://chrome.google.com/webstore/detail/nextcloud-passwords/mhajlicjhgoofheldnmollgbgjheenbi)\n * [Official Microsoft Edge Extension](https://microsoftedge.microsoft.com/addons/detail/cjmlcljdpphgdfpkngjcmeepdpcgpffk)\n * [Android App](https://play.google.com/store/apps/details?id=de.jbservices.nc_passwords_app) by [joleaf](https://gitlab.com/joleaf/nc-passwords-app)\n * [Android App](https://play.google.com/store/apps/details?id=com.nextcloudpasswords) by [daper](https://github.com/daper/nextcloud-passwords-app)\n * [iOS App](https://apps.apple.com/app/id1546212226) by [Johannes Schliephake](https://github.com/johannes-schliephake/nextcloud-passwords-ios)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2143,7 +2144,7 @@
     },
     "previewgenerator": {
       "meta": {
-        "description": "The Preview Generator app allows admins to pre-generate previews. The app listens to edit events and stores this information. Once a cron job is triggered it will generate start preview generation. This means that you can better utilize your system by pre-generating previews when your system is normally idle and thus putting less load on your machine when the requests are actually served.\n\nThe app does not replace on demand preview generation so if a preview is requested before it is pre-generated it will still be shown.\nThe first time you install this app, before using a cron job, you properly want to generate all previews via: \n**./occ preview:generate-all -vvv**\n\n**Important**: To enable pre-generation of previews you must add **php /var/www/nextcloud/occ preview:pre-generate** to a system cron job that runs at times of your choosing.",
+        "description": "The Preview Generator app allows admins to pre-generate previews. The app listens to edit events and stores this information. Once a cron job is triggered it will generate start preview generation. This means that you can better utilize your system by pre-generating previews when your system is normally idle and thus putting less load on your machine when the requests are actually served.\n\nThe app does not replace on demand preview generation so if a preview is requested before it is pre-generated it will still be shown.\nThe first time you install this app, before using a cron job, you properly want to generate all previews via:\n**./occ preview:generate-all -vvv**\n\n**Important**: To enable pre-generation of previews you must add **php /var/www/nextcloud/occ preview:pre-generate** to a system cron job that runs at times of your choosing.",
         "homepage": "https://github.com/rullzer/previewgenerator",
         "isShipped": false,
         "licenses": [
@@ -2358,14 +2359,14 @@
     },
     "registration": {
       "meta": {
-        "description": "User registration\r\n\r\nThis app allows users to register a new account.\r\n\r\n# Flow\r\n\r\n1. User enters his/her email\r\n2. Verification link is sent to the email address\r\n3. User clicks on the verification link\r\n4. User is lead to a form where one can choose username and password\r\n5. New account is created and is logged in automatically\r\n\r\n# Features\r\n\r\n- Admin can specify which group the newly created users belong\r\n- Admin can limit the email domains allowed to register\r\n- Admin will be notified by email for new user creation\r\n\r\n# Donate\r\n\r\nSend Ethereum to `0x941613eBB948C2C547cb957B55fEB2609fa6Fe66`\r\nSend BTC to `33pStaSaf4sDUA8XBAHTq7ZDQpCVFQArxQ`",
-        "homepage": "https://github.com/pellaeon/registration",
+        "description": "User registration\n\nThis app allows users to register a new account.\n\n# Features\n\n- Add users to a given group\n- Allow-list with email domains (including wildcard) to register with\n- Admins will be notified via email for new user creation or require approval\n- Supports Nextcloud's Client Login Flow v1 and v2 - allowing registration in the mobile Apps and Desktop clients\n\n# Web form registration flow\n\n1. User enters their email address\n2. Verification link is sent to the email address\n3. User clicks on the verification link\n4. User is lead to a form where they can choose their username and password\n5. New account is created and is logged in automatically",
+        "homepage": "https://github.com/nextcloud/registration",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Registration",
-        "summary": "This app allows users to self-register a new account using their e-mail address."
+        "summary": "This app allows users to self-register a new account using their email address."
       },
       "sha256": "12dfj5kcvn137jwyc92n5lxn7wakr0g25brc6hx899idzmxnvvzr",
       "url": "https://github.com/nextcloud/registration/releases/download/v0.5.0/registration-0.5.0.tar.gz",
@@ -2560,7 +2561,7 @@
     },
     "sharepoint": {
       "meta": {
-        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nRequires Nextcloud 10 or newer. Supports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
+        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nSupports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2634,7 +2635,7 @@
     },
     "sociallogin": {
       "meta": {
-        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\nYou can find example how to configure WSO2IS for return roles claim with OIDC at https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\nTo set timeout for http client, you can use\n```php\n  'social_login_http_client' =&gt; [\n    'timeout' =&gt; 45,\n  ],\n```\nin `config.php`\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url. To make proper button visible, just fill certain provider settings with random data and change it later.\n\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
+        "description": "# Social login\n\nMake possible create users and login via Telegram, OAuth or OpenID\n\nFor OAuth you must create app for certain providers. Login button appear at login page if app id specified. Settings are in \"Social login\" section of settings page.\n\n## Installation\n\nLogin to your NextCloud installation as an administrator and under \"Apps\" click \"Download and enable\" next to the \"Social Login\" app.\n\nSee below for setup and configuration instructions.\n\n\n\n## Custom OAuth2/OIDC groups\n\nYou can use groups from your custom provider. For that you should specify \"Groups claim\" in custom OAuth2/OIDC provider settings. That claim should be returned from provider in `id_token` or at user info endpoint. Format should be `array` or comma separated string. Eg (with claim named `roles`)\n\n```json\n{\"roles\": [\"admin\", \"user\"]}\nor\n{\"roles\": \"admin,user\"}\n```\n\nAlso nested claims is supported. For example `resource_access.client-id.roles` for\n\n```json\n\"resource_access\": {\n   \"client-id\": {\n     \"roles\": [\n       \"client-role-1\",\n       \"client-role-2\"\n     ]\n   }\n}\n```\n\nThere is also support for setting the displayName:\n```\n{\"roles\": [{gid: 1, displayName: \"admin\"}, {gid: 2, displayName: \"user\"}]}\n```\n\n\nYou can use provider groups in two ways:\n\n1. Map provider groups to existing nextcloud groups\n2. Create provider groups in nextcloud and associate it to user (if appropriate option specified)\n\nIf you want sync groups on every login do not forget to check \"Update user profile every login\" setting\n\n## Examples for groups\n\n* You can find example how to configure WSO2IS for return roles claim with OIDC [here](https://medium.com/@dewni.matheesha/claim-mapping-and-retrieving-end-user-information-in-wso2is-cffd5f3937ff)\n* [GitLab OIDC allowing specific GitLab groups](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/gitlab.md)\n\n## Built-in OAuth providers\n\nYou can copy link of certain login button to get proper \"redirect url\" for OAuth app setting.\n\n* [Google](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/google.md)\n* [Amazon](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html)\n* [Facebook](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/facebook.md)\n* [Twitter](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/twitter.md)\n* [GitHub](https://github.com/settings/developers)\n* [Discord](https://discordapp.com/developers/applications/me#top)\n* [Telegram](https://github.com/zorn-v/nextcloud-social-login/blob/master/docs/sso/telegram.md)\n\nDetails about \"Allow login only from specified domain\" google setting you can find here [#44](https://github.com/zorn-v/nextcloud-social-login/issues/44)\nYou can use comma separated list for multiple domains\n\n## Config\n\nYou can use `'social_login_auto_redirect' =&gt; true` setting in `config.php` for auto redirect unauthorized users to social login if only one provider is configured.\nIf you want to temporary disable this function (e.g. for login as local admin), you can add `noredir=1` query parameter in url for login page. Something like `https://cloud.domain.com/login?noredir=1`\n\nTo set timeout for http client, you can use\n```php\n  'social_login_http_client' =&gt; [\n    'timeout' =&gt; 45,\n  ],\n```\nin `config.php`\n\n### Configurate a provider via CLI\n\nYou can configure everything from commandline by using the occ utility. To setup a oidc-provider replace the variables and URLs with values that match your deployment.\n```bash\nphp occ config:app:set sociallogin custom_providers --value='{\"custom_oidc\": [{\"name\": \"gitlab_oidc\", \"title\": \"Gitlab\", \"authorizeUrl\": \"https://gitlab.my-domain.org/oauth/authorize\", \"tokenUrl\": \"https://gitlab.my-domain.org/oauth/token\", \"userInfoUrl\": \"https://gitlab.my-domain.org/oauth/userinfo\", \"logoutUrl\": \"\", \"clientId\": \"$my_application_id\", \"clientSecret\": \"$my_super_secret_secret\", \"scope\": \"openid\", \"groupsClaim\": \"groups\", \"style\": \"gitlab\", \"defaultGroup\": \"\"}]}'\n```\nto do this with docker you just need to add `docker exec -t -uwww-data CONTAINER_NAME` in front of the command, or run it interactively from `docker exec -it -uwww-data CONTAINER_NAME sh`\n\nTo find out how to configure other providers, just configure them in the GUI and take a look at the database afterwards:\n```\nmysql -u nextcloud -p nextcloud\nPassword: &lt;yourpassword&gt;\n\n&gt; SELECT * FROM oc_appconfig WHERE appid='sociallogin';\n```\n\n## Hint\n\n### About Callback(Reply) Url\nYou can copy link from specific login button on login page and paste it on provider's website as callback url. To make proper button visible, just fill certain provider settings with random data and change it later.\n\nSome users may get strange reply(Callback) url error from provider even if you pasted the right url, that's because your nextcloud server may generate http urls when you are actually using https.\nPlease set 'overwriteprotocol' =&gt; 'https', in your config.php file.",
         "homepage": "https://github.com/zorn-v/nextcloud-social-login",
         "isShipped": false,
         "licenses": [
@@ -2738,7 +2739,7 @@
     },
     "spgverein": {
       "meta": {
-        "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.",
+        "description": "# SPG-Verein in Your Nextcloud Hub\n\nThe Nextcloud app _spgverein_ makes the data of the proprietary windows program\n[SPG-Verein](https://spg-direkt.de/) accessible in your Nextcloud hub. You can\nsynchronize clubs that are managed by SPG-Verein into your nextcloud instance\nand the Nextcloud app _spgverein_ displays all your members in the web interface.\nThis allows you to access your clubs when you are on the road.\n\nIf you like the project or if it provides real value to your organization, please\nconsider donating. Just click on the button below:\n\n[![pipeline status](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/schrieveslaach/donate)",
         "homepage": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app",
         "isShipped": false,
         "licenses": [
@@ -2753,7 +2754,7 @@
     },
     "spreed": {
       "meta": {
-        "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 52 (or newer), latest Edge or Chrome 49 (or newer) with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
+        "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 66 (or newer), latest Edge or Chrome 72 (or newer, also possible using Chrome 49 with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol)).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
         "homepage": "https://github.com/nextcloud/spreed",
         "isShipped": false,
         "licenses": [
@@ -3223,7 +3224,7 @@
     },
     "user_retention": {
       "meta": {
-        "description": "Deletes users that did not log in in the last days.",
+        "description": "Users are deleted when they did not log into their account within the given number of days. This will also delete all files and other data of the affected users.\n\n*  Different retention possible for normal users and users of the [guests app](https://apps.nextcloud.com/apps/guests)\n*  Exclude users based on group memberships (default: admin group)\n*  Exclude users that never logged in (default: enabled)",
         "homepage": "https://github.com/nextcloud/user_retention",
         "isShipped": false,
         "licenses": [
@@ -3267,14 +3268,14 @@
     },
     "user_usage_report": {
       "meta": {
-        "description": "User usage report",
+        "description": "Provides a command which generates a report about all the users and their usage:\n\n```\n$ sudo -u www-data ./occ usage-report:generate admin\n\"admin\",\"2017-09-18T09:00:01+00:00\",5368709120,786432000,12,1,1,2\n```",
         "homepage": "https://github.com/nextcloud/user_usage_report",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "User usage report",
-        "summary": "User usage report"
+        "summary": "Provides a command which generates a report about all the users and their usage"
       },
       "sha256": "1kjbcgnmgiqlrd3sqp6nj37ywwfaprcqhai7yd4dlavzknvxf67n",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.3.3/user_usage_report-1.3.3.tar.gz",
@@ -3385,7 +3386,7 @@
     },
     "workflow_ocr": {
       "meta": {
-        "description": "This app makes it possible to process various files via OCR algorithms. \n\tThe processing is done via workflow-engine and can therefore easily be customized.",
+        "description": "This app makes it possible to process various files via OCR algorithms.\n\tThe processing is done via workflow-engine and can therefore easily be customized.",
         "homepage": "https://github.com/R0Wi/workflow_ocr",
         "isShipped": false,
         "licenses": [

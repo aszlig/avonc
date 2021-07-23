@@ -71,7 +71,7 @@
     },
     "announcementcenter": {
       "meta": {
-        "description": "This app allows admins to post announcements. Also supports the following features:\n\n Activities (Requires the activity app to be enabled)\n\n Comments\n\n Group permissions\n\n Notifications (Requires the notifications app to be enabled)",
+        "description": "Announce your maintenance window , introduce a new colleague  or make sure everyone knows about the big event next month \n\n Markdown support\n\n Comments including @-mentions\n\n Group permissions\n\n Dashboard integration\n\n Activities integration\n\n Notifications integration",
         "homepage": "https://github.com/nextcloud/announcementcenter",
         "isShipped": false,
         "licenses": [
@@ -1016,7 +1016,7 @@
     },
     "files_photospheres": {
       "meta": {
-        "description": "Enables viewing of google photosphere images by \n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
+        "description": "Enables viewing of google photosphere images by\n        integrating the photo-sphere-viewer.js component\n        into your nextcloud instance.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1045,14 +1045,14 @@
     },
     "files_retention": {
       "meta": {
-        "description": "This application allows for automatic deletion of files after a given time",
+        "description": "An app for Nextcloud to control automatic deletion of files after a given time.\nOptionally the users can be informed the day before.",
         "homepage": "https://github.com/nextcloud/files_retention",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Retention",
-        "summary": "This application allows for automatic deletion of files after a given time"
+        "summary": "This application allows for automatic deletion of files after a given time."
       },
       "sha256": "1gkcf50zixf0yilc2lj38y2gygpcsf6ignq0vjqk069vhqqmgr51",
       "url": "https://github.com/nextcloud/files_retention/releases/download/v1.9.0/files_retention-1.9.0.tar.gz",
@@ -1466,7 +1466,7 @@
     },
     "guests": {
       "meta": {
-        "description": "Allows for better collaboration with external users by allowing users to create guests account.\n\nGuests accounts can be created from the share menu by entering either the recipients email or name and choosing \"create guest account\", once the share is created the guest user will receive an email notification about the mail with a link to set their password.\n\nGuests users can only access files shared to them and can't create any files outside of shares, additionally, the apps accessible to guest accounts are whitelisted.",
+        "description": "Allows for better collaboration with external users by allowing users to create guests account.\n\nGuests accounts can be created from the share menu by entering either the recipients email or name and choosing \"create guest account\", once the share is created the guest user will receive an email notification about the mail with a link to set their password.\n\nGuests users can only access files shared to them and cannot create any files outside of shares, additionally, the apps accessible to guest accounts are whitelisted.",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1481,7 +1481,7 @@
     "hancomoffice": {
       "meta": {
         "description": "The Hancom Office Online connector enables you to create, view, edit, and collaborate on MS Office compatible documents, spreadsheets and presentations within Nextcloud.  Multiple users can work easily together to create or co-edit documents in real-time.",
-        "homepage": "https://office.hancom.com",
+        "homepage": "https://office.hancom.com/connector/",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2906,7 +2906,7 @@
     },
     "sharepoint": {
       "meta": {
-        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nRequires Nextcloud 10 or newer. Supports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
+        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nSupports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3585,7 +3585,7 @@
     },
     "user_retention": {
       "meta": {
-        "description": "Deletes users that did not log in in the last days.",
+        "description": "Users are deleted when they did not log into their account within the given number of days. This will also delete all files and other data of the affected users.\n\n*  Different retention possible for normal users and users of the [guests app](https://apps.nextcloud.com/apps/guests)\n*  Exclude users based on group memberships (default: admin group)\n*  Exclude users that never logged in (default: enabled)",
         "homepage": "https://github.com/nextcloud/user_retention",
         "isShipped": false,
         "licenses": [
@@ -3642,14 +3642,14 @@
     },
     "user_usage_report": {
       "meta": {
-        "description": "User usage report",
+        "description": "Provides a command which generates a report about all the users and their usage:\n\n```\n$ sudo -u www-data ./occ usage-report:generate admin\n\"admin\",\"2017-09-18T09:00:01+00:00\",5368709120,786432000,12,1,1,2\n```",
         "homepage": "https://github.com/nextcloud/user_usage_report",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "User usage report",
-        "summary": "User usage report"
+        "summary": "Provides a command which generates a report about all the users and their usage"
       },
       "sha256": "0zxdqgw22i07v7z4n6879x5md1q1gifmrz8cvjxvmfrga12p7gws",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.4.2/user_usage_report-1.4.2.tar.gz",
