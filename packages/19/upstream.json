@@ -1868,20 +1868,6 @@
       "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.11/ocdownloader-1.7.11.tar.gz",
       "version": "1.7.11"
     },
-    "ocjobs": {
-      "meta": {
-        "description": "OC Jobs",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "OC Jobs",
-        "summary": "OC Jobs"
-      },
-      "sha256": "1s6ijm168ikgmmfal704jh6gkh8fiy69m8aiq4x216i0v6pv775y",
-      "url": "https://github.com/Lea9250/ocjobs/releases/download/1.0/ocjobs-1.0.tar.gz",
-      "version": "0.0.1"
-    },
     "ocsms": {
       "meta": {
         "description": "An app to sync SMS with your cloud",
