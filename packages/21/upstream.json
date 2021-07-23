@@ -1371,7 +1371,7 @@
         "summary": "Create guest accounts for easier collaboration"
       },
       "sha256": "1mnsfxzaxzg8k9j3hah0zw0mzna1hymz09986hqml2ivb8zmiqcl",
-      "url": "https://github.com/nextcloud/guests/releases/download/v2.0.0/guests.tar.gz",
+      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.0.0/guests.tar.gz",
       "version": "2.0.0"
     },
     "hancomoffice": {

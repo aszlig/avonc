@@ -923,7 +923,7 @@
         "summary": "OCR Some format"
       },
       "sha256": "0a702gbhmzxl9pcd29m080v0xb9czqyw134zy3mz5lix7h4vg14q",
-      "url": "https://github.com/daita/files_fulltextsearch_tesseract/releases/download/v20.0.1/files_fulltextsearch_tesseract-20.0.1.tar.gz",
+      "url": "https://github.com/ArtificialOwl/files_fulltextsearch_tesseract/releases/download/v20.0.1/files_fulltextsearch_tesseract-20.0.1.tar.gz",
       "version": "20.0.1"
     },
     "files_inotify": {
@@ -1475,7 +1475,7 @@
         "summary": "Create guest accounts for easier collaboration"
       },
       "sha256": "0bygc1s9c2mj4pjkvhp3qm35hsan87i2m29091z9v7w13w8bkjdy",
-      "url": "https://github.com/nextcloud/guests/releases/download/v1.6.3/guests.tar.gz",
+      "url": "https://github.com/nextcloud-releases/guests/releases/download/v1.6.3/guests.tar.gz",
       "version": "1.6.3"
     },
     "hancomoffice": {
