@@ -1110,8 +1110,8 @@
         "name": "Plain text editor",
         "summary": "Open, save and edit text files"
       },
-      "sha256": "100s20myxidjnamid0ywdpkmc77sl0hz5w47m553rslwvg3v6b27",
-      "url": "https://github.com/nextcloud/files_texteditor/releases/download/v2.13.0/files_texteditor.tar.gz",
+      "sha256": "1823myn3v3y42wmdd4kgm8vl8aw0i8khfh1rhq660wmkygrnkinq",
+      "url": "https://github.com/nextcloud-releases/files_texteditor/releases/download/v2.14.0/files_texteditor.tar.gz",
       "version": "2.14.0"
     },
     "files_trackdownloads": {
@@ -1489,7 +1489,7 @@
         "name": "Hancom Office Connector",
         "summary": "Enable seamless integration with Hancom Office Online and Hancom DocsConverter"
       },
-      "sha256": "0qgrl9pzghi6k7n96pxscvbgflky7dq6dj71cjk439kxsyqz2ppf",
+      "sha256": "0x2c098hcszrw4f9kgdan28bjm6569x7q11zixv4rli407h4jnv6",
       "url": "https://hancom-nextcloud-appstore.s3.ap-northeast-2.amazonaws.com/hancomoffice.tar.gz",
       "version": "0.0.9"
     },
