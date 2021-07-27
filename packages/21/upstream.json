@@ -199,9 +199,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0yz7v39x6fjhmdja90c5kr38vk0dg48hf54gwqavazaf2q1zj89n",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.3.0/bookmarks-4.3.0.tar.gz",
-      "version": "4.3.0"
+      "sha256": "198s5kqsfxjcjdbiz2qhqaknq9kbgigcwaalm3lhjy2vqw4hvy9d",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.4.0/bookmarks-4.4.0.tar.gz",
+      "version": "4.4.0"
     },
     "breezedark": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Custom Properties",
         "summary": "Files app plugin to add custom properties to files and folders"
       },
-      "sha256": "0mxzrxny6g0yairxs0g01ry24fiwi8n27w7l4c8k5xwnh290rx2b",
-      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v2.0.3/customproperties_2.0.3.tar.gz",
-      "version": "2.0.3"
+      "sha256": "1jqq4jggm9vhyrzia1c76654f5bvvchmayfxpx6jp7b39xnzkm3f",
+      "url": "https://github.com/SteKoe/nextcloud-customproperties/releases/download/v2.0.4/customproperties_2.0.4.tar.gz",
+      "version": "2.0.4"
     },
     "dashboard": {
       "meta": {
@@ -1223,9 +1223,9 @@
         "name": "Gestion",
         "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "1c32hf8yhl9krg0k46vy188a5lp010h7vj2phjgg5xr3a6nc8xzg",
-      "url": "https://github.com/baimard/gestion/releases/download/1.0.2/gestion.tar.gz",
-      "version": "1.0.2"
+      "sha256": "1gx16ba99fl69s5nbv7ainy04jsfh543bsdljckdjf3jmap7yj3n",
+      "url": "https://github.com/baimard/gestion/releases/download/1.0.3/gestion.tar.gz",
+      "version": "1.0.3"
     },
     "gpgmailer": {
       "meta": {
@@ -1251,9 +1251,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "02klw34b8i74w09d773137plx2hpc4pgph00d8c72jj654a6vr3b",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.7.tar.gz",
-      "version": "1.0.7"
+      "sha256": "04hvb24gvzifkpi2y5xxpxrb3jm2bhh2dgqskp0x2wg2h9djhn8m",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.9.tar.gz",
+      "version": "1.0.9"
     },
     "gpxedit": {
       "meta": {
@@ -2538,9 +2538,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "19gnd2x2hs49afswy9lf1hprzg6n0m0lh40h38kb5lwvsb2wc8nx",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.8.0/riotchat.tar.gz",
-      "version": "0.8.0"
+      "sha256": "05gw4sai8kgs038jlj9r6pwpzakycax7ywr11nak2i4qw3zi0gf7",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.8.1/riotchat.tar.gz",
+      "version": "0.8.1"
     },
     "scanner": {
       "meta": {
@@ -2740,9 +2740,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0yb5av5iycm625lyznqn6vxny68g86fb79p97jp5i9s0n2i4qcbr",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.18/release.tar.gz",
-      "version": "4.6.18"
+      "sha256": "0n8rw7ylsbj27imd1vym03d3b9dfzf2pgmi6wq81h085b739b2dr",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.19/release.tar.gz",
+      "version": "4.6.19"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3070,9 +3070,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1a1n2djmj1fzsr4jjifyii94nqla9bxn5wclbmdb2grnn7pplp38",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.62.tar.gz",
-      "version": "0.0.62"
+      "sha256": "1w4cm89nv2g0s9hlj5wn9h0nfwzk08b3cvnys94q111annrmak86",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.64.tar.gz",
+      "version": "0.0.64"
     },
     "transmission": {
       "meta": {
