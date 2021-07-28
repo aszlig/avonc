@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "02xsmrndvk4mcmwf1rk08p7968v9cjg19c1j78ag0na4d8rbjx2f",
-      "url": "https://github.com/Rello/analytics/releases/download/3.5.1/analytics-3.5.1.tar.gz",
-      "version": "3.5.1"
+      "sha256": "04lqj84yvbljbdrhqn3a5k6smimmyzbb9padg9qcpf78m57r6yqz",
+      "url": "https://github.com/Rello/analytics/releases/download/3.6.0/analytics-3.6.0.tar.gz",
+      "version": "3.6.0"
     },
     "announcementcenter": {
       "meta": {
@@ -184,9 +184,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "0dnbzik5nsak8c3agph3raqiqjmbj5jn2m6qzg5ann3wh8cm8pmi",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v1.4.2/bbb-v1.4.2.tar.gz",
-      "version": "1.4.2"
+      "sha256": "1y6m50iz2ckp1kh01fwjnjxjmzin5n8vd4sn2n3v83h23kqx1gxf",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v2.0.0/bbb-v2.0.0.tar.gz",
+      "version": "2.0.0"
     },
     "bookmarks": {
       "meta": {
@@ -374,9 +374,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "0cccxvh2q0xlvy880cml8jkkwq39kml11giqinrb2c2a86fmvvqn",
-      "url": "https://github.com/nextcloud/contacts/releases/download/v4.0.0/contacts.tar.gz",
-      "version": "4.0.0"
+      "sha256": "178wflhrllqd4hm7ap0lq68zfc7bgxx26g4w9nxdgg3l3z80nycc",
+      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.1/contacts.tar.gz",
+      "version": "4.0.1"
     },
     "contactsinteraction": {
       "meta": {
@@ -1163,9 +1163,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "14qi10rd18h8q5ifyymgakgrmg1137f7vpngqscn8is0dwkidcrl",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.2.4/forms.tar.gz",
-      "version": "2.2.4"
+      "sha256": "0zwxmliz4nzzp7bm29cikzs4j76i0ga66im5slsrkpi4d9dic5nf",
+      "url": "https://github.com/nextcloud/forms/releases/download/v2.3.0/forms.tar.gz",
+      "version": "2.3.0"
     },
     "fulltextsearch": {
       "meta": {
@@ -1214,8 +1214,8 @@
     },
     "gestion": {
       "meta": {
-        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud.\n\nVideo presentation coming soon\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
-        "homepage": "https://github.com/baimard/gestion",
+        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud.\n\nVideo in user documentation\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
+        "homepage": "https://www.buymeacoffee.com/benjaminaimard",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1223,9 +1223,9 @@
         "name": "Gestion",
         "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "1gx16ba99fl69s5nbv7ainy04jsfh543bsdljckdjf3jmap7yj3n",
-      "url": "https://github.com/baimard/gestion/releases/download/1.0.3/gestion.tar.gz",
-      "version": "1.0.3"
+      "sha256": "07lwzy2bnk7z1873cp333n3fwlwmcz0lgkxj8v58p51yc63pg8sw",
+      "url": "https://github.com/baimard/gestion/releases/download/1.0.4/gestion.tar.gz",
+      "version": "1.0.4"
     },
     "gpgmailer": {
       "meta": {
@@ -2493,9 +2493,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0r1nwf89prk0d2ys644haiysdy2hd2fydw8hxn72j8bqcpx5fibx",
-      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v4.2.0/richdocuments.tar.gz",
-      "version": "4.2.0"
+      "sha256": "0nnzx26fqdlprllp4gwglrdnxi0cwpzpn7wv9fbflhnsm0339wwz",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v4.2.1/richdocuments.tar.gz",
+      "version": "4.2.1"
     },
     "richdocumentscode": {
       "meta": {
@@ -3070,9 +3070,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1w4cm89nv2g0s9hlj5wn9h0nfwzk08b3cvnys94q111annrmak86",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.64.tar.gz",
-      "version": "0.0.64"
+      "sha256": "0sci0kv565f1hf83547x6m7rla3zcy8a6xf3qv3y3fmvl250w911",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.66.tar.gz",
+      "version": "0.0.66"
     },
     "transmission": {
       "meta": {

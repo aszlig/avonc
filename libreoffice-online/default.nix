@@ -66,7 +66,9 @@ let
     discoveryXml = "${package.src}/discovery.xml";
     loolLeafletUrl = "${config.nextcloud.baseUrl}/loleaflet/"
                    + "${package.versionHash}/loleaflet.html?";
-    patch = patches/richdocuments.patch;
+    patch = if config.nextcloud.majorVersion >= 21
+            then patches/richdocuments-v4.patch
+            else patches/richdocuments.patch;
   } ''
     loolMimeTypesArray="$(extract-disco "$discoveryXml")"
     substitute "$patch" "$out" \
