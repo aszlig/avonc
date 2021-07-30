@@ -1888,9 +1888,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0lfg2h3im51pa4js43h3dgvfi7vmxdsqiv9af3a6p9kdw2ab2yyk",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.1/mail.tar.gz",
-      "version": "1.10.1"
+      "sha256": "0dq0sjb6jw4r84fp3rxx42ik1mgh2v1cf4b0226vnspz12icqaaw",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.2/mail.tar.gz",
+      "version": "1.10.2"
     },
     "maps": {
       "meta": {
