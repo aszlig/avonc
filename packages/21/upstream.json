@@ -1976,9 +1976,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0gdhkl5gn0y8pip7m361ihiqr9n70lk2p63m9j4ilwanb6zx4rf5",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.1.0/notes.tar.gz",
-      "version": "4.1.0"
+      "sha256": "0i7lwmwf8j48ylcjad9mmdvr7kqvwca0xfpz45ibw1q25ciyrqjm",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.1.1/notes.tar.gz",
+      "version": "4.1.1"
     },
     "notifications": {
       "meta": {
@@ -2104,9 +2104,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "1i3lim5224hnv4c8bw6vpa0bpr1i8mpgbk636467cmd7rsfqf0w6",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v7.0.2/onlyoffice.tar.gz",
-      "version": "7.0.2"
+      "sha256": "01mv0idgz5g9wmqraisiikg37b15xn44lq8qzxb134x2xgld250i",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v7.1.0/onlyoffice.tar.gz",
+      "version": "7.1.0"
     },
     "openhab": {
       "meta": {
@@ -3070,9 +3070,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0sci0kv565f1hf83547x6m7rla3zcy8a6xf3qv3y3fmvl250w911",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.66.tar.gz",
-      "version": "0.0.66"
+      "sha256": "0r2l0pxjnfgs7zc4z7j27swksywc28fy8v7dfxrfm94llwrl85wn",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.68.tar.gz",
+      "version": "0.0.68"
     },
     "transmission": {
       "meta": {
@@ -3087,6 +3087,20 @@
       "sha256": "07a52z235szlfw4f54p4k83zm7hpf4s0dp1fyvqnzcjs4fhz02j5",
       "url": "https://github.com/qdii/transmission-nc/releases/download/0.7.2/transmission-0.7.2.tar.gz",
       "version": "0.7.2"
+    },
+    "tvshownamer": {
+      "meta": {
+        "description": "TV show namer organises your TV shows, series and seasons into a standard format. It uses themoviedb.org to scrape TV information to organise your folders.\n\nRename files from some.show.s01e03.avi To Some Show - S01E01 - Episode Name.avi easily",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "TV Show Namer",
+        "summary": "Organise you TV shows"
+      },
+      "sha256": "0sr0s0wfhw91kb677x75xhkf1nr9y5gwxwj1ay1d1zdp1kvx8iyi",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.1/tvshownamer.tar.gz",
+      "version": "0.0.1"
     },
     "twofactor_admin": {
       "meta": {
