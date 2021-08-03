@@ -346,9 +346,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "0pgvbvwkim72l3mwhxgzkrfbrps6sj4458fpmiibx5hwdx2vf6jh",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/722d15733489f1b6a4d99c18756f5f58/collectives-0.10.21.tar.gz",
-      "version": "0.10.21"
+      "sha256": "0pb14z2wm4l7skln774jwgdqm8x9xpy40fxnwkcd864g5dvxc4vr",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/eec66a98b9c43d835a1ab964e9f55900/collectives-0.11.21.tar.gz",
+      "version": "0.11.21"
     },
     "comments": {
       "meta": {
@@ -2538,9 +2538,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "05gw4sai8kgs038jlj9r6pwpzakycax7ywr11nak2i4qw3zi0gf7",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.8.1/riotchat.tar.gz",
-      "version": "0.8.1"
+      "sha256": "0nnxlabk6hgx6jvhlfyy4682fxghg2xaq519mpdrk1cqllaixxhd",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.0/riotchat.tar.gz",
+      "version": "0.9.0"
     },
     "scanner": {
       "meta": {
@@ -2695,9 +2695,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0wn0fv811aa656f79vv65dkl9gpp3bch185drw5zgh5h95la8n10",
-      "url": "https://gitnet.fr/attachments/1129b902-fe24-48cd-a31d-43ec167c7391",
-      "version": "1.25.2"
+      "sha256": "04fkm08nv9yq0gdl1rp7pl0zsgn8bdl9y1p8cvcv4sxqxh4i8mlz",
+      "url": "https://gitnet.fr/attachments/ba655e32-a1ae-4cb6-9129-2041e8f16644",
+      "version": "1.26.0"
     },
     "smb_test": {
       "meta": {
@@ -2986,9 +2986,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "14882qwqpinb2aagw56hrpz0yg9dyk0qlaklppmx8ar71wazgg0z",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.14.0/tasks.tar.gz",
-      "version": "0.14.0"
+      "sha256": "0vsgfsi7lx3dy47hzbhgh34q6xs9z8kvljfa1lszp5j4nrg1q4ww",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.14.1/tasks.tar.gz",
+      "version": "0.14.1"
     },
     "terms_of_service": {
       "meta": {
