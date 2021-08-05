@@ -305,6 +305,21 @@
       "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.2/carnet-nc-v0.24.2.tar.gz",
       "version": "0.24.2"
     },
+    "cas": {
+      "meta": {
+        "description": "This is an very basic and experimental implementation of the CAS server protocol for Nextcloud.\nIt is not another user backend for Nextcloud, instead it allows you to authenticate 3rd-party or\ncustom web applications against the Nextcloud user database.\n        \nIf you are creating a custom application and you want to integrate it seemlessly with Nextcloud login,\nyou can either follow the [CAS protocol specification](https://apereo.github.io/cas/4.2.x/protocol/CAS-Protocol-Specification.html)\nor better use one of the many available CAS client libraries.",
+        "homepage": "https://github.com/mziech/nextcloud-cas",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "CAS Server",
+        "summary": "CAS protocol server (IdP)"
+      },
+      "sha256": "0m7z7sb0igkqyc44g6szm3p8jz3khj2nd578hhq9cghkhqf4rpri",
+      "url": "https://github.com/mziech/nextcloud-cas/releases/download/v0.2.5/cas.tar.gz",
+      "version": "0.2.5"
+    },
     "checksum": {
       "meta": {
         "description": "Allows users to create a hash checksum of a file.\n        Possible algorithms are md5, sha1, sha256, sha384, sha512 and crc32.\n\n        Just open the details view of the file (Sidebar). There should be a new tab called \"Checksum\".\n        Select a algorithm and it will try to generate a hash.\n        If you want an other algorithm, just click on the reload button.",
@@ -331,9 +346,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "08qa3aj1s1rnwsn05as14rmzkrr8s19vfa0s0z9fnkgzhy654v4r",
-      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.14/circles-0.19.14.tar.gz",
-      "version": "0.19.14"
+      "sha256": "0957pclijvcbj4a0pwn53hzr2dj3gg9747dl0d2f9kj4mqsnrmld",
+      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.15/circles-0.19.15.tar.gz",
+      "version": "0.19.15"
     },
     "cloud_federation_api": {
       "meta": {
@@ -983,9 +998,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "0l9xl3fk4higfjz0dnp1snccg1qm1x0lwvn4vkj2408rdii1vfvj",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.24/files_mindmap-0.0.24.tar.gz",
-      "version": "0.0.24"
+      "sha256": "1zh1l5ps1qcafgzq4vnd8c7w71cqv27n4m5hahccl1s3bzshpq3s",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.25/files_mindmap-0.0.25.tar.gz",
+      "version": "0.0.25"
     },
     "files_pdfviewer": {
       "meta": {
