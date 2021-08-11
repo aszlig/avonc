@@ -272,9 +272,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "0qnqn58fdh58m6klzxsh5h4fn67ycqnlz2jm3gfmkjz4zpyf4h3i",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.11/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.11"
+      "sha256": "0vhjh1fhrh6qifq711yw2j6g2i1zhmrrcp2gszrymmmxfxnhqhm6",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.12/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.12"
     },
     "carnet": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0ab5qfpbchpwfyql9phn35i8mn0rm1kalhj3j951hg9c08ay8827",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.8.4/Cookbook-0.8.4.tar.gz",
-      "version": "0.8.4"
+      "sha256": "1jm67c28ai8glnz196hhkcis73blzlx0wlysvyhqim6cfpbc1gnn",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.2/Cookbook-0.9.2.tar.gz",
+      "version": "0.9.2"
     },
     "cospend": {
       "meta": {
@@ -1950,9 +1950,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "0hh9hqhda9msdy80bd6syrkyf4scwfb5m6frvn015lwjrnpqr0im",
-      "url": "https://dalliance.net/listman/listman-20.0.6.tar.gz",
-      "version": "20.0.6"
+      "sha256": "07hd4214ws36m5x219nhn4myzyy7301pfa04m5kydfid9ndgvyr7",
+      "url": "https://dalliance.net/listman/listman-20.0.7.tar.gz",
+      "version": "20.0.7"
     },
     "loganalyzer": {
       "meta": {
@@ -2023,6 +2023,21 @@
       "sha256": "0dq0sjb6jw4r84fp3rxx42ik1mgh2v1cf4b0226vnspz12icqaaw",
       "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.2/mail.tar.gz",
       "version": "1.10.2"
+    },
+    "majordomo": {
+      "meta": {
+        "description": "Using this app you can automatically synchronize your user's to a\n[Majordomo mailing list manager](https://en.wikipedia.org/wiki/Majordomo_(software)).\nIt is possible to configure multiple mailing lists at any list server to include or exclude selected groups, users and other email addresses.\n\nImport of existing mailing list memberships is supported, as well as reviewing changes before you apply them.\nAt your option, this app will keep your mailing list memberships up-to-date on a daily basis.\n\nThis app requires the PHP `imap` module and a dedicated IMAP mailbox to function!",
+        "homepage": "https://github.com/mziech/nextcloud-majordomo",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Majordomo",
+        "summary": "Synchronize users and groups with the Majordomo mailing list manager"
+      },
+      "sha256": "1bkw698bdz2qhbj77zvf3fcwcq16g7bqr6pjhwxrclhbgl96mh11",
+      "url": "https://github.com/mziech/nextcloud-majordomo/releases/download/v1.0.1/majordomo.tar.gz",
+      "version": "1.0.1"
     },
     "maps": {
       "meta": {
@@ -2773,9 +2788,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0nnxlabk6hgx6jvhlfyy4682fxghg2xaq519mpdrk1cqllaixxhd",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.0/riotchat.tar.gz",
-      "version": "0.9.0"
+      "sha256": "1ailyr0qhqrwpl0y2jg455kaq3gscdsfyrwwg9yj894vxxm0gxas",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.1/riotchat.tar.gz",
+      "version": "0.9.1"
     },
     "scanner": {
       "meta": {
@@ -2817,9 +2832,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "0n4zrzv9zqz34njyafzi8gpx6kw1wh0zl85b59qhywfxhfdvp4d0",
-      "url": "https://download.sendent.nl/serverapp/1.2.4/sendent.tar.gz",
-      "version": "1.2.4"
+      "sha256": "13kfh0vnyffi2dbwwxmq000hngazj4dmyqgmj8dsszwgyx289zic",
+      "url": "https://download.sendent.nl/serverapp/1.2.7/sendent.tar.gz",
+      "version": "1.2.7"
     },
     "sensorlogger": {
       "meta": {
@@ -3334,9 +3349,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0r2l0pxjnfgs7zc4z7j27swksywc28fy8v7dfxrfm94llwrl85wn",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.68.tar.gz",
-      "version": "0.0.68"
+      "sha256": "1ag2qjc90ilh1jpzm9hkp0pcyb9f9n2g6n5r7rkag0ax9bjyl9vy",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.69.tar.gz",
+      "version": "0.0.69"
     },
     "transmission": {
       "meta": {
@@ -3362,9 +3377,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0sr0s0wfhw91kb677x75xhkf1nr9y5gwxwj1ay1d1zdp1kvx8iyi",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.1/tvshownamer.tar.gz",
-      "version": "0.0.1"
+      "sha256": "1dj8xdl5rsiy82739xpswy9675gddw2p67xp7f76cs3z9d5ri4j2",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.2/tvshownamer.tar.gz",
+      "version": "0.0.2"
     },
     "twofactor_admin": {
       "meta": {
@@ -3594,9 +3609,9 @@
         "name": "OpenID Connect user backend",
         "summary": "Use an openID connect backed to login to your Nextcloud"
       },
-      "sha256": "1g9al604anzx9pk3078kpn612lhmv94w2psyxp3nikfn03rxmyy7",
-      "url": "https://github.com/nextcloud/user_oidc/releases/download/v0.3.2/user_oidc.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0kh7pbfn3k957pfyyjyjk021da47qj7gw5x75p090fs4fz1wf1xj",
+      "url": "https://github.com/nextcloud-releases/user_oidc/releases/download/v1.0.0/user_oidc.tar.gz",
+      "version": "1.0.0"
     },
     "user_pwauth": {
       "meta": {
