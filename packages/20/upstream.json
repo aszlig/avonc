@@ -1862,9 +1862,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "0l3fkk27c0nn5l7lp9r1i936rjh78vsmqgq6bmp1ygpxix74s4d3",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.5/keeweb-0.6.5.tar.gz",
-      "version": "0.6.5"
+      "sha256": "0y4fdaizjc2ykc0j0pil54igqgrjcsvbaxaxg8hm65h586ylxxl1",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.6/keeweb-0.6.6.tar.gz",
+      "version": "0.6.6"
     },
     "ldap_contacts_backend": {
       "meta": {
@@ -2974,9 +2974,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "04fkm08nv9yq0gdl1rp7pl0zsgn8bdl9y1p8cvcv4sxqxh4i8mlz",
-      "url": "https://gitnet.fr/attachments/ba655e32-a1ae-4cb6-9129-2041e8f16644",
-      "version": "1.26.0"
+      "sha256": "0jh8wpvjq1ravgm9h202s8dyb8y32c2zdk98m4z082jqz55qrmql",
+      "url": "https://gitnet.fr/attachments/4ec27dd9-09ba-4885-af17-d665f2001d96",
+      "version": "1.27.1"
     },
     "smb_test": {
       "meta": {
