@@ -529,9 +529,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0019xhhil6k8pzwsli4dh9cn1dxf7p78cd2mxqsxnfnqf4anf7kq",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v1.21.1/discoursesso-1.21.1.tar.gz",
-      "version": "1.21.1"
+      "sha256": "1nmlq36w2dlx0hpzmx6lics44vgjmsyfq4ycifbxpy0c7hnlz2zy",
+      "url": "https://github.com/habi-dat/nextcloud/releases/download/1.22.0/discoursesso-1.22.0.tar.gz",
+      "version": "1.22.0"
     },
     "documentserver_community": {
       "meta": {
@@ -2615,9 +2615,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0jh8wpvjq1ravgm9h202s8dyb8y32c2zdk98m4z082jqz55qrmql",
-      "url": "https://gitnet.fr/attachments/4ec27dd9-09ba-4885-af17-d665f2001d96",
-      "version": "1.27.1"
+      "sha256": "13bsaxdly51528v503r44iwp9wa4qvniwwvmmahkpxdq3znwf6sn",
+      "url": "https://gitnet.fr/attachments/c9536ef0-45d2-40bb-a1b0-968378538c9d",
+      "version": "1.27.2"
     },
     "smb_test": {
       "meta": {
@@ -3017,9 +3017,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "1dj8xdl5rsiy82739xpswy9675gddw2p67xp7f76cs3z9d5ri4j2",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.2/tvshownamer.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0qqp7zj3irnr79j5nxa1m3ks501zplvs73qg0kv0sy9jfl5b278i",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.3/tvshownamer.tar.gz",
+      "version": "0.0.3"
     },
     "twofactor_admin": {
       "meta": {

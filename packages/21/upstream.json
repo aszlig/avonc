@@ -115,7 +115,7 @@
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, AIF, AAC, streams, ... with playlist support and SONOS integration.\n\n- Cover &amp; List view for all categories\n- tuned for big audio collections\n- Smart lists &amp; standard playlists &amp; local playlists\n- Stream URLs\n- Favorites, Sidebar &amp; Search integration\n- Specifying media folder (with exclude functionality)\n- One Click Play in Files app\n- Hardware media keys &amp; Chrome/Android player\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
+        "description": "A music player for FLAC, MP3, MP4, AIF, AAC, streams, ... with playlist support and SONOS integration.\n\n- Cover or List view by various categories\n- tuned for big audio collections\n- Smart lists &amp; playlists\n- Stream URLs\n- Favorites, Search &amp; Collaborative Tag integration\n- Specifying media folder (with exclude functionality)\n- Hardware media keys &amp; Chrome/Android/macOS integration\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- [ID3 editor](https://github.com/rello/audioplayer_editor) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "0d2fp62r5bss1p767l7c4amxqpqlbvpahb4cgxy0rcssxjg1nxhp",
-      "url": "https://github.com/Rello/audioplayer/releases/download/3.1.0/audioplayer-3.1.0.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0wb6xw5lqg9swacmznih79vmz41jlaph7hnc5wnqscskzynfs5rw",
+      "url": "https://github.com/Rello/audioplayer/releases/download/3.2.1/audioplayer-3.2.1.tar.gz",
+      "version": "3.2.1"
     },
     "audioplayer_editor": {
       "meta": {
@@ -199,9 +199,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "198s5kqsfxjcjdbiz2qhqaknq9kbgigcwaalm3lhjy2vqw4hvy9d",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.4.0/bookmarks-4.4.0.tar.gz",
-      "version": "4.4.0"
+      "sha256": "0bi7r9fl1aa3lqq4gv78say4g1xj9y5xldywzfp3vijklw1zrh27",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.4.1/bookmarks-4.4.1.tar.gz",
+      "version": "4.4.1"
     },
     "breezedark": {
       "meta": {
@@ -244,9 +244,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "08wgrnmjmvqc3pjaz0kbdgm367m2sa19480qmnclwxh1cpkrx8j7",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.3.1/calendar.tar.gz",
-      "version": "2.3.1"
+      "sha256": "1dw0xvcrilm76sgl44ryfyqbcaa5ymlw2ka8ay2m5h5xhhg93kli",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.3.2/calendar.tar.gz",
+      "version": "2.3.2"
     },
     "camerarawpreviews": {
       "meta": {
@@ -361,9 +361,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "0pb14z2wm4l7skln774jwgdqm8x9xpy40fxnwkcd864g5dvxc4vr",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/eec66a98b9c43d835a1ab964e9f55900/collectives-0.11.21.tar.gz",
-      "version": "0.11.21"
+      "sha256": "0k7zlxdl2g7xfhn146rbbvgjv21lcvvwrc96gw4cph1m3k2kh21p",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/cf13366c57b45e08b1d2f8d2668391ac/collectives-0.12.21.tar.gz",
+      "version": "0.12.21"
     },
     "comments": {
       "meta": {
@@ -515,9 +515,9 @@
         "name": "Discourse SSO",
         "summary": "Enable Discourse to authenticate via Nextcloud"
       },
-      "sha256": "0019xhhil6k8pzwsli4dh9cn1dxf7p78cd2mxqsxnfnqf4anf7kq",
-      "url": "https://github.com/soudis/discoursesso/releases/download/v1.21.1/discoursesso-1.21.1.tar.gz",
-      "version": "1.21.1"
+      "sha256": "1nmlq36w2dlx0hpzmx6lics44vgjmsyfq4ycifbxpy0c7hnlz2zy",
+      "url": "https://github.com/habi-dat/nextcloud/releases/download/1.22.0/discoursesso-1.22.0.tar.gz",
+      "version": "1.22.0"
     },
     "documentserver_community": {
       "meta": {
@@ -1266,9 +1266,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "04hvb24gvzifkpi2y5xxpxrb3jm2bhh2dgqskp0x2wg2h9djhn8m",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.9.tar.gz",
-      "version": "1.0.9"
+      "sha256": "132j49ma925z4ncq12svl2qjwrcix7jcxn9dayk5ic7p8ysd5p8x",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/1.0.12/gpoddersync.tar.gz",
+      "version": "1.0.12"
     },
     "gpxedit": {
       "meta": {
@@ -1385,9 +1385,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "1mnsfxzaxzg8k9j3hah0zw0mzna1hymz09986hqml2ivb8zmiqcl",
-      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.0.0/guests.tar.gz",
-      "version": "2.0.0"
+      "sha256": "02wbdajw9m7qm07kgqh7al7hwkmvhhjra2s9brhc1ijwlb0yw2vi",
+      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.0.1/guests.tar.gz",
+      "version": "2.0.1"
     },
     "hancomoffice": {
       "meta": {
@@ -1903,9 +1903,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0dq0sjb6jw4r84fp3rxx42ik1mgh2v1cf4b0226vnspz12icqaaw",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.2/mail.tar.gz",
-      "version": "1.10.2"
+      "sha256": "1xhh5jhih8kinbkw7q9c8k0lskpfddz9cpb79y9gp1kwinxjh4yz",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.3/mail.tar.gz",
+      "version": "1.10.3"
     },
     "majordomo": {
       "meta": {
@@ -2061,9 +2061,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "18ksyw3s5izircmy4ik8q09n6qv3yc4m5nrh36dzw4zbzd9vggkv",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.11/ocdownloader-1.7.11.tar.gz",
-      "version": "1.7.11"
+      "sha256": "1n3iz7b0gazz79pbfps5nraaj6ksyrhsiqfjqa2vm8k4rnwcyq2k",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.12/ocdownloader-1.7.12.tar.gz",
+      "version": "1.7.12"
     },
     "ocjobs": {
       "meta": {
@@ -2177,9 +2177,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0llhnjblhl25a1dahjrqvinmy7w91547d1bfqpsjbm8wffgad134",
-      "url": "https://releases.passman.cc/passman_2.3.8.tar.gz",
-      "version": "2.3.8"
+      "sha256": "1fglsvp2c1g4c96h8j9lqkazbyql4p8f6hlp10bpj3w140igw8ah",
+      "url": "https://releases.passman.cc/passman_2.3.10.tar.gz",
+      "version": "2.3.10"
     },
     "password_policy": {
       "meta": {
@@ -2725,9 +2725,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0jh8wpvjq1ravgm9h202s8dyb8y32c2zdk98m4z082jqz55qrmql",
-      "url": "https://gitnet.fr/attachments/4ec27dd9-09ba-4885-af17-d665f2001d96",
-      "version": "1.27.1"
+      "sha256": "13bsaxdly51528v503r44iwp9wa4qvniwwvmmahkpxdq3znwf6sn",
+      "url": "https://gitnet.fr/attachments/c9536ef0-45d2-40bb-a1b0-968378538c9d",
+      "version": "1.27.2"
     },
     "smb_test": {
       "meta": {
@@ -2770,9 +2770,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0n8rw7ylsbj27imd1vym03d3b9dfzf2pgmi6wq81h085b739b2dr",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.6.19/release.tar.gz",
-      "version": "4.6.19"
+      "sha256": "175vf6lairq8la2x7cv0vqzb5z99bzw1amgail0cxg7jpnvamvqg",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.3/release.tar.gz",
+      "version": "4.8.3"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3128,9 +3128,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "1dj8xdl5rsiy82739xpswy9675gddw2p67xp7f76cs3z9d5ri4j2",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.2/tvshownamer.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0qqp7zj3irnr79j5nxa1m3ks501zplvs73qg0kv0sy9jfl5b278i",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.3/tvshownamer.tar.gz",
+      "version": "0.0.3"
     },
     "twofactor_admin": {
       "meta": {
