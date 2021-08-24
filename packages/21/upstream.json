@@ -350,6 +350,21 @@
       "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.15/cms_pico-v1.0.15.tar.gz",
       "version": "1.0.15"
     },
+    "co2clock": {
+      "meta": {
+        "description": "Displays a clock showing the remaining global CO2 budget (and the time we will have used it up at the current rate) on the Nextcloud login pages of Nextcloud itself and password protected shared links.\n\nSource for the clock: [mcc-berlin.net](https://www.mcc-berlin.net/en/research/co2-budget.html)",
+        "homepage": "https://github.com/thecalcaholic/nextcloud-co2-clock",
+        "isShipped": false,
+        "licenses": [
+          "mpl"
+        ],
+        "name": "MCC CO2 Clock",
+        "summary": "Displays a CO2 budget clock on the Nextcloud login page"
+      },
+      "sha256": "1fcach2nnx806wbvhgdc6x32h11i2v75lshnr1dkf10hy5fzvslz",
+      "url": "https://github.com/theCalcaholic/nextcloud-co2-clock/releases/download/v0.1.3/co2clock.tar.gz",
+      "version": "0.1.3"
+    },
     "collectives": {
       "meta": {
         "description": "Collectives is a Nextcloud App for activist and community projects to organize together.\nCome and gather in collectives to build shared knowledge.\n\n*  **Collective and non-hierarchical workflow by heart**: Collectives are\n  tied to a [Nextcloud Circle](https://github.com/nextcloud/circles) and\n  owned by the collective.\n*  **Collaborative page editing** like known from Etherpad thanks to the\n  [Text app](https://github.com/nextcloud/text).\n*  **Well-known [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax**\n  for page formatting.\n\n## Installation\n\nIn your Nextcloud instance, simply navigate to **Apps**, find the\n**Circles** and **Collectives** apps and enable them.",
@@ -611,7 +626,7 @@
     },
     "electronicsignatures": {
       "meta": {
-        "description": "# Features\n-  Accept Qualified Electronic Signatures (QES - strongest legal value) in PDF or ASICE formats\n-  Accept Simple Electronic Signatures (email based signature - simple to sign)\n-  Own your data. Accept QES while never exposing your file to a remote service\n\nCurrently, this app enables the user to gather a single signature onto an existing file:\n1. Pick a file which you want signed by another person\n1. Select \"Signing\" in the file's dropdown menu\n1. Enter the signer's email address\n1. The signer receives a link on their e-mail\n1. They sign the document\n1. The signed document appears in your Nextcloud instance, next to the original file\n\n# Built on top of eID Easy\nThe app uses [eID Easy](https://eideasy.com) as its signing back-end. eID Easy handles the signing process. Refer to [eID Easy's pricing](https://eideasy.com/pricing/) to see the cost of each signing method.\n\n# Two levels of electronic signatures\n*Qualified Electronic Signature* - the strongest kind of electronic signature. The signer's identity and approval is linked to the file contents and a timestamp by cryptographic means. The signing time and the document's integrity can be verified to ensure that the document has not been tampered with after signing.\n\nWith QES, you can opt to only send the file hashes to eID Easy. This way, the actual content of your files is never exposed to a third party.\n\n*Simple Electronic Signature* - the simplest kind of electronic signature. eID Easy sends a unique link to the signer's e-mail. The signer opens the link, reviews the file and confirms their approval. A visual signature is added to the file. eId Easy adds a cryptographic e-seal to the file, to ensure that it cannot be modified after signing.\n\nWith Simple Electronic Signatures, the contents of your file need to be sent to eID Easy. This provides legal value to the signature, as we can state with certainty that the signer had the opportunity to review the file they were signing.\n\n# Feedback is welcome\nAre you not seeing your preferred signature card / signing app / other QES method? Are we not quite covering your use case? Let us know at support@eideasy.com",
+        "description": "# Features\n-  Accept Qualified Electronic Signatures (QES - strongest legal value) in PDF or ASICE formats\n-  Accept Simple Electronic Signatures (email based signature - simple to sign)\n-  Own your data. Accept QES while never exposing your file to a remote service\n\nCurrently, this app enables the user to gather a single signature onto an existing file:\n1. Pick a file which you want signed by another person\n1. Select \"Signing\" in the file's dropdown menu\n1. Enter the signer's email address\n1. The signer receives a link on their e-mail\n1. They sign the document\n1. The signed document appears in your Nextcloud instance, next to the original file\n\n# Built on top of eID Easy\nThe app uses [eID Easy](https://eideasy.com) as its signing back-end. eID Easy handles the signing process. Refer to [eID Easy's pricing](https://eideasy.com/pricing/) to see the cost of each signing method.\n\n### Get 10 to try out eID Easy\nFor limited time only, we're offering 10 of credit that you can spend to try out all the eID Easy signing services.\n\nWrite to support@eideasy.com to claim this offer.\n\n# Two levels of electronic signatures\n*Qualified Electronic Signature* - the strongest kind of electronic signature. The signer's identity and approval is linked to the file contents and a timestamp by cryptographic means. The signing time and the document's integrity can be verified to ensure that the document has not been tampered with after signing.\n\nWith QES, you can opt to only send the file hashes to eID Easy. This way, the actual content of your files is never exposed to a third party.\n\n*Simple Electronic Signature* - the simplest kind of electronic signature. eID Easy sends a unique link to the signer's e-mail. The signer opens the link, reviews the file and confirms their approval. A visual signature is added to the file. eId Easy adds a cryptographic e-seal to the file, to ensure that it cannot be modified after signing.\n\nWith Simple Electronic Signatures, the contents of your file need to be sent to eID Easy. This provides legal value to the signature, as we can state with certainty that the signer had the opportunity to review the file they were signing.\n\n# Feedback is welcome\nAre you not seeing your preferred signature card / signing app / other QES method? Are we not quite covering your use case? Let us know at support@eideasy.com",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -619,9 +634,9 @@
         "name": "Electronic Signatures",
         "summary": "Accept electronic signatures on your documents."
       },
-      "sha256": "1znp6c9v3rnki8y2p6ihxc1zzs8lk32f22ipjbizasfj4l79jkka",
-      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.6.1/v1.6.1.tar.gz",
-      "version": "1.6.1"
+      "sha256": "0rh1abwxm5j4xbj1yc5ml8ghvyhdxs3qpf73i0xnjn33qw1621wn",
+      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.6.2/v1.6.2.tar.gz",
+      "version": "1.6.2"
     },
     "emlviewer": {
       "meta": {
@@ -995,9 +1010,9 @@
         "name": "Retention",
         "summary": "This application allows for automatic deletion of files after a given time."
       },
-      "sha256": "1hszp83jbx2y4314qh88f0zqavf6lpqsz1xr7s168ks2fj7x5892",
-      "url": "https://github.com/nextcloud/files_retention/releases/download/v1.10.1/files_retention-1.5.1.tar.gz",
-      "version": "1.10.1"
+      "sha256": "1ll5wl4qqf70fr6qhrbfykk1qrai25sgn7sa3wk50j53jv0c5kkp",
+      "url": "https://github.com/nextcloud-releases/files_retention/releases/download/v1.10.2/files_retention-1.10.2.tar.gz",
+      "version": "1.10.2"
     },
     "files_rightclick": {
       "meta": {
@@ -1266,9 +1281,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "132j49ma925z4ncq12svl2qjwrcix7jcxn9dayk5ic7p8ysd5p8x",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/1.0.12/gpoddersync.tar.gz",
-      "version": "1.0.12"
+      "sha256": "0dqgmv6qph7fy5grm3vq73py99ssyx802jxv0bzchf3j9rb2kiw9",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/1.0.13/gpoddersync.tar.gz",
+      "version": "1.0.13"
     },
     "gpxedit": {
       "meta": {
@@ -1385,9 +1400,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "02wbdajw9m7qm07kgqh7al7hwkmvhhjra2s9brhc1ijwlb0yw2vi",
-      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.0.1/guests.tar.gz",
-      "version": "2.0.1"
+      "sha256": "0sfa2clalrpn5cvr3ny9y2c7vxl1p4knhfavzlgjxnc3x87lm31x",
+      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.0.2/guests.tar.gz",
+      "version": "2.0.2"
     },
     "hancomoffice": {
       "meta": {
@@ -2471,7 +2486,7 @@
     },
     "recognize": {
       "meta": {
-        "description": "This app goes through your photo collection and adds fitting tags, automatically categorizing your photos.\n\nThis is still experimental and currently only works for photos that don't reside in external storage.\n\nRequirements:\n- php 7.3 and above\n- Processor\n  - x86 64bit\n  - ARM 64bit\n  - ARMv7 (32bit)\n- ~2GB of free RAM\n\nThe app does not send any sensitive data to cloud providers or similar services. All image processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
+        "description": "This app goes through your photo collection and adds fitting tags, automatically categorizing your photos.\nIt also recognizes faces from photos set in your contacts.\n\nThis is still experimental and currently only works for photos that don't reside in external storage.\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- Processor\n  - x86 64bit\n  - ARM 64bit\n  - ARMv7 (32bit)\n- System with glibc (usually the norm; Alpine linux is *not* such a system)\n- ~3GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All image processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
         "homepage": "https://github.com/marcelklehr/recognize",
         "isShipped": false,
         "licenses": [
@@ -2480,9 +2495,9 @@
         "name": "Recognize",
         "summary": "Image recognition for your photos"
       },
-      "sha256": "06m0ipl5nl2c35kxx7zfm93w9b8sv1bc85001dwqq86kq7q95vmn",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.4.2/recognize-1.4.2.tar.gz",
-      "version": "1.4.2"
+      "sha256": "03a7lcrd2ih0qj8603215rc87la32xka333b99viz0319b6jc7ww",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.5.8/recognize-1.5.8.tar.gz",
+      "version": "1.5.8"
     },
     "recommendations": {
       "meta": {
@@ -2523,9 +2538,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "0nnzx26fqdlprllp4gwglrdnxi0cwpzpn7wv9fbflhnsm0339wwz",
-      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v4.2.1/richdocuments.tar.gz",
-      "version": "4.2.1"
+      "sha256": "0178ld8ja17khbfkiqynyyp9r14l9dg9fy4iixqychf3qskfs9ms",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v4.2.2/richdocuments.tar.gz",
+      "version": "4.2.2"
     },
     "richdocumentscode": {
       "meta": {
@@ -2568,9 +2583,24 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1ailyr0qhqrwpl0y2jg455kaq3gscdsfyrwwg9yj894vxxm0gxas",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.1/riotchat.tar.gz",
-      "version": "0.9.1"
+      "sha256": "0q333vyhi6fjaqsayg4pb220ja3b6v9afsbdi7k050j2lhqqxy7h",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.2/riotchat.tar.gz",
+      "version": "0.9.2"
+    },
+    "root_cache_cleaner": {
+      "meta": {
+        "description": "Clean duplicate items from the root filecache by deleting user specific entries that got indexed into the root cache by mistake.",
+        "homepage": "https://github.com/icewind1991/root_cache_cleaner",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Root cache cleaner",
+        "summary": "Clean duplicate items from the root filecache."
+      },
+      "sha256": "0zd5hb59fhj75nzcj4swpailnif7v7szgsdhg6zd0pqlnavfvswk",
+      "url": "https://github.com/icewind1991/root_cache_cleaner/releases/download/v0.1.0/root_cache_cleaner.tar.gz",
+      "version": "0.1.0"
     },
     "scanner": {
       "meta": {
@@ -3004,6 +3034,21 @@
       "sha256": "0rikw23cb7r7jkla25ky4rr919zs1w5n7zdpmxxxkdg3g9xdkfxx",
       "url": "https://github.com/nickv-nextcloud/talk_simple_poll/releases/download/v1.3.1/talk_simple_poll-1.3.1.tar.gz",
       "version": "1.3.1"
+    },
+    "talked": {
+      "meta": {
+        "description": "# Talked client\n\nCall recording for Nextcloud Talk. This app provides a chat based interface to interact with the Talked server component that handles the actual recording.\n\nCheck out the [Talked server repo](https://github.com/MetaProvide/talked) for more information on how this works and what the current limitations are.\n\n## Installation and setup\n\nIt's available in the [Nextcloud app store](https://apps.nextcloud.com/apps/talked), just search for Talked and you should be able to find it.\n\nOr you can clone this repo into your app folder and enable it in the app menu in Nextcloud.\n\n### Register chat command\n\nTo use the chat command to interact with the Talked server, the command first needs to be registered with Talk. You can register a command using the occ command. The exact command depends on how you have installed Nextcloud. Below I'll have an example for the official docker container and the snap. For more information about registering a chat command, check out the Talk documenation: https://nextcloud-talk.readthedocs.io/en/latest/commands/\n\nYou will find two examples for both the docker container and snap. The only difference is whether you want to allow all registered users in a room to start a recording, or only the moderators.\n\n#### Docker container\n\n##### Only moderators can use\n```\nphp occ talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 1\n```\n##### All registered users can use\n```\nphp occ talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 2\n```\n\n#### Snap\n\n##### Only moderators can use\n```\nocc talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 1\n```\n##### All registered users can use\n```\nocc talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 2\n```\n\n### Configuring Talked\n\nAfter you have registered the Talk command you should configure Talked. If you head to Admin settings &gt; Talk, then you will find the settings for Talked near the bottom. Here you can specify the URL for your Talked server and whether to use HTTP Basic auth, and the credentials for HTTP Basic auth.\n\nThe http / https should be included in the url, for example: https://talked.example.com\n\n## Usage\n\nTo use Talked, simply use the `/recording` command in a chat room. If you don't specify any options or run `/recording help` you will get a help message telling you about the different options. The following options are available:\n\n`/recording start` - starts a recording in the current room.\n`/recording stop`  - stops the active recording\n`/recording status` - checks if there is an active recording\n`/recording info` - prints the version number of the Talked server.\n`/recording help` - prints a help message with the different options.",
+        "homepage": "https://github.com/MetaProvide/talked-client",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Talked",
+        "summary": "Call recording for Nextcloud Talk"
+      },
+      "sha256": "1qfdwqh0s1d0s6872vf96yjqsaki3dka7vijm9g4almfg2h5vj00",
+      "url": "https://github.com/MetaProvide/talked-client/releases/download/v0.1.0/talked.tar.gz",
+      "version": "0.1.0"
     },
     "tasks": {
       "meta": {
