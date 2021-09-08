@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "04lqj84yvbljbdrhqn3a5k6smimmyzbb9padg9qcpf78m57r6yqz",
-      "url": "https://github.com/Rello/analytics/releases/download/3.6.0/analytics-3.6.0.tar.gz",
-      "version": "3.6.0"
+      "sha256": "07bdfhjzm1mvchyjaj3gsfckpmrn95kxnbkgfc5sdg703asr4q5y",
+      "url": "https://github.com/Rello/analytics/releases/download/3.6.1/analytics-3.6.1.tar.gz",
+      "version": "3.6.1"
     },
     "announcementcenter": {
       "meta": {
@@ -360,9 +360,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "0npd743jqrnxnhq8d4b8fwbw7r456yzfi59li7ahp1hdmcg3mlsp",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.15/cms_pico-v1.0.15.tar.gz",
-      "version": "1.0.15"
+      "sha256": "1n3fiakvyj6xrrb8r95y3v7c2lap3243c5152sggi3sf587c09yb",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.16/cms_pico-v1.0.16.tar.gz",
+      "version": "1.0.16"
     },
     "co2clock": {
       "meta": {
@@ -618,9 +618,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "0r1j8xa1clmgfzf68pbxd5cw54kr1r9h6rdx2yjg3msrjdqdhwzs",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.11/duplicatefinder.tar.gz",
-      "version": "0.0.11"
+      "sha256": "1q5aacxndbk7s9hk9z91kvmrgqmb2ijgz7sllbvp2njhdzb3s2vq",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.12/duplicatefinder.tar.gz",
+      "version": "0.0.12"
     },
     "ehr": {
       "meta": {
@@ -1333,7 +1333,7 @@
     },
     "gestion": {
       "meta": {
-        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud.\n\nVideo in user documentation\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
+        "description": "# Gestion Nextcloud application\n\nThis application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud\n\nPresentation video in user documentation\n\nIf you need to adapt this application to your country laws, please open issue.\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
         "homepage": "https://www.buymeacoffee.com/benjaminaimard",
         "isShipped": false,
         "licenses": [
@@ -1342,9 +1342,9 @@
         "name": "Gestion",
         "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "07lwzy2bnk7z1873cp333n3fwlwmcz0lgkxj8v58p51yc63pg8sw",
-      "url": "https://github.com/baimard/gestion/releases/download/1.0.4/gestion.tar.gz",
-      "version": "1.0.4"
+      "sha256": "0p6x2zlk5i1fw5ki1l24xghwlnq2gir9y7wdzrww1l3mxnylw2x6",
+      "url": "https://github.com/baimard/gestion/releases/download/1.1.1/gestion.tar.gz",
+      "version": "1.1.1"
     },
     "gpgmailer": {
       "meta": {
@@ -1466,7 +1466,7 @@
     },
     "groupfolders": {
       "meta": {
-        "description": "Admin configured folders shared with everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: encrypting the contents of group folders is currently not supported.",
+        "description": "Admin configured folders shared with everyone in a group.\n\nFolders can be configured from *Group folders* in the admin settings.\n\nAfter a folder is created, the admin can give access to the folder to one or more groups, control their write/sharing permissions and assign a quota for the folder.\n\nNote: Encrypting the contents of group folders is currently not supported.",
         "homepage": "https://github.com/nextcloud/groupfolders",
         "isShipped": false,
         "licenses": [
@@ -1475,9 +1475,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "1935dzzrskkcz3vc5ndg5pinl9zv2c3z6ifd47i0ydshzhcdhypy",
-      "url": "https://github.com/nextcloud-releases/groupfolders/releases/download/v8.2.2/groupfolders-8.2.2.tar.gz",
-      "version": "8.2.2"
+      "sha256": "03fqmbnp76b09g8pscaby9jg8icjg3zmqmrgapsldnjs46nqkqvx",
+      "url": "https://github.com/nextcloud-releases/groupfolders/releases/download/v8.2.3/groupfolders-8.2.3.tar.gz",
+      "version": "8.2.3"
     },
     "groupquota": {
       "meta": {
@@ -2095,9 +2095,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1j6jzxl4fdz67ppj9b4s5qx1ap2g8dr8zzfnphxrcp6p2ij7rs73",
-      "url": "https://github.com/owncloud/music/releases/download/v1.3.1/music_1.3.1_for_nextcloud.tar.gz",
-      "version": "1.3.1"
+      "sha256": "14wnsqxknj2padjb0a837j36bzr8hcg3vjjq5virzzjwqziafpia",
+      "url": "https://github.com/owncloud/music/releases/download/v1.3.3/music_1.3.3_for_nextcloud.tar.gz",
+      "version": "1.3.3"
     },
     "news": {
       "meta": {
@@ -2381,9 +2381,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "0q4p08yxni8fy7wv1wxamyjq8abr7p3yysqy4pddws78camlvps1",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12722/artifacts/raw/passwords.tar.gz",
-      "version": "2021.7.23"
+      "sha256": "128i66qiys6k93irkkn0jzbpxglqkb5rblx71l6955838y482m6s",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12799/artifacts/raw/passwords.tar.gz",
+      "version": "2021.9.20"
     },
     "pdfdraw": {
       "meta": {
@@ -2715,9 +2715,9 @@
         "name": "Recognize",
         "summary": "Image recognition for your photos"
       },
-      "sha256": "0wn6w510p0a5wgwf5gk2gj150wfar2qld3ggpjpj12xgvkmvg1n1",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.7/recognize-1.6.7.tar.gz",
-      "version": "1.6.7"
+      "sha256": "02z99sah2j00sxgv34iplwvy5j15w2r4i2cps50adcvgswns6akz",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.8/recognize-1.6.8.tar.gz",
+      "version": "1.6.8"
     },
     "recommendations": {
       "meta": {
@@ -3049,9 +3049,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "175vf6lairq8la2x7cv0vqzb5z99bzw1amgail0cxg7jpnvamvqg",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.3/release.tar.gz",
-      "version": "4.8.3"
+      "sha256": "0yxy69l6gqjx5xpabszri7ynbk9qxw1jncy00rp8dpn17jjvar3i",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.4/release.tar.gz",
+      "version": "4.8.4"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3138,9 +3138,9 @@
         "name": "Souvenirs",
         "summary": "Display \"souvenir\" albums in nextcloud web interface"
       },
-      "sha256": "16bqnrk01glkcp518pf5z2fla339ppg1af85kx82c6vccsxadkfq",
-      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.1.1/souvenirs.tar.gz",
-      "version": "1.1.1"
+      "sha256": "1fpwxs762cjwn1vvhfxvf93cg90k6gbq6fwq5ljqpvzlfjp70g65",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.2.0/souvenirs.tar.gz",
+      "version": "1.2.0"
     },
     "spgverein": {
       "meta": {
@@ -3379,9 +3379,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "13ixgkksdkdcba9pppkw0xxd017hp6skd6v5jxjl36dgrpia64pc",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.70.tar.gz",
-      "version": "0.0.70"
+      "sha256": "0fhkw48apy9f1mj6r7yxnh9f2bsc1nqf6v743ai1hh700j7h6xzp",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.71.tar.gz",
+      "version": "0.0.71"
     },
     "transmission": {
       "meta": {
@@ -3740,9 +3740,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "06iq7fazwvh05rhjv8rr2d61bnqijywifkdvb5s10646g46ni8dk",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.2/video_converter.tar.gz",
-      "version": "1.0.2"
+      "sha256": "17wvikrzb28xzkw4smh7yzbhkrhhifp3vn5irg5918f42ml0lh28",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.3/video_converter.tar.gz",
+      "version": "1.0.3"
     },
     "viewer": {
       "meta": {
