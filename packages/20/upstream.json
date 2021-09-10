@@ -1534,9 +1534,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "02bwilqvyn064g4kjmr6z40spdyhh7mss3x02j0p5r43mmc8749m",
-      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.2.1.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1sx76nyq1riiw72plds6j4rikkya8y1pd8i4vvc6rwylahs29zjg",
+      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "hidesidebars": {
       "meta": {
@@ -2098,6 +2098,21 @@
       "sha256": "14wnsqxknj2padjb0a837j36bzr8hcg3vjjq5virzzjwqziafpia",
       "url": "https://github.com/owncloud/music/releases/download/v1.3.3/music_1.3.3_for_nextcloud.tar.gz",
       "version": "1.3.3"
+    },
+    "ncdownloader": {
+      "meta": {
+        "description": "built-in torrent search;Start and stop Aria2 process, manage Aria2 from the web;\nDownload videos from youtube, twitter and other sites;",
+        "homepage": "https://github.com/shiningw/ncdownloader",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "NCDownloader",
+        "summary": "Aria2 and youtube-dl web gui for nextcloud"
+      },
+      "sha256": "0r9dsp2zbf0d029gm4ldvq5bb4xxyr49czvkhkngmmh1ks2n3vn6",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v1.0/ncdownloader-release.tar.gz",
+      "version": "0.0.2"
     },
     "news": {
       "meta": {
@@ -2715,9 +2730,9 @@
         "name": "Recognize",
         "summary": "Image recognition for your photos"
       },
-      "sha256": "02z99sah2j00sxgv34iplwvy5j15w2r4i2cps50adcvgswns6akz",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.8/recognize-1.6.8.tar.gz",
-      "version": "1.6.8"
+      "sha256": "16favl998sq5ww13drnayf1bgs7y4vlvadlddbc1j18yqxxmxm36",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.10/recognize-1.6.10.tar.gz",
+      "version": "1.6.10"
     },
     "recommendations": {
       "meta": {

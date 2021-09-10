@@ -516,9 +516,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1fqbllp59vk2awmvqyjanndsc4rm36kb86axd9b0xifyvgnpzdln",
-      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.4.3/deck.tar.gz",
-      "version": "1.4.3"
+      "sha256": "0c6sv8bbaam6zv8i3d3x26h7zgxnk693nqxb257ldzbyq5ncnppz",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.4.4/deck.tar.gz",
+      "version": "1.4.4"
     },
     "discoursesso": {
       "meta": {
@@ -1430,9 +1430,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "02bwilqvyn064g4kjmr6z40spdyhh7mss3x02j0p5r43mmc8749m",
-      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.2.1.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1sx76nyq1riiw72plds6j4rikkya8y1pd8i4vvc6rwylahs29zjg",
+      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.2.2.tar.gz",
+      "version": "1.2.2"
     },
     "hidesidebars": {
       "meta": {
@@ -1982,6 +1982,21 @@
       "url": "https://github.com/owncloud/music/releases/download/v1.3.3/music_1.3.3_for_nextcloud.tar.gz",
       "version": "1.3.3"
     },
+    "ncdownloader": {
+      "meta": {
+        "description": "built-in torrent search;Start and stop Aria2 process, manage Aria2 from the web;\nDownload videos from youtube, twitter and other sites;",
+        "homepage": "https://github.com/shiningw/ncdownloader",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "NCDownloader",
+        "summary": "Aria2 and youtube-dl web gui for nextcloud"
+      },
+      "sha256": "0r9dsp2zbf0d029gm4ldvq5bb4xxyr49czvkhkngmmh1ks2n3vn6",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v1.0/ncdownloader-release.tar.gz",
+      "version": "0.0.2"
+    },
     "news": {
       "meta": {
         "description": "A RSS/Atom Feed reader App for Nextcloud\n\n-  Synchronize your feeds with multiple mobile or desktop [clients](https://nextcloud.github.io/news/clients/)\n-  Automatic updates of your news feeds\n-  Free and open source under AGPLv3, no ads or premium functions\n\n**System Cron is currently required for this app to work**\nRequirements can be found [here](https://nextcloud.github.io/news/install/#dependencies)\nThe Changelog is available [here](https://github.com/nextcloud/news/blob/master/CHANGELOG.md)\n\nCreate a [bug report](https://github.com/nextcloud/news/issues/new/choose)\nCreate a [feature request](https://github.com/nextcloud/news/discussions/new)\nReport a [feed issue](https://github.com/nextcloud/news/discussions/new)",
@@ -2048,9 +2063,9 @@
         "name": "Client Push",
         "summary": "Push update support for clients"
       },
-      "sha256": "081w8vpbypazykq114vl246vp807gwkl6m3qb1wdk3n0n2za1hq0",
-      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.2.2/notify_push.tar.gz",
-      "version": "0.2.2"
+      "sha256": "1d1ck9k250fx3f096qxwmw8a2s73x03kkl7xdxk4py8689532a0m",
+      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.2.3/notify_push.tar.gz",
+      "version": "0.2.3"
     },
     "oauth2": {
       "meta": {
@@ -2495,9 +2510,9 @@
         "name": "Recognize",
         "summary": "Image recognition for your photos"
       },
-      "sha256": "02z99sah2j00sxgv34iplwvy5j15w2r4i2cps50adcvgswns6akz",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.8/recognize-1.6.8.tar.gz",
-      "version": "1.6.8"
+      "sha256": "16favl998sq5ww13drnayf1bgs7y4vlvadlddbc1j18yqxxmxm36",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.10/recognize-1.6.10.tar.gz",
+      "version": "1.6.10"
     },
     "recommendations": {
       "meta": {
