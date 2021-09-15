@@ -1,10 +1,10 @@
 diff --git a/appinfo/info.xml b/appinfo/info.xml
-index c6afb760..85968d04 100644
+index 15b59c4f..7839310c 100644
 --- a/appinfo/info.xml
 +++ b/appinfo/info.xml
 @@ -31,11 +31,7 @@ You can also edit your documents off-line with the Collabora Office app from the
  	<dependencies>
- 		<nextcloud min-version="21" max-version="23" />
+ 		<nextcloud min-version="15" max-version="20"/>
  	</dependencies>
 -	<background-jobs>
 -		<job>OCA\Richdocuments\Backgroundjobs\ObtainCapabilities</job>
@@ -15,18 +15,18 @@ index c6afb760..85968d04 100644
  		<command>OCA\Richdocuments\Command\UpdateEmptyTemplates</command>
  	</commands>
 diff --git a/lib/AppInfo/Application.php b/lib/AppInfo/Application.php
-index 5701d50e..20668b78 100644
+index 608d72f0..8d0ff2a2 100644
 --- a/lib/AppInfo/Application.php
 +++ b/lib/AppInfo/Application.php
-@@ -36,7 +36,6 @@ use OCA\Richdocuments\Preview\MSWord;
+@@ -35,7 +35,6 @@ use OCA\Richdocuments\Preview\MSWord;
  use OCA\Richdocuments\Preview\OOXML;
  use OCA\Richdocuments\Preview\OpenDocument;
  use OCA\Richdocuments\Preview\Pdf;
 -use OCA\Richdocuments\Service\CapabilitiesService;
  use OCA\Richdocuments\Service\FederationService;
- use OCA\Richdocuments\Template\CollaboraTemplateProvider;
  use OCA\Richdocuments\WOPI\DiscoveryManager;
-@@ -285,11 +284,7 @@ class Application extends App implements IBootstrap {
+ use OCA\Viewer\Event\LoadViewer;
+@@ -219,11 +218,7 @@ class Application extends App {
  			$appConfig->setAppValue('disable_certificate_verification', 'yes');
  
  			$discoveryManager = $this->getContainer()->query(DiscoveryManager::class);
@@ -37,7 +37,7 @@ index 5701d50e..20668b78 100644
 -			$capabilitiesService->refetch();
  		}
  	}
- 
+ }
 diff --git a/lib/Capabilities.php b/lib/Capabilities.php
 index 3cd1b8c5..dea03953 100644
 --- a/lib/Capabilities.php
@@ -115,7 +115,7 @@ index 3cd1b8c5..dea03953 100644
  	}
  }
 diff --git a/lib/Controller/SettingsController.php b/lib/Controller/SettingsController.php
-index bec87a4b..ebd0061d 100644
+index 6107880b..68eefd02 100644
 --- a/lib/Controller/SettingsController.php
 +++ b/lib/Controller/SettingsController.php
 @@ -11,10 +11,7 @@
@@ -129,7 +129,7 @@ index bec87a4b..ebd0061d 100644
  use \OCP\AppFramework\Controller;
  use OCP\AppFramework\Http;
  use OCP\AppFramework\Http\DataResponse;
-@@ -33,14 +30,8 @@ class SettingsController extends Controller{
+@@ -34,14 +31,8 @@ class SettingsController extends Controller{
  	private $appConfig;
  	/** @var IConfig */
  	private $config;
@@ -143,55 +143,45 @@ index bec87a4b..ebd0061d 100644
 -	private $capabilitiesService;
  	/** @var DemoService */
  	private $demoService;
- 
-@@ -50,30 +41,21 @@ class SettingsController extends Controller{
- 	 * @param IL10N $l10n
- 	 * @param AppConfig $appConfig
- 	 * @param IConfig $config
--	 * @param DiscoveryManager $discoveryManager
--	 * @param Parser $wopiParser
- 	 * @param string $userId
--	 * @param CapabilitiesService $capabilitiesService
- 	 */
- 	public function __construct($appName,
- 		IRequest $request,
+ 	/** @var ILogger */
+@@ -52,9 +43,6 @@ class SettingsController extends Controller{
  		IL10N $l10n,
  		AppConfig $appConfig,
  		IConfig $config,
 -		DiscoveryManager $discoveryManager,
 -		Parser $wopiParser,
- 		$userId,
 -		CapabilitiesService $capabilitiesService,
- 		DemoService $demoService
- 	) {
- 		parent::__construct($appName, $request);
+ 		DemoService $demoService,
+ 		ILogger $logger,
+ 		$userId
+@@ -63,9 +51,6 @@ class SettingsController extends Controller{
  		$this->l10n = $l10n;
  		$this->appConfig = $appConfig;
  		$this->config = $config;
 -		$this->discoveryManager = $discoveryManager;
 -		$this->wopiParser = $wopiParser;
- 		$this->userId = $userId;
 -		$this->capabilitiesService = $capabilitiesService;
  		$this->demoService = $demoService;
- 	}
- 
-@@ -83,15 +65,6 @@ class SettingsController extends Controller{
+ 		$this->logger = $logger;
+ 		$this->userId = $userId;
+@@ -77,16 +62,6 @@ class SettingsController extends Controller{
  	 * @throws \Exception
  	 */
  	public function checkSettings() {
 -		try {
 -			$response = $this->discoveryManager->fetchFromRemote();
 -		} catch (\Exception $e) {
+-			$this->logger->logException($e, ['app' => 'richdocuments']);
 -			return new DataResponse([
 -				'status' => $e->getCode(),
--				'message' => $e->getMessage()
+-				'message' => 'Could not fetch discovery details'
 -			], Http::STATUS_INTERNAL_SERVER_ERROR);
 -		}
 -
  		return new DataResponse();
  	}
  
-@@ -175,38 +148,6 @@ class SettingsController extends Controller{
+@@ -170,38 +145,6 @@ class SettingsController extends Controller{
  			$this->appConfig->setAppValue('canonical_webroot', $canonical_webroot);
  		}
  

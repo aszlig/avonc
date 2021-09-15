@@ -418,9 +418,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "19np3ys4adn6c0qwzd3c7jwsjlrb4psg8xf2s8bkrcrslqbfc9rl",
-      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.2/contacts.tar.gz",
-      "version": "4.0.2"
+      "sha256": "0y05prf68jkpq5a6gxcmdmi6kzk85ifv07v9ingl6sw9rzh928kc",
+      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.3/contacts.tar.gz",
+      "version": "4.0.3"
     },
     "contactsinteraction": {
       "meta": {
@@ -544,9 +544,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0ijhxdwqv6jy0l81py7gxlhyc1kl14s179w5dicjl9a9wqpxdyf7",
-      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.8/deck.tar.gz",
-      "version": "1.2.8"
+      "sha256": "0hbxnrz15m8mihfdwgh25zy81vcifpfsla63f0fqqx6pd5q005yp",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.9/deck.tar.gz",
+      "version": "1.2.9"
     },
     "discoursesso": {
       "meta": {
@@ -2110,9 +2110,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "0r9dsp2zbf0d029gm4ldvq5bb4xxyr49czvkhkngmmh1ks2n3vn6",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v1.0/ncdownloader-release.tar.gz",
-      "version": "0.0.2"
+      "sha256": "1303f38py1ayc1lh5s9m2wqqvgmkcpcg4l7rxiz4izn13a86kgq5",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4-alpha/ncdownloader-release.tar.gz",
+      "version": "0.0.4"
     },
     "news": {
       "meta": {
@@ -2266,9 +2266,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "00yi0i7ankg08nb2qvx9vk4j6naqgqnmn15gaj1mq57jw9klmq13",
-      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.0/officeonline.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1cakdmfaihviflkq9izh4jcrgxh120bq7a93bclyp72pgcgzrvys",
+      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.1/officeonline.tar.gz",
+      "version": "1.1.1"
     },
     "oidc_login": {
       "meta": {
@@ -2773,9 +2773,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "10f6lpk18zkfimkkn1wp9kql6zxj1gfz6i3slrh9wbdnh0j16z4v",
-      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.5/richdocuments.tar.gz",
-      "version": "3.8.5"
+      "sha256": "1np1r2lngp2nam9099kiysc6zlgzh7qlnxb2p0x2i4ijbnvq3xy5",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.6/richdocuments.tar.gz",
+      "version": "3.8.6"
     },
     "richdocumentscode": {
       "meta": {
@@ -2818,9 +2818,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0q333vyhi6fjaqsayg4pb220ja3b6v9afsbdi7k050j2lhqqxy7h",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.2/riotchat.tar.gz",
-      "version": "0.9.2"
+      "sha256": "0mdfwrlpfn4689a3656p0kx7ypp7lz50xx28i6cvvarrc06wh2nw",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.4/riotchat.tar.gz",
+      "version": "0.9.4"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -3064,9 +3064,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0yxy69l6gqjx5xpabszri7ynbk9qxw1jncy00rp8dpn17jjvar3i",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.4/release.tar.gz",
-      "version": "4.8.4"
+      "sha256": "07rifsx0b2nis0bgpjxz8fn0c8512jxr4yv5iymknsxlc22fkvyh",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.7/release.tar.gz",
+      "version": "4.8.7"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3543,6 +3543,21 @@
       "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.10/twofactor_webauthn-0.2.10.tar.gz",
       "version": "0.2.10"
     },
+    "unroundedcorners": {
+      "meta": {
+        "description": "# Unrounded Corners\nA Nextcloud app that restores the corners to their original looks, by unrounding them.",
+        "homepage": "https://github.com/OliverParoczai/nextcloud-unroundedcorners",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Unrounded Corners",
+        "summary": "An extension for making the corners in NextCloud unrounded"
+      },
+      "sha256": "1arxz1jq3z26dckwinhkkp7klm3qz0xmwi5w49v7186ws1wyzi8y",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.0/unroundedcorners-1.0.0.tar.gz",
+      "version": "1.0.0"
+    },
     "unsplash": {
       "meta": {
         "description": "Show a new random featured nature photo from Unsplash in your nextcloud.",
@@ -3645,18 +3660,18 @@
     },
     "user_oidc": {
       "meta": {
-        "description": "Allow configuring an OIDC server as Nextcloud user backend.",
+        "description": "Allows flexible configuration of an OIDC server as Nextcloud login user backend.",
         "homepage": "https://github.com/nextcloud/user_oidc",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "OpenID Connect user backend",
-        "summary": "Use an openID connect backed to login to your Nextcloud"
+        "summary": "Use an OpenID Connect backend to login to your Nextcloud"
       },
-      "sha256": "0kh7pbfn3k957pfyyjyjk021da47qj7gw5x75p090fs4fz1wf1xj",
-      "url": "https://github.com/nextcloud-releases/user_oidc/releases/download/v1.0.0/user_oidc.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0dy3dvn3ypp7jzj9hil1l98870py3araw9p2zmx861y21j70fj51",
+      "url": "https://github.com/nextcloud-releases/user_oidc/releases/download/v1.1.0/user_oidc.tar.gz",
+      "version": "1.1.0"
     },
     "user_pwauth": {
       "meta": {

@@ -515,9 +515,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0ijhxdwqv6jy0l81py7gxlhyc1kl14s179w5dicjl9a9wqpxdyf7",
-      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.8/deck.tar.gz",
-      "version": "1.2.8"
+      "sha256": "0hbxnrz15m8mihfdwgh25zy81vcifpfsla63f0fqqx6pd5q005yp",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.9/deck.tar.gz",
+      "version": "1.2.9"
     },
     "discoursesso": {
       "meta": {
@@ -1796,9 +1796,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "0r9dsp2zbf0d029gm4ldvq5bb4xxyr49czvkhkngmmh1ks2n3vn6",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v1.0/ncdownloader-release.tar.gz",
-      "version": "0.0.2"
+      "sha256": "1303f38py1ayc1lh5s9m2wqqvgmkcpcg4l7rxiz4izn13a86kgq5",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4-alpha/ncdownloader-release.tar.gz",
+      "version": "0.0.4"
     },
     "news": {
       "meta": {
@@ -1938,9 +1938,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "00yi0i7ankg08nb2qvx9vk4j6naqgqnmn15gaj1mq57jw9klmq13",
-      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.0/officeonline.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1cakdmfaihviflkq9izh4jcrgxh120bq7a93bclyp72pgcgzrvys",
+      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.1/officeonline.tar.gz",
+      "version": "1.1.1"
     },
     "oidc_login": {
       "meta": {
@@ -2414,9 +2414,9 @@
         "name": "Collabora Online",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "10f6lpk18zkfimkkn1wp9kql6zxj1gfz6i3slrh9wbdnh0j16z4v",
-      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.5/richdocuments.tar.gz",
-      "version": "3.8.5"
+      "sha256": "1np1r2lngp2nam9099kiysc6zlgzh7qlnxb2p0x2i4ijbnvq3xy5",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v3.8.6/richdocuments.tar.gz",
+      "version": "3.8.6"
     },
     "richdocumentscode": {
       "meta": {
@@ -3137,6 +3137,21 @@
       "sha256": "142mr6ncvixmc4kzkk00nmqk8j2wa2a5pllv11asqr4p98ggsybp",
       "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.10/twofactor_webauthn-0.2.10.tar.gz",
       "version": "0.2.10"
+    },
+    "unroundedcorners": {
+      "meta": {
+        "description": "# Unrounded Corners\nA Nextcloud app that restores the corners to their original looks, by unrounding them.",
+        "homepage": "https://github.com/OliverParoczai/nextcloud-unroundedcorners",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Unrounded Corners",
+        "summary": "An extension for making the corners in NextCloud unrounded"
+      },
+      "sha256": "1arxz1jq3z26dckwinhkkp7klm3qz0xmwi5w49v7186ws1wyzi8y",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.0/unroundedcorners-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "unsplash": {
       "meta": {
