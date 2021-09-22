@@ -80,9 +80,9 @@
         "name": "Announcement center",
         "summary": "This app allows admins to post announcements."
       },
-      "sha256": "1s6i32clzsybxl5jxjc4wiml9xisjcf69bvzy83m8pj7j3brdx07",
-      "url": "https://github.com/nextcloud/announcementcenter/releases/download/v4.0.1/announcementcenter-4.0.1.tar.gz",
-      "version": "4.0.1"
+      "sha256": "0hajizhyqsfmgh0l1iz7n8brfddrj37alyh4q3dxlbap1ipmrbni",
+      "url": "https://github.com/nextcloud-releases/announcementcenter/releases/download/v4.0.2/announcementcenter-4.0.2.tar.gz",
+      "version": "4.0.2"
     },
     "appointments": {
       "meta": {
@@ -213,9 +213,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0bi7r9fl1aa3lqq4gv78say4g1xj9y5xldywzfp3vijklw1zrh27",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v4.4.1/bookmarks-4.4.1.tar.gz",
-      "version": "4.4.1"
+      "sha256": "0dq4m9y183xiz5m97aybxddmszsv6s07vn2a0lg8d48hvkw7rwqy",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v10.0.0/bookmarks-10.0.0.tar.gz",
+      "version": "10.0.0"
     },
     "breezedark": {
       "meta": {
@@ -648,9 +648,9 @@
         "name": "eID-Login",
         "summary": "Integration of mobile electronic identities at a substantial security level"
       },
-      "sha256": "0vgp4srn6qwx881hbd3vsdnrlqwqi89nmkfcp3aah19n4fgjish3",
-      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.3/eidlogin.tar.gz",
-      "version": "1.0.3"
+      "sha256": "078hil5qlfd84vg6azs3b4arzhz8ri43hi40bmcf0wbz34f0j891",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.4/eidlogin.tar.gz",
+      "version": "1.0.4"
     },
     "emlviewer": {
       "meta": {
@@ -849,9 +849,9 @@
         "name": "Antivirus for files",
         "summary": "An antivirus app for Nextcloud"
       },
-      "sha256": "0a2z01km2jm61x6ddpsg7izy4pj1nd32brfr58b2a34sz9arbpll",
-      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.2.1/files_antivirus.tar.gz",
-      "version": "3.2.1"
+      "sha256": "1sz4xdqyc1mg7k4x4siznx9vmlg45ws9ihhyxgmi9haxy2j4s8bc",
+      "url": "https://github.com/nextcloud/files_antivirus/releases/download/v3.2.2/files_antivirus.tar.gz",
+      "version": "3.2.2"
     },
     "files_automatedtagging": {
       "meta": {
@@ -2035,9 +2035,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1xhh5jhih8kinbkw7q9c8k0lskpfddz9cpb79y9gp1kwinxjh4yz",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.3/mail.tar.gz",
-      "version": "1.10.3"
+      "sha256": "0qw401dnvq1hxbwm8sgy79y9nhdr8n3ihl4w2m64var9vvrs40r5",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.4/mail.tar.gz",
+      "version": "1.10.4"
     },
     "majordomo": {
       "meta": {
@@ -2110,9 +2110,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1303f38py1ayc1lh5s9m2wqqvgmkcpcg4l7rxiz4izn13a86kgq5",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4-alpha/ncdownloader-release.tar.gz",
-      "version": "0.0.4"
+      "sha256": "09ygpmhhgwcp642c2n2sdszvnixx0d7g482c3qhp299z6xkaw71g",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.30-beta/ncdownloader-release.tar.gz",
+      "version": "0.1.3"
     },
     "news": {
       "meta": {
@@ -2788,9 +2788,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1fqwjawq11v0h40h9q3m67bcchi6vh9m3pkg36ndl6il31lr1hs0",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode.tar.gz",
-      "version": "6.4.1004"
+      "sha256": "075xaqqzg35064n1zclj59c7r512bcmw08aq8ssw24c00n71ql5r",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode.tar.gz",
+      "version": "6.4.1103"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2803,9 +2803,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0phddvz0fp0wzi9lvqnm5cj79s2m2jpmy465lixi7s22y4s5g3az",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1004"
+      "sha256": "0shh0l66m3a3a0zzk1702hqpd5l2vf2n6si2nd9vzdvw8fy1vj7b",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1103"
     },
     "riotchat": {
       "meta": {
@@ -3183,9 +3183,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1p52fjrss48i4vy012f2c6w4yrhm3xy92cvza2ya283nmc7qxfgi",
-      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v10.0.9/spreed-10.0.9.tar.gz",
-      "version": "10.0.9"
+      "sha256": "1j4n04npcz2yara35spvy4d4ifkc2nwqd1172379n419nn0d60wm",
+      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v10.0.10/spreed-10.0.10.tar.gz",
+      "version": "10.0.10"
     },
     "sqreen_sdk": {
       "meta": {
@@ -3422,9 +3422,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0qqp7zj3irnr79j5nxa1m3ks501zplvs73qg0kv0sy9jfl5b278i",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.3/tvshownamer.tar.gz",
-      "version": "0.0.3"
+      "sha256": "0jxpa5446x52bchl8hk80jhm30v7h9abnh9ny4xqg7p8v67lyy1s",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.4/tvshownamer.tar.gz",
+      "version": "0.0.4"
     },
     "twofactor_admin": {
       "meta": {

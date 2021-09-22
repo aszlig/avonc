@@ -1796,9 +1796,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1303f38py1ayc1lh5s9m2wqqvgmkcpcg4l7rxiz4izn13a86kgq5",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4-alpha/ncdownloader-release.tar.gz",
-      "version": "0.0.4"
+      "sha256": "09ygpmhhgwcp642c2n2sdszvnixx0d7g482c3qhp299z6xkaw71g",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.30-beta/ncdownloader-release.tar.gz",
+      "version": "0.1.3"
     },
     "news": {
       "meta": {
@@ -2429,9 +2429,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1fqwjawq11v0h40h9q3m67bcchi6vh9m3pkg36ndl6il31lr1hs0",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode.tar.gz",
-      "version": "6.4.1004"
+      "sha256": "075xaqqzg35064n1zclj59c7r512bcmw08aq8ssw24c00n71ql5r",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode.tar.gz",
+      "version": "6.4.1103"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2444,9 +2444,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0phddvz0fp0wzi9lvqnm5cj79s2m2jpmy465lixi7s22y4s5g3az",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1004/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1004"
+      "sha256": "0shh0l66m3a3a0zzk1702hqpd5l2vf2n6si2nd9vzdvw8fy1vj7b",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1103"
     },
     "riotchat": {
       "meta": {
@@ -3032,9 +3032,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0qqp7zj3irnr79j5nxa1m3ks501zplvs73qg0kv0sy9jfl5b278i",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.3/tvshownamer.tar.gz",
-      "version": "0.0.3"
+      "sha256": "0jxpa5446x52bchl8hk80jhm30v7h9abnh9ny4xqg7p8v67lyy1s",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.4/tvshownamer.tar.gz",
+      "version": "0.0.4"
     },
     "twofactor_admin": {
       "meta": {
