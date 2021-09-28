@@ -128,21 +128,6 @@
       "url": "https://github.com/Rello/audioplayer/releases/download/2.13.1/audioplayer-2.13.1.tar.gz",
       "version": "2.13.1"
     },
-    "audioplayer_editor": {
-      "meta": {
-        "description": "ID3 editor add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Editor integrated into sidebar\n- Updating the ID3 in the library\n- Updating the audio files (coming soon)\n- Picture support (coming soon)",
-        "homepage": "https://github.com/rello/audioplayer_editor",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Audio Player - ID3 Editor (add-on)",
-        "summary": "Change ID3 Metadata"
-      },
-      "sha256": "1yfg6crb35pgiybkbvxs70sisw8bwl2fa2jjz1a1ffyqk9caccmg",
-      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.3.0/audioplayer_editor-0.3.0.tar.gz",
-      "version": "0.3.0"
-    },
     "audioplayer_sonos": {
       "meta": {
         "description": "SONOS Playback add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Play your local library on your SONOS speaker",
@@ -430,9 +415,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1jm67c28ai8glnz196hhkcis73blzlx0wlysvyhqim6cfpbc1gnn",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.2/Cookbook-0.9.2.tar.gz",
-      "version": "0.9.2"
+      "sha256": "1hqbcqw4f5246vrwwz74lgznq37y0vc443yrfpl24cdb0sqmc4zp",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.3/Cookbook-0.9.3.tar.gz",
+      "version": "0.9.3"
     },
     "cospend": {
       "meta": {
@@ -3066,7 +3051,7 @@
     "twofactor_email": {
       "meta": {
         "description": "A Two-Factor-Auth Provider for e-mail",
-        "homepage": "https://github.com/rullzer/twofactor_email",
+        "homepage": "https://github.com/nursoda/twofactor_email",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3074,9 +3059,9 @@
         "name": "Two Factor e-mail provider",
         "summary": "E-mail two-factor provider"
       },
-      "sha256": "0pxqmacfiginc5kk88r56i4ngsbdmsq7xfcszcy5bpfa4fc33sw1",
-      "url": "https://github.com/rullzer/twofactor_email/releases/download/v2.0.0/twofactor_email.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0x7cdvcba15djqnn7mc66xmjshwkrd6afl0c8r5y0ra510402kbz",
+      "url": "https://github.com/nursoda/twofactor_email/releases/download/v2.0.1/twofactor_email.tar.gz",
+      "version": "2.1.0"
     },
     "twofactor_gateway": {
       "meta": {

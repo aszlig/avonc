@@ -128,24 +128,9 @@
       "url": "https://github.com/Rello/audioplayer/releases/download/3.2.2/audioplayer-3.2.2.tar.gz",
       "version": "3.2.2"
     },
-    "audioplayer_editor": {
-      "meta": {
-        "description": "ID3 editor add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Editor integrated into sidebar\n- Updating the ID3 in the library\n- Updating the audio files (coming soon)\n- Picture support (coming soon)",
-        "homepage": "https://github.com/rello/audioplayer_editor",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Audio Player - ID3 Editor (add-on)",
-        "summary": "Change ID3 Metadata"
-      },
-      "sha256": "1yfg6crb35pgiybkbvxs70sisw8bwl2fa2jjz1a1ffyqk9caccmg",
-      "url": "https://github.com/Rello/audioplayer_editor/releases/download/0.3.0/audioplayer_editor-0.3.0.tar.gz",
-      "version": "0.3.0"
-    },
     "audioplayer_sonos": {
       "meta": {
-        "description": "SONOS Playback add-on for the Audio Player in Nextcloud and ownCloud.\n\tAudio Player as of v2.8 required\n\n- Play your local library on your SONOS speaker",
+        "description": "SONOS Playback add-on for the Audio Player in Nextcloud.\n\n- Play your local library on your SONOS speaker",
         "homepage": "https://github.com/rello/audioplayer_sonos",
         "isShipped": false,
         "licenses": [
@@ -154,9 +139,9 @@
         "name": "Audio Player - SONOS (add-on)",
         "summary": "SONOS Playback"
       },
-      "sha256": "05fx8p2w2nf6km8nw73bmvqv5rfackin09r38m4a2yhxxmambamc",
-      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.2.0/audioplayer_sonos-1.2.0.tar.gz",
-      "version": "1.2.0"
+      "sha256": "07x48y4d4433fbdgr91yfjbg8j8732i1d37px66h3cnfvmy6kr69",
+      "url": "https://github.com/Rello/audioplayer_sonos/releases/download/1.3.0/audioplayer_sonos-1.3.0.tar.gz",
+      "version": "1.3.0"
     },
     "auto_groups": {
       "meta": {
@@ -432,9 +417,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1jm67c28ai8glnz196hhkcis73blzlx0wlysvyhqim6cfpbc1gnn",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.2/Cookbook-0.9.2.tar.gz",
-      "version": "0.9.2"
+      "sha256": "1hqbcqw4f5246vrwwz74lgznq37y0vc443yrfpl24cdb0sqmc4zp",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.3/Cookbook-0.9.3.tar.gz",
+      "version": "0.9.3"
     },
     "cospend": {
       "meta": {
@@ -1952,6 +1937,21 @@
       "url": "https://github.com/nextcloud/maps/releases/download/v0.1.9/maps-0.1.9.tar.gz",
       "version": "0.1.9"
     },
+    "mediadc": {
+      "meta": {
+        "description": "This app allows to find duplicate or similar  photos and videos\n* **Large amount of supporting image formats** Jpeg, png, tiff, bmp, gif, heic/hif and others...\n* **Large amount of supported video  formats** All that is supported by ffmpeg...\n* **Flexible task config** Set your precision level for comparing, choose algo that suits for you most.\n* **Quick rescan** Once file was scanned, hash from it will be saved, and no need to load file data for other scans.\n* **Works with External Storages** [in progress] Easy find duplicates between different Nextcloud instances.\n* **Save your time and cloud space** The title says all...\nQuick start guide and further information in our [Wiki](https://github.com/andrey18106/mediadc/wiki).",
+        "homepage": "https://github.com/andrey18106/mediadc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "MediaDC",
+        "summary": "Nextcloud Media Duplicate Collector application"
+      },
+      "sha256": "05lrgmaldq31rsbp4i26j70y521xnv51dmf6y9y24d3q37277j0x",
+      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.1/mediadc.tar.gz",
+      "version": "0.1.1"
+    },
     "metadata": {
       "meta": {
         "description": "A plugin which displays file metadata in the file details sidebar.\n\nSee the [README](https://github.com/gino0631/nextcloud-metadata/blob/master/README.md) for the supported file types and limitations.",
@@ -2134,9 +2134,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "1rxs4w0jwl915v4yq9gc85ca38qda240xy181a98xbwjwjpryq4b",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.0.4/oidc_login.tar.gz",
-      "version": "2.0.4"
+      "sha256": "039q65iphnq17j4wj524gsp5r437sd270hw0b0773c936h4gpzqp",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.1.0/oidc_login.tar.gz",
+      "version": "2.1.0"
     },
     "ojsxc": {
       "meta": {
@@ -2207,9 +2207,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "1fglsvp2c1g4c96h8j9lqkazbyql4p8f6hlp10bpj3w140igw8ah",
-      "url": "https://releases.passman.cc/passman_2.3.10.tar.gz",
-      "version": "2.3.10"
+      "sha256": "0jzngdna2z36lj45ba1yciwvvr8ylvlv7bbak2fq9d4drfd852kw",
+      "url": "https://releases.passman.cc/passman_2.3.1334.tar.gz",
+      "version": "2.3.1334"
     },
     "password_policy": {
       "meta": {
@@ -2755,9 +2755,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "1pbprvdd286rw2di8y844dvaj6kl4pkg16rysq5ijh94gr0jkkwc",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.3.0/sharingpath.tar.gz",
-      "version": "0.3.0"
+      "sha256": "04lyqhknpvz2zm63rv7shdkibbr26ayb955589qq3s80gmgrm9ad",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.4.3/sharingpath.tar.gz",
+      "version": "0.4.3"
     },
     "side_menu": {
       "meta": {
@@ -3222,7 +3222,7 @@
     "twofactor_email": {
       "meta": {
         "description": "A Two-Factor-Auth Provider for e-mail",
-        "homepage": "https://github.com/rullzer/twofactor_email",
+        "homepage": "https://github.com/nursoda/twofactor_email",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3230,9 +3230,9 @@
         "name": "Two Factor e-mail provider",
         "summary": "E-mail two-factor provider"
       },
-      "sha256": "0pxqmacfiginc5kk88r56i4ngsbdmsq7xfcszcy5bpfa4fc33sw1",
-      "url": "https://github.com/rullzer/twofactor_email/releases/download/v2.0.0/twofactor_email.tar.gz",
-      "version": "2.0.0"
+      "sha256": "0x7cdvcba15djqnn7mc66xmjshwkrd6afl0c8r5y0ra510402kbz",
+      "url": "https://github.com/nursoda/twofactor_email/releases/download/v2.0.1/twofactor_email.tar.gz",
+      "version": "2.1.0"
     },
     "twofactor_gateway": {
       "meta": {
