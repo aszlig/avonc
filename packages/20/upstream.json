@@ -243,9 +243,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1c93gbnbygqvrxvv1avxsimyv7hbcf8rdfrxwcmkzam676q7696y",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.3.3/calendar.tar.gz",
-      "version": "2.3.3"
+      "sha256": "1rcqspp6mabqsai8v7v9rzcky4xi9pq9v8sqz6pil3gyb5cn4nvh",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.3.4/calendar.tar.gz",
+      "version": "2.3.4"
     },
     "camerarawpreviews": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1hqbcqw4f5246vrwwz74lgznq37y0vc443yrfpl24cdb0sqmc4zp",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.3/Cookbook-0.9.3.tar.gz",
-      "version": "0.9.3"
+      "sha256": "12di330i43w9r98az1qq4w5fk0zsjx70xfmza7flda9cp82bx2x1",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.4/Cookbook-0.9.4.tar.gz",
+      "version": "0.9.4"
     },
     "cospend": {
       "meta": {
@@ -633,9 +633,9 @@
         "name": "eID-Login",
         "summary": "Integration of mobile electronic identities at a substantial security level"
       },
-      "sha256": "078hil5qlfd84vg6azs3b4arzhz8ri43hi40bmcf0wbz34f0j891",
-      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.4/eidlogin.tar.gz",
-      "version": "1.0.4"
+      "sha256": "0clp8mj7xlgrdjjwhw8gyvb58dmkn8llr32n4n04r5mn524ip6dc",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.5/eidlogin.tar.gz",
+      "version": "1.0.5"
     },
     "emlviewer": {
       "meta": {
@@ -2020,9 +2020,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "0qw401dnvq1hxbwm8sgy79y9nhdr8n3ihl4w2m64var9vvrs40r5",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.4/mail.tar.gz",
-      "version": "1.10.4"
+      "sha256": "1y2pigh6njigfha42sy215yjjx923ascj3bcb14a9lbifb762666",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.5/mail.tar.gz",
+      "version": "1.10.5"
     },
     "majordomo": {
       "meta": {
@@ -2803,9 +2803,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0mdfwrlpfn4689a3656p0kx7ypp7lz50xx28i6cvvarrc06wh2nw",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.4/riotchat.tar.gz",
-      "version": "0.9.4"
+      "sha256": "1ih9fl8rhhh7mvjhwzhphpwndx06zl6p0hshd665bphb6bq7a7gx",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.5/riotchat.tar.gz",
+      "version": "0.9.5"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -3356,7 +3356,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://github.com/joleaf)",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3365,9 +3365,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "1qfcqpxlkh2ykgwgiiglg4l3kk7c9655jip7rk51bbx1m3rp69hl",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.4/timemanager.tar.gz",
-      "version": "0.2.4"
+      "sha256": "0fgwv1j5zkn7jqxl54f53r80988mkrwb6xknaswhzd6c4wa1hllq",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.5/timemanager.tar.gz",
+      "version": "0.2.5"
     },
     "timetracker": {
       "meta": {
@@ -3440,18 +3440,18 @@
     },
     "twofactor_email": {
       "meta": {
-        "description": "A Two-Factor-Auth Provider for e-mail",
+        "description": "This app allows users to set up email as a second factor for web logins. It requires that an email address is set in 'Personal info'. It currently cannot be used on first login when two-factor authentication is enforced (not implemented yet).",
         "homepage": "https://github.com/nursoda/twofactor_email",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Two Factor e-mail provider",
-        "summary": "E-mail two-factor provider"
+        "name": "Two-Factor Email",
+        "summary": "Two-Factor Email Provider"
       },
-      "sha256": "0x7cdvcba15djqnn7mc66xmjshwkrd6afl0c8r5y0ra510402kbz",
-      "url": "https://github.com/nursoda/twofactor_email/releases/download/v2.0.1/twofactor_email.tar.gz",
-      "version": "2.1.0"
+      "sha256": "099nlk4cm0pn9837djx1ahmzm7r3gj5vx6s99g9myrzy66pyx5qb",
+      "url": "https://github.com/nursoda/twofactor_email/releases/download/2.1.1/twofactor_email.tar.gz",
+      "version": "2.1.1"
     },
     "twofactor_gateway": {
       "meta": {

@@ -320,6 +320,20 @@
       "url": "https://github.com/westberliner/checksum/releases/download/0.4.5/checksum.tar.gz",
       "version": "0.4.5"
     },
+    "checksum_api": {
+      "meta": {
+        "description": "Provide hash values of a file by REST API",
+        "isShipped": false,
+        "licenses": [
+          "apache"
+        ],
+        "name": "Checksum API",
+        "summary": "Provide hash values of a file by REST API"
+      },
+      "sha256": "1q3jh1zv2xmnby1618rmpjzl2lzzwqfs14czgjc09lb7b0awkh8y",
+      "url": "https://github.com/RCOSDP/nextcloud-checksum_api/releases/download/v0.1.2/checksum_api.tar.gz",
+      "version": "0.1.2"
+    },
     "circles": {
       "meta": {
         "description": "Circles allows your users to create their own groups of users/colleagues/friends.\nThose groups of users (or 'circles') can then be used by any other app for sharing purpose (files, social feed, status update, messaging, ...).\n\nDifferent type of circles can be created:\n\n- A personal circle is a list of users known only to the owner.\nThis is the right option if you want to do recurrent sharing with the same group of people.\n\n- A public circle is an open group visible to anyone willing to join.\nYour circle will be visible to everyone and everyone will be able to join the circle.\n\n- A closed circle requires invitation or confirmation by an admin.\nThis is the right circle if you are looking for privacy when sharing your files or ideas.\n\n- An Secret circle is an open group that can be protected by a password.\nUsers won't be able to find this Circle using Nextcloud search engine.",
@@ -415,9 +429,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1hqbcqw4f5246vrwwz74lgznq37y0vc443yrfpl24cdb0sqmc4zp",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.3/Cookbook-0.9.3.tar.gz",
-      "version": "0.9.3"
+      "sha256": "12di330i43w9r98az1qq4w5fk0zsjx70xfmza7flda9cp82bx2x1",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.4/Cookbook-0.9.4.tar.gz",
+      "version": "0.9.4"
     },
     "cospend": {
       "meta": {
@@ -751,6 +765,20 @@
         "name": "Federation",
         "summary": "Federation allows you to connect with other trusted servers to exchange the user directory."
       }
+    },
+    "file_upload_notification": {
+      "meta": {
+        "description": "Notify a server of file uploads",
+        "isShipped": false,
+        "licenses": [
+          "apache"
+        ],
+        "name": "File Upload Notification",
+        "summary": "Notify a server of file uploads"
+      },
+      "sha256": "00i7rmhf9yp7i3vsqc71iifa642rbx6q5pjfy8b1gnsiqvdlbzg5",
+      "url": "https://github.com/RCOSDP/nextcloud-file_upload_notification/releases/download/v0.1.2/file_upload_notification.tar.gz",
+      "version": "0.1.2"
     },
     "files": {
       "meta": {
@@ -2388,6 +2416,20 @@
       "url": "https://github.com/nextcloud/registration/releases/download/v0.5.0/registration-0.5.0.tar.gz",
       "version": "0.5.0"
     },
+    "rename_with_metadata": {
+      "meta": {
+        "description": "Rename with Metadata",
+        "isShipped": false,
+        "licenses": [
+          "apache"
+        ],
+        "name": "RenameWithMetadata",
+        "summary": "Rename with Metadata"
+      },
+      "sha256": "0j15xkalv5lrkpy8130y4xi5d7pv9n3v1yrcgxcfxcxivraxn0dm",
+      "url": "https://github.com/RCOSDP/nextcloud-rename_with_metadata/releases/download/v0.0.2/rename_with_metadata.tar.gz",
+      "version": "0.0.2"
+    },
     "richdocuments": {
       "meta": {
         "description": "This application can connect to a Collabora Online (or other) server (WOPI-like Client). Nextcloud is the WOPI Host. Please read the documentation to learn more about that.\n\nYou can also edit your documents off-line with the Collabora Office app from the **[Android](https://play.google.com/store/apps/details?id=com.collabora.libreoffice)** and **[iOS](https://apps.apple.com/us/app/collabora-office/id1440482071)** store.",
@@ -2966,7 +3008,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://github.com/joleaf)",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -2975,9 +3017,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "1qfcqpxlkh2ykgwgiiglg4l3kk7c9655jip7rk51bbx1m3rp69hl",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.4/timemanager.tar.gz",
-      "version": "0.2.4"
+      "sha256": "0fgwv1j5zkn7jqxl54f53r80988mkrwb6xknaswhzd6c4wa1hllq",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.5/timemanager.tar.gz",
+      "version": "0.2.5"
     },
     "timetracker": {
       "meta": {
@@ -3050,18 +3092,18 @@
     },
     "twofactor_email": {
       "meta": {
-        "description": "A Two-Factor-Auth Provider for e-mail",
+        "description": "This app allows users to set up email as a second factor for web logins. It requires that an email address is set in 'Personal info'. It currently cannot be used on first login when two-factor authentication is enforced (not implemented yet).",
         "homepage": "https://github.com/nursoda/twofactor_email",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
-        "name": "Two Factor e-mail provider",
-        "summary": "E-mail two-factor provider"
+        "name": "Two-Factor Email",
+        "summary": "Two-Factor Email Provider"
       },
-      "sha256": "0x7cdvcba15djqnn7mc66xmjshwkrd6afl0c8r5y0ra510402kbz",
-      "url": "https://github.com/nursoda/twofactor_email/releases/download/v2.0.1/twofactor_email.tar.gz",
-      "version": "2.1.0"
+      "sha256": "099nlk4cm0pn9837djx1ahmzm7r3gj5vx6s99g9myrzy66pyx5qb",
+      "url": "https://github.com/nursoda/twofactor_email/releases/download/2.1.1/twofactor_email.tar.gz",
+      "version": "2.1.1"
     },
     "twofactor_gateway": {
       "meta": {
