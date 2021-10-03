@@ -2095,9 +2095,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "09ygpmhhgwcp642c2n2sdszvnixx0d7g482c3qhp299z6xkaw71g",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.30-beta/ncdownloader-release.tar.gz",
-      "version": "0.1.3"
+      "sha256": "13h8wk6xvgvii5nmplckpmwx50nqb8066wzk3j3rmvhb2d8gdbff",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.4/ncdownloader-release-v0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "news": {
       "meta": {
@@ -2183,6 +2183,20 @@
         "name": "Notifications",
         "summary": "This app provides a backend and frontend for the notification API available in Nextcloud."
       }
+    },
+    "notify_push": {
+      "meta": {
+        "description": "Push update support for desktop app.\n\nOnce the app is installed, the push binary needs to be setup. You can either use the setup wizard with `occ notify_push:setup` or see the [README](http://github.com/nextcloud/notify_push) for detailed setup instructions",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Client Push",
+        "summary": "Push update support for clients"
+      },
+      "sha256": "0zl7qz6vsy5662h4d412llqpk1zkhqgs8bya8m4mf3sf3s5d583y",
+      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.2.4/notify_push.tar.gz",
+      "version": "0.2.4"
     },
     "oauth2": {
       "meta": {
@@ -2354,9 +2368,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0jzngdna2z36lj45ba1yciwvvr8ylvlv7bbak2fq9d4drfd852kw",
-      "url": "https://releases.passman.cc/passman_2.3.1334.tar.gz",
-      "version": "2.3.1334"
+      "sha256": "0f00bhfwdlvhyb8pfvz2j8zqbac0nxbxxlp77j2bq02xwk7hn1vw",
+      "url": "https://releases.passman.cc/passman_2.3.1335.tar.gz",
+      "version": "2.3.1335"
     },
     "password_policy": {
       "meta": {
@@ -2381,9 +2395,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "128i66qiys6k93irkkn0jzbpxglqkb5rblx71l6955838y482m6s",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12799/artifacts/raw/passwords.tar.gz",
-      "version": "2021.9.20"
+      "sha256": "08gis5ah19ndxmidk3yp4i0224l4n9axvfbc1q3q2qil69smcavh",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12874/artifacts/raw/passwords.tar.gz",
+      "version": "2021.10.20"
     },
     "pdfdraw": {
       "meta": {
@@ -3186,6 +3200,20 @@
       "url": "https://nextcloud.pasteques4.life/index.php/s/T8gadKmE7Rz8FSp/download",
       "version": "0.0.1"
     },
+    "storj": {
+      "meta": {
+        "description": "A Storj Community contributed decentralized storage backend for Nextcloud built on Storj DCS.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Storj",
+        "summary": "Storage backend built on Storj DCS."
+      },
+      "sha256": "1p45i3d7pmskgmi7ppl70ygmb5m30wyncdhiiy07qkxwsz6pm8dn",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.3.tar.gz",
+      "version": "0.0.3"
+    },
     "stromquittung": {
       "meta": {
         "description": "Only suitable for use in Germany. - Creates an energy receipt for third party energy delivery (as seen on private wallboxes).",
@@ -3379,9 +3407,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0fhkw48apy9f1mj6r7yxnh9f2bsc1nqf6v743ai1hh700j7h6xzp",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.71.tar.gz",
-      "version": "0.0.71"
+      "sha256": "1kmcbi92myvdxjib18q5iq40c2k4sbabraqfp2zx1b1i6q42nd1k",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.72.tar.gz",
+      "version": "0.0.72"
     },
     "transmission": {
       "meta": {

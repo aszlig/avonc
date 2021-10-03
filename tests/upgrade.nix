@@ -63,6 +63,8 @@ import ./make-test.nix (pkgs: {
         "sendent"
         # Needs the "sqreen" library
         "sqreen_sdk"
+        # Needs FFI support
+        "storj"
         # XXX: Currently (2019-12-12) results in HTTP 404
         "emlviewer"
         # XXX: Conflicts with the "news" app - investigate this someday.

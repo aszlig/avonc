@@ -199,9 +199,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "14hl3rfawl0iqddlpdknvnkdhjcss9dwgxg1p6gv7n22kkgcdh63",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v21.0.10/breezedark.tar.gz",
-      "version": "21.0.10"
+      "sha256": "1wf48rv4yyfnx3v5b86an3r6a0b66xw8hgd30snywdb233f88yyj",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v21.0.11/breezedark.tar.gz",
+      "version": "21.0.11"
     },
     "bruteforcesettings": {
       "meta": {
@@ -1939,7 +1939,7 @@
     },
     "mediadc": {
       "meta": {
-        "description": "This app allows to find duplicate or similar  photos and videos\n* **Large amount of supporting image formats** Jpeg, png, tiff, bmp, gif, heic/hif and others...\n* **Large amount of supported video  formats** All that is supported by ffmpeg...\n* **Flexible task config** Set your precision level for comparing, choose algo that suits for you most.\n* **Quick rescan** Once file was scanned, hash from it will be saved, and no need to load file data for other scans.\n* **Works with External Storages** [in progress] Easy find duplicates between different Nextcloud instances.\n* **Save your time and cloud space** The title says all...\nQuick start guide and further information in our [Wiki](https://github.com/andrey18106/mediadc/wiki).",
+        "description": "This app allows to find duplicate or similar  photos and videos\n* **Many image formats supported** Jpeg, png, tiff, bmp, gif, heic/hif, cr2 and others.\n* **Large amount of supported video  formats** All that is supported by ffmpeg.\n* **Flexible config** Set your precision level for comparing, choose algo that suits for you most.\n* **Quick rescan** Once file was scanned, hash will be saved, and used for other scans.\n* **External Storages support** [in progress] Search everywhere among all files available to the user.\n* **Save your time and cloud space** The title says all...\n\nQuick start guide and further information in our [Wiki](https://github.com/andrey18106/mediadc/wiki).",
         "homepage": "https://github.com/andrey18106/mediadc",
         "isShipped": false,
         "licenses": [
@@ -1948,9 +1948,9 @@
         "name": "MediaDC",
         "summary": "Nextcloud Media Duplicate Collector application"
       },
-      "sha256": "05lrgmaldq31rsbp4i26j70y521xnv51dmf6y9y24d3q37277j0x",
-      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.1/mediadc.tar.gz",
-      "version": "0.1.1"
+      "sha256": "0k38826cwkqf9fh0mx26scl7avzw072sydxg2f4b3d5fj9x2ahhh",
+      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.2/mediadc.tar.gz",
+      "version": "0.1.2"
     },
     "metadata": {
       "meta": {
@@ -1993,9 +1993,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "09ygpmhhgwcp642c2n2sdszvnixx0d7g482c3qhp299z6xkaw71g",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.30-beta/ncdownloader-release.tar.gz",
-      "version": "0.1.3"
+      "sha256": "13h8wk6xvgvii5nmplckpmwx50nqb8066wzk3j3rmvhb2d8gdbff",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.4/ncdownloader-release-v0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "news": {
       "meta": {
@@ -2207,9 +2207,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0jzngdna2z36lj45ba1yciwvvr8ylvlv7bbak2fq9d4drfd852kw",
-      "url": "https://releases.passman.cc/passman_2.3.1334.tar.gz",
-      "version": "2.3.1334"
+      "sha256": "0f00bhfwdlvhyb8pfvz2j8zqbac0nxbxxlp77j2bq02xwk7hn1vw",
+      "url": "https://releases.passman.cc/passman_2.3.1335.tar.gz",
+      "version": "2.3.1335"
     },
     "password_policy": {
       "meta": {
@@ -2234,9 +2234,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "128i66qiys6k93irkkn0jzbpxglqkb5rblx71l6955838y482m6s",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12799/artifacts/raw/passwords.tar.gz",
-      "version": "2021.9.20"
+      "sha256": "08gis5ah19ndxmidk3yp4i0224l4n9axvfbc1q3q2qil69smcavh",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12874/artifacts/raw/passwords.tar.gz",
+      "version": "2021.10.20"
     },
     "permissions_overwrite": {
       "meta": {
@@ -2952,6 +2952,20 @@
       "url": "https://nextcloud.pasteques4.life/index.php/s/T8gadKmE7Rz8FSp/download",
       "version": "0.0.1"
     },
+    "storj": {
+      "meta": {
+        "description": "A Storj Community contributed decentralized storage backend for Nextcloud built on Storj DCS.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Storj",
+        "summary": "Storage backend built on Storj DCS."
+      },
+      "sha256": "1p45i3d7pmskgmi7ppl70ygmb5m30wyncdhiiy07qkxwsz6pm8dn",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.3.tar.gz",
+      "version": "0.0.3"
+    },
     "stromquittung": {
       "meta": {
         "description": "Only suitable for use in Germany. - Creates an energy receipt for third party energy delivery (as seen on private wallboxes).",
@@ -3052,7 +3066,7 @@
     },
     "talked": {
       "meta": {
-        "description": "# Talked client\n\nCall recording for Nextcloud Talk. This app provides a chat based interface to interact with the Talked server component that handles the actual recording.\n\nCheck out the [Talked server repo](https://github.com/MetaProvide/talked) for more information on how this works and what the current limitations are.\n\n## Installation and setup\n\nIt's available in the [Nextcloud app store](https://apps.nextcloud.com/apps/talked), just search for Talked and you should be able to find it.\n\nOr you can clone this repo into your app folder and enable it in the app menu in Nextcloud.\n\n### Register chat command\n\nTo use the chat command to interact with the Talked server, the command first needs to be registered with Talk. You can register a command using the occ command. The exact command depends on how you have installed Nextcloud. Below I'll have an example for the official docker container and the snap. For more information about registering a chat command, check out the Talk documenation: https://nextcloud-talk.readthedocs.io/en/latest/commands/\n\nYou will find two examples for both the docker container and snap. The only difference is whether you want to allow all registered users in a room to start a recording, or only the moderators.\n\n#### Docker container\n\n##### Only moderators can use\n```\nphp occ talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 1\n```\n##### All registered users can use\n```\nphp occ talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 2\n```\n\n#### Snap\n\n##### Only moderators can use\n```\nocc talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 1\n```\n##### All registered users can use\n```\nocc talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 2\n```\n\n### Configuring Talked\n\nAfter you have registered the Talk command you should configure Talked. If you head to Admin settings &gt; Talk, then you will find the settings for Talked near the bottom. Here you can specify the URL for your Talked server and whether to use HTTP Basic auth, and the credentials for HTTP Basic auth.\n\nThe http / https should be included in the url, for example: https://talked.example.com\n\n## Usage\n\nTo use Talked, simply use the `/recording` command in a chat room. If you don't specify any options or run `/recording help` you will get a help message telling you about the different options. The following options are available:\n\n`/recording start` - starts a recording in the current room.\n`/recording stop`  - stops the active recording\n`/recording status` - checks if there is an active recording\n`/recording info` - prints the version number of the Talked server.\n`/recording help` - prints a help message with the different options.",
+        "description": "# Talked client\n\nCall recording for Nextcloud Talk. This app provides a chat based interface to interact with the Talked server component that handles the actual recording.\n\nCheck out the [Talked server repo](https://github.com/MetaProvide/talked) for more information on how this works and what the current limitations are.\n\n## Installation and setup\n\nIt's available in the [Nextcloud app store](https://apps.nextcloud.com/apps/talked), just search for Talked and you should be able to find it.\n\nOr you can clone this repo into your app folder and enable it in the app menu in Nextcloud.\n\n### Register chat command\n\nTo use the chat command to interact with the Talked server, the command first needs to be registered with Talk. You can register a command using the occ command. The exact command depends on how you have installed Nextcloud. Below I'll have an example for the official docker container and the snap. For more information about registering a chat command, check out the Talk documenation: https://nextcloud-talk.readthedocs.io/en/latest/commands/\n\nYou will find two examples for both the docker container and snap. The only difference is whether you want to allow all registered users in a room to start a recording, or only the moderators.\n\n#### Docker container\n\n##### Only moderators can use\n```\nphp occ talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 1\n```\n##### All registered users can use\n```\nphp occ talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 2\n```\n\n#### Snap\n\n##### Only moderators can use\n```\nocc talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 1\n```\n##### All registered users can use\n```\nocc talk:command:add recording Talked \"php /var/www/html/occ talked:record {ROOM} {ARGUMENTS}\" 2 2\n```\n\n### Configuring Talked\n\nAfter you have registered the Talk command you should configure Talked. If you head to Admin settings &gt; Talk, then you will find the settings for Talked near the bottom. Here you can specify the URI for your Talked server and whether to use HTTP Basic auth, and the credentials for HTTP Basic auth.\n\nThe http / https should be included in the url, for example: https://talked.example.com\n\nYou can also connect to the Talked server over a unix socket. To specify the path to a unix socket prefix the path with `unix:` for example: `unix:/tmp/talked.sock`.\n\nPlease note that abstract sockets aren't supported.\n\n## Usage\n\nTo use Talked, simply use the `/recording` command in a chat room. If you don't specify any options or run `/recording help` you will get a help message telling you about the different options. The following options are available:\n\n* `/recording start` - starts a recording in the current room.\n* `/recording stop`  - stops the active recording.\n* `/recording status` - checks if there is an active recording.\n* `/recording info` - prints the version number of the Talked server.\n* `/recording help` - prints a help message with the different options.",
         "homepage": "https://github.com/MetaProvide/talked-client",
         "isShipped": false,
         "licenses": [
@@ -3061,9 +3075,9 @@
         "name": "Talked",
         "summary": "Call recording for Nextcloud Talk"
       },
-      "sha256": "1qfdwqh0s1d0s6872vf96yjqsaki3dka7vijm9g4almfg2h5vj00",
-      "url": "https://github.com/MetaProvide/talked-client/releases/download/v0.1.0/talked.tar.gz",
-      "version": "0.1.0"
+      "sha256": "16cywwbnqiln9miy0s29jqsx515zg1l076029nlkrqnxv522g65w",
+      "url": "https://github.com/MetaProvide/talked-client/releases/download/v0.2.0/talked.tar.gz",
+      "version": "0.2.0"
     },
     "tasks": {
       "meta": {
@@ -3160,9 +3174,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "0fhkw48apy9f1mj6r7yxnh9f2bsc1nqf6v743ai1hh700j7h6xzp",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.71.tar.gz",
-      "version": "0.0.71"
+      "sha256": "1kmcbi92myvdxjib18q5iq40c2k4sbabraqfp2zx1b1i6q42nd1k",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.72.tar.gz",
+      "version": "0.0.72"
     },
     "transmission": {
       "meta": {

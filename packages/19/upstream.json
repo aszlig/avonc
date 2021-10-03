@@ -1809,9 +1809,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "09ygpmhhgwcp642c2n2sdszvnixx0d7g482c3qhp299z6xkaw71g",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.30-beta/ncdownloader-release.tar.gz",
-      "version": "0.1.3"
+      "sha256": "13h8wk6xvgvii5nmplckpmwx50nqb8066wzk3j3rmvhb2d8gdbff",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.4/ncdownloader-release-v0.1.4.tar.gz",
+      "version": "0.1.4"
     },
     "news": {
       "meta": {
