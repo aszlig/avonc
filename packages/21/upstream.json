@@ -3690,8 +3690,8 @@
     "ocsms": ">1.10.1"
   },
   "nextcloud": {
-    "sha256": "05sp9gpgw4y53yds6arjgjichdjjwpc571rmgh51hcb7bwqg8zw5",
-    "url": "https://download.nextcloud.com/server/releases/nextcloud-21.0.4.tar.bz2",
-    "version": "21.0.4.1"
+    "sha256": "0iahxak5v9kks4nviqrkx5yvizx897dj175appbprdgagax4k92a",
+    "url": "https://download.nextcloud.com/server/releases/nextcloud-21.0.5.tar.bz2",
+    "version": "21.0.5.1"
   }
 }
