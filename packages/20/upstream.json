@@ -633,9 +633,9 @@
         "name": "eID-Login",
         "summary": "Integration of mobile electronic identities at a substantial security level"
       },
-      "sha256": "0clp8mj7xlgrdjjwhw8gyvb58dmkn8llr32n4n04r5mn524ip6dc",
-      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.5/eidlogin.tar.gz",
-      "version": "1.0.5"
+      "sha256": "06c0s52f1ba5qifmzqq19b9l61sb5hpzy6qddks6qqlcb8m8az73",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.6/eidlogin.tar.gz",
+      "version": "1.0.6"
     },
     "emlviewer": {
       "meta": {
@@ -1355,9 +1355,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "0mn7v5lvnq25c6bw0ymsjd24drlx6x99m600mlna7chid821pqjc",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/2.0.0/gpoddersync.tar.gz",
-      "version": "2.0.0"
+      "sha256": "1iz7zh0yrv31h4pzicxcxxa70j95a0kn23wssw63hanq0xq2vkm1",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.0.0-try-01/gpoddersync.tar.gz",
+      "version": "3.0.0"
     },
     "gpxedit": {
       "meta": {
@@ -2095,13 +2095,13 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "13h8wk6xvgvii5nmplckpmwx50nqb8066wzk3j3rmvhb2d8gdbff",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.4/ncdownloader-release-v0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "13fjcbyzf6lbpgg6bdjixxzv9j6krrygc0id3nhyxb7kp9sdnsh1",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.2.5/ncdownloader-release.tar.gz",
+      "version": "0.2.5"
     },
     "news": {
       "meta": {
-        "description": "A RSS/Atom Feed reader App for Nextcloud\n\n-  Synchronize your feeds with multiple mobile or desktop [clients](https://nextcloud.github.io/news/clients/)\n-  Automatic updates of your news feeds\n-  Free and open source under AGPLv3, no ads or premium functions\n\n**System Cron is currently required for this app to work**\nRequirements can be found [here](https://nextcloud.github.io/news/install/#dependencies)\nThe Changelog is available [here](https://github.com/nextcloud/news/blob/master/CHANGELOG.md)\n\nCreate a [bug report](https://github.com/nextcloud/news/issues/new/choose)\nCreate a [feature request](https://github.com/nextcloud/news/discussions/new)\nReport a [feed issue](https://github.com/nextcloud/news/discussions/new)",
+        "description": "A RSS/Atom Feed reader App for Nextcloud\n\n-  Synchronize your feeds with multiple mobile or desktop [clients](https://nextcloud.github.io/news/clients/)\n-  Automatic updates of your news feeds\n-  Free and open source under AGPLv3, no ads or premium functions\n\n**System Cron is currently required for this app to work**\n\nRequirements can be found [here](https://nextcloud.github.io/news/install/#dependencies)\n\nThe Changelog is available [here](https://github.com/nextcloud/news/blob/master/CHANGELOG.md)\n\nCreate a [bug report](https://github.com/nextcloud/news/issues/new/choose)\n\nCreate a [feature request](https://github.com/nextcloud/news/discussions/new)\n\nReport a [feed issue](https://github.com/nextcloud/news/discussions/new)",
         "homepage": "https://github.com/nextcloud/news",
         "isShipped": false,
         "licenses": [
@@ -2110,9 +2110,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1pwvcgl3kfkq224s65d20awf76h6lzlzsj2i35w2fjgxbqap0r6h",
-      "url": "https://github.com/nextcloud/news/releases/download/16.0.1/news.tar.gz",
-      "version": "16.0.1"
+      "sha256": "06y77lxdvjc4nzixvlw4fyi5zpvgcklv2l5xxjxqwy66cwvyawz6",
+      "url": "https://github.com/nextcloud/news/releases/download/16.1.0/news.tar.gz",
+      "version": "16.1.0"
     },
     "nextbackup": {
       "meta": {
@@ -3202,17 +3202,17 @@
     },
     "storj": {
       "meta": {
-        "description": "A Storj Community contributed decentralized storage backend for Nextcloud built on Storj DCS.",
+        "description": "External storage support for Storj Decentralized Cloud Storage.\n\nMade by the Storj community.\n\n## Prerequisites\n\nCurrently only works on x64.\n\nThe PHP installation should have the FFI extension loaded and enabled unconditionally in php.ini:\n\n```\nextension=ffi\n\nffi.enable=true\n```\n\n## Configuration\n\nStorj works like any external object storage. See the documentation on docs.nextcloud.com:\n\n* [Configuring External Storage (GUI)](https://docs.nextcloud.com/server/22/admin_manual/configuration_files/external_storage_configuration_gui.html)\n* [Configuring Object Storage as Primary Storage](https://docs.nextcloud.com/server/20/admin_manual/configuration_files/primary_storage.html)\n\nThis is the configuration to set Storj as your primary storage:\n\n```php\n$CONFIG = [\n    'objectstore' =&gt; [\n        'class' =&gt; \\OCA\\Storj\\StorjObjectStore::class,\n        'arguments' =&gt; [\n            'serialized_access' =&gt; 'myaccessgrant',\n            'bucket' =&gt; 'mynextcloudbucket',\n        ]\n    ]\n];\n```",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Storj",
-        "summary": "Storage backend built on Storj DCS."
+        "summary": "Decentralized storage backend"
       },
-      "sha256": "1p45i3d7pmskgmi7ppl70ygmb5m30wyncdhiiy07qkxwsz6pm8dn",
-      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.3.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1f90r69w3fw5dxymdjp30glc3qljbksrjicv2a5qha3pw7rkcjii",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.4.tar.gz",
+      "version": "0.0.4"
     },
     "stromquittung": {
       "meta": {
@@ -3552,9 +3552,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "142mr6ncvixmc4kzkk00nmqk8j2wa2a5pllv11asqr4p98ggsybp",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.10/twofactor_webauthn-0.2.10.tar.gz",
-      "version": "0.2.10"
+      "sha256": "1lj5l1mdl9g5ivbhxiic64j5y8p49da2a7q33c18z1ngzhg6wxp4",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.11/twofactor_webauthn-0.2.11.tar.gz",
+      "version": "0.2.11"
     },
     "unroundedcorners": {
       "meta": {

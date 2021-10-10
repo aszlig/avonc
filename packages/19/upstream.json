@@ -1809,9 +1809,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "13h8wk6xvgvii5nmplckpmwx50nqb8066wzk3j3rmvhb2d8gdbff",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.1.4/ncdownloader-release-v0.1.4.tar.gz",
-      "version": "0.1.4"
+      "sha256": "13fjcbyzf6lbpgg6bdjixxzv9j6krrygc0id3nhyxb7kp9sdnsh1",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.2.5/ncdownloader-release.tar.gz",
+      "version": "0.2.5"
     },
     "news": {
       "meta": {
@@ -3161,9 +3161,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "142mr6ncvixmc4kzkk00nmqk8j2wa2a5pllv11asqr4p98ggsybp",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.10/twofactor_webauthn-0.2.10.tar.gz",
-      "version": "0.2.10"
+      "sha256": "1lj5l1mdl9g5ivbhxiic64j5y8p49da2a7q33c18z1ngzhg6wxp4",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.11/twofactor_webauthn-0.2.11.tar.gz",
+      "version": "0.2.11"
     },
     "unroundedcorners": {
       "meta": {
