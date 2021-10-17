@@ -431,9 +431,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "12di330i43w9r98az1qq4w5fk0zsjx70xfmza7flda9cp82bx2x1",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.4/Cookbook-0.9.4.tar.gz",
-      "version": "0.9.4"
+      "sha256": "17pzkzfjfnjmblg5bdglf5vlgisvc7yb4lclfm0asx391llkxbqi",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.5/Cookbook-0.9.5.tar.gz",
+      "version": "0.9.5"
     },
     "cospend": {
       "meta": {
@@ -460,9 +460,9 @@
         "name": "CPanel Mail Sync",
         "summary": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates."
       },
-      "sha256": "11whf6civbw7a3g669gpp32jafw9pg6psdag0ps64qxl0d38xd7m",
-      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/uploads/f6684c63ac5df7a84b536ac98e668fbc/cpanelmailsync.tar.gz",
-      "version": "0.0.7"
+      "sha256": "08gzyqidrzf3ky2knil4fy8wh7mnzy19c1643xgxdf7mxzciz65w",
+      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/1684895978/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
+      "version": "0.1.5"
     },
     "customproperties": {
       "meta": {
@@ -820,9 +820,9 @@
         "name": "File access control",
         "summary": "Control access to files based on conditions"
       },
-      "sha256": "1pxcsxnaj9g0aipm79s0r8dz8piagk7l1bb06cbmzps4266pffjk",
-      "url": "https://github.com/nextcloud/files_accesscontrol/releases/download/v1.10.2/files_accesscontrol-1.10.2.tar.gz",
-      "version": "1.10.2"
+      "sha256": "0a9zwr2qn5avdi2y7f17hfqajcfp4bqd8ajfgm9r0h4f5sdj78l7",
+      "url": "https://github.com/nextcloud-releases/files_accesscontrol/releases/download/v1.10.3/files_accesscontrol-1.10.3.tar.gz",
+      "version": "1.10.3"
     },
     "files_antivirus": {
       "meta": {
@@ -1355,9 +1355,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "1iz7zh0yrv31h4pzicxcxxa70j95a0kn23wssw63hanq0xq2vkm1",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.0.0-try-01/gpoddersync.tar.gz",
-      "version": "3.0.0"
+      "sha256": "03nl4dkwd16s5hhnxh09yqy0lxxyhhmdy0i5a2y429qn22c4viy4",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.0.1/gpoddersync.tar.gz",
+      "version": "3.0.1"
     },
     "gpxedit": {
       "meta": {
@@ -2817,9 +2817,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1njl7c2r2acsj6g2qw4zcxv769d2r86zqciwaqfll74qxw1s66p2",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.7/riotchat.tar.gz",
-      "version": "0.9.7"
+      "sha256": "1hpjcp4aa0lgd8dvbglj67lnp7fzpd071ssjfk10684npwlf61j1",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.8/riotchat.tar.gz",
+      "version": "0.9.8"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -3063,9 +3063,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "07rifsx0b2nis0bgpjxz8fn0c8512jxr4yv5iymknsxlc22fkvyh",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.7/release.tar.gz",
-      "version": "4.8.7"
+      "sha256": "0bw7wrchm9r5w0fz2h4wlnwa66w6nlh9k0dh11v4qcbhqypjww81",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.8/release.tar.gz",
+      "version": "4.8.8"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3558,18 +3558,18 @@
     },
     "unroundedcorners": {
       "meta": {
-        "description": "# Unrounded Corners\nA Nextcloud app that restores the corners to their original looks, by unrounding them.",
+        "description": "# Unrounded Corners\nA Nextcloud app that restores the corners of buttons and widgets to their original looks by unrounding them.",
         "homepage": "https://github.com/OliverParoczai/nextcloud-unroundedcorners",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Unrounded Corners",
-        "summary": "An extension for making the corners in NextCloud unrounded"
+        "summary": "An extension for making the corners of buttons and widgets unrounded"
       },
-      "sha256": "1arxz1jq3z26dckwinhkkp7klm3qz0xmwi5w49v7186ws1wyzi8y",
-      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.0/unroundedcorners-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0i04v52ch583995lr7whc95ji67sqrq6rh94qhzrbhy0z47i9wnz",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.1/unroundedcorners-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "unsplash": {
       "meta": {

@@ -429,9 +429,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "12di330i43w9r98az1qq4w5fk0zsjx70xfmza7flda9cp82bx2x1",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.4/Cookbook-0.9.4.tar.gz",
-      "version": "0.9.4"
+      "sha256": "17pzkzfjfnjmblg5bdglf5vlgisvc7yb4lclfm0asx391llkxbqi",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.5/Cookbook-0.9.5.tar.gz",
+      "version": "0.9.5"
     },
     "cospend": {
       "meta": {
@@ -458,9 +458,9 @@
         "name": "CPanel Mail Sync",
         "summary": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates."
       },
-      "sha256": "11whf6civbw7a3g669gpp32jafw9pg6psdag0ps64qxl0d38xd7m",
-      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/uploads/f6684c63ac5df7a84b536ac98e668fbc/cpanelmailsync.tar.gz",
-      "version": "0.0.7"
+      "sha256": "08gzyqidrzf3ky2knil4fy8wh7mnzy19c1643xgxdf7mxzciz65w",
+      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/1684895978/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
+      "version": "0.1.5"
     },
     "customproperties": {
       "meta": {
@@ -1313,20 +1313,6 @@
       "sha256": "19yr4cdw3b0y79zb07ibrzrqm2nkvwgw0hsl7q204crlpzsfx27j",
       "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
       "version": "0.0.3"
-    },
-    "gpoddersync": {
-      "meta": {
-        "description": "Expose GPodder API to sync podcast consumer apps like AntennaPod",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "GPodder Sync",
-        "summary": "replicate basic GPodder.net API"
-      },
-      "sha256": "1qhim69w289ywwgz7hq49gs249l1n71hamyl3081nysqs9g3qh9p",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/raw/main/releases/gpoddersync-1.0.4.tar.gz",
-      "version": "1.0.4"
     },
     "gpxedit": {
       "meta": {
@@ -3167,18 +3153,18 @@
     },
     "unroundedcorners": {
       "meta": {
-        "description": "# Unrounded Corners\nA Nextcloud app that restores the corners to their original looks, by unrounding them.",
+        "description": "# Unrounded Corners\nA Nextcloud app that restores the corners of buttons and widgets to their original looks by unrounding them.",
         "homepage": "https://github.com/OliverParoczai/nextcloud-unroundedcorners",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Unrounded Corners",
-        "summary": "An extension for making the corners in NextCloud unrounded"
+        "summary": "An extension for making the corners of buttons and widgets unrounded"
       },
-      "sha256": "1arxz1jq3z26dckwinhkkp7klm3qz0xmwi5w49v7186ws1wyzi8y",
-      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.0/unroundedcorners-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "0i04v52ch583995lr7whc95ji67sqrq6rh94qhzrbhy0z47i9wnz",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.1/unroundedcorners-1.0.1.tar.gz",
+      "version": "1.0.1"
     },
     "unsplash": {
       "meta": {
