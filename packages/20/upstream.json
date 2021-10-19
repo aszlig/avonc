@@ -189,7 +189,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "This app provides you with a web interface for collecting, organizing and sharing bookmarks to the sites on the web that are precious to you.\nYou can browse and filter your bookmarks via tags, folders and by using the built-in search feature and you can share folders with other users and groups as well as create public links for them.\nAlso, in order to access your bookmarks anywhere, it also allows you to synchronize with third-party clients via a built-in REST API -- be it in your browsers or on your phone.\nCheck out the third-party clients listed here: https://github.com/nextcloud/bookmarks#third-party-clients\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20+",
+        "description": "-  Browse and filter your bookmarks via tags and folders and add personal notes\n-  Built-in full-text search integrated into Nextcloud's unified search\n-  Share bookmarks with other users as well as publicly\n-  Keep track of changes in the activity stream\n-  Easily find broken links\n-  All your links are automatically archived for full-text search and in case they are depublished\n-  Access your bookmarks anywhere, on desktop Browsers and on your phone, via a variety of sync clients\n-  Built-in Dashboard widgets for frequent and recent links\n-  Easily generate public and private RSS feeds of your collections\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20+",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -198,9 +198,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "0dq4m9y183xiz5m97aybxddmszsv6s07vn2a0lg8d48hvkw7rwqy",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v10.0.0/bookmarks-10.0.0.tar.gz",
-      "version": "10.0.0"
+      "sha256": "115cxmxwv4arqdwl59xbgdyjy1gqfhjickmfflz080sa6qxb90jj",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v10.0.2/bookmarks-10.0.2.tar.gz",
+      "version": "10.0.2"
     },
     "breezedark": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "17pzkzfjfnjmblg5bdglf5vlgisvc7yb4lclfm0asx391llkxbqi",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.5/Cookbook-0.9.5.tar.gz",
-      "version": "0.9.5"
+      "sha256": "04hrv37l7ghgasxlpljk8hlj82fpw6yznnn228iwzrlh7w8r60sr",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.6/Cookbook-0.9.6.tar.gz",
+      "version": "0.9.6"
     },
     "cospend": {
       "meta": {
@@ -1348,6 +1348,7 @@
     "gpoddersync": {
       "meta": {
         "description": "Expose GPodder API to sync podcast consumer apps like AntennaPod",
+        "homepage": "https://github.com/thrillfall/nextcloud-gpodder",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1355,9 +1356,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "03nl4dkwd16s5hhnxh09yqy0lxxyhhmdy0i5a2y429qn22c4viy4",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.0.1/gpoddersync.tar.gz",
-      "version": "3.0.1"
+      "sha256": "0bdfp3348zaab2jhbig7gnmpam4hxa0ms9nn0cq1vwgv0znhi7rd",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.1.0/gpoddersync.tar.gz",
+      "version": "3.1.0"
     },
     "gpxedit": {
       "meta": {
@@ -2787,9 +2788,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "075xaqqzg35064n1zclj59c7r512bcmw08aq8ssw24c00n71ql5r",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode.tar.gz",
-      "version": "6.4.1103"
+      "sha256": "1zkk97si8yz1glg943sw5vy0yjrkk0afkpqbhj6d0hxlvly8r7h6",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode.tar.gz",
+      "version": "6.4.1303"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2802,9 +2803,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0shh0l66m3a3a0zzk1702hqpd5l2vf2n6si2nd9vzdvw8fy1vj7b",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1103"
+      "sha256": "1d6fvvxnn89p5j7cfak1ak9n6824ja7z5grghncs54mr2imynh3c",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1303"
     },
     "riotchat": {
       "meta": {
@@ -3006,6 +3007,21 @@
       "sha256": "04lyqhknpvz2zm63rv7shdkibbr26ayb955589qq3s80gmgrm9ad",
       "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.4.3/sharingpath.tar.gz",
       "version": "0.4.3"
+    },
+    "shifts": {
+      "meta": {
+        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n* **Integration of existing Open-Source Software!** Using the great [Gantt-schedule-timeline-calendar](https://github.com/neuronetio/gantt-schedule-timeline-calendar) and many more libraries\n\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, use the issue tracker.",
+        "homepage": "https://github.com/csoc-de/Shifts",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Schichtplan",
+        "summary": "App for organising Shifts"
+      },
+      "sha256": "164s2ns5h3kcbqd0dkfrnmhb0wlaj4p83afflnz02k08gj0krm67",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.7.0/shifts-1.7.0.tar.gz",
+      "version": "1.7.0"
     },
     "side_menu": {
       "meta": {
@@ -3567,9 +3583,9 @@
         "name": "Unrounded Corners",
         "summary": "An extension for making the corners of buttons and widgets unrounded"
       },
-      "sha256": "0i04v52ch583995lr7whc95ji67sqrq6rh94qhzrbhy0z47i9wnz",
-      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.1/unroundedcorners-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0f25l3y4v5c2i8iamms3lgk70443szfyw5294a3h8arj3x5w2m5m",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.2/unroundedcorners-v1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "unsplash": {
       "meta": {

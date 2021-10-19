@@ -429,9 +429,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "17pzkzfjfnjmblg5bdglf5vlgisvc7yb4lclfm0asx391llkxbqi",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.5/Cookbook-0.9.5.tar.gz",
-      "version": "0.9.5"
+      "sha256": "04hrv37l7ghgasxlpljk8hlj82fpw6yznnn228iwzrlh7w8r60sr",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.6/Cookbook-0.9.6.tar.gz",
+      "version": "0.9.6"
     },
     "cospend": {
       "meta": {
@@ -2442,9 +2442,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "075xaqqzg35064n1zclj59c7r512bcmw08aq8ssw24c00n71ql5r",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode.tar.gz",
-      "version": "6.4.1103"
+      "sha256": "1zkk97si8yz1glg943sw5vy0yjrkk0afkpqbhj6d0hxlvly8r7h6",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode.tar.gz",
+      "version": "6.4.1303"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2457,9 +2457,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0shh0l66m3a3a0zzk1702hqpd5l2vf2n6si2nd9vzdvw8fy1vj7b",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1103/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1103"
+      "sha256": "1d6fvvxnn89p5j7cfak1ak9n6824ja7z5grghncs54mr2imynh3c",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode_arm64.tar.gz",
+      "version": "6.4.1303"
     },
     "riotchat": {
       "meta": {
@@ -2631,6 +2631,21 @@
       "sha256": "0nf8all2n1g9jxbvbh1lbjar0kjbyf3gf62bf8bi9lr0i0j6hkkh",
       "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.2.5/sharingpath.tar.gz",
       "version": "0.2.5"
+    },
+    "shifts": {
+      "meta": {
+        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n* **Integration of existing Open-Source Software!** Using the great [Gantt-schedule-timeline-calendar](https://github.com/neuronetio/gantt-schedule-timeline-calendar) and many more libraries\n\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, use the issue tracker.",
+        "homepage": "https://github.com/csoc-de/Shifts",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Schichtplan",
+        "summary": "App for organising Shifts"
+      },
+      "sha256": "18qv7f9xkq71fxfrin8814sa7wzikx0vpm3yvdcjxn2d8qipzff4",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.6.1/shifts-1.6.1.tar.gz",
+      "version": "1.6.1"
     },
     "side_menu": {
       "meta": {
@@ -3162,9 +3177,9 @@
         "name": "Unrounded Corners",
         "summary": "An extension for making the corners of buttons and widgets unrounded"
       },
-      "sha256": "0i04v52ch583995lr7whc95ji67sqrq6rh94qhzrbhy0z47i9wnz",
-      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.1/unroundedcorners-1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "0f25l3y4v5c2i8iamms3lgk70443szfyw5294a3h8arj3x5w2m5m",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.2/unroundedcorners-v1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "unsplash": {
       "meta": {
