@@ -345,9 +345,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0957pclijvcbj4a0pwn53hzr2dj3gg9747dl0d2f9kj4mqsnrmld",
-      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.15/circles-0.19.15.tar.gz",
-      "version": "0.19.15"
+      "sha256": "0azakgsfjin3g6xsyf63l7i4s4fgb89m87a60n8bq2fq9r9vwi2c",
+      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.16/circles-0.19.16.tar.gz",
+      "version": "0.19.16"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1650,9 +1650,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "07hd4214ws36m5x219nhn4myzyy7301pfa04m5kydfid9ndgvyr7",
-      "url": "https://dalliance.net/listman/listman-20.0.7.tar.gz",
-      "version": "20.0.7"
+      "sha256": "149bdxb4a9ism2vd9kvbw5l4sp2lvp87nh1rvx0v6slp9a42qlhk",
+      "url": "https://dalliance.net/listman/listman-20.0.8.tar.gz",
+      "version": "20.0.8"
     },
     "loganalyzer": {
       "meta": {
@@ -1795,9 +1795,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1i0cgx498r7lsccf54iypn69ckih6vjp9fmnpw6in2ciwv31h3ga",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.2.9/ncdownloader-release.tar.gz",
-      "version": "0.2.9"
+      "sha256": "02gk14rxzs3zn3zzykjmcl3nim7l8km0lvjb31khdh8cami0x2w5",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4.0/ncdownloader-release.tar.gz",
+      "version": "0.4.1"
     },
     "news": {
       "meta": {
@@ -2658,9 +2658,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "13bsaxdly51528v503r44iwp9wa4qvniwwvmmahkpxdq3znwf6sn",
-      "url": "https://gitnet.fr/attachments/c9536ef0-45d2-40bb-a1b0-968378538c9d",
-      "version": "1.27.2"
+      "sha256": "0alpgb81y16nzjbmkwdjz65acpdqr8cy3mx9cnz47rlcxx34lilp",
+      "url": "https://gitnet.fr/attachments/525ea0a3-70b9-49d1-8149-5bdd82ef32c1",
+      "version": "1.28.0"
     },
     "smb_test": {
       "meta": {
@@ -3468,9 +3468,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "01hkpf6pca8r6vdj615580vxbhg6linagcp1mivwrd8il0hz7d2r",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.7/wopi.tar.gz",
-      "version": "3.5.7"
+      "sha256": "06fjhjfnw59jxzhrz0fagb9fzpm4lnc1hdja52ifijfx1mjpys8c",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.10/wopi.tar.gz",
+      "version": "3.5.10"
     },
     "workflow_ocr": {
       "meta": {

@@ -375,9 +375,9 @@
         "name": "Collectives",
         "summary": "A place for activist and community projects to build shared knowledge"
       },
-      "sha256": "0k7zlxdl2g7xfhn146rbbvgjv21lcvvwrc96gw4cph1m3k2kh21p",
-      "url": "https://gitlab.com/collectivecloud/collectives/uploads/cf13366c57b45e08b1d2f8d2668391ac/collectives-0.12.21.tar.gz",
-      "version": "0.12.21"
+      "sha256": "10fw7df9dw4zhapqxvkzk3z62bdpx6xq9rvb995d084rddf0fiyp",
+      "url": "https://gitlab.com/collectivecloud/collectives/uploads/81b7101a4839a4daab7969968b76ddec/collectives-0.15.21.tar.gz",
+      "version": "0.15.21"
     },
     "comments": {
       "meta": {
@@ -1564,9 +1564,9 @@
         "name": "HEIC/HEIF Image Converter",
         "summary": "Converts your HEIC/ HEIF images to JPEG"
       },
-      "sha256": "1qn4v3xjaq9xsnrxd55iyi832qdchdzzq8axmnxfc44six65pyqr",
-      "url": "https://github.com/major-mayer/imageconverter/releases/download/v.1.3.1/imageconverter.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1099m3bxn782hkq43h5d9y8zkhjcpm17b300wxlmgcy9ssnrx2w3",
+      "url": "https://github.com/major-mayer/imageconverter/releases/download/v1.3.0/imageconverter.tar.gz",
+      "version": "1.3.0"
     },
     "impersonate": {
       "meta": {
@@ -1951,9 +1951,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "07hd4214ws36m5x219nhn4myzyy7301pfa04m5kydfid9ndgvyr7",
-      "url": "https://dalliance.net/listman/listman-20.0.7.tar.gz",
-      "version": "20.0.7"
+      "sha256": "149bdxb4a9ism2vd9kvbw5l4sp2lvp87nh1rvx0v6slp9a42qlhk",
+      "url": "https://dalliance.net/listman/listman-20.0.8.tar.gz",
+      "version": "20.0.8"
     },
     "loganalyzer": {
       "meta": {
@@ -2096,9 +2096,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1i0cgx498r7lsccf54iypn69ckih6vjp9fmnpw6in2ciwv31h3ga",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.2.9/ncdownloader-release.tar.gz",
-      "version": "0.2.9"
+      "sha256": "02gk14rxzs3zn3zzykjmcl3nim7l8km0lvjb31khdh8cami0x2w5",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4.0/ncdownloader-release.tar.gz",
+      "version": "0.4.1"
     },
     "news": {
       "meta": {
@@ -2818,9 +2818,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1hpjcp4aa0lgd8dvbglj67lnp7fzpd071ssjfk10684npwlf61j1",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.8/riotchat.tar.gz",
-      "version": "0.9.8"
+      "sha256": "1vbkiv9116gpiwv5wd34cmyfrnaygr6kcq6867n0rwfn5ph49yj3",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.9/riotchat.tar.gz",
+      "version": "0.9.9"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -3019,9 +3019,9 @@
         "name": "Schichtplan",
         "summary": "App for organising Shifts"
       },
-      "sha256": "164s2ns5h3kcbqd0dkfrnmhb0wlaj4p83afflnz02k08gj0krm67",
-      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.7.0/shifts-1.7.0.tar.gz",
-      "version": "1.7.0"
+      "sha256": "1nkygy61j8rpinmdqqmsldpak0vxnx608v3y1g570cpnd71hgdm5",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.7.1/shifts-1.7.1.tar.gz",
+      "version": "1.7.1"
     },
     "side_menu": {
       "meta": {
@@ -3034,9 +3034,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "13bsaxdly51528v503r44iwp9wa4qvniwwvmmahkpxdq3znwf6sn",
-      "url": "https://gitnet.fr/attachments/c9536ef0-45d2-40bb-a1b0-968378538c9d",
-      "version": "1.27.2"
+      "sha256": "0alpgb81y16nzjbmkwdjz65acpdqr8cy3mx9cnz47rlcxx34lilp",
+      "url": "https://gitnet.fr/attachments/525ea0a3-70b9-49d1-8149-5bdd82ef32c1",
+      "version": "1.28.0"
     },
     "smb_test": {
       "meta": {
@@ -3079,9 +3079,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "0bw7wrchm9r5w0fz2h4wlnwa66w6nlh9k0dh11v4qcbhqypjww81",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.8/release.tar.gz",
-      "version": "4.8.8"
+      "sha256": "0njz7drwmybs37ax8baxqyjm4lmrf5hb0syxddvi8p0alnnx8wih",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.8.10/release.tar.gz",
+      "version": "4.8.10"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3625,9 +3625,9 @@
         "name": "User Backend Using Raw SQL",
         "summary": "User management and authentication through arbitrary SQL queries"
       },
-      "sha256": "1f6jq6w5a60gkjnqr2s8ypl1iwpdm9sl632m2316358c83pg698b",
-      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.1.0/user_backend_sql_raw.tar.gz",
-      "version": "1.1.0"
+      "sha256": "1dvasxb4x5widn1735j7ldjf3l2fpp3phrc7nkks2zbj828yphgf",
+      "url": "https://github.com/PanCakeConnaisseur/user_backend_sql_raw/releases/download/v1.1.1/user_backend_sql_raw.tar.gz",
+      "version": "1.1.1"
     },
     "user_cas": {
       "meta": {
@@ -3915,9 +3915,9 @@
         "name": "Wopi",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "01hkpf6pca8r6vdj615580vxbhg6linagcp1mivwrd8il0hz7d2r",
-      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.7/wopi.tar.gz",
-      "version": "3.5.7"
+      "sha256": "06fjhjfnw59jxzhrz0fagb9fzpm4lnc1hdja52ifijfx1mjpys8c",
+      "url": "https://github.com/roscomputing/richdocuments/releases/download/v3.5.10/wopi.tar.gz",
+      "version": "3.5.10"
     },
     "workflow_ocr": {
       "meta": {
