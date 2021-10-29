@@ -676,9 +676,9 @@
         "name": "End-to-End Encryption",
         "summary": "End-to-end encryption endpoint"
       },
-      "sha256": "02mr91hnyabgm5f3nam4nmqwaagmb53mkdczmpvqmw3k2v2i97dl",
-      "url": "https://github.com/nextcloud/end_to_end_encryption/releases/download/v1.7.1/end_to_end_encryption-1.7.1.tar.gz",
-      "version": "1.7.1"
+      "sha256": "1fg426d94b0p45wv4sdcmbpfyfxk5f96w8rna8fkf3clca5nhm5f",
+      "url": "https://github.com/nextcloud-releases/end_to_end_encryption/releases/download/v1.7.2/end_to_end_encryption-v1.7.2.tar.gz",
+      "version": "1.7.2"
     },
     "epubreader": {
       "meta": {
@@ -910,6 +910,21 @@
       "sha256": "0gna0q6j4v3gwz8yxzal6ila241ki7hir58k018rka0894nmd45s",
       "url": "https://github.com/nextcloud-releases/files_fulltextsearch/releases/download/21.0.4/files_fulltextsearch-21.0.4.tar.gz",
       "version": "21.0.4"
+    },
+    "files_fulltextsearch_tesseract": {
+      "meta": {
+        "description": "Extension to the _Full text search - Files_ app to OCR your documents before index.\n\nThis is a simple app that use [Tesseract OCR for PHP](https://github.com/thiagoalessio/tesseract-ocr-for-php),\nwhich is a wrapper for the command line program [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)\n\nTesseract must be installed locally, and configured.",
+        "homepage": "https://github.com/daita/files_fulltextsearch_tesseract",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Full text search - Files - Tesseract OCR",
+        "summary": "OCR Some format"
+      },
+      "sha256": "0jzp3hl2lpbkkxykp6kqhrqnn5vz8098nfi0bq62klrzq4im4ws7",
+      "url": "https://github.com/ArtificialOwl/files_fulltextsearch_tesseract/releases/download/v22.0.0/files_fulltextsearch_tesseract-22.0.0.tar.gz",
+      "version": "22.0.0"
     },
     "files_inotify": {
       "meta": {
@@ -2008,9 +2023,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "02gk14rxzs3zn3zzykjmcl3nim7l8km0lvjb31khdh8cami0x2w5",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.4.0/ncdownloader-release.tar.gz",
-      "version": "0.4.1"
+      "sha256": "1sji2pmyxihjp1ypz6y8f289pvc35pm6bn8y6fl7pifhn0g8pmc9",
+      "url": "https://joyvm.club/ncdownloader-release.tar.gz",
+      "version": "0.5.0"
     },
     "news": {
       "meta": {
@@ -2774,21 +2789,6 @@
       "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.4.3/sharingpath.tar.gz",
       "version": "0.4.3"
     },
-    "shifts": {
-      "meta": {
-        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n* **Integration of existing Open-Source Software!** Using the great [Gantt-schedule-timeline-calendar](https://github.com/neuronetio/gantt-schedule-timeline-calendar) and many more libraries\n\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, use the issue tracker.",
-        "homepage": "https://github.com/csoc-de/Shifts",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Schichtplan",
-        "summary": "App for organising Shifts"
-      },
-      "sha256": "1nkygy61j8rpinmdqqmsldpak0vxnx608v3y1g570cpnd71hgdm5",
-      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.7.1/shifts-1.7.1.tar.gz",
-      "version": "1.7.1"
-    },
     "side_menu": {
       "meta": {
         "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nYou can customize colors depending of the theme (Dark theme and Breeze Dark). Comptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
@@ -2860,9 +2860,9 @@
         "name": "Social sharing via Diaspora",
         "summary": "Enable direct sharing of files via Diaspora, using shared links."
       },
-      "sha256": "0mj32pf2nf7zj016ppz7j8gxgcxc56hnd8ipc65rk6ids59m44k4",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.2.0/socialsharing_diaspora.tar.gz",
-      "version": "2.2.0"
+      "sha256": "0czb4a0max9gdkka2fdfa2x7x1p27r6n7aci0nxh5g8ykw9mc8la",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_diaspora.tar.gz",
+      "version": "2.3.0"
     },
     "socialsharing_email": {
       "meta": {
@@ -2875,9 +2875,9 @@
         "name": "Social sharing via email",
         "summary": "Enable direct sharing of files via email, using shared links."
       },
-      "sha256": "1sx1bsl9vji2smpnizr0a74ab3pf1igzi3r7gyl7yv6b7acv3nrh",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.2.0/socialsharing_email.tar.gz",
-      "version": "2.2.0"
+      "sha256": "0zvrq6vdj3jlfk3s73cmbjr1fishwhr64kpwplzacax5jnkqa4yf",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_email.tar.gz",
+      "version": "2.3.0"
     },
     "socialsharing_facebook": {
       "meta": {
@@ -2890,9 +2890,9 @@
         "name": "Social sharing via Facebook",
         "summary": "Enable direct sharing of files via Facebook, using shared links."
       },
-      "sha256": "0c64m26wbl46wmqk5mc6p65rlcdsrw3is7cdi45a251m4hq4laiv",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.2.0/socialsharing_facebook.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1x8p3brqq2cnkzw4ig2gq170fdwk0b8p5rpah3hj04ds97hrj7b3",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_facebook.tar.gz",
+      "version": "2.3.0"
     },
     "socialsharing_twitter": {
       "meta": {
@@ -2905,9 +2905,9 @@
         "name": "Social sharing via Twitter",
         "summary": "Enable direct sharing of files via Twitter, using shared links."
       },
-      "sha256": "1qs0jpyw3jmjzl41021v2vq1hs8rny58vfz5j7ranj9rdalay4zb",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.2.0/socialsharing_twitter.tar.gz",
-      "version": "2.2.0"
+      "sha256": "1jqdyxvkk42j37jg9ymvfx9wavykjm8pal6gj6cbayxxkiaw2j6m",
+      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_twitter.tar.gz",
+      "version": "2.3.0"
     },
     "solid": {
       "meta": {
