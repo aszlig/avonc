@@ -47,6 +47,8 @@ import ./make-test.nix (pkgs: {
         "ldap_write_support"
         # Needs Java
         "libresign"
+        # Needs Python
+        "mediadc"
         # Needs an external backend
         "pdfdraw"
         # Only works with MyQSL

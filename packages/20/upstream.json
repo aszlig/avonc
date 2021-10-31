@@ -2081,9 +2081,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0p6qik0sb3d675fids5k9klb4jx6kq5q8qcslh9pgwc170klbm06",
-      "url": "https://github.com/owncloud/music/releases/download/v1.4.0/music_1.4.0_for_nextcloud.tar.gz",
-      "version": "1.4.0"
+      "sha256": "1y2lhj5gxi67iaw59p7svc786kj69lwqj1d3766hys7ff37f0cl6",
+      "url": "https://github.com/owncloud/music/releases/download/v1.4.1/music_1.4.1_for_nextcloud.tar.gz",
+      "version": "1.4.1"
     },
     "ncdownloader": {
       "meta": {
