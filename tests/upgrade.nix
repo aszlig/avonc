@@ -118,7 +118,7 @@ import ./make-test.nix (pkgs: {
           "external" "end_to_end_encryption" "files_accesscontrol"
           "files_markdown" "files_rightclick" "gpxpod" "groupfolders" "mail"
           "metadata" "news" "passwords" "polls" "phonetrack" "richdocuments"
-          "social" "spreed" "tasks"
+          "spreed" "tasks"
         ] (lib.const { enable = true; });
       }
     ];

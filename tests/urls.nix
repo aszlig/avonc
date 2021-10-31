@@ -4,7 +4,6 @@ import ./make-test.nix ({ pkgs, ... }: {
   machine = { pkgs, ... }: {
     nextcloud.domain = "localhost";
     nextcloud.apps.end_to_end_encryption.enable = true;
-    nextcloud.apps.social.enable = true;
 
     services.nginx.enable = true;
     services.postgresql.enable = true;
@@ -20,17 +19,6 @@ import ./make-test.nix ({ pkgs, ... }: {
 
   testScript = let
     inherit (pkgs) lib;
-
-    tests.".well-known/webfinger" = ''
-      >>> requests.get(url + '/apps/social', auth=admin_auth)
-      <Response [200]>
-      >>> url += '/.well-known/webfinger'
-      >>> qstring = 'resource=acct:admin@localhost'
-      >>> response = requests.get(url + '?' + qstring)
-      >>> response.raise_for_status()
-      >>> sorted(response.json().keys())
-      ['links', 'subject']
-    '';
 
     tests.".well-known/host-meta" = ''
       >>> requests.get(url + '/.well-known/host-meta')
