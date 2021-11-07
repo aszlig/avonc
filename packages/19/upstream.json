@@ -1780,9 +1780,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "0p6qik0sb3d675fids5k9klb4jx6kq5q8qcslh9pgwc170klbm06",
-      "url": "https://github.com/owncloud/music/releases/download/v1.4.0/music_1.4.0_for_nextcloud.tar.gz",
-      "version": "1.4.0"
+      "sha256": "1y2lhj5gxi67iaw59p7svc786kj69lwqj1d3766hys7ff37f0cl6",
+      "url": "https://github.com/owncloud/music/releases/download/v1.4.1/music_1.4.1_for_nextcloud.tar.gz",
+      "version": "1.4.1"
     },
     "ncdownloader": {
       "meta": {
@@ -2501,9 +2501,9 @@
         "name": "SecSign ID",
         "summary": "Plugin to enable use of SecSign 2FA"
       },
-      "sha256": "18i9kip1ns6af16yqaacnyw5y0rvcnfbsw8a7klgsvql4f2db2p0",
-      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.4.tar.gz",
-      "version": "0.3.4"
+      "sha256": "18macgn44f7c4acfz5i2lkpbg57c6h73ggd7rfgy4iw0m6q3hsih",
+      "url": "https://secsign.com/downloads/nextcloud/secsignid-0.3.7.tar.gz",
+      "version": "0.3.7"
     },
     "sendent": {
       "meta": {
