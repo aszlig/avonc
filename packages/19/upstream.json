@@ -514,9 +514,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "0hbxnrz15m8mihfdwgh25zy81vcifpfsla63f0fqqx6pd5q005yp",
-      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.9/deck.tar.gz",
-      "version": "1.2.9"
+      "sha256": "0cxp5whpxr7fv5i58pxrzdgwcqyg4rdlyxnhphjji72pdqa2jslq",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.11/deck.tar.gz",
+      "version": "1.2.11"
     },
     "discoursesso": {
       "meta": {
@@ -2172,21 +2172,6 @@
       "url": "https://github.com/nextcloud/preferred_providers/releases/download/v1.8.0/preferred_providers.tar.gz",
       "version": "1.8.0"
     },
-    "previewgenerator": {
-      "meta": {
-        "description": "The Preview Generator app allows admins to pre-generate previews. The app listens to edit events and stores this information. Once a cron job is triggered it will generate start preview generation. This means that you can better utilize your system by pre-generating previews when your system is normally idle and thus putting less load on your machine when the requests are actually served.\n\nThe app does not replace on demand preview generation so if a preview is requested before it is pre-generated it will still be shown.\nThe first time you install this app, before using a cron job, you properly want to generate all previews via:\n**./occ preview:generate-all -vvv**\n\n**Important**: To enable pre-generation of previews you must add **php /var/www/nextcloud/occ preview:pre-generate** to a system cron job that runs at times of your choosing.",
-        "homepage": "https://github.com/rullzer/previewgenerator",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Preview Generator",
-        "summary": "A preview pre-generation app"
-      },
-      "sha256": "1p1ff0kh06xvjg9yd8ifs9a42sp37agdhhcp2xnlv10g430ri1v7",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v2.3.0/previewgenerator.tar.gz",
-      "version": "2.3.0"
-    },
     "pride": {
       "meta": {
         "description": "Diversity and inclusion are what makes the world worth living in! Let&amp;#39;s show some pride!",
@@ -2703,9 +2688,9 @@
         "name": "Social sharing via Diaspora",
         "summary": "Enable direct sharing of files via Diaspora, using shared links."
       },
-      "sha256": "0czb4a0max9gdkka2fdfa2x7x1p27r6n7aci0nxh5g8ykw9mc8la",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_diaspora.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1ga72567crixa22af23169j2hb0w785dlmicphjg7jkxawxsi20h",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_diaspora.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_email": {
       "meta": {
@@ -2718,9 +2703,9 @@
         "name": "Social sharing via email",
         "summary": "Enable direct sharing of files via email, using shared links."
       },
-      "sha256": "0zvrq6vdj3jlfk3s73cmbjr1fishwhr64kpwplzacax5jnkqa4yf",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_email.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1na176dafg01i1cxv58kqb49rj93nm4i68gkd7n77hfs033hsdq9",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_email.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_facebook": {
       "meta": {
@@ -2733,9 +2718,9 @@
         "name": "Social sharing via Facebook",
         "summary": "Enable direct sharing of files via Facebook, using shared links."
       },
-      "sha256": "1x8p3brqq2cnkzw4ig2gq170fdwk0b8p5rpah3hj04ds97hrj7b3",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_facebook.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1wsawbq3s3110w61bavp3v98vqapp8y0xg40dallfvs29jmx6305",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_facebook.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_twitter": {
       "meta": {
@@ -2748,13 +2733,13 @@
         "name": "Social sharing via Twitter",
         "summary": "Enable direct sharing of files via Twitter, using shared links."
       },
-      "sha256": "1jqdyxvkk42j37jg9ymvfx9wavykjm8pal6gj6cbayxxkiaw2j6m",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_twitter.tar.gz",
-      "version": "2.3.0"
+      "sha256": "11j7qwwzmch3hair53gxx1rzpsrskmm38cqymzn6rn4jx1hp5xh3",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_twitter.tar.gz",
+      "version": "2.4.0"
     },
     "solid": {
       "meta": {
-        "description": "# Solid pod server\n\nThis app gives every user on the server a Solid pod storage space and a corresponding WebID URL.\nIt supports the webid-oidc-dpop-pkce login flow to connect to a Solid App with your Nextcloud User.\nWhen you do this, the Solid App can store data in your Nextcloud account through the Solid protocol.",
+        "description": "# Solid pod server\n\nThis app gives every user on the server a Solid pod storage space and a corresponding WebID URL.\nIt supports the webid-oidc-dpop-pkce login flow to connect to a Solid App with your Nextcloud User.\nWhen you do this, the Solid App can store data in your Nextcloud account through the Solid protocol.\nIMPORTANT: See https://github.com/pdsinterop/solid-nextcloud/blob/main/INSTALL.md for additional install instructions!",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2762,9 +2747,9 @@
         "name": "Solid",
         "summary": "Makes your Nextcloud server into a Solid pod server, to allow interoperability with SolidProject.org"
       },
-      "sha256": "191sh6wsb92qp7lpkm5z84zwjz5sx6qmylbdhhp664i8iqr8mwz0",
-      "url": "https://github.com/pdsinterop/solid-nextcloud/releases/download/v0.0.2/solid.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0j0imawi97bbhr49hbc1vkm5sm3f66mc8a2kh585bl84p0r8pvlf",
+      "url": "https://github.com/pdsinterop/solid-nextcloud/releases/download/v0.0.3/solid.tar.gz",
+      "version": "0.0.3"
     },
     "souvenirs": {
       "meta": {
@@ -3045,9 +3030,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0jxpa5446x52bchl8hk80jhm30v7h9abnh9ny4xqg7p8v67lyy1s",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.4/tvshownamer.tar.gz",
-      "version": "0.0.4"
+      "sha256": "0q48j4kbxnz7zndwwhar4q7l4dplsqk7yvgdphnxg9s8faxpvwal",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.0/tvshownamer.tar.gz",
+      "version": "0.1.0"
     },
     "twofactor_admin": {
       "meta": {
@@ -3353,6 +3338,21 @@
       "sha256": "1kjbcgnmgiqlrd3sqp6nj37ywwfaprcqhai7yd4dlavzknvxf67n",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.3.3/user_usage_report-1.3.3.tar.gz",
       "version": "1.3.3"
+    },
+    "vibeetoee": {
+      "meta": {
+        "description": "VIBE is a modern identity-based encryption technology which creates a Private Key for a user/device based on its unique identity (UID), which for Nextcloud users is their assigned NC user name. VIBE enables communication of end-to-end encrypted files point-to-point, and is the first E2E technology that offers rules-based, Group-to-Group sending/receiving of encrypted files.  VIBE is available to commercial organizations on a 60-day free trial, and thereafter on an annual subscription basis.\n    ### Key Features of VIBE\n    * Authenticates/validates the sender/recipient of a message at the application layer\n    * Eliminates the need to protect the public parameters, making man in the middle attacks impossible\n    * Enables Nextcloud E2E encrypted group information sharing based on assigned rights\n    * No need for maintaining or remembering pass phrases\n    * Device management for deactivation/activation of stolen/lost/decommissioned devices (available as of Q1/2022)\n    * Adds industrial-grade HSM powered zero-trust identity-based encryption and authentication\n    * Contributes to simplistic key, revocation and security infrastructure management, thus significantly lowering the operational cost (40-60% cheaper than PKI / certificate-based solutions)\n    ### Technical Specifications\n    * Supports AGPLv3, MPL 2.0 and Apache License 2.0\n    * Compatible Operating Systems: Linux; Apple OSX 10.14+; Windows 10+(32/64 Bit); iOS14+; Android 10+",
+        "homepage": "https://vibecyber.com/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Nextcloud VIBE E2E Encryption",
+        "summary": "VIBE E2E Encryption Nextcloud Extension"
+      },
+      "sha256": "18zc237glnl7773raaadv5fvwxvbwfyp1yb6d4519wii6p5ckrz3",
+      "url": "https://mobikey.de/vibeetoee.tar.gz",
+      "version": "1.0.0"
     },
     "video_converter": {
       "meta": {

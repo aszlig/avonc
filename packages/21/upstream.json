@@ -515,9 +515,9 @@
         "name": "Deck",
         "summary": "Personal planning and team project organization"
       },
-      "sha256": "1kcagmrg867whyjbm16jy9aik07im14iwqbhhc9s3p8yx2hpwl3r",
-      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.4.5/deck.tar.gz",
-      "version": "1.4.5"
+      "sha256": "1k99jxzj1xy0dscj6x929lghn49rzkphvxlc7pdx7byamxqqgb7p",
+      "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.4.7/deck.tar.gz",
+      "version": "1.4.7"
     },
     "discoursesso": {
       "meta": {
@@ -648,9 +648,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "1gpjnrwxikm4x7rik7c58ayyprbr6nckn3b8njrdz2vl593bl7k2",
-      "url": "https://github.com/newroco/emlviewer/releases/download/0.0.23/emlviewer-0.0.23.tar.gz",
-      "version": "0.0.23"
+      "sha256": "0qglpg2kxn8m6xl7ma3nhxjvmabdc2rg9n9v5zswqzql9ncwvp3i",
+      "url": "https://github.com/newroco/emlviewer/releases/download/1.0.0/emlviewer-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "encryption": {
       "meta": {
@@ -1415,9 +1415,9 @@
         "name": "Guests",
         "summary": "Create guest accounts for easier collaboration"
       },
-      "sha256": "0sfa2clalrpn5cvr3ny9y2c7vxl1p4knhfavzlgjxnc3x87lm31x",
-      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.0.2/guests.tar.gz",
-      "version": "2.0.2"
+      "sha256": "0zypi87ckw83lgd45hd79jzqil1rkbm5v1rxvxjkg94vzw205ypa",
+      "url": "https://github.com/nextcloud-releases/guests/releases/download/v2.1.0/guests-v2.1.0.tar.gz",
+      "version": "2.1.0"
     },
     "hancomoffice": {
       "meta": {
@@ -2358,7 +2358,7 @@
     "previewgenerator": {
       "meta": {
         "description": "The Preview Generator app allows admins to pre-generate previews. The app listens to edit events and stores this information. Once a cron job is triggered it will generate start preview generation. This means that you can better utilize your system by pre-generating previews when your system is normally idle and thus putting less load on your machine when the requests are actually served.\n\nThe app does not replace on demand preview generation so if a preview is requested before it is pre-generated it will still be shown.\nThe first time you install this app, before using a cron job, you properly want to generate all previews via:\n**./occ preview:generate-all -vvv**\n\n**Important**: To enable pre-generation of previews you must add **php /var/www/nextcloud/occ preview:pre-generate** to a system cron job that runs at times of your choosing.",
-        "homepage": "https://github.com/rullzer/previewgenerator",
+        "homepage": "https://github.com/nextcloud/previewgenerator",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2366,9 +2366,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "1dy4ilrvfmavy68f8jz417y0n3h3jz3y8xjxjzdhrbsdwgi9di45",
-      "url": "https://github.com/rullzer/previewgenerator/releases/download/v3.1.1/previewgenerator.tar.gz",
-      "version": "3.1.1"
+      "sha256": "07s9jfs3rakkayalnjk84c4jl597x24m5wmxsvbizs8sycd4y0cc",
+      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.2.0/previewgenerator.tar.gz",
+      "version": "3.2.0"
     },
     "pride": {
       "meta": {
@@ -2628,9 +2628,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1vbkiv9116gpiwv5wd34cmyfrnaygr6kcq6867n0rwfn5ph49yj3",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.9/riotchat.tar.gz",
-      "version": "0.9.9"
+      "sha256": "0hra2s0qkhs1jvmrqn8mm10kxxiqg57kpnqmbacj101xsfwl3933",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.10/riotchat.tar.gz",
+      "version": "0.9.10"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -2803,6 +2803,21 @@
       "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.4.3/sharingpath.tar.gz",
       "version": "0.4.3"
     },
+    "shifts": {
+      "meta": {
+        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, use the issue tracker.",
+        "homepage": "https://github.com/csoc-de/Shifts",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Schichtplan",
+        "summary": "App for organising Shifts"
+      },
+      "sha256": "1v4z0pyl3cnjiys0i9k13w7njkpjjvrxs2w7bdqv00g1sy2g7chr",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.0/shifts-1.8.0.tar.gz",
+      "version": "1.8.0"
+    },
     "side_menu": {
       "meta": {
         "description": "Custom menu allows you to modify the position of the main menu by creating a panel on the left of the interface or with a big menu on the top.\nYou can also define apps that must be displayed in the top menu. Fully customisable.\n\nThis application is rather suitable for instances that activate a lot of applications.\n\nUse the shortcut `Ctrl`+`o` to open and to hide the side menu. Use `tab` to navigate.\n\nYou can customize colors depending of the theme (Dark theme and Breeze Dark). Comptatible with AppOrder.\n\nYou can report a bug or request a feature by opening an issue.\n\nRequirements:\n\n* PHP &gt;= 7.3\n* App `theming` enabled\n\nIf you like this application and if you want to support the development:\n\n* [Buy me a coffee](https://www.buymeacoffee.com/deblan)\n* [Donate with liberapay](https://liberapay.com/deblan)\n* [Leave a comment](https://apps.nextcloud.com/apps/side_menu#comments)",
@@ -2874,9 +2889,9 @@
         "name": "Social sharing via Diaspora",
         "summary": "Enable direct sharing of files via Diaspora, using shared links."
       },
-      "sha256": "0czb4a0max9gdkka2fdfa2x7x1p27r6n7aci0nxh5g8ykw9mc8la",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_diaspora.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1ga72567crixa22af23169j2hb0w785dlmicphjg7jkxawxsi20h",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_diaspora.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_email": {
       "meta": {
@@ -2889,9 +2904,9 @@
         "name": "Social sharing via email",
         "summary": "Enable direct sharing of files via email, using shared links."
       },
-      "sha256": "0zvrq6vdj3jlfk3s73cmbjr1fishwhr64kpwplzacax5jnkqa4yf",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_email.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1na176dafg01i1cxv58kqb49rj93nm4i68gkd7n77hfs033hsdq9",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_email.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_facebook": {
       "meta": {
@@ -2904,9 +2919,9 @@
         "name": "Social sharing via Facebook",
         "summary": "Enable direct sharing of files via Facebook, using shared links."
       },
-      "sha256": "1x8p3brqq2cnkzw4ig2gq170fdwk0b8p5rpah3hj04ds97hrj7b3",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_facebook.tar.gz",
-      "version": "2.3.0"
+      "sha256": "1wsawbq3s3110w61bavp3v98vqapp8y0xg40dallfvs29jmx6305",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_facebook.tar.gz",
+      "version": "2.4.0"
     },
     "socialsharing_twitter": {
       "meta": {
@@ -2919,13 +2934,13 @@
         "name": "Social sharing via Twitter",
         "summary": "Enable direct sharing of files via Twitter, using shared links."
       },
-      "sha256": "1jqdyxvkk42j37jg9ymvfx9wavykjm8pal6gj6cbayxxkiaw2j6m",
-      "url": "https://github.com/nextcloud/socialsharing/releases/download/v2.3.0/socialsharing_twitter.tar.gz",
-      "version": "2.3.0"
+      "sha256": "11j7qwwzmch3hair53gxx1rzpsrskmm38cqymzn6rn4jx1hp5xh3",
+      "url": "https://github.com/nextcloud-releases/socialsharing/releases/download/v2.4.0/socialsharing_twitter.tar.gz",
+      "version": "2.4.0"
     },
     "solid": {
       "meta": {
-        "description": "# Solid pod server\n\nThis app gives every user on the server a Solid pod storage space and a corresponding WebID URL.\nIt supports the webid-oidc-dpop-pkce login flow to connect to a Solid App with your Nextcloud User.\nWhen you do this, the Solid App can store data in your Nextcloud account through the Solid protocol.",
+        "description": "# Solid pod server\n\nThis app gives every user on the server a Solid pod storage space and a corresponding WebID URL.\nIt supports the webid-oidc-dpop-pkce login flow to connect to a Solid App with your Nextcloud User.\nWhen you do this, the Solid App can store data in your Nextcloud account through the Solid protocol.\nIMPORTANT: See https://github.com/pdsinterop/solid-nextcloud/blob/main/INSTALL.md for additional install instructions!",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2933,9 +2948,9 @@
         "name": "Solid",
         "summary": "Makes your Nextcloud server into a Solid pod server, to allow interoperability with SolidProject.org"
       },
-      "sha256": "191sh6wsb92qp7lpkm5z84zwjz5sx6qmylbdhhp664i8iqr8mwz0",
-      "url": "https://github.com/pdsinterop/solid-nextcloud/releases/download/v0.0.2/solid.tar.gz",
-      "version": "0.0.2"
+      "sha256": "0j0imawi97bbhr49hbc1vkm5sm3f66mc8a2kh585bl84p0r8pvlf",
+      "url": "https://github.com/pdsinterop/solid-nextcloud/releases/download/v0.0.3/solid.tar.gz",
+      "version": "0.0.3"
     },
     "souvenirs": {
       "meta": {
@@ -3189,9 +3204,9 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "0hidg726r4gw5yml6n3mbq6ld62lnq9fv6ryis5x67jkxyfa3mfd",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.9.0/theming_customcss.tar.gz",
-      "version": "1.9.0"
+      "sha256": "1vshkgdplqpxjgwbzcrclmlh6iz8m9mh5rw3zvs0yddzwy9ghgnz",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.10.0/theming_customcss.tar.gz",
+      "version": "1.10.0"
     },
     "timemanager": {
       "meta": {
@@ -3246,9 +3261,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0jxpa5446x52bchl8hk80jhm30v7h9abnh9ny4xqg7p8v67lyy1s",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.0.4/tvshownamer.tar.gz",
-      "version": "0.0.4"
+      "sha256": "0q48j4kbxnz7zndwwhar4q7l4dplsqk7yvgdphnxg9s8faxpvwal",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.0/tvshownamer.tar.gz",
+      "version": "0.1.0"
     },
     "twofactor_admin": {
       "meta": {
@@ -3318,9 +3333,9 @@
         "name": "Two-Factor Authentication via Nextcloud notification",
         "summary": "Allows using any of your logged in devices as second factor"
       },
-      "sha256": "0brblyyqf9brlnwg5xqhx8hy1m0cc6kvg3j0r4ka1m3grj42cqaa",
-      "url": "https://github.com/nickv-nextcloud/twofactor_nextcloud_notification/releases/download/v3.2.1/twofactor_nextcloud_notification-3.2.1.tar.gz",
-      "version": "3.2.1"
+      "sha256": "070dfcsi5q4x0q0nqql43qsc3nc0s7n7dslr87rx7cwy1wfin6b5",
+      "url": "https://github.com/nextcloud-releases/twofactor_nextcloud_notification/releases/download/v3.3.1/twofactor_nextcloud_notification-v3.3.1.tar.gz",
+      "version": "3.3.1"
     },
     "twofactor_totp": {
       "meta": {
@@ -3554,6 +3569,21 @@
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.5.0/user_usage_report-1.5.0.tar.gz",
       "version": "1.5.0"
     },
+    "vibeetoee": {
+      "meta": {
+        "description": "VIBE is a modern identity-based encryption technology which creates a Private Key for a user/device based on its unique identity (UID), which for Nextcloud users is their assigned NC user name. VIBE enables communication of end-to-end encrypted files point-to-point, and is the first E2E technology that offers rules-based, Group-to-Group sending/receiving of encrypted files.  VIBE is available to commercial organizations on a 60-day free trial, and thereafter on an annual subscription basis.\n    ### Key Features of VIBE\n    * Authenticates/validates the sender/recipient of a message at the application layer\n    * Eliminates the need to protect the public parameters, making man in the middle attacks impossible\n    * Enables Nextcloud E2E encrypted group information sharing based on assigned rights\n    * No need for maintaining or remembering pass phrases\n    * Device management for deactivation/activation of stolen/lost/decommissioned devices (available as of Q1/2022)\n    * Adds industrial-grade HSM powered zero-trust identity-based encryption and authentication\n    * Contributes to simplistic key, revocation and security infrastructure management, thus significantly lowering the operational cost (40-60% cheaper than PKI / certificate-based solutions)\n    ### Technical Specifications\n    * Supports AGPLv3, MPL 2.0 and Apache License 2.0\n    * Compatible Operating Systems: Linux; Apple OSX 10.14+; Windows 10+(32/64 Bit); iOS14+; Android 10+",
+        "homepage": "https://vibecyber.com/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Nextcloud VIBE E2E Encryption",
+        "summary": "VIBE E2E Encryption Nextcloud Extension"
+      },
+      "sha256": "18zc237glnl7773raaadv5fvwxvbwfyp1yb6d4519wii6p5ckrz3",
+      "url": "https://mobikey.de/vibeetoee.tar.gz",
+      "version": "1.0.0"
+    },
     "video_converter": {
       "meta": {
         "description": "Convert videos within the web interface\n\n*  **Features:**\n    * Video Conversion\n    * Optionally overwrites files\n    * Preset option\n    * More to come...\n\n*  **Requirements:**\n    * FFmpeg\n\n*  **Note:**\n    * Does not currently support conversion with encryption enabled\n    * More formats will be added soon",
@@ -3742,6 +3772,20 @@
         "name": "Nextcloud workflow engine",
         "summary": "Nextcloud workflow engine"
       }
+    },
+    "wrikesync": {
+      "meta": {
+        "description": "Syncronization between the folder structure of Wrike Projectmanagement software and the Nextcloud filesystem structure.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "WrikeSync",
+        "summary": "Wrike Projectmanagement Folder Sync"
+      },
+      "sha256": "1s2aq7knn3wwyxp2h2afb4daf4lvndscr9zhjyrmlnj8rjl70g9k",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/V1.2.6/wrikesync.tar.gz",
+      "version": "1.2.6"
     }
   },
   "constraints": {
