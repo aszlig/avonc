@@ -271,9 +271,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "0vhjh1fhrh6qifq711yw2j6g2i1zhmrrcp2gszrymmmxfxnhqhm6",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.12/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.12"
+      "sha256": "1j6nimz2f7f8gyj25m0m00djvd54z0jhl00n3hka7pvjyjvgp0fx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.13/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.13"
     },
     "carnet": {
       "meta": {
@@ -1053,9 +1053,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "0yc9lni930x3pa9lb9lgqa7h2502aym03jcfgmlihsyd6rfpdarh",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/e772ec018ce4fb2ece1065bea27901cc/files_readmemd.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1xkrjw5vhrryfcyim2fzy4sap0bcydzjr7338nwjn49lz2f713rk",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/57409c528bde96202d03d2e3887b3fae/files_readmemd.tar.gz",
+      "version": "1.2.1"
     },
     "files_retention": {
       "meta": {
@@ -1641,7 +1641,7 @@
     },
     "listman": {
       "meta": {
-        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.",
+        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!",
         "homepage": "https://github.com/revpriest/listman",
         "isShipped": false,
         "licenses": [
@@ -1650,9 +1650,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "149bdxb4a9ism2vd9kvbw5l4sp2lvp87nh1rvx0v6slp9a42qlhk",
-      "url": "https://dalliance.net/listman/listman-20.0.8.tar.gz",
-      "version": "20.0.8"
+      "sha256": "1ksc0xacfj5gdlvicxcfcwsh0lq6y0m0xw8sd26lffm1bfh8h5z9",
+      "url": "https://dalliance.net/listman/listman-20.1.0.tar.gz",
+      "version": "20.1.0"
     },
     "loganalyzer": {
       "meta": {
@@ -2628,9 +2628,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0alpgb81y16nzjbmkwdjz65acpdqr8cy3mx9cnz47rlcxx34lilp",
-      "url": "https://gitnet.fr/attachments/525ea0a3-70b9-49d1-8149-5bdd82ef32c1",
-      "version": "1.28.0"
+      "sha256": "0lql3ws2n1f4kzki61xmbbg59p1vbb0y52fwml3fp3hq095yrbxw",
+      "url": "https://gitnet.fr/attachments/18e53211-c09b-4e26-9c1e-ec1d5975a83a",
+      "version": "2.0.1"
     },
     "smb_test": {
       "meta": {
@@ -2979,7 +2979,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\nPlease refer to the [changelog](https://github.com/te-online/timemanager/#changelog) to see what's new in this version \n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -2988,9 +2988,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0fgwv1j5zkn7jqxl54f53r80988mkrwb6xknaswhzd6c4wa1hllq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.5/timemanager.tar.gz",
-      "version": "0.2.5"
+      "sha256": "1k296ldbbr62zngb71b9znfvj3bl3za08c0skc9zidk54rgq7wi2",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.6/timemanager.tar.gz",
+      "version": "0.2.6"
     },
     "timetracker": {
       "meta": {

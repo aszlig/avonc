@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Data sources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external data sources from other apps\n- Storage: realtime or database\n- Advanced data loads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "07bdfhjzm1mvchyjaj3gsfckpmrn95kxnbkgfc5sdg703asr4q5y",
-      "url": "https://github.com/Rello/analytics/releases/download/3.6.1/analytics-3.6.1.tar.gz",
-      "version": "3.6.1"
+      "sha256": "0d42722p9s0i5ljprs145yr68jzbijahcdfapw5ykrrgwr3blxdj",
+      "url": "https://github.com/Rello/analytics/releases/download/4.0.0/analytics-4.0.0.tar.gz",
+      "version": "4.0.0"
     },
     "announcementcenter": {
       "meta": {
@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1p0zr4zz4byy0kj3sldryjagrs7xag2fbkj10a2sbh8mxwxk4bmw",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/bc0867d78b0717a36d0dd4eac8d3d77b57cba347/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.10.2"
+      "sha256": "175ayjw6k71z6ynf77ljqjfq8bfzcg86whb488wmrab66vpfp9x9",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/2e17c529650e84f234e4aa2f15dc4897b269ecfe/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.11.2"
     },
     "apporder": {
       "meta": {
@@ -190,7 +190,7 @@
     },
     "breezedark": {
       "meta": {
-        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project.\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a two options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.",
+        "description": "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project.\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a two options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:\n\n```\nAdmin settings &gt; Theming &gt; Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:\n\n```\nPersonal settings &gt; Accessibility &gt; Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.",
         "homepage": "https://github.com/mwalbeck/nextcloud-breeze-dark",
         "isShipped": false,
         "licenses": [
@@ -199,9 +199,9 @@
         "name": "Breeze Dark",
         "summary": "Breeze Dark theme for Nextcloud, based on the theme by KDE"
       },
-      "sha256": "1wf48rv4yyfnx3v5b86an3r6a0b66xw8hgd30snywdb233f88yyj",
-      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v21.0.11/breezedark.tar.gz",
-      "version": "21.0.11"
+      "sha256": "0wm6axdnksw0x9kr1mcq8fazciviv4idbmr4ym1q885bq9pwswxp",
+      "url": "https://github.com/mwalbeck/nextcloud-breeze-dark/releases/download/v21.1.0/breezedark.tar.gz",
+      "version": "21.1.0"
     },
     "bruteforcesettings": {
       "meta": {
@@ -243,9 +243,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "0vhjh1fhrh6qifq711yw2j6g2i1zhmrrcp2gszrymmmxfxnhqhm6",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.12/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.12"
+      "sha256": "1j6nimz2f7f8gyj25m0m00djvd54z0jhl00n3hka7pvjyjvgp0fx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.13/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.13"
     },
     "carnet": {
       "meta": {
@@ -956,6 +956,21 @@
       "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.6/files_linkeditor.tar.gz",
       "version": "1.1.6"
     },
+    "files_lock": {
+      "meta": {
+        "description": "Allow your users to temporary lock their files to avoid conflicts while working on shared files.",
+        "homepage": "https://github.com/nextcloud/files_lock",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Temporary files lock",
+        "summary": "Temporary lock your files"
+      },
+      "sha256": "1sscr824nd9nh9fahcrlqsn6wp5jl2nx1c102i3h0nn7w1hzspv4",
+      "url": "https://github.com/nextcloud/files_lock/releases/download/v20.1.0/files_lock-20.1.0.tar.gz",
+      "version": "20.1.0"
+    },
     "files_markdown": {
       "meta": {
         "description": "Markdown Editor extends the Nextcloud text editor with a live preview for markdown files.\n\nA full list of features can be found [in the README](https://github.com/icewind1991/files_markdown)",
@@ -1012,6 +1027,21 @@
       "sha256": "0rbivyq05fv1wdpdyg7xq56ar9q2h2s7609pc1snjyi4ds4ar5yp",
       "url": "https://github.com/nextcloud/files_photospheres/releases/download/v1.21.1/files_photospheres.tar.gz",
       "version": "1.21.1"
+    },
+    "files_readmemd": {
+      "meta": {
+        "description": "Show README.md &amp; HEADER.md gitlab style on your NextCloud !\nWith this app you can add a header and a footer to your nextcloud directories.\nThis can be use to explain the goal of a directory, describe the content of a folder ...\nIt show README.md in the way gitlab does.",
+        "homepage": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "README.md",
+        "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
+      },
+      "sha256": "1xkrjw5vhrryfcyim2fzy4sap0bcydzjr7338nwjn49lz2f713rk",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/57409c528bde96202d03d2e3887b3fae/files_readmemd.tar.gz",
+      "version": "1.2.1"
     },
     "files_retention": {
       "meta": {
@@ -1267,9 +1297,9 @@
         "name": "Gestion",
         "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "0p6x2zlk5i1fw5ki1l24xghwlnq2gir9y7wdzrww1l3mxnylw2x6",
-      "url": "https://github.com/baimard/gestion/releases/download/1.1.1/gestion.tar.gz",
-      "version": "1.1.1"
+      "sha256": "0b3vzkk10wc9vqa5706wdc926hixfz924a58l28v40rl315d062h",
+      "url": "https://github.com/baimard/gestion/releases/download/1.2.0/gestion.tar.gz",
+      "version": "1.2.0"
     },
     "gpgmailer": {
       "meta": {
@@ -1868,7 +1898,7 @@
     },
     "listman": {
       "meta": {
-        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.",
+        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!",
         "homepage": "https://github.com/revpriest/listman",
         "isShipped": false,
         "licenses": [
@@ -1877,9 +1907,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "149bdxb4a9ism2vd9kvbw5l4sp2lvp87nh1rvx0v6slp9a42qlhk",
-      "url": "https://dalliance.net/listman/listman-20.0.8.tar.gz",
-      "version": "20.0.8"
+      "sha256": "1ksc0xacfj5gdlvicxcfcwsh0lq6y0m0xw8sd26lffm1bfh8h5z9",
+      "url": "https://dalliance.net/listman/listman-20.1.0.tar.gz",
+      "version": "20.1.0"
     },
     "login_notes": {
       "meta": {
@@ -2038,9 +2068,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "06aw8cwjk0wzdqwd2rpch74kg7jikfkr84d71plrfcm7zip256l9",
-      "url": "https://github.com/nextcloud/news/releases/download/16.2.0/news.tar.gz",
-      "version": "16.2.0"
+      "sha256": "0k9dnwrxzqzzri1cdy0jqaixz317lac97bdcgln5976hdvdjjwhj",
+      "url": "https://github.com/nextcloud/news/releases/download/16.2.1/news.tar.gz",
+      "version": "16.2.1"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -2066,9 +2096,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0i7lwmwf8j48ylcjad9mmdvr7kqvwca0xfpz45ibw1q25ciyrqjm",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.1.1/notes.tar.gz",
-      "version": "4.1.1"
+      "sha256": "1ihqx00ivgkrq46mciyzd7mn3ql71hfvbbrinph9zqadgg8gbxbh",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.2.0/notes.tar.gz",
+      "version": "4.2.0"
     },
     "notifications": {
       "meta": {
@@ -2093,9 +2123,9 @@
         "name": "Client Push",
         "summary": "Push update support for clients"
       },
-      "sha256": "0zl7qz6vsy5662h4d412llqpk1zkhqgs8bya8m4mf3sf3s5d583y",
-      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.2.4/notify_push.tar.gz",
-      "version": "0.2.4"
+      "sha256": "1fn4nfxdspbc4vd06v9swp2zx72kpx9dfiibyd9qcn47n0ra92bs",
+      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.3.0/notify_push.tar.gz",
+      "version": "0.3.0"
     },
     "oauth2": {
       "meta": {
@@ -2264,9 +2294,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "08gis5ah19ndxmidk3yp4i0224l4n9axvfbc1q3q2qil69smcavh",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12874/artifacts/raw/passwords.tar.gz",
-      "version": "2021.10.20"
+      "sha256": "16chgigps5622wwdrszjv8qsnqplgzqahb179s2mz58qxnwc7nia",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/13003/artifacts/raw/passwords.tar.gz",
+      "version": "2021.11.20"
     },
     "permissions_overwrite": {
       "meta": {
@@ -2805,7 +2835,7 @@
     },
     "shifts": {
       "meta": {
-        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, use the issue tracker.",
+        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, please feel free to use the issue tracker.",
         "homepage": "https://github.com/csoc-de/Shifts",
         "isShipped": false,
         "licenses": [
@@ -2814,9 +2844,9 @@
         "name": "Schichtplan",
         "summary": "App for organising Shifts"
       },
-      "sha256": "1v4z0pyl3cnjiys0i9k13w7njkpjjvrxs2w7bdqv00g1sy2g7chr",
-      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.0/shifts-1.8.0.tar.gz",
-      "version": "1.8.0"
+      "sha256": "0g627cpf91yp4fqagg9b4yhcb6yipzs5p8qd8n6fi7230gsh87c8",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.1/shifts-1.8.1.tar.gz",
+      "version": "1.8.1"
     },
     "side_menu": {
       "meta": {
@@ -2829,9 +2859,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0alpgb81y16nzjbmkwdjz65acpdqr8cy3mx9cnz47rlcxx34lilp",
-      "url": "https://gitnet.fr/attachments/525ea0a3-70b9-49d1-8149-5bdd82ef32c1",
-      "version": "1.28.0"
+      "sha256": "0lql3ws2n1f4kzki61xmbbg59p1vbb0y52fwml3fp3hq095yrbxw",
+      "url": "https://gitnet.fr/attachments/18e53211-c09b-4e26-9c1e-ec1d5975a83a",
+      "version": "2.0.1"
     },
     "smb_test": {
       "meta": {
@@ -2978,9 +3008,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "1sz9xy3lb6rg8m2slr28pb4mhkh6x503xw1sar0m9vqjw48qwyx5",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/b61a9afaedbd5ff86c4d39a7eddbec0f/spgverein.tar.gz",
-      "version": "0.10.3"
+      "sha256": "0g95gy3mz4m1jxi4f0w95q2b7v47bck1lpswh1j3956swh3lhf0a",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/340cd65c7b920ef9303b1d01f1058fc9/spgverein.tar.gz",
+      "version": "0.11.0"
     },
     "spreed": {
       "meta": {
@@ -3210,7 +3240,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\nPlease refer to the [changelog](https://github.com/te-online/timemanager/#changelog) to see what's new in this version \n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3219,9 +3249,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0fgwv1j5zkn7jqxl54f53r80988mkrwb6xknaswhzd6c4wa1hllq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.5/timemanager.tar.gz",
-      "version": "0.2.5"
+      "sha256": "1k296ldbbr62zngb71b9znfvj3bl3za08c0skc9zidk54rgq7wi2",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.6/timemanager.tar.gz",
+      "version": "0.2.6"
     },
     "timetracker": {
       "meta": {
@@ -3711,9 +3741,9 @@
         "name": "Automated media conversion",
         "summary": "Rule-based automated conversion of video/audio files using FFmpeg"
       },
-      "sha256": "1nx95vj7vz4rpvnpqqkc1vzsahd087250jd5sji13wg2y83fwxv6",
-      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.20/workflow_media_converter.tar.gz",
-      "version": "1.2.20"
+      "sha256": "1h2vgbwdrway7q7zgrza4wmsh4r6hn8m25nhcxdp8k7qh73jd0zx",
+      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.21/workflow_media_converter.tar.gz",
+      "version": "1.2.21"
     },
     "workflow_ocr": {
       "meta": {

@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Datasources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external datasources from other apps\n- Storage: realtime or database\n- Advanced dataloads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Data sources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external data sources from other apps\n- Storage: realtime or database\n- Advanced data loads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "07bdfhjzm1mvchyjaj3gsfckpmrn95kxnbkgfc5sdg703asr4q5y",
-      "url": "https://github.com/Rello/analytics/releases/download/3.6.1/analytics-3.6.1.tar.gz",
-      "version": "3.6.1"
+      "sha256": "0d42722p9s0i5ljprs145yr68jzbijahcdfapw5ykrrgwr3blxdj",
+      "url": "https://github.com/Rello/analytics/releases/download/4.0.0/analytics-4.0.0.tar.gz",
+      "version": "4.0.0"
     },
     "announcementcenter": {
       "meta": {
@@ -257,9 +257,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "0vhjh1fhrh6qifq711yw2j6g2i1zhmrrcp2gszrymmmxfxnhqhm6",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.12/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.12"
+      "sha256": "1j6nimz2f7f8gyj25m0m00djvd54z0jhl00n3hka7pvjyjvgp0fx",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.13/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.13"
     },
     "carnet": {
       "meta": {
@@ -1054,9 +1054,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "0yc9lni930x3pa9lb9lgqa7h2502aym03jcfgmlihsyd6rfpdarh",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/e772ec018ce4fb2ece1065bea27901cc/files_readmemd.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1xkrjw5vhrryfcyim2fzy4sap0bcydzjr7338nwjn49lz2f713rk",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/57409c528bde96202d03d2e3887b3fae/files_readmemd.tar.gz",
+      "version": "1.2.1"
     },
     "files_retention": {
       "meta": {
@@ -1942,7 +1942,7 @@
     },
     "listman": {
       "meta": {
-        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.",
+        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!",
         "homepage": "https://github.com/revpriest/listman",
         "isShipped": false,
         "licenses": [
@@ -1951,9 +1951,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "149bdxb4a9ism2vd9kvbw5l4sp2lvp87nh1rvx0v6slp9a42qlhk",
-      "url": "https://dalliance.net/listman/listman-20.0.8.tar.gz",
-      "version": "20.0.8"
+      "sha256": "1ksc0xacfj5gdlvicxcfcwsh0lq6y0m0xw8sd26lffm1bfh8h5z9",
+      "url": "https://dalliance.net/listman/listman-20.1.0.tar.gz",
+      "version": "20.1.0"
     },
     "loganalyzer": {
       "meta": {
@@ -2111,9 +2111,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "06aw8cwjk0wzdqwd2rpch74kg7jikfkr84d71plrfcm7zip256l9",
-      "url": "https://github.com/nextcloud/news/releases/download/16.2.0/news.tar.gz",
-      "version": "16.2.0"
+      "sha256": "0k9dnwrxzqzzri1cdy0jqaixz317lac97bdcgln5976hdvdjjwhj",
+      "url": "https://github.com/nextcloud/news/releases/download/16.2.1/news.tar.gz",
+      "version": "16.2.1"
     },
     "nextbackup": {
       "meta": {
@@ -2168,9 +2168,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "0i7lwmwf8j48ylcjad9mmdvr7kqvwca0xfpz45ibw1q25ciyrqjm",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.1.1/notes.tar.gz",
-      "version": "4.1.1"
+      "sha256": "1ihqx00ivgkrq46mciyzd7mn3ql71hfvbbrinph9zqadgg8gbxbh",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.2.0/notes.tar.gz",
+      "version": "4.2.0"
     },
     "notifications": {
       "meta": {
@@ -2195,9 +2195,9 @@
         "name": "Client Push",
         "summary": "Push update support for clients"
       },
-      "sha256": "0zl7qz6vsy5662h4d412llqpk1zkhqgs8bya8m4mf3sf3s5d583y",
-      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.2.4/notify_push.tar.gz",
-      "version": "0.2.4"
+      "sha256": "1fn4nfxdspbc4vd06v9swp2zx72kpx9dfiibyd9qcn47n0ra92bs",
+      "url": "https://github.com/nextcloud/notify_push/releases/download/v0.3.0/notify_push.tar.gz",
+      "version": "0.3.0"
     },
     "oauth2": {
       "meta": {
@@ -2396,9 +2396,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "08gis5ah19ndxmidk3yp4i0224l4n9axvfbc1q3q2qil69smcavh",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/12874/artifacts/raw/passwords.tar.gz",
-      "version": "2021.10.20"
+      "sha256": "16chgigps5622wwdrszjv8qsnqplgzqahb179s2mz58qxnwc7nia",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/13003/artifacts/raw/passwords.tar.gz",
+      "version": "2021.11.20"
     },
     "pdfdraw": {
       "meta": {
@@ -3010,7 +3010,7 @@
     },
     "shifts": {
       "meta": {
-        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, use the issue tracker.",
+        "description": "* **Interactions with the Nextcloud Calender app!** Easy integration into the existing Calender of Nextcloud.\n* **Manage and organize your Shifts System!** Customize your Shifts Model with different Shifttypes\n* **Separation of Users by different Nextcloud user Groups!** Divide your Workforce with different Skill-Levels\n\nMore to come:\n* Further maturing of the app\n* Individualisation\n\n\nIf you experience any issues or have any suggestions for improvement, please feel free to use the issue tracker.",
         "homepage": "https://github.com/csoc-de/Shifts",
         "isShipped": false,
         "licenses": [
@@ -3019,9 +3019,9 @@
         "name": "Schichtplan",
         "summary": "App for organising Shifts"
       },
-      "sha256": "1v4z0pyl3cnjiys0i9k13w7njkpjjvrxs2w7bdqv00g1sy2g7chr",
-      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.0/shifts-1.8.0.tar.gz",
-      "version": "1.8.0"
+      "sha256": "0g627cpf91yp4fqagg9b4yhcb6yipzs5p8qd8n6fi7230gsh87c8",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.1/shifts-1.8.1.tar.gz",
+      "version": "1.8.1"
     },
     "side_menu": {
       "meta": {
@@ -3034,9 +3034,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0alpgb81y16nzjbmkwdjz65acpdqr8cy3mx9cnz47rlcxx34lilp",
-      "url": "https://gitnet.fr/attachments/525ea0a3-70b9-49d1-8149-5bdd82ef32c1",
-      "version": "1.28.0"
+      "sha256": "0lql3ws2n1f4kzki61xmbbg59p1vbb0y52fwml3fp3hq095yrbxw",
+      "url": "https://gitnet.fr/attachments/18e53211-c09b-4e26-9c1e-ec1d5975a83a",
+      "version": "2.0.1"
     },
     "smb_test": {
       "meta": {
@@ -3183,9 +3183,9 @@
         "name": "SPG Verein",
         "summary": "Access data of SPG-Verein in your Nextcloud instance"
       },
-      "sha256": "1sz9xy3lb6rg8m2slr28pb4mhkh6x503xw1sar0m9vqjw48qwyx5",
-      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/b61a9afaedbd5ff86c4d39a7eddbec0f/spgverein.tar.gz",
-      "version": "0.10.3"
+      "sha256": "0g95gy3mz4m1jxi4f0w95q2b7v47bck1lpswh1j3956swh3lhf0a",
+      "url": "https://gitlab.com/schrieveslaach/nextcloud-spgverein-app/uploads/340cd65c7b920ef9303b1d01f1058fc9/spgverein.tar.gz",
+      "version": "0.11.0"
     },
     "spreed": {
       "meta": {
@@ -3400,7 +3400,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\nPlease refer to the [changelog](https://github.com/te-online/timemanager/#changelog) to see what's new in this version \n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3409,9 +3409,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0fgwv1j5zkn7jqxl54f53r80988mkrwb6xknaswhzd6c4wa1hllq",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.5/timemanager.tar.gz",
-      "version": "0.2.5"
+      "sha256": "1k296ldbbr62zngb71b9znfvj3bl3za08c0skc9zidk54rgq7wi2",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.6/timemanager.tar.gz",
+      "version": "0.2.6"
     },
     "timetracker": {
       "meta": {
