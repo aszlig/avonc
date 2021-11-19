@@ -154,9 +154,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "0yxnrjfjjy19lm7x3b68qv10f5kawmspvf9430qiha2qgxn520z5",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.1/auto_groups-v1.3.1.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1jlvdh7igzvgq9lmsgq7hfmvyzswznpnj6ivxx9f6wajvxq2xpyc",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.4.0/auto_groups-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "auto_mail_accounts": {
       "meta": {
@@ -345,9 +345,9 @@
         "name": "Circles",
         "summary": "Bring cloud-users closer together."
       },
-      "sha256": "0azakgsfjin3g6xsyf63l7i4s4fgb89m87a60n8bq2fq9r9vwi2c",
-      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.16/circles-0.19.16.tar.gz",
-      "version": "0.19.16"
+      "sha256": "1amd33vcfvlkjwwhvv9jdmbz4kjpcan3vfz658cbzyp7cdjn4smi",
+      "url": "https://github.com/nextcloud-releases/circles/releases/download/0.19.17/circles-0.19.17.tar.gz",
+      "version": "0.19.17"
     },
     "cloud_federation_api": {
       "meta": {
@@ -1753,6 +1753,20 @@
       "sha256": "0ic039dj042fm2h2dz1k7qs8j2ziqfhf1x3izqkiwsws8kkphwdb",
       "url": "https://github.com/nextcloud/maps/releases/download/v0.1.6/maps-0.1.6.tar.gz",
       "version": "0.1.6"
+    },
+    "messagevault": {
+      "meta": {
+        "description": "Restores XML backups of SMS, RCS, and MMS messages and attachments.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Message Vault",
+        "summary": "Message Vault"
+      },
+      "sha256": "0rvrwmihdi9rnqydkfl2q49lac1l8mp9qlr93d44n99d8i58rpvn",
+      "url": "https://github.com/eblah/nextcloud-messagevault/releases/download/1.0.0/messagevault-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "metadata": {
       "meta": {

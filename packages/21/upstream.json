@@ -154,9 +154,9 @@
         "name": "Auto Groups",
         "summary": "Automatically adds all users to one or multiple specified groups."
       },
-      "sha256": "0yxnrjfjjy19lm7x3b68qv10f5kawmspvf9430qiha2qgxn520z5",
-      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.3.1/auto_groups-v1.3.1.tar.gz",
-      "version": "1.3.1"
+      "sha256": "1jlvdh7igzvgq9lmsgq7hfmvyzswznpnj6ivxx9f6wajvxq2xpyc",
+      "url": "https://github.com/stjosh/auto_groups/releases/download/v1.4.0/auto_groups-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "bbb": {
       "meta": {
@@ -1237,9 +1237,9 @@
         "name": "Forms",
         "summary": "Simple surveys and questionnaires, self-hosted"
       },
-      "sha256": "0zwxmliz4nzzp7bm29cikzs4j76i0ga66im5slsrkpi4d9dic5nf",
-      "url": "https://github.com/nextcloud/forms/releases/download/v2.3.0/forms.tar.gz",
-      "version": "2.3.0"
+      "sha256": "13q8b81ad6vs7fhn0wigvvjxgv6g9m6hn02a5gl5hy4mfq7akwar",
+      "url": "https://github.com/nextcloud-releases/forms/releases/download/v2.4.0/forms-v2.4.0.tar.gz",
+      "version": "2.4.0"
     },
     "fulltextsearch": {
       "meta": {
@@ -2011,6 +2011,20 @@
       "sha256": "140hhzj55iplnr5pa1srdjkn61sjhmwpf17fx8nrj8yj6sdwxhqs",
       "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.7/mediadc.tar.gz",
       "version": "0.1.7"
+    },
+    "messagevault": {
+      "meta": {
+        "description": "Restores XML backups of SMS, RCS, and MMS messages and attachments.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Message Vault",
+        "summary": "Message Vault"
+      },
+      "sha256": "0rvrwmihdi9rnqydkfl2q49lac1l8mp9qlr93d44n99d8i58rpvn",
+      "url": "https://github.com/eblah/nextcloud-messagevault/releases/download/1.0.0/messagevault-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "metadata": {
       "meta": {
@@ -3051,9 +3065,9 @@
         "name": "Storj",
         "summary": "Decentralized storage backend"
       },
-      "sha256": "1f90r69w3fw5dxymdjp30glc3qljbksrjicv2a5qha3pw7rkcjii",
-      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.4.tar.gz",
-      "version": "0.0.4"
+      "sha256": "1pbqiv5zw4cmqsipsrrk522fmqkx101qn18bzfwxbk2b7vr0lb22",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.5.tar.gz",
+      "version": "0.0.5"
     },
     "stromquittung": {
       "meta": {
@@ -3741,9 +3755,9 @@
         "name": "Automated media conversion",
         "summary": "Rule-based automated conversion of video/audio files using FFmpeg"
       },
-      "sha256": "1h2vgbwdrway7q7zgrza4wmsh4r6hn8m25nhcxdp8k7qh73jd0zx",
-      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.21/workflow_media_converter.tar.gz",
-      "version": "1.2.21"
+      "sha256": "09bx54srlhcd687ydr283678f09zp95wrs64sirizz3dm9jwvmx9",
+      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.22/workflow_media_converter.tar.gz",
+      "version": "1.2.22"
     },
     "workflow_ocr": {
       "meta": {
