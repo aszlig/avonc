@@ -56,7 +56,7 @@
     },
     "analytics": {
       "meta": {
-        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Data sources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external data sources from other apps\n- Storage: realtime or database\n- Advanced data loads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
+        "description": "Connect data from different sources in one place.\nEnable flexible reports and enjoy seamless Nextcloud integration.\nVisualize and share anything, from financial analysis to IoT logs.\n\n##### Features:\n- Data sources: csv, spreadsheet, API, imports, manual entry\n- 3rd party: GitHub Statistics, website grabber, JSON\n- Register external data sources from other apps\n- Storage: real-time or database\n- Advanced data loads with scheduling\n- Visualization: combined charts, tables, filters\n- Analysis functions: trend\n- Thresholds for alerts and color coding\n- Integration: Files, Activity, Notifications, Flow, Dashboard, Search\n- Sharing: user, groups, link",
         "homepage": "https://rello.github.io/analytics/",
         "isShipped": false,
         "licenses": [
@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0d42722p9s0i5ljprs145yr68jzbijahcdfapw5ykrrgwr3blxdj",
-      "url": "https://github.com/Rello/analytics/releases/download/4.0.0/analytics-4.0.0.tar.gz",
-      "version": "4.0.0"
+      "sha256": "13kpx01za0rxjnbg15m85gc09zpbcvm4jisjm75ishxr77xjgrwc",
+      "url": "https://github.com/Rello/analytics/releases/download/4.0.1/analytics-4.0.1.tar.gz",
+      "version": "4.0.1"
     },
     "announcementcenter": {
       "meta": {
@@ -257,9 +257,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1j6nimz2f7f8gyj25m0m00djvd54z0jhl00n3hka7pvjyjvgp0fx",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.13/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.13"
+      "sha256": "18a7yipg8zfn92sm74njplsxa944f5cxnm1mslxw053dd6n7xljs",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.15/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.15"
     },
     "carnet": {
       "meta": {
@@ -603,9 +603,9 @@
         "name": "Duplicate Finder",
         "summary": "Save some space by finding your duplicate files"
       },
-      "sha256": "1q5aacxndbk7s9hk9z91kvmrgqmb2ijgz7sllbvp2njhdzb3s2vq",
-      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.12/duplicatefinder.tar.gz",
-      "version": "0.0.12"
+      "sha256": "1izli052d8lzaczaq46h7c8wzi0i7skivy9ii4hbsfwnhb2bybx9",
+      "url": "https://github.com/PaulLereverend/NextcloudDuplicateFinder/releases/download/0.0.13/duplicatefinder.tar.gz",
+      "version": "0.0.13"
     },
     "ehr": {
       "meta": {
@@ -618,9 +618,9 @@
         "name": "EHR (Electronic Health Records)",
         "summary": "Kailona: Personal Health Records"
       },
-      "sha256": "1kzpqy9nimjx281nq0p1hrkx8y7rkh5nr1hv2g7392qjhh849n8c",
-      "url": "https://github.com/Kailona/ehr/releases/download/0.1.5/ehr-0.1.5.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0lqzxrsqhcycx62k42rv1af2lja530gmj8k4l945lfw03pk2lhp1",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.6/ehr-0.1.6.tar.gz",
+      "version": "0.1.6"
     },
     "eidlogin": {
       "meta": {
@@ -3093,9 +3093,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "161wp6yxqr1hm09p94apsydv6fskxmj3g3k90pikchgkcl7pqphw",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.9.3/release.tar.gz",
-      "version": "4.9.3"
+      "sha256": "1733vgm3jrrqklbi07bzd5vwjnf7a0ggrfsfym0h346q2rffvqmz",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.9.5/release.tar.gz",
+      "version": "4.9.5"
     },
     "socialsharing_diaspora": {
       "meta": {

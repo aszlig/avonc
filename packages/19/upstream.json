@@ -271,9 +271,9 @@
         "name": "Camera RAW Previews",
         "summary": "Preview and show camera RAW files in Nextcloud/ownCloud"
       },
-      "sha256": "1j6nimz2f7f8gyj25m0m00djvd54z0jhl00n3hka7pvjyjvgp0fx",
-      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.13/camerarawpreviews_nextcloud.tar.gz",
-      "version": "0.7.13"
+      "sha256": "18a7yipg8zfn92sm74njplsxa944f5cxnm1mslxw053dd6n7xljs",
+      "url": "https://github.com/ariselseng/camerarawpreviews/releases/download/v0.7.15/camerarawpreviews_nextcloud.tar.gz",
+      "version": "0.7.15"
     },
     "carnet": {
       "meta": {
@@ -603,9 +603,9 @@
         "name": "EHR (Electronic Health Records)",
         "summary": "Kailona: Personal Health Records"
       },
-      "sha256": "1kzpqy9nimjx281nq0p1hrkx8y7rkh5nr1hv2g7392qjhh849n8c",
-      "url": "https://github.com/Kailona/ehr/releases/download/0.1.5/ehr-0.1.5.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0lqzxrsqhcycx62k42rv1af2lja530gmj8k4l945lfw03pk2lhp1",
+      "url": "https://github.com/Kailona/ehr/releases/download/0.1.6/ehr-0.1.6.tar.gz",
+      "version": "0.1.6"
     },
     "eidlogin": {
       "meta": {
