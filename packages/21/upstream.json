@@ -229,9 +229,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1rcqspp6mabqsai8v7v9rzcky4xi9pq9v8sqz6pil3gyb5cn4nvh",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.3.4/calendar.tar.gz",
-      "version": "2.3.4"
+      "sha256": "0ybf3by378q2n9c2rlhvbssb2kwc5kv4c9nnmh0a1dpzafkck39q",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.4.0/calendar.tar.gz",
+      "version": "2.4.0"
     },
     "camerarawpreviews": {
       "meta": {
@@ -417,9 +417,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "04hrv37l7ghgasxlpljk8hlj82fpw6yznnn228iwzrlh7w8r60sr",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.6/Cookbook-0.9.6.tar.gz",
-      "version": "0.9.6"
+      "sha256": "0qcw5f978ir7midjdv2myvd382hizr3jyhn4x0hd97k5bgnvnkzk",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.7/Cookbook-0.9.7.tar.gz",
+      "version": "0.9.7"
     },
     "cospend": {
       "meta": {
@@ -1297,9 +1297,9 @@
         "name": "Gestion",
         "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "18gzphpy2rwlwx4vn0kpbw6l4z537ycdir7m4qnv4cj33qivcqmg",
-      "url": "https://github.com/baimard/gestion/releases/download/1.2.1/gestion.tar.gz",
-      "version": "1.2.1"
+      "sha256": "0mc0yh9h93pwjsfd2b4a7rw4kn0p4pq88c8lnh8zlqjc5ryhcdkd",
+      "url": "https://github.com/baimard/gestion/releases/download/1.2.2/gestion.tar.gz",
+      "version": "1.2.2"
     },
     "gpgmailer": {
       "meta": {
@@ -2672,9 +2672,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0hra2s0qkhs1jvmrqn8mm10kxxiqg57kpnqmbacj101xsfwl3933",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.10/riotchat.tar.gz",
-      "version": "0.9.10"
+      "sha256": "07pqd5yrzq199vap175nj1c2inxqhspmxqy66zviwx1z6yqfdwzz",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.11/riotchat.tar.gz",
+      "version": "0.9.11"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -3667,9 +3667,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "0lvkgn34p26xs16v3h17aqh5m2dj6a8cgkkxnw7sqrbi0vihg726",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.2.6/w2g2.tar.gz",
-      "version": "3.2.6"
+      "sha256": "02r8s71kvmz3rslvc12ifqzrbh596w6a4n2g6zv8p6vj73h5f9w1",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.3.7/w2g2.tar.gz",
+      "version": "3.3.7"
     },
     "weather": {
       "meta": {

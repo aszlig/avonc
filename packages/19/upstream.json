@@ -429,9 +429,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "04hrv37l7ghgasxlpljk8hlj82fpw6yznnn228iwzrlh7w8r60sr",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.6/Cookbook-0.9.6.tar.gz",
-      "version": "0.9.6"
+      "sha256": "0qcw5f978ir7midjdv2myvd382hizr3jyhn4x0hd97k5bgnvnkzk",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.7/Cookbook-0.9.7.tar.gz",
+      "version": "0.9.7"
     },
     "cospend": {
       "meta": {

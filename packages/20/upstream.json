@@ -243,9 +243,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1rcqspp6mabqsai8v7v9rzcky4xi9pq9v8sqz6pil3gyb5cn4nvh",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.3.4/calendar.tar.gz",
-      "version": "2.3.4"
+      "sha256": "0ybf3by378q2n9c2rlhvbssb2kwc5kv4c9nnmh0a1dpzafkck39q",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.4.0/calendar.tar.gz",
+      "version": "2.4.0"
     },
     "camerarawpreviews": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "04hrv37l7ghgasxlpljk8hlj82fpw6yznnn228iwzrlh7w8r60sr",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.6/Cookbook-0.9.6.tar.gz",
-      "version": "0.9.6"
+      "sha256": "0qcw5f978ir7midjdv2myvd382hizr3jyhn4x0hd97k5bgnvnkzk",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.7/Cookbook-0.9.7.tar.gz",
+      "version": "0.9.7"
     },
     "cospend": {
       "meta": {
@@ -2832,9 +2832,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "0hra2s0qkhs1jvmrqn8mm10kxxiqg57kpnqmbacj101xsfwl3933",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.10/riotchat.tar.gz",
-      "version": "0.9.10"
+      "sha256": "07pqd5yrzq199vap175nj1c2inxqhspmxqy66zviwx1z6yqfdwzz",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.11/riotchat.tar.gz",
+      "version": "0.9.11"
     },
     "root_cache_cleaner": {
       "meta": {
