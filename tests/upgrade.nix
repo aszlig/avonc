@@ -81,6 +81,9 @@ import ./make-test.nix (pkgs: {
         # XXX: Requires GnuPG
         "gpgmailer"
 
+        # Unstable download URL and no dedicated contact for bug reports.
+        (assert nc20apps.vibeetoee.version == "1.0.0"; "vibeetoee")
+
         # https://git.project-insanity.org/onny/nextcloud-app-podcast/issues/225
         (assert nc20apps.podcast.version == "0.3.1"; "podcast")
 
