@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "175ayjw6k71z6ynf77ljqjfq8bfzcg86whb488wmrab66vpfp9x9",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/2e17c529650e84f234e4aa2f15dc4897b269ecfe/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.11.2"
+      "sha256": "141n0i9jrj69r5s8ziqvbprvb1acpm0faqcs5hsvy6cccik7rcyl",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/08fbb2a56af8719f2d65920ad938ae9e53acb5b5/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.11.4"
     },
     "apporder": {
       "meta": {
@@ -229,9 +229,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "0ybf3by378q2n9c2rlhvbssb2kwc5kv4c9nnmh0a1dpzafkck39q",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v2.4.0/calendar.tar.gz",
-      "version": "2.4.0"
+      "sha256": "0nz77xh3dcpzb5bwbwfnp3dwn0hql5i331j0ikkprqs2jhqygbvi",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.0/calendar.tar.gz",
+      "version": "3.0.0"
     },
     "camerarawpreviews": {
       "meta": {
@@ -518,6 +518,21 @@
       "sha256": "1k99jxzj1xy0dscj6x929lghn49rzkphvxlc7pdx7byamxqqgb7p",
       "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.4.7/deck.tar.gz",
       "version": "1.4.7"
+    },
+    "dicomviewer": {
+      "meta": {
+        "description": "DICOM Viewer allows to display and manipulate DICOM images with a streamlined sidebar and viewer.\n\nSee [README](https://github.com/ayselafsar/dicomviewer) for a list of full features and future roadmap.",
+        "homepage": "https://github.com/ayselafsar/dicomviewer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "DICOM Viewer",
+        "summary": "Digital Imaging for Medicine"
+      },
+      "sha256": "1pc0byccyp86lymhf9wm9znasb3bhysy8vz378w1hg3xvf43fiq5",
+      "url": "https://github.com/ayselafsar/dicomviewer/releases/download/v1.2.3/dicomviewer-1.2.3.tar.gz",
+      "version": "1.2.3"
     },
     "discoursesso": {
       "meta": {
@@ -1963,9 +1978,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1y2pigh6njigfha42sy215yjjx923ascj3bcb14a9lbifb762666",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.10.5/mail.tar.gz",
-      "version": "1.10.5"
+      "sha256": "1ypdb92674irf3zzijvj81jrjmw326q1sd2n87bizln4lh5jyp9a",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.0/mail.tar.gz",
+      "version": "1.11.0"
     },
     "majordomo": {
       "meta": {
@@ -2052,9 +2067,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1y2lhj5gxi67iaw59p7svc786kj69lwqj1d3766hys7ff37f0cl6",
-      "url": "https://github.com/owncloud/music/releases/download/v1.4.1/music_1.4.1_for_nextcloud.tar.gz",
-      "version": "1.4.1"
+      "sha256": "1n1202arf6hjlr2m67f6363xd149d6dnhrs5hqigxcvzpzjgp95p",
+      "url": "https://github.com/owncloud/music/releases/download/v1.5.0/music_1.5.0_for_nextcloud.tar.gz",
+      "version": "1.5.0"
     },
     "ncdownloader": {
       "meta": {
@@ -2082,9 +2097,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "0k9dnwrxzqzzri1cdy0jqaixz317lac97bdcgln5976hdvdjjwhj",
-      "url": "https://github.com/nextcloud/news/releases/download/16.2.1/news.tar.gz",
-      "version": "16.2.1"
+      "sha256": "1jqm3ja8gv2iirspah7kl1ks9m5259jmjp2h6fiikddj981g0kar",
+      "url": "https://github.com/nextcloud/news/releases/download/17.0.0/news.tar.gz",
+      "version": "17.0.0"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -2410,9 +2425,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "07s9jfs3rakkayalnjk84c4jl597x24m5wmxsvbizs8sycd4y0cc",
-      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.2.0/previewgenerator.tar.gz",
-      "version": "3.2.0"
+      "sha256": "1n01mlrq7jxy8ra3f5xm6rb6m9hp75116ds8hrg72hqs5j3bifc1",
+      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.3.0/previewgenerator.tar.gz",
+      "version": "3.3.0"
     },
     "pride": {
       "meta": {
@@ -3422,9 +3437,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "1lj5l1mdl9g5ivbhxiic64j5y8p49da2a7q33c18z1ngzhg6wxp4",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.11/twofactor_webauthn-0.2.11.tar.gz",
-      "version": "0.2.11"
+      "sha256": "1kyzffdwvlx37snsagdf7d10mh5lmki5w2gdfc5533rbh7nvc5zy",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.13/twofactor_webauthn-0.2.13.tar.gz",
+      "version": "0.2.13"
     },
     "unroundedcorners": {
       "meta": {
@@ -3755,9 +3770,9 @@
         "name": "Automated media conversion",
         "summary": "Rule-based automated conversion of video/audio files using FFmpeg"
       },
-      "sha256": "09bx54srlhcd687ydr283678f09zp95wrs64sirizz3dm9jwvmx9",
-      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.22/workflow_media_converter.tar.gz",
-      "version": "1.2.22"
+      "sha256": "0w3jnb227fqg70c3w1m90183h0dhgyfmg1vay2hx0g7sv7l65a1c",
+      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.23/workflow_media_converter.tar.gz",
+      "version": "1.2.23"
     },
     "workflow_ocr": {
       "meta": {
