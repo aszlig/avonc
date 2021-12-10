@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "13kpx01za0rxjnbg15m85gc09zpbcvm4jisjm75ishxr77xjgrwc",
-      "url": "https://github.com/Rello/analytics/releases/download/4.0.1/analytics-4.0.1.tar.gz",
-      "version": "4.0.1"
+      "sha256": "0p4kg4768kblkv5d44209p0azkq8sdj2cz10hmbqlh4pdfynil2s",
+      "url": "https://github.com/Rello/analytics/releases/download/4.0.2/analytics-4.0.2.tar.gz",
+      "version": "4.0.2"
     },
     "announcementcenter": {
       "meta": {
@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "141n0i9jrj69r5s8ziqvbprvb1acpm0faqcs5hsvy6cccik7rcyl",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/08fbb2a56af8719f2d65920ad938ae9e53acb5b5/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.11.4"
+      "sha256": "0616c9hsj03vjpwxc1ljz42fz8md75zxnvr3c0a26dq16i8fxwk7",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/ffd6692bf0977c4e6f069cf6e518ed3d774d0ade/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.11.7"
     },
     "apporder": {
       "meta": {
@@ -169,9 +169,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "1y6m50iz2ckp1kh01fwjnjxjmzin5n8vd4sn2n3v83h23kqx1gxf",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v2.0.0/bbb-v2.0.0.tar.gz",
-      "version": "2.0.0"
+      "sha256": "1vc181aizhc0vbsd9s8rvi28cyc72d0bn5a4f0qy8vclxd8nm5sn",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v2.1.0/bbb-v2.1.0.tar.gz",
+      "version": "2.1.0"
     },
     "bookmarks": {
       "meta": {
@@ -184,9 +184,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "115cxmxwv4arqdwl59xbgdyjy1gqfhjickmfflz080sa6qxb90jj",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v10.0.2/bookmarks-10.0.2.tar.gz",
-      "version": "10.0.2"
+      "sha256": "1fh8r1qnx2rnrn39di24h1dakfc0k5nbjd9nyhvn4f26nxsyrqld",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/10.0.3/bookmarks-10.0.3.tar.gz",
+      "version": "10.0.3"
     },
     "breezedark": {
       "meta": {
@@ -229,9 +229,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "0nz77xh3dcpzb5bwbwfnp3dwn0hql5i331j0ikkprqs2jhqygbvi",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.0/calendar.tar.gz",
-      "version": "3.0.0"
+      "sha256": "1avrlyrqg16n31q72cpxhip8b6knm4zi62jz7d7zky310rbhsxy8",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.1/calendar.tar.gz",
+      "version": "3.0.1"
     },
     "camerarawpreviews": {
       "meta": {
@@ -288,9 +288,9 @@
         "name": "Checksum",
         "summary": "Creating a hash checksum of a file."
       },
-      "sha256": "1plfx3scp2zbfhj8gvy1vqc2fbvb9y2qzdjawj096qyahqqc94jz",
-      "url": "https://github.com/westberliner/checksum/releases/download/v1.1.2/checksum.tar.gz",
-      "version": "1.1.2"
+      "sha256": "0ipz938azw8y1znn3wmja0xkbhfxllg2s5aq8vwvyw25l2vaqlzf",
+      "url": "https://github.com/westberliner/checksum/releases/download/v1.1.3/checksum.tar.gz",
+      "version": "1.1.3"
     },
     "circles": {
       "meta": {
@@ -417,9 +417,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0qcw5f978ir7midjdv2myvd382hizr3jyhn4x0hd97k5bgnvnkzk",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.7/Cookbook-0.9.7.tar.gz",
-      "version": "0.9.7"
+      "sha256": "13c3rng1mp477mx07zx1pdaz81idmg3msains7f51n7nw7gw66vl",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.8/Cookbook-0.9.8.tar.gz",
+      "version": "0.9.8"
     },
     "cospend": {
       "meta": {
@@ -574,9 +574,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "0pwi2w2gk2pplbnd8lan73iaa037gm21jxnsr3lgirr75ca19i2s",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.1/drawio-v1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1k77xch1dj2bi2b9axvpb5gbixfrligsk8fl627nzn9rii4pjzsx",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.2/drawio-v1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "drop_account": {
       "meta": {
@@ -648,9 +648,9 @@
         "name": "Electronic Signatures",
         "summary": "Accept electronic signatures on your documents."
       },
-      "sha256": "0rh1abwxm5j4xbj1yc5ml8ghvyhdxs3qpf73i0xnjn33qw1621wn",
-      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.6.2/v1.6.2.tar.gz",
-      "version": "1.6.2"
+      "sha256": "1gf03maij3w1f3g3g68rn4skkhvkkxsv8gpxdxr809v05dcgjz3m",
+      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.8.0/v1.8.0.tar.gz",
+      "version": "1.8.0"
     },
     "emlviewer": {
       "meta": {
@@ -721,9 +721,9 @@
         "name": "Notifications for calendar event updates",
         "summary": "Receive a notification when an event in a shared calendar was added, modified or deleted."
       },
-      "sha256": "1xgyzy1wbi9sz4n3ph7kq3wzy4r9vdkbc7qsbrcnpz23qlwk8m5q",
-      "url": "https://github.com/nickv-nextcloud/event_update_notification/releases/download/v1.3.0/event_update_notification-1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "1yjrh88rnkvy4rhxr8jm8710iwm167h458bh4wgr5cxc90xix5kb",
+      "url": "https://github.com/nextcloud-releases/event_update_notification/releases/download/v1.4.0/event_update_notification-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "external": {
       "meta": {
@@ -751,9 +751,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1skx0k955avjsivgzfvmd5kd8rlam37bz3nf0fq7gv2r87qw4899",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.2/extract.tar.gz",
-      "version": "1.3.2"
+      "sha256": "19yi64fnynaym7fx1qpln1ll4b89x7a1nvm2sz5ivkapxbzz0iik",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.3/extract.tar.gz",
+      "version": "1.3.3"
     },
     "facerecognition": {
       "meta": {
@@ -879,9 +879,9 @@
         "name": "Activities for shared file downloads",
         "summary": "Creates activities for downloads of files that were shared with other users or a group"
       },
-      "sha256": "11yvzbpz0cllqivy6qp6g7afxkgvbrnb9pbff0rp08593yv0f1ck",
-      "url": "https://github.com/nextcloud-releases/files_downloadactivity/releases/download/v1.11.1/files_downloadactivity-1.11.1.tar.gz",
-      "version": "1.11.1"
+      "sha256": "16sfra1lvzm7bd842idq157s9wbcli33wq61nhk8g6dvv658v1f4",
+      "url": "https://github.com/nextcloud-releases/files_downloadactivity/releases/download/v1.12.0/files_downloadactivity-v1.12.0.tar.gz",
+      "version": "1.12.0"
     },
     "files_external": {
       "meta": {
@@ -952,13 +952,13 @@
         "name": "INotify file watcher",
         "summary": "Adds support detecting changes in local external storages"
       },
-      "sha256": "0hpsjc5rg15clczh69m7gwivdl6adwi0f25xz84qb4racnz1c4qr",
-      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.10/files_inotify.tar.gz",
-      "version": "0.1.10"
+      "sha256": "1mx9wf9qgfxh5mdrmvy19dp4x4fs8lxc7djrqxybnsk3qh4b64v5",
+      "url": "https://github.com/icewind1991/files_inotify/releases/download/v0.1.11/files_inotify.tar.gz",
+      "version": "0.1.11"
     },
     "files_linkeditor": {
       "meta": {
-        "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
+        "description": "### External web links in Nextcloud!\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.\n\n##### Latest changes \n**1.1.8, 3. December 2021**\n- Bump compatibility to Nextcloud 23\n- Update JS dependencies\n\n_[View changelog for older versions](https://github.com/te-online/files_linkeditor#changelog)_",
         "homepage": "https://github.com/te-online/files_linkeditor",
         "isShipped": false,
         "licenses": [
@@ -967,9 +967,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0rxvblmzscr1sg3nv8zcs4j8sydv4diki0r7d3ccm305zxshhyi3",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.6/files_linkeditor.tar.gz",
-      "version": "1.1.6"
+      "sha256": "1vnjqcw1c1szzp53lim8cmyh06ayzkrdw3ya9spasz19izlgn8s8",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/files_linkeditor/v1.1.8/files_linkeditor.tar.gz",
+      "version": "1.1.8"
     },
     "files_lock": {
       "meta": {
@@ -997,9 +997,9 @@
         "name": "Markdown Editor",
         "summary": "A Markdown Editor with live preview"
       },
-      "sha256": "0i510dbrjc3nfhy4ha9s9gpjm9679c60y9aqkdkwrh6xx9ncb61g",
-      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.4/files_markdown.tar.gz",
-      "version": "2.3.4"
+      "sha256": "1ilrqafr3dq7786qb087cn7a15h39d5j0z8j96c4wr8bx7bg45jw",
+      "url": "https://github.com/icewind1991/files_markdown/releases/download/v2.3.5/files_markdown.tar.gz",
+      "version": "2.3.5"
     },
     "files_mindmap": {
       "meta": {
@@ -1110,9 +1110,9 @@
         "name": "Snapshots",
         "summary": "Access filesystem snapshots trough Nextcloud"
       },
-      "sha256": "1fi4vp3qrcg1aphhpr51lzvm8vzpnj37cqalb9dz037yz796b7pk",
-      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.2/files_snapshots.tar.gz",
-      "version": "1.0.2"
+      "sha256": "02y5scwhknxl2q42m88qaf66x96zidqdy7vvbyp569ym6rmrggx5",
+      "url": "https://github.com/icewind1991/files_snapshots/releases/download/v1.0.3/files_snapshots.tar.gz",
+      "version": "1.0.3"
     },
     "files_texteditor": {
       "meta": {
@@ -1181,9 +1181,9 @@
         "name": "S3 Versioning",
         "summary": "Use S3 object versioning for file versioning"
       },
-      "sha256": "083qffjkbg13ikqzj2la1yr6sjf4632p02hlwmfihy5pm00is797",
-      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.6/files_versions_s3.tar.gz",
-      "version": "0.1.6"
+      "sha256": "0i5gdw1s16ypf2hmg4a0lk1h0idzadgyfa2ingz7dfv8jfpqld8j",
+      "url": "https://github.com/nextcloud/files_versions_s3/releases/download/v0.1.7/files_versions_s3.tar.gz",
+      "version": "0.1.7"
     },
     "files_videoplayer": {
       "meta": {
@@ -1297,9 +1297,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "1bj4a4dwaqw0mh1kf648g4h6dvyb49lnj5fz9gr6290mzcliq0ys",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.5.1/geoblocker.tar.gz",
-      "version": "0.5.1"
+      "sha256": "0ajd43v8kpbh7i1fbphfvm95bspj9kj7gjpgglckrsm49jm9a9n9",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.5.2/geoblocker.tar.gz",
+      "version": "0.5.2"
     },
     "gestion": {
       "meta": {
@@ -1312,9 +1312,9 @@
         "name": "Gestion",
         "summary": "Invoicing management application for Micro-Entreprise in France"
       },
-      "sha256": "0mc0yh9h93pwjsfd2b4a7rw4kn0p4pq88c8lnh8zlqjc5ryhcdkd",
-      "url": "https://github.com/baimard/gestion/releases/download/1.2.2/gestion.tar.gz",
-      "version": "1.2.2"
+      "sha256": "0waf9fzf90zyqsdf0ch93sk5ahyv9dw3kzp42l995ay2rhmxrhxc",
+      "url": "https://github.com/baimard/gestion/releases/download/1.2.12/gestion.tar.gz",
+      "version": "1.2.12"
     },
     "gpgmailer": {
       "meta": {
@@ -1341,9 +1341,9 @@
         "name": "GPodder Sync",
         "summary": "replicate basic GPodder.net API"
       },
-      "sha256": "0bdfp3348zaab2jhbig7gnmpam4hxa0ms9nn0cq1vwgv0znhi7rd",
-      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.1.0/gpoddersync.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0wcd9kw1q3li2z92swypwqdbxhsrzff9hd94g0mq9agb4nkq2kfl",
+      "url": "https://github.com/thrillfall/nextcloud-gpodder/releases/download/3.2.0/gpoddersync.tar.gz",
+      "version": "3.2.0"
     },
     "gpxedit": {
       "meta": {
@@ -1401,9 +1401,9 @@
         "name": "Default group quota",
         "summary": "Set default user quotas for group members"
       },
-      "sha256": "0h7n2vvdzhdcxm7vwqs6095bdhxpf8jhj6xfwmm2ynkx3bds1zxb",
-      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.2/group_default_quota.tar.gz",
-      "version": "0.1.2"
+      "sha256": "1xbd8ab24zk9ywclifw8ssi5zivdlqw2z22si9fp855mnlgv2mnb",
+      "url": "https://github.com/icewind1991/group_default_quota/releases/download/v0.1.3/group_default_quota.tar.gz",
+      "version": "0.1.3"
     },
     "group_everyone": {
       "meta": {
@@ -1446,9 +1446,9 @@
         "name": "Group quota",
         "summary": "Give filesystem quotas to groups"
       },
-      "sha256": "16qaafi05qcqx8xyn0c69b54apmhf3dmy9brhbmsy7m8ylz9hykb",
-      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.6/groupquota.tar.gz",
-      "version": "0.1.6"
+      "sha256": "0g1m23shygcgz0iiz2vq35sm08kcw3v8xk4jakynbc9acpqqmj74",
+      "url": "https://github.com/nextcloud/groupquota/releases/download/v0.1.7/groupquota.tar.gz",
+      "version": "0.1.7"
     },
     "guests": {
       "meta": {
@@ -1490,9 +1490,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "00jxkncnf724n7ycrsdsx04y37cd9as37hwia8qjn6y09dc7294p",
-      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "0mlk050c9ai28svm1jvm1cnim4f32z5982ysa4qryzmngpm6kfs5",
+      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "hidesidebars": {
       "meta": {
@@ -1520,9 +1520,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "152b4v5dck9c4mbpq14pa59b4lr4zv5riwa2sylda9pvin89474b",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.8.0/hsts-v0.8.0.tar.gz",
-      "version": "0.8.0"
+      "sha256": "1zh7nnbzblsh2rd2cbq7wv7m3ykyq11f3arsixzbf3qlns9hapci",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.9.0/hsts-v0.9.0.tar.gz",
+      "version": "0.9.0"
     },
     "imageconverter": {
       "meta": {
@@ -1834,9 +1834,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "0y4fdaizjc2ykc0j0pil54igqgrjcsvbaxaxg8hm65h586ylxxl1",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.6/keeweb-0.6.6.tar.gz",
-      "version": "0.6.6"
+      "sha256": "167jlfdhx8i0vaz1a4k8xaz7rqcqivwfd9w90an1qahkx931m7ba",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.8/keeweb-0.6.8.tar.gz",
+      "version": "0.6.8"
     },
     "ldap_contacts_backend": {
       "meta": {
@@ -1978,9 +1978,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1ypdb92674irf3zzijvj81jrjmw326q1sd2n87bizln4lh5jyp9a",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.0/mail.tar.gz",
-      "version": "1.11.0"
+      "sha256": "12ralrk89nhja0bhry7v8hbxq8q71lkzq9gz76bdwxcvbljg1jd8",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.1/mail.tar.gz",
+      "version": "1.11.1"
     },
     "majordomo": {
       "meta": {
@@ -2052,9 +2052,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "10wfw1bchjvy01rmq9wcp9afrjgnzsv7pcz7i1xi6j9xjkjc9m8j",
+      "sha256": "1lzv5n1cpbvk19bs5yz31qv5p8bldz6yqjxzgs58jma441nfvxap",
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
-      "version": "0.14.0"
+      "version": "0.15.0"
     },
     "music": {
       "meta": {
@@ -2097,9 +2097,9 @@
         "name": "News",
         "summary": "An RSS/Atom feed reader"
       },
-      "sha256": "1jqm3ja8gv2iirspah7kl1ks9m5259jmjp2h6fiikddj981g0kar",
-      "url": "https://github.com/nextcloud/news/releases/download/17.0.0/news.tar.gz",
-      "version": "17.0.0"
+      "sha256": "01llws01liib7pmyj1hqn8b8b0d2k1pmn1c2342bhy6swad7drhf",
+      "url": "https://github.com/nextcloud/news/releases/download/17.0.1/news.tar.gz",
+      "version": "17.0.1"
     },
     "nextcloud_announcements": {
       "meta": {
@@ -2253,9 +2253,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "19gc2a0gqijsn1inyysklpza0sk1v0bgywizjwcas56smrrk2ibg",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v7.2.0/onlyoffice.tar.gz",
-      "version": "7.2.0"
+      "sha256": "17gdvjvhhi8h537ilh3wha0w2k53547pj1d2zvh5vpljzj9qaacm",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v7.2.1/onlyoffice.tar.gz",
+      "version": "7.2.1"
     },
     "openhab": {
       "meta": {
@@ -2337,9 +2337,9 @@
         "name": "Permissions Overwrite",
         "summary": "Allow overwriting external storage permissions"
       },
-      "sha256": "12kz2fffyxwfyrxjg359fadzc17sif3vv60i8rfsb7kym6yxaw0p",
-      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.5/permissions_overwrite.tar.gz",
-      "version": "0.1.5"
+      "sha256": "0pimgd7bi6cjmhz52xj3cxdikpm45nfa6vcixsvn8w4qd34i9ryb",
+      "url": "https://github.com/icewind1991/permissions_overwrite/releases/download/v0.1.6/permissions_overwrite.tar.gz",
+      "version": "0.1.6"
     },
     "phonetrack": {
       "meta": {
@@ -2380,9 +2380,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "1ln69dkfj1309bnrwcbnxpb7f1g5jw912zv09zh2rycil7bpidvf",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.8.0/cloud_piwik-0.8.0.tar.gz",
-      "version": "0.8.0"
+      "sha256": "0nl707fr4jgvapxb31n3n3xlli8xa49356cgvd8sdr90cdbdmrij",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.10.0/cloud_piwik-0.10.0.tar.gz",
+      "version": "0.10.0"
     },
     "podcast": {
       "meta": {
@@ -2401,18 +2401,18 @@
     },
     "polls": {
       "meta": {
-        "description": "A polls app, similar to doodle/dudle with the possibility to restrict access (members, certain groups/users, hidden and public).",
+        "description": "A polls app, similar to Doodle/Dudle with the possibility to restrict access (members, certain groups/users, hidden and public).",
         "homepage": "https://github.com/nextcloud/polls",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Polls",
-        "summary": "A polls app, similar to doodle/dudle with the possibility to restrict access."
+        "summary": "A polls app, similar to Doodle/Dudle with the possibility to restrict access."
       },
-      "sha256": "1cm1hl1c7dflfqyy8s5jcdss69rp7frdh8dzynxapw72d4dcpfkf",
-      "url": "https://github.com/nextcloud/polls/releases/download/v3.3.0/polls.tar.gz",
-      "version": "3.3.0"
+      "sha256": "1lsh5jpnpcl3qzhr3v43vvkw8rbkq28z2yiipgralh58li7abwfz",
+      "url": "https://github.com/nextcloud/polls/releases/download/v3.4.0/polls.tar.gz",
+      "version": "3.4.0"
     },
     "previewgenerator": {
       "meta": {
@@ -2425,9 +2425,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "1n01mlrq7jxy8ra3f5xm6rb6m9hp75116ds8hrg72hqs5j3bifc1",
-      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.3.0/previewgenerator.tar.gz",
-      "version": "3.3.0"
+      "sha256": "118swfzf1kk8ypiapw82kddk6q0jixc5c7xbb8j2cz5b15ajjv7b",
+      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.4.0/previewgenerator.tar.gz",
+      "version": "3.4.0"
     },
     "pride": {
       "meta": {
@@ -2494,9 +2494,9 @@
         "name": "QOwnNotesAPI",
         "summary": "API for QOwnNotes, the open source notepad for Linux, macOS and Windows"
       },
-      "sha256": "07d4wdqri7mh6z8lydb20m6a58k6z71ncs17czn486gc6cdv3rii",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/21.7.0/qownnotesapi-nc.tar.gz",
-      "version": "21.7.0"
+      "sha256": "08qjr9kh9ly8mmwlay97g946c891spvwlg5v9qf7am8jdx1lg15a",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/21.12.0/qownnotesapi-nc.tar.gz",
+      "version": "21.12.0"
     },
     "quickaccesssorting": {
       "meta": {
@@ -2524,9 +2524,9 @@
         "name": "Quick notes",
         "summary": "Quick notes with a basic rich text"
       },
-      "sha256": "1nhw9bpf61d5kcimf2ggnb0ha9nsvldpx86vga36vh6bw7mf3yds",
-      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.7.2/quicknotes.tar.gz",
-      "version": "0.7.2"
+      "sha256": "1szibmwf82q74lfnbphslr7hqzn0bv89sanx9daz27r1106y7gwq",
+      "url": "https://github.com/matiasdelellis/quicknotes/releases/download/v0.7.3/quicknotes.tar.gz",
+      "version": "0.7.3"
     },
     "quota_warning": {
       "meta": {
@@ -2539,9 +2539,9 @@
         "name": "Quota warning",
         "summary": "This app sends notifications to users when they reached 85, 90 and 95% of their quota."
       },
-      "sha256": "04f3kw07wjwsd9j9mg3hm6m5rs6pi8g6hcp7a3zyqj1zr9fpq3ds",
-      "url": "https://github.com/nextcloud-releases/quota_warning/releases/download/v1.11.0/quota_warning-1.11.0.tar.gz",
-      "version": "1.11.0"
+      "sha256": "19z8qy0lz4w24kdz48mw3pzjcgvhgxj6dqxywjipaimc09h8f3kp",
+      "url": "https://github.com/nextcloud-releases/quota_warning/releases/download/v1.13.0/quota_warning-v1.13.0.tar.gz",
+      "version": "1.13.0"
     },
     "radio": {
       "meta": {
@@ -2584,9 +2584,9 @@
         "name": "Ransomware protection",
         "summary": "This app prevents uploading files with known ransomware file endings"
       },
-      "sha256": "072xw1rkksm1cwdrwvf28h5jiymfrhqzfvp208jq9vf81gn1nfsn",
-      "url": "https://github.com/nextcloud-releases/ransomware_protection/releases/download/v1.11.0/ransomware_protection-1.11.0.tar.gz",
-      "version": "1.11.0"
+      "sha256": "1vksgpgm0hi6ayk10kh4jnybqypig1knhrjb65km9cnrl473g3lp",
+      "url": "https://github.com/nextcloud-releases/ransomware_protection/releases/download/v1.12.0/ransomware_protection-v1.12.0.tar.gz",
+      "version": "1.12.0"
     },
     "recognize": {
       "meta": {
@@ -2627,9 +2627,9 @@
         "name": "Registration",
         "summary": "This app allows users to self-register a new account using their email address."
       },
-      "sha256": "0zy71xjbwfpa9vssb2l2c4ymb93iymbjg06rv5ms8gnb267fi736",
-      "url": "https://github.com/nextcloud-releases/registration/releases/download/v1.3.0/registration-1.3.0.tar.gz",
-      "version": "1.3.0"
+      "sha256": "11qg2qq2j38bglfahwzmiy6qcdch0rjckhl7a2isrzpc6frgpbjx",
+      "url": "https://github.com/nextcloud-releases/registration/releases/download/v1.4.0/registration-v1.4.0.tar.gz",
+      "version": "1.4.0"
     },
     "richdocuments": {
       "meta": {
@@ -2657,9 +2657,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1zkk97si8yz1glg943sw5vy0yjrkk0afkpqbhj6d0hxlvly8r7h6",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode.tar.gz",
-      "version": "6.4.1303"
+      "sha256": "0mywkvl2s1aclcdbx456f2iwa5bshnhnahnqb2xpnnyg31i2ka3r",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode.tar.gz",
+      "version": "21.11.4"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2672,9 +2672,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1d6fvvxnn89p5j7cfak1ak9n6824ja7z5grghncs54mr2imynh3c",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1303"
+      "sha256": "01pims7cjb7g5sn85qpqjv1wigxm1jhvn63njhww0xlc57lvy0l9",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode_arm64.tar.gz",
+      "version": "21.11.4"
     },
     "riotchat": {
       "meta": {
@@ -2702,9 +2702,9 @@
         "name": "Root cache cleaner",
         "summary": "Clean duplicate items from the root filecache."
       },
-      "sha256": "0zd5hb59fhj75nzcj4swpailnif7v7szgsdhg6zd0pqlnavfvswk",
-      "url": "https://github.com/icewind1991/root_cache_cleaner/releases/download/v0.1.0/root_cache_cleaner.tar.gz",
-      "version": "0.1.0"
+      "sha256": "04apklb3bl2aw4c2zijb4vpv4kyp2pbi5zyaqalc3q0jbsdlc5fn",
+      "url": "https://github.com/icewind1991/root_cache_cleaner/releases/download/v0.1.1/root_cache_cleaner.tar.gz",
+      "version": "0.1.1"
     },
     "scanner": {
       "meta": {
@@ -2746,9 +2746,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "13kfh0vnyffi2dbwwxmq000hngazj4dmyqgmj8dsszwgyx289zic",
-      "url": "https://download.sendent.nl/serverapp/1.2.7/sendent.tar.gz",
-      "version": "1.2.7"
+      "sha256": "1bfksw0zkwlsagy5cr46fnqlsir5yksaiz7i46fw1sda198p5crs",
+      "url": "https://download.sendent.nl/serverapp/1.2.8/sendent.tar.gz",
+      "version": "1.2.8"
     },
     "sentry": {
       "meta": {
@@ -2888,9 +2888,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0lql3ws2n1f4kzki61xmbbg59p1vbb0y52fwml3fp3hq095yrbxw",
-      "url": "https://gitnet.fr/attachments/18e53211-c09b-4e26-9c1e-ec1d5975a83a",
-      "version": "2.0.1"
+      "sha256": "0lxwc7arwdwr9qmk5y4q63l6pm07hs7jbzvji2q9l585gyqqfpch",
+      "url": "https://gitnet.fr/attachments/61f94f2e-cb16-462e-a568-c3f3f6370ca9",
+      "version": "2.1.0"
     },
     "smb_test": {
       "meta": {
@@ -2903,9 +2903,9 @@
         "name": "SMB connection test",
         "summary": "SMB connection test app"
       },
-      "sha256": "1nrai4zbl4i60sp4kpad63r1kf46c9ck9ib8pf9ls2cn87c3nwrb",
-      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.2/smb_test.tar.gz",
-      "version": "0.3.2"
+      "sha256": "0adz0rxx6f9i07r6vx77qzgny4w0j8kq1p49253ampnprk0jrnaj",
+      "url": "https://github.com/icewind1991/smb_test/releases/download/v0.3.3/smb_test.tar.gz",
+      "version": "0.3.3"
     },
     "social": {
       "meta": {
@@ -3043,7 +3043,7 @@
     },
     "spreed": {
       "meta": {
-        "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 52 (or newer), latest Edge or Chrome 49 (or newer) with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
+        "description": "Chat, video &amp; audio-conferencing using WebRTC\n\n*  **Chat integration!** Nextcloud Talk comes with a simple text chat. Allowing you to share files from your Nextcloud and mentioning other participants.\n*  **Private, group, public and password protected calls!** Just invite somebody, a whole group or send a public link to invite to a call.\n*  **Screen sharing!** Share your screen with participants of your call. You just need to use Firefox version 66 (or newer), latest Edge or Chrome 72 (or newer, also possible using Chrome 49 with this [Chrome extension](https://chrome.google.com/webstore/detail/screensharing-for-nextclo/kepnpjhambipllfmgmbapncekcmabkol)).\n*  **Integration with other Nextcloud apps** like Files, Contacts and Deck. More to come.\n\nAnd in the works for the [coming versions](https://github.com/nextcloud/spreed/milestones/):\n*  [Federated calls](https://github.com/nextcloud/spreed/issues/21), to call people on other Nextclouds",
         "homepage": "https://github.com/nextcloud/spreed",
         "isShipped": false,
         "licenses": [
@@ -3052,9 +3052,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "1c02bdd044s0bczh7c0q5l2bnzjhlh61lqbq5jd1pacvpwvhfb80",
-      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v11.3.3/spreed-11.3.3.tar.gz",
-      "version": "11.3.3"
+      "sha256": "1afgqlmagrfwqah2qbjk3vffq7h1g2qxpv1yp5qg1s79jbfqj5gh",
+      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v11.3.4/spreed-11.3.4.tar.gz",
+      "version": "11.3.4"
     },
     "sqreen_sdk": {
       "meta": {
@@ -3135,9 +3135,9 @@
         "name": "Suspicious Login",
         "summary": "Detect and warn about suspicious IPs logging into Nextcloud"
       },
-      "sha256": "1kja7dr7mwhblfhyd35zqd064jm995zzk18gqhvl7c30x3blh3r0",
-      "url": "https://github.com/nextcloud/suspicious_login/releases/download/v4.0.0/suspicious_login.tar.gz",
-      "version": "4.0.0"
+      "sha256": "1fw7vjn9m9c42rp9ayc8g2j5w2j53sq5w3wys6vimzdfj5qj9pkb",
+      "url": "https://github.com/nextcloud-releases/suspicious_login/releases/download/v4.1.0/suspicious_login.tar.gz",
+      "version": "4.1.0"
     },
     "systemtags": {
       "meta": {
@@ -3163,9 +3163,9 @@
         "name": "Talk Matterbridge",
         "summary": "This app brings the Matterbridge binary to your server to connect Nextcloud Talk with other chat services."
       },
-      "sha256": "0fh1m1xp4fqjz9q8cm7ihxcc576233v2qz90dk1dy2vhn6g6ay2l",
-      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.22.4/talk_matterbridge.tar.gz",
-      "version": "1.22.4"
+      "sha256": "04alnkszfq8xq5nwi5cxfh7v52bim9bb9vn6za4h0ilblzazf570",
+      "url": "https://github.com/nextcloud/talk_matterbridge/releases/download/v1.23.2/talk_matterbridge.tar.gz",
+      "version": "1.23.2"
     },
     "talk_simple_poll": {
       "meta": {
@@ -3334,9 +3334,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "1hm4fp9clm8f2mmmhlskn8ryqm54qkcsgavy6vsfb4dg189caw3f",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.1.0/twofactor_admin.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0670nk6pc75qd2m9mqm5nkalpzjg6ijm6s9q2qmz5b93k0p13xyb",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.2.0/twofactor_admin.tar.gz",
+      "version": "3.2.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -3407,9 +3407,9 @@
         "name": "Two-Factor TOTP Provider",
         "summary": "TOTP two-factor provider"
       },
-      "sha256": "1px5c61npdc5s6fhczql79r41b82chmhm5d15dw8cfc79jscm3fk",
-      "url": "https://github.com/nextcloud-releases/twofactor_totp/releases/download/v6.1.0/twofactor_totp.tar.gz",
-      "version": "6.1.0"
+      "sha256": "1h39fap96kgkxg7f8bh4fq7x5xr4fmsfd9fcdbmk6dyzksb0ihlz",
+      "url": "https://github.com/nextcloud-releases/twofactor_totp/releases/download/v6.2.0/twofactor_totp.tar.gz",
+      "version": "6.2.0"
     },
     "twofactor_u2f": {
       "meta": {
@@ -3422,9 +3422,9 @@
         "name": "Two-Factor U2F",
         "summary": "U2F two-factor provider"
       },
-      "sha256": "05savgxw9k6z35zbxvscybmf8ig551c7g627b1nqafa1m3y7jjh9",
-      "url": "https://github.com/nextcloud-releases/twofactor_u2f/releases/download/v6.2.0/twofactor_u2f.tar.gz",
-      "version": "6.2.0"
+      "sha256": "0f86xx7zvv584p5czx88zw3risf23qnmv5zb694h105izk4jkz06",
+      "url": "https://github.com/nextcloud-releases/twofactor_u2f/releases/download/v6.3.0/twofactor_u2f.tar.gz",
+      "version": "6.3.0"
     },
     "twofactor_webauthn": {
       "meta": {
@@ -3437,9 +3437,9 @@
         "name": "Two-Factor Webauthn",
         "summary": "Webauthn two-factor provider"
       },
-      "sha256": "1kyzffdwvlx37snsagdf7d10mh5lmki5w2gdfc5533rbh7nvc5zy",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.13/twofactor_webauthn-0.2.13.tar.gz",
-      "version": "0.2.13"
+      "sha256": "1fg3sz8jm8vr0axrf1rhz30im6bpgsrkj107h6jf1air91ssccn5",
+      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.14/twofactor_webauthn-0.2.14.tar.gz",
+      "version": "0.2.14"
     },
     "unroundedcorners": {
       "meta": {
@@ -3467,9 +3467,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "03mcys9dfy5h8hcywdhv51y0gn4gf5ddwa1kklj4mvm6h4pqaxl1",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.3/unsplash.tar.gz",
-      "version": "1.2.3"
+      "sha256": "0blgw0sjfa4pbfvmvj799sc1k0syymmilm9ib7snv282fdmw1l8v",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.2.4/unsplash.tar.gz",
+      "version": "1.2.4"
     },
     "updatenotification": {
       "meta": {
@@ -3654,9 +3654,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "17wvikrzb28xzkw4smh7yzbhkrhhifp3vn5irg5918f42ml0lh28",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.3/video_converter.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0sm5bg2f4cc6s849pjkqki1pja6irgsgdrdkjvzw7xwzsc7aqr5w",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.4/video_converter.tar.gz",
+      "version": "1.0.4"
     },
     "viewer": {
       "meta": {
@@ -3725,9 +3725,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "112zp4nzzblhvj7pkw8ywzzl0k5g4pagg42cxc7fdvmr5wkh67hz",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/e562e2cd7dd179eadea8dd2545421b97/webapppassword.tar.gz",
-      "version": "21.7.0"
+      "sha256": "0ll4v6ii2zppn0p272w0mnc432jzh5vaypc8k73dvrxh0qz34pnp",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/9c940399771944f671ea9ae42294813d/webapppassword.tar.gz",
+      "version": "21.12.0"
     },
     "welcome": {
       "meta": {
@@ -3842,9 +3842,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "1s2aq7knn3wwyxp2h2afb4daf4lvndscr9zhjyrmlnj8rjl70g9k",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/V1.2.6/wrikesync.tar.gz",
-      "version": "1.2.6"
+      "sha256": "1dicpxg1x3idsb7kxa9pmc71cgnl92d3hbv0ns6jmxlsbp16jxb2",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.7/wrikesync.tar.gz",
+      "version": "1.2.7"
     }
   },
   "constraints": {

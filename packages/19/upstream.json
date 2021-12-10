@@ -429,9 +429,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0qcw5f978ir7midjdv2myvd382hizr3jyhn4x0hd97k5bgnvnkzk",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.7/Cookbook-0.9.7.tar.gz",
-      "version": "0.9.7"
+      "sha256": "13c3rng1mp477mx07zx1pdaz81idmg3msains7f51n7nw7gw66vl",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.8/Cookbook-0.9.8.tar.gz",
+      "version": "0.9.8"
     },
     "cospend": {
       "meta": {
@@ -573,9 +573,9 @@
         "name": "Draw.io",
         "summary": "Draw.io integration app"
       },
-      "sha256": "0pwi2w2gk2pplbnd8lan73iaa037gm21jxnsr3lgirr75ca19i2s",
-      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.1/drawio-v1.0.1.tar.gz",
-      "version": "1.0.1"
+      "sha256": "1k77xch1dj2bi2b9axvpb5gbixfrligsk8fl627nzn9rii4pjzsx",
+      "url": "https://github.com/pawelrojek/nextcloud-drawio/releases/download/v.1.0.2/drawio-v1.0.2.tar.gz",
+      "version": "1.0.2"
     },
     "drop_account": {
       "meta": {
@@ -736,9 +736,9 @@
         "name": "Extract",
         "summary": "Extract archive from the web interface"
       },
-      "sha256": "1skx0k955avjsivgzfvmd5kd8rlam37bz3nf0fq7gv2r87qw4899",
-      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.2/extract.tar.gz",
-      "version": "1.3.2"
+      "sha256": "19yi64fnynaym7fx1qpln1ll4b89x7a1nvm2sz5ivkapxbzz0iik",
+      "url": "https://github.com/PaulLereverend/NextcloudExtract/releases/download/1.3.3/extract.tar.gz",
+      "version": "1.3.3"
     },
     "facerecognition": {
       "meta": {
@@ -972,7 +972,7 @@
     },
     "files_linkeditor": {
       "meta": {
-        "description": "External web links in Nextcloud!\n\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.",
+        "description": "### External web links in Nextcloud!\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.\n\n##### Latest changes \n**1.1.8, 3. December 2021**\n- Bump compatibility to Nextcloud 23\n- Update JS dependencies\n\n_[View changelog for older versions](https://github.com/te-online/files_linkeditor#changelog)_",
         "homepage": "https://github.com/te-online/files_linkeditor",
         "isShipped": false,
         "licenses": [
@@ -981,9 +981,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "0rxvblmzscr1sg3nv8zcs4j8sydv4diki0r7d3ccm305zxshhyi3",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/files_linkeditor/v1.1.6/files_linkeditor.tar.gz",
-      "version": "1.1.6"
+      "sha256": "1vnjqcw1c1szzp53lim8cmyh06ayzkrdw3ya9spasz19izlgn8s8",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/files_linkeditor/v1.1.8/files_linkeditor.tar.gz",
+      "version": "1.1.8"
     },
     "files_lock": {
       "meta": {
@@ -1504,9 +1504,9 @@
         "name": "HSTS Header",
         "summary": "Add HSTS header to HTTPS response"
       },
-      "sha256": "152b4v5dck9c4mbpq14pa59b4lr4zv5riwa2sylda9pvin89474b",
-      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.8.0/hsts-v0.8.0.tar.gz",
-      "version": "0.8.0"
+      "sha256": "1zh7nnbzblsh2rd2cbq7wv7m3ykyq11f3arsixzbf3qlns9hapci",
+      "url": "https://github.com/sualko/cloud_hsts/releases/download/v0.9.0/hsts-v0.9.0.tar.gz",
+      "version": "0.9.0"
     },
     "imageconverter": {
       "meta": {
@@ -1577,9 +1577,9 @@
         "name": "Keeweb",
         "summary": "Open Keepass stores"
       },
-      "sha256": "0y4fdaizjc2ykc0j0pil54igqgrjcsvbaxaxg8hm65h586ylxxl1",
-      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.6/keeweb-0.6.6.tar.gz",
-      "version": "0.6.6"
+      "sha256": "167jlfdhx8i0vaz1a4k8xaz7rqcqivwfd9w90an1qahkx931m7ba",
+      "url": "https://github.com/jhass/nextcloud-keeweb/releases/download/v0.6.8/keeweb-0.6.8.tar.gz",
+      "version": "0.6.8"
     },
     "ldap_contacts_backend": {
       "meta": {
@@ -1794,9 +1794,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "10wfw1bchjvy01rmq9wcp9afrjgnzsv7pcz7i1xi6j9xjkjc9m8j",
+      "sha256": "1lzv5n1cpbvk19bs5yz31qv5p8bldz6yqjxzgs58jma441nfvxap",
       "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
-      "version": "0.14.0"
+      "version": "0.15.0"
     },
     "music": {
       "meta": {
@@ -2168,9 +2168,9 @@
         "name": "Piwik/Matomo Tracking",
         "summary": "Track users with Piwik/Matomo"
       },
-      "sha256": "1ln69dkfj1309bnrwcbnxpb7f1g5jw912zv09zh2rycil7bpidvf",
-      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.8.0/cloud_piwik-0.8.0.tar.gz",
-      "version": "0.8.0"
+      "sha256": "0nl707fr4jgvapxb31n3n3xlli8xa49356cgvd8sdr90cdbdmrij",
+      "url": "https://github.com/sualko/cloud_piwik/releases/download/v0.10.0/cloud_piwik-0.10.0.tar.gz",
+      "version": "0.10.0"
     },
     "polls": {
       "meta": {
@@ -2281,9 +2281,9 @@
         "name": "QOwnNotesAPI",
         "summary": "API for QOwnNotes, the open source notepad for Linux, macOS and Windows"
       },
-      "sha256": "07d4wdqri7mh6z8lydb20m6a58k6z71ncs17czn486gc6cdv3rii",
-      "url": "https://github.com/pbek/qownnotesapi/releases/download/21.7.0/qownnotesapi-nc.tar.gz",
-      "version": "21.7.0"
+      "sha256": "08qjr9kh9ly8mmwlay97g946c891spvwlg5v9qf7am8jdx1lg15a",
+      "url": "https://github.com/pbek/qownnotesapi/releases/download/21.12.0/qownnotesapi-nc.tar.gz",
+      "version": "21.12.0"
     },
     "quest": {
       "meta": {
@@ -2456,9 +2456,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1zkk97si8yz1glg943sw5vy0yjrkk0afkpqbhj6d0hxlvly8r7h6",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode.tar.gz",
-      "version": "6.4.1303"
+      "sha256": "0mywkvl2s1aclcdbx456f2iwa5bshnhnahnqb2xpnnyg31i2ka3r",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode.tar.gz",
+      "version": "21.11.4"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2471,9 +2471,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1d6fvvxnn89p5j7cfak1ak9n6824ja7z5grghncs54mr2imynh3c",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/6.4.1303/richdocumentscode_arm64.tar.gz",
-      "version": "6.4.1303"
+      "sha256": "01pims7cjb7g5sn85qpqjv1wigxm1jhvn63njhww0xlc57lvy0l9",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode_arm64.tar.gz",
+      "version": "21.11.4"
     },
     "riotchat": {
       "meta": {
@@ -2657,9 +2657,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0lql3ws2n1f4kzki61xmbbg59p1vbb0y52fwml3fp3hq095yrbxw",
-      "url": "https://gitnet.fr/attachments/18e53211-c09b-4e26-9c1e-ec1d5975a83a",
-      "version": "2.0.1"
+      "sha256": "0lxwc7arwdwr9qmk5y4q63l6pm07hs7jbzvji2q9l585gyqqfpch",
+      "url": "https://gitnet.fr/attachments/61f94f2e-cb16-462e-a568-c3f3f6370ca9",
+      "version": "2.1.0"
     },
     "smb_test": {
       "meta": {
@@ -3073,9 +3073,9 @@
         "name": "Two-Factor Admin Support",
         "summary": "Nextcloud Two-Factor Authentication Admin Support Provider"
       },
-      "sha256": "1hm4fp9clm8f2mmmhlskn8ryqm54qkcsgavy6vsfb4dg189caw3f",
-      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.1.0/twofactor_admin.tar.gz",
-      "version": "3.1.0"
+      "sha256": "0670nk6pc75qd2m9mqm5nkalpzjg6ijm6s9q2qmz5b93k0p13xyb",
+      "url": "https://github.com/ChristophWurst/twofactor_admin/releases/download/v3.2.0/twofactor_admin.tar.gz",
+      "version": "3.2.0"
     },
     "twofactor_backupcodes": {
       "meta": {
@@ -3191,9 +3191,9 @@
         "name": "Splash",
         "summary": "Random background from Unsplash"
       },
-      "sha256": "03mcys9dfy5h8hcywdhv51y0gn4gf5ddwa1kklj4mvm6h4pqaxl1",
-      "url": "https://github.com/nextcloud/unsplash/releases/download/1.2.3/unsplash.tar.gz",
-      "version": "1.2.3"
+      "sha256": "0blgw0sjfa4pbfvmvj799sc1k0syymmilm9ib7snv282fdmw1l8v",
+      "url": "https://github.com/nextcloud/unsplash/releases/download/v1.2.4/unsplash.tar.gz",
+      "version": "1.2.4"
     },
     "updatenotification": {
       "meta": {
@@ -3394,9 +3394,9 @@
         "name": "Video converter",
         "summary": "Convert videos within the web interface"
       },
-      "sha256": "17wvikrzb28xzkw4smh7yzbhkrhhifp3vn5irg5918f42ml0lh28",
-      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.3/video_converter.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0sm5bg2f4cc6s849pjkqki1pja6irgsgdrdkjvzw7xwzsc7aqr5w",
+      "url": "https://github.com/PaulLereverend/NextcloudVideo_Converter/releases/download/1.0.4/video_converter.tar.gz",
+      "version": "1.0.4"
     },
     "viewer": {
       "meta": {
@@ -3452,9 +3452,9 @@
         "name": "WebAppPassword",
         "summary": "Temporary app password generator and WebDAV/CalDAV CORS header injection"
       },
-      "sha256": "112zp4nzzblhvj7pkw8ywzzl0k5g4pagg42cxc7fdvmr5wkh67hz",
-      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/e562e2cd7dd179eadea8dd2545421b97/webapppassword.tar.gz",
-      "version": "21.7.0"
+      "sha256": "0ll4v6ii2zppn0p272w0mnc432jzh5vaypc8k73dvrxh0qz34pnp",
+      "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/9c940399771944f671ea9ae42294813d/webapppassword.tar.gz",
+      "version": "21.12.0"
     },
     "whiteboard": {
       "meta": {
