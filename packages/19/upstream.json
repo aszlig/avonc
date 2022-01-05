@@ -2029,6 +2029,21 @@
       "url": "https://github.com/kenda/nextcloud-openhab/releases/download/0.9.5/openhab.tar.gz",
       "version": "0.9.5"
     },
+    "openotp_auth": {
+      "meta": {
+        "description": "**RCDevs OpenOTP Application enables two-factor authentication for your users using your personal Cloud.**\n\nIt is versatile, device-independent and based on opened security standards.\n\nOpenOTP provides fine-grained user identity and access management (IAM), one-time passwords authentication technologies (OTP) and Universal Second Factor Authentification (U2F) including among others extensive authentication policies for your AD / LDAP users. \n\nIt is enterprise-ready with strong support for:\n\t\t\n* high-availability\n* load-balancing\n* multi-tenancy\n* geolocalization\n* delegated administration\n* contextual authentication with IP address and device fingerprint\n* push Login technology with Mobile Phone\n* voice biometrics technology\n* easy installation, update and configuration in RCDevs WebADM\n* ... and much more.",
+        "homepage": "https://rcdevs.com",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OpenOTP Two Factor Authentication",
+        "summary": "RCDevs OpenOTP Application enables Multi-Factor authentication for your users."
+      },
+      "sha256": "02r6wv41jahh608vimk104ld144s1x51mp6jsh9may16b8x5qd3d",
+      "url": "https://mercury.chantret.com/openotp_auth.tar.gz",
+      "version": "1.2.0"
+    },
     "orcid": {
       "meta": {
         "description": "based on user_orcid written by Lars Nsbye Christensen, DeIC",
@@ -2456,9 +2471,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0mywkvl2s1aclcdbx456f2iwa5bshnhnahnqb2xpnnyg31i2ka3r",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode.tar.gz",
-      "version": "21.11.4"
+      "sha256": "0ksdrb1mc6r6qf3sy5dg3wc870h4hfnxdi7m10xc6841r0d1c7x4",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.6/richdocumentscode.tar.gz",
+      "version": "21.11.6"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2501,9 +2516,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "0b2gch3zay3g293yv5h4lr246ihxkr1zzkxw9an9n51m0mgrcgms",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.1/scanner-0.2.1.tar.gz",
-      "version": "0.2.1"
+      "sha256": "1ns49wq0zfzy5k6lf0dcqaaibbwcqa4zrwiir2lrxw75has8h49y",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.2/scanner-0.2.2.tar.gz",
+      "version": "0.2.2"
     },
     "secsignid": {
       "meta": {
@@ -3176,9 +3191,9 @@
         "name": "Unrounded Corners",
         "summary": "An extension for making the corners of buttons and widgets unrounded"
       },
-      "sha256": "0f25l3y4v5c2i8iamms3lgk70443szfyw5294a3h8arj3x5w2m5m",
-      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.2/unroundedcorners-v1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "18krflqri3k19s4xdx6js80ks5bps35321scdbs4bw43ahnj87fx",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.3/unroundedcorners-v1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "unsplash": {
       "meta": {
@@ -3207,6 +3222,20 @@
         "name": "Update notification",
         "summary": "Displays update notifications for Nextcloud and provides the SSO for the updater."
       }
+    },
+    "uppush": {
+      "meta": {
+        "description": "Once the mobile phone is connected, push notifications can be forwarded to applications implementing UnifiedPush.\n\nMore information about UnifiedPush at https://unifiedpush.org",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Unified Push Provider",
+        "summary": "Use Nextcloud as a push provider for mobile phones' notifications"
+      },
+      "sha256": "05z2kkn8drfvy7091w9a9r38amya5561cz3vldhk6j4f9mycl36a",
+      "url": "https://raw.githubusercontent.com/p1gp1g/nextpush-publish/main/0.2.1/uppush-0.2.1.tar.gz",
+      "version": "0.2.1"
     },
     "user_backend_sql_raw": {
       "meta": {

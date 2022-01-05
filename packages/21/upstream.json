@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "0616c9hsj03vjpwxc1ljz42fz8md75zxnvr3c0a26dq16i8fxwk7",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/ffd6692bf0977c4e6f069cf6e518ed3d774d0ade/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.11.7"
+      "sha256": "016s7m6hkkkv0z6mgn0q60g7nkxnbw7i25v65gc4qccly2nvmgy0",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/d57e4a922fa4d639f2002f01c962b8359a014438/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.11.10"
     },
     "apporder": {
       "meta": {
@@ -109,13 +109,13 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "0kd2174j4j6vcpfcf0z4qs1d6mskf7lh3klj13a4xg49288nw7df",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.13.0/apporder.tar.gz",
-      "version": "0.13.0"
+      "sha256": "1gppcfswb3zzvv827p6s340bbyqaz57vmkv48z69dyr2a2c2abgf",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.14.0/apporder.tar.gz",
+      "version": "0.14.0"
     },
     "audioplayer": {
       "meta": {
-        "description": "A music player for FLAC, MP3, MP4, AIF, AAC, streams, ... with playlist support and SONOS integration.\n\n- Cover or List view by various categories\n- tuned for big audio collections\n- Smart lists &amp; playlists\n- Stream URLs\n- Favorites, Search &amp; Collaborative Tag integration\n- Specifying media folder (with exclude functionality)\n- Hardware media keys &amp; Chrome/Android/macOS integration\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
+        "description": "A music player for FLAC, MP3, MP4, AIF, AAC, streams, ... with playlist support and SONOS integration.\n\n- Cover or List view by various categories\n- Tuned for big audio collections\n- Smart lists &amp; playlists\n- Stream URLs\n- Favorites, Search &amp; Collaborative Tag integration\n- Specifying media folder (with exclude functionality)\n- Hardware media keys &amp; Chrome/Android/macOS integration\n- [SONOS player](https://github.com/rello/audioplayer_sonos) via add-on\n- Use the Recognize app to classify genres by machine learning\n\nSee [README](https://github.com/rello/audioplayer/blob/master/README.md) file for all supported MIME types and additional information.",
         "homepage": "https://rello.github.io/audioplayer",
         "isShipped": false,
         "licenses": [
@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "11jibwkxwd85kl03aknl85yv7y5v3n8rlm6jyaqxdjln592c8f20",
-      "url": "https://github.com/Rello/audioplayer/releases/download/3.2.2/audioplayer-3.2.2.tar.gz",
-      "version": "3.2.2"
+      "sha256": "1arh6cw4ddhp5cadwgp68h2qbm6h66lgp6az3pxzj63ixh9g9z8d",
+      "url": "https://github.com/Rello/audioplayer/releases/download/3.2.4/audioplayer-3.2.4.tar.gz",
+      "version": "3.2.4"
     },
     "audioplayer_sonos": {
       "meta": {
@@ -214,9 +214,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "15wnvdvfhm5ryk79mmgjirikhj3li1hbrsq74xyr8a5ih6c4bdnn",
-      "url": "https://github.com/nextcloud/bruteforcesettings/releases/download/v2.2.0/bruteforcesettings.tar.gz",
-      "version": "2.2.0"
+      "sha256": "01lmn9zg555qn8s09aalx7g9r7wz51q4xm2xbqr0037d6a058p45",
+      "url": "https://github.com/nextcloud-releases/bruteforcesettings/releases/download/v2.3.0/bruteforcesettings-v2.3.0.tar.gz",
+      "version": "2.3.0"
     },
     "calendar": {
       "meta": {
@@ -229,9 +229,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "1avrlyrqg16n31q72cpxhip8b6knm4zi62jz7d7zky310rbhsxy8",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.1/calendar.tar.gz",
-      "version": "3.0.1"
+      "sha256": "0b3j056zqlrmqm2lmfhzr7av2n7515ln51xqg900p98xmn9lldci",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.4/calendar-v3.0.4.tar.gz",
+      "version": "3.0.4"
     },
     "camerarawpreviews": {
       "meta": {
@@ -389,9 +389,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1d8dphizazys994inwf54iiha5zkiv110yky2506ckar3xq3ck1k",
-      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.6/contacts.tar.gz",
-      "version": "4.0.6"
+      "sha256": "0wvbynp7qvx0imb58n43f41gvkifnsb11si4xmf7shyh4fqsfaij",
+      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.7/contacts-v4.0.7.tar.gz",
+      "version": "4.0.7"
     },
     "contactsinteraction": {
       "meta": {
@@ -634,9 +634,9 @@
         "name": "eID-Login",
         "summary": "Integration of mobile electronic identities at a substantial security level"
       },
-      "sha256": "06c0s52f1ba5qifmzqq19b9l61sb5hpzy6qddks6qqlcb8m8az73",
-      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.6/eidlogin.tar.gz",
-      "version": "1.0.6"
+      "sha256": "145phaap41qhgnrjq9gmrvmmw14zv46b8ij0y5f7g2rb3mmlg6iz",
+      "url": "https://github.com/eid-login/eid-login-nextcloud/releases/download/1.0.7/eidlogin.tar.gz",
+      "version": "1.0.7"
     },
     "electronicsignatures": {
       "meta": {
@@ -648,9 +648,9 @@
         "name": "Electronic Signatures",
         "summary": "Accept electronic signatures on your documents."
       },
-      "sha256": "1gf03maij3w1f3g3g68rn4skkhvkkxsv8gpxdxr809v05dcgjz3m",
-      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.8.0/v1.8.0.tar.gz",
-      "version": "1.8.0"
+      "sha256": "1paxyq3hvz3any8nx0wndpicciv1mf1ckslh9azwhaz41zzp9wrr",
+      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.10.0/v1.10.0.tar.gz",
+      "version": "1.10.0"
     },
     "emlviewer": {
       "meta": {
@@ -706,9 +706,9 @@
         "name": "EPUB/CBZ/PDF ebook reader",
         "summary": "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ"
       },
-      "sha256": "12mz62w9s20i1fgcalm4vihh2c52nm71zz7hmazhxiyj8cgznk5v",
-      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.6/epubreader-1.4.6.tar.gz",
-      "version": "1.4.6"
+      "sha256": "13vs311cac7avgipzn59s1dpf2098mm6cgqfnw1h3qh6rkw1i7wg",
+      "url": "https://github.com/e-alfred/epubreader/releases/download/1.4.7/epubreader-1.4.7.tar.gz",
+      "version": "1.4.7"
     },
     "event_update_notification": {
       "meta": {
@@ -1241,6 +1241,21 @@
       "url": "https://github.com/nextcloud/flow_notifications/releases/download/v1.1.0/flow_notifications.tar.gz",
       "version": "1.1.0"
     },
+    "flowupload": {
+      "meta": {
+        "description": "Provides functions to upload large files with your HTML5-Browser.",
+        "homepage": "https://github.com/e-alfred/flowupload",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Flow Upload",
+        "summary": "Provides functions to upload large files with your HTML5-Browser."
+      },
+      "sha256": "10h7jbqglzrkpbzfhqqqylvl4q115vqqjvzvs0zmdc0ywx2zffqw",
+      "url": "https://github.com/e-alfred/flowupload/releases/download/1.1.3/flowupload-1.1.3.tar.gz",
+      "version": "1.1.3"
+    },
     "forms": {
       "meta": {
         "description": "**Simple surveys and questionnaires, self-hosted!**\n\n- ** Simple design:** No mass of options, only the essentials. Works well on mobile of course.\n- ** View &amp; export results:** Results are visualized and can also be exported as CSV in the same format used by Google Forms.\n- ** Data under your control!** Unlike in Google Forms, Typeform, Doodle and others, the survey info and responses are kept private on your instance.\n- ** Get involved!** We have lots of stuff planned like more question types, collaboration on forms, [and much more](https://github.com/nextcloud/forms/milestones)!",
@@ -1431,9 +1446,9 @@
         "name": "Group folders",
         "summary": "Admin configured folders shared with everyone in a group"
       },
-      "sha256": "1bjy2ammlw9h8wgaln8d925hr5gxbk5vpi0hxx6jjgv0yk80a0ym",
-      "url": "https://github.com/nextcloud-releases/groupfolders/releases/download/v9.0.3/groupfolders.tar.gz",
-      "version": "9.0.3"
+      "sha256": "00mrb1a2d06l82pjs5r64dwmma2x4yjlpb3vnclr7cci12qmhr9n",
+      "url": "https://github.com/nextcloud-releases/groupfolders/releases/download/v9.0.4/groupfolders.tar.gz",
+      "version": "9.0.4"
     },
     "groupquota": {
       "meta": {
@@ -1978,9 +1993,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "12ralrk89nhja0bhry7v8hbxq8q71lkzq9gz76bdwxcvbljg1jd8",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.1/mail.tar.gz",
-      "version": "1.11.1"
+      "sha256": "1cy79x9gvrrfxl7qv29dvx3wh47s9363is4ggcdiryq9lslaiqm5",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.5/mail-v1.11.5.tar.gz",
+      "version": "1.11.5"
     },
     "majordomo": {
       "meta": {
@@ -2008,9 +2023,9 @@
         "name": "Maps",
         "summary": "The whole world fits inside your cloud!"
       },
-      "sha256": "09mqq5h473myz39cjdr13nla8nncy157ijw0xna7b10d9d9dfy5k",
-      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.9/maps-0.1.9.tar.gz",
-      "version": "0.1.9"
+      "sha256": "0z3gf9k38bpxf0glgbq611l5xz2hn9lzlig0c56rpzvzxham6djs",
+      "url": "https://github.com/nextcloud/maps/releases/download/v0.1.10/maps-0.1.10.tar.gz",
+      "version": "0.1.10"
     },
     "mediadc": {
       "meta": {
@@ -2023,9 +2038,9 @@
         "name": "MediaDC",
         "summary": "Nextcloud Media Duplicate Collector application"
       },
-      "sha256": "140hhzj55iplnr5pa1srdjkn61sjhmwpf17fx8nrj8yj6sdwxhqs",
-      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.7/mediadc.tar.gz",
-      "version": "0.1.7"
+      "sha256": "00sj9ff0xbsbipky68fnbv697ci17kzvsk407niwc4b99b7jsifa",
+      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.8/mediadc.tar.gz",
+      "version": "0.1.8"
     },
     "messagevault": {
       "meta": {
@@ -2180,9 +2195,9 @@
         "name": "ocDownloader",
         "summary": "Easy to use download manager for Nextcloud"
       },
-      "sha256": "1n3iz7b0gazz79pbfps5nraaj6ksyrhsiqfjqa2vm8k4rnwcyq2k",
-      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.7.12/ocdownloader-1.7.12.tar.gz",
-      "version": "1.7.12"
+      "sha256": "030vpz8qw2ckshz0xm5vjqlcrnx8cgx88y0qzi2yarpn0xqq6vj7",
+      "url": "https://github.com/e-alfred/ocdownloader/releases/download/1.8.0/ocdownloader-1.8.0.tar.gz",
+      "version": "1.8.0"
     },
     "ocjobs": {
       "meta": {
@@ -2223,9 +2238,9 @@
         "name": "OpenID Connect Login",
         "summary": "Login with single OpenID Connect provider"
       },
-      "sha256": "039q65iphnq17j4wj524gsp5r437sd270hw0b0773c936h4gpzqp",
-      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.1.0/oidc_login.tar.gz",
-      "version": "2.1.0"
+      "sha256": "12r6m4s7lnlkzk46sjac36i5i3cwl2bzdgpc4xvigljxb316s1q0",
+      "url": "https://github.com/pulsejet/nextcloud-oidc-login/releases/download/v2.2.0/oidc_login.tar.gz",
+      "version": "2.2.0"
     },
     "ojsxc": {
       "meta": {
@@ -2271,6 +2286,21 @@
       "url": "https://github.com/kenda/nextcloud-openhab/releases/download/0.9.5/openhab.tar.gz",
       "version": "0.9.5"
     },
+    "openotp_auth": {
+      "meta": {
+        "description": "**RCDevs OpenOTP Application enables two-factor authentication for your users using your personal Cloud.**\n\nIt is versatile, device-independent and based on opened security standards.\n\nOpenOTP provides fine-grained user identity and access management (IAM), one-time passwords authentication technologies (OTP) and Universal Second Factor Authentification (U2F) including among others extensive authentication policies for your AD / LDAP users. \n\nIt is enterprise-ready with strong support for:\n\t\t\n* high-availability\n* load-balancing\n* multi-tenancy\n* geolocalization\n* delegated administration\n* contextual authentication with IP address and device fingerprint\n* push Login technology with Mobile Phone\n* voice biometrics technology\n* easy installation, update and configuration in RCDevs WebADM\n* ... and much more.",
+        "homepage": "https://rcdevs.com",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OpenOTP Two Factor Authentication",
+        "summary": "RCDevs OpenOTP Application enables Multi-Factor authentication for your users."
+      },
+      "sha256": "02r6wv41jahh608vimk104ld144s1x51mp6jsh9may16b8x5qd3d",
+      "url": "https://mercury.chantret.com/openotp_auth.tar.gz",
+      "version": "1.2.0"
+    },
     "ownpad": {
       "meta": {
         "description": "Ownpad is a Nextcloud application that allows to create and open\n    Etherpad and Ethercalc documents.\n\n    This application requires to have access to an instance of\n    Etherpad and/or Ethercalc to work properly.",
@@ -2296,9 +2326,9 @@
         "name": "Passman",
         "summary": "Passman is a full featured password manager."
       },
-      "sha256": "0f00bhfwdlvhyb8pfvz2j8zqbac0nxbxxlp77j2bq02xwk7hn1vw",
-      "url": "https://releases.passman.cc/passman_2.3.1335.tar.gz",
-      "version": "2.3.1335"
+      "sha256": "16xf6wyf5aiw4v47wpidsq8ziymsj661ac3xh9qy3hw4s0iqj6kk",
+      "url": "https://releases.passman.cc/passman_2.4.0.tar.gz",
+      "version": "2.4.0"
     },
     "password_policy": {
       "meta": {
@@ -2323,9 +2353,9 @@
         "name": "Passwords",
         "summary": "Store, manage and access all your passwords with ease."
       },
-      "sha256": "16chgigps5622wwdrszjv8qsnqplgzqahb179s2mz58qxnwc7nia",
-      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/13003/artifacts/raw/passwords.tar.gz",
-      "version": "2021.11.20"
+      "sha256": "1svf4v19xmd5nrn6hvx06yvzvxpl0j2lbnflp0ns8j0207wjxbla",
+      "url": "https://git.mdns.eu/nextcloud/passwords/-/jobs/13229/artifacts/raw/passwords.tar.gz",
+      "version": "2021.12.20"
     },
     "permissions_overwrite": {
       "meta": {
@@ -2410,9 +2440,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to Doodle/Dudle with the possibility to restrict access."
       },
-      "sha256": "1lsh5jpnpcl3qzhr3v43vvkw8rbkq28z2yiipgralh58li7abwfz",
-      "url": "https://github.com/nextcloud/polls/releases/download/v3.4.0/polls.tar.gz",
-      "version": "3.4.0"
+      "sha256": "0dczpm7kz1i74qghwxkz9idzzd8fdg9hm5rg9w2rjggr69192rz5",
+      "url": "https://github.com/nextcloud/polls/releases/download/v3.4.2/polls.tar.gz",
+      "version": "3.4.2"
     },
     "previewgenerator": {
       "meta": {
@@ -2425,9 +2455,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "118swfzf1kk8ypiapw82kddk6q0jixc5c7xbb8j2cz5b15ajjv7b",
-      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.4.0/previewgenerator.tar.gz",
-      "version": "3.4.0"
+      "sha256": "0xy1bxim5jxp2b8yclsfgjm901p4kjpn63v00djsmn37s87w5h6d",
+      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.4.1/previewgenerator.tar.gz",
+      "version": "3.4.1"
     },
     "pride": {
       "meta": {
@@ -2569,9 +2599,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "1nw0n1zggs3d0x4v83ql00synx5dxnrqafjz5b8hia3x06gvc60m",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.1.2/rainloop.tar.gz",
-      "version": "7.1.2"
+      "sha256": "1k1030qc8i82vnl3a9r2xbhr21rlsfl4gybiynma9n0qbp9zdcy3",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.1.3/rainloop.tar.gz",
+      "version": "7.1.3"
     },
     "ransomware_protection": {
       "meta": {
@@ -2590,18 +2620,18 @@
     },
     "recognize": {
       "meta": {
-        "description": "This app goes through your photo collection and adds fitting tags, automatically categorizing your photos.\nIt also recognizes faces from photos set in your contacts.\n\nThis is still experimental and currently only works for photos that don't reside in external storage.\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- Processor\n  - x86 64bit\n  - probably ARMv7 (32bit) (untested)\n- System with glibc (usually the norm; Alpine linux is *not* such a system)\n- ~3GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All image processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
+        "description": "This app goes through your media collection and adds fitting tags, automatically categorizing your photos and music.\n\n*  Recognizes faces from contact photos\n*   Recognizes animals, landscapes, food, vehicles, buildings and other objects\n*  Recognizes music genres\n*  view your tagged photos with the photos app\n*  listen to your tagged music with the audioplayer app\n*  Tagging works via Nextcloud's Collaborative Tags, allowing access by any of your apps\nThis is still experimental and currently only works for files that don't reside in external storage.\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- Processor: x86 64bit\n- System with glibc (usually the norm; Alpine linux is *not* such a system)\n- ~3GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
         "homepage": "https://github.com/marcelklehr/recognize",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "Recognize",
-        "summary": "Image recognition for your photos"
+        "summary": "Smart media tagging for Nextcloud"
       },
-      "sha256": "16favl998sq5ww13drnayf1bgs7y4vlvadlddbc1j18yqxxmxm36",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.6.10/recognize-1.6.10.tar.gz",
-      "version": "1.6.10"
+      "sha256": "02fdh8yn30549pgq44vx1vjmv987didf3548aj8sm6lmgd9if07c",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.8.0/recognize-1.8.0.tar.gz",
+      "version": "1.8.0"
     },
     "recommendations": {
       "meta": {
@@ -2657,9 +2687,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0mywkvl2s1aclcdbx456f2iwa5bshnhnahnqb2xpnnyg31i2ka3r",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode.tar.gz",
-      "version": "21.11.4"
+      "sha256": "0ksdrb1mc6r6qf3sy5dg3wc870h4hfnxdi7m10xc6841r0d1c7x4",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.6/richdocumentscode.tar.gz",
+      "version": "21.11.6"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2687,9 +2717,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "07pqd5yrzq199vap175nj1c2inxqhspmxqy66zviwx1z6yqfdwzz",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.9.11/riotchat.tar.gz",
-      "version": "0.9.11"
+      "sha256": "13v0wg1kdqyn23i37xd7qx1589q94v54lgdlpgm66b87skycs52w",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.10.1/riotchat.tar.gz",
+      "version": "0.10.1"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -2717,9 +2747,9 @@
         "name": "Scanner",
         "summary": "Scanner app for Nextcloud using the SANE framework"
       },
-      "sha256": "0b2gch3zay3g293yv5h4lr246ihxkr1zzkxw9an9n51m0mgrcgms",
-      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.1/scanner-0.2.1.tar.gz",
-      "version": "0.2.1"
+      "sha256": "1ns49wq0zfzy5k6lf0dcqaaibbwcqa4zrwiir2lrxw75has8h49y",
+      "url": "https://github.com/e-alfred/nextcloud-scanner/releases/download/0.2.2/scanner-0.2.2.tar.gz",
+      "version": "0.2.2"
     },
     "secsignid": {
       "meta": {
@@ -2870,12 +2900,12 @@
         "licenses": [
           "agpl"
         ],
-        "name": "Schichtplan",
+        "name": "Shiftplan",
         "summary": "App for organising Shifts"
       },
-      "sha256": "0g627cpf91yp4fqagg9b4yhcb6yipzs5p8qd8n6fi7230gsh87c8",
-      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.1/shifts-1.8.1.tar.gz",
-      "version": "1.8.1"
+      "sha256": "1sizj823sc8ssl3fdk8c6c6r703s99mqj74q5nknghlg08rblnfp",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.3/shifts-1.8.3.tar.gz",
+      "version": "1.8.3"
     },
     "side_menu": {
       "meta": {
@@ -2933,9 +2963,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "1733vgm3jrrqklbi07bzd5vwjnf7a0ggrfsfym0h346q2rffvqmz",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.9.5/release.tar.gz",
-      "version": "4.9.5"
+      "sha256": "07mdka4khz46snmasmiw17y2db42pw0va9v239qhf0qai2hkk89w",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.9.7/release.tar.gz",
+      "version": "4.9.7"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3452,9 +3482,9 @@
         "name": "Unrounded Corners",
         "summary": "An extension for making the corners of buttons and widgets unrounded"
       },
-      "sha256": "0f25l3y4v5c2i8iamms3lgk70443szfyw5294a3h8arj3x5w2m5m",
-      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.2/unroundedcorners-v1.0.2.tar.gz",
-      "version": "1.0.2"
+      "sha256": "18krflqri3k19s4xdx6js80ks5bps35321scdbs4bw43ahnj87fx",
+      "url": "https://github.com/OliverParoczai/nextcloud-unroundedcorners/releases/download/v1.0.3/unroundedcorners-v1.0.3.tar.gz",
+      "version": "1.0.3"
     },
     "unsplash": {
       "meta": {
@@ -3483,6 +3513,20 @@
         "name": "Update notification",
         "summary": "Displays update notifications for Nextcloud and provides the SSO for the updater."
       }
+    },
+    "uppush": {
+      "meta": {
+        "description": "Once the mobile phone is connected, push notifications can be forwarded to applications implementing UnifiedPush.\n\nMore information about UnifiedPush at https://unifiedpush.org",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Unified Push Provider",
+        "summary": "Use Nextcloud as a push provider for mobile phones' notifications"
+      },
+      "sha256": "05z2kkn8drfvy7091w9a9r38amya5561cz3vldhk6j4f9mycl36a",
+      "url": "https://raw.githubusercontent.com/p1gp1g/nextpush-publish/main/0.2.1/uppush-0.2.1.tar.gz",
+      "version": "0.2.1"
     },
     "user_backend_sql_raw": {
       "meta": {
@@ -3697,9 +3741,9 @@
         "name": "Weather",
         "summary": "Watch the weather directly on your Nextcloud."
       },
-      "sha256": "1xxmvxh0w53a3j6pc9ixs3q32jp7050pvpf1rgiblngmihn227yk",
-      "url": "https://github.com/nextcloud/weather/releases/download/1.7.5/weather-1.7.5.tar.gz",
-      "version": "1.7.5"
+      "sha256": "1y96y3a158l85bgsg9ndl18c0rpi9a26c3xbanavchzzhqr88lxz",
+      "url": "https://github.com/nextcloud/weather/releases/download/1.7.6/weather-1.7.6.tar.gz",
+      "version": "1.7.6"
     },
     "weather_status": {
       "meta": {
@@ -3770,9 +3814,9 @@
         "name": "Automated media conversion",
         "summary": "Rule-based automated conversion of video/audio files using FFmpeg"
       },
-      "sha256": "0w3jnb227fqg70c3w1m90183h0dhgyfmg1vay2hx0g7sv7l65a1c",
-      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v1.2.23/workflow_media_converter.tar.gz",
-      "version": "1.2.23"
+      "sha256": "1z8gakxrradkwhyqy36012kzqp3ziv7icj0zdws4s4vnyjjf1bk1",
+      "url": "https://github.com/cwilby/nextcloud-workflow-media-converter/releases/download/v.1.3.3/workflow_media_converter.tar.gz",
+      "version": "1.3.3"
     },
     "workflow_ocr": {
       "meta": {
