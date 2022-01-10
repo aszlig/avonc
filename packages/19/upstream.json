@@ -1656,7 +1656,7 @@
     },
     "listman": {
       "meta": {
-        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!",
+        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!\\n\\nNew in version 20.1.1 - Import CSV of list-members",
         "homepage": "https://github.com/revpriest/listman",
         "isShipped": false,
         "licenses": [
@@ -1665,9 +1665,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1ksc0xacfj5gdlvicxcfcwsh0lq6y0m0xw8sd26lffm1bfh8h5z9",
-      "url": "https://dalliance.net/listman/listman-20.1.0.tar.gz",
-      "version": "20.1.0"
+      "sha256": "0cvhxlz206ga5kpiwf7vp3n7i8jr8f1bnc8v0w5lm8g955xzw6rx",
+      "url": "https://dalliance.net/listman/listman-20.1.1.tar.gz",
+      "version": "20.1.1"
     },
     "loganalyzer": {
       "meta": {

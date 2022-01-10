@@ -648,9 +648,9 @@
         "name": "Electronic Signatures",
         "summary": "Accept electronic signatures on your documents."
       },
-      "sha256": "1paxyq3hvz3any8nx0wndpicciv1mf1ckslh9azwhaz41zzp9wrr",
-      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.10.0/v1.10.0.tar.gz",
-      "version": "1.10.0"
+      "sha256": "1h9qr3c619a4scnz3448bgk5w5qg8za2b0vll6an5i6r7bx6cs0h",
+      "url": "https://github.com/eideasy/nextcloud-electronic-signatures-plugin/releases/download/v1.10.1/v1.10.1.tar.gz",
+      "version": "1.10.1"
     },
     "emlviewer": {
       "meta": {
@@ -1928,7 +1928,7 @@
     },
     "listman": {
       "meta": {
-        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!",
+        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!\\n\\nNew in version 20.1.1 - Import CSV of list-members",
         "homepage": "https://github.com/revpriest/listman",
         "isShipped": false,
         "licenses": [
@@ -1937,9 +1937,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1ksc0xacfj5gdlvicxcfcwsh0lq6y0m0xw8sd26lffm1bfh8h5z9",
-      "url": "https://dalliance.net/listman/listman-20.1.0.tar.gz",
-      "version": "20.1.0"
+      "sha256": "0cvhxlz206ga5kpiwf7vp3n7i8jr8f1bnc8v0w5lm8g955xzw6rx",
+      "url": "https://dalliance.net/listman/listman-20.1.1.tar.gz",
+      "version": "20.1.1"
     },
     "login_notes": {
       "meta": {
@@ -2140,9 +2140,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1ihqx00ivgkrq46mciyzd7mn3ql71hfvbbrinph9zqadgg8gbxbh",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.2.0/notes.tar.gz",
-      "version": "4.2.0"
+      "sha256": "0srp0k9ka8pfp8w6d278s5z9bw9k8lprpvsmw8744fdkb1lv9p19",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.3.0/notes.tar.gz",
+      "version": "4.3.0"
     },
     "notifications": {
       "meta": {
@@ -2963,9 +2963,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "07mdka4khz46snmasmiw17y2db42pw0va9v239qhf0qai2hkk89w",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.9.7/release.tar.gz",
-      "version": "4.9.7"
+      "sha256": "19sqgvl4qjqd5ccs2qm3ksn49zf7f22jw3yw80dnrl84raiv749x",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.10.0/release.tar.gz",
+      "version": "4.10.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3223,9 +3223,9 @@
         "name": "Talked",
         "summary": "Call recording for Nextcloud Talk"
       },
-      "sha256": "16cywwbnqiln9miy0s29jqsx515zg1l076029nlkrqnxv522g65w",
-      "url": "https://github.com/MetaProvide/talked-client/releases/download/v0.2.0/talked.tar.gz",
-      "version": "0.2.0"
+      "sha256": "1n87mhl5yvlqrvagcsz50lkfxanrm1gx91ynigq1k711riink1x7",
+      "url": "https://github.com/MetaProvide/talked-client/releases/download/v0.3.0/talked.tar.gz",
+      "version": "0.3.0"
     },
     "tasks": {
       "meta": {

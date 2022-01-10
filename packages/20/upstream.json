@@ -1215,7 +1215,7 @@
     },
     "fileslibreofficeedit": {
       "meta": {
-        "description": "This adds a new context menu item to the Files dropdown menu &amp;quot;Edit with LibreOffice&amp;quot;.\nClicking that item will open the file in LibreOffice via WebDav (the file can then be edited and saved back directly in LibreOffice).\n\nThis greatly improves the user experience when working with Office files in the browser. No need to download, edit, reupload. Instead use the &amp;quot;Edit with LibreOffice&amp;quot; item.",
+        "description": "This adds a new context menu item to the Files dropdown menu &amp;quot;Edit with LibreOffice&amp;quot;.\nClicking that item will open the file in LibreOffice via WebDav (the file can then be edited and saved back directly in LibreOffice).\n\nThis greatly improves the user experience when working with Office files in the browser. No need to download, edit, reupload. Instead use the &amp;quot;Edit with LibreOffice&amp;quot; item.\n\nThis app requires at least LibreOffice 7.2 on Linux and macOS. On Windows it also works with older LibreOffice versions (since LibreOffice 5.3).",
         "homepage": "https://github.com/allotropia/nextcloud_files_libreoffice_edit",
         "isShipped": false,
         "licenses": [
@@ -1224,9 +1224,9 @@
         "name": "Edit Files with LibreOffice",
         "summary": "Open files with LibreOffice for editing (via WebDav)"
       },
-      "sha256": "0pir3w024fvnlvwiks4d48pib8y4h6ffqyccwvf70jlm1dfigqpy",
-      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.2/fileslibreofficeedit.tar.gz",
-      "version": "1.0.2"
+      "sha256": "0fz85qqsy76bagx7vl2nlbyxzv26g9d9rkad7spn7ww9z6axk8my",
+      "url": "https://github.com/allotropia/nextcloud_files_libreoffice_edit/releases/download/v1.0.4/fileslibreofficeedit.tar.gz",
+      "version": "1.0.4"
     },
     "firstrunwizard": {
       "meta": {
@@ -1957,7 +1957,7 @@
     },
     "listman": {
       "meta": {
-        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!",
+        "description": "This is a simple app for managing mail-lists with the Nextcloud System. Each Nextcloud user may create multiple mail-lists, circulate subscribe forms, send messages to the members of the list etc. It has a separate SMTP configuration visible only to nextcloud admin-users.\\n\\nNew in version 20.1.0 - actually works!\\n\\nNew in version 20.1.1 - Import CSV of list-members",
         "homepage": "https://github.com/revpriest/listman",
         "isShipped": false,
         "licenses": [
@@ -1966,9 +1966,9 @@
         "name": "Listman",
         "summary": "App for managing email-lists. Sign-up forms, unsubscribe links in the email, all that jazz"
       },
-      "sha256": "1ksc0xacfj5gdlvicxcfcwsh0lq6y0m0xw8sd26lffm1bfh8h5z9",
-      "url": "https://dalliance.net/listman/listman-20.1.0.tar.gz",
-      "version": "20.1.0"
+      "sha256": "0cvhxlz206ga5kpiwf7vp3n7i8jr8f1bnc8v0w5lm8g955xzw6rx",
+      "url": "https://dalliance.net/listman/listman-20.1.1.tar.gz",
+      "version": "20.1.1"
     },
     "loganalyzer": {
       "meta": {
@@ -2197,9 +2197,9 @@
         "name": "Notes",
         "summary": "Distraction-free notes and writing"
       },
-      "sha256": "1ihqx00ivgkrq46mciyzd7mn3ql71hfvbbrinph9zqadgg8gbxbh",
-      "url": "https://github.com/nextcloud/notes/releases/download/v4.2.0/notes.tar.gz",
-      "version": "4.2.0"
+      "sha256": "0srp0k9ka8pfp8w6d278s5z9bw9k8lprpvsmw8744fdkb1lv9p19",
+      "url": "https://github.com/nextcloud/notes/releases/download/v4.3.0/notes.tar.gz",
+      "version": "4.3.0"
     },
     "notifications": {
       "meta": {
@@ -3123,9 +3123,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "07mdka4khz46snmasmiw17y2db42pw0va9v239qhf0qai2hkk89w",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.9.7/release.tar.gz",
-      "version": "4.9.7"
+      "sha256": "19sqgvl4qjqd5ccs2qm3ksn49zf7f22jw3yw80dnrl84raiv749x",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.10.0/release.tar.gz",
+      "version": "4.10.0"
     },
     "socialsharing_diaspora": {
       "meta": {
