@@ -147,6 +147,10 @@ def update_major(major: int, info_file: Path) -> Optional[
                     joined.apps[appid] = old.apps[appid]
                 else:
                     del joined.apps[appid]
+                if appid in diff.old.apps:
+                    diff.new.apps[appid] = diff.old.apps[appid]
+                else:
+                    del diff.new.apps[appid]
                 continue
 
             joined.apps[appid] = app._replace(hash_or_sig=sha256)
