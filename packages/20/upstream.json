@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0p4kg4768kblkv5d44209p0azkq8sdj2cz10hmbqlh4pdfynil2s",
-      "url": "https://github.com/Rello/analytics/releases/download/4.0.2/analytics-4.0.2.tar.gz",
-      "version": "4.0.2"
+      "sha256": "1rb7b6hjk1yjqp7y2k8idrzv1d5wi0afllblpic9dhr8mpsgn1a7",
+      "url": "https://github.com/Rello/analytics/releases/download/4.0.3/analytics-4.0.3.tar.gz",
+      "version": "4.0.3"
     },
     "announcementcenter": {
       "meta": {
@@ -183,9 +183,9 @@
         "name": "BigBlueButton Integration",
         "summary": "BigBlueButton integration for Nextcloud"
       },
-      "sha256": "1vc181aizhc0vbsd9s8rvi28cyc72d0bn5a4f0qy8vclxd8nm5sn",
-      "url": "https://github.com/sualko/cloud_bbb/releases/download/v2.1.0/bbb-v2.1.0.tar.gz",
-      "version": "2.1.0"
+      "sha256": "0vygrxx3jh4ps19zkivqxcc58d61s12gdfsrg9ihyhd697ij38xy",
+      "url": "https://github.com/sualko/cloud_bbb/releases/download/v2.2.0/bbb-v2.2.0.tar.gz",
+      "version": "2.2.0"
     },
     "bookmarks": {
       "meta": {
@@ -243,9 +243,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "0b3j056zqlrmqm2lmfhzr7av2n7515ln51xqg900p98xmn9lldci",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.4/calendar-v3.0.4.tar.gz",
-      "version": "3.0.4"
+      "sha256": "195w6mdvxr2330298n606nfx349dkyzqx6wljxy5d49kcra2dq8l",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.5/calendar-v3.0.5.tar.gz",
+      "version": "3.0.5"
     },
     "camerarawpreviews": {
       "meta": {
@@ -287,9 +287,9 @@
         "name": "CAS Server",
         "summary": "CAS protocol server (IdP)"
       },
-      "sha256": "0m7z7sb0igkqyc44g6szm3p8jz3khj2nd578hhq9cghkhqf4rpri",
-      "url": "https://github.com/mziech/nextcloud-cas/releases/download/v0.2.5/cas.tar.gz",
-      "version": "0.2.5"
+      "sha256": "10s5dzrcb9whpjcy67wbzkvzh6v3w82rrsa46am9d403qz9yqyvs",
+      "url": "https://github.com/mziech/nextcloud-cas/releases/download/v0.2.7/cas.tar.gz",
+      "version": "0.2.7"
     },
     "checksum": {
       "meta": {
@@ -431,9 +431,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "13c3rng1mp477mx07zx1pdaz81idmg3msains7f51n7nw7gw66vl",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.8/Cookbook-0.9.8.tar.gz",
-      "version": "0.9.8"
+      "sha256": "0l7ff97gk9pgckh1arcqcm4n2ip7bmfkd5pm5zhmm1pcj21y217d",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.9/Cookbook-0.9.9.tar.gz",
+      "version": "0.9.9"
     },
     "cospend": {
       "meta": {
@@ -460,9 +460,9 @@
         "name": "CPanel Mail Sync",
         "summary": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates."
       },
-      "sha256": "08gzyqidrzf3ky2knil4fy8wh7mnzy19c1643xgxdf7mxzciz65w",
-      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/1684895978/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
-      "version": "0.1.5"
+      "sha256": "1zl4inwsgkdid7csfcri5yqsyr63nic8c385453v46gqiqcl33gk",
+      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/1960099398/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
+      "version": "0.1.6"
     },
     "customproperties": {
       "meta": {
@@ -1027,9 +1027,9 @@
         "name": "Mind Map",
         "summary": "A Mind map editor"
       },
-      "sha256": "1zh1l5ps1qcafgzq4vnd8c7w71cqv27n4m5hahccl1s3bzshpq3s",
-      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.25/files_mindmap-0.0.25.tar.gz",
-      "version": "0.0.25"
+      "sha256": "0m77ggcydc346r8znpvzsmpxmlaizb9d0lch3plmhww34mfbx4l0",
+      "url": "https://github.com/ACTom/files_mindmap/releases/download/v0.0.26/files_mindmap-0.0.26.tar.gz",
+      "version": "0.0.26"
     },
     "files_pdfviewer": {
       "meta": {
@@ -2036,9 +2036,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "1cy79x9gvrrfxl7qv29dvx3wh47s9363is4ggcdiryq9lslaiqm5",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.5/mail-v1.11.5.tar.gz",
-      "version": "1.11.5"
+      "sha256": "198ps5ajikz27n9jkqqbxwncjfv682zgmmlcr0bk3pmf8fx8irz8",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.6/mail-v1.11.6.tar.gz",
+      "version": "1.11.6"
     },
     "majordomo": {
       "meta": {
@@ -2051,9 +2051,9 @@
         "name": "Majordomo",
         "summary": "Synchronize users and groups with the Majordomo mailing list manager"
       },
-      "sha256": "1bkw698bdz2qhbj77zvf3fcwcq16g7bqr6pjhwxrclhbgl96mh11",
-      "url": "https://github.com/mziech/nextcloud-majordomo/releases/download/v1.0.1/majordomo.tar.gz",
-      "version": "1.0.1"
+      "sha256": "00wb33w92v4ach04sqqpbfm9icxiqh1csf6ij2aidhfmq3w5i0qc",
+      "url": "https://github.com/mziech/nextcloud-majordomo/releases/download/v1.0.3/majordomo.tar.gz",
+      "version": "1.0.3"
     },
     "maps": {
       "meta": {
@@ -2116,7 +2116,7 @@
     },
     "ncdownloader": {
       "meta": {
-        "description": "built-in torrent search;Start and stop Aria2 process, manage Aria2 from the web;\nDownload videos from youtube, twitter and other sites;",
+        "description": "Search for torrents within the app from mutiple BT sites;\nControl Aria2 and manage download tasks from the web;\ndownload videos from 700+ video sites(youtube,youku,vimo,dailymotion,twitter,facebook and the likes",
         "homepage": "https://github.com/shiningw/ncdownloader",
         "isShipped": false,
         "licenses": [
@@ -2125,9 +2125,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1sji2pmyxihjp1ypz6y8f289pvc35pm6bn8y6fl7pifhn0g8pmc9",
-      "url": "https://joyvm.club/ncdownloader-release.tar.gz",
-      "version": "0.5.0"
+      "sha256": "1kqb3nng3m3rl5nhnabnqr7l88rkljkfwkpahfbpflh57dkpqqkq",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.5.2/ncdownloader-release.tar.gz",
+      "version": "0.5.2"
     },
     "news": {
       "meta": {
@@ -2295,9 +2295,9 @@
         "name": "Office Online integration",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1cakdmfaihviflkq9izh4jcrgxh120bq7a93bclyp72pgcgzrvys",
-      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.1/officeonline.tar.gz",
-      "version": "1.1.1"
+      "sha256": "0b7nldjxi0irqkfn8ywbfnlwlaxi2wkqs339mljp71ys2hwpafhv",
+      "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.2/officeonline.tar.gz",
+      "version": "1.1.2"
     },
     "oidc_login": {
       "meta": {
@@ -2340,9 +2340,9 @@
         "name": "ONLYOFFICE",
         "summary": "ONLYOFFICE connector"
       },
-      "sha256": "17gdvjvhhi8h537ilh3wha0w2k53547pj1d2zvh5vpljzj9qaacm",
-      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v7.2.1/onlyoffice.tar.gz",
-      "version": "7.2.1"
+      "sha256": "0lv55frazlzbql955pbifwsrcwbpxn1aynfiqhvw4x0l74vkqgn0",
+      "url": "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/releases/download/v7.3.0/onlyoffice.tar.gz",
+      "version": "7.3.0"
     },
     "openhab": {
       "meta": {
@@ -2398,9 +2398,9 @@
         "name": "Ownpad",
         "summary": "Create and open Etherpad and Ethercalc documents."
       },
-      "sha256": "133x3fydwd0f0awh5nnfmzm8m3jbgzkg52ahakyphbj9bvvpk11b",
-      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.16/ownpad.tar.gz",
-      "version": "0.6.16"
+      "sha256": "1n594ph9zh76zdrz5mfp3lym1145flkagfzrkrgacn3w7xggqsbz",
+      "url": "https://github.com/otetard/ownpad/releases/download/v0.6.17/ownpad.tar.gz",
+      "version": "0.6.17"
     },
     "passman": {
       "meta": {
@@ -2484,9 +2484,9 @@
         "name": "PhoneTrack",
         "summary": "Track and display phone's positions in real time"
       },
-      "sha256": "1c5bpmfj31b7iqiqcw93bcdk40l38xc87ahxqlwa9252hv224gfb",
-      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/931aaaf8dca24bf31a7e169a83c17235/phonetrack-0.6.9.tar.gz",
-      "version": "0.6.9"
+      "sha256": "05v99zkfwv630k9l7bzrd0m16ypzj7lgns2camyylkv73lxwk2zf",
+      "url": "https://gitlab.com/eneiluj/phonetrack-oc/-/wikis/uploads/59ea820459c78b03ec8462265d9d1be5/phonetrack-0.7.0.tar.gz",
+      "version": "0.7.0"
     },
     "photos": {
       "meta": {
@@ -2765,7 +2765,7 @@
     },
     "recognize": {
       "meta": {
-        "description": "This app goes through your media collection and adds fitting tags, automatically categorizing your photos and music.\n\n*  Recognizes faces from contact photos\n*   Recognizes animals, landscapes, food, vehicles, buildings and other objects\n*  Recognizes music genres\n*  view your tagged photos with the photos app\n*  listen to your tagged music with the audioplayer app\n*  Tagging works via Nextcloud's Collaborative Tags, allowing access by any of your apps\nThis is still experimental and currently only works for files that don't reside in external storage.\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- Processor: x86 64bit\n- System with glibc (usually the norm; Alpine linux is *not* such a system)\n- ~3GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
+        "description": "This app goes through your media collection and adds fitting tags, automatically categorizing your photos and music.\n\n*   Recognizes faces from contact photos\n*   Recognizes animals, landscapes, food, vehicles, buildings and other objects\n*   Recognizes landmarks and monuments\n*   Recognizes music genres\n*  Tagging works via Nextcloud's Collaborative Tags, allowing access by any of your apps\n  *  listen to your tagged music with the audioplayer app\n  *  view your tagged photos with the photos app\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- For native speed:\n  - Processor: x86 64bit (with support for AVX instructions)\n  - System with glibc (Required by libtensorflow; usually the norm on Linux; Alpine linux and FreeBSD are *not* such systems)\n- For sub-native speed (using JavaScript mode)\n  - Processor: x86 64bit, arm64, armv7l (no AVX needed)\n  - System with glibc (When using the bundled node.js binary; alternatively you can set the path to custom node.js binary)\n- ~4GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
         "homepage": "https://github.com/marcelklehr/recognize",
         "isShipped": false,
         "licenses": [
@@ -2774,9 +2774,9 @@
         "name": "Recognize",
         "summary": "Smart media tagging for Nextcloud"
       },
-      "sha256": "02fdh8yn30549pgq44vx1vjmv987didf3548aj8sm6lmgd9if07c",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.8.0/recognize-1.8.0.tar.gz",
-      "version": "1.8.0"
+      "sha256": "1mi3z0p2wpyz8wlkc18g2yjbyia1ms2lxgq9y0ayz7i1zcj6zbkh",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.10.0/recognize-1.10.0.tar.gz",
+      "version": "1.10.0"
     },
     "recommendations": {
       "meta": {
@@ -2832,9 +2832,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0ksdrb1mc6r6qf3sy5dg3wc870h4hfnxdi7m10xc6841r0d1c7x4",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.6/richdocumentscode.tar.gz",
-      "version": "21.11.6"
+      "sha256": "0bkmx5myyi7gn2pf4hwn2fvjnxa1z9r3fnw6713sc2lxxzs91cz8",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.103/richdocumentscode.tar.gz",
+      "version": "21.11.103"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2847,9 +2847,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "01pims7cjb7g5sn85qpqjv1wigxm1jhvn63njhww0xlc57lvy0l9",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.4/richdocumentscode_arm64.tar.gz",
-      "version": "21.11.4"
+      "sha256": "1wvdnw2037y9hjd1w50v67cwicf8drgjsxffpldfvv3d249giijh",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.103/richdocumentscode_arm64.tar.gz",
+      "version": "21.11.103"
     },
     "riotchat": {
       "meta": {
@@ -2862,9 +2862,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "13v0wg1kdqyn23i37xd7qx1589q94v54lgdlpgm66b87skycs52w",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.10.1/riotchat.tar.gz",
-      "version": "0.10.1"
+      "sha256": "1m3x50klfc1vbwy8j48f0afb5236h4vjv0zhfy2afsr12ig3bfdn",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.10.2/riotchat.tar.gz",
+      "version": "0.10.2"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -3078,9 +3078,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "0lxwc7arwdwr9qmk5y4q63l6pm07hs7jbzvji2q9l585gyqqfpch",
-      "url": "https://gitnet.fr/attachments/61f94f2e-cb16-462e-a568-c3f3f6370ca9",
-      "version": "2.1.0"
+      "sha256": "08jkmy1b2ghgrna3mfrz1ip6drxknzlx2vsadzpkg3w0j9gfnqak",
+      "url": "https://gitnet.fr/attachments/3edd41cd-55c4-47dc-8f83-42f730cb9aec",
+      "version": "2.3.2"
     },
     "smb_test": {
       "meta": {
@@ -3123,9 +3123,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "19sqgvl4qjqd5ccs2qm3ksn49zf7f22jw3yw80dnrl84raiv749x",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.10.0/release.tar.gz",
-      "version": "4.10.0"
+      "sha256": "07izj58kspi5w2nafq2h4nsiknlrlsqhiqqbjgnfy08dcyvh4d8b",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.11.0/release.tar.gz",
+      "version": "4.11.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3270,9 +3270,9 @@
         "name": "Storj",
         "summary": "Decentralized storage backend"
       },
-      "sha256": "1pbqiv5zw4cmqsipsrrk522fmqkx101qn18bzfwxbk2b7vr0lb22",
-      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.5.tar.gz",
-      "version": "0.0.5"
+      "sha256": "1wqkg83g21bmgg38r2dpk2ybr8lwfnga1spfmjh6nd0558qzv18b",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.6.tar.gz",
+      "version": "0.0.6"
     },
     "stromquittung": {
       "meta": {
@@ -3444,7 +3444,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "Time tracking in Nextcloud!\n\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\nPlease refer to the [changelog](https://github.com/te-online/timemanager/#changelog) to see what's new in this version \n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.7 Beta, 4. December 2021**\n- Maintenance: Bump compatibility to Nextcloud 23\n- Maintenance: Update JS dependencies\n- Bugfix: Filter selects  Add missing color customisations for dark-mode (issue #59)\n- Bugfix: Reports  Improve completeness of reports at the beginning and end of an interval (issue #58)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3453,9 +3453,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "1k296ldbbr62zngb71b9znfvj3bl3za08c0skc9zidk54rgq7wi2",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/master/timemanager/v0.2.6/timemanager.tar.gz",
-      "version": "0.2.6"
+      "sha256": "0j2wz087g05gxv65hjrmjzjy4f2fsb06xwmly9kn8nl4lq3zap9i",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.7/timemanager.tar.gz",
+      "version": "0.2.7"
     },
     "timetracker": {
       "meta": {
@@ -3467,9 +3467,9 @@
         "name": "Time Tracker",
         "summary": "Track your time spent with different tasks, aggregate by project or clients!"
       },
-      "sha256": "1kmcbi92myvdxjib18q5iq40c2k4sbabraqfp2zx1b1i6q42nd1k",
-      "url": "https://mtier.org/timetracker/timetracker-0.0.72.tar.gz",
-      "version": "0.0.72"
+      "sha256": "1ivnm74dpaxqpd0djralg3lpl1my5wvkk1npqr24bp162274lky2",
+      "url": "https://mtier.org/timetracker/timetracker-0.0.73.tar.gz",
+      "version": "0.0.73"
     },
     "transmission": {
       "meta": {
@@ -3495,9 +3495,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0q48j4kbxnz7zndwwhar4q7l4dplsqk7yvgdphnxg9s8faxpvwal",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.0/tvshownamer.tar.gz",
-      "version": "0.1.0"
+      "sha256": "0adrxp6hnskg3f9hs73lsph98jaccxnhk9fc5a4vpvd6x9dnh5j5",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.1/tvshownamer.tar.gz",
+      "version": "0.1.1"
     },
     "twofactor_admin": {
       "meta": {
@@ -3848,7 +3848,7 @@
     },
     "vibeetoee": {
       "meta": {
-        "description": "VIBE is a modern identity-based encryption technology which creates a Private Key for a user/device based on its unique identity (UID), which for Nextcloud users is their assigned NC user name. VIBE enables communication of end-to-end encrypted files point-to-point, and is the first E2E technology that offers rules-based, Group-to-Group sending/receiving of encrypted files.  VIBE is available to commercial organizations on a 60-day free trial, and thereafter on an annual subscription basis.\n    ### Key Features of VIBE\n    * Authenticates/validates the sender/recipient of a message at the application layer\n    * Eliminates the need to protect the public parameters, making man in the middle attacks impossible\n    * Enables Nextcloud E2E encrypted group information sharing based on assigned rights\n    * No need for maintaining or remembering pass phrases\n    * Device management for deactivation/activation of stolen/lost/decommissioned devices (available as of Q1/2022)\n    * Adds industrial-grade HSM powered zero-trust identity-based encryption and authentication\n    * Contributes to simplistic key, revocation and security infrastructure management, thus significantly lowering the operational cost (40-60% cheaper than PKI / certificate-based solutions)\n    ### Technical Specifications\n    * Supports AGPLv3, MPL 2.0 and Apache License 2.0\n    * Compatible Operating Systems: Linux; Apple OSX 10.14+; Windows 10+(32/64 Bit); iOS14+; Android 10+",
+        "description": "VIBE resolves numerous security and operational challenges inherent in traditional public key cryptosystems.\n\n### Features and Benefits\n* Creates a Private Key (PK) for each subscriber based on its unique identity (user name for Nextcloud users)\n* Delivers HSM-powered, zero-trust, identity-based encryption and authentication\n* Authenticates/validates the sender/recipient of a message at the application layer, eliminating spoofing\n* Eliminates the need to protect the public parameters, making man in the middle attacks impossible\n* No need for maintaining or remembering pass phrases\n* Enables E2E authenticated, encrypted information sharing to a group, based on user-controlled rights assignment\n* Includes device management tools for deactivation/activation of stolen, lost, and/or decommissioned devices (available as of Q1/2022)\n* Encrypted information easily recovered if ones device is lost, stolen or becomes defective; subscribers keys can be revoked and re-issued on an individual basis\n* Easily scales to any level, and greatly simplifies key management\n* Introduces simplified key revocation and security infrastructure management, thus significantly lowering operational cost (40-60% cheaper than PKI certificate-based solutions)\n\n**Technical Specifications**: supports AGPLv3, MPL 2.0 and Apache License 2.0*\n\n**Compatible Operating Systems**: Linux; Apple OSX 10.14+; Windows 10+(32/64 Bit); iOS14+; Android 10+\n\nVIBE is available to commercial organizations on a 60-day free trial, and thereafter on an annual subscription basis.",
         "homepage": "https://vibecyber.com/",
         "isShipped": false,
         "licenses": [
@@ -3857,9 +3857,9 @@
         "name": "Nextcloud VIBE E2E Encryption",
         "summary": "VIBE E2E Encryption Nextcloud Extension"
       },
-      "sha256": "18zc237glnl7773raaadv5fvwxvbwfyp1yb6d4519wii6p5ckrz3",
-      "url": "https://mobikey.de/vibeetoee.tar.gz",
-      "version": "1.0.0"
+      "sha256": "03m52yl5wvhvlmxhkarrqwsljw4czjvgfincxw6dwnanz6k1256i",
+      "url": "https://vibecyber.one/nextcloud_publish/1.0.2/vibeetoee.tar.gz",
+      "version": "1.0.2"
     },
     "video_converter": {
       "meta": {
