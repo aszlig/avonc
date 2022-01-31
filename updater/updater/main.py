@@ -141,7 +141,7 @@ def update_major(major: int, info_file: Path) -> Optional[
             try:
                 sha256: Sha256 = fetch_app_hash(ncpath, app)
             except Exception as e:
-                msg = f"Exception occured while fetching {repr(app)}: {e}"
+                msg = f"Exception occured while fetching {appid}: {e}"
                 tqdm.write(msg, file=sys.stderr)
                 if appid in old.apps:
                     joined.apps[appid] = old.apps[appid]
