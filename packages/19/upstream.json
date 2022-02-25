@@ -286,9 +286,9 @@
         "name": "Carnet",
         "summary": "Powerful note taking app available on android"
       },
-      "sha256": "18zv1zyc2i0g9ljvxx5zlffapy6ai2ywlz84zm7x65z8xqizlx4j",
-      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.2/carnet-nc-v0.24.2.tar.gz",
-      "version": "0.24.2"
+      "sha256": "114g0ms3l31pnhi54mhzx90jrfpdb92anijb50jfrnrfz9r1q5ix",
+      "url": "https://github.com/CarnetApp/CarnetNextcloud/releases/download/v0.24.4/carnet-nc-v0.24.4.tar.gz",
+      "version": "0.24.4"
     },
     "cas": {
       "meta": {
@@ -458,9 +458,9 @@
         "name": "CPanel Mail Sync",
         "summary": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates."
       },
-      "sha256": "1zl4inwsgkdid7csfcri5yqsyr63nic8c385453v46gqiqcl33gk",
-      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/1960099398/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
-      "version": "0.1.6"
+      "sha256": "0pjkw3fggmspyf4i1yy8maysrzz2b311yn2x2bz1jb7bavqfn8s8",
+      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/2129524508/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
+      "version": "0.1.7"
     },
     "customproperties": {
       "meta": {
@@ -1809,9 +1809,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1n1202arf6hjlr2m67f6363xd149d6dnhrs5hqigxcvzpzjgp95p",
-      "url": "https://github.com/owncloud/music/releases/download/v1.5.0/music_1.5.0_for_nextcloud.tar.gz",
-      "version": "1.5.0"
+      "sha256": "05ygfhaqajmc2lkd3fakyvnj8bynvd8f4xfj4qd9gzql851nw4w3",
+      "url": "https://github.com/owncloud/music/releases/download/v1.5.1/music_1.5.1_for_nextcloud.tar.gz",
+      "version": "1.5.1"
     },
     "ncdownloader": {
       "meta": {
@@ -1824,9 +1824,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1kqb3nng3m3rl5nhnabnqr7l88rkljkfwkpahfbpflh57dkpqqkq",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.5.2/ncdownloader-release.tar.gz",
-      "version": "0.5.2"
+      "sha256": "1lyyscg80gyhja07h34108ni55w8w8kq47df68bdq0a14208ym1w",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.7.8/ncdownloader-release.tar.gz",
+      "version": "0.7.8"
     },
     "news": {
       "meta": {
@@ -2040,9 +2040,9 @@
         "name": "OpenOTP Two Factor Authentication",
         "summary": "RCDevs OpenOTP Application enables Multi-Factor authentication for your users."
       },
-      "sha256": "02r6wv41jahh608vimk104ld144s1x51mp6jsh9may16b8x5qd3d",
-      "url": "https://mercury.chantret.com/openotp_auth.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1vgpkja8j1mr44jxaaqaj8h3fx6p7i94q7ss1yzf34dhymshr0dh",
+      "url": "https://github.com/rcdevs/nextcloud_openotp_auth/releases/download/v1.4.0/openotp_auth-1.4.0.tgz",
+      "version": "1.4.0"
     },
     "orcid": {
       "meta": {
@@ -2325,9 +2325,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "1hhxd4wk4h6ar1ip32gfriwc2bisjiriailkcd1viahp3vsqbs87",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.2/quickaccesssorting.tar.gz",
-      "version": "1.1.2"
+      "sha256": "09jjk0py2j2qnllz4w37n6gkbwbqasy42zgndj9cwj9vy8vj57jg",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.3/quickaccesssorting.tar.gz",
+      "version": "1.1.3"
     },
     "quicknotes": {
       "meta": {
@@ -2672,9 +2672,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "08jkmy1b2ghgrna3mfrz1ip6drxknzlx2vsadzpkg3w0j9gfnqak",
-      "url": "https://gitnet.fr/attachments/3edd41cd-55c4-47dc-8f83-42f730cb9aec",
-      "version": "2.3.2"
+      "sha256": "15bg7ckqflyid81xkycfdnskzzgf6d7j4mk9izcfmcrxnl2gic5x",
+      "url": "https://gitnet.fr/attachments/a84178b6-413d-4b31-a54b-32f66b9bc733",
+      "version": "2.3.3"
     },
     "smb_test": {
       "meta": {
@@ -3023,7 +3023,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.7 Beta, 4. December 2021**\n- Maintenance: Bump compatibility to Nextcloud 23\n- Maintenance: Update JS dependencies\n- Bugfix: Filter selects  Add missing color customisations for dark-mode (issue #59)\n- Bugfix: Reports  Improve completeness of reports at the beginning and end of an interval (issue #58)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.8 Beta, 24. February 2022**\n- Add feature-preview of import functionality for clients, projects and tasks from a CSV file\n- Add Chinese simplified localization (thanks to @lakehy)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3032,9 +3032,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0j2wz087g05gxv65hjrmjzjy4f2fsb06xwmly9kn8nl4lq3zap9i",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.7/timemanager.tar.gz",
-      "version": "0.2.7"
+      "sha256": "097xl8br64v1mx672zh3llz273asiqrkd7jacspwrbbv1qxkq5lx",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.8/timemanager.tar.gz",
+      "version": "0.2.8"
     },
     "timetracker": {
       "meta": {
@@ -3074,9 +3074,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0adrxp6hnskg3f9hs73lsph98jaccxnhk9fc5a4vpvd6x9dnh5j5",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.1/tvshownamer.tar.gz",
-      "version": "0.1.1"
+      "sha256": "00s31akh7qmgjccsx4im86mphryqvdg4n5lb9ljmrbp72k89ylxf",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.2/tvshownamer.tar.gz",
+      "version": "0.1.2"
     },
     "twofactor_admin": {
       "meta": {

@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "1rxar14b32vb7wxmm7z00rlngf9r18r3pk71pnlbxabcrjnxia98",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.11.12/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.11.12"
+      "sha256": "1f91wvaxf6f8lq9nb1gxgliib1qrjsaw0kzdhbpdzdl9j5h7qlda",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.12.0/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.12.0"
     },
     "apporder": {
       "meta": {
@@ -229,9 +229,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "195w6mdvxr2330298n606nfx349dkyzqx6wljxy5d49kcra2dq8l",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.5/calendar-v3.0.5.tar.gz",
-      "version": "3.0.5"
+      "sha256": "07mykl3ppbqn6g0dip5021bivh347shyb1fsnvxi1si2lx0bkh5m",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.0.6/calendar-v3.0.6.tar.gz",
+      "version": "3.0.6"
     },
     "camerarawpreviews": {
       "meta": {
@@ -389,9 +389,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "0wvbynp7qvx0imb58n43f41gvkifnsb11si4xmf7shyh4fqsfaij",
-      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.7/contacts-v4.0.7.tar.gz",
-      "version": "4.0.7"
+      "sha256": "1vbdl7i0bx0rs3s18fv86yc109q1h07hnf23jipfyz9sq7n5rrmw",
+      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.8/contacts-v4.0.8.tar.gz",
+      "version": "4.0.8"
     },
     "contactsinteraction": {
       "meta": {
@@ -446,9 +446,9 @@
         "name": "CPanel Mail Sync",
         "summary": "Manages CPanel mail accounts from Nextcloud user creations, deletions and updates."
       },
-      "sha256": "1zl4inwsgkdid7csfcri5yqsyr63nic8c385453v46gqiqcl33gk",
-      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/1960099398/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
-      "version": "0.1.6"
+      "sha256": "0pjkw3fggmspyf4i1yy8maysrzz2b311yn2x2bz1jb7bavqfn8s8",
+      "url": "https://gitlab.com/ethernet.zero/nextcloud-cpanelmailsync/-/jobs/2129524508/artifacts/raw/build/artifacts/appstore/cpanelmailsync.tar.gz",
+      "version": "0.1.7"
     },
     "customproperties": {
       "meta": {
@@ -559,9 +559,9 @@
         "name": "Community Document Server",
         "summary": "Document server for OnlyOffice, community edition"
       },
-      "sha256": "197b3xrjs49z9jhw4v5fh80zx2xhd33cg0n1qp60v51mrj2h9x2a",
-      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz",
-      "version": "0.1.11"
+      "sha256": "13m49800k5z9dmi132z955ch64yshcj48mpzaxmk4lkiyr7dv5j7",
+      "url": "https://github.com/nextcloud/documentserver_community/releases/download/v0.1.12/documentserver_community.tar.gz",
+      "version": "0.1.12"
     },
     "drawio": {
       "meta": {
@@ -809,6 +809,21 @@
         "summary": "File Management"
       }
     },
+    "files_3d": {
+      "meta": {
+        "description": "Adds support for different 3D file formats (.dae, .fbx, .gltf, .obj) to Nextcloud. Based on three.js.",
+        "homepage": "https://github.com/v1r0x/files_3d",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Files 3d",
+        "summary": "3D viewer for nextcloud"
+      },
+      "sha256": "1w4za8w76dycww4ahfgv3yagb74vjg9lnl8mdyn4c3fcnssizs3k",
+      "url": "https://github.com/v1r0x/files_3d/releases/download/v0.5.0-beta/files_3d.tar.gz",
+      "version": "0.5.0"
+    },
     "files_accesscontrol": {
       "meta": {
         "description": "Nextcloud's File Access Control app enables administrators to protect data from unauthorized access or modifications.\n\n## How it works\nThe administrator can create and manage a set of rule groups. Each of the rule groups consists of one or more rules. If all rules of a group hold true, the group matches the request and access is being denied or the upload is blocked. The rules criteria range from IP address, mimetype and request time to group membership, tags, user agent and more.\n\nAn example would be to deny access to MS Excel/XLSX files owned by the \"Human Resources\" group accessed from an IP not on the internal company network or to block uploads of files bigger than 512 mb by students in the \"1st year\" group.\n\nLearn more about File Access Control on [https://nextcloud.com/workflow](https://nextcloud.com/workflow)",
@@ -922,9 +937,9 @@
         "name": "Full text search - Files",
         "summary": "Index the content of your files"
       },
-      "sha256": "0gna0q6j4v3gwz8yxzal6ila241ki7hir58k018rka0894nmd45s",
-      "url": "https://github.com/nextcloud-releases/files_fulltextsearch/releases/download/21.0.4/files_fulltextsearch-21.0.4.tar.gz",
-      "version": "21.0.4"
+      "sha256": "1pzzhw9dzr0kphywi3wvicvmfhhks22id7i5irkkjg6jgr9qdhal",
+      "url": "https://github.com/nextcloud-releases/files_fulltextsearch/releases/download/21.0.5/files_fulltextsearch-21.0.5.tar.gz",
+      "version": "21.0.5"
     },
     "files_fulltextsearch_tesseract": {
       "meta": {
@@ -1054,9 +1069,9 @@
         "name": "README.md",
         "summary": "Show README.md and HEADER.md gitlab style on your NextCloud !"
       },
-      "sha256": "1xkrjw5vhrryfcyim2fzy4sap0bcydzjr7338nwjn49lz2f713rk",
-      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/57409c528bde96202d03d2e3887b3fae/files_readmemd.tar.gz",
-      "version": "1.2.1"
+      "sha256": "1xdsaxncxvyrczdgp5m5j1272vv8ccgc5klcss2ps90p4183q9zw",
+      "url": "https://gitlab.univ-nantes.fr/uncloud/files_readmemd/-/wikis/uploads/7cc2ee379111ac18df99d674676dda98/files_readmemd.tar.gz",
+      "version": "1.2.2"
     },
     "files_retention": {
       "meta": {
@@ -1312,9 +1327,9 @@
         "name": "GeoBlocker",
         "summary": "Blocks user depending on the estimated country of thier IP address."
       },
-      "sha256": "0ajd43v8kpbh7i1fbphfvm95bspj9kj7gjpgglckrsm49jm9a9n9",
-      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.5.2/geoblocker.tar.gz",
-      "version": "0.5.2"
+      "sha256": "1k0z5mz69szdd9yb61ssk1mgxk9ar07d3yisqgqn6sqk9kxpr401",
+      "url": "https://github.com/HomeITAdmin/nextcloud_geoblocker/releases/download/0.5.4/geoblocker.tar.gz",
+      "version": "0.5.4"
     },
     "gestion": {
       "meta": {
@@ -1327,9 +1342,9 @@
         "name": "Gestion",
         "summary": "Simplified invoice management application"
       },
-      "sha256": "0vhxd6y535p7a6ln2in7n0my5dvml4ml3v7d3iz2w5mlq6kpbb0v",
-      "url": "https://github.com/baimard/gestion/releases/download/2.0.0/gestion.tar.gz",
-      "version": "2.0.0"
+      "sha256": "17xbg6gg813wbzlvqcqy50vqx86vp51j3lk299q0g37h278njdj0",
+      "url": "https://github.com/baimard/gestion/releases/download/2.0.5/gestion.tar.gz",
+      "version": "2.0.5"
     },
     "gpgmailer": {
       "meta": {
@@ -1431,9 +1446,9 @@
         "name": "Everyone Group",
         "summary": "Adds a virtual \"Everyone\" group"
       },
-      "sha256": "1yy7p0lkbng8akn5yrq0wvyamvfr6qki55hczhbm4xbvhhy38qj9",
-      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.8/group_everyone.tar.gz",
-      "version": "0.1.8"
+      "sha256": "1znn23zxh88qa9wp923svyv599bjhb2xpiawnmp6mzxai2c2cf4z",
+      "url": "https://github.com/icewind1991/group_everyone/releases/download/v0.1.9/group_everyone.tar.gz",
+      "version": "0.1.9"
     },
     "groupfolders": {
       "meta": {
@@ -1505,9 +1520,9 @@
         "name": "Health",
         "summary": "Track your health. Use the advantages of a trusted platform."
       },
-      "sha256": "0mlk050c9ai28svm1jvm1cnim4f32z5982ysa4qryzmngpm6kfs5",
-      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.4.0.tar.gz",
-      "version": "1.4.0"
+      "sha256": "0w09i60yl91ccz1mwsg7943l4y11j0shmihkvjlw9b4m4c8g32qf",
+      "url": "https://dl.datenangebot.de/nc%20health/releases/health-v1.5.0.tar.gz",
+      "version": "1.5.0"
     },
     "hidesidebars": {
       "meta": {
@@ -1819,9 +1834,9 @@
         "name": "Jitsi Integration",
         "summary": "Jitsi Integration (unofficial)"
       },
-      "sha256": "1b1mififjcphpydvyzb96rwaz494zk90r7an0xd9q4vxh8qynrcz",
-      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/24/artifacts/nextcloud-jitsi.tar.gz",
-      "version": "0.12.0"
+      "sha256": "1s4w956gd5l6j1ckaynk6si85fxalv6kbhxz45978xazxnl6jc6n",
+      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/30/artifacts/nextcloud-jitsi.tar.gz",
+      "version": "0.13.0"
     },
     "jsloader": {
       "meta": {
@@ -1993,9 +2008,9 @@
         "name": "Mail",
         "summary": "A mail app for Nextcloud"
       },
-      "sha256": "198ps5ajikz27n9jkqqbxwncjfv682zgmmlcr0bk3pmf8fx8irz8",
-      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.6/mail-v1.11.6.tar.gz",
-      "version": "1.11.6"
+      "sha256": "1sc2ba9pd0gvi8kcp7sm34cgy7v5jp1f6ffh87dbm47d79fx3jyr",
+      "url": "https://github.com/nextcloud-releases/mail/releases/download/v1.11.7/mail-v1.11.7.tar.gz",
+      "version": "1.11.7"
     },
     "majordomo": {
       "meta": {
@@ -2038,9 +2053,9 @@
         "name": "MediaDC",
         "summary": "Nextcloud Media Duplicate Collector application"
       },
-      "sha256": "00sj9ff0xbsbipky68fnbv697ci17kzvsk407niwc4b99b7jsifa",
-      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.8/mediadc.tar.gz",
-      "version": "0.1.8"
+      "sha256": "0mhpc2jclgadi09sa71c04qav4yjrhfrcka9vis2n1n92ik98pa6",
+      "url": "https://github.com/andrey18106/mediadc/releases/download/v0.1.9/mediadc.tar.gz",
+      "version": "0.1.9"
     },
     "messagevault": {
       "meta": {
@@ -2082,9 +2097,9 @@
         "name": "Music",
         "summary": "Music player, library viewer, and server"
       },
-      "sha256": "1n1202arf6hjlr2m67f6363xd149d6dnhrs5hqigxcvzpzjgp95p",
-      "url": "https://github.com/owncloud/music/releases/download/v1.5.0/music_1.5.0_for_nextcloud.tar.gz",
-      "version": "1.5.0"
+      "sha256": "05ygfhaqajmc2lkd3fakyvnj8bynvd8f4xfj4qd9gzql851nw4w3",
+      "url": "https://github.com/owncloud/music/releases/download/v1.5.1/music_1.5.1_for_nextcloud.tar.gz",
+      "version": "1.5.1"
     },
     "ncdownloader": {
       "meta": {
@@ -2097,9 +2112,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1kqb3nng3m3rl5nhnabnqr7l88rkljkfwkpahfbpflh57dkpqqkq",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.5.2/ncdownloader-release.tar.gz",
-      "version": "0.5.2"
+      "sha256": "1lyyscg80gyhja07h34108ni55w8w8kq47df68bdq0a14208ym1w",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.7.8/ncdownloader-release.tar.gz",
+      "version": "0.7.8"
     },
     "news": {
       "meta": {
@@ -2297,9 +2312,9 @@
         "name": "OpenOTP Two Factor Authentication",
         "summary": "RCDevs OpenOTP Application enables Multi-Factor authentication for your users."
       },
-      "sha256": "02r6wv41jahh608vimk104ld144s1x51mp6jsh9may16b8x5qd3d",
-      "url": "https://mercury.chantret.com/openotp_auth.tar.gz",
-      "version": "1.2.0"
+      "sha256": "1fsmg8q3mfvdn85l2f8c1qligkk04625vg1d9jz0fjlxqi5s53vy",
+      "url": "https://github.com/rcdevs/nextcloud_openotp_auth/releases/download/v1.4.1/openotp_auth-1.4.1.tgz",
+      "version": "1.4.1"
     },
     "ownpad": {
       "meta": {
@@ -2440,9 +2455,9 @@
         "name": "Polls",
         "summary": "A polls app, similar to Doodle/Dudle with the possibility to restrict access."
       },
-      "sha256": "0dczpm7kz1i74qghwxkz9idzzd8fdg9hm5rg9w2rjggr69192rz5",
-      "url": "https://github.com/nextcloud/polls/releases/download/v3.4.2/polls.tar.gz",
-      "version": "3.4.2"
+      "sha256": "1jnqqyrffpic24g5j4jcddmf7n7qkfzi2gd6hj522rqxr557ai4z",
+      "url": "https://github.com/nextcloud/polls/releases/download/v3.5.4/polls.tar.gz",
+      "version": "3.5.4"
     },
     "previewgenerator": {
       "meta": {
@@ -2455,9 +2470,9 @@
         "name": "Preview Generator",
         "summary": "A preview pre-generation app"
       },
-      "sha256": "0xy1bxim5jxp2b8yclsfgjm901p4kjpn63v00djsmn37s87w5h6d",
-      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v3.4.1/previewgenerator.tar.gz",
-      "version": "3.4.1"
+      "sha256": "19drmjrmir219dy5fdwws6kqnkqbmciba0077av64w1vn18w6rid",
+      "url": "https://github.com/nextcloud-releases/previewgenerator/releases/download/v4.0.0/previewgenerator.tar.gz",
+      "version": "4.0.0"
     },
     "pride": {
       "meta": {
@@ -2539,9 +2554,9 @@
         "name": "Favorites Quickaccess Sorting",
         "summary": "Different Sorting for favorites-quickaccess!"
       },
-      "sha256": "1hhxd4wk4h6ar1ip32gfriwc2bisjiriailkcd1viahp3vsqbs87",
-      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.2/quickaccesssorting.tar.gz",
-      "version": "1.1.2"
+      "sha256": "09jjk0py2j2qnllz4w37n6gkbwbqasy42zgndj9cwj9vy8vj57jg",
+      "url": "https://github.com/newhinton/quickaccesssorting/releases/download/1.1.3/quickaccesssorting.tar.gz",
+      "version": "1.1.3"
     },
     "quicknotes": {
       "meta": {
@@ -2620,7 +2635,7 @@
     },
     "recognize": {
       "meta": {
-        "description": "This app goes through your media collection and adds fitting tags, automatically categorizing your photos and music.\n\n*   Recognizes faces from contact photos\n*   Recognizes animals, landscapes, food, vehicles, buildings and other objects\n*   Recognizes landmarks and monuments\n*   Recognizes music genres\n*  Tagging works via Nextcloud's Collaborative Tags, allowing access by any of your apps\n  *  listen to your tagged music with the audioplayer app\n  *  view your tagged photos with the photos app\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- For native speed:\n  - Processor: x86 64bit (with support for AVX instructions)\n  - System with glibc (Required by libtensorflow; usually the norm on Linux; Alpine linux and FreeBSD are *not* such systems)\n- For sub-native speed (using JavaScript mode)\n  - Processor: x86 64bit, arm64, armv7l (no AVX needed)\n  - System with glibc (When using the bundled node.js binary; alternatively you can set the path to custom node.js binary)\n- ~4GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
+        "description": "This app goes through your media collection and adds fitting tags, automatically categorizing your photos and music.\n\n*   Recognizes faces from contact photos\n*   Recognizes animals, landscapes, food, vehicles, buildings and other objects\n*   Recognizes landmarks and monuments\n*   Recognizes music genres\n*  Tagging works via Nextcloud's Collaborative Tags, allowing access by any of your apps\n  *  listen to your tagged music with the audioplayer app\n  *  view your tagged photos with the photos app\n\nRequirements:\n- php 7.3 and above\n- App \"collaborative tags\" enabled\n- For native speed:\n  - Processor: x86 64bit (with support for AVX instructions)\n  - System with glibc (usually the norm on Linux; Alpine linux and FreeBSD are *not* such systems)\n- For sub-native speed (using JavaScript mode)\n  - Processor: x86 64bit, arm64, armv7l (no AVX needed)\n  - System with glibc or musl (incl. Alpine linux)\n- ~4GB of free RAM (if you're cutting it close, make sure you have some swap available)\n\nThe app does not send any sensitive data to cloud providers or similar services. All processing is done on your nextcloud machine, using Tensorflow.js running in Node.js, which comes bundled with this app.",
         "homepage": "https://github.com/marcelklehr/recognize",
         "isShipped": false,
         "licenses": [
@@ -2629,9 +2644,9 @@
         "name": "Recognize",
         "summary": "Smart media tagging for Nextcloud"
       },
-      "sha256": "1mi3z0p2wpyz8wlkc18g2yjbyia1ms2lxgq9y0ayz7i1zcj6zbkh",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.10.0/recognize-1.10.0.tar.gz",
-      "version": "1.10.0"
+      "sha256": "0x5l07j2bja70vigrc3m7wadzsw4vl2wbp96bv3h73y6zjwc25dw",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.11.0/recognize-1.11.0.tar.gz",
+      "version": "1.11.0"
     },
     "recommendations": {
       "meta": {
@@ -2669,12 +2684,12 @@
         "licenses": [
           "agpl"
         ],
-        "name": "Collabora Online",
+        "name": "Nextcloud Office",
         "summary": "Edit office documents directly in your browser."
       },
-      "sha256": "1cw5fldwixd7pa6gsb03411gh1zs6v9j51i7jh9pxd970ipm3g6z",
-      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v4.2.3/richdocuments.tar.gz",
-      "version": "4.2.3"
+      "sha256": "0nnvayv730fpl578vp4q1p4g7akr2l5bdp9crpsh7ylqcvi7g0bw",
+      "url": "https://github.com/nextcloud-releases/richdocuments/releases/download/v4.2.4/richdocuments.tar.gz",
+      "version": "4.2.4"
     },
     "richdocumentscode": {
       "meta": {
@@ -2717,9 +2732,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1m3x50klfc1vbwy8j48f0afb5236h4vjv0zhfy2afsr12ig3bfdn",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.10.2/riotchat.tar.gz",
-      "version": "0.10.2"
+      "sha256": "0zbpl5513svmx40l1y0qaifq20y5132phxx68fd6609mpcxmncji",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.11.1/riotchat.tar.gz",
+      "version": "0.11.1"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -2776,9 +2791,9 @@
         "name": "Sendent",
         "summary": "Sendent allows you to securely exchange files and emails"
       },
-      "sha256": "1bfksw0zkwlsagy5cr46fnqlsir5yksaiz7i46fw1sda198p5crs",
-      "url": "https://download.sendent.nl/serverapp/1.2.8/sendent.tar.gz",
-      "version": "1.2.8"
+      "sha256": "10sb30307cvk4ygi9i2ify2zfk5ls3s369rpphgl4vmkl8yd7nrj",
+      "url": "https://download.sendent.nl/serverapp/1.2.10/sendent.tar.gz",
+      "version": "1.2.10"
     },
     "sentry": {
       "meta": {
@@ -2845,9 +2860,9 @@
         "name": "ShareImporter",
         "summary": "Import Shares in Nextcloud app"
       },
-      "sha256": "1pvzdam9h095v4ax13n3hrrp4n9bi4b06kz5z5hddxvs4i9g1jp0",
-      "url": "https://github.com/nextcloud-releases/shareimporter/releases/download/v1.0.3/shareimporter-v1.0.3.tar.gz",
-      "version": "1.0.3"
+      "sha256": "0w9cwifw4w972nnsm4bzy9xpccla0hlsk2pik5faxjs6r4y5ck56",
+      "url": "https://github.com/nextcloud-releases/shareimporter/releases/download/v1.0.4/shareimporter-v1.0.4.tar.gz",
+      "version": "1.0.4"
     },
     "sharelisting": {
       "meta": {
@@ -2894,7 +2909,7 @@
     },
     "sharingpath": {
       "meta": {
-        "description": "Files sharing use file stored path. Now you cau use nextcloud as your CDN origin.\n        What you need to do is just share your files, then click Open Sharing Path to access from files dropdown actions menu.",
+        "description": "# Sharing Path  [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F51I62J)\n\nSharing Path enhance files sharing usage. Easy share, multi-use.\n\nNow you can share your files by path format like below:\n\n`https://youre-domain/nextcloud/apps/sharingpath/username/shared-file-stored-path`\n\nIn this way, you can use your nextcloud as CDN origin storage .\n\n **Attention** *Potential security risk: links could be guessed and the files in shared directories can be accessed.*\n\n\n## Usage\n\nCheck `Enable sharing path` at `Setting` &gt; `Sharing` first.\n\nThen just share your files or directories(add a share link without `Hide download` or `Password protect` and not expired if expiration date has set), then you can get the url by click `Copy Sharing Path` from more icon `` dropdown actions menu or right click menu.\n\nThere are some settings in `Settings` &gt; `Sharing`(Administration &amp; Personal) &gt; `Sharing Path` you may need take a look.",
         "homepage": "https://github.com/rookie0/nextcloud-sharing-path",
         "isShipped": false,
         "licenses": [
@@ -2903,9 +2918,9 @@
         "name": "Sharing Path",
         "summary": "Files sharing use stored path. Easy share, multi-use."
       },
-      "sha256": "04lyqhknpvz2zm63rv7shdkibbr26ayb955589qq3s80gmgrm9ad",
-      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.4.3/sharingpath.tar.gz",
-      "version": "0.4.3"
+      "sha256": "0zdjxmgl1skb1pgqn5h3mdb8nrgiaj60987mxrf8zx19qinhs8yz",
+      "url": "https://github.com/rookie0/nextcloud-sharing-path/releases/download/v0.4.4/sharingpath.tar.gz",
+      "version": "0.4.4"
     },
     "shifts": {
       "meta": {
@@ -2918,9 +2933,9 @@
         "name": "Shiftplan",
         "summary": "App for organising Shifts"
       },
-      "sha256": "1sizj823sc8ssl3fdk8c6c6r703s99mqj74q5nknghlg08rblnfp",
-      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.3/shifts-1.8.3.tar.gz",
-      "version": "1.8.3"
+      "sha256": "0jh5798r3ca3s5nwl298aaq0wqbp44lmkd4afqjyfy9mqwc397dx",
+      "url": "https://github.com/csoc-de/Shifts/releases/download/v1.8.5/shifts-1.8.5.tar.gz",
+      "version": "1.8.5"
     },
     "side_menu": {
       "meta": {
@@ -2933,9 +2948,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "08jkmy1b2ghgrna3mfrz1ip6drxknzlx2vsadzpkg3w0j9gfnqak",
-      "url": "https://gitnet.fr/attachments/3edd41cd-55c4-47dc-8f83-42f730cb9aec",
-      "version": "2.3.2"
+      "sha256": "15bg7ckqflyid81xkycfdnskzzgf6d7j4mk9izcfmcrxnl2gic5x",
+      "url": "https://gitnet.fr/attachments/a84178b6-413d-4b31-a54b-32f66b9bc733",
+      "version": "2.3.3"
     },
     "smb_test": {
       "meta": {
@@ -2978,9 +2993,9 @@
         "name": "Social Login",
         "summary": "Social login via OAuth or OpenID"
       },
-      "sha256": "07izj58kspi5w2nafq2h4nsiknlrlsqhiqqbjgnfy08dcyvh4d8b",
-      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.11.0/release.tar.gz",
-      "version": "4.11.0"
+      "sha256": "0m1r5zxdpc0jlj9yci0qgbbkjcbpl3g3jwsbqrzwzzxg1m2cpw8g",
+      "url": "https://github.com/zorn-v/nextcloud-social-login/releases/download/v4.12.0/release.tar.gz",
+      "version": "4.12.0"
     },
     "socialsharing_diaspora": {
       "meta": {
@@ -3314,7 +3329,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.7 Beta, 4. December 2021**\n- Maintenance: Bump compatibility to Nextcloud 23\n- Maintenance: Update JS dependencies\n- Bugfix: Filter selects  Add missing color customisations for dark-mode (issue #59)\n- Bugfix: Reports  Improve completeness of reports at the beginning and end of an interval (issue #58)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.8 Beta, 24. February 2022**\n- Add feature-preview of import functionality for clients, projects and tasks from a CSV file\n- Add Chinese simplified localization (thanks to @lakehy)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3323,9 +3338,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "0j2wz087g05gxv65hjrmjzjy4f2fsb06xwmly9kn8nl4lq3zap9i",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.7/timemanager.tar.gz",
-      "version": "0.2.7"
+      "sha256": "097xl8br64v1mx672zh3llz273asiqrkd7jacspwrbbv1qxkq5lx",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.8/timemanager.tar.gz",
+      "version": "0.2.8"
     },
     "timetracker": {
       "meta": {
@@ -3365,9 +3380,9 @@
         "name": "TV Show Namer",
         "summary": "Organise you TV shows"
       },
-      "sha256": "0adrxp6hnskg3f9hs73lsph98jaccxnhk9fc5a4vpvd6x9dnh5j5",
-      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.1/tvshownamer.tar.gz",
-      "version": "0.1.1"
+      "sha256": "00s31akh7qmgjccsx4im86mphryqvdg4n5lb9ljmrbp72k89ylxf",
+      "url": "https://github.com/j4ym0/nextcloud-tv-show-namer/releases/download/0.1.2/tvshownamer.tar.gz",
+      "version": "0.1.2"
     },
     "twofactor_admin": {
       "meta": {
@@ -3901,9 +3916,9 @@
         "name": "WrikeSync",
         "summary": "Wrike Projectmanagement Folder Sync"
       },
-      "sha256": "1dicpxg1x3idsb7kxa9pmc71cgnl92d3hbv0ns6jmxlsbp16jxb2",
-      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.7/wrikesync.tar.gz",
-      "version": "1.2.7"
+      "sha256": "1klidb68jxpgmrm21dz6hkbgwcmai0bdv4pbavy3vd44g2s8gc60",
+      "url": "https://github.com/g-artech/wrikesync/releases/download/v1.2.9/wrikesync.tar.gz",
+      "version": "1.2.9"
     }
   },
   "constraints": {
