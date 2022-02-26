@@ -87,6 +87,9 @@ import ./make-test.nix (pkgs: {
         # https://github.com/eblah/nextcloud-messagevault/issues/1
         (assert nc20apps.messagevault.version == "1.0.0"; "messagevault")
 
+        # https://github.com/mziech/nextcloud-cas/issues/5
+        (assert nc20apps.cas.version == "0.2.7"; "cas")
+
         # Don't test packages that include binaries:
         "documentserver_community"
         "integration_whiteboard"
