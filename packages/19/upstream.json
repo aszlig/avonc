@@ -429,9 +429,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "0l7ff97gk9pgckh1arcqcm4n2ip7bmfkd5pm5zhmm1pcj21y217d",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.9/Cookbook-0.9.9.tar.gz",
-      "version": "0.9.9"
+      "sha256": "1z4fj7ylma8c15kcsjlmhvdyzr1zrq3cf9xwz72c46rirjnknac1",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.10/Cookbook-0.9.10.tar.gz",
+      "version": "0.9.10"
     },
     "cospend": {
       "meta": {
@@ -1824,9 +1824,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "1lyyscg80gyhja07h34108ni55w8w8kq47df68bdq0a14208ym1w",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.7.8/ncdownloader-release.tar.gz",
-      "version": "0.7.8"
+      "sha256": "0jhgipddkg2lxss073vnvcqlnmdwx7jgwpb8l2b03gdr8d4lhd85",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.8.6/ncdownloader-release.tar.gz",
+      "version": "0.8.6"
     },
     "news": {
       "meta": {
@@ -1925,6 +1925,21 @@
         "name": "OAuth 2.0",
         "summary": "Allows OAuth2 compatible authentication from other web applications."
       }
+    },
+    "occweb": {
+      "meta": {
+        "description": "Run OCC Commands in a web terminal",
+        "homepage": "https://github.com/adphi/occweb",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OCC Web",
+        "summary": "OCC Commands in a web terminal"
+      },
+      "sha256": "1c1c698gghj31n8j5zgf5rdy95dacx6wa26lb1yznwxixi9ixy7n",
+      "url": "https://github.com/Adphi/occweb/releases/download/v0.1.0/occweb.tar.gz",
+      "version": "0.1.0"
     },
     "ocdownloader": {
       "meta": {
@@ -2040,9 +2055,9 @@
         "name": "OpenOTP Two Factor Authentication",
         "summary": "RCDevs OpenOTP Application enables Multi-Factor authentication for your users."
       },
-      "sha256": "1vgpkja8j1mr44jxaaqaj8h3fx6p7i94q7ss1yzf34dhymshr0dh",
-      "url": "https://github.com/rcdevs/nextcloud_openotp_auth/releases/download/v1.4.0/openotp_auth-1.4.0.tgz",
-      "version": "1.4.0"
+      "sha256": "1fsmg8q3mfvdn85l2f8c1qligkk04625vg1d9jz0fjlxqi5s53vy",
+      "url": "https://github.com/rcdevs/nextcloud_openotp_auth/releases/download/v1.4.1/openotp_auth-1.4.1.tgz",
+      "version": "1.4.1"
     },
     "orcid": {
       "meta": {
@@ -2471,9 +2486,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0bkmx5myyi7gn2pf4hwn2fvjnxa1z9r3fnw6713sc2lxxzs91cz8",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.103/richdocumentscode.tar.gz",
-      "version": "21.11.103"
+      "sha256": "0kbcm0q071l47vmyng4cm0vc672056zjj0fzbswvm1mwmfyb7fpp",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.204/richdocumentscode.tar.gz",
+      "version": "21.11.204"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2486,9 +2501,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1wvdnw2037y9hjd1w50v67cwicf8drgjsxffpldfvv3d249giijh",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.103/richdocumentscode_arm64.tar.gz",
-      "version": "21.11.103"
+      "sha256": "1fjn1sx9ah5q5bipi4z1yz6hhbsyy9qzwkcp4vpy3vn9ydnrdyx7",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.204/richdocumentscode_arm64.tar.gz",
+      "version": "21.11.204"
     },
     "riotchat": {
       "meta": {
@@ -3165,21 +3180,6 @@
       "url": "https://github.com/nextcloud/twofactor_u2f/releases/download/v6.0.0/twofactor_u2f.tar.gz",
       "version": "6.0.0"
     },
-    "twofactor_webauthn": {
-      "meta": {
-        "description": "A two-factor provider for webauthn devices",
-        "homepage": "https://github.com/michib/nextcloud_twofactor_webauthn/#readme",
-        "isShipped": false,
-        "licenses": [
-          "agpl"
-        ],
-        "name": "Two-Factor Webauthn",
-        "summary": "Webauthn two-factor provider"
-      },
-      "sha256": "1z7q66zr62sadfflj2qyhxyqh460dgnhxm8z65maiw6g9cmk46xi",
-      "url": "https://github.com/michib/nextcloud_twofactor_webauthn/releases/download/v0.2.12/twofactor_webauthn-0.2.12.tar.gz",
-      "version": "0.2.12"
-    },
     "unroundedcorners": {
       "meta": {
         "description": "# Unrounded Corners\nA Nextcloud app that restores the corners of buttons and widgets to their original looks by unrounding them.",
@@ -3233,9 +3233,9 @@
         "name": "Unified Push Provider",
         "summary": "Use Nextcloud as a push provider for mobile phones' notifications"
       },
-      "sha256": "05z2kkn8drfvy7091w9a9r38amya5561cz3vldhk6j4f9mycl36a",
-      "url": "https://raw.githubusercontent.com/p1gp1g/nextpush-publish/main/0.2.1/uppush-0.2.1.tar.gz",
-      "version": "0.2.1"
+      "sha256": "0bjn25hh9ignp83gsl7kayn39vrka5jkkhplc2zsrz1ai48w3dlg",
+      "url": "https://github.com/p1gp1g/nextpush-publish/raw/main/0.3.0/uppush-0.3.0.tar.gz",
+      "version": "0.3.0"
     },
     "user_backend_sql_raw": {
       "meta": {
