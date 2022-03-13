@@ -1,4 +1,4 @@
-from typing import Dict, Tuple
+from typing import Dict, Tuple, Set
 
 from .types import ReleaseInfo, AppChanges, AppCollection, AppId, App, \
                    ExternalApp, Changelogs, VersionChanges, InternalOrVersion
@@ -13,12 +13,13 @@ class ReleaseDiff:
         self.new = new
 
     @property
-    def removed_apps(self) -> AppCollection:
-        return dict.fromkeys(self.old.apps.keys() - self.new.apps.keys())
+    def removed_apps(self) -> Set[AppId]:
+        return self.old.apps.keys() - self.new.apps.keys()
 
     @property
     def added_apps(self) -> AppCollection:
-        return dict.fromkeys(self.new.apps.keys() - self.old.apps.keys())
+        return {appid: app for appid, app in self.new.apps.items()
+                if appid not in self.old.apps.keys()}
 
     @property
     def changed_apps(self) -> Dict[AppId, ExternalApp]:
@@ -74,7 +75,7 @@ class ReleaseDiff:
         return AppChanges(
             added={appid: app.version if isinstance(app, ExternalApp) else None
                    for appid, app in self.added_apps.items()},
-            removed=set(self.removed_apps.keys()),
+            removed=self.removed_apps,
             updated=up, downgraded=down,
         )
 

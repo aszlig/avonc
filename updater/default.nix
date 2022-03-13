@@ -25,6 +25,7 @@ pkgs.python3Packages.buildPythonApplication {
     pkgs.python3Packages.semantic-version
     pkgs.python3Packages.tqdm
     pkgs.python3Packages.beautifulsoup4
+    pkgs.python3Packages.urllib3
   ];
 
   checkInputs = [
@@ -33,5 +34,7 @@ pkgs.python3Packages.buildPythonApplication {
     pkgs.python3Packages.pytest-mypy
     pkgs.python3Packages.pytest-flake8
     pkgs.python3Packages.pytestrunner
+    pkgs.python3Packages.types-requests
+    pkgs.python3Packages.types-urllib3
   ];
 }

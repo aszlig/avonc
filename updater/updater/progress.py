@@ -3,7 +3,7 @@ import warnings
 
 from typing import Optional
 from tqdm import tqdm
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+from urllib3.exceptions import InsecureRequestWarning
 
 
 def download_pbar(url: str, verify: bool = True,
