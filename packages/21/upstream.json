@@ -229,9 +229,9 @@
         "name": "Calendar",
         "summary": "A Calendar app for Nextcloud"
       },
-      "sha256": "112kkpczn1l60pngr58bh2mwawd3i02r5cifg97dp59g0ddxrvzf",
-      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.2.0/calendar-v3.2.0.tar.gz",
-      "version": "3.2.0"
+      "sha256": "0vxp259m8vk565ifzjii9g0gz9gkwfjbmi8q5gadvzgb7zf2c81b",
+      "url": "https://github.com/nextcloud-releases/calendar/releases/download/v3.2.2/calendar-v3.2.2.tar.gz",
+      "version": "3.2.2"
     },
     "camerarawpreviews": {
       "meta": {
@@ -534,6 +534,20 @@
       "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.4.8/deck.tar.gz",
       "version": "1.4.8"
     },
+    "deckimportfromtrello": {
+      "meta": {
+        "description": "nextcloud app that allows Deck import from Trello export to JSON file",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Deck Import From Trello",
+        "summary": "nextcloud app that allows Deck import from Trello export to JSON file"
+      },
+      "sha256": "0vj3k6ysb307yy2k0cajxlcy358w26wms6mb0wbmp434sh1v7k9s",
+      "url": "https://github.com/newroco/deckimportfromtrello/releases/download/1.0.0/deckimportfromtrello-1.0.0.tar.gz",
+      "version": "0.0.2"
+    },
     "diary": {
       "meta": {
         "description": "Keep your diary in your Nextcloud. Write entries for each day in\na markdown editor. Use the calendar to jump to any date and edit your entries.\n\nWarning! This is a very early alpha release and things are still pretty rough around the edges.",
@@ -545,9 +559,9 @@
         "name": "Diary",
         "summary": "A simple diary for Nextcloud - Alpha release"
       },
-      "sha256": "19ccrsa5sjvbii12w6n0xa5q7183iyil61fz8p1rx1q20gv3hl75",
-      "url": "https://github.com/danielroehrig/diary/releases/download/v.0.0.2/diary.tar.gz",
-      "version": "0.0.2"
+      "sha256": "01sp8cdv4j3w215ws29q2li3sy77krkbk12rdcyrrgfj3bwilh0c",
+      "url": "https://github.com/danielroehrig/diary/releases/download/v.0.0.3/diary.tar.gz",
+      "version": "0.0.3"
     },
     "dicomviewer": {
       "meta": {
@@ -693,9 +707,9 @@
         "name": "Eml Viewer",
         "summary": "Preview eml files"
       },
-      "sha256": "0qglpg2kxn8m6xl7ma3nhxjvmabdc2rg9n9v5zswqzql9ncwvp3i",
-      "url": "https://github.com/newroco/emlviewer/releases/download/1.0.0/emlviewer-1.0.0.tar.gz",
-      "version": "1.0.0"
+      "sha256": "08hpnd9qa2p0is9184ysm7sqrlwk3ya45ghlq36my7df5grwkp45",
+      "url": "https://github.com/newroco/emlviewer/releases/download/1.0.1/emlviewer.tar.gz",
+      "version": "1.0.1"
     },
     "encryption": {
       "meta": {
@@ -1372,13 +1386,14 @@
         "name": "Gestion",
         "summary": "Simplified invoice management application"
       },
-      "sha256": "19wfwqfrmdac7bgs7fjsasmygxx5h30hwnjf4qy7vz81bfiz8fkg",
-      "url": "https://github.com/baimard/gestion/releases/download/2.0.7/gestion.tar.gz",
-      "version": "2.0.7"
+      "sha256": "1k5vqp05dipybji8x35lk3a4by68fygs3nhpvyz3r5p1fi7xfvkg",
+      "url": "https://github.com/baimard/gestion/releases/download/2.0.8/gestion.tar.gz",
+      "version": "2.0.8"
     },
     "gpgmailer": {
       "meta": {
         "description": "If user uploads public key, emails to this user will be encrypted and signed.\nAll other emails will be signed\nThis App depends on gnupg.",
+        "homepage": "https://github.com/tacruc/gpgmailer",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1386,9 +1401,9 @@
         "name": "GPG Mailer",
         "summary": "Send encrypted emails to registered users"
       },
-      "sha256": "19yr4cdw3b0y79zb07ibrzrqm2nkvwgw0hsl7q204crlpzsfx27j",
-      "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
-      "version": "0.0.3"
+      "sha256": "0yig541bcrli539jysj8xzj2zfqvk17yrql5lb1dg77ky4sq9bvq",
+      "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.4/gpgmailer.tar.gz",
+      "version": "0.0.4"
     },
     "gpoddersync": {
       "meta": {
@@ -2157,9 +2172,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "0jhgipddkg2lxss073vnvcqlnmdwx7jgwpb8l2b03gdr8d4lhd85",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.8.6/ncdownloader-release.tar.gz",
-      "version": "0.8.6"
+      "sha256": "0pap5lbw47nz4hy2wprilpas91pw9w3appm6scxa4p65i5wlfhwm",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/0.9.0/ncdownloader-release.tar.gz",
+      "version": "0.9.0"
     },
     "news": {
       "meta": {
@@ -2301,6 +2316,21 @@
       "sha256": "00bb5zi41vbwx07wdbk9jj5aa1id3fg57a9yjc0x8nnvhacp1wvp",
       "url": "https://github.com/nextcloud-releases/officeonline/releases/download/v1.1.3/officeonline-v1.1.3.tar.gz",
       "version": "1.1.3"
+    },
+    "oidc": {
+      "meta": {
+        "description": "With this app you can use Nextcloud as OpenID Connect Identity Provider.",
+        "homepage": "https://github.com/H2CK/oidc",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "OIDC Identity Provider",
+        "summary": "Use Nextcloud as OpenID Connect Identity Provider."
+      },
+      "sha256": "1gq42kblfignbyvlq4ys5rgir8ml6r5w0j6p2n7j715cvw22yf9d",
+      "url": "https://github.com/H2CK/oidc/releases/download/0.0.1/oidc.tar.gz",
+      "version": "0.0.1"
     },
     "oidc_login": {
       "meta": {
@@ -2920,9 +2950,9 @@
         "name": "ShareImporter",
         "summary": "Import Shares in Nextcloud app"
       },
-      "sha256": "0w9cwifw4w972nnsm4bzy9xpccla0hlsk2pik5faxjs6r4y5ck56",
-      "url": "https://github.com/nextcloud-releases/shareimporter/releases/download/v1.0.4/shareimporter-v1.0.4.tar.gz",
-      "version": "1.0.4"
+      "sha256": "0fwnjrzs50pgzcjpgwnqwhbq31yn3gq02h6s0qr955wij22gacgv",
+      "url": "https://github.com/nextcloud-releases/shareimporter/releases/download/v1.0.6/shareimporter-v1.0.6.tar.gz",
+      "version": "1.0.6"
     },
     "sharelisting": {
       "meta": {
@@ -3008,9 +3038,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "15bg7ckqflyid81xkycfdnskzzgf6d7j4mk9izcfmcrxnl2gic5x",
-      "url": "https://gitnet.fr/attachments/a84178b6-413d-4b31-a54b-32f66b9bc733",
-      "version": "2.3.3"
+      "sha256": "1zfphlz3xma2gwm9r2k8qnpb8v0mhnj4n75fqszzzy137hb25jm1",
+      "url": "https://gitnet.fr/attachments/71065a6a-d913-4ebe-8ac4-43521c0f404c",
+      "version": "2.3.4"
     },
     "smb_test": {
       "meta": {
@@ -3172,9 +3202,9 @@
         "name": "Talk",
         "summary": "Chat, video &amp; audio-conferencing using WebRTC"
       },
-      "sha256": "0yfa46m6jfmc1zl01vjaw1mgb4p7rsmv4blhkjb801a5fxwilw3p",
-      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v11.3.5/spreed-11.3.5.tar.gz",
-      "version": "11.3.5"
+      "sha256": "03l8ih69hbr2wk6mdq1spbignnqxvfawhjsby5vim7v33gddm1g2",
+      "url": "https://github.com/nextcloud-releases/spreed/releases/download/v11.3.6/spreed-11.3.6.tar.gz",
+      "version": "11.3.6"
     },
     "sqreen_sdk": {
       "meta": {
@@ -3200,9 +3230,9 @@
         "name": "Storj",
         "summary": "Decentralized storage backend"
       },
-      "sha256": "1wqkg83g21bmgg38r2dpk2ybr8lwfnga1spfmjh6nd0558qzv18b",
-      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.6.tar.gz",
-      "version": "0.0.6"
+      "sha256": "0h4kf6qwyzq41rvh4mg07ssj3m4rcwypbn63g6b63b1ngcj40s5z",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.7.tar.gz",
+      "version": "0.0.7"
     },
     "stromquittung": {
       "meta": {
@@ -3319,7 +3349,7 @@
     },
     "tasks": {
       "meta": {
-        "description": "Once enabled, a new Tasks menu will appear in your Nextcloud apps menu. From there you can add and delete tasks, edit their title, description, start and due dates and mark them as important. Tasks can be shared between users. Tasks can be synchronized using CalDav (each task list is linked to an Nextcloud calendar, to sync it to your local client - Thunderbird, Evolution, KDE Kontact, iCal, ... - just add the calendar as a remote calendar in your client). You can download your tasks as ICS files using the download button for each calendar.",
+        "description": "Once enabled, a new Tasks menu will appear in your Nextcloud apps menu. From there you can add and delete tasks, edit their title, description, start and due dates and mark them as important. Tasks can be shared between users. Tasks can be synchronized using CalDav (each task list is linked to an Nextcloud calendar, to sync it to your local client: Thunderbird, Evolution, KDE Kontact, iCal ... - just add the calendar as a remote calendar in your client). You can download your tasks as ICS files using the download button for each calendar.",
         "homepage": "https://github.com/nextcloud/tasks/",
         "isShipped": false,
         "licenses": [
@@ -3328,9 +3358,9 @@
         "name": "Tasks",
         "summary": "The Tasks app for Nextcloud"
       },
-      "sha256": "0wgajx8lpdv0lv31bv29v3jlif1j5asvwb0r3nqxazl62jhr6jrs",
-      "url": "https://github.com/nextcloud/tasks/releases/download/v0.14.2/tasks.tar.gz",
-      "version": "0.14.2"
+      "sha256": "0q3k66pp2xsi2n9s40qwh9yhhv74h3wqg2hhwz9jrcca9pqmvhqw",
+      "url": "https://github.com/nextcloud/tasks/releases/download/v0.14.4/tasks.tar.gz",
+      "version": "0.14.4"
     },
     "terms_of_service": {
       "meta": {
@@ -3389,7 +3419,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.8 Beta, 24. February 2022**\n- Add feature-preview of import functionality for clients, projects and tasks from a CSV file\n- Add Chinese simplified localization (thanks to @lakehy)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.9 Beta, 15. March 2022**\n- Bugfix: Import UI will now create a commit and show the success message even if importing to an empty database\n- Bugfix: Navigation button will stay visible and interactive when navigating client-side (issue #70)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3398,9 +3428,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "097xl8br64v1mx672zh3llz273asiqrkd7jacspwrbbv1qxkq5lx",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.8/timemanager.tar.gz",
-      "version": "0.2.8"
+      "sha256": "1rvr4dhlh9x926m63dc3j0s5im9611yqrxhijqk2p92spj65pwpc",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.9/timemanager.tar.gz",
+      "version": "0.2.9"
     },
     "timetracker": {
       "meta": {
@@ -3606,7 +3636,7 @@
     },
     "uppush": {
       "meta": {
-        "description": "Once the mobile phone is connected, push notifications can be forwarded to applications implementing UnifiedPush.\n\nMore information about UnifiedPush at https://unifiedpush.org",
+        "description": "Once the mobile phone is connected with NextPush, push notifications can be forwarded to applications implementing UnifiedPush.\n\nMore information about UnifiedPush at https://unifiedpush.org",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3614,9 +3644,9 @@
         "name": "Unified Push Provider",
         "summary": "Use Nextcloud as a push provider for mobile phones' notifications"
       },
-      "sha256": "0bjn25hh9ignp83gsl7kayn39vrka5jkkhplc2zsrz1ai48w3dlg",
-      "url": "https://github.com/p1gp1g/nextpush-publish/raw/main/0.3.0/uppush-0.3.0.tar.gz",
-      "version": "0.3.0"
+      "sha256": "13yp8bg2m0wccgaismbgmdx904rjb855gjcdsr89rnp9hcrg2pb6",
+      "url": "https://github.com/p1gp1g/nextpush-publish/raw/main/1.0.0/uppush-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "user_backend_sql_raw": {
       "meta": {
@@ -3862,6 +3892,20 @@
       "sha256": "0ll4v6ii2zppn0p272w0mnc432jzh5vaypc8k73dvrxh0qz34pnp",
       "url": "https://gitlab.tugraz.at/dbp/nextcloud/webapppassword/uploads/9c940399771944f671ea9ae42294813d/webapppassword.tar.gz",
       "version": "21.12.0"
+    },
+    "webhooks": {
+      "meta": {
+        "description": "This app allows a Nextcloud instance to call an external service via a HTTP(S) POST request whenever an event of a given type occurs.\n    \nOutgoing webhooks can be triggered by either Nextcloud's internal events specified in config.php or by Flow actions defined in the admin UI.",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Webhooks",
+        "summary": "Integrate your Nextcloud instance with external systems using Webhooks"
+      },
+      "sha256": "0n19j301hlib7hdf76c308n3wc5x2s5q74gbs5c1bcl8v1xmx2b6",
+      "url": "https://github.com/kffl/nextcloud-webhooks/releases/download/v0.1.0/webhooks.tar.gz",
+      "version": "0.1.0"
     },
     "welcome": {
       "meta": {

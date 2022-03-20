@@ -518,6 +518,20 @@
       "url": "https://github.com/nextcloud-releases/deck/releases/download/v1.2.11/deck.tar.gz",
       "version": "1.2.11"
     },
+    "deckimportfromtrello": {
+      "meta": {
+        "description": "nextcloud app that allows Deck import from Trello export to JSON file",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "Deck Import From Trello",
+        "summary": "nextcloud app that allows Deck import from Trello export to JSON file"
+      },
+      "sha256": "0vj3k6ysb307yy2k0cajxlcy358w26wms6mb0wbmp434sh1v7k9s",
+      "url": "https://github.com/newroco/deckimportfromtrello/releases/download/1.0.0/deckimportfromtrello-1.0.0.tar.gz",
+      "version": "0.0.2"
+    },
     "dicomviewer": {
       "meta": {
         "description": "DICOM Viewer allows to display and manipulate DICOM images with a streamlined sidebar and viewer.\n\nSee [README](https://github.com/ayselafsar/dicomviewer) for a list of full features and future roadmap.",
@@ -1318,6 +1332,7 @@
     "gpgmailer": {
       "meta": {
         "description": "If user uploads public key, emails to this user will be encrypted and signed.\nAll other emails will be signed\nThis App depends on gnupg.",
+        "homepage": "https://github.com/tacruc/gpgmailer",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1325,9 +1340,9 @@
         "name": "GPG Mailer",
         "summary": "Send encrypted emails to registered users"
       },
-      "sha256": "19yr4cdw3b0y79zb07ibrzrqm2nkvwgw0hsl7q204crlpzsfx27j",
-      "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.3/gpgmailer.tar.gz",
-      "version": "0.0.3"
+      "sha256": "0yig541bcrli539jysj8xzj2zfqvk17yrql5lb1dg77ky4sq9bvq",
+      "url": "https://github.com/tacruc/gpgmailer/releases/download/0.0.4/gpgmailer.tar.gz",
+      "version": "0.0.4"
     },
     "gpxedit": {
       "meta": {
@@ -1824,9 +1839,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "0jhgipddkg2lxss073vnvcqlnmdwx7jgwpb8l2b03gdr8d4lhd85",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.8.6/ncdownloader-release.tar.gz",
-      "version": "0.8.6"
+      "sha256": "0pap5lbw47nz4hy2wprilpas91pw9w3appm6scxa4p65i5wlfhwm",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/0.9.0/ncdownloader-release.tar.gz",
+      "version": "0.9.0"
     },
     "news": {
       "meta": {
@@ -2687,9 +2702,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "15bg7ckqflyid81xkycfdnskzzgf6d7j4mk9izcfmcrxnl2gic5x",
-      "url": "https://gitnet.fr/attachments/a84178b6-413d-4b31-a54b-32f66b9bc733",
-      "version": "2.3.3"
+      "sha256": "1zfphlz3xma2gwm9r2k8qnpb8v0mhnj4n75fqszzzy137hb25jm1",
+      "url": "https://gitnet.fr/attachments/71065a6a-d913-4ebe-8ac4-43521c0f404c",
+      "version": "2.3.4"
     },
     "smb_test": {
       "meta": {
@@ -3038,7 +3053,7 @@
     },
     "timemanager": {
       "meta": {
-        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.8 Beta, 24. February 2022**\n- Add feature-preview of import functionality for clients, projects and tasks from a CSV file\n- Add Chinese simplified localization (thanks to @lakehy)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.9 Beta, 15. March 2022**\n- Bugfix: Import UI will now create a commit and show the success message even if importing to an empty database\n- Bugfix: Navigation button will stay visible and interactive when navigating client-side (issue #70)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3047,9 +3062,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "097xl8br64v1mx672zh3llz273asiqrkd7jacspwrbbv1qxkq5lx",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.8/timemanager.tar.gz",
-      "version": "0.2.8"
+      "sha256": "1rvr4dhlh9x926m63dc3j0s5im9611yqrxhijqk2p92spj65pwpc",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.9/timemanager.tar.gz",
+      "version": "0.2.9"
     },
     "timetracker": {
       "meta": {
@@ -3225,7 +3240,7 @@
     },
     "uppush": {
       "meta": {
-        "description": "Once the mobile phone is connected, push notifications can be forwarded to applications implementing UnifiedPush.\n\nMore information about UnifiedPush at https://unifiedpush.org",
+        "description": "Once the mobile phone is connected with NextPush, push notifications can be forwarded to applications implementing UnifiedPush.\n\nMore information about UnifiedPush at https://unifiedpush.org",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -3233,9 +3248,9 @@
         "name": "Unified Push Provider",
         "summary": "Use Nextcloud as a push provider for mobile phones' notifications"
       },
-      "sha256": "0bjn25hh9ignp83gsl7kayn39vrka5jkkhplc2zsrz1ai48w3dlg",
-      "url": "https://github.com/p1gp1g/nextpush-publish/raw/main/0.3.0/uppush-0.3.0.tar.gz",
-      "version": "0.3.0"
+      "sha256": "13yp8bg2m0wccgaismbgmdx904rjb855gjcdsr89rnp9hcrg2pb6",
+      "url": "https://github.com/p1gp1g/nextpush-publish/raw/main/1.0.0/uppush-1.0.0.tar.gz",
+      "version": "1.0.0"
     },
     "user_backend_sql_raw": {
       "meta": {
