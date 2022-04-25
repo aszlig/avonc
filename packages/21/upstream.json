@@ -65,9 +65,9 @@
         "name": "Analytics",
         "summary": "extract / store / visualize"
       },
-      "sha256": "0zyp227xmq1ld6989ma81lmx5b92wkf688dif5kf51d2hw1ai7xc",
-      "url": "https://github.com/Rello/analytics/releases/download/4.1.1/analytics-4.1.1.tar.gz",
-      "version": "4.1.1"
+      "sha256": "16ylx43pzyc34kfc002ys7fjkykqj5whgn3rv35q2mcmsvs5raj3",
+      "url": "https://github.com/Rello/analytics/releases/download/4.2.1/analytics-4.2.1.tar.gz",
+      "version": "4.2.1"
     },
     "announcementcenter": {
       "meta": {
@@ -95,9 +95,9 @@
         "name": "Appointments",
         "summary": "Book appointments into your calendar via secure online form."
       },
-      "sha256": "08m20v3pshj1zrdwfb0caljn3i4r80pyl66jm7s1w21xxg8g19ny",
-      "url": "https://github.com/SergeyMosin/Appointments/raw/v1.12.2/build/artifacts/appstore/appointments.tar.gz",
-      "version": "1.12.2"
+      "sha256": "13cwwhz3l994q49406w13rxvc2rkdf2y1fhn2q3p5gy4zcp4km4y",
+      "url": "https://github.com/SergeyMosin/Appointments/raw/95c9fcb8ef495a032ac5f1ea58dfb47fca871e55/build/artifacts/appstore/appointments.tar.gz",
+      "version": "1.12.3"
     },
     "apporder": {
       "meta": {
@@ -109,9 +109,9 @@
         "name": "AppOrder",
         "summary": "Sort apps in the menu with drag and drop"
       },
-      "sha256": "1gppcfswb3zzvv827p6s340bbyqaz57vmkv48z69dyr2a2c2abgf",
-      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.14.0/apporder.tar.gz",
-      "version": "0.14.0"
+      "sha256": "1nx1vdwlqyy3x5vw2h2xx51hmv7gsp8mam1fj813yc3655js9m96",
+      "url": "https://github.com/juliushaertl/apporder/releases/download/v0.15.0/apporder.tar.gz",
+      "version": "0.15.0"
     },
     "audioplayer": {
       "meta": {
@@ -124,9 +124,9 @@
         "name": "Audio Player",
         "summary": "play / stream / organize"
       },
-      "sha256": "1arh6cw4ddhp5cadwgp68h2qbm6h66lgp6az3pxzj63ixh9g9z8d",
-      "url": "https://github.com/Rello/audioplayer/releases/download/3.2.4/audioplayer-3.2.4.tar.gz",
-      "version": "3.2.4"
+      "sha256": "1bh16wjyl3vafdpnk9w48vk6j89bg91xzh0zy1p030hijb4vk21q",
+      "url": "https://github.com/Rello/audioplayer/releases/download/3.3.0/audioplayer-3.3.0.tar.gz",
+      "version": "3.3.0"
     },
     "audioplayer_sonos": {
       "meta": {
@@ -175,7 +175,7 @@
     },
     "bookmarks": {
       "meta": {
-        "description": "-  Browse and filter your bookmarks via tags and folders and add personal notes\n-  Built-in full-text search integrated into Nextcloud's unified search\n-  Share bookmarks with other users as well as publicly\n-  Keep track of changes in the activity stream\n-  Easily find broken links\n-  All your links are automatically archived for full-text search and in case they are depublished\n-  Access your bookmarks anywhere, on desktop Browsers and on your phone, via a variety of sync clients\n-  Built-in Dashboard widgets for frequent and recent links\n-  Easily generate public and private RSS feeds of your collections\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20+",
+        "description": "-  Sort bookmarks into folders\n-  Add tags and personal notes\n-  Full-text search\n-  Synchronize with all your browsers and devices\n-  Share bookmarks with other users and publicly\n-  Find broken links\n-  Generate RSS feeds of your collections\n-  Read archived versions of your links in case they are depublished\n-  Create new bookmarks directly from within Nextcloud Talk\n-  Built-in Dashboard widgets for frequent and recent links\n\nRequirements:\n - PHP v7.3+\n - PHP extensions:\n   - intl: *\n   - mbstring: *\n - Nextcloud v20+",
         "homepage": "https://github.com/nextcloud/bookmarks",
         "isShipped": false,
         "licenses": [
@@ -184,9 +184,9 @@
         "name": "Bookmarks",
         "summary": "A Bookmark manager for Nextcloud"
       },
-      "sha256": "1lk00qwqpqdlk2j3aqhc2cxz7dlqy9mbgfigd15q06b7k50x8m2h",
-      "url": "https://github.com/nextcloud/bookmarks/releases/download/v10.1.0/bookmarks-10.1.0.tar.gz",
-      "version": "10.1.0"
+      "sha256": "0sah9a0dhb59y4rfim9ghc9mqh1w3mnrjpwggq286xhxacb5n5vm",
+      "url": "https://github.com/nextcloud/bookmarks/releases/download/v10.3.1/bookmarks-10.3.1.tar.gz",
+      "version": "10.3.1"
     },
     "breezedark": {
       "meta": {
@@ -214,9 +214,9 @@
         "name": "Brute-force settings",
         "summary": "Whitelist IPs"
       },
-      "sha256": "01lmn9zg555qn8s09aalx7g9r7wz51q4xm2xbqr0037d6a058p45",
-      "url": "https://github.com/nextcloud-releases/bruteforcesettings/releases/download/v2.3.0/bruteforcesettings-v2.3.0.tar.gz",
-      "version": "2.3.0"
+      "sha256": "12bylwhcai7038c636zshbkcji84yhly56ky7p334fy03vhay9zi",
+      "url": "https://github.com/nextcloud-releases/bruteforcesettings/releases/download/v2.4.0/bruteforcesettings-v2.4.0.tar.gz",
+      "version": "2.4.0"
     },
     "calendar": {
       "meta": {
@@ -279,7 +279,7 @@
     },
     "cfg_share_links": {
       "meta": {
-        "description": "Nextcloud app that adds the ability to specify share tokens when creating new public links and change tokens of existing links.\n\n## Features\n\nSharing sidebar is expanded by new section (Custom public link) that allows you to create public links with custom share tokens.\nYou can also customize share tokens of existing public links.\n\n## Settings\n\nBy going to **Settings &gt; Administration &gt; Configurable Share Links** admins can set default labels for custom links and minimal token length.\nDefault label can be: none, same as token or custom (the same custom label for all custom links).",
+        "description": "App for Nextcloud that adds the ability to specify share tokens when creating new public links and change tokens of existing links.\n\n## Features\n\nSharing sidebar is expanded by new section (Custom public link) that allows you to create public links with custom share tokens.\nYou can also customize share tokens of existing public links.\n\n## Settings\n\nBy going to **Settings &gt; Administration &gt; Configurable Share Links** admins can set default labels for custom links and minimal token length.\nDefault label can be: none, same as token or custom (the same custom label for all custom links).",
         "homepage": "https://github.com/jimmyl0l3c/cfg_share_links",
         "isShipped": false,
         "licenses": [
@@ -288,9 +288,9 @@
         "name": "Configurable Share Links",
         "summary": "App adding the ability to specify share tokens"
       },
-      "sha256": "1ild090hs6w99hbl0ldwqyj11nh00c2pwky914g9iq5c02xcprkr",
-      "url": "https://github.com/jimmyl0l3c/cfg_share_links/releases/download/v1.1.0/cfg_share_links.tar.gz",
-      "version": "1.1.0"
+      "sha256": "0rgcbc15qqiw72ymaafyz11dx36v1vc1dnkmv8x0n7ygg512lcvh",
+      "url": "https://github.com/jimmyl0l3c/cfg_share_links/releases/download/v1.2.2/cfg_share_links.tar.gz",
+      "version": "1.2.2"
     },
     "checksum": {
       "meta": {
@@ -346,9 +346,9 @@
         "name": "Pico CMS",
         "summary": "Create and publish your own websites - with Pico CMS for Nextcloud!"
       },
-      "sha256": "1w130x54w4yhpbj8d7lilgk7qnmyxli8p70ngk62mmlvf4g5qy76",
-      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.17/cms_pico-v1.0.17.tar.gz",
-      "version": "1.0.17"
+      "sha256": "07jpqxj9l835c6lvn4h158dr5fc3s9l5imn6s8cwbgm5ir93in18",
+      "url": "https://github.com/nextcloud/cms_pico/releases/download/v1.0.18/cms_pico-v1.0.18.tar.gz",
+      "version": "1.0.18"
     },
     "co2clock": {
       "meta": {
@@ -404,9 +404,9 @@
         "name": "Contacts",
         "summary": "A contacts app for Nextcloud"
       },
-      "sha256": "1vbdl7i0bx0rs3s18fv86yc109q1h07hnf23jipfyz9sq7n5rrmw",
-      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.0.8/contacts-v4.0.8.tar.gz",
-      "version": "4.0.8"
+      "sha256": "1l1papj9crdg2alvyq5xkdhb6ac59qrvy65jlim8349cdmpwyagv",
+      "url": "https://github.com/nextcloud-releases/contacts/releases/download/v4.1.0/contacts-v4.1.0.tar.gz",
+      "version": "4.1.0"
     },
     "contactsinteraction": {
       "meta": {
@@ -432,9 +432,9 @@
         "name": "Cookbook",
         "summary": "An integrated cookbook using schema.org JSON files as recipes"
       },
-      "sha256": "1z4fj7ylma8c15kcsjlmhvdyzr1zrq3cf9xwz72c46rirjnknac1",
-      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.10/Cookbook-0.9.10.tar.gz",
-      "version": "0.9.10"
+      "sha256": "05lac0sz810l2192q50m3c1yww7acip9rk9kj8hgh5226p7lv5hg",
+      "url": "https://github.com/nextcloud/cookbook/releases/download/v0.9.11/Cookbook-0.9.11.tar.gz",
+      "version": "0.9.11"
     },
     "cospend": {
       "meta": {
@@ -559,9 +559,9 @@
         "name": "Diary",
         "summary": "A simple diary for Nextcloud - Alpha release"
       },
-      "sha256": "01sp8cdv4j3w215ws29q2li3sy77krkbk12rdcyrrgfj3bwilh0c",
-      "url": "https://github.com/danielroehrig/diary/releases/download/v.0.0.3/diary.tar.gz",
-      "version": "0.0.3"
+      "sha256": "1ln8g0kxi1f9dqjxm33mnyqpprh2n72q53qw1jl415av5pxbw7v0",
+      "url": "https://github.com/danielroehrig/diary/releases/download/v.0.0.4/diary.tar.gz",
+      "version": "0.0.4"
     },
     "dicomviewer": {
       "meta": {
@@ -1017,7 +1017,7 @@
     },
     "files_linkeditor": {
       "meta": {
-        "description": "### External web links in Nextcloud!\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.\n\n##### Latest changes \n**1.1.8, 3. December 2021**\n- Bump compatibility to Nextcloud 23\n- Update JS dependencies\n\n_[View changelog for older versions](https://github.com/te-online/files_linkeditor#changelog)_",
+        "description": "### External web links in Nextcloud!\n*  **create and edit** .URL and .webloc links in the file view\n*  **open links** by clicking them and confirming you want to go to the external site\n*  **works in public shares** so you can share links easily with others\n*  **sync your links** as .URL and .webloc are web links as created on most operating systems.\n\n#### Latest changes \n**1.1.9, 21. March 2022**\n- Add Czech localization (thanks to @p-bo)\n- Update JS dependencies, fixes [a potential XSS-vulnerability in the URL sanitizer](https://github.com/te-online/files_linkeditor/pull/65)\n\n_[View changelog for older versions](https://github.com/te-online/files_linkeditor#changelog)_",
         "homepage": "https://github.com/te-online/files_linkeditor",
         "isShipped": false,
         "licenses": [
@@ -1026,9 +1026,9 @@
         "name": "Link editor",
         "summary": "An app to read and edit .URL and .webloc files."
       },
-      "sha256": "1vnjqcw1c1szzp53lim8cmyh06ayzkrdw3ya9spasz19izlgn8s8",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/files_linkeditor/v1.1.8/files_linkeditor.tar.gz",
-      "version": "1.1.8"
+      "sha256": "0v1crgkg9yddrcz1xjzcx8hq883q0851vh1fk0kdva1wwkb8qb27",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/files_linkeditor/v1.1.9/files_linkeditor.tar.gz",
+      "version": "1.1.9"
     },
     "files_lock": {
       "meta": {
@@ -1377,8 +1377,8 @@
     },
     "gestion": {
       "meta": {
-        "description": "# Gestion Nextcloud application\n\n        This application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\n        Functionality:\n\n        * Add customer\n        * Generate a quote\n        * Generate an invoice\n        * Generate product lines to include in quotes\n        * You can generate PDFs directly from the app and save them to your Nextcloud\n\n        Presentation video in user documentation\n\n        If you need to adapt this application to your country laws, please open issue.\n\n        [Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
-        "homepage": "https://www.buymeacoffee.com/benjaminaimard",
+        "description": "# Gestion company management\n\nThis application allows the management of invoicing in a very simple way for Micro-Entreprise.\n\nFunctionality:\n\n* Add customer\n* Generate a quote\n* Generate an invoice\n* Generate product lines to include in quotes\n* You can generate PDFs directly from the app and save them to your Nextcloud\n\nPresentation video in user documentation\n\nIf you need to adapt this application to your country laws, please open issue.\n\n[Love my work ? Buy me a coffee !](https://www.buymeacoffee.com/benjaminaimard)",
+        "homepage": "https://github.com/baimard/gestion",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -1386,9 +1386,9 @@
         "name": "Gestion",
         "summary": "Simplified invoice management application"
       },
-      "sha256": "1k5vqp05dipybji8x35lk3a4by68fygs3nhpvyz3r5p1fi7xfvkg",
-      "url": "https://github.com/baimard/gestion/releases/download/2.0.8/gestion.tar.gz",
-      "version": "2.0.8"
+      "sha256": "1811w54v05g7jwpsmpnzg3s4sl8dlhm7zs5mviiggjh59ih353im",
+      "url": "https://github.com/baimard/gestion/releases/download/2.0.11/gestion.tar.gz",
+      "version": "2.0.11"
     },
     "gpgmailer": {
       "meta": {
@@ -1894,9 +1894,9 @@
         "name": "Jitsi Integration",
         "summary": "Jitsi Integration (unofficial)"
       },
-      "sha256": "1s4w956gd5l6j1ckaynk6si85fxalv6kbhxz45978xazxnl6jc6n",
-      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/30/artifacts/nextcloud-jitsi.tar.gz",
-      "version": "0.13.0"
+      "sha256": "0h98mabrz3p0f7cwcrnwhmnybyawabm857bjqdi5k3lqpfjgkl12",
+      "url": "https://pubcode.weimann.digital/downloads/projects/nextcloud-jitsi/builds/48/artifacts/nextcloud-jitsi.tar.gz",
+      "version": "0.15.0"
     },
     "jsloader": {
       "meta": {
@@ -2142,9 +2142,9 @@
         "name": "Metadata",
         "summary": "A plugin for displaying file metadata"
       },
-      "sha256": "1lzv5n1cpbvk19bs5yz31qv5p8bldz6yqjxzgs58jma441nfvxap",
-      "url": "https://github.com/gino0631/nextcloud-metadata/releases/latest/download/metadata.tar.gz",
-      "version": "0.15.0"
+      "sha256": "0slrr641ydzgshfw1fsv5xpi6vx156yd1s86rf9xsps7d4kn1mc3",
+      "url": "https://github.com/gino0631/nextcloud-metadata/releases/download/v0.16.0/metadata.tar.gz",
+      "version": "0.16.0"
     },
     "music": {
       "meta": {
@@ -2172,9 +2172,9 @@
         "name": "NCDownloader",
         "summary": "Aria2 and youtube-dl web gui for nextcloud"
       },
-      "sha256": "0pap5lbw47nz4hy2wprilpas91pw9w3appm6scxa4p65i5wlfhwm",
-      "url": "https://github.com/shiningw/ncdownloader/releases/download/0.9.0/ncdownloader-release.tar.gz",
-      "version": "0.9.0"
+      "sha256": "1x7dkzr13k7bds67ddmh8kwwpx6yw0l0vd10bzkbvqwgl9a3ymkp",
+      "url": "https://github.com/shiningw/ncdownloader/releases/download/v0.9.16/ncdownloader-release.tar.gz",
+      "version": "0.9.16"
     },
     "news": {
       "meta": {
@@ -2319,18 +2319,18 @@
     },
     "oidc": {
       "meta": {
-        "description": "With this app you can use Nextcloud as OpenID Connect Identity Provider.",
+        "description": "Nextcloud as OpenID Connect Identity Provider\n\nWith this app you can use Nextcloud as OpenID Connect Identity Provider. If other services\nare configured correctly, you are able to access those services with your Nextcloud login.\n\nFull documentation can be found at:\n\n- [User Documentation](https://github.com/H2CK/oidc/wiki#user-documentation)\n- [Developer Documentation](https://github.com/H2CK/oidc/wiki#developer-documentation)",
         "homepage": "https://github.com/H2CK/oidc",
         "isShipped": false,
         "licenses": [
           "agpl"
         ],
         "name": "OIDC Identity Provider",
-        "summary": "Use Nextcloud as OpenID Connect Identity Provider."
+        "summary": "Nextcloud as OpenID Connect Identity Provider"
       },
-      "sha256": "1gq42kblfignbyvlq4ys5rgir8ml6r5w0j6p2n7j715cvw22yf9d",
-      "url": "https://github.com/H2CK/oidc/releases/download/0.0.1/oidc.tar.gz",
-      "version": "0.0.1"
+      "sha256": "1pb78375hba0aj1wsas47vx2rwi9ycfmi7yk1n6iq6rgicjl1ydi",
+      "url": "https://github.com/H2CK/oidc/releases/download/0.1.0/oidc-0.1.0.tar.gz",
+      "version": "0.1.0"
     },
     "oidc_login": {
       "meta": {
@@ -2402,9 +2402,9 @@
         "name": "OpenOTP Two Factor Authentication",
         "summary": "RCDevs OpenOTP Application enables Multi-Factor authentication for your users."
       },
-      "sha256": "1fsmg8q3mfvdn85l2f8c1qligkk04625vg1d9jz0fjlxqi5s53vy",
-      "url": "https://github.com/rcdevs/nextcloud_openotp_auth/releases/download/v1.4.1/openotp_auth-1.4.1.tgz",
-      "version": "1.4.1"
+      "sha256": "10a6vijc7nphlx4zb29yr8rmsla3zkz9raknx1rawp10drlzzv45",
+      "url": "https://github.com/rcdevs/nextcloud_openotp_auth/releases/download/v1.4.2/openotp_auth-1.4.2.tgz",
+      "version": "1.4.2"
     },
     "ownpad": {
       "meta": {
@@ -2695,7 +2695,7 @@
     },
     "rainloop": {
       "meta": {
-        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.15.0 (2021-01).",
+        "description": "Simple, modern and fast web-based email client. After enabling in Nextcloud, go to Nextcloud admin panel, \"Additionnal settings\" and you will see a \"Rainloop webmail\" section. There, click on the link to go to the Rainloop admin panel. The default user/password is admin/12345. This version is based on Rainloop 1.16.0 (2021-05).",
         "homepage": "https://github.com/pierre-alain-b/rainloop-nextcloud",
         "isShipped": false,
         "licenses": [
@@ -2704,9 +2704,9 @@
         "name": "RainLoop",
         "summary": "RainLoop Webmail"
       },
-      "sha256": "1k1030qc8i82vnl3a9r2xbhr21rlsfl4gybiynma9n0qbp9zdcy3",
-      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.1.3/rainloop.tar.gz",
-      "version": "7.1.3"
+      "sha256": "0bssv9wchj3fv4dvwfzwcn1qh3dj245mq36277y8c33si02cn6s0",
+      "url": "https://github.com/pierre-alain-b/rainloop-nextcloud/releases/download/7.2.5/rainloop.tar.gz",
+      "version": "7.2.5"
     },
     "ransomware_protection": {
       "meta": {
@@ -2734,9 +2734,9 @@
         "name": "Recognize",
         "summary": "Smart media tagging for Nextcloud"
       },
-      "sha256": "0x5l07j2bja70vigrc3m7wadzsw4vl2wbp96bv3h73y6zjwc25dw",
-      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.11.0/recognize-1.11.0.tar.gz",
-      "version": "1.11.0"
+      "sha256": "1gznvc5v1jq348knwy8jsd0fbja8ii81byyv1hhkz8mi9nlvkd91",
+      "url": "https://github.com/marcelklehr/recognize/releases/download/v1.12.0/recognize-1.12.0.tar.gz",
+      "version": "1.12.0"
     },
     "recommendations": {
       "meta": {
@@ -2792,9 +2792,9 @@
         "name": "Collabora Online - Built-in CODE Server",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "0kbcm0q071l47vmyng4cm0vc672056zjj0fzbswvm1mwmfyb7fpp",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.204/richdocumentscode.tar.gz",
-      "version": "21.11.204"
+      "sha256": "1868y353gd8i1ba1bwkng3hf7rdl31bxiaj5g9jfpxal7pnvdv2f",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.306/richdocumentscode.tar.gz",
+      "version": "21.11.306"
     },
     "richdocumentscode_arm64": {
       "meta": {
@@ -2807,9 +2807,9 @@
         "name": "Collabora Online - Built-in CODE Server (ARM64)",
         "summary": "Built-in Collabora Online Development Edition (CODE) server for local testing and non-production use"
       },
-      "sha256": "1fjn1sx9ah5q5bipi4z1yz6hhbsyy9qzwkcp4vpy3vn9ydnrdyx7",
-      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.204/richdocumentscode_arm64.tar.gz",
-      "version": "21.11.204"
+      "sha256": "17zqd3nv0i5xs6bjwl84nq5a4k28w0vg6n99awgkv8h3ynmysjzn",
+      "url": "https://github.com/CollaboraOnline/richdocumentscode/releases/download/21.11.306/richdocumentscode_arm64.tar.gz",
+      "version": "21.11.306"
     },
     "riotchat": {
       "meta": {
@@ -2822,9 +2822,9 @@
         "name": "Element for Nextcloud",
         "summary": "Element Web integrated into Nextcloud"
       },
-      "sha256": "1dw41j6l61hg8hl6cg9hj871m8b3pi6pjw6zyxj0f55w3dhah41i",
-      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.11.2/riotchat.tar.gz",
-      "version": "0.11.2"
+      "sha256": "1cycdaypr6av0wdyv80bgn0d3k4wr6iqik4549b351z81887yx06",
+      "url": "https://github.com/gary-kim/riotchat/releases/download/v0.11.3/riotchat.tar.gz",
+      "version": "0.11.3"
     },
     "root_cache_cleaner": {
       "meta": {
@@ -2985,7 +2985,7 @@
     },
     "sharepoint": {
       "meta": {
-        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nSupports Sharepoint 2013 and 2016. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
+        "description": "The Sharepoint Backend allows administrators to add Sharepoint document libraries as folders in Nextcloud. This offers an easy way for users to access Sharepoint data in the same place where they find their other files, facilitating collaboration and sharing within and across the borders of the organization. Users can use the desktop client, mobile apps or web interface and comment, tag, share and collaboratively edit files on Sharepoint just like with any other data on Nextcloud.\n\nSupports Sharepoint 2013, 2016 and 365. Nextcloud accesses Sharepoint through the Sharepoint REST API and uses NTLM authentication. Nextcloud respects file access permissions associated with its configured user credentials. Versioning and sharing are handled by Nextcloud.\n\nLearn more about External Storage and Sharepoint on [https://nextcloud.com/storage/](https://nextcloud.com/storage/)",
         "isShipped": false,
         "licenses": [
           "agpl"
@@ -2993,9 +2993,9 @@
         "name": "SharePoint Backend",
         "summary": "SharePoint Backend for External storages"
       },
-      "sha256": "1m8bhav9g8vnn318gp6mb0rsv6ah8296w61cmxxcagaics44gmzc",
-      "url": "https://github.com/nextcloud/sharepoint/releases/download/v1.9.0/sharepoint.tar.gz",
-      "version": "1.9.0"
+      "sha256": "1h7my1xsxcnyx5yq238sv6jr85lxla4fpncc2jzg6afnmyn3wg42",
+      "url": "https://github.com/nextcloud-releases/sharepoint/releases/download/v1.9.1/sharepoint-v1.9.1.tar.gz",
+      "version": "1.9.1"
     },
     "sharingpath": {
       "meta": {
@@ -3038,9 +3038,9 @@
         "name": "Custom menu",
         "summary": "Modify the display of the menu."
       },
-      "sha256": "1zfphlz3xma2gwm9r2k8qnpb8v0mhnj4n75fqszzzy137hb25jm1",
-      "url": "https://gitnet.fr/attachments/71065a6a-d913-4ebe-8ac4-43521c0f404c",
-      "version": "2.3.4"
+      "sha256": "0fpz79inhi9zjyb6mni9avfzr1ks5ys6n2ysma2dmb86b1w7ng0z",
+      "url": "https://gitnet.fr/attachments/8e4200bd-c272-4a3a-b3d8-aebdbef831ba",
+      "version": "2.3.5"
     },
     "smb_test": {
       "meta": {
@@ -3172,9 +3172,9 @@
         "name": "Souvenirs",
         "summary": "Display \"souvenir\" albums in nextcloud web interface"
       },
-      "sha256": "1fpwxs762cjwn1vvhfxvf93cg90k6gbq6fwq5ljqpvzlfjp70g65",
-      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.2.0/souvenirs.tar.gz",
-      "version": "1.2.0"
+      "sha256": "160qypl890csiq7ypnqzr9p3gm7fvgy2h4mvpgd4q5rxl2hfl307",
+      "url": "https://github.com/zorgluf/souvenirs-nextcloud/releases/download/v1.3.0/souvenirs.tar.gz",
+      "version": "1.3.0"
     },
     "spgverein": {
       "meta": {
@@ -3230,9 +3230,9 @@
         "name": "Storj",
         "summary": "Decentralized storage backend"
       },
-      "sha256": "0h4kf6qwyzq41rvh4mg07ssj3m4rcwypbn63g6b63b1ngcj40s5z",
-      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.7.tar.gz",
-      "version": "0.0.7"
+      "sha256": "194wdfwv8psj1fmj0r9xr5m1j2qk637y78viin1k5r7i1swpcnvm",
+      "url": "https://link.storjshare.io/raw/jvfizc37vgr5ohyxwreg7abnxxrq/nextcloud-app-assets/storj-v0.0.8.tar.gz",
+      "version": "0.0.8"
     },
     "stromquittung": {
       "meta": {
@@ -3413,13 +3413,13 @@
         "name": "Custom CSS",
         "summary": "Adjust the Nextcloud theme with custom CSS"
       },
-      "sha256": "1vshkgdplqpxjgwbzcrclmlh6iz8m9mh5rw3zvs0yddzwy9ghgnz",
-      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.10.0/theming_customcss.tar.gz",
-      "version": "1.10.0"
+      "sha256": "0jwjih4dvnmnh3v2wlq9f84b5ci2126yf930p8zjlh89b26n6n52",
+      "url": "https://github.com/juliushaertl/theming_customcss/releases/download/v1.11.0/theming_customcss.tar.gz",
+      "version": "1.11.0"
     },
     "timemanager": {
       "meta": {
-        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.2.9 Beta, 15. March 2022**\n- Bugfix: Import UI will now create a commit and show the success message even if importing to an empty database\n- Bugfix: Navigation button will stay visible and interactive when navigating client-side (issue #70)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
+        "description": "### Time tracking in Nextcloud!\n*  **organize time entries** based on tasks, projects and clients\n*  **quickly record** a time entry for your latest tasks\n*  **check or uncheck** a time entry (e.g. to save whether you've billed it)\n*  make use of simple, but useful **statistics** and **reports**.\n\n#### Latest changes \n**0.3.0 Beta, 18. April 2022**\n- Add basic **client sharing feature** with support for sharing clients and all associated projects and tasks (issues #65 and possibly #1)\n  - Allows users you shared the client with to create and edit time entries in tasks you created\n  - Only you can see everyone's time entries (also in reports), everyone else only sees their entries\n  - The sharing feature is currently **not supported** in the Android app and/or REST API\n- Maintenance: Update JS dependencies\n- Bugfix: Some variables weren't checked properly before accessing them, causing warnings to be logged (issue #72)\n\n_Please refer to the [full changelog](https://github.com/te-online/timemanager/#changelog) to see older releases_\n\n **Looking for a mobile companion app?** Try the [Android app (currently in beta)](https://play.google.com/store/apps/details?id=de.jbservices.nc_timemanager_app) made by [@joleaf](https://gitlab.com/joleaf/nc-timemanager-mobile-app)",
         "homepage": "https://github.com/te-online/timemanager",
         "isShipped": false,
         "licenses": [
@@ -3428,9 +3428,9 @@
         "name": "TimeManager",
         "summary": "An app to track how you spend your time."
       },
-      "sha256": "1rvr4dhlh9x926m63dc3j0s5im9611yqrxhijqk2p92spj65pwpc",
-      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.2.9/timemanager.tar.gz",
-      "version": "0.2.9"
+      "sha256": "0gmbpgahrp7jkqwiacwasnyfxgq2i4irksj7c40b61kfr53rzb4m",
+      "url": "https://github.com/te-online/nextcloud-app-releases/raw/main/timemanager/v0.3.0/timemanager.tar.gz",
+      "version": "0.3.0"
     },
     "timetracker": {
       "meta": {
@@ -3512,9 +3512,9 @@
         "name": "Two-Factor Email",
         "summary": "Two-Factor Email Provider"
       },
-      "sha256": "099nlk4cm0pn9837djx1ahmzm7r3gj5vx6s99g9myrzy66pyx5qb",
-      "url": "https://github.com/nursoda/twofactor_email/releases/download/2.1.1/twofactor_email.tar.gz",
-      "version": "2.1.1"
+      "sha256": "17dhbrhh03ykck3m26cn0zarlm60mzzppp0nr5c68m33sxlrfv4x",
+      "url": "https://github.com/nursoda/twofactor_email/releases/download/2.3.0/twofactor_email.tar.gz",
+      "version": "2.3.0"
     },
     "twofactor_gateway": {
       "meta": {
@@ -3746,9 +3746,9 @@
         "name": "SSO &amp; SAML authentication",
         "summary": "Authenticate using single sign-on"
       },
-      "sha256": "02pids23x2s342v0rx4c65462gd5gbkh9w9fh24fdkq9hfqxqbss",
-      "url": "https://github.com/nextcloud/user_saml/releases/download/v4.1.1/user_saml-4.1.1.tar.gz",
-      "version": "4.1.1"
+      "sha256": "16hkwdany80zimmq0h14h3a98lkj83w6xr010zx27gadp3s9qsbl",
+      "url": "https://github.com/nextcloud-releases/user_saml/releases/download/v5.0.0/user_saml-v5.0.0.tar.gz",
+      "version": "5.0.0"
     },
     "user_sql": {
       "meta": {
@@ -3791,6 +3791,20 @@
       "sha256": "1lbyrcl408fbcdsbpwnis0pak674b9h3bgzbqgspavyyqmppdij8",
       "url": "https://github.com/nextcloud/user_usage_report/releases/download/v1.5.0/user_usage_report-1.5.0.tar.gz",
       "version": "1.5.0"
+    },
+    "vdirsyncerui": {
+      "meta": {
+        "description": "Saving configuration data to pass to the external program vdirsyncer",
+        "isShipped": false,
+        "licenses": [
+          "agpl"
+        ],
+        "name": "vdirsyncer UI",
+        "summary": "UI for vdirsyncer configuration"
+      },
+      "sha256": "1zxndgyjkgfw8qk6lzdq4myw4jjll11rsw2crj9f6d4czfmj74l6",
+      "url": "https://ucar-solutions.de/vdirsyncerui.tar.gz",
+      "version": "0.0.5"
     },
     "vibeetoee": {
       "meta": {
@@ -3846,9 +3860,9 @@
         "name": "W2G2",
         "summary": "Visual locking of files and folders to contribute to a better collaboration"
       },
-      "sha256": "02r8s71kvmz3rslvc12ifqzrbh596w6a4n2g6zv8p6vj73h5f9w1",
-      "url": "https://github.com/newroco/W2G2/releases/download/3.3.7/w2g2.tar.gz",
-      "version": "3.3.7"
+      "sha256": "0kr77n2gxpf34c8fv0b2c9907sz86avwd1pdyczwjwffrjicx2h7",
+      "url": "https://github.com/newroco/W2G2/releases/download/3.3.8/w2g2.tar.gz",
+      "version": "3.3.8"
     },
     "weather": {
       "meta": {
@@ -3903,9 +3917,9 @@
         "name": "Webhooks",
         "summary": "Integrate your Nextcloud instance with external systems using Webhooks"
       },
-      "sha256": "0n19j301hlib7hdf76c308n3wc5x2s5q74gbs5c1bcl8v1xmx2b6",
-      "url": "https://github.com/kffl/nextcloud-webhooks/releases/download/v0.1.0/webhooks.tar.gz",
-      "version": "0.1.0"
+      "sha256": "16g4551s2j3rl46z2f6sb6lyrn8qyi1lymshd0i7pc9r050vjbmx",
+      "url": "https://github.com/kffl/nextcloud-webhooks/releases/download/v0.2.0/webhooks.tar.gz",
+      "version": "0.2.0"
     },
     "welcome": {
       "meta": {
